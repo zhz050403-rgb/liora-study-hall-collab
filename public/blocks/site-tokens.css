@@ -1,0 +1,122 @@
+/* ============================================================
+ * 学习小屋 · 全站统一设计 token 与可访问性基础层
+ * ------------------------------------------------------------
+ * 加载顺序：必须放在 cabin-theme.css / 各页自有样式表「之后」。
+ * 作用：
+ *   1) 把主站、每日简报、待办、英语四套私有变量收敛到同一组值；
+ *   2) 修正小字对比度到 WCAG AA（>= 4.5:1）；
+ *   3) 补齐全站缺失的键盘焦点环与「减少动效」支持。
+ * 本文件不改动任何现有选择器与业务逻辑，只用 :root 变量覆盖。
+ * ============================================================ */
+
+:root {
+  /* ---- 唯一权威色板（月光哥特图书馆） ---- */
+  --cb-navy-900:#122e52;
+  --cb-navy-800:#1c4375;
+  --cb-navy-700:#2a5689;
+  --cb-gold:#c9a55c;
+  --cb-gold-deep:#a98440;
+  --cb-paper:#f7fafd;
+  --cb-card:#ffffff;
+  --cb-ink:#1b3557;
+  --cb-ink-2:#465e7b;
+  --cb-line:#d8e4f2;
+  --cb-line-2:#e8eff7;
+  --cb-radius:14px;
+  --cb-serif:"Noto Serif CJK SC","Source Han Serif SC","Songti SC","STSong",Georgia,"Times New Roman",serif;
+  --cb-sans:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",sans-serif;
+
+  /* 对比度达标色：#5c6f88 对 #f7fafd = 4.92:1，对 #fff = 5.15:1 */
+  --cb-muted:#5c6f88;
+  --cb-amber:#7d5a1c;   /* 对 #f9f2e2 = 5.63:1（原 #9a7531 仅 3.79:1） */
+
+  /* ---- 收敛到主站变量（index.html 内联 :root / cabin-theme.css） ---- */
+  --muted:var(--cb-muted);
+  --amber:var(--cb-amber);
+  --radius:var(--cb-radius);
+  --gold:var(--cb-gold);
+  --navy-900:var(--cb-navy-900);
+  --navy-800:var(--cb-navy-800);
+  --navy-700:var(--cb-navy-700);
+  --paper:var(--cb-paper);
+  --ink:var(--cb-ink);
+  --ink-2:var(--cb-ink-2);
+  --line:var(--cb-line);
+  --line-2:var(--cb-line-2);
+  --serif:var(--cb-serif);
+  --sans:var(--cb-sans);
+
+  /* ---- 每日简报 blocks/daily-brief.css 的 --hub-* ---- */
+  --hub-navy:var(--cb-navy-900);
+  --hub-navy-2:var(--cb-navy-800);
+  --hub-paper:var(--cb-paper);
+  --hub-card:var(--cb-card);
+  --hub-ink:var(--cb-ink);
+  --hub-ink-2:var(--cb-ink-2);
+  --hub-muted:var(--cb-muted);
+  --hub-line:var(--cb-line);
+  --hub-line-2:var(--cb-line-2);
+  --hub-serif:var(--cb-serif);
+  --hub-sans:var(--cb-sans);
+
+  /* ---- 待办小组件 todo-widget.css 的 --td-* ---- */
+  --td-navy:var(--cb-navy-900);
+  --td-navy-2:var(--cb-navy-800);
+  --td-gold:var(--cb-gold);
+  --td-gold-l:#f9f2e2;
+  --td-paper:var(--cb-paper);
+  --td-card:var(--cb-card);
+  --td-ink:var(--cb-ink);
+  --td-ink-2:var(--cb-ink-2);
+  --td-muted:var(--cb-muted);
+  --td-line:var(--cb-line);
+  --td-line-2:var(--cb-line-2);
+  --td-serif:var(--cb-serif);
+  --td-sans:var(--cb-sans);
+
+  /* ---- 英语学习台 english/css/style.css ---- */
+  --bg:var(--cb-paper);
+  --card:var(--cb-card);
+  --accent:var(--cb-navy-800);
+  --accent-deep:var(--cb-navy-900);
+  --accent-soft:#eaf3fc;
+}
+
+/* ============ 全局键盘焦点环 ============
+   原本只有 6 处 :focus-visible，且搜索框用了 outline:none。 */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible,
+[tabindex]:focus-visible {
+  outline:2px solid var(--cb-navy-700) !important;
+  outline-offset:2px;
+  border-radius:4px;
+}
+
+/* ============ 减少动效：跟随系统偏好 ============ */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior:auto !important; }
+  *, *::before, *::after {
+    animation-duration:.01ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:.01ms !important;
+    scroll-behavior:auto !important;
+  }
+  *:hover { transform:none !important; }
+}
+
+/* ============ 减少动效：手动开关（site-polish.js 写入 body 类） ============ */
+body.cb-reduce-motion { scroll-behavior:auto; }
+body.cb-reduce-motion,
+body.cb-reduce-motion *,
+body.cb-reduce-motion *::before,
+body.cb-reduce-motion *::after {
+  animation-duration:.01ms !important;
+  animation-iteration-count:1 !important;
+  transition-duration:.01ms !important;
+  scroll-behavior:auto !important;
+}
+body.cb-reduce-motion *:hover { transform:none !important; }

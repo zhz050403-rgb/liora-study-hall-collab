@@ -1,0 +1,11 @@
+*
+!.gitignore
+!README.md
+!CLAUDE.md
+!public/
+!public/blocks/
+!public/blocks/notes-layout.js
+!public/blocks/site-polish.css
+!public/blocks/site-polish.js
+!public/blocks/site-tokens.css
+!public/blocks/reading-status.css

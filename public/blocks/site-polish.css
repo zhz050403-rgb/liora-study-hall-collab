@@ -1,0 +1,135 @@
+/* ============================================================
+ * 学习小屋 · 网页本体点缀层 + 专注模式
+ * ------------------------------------------------------------
+ * 只在 index.html / daily-brief.html 加载（待办小窗口、英语台只引 tokens）。
+ * 设计目标：不新增一张插图，用纯 CSS 把「底子」做出来：
+ *   纸感底纹 / 金色细线 / 卡片色条 / 当前项锚点
+ * 同时提供 ADHD 友好的「专注模式」与「减少动效」开关样式。
+ * ============================================================ */
+
+/* ============ 1. 纸感底纹：给「底」加一层极淡质感 ============ */
+body {
+  background-color:var(--cb-paper) !important;
+  background-image:
+    radial-gradient(ellipse at 10% 4%, rgba(42,86,137,.035) 0, transparent 44%),
+    radial-gradient(ellipse at 92% 74%, rgba(201,165,92,.032) 0, transparent 42%),
+    radial-gradient(rgba(18,46,82,.045) .6px, transparent .6px) !important;
+  background-size:auto, auto, 22px 22px;
+}
+
+/* ============ 2b. 首页 Hero：盖过 index.html 内联的极淡点阵 ============
+   index.html 内联 .hero::before 只是近乎不可见的点阵，且 library.webp 只写在
+   被内联覆盖的 cabin-theme.css 里，所以横幅长期是「纯深蓝空块」。这里用 !important
+   从本文件（已在 head 加载）覆盖内联规则：纹理打底，图书馆照片叠在右侧，
+   照片万一加载失败也绝不退化为空块。 */
+.hero::before{
+  background-color:#0d2340 !important;
+  background-image:
+    linear-gradient(90deg, rgba(11,33,64,.92) 0%, rgba(11,33,64,.50) 34%, rgba(11,33,64,0) 52%),
+    url("../cabin-art/library.webp"),
+    radial-gradient(140% 150% at 84% 50%, rgba(247,242,226,.98) 0%, rgba(235,216,170,.88) 50%, transparent 68%),
+    radial-gradient(ellipse at 86% 20%, rgba(201,165,92,.40) 0%, transparent 48%),
+    radial-gradient(ellipse at 10% 100%, rgba(120,170,220,.24) 0%, transparent 44%),
+    repeating-linear-gradient(90deg, rgba(230,207,156,.12) 0 1px, transparent 1px 60px),
+    repeating-linear-gradient(0deg, rgba(230,207,156,.09) 0 1px, transparent 1px 60px),
+    linear-gradient(135deg,#122e52 0%,#0d2340 55%,#1a3f6e 100%) !important;
+  background-repeat:no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,repeat,repeat,no-repeat !important;
+  background-position:left top,84% center,center,center,center,center,center,center !important;
+  background-size:auto,auto 132%,auto,auto,auto,auto,auto,auto !important;
+}
+
+/* ============ 3. 分区金色细线 + 卡片左侧色条 ============ */
+.home-courses .section-head,
+.cabin-catalog .section-head,
+.academy-extra .section-head,
+.academy-reading .section-head,
+.brief-edition .hub-slot-head {
+  border-bottom:1px solid #e0cfab !important;
+  padding-bottom:12px;
+}
+.brief-page .reading-card,
+.academy-extra .module-card {
+  box-shadow:inset 3px 0 0 rgba(201,165,92,.55), 0 6px 18px rgba(18,46,82,.05) !important;
+}
+
+/* ============ 4. 当前位置锚点：长页面里一眼找到「我在哪」 ============ */
+.week-side .kp-item[aria-current],
+.week-side .kp-item.active,
+.novel-directory [aria-current] {
+  background:#eaf3fc !important;
+  box-shadow:inset 3px 0 0 var(--cb-navy-700);
+  border-radius:6px;
+}
+
+/* ============ 5. 交互目标尺寸（WCAG 2.2 最小 24px，舒适 44px） ============ */
+.main-nav a { min-height:40px; display:inline-flex; align-items:center; }
+.chip { min-height:26px; }
+.font-ctrl .fc-btn { min-height:36px; }
+
+/* ============ 6. 显示偏好开关（site-polish.js 动态创建） ============ */
+.cb-mode-ctrl {
+  position:fixed; right:88px; bottom:26px; z-index:71;
+  display:flex; align-items:center; gap:6px;
+  background:rgba(255,255,255,.96);
+  border:1px solid var(--cb-line);
+  border-radius:999px; padding:5px 9px;
+  box-shadow:0 4px 16px rgba(18,46,82,.14);
+  font-family:var(--cb-sans);
+}
+.cb-mode-ctrl .cb-label {
+  font-size:12px; font-weight:700; letter-spacing:1px;
+  color:var(--cb-muted); padding-left:4px;
+}
+.cb-mode-ctrl button {
+  min-height:40px; padding:6px 14px;
+  border:1px solid var(--cb-line-2); border-radius:999px;
+  background:#fff; color:var(--cb-ink-2);
+  font:600 12px/1.2 var(--cb-sans);
+  cursor:pointer;
+}
+.cb-mode-ctrl button:hover { border-color:var(--cb-navy-700); color:var(--cb-navy-800); }
+.cb-mode-ctrl button[aria-pressed="true"] {
+  background:#173860; color:#fff; border-color:#173860;
+}
+/* 原有「字号」控件压在左下角会挡住侧栏目录，一起挪到右下角成一组，
+   左侧长目录不再被浮动控件遮挡（对 ADHD 阅读尤其重要）。 */
+.font-ctrl {
+  left:auto !important; right:88px !important; bottom:78px !important;
+}
+@media (max-width:960px) {
+  .font-ctrl { right:12px !important; bottom:120px !important; }
+  .cb-mode-ctrl { right:12px !important; bottom:70px !important; padding:4px 7px; }
+  .cb-mode-ctrl button { padding:5px 11px; }
+  /* 手机上「显示/专注/静效」原本被右下角的 AI 悬浮球压住：把球缩小并落到最底部 */
+  #ai-fab { right:12px !important; bottom:14px !important; width:44px !important; height:44px !important; font-size:20px !important; }
+  /* 移动端右下角叠了字号 / 显示 / AI 三个浮动控件，给正文留出底部空间，避免勾选框与按钮被压住 */
+  #app { padding-bottom: 168px !important; }
+}
+
+/* ============ 7. 专注模式：收起干扰，只留正文 ============ */
+body.cb-focus .hero,
+body.cb-focus .stats-band,
+body.cb-focus .coming-grid,
+body.cb-focus .svc-grid,
+body.cb-focus #ai-fab,
+body.cb-focus .ws-arch,
+body.cb-focus .ei-arch,
+body.cb-focus .cc-laurel,
+body.cb-focus .home-desktop-todo,
+body.cb-focus .course-body > .week-side,
+body.cb-focus .reading-index,
+body.cb-focus .extra-index {
+  display:none !important;
+}
+body.cb-focus .course-body:has(> .week-side) {
+  grid-template-columns:minmax(0,1fr) !important;
+}
+body.cb-focus .academy-extra-layout {
+  grid-template-columns: minmax(0, 1fr);
+}
+body.cb-focus :is(p,li,dd,dt,.sum-def,.sum-bullets):not(.course-body .week-panel *) { max-width:68ch; }
+body.cb-focus :is(p,li,dd) { line-height:1.9; }
+body.cb-focus .brief-page .reading-card,
+body.cb-focus .academy-extra .module-card {
+  box-shadow:inset 3px 0 0 rgba(201,165,92,.35) !important;
+}
