@@ -202,25 +202,46 @@ function pickFallbackKey(p){
   var tail = segs.length ? segs[segs.length - 1] : "";
   return tail.length >= 3 ? tail.slice(-Math.min(5, tail.length)) : "";
 }
+/* 填空答案只留术语本身，括号注释和译文留在题干里当提示：
+   「Marginal Private Cost (MPC) 边际私人成本」只挖 Marginal Private Cost */
+function clozeKey(k){
+  k = String(k || "").trim().replace(/[：:，,。；;、\s]+$/, "");
+  var m = /^([A-Za-z][A-Za-z'’\- ]*?[A-Za-z])\s*(?:[（(]|[一-鿿]).*$/.exec(k) ||
+          /^([一-鿿]{2,12})\s*[（(].*$/.exec(k);
+  return m ? m[1] : k;
+}
+/* 题号、小问编号、分值不是知识点，不能当答案 */
+function isClozeLabel(k){
+  return /^(?:[（(]?[a-z][)）]|[（(]\d|Q\d|\d+\s*[.)、])|\bmarks?\b|\d\s*分[)）]?$/i.test(k);
+}
+function maskRepeats(after, k){
+  var quoted = k.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  if(/[A-Za-z0-9]/.test(k)){
+    return after.replace(new RegExp("(^|[^A-Za-z0-9])" + quoted + "(?![A-Za-z0-9])", "gi"), "$1____");
+  }
+  return after.replace(new RegExp(quoted, "g"), "____");
+}
 function makeQuestions(secs){
   var qs = [], seen = {};
-  function push(s, p, k, tag){
+  function push(s, p, rawKey, tag){
     // Keep equations/formulas intact: never blank a point that contains a real formula.
     // Blanking a formula point would produce a WRONG formula (e.g. "y = a(x − h)² + k"
     // → "y = a² + k"), which teaches the wrong thing. Skip points with =, inequalities,
-    // powers, arrows, math symbols, or a bracketed fraction a/(b).
+    // powers, arrows, math symbols, or a fraction such as a/(b).
     if (/[=≤≥≠≈^→∑π°√÷×]/.test(p) || hasFraction(p)) return false;
+    var k = clozeKey(rawKey);
+    if(k.length < 2 || isClozeLabel(k)) return false;
     var idx = p.toLowerCase().indexOf(k.toLowerCase());
     if (idx >= 0 && (/[a-z0-9]/i.test(p.charAt(idx - 1)) ||
         /[a-z0-9]/i.test(p.charAt(idx + k.length)))) return false;
     if(idx < 0) return false;
+    /* 只挖括号里的一半会留下「L35 ( I)」这种残句 */
+    var rest = p.slice(idx + k.length);
+    if(/[（(]/.test(p.charAt(idx - 1)) && /^\s*[^）)\s][^）)]{0,8}[）)]/.test(rest)) return false;
     var sig = tag + "|" + k.toLowerCase() + "|" + p.slice(0, 26);
     if(seen[sig]) return false;
     seen[sig] = 1;
-    var before = p.slice(0, idx), after = p.slice(idx + k.length);
-
-
-    qs.push({ kp:s.label, id:s.id, before:before, after:after, ans:k });
+    qs.push({ kp:s.label, id:s.id, before:p.slice(0, idx), after:maskRepeats(rest, k), ans:k });
     return true;
   }
   /* 主策略：挖笔记里被加粗 / 标为 key 的术语 */
