@@ -104,6 +104,27 @@ body {
   #ai-fab { right:12px !important; bottom:14px !important; width:44px !important; height:44px !important; font-size:20px !important; }
   /* 移动端右下角叠了字号 / 显示 / AI 三个浮动控件，给正文留出底部空间，避免勾选框与按钮被压住 */
   #app { padding-bottom: 168px !important; }
+  /* AI 面板打开时收起浮动控件，避免盖住面板内容和「提问」按钮 */
+  body:has(#ai-panel[style*="display: flex"]) .font-ctrl,
+  body:has(#ai-panel[style*="display: flex"]) .cb-mode-ctrl { display:none !important; }
+}
+.ai-panel .ai-hint { max-height:4.8em; overflow-y:auto; }
+/* 手机：AI 面板固定成底部抽屉，不用记住的坐标和尺寸，否则内容变长会把输入框顶出屏幕；
+   字号 / 显示控件排到左下一行，不再压住右侧的勾选框 */
+@media (max-width:640px) {
+  .ai-panel {
+    left:8px !important; right:8px !important; top:auto !important;
+    bottom:calc(8px + env(safe-area-inset-bottom, 0px)) !important;
+    width:auto !important; min-width:0 !important; max-width:none !important;
+    height:70vh !important; height:70dvh !important; min-height:0 !important;
+  }
+  .ai-panel .ai-resizer { display:none; }
+  .font-ctrl .fc-label, .cb-mode-ctrl .cb-label { display:none; }
+  .font-ctrl { left:8px !important; right:auto !important; bottom:14px !important; padding:4px 6px; }
+  .font-ctrl .fc-btn { padding:3px 7px; }
+  .cb-mode-ctrl { left:138px !important; right:auto !important; bottom:14px !important; padding:4px 6px; }
+  .cb-mode-ctrl button { padding:3px 8px; }
+  #app { padding-bottom: 84px !important; }
 }
 
 /* ============ 7. 专注模式：收起干扰，只留正文 ============ */
