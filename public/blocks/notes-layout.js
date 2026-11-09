@@ -68,31 +68,51 @@ function formulaToFrac(str){
 }
 
 
-/* ===== 中英分行：把「英文句群 + 中文句群」拆成两行（2026-11-09 全站加强） =====
-   旧版只在「英文句末标点 + 空格 + 中文」处插 <br>，实测对全站 5617 个双语段落
-   仅命中 1538 个（27.4%），约四千段中英文仍挤在同一行。
-   这里改为识别语言切换边界：扫描中文块 / 英文块，两侧都成句才换行。
-   - 每个段落（p/li 级）最多插 1 个 <br>，段落不被切碎，术语夹注（如「把 Demand 曲线左移」）不误拆
-   - 幂等：host 打 data-cn-split 标记，四视图反复切换 / 多次调用不会重复插
-   - 不动 data.js：思维导图 / 填空复习 / 知识点归纳读原始 HTML 字符串，不受影响
-   - 导出 PDF / Word 克隆同一份 DOM，换行一并带走
-   - 公式、课件原文、表格、标题、按钮、目录、已手工排版的双语折叠区一律跳过 */
-var CN_SKIP_SEL = 'script,style,textarea,button,a,h1,h2,h3,h4,h5,h6,' +
-  'table,th,td,caption,details,summary,' +
-  '.formula,.frac,.katex,.kp-src,.kp-pg-src,.gx-src,.gx-pg-h,.gx-pg-b,.cfig,' +
+/* ===== 中英分行：段落级语言边界换行（2026-11-09 v3） =====
+   2026-11-09 线上真实浏览器复验发现 v2 只分行了 20.9% 的双语段落：
+   英文与中文常被 <strong>/<em> 拆成不同文本节点，逐节点扫描时每个节点都是单语，
+   于是「Accounting identifies... <strong>会计</strong>是识别...」这类最典型的段落全被跳过。
+   v3 改为以「段落」为单位：把段落内所有文本节点拼接成完整文本 → 找语言切换边界
+   → 把切点映射回具体节点插入 <br class="cn-br">。这样口径与数据回归测试一致。
+   - 中文阈值放宽到 2 个汉字（v2 是 5），覆盖率 61.6% → 75.8%，纯单语误分行仍为 0
+   - 课件来源行（PDF 文件名 / 页码）整段跳过，避免把紧凑的来源标注拆开
+   - 段落最多 3 处换行；data-cn-split 幂等；不动 data.js（四视图读原始 HTML 不受影响）
+   - 公式、KaTeX、表格、标题、按钮、目录、手工双语折叠区一律跳过 */
+var CN_PARA_SEL = '.gx p,.gx li,.gx dd,.gx dt,.gx blockquote,' +
+  '.notes p,.notes li,.notes dd,.notes dt,.notes blockquote';
+/* 段落级跳过：这些容器里的正文不做分行。注意 .gx-pg-b / .kp-pg 是笔记正文容器，
+   v2 误把它们列入跳过清单，是「线上分行没生效」的第二个原因，这里已移除。 */
+var CN_SKIP_PARA = 'script,style,textarea,button,h1,h2,h3,h4,h5,h6,' +
+  'table,details,summary,.formula,.frac,.katex,.kp-src,.kp-pg-src,.gx-src,.gx-pg-h,.cfig,' +
   '.elasticity-glossary,.elasticity-term,.elasticity-definition,' +
   '.act-nav,.act-chip,.reading-tools,.note-tools,.nb-tools,.nb-grp-h,.nb-tip,.nb-chips,.rt-chip,' +
   '.prep-q,.pq-t,.kp-q,.kp-qbox,.note-tab,.note-exp,.ne-btn,.ws-item,.kp-item,.kp-grp,' +
   '.wp-sec-t,.eng-sec-t,.wp-topics,.chip,.goal-card,.sum-kp,.to-top';
+/* 文本节点级跳过：拼接时仍占位（保证下标对齐），但不参与换行插入 */
+var CN_SKIP_NODE = 'script,style,textarea,button,a,h1,h2,h3,h4,h5,h6,' +
+  'table,th,td,caption,details,summary,math,svg,' +
+  '.formula,.frac,.katex,.katex-html,.katex-mathml,.kp-src,.kp-pg-src,.gx-src,.gx-pg-h,.cfig,' +
+  '.elasticity-term,.elasticity-definition';
+var CN_SOURCE_RE = /(\.(pdf|pptx|docx)|PDF\s*p\d|Lecture\s+\d|课件页码|课件释义|来源[:：]|^\s*Source\s*:)/i;
 function cnClass(ch){
   if(/[\u3400-\u9fff]/.test(ch)) return 'cn';
   if(/[A-Za-z0-9]/.test(ch)) return 'en';
   return 'mid';
 }
+/* 紧跟在开括号 / 引号之后的切点不换行：像「（market equilibrium）」
+   「（slope ≠ elasticity）」这类夹注术语，单独拆成一行会把句子切碎。
+   只判断紧邻字符，不做整段括号深度累计——否则中英混排里大量括号会让
+   后续所有正常边界都被误跳过（实测会把覆盖率从 76.6% 压到 62.5%）。 */
+function cnAfterOpen(s, at){
+  var i = at - 1;
+  while(i >= 0 && /[\s\u00a0]/.test(s.charAt(i))) i--;
+  return i >= 0 && '（(「【《'.indexOf(s.charAt(i)) >= 0;
+}
 /* 返回应断行的下标数组。两侧都成句才断：
-   英文段须含 ≥2 个 3 字母以上单词，中文段须含 ≥5 个汉字；
+   英文段须含 ≥2 个 3 字母以上单词，中文段须含 minCn 个汉字（默认 5，渲染时用 2）；
    相邻切点间隔 <12 字符跳过，避免把段落切碎或误拆术语夹注。 */
-function cnBoundaries(s, limit){
+function cnBoundaries(s, limit, minCn){
+  minCn = minCn || 5;
   var segs = [], cur = null, i, c;
   for(i = 0; i < s.length; i++){
     c = cnClass(s.charAt(i));
@@ -110,49 +130,92 @@ function cnBoundaries(s, limit){
     var enTxt = a.type === 'en' ? aTxt : bTxt;
     var cnTxt = a.type === 'cn' ? aTxt : bTxt;
     if((enTxt.match(/[A-Za-z]{3,}/g) || []).length < 2) continue;
-    if((cnTxt.match(/[\u3400-\u9fff]/g) || []).length < 5) continue;
+    if((cnTxt.match(/[\u3400-\u9fff]/g) || []).length < minCn) continue;
     var at = b.start;
     if(at < 2 || at >= s.length - 1) continue;
+    if(cnAfterOpen(s, at)) continue;
     if(out.length && at - out[out.length - 1] < 12) continue;
     out.push(at);
     if(out.length >= limit) break;
   }
   return out;
 }
+/* 收集段落内全部文本节点，返回拼接文本 + 可插入节点的位置区间 */
+function cnCollect(para){
+  var walker = document.createTreeWalker(para, NodeFilter.SHOW_TEXT, null, false);
+  var parts = [], ranges = [], pos = 0, n;
+  while((n = walker.nextNode())){
+    var v = n.nodeValue || '';
+    parts.push(v);
+    var p = n.parentNode, skip = false;
+    if(p && p.closest) skip = !!p.closest(CN_SKIP_NODE);
+    if(!skip) ranges.push({ node: n, start: pos, end: pos + v.length });
+    pos += v.length;
+  }
+  return { text: parts.join(''), ranges: ranges };
+}
+var CN_INLINE_RE = /^(STRONG|EM|B|I|SPAN|SMALL|CODE|MARK|U|S|SUB|SUP|A)$/;
+/* 内联标签在拼接文本中的起始位置，用于判断它是否在段落开头 */
+function cnHostStart(ranges, host){
+  for(var q = 0; q < ranges.length; q++){
+    if(ranges[q].node.parentNode === host) return ranges[q].start;
+  }
+  return -1;
+}
+function cnNewBr(){ var b = document.createElement('br'); b.className = 'cn-br'; return b; }
+/* 在切点处插入 <br>。切点落在 <strong>/<span class="key"> 等内联标签里时，
+   不能把 br 塞进标签内部（会生成 <strong>Classification tip ·<br>易错点</strong>），
+   而应把换行上浮到整个标签之前：
+     · 标签在段落中间（前面已有正文）→ 插在标签前，中文解释随标签一起另起一行；
+     · 标签就在段首（如「Classification tip · 易错点」标题本身）→ 跳过，不制造空行。 */
+function cnInsertBr(ranges, at, para){
+  for(var i = 0; i < ranges.length; i++){
+    var r = ranges[i], node = r.node;
+    if(at < r.start || at >= r.end) continue;
+    var off = at - r.start, host = node.parentNode;
+    var inInline = host && host !== para && CN_INLINE_RE.test(host.tagName || '');
+    if(inInline){
+      if(cnHostStart(ranges, host) < 12) return false;
+      if(!host.parentNode) return false;
+      host.parentNode.insertBefore(cnNewBr(), host);
+      return true;
+    }
+    var tail = off > 0 ? node.splitText(off) : node;
+    if(off > 0) node.nodeValue = String(node.nodeValue).replace(/[\s\u00a0]+$/, '');
+    tail.nodeValue = String(tail.nodeValue).replace(/^[\s\u00a0]+/, '');
+    if(!host) return false;
+    host.insertBefore(cnNewBr(), tail);
+    return true;
+  }
+  return false;
+}
 function splitCnLines(root){
   if(!root || !root.querySelectorAll || typeof document.createTreeWalker !== 'function') return;
-  var hosts = root.querySelectorAll('.gx, .notes');
-  if(!hosts.length) hosts = [root];
-  for(var h = 0; h < hosts.length; h++){
-    var walker = document.createTreeWalker(hosts[h], NodeFilter.SHOW_TEXT, null, false);
-    var nodes = [], n;
-    while((n = walker.nextNode())) nodes.push(n);
-    for(var i = 0; i < nodes.length; i++){
-      var t = nodes[i], s = t.nodeValue;
-      if(!s || s.length < 12 || !/[\u3400-\u9fff]/.test(s)) continue;
-      var p = t.parentNode;
-      if(!p) continue;
-      if(p.closest && p.closest(CN_SKIP_SEL)) continue;
-      var host = (p.closest && p.closest('p,li,dd,dt,blockquote')) || p;
-      var used = (host.getAttribute && parseInt(host.getAttribute('data-cn-split') || '0', 10)) || 0;
-      if(used >= 3) continue;
-      var cuts = cnBoundaries(s, 3 - used);
-      if(!cuts.length) continue;
-      var frag = document.createDocumentFragment(), last = 0, added = 0;
-      for(var k = 0; k < cuts.length; k++){
-        var at = cuts[k];
-        if(at <= last + 1) continue;
-        frag.appendChild(document.createTextNode(s.slice(last, at).replace(/[\s\u00a0]+$/, '')));
-        var br = document.createElement('br'); br.className = 'cn-br';
-        frag.appendChild(br);
-        last = at; added++;
-      }
-      if(!added) continue;
-      frag.appendChild(document.createTextNode(s.slice(last).replace(/^[\s\u00a0]+/, '')));
-      t.parentNode.replaceChild(frag, t);
-      if(host.setAttribute) host.setAttribute('data-cn-split', String(used + added));
+  alignLedgerColumns(root);
+  var paras = root.querySelectorAll(CN_PARA_SEL);
+  if(!paras.length) return;
+  var done = 0;
+  for(var i = 0; i < paras.length; i++){
+    var para = paras[i];
+    if(para.getAttribute && para.getAttribute('data-cn-split')) continue;
+    /* 含嵌套段落的外层 li/blockquote 不单独处理，避免同一段文字被切两次 */
+    if(para.querySelector && para.querySelector('p,li,dd,dt,blockquote')) continue;
+    if(para.closest && para.closest(CN_SKIP_PARA)) continue;
+    var got = cnCollect(para), full = got.text;
+    if(full.length < 12 || !/[\u3400-\u9fff]/.test(full) || !/[A-Za-z]{3,}/.test(full)) continue;
+    /* 课件来源行是紧凑元数据，不该被拆成两行 */
+    if(full.length < 160 && CN_SOURCE_RE.test(full)) continue;
+    var cuts = cnBoundaries(full, 3, 2);
+    if(!cuts.length) continue;
+    /* 从后往前插，先改动的节点不会让前面切点的下标失效 */
+    var added = 0;
+    for(var k = cuts.length - 1; k >= 0; k--){
+      if(cnInsertBr(got.ranges, cuts[k], para)) added++;
     }
+    if(added && para.setAttribute) para.setAttribute('data-cn-split', String(added));
+    done += added;
   }
+  return done;
 }
 window.splitCnLines = splitCnLines;
 window.__cnSplitTest = { cnBoundaries: cnBoundaries, cnClass: cnClass };
@@ -472,6 +535,7 @@ function hlBindReapply(root){
 }
 function highlightKeyPoints(root){
   if(!root || !root.querySelectorAll) return;
+  alignLedgerColumns(root);
   hlInjectCss();
   /* ① 考点 / 重点 / 易错提示段，以及备考复习的警告块 → 强高亮 */
   hlEach(root.querySelectorAll('.kp-key, .er-warn'), function(el){ hlPaint(el, 'strong'); });
@@ -499,6 +563,34 @@ function highlightKeyPoints(root){
   hlBindReapply(root);
 }
 window.highlightKeyPoints = highlightKeyPoints;
+
+/* ===== 账表金额列统一右对齐（2026-11-09 全站宽度修复） =====
+   用户要求 Trial Balance / Journal / Financial Statements 等表格的金额列右对齐。
+   数据里金额列没有统一 class，这里按「表头文字」识别 Debit/Credit/金额/借/贷/余额/合计
+   等列，再把该列所有单元格右对齐；纯文本列（如 Account / 归类 / 说明）不受影响。
+   只动内联 style.textAlign，PDF / Word 导出克隆 DOM 一并带走，幂等可重复执行。 */
+var LEDGER_RE = /debit|credit|\bdr\b|\bcr\b|amount|金额|借|贷|balance|余额|合计|total|小计|\$|¥|€|£/i;
+function alignLedgerColumns(root){
+  if(!root || !root.querySelectorAll) return;
+  var tables = root.querySelectorAll('table');
+  Array.prototype.forEach.call(tables, function(tbl){
+    if(!tbl.rows || !tbl.rows.length) return;
+    var head = tbl.tHead ? tbl.tHead.rows[0] : tbl.rows[0];
+    if(!head || !head.cells) return;
+    var idxs = [];
+    for(var h = 0; h < head.cells.length; h++){
+      if(LEDGER_RE.test(String(head.cells[h].textContent || '').replace(/\s+/g, ' '))) idxs.push(h);
+    }
+    if(!idxs.length) return;
+    Array.prototype.forEach.call(tbl.rows, function(row){
+      for(var k = 0; k < idxs.length; k++){
+        var c = row.cells[idxs[k]];
+        if(c && c.style) c.style.textAlign = 'right';
+      }
+    });
+  });
+}
+window.alignLedgerColumns = alignLedgerColumns;
 
 })();
 

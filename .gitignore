@@ -9,3 +9,6 @@
 !public/blocks/site-polish.js
 !public/blocks/site-tokens.css
 !public/blocks/reading-status.css
+!public/index.html
+!public/note-views.js
+!public/prep-center.js
