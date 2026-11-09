@@ -18,13 +18,44 @@ var VIEWS = [
 /* ---------- 通用小工具 ---------- */
 function root(){ return NS.app || document.getElementById("app"); }
 function esc(s){ return NS.esc ? NS.esc(String(s == null ? "" : s)) : String(s == null ? "" : s); }
+/* 分数写成一行时只在必要处加括号：1/x、−b/(2a)，不写 ((5 − 2))/((−1 − 3)) */
+function fracEnclosed(s){
+  if(s.charAt(0) !== "(" || s.charAt(s.length - 1) !== ")") return false;
+  for(var i = 0, d = 0; i < s.length; i++){
+    var c = s.charAt(i);
+    if(c === "(") d++;
+    else if(c === ")" && --d === 0 && i < s.length - 1) return false;
+  }
+  return d === 0;
+}
+function fracHasOperator(s){
+  var body = s.replace(/^[−-]\s*/, "");
+  for(var i = 0, d = 0; i < body.length; i++){
+    var c = body.charAt(i);
+    if(c === "(") d++;
+    else if(c === ")") d--;
+    else if(d === 0 && /[\s+−\-*·×÷\/]/.test(c)) return true;
+  }
+  return false;
+}
+function fracLine(n, d){
+  n = String(n).trim(); d = String(d).trim();
+  var pn = n.replace(/<[^>]+>/g, ""), pd = d.replace(/<[^>]+>/g, "");
+  var top = fracEnclosed(pn) || !fracHasOperator(pn) ? n : "(" + n + ")";
+  var bottom = fracEnclosed(pd) || /^(?:[A-Za-z]|\d+(?:\.\d+)?)$/.test(pd) ? d : "(" + d + ")";
+  return top + "/" + bottom;
+}
 function mathText(s){
   return String(s || "")
     .replace(/<sup\b[^>]*>([\s\S]*?)<\/sup>/gi, "^($1)")
     .replace(/<sub\b[^>]*>([\s\S]*?)<\/sub>/gi, "_($1)")
-    .replace(/<span class=["']frac["']>\s*<span class=["']n["']>([\s\S]*?)<\/span>\s*<span class=["']d["']>([\s\S]*?)<\/span>\s*<\/span>/gi, "($1)/($2)")
-    .replace(/\\(?:dfrac|frac)\s*\{([^{}]*)\}\s*\{([^{}]*)\}/g, "($1)/($2)")
+    .replace(/<span class=["']frac["']>\s*<span class=["']n["']>([\s\S]*?)<\/span>\s*<span class=["']d["']>([\s\S]*?)<\/span>\s*<\/span>/gi, function(m, n, d){ return fracLine(n, d); })
+    .replace(/\\(?:dfrac|frac)\s*\{([^{}]*)\}\s*\{([^{}]*)\}/g, function(m, n, d){ return fracLine(n, d); })
     .replace(/([_^])\{([^{}]*)\}/g, "$1($2)");
+}
+/* 识别一行文字里的分数，公式句不截断、不挖空；A/R、Dr/Cr、and/or 这类不算 */
+function hasFraction(s){
+  return /\)\/|\/\(|(?:^|[\s=+−\-])\d+(?:\.\d+)?\/[A-Za-z\d]|(?:^|[\s=+−\-])[a-z]\/[a-z\d](?![a-z])/.test(s);
 }
 function txt(s){
   s = mathText(s);
@@ -33,7 +64,7 @@ function txt(s){
   t = t.replace(/\\[a-zA-Z]+/g," ").replace(/[{}]/g," ").replace(/\s+/g," ").trim();
   return t;
 }
-function cut(s, n){ s = String(s || ""); return s.length > n && !/[=≤≥≠≈^]|\)\/\(/.test(s) ? s.slice(0, n) + "…" : s; }
+function cut(s, n){ s = String(s || ""); return s.length > n && !/[=≤≥≠≈^]/.test(s) && !hasFraction(s) ? s.slice(0, n) + "…" : s; }
 function norm(s){
   return String(s || "").toLowerCase()
     .replace(/[\s，,。.、；;：:！!？?（）()「」『』""''《》<>\[\]]/g,"")
@@ -178,7 +209,7 @@ function makeQuestions(secs){
     // Blanking a formula point would produce a WRONG formula (e.g. "y = a(x − h)² + k"
     // → "y = a² + k"), which teaches the wrong thing. Skip points with =, inequalities,
     // powers, arrows, math symbols, or a bracketed fraction a/(b).
-    if (/[=≤≥≠≈^→∑π°√÷×]|\)\/\(/.test(p)) return false;
+    if (/[=≤≥≠≈^→∑π°√÷×]/.test(p) || hasFraction(p)) return false;
     var idx = p.toLowerCase().indexOf(k.toLowerCase());
     if (idx >= 0 && (/[a-z0-9]/i.test(p.charAt(idx - 1)) ||
         /[a-z0-9]/i.test(p.charAt(idx + k.length)))) return false;
