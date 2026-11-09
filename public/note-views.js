@@ -356,8 +356,8 @@ function readLine(s){
   var mp = {times:"×",div:"÷",pm:"±",Delta:"Δ",delta:"δ",approx:"≈",neq:"≠",le:"≤",ge:"≥",
             cdot:"·",percent:"%",sqrt:"√",sum:"Σ",infty:"∞",left:"",right:"",text:""};
   t = t.replace(/\\([a-zA-Z]+)/g, function(all, k){ return Object.prototype.hasOwnProperty.call(mp,k) ? mp[k] : ""; });
-  /* 只去掉公式定界符：金额 $200 和单元格引用 $A$1 要保留 */
-  t = t.replace(/[{}]|\$(?!\d|[A-Z]{1,3}\$?\d)/g," ").replace(/\s+/g," ").trim();
+  /* 只去掉公式定界符：金额 $200、单元格引用 $A$1、「（$）」要保留 */
+  t = t.replace(/[{}]|\$(?!\d|[A-Z]{1,3}\$?\d|\s*[）)])/g," ").replace(/\s+/g," ").trim();
   return t;
 }
 /* 课件页标题：把「✏️ PPT 第 19 页 · Example 1: The midpoint formula · Lecture…」提炼成概念名 */
