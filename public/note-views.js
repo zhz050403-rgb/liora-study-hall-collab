@@ -428,6 +428,44 @@ function pickPoints(lines, skip){
   scored.sort(function(a,b){ return b.s - a.s || a.i - b.i; });
   return scored.slice(0, 5).sort(function(a,b){ return a.i - b.i; }).map(function(x){ return x.t; });
 }
+/* 把双语文本拆成英文 / 中文两部分，以句子为单位：
+   中文为主的句子整句进中文（保留其中的英文术语、数字），
+   英文为主的句子去掉夹注的中文后进英文。 */
+var HAN_GLOSS_RE = /[（(][^（）()A-Za-z0-9]*[一-鿿][^（）()A-Za-z0-9]*[）)]/g;
+function isCnSentence(s){
+  var bare = s.replace(HAN_GLOSS_RE, " ");   /* 英文句里的（中文夹注）不算中文句 */
+  var han = (bare.match(/[一-鿿]/g) || []).length;
+  var latin = (bare.match(/[A-Za-z]/g) || []).length;
+  return han >= 2 && han * 4 >= latin;
+}
+function dropHan(s){
+  var t = s.replace(HAN_GLOSS_RE, " ")
+           .replace(/[一-鿿　-〿＀-￯]/g, " ")
+           .replace(/\s+([,.;:!?])/g, "$1").replace(/\s+/g, " ").trim();
+  return /[A-Za-z0-9]/.test(t) ? t : "";
+}
+function splitLang(text){
+  var en = [], cn = [];
+  String(text == null ? "" : text)
+    .replace(/([。！？；]+)/g, "$1\n")
+    .replace(/([.!?;])\s+(?=\S)/g, "$1\n")
+    .replace(/([.!?])(?=[一-鿿])/g, "$1\n")
+    .split("\n").forEach(function(raw){
+      var s = raw.trim();
+      if(!s) return;
+      /* 一句里英文在前、译文在后且没有句号隔开：从第一个汉字处拆开 */
+      var at = s.search(/[一-鿿]/), head = at > 0 ? s.slice(0, at) : "";
+      if((head.match(/[A-Za-z]/g) || []).length >= 20 && isCnSentence(s.slice(at))){
+        var h = dropHan(head); if(h) en.push(h);
+        cn.push(s.slice(at));
+      } else if(isCnSentence(s)){
+        cn.push(s);
+      } else {
+        var e = dropHan(s); if(e) en.push(e);
+      }
+    });
+  return { en:en.join(" "), cn:cn.join(" ") };
+}
 /* 把一周整理成复习提纲：导语 + 概念列表 + 易错点 */
 function outlineWeek(w){
   var info = secMarks(w.graphicHtml || w.notesHtml || "");
@@ -486,13 +524,10 @@ function outlineWeek(w){
     /* 名称：英文名 / 中文名 */
     var nm = splitName(tp.label);
     tp.enName = nm.en; tp.cnName = nm.cn;
-    /* 定义：英文定义 / 中文定义。
-       逐行按「文种分段」：一行里既有英文又有中文时，
-       英文片段进英文定义、中文片段进中文定义，
-       解决双语同行导致中文定义整段丢失的问题。 */
-    var CJK_RE = /[一-鿿\u3000-\u303F\uFF00-\uFFEF]/g;
-    function enPart(s){ return String(s).replace(CJK_RE," ").replace(/\s+/g," ").trim(); }
-    function cnPart(s){ return String(s).replace(/[^\s一-鿿\u3000-\u303F\uFF00-\uFFEF]/g,"").replace(/\s+/g,"").trim(); }
+    /* 定义：英文定义 / 中文定义。按句子判断文种（见 splitLang）：
+       中文句子里的英文术语、数字、金额必须原样保留，否则会出现「赊销（）时卖方开出」。 */
+    function enPart(s){ return splitLang(s).en; }
+    function cnPart(s){ return splitLang(s).cn; }
     var enLines = [], cnLines = [];
     L.forEach(function(t){
       var e = enPart(t), c = cnPart(t);
