@@ -719,7 +719,8 @@ function ppArchiveAll(){
 function ppArchiveSave(j){ try { localStorage.setItem(PP_ARCHIVE_KEY, JSON.stringify(j)); } catch (e) {} }
 function ppQBank(){ return window.QUESTION_BANK || null; }
 function ppQWeekLabel(q){
-  var t = q.term === "term1" ? "T1" : (q.term === "term2" ? "T2" : q.term);
+  var n = /^term(\d+)/.exec(q.term);   /* term1x 是 Term 1 的补充周，主站已并入 Term 1 */
+  var t = n ? "T" + n[1] : q.term;
   return q.cn + " · " + t + " W" + q.week;
 }
 function ppQWeekOptions(){
