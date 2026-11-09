@@ -668,9 +668,9 @@ function buildSummary(){
     '<button type="button" class="nv-mini" data-sum-print="1">🖨 打印 / 存 PDF</button></div>';
   html += '<h2 class="sum-unit">'+esc(unitName)+'<span>本单元复习提纲 / Unit Study Outline</span></h2>';
   html += '<div class="sum-top">' +
-    '<div class="sum-stat"><b>'+o.topics.length+'</b> 个知识点</div>' +
+    '<div class="sum-stat" title="按概念合并后的提纲条数，与文字版的知识点数统计口径不同"><b>'+o.topics.length+'</b> 条提纲</div>' +
     '<div class="sum-stat"><b>'+o.pitfalls.length+'</b> 条易错点</div>' +
-    '<div class="sum-stat sum-hint">每个知识点：英文名 → 中文名 → 英文定义 → 中文定义 → 公式</div></div>';
+    '<div class="sum-stat sum-hint">每条提纲：英文名 → 中文名 → 英文定义 → 中文定义 → 公式</div></div>';
   html += '<div class="sum-search"><input type="text" data-sum-search="1" placeholder="🔍 搜索本单元的概念、定义与要点…" autocomplete="off"></div>';
   html += '<div class="sum-list-wrap" data-sum-unit="'+w.num+'"><div class="sum-paper"><div class="sum-list">';
   if(o.intro) html += '<div class="sum-intro">'+esc(o.intro)+'</div>';
