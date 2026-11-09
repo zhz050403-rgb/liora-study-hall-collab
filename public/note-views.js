@@ -42,14 +42,21 @@ function fracLine(n, d){
   n = String(n).trim(); d = String(d).trim();
   var pn = n.replace(/<[^>]+>/g, ""), pd = d.replace(/<[^>]+>/g, "");
   var top = fracEnclosed(pn) || !fracHasOperator(pn) ? n : "(" + n + ")";
-  var bottom = fracEnclosed(pd) || /^(?:[A-Za-z]|\d+(?:\.\d+)?)$/.test(pd) ? d : "(" + d + ")";
+  var bottom = fracEnclosed(pd) || /^(?:[A-Za-z]|\d+(?:\.\d+)?|\(.*)$/.test(pd) && !fracHasOperator(pd) ? d : "(" + d + ")";
   return top + "/" + bottom;
 }
+function fracMatch(m, n, d){ return fracLine(n, d); }
+/* 先展开最内层分数，分子分母里嵌套分数时分数线才不会丢 */
+var INNER_FRAC_RE = /<span class=["']frac["']>\s*<span class=["']n["']>((?:(?!<span)[\s\S])*?)<\/span>\s*<span class=["']d["']>((?:(?!<span)[\s\S])*?)<\/span>\s*<\/span>/gi;
+function flattenFractions(s){
+  for(var i = 0, prev; i < 6 && s !== prev; i++){ prev = s; s = s.replace(INNER_FRAC_RE, fracMatch); }
+  return s;
+}
 function mathText(s){
-  return String(s || "")
+  return flattenFractions(String(s || ""))
     .replace(/<sup\b[^>]*>([\s\S]*?)<\/sup>/gi, "^($1)")
     .replace(/<sub\b[^>]*>([\s\S]*?)<\/sub>/gi, "_($1)")
-    .replace(/<span class=["']frac["']>\s*<span class=["']n["']>([\s\S]*?)<\/span>\s*<span class=["']d["']>([\s\S]*?)<\/span>\s*<\/span>/gi, function(m, n, d){ return fracLine(n, d); })
+    .replace(/<span class=["']frac["']>\s*<span class=["']n["']>([\s\S]*?)<\/span>\s*<span class=["']d["']>([\s\S]*?)<\/span>\s*<\/span>/gi, fracMatch)
     .replace(/\\(?:dfrac|frac)\s*\{([^{}]*)\}\s*\{([^{}]*)\}/g, function(m, n, d){ return fracLine(n, d); })
     .replace(/([_^])\{([^{}]*)\}/g, "$1($2)");
 }
@@ -206,13 +213,13 @@ function pickFallbackKey(p){
    「Marginal Private Cost (MPC) 边际私人成本」只挖 Marginal Private Cost */
 function clozeKey(k){
   k = String(k || "").trim().replace(/[：:，,。；;、\s]+$/, "");
-  var m = /^([A-Za-z][A-Za-z'’\- ]*?[A-Za-z])\s*(?:[（(]|[一-鿿]).*$/.exec(k) ||
+  var m = /^([A-Za-z][A-Za-z'’&\- ]*?[A-Za-z])\s*(?:[（(]|[一-鿿]).*$/.exec(k) ||
           /^([一-鿿]{2,12})\s*[（(].*$/.exec(k);
   return m ? m[1] : k;
 }
 /* 题号、小问编号、分值不是知识点，不能当答案 */
 function isClozeLabel(k){
-  return /^(?:[（(]?[a-z][)）]|[（(]\d|Q\d|\d+\s*[.)、])|\bmarks?\b|\d\s*分[)）]?$/i.test(k);
+  return /^(?:[（(]?[a-z][)）]|[（(]\d|Q\d|\d+\s*[.)、])|\bmarks?\b|\d\s*分[)）]?$|\s\/\s|\.$/i.test(k);
 }
 function maskRepeats(after, k){
   var quoted = k.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
@@ -349,7 +356,8 @@ function readLine(s){
   var mp = {times:"×",div:"÷",pm:"±",Delta:"Δ",delta:"δ",approx:"≈",neq:"≠",le:"≤",ge:"≥",
             cdot:"·",percent:"%",sqrt:"√",sum:"Σ",infty:"∞",left:"",right:"",text:""};
   t = t.replace(/\\([a-zA-Z]+)/g, function(all, k){ return Object.prototype.hasOwnProperty.call(mp,k) ? mp[k] : ""; });
-  t = t.replace(/[{}$]/g," ").replace(/\s+/g," ").trim();
+  /* 只去掉公式定界符：金额 $200 和单元格引用 $A$1 要保留 */
+  t = t.replace(/[{}]|\$(?!\d|[A-Z]{1,3}\$?\d)/g," ").replace(/\s+/g," ").trim();
   return t;
 }
 /* 课件页标题：把「✏️ PPT 第 19 页 · Example 1: The midpoint formula · Lecture…」提炼成概念名 */
