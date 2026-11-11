@@ -124,6 +124,8 @@ body {
   .font-ctrl .fc-btn { padding:3px 7px; }
   .cb-mode-ctrl { left:138px !important; right:auto !important; bottom:14px !important; padding:4px 6px; }
   .cb-mode-ctrl button { padding:3px 8px; }
+  /* 每日简报等页面没有字号控件时，不要给它留空位 */
+  body:not(:has(#font-ctrl)) .cb-mode-ctrl { left:8px !important; }
   #app { padding-bottom: 84px !important; }
 }
 
