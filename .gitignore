@@ -55,3 +55,4 @@
 !checks/server-regression.cjs
 !notes/
 !notes/**
+!checks/notes-pipeline.cjs
