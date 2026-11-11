@@ -53,3 +53,5 @@
 !public/todo.html
 !public/blocks/guide-link.js
 !checks/server-regression.cjs
+!notes/
+!notes/**

@@ -1,0 +1,152 @@
+<h4 class="kp-h">本周导览 · 怎么自学这一周</h4>
+<p>本周把前五周学过的函数用到实际问题上：L16 用一次、二次函数和双曲线解决保本点、最大面积、供需平衡，L17 用指数和对数函数描述学习曲线、遗忘和人口增长，L18 是 Term 1 前半段的综合复习。三讲共 31 道课件例题，全部按原题讲解。本周有课堂测验。</p>
+<div class="callout blue"><strong>应用题四步</strong>：①<strong>设变量并写单位</strong>（x 千部手机、t 天……）；②<strong>写出函数或方程</strong>；③<strong>解</strong>，并检查解是否落在题目给的范围内；④<strong>用一句话回答问题</strong>，带上单位和题目要求的精度。最后一步最容易丢分。</div>
+
+<h4 class="kp-h">一次、二次函数与双曲线的应用（Linear, Quadratic and Hyperbola）</h4>
+<p class="kp-src">L16 Application of Functions and Graphs 1.pdf · PDF p1–5</p>
+<div class="callout blue"><strong>概念</strong><br>
+<strong>成本</strong> C(x) = 固定成本（fixed costs）+ 单位变动成本 × 数量。<br>
+<strong>收入</strong> R(x) = 单价 × 数量（单价随数量变化时，R(x) 是二次函数）。<br>
+<strong>利润</strong> P(x) = R(x) − C(x)。<br>
+<strong>保本点</strong>（breakeven point）：R(x) = C(x) 时的产量，也就是两条图像的交点；R 在 C 上方的区间是盈利区。<br>
+<strong>二次函数的最值</strong>：y = ax<sup>2</sup> + bx + c 在 x = −<span class="frac"><span class="n">b</span><span class="d">2a</span></span> 处取得；a &lt; 0 时是最大值。<br>
+<strong>供需平衡</strong>：供给价格 = 需求价格时的价格和数量。</div>
+
+<p class="c-blue"><strong>例 1（L16 Ex 1）</strong> A rectangle is 6 cm longer than it is wide. Find its dimensions if its perimeter is 64 cm.</p>
+<details><summary>看解答</summary><p>设宽 x cm，则长 x + 6 cm。周长 2[x + (x + 6)] = 64，4x + 12 = 64，x = 13。<br>长 19 cm，宽 13 cm。检查：2 × (13 + 19) = 64 ✓。<br>Answer: 13 cm × 19 cm</p></details>
+
+<p class="c-blue"><strong>例 2（L16 Ex 2）</strong> Fixed costs to publish a novel are $55 000 and variable costs are $2 per copy. If the novel sells to distributors for $12 per copy, find the breakeven point.</p>
+<details><summary>看解答</summary><p>设印 x 本。C(x) = 55 000 + 2x，R(x) = 12x。<br>保本：12x = 55 000 + 2x，10x = 55 000，x = 5 500。<br>每卖一本多赚 12 − 2 = 10 元，要卖 5 500 本才能收回 55 000 元的固定成本。<br>Answer: 5 500 copies</p></details>
+
+<p class="c-blue"><strong>例 3（L16 Ex 3）</strong> When x thousand phones are produced each month, cost and revenue (thousands of dollars) are C(x) = 160 + 10x and R(x) = −1.25(x − 20)<sup>2</sup> + 500. (a) Sketch C and R for 5 ≤ x ≤ 40. (b) Mark the breakeven point. (c) Estimate the breakeven point from the graph, then calculate it algebraically.</p>
+<!--FIG:l16ex3-->
+<details><summary>看解答</summary><p>(a)(b) C 是直线，过 (5, 210)、(40, 560)；R 是开口向下的抛物线，顶点 (20, 500)，R(5) = 218.75，R(40) = 0。<br>
+(c) 读图约在 x ≈ 27。代数解：160 + 10x = −1.25(x − 20)<sup>2</sup> + 500，展开整理得 −1.25x<sup>2</sup> + 40x − 160 = 0，两边乘 −0.8：x<sup>2</sup> − 32x + 128 = 0，x = 16 ± √128 = 16 ± 8√2。<br>
+x ≈ 4.69 不在 5 ≤ x ≤ 40 内，舍去；x ≈ 27.31。此时 C = R ≈ 433.1（千元）。<br>
+所以每月约生产 27 300 部时保本；在 5 到 27.3 千部之间 R &gt; C，是盈利区。<br>Answer: x ≈ 27.3 thousand phones（≈ $433 100）</p></details>
+
+<p class="c-blue"><strong>例 4（L16 Ex 4）</strong> A farmer forms a rectangular enclosure using the wall of his house as one side and 20 m of fencing for the other 3 sides. The width of the enclosure (perpendicular to the house) is x m. (a) Write a formula for the area A(x). (b) Graph A(x). (c) Find the maximum possible area.</p>
+<!--FIG:l16ex4-->
+<details><summary>看解答</summary><p>(a) 两条宽各 x m，剩下的 20 − 2x m 是与墙平行的长。A(x) = x(20 − 2x) = 20x − 2x<sup>2</sup>，且 0 &lt; x &lt; 10（长和宽都要是正数）。<br>
+(b) 开口向下的抛物线，与 x 轴交于 0 和 10，顶点在中间。<br>
+(c) x = −<span class="frac"><span class="n">20</span><span class="d">2 × (−2)</span></span> = 5，A(5) = 5 × 10 = 50。<br>Answer: 50 m²（宽 5 m、长 10 m）</p></details>
+
+<p class="c-blue"><strong>例 5（L16 Ex 5）</strong> A company produces and sells x thousand notebooks per year, with C(x) = 4320 + 146x and R(x) = x(1190 − 36x) (thousands of dollars). Find the number of notebooks that must be produced and sold yearly if a profit is to be made.</p>
+<!--FIG:l16ex5-->
+<details><summary>看解答</summary><p>利润 P(x) = R(x) − C(x) = 1190x − 36x<sup>2</sup> − 4320 − 146x = −36x<sup>2</sup> + 1044x − 4320。<br>
+要盈利：P(x) &gt; 0，即 36x<sup>2</sup> − 1044x + 4320 &lt; 0，两边除以 36：x<sup>2</sup> − 29x + 120 &lt; 0，(x − 5)(x − 24) &lt; 0。<br>
+开口向上的抛物线在两根之间为负：5 &lt; x &lt; 24。<br>Answer: between 5 000 and 24 000 notebooks per year</p></details>
+
+<p class="c-blue"><strong>例 6（L16 Ex 6）</strong> Weekly supply and demand equations for cameras are p = <span class="frac"><span class="n">x</span><span class="d">80</span></span> − <span class="frac"><span class="n">1</span><span class="d">20</span></span> (supply) and p = <span class="frac"><span class="n">1264</span><span class="d">x</span></span> (demand). Find the price at which supply equals demand.</p>
+<!--FIG:l16ex6-->
+<details><summary>看解答</summary><p>令两个价格相等：<span class="frac"><span class="n">x</span><span class="d">80</span></span> − <span class="frac"><span class="n">1</span><span class="d">20</span></span> = <span class="frac"><span class="n">1264</span><span class="d">x</span></span>。两边乘 80x：x<sup>2</sup> − 4x = 101 120，x<sup>2</sup> − 4x − 101 120 = 0。<br>
+x = <span class="frac"><span class="n">4 ± √(16 + 404 480)</span><span class="d">2</span></span> = <span class="frac"><span class="n">4 ± 636</span><span class="d">2</span></span>，取正数 x = 320。<br>
+价格 p = <span class="frac"><span class="n">1264</span><span class="d">320</span></span> = 3.95。<br>Answer: $3.95（此时每周 320 台）</p></details>
+
+<div class="callout red"><strong>易错</strong><br>
+① 例 3 两个根都写上：x ≈ 4.69 不在题目给的 5 ≤ x ≤ 40 范围内，要说明舍去。<br>
+② 单位没换：x 是「千部」、钱是「千元」，最后回答要换回实际数量。<br>
+③ 例 4 把 x 当成与墙平行的一边：先看清图上 x 标在哪条边，再决定是 2x 还是 x 用掉篱笆。<br>
+④ 例 5 写成 x &lt; 5 或 x &gt; 24：先确认要的是 P(x) &gt; 0，除以负数时不等号要反向。</div>
+<div class="callout blue"><strong>常见疑惑</strong><br>
+<strong>问：保本点要写数量还是金额？</strong> 一般写数量（x 的值），题目没限制时可以把对应的收入或成本一起写上，更完整。<br>
+<strong>问：例 4 能不能不用公式求最大值？</strong> 可以：抛物线和 x 轴交于 0 和 10，顶点在两根正中间，x = 5。<br>
+<strong>问：例 6 为什么舍掉负根？</strong> x 是数量，必须为正。</div>
+
+<h4 class="kp-h">指数与对数函数的应用（Exponential and Logarithmic）</h4>
+<p class="kp-src">L17 Application of Functions and Graphs 2 (Exp and Log).pdf · PDF p1–5</p>
+<div class="callout blue"><strong>概念</strong><br>
+<strong>指数增长</strong>（exponential growth）：Q = Q<sub>0</sub>e<sup>kt</sup>；<strong>指数衰减</strong>（exponential decay）：Q = Q<sub>0</sub>e<sup>−kt</sup>（Q<sub>0</sub>、k 都是正数）。<br>
+Q<sub>0</sub> 是 <strong>t = 0 时的初始值</strong>（initial value），也就是图像的 y 截距；k 是<strong>增长（衰减）常数</strong>，k 越大，增长或衰减越快，图像越陡。<br>
+「有上限」的模型 N = A(1 − e<sup>−kt</sup>)：从 0 开始增长，越来越接近 A，A 是水平渐近线，永远到不了。<br>
+解 e<sup>(…)</sup> = 数 时两边取 ln；解 ln(…) = 数 时两边取 e 的幂。</div>
+<!--FIG:growth-->
+
+<p class="c-blue"><strong>例 1（L17 Ex 1）</strong> The learning curve for assembling circuit boards is N = 40(1 − e<sup>−0.12t</sup>), t ≥ 0, where N is boards assembled per day after t days of training. (a) Graph this function. (b) After how many days would an employee assemble 10 boards per day? (c) Find the maximum number of boards per day.</p>
+<!--FIG:l17ex1-->
+<details><summary>看解答</summary><p>(a) t = 0 时 N = 0；t 越大 e<sup>−0.12t</sup> 越接近 0，N 越接近 40，所以 N = 40 是水平渐近线。<br>
+(b) 10 = 40(1 − e<sup>−0.12t</sup>)，1 − e<sup>−0.12t</sup> = 0.25，e<sup>−0.12t</sup> = 0.75，−0.12t = ln 0.75，t = <span class="frac"><span class="n">ln 0.75</span><span class="d">−0.12</span></span> ≈ 2.40。<br>
+(c) N 永远小于 40，但可以无限接近，所以最多约 40 块。<br>Answer: (b) about 2.4 days (c) 40 boards per day</p></details>
+
+<p class="c-blue"><strong>例 2（L17 Ex 2）</strong> A memory model is R = 84 − 25 ln t, t ≥ 1, where R is the average percentage recall and t is the time in hours since studying the picture. (a) Find R after 1 hour. (b) After 10 hours. (c) Find the time for recall to be zero. (d) Sketch the recall function.</p>
+<!--FIG:l17ex2-->
+<details><summary>看解答</summary><p>(a) ln 1 = 0，R = 84%。<br>(b) R = 84 − 25 ln 10 ≈ 84 − 57.56 = 26.4%。<br>(c) 0 = 84 − 25 ln t，ln t = 3.36，t = e<sup>3.36</sup> ≈ 28.8 小时。<br>(d) 从 (1, 84) 开始，先快后慢地下降，到 (28.8, 0)。<br>Answer: 84%；26.4%；about 28.8 hours</p></details>
+
+<p class="c-blue"><strong>例 3（L17 Ex 3）</strong> The population of a town after t years is P = 2000e<sup>0.2t</sup>. Find: (a) the initial population (b) the population after 4 years (c) the time taken for the population to reach 10 000.</p>
+<details><summary>看解答</summary><p>(a) t = 0：P = 2000。<br>(b) P = 2000e<sup>0.8</sup> ≈ 4451。<br>(c) 10 000 = 2000e<sup>0.2t</sup>，e<sup>0.2t</sup> = 5，0.2t = ln 5，t = 5 ln 5 ≈ 8.05 年。<br>Answer: 2000；about 4451；about 8.05 years</p></details>
+
+<p class="c-blue"><strong>例 4（L17 Ex 4）</strong> Australia's population grows exponentially at an annual rate of 1.1%. In May 2013 it reached 23 million. (a) Write a formula for P (million) in terms of t, years after May 2013. (b) Estimate the population in May 2050, to the nearest hundred thousand. (c) The population doubles every x years. Find x.</p>
+<details><summary>看解答</summary><p>(a) 增长率 1.1% 即 k = 0.011，Q<sub>0</sub> = 23：P = 23e<sup>0.011t</sup>。<br>
+(b) 2050 − 2013 = 37 年：P = 23e<sup>0.407</sup> ≈ 34.55，精确到十万即 34.6 million。<br>
+(c) 翻倍：46 = 23e<sup>0.011x</sup>，e<sup>0.011x</sup> = 2，x = <span class="frac"><span class="n">ln 2</span><span class="d">0.011</span></span> ≈ 63.0 年。翻倍时间与起始人口无关。<br>Answer: P = 23e^(0.011t)；34.6 million；about 63 years</p></details>
+
+<div class="callout red"><strong>易错</strong><br>
+① 把 1.1% 写成 k = 1.1：百分数要化成小数 0.011。<br>
+② 例 4 (b) 只写 34.554：题目要求精确到十万（nearest hundred thousand），应写 34.6 million。<br>
+③ 例 1 (c) 答「41 块」或「无穷」：N 有上限 40，渐近线就是答案。<br>
+④ 解 e<sup>−0.12t</sup> = 0.75 时把负号丢掉：ln 0.75 是负数，除以 −0.12 后才得到正的 t。</div>
+<div class="callout blue"><strong>常见疑惑</strong><br>
+<strong>问：Q<sub>0</sub> 和 k 在图上分别是什么？</strong> Q<sub>0</sub> 是曲线与纵轴的交点（t = 0）；k 决定曲线多陡，k 越大越陡。<br>
+<strong>问：例 2 为什么规定 t ≥ 1？</strong> t 接近 0 时 ln t → −∞，R 会超过 100%，模型失去意义，所以只在 t ≥ 1 时使用。</div>
+
+<h4 class="kp-h">Term 1 前半段综合复习（Review）</h4>
+<p class="kp-src">L18_Review.pdf · PDF p1–5</p>
+<div class="callout blue"><strong>本讲覆盖</strong>：定义域（第 5 周）、图像平移（第 2 周）、绝对值与双曲线（第 3 周）、二次不等式（第 3 周）、反函数与对数法则（第 4 周）、指数与对数图像（第 4–5 周）、分段函数（第 5 周）、指数模型（本周）。哪道题做不出，就回到对应那一周的笔记。</div>
+
+<p class="c-blue"><strong>例 1（L18 Ex 1）</strong> Find the domain of (a) y = 7 − 5x (b) y = <span class="frac"><span class="n">6</span><span class="d">7 − 5x</span></span> (c) y = √(7 − 5x)</p>
+<details><summary>看解答</summary><p>(a) 一次函数没有限制：全体实数。<br>(b) 分母不为 0：7 − 5x ≠ 0，x ≠ <span class="frac"><span class="n">7</span><span class="d">5</span></span>。<br>(c) 根号里 ≥ 0：7 − 5x ≥ 0，x ≤ <span class="frac"><span class="n">7</span><span class="d">5</span></span>（除以 −5 时不等号反向）。<br>Answer: all real x；x ≠ 7/5；x ≤ 7/5</p></details>
+
+<p class="c-blue"><strong>例 2（L18 Ex 2）</strong> The graph of y = f(x) passes through (−2, 0), (−1, 2) (a turning point), (0, 0) and (1, 0). On the same axes sketch y = f(x + 1) − 2.</p>
+<!--FIG:l18ex2-->
+<details><summary>看解答</summary><p>f(x + 1) 是<strong>左移 1</strong>，− 2 是<strong>下移 2</strong>。每个点 (a, b) 变成 (a − 1, b − 2)：<br>(−2, 0) → (−3, −2)，(−1, 2) → (−2, 0)，(0, 0) → (−1, −2)，(1, 0) → (0, −2)。按新点画出同样的形状。</p></details>
+
+<p class="c-blue"><strong>例 3（L18 Ex 3）</strong> Sketch, showing essential features: (a) y = |2x + 1| (b) y = <span class="frac"><span class="n">3</span><span class="d">x − 1</span></span> − 2</p>
+<!--FIG:l18ex3-->
+<details><summary>看解答</summary><p>(a) V 形，顶点在 2x + 1 = 0 即 (−<span class="frac"><span class="n">1</span><span class="d">2</span></span>, 0)；y 截距 1；两边斜率 ±2。<br>
+(b) 竖直渐近线 x = 1，水平渐近线 y = −2；x 截距：<span class="frac"><span class="n">3</span><span class="d">x − 1</span></span> = 2，x = <span class="frac"><span class="n">5</span><span class="d">2</span></span>；y 截距：x = 0 时 y = −3 − 2 = −5。</p></details>
+
+<p class="c-blue"><strong>例 4（L18 Ex 4）</strong> Solve the inequality 3x<sup>2</sup> − 7x − 10 &gt; 0.</p>
+<details><summary>看解答</summary><p>因式分解：(3x − 10)(x + 1) &gt; 0，两根 x = −1 和 x = <span class="frac"><span class="n">10</span><span class="d">3</span></span>。开口向上的抛物线在两根<strong>外侧</strong>为正。<br>Answer: x &lt; −1 or x &gt; 10/3</p></details>
+
+<p class="c-blue"><strong>例 5（L18 Ex 5）</strong> Find the inverse function of (a) y = 3x − 7 (b) y = <span class="frac"><span class="n">3</span><span class="d">√(x + 1)</span></span> − 2</p>
+<details><summary>看解答</summary><p>(a) 对调：x = 3y − 7，y = <span class="frac"><span class="n">x + 7</span><span class="d">3</span></span>。<br>
+(b) 原函数定义域 x &gt; −1，值域 y &gt; −2。对调：x = <span class="frac"><span class="n">3</span><span class="d">√(y + 1)</span></span> − 2，√(y + 1) = <span class="frac"><span class="n">3</span><span class="d">x + 2</span></span>，y = <span class="frac"><span class="n">9</span><span class="d">(x + 2)<sup>2</sup></span></span> − 1。反函数的定义域是原函数的值域：x &gt; −2。<br>Answer: (x + 7)/3；y = 9/(x + 2)² − 1, x &gt; −2</p></details>
+
+<p class="c-blue"><strong>例 6（L18 Ex 6）</strong> If log<sub>a</sub> 4 = 1.205 and log<sub>a</sub> 7 = 1.692, find (a) log<sub>a</sub> 28 (b) log<sub>a</sub> 49 (c) log<sub>a</sub> 2.</p>
+<details><summary>看解答</summary><p>(a) 28 = 4 × 7：1.205 + 1.692 = 2.897。<br>(b) 49 = 7<sup>2</sup>：2 × 1.692 = 3.384。<br>(c) 2 = 4<sup><span class="frac"><span class="n">1</span><span class="d">2</span></span></sup>：<span class="frac"><span class="n">1</span><span class="d">2</span></span> × 1.205 = 0.6025。<br>Answer: 2.897；3.384；0.6025</p></details>
+
+<p class="c-blue"><strong>例 7（L18 Ex 7）</strong> Sketch (a) y = 1 − e<sup>2x</sup> (b) y = |ln(3 − x)|</p>
+<!--FIG:l18ex7-->
+<details><summary>看解答</summary><p>(a) e<sup>2x</sup> 关于 x 轴翻折再上移 1：水平渐近线 y = 1（从下方靠近），经过原点，递减。<br>
+(b) 先画 ln(3 − x)：定义域 x &lt; 3，渐近线 x = 3，x 截距 (2, 0)，y 截距 ln 3 ≈ 1.10。再把 x 轴下方的部分（2 &lt; x &lt; 3）翻到上方。</p></details>
+
+<p class="c-blue"><strong>例 8（L18 Ex 8）</strong> f(x) = x + 5 if x &lt; −2; 1 − x if −2 ≤ x ≤ 1; x<sup>2</sup> if x &gt; 1. (a) Sketch y = f(x). (b) Find k for which f(x) = k has exactly (i) one solution (ii) two solutions.</p>
+<!--FIG:l18ex8-->
+<details><summary>看解答</summary><p>(a) 左段 y = x + 5 一直升到 (−2, 3)（空心）；中段 y = 1 − x 从 (−2, 3)（实心）降到 (1, 0)（实心），所以在 x = −2 处连续；右段 y = x<sup>2</sup> 从 (1, 1)（空心）开始上升，在 x = 1 处断开。<br>
+(b) 各段取值：左段 y &lt; 3；中段 0 ≤ y ≤ 3；右段 y &gt; 1。用水平线 y = k 扫：<br>
+k &lt; 0：只碰左段，1 个；k = 0 和 0 &lt; k ≤ 1：左段、中段各 1 个，共 2 个；1 &lt; k &lt; 3：三段各 1 个，共 3 个；k = 3：中段的 (−2, 3) 和右段各 1 个，共 2 个；k &gt; 3：只碰右段，1 个。<br>Answer: (i) k &lt; 0 or k &gt; 3 (ii) 0 ≤ k ≤ 1 or k = 3</p></details>
+
+<p class="c-blue"><strong>例 9（L18 Ex 9）</strong> A drug concentration (mg/L) is C(t) = 2(1 − e<sup>−0.2t</sup>), t hours after administration. (a) Calculate the concentration after 4 hours. (b) Find the time for the concentration to reach 1.5 mg/L. (c) Sketch C(t) for t ≥ 0.</p>
+<!--FIG:l18ex9-->
+<details><summary>看解答</summary><p>(a) C(4) = 2(1 − e<sup>−0.8</sup>) ≈ 2 × 0.5507 ≈ 1.10 mg/L。<br>(b) 1.5 = 2(1 − e<sup>−0.2t</sup>)，e<sup>−0.2t</sup> = 0.25，t = <span class="frac"><span class="n">ln 4</span><span class="d">0.2</span></span> ≈ 6.93 小时。<br>(c) 和 L17 例 1 同一类：从 0 开始上升，水平渐近线 C = 2。<br>Answer: about 1.10 mg/L；about 6.93 hours</p></details>
+
+<div class="callout red"><strong>易错</strong><br>
+① 例 1 (c) 写成 x ≥ <span class="frac"><span class="n">7</span><span class="d">5</span></span>：除以负数要变号。<br>
+② 例 2 把 f(x + 1) 当成右移。<br>
+③ 例 5 (b) 忘写反函数的定义域：原函数的值域就是反函数的定义域。<br>
+④ 例 6 想先求出 a 再算：题目只给了两个对数值，直接用对数法则即可。2 = √4，所以 log<sub>a</sub> 2 = <span class="frac"><span class="n">1</span><span class="d">2</span></span> log<sub>a</sub> 4。<br>
+⑤ 例 8 (b) 漏掉 k = 3：分界点 (−2, 3) 在中段上是实心点，k = 3 时中段有解。</div>
+<div class="callout blue"><strong>常见疑惑</strong><br>
+<strong>问：复习课怎么用最有效？</strong> 把 L18 的 9 道题限时做一遍（遮住解答），做错的题按上面「本讲覆盖」找到对应那一周，重读那一周的「易错」。<br>
+<strong>问：例 8 (b) 要不要写三个解的情况？</strong> 题目只问一个和两个，答这两问即可；但把所有 k 都扫一遍，能确认没有遗漏。</div>
+
+<h4 class="kp-h">本周解题流程（自测清单）</h4>
+<table class="kp-tbl"><thead><tr><th>题型</th><th>先做什么</th><th>对应例题</th></tr></thead><tbody>
+<tr><td>保本点</td><td>写出 C(x)、R(x)，令 R = C；检查解是否在给定范围</td><td>L16 例 2、3</td></tr>
+<tr><td>盈利区间</td><td>P(x) = R(x) − C(x) &gt; 0，解二次不等式</td><td>L16 例 5</td></tr>
+<tr><td>最大面积 / 最大利润</td><td>写成二次函数，在 x = −b/(2a) 取最值，注意定义域</td><td>L16 例 4</td></tr>
+<tr><td>供需平衡</td><td>两个价格相等，解方程，舍去不合理的根</td><td>L16 例 6</td></tr>
+<tr><td>指数、对数模型</td><td>代 t = 0 求初始值；解 e 的方程取 ln；看渐近线找上限</td><td>L17 例 1–4、L18 例 9</td></tr>
+<tr><td>综合复习</td><td>定义域、平移、反函数、对数法则、分段函数</td><td>L18 例 1–8</td></tr>
+</tbody></table>
+<p>课件指定练习：Tutorial Guide 1-8（L16）、2-5（L17）。</p>
