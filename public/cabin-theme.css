@@ -427,7 +427,7 @@ a:hover{color:var(--navy-900)}
 .extra-index{background:#fff;border:1px solid #d8e4f2;border-radius:16px;box-shadow:var(--shadow);overflow:hidden;position:sticky;top:92px}
 .extra-index h3{font:700 16px var(--serif);color:#173860;padding:15px 16px 12px;border-bottom:1px solid #e4edf7}
 .extra-index .ei-group{padding:10px 10px 2px}
-.extra-index .ei-cap{font-size:10.5px;letter-spacing:.14em;color:#9aabc0;padding:4px 8px}
+.extra-index .ei-cap{font-size:12px;letter-spacing:.14em;color:#9aabc0;padding:4px 8px}
 .extra-index a{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:8px 10px;border-radius:9px;color:#3c5472;font-size:13px}
 .extra-index a:hover{background:#eef6ff;color:#1c4375;text-decoration:none}
 .extra-index a.on{background:#173860;color:#fff}
@@ -468,7 +468,7 @@ a:hover{color:var(--navy-900)}
 .extra-index .ei-dom-head{font-weight:600}
 .extra-index .ei-dom-subs{display:flex;flex-direction:column;padding:1px 0 5px 14px}
 .extra-index .ei-dom-subs a{font-size:12.5px;padding:6px 10px}
-.extra-index .ei-dom-subs a .n{font-size:10.5px}
+.extra-index .ei-dom-subs a .n{font-size:12px}
 
 /* 领域速览 tile 条 */
 .domain-strip{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 16px}
@@ -489,7 +489,7 @@ a:hover{color:var(--navy-900)}
 
 /* 模块卡片细分领域徽章 */
 .module-body .m-top{display:flex;align-items:flex-start;justify-content:space-between;gap:8px}
-.module-body .m-domain{flex-shrink:0;margin-top:2px;padding:2px 9px;border-radius:999px;background:#eaf2fb;border:1px solid #cfdef0;color:#2d629f;font-size:10.5px;font-weight:600;white-space:nowrap}
+.module-body .m-domain{flex-shrink:0;margin-top:2px;padding:2px 9px;border-radius:999px;background:#eaf2fb;border:1px solid #cfdef0;color:#2d629f;font-size:12px;font-weight:600;white-space:nowrap}
 
 /* ============ 读书 · 学院书库 ============ */
 .reading-layout{display:grid;grid-template-columns:210px minmax(0,1fr) 238px;gap:18px;align-items:start}
@@ -516,7 +516,7 @@ a:hover{color:var(--navy-900)}
 .book-item:hover{text-decoration:none;color:#1c4375}
 .book-item img{width:112px;height:158px;object-fit:contain;filter:drop-shadow(4px 6px 8px rgba(12,34,66,.28))}
 .book-item .b-t{font:700 13px var(--serif);margin-top:8px;line-height:1.35}
-.book-item .b-s{font-size:10.5px;color:#8a9cb5}
+.book-item .b-s{font-size:12px;color:#8a9cb5}
 .more-books{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:14px}
 .more-books > span{font:700 13px var(--serif);color:#173860;margin-right:4px}
 .more-books a{
@@ -705,7 +705,7 @@ body:has(.week-panel) .font-ctrl{display:flex}
   color:#f3e7cd;text-align:center;box-shadow:4px 6px 12px rgba(12,34,66,.3);
 }
 .book-fallback span{font:700 15px/1.4 var(--serif)}
-.book-fallback small{font:italic 9px/1.35 var(--serif);color:#b9cde5}
+.book-fallback small{font:italic 11px/1.35 var(--serif);color:#b9cde5}
 
 @media print{
   .hero,.cabin-banner,.academy-masthead,.course-hero,.site-footer,.stats-band,
@@ -889,7 +889,7 @@ body:has(.week-panel) .font-ctrl{display:flex}
   overflow: hidden;
 }
 .academy-reading .book-item .book-fallback span{font:700 clamp(12px,1.05vw,15px)/1.32 var(--serif);display:block}
-.academy-reading .book-item .book-fallback small{display:block;margin-top:7px;font-size:10px;font-weight:400;opacity:.85;line-height:1.3}
+.academy-reading .book-item .book-fallback small{display:block;margin-top:7px;font-size:11px;font-weight:400;opacity:.85;line-height:1.3}
 
 .academy-reading .book-illustrated {
   position: relative;
@@ -1166,10 +1166,10 @@ body:has(.week-panel) .font-ctrl{display:flex}
     font-size: 11px; letter-spacing: .02em;
     white-space: normal; overflow-wrap: anywhere;
   }
-  .cabin-chapter .ch-title .code { font-size: 10px; white-space: normal; }
+  .cabin-chapter .ch-title .code { font-size: 11px; white-space: normal; }
   .wp-head { padding: 18px 14px 16px; }
   .wp-topics { gap: 5px; }
-  .wp-topics .chip { font-size: 10px; white-space: normal; }
+  .wp-topics .chip { font-size: 12px; white-space: normal; }
 }
 @media print {
   .gx-stage { break-inside: avoid; box-shadow: none; }

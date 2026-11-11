@@ -81,12 +81,12 @@
     '  word-break:break-all;',
     '}',
     '.reading-shelf-band .book-item .b-s{',
-    '  width:100%;margin-top:2px;font-size:10.5px;color:#6b7f99;',
+    '  width:100%;margin-top:2px;font-size:12px;color:#6b7f99;',
     '  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:center;',
     '}',
     '.reading-shelf-band .book-progress{margin-top:5px;height:5px}',
     '.reading-shelf-band .book-done-label{',
-    '  margin:6px 0 0;font-size:10.5px;white-space:nowrap;gap:4px;line-height:1.3;',
+    '  margin:6px 0 0;font-size:12px;white-space:nowrap;gap:4px;line-height:1.3;',
     '}',
     '.reading-shelf-band .book-done-label input{width:13px;height:13px;flex:none}',
 
@@ -96,7 +96,7 @@
     '.book-check-wrap.is-read .book-item::after{',
     '  content:"✓ 已读";position:absolute;top:6px;right:calc(50% - var(--shelf-width)/2 - 6px);',
     '  padding:2px 6px;border-radius:6px;background:#2e9e5b;color:#fff;',
-    '  font:700 10px/1.3 var(--sans,system-ui);letter-spacing:.3px;',
+    '  font:700 11px/1.3 var(--sans,system-ui);letter-spacing:.3px;',
     '  box-shadow:0 2px 6px rgba(0,0,0,.25);pointer-events:none;z-index:3;',
     '}',
 
