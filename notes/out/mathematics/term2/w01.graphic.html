@@ -1,0 +1,133 @@
+<h4 class="kp-h">本周导览 · 怎么自学这一周</h4>
+<p>Term 2 第 1 周：数列与级数的记号、Sₙ 与 Tₙ 的关系、Σ 记号（L1）；等差数列的通项和求和公式（L2）；等比数列的通项和求和公式（L3）。讲义每道例题逐题讲解，计算都有核对式。</p>
+<div class="callout blue"><strong>建议顺序</strong>：①读「概念」；②看图；③做例题时先遮住解答，自己做完再点「看解答」核对；④读「易错」和「常见疑惑」；⑤用本周末尾的流程表自测。</div>
+<h4 class="kp-h">数列、级数与 Σ 记号（L1）</h4>
+<p class="kp-src">L01_Seq_and_Series.pdf · PDF p1–5</p>
+<div class="callout blue"><strong>概念</strong><br><strong>数列</strong>：按某种规律排列的一列数，每个数叫<strong>项</strong>。第 n 项（通项）记作 <strong>Tₙ</strong>，n 只能取正整数 1, 2, 3, …；数列常用 Tₙ 关于 n 的式子表示。<br><strong>级数</strong>：数列各项的和。前 n 项和记作 Sₙ = T₁ + T₂ + … + Tₙ（progression 一词既可指数列也可指级数）。<br><strong>重要结论</strong>：S₁ = T₁；n ≥ 2 时 <strong>Tₙ = Sₙ − Sₙ₋₁</strong>。<br><strong>Σ 记号</strong>：Sₙ = Σ<sub>k=1</sub><sup>n</sup> T<sub>k</sub>。下标不必从 1 开始；Σ 从 k = a 到 k = b 共有 <strong>b − a + 1</strong> 项。</div>
+<div class="formula">Tₙ = Sₙ − Sₙ₋₁（n ≥ 2），S₁ = T₁</div>
+<div class="formula">Σ 从 k = a 到 b 共 b − a + 1 项</div>
+<p class="c-blue"><strong>例 1（L1 Ex 1）</strong> Generate the next three terms: (a) 2, 4, 6, 8, 10, … (b) 2, 4, 8, 16, 32, … (c) 3, 1½, 0, −1½, … (d) 1, 4, 9, 16, 25, … (e) ½, ¾, ⅚, … (f) 1, 1, 2, 3, 5, 8, …</p>
+<details><summary>看解答</summary>
+<p>先找规律。<br>(a) 每次加 2：12, 14, 16。<br>(b) 每次乘 2：64, 128, 256。<br>(c) 每次减 1½：−3, −4½, −6。<br>(d) 平方数：36, 49, 64。<br>(e) 分子是奇数、分母比分子大 1：<span class="frac"><span class="n">7</span><span class="d">8</span></span>, <span class="frac"><span class="n">9</span><span class="d">10</span></span>, <span class="frac"><span class="n">11</span><span class="d">12</span></span>。<br>(f) 每项是前两项之和（斐波那契数列）：13, 21, 34。</p>
+</details>
+<p class="c-blue"><strong>例 2（L1 Ex 2）</strong> Write down T₁ and T₂₀: (a) Tₙ = 3n + 7 (b) Tₙ = (−1)ⁿ × 3n</p>
+<details><summary>看解答</summary>
+<p>把 n 代入。<br>(a) T₁ = 10，T₂₀ = 67。<br>(b) T₁ = (−1) × 3 = −3，T₂₀ = (+1) × 60 = 60（n 为偶数时为正）。<br>Answer: (a) 10, 67 (b) −3, 60</p>
+</details>
+<p class="c-blue"><strong>例 3（L1 Ex 3）</strong> Write Tₙ as a function of n: (a) 1, 4, 9, 16, … (b) ½, ⅓, ¼, …</p>
+<details><summary>看解答</summary>
+<p>(a) 第 n 项是 n 的平方：Tₙ = n²。<br>(b) 分母比项数大 1：Tₙ = <span class="frac"><span class="n">1</span><span class="d">n + 1</span></span>。<br>Answer: (a) n² (b) 1/(n + 1)</p>
+</details>
+<p class="c-blue"><strong>例 4（L1 Ex 4）</strong> Tₙ = 5n − 23. (a) Which term is 477? (b) Is 333 a term?</p>
+<details><summary>看解答</summary>
+<p>(a) 5n − 23 = 477，5n = 500，n = 100：第 100 项。<br>(b) 5n − 23 = 333，5n = 356，n = 71.2，不是正整数，所以 333 <strong>不是</strong>这个数列的项。<br>Answer: (a) T₁₀₀ (b) No</p>
+</details>
+<p class="c-blue"><strong>例 5（L1 Ex 5）</strong> For the series 1 + 3 + 5 + …: (a) Find T₄, T₅ and T₆. (b) Find S₆ − S₅.</p>
+<details><summary>看解答</summary>
+<p>(a) 奇数：T₄ = 7，T₅ = 9，T₆ = 11。<br>(b) S₆ − S₅ 就是第 6 项：11（S₆ = 36，S₅ = 25）。<br>Answer: (a) 7, 9, 11 (b) 11</p>
+</details>
+<p class="c-blue"><strong>例 6（L1 Ex 6）</strong> Sₙ = 2n + 3n². (a) Find S₄ and S₅. (b) Hence calculate T₅. (c) Find a formula for Tₙ and verify it with (b).</p>
+<details><summary>看解答</summary>
+<p>(a) S₄ = 8 + 48 = 56；S₅ = 10 + 75 = 85。<br>(b) T₅ = S₅ − S₄ = 29。<br>(c) Tₙ = Sₙ − Sₙ₋₁ = [2n + 3n²] − [2(n − 1) + 3(n − 1)²] = 2 + 3(2n − 1) = 6n − 1。验证：T₅ = 30 − 1 = 29 ✓。（n = 1 时 6 − 1 = 5 = S₁，也成立。）<br>Answer: (a) 56, 85 (b) 29 (c) Tₙ = 6n − 1</p>
+</details>
+<p class="c-blue"><strong>例 7（L1 Ex 7）</strong> Expand and evaluate Σ<sub>k=1</sub><sup>5</sup> (5k − 2).</p>
+<details><summary>看解答</summary>
+<p>k = 1, 2, 3, 4, 5 依次代入：3 + 8 + 13 + 18 + 23 = 65。<br>Answer: 65</p>
+</details>
+<p class="c-blue"><strong>例 8（L1 Ex 8）</strong> Complete: 2³ + 2⁴ + 2⁵ + 2⁶ + 2⁷ = Σ<sub>k=1</sub><sup>?</sup> 2<sup>?</sup> = Σ<sub>k=3</sub><sup>?</sup> 2<sup>?</sup>. How many terms does each series have?</p>
+<details><summary>看解答</summary>
+<p>从 k = 1 开始：Σ<sub>k=1</sub><sup>5</sup> 2<sup>k + 2</sup>；从 k = 3 开始：Σ<sub>k=3</sub><sup>7</sup> 2<sup>k</sup>。两种写法都是 5 项（7 − 3 + 1 = 5），和为 8 + 16 + 32 + 64 + 128 = 248。<br>Answer: Σ(k=1..5) 2^(k+2) = Σ(k=3..7) 2^k, 5 terms, sum 248</p>
+</details>
+<div class="callout red"><strong>易错</strong><br>① 把 Sₙ 当成 Tₙ（例 6）。<br>② Tₙ = Sₙ − Sₙ₋₁ 展开 (n − 1)² 出错。<br>③ Σ 的项数写成 b − a（漏了 +1）。</div>
+<div class="callout blue"><strong>常见疑惑</strong><br><strong>问：为什么 n 必须是正整数？</strong> n 表示「第几项」，只能是第 1、2、3…项；所以例 4(b) 解出 71.2 说明 333 不在数列中。</div>
+<h4 class="kp-h">等差数列 AP（L2）</h4>
+<p class="kp-src">L02_Arithmetic_Progressions.pdf · PDF p1–5</p>
+<div class="callout blue"><strong>概念</strong><br>相邻两项的差为常数（<strong>公差 d</strong>，可正可负）的数列叫<strong>等差数列</strong>（AP）。首项 a：a, a + d, a + 2d, …<br><strong>通项</strong>：Tₙ = a + (n − 1)d。<br><strong>求和</strong>（高斯配对法：首尾相加都相等）：Sₙ = <span class="frac"><span class="n">n</span><span class="d">2</span></span>[2a + (n − 1)d] = <span class="frac"><span class="n">n</span><span class="d">2</span></span>(a + l)，l 是最后一项。<br>判断 AP：检查 T₂ − T₁ = T₃ − T₂ = …；三个数 x、y、z 成 AP 当且仅当 y − x = z − y。</div>
+<div class="formula">Tₙ = a + (n − 1)d</div>
+<div class="formula">Sₙ = <span class="frac"><span class="n">n</span><span class="d">2</span></span>[2a + (n − 1)d] = <span class="frac"><span class="n">n</span><span class="d">2</span></span>(a + l)</div>
+<p class="c-blue"><strong>例 9（L2 Ex 1）</strong> Test whether these form an AP: (a) −5, −1, −4, … (b) √3, √12, √27, …</p>
+<details><summary>看解答</summary>
+<p>(a) 差：−1 − (−5) = 4，−4 − (−1) = −3，不相等，<strong>不是</strong> AP。<br>(b) √12 = 2√3，√27 = 3√3，数列是 √3, 2√3, 3√3，公差都是 √3，<strong>是</strong> AP。</p>
+</details>
+<p class="c-blue"><strong>例 10（L2 Ex 2）</strong> Find the 20th term of 5, 8, 11, 14, …</p>
+<details><summary>看解答</summary>
+<p>这是等差数列，首项 a = 5，公差 d = 3，代入通项公式：T₂₀ = 5 + 19 × 3 = 62。<br>Answer: 62</p>
+</details>
+<p class="c-blue"><strong>例 11（L2 Ex 3）</strong> Which term of the AP 15, 11, 7, … is −33?</p>
+<details><summary>看解答</summary>
+<p>首项 a = 15，公差 d = −4。令通项等于 −33：15 − 4(n − 1) = −33，4(n − 1) = 48，n = 13，是第 13 项。<br>Answer: T₁₃</p>
+</details>
+<p class="c-blue"><strong>例 12（L2 Ex 4）</strong> The fifth term of an AP is 31 and the twelfth term is 73. Find a and d.</p>
+<details><summary>看解答</summary>
+<p>a + 4d = 31，a + 11d = 73。相减：7d = 42，d = 6；a = 31 − 24 = 7。<br>Answer: a = 7, d = 6</p>
+</details>
+<p class="c-blue"><strong>例 13（L2 Ex 5）</strong> 2x − 1, 5x − 4 and 7x − 2 form an AP. Find x.</p>
+<details><summary>看解答</summary>
+<p>公差相等：(5x − 4) − (2x − 1) = (7x − 2) − (5x − 4)，3x − 3 = 2x + 2，x = 5。三项为 9、21、33，公差 12。<br>Answer: x = 5</p>
+</details>
+<p class="c-blue"><strong>例 14（L2 Gauss）</strong> Find 1 + 2 + 3 + … + 100 by pairing terms, and derive the formula for the sum of an AP.</p>
+<details><summary>看解答</summary>
+<p>把和正着写一遍、倒着写一遍再相加：每一对都是 101，共 100 对，所以 2S₁₀₀ = 100 × 101，S₁₀₀ = 5050。<br>一般地，Sₙ = a + (a + d) + … + l，倒写后相加，每对都是 a + l，共 n 对：2Sₙ = n(a + l)，Sₙ = <span class="frac"><span class="n">n</span><span class="d">2</span></span>(a + l)；代入 l = a + (n − 1)d 得 Sₙ = <span class="frac"><span class="n">n</span><span class="d">2</span></span>[2a + (n − 1)d]。<br>Answer: 5050</p>
+</details>
+<p class="c-blue"><strong>例 15（L2 Ex 6）</strong> Find the sum of the first 20 terms of 5 + 8 + 11 + 14 + …</p>
+<details><summary>看解答</summary>
+<p>首项 5、公差 3，用求和公式：S₂₀ = <span class="frac"><span class="n">20</span><span class="d">2</span></span>[2 × 5 + 19 × 3] = 10 × 67 = 670。<br>Answer: 670</p>
+</details>
+<p class="c-blue"><strong>例 16（L2 Ex 7）</strong> Find the value of −15 − 8 − 1 + 6 + … + 188.</p>
+<details><summary>看解答</summary>
+<p>a = −15，d = 7，最后一项 l = 188。先求项数：−15 + 7(n − 1) = 188，7(n − 1) = 203，n = 30。<br>S₃₀ = <span class="frac"><span class="n">30</span><span class="d">2</span></span>(−15 + 188) = 15 × 173 = 2595。<br>Answer: 2595</p>
+</details>
+<p class="c-blue"><strong>例 17（L2 Ex 8）</strong> How many terms of 40 + 35 + 30 + … are needed to give a sum of 150?</p>
+<details><summary>看解答</summary>
+<p>a = 40，d = −5：<span class="frac"><span class="n">n</span><span class="d">2</span></span>[80 − 5(n − 1)] = 150，n(85 − 5n) = 300，5n² − 85n + 300 = 0，n² − 17n + 60 = 0，(n − 5)(n − 12) = 0。<br>n = 5 或 12。两个都对：前 5 项 40 + 35 + 30 + 25 + 20 = 150；第 6 到第 12 项是 15, 10, 5, 0, −5, −10, −15，和为 0，所以 S₁₂ 也是 150。<br>Answer: 5 or 12 terms</p>
+</details>
+<p class="c-blue"><strong>例 18（L2 Ex 9）</strong> Rows of cabbages: 35 in the first row, 39 in the second, each row 4 more than the previous. (a) How many cabbages in row 12? (b) Which is the first row with more than 200 cabbages? (c) Exactly 945 cabbages are planted. How many rows?</p>
+<details><summary>看解答</summary>
+<p>AP：a = 35，d = 4。<br>(a) T₁₂ = 35 + 11 × 4 = 79。<br>(b) 35 + 4(n − 1) &gt; 200，n − 1 &gt; 41.25，n &gt; 42.25：第 43 行（T₄₂ = 199，T₄₃ = 203）。<br>(c) <span class="frac"><span class="n">n</span><span class="d">2</span></span>[70 + 4(n − 1)] = 945，n(33 + 2n) = 945，2n² + 33n − 945 = 0，n = <span class="frac"><span class="n">−33 + √(1089 + 7560)</span><span class="d">4</span></span> = <span class="frac"><span class="n">−33 + 93</span><span class="d">4</span></span> = 15（负根舍去）：15 行。<br>Answer: (a) 79 (b) row 43 (c) 15 rows</p>
+<div class="diagram"><svg viewBox="0 0 300 240" width="300" role="img" aria-label="Cabbages per row: 35, 39, 43, …, row 12 has 79" font-family="sans-serif"><rect x="0" y="0" width="300" height="240" rx="8" fill="#fbfcfe" stroke="#dfe9f5"/><line x1="18" y1="210" x2="288" y2="210" stroke="#7a8ba3"/><text x="296" y="236" font-size="11" fill="#4a5d75" text-anchor="end">n</text><line x1="18" y1="210" x2="18" y2="12" stroke="#7a8ba3"/><text x="23" y="16" font-size="11" fill="#4a5d75">cabbages</text><text x="38.3" y="223" font-size="10" fill="#4a5d75" text-anchor="middle">1</text><text x="58.6" y="223" font-size="10" fill="#4a5d75" text-anchor="middle">2</text><text x="78.9" y="223" font-size="10" fill="#4a5d75" text-anchor="middle">3</text><text x="99.2" y="223" font-size="10" fill="#4a5d75" text-anchor="middle">4</text><text x="119.5" y="223" font-size="10" fill="#4a5d75" text-anchor="middle">5</text><text x="139.8" y="223" font-size="10" fill="#4a5d75" text-anchor="middle">6</text><text x="160.2" y="223" font-size="10" fill="#4a5d75" text-anchor="middle">7</text><text x="180.5" y="223" font-size="10" fill="#4a5d75" text-anchor="middle">8</text><text x="200.8" y="223" font-size="10" fill="#4a5d75" text-anchor="middle">9</text><text x="221.1" y="223" font-size="10" fill="#4a5d75" text-anchor="middle">10</text><text x="241.4" y="223" font-size="10" fill="#4a5d75" text-anchor="middle">11</text><text x="261.7" y="223" font-size="10" fill="#4a5d75" text-anchor="middle">12</text><clipPath id="npc795"><rect x="18" y="14" width="264" height="200"/></clipPath><g clip-path="url(#npc795)"><polyline points="38.3,210 38.3,135.3" fill="none" stroke="#173860" stroke-width="6"/><polyline points="58.6,210 58.6,126.8" fill="none" stroke="#173860" stroke-width="6"/><polyline points="78.9,210 78.9,118.3" fill="none" stroke="#173860" stroke-width="6"/><polyline points="99.2,210 99.2,109.7" fill="none" stroke="#173860" stroke-width="6"/><polyline points="119.5,210 119.5,101.2" fill="none" stroke="#173860" stroke-width="6"/><polyline points="139.8,210 139.8,92.7" fill="none" stroke="#173860" stroke-width="6"/><polyline points="160.2,210 160.2,84.1" fill="none" stroke="#173860" stroke-width="6"/><polyline points="180.5,210 180.5,75.6" fill="none" stroke="#173860" stroke-width="6"/><polyline points="200.8,210 200.8,67.1" fill="none" stroke="#173860" stroke-width="6"/><polyline points="221.1,210 221.1,58.5" fill="none" stroke="#173860" stroke-width="6"/><polyline points="241.4,210 241.4,50" fill="none" stroke="#173860" stroke-width="6"/><polyline points="261.7,210 261.7,41.5" fill="none" stroke="#173860" stroke-width="6"/></g><circle cx="261.7" cy="41.5" r="3.5" fill="#173860" stroke="#173860" stroke-width="1.5"/><text x="267.7" y="33.5" font-size="10" fill="#173860">79</text></svg><p class="cap">Cabbages per row: 35, 39, 43, …, row 12 has 79</p></div>
+</details>
+<div class="callout red"><strong>易错</strong><br>① Tₙ = a + nd（应为 n − 1）。<br>② 求和前没先算出项数（例 16）。<br>③ 二次方程两个正根只取一个（例 17）。</div>
+<div class="callout blue"><strong>常见疑惑</strong><br><strong>问：什么时候用 n/2(a + l)？</strong> 知道最后一项 l 时最方便（例 16）；不知道最后一项时用 n/2[2a + (n − 1)d]。</div>
+<h4 class="kp-h">等比数列 GP（L3）</h4>
+<p class="kp-src">L03_Geometric_Progressions.pdf · PDF p1–4</p>
+<div class="callout blue"><strong>概念</strong><br>相邻两项的比为常数（<strong>公比 r</strong>，可正可负、可大于或小于 1）的数列叫<strong>等比数列</strong>（GP）：a, ar, ar², …<br><strong>通项</strong>：Tₙ = arⁿ⁻¹。<br><strong>求和</strong>（乘 r 再相减）：Sₙ = <span class="frac"><span class="n">a(rⁿ − 1)</span><span class="d">r − 1</span></span>，或 Sₙ = <span class="frac"><span class="n">a(1 − rⁿ)</span><span class="d">1 − r</span></span>（r &lt; 1 时用后者更方便）。<br>三个数 x、y、z 成 GP 当且仅当 y/x = z/y，即 y² = xz。</div>
+<div class="formula">Tₙ = arⁿ⁻¹</div>
+<div class="formula">Sₙ = <span class="frac"><span class="n">a(rⁿ − 1)</span><span class="d">r − 1</span></span> = <span class="frac"><span class="n">a(1 − rⁿ)</span><span class="d">1 − r</span></span></div>
+<p class="c-blue"><strong>例 19（L3 Ex 1）</strong> Test whether these form a GP: (a) 2, 4, 8, 16, … (b) ¼, −½, 1, −2, … (c) √3, √12, √27, …</p>
+<details><summary>看解答</summary>
+<p>(a) 比都是 2：<strong>是</strong> GP。<br>(b) (−½) ÷ ¼ = −2，1 ÷ (−½) = −2，−2 ÷ 1 = −2：<strong>是</strong> GP，r = −2。<br>(c) 2√3 ÷ √3 = 2，3√3 ÷ 2√3 = 1.5：<strong>不是</strong> GP（它是 AP）。</p>
+</details>
+<p class="c-blue"><strong>例 20（L3 Ex 2）</strong> Find T₇ of 5, 5/2, 5/4, …</p>
+<details><summary>看解答</summary>
+<p>后一项是前一项的一半，所以首项 a = 5，公比 r = ½：T₇ = 5 × (½)⁶ = <span class="frac"><span class="n">5</span><span class="d">64</span></span>。<br>Answer: 5/64</p>
+</details>
+<p class="c-blue"><strong>例 21（L3 Ex 3）</strong> Which term of 24, 12, 6, … equals <span class="frac"><span class="n">3</span><span class="d">32</span></span>?</p>
+<details><summary>看解答</summary>
+<p>首项 24、公比 ½，令通项等于 3/32：24 × (½)ⁿ⁻¹ = 3/32，(½)ⁿ⁻¹ = <span class="frac"><span class="n">3</span><span class="d">32 × 24</span></span> = <span class="frac"><span class="n">1</span><span class="d">256</span></span> = (½)⁸，n − 1 = 8，n = 9。<br>Answer: T₉</p>
+</details>
+<p class="c-blue"><strong>例 22（L3 Ex 4）</strong> (k − 2), (k − 6) and (2k + 3) are consecutive terms of a GP. Find the possible values of k.</p>
+<details><summary>看解答</summary>
+<p>中间项的平方等于两边之积：(k − 6)² = (k − 2)(2k + 3)，k² − 12k + 36 = 2k² − k − 6，k² + 11k − 42 = 0，(k + 14)(k − 3) = 0。<br>k = 3：1, −3, 9（r = −3）；k = −14：−16, −20, −25（r = 1.25）。两个都成立。<br>Answer: k = 3 or −14</p>
+</details>
+<p class="c-blue"><strong>例 23（L3 Ex 5）</strong> T₅ = −<span class="frac"><span class="n">8</span><span class="d">729</span></span> and T₈ = <span class="frac"><span class="n">8</span><span class="d">27</span></span>. Find the common ratio.</p>
+<details><summary>看解答</summary>
+<p>两项相除可以消去首项 a：T₈ ÷ T₅ = ar⁷ ÷ ar⁴ = r³ = <span class="frac"><span class="n">8</span><span class="d">27</span></span> ÷ (−<span class="frac"><span class="n">8</span><span class="d">729</span></span>) = −27，r = −3。<br>Answer: r = −3</p>
+</details>
+<p class="c-blue"><strong>例 24（L3 Ex 6）</strong> Find the sum of the first 10 terms of 3 + 6 + 12 + …</p>
+<details><summary>看解答</summary>
+<p>首项 a = 3，公比 r = 2（大于 1，用第一种形式）：S₁₀ = <span class="frac"><span class="n">3(2¹⁰ − 1)</span><span class="d">2 − 1</span></span> = 3 × 1023 = 3069。<br>Answer: 3069</p>
+</details>
+<p class="c-blue"><strong>例 25（L3 Ex 7）</strong> For 4 + 2 + 1 + …, find the least number of terms needed for a sum greater than 7.99.</p>
+<details><summary>看解答</summary>
+<p>a = 4，r = ½：Sₙ = <span class="frac"><span class="n">4(1 − 0.5ⁿ)</span><span class="d">1 − 0.5</span></span> = 8(1 − 0.5ⁿ) &gt; 7.99，0.5ⁿ &lt; 0.00125。两边取对数，log 0.5 &lt; 0，除以它要变号：n &gt; <span class="frac"><span class="n">log 0.00125</span><span class="d">log 0.5</span></span> ≈ 9.64，所以至少 <strong>10 项</strong>（S₉ = 7.984，S₁₀ = 7.992）。<br>Answer: 10 terms</p>
+<div class="diagram"><svg viewBox="0 0 300 240" width="300" role="img" aria-label="Partial sums of 4 + 2 + 1 + … approach 8; Sₙ &gt; 7.99 first at n = 10" font-family="sans-serif"><rect x="0" y="0" width="300" height="240" rx="8" fill="#fbfcfe" stroke="#dfe9f5"/><line x1="18" y1="210" x2="288" y2="210" stroke="#7a8ba3"/><text x="296" y="236" font-size="11" fill="#4a5d75" text-anchor="end">n</text><line x1="18" y1="210" x2="18" y2="12" stroke="#7a8ba3"/><text x="23" y="16" font-size="11" fill="#4a5d75">Sₙ</text><text x="66" y="223" font-size="10" fill="#4a5d75" text-anchor="middle">2</text><text x="114" y="223" font-size="10" fill="#4a5d75" text-anchor="middle">4</text><text x="162" y="223" font-size="10" fill="#4a5d75" text-anchor="middle">6</text><text x="210" y="223" font-size="10" fill="#4a5d75" text-anchor="middle">8</text><text x="258" y="223" font-size="10" fill="#4a5d75" text-anchor="middle">10</text><text x="14" y="168.3" font-size="10" fill="#4a5d75" text-anchor="end">2</text><text x="14" y="123.7" font-size="10" fill="#4a5d75" text-anchor="end">4</text><text x="14" y="79" font-size="10" fill="#4a5d75" text-anchor="end">6</text><text x="14" y="34.4" font-size="10" fill="#4a5d75" text-anchor="end">8</text><clipPath id="npc796"><rect x="18" y="14" width="264" height="200"/></clipPath><g clip-path="url(#npc796)"><polyline points="42,120.7 66,76 90,53.7 114,42.6 138,37 162,34.2 186,32.8 210,32.1 234,31.7 258,31.6" fill="none" stroke="#173860" stroke-width="2"/><polyline points="18,31.6 282,31.6" fill="none" stroke="#b03030" stroke-width="2" stroke-dasharray="4 3"/></g><circle cx="42" cy="120.7" r="3.5" fill="#173860" stroke="#173860" stroke-width="1.5"/><circle cx="66" cy="76" r="3.5" fill="#173860" stroke="#173860" stroke-width="1.5"/><circle cx="90" cy="53.7" r="3.5" fill="#173860" stroke="#173860" stroke-width="1.5"/><circle cx="114" cy="42.6" r="3.5" fill="#173860" stroke="#173860" stroke-width="1.5"/><circle cx="138" cy="37" r="3.5" fill="#173860" stroke="#173860" stroke-width="1.5"/><circle cx="162" cy="34.2" r="3.5" fill="#173860" stroke="#173860" stroke-width="1.5"/><circle cx="186" cy="32.8" r="3.5" fill="#173860" stroke="#173860" stroke-width="1.5"/><circle cx="210" cy="32.1" r="3.5" fill="#173860" stroke="#173860" stroke-width="1.5"/><circle cx="234" cy="31.7" r="3.5" fill="#173860" stroke="#173860" stroke-width="1.5"/><circle cx="258" cy="31.6" r="3.5" fill="#173860" stroke="#173860" stroke-width="1.5"/><circle cx="258" cy="31.6" r="3.5" fill="#173860" stroke="#173860" stroke-width="1.5"/><text x="198" y="47.6" font-size="10" fill="#173860">S₁₀ = 7.992</text></svg><p class="cap">Partial sums of 4 + 2 + 1 + … approach 8; Sₙ &gt; 7.99 first at n = 10</p></div>
+</details>
+<p class="c-blue"><strong>例 26（L3 Ex 8）</strong> 20 opal rings: the weights form an AP and the values a GP. The first and third weigh 200 mg and 300 mg and are valued at $300 and $432. Find (a) which opal weighs 900 mg (b) the value of the 8th ring (c) the total value of the display.</p>
+<details><summary>看解答</summary>
+<p><strong>重量</strong>（AP）：a = 200，a + 2d = 300，d = 50。<strong>价值</strong>（GP）：a = 300，ar² = 432，r² = 1.44，r = 1.2（价值为正）。<br>(a) 200 + 50(n − 1) = 900，n − 1 = 14，<strong>第 15 颗</strong>。<br>(b) T₈ = 300 × 1.2⁷ ≈ <strong>$1074.95</strong>。<br>(c) S₂₀ = <span class="frac"><span class="n">300(1.2²⁰ − 1)</span><span class="d">1.2 − 1</span></span> ≈ <strong>$56 006.40</strong>。<br>Answer: (a) 15th (b) $1074.95 (c) $56 006.40</p>
+</details>
+<div class="callout red"><strong>易错</strong><br>① Tₙ = arⁿ（指数应为 n − 1）。<br>② r &lt; 1 时用 a(rⁿ − 1)/(r − 1) 也对，但正负号容易出错，用 a(1 − rⁿ)/(1 − r)。<br>③ 取对数解不等式时除以负数忘了变号（例 25）。</div>
+<div class="callout blue"><strong>常见疑惑</strong><br><strong>问：例 22 为什么用「中间项平方 = 两边之积」？</strong> 成 GP 意味着 (k − 6)/(k − 2) = (2k + 3)/(k − 6)，交叉相乘就得到 (k − 6)² = (k − 2)(2k + 3)。</div>
+<h4 class="kp-h">本周解题流程（自测清单）</h4>
+<table class="kp-tbl"><thead><tr><th>题型</th><th>公式</th><th>对应例题</th></tr></thead><tbody><tr><td>由 Sₙ 求 Tₙ</td><td>Tₙ = Sₙ − Sₙ₋₁</td><td>例 6</td></tr><tr><td>AP 通项</td><td>a + (n − 1)d</td><td>例 10–13</td></tr><tr><td>AP 求和</td><td>n/2[2a + (n − 1)d] 或 n/2(a + l)</td><td>例 15–18</td></tr><tr><td>GP 通项</td><td>arⁿ⁻¹</td><td>例 20–23</td></tr><tr><td>GP 求和</td><td>a(rⁿ − 1)/(r − 1)</td><td>例 24–26</td></tr><tr><td>「至少几项」</td><td>列不等式，取对数，注意变号</td><td>例 18、25</td></tr></tbody></table>
+<p>讲义建议练习：Tutorial Guide 6-1、6-2、6-3。</p>

@@ -794,6 +794,36 @@
  },
  {
   "board": "math-notes",
+  "key": "term2/1",
+  "course": "mathematics",
+  "term": "term2",
+  "week": 1,
+  "title": "Sequences, Series & Progressions · 数列、级数与等差/等比数列",
+  "fields": {
+   "graphicHtml": "out/mathematics/term2/w01.graphic.html"
+  },
+  "examples": 26,
+  "checks": 46,
+  "deliverables": 2,
+  "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
+  "key": "term2/2",
+  "course": "mathematics",
+  "term": "term2",
+  "week": 2,
+  "title": "Infinite Series & Interest · 无穷等比级数与利息",
+  "fields": {
+   "graphicHtml": "out/mathematics/term2/w02.graphic.html"
+  },
+  "examples": 19,
+  "checks": 28,
+  "deliverables": 2,
+  "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
   "key": "term2/5",
   "course": "mathematics",
   "term": "term2",

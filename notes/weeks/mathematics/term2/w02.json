@@ -1,0 +1,782 @@
+{
+ "course": "mathematics",
+ "term": "term2",
+ "week": 2,
+ "title": "Infinite Series & Interest · 无穷等比级数与利息",
+ "files": [
+  "L04_Infinite_Geometric_Series.pdf",
+  "L05_Simple_Compound_Interest.pdf",
+  "L06_Future_Value.pdf"
+ ],
+ "inventory": [
+  "L4 Limiting Sum",
+  "L4 Ex 1",
+  "L4 Ex 2",
+  "L4 Ex 3",
+  {
+   "ref": "L4 Ex 4",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "L5 Ex 1",
+  "L5 Ex 2",
+  "L5 Ex 3",
+  {
+   "ref": "L5 Compound",
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  "L5 Ex 4",
+  "L5 Ex 5",
+  "L5 Ex 6",
+  "L5 Ex 7",
+  "L5 Ex 8",
+  "L6 Carlos",
+  "L6 Ex 1",
+  "L6 Ex 2",
+  "L6 Ex 3",
+  "L6 Ex 4"
+ ],
+ "intro": [
+  "Term 2 第 2 周：无穷等比级数的极限和（L4）；单利、复利、按月计复利和折旧（L5）；年金终值与偿债基金（L6）。所有金额都由公式计算并核对，「多长时间」的题按讲义要求向上取整。"
+ ],
+ "sections": [
+  {
+   "title": "无穷等比级数（L4）",
+   "sources": [
+    {
+     "file": "L04_Infinite_Geometric_Series.pdf",
+     "pages": "p1–3"
+    }
+   ],
+   "concept": "1 + ½ + ¼ + ⅛ + …：S₁ = 1，S₃ = 1.75，S₅ = 1.9375，S₁₀ = 1.99805……越来越接近 2 但达不到，因为 Sₙ = 2 − {{frac 1|2ⁿ⁻¹}}。\n一般地 Sₙ = {{frac a|1 − r}} − {{frac arⁿ|1 − r}}；当 |r| < 1 时 rⁿ → 0，所以和趋近\n<strong>S∞ = {{frac a|1 − r}}</strong>（极限和，sum to infinity），只在 <strong>−1 < r < 1</strong> 时存在；|r| ≥ 1 时和不断增大，没有极限和。",
+   "formulas": [
+    "S∞ = {{frac a|1 − r}}（−1 < r < 1）"
+   ],
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "L4 Limiting Sum",
+     "question": "Find S₁, S₃, S₅ and S₁₀ for 1 + ½ + ¼ + ⅛ + … and explain why the sum approaches 2.",
+     "solution": "a = 1，r = ½：Sₙ = {{frac 1 − (½)ⁿ|1 − ½}} = 2 − {{frac 1|2ⁿ⁻¹}}。S₁ = 1，S₃ = 1.75，S₅ = 1.9375，S₁₀ = 1.998 05。n 越大，1/2ⁿ⁻¹ 越小，和越接近 2，但总是差一点。",
+     "checks": [
+      {
+       "expr": "2*(1-0.5^5)",
+       "equals": "1.9375"
+      },
+      {
+       "expr": "2*(1-0.5^10)",
+       "equals": "1.998046875"
+      }
+     ]
+    },
+    {
+     "label": "例 2",
+     "ref": "L4 Ex 1",
+     "question": "State whether S∞ exists and calculate it when it does: (a) 50 + 30 + 18 + … (b) 24 − 8 + {{frac 8|3}} + … (c) 8 − 16 + 32 − …",
+     "solution": "(a) r = 30/50 = 0.6，存在：S∞ = 50 ÷ 0.4 = 125。\n(b) r = −8/24 = −⅓，存在：S∞ = 24 ÷ (1 + ⅓) = 18。\n(c) r = −16/8 = −2，|r| > 1，<strong>不存在</strong>。",
+     "answer": "(a) 125 (b) 18 (c) does not exist",
+     "checks": [
+      {
+       "expr": "50/(1-0.6)",
+       "equals": "125"
+      },
+      {
+       "expr": "24/(1+1/3)",
+       "equals": "18",
+       "tol": 1e-12
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    {
+     "label": "例 3",
+     "ref": "L4 Ex 2",
+     "question": "Evaluate {{sum k=1|∞}} {{frac 5|2ᵏ⁻¹}}.",
+     "solution": "展开：5 + {{frac 5|2}} + {{frac 5|4}} + …，a = 5，r = ½：S∞ = 5 ÷ ½ = 10。",
+     "answer": "10",
+     "checks": [
+      {
+       "expr": "5/(1-0.5)",
+       "equals": "10"
+      }
+     ]
+    },
+    {
+     "label": "例 4",
+     "ref": "L4 Ex 3",
+     "question": "Find a GP in which the sum of the first 4 terms is 65 and the limiting sum is 81.",
+     "solution": "{{frac a|1 − r}} = 81，S₄ = {{frac a(1 − r⁴)|1 − r}} = 81(1 − r⁴) = 65，r⁴ = {{frac 16|81}}，r = ±{{frac 2|3}}。\nr = ⅔：a = 81 × ⅓ = 27，数列 27, 18, 12, 8, …；r = −⅔：a = 81 × {{frac 5|3}} = 135，数列 135, −90, 60, −40, …。两个都满足。",
+     "answer": "27, 18, 12, … or 135, −90, 60, …",
+     "checks": [
+      {
+       "expr": "27+18+12+8",
+       "equals": "65"
+      },
+      {
+       "expr": "135-90+60-40",
+       "equals": "65"
+      },
+      {
+       "expr": "27/(1-2/3)",
+       "equals": "81",
+       "tol": 1e-12
+      },
+      {
+       "expr": "135/(1+2/3)",
+       "equals": "81",
+       "tol": 1e-12
+      }
+     ]
+    },
+    {
+     "label": "例 5",
+     "ref": "L4 Ex 4",
+     "question": "A shrub 150 cm high grows 50 cm in the first year, and each year after half as much as the previous year. Find its limiting height.",
+     "solution": "每年的增长：50 + 25 + 12.5 + …，a = 50，r = ½，总增长 S∞ = 50 ÷ ½ = 100 cm。极限高度 = 150 + 100 = <strong>250 cm</strong>。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        9
+       ],
+       "yr": [
+        0,
+        270
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "years",
+       "yLabel": "height (cm)",
+       "curves": [],
+       "caption": "Shrub height approaches 150 + 100 = 250 cm",
+       "xticks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+       ],
+       "yticks": [
+        50,
+        100,
+        150,
+        200,
+        250
+       ],
+       "lines": [
+        {
+         "pts": [
+          [
+           0,
+           150.0
+          ],
+          [
+           1,
+           200.0
+          ],
+          [
+           2,
+           225.0
+          ],
+          [
+           3,
+           237.5
+          ],
+          [
+           4,
+           243.75
+          ],
+          [
+           5,
+           246.875
+          ],
+          [
+           6,
+           248.4375
+          ],
+          [
+           7,
+           249.21875
+          ],
+          [
+           8,
+           249.609375
+          ]
+         ],
+         "color": "navy"
+        },
+        {
+         "pts": [
+          [
+           0,
+           250
+          ],
+          [
+           9,
+           250
+          ]
+         ],
+         "color": "red",
+         "dash": true
+        }
+       ],
+       "points": [
+        {
+         "x": 0,
+         "y": 150.0
+        },
+        {
+         "x": 1,
+         "y": 200.0
+        },
+        {
+         "x": 2,
+         "y": 225.0
+        },
+        {
+         "x": 3,
+         "y": 237.5
+        },
+        {
+         "x": 4,
+         "y": 243.75
+        },
+        {
+         "x": 5,
+         "y": 246.875
+        },
+        {
+         "x": 6,
+         "y": 248.4375
+        },
+        {
+         "x": 7,
+         "y": 249.21875
+        },
+        {
+         "x": 8,
+         "y": 249.609375
+        }
+       ]
+      }
+     ],
+     "answer": "250 cm",
+     "checks": [
+      {
+       "expr": "150+50/(1-0.5)",
+       "equals": "250"
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "|r| ≥ 1 也套 S∞ 公式。",
+    "把初始高度 150 也当成级数的一项（例 5）。",
+    "例 4 只取正的 r。"
+   ],
+   "faqs": [
+    {
+     "q": "r 为负时为什么也有极限和？",
+     "a": "只要 |r| < 1，各项的绝对值越来越小，正负交替地逼近一个定值（例 2(b)）。"
+    }
+   ]
+  },
+  {
+   "title": "单利、复利与折旧（L5）",
+   "sources": [
+    {
+     "file": "L05_Simple_Compound_Interest.pdf",
+     "pages": "p1–6"
+    }
+   ],
+   "concept": "<strong>单利</strong>（flat）：利息按原始本金计算。I = Prt；A = P(1 + rt)。r 是年利率（小数），t 以年为单位，p.a. 表示每年。\n<strong>复利</strong>：每期的利息加入本金，下一期按更大的本金计息。按年复利 A = P(1 + r)ᵗ；一年复利 m 次时 <strong>A = P(1 + i)ⁿ，i = r ÷ m，n = t × m</strong>。各期的金额构成等比数列。\n<strong>「需要多久」</strong>：解出的 n 除非另有说明，一律<strong>向上取整</strong>（期末才达到目标），如 n = 43.2 → 44。\n<strong>折旧</strong>：资产价值按年百分比下降，A = P(1 − r)ⁿ（只按年计算）。",
+   "formulas": [
+    "I = Prt　A = P(1 + rt)",
+    "A = P(1 + i)ⁿ，i = {{frac r|m}}，n = tm",
+    "A = P(1 − r)ⁿ（折旧）"
+   ],
+   "examples": [
+    {
+     "label": "例 6",
+     "ref": "L5 Ex 1",
+     "question": "Calculate the interest earned when $5000 is invested for 5 years at 3.5% p.a. simple interest.",
+     "solution": "单利按原始本金计算：I = Prt = 5000 × 0.035 × 5 = <strong>$875</strong>（利率 3.5% 要写成小数 0.035）。",
+     "answer": "$875",
+     "checks": [
+      {
+       "expr": "5000*0.035*5",
+       "equals": "875"
+      }
+     ]
+    },
+    {
+     "label": "例 7",
+     "ref": "L5 Ex 2",
+     "question": "Calculate the amount to be repaid if $2400 is borrowed for 2 years at 8.5% p.a. simple interest.",
+     "solution": "要还的是本金加利息：A = P(1 + rt) = 2400 × (1 + 0.085 × 2) = 2400 × 1.17 = <strong>$2808</strong>。",
+     "answer": "$2808",
+     "checks": [
+      {
+       "expr": "2400*(1+0.085*2)",
+       "equals": "2808"
+      }
+     ]
+    },
+    {
+     "label": "例 8",
+     "ref": "L5 Ex 3",
+     "question": "$15 000 invested for 18 months earns $4200 interest. Find the annual flat rate to one decimal place.",
+     "solution": "t = 1.5 年：4200 = 15 000 × r × 1.5，r = {{frac 4200|22 500}} = 0.1867，即 <strong>18.7%</strong> p.a.。",
+     "answer": "18.7%",
+     "checks": [
+      {
+       "expr": "4200/(15000*1.5)*100",
+       "equals": "18.67",
+       "tol": 0.005
+      }
+     ]
+    },
+    {
+     "label": "例 9",
+     "ref": "L5 Compound",
+     "question": "Compare $1000 invested for 5 years at 5% p.a. simple and compound (yearly). How much will the compound investment be worth after 10 years?",
+     "solution": "单利每年利息都是 $50；复利的利息每年增加（$50、$52.50、$55.13、…），因为本金在增长。复利公式：A = 1000 × 1.05ᵗ，5 年后 $1276.28，10 年后 1000 × 1.05¹⁰ = <strong>$1628.89</strong>（单利 10 年只有 $1500）。\n若改为按月复利：i = 0.05 ÷ 12，5 年 n = 60，A = 1000(1 + 0.05/12)⁶⁰ ≈ $1283.36。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "Year",
+        "Principal",
+        "Interest",
+        "Total"
+       ],
+       "rows": [
+        [
+         "1",
+         "$1000",
+         "$50",
+         "$1050"
+        ],
+        [
+         "2",
+         "$1000",
+         "$50",
+         "$1100"
+        ],
+        [
+         "3",
+         "$1000",
+         "$50",
+         "$1150"
+        ],
+        [
+         "4",
+         "$1000",
+         "$50",
+         "$1200"
+        ],
+        [
+         "5",
+         "$1000",
+         "$50",
+         "$1250"
+        ]
+       ],
+       "title": "Simple interest: $1000 at 5% p.a."
+      },
+      {
+       "type": "table",
+       "headers": [
+        "Year",
+        "Principal",
+        "Interest",
+        "Total"
+       ],
+       "rows": [
+        [
+         "1",
+         "$1,000.00",
+         "$50.00",
+         "$1,050.00"
+        ],
+        [
+         "2",
+         "$1,050.00",
+         "$52.50",
+         "$1,102.50"
+        ],
+        [
+         "3",
+         "$1,102.50",
+         "$55.12",
+         "$1,157.62"
+        ],
+        [
+         "4",
+         "$1,157.62",
+         "$57.88",
+         "$1,215.50"
+        ],
+        [
+         "5",
+         "$1,215.50",
+         "$60.78",
+         "$1,276.28"
+        ]
+       ],
+       "title": "Compound interest: $1000 at 5% p.a. compounded yearly"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10.5
+       ],
+       "yr": [
+        900,
+        1700
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "years",
+       "yLabel": "$",
+       "curves": [
+        {
+         "expr": "1000*1.05^x",
+         "color": "navy",
+         "dom": [
+          0,
+          10
+         ],
+         "label": [
+          7.2,
+          1500,
+          "compound"
+         ]
+        },
+        {
+         "expr": "1000+50*x",
+         "color": "red",
+         "dom": [
+          0,
+          10
+         ],
+         "label": [
+          7.5,
+          1300,
+          "simple"
+         ],
+         "dash": true
+        }
+       ],
+       "caption": "Compound interest grows faster: after 10 years $1628.89 vs $1500",
+       "points": [
+        {
+         "x": 10,
+         "y": 1628.894626777442,
+         "label": "$1628.89",
+         "dx": -60,
+         "dy": -6
+        },
+        {
+         "x": 10,
+         "y": 1500,
+         "label": "$1500",
+         "dx": -40,
+         "dy": 14
+        }
+       ],
+       "xticks": [
+        2,
+        4,
+        6,
+        8,
+        10
+       ],
+       "yticks": [
+        1000,
+        1200,
+        1400,
+        1600
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "1000*1.05^10",
+       "equals": "1628.89",
+       "tol": 0.005
+      },
+      {
+       "expr": "1000*(1+0.05/12)^60",
+       "equals": "1283.36",
+       "tol": 0.005
+      }
+     ],
+     "sourceNote": "讲义表中第 5 年总额 $1276.29 是逐年四舍五入的结果；直接用公式 1000 × 1.05⁵ = $1276.28。"
+    },
+    {
+     "label": "例 10",
+     "ref": "L5 Ex 4",
+     "question": "Find the value of $5000 invested for 5 years at 3.5% p.a. compounded yearly.",
+     "solution": "按年复利，每年乘 1.035，共 5 年：A = 5000 × 1.035⁵ = <strong>$5938.43</strong>。",
+     "answer": "$5938.43",
+     "checks": [
+      {
+       "expr": "5000*1.035^5",
+       "equals": "5938.43",
+       "tol": 0.005
+      }
+     ]
+    },
+    {
+     "label": "例 11",
+     "ref": "L5 Ex 5",
+     "question": "Find the value of $15 000 invested for 10 years at 4.2% p.a. compounded monthly.",
+     "solution": "按月复利，先换成每月利率和月数：i = 0.042 ÷ 12 = 0.0035，n = 10 × 12 = 120：A = 15 000 × 1.0035¹²⁰ = <strong>$22,812.69</strong>。",
+     "answer": "$22,812.69",
+     "checks": [
+      {
+       "expr": "15000*(1+0.042/12)^120",
+       "equals": "22812.69",
+       "tol": 0.005
+      }
+     ]
+    },
+    {
+     "label": "例 12",
+     "ref": "L5 Ex 6",
+     "question": "Find the annual rate, compounded quarterly, that grows $6000 to $8000 in 3 years (one decimal place).",
+     "solution": "n = 12 个季度：8000 = 6000(1 + i)¹²，(1 + i)¹² = {{frac 4|3}}，1 + i = (4/3)<sup>1/12</sup> = 1.02426，i = 0.02426。年利率 r = 4i = 0.0971，即 <strong>9.7%</strong> p.a.。",
+     "answer": "9.7%",
+     "checks": [
+      {
+       "expr": "4*((8000/6000)^(1/12)-1)*100",
+       "equals": "9.705",
+       "tol": 0.005
+      }
+     ]
+    },
+    {
+     "label": "例 13",
+     "ref": "L5 Ex 7",
+     "question": "How long will it take $5000 to grow to $10 000 at 4.5% p.a. compounded monthly?",
+     "solution": "i = 0.045 ÷ 12 = 0.00375：10 000 = 5000 × 1.00375ⁿ，1.00375ⁿ = 2，n = {{frac log 2|log 1.00375}} = 185.19。按讲义要求向上取整：<strong>186 个月</strong>（15.5 年）；185 个月时只有 $9993.06，还差一点。",
+     "answer": "186 months (15½ years)",
+     "checks": [
+      {
+       "expr": "ln(2)/ln(1.00375)",
+       "equals": "185.19",
+       "tol": 0.005
+      },
+      {
+       "expr": "5000*1.00375^185",
+       "equals": "9993.06",
+       "tol": 0.005
+      }
+     ]
+    },
+    {
+     "label": "例 14",
+     "ref": "L5 Ex 8",
+     "question": "A car bought for $65 000 depreciates at 15% p.a. Find its value after 3 years.",
+     "solution": "折旧每年减少 15%，所以每年乘 0.85：A = 65 000 × (1 − 0.15)³ = 65 000 × 0.85³ = <strong>$39,918.12</strong>。",
+     "answer": "$39,918.12",
+     "checks": [
+      {
+       "expr": "65000*0.85^3",
+       "equals": "39918.1250",
+       "tol": 1e-06
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "按月复利时 r 和 t 没换成每期的 i 和期数 n。",
+    "利率写成百分数直接代入（3.5 而不是 0.035）。",
+    "「多久」的答案四舍五入而不是向上取整。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么复利各期金额是等比数列？",
+     "a": "每期都乘同一个 (1 + i)，A₀, A₁, A₂, … 就是首项 P、公比 1 + i 的等比数列；n 期后的金额是第 n + 1 项（从 n = 0 开始）。"
+    }
+   ]
+  },
+  {
+   "title": "年金终值与偿债基金（L6）",
+   "sources": [
+    {
+     "file": "L06_Future_Value.pdf",
+     "pages": "p1–5"
+    }
+   ],
+   "concept": "每期<strong>期末</strong>存入相同金额 PMT，同时计息，这样的账户叫<strong>年金</strong>（annuity；养老账户叫 superannuation）。第一期期间余额为 0，最后一笔存款当期没有利息。\n各笔存款的终值组成等比数列（a = PMT，r = 1 + i），求和得<strong>年金终值</strong>：\n<strong>FV = PMT × {{frac (1 + i)ⁿ − 1|i}}</strong>，i 是每期利率，n 是期数（付款次数）。\n<strong>偿债基金</strong>：为将来一笔已知开支定期存款，已知 FV 求 PMT。\n求某段时间的利息：<strong>期初余额 + 利息 + 存款 = 期末余额</strong>（整段时间从 0 开始时期初余额为 0）。",
+   "formulas": [
+    "FV = PMT × {{frac (1 + i)ⁿ − 1|i}}"
+   ],
+   "examples": [
+    {
+     "label": "例 15",
+     "ref": "L6 Carlos",
+     "question": "Carlos deposits $500 at the end of each month from age 20 to 60 into an account earning 6% p.a. compounded monthly. How much will he have when he retires?",
+     "solution": "n = 40 × 12 = 480 次，i = 0.06 ÷ 12 = 0.005。各笔存款的终值 500, 500 × 1.005, 500 × 1.005², …, 500 × 1.005⁴⁷⁹ 是等比数列：\nA₄₈₀ = {{frac 500(1.005⁴⁸⁰ − 1)|0.005}} = <strong>$995 745.37</strong>。",
+     "answer": "$995 745.37",
+     "checks": [
+      {
+       "expr": "500*(1.005^480-1)/0.005",
+       "equals": "995745.37",
+       "tol": 0.01
+      }
+     ]
+    },
+    {
+     "label": "例 16",
+     "ref": "L6 Ex 1",
+     "question": "Anna deposits $1200 per month into a superannuation account earning 8.4% p.a. compounded monthly. (a) Find the balance after 20 years. (b) Find the interest earned in the 20 years.",
+     "solution": "i = 0.084 ÷ 12 = 0.007，n = 240。\n(a) FV = 1200 × {{frac 1.007²⁴⁰ − 1|0.007}} = <strong>$743,013.37</strong>。\n(b) 存入 1200 × 240 = $288 000；利息 = 0 + 利息 + 288 000 = 743,013.37，所以利息 = <strong>$455,013.37</strong>。",
+     "answer": "(a) $743,013.37 (b) $455,013.37",
+     "checks": [
+      {
+       "expr": "1200*(1.007^240-1)/0.007",
+       "equals": "743013.37",
+       "tol": 0.005
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 17",
+     "ref": "L6 Ex 2",
+     "question": "A $2 million upgrade is needed in 5 years. A sinking fund takes equal quarterly deposits at 6.4% p.a. compounded quarterly. (a) Find each deposit. (b) Find the balance at the end of year 2. (c) at the end of year 3. (d) Hence the interest earned in year 3.",
+     "solution": "i = 0.064 ÷ 4 = 0.016，n = 20。\n(a) 2 000 000 = PMT × {{frac 1.016²⁰ − 1|0.016}}，PMT = <strong>$85,643.04</strong>。\n(b) 8 个季度后：PMT × {{frac 1.016⁸ − 1|0.016}} = <strong>$724,765.08</strong>。\n(c) 12 个季度后：<strong>$1,123,157.17</strong>。\n(d) 期初余额 + 利息 + 存款 = 期末余额：724,765.08 + 利息 + 4 × 85,643.04 = 1,123,157.17，利息 = <strong>$55,819.91</strong>。",
+     "answer": "(a) $85,643.04 (d) $55,819.91",
+     "checks": [
+      {
+       "expr": "85643.0435433683*(1.016^20-1)/0.016",
+       "equals": "2000000",
+       "tol": 0.01
+      },
+      {
+       "expr": "85643.0435433683*(1.016^8-1)/0.016",
+       "equals": "724765.08",
+       "tol": 0.005
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ]
+    },
+    {
+     "label": "例 18",
+     "ref": "L6 Ex 3",
+     "question": "Kim deposits $500 a month at 4.5% p.a. compounded monthly. How long to save $20 000?",
+     "solution": "i = 0.00375：20 000 = 500 × {{frac 1.00375ⁿ − 1|0.00375}}，1.00375ⁿ − 1 = 0.15，n = {{frac log 1.15|log 1.00375}} = 37.34，向上取整：<strong>38 个月</strong>（37 个月时还不到 $20 000，38 个月时为 $20 379.44）。",
+     "answer": "38 months",
+     "checks": [
+      {
+       "expr": "ln(1.15)/ln(1.00375)",
+       "equals": "37.34",
+       "tol": 0.005
+      },
+      {
+       "expr": "500*(1.00375^38-1)/0.00375",
+       "equals": "20379.44",
+       "tol": 0.005
+      }
+     ]
+    },
+    {
+     "label": "例 19",
+     "ref": "L6 Ex 4",
+     "question": "Jim deposits $3000 on each birthday from his 20th to his 50th into a fund earning 3.8% p.a. compounded annually; afterwards no deposits but interest continues. (a) Find the balance on his 60th birthday. (b) Find the total interest earned.",
+     "solution": "20 到 50 岁生日共 31 次存款；把账户看成在 19 岁生日开始，第一次存款在第 1 期期末。\n50 岁时：FV = 3000 × {{frac 1.038³¹ − 1|0.038}} = $171,926.61。\n(a) 再复利 10 年：171,926.61 × 1.038¹⁰ = <strong>$249,641.41</strong>。\n(b) 存入 31 × 3000 = $93 000，利息 = <strong>$156,641.41</strong>。",
+     "answer": "(a) $249,641.41 (b) $156,641.41",
+     "checks": [
+      {
+       "expr": "3000*(1.038^31-1)/0.038*1.038^10",
+       "equals": "249641.41",
+       "tol": 0.005
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    }
+   ],
+   "mistakes": [
+    "n 用年数而不是付款次数（按月要 × 12）。",
+    "Jim 的存款次数算成 30：20 到 50 岁含两端是 31 次。",
+    "求某年的利息时忘了减去当年存款。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么 Jim 的账户「从 19 岁开始」？",
+     "a": "公式假设每笔存款在期末，第一期期间余额为 0；第一笔在 20 岁存入，就相当于账户在 19 岁生日开设、第一期期末存款。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "题型",
+   "公式",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "极限和",
+    "a/(1 − r)，|r| < 1",
+    "例 2–5"
+   ],
+   [
+    "单利",
+    "I = Prt，A = P(1 + rt)",
+    "例 6–8"
+   ],
+   [
+    "复利",
+    "A = P(1 + i)ⁿ",
+    "例 9–12"
+   ],
+   [
+    "多久",
+    "取对数后向上取整",
+    "例 13、18"
+   ],
+   [
+    "折旧",
+    "A = P(1 − r)ⁿ",
+    "例 14"
+   ],
+   [
+    "年金终值",
+    "PMT[(1 + i)ⁿ − 1]/i",
+    "例 15–19"
+   ]
+  ]
+ },
+ "practice": "讲义建议练习：Tutorial Guide 6-4、7-1、7-2。"
+}

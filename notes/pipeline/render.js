@@ -10,13 +10,15 @@ function escapeHtml(s) {
   return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
-/* 正文只允许少量标签；分数写成 {{frac 分子|分母}}，其余 HTML 一律转义。 */
+/* 正文只允许少量标签；分数写成 {{frac 分子|分母}}，求和写成 {{sum 下限|上限}}，其余 HTML 一律转义。 */
 function inline(text) {
   let s = escapeHtml(text);
   s = s.replace(/&lt;(\/?)([a-z]+)\s*\/?&gt;/g, (m, slash, tag) => ALLOWED_TAGS.has(tag) ? '<' + slash + tag + '>' : m);
   for (let i = 0; i < 4 && /\{\{frac /.test(s); i++) {
     s = s.replace(/\{\{frac ([^{}|]*)\|([^{}]*)\}\}/g, '<span class="frac"><span class="n">$1</span><span class="d">$2</span></span>');
   }
+  /* 求和记号 {{sum 下限|上限}} → Σ 带上下标，只用已有标签，不需要新的样式。 */
+  s = s.replace(/\{\{sum ([^{}|]*)\|([^{}]*)\}\}/g, 'Σ<sub>$1</sub><sup>$2</sup>');
   return s.replace(/\n/g, '<br>');
 }
 
