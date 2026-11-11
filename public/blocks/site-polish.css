@@ -70,7 +70,8 @@ body {
 .tarrow::after { content:""; position:absolute; inset:-8px -4px; }
 .kp-tools-btn::after { content:""; position:absolute; inset:-7px -4px; }
 @media (max-width:960px) {
-  .ws-check, .book-done-label input[type="checkbox"] { width:24px; height:24px; }
+  /* 每周勾选、整本读完、复习计划任务等原生勾选框原本只有 13~19px */
+  #app input[type="checkbox"] { width:24px; height:24px; flex-shrink:0; }
   #searchInput { min-height:28px; }
   #briefSearch, #briefCategory, [id^="ppWb"] { min-height:34px; }
 }
