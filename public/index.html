@@ -4864,6 +4864,28 @@ function renderBookPage(courseId, termId, chapterNum, preferPdf){
     var match = new RegExp("^" + heading + "[ \t　]*$", "m").exec(text);
     if(match) chapterStart = match.index;
   }
+  /* 「导读」「全书回顾」等带 displayLabel 的章节是学习小屋整理的导引，原书里没有对应正文。
+     阅读器翻页和目录只走有正文的章节；直接打开导引章时说明情况，不显示空白页。 */
+  function chapterHasText(item){
+    if(!item.displayLabel) return true;
+    var r = edition && edition.ranges ? edition.ranges[item.num] : bookChapterRange(course, item, text);
+    return Boolean(r && r.end > r.start);
+  }
+  var readerWeeks = hasText ? term.weeks.filter(chapterHasText) : term.weeks;
+  if(hasText && readerWeeks.indexOf(chapter) < 0){
+    var firstText = readerWeeks[0];
+    document.body.classList.remove("novel-focus", "cabin-pdf-focus");
+    app.innerHTML = '<main class="container"><nav class="book-reading-nav" aria-label="阅读入口">' +
+      '<a class="note-tab" href="#/reading">书架</a><a class="note-tab" href="#/c/'+bookPath+chapter.num+'">打开这一章的笔记</a></nav>' +
+      '<article class="gx book-reading-page"><p class="book-reading-caption">'+esc(chapter.displayLabel)+'</p><h2>'+esc(chapter.title)+'</h2>' +
+      '<p>「'+esc(chapter.displayLabel)+'」是学习小屋为《'+esc(course.nameCn)+'》整理的阅读导引，原书里没有对应的正文，内容都在这一章的笔记里。</p>' +
+      (firstText ? '<nav class="book-reading-nav" aria-label="章节翻页"><a class="note-tab" href="#/read/'+bookPath+firstText.num+'">从正文第一章读起 →</a></nav>' : '') +
+      '</article></main>';
+    var guideFab = document.getElementById("ai-fab");
+    if(guideFab){ guideFab.style.display = "flex"; guideFab.setAttribute("data-ctx", "书籍：" + (course.nameCn||course.name) + "；本章：" + (chapter.title||"") + "（导引章，无原书正文）"); }
+    return;
+  }
+  var readerIndex = readerWeeks.indexOf(chapter);
   if(isPdf && !hasText && course.illustratedPdf && typeof URL.createObjectURL === "function"){
     var key = course.id + "/illustrated-pdf";
     if(!originalTextUrls.has(key)){
@@ -4879,7 +4901,7 @@ function renderBookPage(courseId, termId, chapterNum, preferPdf){
   document.body.classList.toggle("novel-focus", hasText);
   var readerPath = "#/read/" + bookPath + chapter.num;
   var directory = '<details class="novel-directory"><summary>目录</summary><div>' +
-    term.weeks.map(function(item){
+    readerWeeks.map(function(item){
       return '<a href="#/read/'+bookPath+item.num+'"'+(item === chapter ? ' aria-current="page"' : '')+'>'+esc(item.title)+'</a>';
     }).join("") + '</div></details>';
   var tools = '<aside class="novel-tools" aria-label="阅读工具">'+languagePicker+directory+'<a href="#/reading">书架</a><a href="#/c/'+bookPath+chapter.num+'">笔记</a>' +
@@ -4907,8 +4929,8 @@ function renderBookPage(courseId, termId, chapterNum, preferPdf){
   }
   if(hasText){
     html += '<nav class="book-reading-nav" aria-label="章节翻页">';
-    if(index > 0) html += '<a class="note-tab" href="#/read/'+bookPath+term.weeks[index-1].num+'">← 上一章</a>';
-    if(index < term.weeks.length-1) html += '<a class="note-tab" href="#/read/'+bookPath+term.weeks[index+1].num+'">下一章 →</a>';
+    if(readerIndex > 0) html += '<a class="note-tab" href="#/read/'+bookPath+readerWeeks[readerIndex-1].num+'">← 上一章</a>';
+    if(readerIndex < readerWeeks.length-1) html += '<a class="note-tab" href="#/read/'+bookPath+readerWeeks[readerIndex+1].num+'">下一章 →</a>';
     else html += '<span>已读到全书末尾</span>';
     html += '</nav>';
   }
