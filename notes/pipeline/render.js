@@ -110,15 +110,21 @@ const money = v => Number.isInteger(v) ? v.toLocaleString('en-US') : v.toLocaleS
 
 function postLedger(fig) {
   const acc = new Map();
-  const get = (name, kind) => { if (!acc.has(name)) acc.set(name, { kind, dr: [], cr: [] }); return acc.get(name); };
-  for (const o of fig.openings || []) get(o.account, o.kind)[DEBIT_NORMAL.has(o.kind) ? 'dr' : 'cr'].push([o.date, 'Balance b/d', o.amount]);
+  const get = (name, kind) => { if (!acc.has(name)) acc.set(name, { kind, dr: [], cr: [], seq: [] }); return acc.get(name); };
+  const add = (name, kind, side, row) => { const a = get(name, kind); a[side].push(row); a.seq.push([...row, side]); };
+  for (const o of fig.openings || []) add(o.account, o.kind, DEBIT_NORMAL.has(o.kind) ? 'dr' : 'cr', [o.date, 'Balance b/d', o.amount]);
   for (const j of fig.journal) {
     const dr = j.dr.reduce((s, x) => s + x[2], 0), cr = j.cr.reduce((s, x) => s + x[2], 0);
     if (Math.abs(dr - cr) > 1e-9) throw new Error(`${j.date} 分录借贷不等：${dr} ≠ ${cr}`);
-    for (const [n, k, v] of j.dr) get(n, k).dr.push([j.date, j.cr.map(x => x[0]).join(' & '), v]);
-    for (const [n, k, v] of j.cr) get(n, k).cr.push([j.date, j.dr.map(x => x[0]).join(' & '), v]);
+    for (const [n, k, v] of j.dr) add(n, k, 'dr', [j.date, j.cr.map(x => x[0]).join(' & '), v]);
+    for (const [n, k, v] of j.cr) add(n, k, 'cr', [j.date, j.dr.map(x => x[0]).join(' & '), v]);
   }
   return acc;
+}
+/* 账户名比较用：忽略大小写、空格、Account 字样和单复数，「Account Receivable」与「Accounts Receivable」视为同一账户。 */
+function normName(n) {
+  return String(n).toLowerCase().replace(/\baccounts?\b/g, 'acct').replace(/\b(a\/r)\b/g, 'acct receivable').replace(/\b(a\/p)\b/g, 'acct payable')
+    .replace(/[^a-z]/g, '').replace(/s$/, '');
 }
 const balanceOf = a => a.dr.reduce((s, x) => s + x[2], 0) - a.cr.reduce((s, x) => s + x[2], 0);
 
@@ -138,11 +144,50 @@ function taccount(name, a, endDate, nextDate, balanceIt) {
   return `<table class="kp-tbl ledger"><caption>${escapeHtml(name)}</caption><thead><tr><th>Date</th><th>Particulars</th><th>Dr $</th><th>Date</th><th>Particulars</th><th>Cr $</th></tr></thead><tbody>${rows.join('')}</tbody></table>`;
 }
 
+const KIND_CODE = { asset: 'A', liability: 'L', equity: 'OE', revenue: 'R', expense: 'E', drawings: 'OE (Drawings)' };
+/* 借记资产、费用、提款是增加；贷记负债、权益、收入是增加；反过来就是减少。 */
+const effect = (kind, side) => (DEBIT_NORMAL.has(kind) === (side === 'dr')) ? 'Increase' : 'Decrease';
+
+function analysisHtml(fig) {
+  const rows = [];
+  for (const j of fig.journal) {
+    const lines = [...j.dr.map(x => [x, 'dr']), ...j.cr.map(x => [x, 'cr'])];
+    lines.forEach(([[n, k, v], side], i) => rows.push(`<tr><td>${i ? '' : escapeHtml(j.date)}</td><td>${escapeHtml(n)}</td><td>${KIND_CODE[k]}</td><td>${effect(k, side)}</td><td>${side === 'dr' ? 'Dr' : 'Cr'}</td><td>${money(v)}</td></tr>`));
+  }
+  return `<table class="kp-tbl"><caption>Transaction Analysis 交易分析表</caption><thead><tr><th>Date</th><th>Account</th><th>A/L/OE/R/E</th><th>Increase / Decrease</th><th>Dr / Cr</th><th>Amount $</th></tr></thead><tbody>${rows.join('')}</tbody></table>`;
+}
+
+function journalHtml(fig) {
+  const rows = [];
+  for (const j of fig.journal) {
+    j.dr.forEach(([n, , v], i) => rows.push(`<tr><td>${i ? '' : escapeHtml(j.date)}</td><td>${escapeHtml(n)}</td><td>${money(v)}</td><td></td></tr>`));
+    j.cr.forEach(([n, , v]) => rows.push(`<tr><td></td><td class="jcr">${escapeHtml(n)}</td><td></td><td>${money(v)}</td></tr>`));
+    if (j.narration) rows.push(`<tr class="narr"><td></td><td colspan="3">(${escapeHtml(j.narration)})</td></tr>`);
+  }
+  return `<table class="kp-tbl journal"><caption>General Journal 普通日记账</caption><thead><tr><th>Date</th><th>Particulars</th><th>Dr $</th><th>Cr $</th></tr></thead><tbody>${rows.join('')}</tbody></table>`;
+}
+
+/* 多栏式账户：按时间顺序逐笔记录，每一行算出余额并标明借方或贷方。 */
+function columnar(name, a) {
+  let bal = 0;
+  const rows = a.seq.map(([d, p, v, side]) => {
+    if (p === 'Balance b/d') { bal = side === 'dr' ? v : -v; return `<tr><td>${escapeHtml(d)}</td><td>Balance b/d</td><td></td><td></td><td>${money(Math.abs(bal))} ${bal >= 0 ? 'Dr' : 'Cr'}</td></tr>`; }
+    bal += side === 'dr' ? v : -v;
+    return `<tr><td>${escapeHtml(d)}</td><td>${escapeHtml(p)}</td><td>${side === 'dr' ? money(v) : ''}</td><td>${side === 'cr' ? money(v) : ''}</td><td>${money(Math.abs(bal))} ${bal > 0 ? 'Dr' : bal < 0 ? 'Cr' : ''}</td></tr>`;
+  });
+  return `<table class="kp-tbl ledger columnar"><caption>${escapeHtml(name)}</caption><thead><tr><th>Date</th><th>Particulars</th><th>Dr $</th><th>Cr $</th><th>Balance $</th></tr></thead><tbody>${rows.join('')}</tbody></table>`;
+}
+
 function ledgerHtml(fig) {
   const acc = postLedger(fig);
   const names = fig.show || [...acc.keys()];
+  const views = new Set(fig.views || ['taccounts']);
   const balanceSet = new Set(fig.balance === true ? names : (fig.balance || []));
-  let html = names.map(n => taccount(n, acc.get(n), fig.endDate, fig.nextDate, balanceSet.has(n))).join('');
+  let html = '';
+  if (views.has('analysis')) html += analysisHtml(fig);
+  if (views.has('journal')) html += journalHtml(fig);
+  if (views.has('taccounts')) html += names.map(n => taccount(n, acc.get(n), fig.endDate, fig.nextDate, balanceSet.has(n))).join('');
+  if (views.has('columnar')) html += names.map(n => columnar(n, acc.get(n))).join('');
   if (fig.trialBalance) {
     let tdr = 0, tcr = 0;
     const rows = [...acc].filter(([, a]) => balanceOf(a)).map(([n, a]) => { const b = balanceOf(a); tdr += Math.max(b, 0); tcr += Math.max(-b, 0); return `<tr><td>${escapeHtml(n)}</td><td>${b > 0 ? money(b) : ''}</td><td>${b < 0 ? money(-b) : ''}</td></tr>`; });
@@ -190,4 +235,4 @@ function renderWeek(note) {
   return h.join('\n');
 }
 
-module.exports = { renderWeek, figureHtml, inline, postLedger, balanceOf };
+module.exports = { renderWeek, figureHtml, inline, postLedger, balanceOf, normName };
