@@ -1,0 +1,1421 @@
+{
+ "course": "economics",
+ "term": "term1",
+ "week": 12,
+ "title": "Unit 11 · Revision & Sample Final 复习与样题",
+ "answersTitle": "Term 1 Sample Examinations A and B",
+ "files": [
+  "2020 Econ Sem 1 Sample Exams .pdf",
+  "2020 Econ Sem 1 Sample Exams Answers.pdf",
+  "Extra written questions - Term 1 Economics.pdf",
+  "Final Exam_样题_2020 Sample.pdf",
+  "Final Exam_答案_2020 Sample.pdf",
+  "Final Exam_答案_Sample A Expanded Answers.pdf",
+  "Lecture Examination Preparation.pdf",
+  "Market structures summary - student.pdf",
+  "Revision_写作练习_Extra Questions.pdf",
+  "Revision_图表答案_Microeconomics Diagrams.pdf",
+  "Revision_图表练习_Microeconomics Diagrams.pdf",
+  "Revision_总结练习_Market Structures.pdf",
+  "Revision_补充练习_Perfect Competition.pdf",
+  "Revision_词汇_Term 1 Key Words.pdf",
+  "Revision_课件_Examination Preparation.pdf",
+  "Sample exam A expanded answers - Term 1 Economics.pdf",
+  "Term1 key words list.pdf",
+  "UNSW College_Unit 8 LG Microeconomics Perfect Competition.pdf",
+  "Useful microeconomics diagrams - answers.pdf",
+  "Useful microeconomics diagrams - student.pdf"
+ ],
+ "inventory": [
+  "Exam Preparation Format",
+  "Exam Preparation Strategy",
+  {
+   "ref": "Sample Exam A MCQ",
+   "parts": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20"
+   ]
+  },
+  {
+   "ref": "Sample Exam A Q21",
+   "parts": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "ref": "Sample Exam A Q22",
+   "parts": [
+    "a",
+    "b"
+   ],
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Sample Exam A Q23",
+   "parts": [
+    "a",
+    "b",
+    "c"
+   ],
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Sample Exam B MCQ",
+   "parts": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20"
+   ]
+  },
+  {
+   "ref": "Sample Exam B Q21",
+   "parts": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "ref": "Sample Exam B Q22",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Sample Exam B Q23",
+   "parts": [
+    "a",
+    "b",
+    "c"
+   ],
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Revision Diagrams",
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  {
+   "ref": "Revision Market Structures",
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  "Revision Key Words",
+  "Revision Extra Questions"
+ ],
+ "intro": [
+  "Term 1 经济学总复习：考试形式和答题方法、两套完整样卷（Sample A、B）的解答——选择题答案与官方答案一致并给出理由，简答和综合题按官方评分要点写出完整答案并配图——以及复习清单：必背图的索引、市场结构总表和关键词。"
+ ],
+ "sections": [
+  {
+   "title": "考试形式与答题方法",
+   "sources": [
+    {
+     "file": "Lecture Examination Preparation.pdf",
+     "pages": "p2–16"
+    }
+   ],
+   "concept": "讲义说明：期末考试占 Term 1 总成绩 60%，所有单元都考，时长 2 小时。Section A：20 道选择题（20 分）；Section B：2 道简答，各 10 分；Section C：1 道综合题（20 分，分 a、b、c）。（样卷是 1.5 小时版本，以当期通知为准。）\n复习方法：按单元整理笔记；复习每单元的术语；完成所有 Learning Guide 题目和课堂活动；把写作题和课堂展示题当作可能的考题；练习画图；在限时条件下做样卷。\n答 B、C 部分：找出关键词并下定义；用经济学词汇；写完整的句子和段落（不要列点）；按分数分配时间（5 分大约 10 分钟）；没说明时至少写 3 点；用例子；明确引用图。",
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "Exam Preparation Format",
+     "question": "Describe the format of the Term 1 final examination and how to allocate time.",
+     "solution": "Section A 20 道选择题，每题 1 分，不要在一题上停太久，跳过的要做记号回头做；Section B 两题各 10 分；Section C 一题 20 分，分 a、b、c。按每 5 分约 10 分钟分配时间。",
+     "numeric": false
+    },
+    {
+     "label": "例 2",
+     "ref": "Exam Preparation Strategy",
+     "question": "What approach should you take in Sections B and C?",
+     "solution": "先找出题目的关键词和任务词并给出定义；用经济学术语；用完整的段落而不是列点（只列点通常最多拿一半分）；至少写 3 点并展开；有例子就举例；画图时标题、坐标轴、曲线都要标注，并在文字中引用图（例如「In Fig 1, the firm sets output at Q1 where MR = MC」）。",
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "只列点不展开。",
+    "背好的答案照抄而不回答题目问的问题。"
+   ],
+   "faqs": [
+    {
+     "q": "图要画多大？",
+     "a": "大而清楚，放在页面中央，并在文字中逐一说明图上的点和区域。"
+    }
+   ]
+  },
+  {
+   "title": "Sample Examination A",
+   "sources": [
+    {
+     "file": "2020 Econ Sem 1 Sample Exams .pdf",
+     "pages": "p3–14"
+    },
+    {
+     "file": "2020 Econ Sem 1 Sample Exams Answers.pdf",
+     "pages": "p3–6"
+    },
+    {
+     "file": "Sample exam A expanded answers - Term 1 Economics.pdf",
+     "pages": "p1–6"
+    }
+   ],
+   "concept": "官方评分要点：简答每点要解释，只列点最多 3 分；图要完整标注；比较题要说明「为什么」从短期变到长期。",
+   "examples": [
+    {
+     "label": "例 3",
+     "ref": "Sample Exam A MCQ",
+     "question": "Sample Exam A, Section A: multiple-choice questions 1–20.",
+     "solution": "1 <strong>D</strong>：资本是用来生产的人造工具，旅行社买的电脑；土地、存款、邮票都不是。\n2 <strong>A</strong>：交叉弹性为负 → 互补品。\n3 <strong>B</strong>：A 的供给减少 → A 涨价 → 替代品需求增加、价格上升。\n4 <strong>D</strong>：AR = MR 只有在需求完全弹性（水平）时成立。\n5 <strong>B</strong>：在 pp2 上，B 从 0 增加到 50，A 从 120 减到 100，机会成本 20 单位 A。\n6 <strong>D</strong>：PPC 外移是经济增长。\n7 <strong>C</strong>：两家出租车公司合并，同一生产环节 → 横向一体化。\n8 <strong>C</strong>：需求富有弹性，税负大部分由生产者承担，价格上升少于 $0.50。\n9 <strong>C</strong>：补贴使供给增加，价格下降，需求量增加（需求曲线不动）。\n10 <strong>D</strong>：两者产品都可以有差别，主要区别是市场集中度（寡头只有少数厂商）。\n11 <strong>B</strong>：每个产量都亏损，产量 2 时亏损最小（TR 220 − TC 270 = −50，小于停产的 −100），而且 TR 220 > TVC 170。\n12 <strong>C</strong>：从 5 到 6 单位，价格下降而 TR 从 250 降到 180，缺乏弹性。\n13 <strong>C</strong>：同样的资源，A 生产的煤和电脑都比 B 多 → 两种都有绝对优势。\n14 <strong>A</strong>：A 生产 1 台电脑的机会成本是 300 ÷ 400 = 0.75 吨煤，B 是 100 ÷ 50 = 2 吨煤，A 的机会成本更低。\n15 <strong>A</strong>：是厂商（不是行业）的需求曲线完全弹性；行业需求向下倾斜。\n16 <strong>A</strong>：消费者主权指消费者的购买决定生产什么。\n17 <strong>B</strong>：资源无限，就没有稀缺，也就没有经济问题。\n18 <strong>D</strong>：停产点：价格（= MC）低于 AVC。\n19 <strong>D</strong>：基础设施改善是外部规模经济。\n20 <strong>D</strong>：边际收益递减以至少一种要素固定为前提。",
+     "parts": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20"
+     ],
+     "checks": [
+      {
+       "expr": "2*110-(100+170)",
+       "equals": "-50"
+      },
+      {
+       "expr": "300/400",
+       "equals": "0.75"
+      },
+      {
+       "expr": "100/50",
+       "equals": "2"
+      }
+     ]
+    },
+    {
+     "label": "例 4",
+     "ref": "Sample Exam A Q21",
+     "question": "(a) Distinguish between internal and external economies of scale. (5) (b) What are some factors which affect the price elasticity of demand for a particular product? (5)",
+     "solution": "(a) 规模经济是大规模生产的成本优势，使长期平均总成本下降。<strong>内部规模经济</strong>来自厂商自己扩大产量的决定，例如劳动分工和专业化、更高效的资本设备、批量采购、融资更便宜——厂商沿着 LRATC 向下移动。<strong>外部规模经济</strong>来自厂商以外、整个行业的扩大，例如基础设施（公路、铁路）改善、产业集聚、行业研发——整条 LRATC 下移，厂商自身规模不变。（可配第 8 周例 1、例 3 的图。）\n(b) ①相近替代品的多少：黄油和人造黄油可以互相替代，一种涨价消费者就转买另一种，需求富有弹性；②必需品还是奢侈品：药品等必需品无论价格多高都要买，缺乏弹性；奢侈品需求对价格反应大；③价格占收入的比重：盐只占预算很小一部分，涨价影响小，缺乏弹性；日用杂货价格翻倍影响大，更有弹性；④耐用性：汽车等耐用品涨价太多时，人们会继续用旧车，需求更有弹性；⑤调整时间越长越有弹性。",
+     "parts": [
+      "a",
+      "b"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 5",
+     "ref": "Sample Exam A Q22",
+     "question": "(a) Why do governments interfere in the free working of the price mechanism? (5) (b) Using a demand and supply diagram, discuss the effect of a price support scheme on the market for a particular product. (5)",
+     "solution": "(a) 价格机制是由需求和供给决定价格及其变动的体系。政府干预是为了改变资源配置、改善经济和社会福利，因为价格机制有缺点：①收入不平等；②机会不平等；③竞争消失（垄断、勾结）；④市场失灵——外部性（负外部性用法律、罚款，正外部性用补贴）；⑤市场失灵——不提供公共物品（国防）；⑥经济不稳定。政府的目标包括收入再分配、资源再配置和稳定经济。\n(b) 价格支持（价格下限）是政府规定的、高于均衡价格的最低价格。图中支持价格高于均衡价格 E，供给量大于需求量，出现过剩；生产者的收入得到保障（如农产品、羊毛保护价），但消费者付更高的价格，政府往往要收购或储存过剩产品，造成资源浪费。注意不要把价格支持（下限）和价格管制（上限）混淆。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        26
+       ],
+       "yr": [
+        0,
+        7
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Q",
+       "yLabel": "P",
+       "curves": [
+        {
+         "expr": "6+(-0.25)*x",
+         "dom": [
+          0,
+          24
+         ],
+         "color": "navy",
+         "label": [
+          19.68,
+          1.48,
+          "D"
+         ]
+        },
+        {
+         "expr": "0+(0.25)*x",
+         "dom": [
+          0,
+          23
+         ],
+         "color": "red",
+         "label": [
+          20.7,
+          5.675,
+          "S"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 12,
+         "y": 3,
+         "label": "E"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          8,
+          4
+         ],
+         "to": [
+          16,
+          4
+         ],
+         "color": "green",
+         "label": "surplus",
+         "dx": -60,
+         "dy": -6
+        }
+       ],
+       "caption": "Price support (floor) above equilibrium: Qs > Qd, a surplus the government may have to buy",
+       "hlines": [
+        {
+         "y": 4,
+         "label": "support price",
+         "color": "green"
+        }
+       ]
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 6",
+     "ref": "Sample Exam A Q23",
+     "question": "(a) What are the main characteristics of a firm in perfect competition? (5) (b) Using diagrams, compare the short-run equilibrium of a typical firm earning supernormal profit with its long-run equilibrium. (10) (c) With a diagram, illustrate and explain the short-run supply curve for perfect competition. (5)",
+     "solution": "(a) 大量小厂商；产品同质（消费者认为完全相同）；厂商接受市场价格；没有进入壁垒；没有非价格竞争；厂商的需求曲线完全弹性（P = AR = MR = D）；信息完全、资源可以自由流动。例子：农产品、割草、清洁服务。\n(b) 短期：厂商在 MR = MC 处生产，价格高于 ATC，阴影部分是超额利润（左图）。超额利润吸引新厂商进入（没有壁垒），市场供给右移、价格下降；厂商的水平需求线随之下移，直到价格等于 ATC 的最低点。长期：P = MR = MC = 最低 ATC，只有正常利润（右图），不再有进出的动力。\n(c) 厂商总是在 MR = MC（即 P = MC）处生产，所以价格变化时它沿着 MC 曲线调整产量，MC 曲线就是供给曲线；但价格低于 AVC 最低点时停产，所以短期供给曲线是 MC 在 AVC 最低点以上的部分（下图实线）。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        15
+       ],
+       "yr": [
+        0,
+        14
+       ],
+       "width": 340,
+       "height": 260,
+       "xLabel": "Output (Q)",
+       "yLabel": "$",
+       "curves": [
+        {
+         "expr": "10-3*x+0.3*x^2",
+         "dom": [
+          0.4,
+          11.5
+         ],
+         "color": "red",
+         "label": [
+          10.8,
+          13.4,
+          "MC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2+20/x",
+         "dom": [
+          1.6,
+          14
+         ],
+         "color": "navy",
+         "label": [
+          13.2,
+          10.6,
+          "ATC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2",
+         "dom": [
+          0.4,
+          14
+         ],
+         "color": "gold",
+         "dash": true,
+         "label": [
+          13.4,
+          7.6,
+          "AVC"
+         ]
+        },
+        {
+         "expr": "10+0*x",
+         "dom": [
+          0,
+          15
+         ],
+         "color": "green",
+         "label": [
+          0.3,
+          10.45,
+          "P = MR = AR = D"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 10.0,
+         "y": 10,
+         "label": "MR = MC",
+         "dy": 15
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          10.0,
+          0
+         ],
+         "to": [
+          10.0,
+          10
+         ]
+        }
+       ],
+       "caption": "Perfect competition, short run: supernormal profit where MR = MC",
+       "polygons": [
+        {
+         "pts": [
+          [
+           0,
+           7.0
+          ],
+          [
+           10.0,
+           7.0
+          ],
+          [
+           10.0,
+           10
+          ],
+          [
+           0,
+           10
+          ]
+         ],
+         "color": "green",
+         "opacity": 0.25,
+         "label": [
+          5.0,
+          8.5,
+          "supernormal profit"
+         ]
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        15
+       ],
+       "yr": [
+        0,
+        14
+       ],
+       "width": 340,
+       "height": 260,
+       "xLabel": "Output (Q)",
+       "yLabel": "$",
+       "curves": [
+        {
+         "expr": "10-3*x+0.3*x^2",
+         "dom": [
+          0.4,
+          11.5
+         ],
+         "color": "red",
+         "label": [
+          10.8,
+          13.4,
+          "MC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2+20/x",
+         "dom": [
+          1.6,
+          14
+         ],
+         "color": "navy",
+         "label": [
+          13.2,
+          10.6,
+          "ATC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2",
+         "dom": [
+          0.4,
+          14
+         ],
+         "color": "gold",
+         "dash": true,
+         "label": [
+          13.4,
+          7.6,
+          "AVC"
+         ]
+        },
+        {
+         "expr": "6.817+0*x",
+         "dom": [
+          0,
+          15
+         ],
+         "color": "green",
+         "label": [
+          0.3,
+          7.267,
+          "P = MR = AR = D"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 8.793,
+         "y": 6.817,
+         "label": "MR = MC",
+         "dy": 15
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          8.793,
+          0
+         ],
+         "to": [
+          8.793,
+          6.817
+         ]
+        }
+       ],
+       "caption": "Perfect competition, long run: P = minimum ATC, normal profit"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        15
+       ],
+       "yr": [
+        0,
+        14
+       ],
+       "width": 340,
+       "height": 260,
+       "xLabel": "Output (Q)",
+       "yLabel": "$",
+       "curves": [
+        {
+         "expr": "10-3*x+0.3*x^2",
+         "dom": [
+          0.4,
+          7.5
+         ],
+         "color": "red",
+         "dash": true
+        },
+        {
+         "expr": "10-3*x+0.3*x^2",
+         "dom": [
+          7.5,
+          11.5
+         ],
+         "color": "red",
+         "label": [
+          10.6,
+          13.2,
+          "S = MC above AVC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2",
+         "dom": [
+          0.4,
+          14
+         ],
+         "color": "gold",
+         "label": [
+          13.4,
+          7.6,
+          "AVC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2+20/x",
+         "dom": [
+          1.6,
+          14
+         ],
+         "color": "navy",
+         "label": [
+          13.2,
+          10.6,
+          "ATC"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 7.5,
+         "y": 4.375,
+         "label": "shut-down point (min AVC)",
+         "dy": 15
+        }
+       ],
+       "caption": "Short-run supply curve of a perfectly competitive firm: the MC curve above minimum AVC (solid)"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ],
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "Q22(b) 把价格支持画在均衡价格以下。",
+    "Q23(b) 只画图不解释新厂商进入的过程。"
+   ],
+   "faqs": [
+    {
+     "q": "Q21(b) 要写几点？",
+     "a": "评分要点：3–4 点并有合理解释才能拿满分。"
+    }
+   ]
+  },
+  {
+   "title": "Sample Examination B",
+   "sources": [
+    {
+     "file": "2020 Econ Sem 1 Sample Exams .pdf",
+     "pages": "p16–25"
+    },
+    {
+     "file": "2020 Econ Sem 1 Sample Exams Answers.pdf",
+     "pages": "p3, p7–10"
+    }
+   ],
+   "concept": "Sample B 的综合题考寡头：折弯需求、勾结寡头与完全竞争的长期比较、寡头增强市场势力的方法。",
+   "examples": [
+    {
+     "label": "例 7",
+     "ref": "Sample Exam B MCQ",
+     "question": "Sample Exam B, Section A: multiple-choice questions 1–20.",
+     "solution": "1 <strong>D</strong>：伐木公司收购锯木厂，上下游 → 纵向一体化。\n2 <strong>D</strong>：机会成本是放弃的次优选择。\n3 <strong>C</strong>：社会基础设施指公路、铁路、港口等投资。\n4 <strong>A</strong>：TR 从 10 × 1.00 = 10.00 到 11 × 0.95 = 10.45，MR = 45c。\n5 <strong>A</strong>：X 点生产更多资本品，将来经济增长更快。\n6 <strong>B</strong>：买股票是金融投资，经济学的投资指购买资本品。\n7 <strong>D</strong>：天气是非价格因素，需求曲线移动。\n8 <strong>C</strong>：现有厂商退出，剩下的厂商更少，市场更集中。\n9 <strong>B</strong>：A 降价使 B 的需求增加 → 互补品。\n10 <strong>D</strong>：短期价格至少要高于 AVC 才生产。\n11 <strong>D</strong>：垄断竞争进入容易。\n12 <strong>B</strong>：从 3 到 4 单位，TR 从 426 增加到 528，价格下降 TR 上升 → 富有弹性。\n13 <strong>B</strong>：利润（TR − TC）在 4、5、6 单位分别是 128、140、122；4→5 的 MR 82 > MC 70，5→6 的 MR 62 < MC 80，利润最大在 5 到 6 之间。\n14 <strong>C</strong>：技术最优是 ATC 最低点：ATC 在 6、7、8 单位是 91.67、91.43、93.75，7 最低。\n15 <strong>C</strong>：需求曲线向下倾斜来自边际效用递减。\n16 <strong>C</strong>：MC < AVC 时 AVC 下降。\n17 <strong>B</strong>：价格高于均衡 → 过剩，供给量增加（沿供给曲线）。\n18 <strong>D</strong>：商品本身价格上升只减少需求量，不减少需求。\n19 <strong>B</strong>：资本固定、劳动翻倍，产量从 106 到 207 再到 409，几乎同比例增加，官方答案是规模报酬不变（严格看每次略少于翻倍，有轻微的收益递减）。\n20 <strong>C</strong>：市场期供给完全无弹性。",
+     "parts": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20"
+     ],
+     "checks": [
+      {
+       "expr": "11*0.95-10*1",
+       "equals": "0.45"
+      },
+      {
+       "expr": "4*132-3*142",
+       "equals": "102"
+      },
+      {
+       "expr": "5*122-(100+370)",
+       "equals": "140"
+      },
+      {
+       "expr": "(100+540)/7",
+       "equals": "91.43",
+       "tol": 0.01
+      },
+      {
+       "expr": "(100+450)/6",
+       "equals": "91.67",
+       "tol": 0.01
+      }
+     ]
+    },
+    {
+     "label": "例 8",
+     "ref": "Sample Exam B Q21",
+     "question": "(a) Explain the difference between an increase in production and an increase in productivity. (5) (b) With examples, explain the difference between absolute and comparative advantage. (5)",
+     "solution": "(a) 产量增加是总产出增加；生产率提高是每单位投入（每单位时间）的产出增加。产量增加可以只靠投入更多（多雇工人、加班），生产率不一定提高甚至下降：工厂从 10 人增加到 20 人，产量从 100 增加到 150，产量增加了，但人均产量从 10 降到 7.5。生产率提高靠技术、培训、更好的管理：同样 10 人换新设备后产量 150，人均 15，产量和生产率都提高。\n(b) 绝对优势：用同样的资源能生产更多某种产品。比较优势：生产某种产品的机会成本更低。例（Sample A 第 13–14 题）：A 国用同样资源生产煤 300、电脑 400，B 国生产煤 100、电脑 50，A 国两种产品都有绝对优势；但 A 国 1 台电脑的机会成本是 0.75 吨煤，B 国是 2 吨煤，所以 A 国在电脑上有比较优势，B 国在煤上有比较优势（B 国 1 吨煤的机会成本 0.5 台电脑，A 国是 1.33 台）。即使一国在所有产品上都有绝对优势，双方各自专门生产有比较优势的产品再交易，仍然都能获益。",
+     "parts": [
+      "a",
+      "b"
+     ],
+     "checks": [
+      {
+       "expr": "150/20",
+       "equals": "7.5"
+      },
+      {
+       "expr": "50/100",
+       "equals": "0.5"
+      },
+      {
+       "expr": "400/300",
+       "equals": "1.333",
+       "tol": 0.001
+      }
+     ]
+    },
+    {
+     "label": "例 9",
+     "ref": "Sample Exam B Q22",
+     "question": "Coffee and tea are substitutes. A flood destroys Kenya's coffee crop. Use diagrams to explain the likely effect on the world price of coffee and tea. (10)",
+     "solution": "替代品是可以互相代替使用的商品，一种涨价时另一种需求增加。\n咖啡市场：洪水毁掉肯尼亚的收成，世界咖啡供给减少，供给曲线从 S1 左移到 S2；均衡价格上升，沿需求曲线需求量减少（E1 → E2）。\n茶叶市场：咖啡变贵，一部分消费者改喝茶，茶的需求曲线从 D1 右移到 D2；茶的价格上升，沿供给曲线供给量增加。\n更深入的分析：咖啡需求越缺乏弹性，价格涨得越多；茶的供给越缺乏弹性（短期内茶园难以扩大），茶价涨得越多、数量增加得越少。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Coffee Q",
+       "yLabel": "Price of coffee",
+       "curves": [
+        {
+         "expr": "9+(-0.8)*x",
+         "dom": [
+          0,
+          11.25
+         ],
+         "color": "navy",
+         "label": [
+          9.225,
+          2.02,
+          "D"
+         ]
+        },
+        {
+         "expr": "1+(0.6)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "red",
+         "label": [
+          8.55,
+          6.63,
+          "S1"
+         ]
+        },
+        {
+         "expr": "2.5+(0.6)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "red",
+         "label": [
+          8.55,
+          8.129999999999999,
+          "S2"
+         ],
+         "dash": true
+        }
+       ],
+       "points": [
+        {
+         "x": 5.71,
+         "y": 4.43,
+         "label": "E1"
+        },
+        {
+         "x": 4.64,
+         "y": 5.29,
+         "label": "E2"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          7,
+          5.2
+         ],
+         "to": [
+          5.3,
+          5.2
+         ],
+         "arrow": true
+        }
+       ],
+       "caption": "Coffee: the Kenyan flood shifts supply left — price rises, quantity demanded falls"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Tea Q",
+       "yLabel": "Price of tea",
+       "curves": [
+        {
+         "expr": "8+(-0.8)*x",
+         "dom": [
+          0,
+          10.0
+         ],
+         "color": "navy",
+         "label": [
+          8.2,
+          1.8400000000000003,
+          "D1"
+         ]
+        },
+        {
+         "expr": "10+(-0.8)*x",
+         "dom": [
+          0,
+          12.5
+         ],
+         "color": "green",
+         "label": [
+          10.25,
+          2.2000000000000006,
+          "D2"
+         ],
+         "dash": true
+        },
+        {
+         "expr": "1+(0.6)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "red",
+         "label": [
+          8.55,
+          6.63,
+          "S"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 5,
+         "y": 4,
+         "label": "E1"
+        },
+        {
+         "x": 6.43,
+         "y": 4.86,
+         "label": "E2"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          3.8,
+          5
+         ],
+         "to": [
+          5.1,
+          5
+         ],
+         "arrow": true
+        }
+       ],
+       "caption": "Tea (substitute): demand shifts right — price and quantity supplied rise"
+      }
+     ],
+     "checks": [
+      {
+       "expr": "(9-1)/1.4",
+       "equals": "5.714",
+       "tol": 0.001
+      },
+      {
+       "expr": "(9-2.5)/1.4",
+       "equals": "4.643",
+       "tol": 0.001
+      }
+     ]
+    },
+    {
+     "label": "例 10",
+     "ref": "Sample Exam B Q23",
+     "question": "(a) Explain why the demand curve facing a non-collusive oligopoly may be kinked. (5) (b) Use diagrams to explain the long-run position of a firm in collusive oligopoly in contrast to a firm in perfect competition. (10) (c) Discuss methods an oligopolist could use to increase market power. (5)",
+     "solution": "(a) 折弯需求曲线由两段组成：现行市场价格以上富有弹性，以下缺乏弹性。原因是对手不会跟随涨价（涨价的厂商会失去大量顾客），但会跟随降价（降价的厂商抢不到多少份额）。也可以从总收益解释：在富有弹性的上段涨价、在缺乏弹性的下段降价，总收益都会下降，所以厂商不愿变动价格。\n(b) 完全竞争：大量厂商、同质产品、没有壁垒；厂商面对完全弹性的需求曲线；短期的超额利润会因新厂商进入而消失，长期 P = MC = 最低 ATC，只有正常利润（左图）。勾结寡头：少数厂商通过协议一致行动，图形与垄断者相同——面对向下倾斜的行业需求曲线，在 MR = MC 处定产量、从需求曲线定价，价格高于 ATC；高进入壁垒使新厂商无法进入，超额利润在长期也能保持（右图），而且 P > MC，产量少于竞争水平。\n(c) ①产品差别化和非价格竞争（广告、品牌），培养顾客忠诚；②价格战挤走竞争者；③收购和合并，减少对手数量；④设置进入壁垒（大规模投资、控制分销渠道）；⑤勾结（但在澳洲违法）。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        15
+       ],
+       "yr": [
+        0,
+        14
+       ],
+       "width": 340,
+       "height": 260,
+       "xLabel": "Output (Q)",
+       "yLabel": "$",
+       "curves": [
+        {
+         "expr": "10-3*x+0.3*x^2",
+         "dom": [
+          0.4,
+          11.5
+         ],
+         "color": "red",
+         "label": [
+          10.8,
+          13.4,
+          "MC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2+20/x",
+         "dom": [
+          1.6,
+          14
+         ],
+         "color": "navy",
+         "label": [
+          13.2,
+          10.6,
+          "ATC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2",
+         "dom": [
+          0.4,
+          14
+         ],
+         "color": "gold",
+         "dash": true,
+         "label": [
+          13.4,
+          7.6,
+          "AVC"
+         ]
+        },
+        {
+         "expr": "6.817+0*x",
+         "dom": [
+          0,
+          15
+         ],
+         "color": "green",
+         "label": [
+          0.3,
+          7.267,
+          "P = MR = AR = D"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 8.793,
+         "y": 6.817,
+         "label": "MR = MC",
+         "dy": 15
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          8.793,
+          0
+         ],
+         "to": [
+          8.793,
+          6.817
+         ]
+        }
+       ],
+       "caption": "Perfect competition, long run: P = minimum ATC, normal profit"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        16
+       ],
+       "yr": [
+        0,
+        14
+       ],
+       "width": 340,
+       "height": 260,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "$",
+       "curves": [
+        {
+         "expr": "10-3*x+0.3*x^2",
+         "dom": [
+          0.4,
+          11
+         ],
+         "color": "red",
+         "label": [
+          10.2,
+          12.2,
+          "MC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2+20/x",
+         "dom": [
+          1.6,
+          14
+         ],
+         "color": "navy",
+         "label": [
+          13.2,
+          10.2,
+          "ATC"
+         ]
+        },
+        {
+         "expr": "12-0.5*x",
+         "dom": [
+          0,
+          16
+         ],
+         "color": "green",
+         "label": [
+          14.2,
+          5.6,
+          "AR = D"
+         ]
+        },
+        {
+         "expr": "12-x",
+         "dom": [
+          0,
+          12
+         ],
+         "color": "gold",
+         "dash": true,
+         "label": [
+          10.8,
+          0.9,
+          "MR"
+         ]
+        }
+       ],
+       "polygons": [
+        {
+         "pts": [
+          [
+           0,
+           8.225
+          ],
+          [
+           7.55,
+           8.225
+          ],
+          [
+           7.55,
+           7.024
+          ],
+          [
+           0,
+           7.024
+          ]
+         ],
+         "color": "green",
+         "opacity": 0.25,
+         "label": [
+          3.77,
+          7.62,
+          "supernormal profit"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 7.55,
+         "y": 4.45,
+         "label": "MR = MC"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          7.55,
+          0
+         ],
+         "to": [
+          7.55,
+          8.225
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": 7.35,
+         "y": -0.9,
+         "text": "Q*"
+        }
+       ],
+       "caption": "Collusive oligopoly (long run): acts like a monopolist; barriers to entry keep supernormal profit"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ],
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "Q22 只分析一个市场：官方评分只分析一个市场最多 4 分。",
+    "Q23(b) 勾结寡头画成折弯需求曲线：要画成垄断的图。"
+   ],
+   "faqs": [
+    {
+     "q": "比较优势为什么也出现在 Term 1 样卷？",
+     "a": "它基于机会成本（Unit 2），样卷用它考机会成本的计算。"
+    }
+   ]
+  },
+  {
+   "title": "复习清单：图、市场结构、关键词、补充题",
+   "sources": [
+    {
+     "file": "Useful microeconomics diagrams - student.pdf",
+     "pages": "p1–6"
+    },
+    {
+     "file": "Market structures summary - student.pdf",
+     "pages": "p1"
+    },
+    {
+     "file": "Term1 key words list.pdf",
+     "pages": "p1"
+    },
+    {
+     "file": "Extra written questions - Term 1 Economics.pdf",
+     "pages": "p1–6"
+    }
+   ],
+   "concept": "考试会给出要画的图的类型，但需要会画并会解释。下面的索引把复习清单上的每一张图对应到本站笔记里已经画好的例题；市场结构总表把四种结构放在一起比较；关键词表按单元复习。",
+   "examples": [
+    {
+     "label": "例 11",
+     "ref": "Revision Diagrams",
+     "question": "Useful microeconomics diagrams: practise drawing and describing each diagram in the revision list.",
+     "solution": "按下表回到对应周的例题，先自己画，再对照。每张图都要能说出：坐标轴、曲线、均衡点、移动方向、阴影区域的含义。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "Diagram in the revision list",
+        "Where it is drawn"
+       ],
+       "rows": [
+        [
+         "Increase / decrease in demand and supply; tax; subsidy",
+         "Week 3 例 12–15；Week 4 例 4–8"
+        ],
+        [
+         "PPC (unattainable, inefficient, growth, opportunity cost)",
+         "Week 2 例 10–13；Week 3 例 4、9"
+        ],
+        [
+         "Perfectly elastic / inelastic demand and supply",
+         "Week 5 例 10、13；Week 9 例 9"
+        ],
+        [
+         "Minimum wage (price floor); price ceiling",
+         "Week 4 例 16、17；本周例 4"
+        ],
+        [
+         "Externalities: spillover costs and benefits with government action",
+         "Week 4 例 20；Week 5 例 5、6"
+        ],
+        [
+         "AFC, AVC, ATC, MC; marginal product and total output",
+         "Week 6 例 4、6"
+        ],
+        [
+         "LRATC with multiple SRATC; internal and external economies",
+         "Week 8 例 1、3"
+        ],
+        [
+         "Perfect competition: SNP, loss, shutdown, normal profit, supply curve",
+         "Week 9 例 3–5；本周例 6"
+        ],
+        [
+         "Monopoly SNP in the long run; regulation (MC and fair-return pricing); natural monopoly",
+         "Week 10 例 2、5"
+        ],
+        [
+         "Perfect competition and monopoly combined",
+         "Week 10 例 4"
+        ],
+        [
+         "Monopolistic competition SR SNP and LR normal profit",
+         "Week 11 例 2"
+        ],
+        [
+         "Collusive and non-collusive (kinked) oligopoly",
+         "Week 11 例 4、6"
+        ]
+       ],
+       "title": "Useful microeconomics diagrams — index"
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 12",
+     "ref": "Revision Market Structures",
+     "question": "Complete the market structures summary table for the four market structures.",
+     "solution": "见下表。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "",
+        "Perfect competition",
+        "Monopolistic competition",
+        "Oligopoly",
+        "Monopoly"
+       ],
+       "rows": [
+        [
+         "Number of firms",
+         "Very many, small",
+         "Many, small",
+         "Few, large",
+         "One"
+        ],
+        [
+         "Product",
+         "Homogeneous",
+         "Differentiated",
+         "Homogeneous or differentiated",
+         "Unique, no close substitutes"
+        ],
+        [
+         "Barriers to entry",
+         "None",
+         "Low",
+         "High",
+         "Very high"
+        ],
+        [
+         "Demand curve facing the firm",
+         "Perfectly elastic: P = AR = MR",
+         "Downward sloping, highly elastic",
+         "Kinked (non-collusive) or industry demand (collusive)",
+         "Industry demand, less elastic"
+        ],
+        [
+         "Price setting",
+         "Price taker",
+         "Limited control",
+         "Interdependent; rigid prices, price leadership",
+         "Price maker"
+        ],
+        [
+         "Non-price competition",
+         "None",
+         "Much (advertising, brands)",
+         "Much",
+         "Some"
+        ],
+        [
+         "Long-run profit",
+         "Normal",
+         "Normal (tangency)",
+         "Supernormal possible",
+         "Supernormal possible"
+        ],
+        [
+         "Efficiency",
+         "Productive and allocative",
+         "Excess capacity, P > MC",
+         "P > MC",
+         "P > MC, deadweight loss"
+        ],
+        [
+         "Examples",
+         "Agricultural produce",
+         "Restaurants, hairdressers",
+         "Supermarkets, banks, mobile carriers",
+         "Australia Post letters; water, electricity networks"
+        ]
+       ],
+       "title": "Market structures summary"
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 13",
+     "ref": "Revision Key Words",
+     "question": "Review the Term 1 key-word list (from Economics, Scarcity and PPC through demand and supply, elasticity, market failure, costs, market structures to efficiency and the ACCC).",
+     "solution": "关键词表与各单元的 Terms and Concepts 一致，定义都在各周第一道术语题里：Unit 1–2 见第 1–3 周；需求供给见第 3–4 周；弹性见第 5 周；市场失灵见第 4–5 周；成本见第 6、8 周；市场结构见第 9–11 周。表末几个新词：<strong>productive (technical) efficiency</strong>（在最低 ATC 生产）、<strong>allocative efficiency</strong>（P = MC，生产社会最想要的组合）、<strong>dynamic efficiency</strong>（随时间推动创新、提高生产率）、<strong>market stability</strong>、<strong>ACCC</strong> 和《竞争与消费者法》（第 10 周）。",
+     "numeric": false
+    },
+    {
+     "label": "例 14",
+     "ref": "Revision Extra Questions",
+     "question": "Extra written revision questions (Questions 1–5).",
+     "solution": "这份资料大部分题目和答案是图片，文字只抽出了两段答案提示：供给弹性取决于生产者调整供给量的难易（能快速、容易地响应价格变化，供给才富有弹性）；以及价格机制和利润动机如何决定生产多少（需求饱和时价格下降，生产者把资源转向更有利可图的商品；供不应求时价格上升，引导生产者增产）。相关内容见第 5 周例 18、第 4 周例 15。",
+     "sourceNote": "这份资料的题目是图片，无法完整引用；只按抽出的文字作答。",
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "只背图不会解释。"
+   ],
+   "faqs": [
+    {
+     "q": "补充练习 Perfect Competition 是什么？",
+     "a": "它是较完整版本的 Unit 8 Learning Guide：多了几页阅读材料（完全竞争理论、亏损最小化与停产、以澳大利亚小麦行业为例），题目与第 9 周相同（不含答案），答案见第 9 周的笔记。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "步骤",
+   "做什么",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "1 限时做样卷",
+    "Sample A、B 各 1.5 小时",
+    "例 3–10"
+   ],
+   [
+    "2 对答案",
+    "选择题看理由；简答对照评分要点",
+    "例 3–10"
+   ],
+   [
+    "3 补图",
+    "按图表索引逐张练习",
+    "例 11"
+   ],
+   [
+    "4 总表与词汇",
+    "市场结构表、关键词",
+    "例 12、13"
+   ]
+  ]
+ },
+ "practice": "本周任务：在考试条件下完成两套样卷；按图表索引练习所有图；复习关键词。"
+}

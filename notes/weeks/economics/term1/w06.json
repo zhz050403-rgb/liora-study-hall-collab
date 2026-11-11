@@ -1,0 +1,1114 @@
+{
+ "course": "economics",
+ "term": "term1",
+ "week": 6,
+ "title": "Unit 6 · Economics of the Firm 1 Short run 厂商短期生产与成本",
+ "answersTitle": "Unit 6 Learning Guide: Economics of the Firm 1",
+ "files": [
+  "Lecture 6.1.PDF",
+  "Lecture 6.2 Economics of the Firm 1.pdf",
+  "Unit 06_课件01_Economics of the Firm Short Run.pdf",
+  "Unit 06_课件02_Economics of the Firm Short Run.pdf",
+  "Unit 06_课后练习_Learning Guide_Economics of the Firm Short Run.pdf",
+  "Unit 6 LG Microeconomics Economics of the Firm 1.pdf"
+ ],
+ "inventory": [
+  "Lecture 6.1 Short and Long Run",
+  {
+   "ref": "Lecture 6.1 Example 2",
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  "Lecture 6.2 Costs and Profit",
+  {
+   "ref": "Lecture 6.2 Cost Curves",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Learning Guide Terms",
+   "deliverables": [
+    {
+     "type": "terms",
+     "terms": [
+      "Accounting Profit",
+      "Economic Profit",
+      "Explicit Cost",
+      "Implicit Cost",
+      "Normal Profit",
+      "Supernormal Profit",
+      "Economic Loss",
+      "Short Run",
+      "Long Run",
+      "Marginal Product",
+      "Diminishing Returns",
+      "Total Fixed Cost",
+      "Total Variable Cost",
+      "Total Cost",
+      "Average Fixed Cost",
+      "Average Variable Cost",
+      "Average Total Cost",
+      "Marginal Cost"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "Learning Guide Q1",
+   "parts": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ],
+   "deliverables": [
+    {
+     "type": "table"
+    },
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "Learning Guide Q2",
+  "Learning Guide Q3",
+  {
+   "ref": "Learning Guide Q4",
+   "parts": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g"
+   ]
+  },
+  "Learning Guide Q5",
+  {
+   "ref": "Learning Guide In-class Q1–Q2"
+  },
+  {
+   "ref": "Learning Guide In-class Q3",
+   "parts": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g"
+   ],
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  {
+   "ref": "Learning Guide Writing",
+   "parts": [
+    "a",
+    "b"
+   ],
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  }
+ ],
+ "intro": [
+  "Unit 6 研究厂商在<strong>短期</strong>怎样生产、成本怎样变化：生产函数、边际产量和<strong>边际收益递减规律</strong>；显性成本与隐性成本、会计利润与经济利润；七条成本曲线（TFC、TVC、TC、AFC、AVC、ATC、MC）的形状和关系。Learning Guide 的计算题都有完整表格、图和核对式。"
+ ],
+ "sections": [
+  {
+   "title": "短期生产与边际收益递减（Lecture 6.1）",
+   "sources": [
+    {
+     "file": "Unit 06_课件01_Economics of the Firm Short Run.pdf",
+     "pages": "p2–27"
+    }
+   ],
+   "concept": "<strong>短期</strong>：至少有一种投入固定（厂房、机器）；<strong>长期</strong>：所有投入都可变，新厂商可以进入。<strong>固定要素</strong>短期不能改变，产量为零时也需要；<strong>可变要素</strong>随产量增减（劳动、原料）。\n<strong>生产函数</strong>：技术给定时，各种投入组合能生产的最大产量。\n<strong>TP</strong>（总产量）先增加、达到最大再下降。<strong>MP</strong> = ΔTP ÷ Δ可变投入，是 TP 曲线的斜率，先升后降，比 TP 先达到最大。<strong>AP</strong> = TP ÷ 可变投入（即生产率）。MP > AP 时 AP 上升，MP < AP 时 AP 下降，MP = AP 时 AP 最大。\n<strong>边际收益递减规律</strong>：在固定要素上不断增加可变要素，超过某一点后边际产量递减。三个阶段：<strong>收益递增</strong>（分工和专业化，TP 加速上升，MP 上升）、<strong>收益递减</strong>（固定要素被挤占，TP 减速上升，MP 下降）、<strong>负收益</strong>（MP < 0，TP 下降）。这条规律不告诉厂商该生产多少，还要知道每单位投入的成本。",
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "Lecture 6.1 Short and Long Run",
+     "question": "Distinguish the short run and the long run, and fixed and variable factors, with examples.",
+     "solution": "短期至少有一种投入是固定的，例如一家面包店的店面和烤箱短期内不能改变，只能多雇人、多买面粉来增加产量；长期所有投入都能改变，可以扩建店面、增加烤箱，新的面包店也可以进入市场。固定要素（店面、机器）即使产量为零也要支付；可变要素（劳动、原料、电力）随产量增减。",
+     "numeric": false
+    },
+    {
+     "label": "例 2",
+     "ref": "Lecture 6.1 Example 2",
+     "question": "T-shirt production: labour 0–5 workers, total product 0, 4, 10, 13, 15, 16 T-shirts per hour. Calculate AP and MP and identify the point of diminishing returns.",
+     "solution": "AP = TP ÷ L，MP = ΔTP ÷ ΔL。MP 在第 2 个工人时最大（6），之后从第 3 个工人开始下降：C 点（2 个工人）是边际收益递减开始的点。AP 在 2 个工人时最大（5），之后 MP < AP，AP 下降。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "Point",
+        "Labour",
+        "Total product",
+        "Average product",
+        "Marginal product"
+       ],
+       "rows": [
+        [
+         "A",
+         "0",
+         "0",
+         "–",
+         "–"
+        ],
+        [
+         "B",
+         "1",
+         "4",
+         "4",
+         "4"
+        ],
+        [
+         "C",
+         "2",
+         "10",
+         "5",
+         "6"
+        ],
+        [
+         "D",
+         "3",
+         "13",
+         "4.3",
+         "3"
+        ],
+        [
+         "E",
+         "4",
+         "15",
+         "3.8",
+         "2"
+        ],
+        [
+         "F",
+         "5",
+         "16",
+         "3.2",
+         "1"
+        ]
+       ],
+       "title": "Example 2: T-shirt production"
+      }
+     ],
+     "checks": [
+      {
+       "expr": "10-4",
+       "equals": "6"
+      },
+      {
+       "expr": "13/3",
+       "equals": "4.33",
+       "tol": 0.01
+      },
+      {
+       "expr": "15/4",
+       "equals": "3.75"
+      },
+      {
+       "expr": "16/5",
+       "equals": "3.2"
+      }
+     ],
+     "sourceNote": "讲义把 15/4 写成 3.8（四舍五入到一位小数），精确值 3.75。"
+    }
+   ],
+   "mistakes": [
+    "MP 和 AP 用错公式：MP 是增加的那一块，AP 是平均。",
+    "把边际收益递减理解成总产量下降：递减阶段 TP 仍在上升，只是增加得越来越少。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么一开始收益递增？",
+     "a": "工人少时，多一个人可以分工、专业化，每个人更有效率；人多了以后挤占固定的机器和场地，效率下降。"
+    }
+   ]
+  },
+  {
+   "title": "成本与利润；短期成本曲线（Lecture 6.2）",
+   "sources": [
+    {
+     "file": "Unit 06_课件02_Economics of the Firm Short Run.pdf",
+     "pages": "p2–34"
+    }
+   ],
+   "concept": "<strong>显性成本</strong>：付给外部的钱（租金、工资、原料）。<strong>隐性成本</strong>：自有资源的机会成本（放弃的利息、放弃的工资）。\n<strong>会计利润</strong> = 总收益 − 显性成本；<strong>经济利润</strong> = 总收益 − 显性成本 − 隐性成本。\n<strong>正常利润</strong>：维持厂商经营所需的最低利润，此时总收益 = 总成本（含隐性成本），经济利润为零。<strong>超额利润</strong>（supernormal profit）：高于正常利润的部分。<strong>经济亏损</strong>：支出大于收入，长期持续就要考虑停业。\n<strong>TFC</strong>：固定投入的成本，不随产量变化，产量为零时也存在（租金、保险、贷款利息），又叫 overheads。<strong>TVC</strong>：可变投入的成本，产量为零时为零，受收益递减影响后期越来越陡。<strong>TC</strong> = TFC + TVC。\n<strong>AFC</strong> = TFC ÷ Q，一直下降（分摊固定成本，spreading the overheads）并逐渐变平。<strong>AVC</strong> = TVC ÷ Q，U 形：MP 上升时下降，MP 下降时上升。<strong>ATC</strong> = TC ÷ Q = AFC + AVC，U 形，越来越接近 AVC。\n<strong>MC</strong> = ΔTC ÷ ΔQ，先降后升（收益递增时下降，收益递减时上升）。MC 把平均成本拉向自己：MC < ATC 时 ATC 下降，MC > ATC 时 ATC 上升，MC 在 AVC 和 ATC 的最低点穿过它们。MC 和 MP 反向变动：MP 最高时 MC 最低。",
+   "formulas": [
+    "会计利润 = TR − 显性成本　　经济利润 = TR − (显性成本 + 隐性成本)",
+    "ATC = {{frac TC|Q}} = AFC + AVC　　MC = {{frac ΔTC|ΔQ}}"
+   ],
+   "examples": [
+    {
+     "label": "例 3",
+     "ref": "Lecture 6.2 Costs and Profit",
+     "question": "A self-employed baker earns total revenue of $100,000, pays $60,000 for rent, wages and flour, and gave up a $30,000 job and $5,000 interest on her savings. Find accounting profit, economic profit and say whether she earns normal, supernormal profit or an economic loss.",
+     "solution": "会计利润 = 100 000 − 60 000 = 40 000。经济利润 = 100 000 − (60 000 + 30 000 + 5 000) = 5 000。经济利润为正，所以她获得了超额利润（超过正常利润 5 000）：开店比去打工、存钱更好。",
+     "checks": [
+      {
+       "expr": "100000-60000",
+       "equals": "40000"
+      },
+      {
+       "expr": "100000-(60000+30000+5000)",
+       "equals": "5000"
+      }
+     ],
+     "sourceNote": "讲义的 Example 1 是图片，没有抽出数字；这里按讲义定义编了一个同类练习。"
+    },
+    {
+     "label": "例 4",
+     "ref": "Lecture 6.2 Cost Curves",
+     "question": "Sketch the short-run AFC, AVC, ATC and MC curves and explain their shapes and relationships.",
+     "solution": "AFC 一直下降并变平；AVC 和 ATC 都是 U 形；MC 先降后升，在 AVC 和 ATC 的最低点穿过它们。ATC 与 AVC 之间的垂直距离就是 AFC，产量越大越小，所以 ATC 越来越接近 AVC。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        14
+       ],
+       "yr": [
+        0,
+        22
+       ],
+       "width": 340,
+       "height": 250,
+       "xLabel": "Output (Q)",
+       "yLabel": "Costs ($)",
+       "curves": [
+        {
+         "expr": "10-3*x+0.3*x^2",
+         "dom": [
+          0.3,
+          13.5
+         ],
+         "color": "red",
+         "label": [
+          12.2,
+          15.5,
+          "MC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2",
+         "dom": [
+          0.3,
+          13.5
+         ],
+         "color": "green",
+         "label": [
+          12.6,
+          8.9,
+          "AVC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2+20/x",
+         "dom": [
+          1,
+          13.5
+         ],
+         "color": "navy",
+         "label": [
+          12.4,
+          11.6,
+          "ATC"
+         ]
+        },
+        {
+         "expr": "20/x",
+         "dom": [
+          1,
+          13.5
+         ],
+         "color": "gold",
+         "dash": true,
+         "label": [
+          12,
+          2.4,
+          "AFC"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 7.5,
+         "y": 4.375,
+         "label": "MC = AVC (min)",
+         "dy": 14
+        },
+        {
+         "x": 8.8,
+         "y": 6.82,
+         "label": "MC = ATC (min)",
+         "dx": -90
+        }
+       ],
+       "caption": "Short-run cost curves (illustrative: TFC = 20, TVC = 10Q − 1.5Q² + 0.1Q³). MC cuts AVC and ATC at their minimum points; AFC keeps falling."
+      }
+     ],
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "经济利润只减显性成本。",
+    "以为正常利润等于零利润就是「没赚钱」：正常利润已经包括了企业主自有资源的机会成本。",
+    "MC 穿过 ATC 画在任意位置：必须穿过最低点。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么 MC 会穿过 ATC 的最低点？",
+     "a": "边际拉动平均：多生产的那一单位成本低于平均，平均就下降；高于平均，平均就上升；两者相等时平均不升不降，正是最低点。"
+    }
+   ]
+  },
+  {
+   "title": "Learning Guide：计算与解释",
+   "sources": [
+    {
+     "file": "Unit 6 LG Microeconomics Economics of the Firm 1.pdf",
+     "pages": "p2–6"
+    }
+   ],
+   "concept": "计算题顺序：TP → MP（相邻相减）→ AP（相除）；收益递增看 MP 上升的区间，收益递减从 MP 开始下降的那一单位算起。雇用决策：只要多雇一单位带来的额外收益（MP × 价格）大于它的成本（工资），就值得雇。",
+   "examples": [
+    {
+     "label": "例 5",
+     "ref": "Learning Guide Terms",
+     "question": "Define: Accounting profit; Economic profit; Explicit cost; Implicit cost; Normal profit; Supernormal profit; Economic loss; Short run; Long run; Marginal product; Law of diminishing returns; TFC; TVC; TC; AFC; AVC; ATC; MC.",
+     "solution": "<strong>Accounting Profit</strong>：总收益减显性成本。\n<strong>Economic Profit</strong>：总收益减显性和隐性成本。\n<strong>Explicit Cost</strong>：付给外部的货币成本，如租金、工资。\n<strong>Implicit Cost</strong>：自有资源的机会成本，如放弃的工资和利息。\n<strong>Normal Profit</strong>：使厂商留在本行业所需的最低利润，经济利润为零。\n<strong>Supernormal Profit</strong>：超过正常利润的部分，经济利润为正。\n<strong>Economic Loss</strong>：总收益小于总成本（含隐性成本）。\n<strong>Short Run</strong>：至少一种投入固定的时期。\n<strong>Long Run</strong>：所有投入都可变的时期。\n<strong>Marginal Product</strong>：多投入一单位可变要素增加的产量。\n<strong>Law of Diminishing Returns</strong>：在固定要素上不断增加可变要素，超过某点后 MP 递减。\n<strong>Total Fixed Cost (TFC)</strong>：不随产量变化的总成本。\n<strong>Total Variable Cost (TVC)</strong>：随产量变化的总成本。\n<strong>Total Cost (TC)</strong>：TFC + TVC。\n<strong>Average Fixed Cost (AFC)</strong>：TFC ÷ Q。\n<strong>Average Variable Cost (AVC)</strong>：TVC ÷ Q。\n<strong>Average Total Cost (ATC)</strong>：TC ÷ Q。\n<strong>Marginal Cost (MC)</strong>：多生产一单位增加的总成本，ΔTC ÷ ΔQ。",
+     "numeric": false
+    },
+    {
+     "label": "例 6",
+     "ref": "Learning Guide Q1",
+     "question": "Capital fixed at 1; labour 1–8 gives TP 10, 22, 39, 80, 100, 108, 112, 110. (a) Calculate AP and MP. (b) Graph TP, AP and MP. (c) Discuss the range of labour with increasing returns. (d) Describe the point of diminishing returns and possible reasons.",
+     "solution": "(a) 见下表。\n(c) 第 1 到第 4 个工人 MP 不断上升（10、12、17、41），是收益递增阶段：工人越多越能分工、专业化，充分利用固定的资本。\n(d) 从第 5 个工人开始 MP 下降（41 → 20），第 4 个工人之后就是边际收益递减点。原因：资本只有 1 单位，工人越来越多，机器和场地被挤占，有人要等着用设备，额外的工人贡献越来越少；第 8 个工人的 MP 为负（−2），反而互相妨碍，TP 下降。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "Capital",
+        "Labour",
+        "TP",
+        "AP",
+        "MP"
+       ],
+       "rows": [
+        [
+         "1",
+         "1",
+         "10",
+         "10",
+         "10"
+        ],
+        [
+         "1",
+         "2",
+         "22",
+         "11",
+         "12"
+        ],
+        [
+         "1",
+         "3",
+         "39",
+         "13",
+         "17"
+        ],
+        [
+         "1",
+         "4",
+         "80",
+         "20",
+         "41"
+        ],
+        [
+         "1",
+         "5",
+         "100",
+         "20",
+         "20"
+        ],
+        [
+         "1",
+         "6",
+         "108",
+         "18",
+         "8"
+        ],
+        [
+         "1",
+         "7",
+         "112",
+         "16",
+         "4"
+        ],
+        [
+         "1",
+         "8",
+         "110",
+         "13.75",
+         "-2"
+        ]
+       ],
+       "title": "Q1 (a)"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        9
+       ],
+       "yr": [
+        0,
+        125
+       ],
+       "width": 320,
+       "height": 230,
+       "xLabel": "Labour",
+       "yLabel": "TP",
+       "xticks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+       ],
+       "yticks": [
+        39,
+        80,
+        112
+       ],
+       "lines": [
+        {
+         "pts": [
+          [
+           0,
+           0
+          ],
+          [
+           1,
+           10
+          ],
+          [
+           2,
+           22
+          ],
+          [
+           3,
+           39
+          ],
+          [
+           4,
+           80
+          ],
+          [
+           5,
+           100
+          ],
+          [
+           6,
+           108
+          ],
+          [
+           7,
+           112
+          ],
+          [
+           8,
+           110
+          ]
+         ],
+         "color": "navy",
+         "label": [
+          7.6,
+          100,
+          "TP"
+         ]
+        }
+       ],
+       "vlines": [
+        {
+         "x": 4,
+         "label": "diminishing returns after L = 4"
+        }
+       ],
+       "caption": "Total product: rises at an increasing rate to L = 4, then at a decreasing rate, then falls"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        9
+       ],
+       "yr": [
+        -5,
+        45
+       ],
+       "width": 320,
+       "height": 230,
+       "xLabel": "Labour",
+       "yLabel": "AP, MP",
+       "xticks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+       ],
+       "yticks": [
+        10,
+        20,
+        41
+       ],
+       "lines": [
+        {
+         "pts": [
+          [
+           1,
+           10.0
+          ],
+          [
+           2,
+           11.0
+          ],
+          [
+           3,
+           13.0
+          ],
+          [
+           4,
+           20.0
+          ],
+          [
+           5,
+           20.0
+          ],
+          [
+           6,
+           18.0
+          ],
+          [
+           7,
+           16.0
+          ],
+          [
+           8,
+           13.75
+          ]
+         ],
+         "color": "green",
+         "label": [
+          7.3,
+          18,
+          "AP"
+         ]
+        },
+        {
+         "pts": [
+          [
+           1,
+           10
+          ],
+          [
+           2,
+           12
+          ],
+          [
+           3,
+           17
+          ],
+          [
+           4,
+           41
+          ],
+          [
+           5,
+           20
+          ],
+          [
+           6,
+           8
+          ],
+          [
+           7,
+           4
+          ],
+          [
+           8,
+           -2
+          ]
+         ],
+         "color": "red",
+         "label": [
+          3.2,
+          40,
+          "MP"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 5,
+         "y": 20,
+         "label": "MP = AP (AP max)"
+        }
+       ],
+       "caption": "MP peaks first (L = 4); MP cuts AP at AP's maximum; MP < 0 at L = 8"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ],
+     "checks": [
+      {
+       "expr": "80-39",
+       "equals": "41"
+      },
+      {
+       "expr": "110-112",
+       "equals": "-2"
+      },
+      {
+       "expr": "110/8",
+       "equals": "13.75"
+      },
+      {
+       "expr": "100/5",
+       "equals": "20"
+      }
+     ]
+    },
+    {
+     "label": "例 7",
+     "ref": "Learning Guide Q2",
+     "question": "Explain productivity, using examples to distinguish an increase in productivity from an increase in production. (At least 50 words.)",
+     "solution": "生产率是平均每单位投入的产量（AP = TP ÷ 投入），衡量把投入变成产出的效率。产量增加不一定是生产率提高：咖啡店从 2 个员工增加到 4 个，每小时做的咖啡从 40 杯增加到 60 杯，产量增加了，但每人从 20 杯降到 15 杯，生产率下降。相反，如果换了更快的咖啡机，同样 2 个员工每小时做 60 杯，每人 30 杯，这是生产率提高。生产率提高靠更好的技术、培训、组织方式，而不是单纯增加投入。",
+     "checks": [
+      {
+       "expr": "60/4",
+       "equals": "15"
+      },
+      {
+       "expr": "60/2",
+       "equals": "30"
+      }
+     ]
+    },
+    {
+     "label": "例 8",
+     "ref": "Learning Guide Q3",
+     "question": "Explain the difference between explicit and implicit costs of production. (At least 25 words.)",
+     "solution": "显性成本是厂商实际付给外部的钱，例如租金、工资、原材料费用，会出现在会计账上。隐性成本是厂商使用自有资源的机会成本，例如老板不领工资放弃的外部收入、自有资金放弃的利息，没有实际付款，不进会计账，但经济学计算成本时要算进去。",
+     "numeric": false
+    },
+    {
+     "label": "例 9",
+     "ref": "Learning Guide Q4",
+     "question": "(a) What happens to TFC, TVC and TC as production increases in the short run, and why? (b) How are AFC, AVC and ATC calculated and how do they change as output increases? (c) What is 'spreading the overheads'? (d) Why does ATC first decrease then increase? (e) What is MC and how does it change as the firm expands in the short run, and why? (f) Describe the inverse relationship between MC and MP. (g) Describe the relationship between changes in MC and AVC.",
+     "solution": "(a) TFC 不变：厂房、保险等固定投入的成本与产量无关，是一条水平线。TVC 上升：要多用劳动和原料；开始时因收益递增上升得慢，后来因收益递减上升得越来越快，曲线变陡。TC = TFC + TVC，形状与 TVC 相同，只是向上平移了 TFC。\n(b) AFC = TFC ÷ Q，产量越大越小，一直下降并逐渐变平。AVC = TVC ÷ Q，先下降（MP 上升）后上升（MP 下降），U 形。ATC = TC ÷ Q = AFC + AVC，也是 U 形，随着 AFC 变小越来越接近 AVC。\n(c) 固定成本总额不变，产量越大，每单位分摊到的固定成本越少（AFC 下降），这就是分摊管理费用，使平均总成本下降。\n(d) 开始时固定成本被越来越多的产量分摊，又有分工带来的收益递增，AVC 也下降，所以 ATC 下降；后来收益递减使 AVC 上升，而且超过 AFC 下降的作用，ATC 上升。\n(e) MC 是多生产一单位产品增加的总成本。厂商在短期扩产时，MC 先下降（收益递增，每个新工人带来更多产量，单位成本更低），达到最低后上升（收益递减，固定要素被挤占，每多一单位产量需要更多可变投入）。\n(f) MC 和 MP 反向变动：MP 上升时，多生产一单位所需的可变投入更少，MC 下降；MP 达到最大时 MC 最低；MP 下降时 MC 上升。\n(g) MC 低于 AVC 时把 AVC 往下拉，AVC 下降；MC 高于 AVC 时 AVC 上升；MC 在 AVC 的最低点与它相交。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        14
+       ],
+       "yr": [
+        0,
+        22
+       ],
+       "width": 340,
+       "height": 250,
+       "xLabel": "Output (Q)",
+       "yLabel": "Costs ($)",
+       "curves": [
+        {
+         "expr": "10-3*x+0.3*x^2",
+         "dom": [
+          0.3,
+          13.5
+         ],
+         "color": "red",
+         "label": [
+          12.2,
+          15.5,
+          "MC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2",
+         "dom": [
+          0.3,
+          13.5
+         ],
+         "color": "green",
+         "label": [
+          12.6,
+          8.9,
+          "AVC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2+20/x",
+         "dom": [
+          1,
+          13.5
+         ],
+         "color": "navy",
+         "label": [
+          12.4,
+          11.6,
+          "ATC"
+         ]
+        },
+        {
+         "expr": "20/x",
+         "dom": [
+          1,
+          13.5
+         ],
+         "color": "gold",
+         "dash": true,
+         "label": [
+          12,
+          2.4,
+          "AFC"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 7.5,
+         "y": 4.375,
+         "label": "MC = AVC (min)",
+         "dy": 14
+        },
+        {
+         "x": 8.8,
+         "y": 6.82,
+         "label": "MC = ATC (min)",
+         "dx": -90
+        }
+       ],
+       "caption": "Short-run cost curves (illustrative: TFC = 20, TVC = 10Q − 1.5Q² + 0.1Q³). MC cuts AVC and ATC at their minimum points; AFC keeps falling."
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 10",
+     "ref": "Learning Guide Q5",
+     "question": "Answer textbook Chapter 6 multiple-choice questions 1–8 (p152).",
+     "solution": "教材选择题原文不在本周资料中，无法逐题作答。复习要点见本页：短期与长期、MP 与 AP 的关系、收益递减、七条成本曲线、MC 与 MP 的反向关系。",
+     "sourceNote": "教材题目不在资料中。",
+     "numeric": false
+    },
+    {
+     "label": "例 11",
+     "ref": "Learning Guide In-class Q1–Q2",
+     "question": "Textbook activities: 'You're the Economist: A Profitable Newsagent?' (p132) — based only on economic decision-making, did Mr Chen make a profit? And study problems 2 and 4 (p151).",
+     "solution": "教材原文不在资料中，无法引用具体数字。判断方法：会计利润只减去显性成本；经济学还要减去隐性成本——Mr Chen 放弃的原来的工资、投入自有资金放弃的利息。如果会计利润小于这些隐性成本之和，他的经济利润为负，从经济决策看他并没有真正赚钱；只有超过隐性成本，才是超额利润。",
+     "sourceNote": "教材内容不在资料中。",
+     "numeric": false
+    },
+    {
+     "label": "例 12",
+     "ref": "Learning Guide In-class Q3",
+     "question": "Variable factor 0–6 with TP 0, 200, 450, 720, ?, ?, 880 and MP –, 200, ?, ?, 160, 60, ?. (a) Fill in the table. (b) Input ranges of (i) diminishing and (ii) increasing returns. Each unit of labour costs $600 and output sells for $3. (c) TR with 3, 4, 5, 6 units. (d) Increase in TR from the 2nd, 3rd, 4th, 5th unit. (e) Increase in TC from each extra unit. (f) Which of the 2nd–5th units add more revenue than cost? (g) Most units that can be profitably hired.",
+     "solution": "(a) MP：第 2 单位 250，第 3 单位 270；TP：第 4 单位 720 + 160 = 880，第 5 单位 880 + 60 = 940；第 6 单位 MP = 880 − 940 = −60。\n(b) (ii) 收益递增：第 1 到第 3 单位（MP 200 → 250 → 270）；(i) 收益递减：从第 4 单位开始（MP 160、60），第 6 单位甚至为负。\n(c) TR = TP × 3：3 单位 2 160，4 单位 2 640，5 单位 2 820，6 单位 2 640。\n(d) 第 2 单位 750，第 3 单位 810，第 4 单位 480，第 5 单位 180。\n(e) 每多雇一单位，总成本增加 $600。\n(f) 第 2 单位（750 > 600）和第 3 单位（810 > 600）；第 4、5 单位的额外收益小于 600。\n(g) 最多雇 <strong>3</strong> 单位：第 4 单位带来的额外收益 480 小于成本 600。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "Variable factor input",
+        "Total product",
+        "Marginal product",
+        "TR at $3",
+        "Extra revenue from this unit",
+        "Extra cost"
+       ],
+       "rows": [
+        [
+         "0",
+         "0",
+         "–",
+         "0",
+         "–",
+         "–"
+        ],
+        [
+         "1",
+         "200",
+         "200",
+         "600",
+         "600",
+         "600"
+        ],
+        [
+         "2",
+         "450",
+         "250",
+         "1,350",
+         "750",
+         "600"
+        ],
+        [
+         "3",
+         "720",
+         "270",
+         "2,160",
+         "810",
+         "600"
+        ],
+        [
+         "4",
+         "880",
+         "160",
+         "2,640",
+         "480",
+         "600"
+        ],
+        [
+         "5",
+         "940",
+         "60",
+         "2,820",
+         "180",
+         "600"
+        ],
+        [
+         "6",
+         "880",
+         "−60",
+         "2,640",
+         "−180",
+         "600"
+        ]
+       ],
+       "title": "Input–output table with revenue and cost of each extra unit"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g"
+     ],
+     "checks": [
+      {
+       "expr": "720+160",
+       "equals": "880"
+      },
+      {
+       "expr": "880+60",
+       "equals": "940"
+      },
+      {
+       "expr": "880-940",
+       "equals": "-60"
+      },
+      {
+       "expr": "720*3",
+       "equals": "2160"
+      },
+      {
+       "expr": "940*3",
+       "equals": "2820"
+      },
+      {
+       "expr": "(720-450)*3",
+       "equals": "810"
+      },
+      {
+       "expr": "160*3",
+       "equals": "480"
+      }
+     ]
+    },
+    {
+     "label": "例 13",
+     "ref": "Learning Guide Writing",
+     "question": "(a) Use increasing and decreasing returns to explain what happens to a firm's output as it expands, and why diminishing returns arise. (100 words) (b) Discuss the shapes of AFC, AVC and ATC as output expands in the short run, with a diagram. (100 words)",
+     "solution": "(a) 短期内厂商只能增加可变要素（例如劳动），固定要素（厂房、机器）不变。开始时多雇工人可以分工和专业化，每个新工人带来的边际产量越来越大，总产量以递增的速度增加，这是收益递增。超过某一点后，越来越多的工人共用同样的机器和场地，出现拥挤、等待设备，每个新工人带来的边际产量开始下降，总产量增加得越来越慢，这是边际收益递减；如果继续增加工人，边际产量甚至为负，总产量下降。收益递减产生的根本原因是固定要素的潜在产出有限，可变要素与固定要素的比例越来越不合适。\n(b) AFC = TFC ÷ Q：固定成本被越来越多的产量分摊，AFC 一直下降，下降速度越来越慢，曲线逐渐变平。AVC 先下降后上升：收益递增阶段每单位产量需要的可变投入减少，AVC 下降；收益递减后每单位产量需要更多可变投入，AVC 上升，呈 U 形。ATC = AFC + AVC，也是 U 形：开始时 AFC 和 AVC 都在下降，ATC 下降；后来 AVC 上升的作用超过 AFC 的下降，ATC 上升。ATC 的最低点在 AVC 最低点的右边，两条曲线越来越接近，因为两者之差 AFC 越来越小。MC 在 AVC 和 ATC 的最低点穿过它们（见图）。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        14
+       ],
+       "yr": [
+        0,
+        22
+       ],
+       "width": 340,
+       "height": 250,
+       "xLabel": "Output (Q)",
+       "yLabel": "Costs ($)",
+       "curves": [
+        {
+         "expr": "10-3*x+0.3*x^2",
+         "dom": [
+          0.3,
+          13.5
+         ],
+         "color": "red",
+         "label": [
+          12.2,
+          15.5,
+          "MC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2",
+         "dom": [
+          0.3,
+          13.5
+         ],
+         "color": "green",
+         "label": [
+          12.6,
+          8.9,
+          "AVC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2+20/x",
+         "dom": [
+          1,
+          13.5
+         ],
+         "color": "navy",
+         "label": [
+          12.4,
+          11.6,
+          "ATC"
+         ]
+        },
+        {
+         "expr": "20/x",
+         "dom": [
+          1,
+          13.5
+         ],
+         "color": "gold",
+         "dash": true,
+         "label": [
+          12,
+          2.4,
+          "AFC"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 7.5,
+         "y": 4.375,
+         "label": "MC = AVC (min)",
+         "dy": 14
+        },
+        {
+         "x": 8.8,
+         "y": 6.82,
+         "label": "MC = ATC (min)",
+         "dx": -90
+        }
+       ],
+       "caption": "Short-run cost curves (illustrative: TFC = 20, TVC = 10Q − 1.5Q² + 0.1Q³). MC cuts AVC and ATC at their minimum points; AFC keeps falling."
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ],
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "MP 用 TP ÷ L 计算：那是 AP。",
+    "雇用决策比较总收益和总成本：应比较多雇一单位的额外收益和额外成本。",
+    "把收益递减开始的点写在 MP 为负时：从 MP 开始下降那一单位就算。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么第 4 单位还在增加产量却不该雇？",
+     "a": "它带来的额外收益 480 低于它的成本 600，雇了会使利润减少 120。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "步骤",
+   "做什么",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "1 MP、AP",
+    "MP = ΔTP，AP = TP ÷ L",
+    "例 2、6"
+   ],
+   [
+    "2 阶段",
+    "MP 上升 → 收益递增；MP 下降 → 递减；MP < 0 → 负收益",
+    "例 6、12"
+   ],
+   [
+    "3 利润",
+    "会计利润减显性成本；经济利润再减隐性成本",
+    "例 3、8"
+   ],
+   [
+    "4 成本曲线",
+    "AFC 下降；AVC、ATC 呈 U 形；MC 穿过最低点",
+    "例 4、9、13"
+   ],
+   [
+    "5 雇用决策",
+    "额外收益 > 额外成本才雇",
+    "例 12"
+   ]
+  ]
+ },
+ "practice": "本周任务：读教材第 6 章；完成 Learning Guide 的 Tutorial Questions 和课堂活动；做教材在线 Revision Quizzes。"
+}

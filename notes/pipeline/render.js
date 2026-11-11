@@ -23,11 +23,18 @@ function inline(text) {
 const fmt = v => (Math.round(v * 10) / 10).toString();
 let clipSeq = 0;
 
+const x0Of = fig => fig.xr[0];
 function plotSvg(fig) {
   const w = fig.width || 320, h = fig.height || 240, pad = 18;
+  /* 左边留出纵轴刻度的宽度（三位数刻度会被裁掉）。 */
+  const tickLen = Math.max(1, ...(fig.yticks || []).map(v => String(v).length));
+  const padL = fig.padLeft ?? (x0Of(fig) < 0 ? pad : Math.max(pad, 8 + tickLen * 6));
   const [x0, x1] = fig.xr, [y0, y1] = fig.yr;
-  const sx = (w - 2 * pad) / (x1 - x0), sy = (h - 2 * pad) / (y1 - y0);
-  const X = x => pad + (x - x0) * sx, Y = y => h - pad - (y - y0) * sy;
+  /* 横轴名称放在刻度下方，避免与曲线端点、标签重叠；坐标轴不在底边时仍放在轴的右端。 */
+  const axisAtBottom = y0 === 0 && fig.xLabel;
+  const padB = axisAtBottom ? 30 : pad;
+  const sx = (w - padL - pad) / (x1 - x0), sy = (h - pad - padB) / (y1 - y0);
+  const X = x => padL + (x - x0) * sx, Y = y => h - padB - (y - y0) * sy;
   const color = c => COLORS[c] || COLORS.navy;
   const o = [`<svg viewBox="0 0 ${w} ${h}" width="${w}" role="img" aria-label="${escapeHtml(fig.alt || fig.caption || '函数图像')}" font-family="sans-serif">`,
     `<rect x="0" y="0" width="${w}" height="${h}" rx="8" fill="#fbfcfe" stroke="#dfe9f5"/>`];
@@ -36,15 +43,15 @@ function plotSvg(fig) {
     o.push(`<polygon points="${pts(p.pts)}" fill="${color(p.color || 'gold')}" fill-opacity="${p.opacity ?? 0.28}" stroke="none"/>`);
     if (p.label) o.push(`<text x="${fmt(X(p.label[0]))}" y="${fmt(Y(p.label[1]))}" font-size="11" fill="${color(p.color || 'gold')}" font-weight="700" text-anchor="middle">${escapeHtml(p.label[2])}</text>`);
   }
-  for (const [a, b, c] of fig.shade || []) o.push(`<rect x="${fmt(X(a))}" y="${pad}" width="${fmt(X(b) - X(a))}" height="${h - 2 * pad}" fill="${color(c || 'green')}" fill-opacity="0.18"/>`);
-  if (y0 <= 0 && y1 > 0) o.push(`<line x1="${pad}" y1="${fmt(Y(0))}" x2="${w - pad + 6}" y2="${fmt(Y(0))}" stroke="#7a8ba3"/><text x="${w - pad + 2}" y="${fmt(Y(0) - 5)}" font-size="11" fill="#4a5d75">${escapeHtml(fig.xLabel || 'x')}</text>`);
-  if (x0 <= 0 && x1 > 0) o.push(`<line x1="${fmt(X(0))}" y1="${h - pad}" x2="${fmt(X(0))}" y2="${pad - 6}" stroke="#7a8ba3"/><text x="${fmt(X(0) + 5)}" y="${pad - 2}" font-size="11" fill="#4a5d75">${escapeHtml(fig.yLabel || 'y')}</text>`);
+  for (const [a, b, c] of fig.shade || []) o.push(`<rect x="${fmt(X(a))}" y="${pad}" width="${fmt(X(b) - X(a))}" height="${h - pad - padB}" fill="${color(c || 'green')}" fill-opacity="0.18"/>`);
+  if (y0 <= 0 && y1 > 0) o.push(`<line x1="${padL}" y1="${fmt(Y(0))}" x2="${w - pad + 6}" y2="${fmt(Y(0))}" stroke="#7a8ba3"/><text x="${w - 4}" y="${axisAtBottom ? h - 4 : fmt(Y(0) - 5)}" font-size="11" fill="#4a5d75" text-anchor="end">${escapeHtml(fig.xLabel || 'x')}</text>`);
+  if (x0 <= 0 && x1 > 0) o.push(`<line x1="${fmt(X(0))}" y1="${h - padB}" x2="${fmt(X(0))}" y2="${pad - 6}" stroke="#7a8ba3"/><text x="${fmt(X(0) + 5)}" y="${pad - 2}" font-size="11" fill="#4a5d75">${escapeHtml(fig.yLabel || 'y')}</text>`);
   for (const v of fig.xticks || []) o.push(`<text x="${fmt(X(v))}" y="${fmt(Y(Math.max(y0, Math.min(0, y1))) + 13)}" font-size="10" fill="#4a5d75" text-anchor="middle">${v}</text>`);
   for (const v of fig.yticks || []) o.push(`<text x="${fmt(X(Math.max(x0, Math.min(0, x1))) - 4)}" y="${fmt(Y(v) + 3)}" font-size="10" fill="#4a5d75" text-anchor="end">${v}</text>`);
-  for (const l of fig.vlines || []) o.push(`<line x1="${fmt(X(l.x))}" y1="${pad}" x2="${fmt(X(l.x))}" y2="${h - pad}" stroke="${color(l.color || 'grey')}" stroke-dasharray="3 3"/>` + (l.label ? `<text x="${fmt(X(l.x) + 3)}" y="${pad + 10}" font-size="10" fill="${color(l.color || 'grey')}">${escapeHtml(l.label)}</text>` : ''));
-  for (const l of fig.hlines || []) o.push(`<line x1="${pad}" y1="${fmt(Y(l.y))}" x2="${w - pad}" y2="${fmt(Y(l.y))}" stroke="${color(l.color || 'grey')}" stroke-dasharray="4 3"/>` + (l.label ? `<text x="${w - pad - 2}" y="${fmt(Y(l.y) - 4)}" font-size="10" fill="${color(l.color || 'grey')}" text-anchor="end">${escapeHtml(l.label)}</text>` : ''));
+  for (const l of fig.vlines || []) o.push(`<line x1="${fmt(X(l.x))}" y1="${pad}" x2="${fmt(X(l.x))}" y2="${h - padB}" stroke="${color(l.color || 'grey')}" stroke-dasharray="3 3"/>` + (l.label ? `<text x="${fmt(X(l.x) + 3)}" y="${pad + 10}" font-size="10" fill="${color(l.color || 'grey')}">${escapeHtml(l.label)}</text>` : ''));
+  for (const l of fig.hlines || []) o.push(`<line x1="${padL}" y1="${fmt(Y(l.y))}" x2="${w - pad}" y2="${fmt(Y(l.y))}" stroke="${color(l.color || 'grey')}" stroke-dasharray="4 3"/>` + (l.label ? `<text x="${w - pad - 2}" y="${fmt(Y(l.y) - 4)}" font-size="10" fill="${color(l.color || 'grey')}" text-anchor="end">${escapeHtml(l.label)}</text>` : ''));
   const cid = 'npc' + (++clipSeq);
-  o.push(`<clipPath id="${cid}"><rect x="${pad}" y="${pad - 4}" width="${w - 2 * pad}" height="${h - 2 * pad + 8}"/></clipPath><g clip-path="url(#${cid})">`);
+  o.push(`<clipPath id="${cid}"><rect x="${padL}" y="${pad - 4}" width="${w - padL - pad}" height="${h - pad - padB + 8}"/></clipPath><g clip-path="url(#${cid})">`);
   for (const c of fig.curves || []) {
     const f = parse(c.expr);
     let [a, b] = c.dom || fig.xr;
@@ -62,7 +69,13 @@ function plotSvg(fig) {
     }
     if (cur.length > 1) segs.push(cur);
     for (const s of segs) o.push(`<polyline points="${s.join(' ')}" fill="none" stroke="${color(c.color)}" stroke-width="2"${c.dash ? ' stroke-dasharray="4 3"' : ''}/>`);
-    if (c.label) o.push(`<text x="${fmt(X(c.label[0]))}" y="${fmt(Y(c.label[1]))}" font-size="11" fill="${color(c.color)}" font-weight="700">${escapeHtml(c.label[2])}</text>`);
+    /* 标签靠近右边缘时改为右对齐，避免被裁掉。 */
+    if (c.label) { const lx = X(c.label[0]), right = lx + 7.5 * String(c.label[2]).length > w - pad; o.push(`<text x="${fmt(right ? Math.min(lx, w - pad) : lx)}" y="${fmt(Y(c.label[1]))}" font-size="11" fill="${color(c.color)}" font-weight="700"${right ? ' text-anchor="end"' : ''}>${escapeHtml(c.label[2])}</text>`); }
+  }
+  /* 折线：原文只给出数据点的曲线（如生产可能性表），按点连线，不编造函数式。 */
+  for (const l of fig.lines || []) {
+    o.push(`<polyline points="${pts(l.pts)}" fill="none" stroke="${color(l.color)}" stroke-width="2"${l.dash ? ' stroke-dasharray="4 3"' : ''}/>`);
+    if (l.label) o.push(`<text x="${fmt(X(l.label[0]))}" y="${fmt(Y(l.label[1]))}" font-size="11" fill="${color(l.color)}" font-weight="700">${escapeHtml(l.label[2])}</text>`);
   }
   o.push('</g>');
   /* 线段与箭头：经济学图里的虚线投影（P*、Q*）和曲线移动方向。 */
@@ -281,7 +294,7 @@ function exampleHtml(ex, folded) {
 }
 
 /* 课后作业答案页（tutorialAnswers）：与笔记来自同一份 JSON，只取 Tutorial / Worksheet 题，解答直接展开。 */
-const isHomework = ex => ex.homework ?? /^(tutorial|tut\b|worksheet|homework|assignment|practice|exercise)/i.test(ex.ref || '');
+const isHomework = ex => ex.homework ?? /^(tutorial|tut\b|worksheet|homework|assignment|practice|exercise|learning guide|lecture exercise|sample exam|extra|self-study)/i.test(ex.ref || '');
 function renderAnswers(note) {
   const exs = note.sections.flatMap(s => s.examples || []).filter(isHomework);
   if (!exs.length) return '';

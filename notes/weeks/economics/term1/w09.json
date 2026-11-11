@@ -1,0 +1,2050 @@
+{
+ "course": "economics",
+ "term": "term1",
+ "week": 9,
+ "title": "Unit 8 · Perfect Competition 完全竞争",
+ "answersTitle": "Unit 8 Learning Guide: Perfect Competition",
+ "files": [
+  "Lecture 8.1 Perfect Competition.pdf",
+  "Lecture 8.2 Perfect Competition.pdf",
+  "Unit 08_课件01_Perfect Competition.pdf",
+  "Unit 08_课件02_Perfect Competition.pdf",
+  "Unit 08_课后练习_Learning Guide_Perfect Competition.pdf",
+  "Unit 8 LG Microeconomics Perfect Competition.pdf"
+ ],
+ "inventory": [
+  "Lecture 8.1 Market Structures",
+  {
+   "ref": "Lecture 8.1 Example 2",
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  {
+   "ref": "Lecture 8.1 Short Run",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Lecture 8.2 Loss and Shutdown",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Lecture 8.2 Long Run",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "Lecture 8.2 Evaluation",
+  {
+   "ref": "Learning Guide Terms",
+   "deliverables": [
+    {
+     "type": "terms",
+     "terms": [
+      "Market Structure",
+      "Market Concentration",
+      "Market Power",
+      "Price Taker",
+      "Price Maker",
+      "Homogeneous Product",
+      "Non-Price Competition",
+      "Barriers to Entry",
+      "Perfect competition",
+      "Loss Minimisation",
+      "Shut Down"
+     ]
+    }
+   ]
+  },
+  "Learning Guide Q1",
+  {
+   "ref": "Learning Guide Q2",
+   "parts": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e"
+   ],
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  {
+   "ref": "Learning Guide Q3",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "Learning Guide Q4",
+  {
+   "ref": "Learning Guide Q5",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "Learning Guide Q6",
+  "Learning Guide Q7",
+  "Learning Guide In-class Q1",
+  {
+   "ref": "Learning Guide In-class Q2",
+   "parts": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g"
+   ],
+   "deliverables": [
+    {
+     "type": "table"
+    },
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Learning Guide In-class Q3",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  }
+ ],
+ "intro": [
+  "Unit 8 开始讲<strong>市场结构</strong>，第一种是<strong>完全竞争</strong>：许多厂商出售同质产品，没有进入壁垒，每家厂商都是价格接受者，面对一条水平的需求曲线 P = MR = AR。短期可能有超额利润、亏损或正常利润；亏损时比较价格和 AVC 决定继续生产还是停产；长期厂商自由进出，只剩正常利润。所有图中 MR = MC 的产量都由程序解出。"
+ ],
+ "sections": [
+  {
+   "title": "市场结构与完全竞争的特征（Lecture 8.1）",
+   "sources": [
+    {
+     "file": "Unit 08_课件01_Perfect Competition.pdf",
+     "pages": "p2–23"
+    }
+   ],
+   "concept": "<strong>市场结构</strong>由三点决定：厂商数量（市场集中度）、产品是否相似、进出是否容易（进入和退出壁垒）。四种基本结构：完全竞争、垄断竞争、寡头、垄断。\n<strong>市场势力</strong>：单个厂商通过改变产量影响价格的能力。<strong>价格接受者</strong>（高度竞争，几乎不能控制价格）；<strong>价格制定者</strong>（面对向下倾斜的需求曲线，竞争越少势力越大）。<strong>非价格竞争</strong>：广告、品牌、促销、售后服务。<strong>进入壁垒</strong>：控制原料、法律、技术、政府设置。\n<strong>完全竞争</strong>：很多厂商向很多买者出售同质（标准化、消费者认为完全相同）的产品；没有进入限制；现有厂商没有优势；买卖双方都充分了解价格。每家厂商只占总产量的极小部分，是价格接受者，面对<strong>完全弹性</strong>的需求：市场决定价格（例如 $50），P = AR = MR = D，TR 每多卖一单位增加同样的金额。",
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "Lecture 8.1 Market Structures",
+     "question": "Compare the four market structures by number of firms, type of product, barriers to entry and market power.",
+     "solution": "见下表。完全竞争和垄断是两个极端，垄断竞争和寡头在中间。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "",
+        "Perfect competition",
+        "Monopolistic competition",
+        "Oligopoly",
+        "Monopoly"
+       ],
+       "rows": [
+        [
+         "Number of firms",
+         "Very many",
+         "Many",
+         "Few",
+         "One"
+        ],
+        [
+         "Product",
+         "Homogeneous",
+         "Differentiated",
+         "Homogeneous or differentiated",
+         "Unique (no close substitutes)"
+        ],
+        [
+         "Barriers to entry",
+         "None",
+         "Low",
+         "High",
+         "Very high / blocked"
+        ],
+        [
+         "Market power",
+         "Price-taker",
+         "Some",
+         "Considerable",
+         "Price-maker"
+        ],
+        [
+         "Non-price competition",
+         "None",
+         "Much",
+         "Much",
+         "Some"
+        ]
+       ],
+       "title": "Comparison of market structures"
+      }
+     ],
+     "sourceNote": "讲义 p9–10 的比较表是图片，这里按讲义 p3–8 的定义整理；后续单元会逐一讲垄断、垄断竞争和寡头。",
+     "numeric": false
+    },
+    {
+     "label": "例 2",
+     "ref": "Lecture 8.1 Example 2",
+     "question": "The market price is $50. Complete TR and MR for quantities 0–5.",
+     "solution": "TR = 50 × Q：0、50、100、150、200、250；MR 每单位都是 50。完全竞争厂商 P = AR = MR = 50，需求曲线水平。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "Price (AR) $",
+        "Quantity",
+        "TR $",
+        "MR $"
+       ],
+       "rows": [
+        [
+         "50",
+         "0",
+         "0",
+         "–"
+        ],
+        [
+         "50",
+         "1",
+         "50",
+         "50"
+        ],
+        [
+         "50",
+         "2",
+         "100",
+         "50"
+        ],
+        [
+         "50",
+         "3",
+         "150",
+         "50"
+        ],
+        [
+         "50",
+         "4",
+         "200",
+         "50"
+        ],
+        [
+         "50",
+         "5",
+         "250",
+         "50"
+        ]
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "50*5",
+       "equals": "250"
+      },
+      {
+       "expr": "250-200",
+       "equals": "50"
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "把完全竞争厂商的需求曲线画成向下倾斜：单个厂商面对水平的需求曲线，向下倾斜的是行业需求。",
+    "说完全竞争厂商「决定价格」：它只决定产量。"
+   ],
+   "faqs": [
+    {
+     "q": "现实中有完全竞争吗？",
+     "a": "很少完全符合，农产品市场（如小麦、新鲜水果）比较接近：产品基本相同、生产者众多、价格公开。"
+    }
+   ]
+  },
+  {
+   "title": "短期：超额利润、亏损最小化与停产（Lecture 8.1–8.2）",
+   "sources": [
+    {
+     "file": "Unit 08_课件01_Perfect Competition.pdf",
+     "pages": "p26–33"
+    },
+    {
+     "file": "Unit 08_课件02_Perfect Competition.pdf",
+     "pages": "p3–11, p19–20"
+    }
+   ],
+   "concept": "短期内固定要素不能变，厂商来不及进出。厂商按 <strong>MR = MC</strong>（即 P = MC）决定产量，结果取决于价格和成本：\n· P > ATC：<strong>超额利润</strong> = (P − ATC) × Q。\n· P = ATC：<strong>正常利润</strong>。\n· AVC < P < ATC：<strong>亏损</strong>，但应继续生产，在 MR = MC 处使亏损最小——收入能付清全部可变成本还能付一部分固定成本；停产的话固定成本要全付。\n· P < AVC：<strong>停产</strong>（shutdown）——生产连可变成本都付不清，不如产量为零只付固定成本。\n<strong>短期供给曲线</strong>：MC 曲线在 AVC 最低点以上的部分；价格变化时厂商沿 MC 调整产量，低于 AVC 最低点就停产。",
+   "examples": [
+    {
+     "label": "例 3",
+     "ref": "Lecture 8.1 Short Run",
+     "question": "Using MC = 10 − 3Q + 0.3Q², AVC = 10 − 1.5Q + 0.1Q², ATC = AVC + 20/Q, show the firm's short-run position at a market price of $10.",
+     "solution": "P = MC 解得 Q ≈ 10.0，此时 ATC ≈ 7.0，P > ATC，绿色长方形是超额利润 ≈ (10 − 7.0) × 10.0。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        15
+       ],
+       "yr": [
+        0,
+        14
+       ],
+       "width": 340,
+       "height": 260,
+       "xLabel": "Output (Q)",
+       "yLabel": "$",
+       "curves": [
+        {
+         "expr": "10-3*x+0.3*x^2",
+         "dom": [
+          0.4,
+          11.5
+         ],
+         "color": "red",
+         "label": [
+          10.8,
+          13.4,
+          "MC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2+20/x",
+         "dom": [
+          1.6,
+          14
+         ],
+         "color": "navy",
+         "label": [
+          13.2,
+          10.6,
+          "ATC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2",
+         "dom": [
+          0.4,
+          14
+         ],
+         "color": "gold",
+         "dash": true,
+         "label": [
+          13.4,
+          7.6,
+          "AVC"
+         ]
+        },
+        {
+         "expr": "10+0*x",
+         "dom": [
+          0,
+          15
+         ],
+         "color": "green",
+         "label": [
+          0.3,
+          10.45,
+          "P = MR = AR = D"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 10.0,
+         "y": 10,
+         "label": "MR = MC",
+         "dy": 15
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          10.0,
+          0
+         ],
+         "to": [
+          10.0,
+          10
+         ]
+        }
+       ],
+       "caption": "Short run: P = 10 > ATC → supernormal profit",
+       "polygons": [
+        {
+         "pts": [
+          [
+           0,
+           7.0
+          ],
+          [
+           10.0,
+           7.0
+          ],
+          [
+           10.0,
+           10
+          ],
+          [
+           0,
+           10
+          ]
+         ],
+         "color": "green",
+         "opacity": 0.25,
+         "label": [
+          5.0,
+          8.5,
+          "supernormal profit"
+         ]
+        }
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "10-3*10+0.3*10^2",
+       "equals": "10"
+      },
+      {
+       "expr": "(10-(10-1.5*10+0.1*100+20/10))*10",
+       "equals": "30"
+      }
+     ]
+    },
+    {
+     "label": "例 4",
+     "ref": "Lecture 8.2 Loss and Shutdown",
+     "question": "Same cost curves. Show the decision at (a) P = $5.50 and (b) P = $3.50, and explain.",
+     "solution": "(a) P = 5.5：MR = MC 处 Q ≈ 8.16，ATC ≈ 6.87，AVC ≈ 4.42。价格低于 ATC，有亏损（红色区域），但高于 AVC：收入付清全部可变成本后还能付一部分固定成本，继续生产比停产亏得少。\n(b) P = 3.5：低于 AVC 的最低点 4.375，无论生产多少，收入连可变成本都付不清，亏损大于固定成本，应该停产（产量为零，只付固定成本）。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        15
+       ],
+       "yr": [
+        0,
+        14
+       ],
+       "width": 340,
+       "height": 260,
+       "xLabel": "Output (Q)",
+       "yLabel": "$",
+       "curves": [
+        {
+         "expr": "10-3*x+0.3*x^2",
+         "dom": [
+          0.4,
+          11.5
+         ],
+         "color": "red",
+         "label": [
+          10.8,
+          13.4,
+          "MC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2+20/x",
+         "dom": [
+          1.6,
+          14
+         ],
+         "color": "navy",
+         "label": [
+          13.2,
+          10.6,
+          "ATC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2",
+         "dom": [
+          0.4,
+          14
+         ],
+         "color": "gold",
+         "dash": true,
+         "label": [
+          13.4,
+          7.6,
+          "AVC"
+         ]
+        },
+        {
+         "expr": "5.5+0*x",
+         "dom": [
+          0,
+          15
+         ],
+         "color": "green",
+         "label": [
+          0.3,
+          5.95,
+          "P = MR = AR = D"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 8.162,
+         "y": 5.5,
+         "label": "MR = MC",
+         "dy": 15
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          8.162,
+          0
+         ],
+         "to": [
+          8.162,
+          6.869157623024636
+         ]
+        }
+       ],
+       "caption": "Short run: AVC < P = 5.5 < ATC → keep producing to minimise the loss",
+       "polygons": [
+        {
+         "pts": [
+          [
+           0,
+           5.5
+          ],
+          [
+           8.162,
+           5.5
+          ],
+          [
+           8.162,
+           6.869
+          ],
+          [
+           0,
+           6.869
+          ]
+         ],
+         "color": "red",
+         "opacity": 0.25,
+         "label": [
+          4.08,
+          6.18,
+          "loss"
+         ]
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        15
+       ],
+       "yr": [
+        0,
+        14
+       ],
+       "width": 340,
+       "height": 260,
+       "xLabel": "Output (Q)",
+       "yLabel": "$",
+       "curves": [
+        {
+         "expr": "10-3*x+0.3*x^2",
+         "dom": [
+          0.4,
+          11.5
+         ],
+         "color": "red",
+         "label": [
+          10.8,
+          13.4,
+          "MC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2+20/x",
+         "dom": [
+          1.6,
+          14
+         ],
+         "color": "navy",
+         "label": [
+          13.2,
+          10.6,
+          "ATC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2",
+         "dom": [
+          0.4,
+          14
+         ],
+         "color": "gold",
+         "dash": true,
+         "label": [
+          13.4,
+          7.6,
+          "AVC"
+         ]
+        },
+        {
+         "expr": "3.5+0*x",
+         "dom": [
+          0,
+          15
+         ],
+         "color": "green",
+         "label": [
+          0.3,
+          3.95,
+          "P = MR = AR = D"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 6.826,
+         "y": 3.5,
+         "label": "MR = MC",
+         "dy": 15
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          6.826,
+          0
+         ],
+         "to": [
+          6.826,
+          7.350546842603699
+         ]
+        }
+       ],
+       "caption": "P = 3.5 < minimum AVC → shut down (produce zero)"
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ],
+     "checks": [
+      {
+       "expr": "10-1.5*7.5+0.1*7.5^2",
+       "equals": "4.375"
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "亏损就停产：只要 P > AVC 就应在短期继续生产。",
+    "停产点用 ATC 最低点：停产看 AVC 最低点。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么固定成本不影响短期是否生产？",
+     "a": "固定成本无论生产不生产都要付（沉没），所以短期只比较价格和可变成本。"
+    }
+   ]
+  },
+  {
+   "title": "长期均衡与评价（Lecture 8.2）",
+   "sources": [
+    {
+     "file": "Unit 08_课件02_Perfect Competition.pdf",
+     "pages": "p12–22"
+    }
+   ],
+   "concept": "长期所有要素可变，没有进出壁垒。短期有超额利润 → 吸引新厂商进入 → 市场供给右移 → 价格下降，直到经济利润为零。短期有亏损 → 厂商退出 → 供给左移 → 价格上升，直到亏损消失。<strong>长期均衡：P = MR = 最低 ATC = MC，只有正常利润。</strong>\n<strong>优点</strong>：资源配置有效率（在最低成本生产）；价格低，有利于消费者和出口；削弱生产者的市场势力；有效竞争限制超额利润。<strong>缺点</strong>：产品同质没有选择；长期只有正常利润；厂房设备重复建设，浪费资源；规模经济较少。",
+   "examples": [
+    {
+     "label": "例 5",
+     "ref": "Lecture 8.2 Long Run",
+     "question": "Explain, with market and firm diagrams, why a perfectly competitive firm earns only normal profit in the long run.",
+     "solution": "短期价格 P1 时厂商有超额利润，吸引新厂商进入；市场供给从 S1 右移到 S2，价格降到 P2；单个厂商的水平需求线随之下移。只要还有超额利润就继续有人进入，直到价格等于 ATC 的最低点：此时 P = MC = 最低 ATC，经济利润为零，只有正常利润，也不再有进出的动力。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        12
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 300,
+       "height": 230,
+       "xLabel": "Market Q",
+       "yLabel": "P",
+       "curves": [
+        {
+         "expr": "9+(-0.8)*x",
+         "dom": [
+          0,
+          11.25
+         ],
+         "color": "navy",
+         "label": [
+          9.225,
+          2.02,
+          "D"
+         ]
+        },
+        {
+         "expr": "1+(0.6)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "red",
+         "label": [
+          8.55,
+          6.63,
+          "S1"
+         ]
+        },
+        {
+         "expr": "-0.7+(0.6)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "green",
+         "label": [
+          8.55,
+          4.93,
+          "S2"
+         ],
+         "dash": true
+        }
+       ],
+       "points": [
+        {
+         "x": 5.71,
+         "y": 4.43,
+         "label": "P1"
+        },
+        {
+         "x": 6.93,
+         "y": 3.46,
+         "label": "P2"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          7.5,
+          5.5
+         ],
+         "to": [
+          9.3,
+          5.5
+         ],
+         "arrow": true,
+         "label": "entry",
+         "dx": -30,
+         "dy": -6
+        }
+       ],
+       "caption": "Market: supernormal profit attracts new firms, supply shifts right and price falls until only normal profit remains"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        12
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 300,
+       "height": 230,
+       "xLabel": "Firm's Q",
+       "yLabel": "P",
+       "curves": [
+        {
+         "expr": "4.43+0*x",
+         "dom": [
+          0,
+          12
+         ],
+         "color": "navy",
+         "label": [
+          8,
+          4.9,
+          "d1 = MR1 (P1)"
+         ]
+        },
+        {
+         "expr": "3.46+0*x",
+         "dom": [
+          0,
+          12
+         ],
+         "color": "green",
+         "dash": true,
+         "label": [
+          8,
+          2.9,
+          "d2 = MR2 (P2)"
+         ]
+        }
+       ],
+       "caption": "Firm: a price-taker; its demand is horizontal at the market price"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        15
+       ],
+       "yr": [
+        0,
+        14
+       ],
+       "width": 340,
+       "height": 260,
+       "xLabel": "Output (Q)",
+       "yLabel": "$",
+       "curves": [
+        {
+         "expr": "10-3*x+0.3*x^2",
+         "dom": [
+          0.4,
+          11.5
+         ],
+         "color": "red",
+         "label": [
+          10.8,
+          13.4,
+          "MC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2+20/x",
+         "dom": [
+          1.6,
+          14
+         ],
+         "color": "navy",
+         "label": [
+          13.2,
+          10.6,
+          "ATC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2",
+         "dom": [
+          0.4,
+          14
+         ],
+         "color": "gold",
+         "dash": true,
+         "label": [
+          13.4,
+          7.6,
+          "AVC"
+         ]
+        },
+        {
+         "expr": "6.817+0*x",
+         "dom": [
+          0,
+          15
+         ],
+         "color": "green",
+         "label": [
+          0.3,
+          7.267,
+          "P = MR = AR = D"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 8.793,
+         "y": 6.817,
+         "label": "MR = MC",
+         "dy": 15
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          8.793,
+          0
+         ],
+         "to": [
+          8.793,
+          6.817
+         ]
+        }
+       ],
+       "caption": "Long run: P = minimum ATC → normal profit only"
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 6",
+     "ref": "Lecture 8.2 Evaluation",
+     "question": "List the advantages and disadvantages of perfect competition.",
+     "solution": "优点：长期在最低 ATC 生产，资源配置有效率；价格低，惠及消费者、有利出口；生产者没有市场势力；竞争使超额利润无法持续。\n缺点：产品同质，消费者没有选择；长期只有正常利润，缺少研发资金；许多小厂商重复建设厂房设备，浪费资源；规模小，难以享受规模经济。",
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "说长期利润为零就是「不赚钱」：正常利润包含企业主的机会成本。",
+    "长期调整画成需求移动：是市场供给因进入、退出而移动。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么长期均衡在 ATC 最低点？",
+     "a": "只要价格高于最低 ATC 就有超额利润、有人进入；低于就有亏损、有人退出；只有等于最低 ATC 时没有进出动力。"
+    }
+   ]
+  },
+  {
+   "title": "Learning Guide：问答与应用题",
+   "sources": [
+    {
+     "file": "Unit 8 LG Microeconomics Perfect Competition.pdf",
+     "pages": "p2–5"
+    }
+   ],
+   "concept": "完全竞争的计算题：P 由市场给定 → TR = P × Q、MR = AR = P；成本栏 TC = TFC + TVC、MC = ΔTC、AVC = TVC ÷ Q、ATC = TC ÷ Q；利润 = TR − TC；找 MR = MC（或最接近）的产量。",
+   "examples": [
+    {
+     "label": "例 7",
+     "ref": "Learning Guide Terms",
+     "question": "Define: Market structure; Market concentration; Market power; Price taker; Price maker; Homogeneous product; Non-price competition; Barriers to entry; Perfect competition; Loss minimisation; Shut down position.",
+     "solution": "<strong>Market Structure</strong>：由厂商数量、产品相似程度、进出难易决定的市场类型。\n<strong>Market Concentration</strong>：市场中厂商的数量和规模，少数大厂商为高集中度。\n<strong>Market Power</strong>：单个厂商通过改变产量影响价格的能力。\n<strong>Price Taker</strong>：不能影响市场价格、只能接受市场价格的厂商。\n<strong>Price Maker</strong>：面对向下倾斜的需求曲线、可以通过限制产量控制价格的厂商。\n<strong>Homogeneous Product</strong>：标准化、消费者认为完全相同的产品。\n<strong>Non-Price Competition</strong>：用广告、品牌、促销、售后服务等非价格手段竞争。\n<strong>Barriers to Entry</strong>：阻止厂商进入行业的障碍，如控制原料、法律、技术、政府限制。\n<strong>Perfect competition</strong>：许多厂商出售同质产品、无进入壁垒、信息充分、厂商是价格接受者的市场。\n<strong>Loss Minimisation</strong>：AVC < P < ATC 时在 MR = MC 处生产，使亏损最小。\n<strong>Shut Down Position</strong>：P < AVC 时停止生产，只承担固定成本。",
+     "numeric": false
+    },
+    {
+     "label": "例 8",
+     "ref": "Learning Guide Q1",
+     "question": "Describe the characteristics of perfect competition and discuss whether any industries approximate it. (At least 30 words.)",
+     "solution": "特征：很多厂商和买者；产品同质；没有进入和退出壁垒；买卖双方信息充分；每家厂商都是价格接受者。接近的行业：小麦等农产品市场——许多农场出售基本相同的产品，价格由市场决定，单个农场无法影响；支持的理由是厂商多、产品同质、价格公开。反对的理由：进入需要土地和资本（有一定壁垒），政府补贴和贸易政策会干预价格，大型农业公司有一定议价能力，所以只是近似完全竞争。",
+     "numeric": false
+    },
+    {
+     "label": "例 9",
+     "ref": "Learning Guide Q2",
+     "question": "A firm can sell as much as it wishes from 0 to 10 units at $10 each. (a) Complete a table of P, Qd, AR, TR, MR. (b) What market is this and how do you know? (c) Graph demand, AR, TR and MR. (d) Calculate the price elasticity of demand along this demand line. (e) Explain the relationship between AR and MR — is it the 'normal' relationship?",
+     "solution": "(a) 见下表。\n(b) 完全竞争：价格固定在 10，不论卖多少都不变，厂商是价格接受者。\n(c) D = AR = MR 是 P = 10 的水平线；TR 是从原点出发、斜率 10 的直线。\n(d) 价格不变而需求量可以任意变化，Ed = %ΔQ ÷ 0 → 无穷大，需求完全弹性，各点都一样。\n(e) AR = MR = 10：每多卖一单位，收益都增加同样的价格。这不是「通常」的关系：在其他市场结构下需求曲线向下倾斜，要多卖就得降价，MR 低于 AR（直线需求时 MR 下降速度是 AR 的两倍）。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "P $",
+        "Qd",
+        "AR $",
+        "TR $",
+        "MR $"
+       ],
+       "rows": [
+        [
+         "10",
+         "0",
+         "10",
+         "0",
+         "–"
+        ],
+        [
+         "10",
+         "1",
+         "10",
+         "10",
+         "10"
+        ],
+        [
+         "10",
+         "2",
+         "10",
+         "20",
+         "10"
+        ],
+        [
+         "10",
+         "3",
+         "10",
+         "30",
+         "10"
+        ],
+        [
+         "10",
+         "4",
+         "10",
+         "40",
+         "10"
+        ],
+        [
+         "10",
+         "5",
+         "10",
+         "50",
+         "10"
+        ],
+        [
+         "10",
+         "6",
+         "10",
+         "60",
+         "10"
+        ],
+        [
+         "10",
+         "7",
+         "10",
+         "70",
+         "10"
+        ],
+        [
+         "10",
+         "8",
+         "10",
+         "80",
+         "10"
+        ],
+        [
+         "10",
+         "9",
+         "10",
+         "90",
+         "10"
+        ],
+        [
+         "10",
+         "10",
+         "10",
+         "100",
+         "10"
+        ]
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        11
+       ],
+       "yr": [
+        0,
+        110
+       ],
+       "width": 320,
+       "height": 230,
+       "xLabel": "Quantity",
+       "yLabel": "$",
+       "xticks": [
+        2,
+        4,
+        6,
+        8,
+        10
+       ],
+       "yticks": [
+        10,
+        50,
+        100
+       ],
+       "curves": [
+        {
+         "expr": "10*x",
+         "dom": [
+          0,
+          10
+         ],
+         "color": "green",
+         "label": [
+          8.2,
+          95,
+          "TR"
+         ]
+        },
+        {
+         "expr": "10+0*x",
+         "dom": [
+          0,
+          10.5
+         ],
+         "color": "navy",
+         "label": [
+          6,
+          17,
+          "D = AR = MR = 10"
+         ]
+        }
+       ],
+       "caption": "Perfectly competitive firm: horizontal D = AR = MR; TR is a straight line from the origin"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+     ],
+     "checks": [
+      {
+       "expr": "10*10",
+       "equals": "100"
+      }
+     ]
+    },
+    {
+     "label": "例 10",
+     "ref": "Learning Guide Q3",
+     "question": "Explain the difference between the industry demand curve and the individual firm's demand curve under perfect competition, and show how a change in market demand changes the firm's demand curve. (At least 15 words.)",
+     "solution": "行业（市场）需求曲线向下倾斜，与行业供给决定市场价格；单个厂商太小，只能接受这个价格，所以它的需求曲线是这个价格上的水平线。市场需求增加 → 市场价格上升 → 厂商的水平需求线上移；市场需求减少 → 价格下降 → 厂商的需求线下移。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        12
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 300,
+       "height": 230,
+       "xLabel": "Market Q",
+       "yLabel": "P",
+       "curves": [
+        {
+         "expr": "8+(-0.8)*x",
+         "dom": [
+          0,
+          10.0
+         ],
+         "color": "navy",
+         "label": [
+          8.2,
+          1.8400000000000003,
+          "D1"
+         ]
+        },
+        {
+         "expr": "10+(-0.8)*x",
+         "dom": [
+          0,
+          12.5
+         ],
+         "color": "green",
+         "label": [
+          10.25,
+          2.2000000000000006,
+          "D2"
+         ],
+         "dash": true
+        },
+        {
+         "expr": "1+(0.6)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "red",
+         "label": [
+          8.55,
+          6.63,
+          "S"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 5,
+         "y": 4,
+         "label": "P1"
+        },
+        {
+         "x": 6.43,
+         "y": 4.86,
+         "label": "P2"
+        }
+       ],
+       "caption": "Industry: demand increases, price rises from P1 to P2"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        12
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 300,
+       "height": 230,
+       "xLabel": "Firm's Q",
+       "yLabel": "P",
+       "curves": [
+        {
+         "expr": "4+0*x",
+         "dom": [
+          0,
+          12
+         ],
+         "color": "navy",
+         "label": [
+          8,
+          3.4,
+          "d1 (P1)"
+         ]
+        },
+        {
+         "expr": "4.86+0*x",
+         "dom": [
+          0,
+          12
+         ],
+         "color": "green",
+         "dash": true,
+         "label": [
+          8,
+          5.4,
+          "d2 (P2)"
+         ]
+        }
+       ],
+       "caption": "Firm: its horizontal demand curve shifts up to the new price"
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 11",
+     "ref": "Learning Guide Q4",
+     "question": "Explain the MR = MC rule for a perfectly competitive firm. (At least 30 words.)",
+     "solution": "完全竞争厂商的 MR 就是市场价格。只要多生产一单位带来的 MR（价格）大于它的 MC，增产就增加利润；当 MC 超过价格时，增产就减少利润。所以厂商一直生产到 MR = MC，也就是 P = MC 的产量，此时利润最大（或亏损最小）。",
+     "numeric": false
+    },
+    {
+     "label": "例 12",
+     "ref": "Learning Guide Q5",
+     "question": "With diagrams, explain why a perfectly competitive firm might continue to produce in the short run even though it is making a loss.",
+     "solution": "短期内固定成本无论生产与否都要付。如果价格低于 ATC 但高于 AVC（图中 P = 5.5），在 MR = MC 处生产，收入能付清全部可变成本，还剩一部分可以付固定成本，亏损小于全部固定成本；如果停产，就要承担全部固定成本，亏得更多。所以只要 P > AVC，短期继续生产是亏损最小的选择；长期如果亏损持续，厂商会退出行业。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        15
+       ],
+       "yr": [
+        0,
+        14
+       ],
+       "width": 340,
+       "height": 260,
+       "xLabel": "Output (Q)",
+       "yLabel": "$",
+       "curves": [
+        {
+         "expr": "10-3*x+0.3*x^2",
+         "dom": [
+          0.4,
+          11.5
+         ],
+         "color": "red",
+         "label": [
+          10.8,
+          13.4,
+          "MC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2+20/x",
+         "dom": [
+          1.6,
+          14
+         ],
+         "color": "navy",
+         "label": [
+          13.2,
+          10.6,
+          "ATC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2",
+         "dom": [
+          0.4,
+          14
+         ],
+         "color": "gold",
+         "dash": true,
+         "label": [
+          13.4,
+          7.6,
+          "AVC"
+         ]
+        },
+        {
+         "expr": "5.5+0*x",
+         "dom": [
+          0,
+          15
+         ],
+         "color": "green",
+         "label": [
+          0.3,
+          5.95,
+          "P = MR = AR = D"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 8.162,
+         "y": 5.5,
+         "label": "MR = MC",
+         "dy": 15
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          8.162,
+          0
+         ],
+         "to": [
+          8.162,
+          6.869157623024636
+         ]
+        }
+       ],
+       "caption": "Short run: AVC < P = 5.5 < ATC → keep producing to minimise the loss",
+       "polygons": [
+        {
+         "pts": [
+          [
+           0,
+           5.5
+          ],
+          [
+           8.162,
+           5.5
+          ],
+          [
+           8.162,
+           6.869
+          ],
+          [
+           0,
+           6.869
+          ]
+         ],
+         "color": "red",
+         "opacity": 0.25,
+         "label": [
+          4.08,
+          6.18,
+          "loss"
+         ]
+        }
+       ]
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 13",
+     "ref": "Learning Guide Q6",
+     "question": "Explain why the MC curve can be the individual firm's supply curve under perfect competition. Can the whole MC curve be considered the supply curve?",
+     "solution": "完全竞争厂商在 P = MC 处生产，所以对每一个可能的价格，厂商愿意供给的产量都是 MC 曲线上对应的点——MC 曲线就告诉我们价格与供给量的关系，即供给曲线。但不是整条 MC：价格低于 AVC 最低点时厂商会停产，供给量为零；MC 下降的那一段也不是利润最大点。所以短期供给曲线是 <strong>MC 在 AVC 最低点以上的部分</strong>。",
+     "numeric": false
+    },
+    {
+     "label": "例 14",
+     "ref": "Learning Guide Q7",
+     "question": "Textbook Chapter 7 multiple-choice questions 1–8.",
+     "solution": "教材选择题原文不在本周资料中，无法逐题作答。复习要点：价格接受者、水平需求曲线、P = MR = MC、停产点在 AVC 最低点、长期只有正常利润。",
+     "sourceNote": "教材题目不在资料中。",
+     "numeric": false
+    },
+    {
+     "label": "例 15",
+     "ref": "Learning Guide In-class Q1",
+     "question": "Textbook activity: 'How Much Does an Uber Driver Earn?' Global Perspective (p166).",
+     "solution": "教材文章不在本周资料中，无法引用数据。可以用本单元的框架思考：网约车司机多、服务接近同质、进出容易（有车有驾照即可），接近完全竞争；所以长期收入会被压到正常利润（相当于司机放弃其他工作的机会成本）；平台收取的佣金、油费和车辆折旧都是成本。",
+     "sourceNote": "教材内容不在资料中。",
+     "numeric": false
+    },
+    {
+     "label": "例 16",
+     "ref": "Learning Guide In-class Q2",
+     "question": "Output 0–7 with TC at 0 = 100 and TVC 90, 170, 230, 272, 341, 470, 695 for outputs 1–7; market price $130. (a) Complete the schedule (TFC, TVC, TC, MC, AVC, ATC, P, TR, MR, AR, Profit). (b) Graph TC, TR and total profit; what is the profit-maximising output? (c) Graph ATC, MR, MC. (d) Where does MC intersect ATC? (e) Where is MR = MC? (f) Shade the supernormal profit. (g) Can the firm keep earning supernormal profit in the long run?",
+     "solution": "产量为 0 时总成本 100，所以 TFC = 100，表中各数是 TVC。\n(a) 见下表。\n(b) 利润最大的产量是 <strong>6</strong>（利润 $210）。\n(c)(e) MR = 130；MC 在第 6 单位是 129，最接近 MR，第 7 单位的 MC 是 225，远高于 MR，所以 MR = MC 在 Q ≈ 6。\n(d) ATC 在 Q = 5 最低（88.2）；MC 在第 5 单位是 69（低于 ATC），第 6 单位是 129（高于 ATC），所以 MC 在 Q = 5 到 6 之间穿过 ATC 的最低点。\n(f) 超额利润 = (P − ATC) × Q = (130 − 95) × 6 = 210。\n(g) 不能。完全竞争没有进入壁垒，超额利润会吸引新厂商进入，市场供给增加、价格下降，直到价格等于最低 ATC，只剩正常利润。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "Q",
+        "TFC",
+        "TVC",
+        "TC",
+        "MC",
+        "AVC",
+        "ATC",
+        "P",
+        "TR",
+        "MR",
+        "AR",
+        "Profit"
+       ],
+       "rows": [
+        [
+         "0",
+         "100",
+         "0",
+         "100",
+         "–",
+         "–",
+         "–",
+         "130",
+         "0",
+         "–",
+         "130",
+         "-100"
+        ],
+        [
+         "1",
+         "100",
+         "90",
+         "190",
+         "90",
+         "90",
+         "190",
+         "130",
+         "130",
+         "130",
+         "130",
+         "-60"
+        ],
+        [
+         "2",
+         "100",
+         "170",
+         "270",
+         "80",
+         "85",
+         "135",
+         "130",
+         "260",
+         "130",
+         "130",
+         "-10"
+        ],
+        [
+         "3",
+         "100",
+         "230",
+         "330",
+         "60",
+         "76.67",
+         "110",
+         "130",
+         "390",
+         "130",
+         "130",
+         "60"
+        ],
+        [
+         "4",
+         "100",
+         "272",
+         "372",
+         "42",
+         "68",
+         "93",
+         "130",
+         "520",
+         "130",
+         "130",
+         "148"
+        ],
+        [
+         "5",
+         "100",
+         "341",
+         "441",
+         "69",
+         "68.2",
+         "88.2",
+         "130",
+         "650",
+         "130",
+         "130",
+         "209"
+        ],
+        [
+         "6",
+         "100",
+         "470",
+         "570",
+         "129",
+         "78.33",
+         "95",
+         "130",
+         "780",
+         "130",
+         "130",
+         "210"
+        ],
+        [
+         "7",
+         "100",
+         "695",
+         "795",
+         "225",
+         "99.29",
+         "113.57",
+         "130",
+         "910",
+         "130",
+         "130",
+         "115"
+        ]
+       ],
+       "title": "Application question: P = $130"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        8
+       ],
+       "yr": [
+        -100,
+        950
+       ],
+       "width": 330,
+       "height": 250,
+       "xLabel": "Output (Q)",
+       "yLabel": "$",
+       "xticks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+       ],
+       "yticks": [
+        210,
+        570,
+        780
+       ],
+       "lines": [
+        {
+         "pts": [
+          [
+           0,
+           100
+          ],
+          [
+           1,
+           190
+          ],
+          [
+           2,
+           270
+          ],
+          [
+           3,
+           330
+          ],
+          [
+           4,
+           372
+          ],
+          [
+           5,
+           441
+          ],
+          [
+           6,
+           570
+          ],
+          [
+           7,
+           795
+          ]
+         ],
+         "color": "red",
+         "label": [
+          6.6,
+          820,
+          "TC"
+         ]
+        },
+        {
+         "pts": [
+          [
+           0,
+           0
+          ],
+          [
+           1,
+           130
+          ],
+          [
+           2,
+           260
+          ],
+          [
+           3,
+           390
+          ],
+          [
+           4,
+           520
+          ],
+          [
+           5,
+           650
+          ],
+          [
+           6,
+           780
+          ],
+          [
+           7,
+           910
+          ]
+         ],
+         "color": "green",
+         "label": [
+          7.1,
+          940,
+          "TR"
+         ]
+        },
+        {
+         "pts": [
+          [
+           0,
+           -100
+          ],
+          [
+           1,
+           -60
+          ],
+          [
+           2,
+           -10
+          ],
+          [
+           3,
+           60
+          ],
+          [
+           4,
+           148
+          ],
+          [
+           5,
+           209
+          ],
+          [
+           6,
+           210
+          ],
+          [
+           7,
+           115
+          ]
+         ],
+         "color": "navy",
+         "label": [
+          7.1,
+          140,
+          "Profit"
+         ]
+        }
+       ],
+       "vlines": [
+        {
+         "x": 6,
+         "label": "max profit at Q = 6"
+        }
+       ],
+       "caption": "TC, TR and total profit: profit is greatest ($210) at Q = 6"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        8
+       ],
+       "yr": [
+        0,
+        240
+       ],
+       "width": 330,
+       "height": 250,
+       "xLabel": "Output (Q)",
+       "yLabel": "$",
+       "xticks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+       ],
+       "yticks": [
+        95,
+        130
+       ],
+       "lines": [
+        {
+         "pts": [
+          [
+           1,
+           190.0
+          ],
+          [
+           2,
+           135.0
+          ],
+          [
+           3,
+           110.0
+          ],
+          [
+           4,
+           93.0
+          ],
+          [
+           5,
+           88.2
+          ],
+          [
+           6,
+           95.0
+          ],
+          [
+           7,
+           113.57142857142857
+          ]
+         ],
+         "color": "navy",
+         "label": [
+          1.2,
+          200,
+          "ATC"
+         ]
+        },
+        {
+         "pts": [
+          [
+           1,
+           90
+          ],
+          [
+           2,
+           80
+          ],
+          [
+           3,
+           60
+          ],
+          [
+           4,
+           42
+          ],
+          [
+           5,
+           69
+          ],
+          [
+           6,
+           129
+          ],
+          [
+           7,
+           225
+          ]
+         ],
+         "color": "red",
+         "label": [
+          6.7,
+          230,
+          "MC"
+         ]
+        },
+        {
+         "pts": [
+          [
+           0,
+           130
+          ],
+          [
+           8,
+           130
+          ]
+         ],
+         "color": "green",
+         "label": [
+          0.3,
+          140,
+          "MR = AR = P = 130"
+         ]
+        }
+       ],
+       "polygons": [
+        {
+         "pts": [
+          [
+           0,
+           95
+          ],
+          [
+           6,
+           95
+          ],
+          [
+           6,
+           130
+          ],
+          [
+           0,
+           130
+          ]
+         ],
+         "color": "green",
+         "opacity": 0.25,
+         "label": [
+          3,
+          110,
+          "supernormal profit = (130 − 95) × 6"
+         ]
+        }
+       ],
+       "caption": "ATC, MR and MC (MC plotted at each output): MR = MC at about Q = 6"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g"
+     ],
+     "checks": [
+      {
+       "expr": "130*6-(100+470)",
+       "equals": "210"
+      },
+      {
+       "expr": "(100+470)/6",
+       "equals": "95"
+      },
+      {
+       "expr": "(100+341)/5",
+       "equals": "88.2"
+      },
+      {
+       "expr": "470-341",
+       "equals": "129"
+      },
+      {
+       "expr": "(130-95)*6",
+       "equals": "210"
+      }
+     ],
+     "sourceNote": "原表第一行写「0 0 100」，第 1–7 行只给了一个数；产量 1 的总成本不可能低于固定成本 100，所以这些数是 TVC。"
+    },
+    {
+     "label": "例 17",
+     "ref": "Learning Guide In-class Q3",
+     "question": "Explain the 'close down' position for a perfectly competitive firm in the short run, with diagrams showing why producing zero output is better.",
+     "solution": "当价格低于 AVC 的最低点（图中 P = 3.5 < 4.375），在任何产量上，收入都付不清可变成本，更不用说固定成本；生产得越多，在固定成本之外还要多亏可变成本。产量为零时，亏损只是固定成本。所以停产（close down）亏得更少。AVC 最低点就是停产点：价格低于它就停产，高于它就继续生产以使亏损最小。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        15
+       ],
+       "yr": [
+        0,
+        14
+       ],
+       "width": 340,
+       "height": 260,
+       "xLabel": "Output (Q)",
+       "yLabel": "$",
+       "curves": [
+        {
+         "expr": "10-3*x+0.3*x^2",
+         "dom": [
+          0.4,
+          11.5
+         ],
+         "color": "red",
+         "label": [
+          10.8,
+          13.4,
+          "MC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2+20/x",
+         "dom": [
+          1.6,
+          14
+         ],
+         "color": "navy",
+         "label": [
+          13.2,
+          10.6,
+          "ATC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2",
+         "dom": [
+          0.4,
+          14
+         ],
+         "color": "gold",
+         "dash": true,
+         "label": [
+          13.4,
+          7.6,
+          "AVC"
+         ]
+        },
+        {
+         "expr": "3.5+0*x",
+         "dom": [
+          0,
+          15
+         ],
+         "color": "green",
+         "label": [
+          0.3,
+          3.95,
+          "P = MR = AR = D"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 6.826,
+         "y": 3.5,
+         "label": "MR = MC",
+         "dy": 15
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          6.826,
+          0
+         ],
+         "to": [
+          6.826,
+          7.350546842603699
+         ]
+        }
+       ],
+       "caption": "P = 3.5 < minimum AVC → shut down (produce zero)"
+      }
+     ],
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "应用题把 TC 当 TVC：产量 1 的 TC 不能小于 TFC。",
+    "利润最大看 TR 最大：应看 TR − TC 最大，或 MR = MC。",
+    "把短期供给曲线画成整条 MC。"
+   ],
+   "faqs": [
+    {
+     "q": "表格题 MR = MC 找不到正好相等怎么办？",
+     "a": "选 MC 最接近且不超过 MR 的产量（这里第 6 单位 129 < 130，第 7 单位 225 > 130）。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "步骤",
+   "做什么",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "1 特征",
+    "厂商多、同质、无壁垒、信息充分 → 价格接受者",
+    "例 1、8"
+   ],
+   [
+    "2 收益",
+    "P = AR = MR，需求水平、完全弹性",
+    "例 2、9"
+   ],
+   [
+    "3 短期决策",
+    "P = MC 定产量；P 与 ATC、AVC 比较",
+    "例 3、4、12、17"
+   ],
+   [
+    "4 长期",
+    "进出使 P = 最低 ATC，只有正常利润",
+    "例 5、16g"
+   ],
+   [
+    "5 表格题",
+    "TC、MC、AVC、ATC、TR、利润逐列算",
+    "例 16"
+   ]
+  ]
+ },
+ "practice": "本周任务：读教材第 7 章；完成 Learning Guide 的问答和应用题；做 Moodle 上的 Review Questions。"
+}

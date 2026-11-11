@@ -1,0 +1,2021 @@
+{
+ "course": "economics",
+ "term": "term1",
+ "week": 4,
+ "title": "Week 4 · Unit 4 Market Successes and Failures（市场成功与失灵）",
+ "answersTitle": "Tutorial 3 Demand and Supply + Unit 4 Worksheet",
+ "files": [
+  "unit3 PPT demand and supply.pdf",
+  "unit3 TG demand and supply.pdf",
+  "unit3 TG答案 demand and supply.pdf",
+  "unit4 ANSWER markets in action and self assessment.pdf",
+  "unit4 PPT market successes and failures.pdf",
+  "unit4 TG market successes and failures.pdf",
+  "unit4 WORKSHEET markets in action price floors and ceilings.pdf"
+ ],
+ "inventory": [
+  {
+   "ref": "Tutorial 3 Terms",
+   "deliverables": [
+    {
+     "type": "terms",
+     "terms": [
+      "Law of demand",
+      "Law of diminishing marginal utility",
+      "Demand curve",
+      "Change in demand",
+      "Change in quantity demanded",
+      "Non-price determinants of demand",
+      "Supply",
+      "Law of Supply",
+      "Change in Supply",
+      "Change in quantity supplied",
+      "Non-price determinants of supply",
+      "Market",
+      "Equilibrium",
+      "Normal good",
+      "Inferior good",
+      "Complementary good",
+      "Substitute good"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial 3 Q1",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "Tutorial 3 Q2",
+  {
+   "ref": "Tutorial 3 Q3",
+   "parts": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e"
+   ],
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial 3 Q4",
+   "parts": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e"
+   ],
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "Tutorial 3 Q5",
+  {
+   "ref": "Tutorial 3 Q6",
+   "parts": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ]
+  },
+  {
+   "ref": "Tutorial 3 Q7",
+   "parts": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ],
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "Tutorial 3 Presentation 1",
+  {
+   "ref": "Tutorial 3 Presentation 2",
+   "parts": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e"
+   ],
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial 3 Presentation 3",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Lecture 4.1 Example 1",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Lecture 4.1 Disequilibrium",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Worksheet Exercise 1"
+  },
+  "Worksheet Exercise 2",
+  {
+   "ref": "Worksheet Exercise 3",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Worksheet Exercise 4",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "Lecture 4.2 Public Goods",
+  {
+   "ref": "Lecture 4.2 Externalities",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "Lecture 4.2 Competition"
+ ],
+ "intro": [
+  "本周前半是 <strong>Unit 3 Tutorial</strong>（需求、供给的移动与作图），每个小问都配上图；中间是 <strong>Unit 4 讲座</strong>前半：市场均衡、失衡和政府的价格管制（价格上限、价格下限），配合「Markets in Action」工作纸及官方参考答案；最后是讲座后半：市场失灵、公共物品、外部性。Unit 4 Tutorial 的答案在第 5 周。图都用直线示意，均衡点由程序算出。"
+ ],
+ "sections": [
+  {
+   "title": "Unit 3 Tutorial：需求与供给的移动",
+   "sources": [
+    {
+     "file": "unit3 TG demand and supply.pdf",
+     "pages": "p2–7"
+    },
+    {
+     "file": "unit3 TG答案 demand and supply.pdf",
+     "pages": "p9–25"
+    },
+    {
+     "file": "unit3 PPT demand and supply.pdf",
+     "pages": "p4–55"
+    }
+   ],
+   "concept": "判断顺序：①哪个市场？②变化的是<strong>本身价格</strong>（沿曲线移动）还是<strong>非价格因素</strong>（曲线移动）？③影响需求还是供给？④向左还是向右？⑤新的均衡价格、数量如何变化。\n正常品：收入增加需求增加；劣等品：收入增加需求减少。互补品价格上升 → 需求减少；替代品价格下降 → 需求减少。",
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "Tutorial 3 Terms",
+     "question": "Define: Law of demand; Law of diminishing marginal utility; Demand curve; Change in demand; Change in quantity demanded; Non-price determinants of demand; Supply; Law of Supply; Change in supply; Change in quantity supplied; Non-price determinants of supply; Market; Equilibrium; Normal good; Inferior good; Complementary good; Substitute good.",
+     "solution": "<strong>Law of demand</strong>：其他不变，价格与需求量反向变动。\n<strong>Law of diminishing marginal utility</strong>：多消费一单位带来的额外满足递减。\n<strong>Demand curve</strong>：表示各价格下需求量的向下倾斜曲线。\n<strong>Change in demand</strong>：非价格因素变化使整条需求曲线移动。\n<strong>Change in quantity demanded</strong>：本身价格变化引起的沿需求曲线移动。\n<strong>Non-price determinants of demand</strong>：相关商品价格、收入、预期、人口、偏好口味（以及税收、信贷）。\n<strong>Supply</strong>：卖者在各价格下愿意且能够出售的数量。\n<strong>Law of Supply</strong>：其他不变，价格与供给量同向变动。\n<strong>Change in supply</strong>：非价格因素变化使整条供给曲线移动。\n<strong>Change in quantity supplied</strong>：本身价格变化引起的沿供给曲线移动。\n<strong>Non-price determinants of supply</strong>：卖者数量、技术、投入品价格、税收补贴、生产者预期、其他商品价格。\n<strong>Market</strong>：使买卖双方能够交换的任何场合。\n<strong>Equilibrium</strong>：需求量等于供给量的价格和数量，没有变动的趋势。\n<strong>Normal good</strong>：收入增加需求增加的商品。\n<strong>Inferior good</strong>：收入增加需求反而减少的商品（如廉价替代品）。\n<strong>Complementary good</strong>：一起消费的商品（咖啡和糖）。\n<strong>Substitute good</strong>：互相替代的商品（咖啡和茶）。",
+     "numeric": false
+    },
+    {
+     "label": "例 2",
+     "ref": "Tutorial 3 Q1",
+     "question": "Explain the Law of Demand and illustrate an example on a diagram. (At least 30 words.)",
+     "solution": "需求定律：其他条件不变，商品价格越高，消费者愿意且能够购买的数量越少；价格越低，需求量越大，价格与需求量反向变动。原因是边际效用递减：多买一单位带来的满足越来越少，只有价格更低才值得多买。图中价格从 5 降到 3，需求量从 3 增加到 5，沿需求曲线从 a 移到 b。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "Price (P)",
+       "curves": [
+        {
+         "expr": "8+(-1)*x",
+         "dom": [
+          0,
+          8.0
+         ],
+         "color": "navy",
+         "label": [
+          6.56,
+          1.8400000000000003,
+          "D"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 3,
+         "y": 5,
+         "label": "a"
+        },
+        {
+         "x": 5,
+         "y": 3,
+         "label": "b"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          3.25,
+          4.75
+         ],
+         "to": [
+          4.75,
+          3.25
+         ],
+         "arrow": true
+        }
+       ],
+       "caption": "Law of demand: P ↓ → Qd ↑"
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 3",
+     "ref": "Tutorial 3 Q2",
+     "question": "Consider the demand for mobile phones. Outline the specific factors that would determine the demand. (At least 30 words.)",
+     "solution": "手机本身的价格决定需求量；决定需求（曲线位置）的非价格因素有：消费者收入（手机是正常品）；替代品价格（其他品牌、平板电脑）；互补品价格（话费套餐、流量、App）；对未来的预期（预期新机型发布或降价，现在少买）；人口规模和年龄结构；偏好和口味（品牌形象、广告、潮流）；以及能否方便地分期付款（信贷）。",
+     "numeric": false
+    },
+    {
+     "label": "例 4",
+     "ref": "Tutorial 3 Q3",
+     "question": "(a) Graph an imaginary demand curve for coffee. Describe what happens to the demand for coffee when: (b) preferences change in favour of coffee after a successful advertising campaign; (c) the price of tea (a substitute) falls; (d) coffee drinkers' disposable income rises; (e) the price of sugar quadruples (drinkers like sugar in coffee).",
+     "solution": "(a) 向下倾斜的需求曲线 D1。\n(b) 偏好转向咖啡 → 需求增加，D 右移，每个价格下需求量都更大。\n(c) 茶（替代品）变便宜 → 一部分人改喝茶，咖啡需求减少，D 左移。\n(d) 可支配收入增加，咖啡是正常品 → 需求增加，D 右移。\n(e) 糖是互补品，糖价大涨使加糖咖啡更贵 → 咖啡需求减少，D 左移。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "Price (P)",
+       "curves": [
+        {
+         "expr": "8+(-1)*x",
+         "dom": [
+          0,
+          8.0
+         ],
+         "color": "navy",
+         "label": [
+          6.56,
+          1.8400000000000003,
+          "D1"
+         ]
+        },
+        {
+         "expr": "10+(-1)*x",
+         "dom": [
+          0,
+          10.0
+         ],
+         "color": "green",
+         "label": [
+          8.2,
+          2.2000000000000006,
+          "D2"
+         ],
+         "dash": true
+        },
+        {
+         "expr": "1+(0.6)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "red",
+         "label": [
+          8.55,
+          6.63,
+          "S"
+         ]
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          4,
+          4
+         ],
+         "to": [
+          4.9,
+          4
+         ],
+         "arrow": true
+        }
+       ],
+       "caption": "(b)(d) Demand for coffee increases"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "Price (P)",
+       "curves": [
+        {
+         "expr": "10+(-1)*x",
+         "dom": [
+          0,
+          10.0
+         ],
+         "color": "navy",
+         "label": [
+          8.2,
+          2.2000000000000006,
+          "D1"
+         ]
+        },
+        {
+         "expr": "8+(-1)*x",
+         "dom": [
+          0,
+          8.0
+         ],
+         "color": "green",
+         "label": [
+          6.56,
+          1.8400000000000003,
+          "D2"
+         ],
+         "dash": true
+        },
+        {
+         "expr": "1+(0.6)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "red",
+         "label": [
+          8.55,
+          6.63,
+          "S"
+         ]
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          4,
+          6
+         ],
+         "to": [
+          3.1,
+          6
+         ],
+         "arrow": true
+        }
+       ],
+       "caption": "(c)(e) Demand for coffee decreases"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 5",
+     "ref": "Tutorial 3 Q4",
+     "question": "Sydney hotel market. Graph and describe how demand for hotel accommodation changes if: (a) the NSW government imposes a 20% bed tax and hotel charges increase (a price effect); (b) annual holidays increase to 6 weeks; (c) hotel prices fall in Melbourne and Brisbane; (d) income tax rates increase; (e) the supply of hotels increases greatly.",
+     "solution": "(a) 酒店价格上升是价格效应：需求曲线不动，沿需求曲线向上移动，需求量减少（a → b）。\n(b) 假期变长 → 旅游住宿需求增加，D 右移。\n(c) 墨尔本、布里斯班的酒店（替代目的地）变便宜 → 悉尼酒店需求减少，D 左移。\n(d) 所得税提高 → 可支配收入减少，酒店住宿是正常品，D 左移。\n(e) 酒店供给大增 → 供给右移，均衡价格下降，沿需求曲线需求量增加；需求曲线本身不移动。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "Price (P)",
+       "curves": [
+        {
+         "expr": "8+(-1)*x",
+         "dom": [
+          0,
+          8.0
+         ],
+         "color": "navy",
+         "label": [
+          6.56,
+          1.8400000000000003,
+          "D"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 5,
+         "y": 3,
+         "label": "a"
+        },
+        {
+         "x": 3,
+         "y": 5,
+         "label": "b"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          4.75,
+          3.25
+         ],
+         "to": [
+          3.25,
+          4.75
+         ],
+         "arrow": true
+        }
+       ],
+       "caption": "(a) Bed tax raises price: movement up along D (Qd ↓)"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "Price (P)",
+       "curves": [
+        {
+         "expr": "8+(-1)*x",
+         "dom": [
+          0,
+          8.0
+         ],
+         "color": "navy",
+         "label": [
+          6.56,
+          1.8400000000000003,
+          "D1"
+         ]
+        },
+        {
+         "expr": "10+(-1)*x",
+         "dom": [
+          0,
+          10.0
+         ],
+         "color": "green",
+         "label": [
+          8.2,
+          2.2000000000000006,
+          "D2"
+         ],
+         "dash": true
+        },
+        {
+         "expr": "1+(0.6)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "red",
+         "label": [
+          8.55,
+          6.63,
+          "S"
+         ]
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          4,
+          4
+         ],
+         "to": [
+          4.9,
+          4
+         ],
+         "arrow": true
+        }
+       ],
+       "caption": "(b) Longer holidays: demand increases"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "Price (P)",
+       "curves": [
+        {
+         "expr": "10+(-1)*x",
+         "dom": [
+          0,
+          10.0
+         ],
+         "color": "navy",
+         "label": [
+          8.2,
+          2.2000000000000006,
+          "D1"
+         ]
+        },
+        {
+         "expr": "8+(-1)*x",
+         "dom": [
+          0,
+          8.0
+         ],
+         "color": "green",
+         "label": [
+          6.56,
+          1.8400000000000003,
+          "D2"
+         ],
+         "dash": true
+        },
+        {
+         "expr": "1+(0.6)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "red",
+         "label": [
+          8.55,
+          6.63,
+          "S"
+         ]
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          4,
+          6
+         ],
+         "to": [
+          3.1,
+          6
+         ],
+         "arrow": true
+        }
+       ],
+       "caption": "(c)(d) Demand decreases"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "Price (P)",
+       "curves": [
+        {
+         "expr": "9+(-0.8)*x",
+         "dom": [
+          0,
+          11.25
+         ],
+         "color": "navy",
+         "label": [
+          9.225,
+          2.02,
+          "D"
+         ]
+        },
+        {
+         "expr": "2+(0.7)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "red",
+         "label": [
+          8.55,
+          8.485,
+          "S1"
+         ]
+        },
+        {
+         "expr": "0.5+(0.7)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "green",
+         "label": [
+          8.55,
+          6.984999999999999,
+          "S2"
+         ],
+         "dash": true
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          4,
+          4.8
+         ],
+         "to": [
+          5.6,
+          4.8
+         ],
+         "arrow": true
+        }
+       ],
+       "caption": "(e) Supply increases: P ↓, Qd ↑ along D"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+     ],
+     "sourceNote": "(a) 的提示写明是价格效应；答案课件的图也是沿需求曲线移动。",
+     "numeric": false
+    },
+    {
+     "label": "例 6",
+     "ref": "Tutorial 3 Q5",
+     "question": "Explain the relationship between the Law of Diminishing Marginal Utility and the demand curve. (At least 50 words.)",
+     "solution": "边际效用递减定律说，一个人多消费一单位商品得到的额外满足会越来越小（讲义例子：第 1 个值 $6，第 5 个只值 $2）。理性的消费者只有在价格不超过这一单位的边际效用时才会买它。既然后面每一单位带来的满足越来越少，消费者只有在价格降低时才愿意多买。因此价格越低需求量越大，需求曲线向下倾斜——边际效用递减就是需求定律背后的原因。",
+     "numeric": false
+    },
+    {
+     "label": "例 7",
+     "ref": "Tutorial 3 Q6",
+     "question": "Explain: (a) individual supply; (b) market supply; (c) supply schedule; (d) the Law of Supply.",
+     "solution": "(a) 个别供给：一家厂商在各价格下愿意出售的数量。\n(b) 市场供给：市场中所有厂商供给的加总（各价格下的供给量水平相加）。\n(c) 供给表：列出在现有条件下，一家或多家厂商在各个价格愿意供给多少的表格。\n(d) 供给定律：其他条件不变，商品价格与卖者在一定时期内愿意出售的数量同向变动。",
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 8",
+     "ref": "Tutorial 3 Q7",
+     "question": "Describe and draw what happens to the supply of coffee when: (a) production costs fall after cuts in pesticide prices; (b) unseasonal storms destroy 20% of Brazil's coffee crop; (c) the market price of coffee rises; (d) new technology reduces wastage in production.",
+     "solution": "(a) 投入品成本下降 → 供给增加，S 右移。\n(b) 风暴毁掉产量 → 供给减少，S 左移（坏年景）。\n(c) 咖啡本身价格上升 → 供给曲线不动，沿供给曲线供给量增加。\n(d) 技术进步减少浪费 → 供给增加，S 右移。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "Price (P)",
+       "curves": [
+        {
+         "expr": "9+(-0.8)*x",
+         "dom": [
+          0,
+          11.25
+         ],
+         "color": "navy",
+         "label": [
+          9.225,
+          2.02,
+          "D"
+         ]
+        },
+        {
+         "expr": "2+(0.7)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "red",
+         "label": [
+          8.55,
+          8.485,
+          "S1"
+         ]
+        },
+        {
+         "expr": "0.5+(0.7)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "green",
+         "label": [
+          8.55,
+          6.984999999999999,
+          "S2"
+         ],
+         "dash": true
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          4,
+          4.8
+         ],
+         "to": [
+          5.6,
+          4.8
+         ],
+         "arrow": true
+        }
+       ],
+       "caption": "(a)(d) Supply increases"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "Price (P)",
+       "curves": [
+        {
+         "expr": "9+(-0.8)*x",
+         "dom": [
+          0,
+          11.25
+         ],
+         "color": "navy",
+         "label": [
+          9.225,
+          2.02,
+          "D"
+         ]
+        },
+        {
+         "expr": "0.5+(0.7)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "red",
+         "label": [
+          8.55,
+          6.984999999999999,
+          "S1"
+         ]
+        },
+        {
+         "expr": "2+(0.7)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "green",
+         "label": [
+          8.55,
+          8.485,
+          "S2"
+         ],
+         "dash": true
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          4,
+          3.3
+         ],
+         "to": [
+          2.4,
+          3.3
+         ],
+         "arrow": true
+        }
+       ],
+       "caption": "(b) Supply decreases"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "Price (P)",
+       "curves": [
+        {
+         "expr": "1+(0.8)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "red",
+         "label": [
+          8.55,
+          8.34,
+          "S"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 2.5,
+         "y": 3,
+         "label": "a"
+        },
+        {
+         "x": 6.25,
+         "y": 6,
+         "label": "b"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          2.8,
+          3.25
+         ],
+         "to": [
+          5.9,
+          5.7
+         ],
+         "arrow": true
+        }
+       ],
+       "caption": "(c) Price rises: Qs ↑ along S"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 9",
+     "ref": "Tutorial 3 Presentation 1",
+     "question": "Tap water is cheap and readily available, yet demand for bottled water (often over $3 a bottle) remains strong. Explain the impact of the strong demand on the number of suppliers of bottled water.",
+     "solution": "强劲的需求使瓶装水价格远高于生产成本，厂商获得可观利润（Evian 这类品牌靠水源、品牌形象和便利性定高价）。利润吸引新厂商进入：超市自有品牌、本地水厂、进口品牌纷纷加入，卖者数量增加，市场供给右移。供给增加会压低价格（尤其是普通品牌），但只要需求持续强劲、利润还在，就会不断有新供应商进入。",
+     "sourceNote": "题目要求查看 Evian 网站；这里只用讲义的供求原理作答，没有引用网站内容。",
+     "numeric": false
+    },
+    {
+     "label": "例 10",
+     "ref": "Tutorial 3 Presentation 2",
+     "question": "Grand final tickets sell out quickly and many people miss out (vertical supply curve S; demand D; ticket price set below the equilibrium). (a) Why is supply vertical? (b) Why are promoters not maximising total revenue? (c) Why is there a queue? (d) Why can scalpers sell at excessive prices? (e) Graph a successful promotional campaign that increases demand.",
+     "solution": "(a) 体育场的座位数是固定的，无论票价多少，供给量都一样，所以供给曲线是一条垂直线。\n(b) 主办方定的票价 P1 低于市场出清价格 Pe：同样卖出全部座位，如果按 Pe 卖，收入会更高（Pe × 座位数 > P1 × 座位数）。\n(c) 在 P1 价格下需求量 Qd 远大于固定的座位数 Qs，出现短缺（excess demand），买不到票的人就排队抢票，先到先得。\n(d) 买不到票的人愿意付到 Pe 甚至更高，黄牛按接近市场出清的价格转卖，赚取差价。\n(e) 宣传成功 → 需求右移（D1 → D2），在原票价下短缺更大，市场出清价格更高。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        13
+       ],
+       "yr": [
+        0,
+        12
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "Price (P)",
+       "curves": [
+        {
+         "expr": "10-x",
+         "dom": [
+          0,
+          10
+         ],
+         "color": "navy",
+         "label": [
+          7.5,
+          3,
+          "D1"
+         ]
+        },
+        {
+         "expr": "12-x",
+         "dom": [
+          0,
+          12
+         ],
+         "color": "green",
+         "dash": true,
+         "label": [
+          9.5,
+          3,
+          "D2"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 5,
+         "y": 5,
+         "label": "Pe"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          5,
+          0
+         ],
+         "to": [
+          5,
+          10
+         ],
+         "dash": false,
+         "color": "red",
+         "label": "S (fixed seats)",
+         "dx": 4,
+         "dy": 10
+        },
+        {
+         "from": [
+          0,
+          2.5
+         ],
+         "to": [
+          7.5,
+          2.5
+         ],
+         "label": "P1 (ticket price)",
+         "dx": -70,
+         "dy": -4
+        },
+        {
+         "from": [
+          5.3,
+          2.2
+         ],
+         "to": [
+          7.3,
+          2.2
+         ],
+         "arrow": true,
+         "label": "shortage",
+         "dx": -50,
+         "dy": 12
+        }
+       ],
+       "caption": "Stadium tickets: vertical supply; ticket price P1 below Pe causes a shortage"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+     ],
+     "sourceNote": "原题的图只在讲义里，这里按题意重画：票价低于均衡价格，供给垂直。",
+     "numeric": false
+    },
+    {
+     "label": "例 11",
+     "ref": "Tutorial 3 Presentation 3",
+     "question": "Graph the difference between a decrease in supply and a decrease in quantity supplied.",
+     "solution": "供给减少：非价格因素（如成本上升）使整条供给曲线左移，S1 → S2。供给量减少：本身价格下降，沿同一条供给曲线向下移动。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "Price (P)",
+       "curves": [
+        {
+         "expr": "9+(-0.8)*x",
+         "dom": [
+          0,
+          11.25
+         ],
+         "color": "navy",
+         "label": [
+          9.225,
+          2.02,
+          "D"
+         ]
+        },
+        {
+         "expr": "0.5+(0.7)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "red",
+         "label": [
+          8.55,
+          6.984999999999999,
+          "S1"
+         ]
+        },
+        {
+         "expr": "2+(0.7)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "green",
+         "label": [
+          8.55,
+          8.485,
+          "S2"
+         ],
+         "dash": true
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          4,
+          3.3
+         ],
+         "to": [
+          2.4,
+          3.3
+         ],
+         "arrow": true
+        }
+       ],
+       "caption": "Decrease in supply: S shifts left"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "Price (P)",
+       "curves": [
+        {
+         "expr": "1+(0.8)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "red",
+         "label": [
+          8.55,
+          8.34,
+          "S"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 6.25,
+         "y": 6,
+         "label": "a"
+        },
+        {
+         "x": 2.5,
+         "y": 3,
+         "label": "b"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          5.9,
+          5.7
+         ],
+         "to": [
+          2.8,
+          3.25
+         ],
+         "arrow": true
+        }
+       ],
+       "caption": "Decrease in quantity supplied: P ↓, move down along S"
+      }
+     ],
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "Q4(a) 画成需求左移：价格变化只沿曲线移动。",
+    "Q4(e) 说「需求增加」：供给增加使需求量增加，需求曲线不动。",
+    "忘了糖是互补品、茶是替代品。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么税使价格上升在这题算价格效应？",
+     "a": "题目把它设定为酒店把税转嫁到房价上，消费者面对的是更高的价格，所以是沿需求曲线移动。"
+    }
+   ]
+  },
+  {
+   "title": "市场均衡、失衡与价格管制（Lecture 4.1 与 Markets in Action 工作纸）",
+   "sources": [
+    {
+     "file": "unit4 PPT market successes and failures.pdf",
+     "pages": "p4–30"
+    },
+    {
+     "file": "unit4 WORKSHEET markets in action price floors and ceilings.pdf",
+     "pages": "p1–3"
+    },
+    {
+     "file": "unit4 ANSWER markets in action and self assessment.pdf",
+     "pages": "p1–6"
+    }
+   ],
+   "concept": "<strong>市场</strong>：使买卖双方能交换的任何场合。<strong>均衡</strong>：需求量 = 供给量，价格和数量稳定，没有变动趋势。\n<strong>失衡</strong>：P > Pe → 供给过剩（surplus），卖者竞争压低价格；P < Pe → 需求过剩（shortage），买者竞争抬高价格。市场会自动回到均衡。\n<strong>价格上限</strong>（price ceiling）：法定最高价，定在均衡价格<strong>以下</strong>才有效，必然短缺。例：租金管制。后果：浪费时间排队、黑市、疏于维修、歧视。\n<strong>价格下限</strong>（price floor）：法定最低价，定在均衡价格<strong>以上</strong>才有效，必然过剩。例：最低工资、农产品（羊毛）保护价。后果：失业、过度生产和资源浪费。",
+   "examples": [
+    {
+     "label": "例 12",
+     "ref": "Lecture 4.1 Example 1",
+     "question": "Demand and supply schedule: P $1 (Qd 20, Qs 4), $2 (16, 8), $3 (12, 12), $4 (8, 16), $5 (4, 20). Find and graph the market equilibrium.",
+     "solution": "需求量等于供给量的价格是 $3，数量 12：Pe = $3，Qe = 12。表中的需求可以写成 Qd = 24 − 4P，供给 Qs = 4P，解 24 − 4P = 4P 得 P = 3。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        26
+       ],
+       "yr": [
+        0,
+        7
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Q (units)",
+       "yLabel": "Price ($)",
+       "curves": [
+        {
+         "expr": "6+(-0.25)*x",
+         "dom": [
+          0,
+          24
+         ],
+         "color": "navy",
+         "label": [
+          19.68,
+          1.48,
+          "D"
+         ]
+        },
+        {
+         "expr": "0+(0.25)*x",
+         "dom": [
+          0,
+          23
+         ],
+         "color": "red",
+         "label": [
+          20.7,
+          5.675,
+          "S"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 12,
+         "y": 3,
+         "label": "E (Pe = 3, Qe = 12)"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          3
+         ],
+         "to": [
+          12,
+          3
+         ]
+        },
+        {
+         "from": [
+          12,
+          0
+         ],
+         "to": [
+          12,
+          3
+         ]
+        }
+       ],
+       "caption": "Market equilibrium: Pe = $3, Qe = 12",
+       "xticks": [
+        8,
+        12,
+        16
+       ],
+       "yticks": [
+        2,
+        3,
+        4
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "24-4*3",
+       "equals": "4*3"
+      },
+      {
+       "expr": "4*3",
+       "equals": "12"
+      }
+     ]
+    },
+    {
+     "label": "例 13",
+     "ref": "Lecture 4.1 Disequilibrium",
+     "question": "Using the same schedule, explain what happens if the market price is (a) $2 and (b) $4.",
+     "solution": "(a) P = $2 < Pe：需求量 16、供给量 8，短缺（excess demand）8 单位。买者竞争把价格抬向 $3，供给量增加、需求量减少，直到均衡。\n(b) P = $4 > Pe：需求量 8、供给量 16，过剩（excess supply）8 单位。卖者竞争把价格压向 $3，供给量减少、需求量增加，直到均衡。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        26
+       ],
+       "yr": [
+        0,
+        7
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Q (units)",
+       "yLabel": "Price ($)",
+       "curves": [
+        {
+         "expr": "6+(-0.25)*x",
+         "dom": [
+          0,
+          24
+         ],
+         "color": "navy",
+         "label": [
+          19.68,
+          1.48,
+          "D"
+         ]
+        },
+        {
+         "expr": "0+(0.25)*x",
+         "dom": [
+          0,
+          23
+         ],
+         "color": "red",
+         "label": [
+          20.7,
+          5.675,
+          "S"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 12,
+         "y": 3,
+         "label": "E (Pe = 3, Qe = 12)"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          3
+         ],
+         "to": [
+          12,
+          3
+         ]
+        },
+        {
+         "from": [
+          12,
+          0
+         ],
+         "to": [
+          12,
+          3
+         ]
+        },
+        {
+         "from": [
+          8,
+          2
+         ],
+         "to": [
+          16,
+          2
+         ],
+         "color": "red",
+         "label": "shortage 8",
+         "dx": -60,
+         "dy": 14
+        },
+        {
+         "from": [
+          8,
+          4
+         ],
+         "to": [
+          16,
+          4
+         ],
+         "color": "green",
+         "label": "surplus 8",
+         "dx": -60,
+         "dy": -6
+        }
+       ],
+       "caption": "P = $2: shortage of 8 (Qd 16 − Qs 8); P = $4: surplus of 8 (Qs 16 − Qd 8)",
+       "xticks": [
+        8,
+        12,
+        16
+       ],
+       "yticks": [
+        2,
+        3,
+        4
+       ]
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ],
+     "checks": [
+      {
+       "expr": "16-8",
+       "equals": "8"
+      }
+     ]
+    },
+    {
+     "label": "例 14",
+     "ref": "Worksheet Exercise 1",
+     "question": "Outline the concept of market equilibrium (refer to Figure 1).",
+     "solution": "市场均衡是价格和产量由需求和供给共同决定的状态：需求量等于供给量时，就得到均衡价格和均衡数量，此时价格和数量都没有变化的趋势。图中均衡价格是 OPe，均衡的需求量和供给量都是 OQe。",
+     "numeric": false
+    },
+    {
+     "label": "例 15",
+     "ref": "Worksheet Exercise 2",
+     "question": "Explain how market forces combine to clear the market.",
+     "solution": "如果供给量大于需求量（过剩），厂商会降价把多余的产品卖出去；只要过剩存在，价格就继续下降，供给量收缩、需求量增加，最终在更低的价格达到新的均衡。\n如果供给量小于需求量（短缺），消费者为争夺有限的商品而抬高价格；价格上升使供给量增加、需求量收缩，只要短缺存在就继续，最终在更高的价格达到均衡。",
+     "numeric": false
+    },
+    {
+     "label": "例 16",
+     "ref": "Worksheet Exercise 3",
+     "question": "Explain how the government can use a price floor to maintain a minimum price, using terms, examples and the diagram.",
+     "solution": "价格下限是政府规定的、高于均衡价格的最低价格，市场价格不能低于它。图中下限在 OP1（这里是 $4），价格不能降到均衡的 OPe（$3）；在 OP1，供给量 OQ2（16）大于需求量 OQ1（8），出现过剩 AB（8 单位）。\n政府设价格下限通常是为了提高它认为重要的生产者的收入，例如农产品：农产品价格常因供给不稳定或海外竞争而大幅波动，澳大利亚曾为羊毛设定保护价。另一个例子是<strong>最低工资</strong>：保护议价能力弱、技能较低的工人，使收入分配更平均；代价是可能出现失业（劳动供给大于需求）。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        26
+       ],
+       "yr": [
+        0,
+        7
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Q (units)",
+       "yLabel": "Price ($)",
+       "curves": [
+        {
+         "expr": "6+(-0.25)*x",
+         "dom": [
+          0,
+          24
+         ],
+         "color": "navy",
+         "label": [
+          19.68,
+          1.48,
+          "D"
+         ]
+        },
+        {
+         "expr": "0+(0.25)*x",
+         "dom": [
+          0,
+          23
+         ],
+         "color": "red",
+         "label": [
+          20.7,
+          5.675,
+          "S"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 12,
+         "y": 3,
+         "label": "E (Pe = 3, Qe = 12)"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          3
+         ],
+         "to": [
+          12,
+          3
+         ]
+        },
+        {
+         "from": [
+          12,
+          0
+         ],
+         "to": [
+          12,
+          3
+         ]
+        },
+        {
+         "from": [
+          8,
+          4
+         ],
+         "to": [
+          16,
+          4
+         ],
+         "color": "green"
+        }
+       ],
+       "texts": [
+        {
+         "x": 7.2,
+         "y": 4.25,
+         "text": "A"
+        },
+        {
+         "x": 16.3,
+         "y": 4.25,
+         "text": "B"
+        }
+       ],
+       "caption": "Price floor at $4 (above Pe): surplus AB = Qs − Qd = 16 − 8",
+       "xticks": [
+        8,
+        12,
+        16
+       ],
+       "yticks": [
+        2,
+        3,
+        4
+       ],
+       "hlines": [
+        {
+         "y": 4,
+         "label": "Price floor OP1",
+         "color": "green"
+        }
+       ]
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 17",
+     "ref": "Worksheet Exercise 4",
+     "question": "Explain how the government can use a price ceiling to set a maximum price, using terms, examples and the diagram.",
+     "solution": "价格上限是定在均衡价格以下的最高价格。图中上限在 OP2（这里是 $2），低于均衡价格；此时需求量 OQ2（16）大于供给量 OQ1（8），出现短缺 CD（8 单位）。\n设价格上限通常是为了保护消费者，特别是必需品：例如粮食短缺时为穷人限定粮价，或租金管制，让低收入者住得起房，省下的钱可以用于食物、衣服和交通。燃料短缺时也可能限价，并配合配给（rationing）使有限的供给分配得更平均。代价是短缺、排队、黑市和房东疏于维修。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        26
+       ],
+       "yr": [
+        0,
+        7
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Q (units)",
+       "yLabel": "Price ($)",
+       "curves": [
+        {
+         "expr": "6+(-0.25)*x",
+         "dom": [
+          0,
+          24
+         ],
+         "color": "navy",
+         "label": [
+          19.68,
+          1.48,
+          "D"
+         ]
+        },
+        {
+         "expr": "0+(0.25)*x",
+         "dom": [
+          0,
+          23
+         ],
+         "color": "red",
+         "label": [
+          20.7,
+          5.675,
+          "S"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 12,
+         "y": 3,
+         "label": "E (Pe = 3, Qe = 12)"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          3
+         ],
+         "to": [
+          12,
+          3
+         ]
+        },
+        {
+         "from": [
+          12,
+          0
+         ],
+         "to": [
+          12,
+          3
+         ]
+        },
+        {
+         "from": [
+          8,
+          2
+         ],
+         "to": [
+          16,
+          2
+         ],
+         "color": "red"
+        }
+       ],
+       "texts": [
+        {
+         "x": 7.2,
+         "y": 1.6,
+         "text": "C"
+        },
+        {
+         "x": 16.3,
+         "y": 1.6,
+         "text": "D"
+        }
+       ],
+       "caption": "Price ceiling at $2 (below Pe): shortage CD = Qd − Qs = 16 − 8",
+       "xticks": [
+        8,
+        12,
+        16
+       ],
+       "yticks": [
+        2,
+        3,
+        4
+       ],
+       "hlines": [
+        {
+         "y": 2,
+         "label": "Price ceiling OP2",
+         "color": "red"
+        }
+       ]
+      }
+     ],
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "价格上限画在均衡价格以上：那样没有约束力，不会改变市场。",
+    "把短缺、过剩的大小写成价格差：要写数量差 Qd − Qs 或 Qs − Qd。",
+    "只说「会短缺」不说后果：黑市、排队、维修减少、歧视。"
+   ],
+   "faqs": [
+    {
+     "q": "最低工资为什么可能导致失业？",
+     "a": "它是劳动市场的价格下限：工资高于均衡时，愿意工作的人（劳动供给）多于企业想雇的人（劳动需求）。"
+    }
+   ]
+  },
+  {
+   "title": "市场失灵：公共物品、竞争不足、外部性（Lecture 4.2）",
+   "sources": [
+    {
+     "file": "unit4 PPT market successes and failures.pdf",
+     "pages": "p31–57"
+    }
+   ],
+   "concept": "<strong>市场失灵</strong>：价格机制不能有效运转、给社会带来问题。三种：①不提供公共物品；②缺乏竞争；③外部性。\n<strong>竞争性</strong>（rival）：一个人消费了别人就不能消费（寿司）。<strong>排他性</strong>（excludable）：不付钱就可以被排除在外（衣服、自动售货机的汽水）。私人物品两者都有；<strong>公共物品</strong>两者都没有（国防、路灯、灯塔），所以有<strong>搭便车</strong>问题，私人企业无利可图，要由政府用税收提供。公共交通既有排他性（没票不能坐）又有竞争性（座位有限），不是公共物品。\n<strong>缺乏竞争</strong>：没有竞争者的厂商会勾结、限制供给、抬高价格（Visy 与 Amcor 价格操纵案；钻石行业 De Beers）。\n<strong>外部性</strong>：强加给第三方的成本或收益。<strong>负外部性</strong>（飞机噪音、工厂浓烟）：私人供给曲线不含社会成本，资源<strong>过度</strong>配置；对策：税收和收费、管制、补偿。<strong>正外部性</strong>（漂亮的花园、疫苗接种、教育）：需求曲线低估社会收益，资源配置<strong>不足</strong>；对策：补贴、管制、补偿。外部性的根源往往是产权（所有权）不清。",
+   "examples": [
+    {
+     "label": "例 18",
+     "ref": "Lecture 4.2 Public Goods",
+     "question": "Is public transport (buses and trains) a public good? Classify defence, streetlights, a lighthouse, food and clothing.",
+     "solution": "公共交通不是公共物品：没有票不能乘坐（有排他性），座位有限（有竞争性）。国防、路灯、灯塔是公共物品（非竞争、非排他）；食物、衣服是私人物品（竞争、排他）。",
+     "numeric": false
+    },
+    {
+     "label": "例 19",
+     "ref": "Lecture 4.2 Competition",
+     "question": "Explain why a lack of competition is a market failure, using the lecture examples.",
+     "solution": "没有竞争压力的厂商可以通过勾结限制供给、抬高价格，以最大化利润，资源配置不是最优（生产太少、价格太高）。讲义例子：Visy 和 Amcor 两家包装公司的价格操纵案；钻石行业由 De Beers 控制供给——钻石其实并不稀缺，高价来自对供给的控制。",
+     "numeric": false
+    },
+    {
+     "label": "例 20",
+     "ref": "Lecture 4.2 Externalities",
+     "question": "Graph and explain (a) a negative externality (e.g. factory smoke) and (b) a positive externality (e.g. immunisation), showing the market and socially optimal outputs.",
+     "solution": "(a) 负外部性：厂商的供给曲线 S（私人成本）不包括烟尘给社区的成本；把外部成本加上，社会供给曲线 S+spillover 在上方。市场产量 Qm 大于社会最优产量 Q*，资源被过度配置，价格偏低。政府可以征税、收费或管制，使厂商承担外部成本，把供给左移到社会最优。\n(b) 正外部性：需求曲线 D（私人收益）低估了社会收益（接种疫苗也保护了别人）；社会需求曲线 D+spillover 在右上方。市场产量 Qm 小于社会最优 Q*，资源配置不足。政府可以补贴、规定（强制接种）或补偿，使产量增加到 Q*。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "Price (P)",
+       "curves": [
+        {
+         "expr": "9+(-0.8)*x",
+         "dom": [
+          0,
+          11.25
+         ],
+         "color": "navy",
+         "label": [
+          9.225,
+          2.02,
+          "D"
+         ]
+        },
+        {
+         "expr": "1+(0.6)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "red",
+         "label": [
+          8.55,
+          6.63,
+          "S private"
+         ]
+        },
+        {
+         "expr": "3+(0.6)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "gold",
+         "label": [
+          8.55,
+          8.629999999999999,
+          "S social"
+         ],
+         "dash": true
+        }
+       ],
+       "points": [
+        {
+         "x": 5.71,
+         "y": 4.43,
+         "label": "Qm"
+        },
+        {
+         "x": 4.29,
+         "y": 5.57,
+         "label": "Q*"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          5.71,
+          0
+         ],
+         "to": [
+          5.71,
+          4.43
+         ]
+        },
+        {
+         "from": [
+          4.29,
+          0
+         ],
+         "to": [
+          4.29,
+          5.57
+         ]
+        }
+       ],
+       "caption": "(a) Negative externality: Qm > Q* (over-allocation)"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "Price (P)",
+       "curves": [
+        {
+         "expr": "8+(-0.8)*x",
+         "dom": [
+          0,
+          10.0
+         ],
+         "color": "navy",
+         "label": [
+          8.2,
+          1.8400000000000003,
+          "D private"
+         ]
+        },
+        {
+         "expr": "10+(-0.8)*x",
+         "dom": [
+          0,
+          12.5
+         ],
+         "color": "green",
+         "label": [
+          10.25,
+          2.2000000000000006,
+          "D social"
+         ],
+         "dash": true
+        },
+        {
+         "expr": "1+(0.6)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "red",
+         "label": [
+          8.55,
+          6.63,
+          "S"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 5,
+         "y": 4,
+         "label": "Qm"
+        },
+        {
+         "x": 6.43,
+         "y": 4.86,
+         "label": "Q*"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          5,
+          0
+         ],
+         "to": [
+          5,
+          4
+         ]
+        },
+        {
+         "from": [
+          6.43,
+          0
+         ],
+         "to": [
+          6.43,
+          4.86
+         ]
+        }
+       ],
+       "caption": "(b) Positive externality: Qm < Q* (under-allocation)"
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ],
+     "checks": [
+      {
+       "expr": "(9-1)/(0.6+0.8)",
+       "equals": "5.71",
+       "tol": 0.01
+      },
+      {
+       "expr": "(9-3)/(0.6+0.8)",
+       "equals": "4.29",
+       "tol": 0.01
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "把公共交通、公立学校当公共物品：它们有排他性。",
+    "负外部性画成需求移动：负外部性通常是生产的社会成本，加在供给曲线上。",
+    "正外部性说「资源过度配置」：是配置不足。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么公共物品要政府提供？",
+     "a": "不能排除不付钱的人，人人都想搭便车，私人厂商收不到钱就不会生产，所以由税收来提供。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "步骤",
+   "做什么",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "1 移动判断",
+    "本身价格 → 沿曲线；非价格因素 → 曲线移动",
+    "例 2–11"
+   ],
+   [
+    "2 均衡",
+    "Qd = Qs；失衡时看过剩或短缺",
+    "例 12–15"
+   ],
+   [
+    "3 价格管制",
+    "上限在均衡以下 → 短缺；下限在均衡以上 → 过剩",
+    "例 16、17"
+   ],
+   [
+    "4 市场失灵",
+    "公共物品、缺乏竞争、外部性；画私人与社会曲线",
+    "例 18–20"
+   ]
+  ]
+ },
+ "practice": "本周任务：完成 Unit 3 Tutorial 和 Assessable Quiz；完成 Markets in Action 工作纸并用参考答案自评；读 Unit 4 讲义，准备第 5 周的 Unit 4 Tutorial；第 4 周提交简答书面作业（15%）。"
+}

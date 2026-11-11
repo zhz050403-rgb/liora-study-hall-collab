@@ -1,0 +1,311 @@
+{
+ "course": "economics",
+ "term": "term1",
+ "week": 7,
+ "title": "Challenge Week · Global Warming 小组展示（15%）",
+ "answersTitle": "Challenge Week task guide",
+ "files": [
+  "20240305 Economics Challenge Week Group Presentation PowerPoint Template.pptx",
+  "20250428 T1 Economics Challenge Week - Global warming.pdf",
+  "Challenge Week_任务说明_Global Warming.pdf",
+  "Challenge Week_模板_Group Presentation.pptx",
+  "unit4 PPT market successes and failures.pdf"
+ ],
+ "inventory": [
+  "Challenge Task Requirements",
+  {
+   "ref": "Challenge Task Concepts",
+   "parts": [
+    "a",
+    "b",
+    "c"
+   ],
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  }
+ ],
+ "intro": [
+  "Challenge Week 是计分的小组口头展示（15%），主题是「全球变暖的经济影响」，考查 Unit 4 的市场失灵和外部性。本页只整理任务要求、评分要点和要用到的课程概念与图，<strong>不提供可以直接上台的稿子</strong>——展示要由小组自己完成，用 AI 也要按规定说明。"
+ ],
+ "sections": [
+  {
+   "title": "任务要求与要用到的概念",
+   "sources": [
+    {
+     "file": "Challenge Week_任务说明_Global Warming.pdf",
+     "pages": "p1–4"
+    },
+    {
+     "file": "unit4 PPT market successes and failures.pdf",
+     "pages": "p31–57"
+    }
+   ],
+   "concept": "<strong>形式</strong>：4–5 人一组，8 分钟；超时 10%（9 分 20 秒以上）组织分降一级，超时 25%（10 分钟以上）降两级。每人都要参与，没有贡献的成员记零分。\n<strong>提交</strong>：展示用的讲稿（每组一份）；如果用了幻灯片也要提交；用了 AI 要提交说明文档和所有对话截图。哈佛格式参考文献可放在最后一页。迟交每天扣 10%，超过 5 天不收。（任务书里的截止时间是 2025 年 5 月 12 日上午 9 点，以当期 Moodle 通知为准。）\n<strong>内容三部分</strong>：(a) 解释市场失灵，给三个例子；(b) 说明全球变暖为什么是外部性；(c) 分析政府可以用的三种经济对策，每一种都画图说明对外部性的影响。\n<strong>可以引用的事实</strong>（任务书给出，来源 AdaptNSW）：全球地表平均温度从 19 世纪末到 2020 年上升约 1.18 °C，大部分升温发生在过去 40 年；澳大利亚自 1910 年以来平均升温 1.44 ± 0.24 °C，2019 年是最热的一年（高于平均 1.52 °C）；极端高温月份出现的频率从 1960–1989 年的 2% 上升到 2005–2019 年的 12%。",
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "Challenge Task Requirements",
+     "question": "List what the group must deliver and how it is assessed.",
+     "solution": "交付：8 分钟课堂展示（所有成员都讲）+ 讲稿 + 幻灯片（如有）+ AI 使用说明（如有）+ 哈佛格式参考文献。评估对应三条学习成果：理解个人、厂商、政府的经济行为；用合适的形式解释和应用经济概念与模型；批判性分析当代经济问题和数据。所以展示里要有准确的定义、正确的图、对图的解释，以及用任务书数据支持的分析。",
+     "numeric": false
+    },
+    {
+     "label": "例 2",
+     "ref": "Challenge Task Concepts",
+     "question": "Map each required part (a)–(c) to course concepts and diagrams you can use.",
+     "solution": "(a) 市场失灵的定义和三类例子（公共物品不提供、缺乏竞争、外部性），见第 4 周例 18–20、第 5 周例 2。\n(b) 外部性：燃烧化石燃料的发电、交通、工业生产，把温室气体造成的损失（极端高温、海平面、农业减产）强加给第三方，私人成本低于社会成本，产量高于社会最优——用下面第一张图（MPC、MSC、Qm、Q* 和福利损失三角形）。\n(c) 讲义列出的负外部性对策：<strong>税收和收费</strong>（碳税使供给左移到 MSC，第二张图）；<strong>管制</strong>（排放上限、标准，直接把产量限制在 Q*）；<strong>补偿</strong>（让排放者赔偿受害者）。也可以讨论对正外部性的<strong>补贴</strong>（可再生能源、电动车，使需求右移，第 4 周例 20 的正外部性图）。每一种对策都要画图，并说明对价格、产量和资源配置的影响，以及可能的问题（税率难以确定、企业转移到别国等）。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "Price (P)",
+       "curves": [
+        {
+         "expr": "9+(-0.8)*x",
+         "dom": [
+          0,
+          11.25
+         ],
+         "color": "navy",
+         "label": [
+          9.225,
+          2.02,
+          "D = MSB"
+         ]
+        },
+        {
+         "expr": "1+(0.6)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "red",
+         "label": [
+          8.55,
+          6.63,
+          "MPC"
+         ]
+        },
+        {
+         "expr": "3+(0.6)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "gold",
+         "label": [
+          8.55,
+          8.629999999999999,
+          "MSC"
+         ],
+         "dash": true
+        }
+       ],
+       "points": [
+        {
+         "x": 5.71,
+         "y": 4.43,
+         "label": "Qm"
+        },
+        {
+         "x": 4.29,
+         "y": 5.57,
+         "label": "Q*"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          5.71,
+          0
+         ],
+         "to": [
+          5.71,
+          4.43
+         ]
+        },
+        {
+         "from": [
+          4.29,
+          0
+         ],
+         "to": [
+          4.29,
+          5.57
+         ]
+        }
+       ],
+       "polygons": [
+        {
+         "pts": [
+          [
+           4.29,
+           5.57
+          ],
+          [
+           5.71,
+           6.43
+          ],
+          [
+           5.71,
+           4.43
+          ]
+         ],
+         "color": "red",
+         "opacity": 0.25,
+         "label": [
+          5.3,
+          5.5,
+          "DWL"
+         ]
+        }
+       ],
+       "caption": "Negative externality (e.g. CO₂ from electricity generation): market output Qm exceeds the social optimum Q*; the shaded triangle is the welfare loss"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "Price (P)",
+       "curves": [
+        {
+         "expr": "9+(-0.8)*x",
+         "dom": [
+          0,
+          11.25
+         ],
+         "color": "navy",
+         "label": [
+          9.225,
+          2.02,
+          "D"
+         ]
+        },
+        {
+         "expr": "1+(0.6)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "red",
+         "label": [
+          8.55,
+          6.63,
+          "S"
+         ]
+        },
+        {
+         "expr": "3+(0.6)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "red",
+         "label": [
+          8.55,
+          8.629999999999999,
+          "S + tax"
+         ],
+         "dash": true
+        }
+       ],
+       "points": [
+        {
+         "x": 5.71,
+         "y": 4.43,
+         "label": "Qm"
+        },
+        {
+         "x": 4.29,
+         "y": 5.57,
+         "label": "Q*"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          7,
+          5.4
+         ],
+         "to": [
+          7,
+          7.2
+         ],
+         "arrow": true,
+         "label": "tax per unit",
+         "dx": 4,
+         "dy": 20
+        }
+       ],
+       "caption": "Solution 1 — carbon tax equal to the external cost: S shifts up to S + tax, output falls from Qm to Q*"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ],
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "只讲气候科学不讲经济学：重点是外部性、社会成本与私人成本、政府对策。",
+    "对策没有画图：任务要求每种对策都画图说明。",
+    "超时：8 分钟要反复排练。"
+   ],
+   "faqs": [
+    {
+     "q": "可以用 AI 吗？",
+     "a": "可以辅助（例如润色语言、翻译初稿），但必须提交使用说明和全部对话截图，并对 AI 输出的准确性负责。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "步骤",
+   "做什么",
+   "对应"
+  ],
+  "rows": [
+   [
+    "1 分工",
+    "4–5 人各负责一部分，每人都讲",
+    "例 1"
+   ],
+   [
+    "2 概念与图",
+    "(a) 三个例子；(b) 外部性图；(c) 三种对策各一张图",
+    "例 2"
+   ],
+   [
+    "3 提交",
+    "讲稿、幻灯片、AI 说明、参考文献",
+    "例 1"
+   ]
+  ]
+ },
+ "practice": "本周任务：完成小组展示并按时提交讲稿和材料。"
+}

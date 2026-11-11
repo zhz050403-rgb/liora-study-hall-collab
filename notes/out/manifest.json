@@ -197,11 +197,203 @@
   "week": 13,
   "title": "Week 13 · Sample Exam 模拟考试",
   "fields": {
-   "graphicHtml": "out/accounting/term1/w13.graphic.html"
+   "graphicHtml": "out/accounting/term1/w13.graphic.html",
+   "tutorialAnswers": "out/accounting/term1/w13.answers.html"
   },
   "examples": 9,
   "checks": 18,
   "deliverables": 39,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term1/1",
+  "course": "economics",
+  "term": "term1",
+  "week": 1,
+  "title": "Week 1 · Unit 0 经济学导航 + Unit 1 Introduction to Economics 经济学导论",
+  "fields": {
+   "graphicHtml": "out/economics/term1/w01.graphic.html",
+   "tutorialAnswers": "out/economics/term1/w01.answers.html"
+  },
+  "examples": 7,
+  "checks": 0,
+  "deliverables": 0,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term1/2",
+  "course": "economics",
+  "term": "term1",
+  "week": 2,
+  "title": "Week 2 · Unit 1 Tutorial + Unit 2 Production and Technology 生产与技术",
+  "fields": {
+   "graphicHtml": "out/economics/term1/w02.graphic.html",
+   "tutorialAnswers": "out/economics/term1/w02.answers.html"
+  },
+  "examples": 14,
+  "checks": 8,
+  "deliverables": 23,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term1/3",
+  "course": "economics",
+  "term": "term1",
+  "week": 3,
+  "title": "Week 3 · Unit 2 Tutorial + Unit 3 Demand & Supply 需求与供给",
+  "fields": {
+   "graphicHtml": "out/economics/term1/w03.graphic.html",
+   "tutorialAnswers": "out/economics/term1/w03.answers.html"
+  },
+  "examples": 15,
+  "checks": 11,
+  "deliverables": 28,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term1/4",
+  "course": "economics",
+  "term": "term1",
+  "week": 4,
+  "title": "Week 4 · Unit 4 Market Successes and Failures（市场成功与失灵）",
+  "fields": {
+   "graphicHtml": "out/economics/term1/w04.graphic.html",
+   "tutorialAnswers": "out/economics/term1/w04.answers.html"
+  },
+  "examples": 20,
+  "checks": 5,
+  "deliverables": 35,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term1/5",
+  "course": "economics",
+  "term": "term1",
+  "week": 5,
+  "title": "Week 5 · Unit 5 Pricing and income of the firm and its customers",
+  "fields": {
+   "graphicHtml": "out/economics/term1/w05.graphic.html",
+   "tutorialAnswers": "out/economics/term1/w05.answers.html"
+  },
+  "examples": 21,
+  "checks": 25,
+  "deliverables": 50,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term1/6",
+  "course": "economics",
+  "term": "term1",
+  "week": 6,
+  "title": "Unit 6 · Economics of the Firm 1 Short run 厂商短期生产与成本",
+  "fields": {
+   "graphicHtml": "out/economics/term1/w06.graphic.html",
+   "tutorialAnswers": "out/economics/term1/w06.answers.html"
+  },
+  "examples": 13,
+  "checks": 19,
+  "deliverables": 27,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term1/7",
+  "course": "economics",
+  "term": "term1",
+  "week": 7,
+  "title": "Challenge Week · Global Warming 小组展示（15%）",
+  "fields": {
+   "graphicHtml": "out/economics/term1/w07.graphic.html"
+  },
+  "examples": 2,
+  "checks": 0,
+  "deliverables": 4,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term1/8",
+  "course": "economics",
+  "term": "term1",
+  "week": 8,
+  "title": "Unit 7 · Economics of the Firm 2 Long run 厂商长期规模与成本",
+  "fields": {
+   "graphicHtml": "out/economics/term1/w08.graphic.html",
+   "tutorialAnswers": "out/economics/term1/w08.answers.html"
+  },
+  "examples": 16,
+  "checks": 1,
+  "deliverables": 12,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term1/9",
+  "course": "economics",
+  "term": "term1",
+  "week": 9,
+  "title": "Unit 8 · Perfect Competition 完全竞争",
+  "fields": {
+   "graphicHtml": "out/economics/term1/w09.graphic.html",
+   "tutorialAnswers": "out/economics/term1/w09.answers.html"
+  },
+  "examples": 17,
+  "checks": 11,
+  "deliverables": 23,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term1/10",
+  "course": "economics",
+  "term": "term1",
+  "week": 10,
+  "title": "Unit 9 · Monopoly 垄断",
+  "fields": {
+   "graphicHtml": "out/economics/term1/w10.graphic.html",
+   "tutorialAnswers": "out/economics/term1/w10.answers.html"
+  },
+  "examples": 18,
+  "checks": 17,
+  "deliverables": 18,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term1/11",
+  "course": "economics",
+  "term": "term1",
+  "week": 11,
+  "title": "Unit 10 · Monopolistic Competition & Oligopoly 垄断竞争与寡头",
+  "fields": {
+   "graphicHtml": "out/economics/term1/w11.graphic.html",
+   "tutorialAnswers": "out/economics/term1/w11.answers.html"
+  },
+  "examples": 20,
+  "checks": 9,
+  "deliverables": 13,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term1/12",
+  "course": "economics",
+  "term": "term1",
+  "week": 12,
+  "title": "Unit 11 · Revision & Sample Final 复习与样题",
+  "fields": {
+   "graphicHtml": "out/economics/term1/w12.graphic.html",
+   "tutorialAnswers": "out/economics/term1/w12.answers.html"
+  },
+  "examples": 14,
+  "checks": 13,
+  "deliverables": 58,
   "requirementsChecked": false
  },
  {

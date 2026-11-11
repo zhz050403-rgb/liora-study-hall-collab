@@ -1,0 +1,1105 @@
+{
+ "course": "economics",
+ "term": "term1",
+ "week": 8,
+ "title": "Unit 7 · Economics of the Firm 2 Long run 厂商长期规模与成本",
+ "answersTitle": "Unit 7 Learning Guide: Economics of the Firm 2",
+ "files": [
+  "Lecture 7.1 Economics of the Firm 2.pdf",
+  "Lecture 7.2 Economics of the Firm 2.pdf",
+  "Unit 07_课件01_Economics of the Firm Long Run.pdf",
+  "Unit 07_课件02_Economics of the Firm Long Run.pdf",
+  "Unit 07_课后练习_Learning Guide_Economics of the Firm Long Run.pdf",
+  "Unit 7 LG Microeconomics Economics of the Firm 2 Activity Book.pdf"
+ ],
+ "inventory": [
+  {
+   "ref": "Lecture 7.1 LRATC",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "Lecture 7.1 Returns to Scale",
+  {
+   "ref": "Lecture 7.1 Economies of Scale",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "Lecture 7.1 Growth",
+  {
+   "ref": "Lecture 7.2 Profit Maximisation",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Learning Guide Terms",
+   "deliverables": [
+    {
+     "type": "terms",
+     "terms": [
+      "LRATC",
+      "Economies of Scale",
+      "Diseconomies of Scale",
+      "Profit Maximisation",
+      "Takeover",
+      "Merger",
+      "Horizontal Integration",
+      "Vertical Integration",
+      "Diversification",
+      "Total Revenue",
+      "Average Revenue",
+      "Marginal Revenue"
+     ]
+    }
+   ]
+  },
+  "Learning Guide Q1",
+  "Learning Guide Q2",
+  "Learning Guide Q3",
+  "Learning Guide Q4",
+  "Learning Guide Q5",
+  "Learning Guide In-class Q1",
+  {
+   "ref": "Learning Guide In-class Q2",
+   "parts": [
+    "i",
+    "ii",
+    "iii",
+    "iv",
+    "v"
+   ]
+  },
+  "Learning Guide In-class Q3",
+  "Learning Guide In-class Q4",
+  {
+   "ref": "Learning Guide Writing",
+   "parts": [
+    "a",
+    "b"
+   ],
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  }
+ ],
+ "intro": [
+  "Unit 7 讲<strong>长期</strong>：所有投入都可变，厂商可以选择工厂规模。长期平均成本曲线 LRATC 是一系列短期 ATC 的包络线；它的 U 形来自规模经济、规模报酬不变和规模不经济。还讲了厂商如何扩张（并购、横向和纵向一体化、多元化），以及利润最大化规则 MR = MC。Learning Guide 的每题都有答案和图。"
+ ],
+ "sections": [
+  {
+   "title": "长期成本：LRATC、规模报酬与规模经济（Lecture 7.1）",
+   "sources": [
+    {
+     "file": "Unit 07_课件01_Economics of the Firm Long Run.pdf",
+     "pages": "p4–24"
+    }
+   ],
+   "concept": "<strong>长期</strong>：所有投入都可变，可以建更大的工厂、扩展到新的土地，厂商可以按预期产量选择最合适的工厂规模。\n<strong>LRATC</strong>：工厂规模和劳动都可变时，每个产量下能达到的最低平均总成本；它由许多短期 ATC（每条对应一种工厂规模）组成，是它们的包络线。选定工厂规模后，厂商就沿着那条 SRATC 生产。\n<strong>规模报酬</strong>：所有投入按比例变化时产出的比例变化。投入 +10%、产出 +20% → 规模报酬递增；+10% 与 +10% → 不变；+10% 与 +5% → 递减。\nLRATC 呈 U 形：规模经济（LRATC 下降）→ 规模报酬不变（水平）→ 规模不经济（上升）。\n<strong>内部规模经济</strong>（来自厂商内部）：劳动分工专业化、更多使用资本设备、批量采购的议价能力、更容易融资、利用副产品、负担得起研发。<strong>内部规模不经济</strong>：规模超过技术最优后，管理困难、拥挤、沟通不畅、协调出现瓶颈（不要和短期的边际收益递减混淆）。\n<strong>外部规模经济</strong>（来自整个行业扩大）：产业集聚分摊成本、资源价格降低、外部研发增加、交通改善、政府补贴——整条 LRATC <strong>下移</strong>，厂商自己的规模不变。<strong>外部规模不经济</strong>：资源价格上涨、政府管制增加（污染控制、罚款）、交通拥堵——LRATC <strong>上移</strong>。",
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "Lecture 7.1 LRATC",
+     "question": "Explain the connection between SRATC and LRATC and sketch the LRATC.",
+     "solution": "每条 SRATC 对应一种工厂规模；对每个产量，厂商在长期会选择能使平均成本最低的那种规模。把这些最低点连起来就是 LRATC，它与每条 SRATC 相切，所以叫包络线。LRATC 先下降（规模经济）、中间平坦（规模报酬不变）、后上升（规模不经济）。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        18
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 340,
+       "height": 250,
+       "xLabel": "Output (Q)",
+       "yLabel": "Cost per unit",
+       "curves": [
+        {
+         "expr": "8-0.9*x+0.05*x^2",
+         "dom": [
+          1,
+          17
+         ],
+         "color": "navy",
+         "label": [
+          15.2,
+          6.6,
+          "LRATC"
+         ]
+        },
+        {
+         "expr": "5.2+(-0.5)*(x-4)+0.25*(x-4)^2",
+         "dom": [
+          0.7999999999999998,
+          7.2
+         ],
+         "color": "green",
+         "dash": true,
+         "label": [
+          3.4,
+          8.1,
+          "SRATC1"
+         ]
+        },
+        {
+         "expr": "3.95+(0.0)*(x-9)+0.25*(x-9)^2",
+         "dom": [
+          5.8,
+          12.2
+         ],
+         "color": "green",
+         "dash": true,
+         "label": [
+          8.4,
+          6.85,
+          "SRATC2"
+         ]
+        },
+        {
+         "expr": "5.200000000000001+(0.5000000000000001)*(x-14)+0.25*(x-14)^2",
+         "dom": [
+          10.8,
+          17.2
+         ],
+         "color": "green",
+         "dash": true,
+         "label": [
+          13.4,
+          8.100000000000001,
+          "SRATC3"
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": 1.2,
+         "y": 1.2,
+         "text": "economies of scale"
+        },
+        {
+         "x": 7.2,
+         "y": 2.6,
+         "text": "constant"
+        },
+        {
+         "x": 12.4,
+         "y": 1.2,
+         "text": "diseconomies of scale"
+        }
+       ],
+       "caption": "LRATC is the envelope of short-run ATC curves: each SRATC is one plant size"
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 2",
+     "ref": "Lecture 7.1 Returns to Scale",
+     "question": "Classify: (a) inputs rise 10% and output rises 20%; (b) inputs rise 10% and output rises 10%; (c) inputs rise 10% and output rises 5%. Where is each on the LRATC?",
+     "solution": "(a) 规模报酬递增：产出增长快于投入，平均成本下降，在 LRATC 下降段（规模经济）。\n(b) 规模报酬不变：平均成本不变，在 LRATC 平坦段。\n(c) 规模报酬递减：投入增长快于产出，平均成本上升，在 LRATC 上升段（规模不经济）。",
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 3",
+     "ref": "Lecture 7.1 Economies of Scale",
+     "question": "Show the effect of external economies and diseconomies of scale on the LRATC, and give causes of each.",
+     "solution": "外部规模经济使整条 LRATC 下移：同一规模下成本更低，原因有产业集聚分摊成本、投入品更便宜、行业研发、交通改善、政府补贴。外部规模不经济使整条 LRATC 上移：资源价格上涨、政府管制和罚款增加、交通拥堵。内部规模经济、不经济则是沿着同一条 LRATC 移动。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        18
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 230,
+       "xLabel": "Output (Q)",
+       "yLabel": "Cost per unit",
+       "curves": [
+        {
+         "expr": "8-0.9*x+0.05*x^2",
+         "dom": [
+          1,
+          17
+         ],
+         "color": "navy",
+         "label": [
+          15,
+          6.6,
+          "LRATC1"
+         ]
+        },
+        {
+         "expr": "6.5-0.9*x+0.05*x^2",
+         "dom": [
+          1,
+          17
+         ],
+         "color": "green",
+         "dash": true,
+         "label": [
+          15,
+          4.5,
+          "LRATC2 (external economies)"
+         ]
+        },
+        {
+         "expr": "9.5-0.9*x+0.05*x^2",
+         "dom": [
+          1,
+          17
+         ],
+         "color": "red",
+         "dash": true,
+         "label": [
+          15,
+          8.6,
+          "LRATC3 (external diseconomies)"
+         ]
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          5,
+          4.75
+         ],
+         "to": [
+          5,
+          3.4
+         ],
+         "arrow": true
+        },
+        {
+         "from": [
+          12,
+          4.4
+         ],
+         "to": [
+          12,
+          5.8
+         ],
+         "arrow": true
+        }
+       ],
+       "caption": "External economies shift the whole LRATC down; external diseconomies shift it up"
+      }
+     ],
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "把规模经济和收益递增混为一谈：前者是长期所有投入一起增加，后者是短期在固定要素上增加可变要素。",
+    "外部规模经济画成沿 LRATC 移动：它使整条曲线移动。"
+   ],
+   "faqs": [
+    {
+     "q": "规模不经济和边际收益递减有什么区别？",
+     "a": "规模不经济是长期、工厂本身太大导致管理协调困难；边际收益递减是短期、固定要素不变而可变要素太多导致拥挤。"
+    }
+   ]
+  },
+  {
+   "title": "厂商扩张方式与目标（Lecture 7.1）",
+   "sources": [
+    {
+     "file": "Unit 07_课件01_Economics of the Firm Long Run.pdf",
+     "pages": "p25–34"
+    }
+   ],
+   "concept": "<strong>收购</strong>（takeover）：一家公司取得另一家公司的控制权，可以是友好或敌意的（宝洁收购吉列）。<strong>合并</strong>（merger）：两家规模相近的公司同意合为一家（Caltex 与 Ampol）。\n<strong>横向一体化</strong>：与生产过程中同一环节的企业结合（Brumby's 与 Baker's Delight）——减少竞争、增加利润、规模经济更大。<strong>纵向一体化</strong>：与原料供应商或销售商结合（制造商、批发商、零售商；羊毛生产者、西装制造商、西装零售商）——控制生产各环节、去掉中间商、更好协调、增加利润。<strong>多元化</strong>：与生产不同商品和服务的企业结合（Virgin）——分散风险、更安全、增长更快。\n厂商除利润外的其他目标：增长（销售最大化、市场份额，如百事与可口可乐）；经理的个人目标（大办公室、与销售挂钩的奖金）；改善企业形象（赞助、慈善，如 The Body Shop）。",
+   "examples": [
+    {
+     "label": "例 4",
+     "ref": "Lecture 7.1 Growth",
+     "question": "Classify each: (a) a bakery chain combines with another bakery chain; (b) a wool grower buys a suit maker and a suit retailer; (c) an airline group starts a mobile phone business; (d) two similar-sized fuel companies agree to combine; (e) one company acquires another against its management's wishes.",
+     "solution": "(a) 横向一体化（同一生产环节，讲义例：Brumby's 与 Baker's Delight）。\n(b) 纵向一体化（上下游，讲义例：羊毛、西装制造、西装销售）。\n(c) 多元化（不同的商品和服务，讲义例：Virgin）。\n(d) 合并（规模相近、双方同意，讲义例：Caltex 与 Ampol）。\n(e) 敌意收购（takeover）。",
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+     ],
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "把合并和收购混为一谈：合并是双方同意、规模相近；收购是一方取得另一方控制权。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么多元化能降低风险？",
+     "a": "不同业务受不同因素影响，一项业务不景气时，其他业务可以弥补。"
+    }
+   ]
+  },
+  {
+   "title": "收益与利润最大化（Lecture 7.2）",
+   "sources": [
+    {
+     "file": "Unit 07_课件02_Economics of the Firm Long Run.pdf",
+     "pages": "p3–20"
+    }
+   ],
+   "concept": "TR = P × Q；AR = TR ÷ Q = P，就是厂商的需求曲线；MR 是多卖一单位带来的总收益变化，在 AR 下方，下降速度是 AR 的两倍（复习 Unit 5）。\n<strong>正常利润</strong>：让企业家留在本行业的最低回报，TR = TC（成本中已含企业主的回报）。<strong>超额利润</strong>（经济利润）= TR − TC > 0。\n<strong>利润最大化规则</strong>：①产量定在 TR 与 TC 之差最大处；②等价地，产量定在 <strong>MR = MC</strong> 处。MR > MC 时多生产一单位使利润增加，应扩产；MC > MR 时多生产一单位使利润减少，应减产；两者相等就是利润最大的转折点。",
+   "formulas": [
+    "利润最大化：MR = MC　　超额利润 = (P − ATC) × Q"
+   ],
+   "examples": [
+    {
+     "label": "例 5",
+     "ref": "Lecture 7.2 Profit Maximisation",
+     "question": "Draw and explain a diagram of a firm maximising profit and earning supernormal profit, with all relevant cost and revenue curves (AR = 12 − 0.5Q, MR = 12 − Q, MC = 10 − 3Q + 0.3Q², ATC = AVC + 20/Q).",
+     "solution": "在 MR = MC 处决定产量 Q*（程序解得约 7.55），再从 Q* 向上找到需求曲线上的价格 P（约 8.23）。此时 ATC 约 7.02，价格高于 ATC，阴影长方形 (P − ATC) × Q* 就是超额利润。Q* 左边每多生产一单位 MR > MC，利润增加；右边 MC > MR，利润减少，所以 Q* 是利润最大的产量。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        16
+       ],
+       "yr": [
+        0,
+        14
+       ],
+       "width": 340,
+       "height": 260,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "$",
+       "curves": [
+        {
+         "expr": "10-3*x+0.3*x^2",
+         "dom": [
+          0.4,
+          11
+         ],
+         "color": "red",
+         "label": [
+          10.2,
+          12.2,
+          "MC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2+20/x",
+         "dom": [
+          1.6,
+          14
+         ],
+         "color": "navy",
+         "label": [
+          13.2,
+          10.2,
+          "ATC"
+         ]
+        },
+        {
+         "expr": "12-0.5*x",
+         "dom": [
+          0,
+          16
+         ],
+         "color": "green",
+         "label": [
+          14.2,
+          5.6,
+          "AR = D"
+         ]
+        },
+        {
+         "expr": "12-x",
+         "dom": [
+          0,
+          12
+         ],
+         "color": "gold",
+         "dash": true,
+         "label": [
+          10.8,
+          0.9,
+          "MR"
+         ]
+        }
+       ],
+       "polygons": [
+        {
+         "pts": [
+          [
+           0,
+           8.225
+          ],
+          [
+           7.55,
+           8.225
+          ],
+          [
+           7.55,
+           7.024
+          ],
+          [
+           0,
+           7.024
+          ]
+         ],
+         "color": "green",
+         "opacity": 0.25,
+         "label": [
+          3.77,
+          7.62,
+          "supernormal profit"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 7.55,
+         "y": 4.45,
+         "label": "MR = MC"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          7.55,
+          0
+         ],
+         "to": [
+          7.55,
+          8.225
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": 7.35,
+         "y": -0.9,
+         "text": "Q*"
+        }
+       ],
+       "caption": "Profit maximisation at MR = MC; price from the demand curve above Q*; supernormal profit = (P − ATC) × Q*"
+      }
+     ],
+     "checks": [
+      {
+       "expr": "12-(2+sqrt(6.4))/0.6",
+       "equals": "10-3*((2+sqrt(6.4))/0.6)+0.3*((2+sqrt(6.4))/0.6)^2",
+       "tol": 1e-06
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "在 MC 最低点或 ATC 最低点定产量：利润最大是 MR = MC。",
+    "价格读在 MR 曲线上：价格要从 Q* 往上读到需求（AR）曲线。"
+   ],
+   "faqs": [
+    {
+     "q": "MR = MC 时利润一定为正吗？",
+     "a": "不一定。MR = MC 只保证在当前条件下利润最大（或亏损最小）；是否有超额利润要看价格是否高于 ATC。"
+    }
+   ]
+  },
+  {
+   "title": "Learning Guide：问答与写作",
+   "sources": [
+    {
+     "file": "Unit 7 LG Microeconomics Economics of the Firm 2 Activity Book.pdf",
+     "pages": "p2–4"
+    }
+   ],
+   "concept": "答题框架：先下定义（长期、LRATC、规模经济），再解释原因（专业化、批量采购……），最后联系图（沿着 LRATC 移动还是整条移动）。",
+   "examples": [
+    {
+     "label": "例 6",
+     "ref": "Learning Guide Terms",
+     "question": "Define: LRATC; Economies of Scale; Diseconomies of Scale; Profit Maximisation; Takeover; Merger; Horizontal Integration; Vertical Integration; Diversification; Total Revenue (TR); Average Revenue (AR); Marginal Revenue (MR).",
+     "solution": "<strong>LRATC</strong>：所有投入都可变时，各产量下能达到的最低平均总成本，是短期 ATC 的包络线。\n<strong>Economies of Scale</strong>：扩大生产规模使长期平均成本下降。\n<strong>Diseconomies of Scale</strong>：规模过大使长期平均成本上升。\n<strong>Profit Maximisation</strong>：选择使 TR − TC 最大的产量，即 MR = MC 处。\n<strong>Takeover</strong>：一家公司取得另一家公司的控制权，可以是友好或敌意的。\n<strong>Merger</strong>：两家公司（通常规模相近）同意合并为一家。\n<strong>Horizontal Integration</strong>：与同一生产环节的企业结合。\n<strong>Vertical Integration</strong>：与上游供应商或下游销售商结合。\n<strong>Diversification</strong>：与生产不同商品或服务的企业结合。\n<strong>Total Revenue</strong>：TR = P × Q。\n<strong>Average Revenue</strong>：AR = TR ÷ Q = P，即需求曲线。\n<strong>Marginal Revenue</strong>：多卖一单位增加的总收益，ΔTR ÷ ΔQ。",
+     "numeric": false
+    },
+    {
+     "label": "例 7",
+     "ref": "Learning Guide Q1",
+     "question": "Explain what determines plant size in the long run, including the definition of the long run and the relationship between SRATC and LRATC. (At least 30 words.)",
+     "solution": "长期是足够长、所有投入（包括厂房和设备）都能改变的时期。厂商会根据预期的产量选择使平均成本最低的工厂规模：每一种规模对应一条 SRATC，对每个产量，长期选择 SRATC 最低的那种规模。所有这些最低点构成 LRATC，它是各条 SRATC 的包络线；选定规模后，厂商就沿着那条 SRATC 生产。",
+     "numeric": false
+    },
+    {
+     "label": "例 8",
+     "ref": "Learning Guide Q2",
+     "question": "Describe and explain the shape of the LRATC curve. (At least 30 words.)",
+     "solution": "LRATC 呈 U 形（中间可能有一段平坦）。产量较小时，扩大规模带来内部规模经济——专业化分工、使用更大更高效的设备、批量采购、融资更容易——平均成本下降；到某一范围规模报酬不变，曲线平坦；规模过大后出现规模不经济——管理层级多、沟通协调困难、出现瓶颈——平均成本上升。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        18
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 340,
+       "height": 250,
+       "xLabel": "Output (Q)",
+       "yLabel": "Cost per unit",
+       "curves": [
+        {
+         "expr": "8-0.9*x+0.05*x^2",
+         "dom": [
+          1,
+          17
+         ],
+         "color": "navy",
+         "label": [
+          15.2,
+          6.6,
+          "LRATC"
+         ]
+        },
+        {
+         "expr": "5.2+(-0.5)*(x-4)+0.25*(x-4)^2",
+         "dom": [
+          0.7999999999999998,
+          7.2
+         ],
+         "color": "green",
+         "dash": true,
+         "label": [
+          3.4,
+          8.1,
+          "SRATC1"
+         ]
+        },
+        {
+         "expr": "3.95+(0.0)*(x-9)+0.25*(x-9)^2",
+         "dom": [
+          5.8,
+          12.2
+         ],
+         "color": "green",
+         "dash": true,
+         "label": [
+          8.4,
+          6.85,
+          "SRATC2"
+         ]
+        },
+        {
+         "expr": "5.200000000000001+(0.5000000000000001)*(x-14)+0.25*(x-14)^2",
+         "dom": [
+          10.8,
+          17.2
+         ],
+         "color": "green",
+         "dash": true,
+         "label": [
+          13.4,
+          8.100000000000001,
+          "SRATC3"
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": 1.2,
+         "y": 1.2,
+         "text": "economies of scale"
+        },
+        {
+         "x": 7.2,
+         "y": 2.6,
+         "text": "constant"
+        },
+        {
+         "x": 12.4,
+         "y": 1.2,
+         "text": "diseconomies of scale"
+        }
+       ],
+       "caption": "LRATC is the envelope of short-run ATC curves: each SRATC is one plant size"
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 9",
+     "ref": "Learning Guide Q3",
+     "question": "Describe some factors that may cause internal economies of scale. (At least 30 words.)",
+     "solution": "内部规模经济来自厂商自身规模扩大：①劳动分工更细，工人更专业、更熟练；②能够使用大型、高效的资本设备；③批量采购原材料，议价能力更强、单价更低；④规模大更容易以较低利率融资；⑤可以开发和利用副产品；⑥负担得起内部研发，改进技术。",
+     "numeric": false
+    },
+    {
+     "label": "例 10",
+     "ref": "Learning Guide Q4",
+     "question": "Describe some factors that may cause external diseconomies of scale. (At least 30 words.)",
+     "solution": "外部规模不经济是整个行业扩张给单个厂商带来的成本上升，与厂商自己的规模无关：①行业对原料、劳动、土地的需求增加，资源价格上涨；②政府加强管制，如污染控制、罚款；③厂商聚集造成交通拥堵，运输时间和成本增加。结果整条 LRATC 上移。",
+     "numeric": false
+    },
+    {
+     "label": "例 11",
+     "ref": "Learning Guide Q5",
+     "question": "What are some factors that may cause external economies of scale?",
+     "solution": "整个行业扩大带来的成本下降：①产业集聚在一个地区，厂商可以分摊共享的成本（共用的供应商、熟练劳动力）；②投入品的价格降低（供应商也有规模经济）；③行业外部的研发增加，各厂商受益；④交通设施改善；⑤政府补贴和扶持。结果整条 LRATC 下移。",
+     "numeric": false
+    },
+    {
+     "label": "例 12",
+     "ref": "Learning Guide In-class Q1",
+     "question": "Complete the non-assessable quiz in Moodle (Step 2 of Term 1 Unit 7).",
+     "solution": "这是 Moodle 上的小测验，题目不在本周资料中。可以用本页的概念复习：LRATC 包络线、规模报酬三种情况、内部和外部规模经济、扩张方式、MR = MC。",
+     "sourceNote": "Moodle 测验不在资料中。",
+     "numeric": false
+    },
+    {
+     "label": "例 13",
+     "ref": "Learning Guide In-class Q2",
+     "question": "Use real-world examples to explain (i) merger, (ii) takeover, (iii) vertical integration, (iv) horizontal integration, (v) diversification.",
+     "solution": "(i) 合并：Caltex 与 Ampol（讲义例），两家规模相近的燃料公司同意合为一家。\n(ii) 收购：宝洁收购吉列（讲义例），一家公司取得另一家的控制权。\n(iii) 纵向一体化：从羊毛生产到西装制造再到西装零售由同一企业经营（讲义例），控制上下游、去掉中间商。\n(iv) 横向一体化：Brumby's 与 Baker's Delight（讲义例），两家面包连锁店结合，减少竞争、扩大规模。\n(v) 多元化：Virgin 集团（讲义例），从唱片到航空、电信、金融，分散风险。",
+     "parts": [
+      "i",
+      "ii",
+      "iii",
+      "iv",
+      "v"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 14",
+     "ref": "Learning Guide In-class Q3",
+     "question": "Explain why profit is maximised when the firm produces where MR = MC.",
+     "solution": "产量小于 MR = MC 的点时，多生产一单位带来的收益 MR 大于它的成本 MC，每多一单位都增加利润，所以应该继续扩产；产量大于这一点时，MC 大于 MR，每多一单位都使利润减少，应该减产。只有在 MR = MC 处，继续增产或减产都不能再提高利润，所以利润最大。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        16
+       ],
+       "yr": [
+        0,
+        14
+       ],
+       "width": 340,
+       "height": 260,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "$",
+       "curves": [
+        {
+         "expr": "10-3*x+0.3*x^2",
+         "dom": [
+          0.4,
+          11
+         ],
+         "color": "red",
+         "label": [
+          10.2,
+          12.2,
+          "MC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2+20/x",
+         "dom": [
+          1.6,
+          14
+         ],
+         "color": "navy",
+         "label": [
+          13.2,
+          10.2,
+          "ATC"
+         ]
+        },
+        {
+         "expr": "12-0.5*x",
+         "dom": [
+          0,
+          16
+         ],
+         "color": "green",
+         "label": [
+          14.2,
+          5.6,
+          "AR = D"
+         ]
+        },
+        {
+         "expr": "12-x",
+         "dom": [
+          0,
+          12
+         ],
+         "color": "gold",
+         "dash": true,
+         "label": [
+          10.8,
+          0.9,
+          "MR"
+         ]
+        }
+       ],
+       "polygons": [
+        {
+         "pts": [
+          [
+           0,
+           8.225
+          ],
+          [
+           7.55,
+           8.225
+          ],
+          [
+           7.55,
+           7.024
+          ],
+          [
+           0,
+           7.024
+          ]
+         ],
+         "color": "green",
+         "opacity": 0.25,
+         "label": [
+          3.77,
+          7.62,
+          "supernormal profit"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 7.55,
+         "y": 4.45,
+         "label": "MR = MC"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          7.55,
+          0
+         ],
+         "to": [
+          7.55,
+          8.225
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": 7.35,
+         "y": -0.9,
+         "text": "Q*"
+        }
+       ],
+       "caption": "Profit maximisation at MR = MC; price from the demand curve above Q*; supernormal profit = (P − ATC) × Q*"
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 15",
+     "ref": "Learning Guide In-class Q4",
+     "question": "Explain the difference between 'increasing returns' and 'economies of scale'.",
+     "solution": "「收益递增」是短期概念：在固定的厂房设备上增加可变要素（劳动），开始时因分工专业化，边际产量上升。「规模经济」是长期概念：所有投入（包括厂房设备）一起按比例扩大，产出增长更快，长期平均成本下降。前者解释短期 MP 和 SRATC 的形状，后者解释 LRATC 的形状。",
+     "numeric": false
+    },
+    {
+     "label": "例 16",
+     "ref": "Learning Guide Writing",
+     "question": "(a) Draw the LRAC curve of the firm and explain its shape. (b) Draw and explain a diagram showing a firm maximising profit and earning supernormal profit, with all cost and revenue curves, and explain why profit is maximised where MC = MR.",
+     "solution": "(a) LRAC 是 SRATC 的包络线，呈 U 形：下降段是内部规模经济（专业化、大型设备、批量采购、融资、研发），平坦段是规模报酬不变，上升段是规模不经济（管理协调困难、沟通不畅、瓶颈）。\n(b) 厂商在 MR = MC 处决定产量 Q*，从 Q* 向上读到需求（AR）曲线得到价格 P；此时 P 高于 ATC，阴影长方形 (P − ATC) × Q* 是超额利润。MR = MC 的理由：左边 MR > MC，增产增加利润；右边 MC > MR，增产减少利润；只有在两者相等时利润最大。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        18
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 340,
+       "height": 250,
+       "xLabel": "Output (Q)",
+       "yLabel": "Cost per unit",
+       "curves": [
+        {
+         "expr": "8-0.9*x+0.05*x^2",
+         "dom": [
+          1,
+          17
+         ],
+         "color": "navy",
+         "label": [
+          15.2,
+          6.6,
+          "LRATC"
+         ]
+        },
+        {
+         "expr": "5.2+(-0.5)*(x-4)+0.25*(x-4)^2",
+         "dom": [
+          0.7999999999999998,
+          7.2
+         ],
+         "color": "green",
+         "dash": true,
+         "label": [
+          3.4,
+          8.1,
+          "SRATC1"
+         ]
+        },
+        {
+         "expr": "3.95+(0.0)*(x-9)+0.25*(x-9)^2",
+         "dom": [
+          5.8,
+          12.2
+         ],
+         "color": "green",
+         "dash": true,
+         "label": [
+          8.4,
+          6.85,
+          "SRATC2"
+         ]
+        },
+        {
+         "expr": "5.200000000000001+(0.5000000000000001)*(x-14)+0.25*(x-14)^2",
+         "dom": [
+          10.8,
+          17.2
+         ],
+         "color": "green",
+         "dash": true,
+         "label": [
+          13.4,
+          8.100000000000001,
+          "SRATC3"
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": 1.2,
+         "y": 1.2,
+         "text": "economies of scale"
+        },
+        {
+         "x": 7.2,
+         "y": 2.6,
+         "text": "constant"
+        },
+        {
+         "x": 12.4,
+         "y": 1.2,
+         "text": "diseconomies of scale"
+        }
+       ],
+       "caption": "LRATC is the envelope of short-run ATC curves: each SRATC is one plant size"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        16
+       ],
+       "yr": [
+        0,
+        14
+       ],
+       "width": 340,
+       "height": 260,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "$",
+       "curves": [
+        {
+         "expr": "10-3*x+0.3*x^2",
+         "dom": [
+          0.4,
+          11
+         ],
+         "color": "red",
+         "label": [
+          10.2,
+          12.2,
+          "MC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2+20/x",
+         "dom": [
+          1.6,
+          14
+         ],
+         "color": "navy",
+         "label": [
+          13.2,
+          10.2,
+          "ATC"
+         ]
+        },
+        {
+         "expr": "12-0.5*x",
+         "dom": [
+          0,
+          16
+         ],
+         "color": "green",
+         "label": [
+          14.2,
+          5.6,
+          "AR = D"
+         ]
+        },
+        {
+         "expr": "12-x",
+         "dom": [
+          0,
+          12
+         ],
+         "color": "gold",
+         "dash": true,
+         "label": [
+          10.8,
+          0.9,
+          "MR"
+         ]
+        }
+       ],
+       "polygons": [
+        {
+         "pts": [
+          [
+           0,
+           8.225
+          ],
+          [
+           7.55,
+           8.225
+          ],
+          [
+           7.55,
+           7.024
+          ],
+          [
+           0,
+           7.024
+          ]
+         ],
+         "color": "green",
+         "opacity": 0.25,
+         "label": [
+          3.77,
+          7.62,
+          "supernormal profit"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 7.55,
+         "y": 4.45,
+         "label": "MR = MC"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          7.55,
+          0
+         ],
+         "to": [
+          7.55,
+          8.225
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": 7.35,
+         "y": -0.9,
+         "text": "Q*"
+        }
+       ],
+       "caption": "Profit maximisation at MR = MC; price from the demand curve above Q*; supernormal profit = (P − ATC) × Q*"
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ],
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "Q4 和 Q5 答反：Q4 问外部规模不经济（成本上升），Q5 问外部规模经济。",
+    "画利润图时漏掉 MR 或 ATC：题目要求所有相关曲线。"
+   ],
+   "faqs": [
+    {
+     "q": "超额利润长期能保持吗？",
+     "a": "取决于市场结构，第 9–11 周会讲：完全竞争下新厂商进入会消除超额利润，垄断有进入壁垒可以保持。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "步骤",
+   "做什么",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "1 长期",
+    "所有投入可变；LRATC 是包络线",
+    "例 1、7"
+   ],
+   [
+    "2 规模",
+    "规模经济 → 不变 → 不经济；内部沿曲线、外部使曲线移动",
+    "例 2、3、8–11"
+   ],
+   [
+    "3 扩张方式",
+    "合并、收购、横向、纵向、多元化",
+    "例 4、13"
+   ],
+   [
+    "4 利润最大化",
+    "MR = MC 定产量，需求曲线定价格，(P − ATC) × Q 是利润",
+    "例 5、14、16"
+   ]
+  ]
+ },
+ "practice": "本周任务：读教材 6.5 节；完成 Learning Guide 的问答和课堂活动；做教材在线 Revision Quizzes。"
+}
