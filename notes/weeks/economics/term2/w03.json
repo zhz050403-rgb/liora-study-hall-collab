@@ -1,0 +1,715 @@
+{
+ "course": "economics",
+ "term": "term2",
+ "week": 3,
+ "title": "Week 3 · Unit 2 Tutorial + Unit 3 Unemployment 失业",
+ "answersTitle": "Tutorial 2 Inflation",
+ "files": [
+  "unit2 PPT inflation.pdf",
+  "unit2 TG inflation.pdf",
+  "unit3 PPT unemployment.pdf",
+  "unit3 TG unemployment.pdf"
+ ],
+ "inventory": [
+  {
+   "ref": "Tutorial 2 Terms",
+   "deliverables": [
+    {
+     "type": "terms",
+     "terms": [
+      "Inflation",
+      "CPI",
+      "Demand pull inflation",
+      "Cost push inflation",
+      "Imported inflation",
+      "Inflationary targeting",
+      "Deflation"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial 2 Q1",
+   "parts": [
+    "a",
+    "b",
+    "c"
+   ],
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  "Tutorial 2 Q2",
+  "Tutorial 2 Q3",
+  "Tutorial 2 Q4",
+  {
+   "ref": "Tutorial 2 Q5",
+   "parts": [
+    "a",
+    "b"
+   ]
+  },
+  "Tutorial 2 Writing",
+  "Lecture 3 Unemployment",
+  {
+   "ref": "Lecture 3 Measuring",
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  {
+   "ref": "Lecture 3 Calculating",
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  {
+   "ref": "Lecture 3 Types",
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  "Lecture 3 Full Employment",
+  "Lecture 3 Problem"
+ ],
+ "intro": [
+  "本周前半是 <strong>Unit 2 Tutorial</strong>（CPI 与通胀率计算、通胀的原因与影响）；后半是 <strong>Unit 3 讲座</strong>：失业的定义与统计、劳动力与参与率、六种失业类型、充分就业与自然失业率、失业的代价。Unit 3 Tutorial 的答案在第 4 周。",
+  "Term 2 的 Tutorial 没有官方答案文件，以下答案依据讲义写出，计算题都用公式核对。"
+ ],
+ "sections": [
+  {
+   "title": "Unit 2 Tutorial：通货膨胀",
+   "sources": [
+    {
+     "file": "unit2 TG inflation.pdf",
+     "pages": "p1–5"
+    },
+    {
+     "file": "unit2 PPT inflation.pdf",
+     "pages": "p1–27"
+    }
+   ],
+   "concept": "CPI = 当期篮子支出 ÷ 基期篮子支出 × 100；通胀率 = (本期 CPI − 上期 CPI) ÷ 上期 CPI × 100%。\n<strong>需求拉动</strong>：总需求超过供给（AD 右移）；<strong>成本推动</strong>：成本上升使企业提价（AS 左移）；<strong>输入型</strong>：进口商品或进口投入品涨价。通胀使购买力下降，并在借贷双方之间重新分配财富。",
+   "figures": [
+    {
+     "type": "plot",
+     "xr": [
+      0,
+      10
+     ],
+     "yr": [
+      0,
+      10
+     ],
+     "width": 320,
+     "height": 240,
+     "xLabel": "Real GDP",
+     "yLabel": "Price level",
+     "curves": [
+      {
+       "expr": "8+(-0.8)*x",
+       "dom": [
+        0,
+        10.0
+       ],
+       "color": "navy",
+       "label": [
+        8.2,
+        1.8400000000000003,
+        "AD₁"
+       ]
+      },
+      {
+       "expr": "10+(-0.8)*x",
+       "dom": [
+        0,
+        9.2
+       ],
+       "color": "navy",
+       "label": [
+        7.543999999999999,
+        4.364800000000002,
+        "AD₂"
+       ],
+       "dash": true
+      },
+      {
+       "expr": "1+(0.7)*x",
+       "dom": [
+        0,
+        9.5
+       ],
+       "color": "red",
+       "label": [
+        8.55,
+        7.484999999999999,
+        "AS"
+       ]
+      }
+     ],
+     "points": [
+      {
+       "x": 4.667,
+       "y": 4.267,
+       "label": "A"
+      },
+      {
+       "x": 6.0,
+       "y": 5.2,
+       "label": "B"
+      }
+     ],
+     "segments": [
+      {
+       "from": [
+        0,
+        4.267
+       ],
+       "to": [
+        4.667,
+        4.267
+       ]
+      },
+      {
+       "from": [
+        4.667,
+        0
+       ],
+       "to": [
+        4.667,
+        4.267
+       ]
+      },
+      {
+       "from": [
+        0,
+        5.2
+       ],
+       "to": [
+        6.0,
+        5.2
+       ]
+      },
+      {
+       "from": [
+        6.0,
+        0
+       ],
+       "to": [
+        6.0,
+        5.2
+       ]
+      }
+     ],
+     "caption": "Demand-pull: AD shifts right"
+    },
+    {
+     "type": "plot",
+     "xr": [
+      0,
+      10
+     ],
+     "yr": [
+      0,
+      10
+     ],
+     "width": 320,
+     "height": 240,
+     "xLabel": "Real GDP",
+     "yLabel": "Price level",
+     "curves": [
+      {
+       "expr": "8+(-0.8)*x",
+       "dom": [
+        0,
+        10.0
+       ],
+       "color": "navy",
+       "label": [
+        8.2,
+        1.8400000000000003,
+        "AD"
+       ]
+      },
+      {
+       "expr": "1+(0.7)*x",
+       "dom": [
+        0,
+        9
+       ],
+       "color": "red",
+       "label": [
+        8.1,
+        7.17,
+        "AS₁"
+       ]
+      },
+      {
+       "expr": "3+(0.7)*x",
+       "dom": [
+        0,
+        6.5
+       ],
+       "color": "red",
+       "label": [
+        5.8500000000000005,
+        7.595,
+        "AS₂"
+       ],
+       "dash": true
+      }
+     ],
+     "points": [
+      {
+       "x": 4.667,
+       "y": 4.267,
+       "label": "A"
+      },
+      {
+       "x": 3.333,
+       "y": 5.333,
+       "label": "B"
+      }
+     ],
+     "segments": [
+      {
+       "from": [
+        0,
+        4.267
+       ],
+       "to": [
+        4.667,
+        4.267
+       ]
+      },
+      {
+       "from": [
+        4.667,
+        0
+       ],
+       "to": [
+        4.667,
+        4.267
+       ]
+      },
+      {
+       "from": [
+        0,
+        5.333
+       ],
+       "to": [
+        3.333,
+        5.333
+       ]
+      },
+      {
+       "from": [
+        3.333,
+        0
+       ],
+       "to": [
+        3.333,
+        5.333
+       ]
+      }
+     ],
+     "caption": "Cost-push: AS shifts left"
+    }
+   ],
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "Tutorial 2 Terms",
+     "question": "Explain: Inflation; CPI; Demand pull inflation; Cost push inflation; Imported inflation; Inflationary targeting; Deflation.",
+     "solution": "<strong>Inflation</strong>：一般物价水平随时间持续上升。\n<strong>CPI</strong>：衡量典型家庭所购一篮子商品和服务平均价格变化的指数，每季度由 ABS 公布。\n<strong>Demand pull inflation</strong>：总需求超过经济的供给能力，短缺使物价上升。\n<strong>Cost push inflation</strong>：工资、原材料、能源、税收等生产成本上升，企业提价转嫁。\n<strong>Imported inflation</strong>：进口消费品或进口投入品价格上涨，推高国内物价。\n<strong>Inflationary targeting</strong>：央行设定通胀目标并用货币政策实现；澳储行目标是平均每年 2–3%。\n<strong>Deflation</strong>：一般物价水平持续下降。",
+     "numeric": false
+    },
+    {
+     "label": "例 2",
+     "ref": "Tutorial 2 Q1",
+     "question": "Basket: 2 movie tickets ($12 → $15), 100 L petrol ($1.50 → $2), 15 L milk ($3 → $3), 5 kg rice ($2 → $2.20). (a) Calculate the CPI in the base year. (b) Calculate the CPI in Year 1. (c) If the CPI in Year 2 is 150, what is the inflation rate between Year 1 and Year 2?",
+     "solution": "支出 = 价格 × 数量。基期：24 + 150 + 45 + 10 = $229；第 1 年：30 + 200 + 45 + 11 = $286。\n(a) 基期 CPI = 229 ÷ 229 × 100 = <strong>100</strong>。\n(b) 第 1 年 CPI = 286 ÷ 229 × 100 = <strong>124.89</strong>。\n(c) 通胀率 = (150 − 124.89) ÷ 124.89 × 100 = <strong>20.1%</strong>。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "Item",
+        "Base price",
+        "Base expenditure",
+        "Year 1 price",
+        "Year 1 expenditure"
+       ],
+       "rows": [
+        [
+         "2 movie tickets",
+         "$12",
+         "$24",
+         "$15",
+         "$30"
+        ],
+        [
+         "100 L petrol",
+         "$1.50",
+         "$150",
+         "$2.00",
+         "$200"
+        ],
+        [
+         "15 L milk",
+         "$3",
+         "$45",
+         "$3",
+         "$45"
+        ],
+        [
+         "5 kg rice",
+         "$2",
+         "$10",
+         "$2.20",
+         "$11"
+        ],
+        [
+         "Total",
+         "",
+         "$229",
+         "",
+         "$286"
+        ]
+       ],
+       "title": "Survey basket"
+      }
+     ],
+     "answer": "(a) 100 (b) 124.89 (c) 20.1%",
+     "checks": [
+      {
+       "expr": "2*12+100*1.5+15*3+5*2",
+       "equals": "229"
+      },
+      {
+       "expr": "2*15+100*2+15*3+5*2.2",
+       "equals": "286"
+      },
+      {
+       "expr": "286/229*100",
+       "equals": "124.89",
+       "tol": 0.005
+      },
+      {
+       "expr": "(150-286/229*100)/(286/229*100)*100",
+       "equals": "20.10",
+       "tol": 0.005
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    {
+     "label": "例 3",
+     "ref": "Tutorial 2 Q2",
+     "question": "Provide possible causes for demand-pull inflation and cost-push inflation.",
+     "solution": "<strong>需求拉动</strong>：消费者支出高（收入增加、信心强）；利率低、信贷宽松导致过度借贷和支出；政府增加支出或印钞弥补预算赤字；出口需求强劲；通胀预期使人提前消费。\n<strong>成本推动</strong>：油价和原材料涨价；洪水、干旱等供给冲击推高食品价格；工资上涨超过生产率增长；销售税、商品服务税提高；本币贬值使进口投入品变贵。",
+     "numeric": false
+    },
+    {
+     "label": "例 4",
+     "ref": "Tutorial 2 Q3",
+     "question": "Explain why borrowers may benefit from inflation over time. How will lenders expect to be compensated?",
+     "solution": "借款时的金额是固定的名义数，通胀使货币贬值，借款人将来归还的钱实际购买力变小，实际债务负担下降；同时借款购买的房产等资产往往随通胀升值。放贷人收回的钱购买力下降而受损，所以会要求更高的<strong>利率</strong>来补偿：名义利率至少要覆盖预期通胀率，使实际利率（名义利率 − 通胀率）保持为正。",
+     "numeric": false
+    },
+    {
+     "label": "例 5",
+     "ref": "Tutorial 2 Q4",
+     "question": "What may be the likely effect of inflation on Australia's ability to sell exports?",
+     "solution": "如果澳大利亚的通胀率高于贸易伙伴，国内生产成本和价格上升得更快，出口商品在国际市场上变贵，<strong>国际竞争力下降</strong>，出口量可能减少；同时进口品相对便宜，进口增加，贸易差额恶化。",
+     "numeric": false
+    },
+    {
+     "label": "例 6",
+     "ref": "Tutorial 2 Q5",
+     "question": "How might the following affect Australia's rate of inflation: (a) a rise in the price of imported consumer goods; (b) a rise in the price of imported resources e.g. machinery or oil?",
+     "solution": "(a) 进口消费品在 CPI 篮子里，它们涨价<strong>直接</strong>推高 CPI（输入型通胀）。\n(b) 进口机器、石油是生产投入，它们涨价提高国内企业的生产成本，企业把成本转嫁到最终产品价格上，<strong>间接</strong>推高通胀（输入型 + 成本推动）。油价还影响运输等几乎所有行业，影响面很广。",
+     "parts": [
+      "a",
+      "b"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 7",
+     "ref": "Tutorial 2 Writing",
+     "question": "Possible writing task: Distinguish between demand-pull and cost-push inflation. Include a discussion of possible causes.",
+     "solution": "通货膨胀是一般物价水平的持续上升，按原因可分为需求拉动和成本推动两类。\n<strong>需求拉动型通胀</strong>来自需求方：经济中的总支出（C + I + G + X − M）超过经济在现有资源下能生产的数量，出现短缺，企业得以提价。常见原因包括消费者收入和信心上升带来的支出增加、利率低和信贷宽松导致的借贷消费、政府扩大支出或印钞弥补赤字，以及强劲的出口需求。在总需求–总供给图中表现为 AD 右移，物价水平和产出同时上升，通常出现在经济周期的繁荣阶段。\n<strong>成本推动型通胀</strong>来自供给方：生产成本上升，企业为维持利润而提价。原因包括油价和原材料价格上涨、洪水干旱等供给冲击、工资增长快于生产率、税收提高，以及本币贬值使进口投入品变贵。图中表现为 AS 左移，物价上升而产出下降，可能出现「滞胀」。\n两者的区别在于起点：需求拉动是「买的人太多」，成本推动是「生产太贵」；对应的政策也不同，前者可用紧缩性货币和财政政策压低需求，后者更需要提高生产率等供给方政策。",
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "CPI 只把单价相加，没有乘数量。",
+    "通胀率用 Year 1 和 Year 2 的支出直接比较，而不是 CPI。",
+    "把输入型通胀和成本推动完全等同：进口消费品涨价是直接计入 CPI。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么第 1 题 (c) 不是 150 − 124.89 = 25.11%？",
+     "a": "通胀率是百分比变化，要除以上一期的 CPI：25.11 ÷ 124.89 ≈ 20.1%。只有上一期 CPI 正好是 100 时，两者才相等。"
+    }
+   ]
+  },
+  {
+   "title": "Unit 3 讲座：失业",
+   "sources": [
+    {
+     "file": "unit3 PPT unemployment.pdf",
+     "pages": "p1–25"
+    }
+   ],
+   "concept": "<strong>失业</strong>：劳动需求（岗位）少于劳动供给（工人），想工作的人找不到工作。\n<strong>失业率</strong> = {{frac 失业人数|劳动力}} × 100%。官方定义的失业者：上周完全没有工作、正在积极找工作、可以立即上班。不包括<strong>就业不足</strong>（想多工作的兼职、临时工）和<strong>隐性失业</strong>（放弃找工作的人）。\nABS 每月调查约 5 万人，把 15 岁及以上的人分为：<strong>就业</strong>（每周有偿工作至少 1 小时）、<strong>失业</strong>、<strong>不在劳动力中</strong>（全日制学生、无偿家务、无法工作者）。<strong>劳动力</strong> = 就业 + 失业；<strong>参与率</strong> = {{frac 劳动力|工作年龄人口}} × 100%。\n<strong>充分就业</strong>不等于 0% 失业：摩擦性（含季节性）和结构性失业是正常的，二者之和叫<strong>自然失业率</strong>，此时周期性失业为零。",
+   "formulas": [
+    "Unemployment rate = {{frac Unemployed|Labour force}} × 100",
+    "Participation rate = {{frac Labour force|Working-age population}} × 100"
+   ],
+   "figures": [
+    {
+     "type": "table",
+     "headers": [
+      "Working-age population (15+)",
+      "Status"
+     ],
+     "rows": [
+      [
+       "Labour force",
+       "Employed (≥ 1 hour paid work a week) + Unemployed (no paid job, actively looking, available)"
+      ],
+      [
+       "Not in the labour force",
+       "Full-time students, unpaid homemakers, retirees, people unable to work, discouraged job seekers"
+      ]
+     ],
+     "title": "How the ABS classifies people aged 15 and over"
+    }
+   ],
+   "examples": [
+    {
+     "label": "例 8",
+     "ref": "Lecture 3 Unemployment",
+     "question": "What is unemployment and who is officially counted as unemployed?",
+     "solution": "失业是劳动供给超过劳动需求，想工作的人找不到工作。官方统计的失业者必须同时满足：上周<strong>完全没有</strong>有偿工作、<strong>积极</strong>找工作、可以<strong>立即</strong>上班。兼职但想多干的人（就业不足）和放弃找工作的人（隐性失业）都不计入失业率，所以官方失业率会低估真实的劳动力闲置。",
+     "numeric": false
+    },
+    {
+     "label": "例 9",
+     "ref": "Lecture 3 Measuring",
+     "question": "How does the ABS measure unemployment?",
+     "solution": "ABS 每月调查约 50 000 人，把 15 岁及以上的工作年龄人口分成三类：就业（每周有偿工作 1 小时以上，全职或兼职）、失业（没有有偿工作但在积极找工作）、不在劳动力中（既不工作也不找工作，如全日制学生、无偿持家者、无法工作的残障人士）。劳动力 = 就业 + 失业。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "Working-age population (15+)",
+        "Status"
+       ],
+       "rows": [
+        [
+         "Labour force",
+         "Employed (≥ 1 hour paid work a week) + Unemployed (no paid job, actively looking, available)"
+        ],
+        [
+         "Not in the labour force",
+         "Full-time students, unpaid homemakers, retirees, people unable to work, discouraged job seekers"
+        ]
+       ],
+       "title": "How the ABS classifies people aged 15 and over"
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 10",
+     "ref": "Lecture 3 Calculating",
+     "question": "Employed 11 636 000, unemployed 716 000, working-age population 19 122 000. Calculate the labour force, the unemployment rate and the participation rate.",
+     "solution": "劳动力 = 11 636 + 716 = 12 352（千人）。\n失业率 = 716 ÷ 12 352 × 100 = <strong>5.8%</strong>。\n参与率 = 12 352 ÷ 19 122 × 100 = <strong>64.6%</strong>。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "Category ('000)",
+        "June 20XX"
+       ],
+       "rows": [
+        [
+         "Employed",
+         "11 636"
+        ],
+        [
+         "Unemployed",
+         "716"
+        ],
+        [
+         "Labour force",
+         "12 352"
+        ],
+        [
+         "Working-age population (15+)",
+         "19 122"
+        ],
+        [
+         "Unemployment rate",
+         "716 ÷ 12 352 × 100 = 5.8%"
+        ],
+        [
+         "Participation rate",
+         "12 352 ÷ 19 122 × 100 = 64.6%"
+        ]
+       ]
+      }
+     ],
+     "answer": "5.8%; 64.6%",
+     "checks": [
+      {
+       "expr": "11636+716",
+       "equals": "12352"
+      },
+      {
+       "expr": "716/12352*100",
+       "equals": "5.8",
+       "tol": 0.05
+      },
+      {
+       "expr": "12352/19122*100",
+       "equals": "64.6",
+       "tol": 0.05
+      }
+     ]
+    },
+    {
+     "label": "例 11",
+     "ref": "Lecture 3 Types",
+     "question": "Describe the types of unemployment: structural, cyclical, frictional, seasonal, hidden and underemployment.",
+     "solution": "见表。关键区别：结构性失业是技能或地点与岗位<strong>不匹配</strong>（需要再培训或迁移，通常长期）；周期性失业是<strong>总需求下降</strong>（衰退时出现，经济复苏后减少）；摩擦性和季节性是<strong>正常的短期</strong>失业；隐性失业和就业不足<strong>不在</strong>官方失业率里。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "Type",
+        "Cause",
+        "Example",
+        "Length"
+       ],
+       "rows": [
+        [
+         "Structural",
+         "Skills or location mismatch after changes in demand or technology",
+         "Self-service checkouts replace operators",
+         "Long-term; needs retraining or moving"
+        ],
+        [
+         "Cyclical",
+         "Recession: total demand falls, firms lay off workers",
+         "Workers laid off in a downturn",
+         "Lasts as long as the downturn"
+        ],
+        [
+         "Frictional",
+         "Moving between jobs, entering or re-entering the labour force",
+         "New graduates",
+         "Short-term, normal"
+        ],
+        [
+         "Seasonal",
+         "Jobs only available at certain times of year",
+         "Fruit pickers, Christmas retail",
+         "Short, recurring"
+        ],
+        [
+         "Hidden",
+         "Discouraged workers stop looking, not counted",
+         "Long-term unemployed, parents without child care",
+         "Not in official figures"
+        ],
+        [
+         "Underemployment",
+         "Employed but want more hours",
+         "Part-time or casual workers wanting full-time",
+         "Counted as employed"
+        ]
+       ],
+       "title": "Types of unemployment"
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 12",
+     "ref": "Lecture 3 Full Employment",
+     "question": "What is meant by full employment and the natural rate of unemployment?",
+     "solution": "充分就业指有足够的岗位给愿意并能够工作的人，但不是 0% 失业：人们换工作、季节变化总会带来一定的摩擦性和季节性失业，经济结构变化也会带来结构性失业。<strong>自然失业率</strong> = 摩擦性（含季节性）+ 结构性失业，此时<strong>周期性失业为零</strong>。",
+     "numeric": false
+    },
+    {
+     "label": "例 13",
+     "ref": "Lecture 3 Problem",
+     "question": "Why is unemployment a problem?",
+     "solution": "①损失潜在产出和收入：劳动是资源，闲置就是机会成本；②人力资本（技能）流失；③个人和家庭压力增加；④犯罪增加；⑤失去尊严和自尊。（政府税收减少、福利支出增加也是代价。）",
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "失业率除以总人口或工作年龄人口：分母是劳动力。",
+    "把放弃找工作的人算成失业者：他们不在劳动力中（隐性失业）。",
+    "以为充分就业就是零失业。"
+   ],
+   "faqs": [
+    {
+     "q": "每周只工作 1 小时也算就业吗？",
+     "a": "按 ABS 的定义算。所以想多工作的兼职者被归为「就业不足」，而不是失业。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "题型",
+   "做法",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "CPI",
+    "Σ价格×数量，当期 ÷ 基期 × 100",
+    "例 2"
+   ],
+   [
+    "通胀率",
+    "(本期 − 上期) ÷ 上期 × 100",
+    "例 2"
+   ],
+   [
+    "借贷与通胀",
+    "借款人得益，放贷人要求更高利率",
+    "例 4"
+   ],
+   [
+    "失业率 / 参与率",
+    "失业 ÷ 劳动力；劳动力 ÷ 工作年龄人口",
+    "例 10"
+   ],
+   [
+    "失业类型",
+    "看原因：不匹配、需求下降、换工作、季节",
+    "例 11"
+   ]
+  ]
+ },
+ "practice": "Unit 3 Tutorial 的题目在 Tutorial 前完成，答案见第 4 周。"
+}

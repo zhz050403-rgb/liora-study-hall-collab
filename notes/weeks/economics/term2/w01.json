@@ -1,0 +1,2110 @@
+{
+ "course": "economics",
+ "term": "term2",
+ "week": 1,
+ "title": "Week 1 · Unit 0 The Circular Flow Model 循环流量模型 + Unit 1 Economic Growth and GDP 经济增长与GDP",
+ "answersTitle": "Tutorial 0 The Circular Flow of Income Model",
+ "files": [
+  "unit0 PPT the circular flow model.pdf",
+  "unit0 TG the circular flow model.pdf",
+  "unit1 PPT economic growth and gdp.pdf",
+  "unit1 TG economic growth and gdp.pdf"
+ ],
+ "inventory": [
+  {
+   "ref": "Tutorial 0 A6 Pair Work",
+   "parts": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12"
+   ]
+  },
+  {
+   "ref": "Tutorial 0 Terms",
+   "deliverables": [
+    {
+     "type": "terms",
+     "terms": [
+      "Circular Flow of Income",
+      "Leakage",
+      "Injection",
+      "Expansion",
+      "Contraction",
+      "Equilibrium",
+      "Disequilibrium"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial 0 Q1",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "Tutorial 0 Q2",
+  {
+   "ref": "Tutorial 0 Q3",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "Tutorial 0 Q4",
+  "Tutorial 0 Q5",
+  {
+   "ref": "Tutorial 0 Q6",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "Tutorial 0 Q7",
+  "Tutorial 0 Writing",
+  {
+   "ref": "Lecture 1 Real GDP",
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  {
+   "ref": "Lecture 1 Q6",
+   "parts": [
+    "a",
+    "b"
+   ],
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  {
+   "ref": "Lecture 1 Q7",
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  "Lecture 1 Measuring GDP",
+  "Lecture 1 Welfare",
+  {
+   "ref": "Lecture 1 Business Cycle",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  }
+ ],
+ "intro": [
+  "Term 2 是宏观经济学。本周前半是 <strong>Unit 0 循环流量模型</strong>：讲义说明这一单元只有 Tutorial、没有讲座，所以 Tutorial 题目在本周逐题作答；后半是 <strong>Unit 1 讲座</strong>：GDP 的定义和三种算法、名义与实际 GDP、人均实际 GDP、GDP 衡量福利的局限、经济增长的来源、利弊与经济周期。Unit 1 Tutorial 的答案在第 2 周。",
+  "Term 2 的 Tutorial 没有官方答案文件，以下答案依据讲义和 Tutorial 阅读材料写出，计算题全部用公式核对。"
+ ],
+ "sections": [
+  {
+   "title": "Unit 0 Tutorial：循环流量模型",
+   "sources": [
+    {
+     "file": "unit0 TG the circular flow model.pdf",
+     "pages": "p1–10"
+    },
+    {
+     "file": "unit0 PPT the circular flow model.pdf",
+     "pages": "p1–28"
+    }
+   ],
+   "concept": "<strong>循环流量模型</strong>描述各部门之间持续的交换：产出（O）带来收入（Y），收入用于支出（E），所以 O = Y = E。\n五个部门：<strong>家庭</strong>（购买商品、提供生产要素）、<strong>企业</strong>（雇用要素、生产商品）、<strong>金融部门</strong>（连接储蓄 S 与投资 I）、<strong>政府</strong>（税收 T、政府支出 G）、<strong>海外部门</strong>（出口 X、进口 M）。\n<strong>漏出</strong>（leakages）：S、T、M，使资金离开循环；<strong>注入</strong>（injections）：I、G、X，使资金回到循环。\n<strong>均衡</strong>：漏出 = 注入，Y = E，收入、产出和就业没有变动趋势。漏出 > 注入：循环收缩（contraction），失业上升；注入 > 漏出：循环扩张（expansion），可能带来通胀。\n逐步建模：两部门 Y = E；三部门 S = I；四部门 S + T = I + G；五部门 S + T + M = I + G + X。",
+   "figures": [
+    {
+     "type": "plot",
+     "xr": [
+      1,
+      11
+     ],
+     "yr": [
+      2.5,
+      7.5
+     ],
+     "width": 340,
+     "height": 200,
+     "xLabel": "",
+     "yLabel": "",
+     "polygons": [
+      {
+       "pts": [
+        [
+         1.7,
+         4.45
+        ],
+        [
+         4.3,
+         4.45
+        ],
+        [
+         4.3,
+         5.55
+        ],
+        [
+         1.7,
+         5.55
+        ]
+       ],
+       "color": "blue",
+       "opacity": 0.16
+      },
+      {
+       "pts": [
+        [
+         7.7,
+         4.45
+        ],
+        [
+         10.3,
+         4.45
+        ],
+        [
+         10.3,
+         5.55
+        ],
+        [
+         7.7,
+         5.55
+        ]
+       ],
+       "color": "blue",
+       "opacity": 0.16
+      }
+     ],
+     "texts": [
+      {
+       "x": 3,
+       "y": 4.88,
+       "text": "Households",
+       "anchor": "middle",
+       "bold": true,
+       "size": 10
+      },
+      {
+       "x": 9,
+       "y": 4.88,
+       "text": "Firms",
+       "anchor": "middle",
+       "bold": true,
+       "size": 10
+      },
+      {
+       "x": 6.0,
+       "y": 6.05,
+       "text": "spending (E) $",
+       "anchor": "middle",
+       "size": 9,
+       "color": "gold"
+      },
+      {
+       "x": 6.0,
+       "y": 6.65,
+       "text": "goods & services",
+       "anchor": "middle",
+       "size": 9,
+       "color": "navy"
+      },
+      {
+       "x": 6.0,
+       "y": 3.75,
+       "text": "income (Y) $",
+       "anchor": "middle",
+       "size": 9,
+       "color": "gold"
+      },
+      {
+       "x": 6.0,
+       "y": 3.15,
+       "text": "land, labour, capital, enterprise",
+       "anchor": "middle",
+       "size": 9,
+       "color": "navy"
+      }
+     ],
+     "segments": [
+      {
+       "from": [
+        4.3,
+        5.8
+       ],
+       "to": [
+        7.7,
+        5.8
+       ],
+       "arrow": true
+      },
+      {
+       "from": [
+        7.7,
+        6.4
+       ],
+       "to": [
+        4.3,
+        6.4
+       ],
+       "arrow": true
+      },
+      {
+       "from": [
+        7.7,
+        4.2
+       ],
+       "to": [
+        4.3,
+        4.2
+       ],
+       "arrow": true
+      },
+      {
+       "from": [
+        4.3,
+        3.6
+       ],
+       "to": [
+        7.7,
+        3.6
+       ],
+       "arrow": true
+      }
+     ],
+     "caption": "Two-sector model: money flows (gold) and real flows (navy) in opposite directions"
+    },
+    {
+     "type": "plot",
+     "xr": [
+      1,
+      13.4
+     ],
+     "yr": [
+      1,
+      9
+     ],
+     "width": 340,
+     "height": 250,
+     "xLabel": "",
+     "yLabel": "",
+     "polygons": [
+      {
+       "pts": [
+        [
+         1.7,
+         4.45
+        ],
+        [
+         4.3,
+         4.45
+        ],
+        [
+         4.3,
+         5.55
+        ],
+        [
+         1.7,
+         5.55
+        ]
+       ],
+       "color": "blue",
+       "opacity": 0.16
+      },
+      {
+       "pts": [
+        [
+         7.7,
+         4.45
+        ],
+        [
+         10.3,
+         4.45
+        ],
+        [
+         10.3,
+         5.55
+        ],
+        [
+         7.7,
+         5.55
+        ]
+       ],
+       "color": "blue",
+       "opacity": 0.16
+      },
+      {
+       "pts": [
+        [
+         4.8,
+         7.799999999999999
+        ],
+        [
+         7.2,
+         7.799999999999999
+        ],
+        [
+         7.2,
+         8.6
+        ],
+        [
+         4.8,
+         8.6
+        ]
+       ],
+       "color": "gold",
+       "opacity": 0.16
+      },
+      {
+       "pts": [
+        [
+         4.7,
+         1.4
+        ],
+        [
+         7.3,
+         1.4
+        ],
+        [
+         7.3,
+         2.2
+        ],
+        [
+         4.7,
+         2.2
+        ]
+       ],
+       "color": "gold",
+       "opacity": 0.16
+      },
+      {
+       "pts": [
+        [
+         11.25,
+         4.2
+        ],
+        [
+         13.149999999999999,
+         4.2
+        ],
+        [
+         13.149999999999999,
+         5.8
+        ],
+        [
+         11.25,
+         5.8
+        ]
+       ],
+       "color": "gold",
+       "opacity": 0.16
+      }
+     ],
+     "texts": [
+      {
+       "x": 3,
+       "y": 4.88,
+       "text": "Households",
+       "anchor": "middle",
+       "bold": true,
+       "size": 10
+      },
+      {
+       "x": 9,
+       "y": 4.88,
+       "text": "Firms",
+       "anchor": "middle",
+       "bold": true,
+       "size": 10
+      },
+      {
+       "x": 6,
+       "y": 8.08,
+       "text": "Financial",
+       "anchor": "middle",
+       "bold": true,
+       "size": 10
+      },
+      {
+       "x": 6,
+       "y": 1.6800000000000002,
+       "text": "Government",
+       "anchor": "middle",
+       "bold": true,
+       "size": 10
+      },
+      {
+       "x": 12.2,
+       "y": 4.88,
+       "text": "Overseas",
+       "anchor": "middle",
+       "bold": true,
+       "size": 10
+      },
+      {
+       "x": 6.0,
+       "y": 4.199999999999999,
+       "text": "Y",
+       "anchor": "middle",
+       "size": 9,
+       "color": "gold"
+      },
+      {
+       "x": 6.0,
+       "y": 5.65,
+       "text": "C",
+       "anchor": "middle",
+       "size": 9,
+       "color": "gold"
+      },
+      {
+       "x": 3.6,
+       "y": 6.85,
+       "text": "S",
+       "anchor": "middle",
+       "size": 9,
+       "color": "red"
+      },
+      {
+       "x": 8.3,
+       "y": 6.85,
+       "text": "I",
+       "anchor": "middle",
+       "size": 9,
+       "color": "green"
+      },
+      {
+       "x": 3.6,
+       "y": 3.25,
+       "text": "T",
+       "anchor": "middle",
+       "size": 9,
+       "color": "red"
+      },
+      {
+       "x": 8.3,
+       "y": 3.25,
+       "text": "G",
+       "anchor": "middle",
+       "size": 9,
+       "color": "green"
+      },
+      {
+       "x": 10.775,
+       "y": 4.199999999999999,
+       "text": "M",
+       "anchor": "middle",
+       "size": 9,
+       "color": "red"
+      },
+      {
+       "x": 10.775,
+       "y": 5.65,
+       "text": "X",
+       "anchor": "middle",
+       "size": 9,
+       "color": "green"
+      }
+     ],
+     "segments": [
+      {
+       "from": [
+        7.7,
+        4.6
+       ],
+       "to": [
+        4.3,
+        4.6
+       ],
+       "arrow": true
+      },
+      {
+       "from": [
+        4.3,
+        5.4
+       ],
+       "to": [
+        7.7,
+        5.4
+       ],
+       "arrow": true
+      },
+      {
+       "from": [
+        3,
+        5.6
+       ],
+       "to": [
+        5,
+        7.9
+       ],
+       "arrow": true
+      },
+      {
+       "from": [
+        7,
+        7.9
+       ],
+       "to": [
+        8.8,
+        5.6
+       ],
+       "arrow": true
+      },
+      {
+       "from": [
+        3,
+        4.4
+       ],
+       "to": [
+        5,
+        2.1
+       ],
+       "arrow": true
+      },
+      {
+       "from": [
+        7,
+        2.1
+       ],
+       "to": [
+        8.8,
+        4.4
+       ],
+       "arrow": true
+      },
+      {
+       "from": [
+        10.3,
+        4.6
+       ],
+       "to": [
+        11.25,
+        4.6
+       ],
+       "arrow": true
+      },
+      {
+       "from": [
+        11.25,
+        5.4
+       ],
+       "to": [
+        10.3,
+        5.4
+       ],
+       "arrow": true
+      }
+     ],
+     "caption": "Five-sector model: leakages S + T + M (red), injections I + G + X (green)"
+    }
+   ],
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "Tutorial 0 A6 Pair Work",
+     "question": "Watch the Moodle video on Assessment 6 (Pair Work Presentation, 20%) and answer questions 1–12 about the article, audience preparation, introduction, marking criteria, penalties, AI use, structure, referencing and sample presentations.",
+     "solution": "这 12 题的答案在 Moodle「Assessment 6 - Pair Work Presentation (20%)」标签下的介绍视频里，讲义没有给出内容，笔记不编造。看视频时按题号记下要点：①要找的文章类型以及它必须联系所分配单元的哪部分讲座内容；②听众要提前准备什么、为什么；③引言里必须说明文章的哪些信息；④评分标准有几项；⑤什么情况扣分；⑥能否用 AI；⑦第一步做什么；⑧展示有几个结构部分；⑨讲座怎样引用；⑩展示中讲座和文章要结合引用几次；⑪是否要做 PPT；⑫有没有示例展示。",
+     "sourceNote": "答案依赖 Moodle 视频，原文件里没有；看完视频后自己填。",
+     "parts": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 2",
+     "ref": "Tutorial 0 Terms",
+     "question": "Explain: Circular Flow of Income; Leakage; Injection; Expansion; Contraction; Equilibrium; Disequilibrium.",
+     "solution": "<strong>Circular Flow of Income</strong>：收入、产出和支出在各经济部门之间持续循环的模型；产出产生收入，收入又用于支出，O = Y = E。\n<strong>Leakage</strong>（漏出）：离开循环、不再直接用于购买国内产出的收入，即储蓄 S、税收 T、进口 M。\n<strong>Injection</strong>（注入）：不是来自家庭消费、新加入循环的支出，即投资 I、政府支出 G、出口 X。\n<strong>Expansion</strong>（扩张）：注入大于漏出，收入、产出和就业上升，循环变大，可能带来通胀。\n<strong>Contraction</strong>（收缩）：漏出大于注入，收入、产出和就业下降，循环变小，失业上升。\n<strong>Equilibrium</strong>（均衡）：漏出 = 注入，Y = E，经济活动水平没有变动趋势。\n<strong>Disequilibrium</strong>（非均衡）：漏出 ≠ 注入，Y ≠ E，经济活动水平在变化。",
+     "numeric": false
+    },
+    {
+     "label": "例 3",
+     "ref": "Tutorial 0 Q1",
+     "question": "Identify the 2 sectors in a Two Sector circular flow model. What are their functions?",
+     "solution": "两个部门是<strong>家庭</strong>和<strong>企业</strong>。家庭拥有并提供生产要素（土地、劳动、资本、企业家才能），用得到的收入购买商品和服务；企业雇用这些要素生产商品和服务，卖给家庭。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        1,
+        11
+       ],
+       "yr": [
+        2.5,
+        7.5
+       ],
+       "width": 340,
+       "height": 200,
+       "xLabel": "",
+       "yLabel": "",
+       "polygons": [
+        {
+         "pts": [
+          [
+           1.7,
+           4.45
+          ],
+          [
+           4.3,
+           4.45
+          ],
+          [
+           4.3,
+           5.55
+          ],
+          [
+           1.7,
+           5.55
+          ]
+         ],
+         "color": "blue",
+         "opacity": 0.16
+        },
+        {
+         "pts": [
+          [
+           7.7,
+           4.45
+          ],
+          [
+           10.3,
+           4.45
+          ],
+          [
+           10.3,
+           5.55
+          ],
+          [
+           7.7,
+           5.55
+          ]
+         ],
+         "color": "blue",
+         "opacity": 0.16
+        }
+       ],
+       "texts": [
+        {
+         "x": 3,
+         "y": 4.88,
+         "text": "Households",
+         "anchor": "middle",
+         "bold": true,
+         "size": 10
+        },
+        {
+         "x": 9,
+         "y": 4.88,
+         "text": "Firms",
+         "anchor": "middle",
+         "bold": true,
+         "size": 10
+        },
+        {
+         "x": 6.0,
+         "y": 6.05,
+         "text": "spending (E) $",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 6.0,
+         "y": 6.65,
+         "text": "goods & services",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy"
+        },
+        {
+         "x": 6.0,
+         "y": 3.75,
+         "text": "income (Y) $",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 6.0,
+         "y": 3.15,
+         "text": "land, labour, capital, enterprise",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          4.3,
+          5.8
+         ],
+         "to": [
+          7.7,
+          5.8
+         ],
+         "arrow": true
+        },
+        {
+         "from": [
+          7.7,
+          6.4
+         ],
+         "to": [
+          4.3,
+          6.4
+         ],
+         "arrow": true
+        },
+        {
+         "from": [
+          7.7,
+          4.2
+         ],
+         "to": [
+          4.3,
+          4.2
+         ],
+         "arrow": true
+        },
+        {
+         "from": [
+          4.3,
+          3.6
+         ],
+         "to": [
+          7.7,
+          3.6
+         ],
+         "arrow": true
+        }
+       ],
+       "caption": "Two-sector model: money flows (gold) and real flows (navy) in opposite directions"
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 4",
+     "ref": "Tutorial 0 Q2",
+     "question": "Identify the money flows and the real flows in the Two Sector model.",
+     "solution": "<strong>实物流</strong>（real flows）：家庭向企业提供生产要素；企业向家庭提供商品和服务。\n<strong>货币流</strong>（money flows）：企业向家庭支付要素收入（工资、租金、利息、利润，即 Y）；家庭向企业支付消费支出（E）。两种流向方向相反。",
+     "numeric": false
+    },
+    {
+     "label": "例 5",
+     "ref": "Tutorial 0 Q3",
+     "question": "With the aid of the Three Sector circular flow model explain the concept of equilibrium.",
+     "solution": "三部门加入金融部门：家庭把收入一部分消费、一部分储蓄，Y = C + S；企业的收入来自消费和投资，E = C + I。储蓄是漏出，投资是注入（金融部门把储蓄借给企业投资）。\n均衡要求 Y = E，即 C + S = C + I，<strong>S = I</strong>：漏出等于注入，收入、产出、就业没有变动趋势。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        1,
+        11
+       ],
+       "yr": [
+        3.5,
+        9
+       ],
+       "width": 340,
+       "height": 220,
+       "xLabel": "",
+       "yLabel": "",
+       "polygons": [
+        {
+         "pts": [
+          [
+           1.7,
+           4.45
+          ],
+          [
+           4.3,
+           4.45
+          ],
+          [
+           4.3,
+           5.55
+          ],
+          [
+           1.7,
+           5.55
+          ]
+         ],
+         "color": "blue",
+         "opacity": 0.16
+        },
+        {
+         "pts": [
+          [
+           7.7,
+           4.45
+          ],
+          [
+           10.3,
+           4.45
+          ],
+          [
+           10.3,
+           5.55
+          ],
+          [
+           7.7,
+           5.55
+          ]
+         ],
+         "color": "blue",
+         "opacity": 0.16
+        },
+        {
+         "pts": [
+          [
+           4.4,
+           7.55
+          ],
+          [
+           7.6,
+           7.55
+          ],
+          [
+           7.6,
+           8.45
+          ],
+          [
+           4.4,
+           8.45
+          ]
+         ],
+         "color": "gold",
+         "opacity": 0.16
+        }
+       ],
+       "texts": [
+        {
+         "x": 3,
+         "y": 4.88,
+         "text": "Households",
+         "anchor": "middle",
+         "bold": true,
+         "size": 10
+        },
+        {
+         "x": 9,
+         "y": 4.88,
+         "text": "Firms",
+         "anchor": "middle",
+         "bold": true,
+         "size": 10
+        },
+        {
+         "x": 6,
+         "y": 7.88,
+         "text": "Financial sector",
+         "anchor": "middle",
+         "bold": true,
+         "size": 10
+        },
+        {
+         "x": 6.0,
+         "y": 4.199999999999999,
+         "text": "Y",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 6.0,
+         "y": 5.65,
+         "text": "C",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 3.0,
+         "y": 6.699999999999999,
+         "text": "S (leakage)",
+         "anchor": "middle",
+         "size": 9,
+         "color": "red"
+        },
+        {
+         "x": 9.0,
+         "y": 6.699999999999999,
+         "text": "I (injection)",
+         "anchor": "middle",
+         "size": 9,
+         "color": "green"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          7.7,
+          4.6
+         ],
+         "to": [
+          4.3,
+          4.6
+         ],
+         "arrow": true
+        },
+        {
+         "from": [
+          4.3,
+          5.4
+         ],
+         "to": [
+          7.7,
+          5.4
+         ],
+         "arrow": true
+        },
+        {
+         "from": [
+          3,
+          5.6
+         ],
+         "to": [
+          5,
+          7.6
+         ],
+         "arrow": true
+        },
+        {
+         "from": [
+          7,
+          7.6
+         ],
+         "to": [
+          9,
+          5.6
+         ],
+         "arrow": true
+        }
+       ],
+       "caption": "Three-sector model: equilibrium when S = I"
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 6",
+     "ref": "Tutorial 0 Q4",
+     "question": "In the Three Sector model, what happens to the level of economic activity if savings are greater than investment?",
+     "solution": "S > I 表示漏出大于注入：从循环中流出的钱多于流回的钱。总支出 E 低于收入 Y，企业的商品卖不完，于是减产、少雇人。收入、产出、就业下降，循环收缩（contraction），失业上升，直到收入降到 S 重新等于 I 为止。",
+     "numeric": false
+    },
+    {
+     "label": "例 7",
+     "ref": "Tutorial 0 Q5",
+     "question": "What is the effect on the Four Sector model if the government budgets for a deficit (G > T)?",
+     "solution": "四部门的均衡条件是 S + T = I + G。预算赤字 G > T 表示政府注入的支出多于从税收中取走的钱。若其他条件不变（S、I 不变），注入 I + G 大于漏出 S + T，总支出增加，企业扩大生产、多雇人，收入和就业上升，循环扩张；需求增长过快时可能带来通胀压力。",
+     "numeric": false
+    },
+    {
+     "label": "例 8",
+     "ref": "Tutorial 0 Q6",
+     "question": "Identify all the injections and leakages in the Five Sector Model.",
+     "solution": "<strong>注入</strong>：投资（I）、政府支出（G）、出口（X）。\n<strong>漏出</strong>：储蓄（S）、税收（T）、进口（M）。\n均衡：S + T + M = I + G + X。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        1,
+        13.4
+       ],
+       "yr": [
+        1,
+        9
+       ],
+       "width": 340,
+       "height": 250,
+       "xLabel": "",
+       "yLabel": "",
+       "polygons": [
+        {
+         "pts": [
+          [
+           1.7,
+           4.45
+          ],
+          [
+           4.3,
+           4.45
+          ],
+          [
+           4.3,
+           5.55
+          ],
+          [
+           1.7,
+           5.55
+          ]
+         ],
+         "color": "blue",
+         "opacity": 0.16
+        },
+        {
+         "pts": [
+          [
+           7.7,
+           4.45
+          ],
+          [
+           10.3,
+           4.45
+          ],
+          [
+           10.3,
+           5.55
+          ],
+          [
+           7.7,
+           5.55
+          ]
+         ],
+         "color": "blue",
+         "opacity": 0.16
+        },
+        {
+         "pts": [
+          [
+           4.8,
+           7.799999999999999
+          ],
+          [
+           7.2,
+           7.799999999999999
+          ],
+          [
+           7.2,
+           8.6
+          ],
+          [
+           4.8,
+           8.6
+          ]
+         ],
+         "color": "gold",
+         "opacity": 0.16
+        },
+        {
+         "pts": [
+          [
+           4.7,
+           1.4
+          ],
+          [
+           7.3,
+           1.4
+          ],
+          [
+           7.3,
+           2.2
+          ],
+          [
+           4.7,
+           2.2
+          ]
+         ],
+         "color": "gold",
+         "opacity": 0.16
+        },
+        {
+         "pts": [
+          [
+           11.25,
+           4.2
+          ],
+          [
+           13.149999999999999,
+           4.2
+          ],
+          [
+           13.149999999999999,
+           5.8
+          ],
+          [
+           11.25,
+           5.8
+          ]
+         ],
+         "color": "gold",
+         "opacity": 0.16
+        }
+       ],
+       "texts": [
+        {
+         "x": 3,
+         "y": 4.88,
+         "text": "Households",
+         "anchor": "middle",
+         "bold": true,
+         "size": 10
+        },
+        {
+         "x": 9,
+         "y": 4.88,
+         "text": "Firms",
+         "anchor": "middle",
+         "bold": true,
+         "size": 10
+        },
+        {
+         "x": 6,
+         "y": 8.08,
+         "text": "Financial",
+         "anchor": "middle",
+         "bold": true,
+         "size": 10
+        },
+        {
+         "x": 6,
+         "y": 1.6800000000000002,
+         "text": "Government",
+         "anchor": "middle",
+         "bold": true,
+         "size": 10
+        },
+        {
+         "x": 12.2,
+         "y": 4.88,
+         "text": "Overseas",
+         "anchor": "middle",
+         "bold": true,
+         "size": 10
+        },
+        {
+         "x": 6.0,
+         "y": 4.199999999999999,
+         "text": "Y",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 6.0,
+         "y": 5.65,
+         "text": "C",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 3.6,
+         "y": 6.85,
+         "text": "S",
+         "anchor": "middle",
+         "size": 9,
+         "color": "red"
+        },
+        {
+         "x": 8.3,
+         "y": 6.85,
+         "text": "I",
+         "anchor": "middle",
+         "size": 9,
+         "color": "green"
+        },
+        {
+         "x": 3.6,
+         "y": 3.25,
+         "text": "T",
+         "anchor": "middle",
+         "size": 9,
+         "color": "red"
+        },
+        {
+         "x": 8.3,
+         "y": 3.25,
+         "text": "G",
+         "anchor": "middle",
+         "size": 9,
+         "color": "green"
+        },
+        {
+         "x": 10.775,
+         "y": 4.199999999999999,
+         "text": "M",
+         "anchor": "middle",
+         "size": 9,
+         "color": "red"
+        },
+        {
+         "x": 10.775,
+         "y": 5.65,
+         "text": "X",
+         "anchor": "middle",
+         "size": 9,
+         "color": "green"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          7.7,
+          4.6
+         ],
+         "to": [
+          4.3,
+          4.6
+         ],
+         "arrow": true
+        },
+        {
+         "from": [
+          4.3,
+          5.4
+         ],
+         "to": [
+          7.7,
+          5.4
+         ],
+         "arrow": true
+        },
+        {
+         "from": [
+          3,
+          5.6
+         ],
+         "to": [
+          5,
+          7.9
+         ],
+         "arrow": true
+        },
+        {
+         "from": [
+          7,
+          7.9
+         ],
+         "to": [
+          8.8,
+          5.6
+         ],
+         "arrow": true
+        },
+        {
+         "from": [
+          3,
+          4.4
+         ],
+         "to": [
+          5,
+          2.1
+         ],
+         "arrow": true
+        },
+        {
+         "from": [
+          7,
+          2.1
+         ],
+         "to": [
+          8.8,
+          4.4
+         ],
+         "arrow": true
+        },
+        {
+         "from": [
+          10.3,
+          4.6
+         ],
+         "to": [
+          11.25,
+          4.6
+         ],
+         "arrow": true
+        },
+        {
+         "from": [
+          11.25,
+          5.4
+         ],
+         "to": [
+          10.3,
+          5.4
+         ],
+         "arrow": true
+        }
+       ],
+       "caption": "Five-sector model: leakages S + T + M (red), injections I + G + X (green)"
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 9",
+     "ref": "Tutorial 0 Q7",
+     "question": "In a Five Sector Model, how could unemployment occur and what strategies might be used to restore employment?",
+     "solution": "当漏出 S + T + M 大于注入 I + G + X 时（例如家庭储蓄增加、企业投资下降、出口减少或进口增加），总支出低于产出，企业减产裁员，出现失业。\n恢复就业的办法是增加注入或减少漏出：①政府增加支出 G 或减税 T（扩张性财政政策）；②降低利率，鼓励借贷和投资 I、减少储蓄 S（扩张性货币政策）；③本币贬值或扩大出口市场，增加 X、减少 M。",
+     "numeric": false
+    },
+    {
+     "label": "例 10",
+     "ref": "Tutorial 0 Writing",
+     "question": "Possible writing task: With the aid of a circular flow model explain the effect if the government budgets for a surplus.",
+     "solution": "预算盈余指政府税收 T 大于政府支出 G。在循环流量模型中，T 是漏出，G 是注入，所以盈余意味着政府从循环中取走的钱多于放回的钱。\n若储蓄、投资、出口和进口不变，漏出 S + T + M 将大于注入 I + G + X，总支出 E 低于收入 Y。企业面对需求下降会减少产出、少雇工人，收入和就业下降，循环收缩（contraction）。\n结论：预算盈余是收缩性的，会降低经济活动水平；在经济过热、通胀上升时，政府可以用盈余给经济降温。（答题时画出五部门循环流量图，标出 T 和 G 的方向并说明 T > G。）",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        1,
+        13.4
+       ],
+       "yr": [
+        1,
+        9
+       ],
+       "width": 340,
+       "height": 250,
+       "xLabel": "",
+       "yLabel": "",
+       "polygons": [
+        {
+         "pts": [
+          [
+           1.7,
+           4.45
+          ],
+          [
+           4.3,
+           4.45
+          ],
+          [
+           4.3,
+           5.55
+          ],
+          [
+           1.7,
+           5.55
+          ]
+         ],
+         "color": "blue",
+         "opacity": 0.16
+        },
+        {
+         "pts": [
+          [
+           7.7,
+           4.45
+          ],
+          [
+           10.3,
+           4.45
+          ],
+          [
+           10.3,
+           5.55
+          ],
+          [
+           7.7,
+           5.55
+          ]
+         ],
+         "color": "blue",
+         "opacity": 0.16
+        },
+        {
+         "pts": [
+          [
+           4.8,
+           7.799999999999999
+          ],
+          [
+           7.2,
+           7.799999999999999
+          ],
+          [
+           7.2,
+           8.6
+          ],
+          [
+           4.8,
+           8.6
+          ]
+         ],
+         "color": "gold",
+         "opacity": 0.16
+        },
+        {
+         "pts": [
+          [
+           4.7,
+           1.4
+          ],
+          [
+           7.3,
+           1.4
+          ],
+          [
+           7.3,
+           2.2
+          ],
+          [
+           4.7,
+           2.2
+          ]
+         ],
+         "color": "gold",
+         "opacity": 0.16
+        },
+        {
+         "pts": [
+          [
+           11.25,
+           4.2
+          ],
+          [
+           13.149999999999999,
+           4.2
+          ],
+          [
+           13.149999999999999,
+           5.8
+          ],
+          [
+           11.25,
+           5.8
+          ]
+         ],
+         "color": "gold",
+         "opacity": 0.16
+        }
+       ],
+       "texts": [
+        {
+         "x": 3,
+         "y": 4.88,
+         "text": "Households",
+         "anchor": "middle",
+         "bold": true,
+         "size": 10
+        },
+        {
+         "x": 9,
+         "y": 4.88,
+         "text": "Firms",
+         "anchor": "middle",
+         "bold": true,
+         "size": 10
+        },
+        {
+         "x": 6,
+         "y": 8.08,
+         "text": "Financial",
+         "anchor": "middle",
+         "bold": true,
+         "size": 10
+        },
+        {
+         "x": 6,
+         "y": 1.6800000000000002,
+         "text": "Government",
+         "anchor": "middle",
+         "bold": true,
+         "size": 10
+        },
+        {
+         "x": 12.2,
+         "y": 4.88,
+         "text": "Overseas",
+         "anchor": "middle",
+         "bold": true,
+         "size": 10
+        },
+        {
+         "x": 6.0,
+         "y": 4.199999999999999,
+         "text": "Y",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 6.0,
+         "y": 5.65,
+         "text": "C",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 3.6,
+         "y": 6.85,
+         "text": "S",
+         "anchor": "middle",
+         "size": 9,
+         "color": "red"
+        },
+        {
+         "x": 8.3,
+         "y": 6.85,
+         "text": "I",
+         "anchor": "middle",
+         "size": 9,
+         "color": "green"
+        },
+        {
+         "x": 3.6,
+         "y": 3.25,
+         "text": "T",
+         "anchor": "middle",
+         "size": 9,
+         "color": "red"
+        },
+        {
+         "x": 8.3,
+         "y": 3.25,
+         "text": "G",
+         "anchor": "middle",
+         "size": 9,
+         "color": "green"
+        },
+        {
+         "x": 10.775,
+         "y": 4.199999999999999,
+         "text": "M",
+         "anchor": "middle",
+         "size": 9,
+         "color": "red"
+        },
+        {
+         "x": 10.775,
+         "y": 5.65,
+         "text": "X",
+         "anchor": "middle",
+         "size": 9,
+         "color": "green"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          7.7,
+          4.6
+         ],
+         "to": [
+          4.3,
+          4.6
+         ],
+         "arrow": true
+        },
+        {
+         "from": [
+          4.3,
+          5.4
+         ],
+         "to": [
+          7.7,
+          5.4
+         ],
+         "arrow": true
+        },
+        {
+         "from": [
+          3,
+          5.6
+         ],
+         "to": [
+          5,
+          7.9
+         ],
+         "arrow": true
+        },
+        {
+         "from": [
+          7,
+          7.9
+         ],
+         "to": [
+          8.8,
+          5.6
+         ],
+         "arrow": true
+        },
+        {
+         "from": [
+          3,
+          4.4
+         ],
+         "to": [
+          5,
+          2.1
+         ],
+         "arrow": true
+        },
+        {
+         "from": [
+          7,
+          2.1
+         ],
+         "to": [
+          8.8,
+          4.4
+         ],
+         "arrow": true
+        },
+        {
+         "from": [
+          10.3,
+          4.6
+         ],
+         "to": [
+          11.25,
+          4.6
+         ],
+         "arrow": true
+        },
+        {
+         "from": [
+          11.25,
+          5.4
+         ],
+         "to": [
+          10.3,
+          5.4
+         ],
+         "arrow": true
+        }
+       ],
+       "caption": "Five-sector model: leakages S + T + M (red), injections I + G + X (green)"
+      }
+     ],
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "把储蓄说成注入：储蓄是漏出，投资才是注入。",
+    "只写「均衡就是 Y = E」，没写出对应的漏出 = 注入条件。",
+    "实物流和货币流画成同一方向。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么 O = Y = E？",
+     "a": "每一元产出卖掉后都成为某人的收入（工资、租金、利息、利润），而收入最终都用于支出（含漏出再经注入回来），所以三者在统计上相等。"
+    }
+   ]
+  },
+  {
+   "title": "Unit 1 讲座：GDP 与经济增长",
+   "sources": [
+    {
+     "file": "unit1 PPT economic growth and gdp.pdf",
+     "pages": "p1–41"
+    }
+   ],
+   "concept": "<strong>经济增长</strong>：一国满足人们物质需求的能力随时间提高，表现为产出增加、生活水平提高，用 <strong>GDP</strong> 衡量。\n<strong>GDP</strong>：一段时间内一国生产的所有<strong>最终</strong>商品和服务的市场价值，按货币计量，通常按年、按季度公布（澳大利亚由 ABS 统计）。\n三种算法（因为 O = Y = E）：<strong>支出法</strong> GDP = C + I + G + (X − M)；<strong>收入法</strong> GDP = 工资 + 租金 + 利息 + 利润；<strong>产出法</strong>：加总新生产的最终产品。\nGDP <strong>不包括</strong>：转移支付（福利）、私人赠与、二手交易、股票等金融交易、中间产品；也<strong>测不到</strong>地下经济和无偿劳动（自己动手、自家种菜）。\n<strong>名义 GDP</strong>（现价）含价格变化，不能可靠地衡量增长；<strong>实际 GDP</strong>（不变价）= 名义 GDP × {{frac 基期 CPI|当期 CPI}}，只反映产量变化。<strong>人均实际 GDP</strong> = 实际 GDP ÷ 人口，用来比较生活水平；人口增长快于实际产出时，人均实际 GDP 下降。<strong>增长率</strong> = {{frac 本期 − 上期|上期}} × 100%。",
+   "formulas": [
+    "Real GDP = Current year GDP × {{frac Base year CPI|Current year CPI}}",
+    "Real GDP per capita = {{frac Real GDP|Population}}　Growth rate = {{frac current − previous|previous}} × 100"
+   ],
+   "examples": [
+    {
+     "label": "例 11",
+     "ref": "Lecture 1 Real GDP",
+     "question": "Complete the table of real GDP (Money GDP $M: 22 000, 33 000, 61 000, 83 000, 114 000; price index 53, 63, 100, 127, 163). Which year is the base year?",
+     "solution": "基期是 CPI = 100 的年份：<strong>第 3 年</strong>。\n实际 GDP = 名义 GDP × 100 ÷ 当年 CPI。第 1 年：22 000 × 100 ÷ 53 = 41 509.43（讲义算出 41 509.4）。第 2 年 52 380.95，第 3 年就是 61 000，第 4 年 65 354.33，第 5 年 69 938.65。\n名义 GDP 第 1 到第 5 年增加了 4 倍多，但扣除价格上涨后实际 GDP 只增加约 68%。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "Year",
+        "Money GDP ($M)",
+        "Price index",
+        "Real GDP ($M)"
+       ],
+       "rows": [
+        [
+         "1",
+         "22,000",
+         "53",
+         "41,509.43"
+        ],
+        [
+         "2",
+         "33,000",
+         "63",
+         "52,380.95"
+        ],
+        [
+         "3",
+         "61,000",
+         "100",
+         "61,000.00"
+        ],
+        [
+         "4",
+         "83,000",
+         "127",
+         "65,354.33"
+        ],
+        [
+         "5",
+         "114,000",
+         "163",
+         "69,938.65"
+        ]
+       ]
+      }
+     ],
+     "answer": "Base year: Year 3",
+     "checks": [
+      {
+       "expr": "22000*100/53",
+       "equals": "41509.43",
+       "tol": 0.01
+      },
+      {
+       "expr": "33000*100/63",
+       "equals": "52380.95",
+       "tol": 0.01
+      },
+      {
+       "expr": "83000*100/127",
+       "equals": "65354.33",
+       "tol": 0.01
+      },
+      {
+       "expr": "114000*100/163",
+       "equals": "69938.65",
+       "tol": 0.01
+      }
+     ]
+    },
+    {
+     "label": "例 12",
+     "ref": "Lecture 1 Q6",
+     "question": "Add population (million: 1, 1, 1, 1.2, 1.25) and complete real GDP per capita. (a) Which year is the base year? (b) In which year is real GDP per capita highest?",
+     "solution": "人均实际 GDP = 实际 GDP ÷ 人口（$M ÷ 百万人 = 每人多少美元）。\n(a) 基期第 3 年（CPI = 100）。\n(b) 第 3 年最高：$61 000。第 4、5 年实际 GDP 继续增长，但人口增长更快（增加 20%、25%），人均实际 GDP 反而下降到 $54 461.94 和 $55 950.92。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "Year",
+        "Money GDP ($M)",
+        "Price index (CPI)",
+        "Real GDP ($M, Year 3 prices)",
+        "Population (m)",
+        "Real GDP per capita ($)"
+       ],
+       "rows": [
+        [
+         "1",
+         "22,000",
+         "53",
+         "41,509.43",
+         "1",
+         "41,509.43"
+        ],
+        [
+         "2",
+         "33,000",
+         "63",
+         "52,380.95",
+         "1",
+         "52,380.95"
+        ],
+        [
+         "3",
+         "61,000",
+         "100",
+         "61,000.00",
+         "1",
+         "61,000.00"
+        ],
+        [
+         "4",
+         "83,000",
+         "127",
+         "65,354.33",
+         "1.2",
+         "54,461.94"
+        ],
+        [
+         "5",
+         "114,000",
+         "163",
+         "69,938.65",
+         "1.25",
+         "55,950.92"
+        ]
+       ]
+      }
+     ],
+     "answer": "(a) Year 3 (b) Year 3",
+     "checks": [
+      {
+       "expr": "83000*100/127/1.2",
+       "equals": "54461.94",
+       "tol": 0.01
+      },
+      {
+       "expr": "114000*100/163/1.25",
+       "equals": "55950.92",
+       "tol": 0.01
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 13",
+     "ref": "Lecture 1 Q7",
+     "question": "Complete the table: Money GDP ($M) A 2500, B 2860, C 3300; price index 100, 110, 121. Find real GDP and the growth rate.",
+     "solution": "实际 GDP：A = 2500；B = 2860 × 100 ÷ 110 = 2600；C = 3300 × 100 ÷ 121 = 2727.27。\n增长率：B = (2600 − 2500) ÷ 2500 × 100 = 4.00%；C = (2727.27 − 2600) ÷ 2600 × 100 = 4.90%。\n注意名义 GDP 增长约 14.4% 和 15.4%，其中大部分是价格上涨。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "Year",
+        "Money GDP ($M)",
+        "Price index",
+        "Real GDP ($M)",
+        "Growth rate"
+       ],
+       "rows": [
+        [
+         "A",
+         "2500",
+         "100",
+         "2500.00",
+         "—"
+        ],
+        [
+         "B",
+         "2860",
+         "110",
+         "2600.00",
+         "4.00%"
+        ],
+        [
+         "C",
+         "3300",
+         "121",
+         "2727.27",
+         "4.90%"
+        ]
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "2860*100/110",
+       "equals": "2600"
+      },
+      {
+       "expr": "3300*100/121",
+       "equals": "2727.27",
+       "tol": 0.01
+      },
+      {
+       "expr": "(2600-2500)/2500*100",
+       "equals": "4"
+      },
+      {
+       "expr": "(3300*100/121-2600)/2600*100",
+       "equals": "4.895",
+       "tol": 0.001
+      }
+     ]
+    },
+    {
+     "label": "例 14",
+     "ref": "Lecture 1 Measuring GDP",
+     "question": "Which of the following are counted in GDP: a new car sold to a household; steel sold to a car maker; a pension payment; a second-hand house sale; shares bought on the stock exchange; home-grown vegetables?",
+     "solution": "只有<strong>新车卖给家庭</strong>计入 GDP（最终产品）。卖给车厂的钢是中间产品，已经包含在车价里，再算会重复；养老金是转移支付，没有对应的生产；二手房和股票交易不是新的生产；自家种菜没有进入市场交换，GDP 测不到。",
+     "sourceNote": "讲义 p13–14 列出 GDP 排除和测不到的项目，这道判断题按讲义的分类整理，用于检查是否理解。",
+     "numeric": false
+    },
+    {
+     "label": "例 15",
+     "ref": "Lecture 1 Welfare",
+     "question": "Why is GDP an imperfect measure of living standards, and what alternative measures exist?",
+     "solution": "GDP 不反映：产出的<strong>种类</strong>（武器和药品同样计入）、<strong>质量</strong>、<strong>生活质量</strong>（工作和闲暇）、<strong>分配</strong>（人均数只是平均）、社会状况（犯罪、健康、教育）以及<strong>环境</strong>破坏和资源消耗。经济福利还取决于教育、健康、清洁用水、犯罪、污染、工作时间、政治自由等。\n替代指标：联合国人类发展指数（HDI）、真实进步指标（GPI）、净经济福利指数、国民幸福总值、SMH 幸福指数。",
+     "numeric": false
+    },
+    {
+     "label": "例 16",
+     "ref": "Lecture 1 Business Cycle",
+     "question": "What are the sources, benefits and costs of economic growth, and what is the business cycle?",
+     "solution": "<strong>增长来源</strong>：资源的数量和质量（土地、劳动、资本、企业家才能）、技术进步、总需求增加、支持增长的文化价值观、政府政策（政治稳定、良好环境、基础设施、预算赤字）。\n<strong>好处</strong>：生活水平提高、就业机会增加、社会流动性和社会福利提高、闲暇增加。\n<strong>代价</strong>：结构性失业（技术取代部分工人）、通胀压力（总需求上升）、贸易收支问题（进口增加）、外部性（社会成本）、不平等加剧。\n<strong>经济周期</strong>：实际 GDP 围绕长期趋势的波动，依次是繁荣（顶峰）、下行（收缩）、谷底（衰退）、上行（复苏）。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10.5
+       ],
+       "yr": [
+        0,
+        7
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "time",
+       "yLabel": "real GDP",
+       "curves": [
+        {
+         "expr": "1+0.4*x+0.9*sin(1.2*x)",
+         "color": "navy",
+         "dom": [
+          0,
+          10
+         ],
+         "label": [
+          8.2,
+          6.6,
+          "real GDP"
+         ]
+        },
+        {
+         "expr": "1+0.4*x",
+         "color": "grey",
+         "dom": [
+          0,
+          10
+         ],
+         "label": [
+          8.3,
+          3.8,
+          "trend"
+         ],
+         "dash": true
+        }
+       ],
+       "caption": "Business cycle: peak (boom), contraction, trough (recession), expansion (recovery)",
+       "points": [
+        {
+         "x": 1.31,
+         "y": 2.42,
+         "label": "peak",
+         "dx": -12,
+         "dy": -8
+        },
+        {
+         "x": 3.93,
+         "y": 1.67,
+         "label": "trough",
+         "dx": -14,
+         "dy": 16
+        },
+        {
+         "x": 6.54,
+         "y": 4.52,
+         "label": "peak",
+         "dx": -12,
+         "dy": -8
+        },
+        {
+         "x": 9.16,
+         "y": 3.77,
+         "label": "trough",
+         "dx": -14,
+         "dy": 16
+        }
+       ],
+       "texts": [
+        {
+         "x": 2.6,
+         "y": 3.2,
+         "text": "contraction",
+         "anchor": "middle",
+         "size": 9,
+         "color": "red"
+        },
+        {
+         "x": 5.2,
+         "y": 2.2,
+         "text": "expansion",
+         "anchor": "middle",
+         "size": 9,
+         "color": "green"
+        }
+       ]
+      }
+     ],
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "用名义 GDP 增长率代表经济增长。",
+    "把中间产品、转移支付计入 GDP。",
+    "人均实际 GDP 只除人口不先去掉价格变化。"
+   ],
+   "faqs": [
+    {
+     "q": "GDP 和经济福利有什么区别？",
+     "a": "GDP 衡量市场产出的价值；经济福利是更广的生活水平，还包括健康、教育、环境、闲暇和分配等 GDP 测不到的方面。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "题型",
+   "做法",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "循环流量",
+    "找出漏出 S、T、M 和注入 I、G、X，比较大小",
+    "例 3–10"
+   ],
+   [
+    "实际 GDP",
+    "名义 × 基期 CPI ÷ 当期 CPI",
+    "例 11"
+   ],
+   [
+    "人均实际 GDP",
+    "实际 GDP ÷ 人口",
+    "例 12"
+   ],
+   [
+    "增长率",
+    "(本期 − 上期) ÷ 上期 × 100",
+    "例 13"
+   ],
+   [
+    "是否计入 GDP",
+    "新的、最终的、市场交换的",
+    "例 14"
+   ]
+  ]
+ },
+ "practice": "讲座结尾要求：完成 Unit 1 不计分小测和写作练习，预习 Unit 2，并在 Tutorial 前做完 Unit 1 Learning Guide（答案见第 2 周）。"
+}

@@ -1,0 +1,1300 @@
+{
+ "course": "economics",
+ "term": "term2",
+ "week": 4,
+ "title": "Week 4 · Unit 3 Tutorial + Unit 4 Aggregate Demand & Supply 总需求与总供给",
+ "answersTitle": "Tutorial 3 Unemployment",
+ "files": [
+  "unit3 PPT unemployment.pdf",
+  "unit3 TG unemployment.pdf",
+  "unit4 PPT aggregate demand supply.pdf",
+  "unit4 TG aggregate demand supply.pdf"
+ ],
+ "inventory": [
+  {
+   "ref": "Tutorial 3 Terms",
+   "deliverables": [
+    {
+     "type": "terms",
+     "terms": [
+      "Unemployment",
+      "Labour Force",
+      "Participation Rate",
+      "Cyclical Unemployment",
+      "Structural Unemployment",
+      "Seasonal Unemployment",
+      "Frictional Unemployment",
+      "Hidden Unemployment",
+      "Underemployment",
+      "Natural rate of unemployment",
+      "Full employment"
+     ]
+    }
+   ]
+  },
+  "Tutorial 3 Q1",
+  "Tutorial 3 Q2",
+  "Tutorial 3 Q3",
+  "Tutorial 3 Q4",
+  "Tutorial 3 Q5",
+  {
+   "ref": "Tutorial 3 Q6",
+   "parts": [
+    "a",
+    "b",
+    "c"
+   ],
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial 3 Q7",
+   "parts": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  "Tutorial 3 Q8",
+  "Tutorial 3 Q9",
+  "Tutorial 3 Writing",
+  "Lecture 4 AD",
+  {
+   "ref": "Lecture 4 AD Curve",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Lecture 4 AS",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Lecture 4 Equilibrium",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Lecture 4 Inflation",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  }
+ ],
+ "intro": [
+  "本周前半是 <strong>Unit 3 Tutorial</strong>（失业的类型、劳动力和参与率计算、充分就业）；后半是 <strong>Unit 4 讲座</strong>：总需求 AD 的构成和斜率、AD 的移动、总供给 AS 的三个区段、宏观均衡，以及用 AD–AS 模型解释需求拉动和成本推动通胀。Unit 4 Tutorial 的答案在第 5 周。",
+  "Term 2 的 Tutorial 没有官方答案文件，以下答案依据讲义写出；AS 曲线按讲义的形状（左平、右陡、在充分就业产出 Y_FE 处竖直）用函数画出，均衡点由程序解出。"
+ ],
+ "sections": [
+  {
+   "title": "Unit 3 Tutorial：失业",
+   "sources": [
+    {
+     "file": "unit3 TG unemployment.pdf",
+     "pages": "p1–10"
+    },
+    {
+     "file": "unit3 PPT unemployment.pdf",
+     "pages": "p1–25"
+    }
+   ],
+   "concept": "失业率 = 失业 ÷ 劳动力 × 100%；参与率 = 劳动力 ÷ 工作年龄人口 × 100%；劳动力 = 就业 + 失业。\n结构性失业（技能、地点不匹配）、周期性失业（衰退时总需求下降）、摩擦性和季节性失业（正常、短期）、隐性失业（放弃找工作，不计入）、就业不足（想多工作的兼职，计为就业）。充分就业时只剩摩擦性和结构性失业（自然失业率），周期性失业为零。",
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "Tutorial 3 Terms",
+     "question": "Explain: Unemployment; Labour Force; Participation Rate; Cyclical, Structural, Seasonal, Frictional and Hidden Unemployment; Underemployment; Natural rate of unemployment; Full employment.",
+     "solution": "<strong>Unemployment</strong>：想工作、能工作、正在积极找工作但没有有偿工作的人。\n<strong>Labour Force</strong>：工作年龄人口中愿意并能够工作的人，= 就业 + 失业。\n<strong>Participation Rate</strong>：劳动力占工作年龄人口的百分比。\n<strong>Cyclical Unemployment</strong>：经济下行、总需求下降，企业裁员造成的失业。\n<strong>Structural Unemployment</strong>：消费需求或技术变化使工人的技能或所在地与岗位不匹配，通常持续较久。\n<strong>Seasonal Unemployment</strong>：岗位只在一年中特定时间存在（采果、圣诞零售）。\n<strong>Frictional Unemployment</strong>：换工作、首次进入或重新进入劳动力时的短期失业。\n<strong>Hidden Unemployment</strong>：灰心而放弃找工作的人，不计入官方失业率。\n<strong>Underemployment</strong>：有工作但想工作更长时间（兼职、临时工），统计上算就业。\n<strong>Natural rate of unemployment</strong>：摩擦性（含季节性）+ 结构性失业，此时周期性失业为零。\n<strong>Full employment</strong>：有足够岗位给愿意工作的人，失业率处于自然失业率，而不是 0%。",
+     "numeric": false
+    },
+    {
+     "label": "例 2",
+     "ref": "Tutorial 3 Q1",
+     "question": "Why are seasonal and frictional unemployment regarded as less serious than other types?",
+     "solution": "它们通常<strong>时间短</strong>，而且是劳动力市场正常运转的一部分：摩擦性失业者有市场需要的技能，只是在换工作或刚进入劳动力；季节性失业者在下一季会重新就业。它们不代表总需求不足或技能过时，所以不需要大的政策干预，主要靠更好的就业信息和中介减少找工作的时间。",
+     "numeric": false
+    },
+    {
+     "label": "例 3",
+     "ref": "Tutorial 3 Q2",
+     "question": "Why is structural unemployment likely to become more serious in times of rapid technological change?",
+     "solution": "技术快速变化会让一些行业和岗位迅速消失（如自助结账取代收银员、自动驾驶卡车），同时新岗位需要不同的技能，或出现在其他地区。被取代的工人技能与新岗位不匹配，需要再培训或迁移，这需要时间和成本，所以结构性失业增多，而且持续时间长。",
+     "numeric": false
+    },
+    {
+     "label": "例 4",
+     "ref": "Tutorial 3 Q3",
+     "question": "Explain why cyclical unemployment is likely to occur for a shorter time than structural unemployment.",
+     "solution": "周期性失业来自总需求的暂时下降：经济复苏、总需求回升时，企业重新扩产，原来的工人凭原有技能就能回到相同类型的岗位，所以失业随周期结束。结构性失业是技能或地点的长期不匹配，原来的岗位不会再回来，即使经济复苏，工人也要先再培训或迁移，所以持续更久。",
+     "numeric": false
+    },
+    {
+     "label": "例 5",
+     "ref": "Tutorial 3 Q4",
+     "question": "Why might a large number of part-time workers indicate a level of underemployment?",
+     "solution": "很多兼职者其实想要全职或更多工时，但找不到。按 ABS 定义，每周工作 1 小时以上就算就业，他们不计入失业率；兼职人数多而且很多人想多工作，说明劳动力并没有被充分利用，官方失业率低估了闲置的劳动。",
+     "numeric": false
+    },
+    {
+     "label": "例 6",
+     "ref": "Tutorial 3 Q5",
+     "question": "What is the effect of discouraged workers on the unemployment rate?",
+     "solution": "灰心的求职者放弃积极找工作后，不再被算作失业，也就离开了劳动力。分子（失业人数）和分母（劳动力）都减少，失业率<strong>下降</strong>，但这不是就业改善，而是隐性失业增加，官方失业率因此低估了真实失业。",
+     "numeric": false
+    },
+    {
+     "label": "例 7",
+     "ref": "Tutorial 3 Q6",
+     "question": "Population 20 m; aged 15–65 12 m; full-time employed 7.0 m; part-time employed 0.5 m; unemployed 0.5 m. Calculate (a) the labour force (b) the participation rate (c) the unemployment rate.",
+     "solution": "(a) 劳动力 = 就业 + 失业 = 7.0 + 0.5 + 0.5 = <strong>8.0 百万</strong>（兼职也算就业）。\n(b) 参与率 = 8.0 ÷ 12 × 100 = <strong>66.7%</strong>（分母是工作年龄人口，不是总人口 20 百万）。\n(c) 失业率 = 0.5 ÷ 8.0 × 100 = <strong>6.25%</strong>。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "",
+        "Original (million)",
+        "After 400 000 enter (million)"
+       ],
+       "rows": [
+        [
+         "Full-time employed",
+         "7.0",
+         "7.0"
+        ],
+        [
+         "Part-time employed",
+         "0.5",
+         "0.5"
+        ],
+        [
+         "New entrants who find jobs",
+         "—",
+         "0.2"
+        ],
+        [
+         "Employed",
+         "7.5",
+         "7.7"
+        ],
+        [
+         "Unemployed",
+         "0.5",
+         "0.7"
+        ],
+        [
+         "Labour force",
+         "8.0",
+         "8.4"
+        ],
+        [
+         "Working-age population (15–65)",
+         "12.0",
+         "12.0"
+        ],
+        [
+         "Participation rate",
+         "8.0 ÷ 12 = 66.7%",
+         "8.4 ÷ 12 = 70.0%"
+        ],
+        [
+         "Unemployment rate",
+         "0.5 ÷ 8.0 = 6.25%",
+         "0.7 ÷ 8.4 = 8.33%"
+        ]
+       ],
+       "title": "Questions 6 and 7"
+      }
+     ],
+     "answer": "(a) 8.0 m (b) 66.7% (c) 6.25%",
+     "checks": [
+      {
+       "expr": "7+0.5+0.5",
+       "equals": "8"
+      },
+      {
+       "expr": "8/12*100",
+       "equals": "66.67",
+       "tol": 0.01
+      },
+      {
+       "expr": "0.5/8*100",
+       "equals": "6.25"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    {
+     "label": "例 8",
+     "ref": "Tutorial 3 Q7",
+     "question": "400 000 non-participants begin to look for work and half of them find a job. Calculate (a) the labour force (b) the participation rate (c) the unemployment rate.",
+     "solution": "40 万人从「不在劳动力中」进入劳动力：20 万人就业，20 万人失业。\n(a) 劳动力 = 8.0 + 0.4 = <strong>8.4 百万</strong>（就业 7.7，失业 0.7）。\n(b) 参与率 = 8.4 ÷ 12 × 100 = <strong>70%</strong>。\n(c) 失业率 = 0.7 ÷ 8.4 × 100 = <strong>8.33%</strong>。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "",
+        "Original (million)",
+        "After 400 000 enter (million)"
+       ],
+       "rows": [
+        [
+         "Full-time employed",
+         "7.0",
+         "7.0"
+        ],
+        [
+         "Part-time employed",
+         "0.5",
+         "0.5"
+        ],
+        [
+         "New entrants who find jobs",
+         "—",
+         "0.2"
+        ],
+        [
+         "Employed",
+         "7.5",
+         "7.7"
+        ],
+        [
+         "Unemployed",
+         "0.5",
+         "0.7"
+        ],
+        [
+         "Labour force",
+         "8.0",
+         "8.4"
+        ],
+        [
+         "Working-age population (15–65)",
+         "12.0",
+         "12.0"
+        ],
+        [
+         "Participation rate",
+         "8.0 ÷ 12 = 66.7%",
+         "8.4 ÷ 12 = 70.0%"
+        ],
+        [
+         "Unemployment rate",
+         "0.5 ÷ 8.0 = 6.25%",
+         "0.7 ÷ 8.4 = 8.33%"
+        ]
+       ],
+       "title": "Questions 6 and 7"
+      }
+     ],
+     "answer": "(a) 8.4 m (b) 70% (c) 8.33%",
+     "checks": [
+      {
+       "expr": "8+0.4",
+       "equals": "8.4"
+      },
+      {
+       "expr": "8.4/12*100",
+       "equals": "70"
+      },
+      {
+       "expr": "0.7/8.4*100",
+       "equals": "8.33",
+       "tol": 0.005
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    {
+     "label": "例 9",
+     "ref": "Tutorial 3 Q8",
+     "question": "Why can the number of employed and the unemployment rate rise at the same time?",
+     "solution": "如果劳动力增长得比就业快，就业人数和失业率可以同时上升。第 7 题就是例子：就业从 7.5 增加到 7.7 百万，但新进入者中只有一半找到工作，失业人数从 0.5 增加到 0.7 百万，失业率从 6.25% 升到 8.33%。经济好转时，原来灰心的人重新开始找工作，也会出现这种情况。",
+     "numeric": false
+    },
+    {
+     "label": "例 10",
+     "ref": "Tutorial 3 Q9",
+     "question": "What is meant by full employment? What type of unemployment needs to be reduced to achieve full employment?",
+     "solution": "充分就业指有足够的岗位提供给愿意并能够工作的人，失业率等于自然失业率（摩擦性 + 结构性），不是 0%。要达到充分就业，需要消除<strong>周期性失业</strong>，即通过增加总需求使经济回到充分就业产出。",
+     "numeric": false
+    },
+    {
+     "label": "例 11",
+     "ref": "Tutorial 3 Writing",
+     "question": "Possible writing task: Distinguish between structural and cyclical unemployment. Suggest possible solutions to each.",
+     "solution": "<strong>结构性失业</strong>是劳动力市场的不匹配：消费需求或技术变化使某些行业衰退、某些技能过时，失业者的技能或所在地与现有岗位对不上。例如自助结账减少了收银员岗位。它往往持续较久，经济整体繁荣时也会存在。\n<strong>周期性失业</strong>来自经济周期：衰退时总需求下降，企业销售减少，于是减产裁员。它随经济复苏而减少，被解雇的工人通常能回到同类岗位。\n两者的对策不同。针对结构性失业，应采用<strong>供给方政策</strong>：职业教育和再培训、学徒制、搬迁补贴、改善就业信息服务，帮助工人转向新兴行业。针对周期性失业，应采用<strong>需求管理政策</strong>：降低利率的扩张性货币政策，以及增加政府支出或减税的扩张性财政政策，使总需求回升、企业重新雇人。用需求政策解决结构性失业效果有限，反而可能推高通胀。",
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "参与率用总人口 20 百万作分母。",
+    "第 7 题只加就业不加失业：40 万人全部进入劳动力。",
+    "以为灰心求职者增加会提高失业率：他们离开劳动力，失业率反而下降。"
+   ],
+   "faqs": [
+    {
+     "q": "兼职 0.5 百万算不算就业？",
+     "a": "算。ABS 只要求每周有偿工作至少 1 小时，兼职都计入就业。"
+    }
+   ]
+  },
+  {
+   "title": "Unit 4 讲座：总需求与总供给",
+   "sources": [
+    {
+     "file": "unit4 PPT aggregate demand supply.pdf",
+     "pages": "p1–27"
+    },
+    {
+     "file": "unit4 TG aggregate demand supply.pdf",
+     "pages": "p2–3"
+    }
+   ],
+   "concept": "<strong>总需求</strong> AD = C + I + G + (X − M)：计划的消费、投资、政府支出和净出口。AD 曲线表示各物价水平下需求的实际 GDP。向右下倾斜的三个原因：①<strong>财富 / 实际余额效应</strong>（物价下降，实际收入上升，消费增加）；②<strong>利率效应</strong>（物价下降，利率下降，C 和 I 增加）；③<strong>国际替代 / 净出口效应</strong>（物价上升，人们少买国产多买进口）。物价变化是<strong>沿曲线移动</strong>；其他因素（财政政策、货币政策、世界经济）使 AD <strong>移动</strong>。\n<strong>总供给</strong> AS 向右上倾斜：物价上升使企业愿意多生产。接近充分就业时资源稀缺、资源价格上涨，AS 变陡。三个区段：<strong>凯恩斯段</strong>（平坦，衰退、产能过剩）、<strong>中间段</strong>、<strong>古典段</strong>（在充分就业产出 Y_FE 处竖直）。资源价格、技术、税收、补贴、管制的变化使 AS 移动。\n<strong>宏观均衡</strong>：AD 与 AS 相交。经济周期可看作 AD 沿不变的 AS 移动；AD 变化对产出和物价的影响取决于处在 AS 的哪一段。\n<strong>需求拉动通胀</strong>：AD 右移、AS 不变，越接近充分就业影响越大。<strong>成本推动通胀</strong>：AS 左移、AD 不变，物价上升同时产出下降、失业增加，即<strong>滞胀</strong>。",
+   "formulas": [
+    "AD = C + I + G + (X − M)"
+   ],
+   "examples": [
+    {
+     "label": "例 12",
+     "ref": "Lecture 4 AD",
+     "question": "What is aggregate demand and why does the AD curve slope downward?",
+     "solution": "AD 是计划的 C + I + G + (X − M)，AD 曲线表示在不同物价水平下全体参与者购买的实际 GDP。向右下倾斜因为：①财富效应：物价下降，同样的钱能买更多，消费增加；②利率效应：物价下降通常使利率下降，消费和投资增加；③净出口效应：物价上升使国产品变贵，国内外买家转向进口品，出口减少、进口增加。",
+     "numeric": false
+    },
+    {
+     "label": "例 13",
+     "ref": "Lecture 4 AD Curve",
+     "question": "Distinguish between a movement along the AD curve and a shift of the AD curve.",
+     "solution": "物价水平变化时，需求的实际 GDP 沿 AD 曲线变化（A → B）。物价以外的因素变化时，整条曲线移动：扩张性财政政策（预算赤字）、降低利率、世界经济好转使出口增加，都让 AD 右移；反之左移。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        11.5
+       ],
+       "yr": [
+        0,
+        11
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Real GDP",
+       "yLabel": "Price level",
+       "curves": [
+        {
+         "expr": "8-0.6*x",
+         "dom": [
+          0,
+          11.5
+         ],
+         "color": "navy",
+         "label": [
+          9.68,
+          2.64,
+          "AD"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 3,
+         "y": 6.2,
+         "label": "A"
+        },
+        {
+         "x": 8,
+         "y": 3.2,
+         "label": "B"
+        }
+       ],
+       "caption": "Movement along AD: a lower price level raises the quantity of real GDP demanded (A → B)",
+       "padLeft": 34
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        11.5
+       ],
+       "yr": [
+        0,
+        11
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Real GDP",
+       "yLabel": "Price level",
+       "curves": [
+        {
+         "expr": "6.5-0.6*x",
+         "dom": [
+          0,
+          10.833
+         ],
+         "color": "navy",
+         "label": [
+          9.53,
+          1.23,
+          "AD₂"
+         ],
+         "dash": true
+        },
+        {
+         "expr": "8-0.6*x",
+         "dom": [
+          0,
+          11.5
+         ],
+         "color": "navy",
+         "label": [
+          9.68,
+          2.64,
+          "AD₀"
+         ]
+        },
+        {
+         "expr": "9.5-0.6*x",
+         "dom": [
+          0,
+          11.5
+         ],
+         "color": "navy",
+         "label": [
+          9.68,
+          4.14,
+          "AD₁"
+         ],
+         "dash": true
+        }
+       ],
+       "texts": [
+        {
+         "x": 9.6,
+         "y": 5.6,
+         "text": "→ increase",
+         "size": 9,
+         "color": "green"
+        },
+        {
+         "x": 1.2,
+         "y": 4.6,
+         "text": "decrease ←",
+         "size": 9,
+         "color": "red"
+        }
+       ],
+       "caption": "Shifts in AD: right = increase (AD₁), left = decrease (AD₂)",
+       "padLeft": 34
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 14",
+     "ref": "Lecture 4 AS",
+     "question": "Why is the AS curve upward sloping and why does it become steeper near full employment? What shifts AS?",
+     "solution": "物价上升使实际工资下降、生产相对便宜，企业愿意多生产，所以 AS 向右上倾斜。接近充分就业时，资源越来越稀缺，增产能力下降而资源价格上升，AS 变陡，在 Y_FE 处接近竖直。产出很低时资源价格「粘性」不降，AS 平坦。\n资源价格、技术、税收、补贴、管制的变化使 AS 移动：成本下降或技术进步使 AS 右移，成本上升使 AS 左移。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        11.5
+       ],
+       "yr": [
+        0,
+        11
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Real GDP",
+       "yLabel": "Price level",
+       "curves": [
+        {
+         "expr": "1.5+4/(10-x)",
+         "dom": [
+          0,
+          9.556
+         ],
+         "color": "red",
+         "label": [
+          8.36,
+          10.1,
+          "AS"
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": 10,
+         "y": -0.55,
+         "text": "Y_FE",
+         "anchor": "middle",
+         "size": 9,
+         "color": "red"
+        },
+        {
+         "x": 2.6,
+         "y": 2.6,
+         "text": "Keynesian: excess capacity",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy"
+        },
+        {
+         "x": 7,
+         "y": 4.4,
+         "text": "intermediate",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy"
+        },
+        {
+         "x": 8.5,
+         "y": 9.6,
+         "text": "Classical",
+         "anchor": "end",
+         "size": 9,
+         "color": "navy"
+        }
+       ],
+       "caption": "Three ranges of AS: Keynesian (flat), intermediate, Classical (vertical at Y_FE)",
+       "padLeft": 34,
+       "vlines": [
+        {
+         "x": 10,
+         "color": "grey"
+        }
+       ]
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 15",
+     "ref": "Lecture 4 Equilibrium",
+     "question": "What is macroeconomic equilibrium and how does a rise in AD affect output and prices in each range of AS?",
+     "solution": "需求的实际 GDP 等于供给的实际 GDP 时达到均衡，即 AD 与 AS 的交点；两者不等时企业存货变化，企业会调整生产计划。\nAD 依次右移（AD₁ → AD₂ → AD₃）：在平坦段，产出增加很多、物价几乎不变；在中间段，产出和物价都上升；接近 Y_FE 时，产出几乎不能再增加，主要是物价上升。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        11.5
+       ],
+       "yr": [
+        0,
+        11
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Real GDP",
+       "yLabel": "Price level",
+       "curves": [
+        {
+         "expr": "1.5+4/(10-x)",
+         "dom": [
+          0,
+          9.556
+         ],
+         "color": "red",
+         "label": [
+          8.36,
+          10.1,
+          "AS"
+         ]
+        },
+        {
+         "expr": "9-0.6*x",
+         "dom": [
+          0,
+          11.5
+         ],
+         "color": "navy",
+         "label": [
+          9.68,
+          3.64,
+          "AD"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 8.381,
+         "y": 3.971,
+         "label": "E"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          3.971
+         ],
+         "to": [
+          8.381,
+          3.971
+         ]
+        },
+        {
+         "from": [
+          8.381,
+          0
+         ],
+         "to": [
+          8.381,
+          3.971
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": -0.15,
+         "y": 3.851,
+         "text": "P₁",
+         "anchor": "end",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 8.381,
+         "y": -0.55,
+         "text": "Y₁",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 10,
+         "y": -0.55,
+         "text": "Y_FE",
+         "anchor": "middle",
+         "size": 9,
+         "color": "red"
+        }
+       ],
+       "caption": "Macroeconomic equilibrium where AD meets AS",
+       "padLeft": 34,
+       "vlines": [
+        {
+         "x": 10,
+         "color": "grey"
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        11.5
+       ],
+       "yr": [
+        0,
+        11
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Real GDP",
+       "yLabel": "Price level",
+       "curves": [
+        {
+         "expr": "1.5+4/(10-x)",
+         "dom": [
+          0,
+          9.556
+         ],
+         "color": "red",
+         "label": [
+          8.36,
+          10.1,
+          "AS"
+         ]
+        },
+        {
+         "expr": "5-0.6*x",
+         "dom": [
+          0,
+          8.333
+         ],
+         "color": "navy",
+         "label": [
+          7.33,
+          1.05,
+          "AD₁"
+         ]
+        },
+        {
+         "expr": "8-0.6*x",
+         "dom": [
+          0,
+          11.5
+         ],
+         "color": "navy",
+         "label": [
+          9.68,
+          2.64,
+          "AD₂"
+         ],
+         "dash": true
+        },
+        {
+         "expr": "11.2-0.6*x",
+         "dom": [
+          0,
+          11.5
+         ],
+         "color": "navy",
+         "label": [
+          9.68,
+          5.84,
+          "AD₃"
+         ],
+         "dash": true
+        }
+       ],
+       "points": [
+        {
+         "x": 4.599,
+         "y": 2.241,
+         "label": "1"
+        },
+        {
+         "x": 7.801,
+         "y": 3.319,
+         "label": "2"
+        },
+        {
+         "x": 9.062,
+         "y": 5.763,
+         "label": "3"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          2.241
+         ],
+         "to": [
+          4.599,
+          2.241
+         ]
+        },
+        {
+         "from": [
+          4.599,
+          0
+         ],
+         "to": [
+          4.599,
+          2.241
+         ]
+        },
+        {
+         "from": [
+          0,
+          3.319
+         ],
+         "to": [
+          7.801,
+          3.319
+         ]
+        },
+        {
+         "from": [
+          7.801,
+          0
+         ],
+         "to": [
+          7.801,
+          3.319
+         ]
+        },
+        {
+         "from": [
+          0,
+          5.763
+         ],
+         "to": [
+          9.062,
+          5.763
+         ]
+        },
+        {
+         "from": [
+          9.062,
+          0
+         ],
+         "to": [
+          9.062,
+          5.763
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": -0.15,
+         "y": 2.121,
+         "text": "P₁",
+         "anchor": "end",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 4.599,
+         "y": -0.55,
+         "text": "Ye₁",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": -0.15,
+         "y": 3.199,
+         "text": "P₂",
+         "anchor": "end",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 7.801,
+         "y": -0.55,
+         "text": "Ye₂",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": -0.15,
+         "y": 5.643,
+         "text": "P₃",
+         "anchor": "end",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 9.062,
+         "y": -0.55,
+         "text": "Ye₃",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 10,
+         "y": -0.55,
+         "text": "Y_FE",
+         "anchor": "middle",
+         "size": 9,
+         "color": "red"
+        }
+       ],
+       "caption": "Equal rightward shifts of AD: output rises a lot in the flat range, prices rise a lot near Y_FE",
+       "padLeft": 34,
+       "vlines": [
+        {
+         "x": 10,
+         "color": "grey"
+        }
+       ]
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 16",
+     "ref": "Lecture 4 Inflation",
+     "question": "Use the AD–AS model to explain demand-pull and cost-push inflation.",
+     "solution": "<strong>需求拉动</strong>：AS 不变，AD 右移（AD₁ → AD₂），物价从 Pe 升到 Pe₁；越接近充分就业，物价上升越多、产出增加越少。\n<strong>成本推动</strong>：AD 不变，AS 因成本上升左移（AS₁ → AS₂），物价从 P₁ 升到 P₂，而产出从 Ye₁ 降到 Ye₂，失业增加。通胀和失业同时出现，叫<strong>滞胀</strong>。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        11.5
+       ],
+       "yr": [
+        0,
+        11
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Real GDP",
+       "yLabel": "Price level",
+       "curves": [
+        {
+         "expr": "1.5+4/(10-x)",
+         "dom": [
+          0,
+          9.556
+         ],
+         "color": "red",
+         "label": [
+          8.36,
+          10.1,
+          "AS"
+         ]
+        },
+        {
+         "expr": "9.5-0.6*x",
+         "dom": [
+          0,
+          11.5
+         ],
+         "color": "navy",
+         "label": [
+          9.68,
+          4.14,
+          "AD₁"
+         ]
+        },
+        {
+         "expr": "11.8-0.6*x",
+         "dom": [
+          0,
+          11.5
+         ],
+         "color": "navy",
+         "label": [
+          9.68,
+          6.44,
+          "AD₂"
+         ],
+         "dash": true
+        }
+       ],
+       "points": [
+        {
+         "x": 8.593,
+         "y": 4.344,
+         "label": ""
+        },
+        {
+         "x": 9.167,
+         "y": 6.3,
+         "label": ""
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          4.344
+         ],
+         "to": [
+          8.593,
+          4.344
+         ]
+        },
+        {
+         "from": [
+          8.593,
+          0
+         ],
+         "to": [
+          8.593,
+          4.344
+         ]
+        },
+        {
+         "from": [
+          0,
+          6.3
+         ],
+         "to": [
+          9.167,
+          6.3
+         ]
+        },
+        {
+         "from": [
+          9.167,
+          0
+         ],
+         "to": [
+          9.167,
+          6.3
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": -0.15,
+         "y": 4.224,
+         "text": "Pe",
+         "anchor": "end",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 8.593,
+         "y": -0.55,
+         "text": "Ye",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": -0.15,
+         "y": 6.18,
+         "text": "Pe₁",
+         "anchor": "end",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 10,
+         "y": -0.55,
+         "text": "Y_FE",
+         "anchor": "middle",
+         "size": 9,
+         "color": "red"
+        }
+       ],
+       "caption": "Demand-pull inflation near full employment",
+       "padLeft": 34,
+       "vlines": [
+        {
+         "x": 10,
+         "color": "grey"
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        11.5
+       ],
+       "yr": [
+        0,
+        11
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Real GDP",
+       "yLabel": "Price level",
+       "curves": [
+        {
+         "expr": "1.5+4/(10-x)",
+         "dom": [
+          0,
+          9.556
+         ],
+         "color": "red",
+         "label": [
+          8.36,
+          10.1,
+          "AS₁"
+         ]
+        },
+        {
+         "expr": "3.2+4/(8.8-x)",
+         "dom": [
+          0,
+          8.252
+         ],
+         "color": "red",
+         "label": [
+          7.05,
+          10.1,
+          "AS₂"
+         ],
+         "dash": true
+        },
+        {
+         "expr": "9-0.6*x",
+         "dom": [
+          0,
+          11.5
+         ],
+         "color": "navy",
+         "label": [
+          9.68,
+          3.64,
+          "AD"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 8.381,
+         "y": 3.971,
+         "label": ""
+        },
+        {
+         "x": 6.615,
+         "y": 5.031,
+         "label": ""
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          3.971
+         ],
+         "to": [
+          8.381,
+          3.971
+         ]
+        },
+        {
+         "from": [
+          8.381,
+          0
+         ],
+         "to": [
+          8.381,
+          3.971
+         ]
+        },
+        {
+         "from": [
+          0,
+          5.031
+         ],
+         "to": [
+          6.615,
+          5.031
+         ]
+        },
+        {
+         "from": [
+          6.615,
+          0
+         ],
+         "to": [
+          6.615,
+          5.031
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": -0.15,
+         "y": 3.851,
+         "text": "P₁",
+         "anchor": "end",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 8.381,
+         "y": -0.55,
+         "text": "Ye₁",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": -0.15,
+         "y": 4.911,
+         "text": "P₂",
+         "anchor": "end",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 6.615,
+         "y": -0.55,
+         "text": "Ye₂",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 10,
+         "y": -0.55,
+         "text": "Y_FE",
+         "anchor": "middle",
+         "size": 9,
+         "color": "red"
+        }
+       ],
+       "caption": "Cost-push inflation: AS shifts left, prices rise and output falls (stagflation)",
+       "padLeft": 34,
+       "vlines": [
+        {
+         "x": 10,
+         "color": "grey"
+        }
+       ]
+      }
+     ],
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "物价变化画成 AD 移动：物价变化只是沿曲线移动。",
+    "AS 画成直线：讲义强调接近 Y_FE 时变陡、在 Y_FE 竖直。",
+    "成本推动画成 AD 移动。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么政府在经济低迷时刺激最有效？",
+     "a": "低迷时处在 AS 的平坦段，有大量闲置资源，增加需求主要提高产出和就业，通胀压力小；接近充分就业时同样的刺激主要推高物价（第 5 周的 Unit 4 Tutorial 第 6、7 题）。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "题型",
+   "做法",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "劳动力指标",
+    "劳动力 = 就业 + 失业；分母别弄错",
+    "例 7、8"
+   ],
+   [
+    "失业类型",
+    "看原因和持续时间",
+    "例 1–6、11"
+   ],
+   [
+    "AD 移动还是沿线",
+    "物价变 → 沿线；其他 → 移动",
+    "例 13"
+   ],
+   [
+    "AS 三段",
+    "平、升、竖；Y_FE 处竖直",
+    "例 14"
+   ],
+   [
+    "通胀类型作图",
+    "需求拉动 AD 右移；成本推动 AS 左移",
+    "例 16"
+   ]
+  ]
+ },
+ "practice": "讲座结尾：完成本周 Learning Guide 题目、小测和写作练习；Unit 4 Tutorial 的答案见第 5 周。"
+}

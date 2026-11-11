@@ -397,6 +397,70 @@
   "requirementsChecked": false
  },
  {
+  "board": "notes-economics",
+  "key": "term2/1",
+  "course": "economics",
+  "term": "term2",
+  "week": 1,
+  "title": "Week 1 · Unit 0 The Circular Flow Model 循环流量模型 + Unit 1 Economic Growth and GDP 经济增长与GDP",
+  "fields": {
+   "graphicHtml": "out/economics/term2/w01.graphic.html",
+   "tutorialAnswers": "out/economics/term2/w01.answers.html"
+  },
+  "examples": 16,
+  "checks": 10,
+  "deliverables": 22,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term2/2",
+  "course": "economics",
+  "term": "term2",
+  "week": 2,
+  "title": "Week 2 · Unit 1 Tutorial + Unit 2 Inflation 通货膨胀",
+  "fields": {
+   "graphicHtml": "out/economics/term2/w02.graphic.html",
+   "tutorialAnswers": "out/economics/term2/w02.answers.html"
+  },
+  "examples": 18,
+  "checks": 10,
+  "deliverables": 22,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term2/3",
+  "course": "economics",
+  "term": "term2",
+  "week": 3,
+  "title": "Week 3 · Unit 2 Tutorial + Unit 3 Unemployment 失业",
+  "fields": {
+   "graphicHtml": "out/economics/term2/w03.graphic.html",
+   "tutorialAnswers": "out/economics/term2/w03.answers.html"
+  },
+  "examples": 13,
+  "checks": 7,
+  "deliverables": 10,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term2/4",
+  "course": "economics",
+  "term": "term2",
+  "week": 4,
+  "title": "Week 4 · Unit 3 Tutorial + Unit 4 Aggregate Demand & Supply 总需求与总供给",
+  "fields": {
+   "graphicHtml": "out/economics/term2/w04.graphic.html",
+   "tutorialAnswers": "out/economics/term2/w04.answers.html"
+  },
+  "examples": 16,
+  "checks": 6,
+  "deliverables": 12,
+  "requirementsChecked": false
+ },
+ {
   "board": "math-notes",
   "key": "term1/1",
   "course": "mathematics",
