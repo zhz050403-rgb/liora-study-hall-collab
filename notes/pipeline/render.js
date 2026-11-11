@@ -105,7 +105,7 @@ function tableHtml(fig) {
 }
 
 /* ---------- 会计：过账、结账、试算平衡表，金额全由程序计算 ---------- */
-const DEBIT_NORMAL = new Set(['asset', 'expense', 'drawings']);
+const DEBIT_NORMAL = new Set(['asset', 'expense', 'drawings', 'contra-revenue']);
 const money = v => Number.isInteger(v) ? v.toLocaleString('en-US') : v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
 function postLedger(fig) {
@@ -144,7 +144,7 @@ function taccount(name, a, endDate, nextDate, balanceIt) {
   return `<table class="kp-tbl ledger"><caption>${escapeHtml(name)}</caption><thead><tr><th>Date</th><th>Particulars</th><th>Dr $</th><th>Date</th><th>Particulars</th><th>Cr $</th></tr></thead><tbody>${rows.join('')}</tbody></table>`;
 }
 
-const KIND_CODE = { asset: 'A', liability: 'L', equity: 'OE', revenue: 'R', expense: 'E', drawings: 'OE (Drawings)' };
+const KIND_CODE = { asset: 'A', liability: 'L', equity: 'OE', revenue: 'R', expense: 'E', drawings: 'OE (Drawings)', 'contra-revenue': 'R (contra)', 'contra-expense': 'E (contra)' };
 /* 借记资产、费用、提款是增加；贷记负债、权益、收入是增加；反过来就是减少。 */
 const effect = (kind, side) => (DEBIT_NORMAL.has(kind) === (side === 'dr')) ? 'Increase' : 'Decrease';
 

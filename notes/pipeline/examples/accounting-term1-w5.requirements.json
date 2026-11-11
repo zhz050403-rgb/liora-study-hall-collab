@@ -1,0 +1,10 @@
+[
+  { "ref": "Q 1", "page": "p3", "deliverables": [{ "type": "taccounts", "accounts": ["Cash at Bank", "Office Furniture", "Loan", "Capital"] }] },
+  { "ref": "Q 2", "page": "p5", "deliverables": [{ "type": "taccounts", "accounts": ["Cash at Bank", "Account Receivable", "Account Payable", "Capital", "Discount Allowed", "Discount Received", "Drawings", "Purchase", "Sales", "Delivery van", "Sales returns", "Purchase Returns"] }, { "type": "trialBalance" }] },
+  { "ref": "In-class B", "page": "p11", "deliverables": [{ "type": "taccounts", "accounts": ["Cash", "Accounts Receivable", "Accounts Payable", "Capital", "Sales", "Purchase"] }, { "type": "balanced", "accounts": ["Cash", "Accounts Receivable", "Accounts Payable", "Capital", "Sales", "Purchase"] }, { "type": "journal" }] },
+  { "ref": "Extra 1", "page": "p14", "deliverables": [{ "type": "analysis" }, { "type": "journal" }, { "type": "trialBalance" }] },
+  { "ref": "Extra 1 ledger", "page": "p17", "deliverables": [{ "type": "taccounts", "accounts": ["Cash at Bank", "Accounts Receivable", "Accounts Payable", "Capital", "Sales", "Purchases", "Wages Expense", "Telephone Expense"] }] },
+  { "ref": "Extra 2", "page": "p20", "deliverables": [{ "type": "taccounts", "accounts": ["Cash at Bank", "Account Receivable", "Sales", "Discount Allowed", "Sales Returns"] }] },
+  { "ref": "Extra 3", "page": "p22", "deliverables": [{ "type": "taccounts", "accounts": ["Cash at Bank", "Account Payable", "Purchase Returns", "Discount Received", "Purchase"] }] },
+  { "ref": "Q 4", "page": "p24", "deliverables": [{ "type": "taccounts", "accounts": ["Cash at Bank", "Accounts receivable", "Motor Vehicle", "Accounts payable", "Capital"] }] }
+]

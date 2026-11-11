@@ -42,5 +42,43 @@ expect.sections[0].examples[0].figures[0].expect['Cash at Bank'] = 950;
 assert.deepEqual(validateWeek(expect).errors, []);
 assert.match(renderWeek(expect), /Balance c\/d<\/td><td>950/);
 
+/* 会计样例：题目要求交的每一张表、每个账户、每个小问都必须交齐，并与原文提取的要求对上。 */
+const { extractRequirements } = require('../notes/pipeline/extract');
+const acct = require(path.join(__dirname, '../notes/pipeline/examples/accounting-term1-w5.json'));
+const acctReq = require(path.join(__dirname, '../notes/pipeline/examples/accounting-term1-w5.requirements.json'));
+const aclone = () => JSON.parse(JSON.stringify(acct));
+const exOf = (n, ref) => n.sections.flatMap(s => s.examples).find(e => e.ref === ref);
+r = validateWeek(acct, { requirements: acctReq });
+assert.deepEqual(r.errors, [], '会计样例应当通过：' + r.errors.join('；'));
+const acctHtml = renderWeek(acct);
+assert.match(acctHtml, /Trial Balance as at 31 January 2025/);
+assert.match(acctHtml, /Rent Expense/);
+
+const half = aclone();
+exOf(half, 'Tutorial Q1').figures[0].show = ['Cash at Bank', 'Capital'];
+assert(validateWeek(half).errors.some(e => e.includes('「Office Furniture」没有画出来')), '只画一部分账户必须被拦下');
+
+const noTb = aclone();
+delete exOf(noTb, 'Tutorial Extra 1').figures[0].trialBalance;
+assert(validateWeek(noTb).errors.some(e => e.includes('试算平衡表')), '缺试算平衡表必须被拦下');
+
+const noAnalysis = aclone();
+exOf(noAnalysis, 'Tutorial Extra 1').figures[0].views = ['journal', 'taccounts'];
+assert(validateWeek(noAnalysis).errors.some(e => e.includes('交易分析表')), '缺交易分析表必须被拦下');
+
+const noPart = aclone();
+exOf(noPart, 'Tutorial Q3').parts = ['1', '2', '3'];
+assert(validateWeek(noPart).errors.some(e => e.includes('小问 (4)')), '漏答小问必须被拦下');
+
+const thinInventory = aclone();
+const q1 = thinInventory.inventory.find(i => i.ref === 'Tutorial Q1');
+q1.deliverables[0].accounts = ['Cash at Bank'];
+assert(validateWeek(thinInventory, { requirements: acctReq }).errors.some(e => e.includes('「Loan」')), '清单比原文要求少时必须被拦下');
+
+const pages = ['Question 1\nPost the journal entries to the ledger and prepare a trial balance.\nCash at Bank\nDate Particulars Debit Date Particulars Credit\nLoan\nDate Particulars Debit Date Particulars Credit\n'];
+const ext = extractRequirements(pages);
+assert.deepEqual(ext[0].deliverables.find(d => d.type === 'taccounts').accounts, ['Cash at Bank', 'Loan']);
+assert(ext[0].deliverables.some(d => d.type === 'trialBalance'), '提取器应识别试算平衡表要求');
+
 assert.equal(inline('<script>x</script><strong>ok</strong>'), '&lt;script&gt;x&lt;/script&gt;<strong>ok</strong>');
-console.log('PASS: notes pipeline sample validates and renders; wrong answers, missing examples, missing sources, unbalanced and mismatched ledgers are rejected; raw HTML is escaped.');
+console.log('PASS: notes pipeline sample validates and renders; wrong answers, missing examples, missing sources, unbalanced and mismatched ledgers, missing accounts, tables and sub-questions are rejected; requirements extraction works; raw HTML is escaped.');

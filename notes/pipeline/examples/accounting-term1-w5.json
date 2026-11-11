@@ -1,0 +1,2391 @@
+{
+ "course": "accounting",
+ "term": "term1",
+ "week": 5,
+ "title": "Week 5 · Unit 6 分类账 T 型账户",
+ "inventory": [
+  {
+   "ref": "Lecture Ex 1",
+   "deliverables": [
+    {
+     "type": "taccounts",
+     "accounts": [
+      "Cash at Bank",
+      "Capital",
+      "Office Furniture",
+      "A/P – Fantastic",
+      "A/R – Barry",
+      "Sales"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "Lecture Ex 2",
+   "deliverables": [
+    {
+     "type": "balanced",
+     "accounts": [
+      "Cash at Bank"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "Reading p3",
+   "deliverables": [
+    {
+     "type": "balanced",
+     "accounts": [
+      "Cash at Bank"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "Reading p4",
+   "deliverables": [
+    {
+     "type": "balanced",
+     "accounts": [
+      "Cash at Bank"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "Practice 5b",
+   "deliverables": [
+    {
+     "type": "balanced",
+     "accounts": [
+      "Cash at Bank"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial Terms",
+   "deliverables": [
+    {
+     "type": "terms",
+     "terms": [
+      "Ledger",
+      "T format",
+      "Balance c/d",
+      "Balance b/d"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial Q1",
+   "deliverables": [
+    {
+     "type": "taccounts",
+     "accounts": [
+      "Cash at Bank",
+      "Office Furniture",
+      "Loan",
+      "Capital"
+     ]
+    },
+    {
+     "type": "balanced",
+     "accounts": [
+      "Cash at Bank"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial Q3",
+   "parts": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7"
+   ]
+  },
+  {
+   "ref": "Reading Worked Example",
+   "deliverables": [
+    {
+     "type": "analysis"
+    },
+    {
+     "type": "taccounts",
+     "accounts": [
+      "Cash at Bank",
+      "Capital",
+      "Office Furniture",
+      "Office Equipment",
+      "Drawings",
+      "Motor Vehicle"
+     ]
+    },
+    {
+     "type": "balanced",
+     "accounts": [
+      "Cash at Bank",
+      "Capital",
+      "Office Furniture",
+      "Office Equipment",
+      "Drawings",
+      "Motor Vehicle"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial Q4",
+   "deliverables": [
+    {
+     "type": "taccounts",
+     "accounts": [
+      "Cash at Bank",
+      "Accounts Receivable",
+      "Motor Vehicle",
+      "Accounts Payable",
+      "Capital",
+      "Service Fees Revenue"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial In-class",
+   "parts": [
+    "A",
+    "B"
+   ],
+   "deliverables": [
+    {
+     "type": "journal"
+    },
+    {
+     "type": "taccounts",
+     "accounts": [
+      "Cash at Bank",
+      "Accounts Receivable",
+      "Accounts Payable",
+      "Capital",
+      "Sales",
+      "Purchases"
+     ]
+    },
+    {
+     "type": "balanced",
+     "accounts": [
+      "Cash at Bank",
+      "Accounts Receivable",
+      "Accounts Payable",
+      "Capital",
+      "Sales",
+      "Purchases"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial Extra 1",
+   "parts": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ],
+   "deliverables": [
+    {
+     "type": "analysis"
+    },
+    {
+     "type": "journal"
+    },
+    {
+     "type": "taccounts",
+     "accounts": [
+      "Cash at Bank",
+      "Accounts Receivable",
+      "Accounts Payable",
+      "Capital",
+      "Sales",
+      "Purchases",
+      "Wages Expense",
+      "Telephone Expense",
+      "Rent Expense"
+     ]
+    },
+    {
+     "type": "trialBalance"
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial Q2",
+   "deliverables": [
+    {
+     "type": "taccounts",
+     "accounts": [
+      "Cash at Bank",
+      "Accounts Receivable",
+      "Accounts Payable",
+      "Capital",
+      "Discount Allowed",
+      "Discount Received",
+      "Drawings",
+      "Purchases",
+      "Sales",
+      "Delivery Van",
+      "Sales Returns",
+      "Purchase Returns",
+      "Salaries Expense"
+     ]
+    },
+    {
+     "type": "trialBalance"
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial Extra 2",
+   "deliverables": [
+    {
+     "type": "taccounts",
+     "accounts": [
+      "Cash at Bank",
+      "Accounts Receivable",
+      "Sales",
+      "Discount Allowed",
+      "Sales Returns"
+     ]
+    },
+    {
+     "type": "balanced",
+     "accounts": [
+      "Cash at Bank",
+      "Accounts Receivable",
+      "Sales",
+      "Sales Returns"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial Extra 3",
+   "deliverables": [
+    {
+     "type": "taccounts",
+     "accounts": [
+      "Cash at Bank",
+      "Accounts Payable",
+      "Purchase Returns",
+      "Discount Received",
+      "Purchases"
+     ]
+    },
+    {
+     "type": "balanced",
+     "accounts": [
+      "Cash at Bank",
+      "Accounts Payable"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "Worksheet 4"
+  },
+  {
+   "ref": "Lecture p32"
+  }
+ ],
+ "intro": [
+  "本周进入会计循环第 4 步：把日记账的分录<strong>过账</strong>（posting）到总分类账的 T 形账户，月底<strong>结账</strong>（balancing），再把余额列成<strong>试算平衡表</strong>（trial balance）。讲义、阅读、练习和 Tutorial Guide 的每道题都在下面，题目要求画的每一张表都完整给出：交易分析表、分录表、每一个 T 形账户和试算平衡表都由程序从分录生成并核对。"
+ ],
+ "sections": [
+  {
+   "title": "总分类账与 T 形账户（General Ledger & T-format）",
+   "sources": [
+    {
+     "file": "unit6 lecture slides t-format.pdf",
+     "pages": "p3–23"
+    },
+    {
+     "file": "unit6 reading materials ledger accounts t-format.pdf",
+     "pages": "p1–3"
+    }
+   ],
+   "concept": "<strong>日记账</strong>按时间记下每笔交易；<strong>总分类账</strong>（general ledger）把同一账户的变动集中在一起，是编报表的依据。\n<strong>T 形账户</strong>：账户名在顶上，<strong>左借右贷</strong>，每边有日期、摘要（particulars）、金额三栏。\n<strong>过账五步</strong>：①找到账户；②看记借方还是贷方；③先写金额；④摘要栏写<strong>对方账户</strong>；⑤写日期。",
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "Lecture Ex 1",
+     "question": "Post the journal entries (Feb 1 Cash 10 000 / Capital；Feb 6 Office furniture 5 000 / A/P – Fantastic；Feb 13 A/R – Barry 100 / Sales；Feb 22 Cash 100 / A/R – Barry；Feb 25 A/P – Fantastic 1 000 / Cash) to T-format ledger accounts.",
+     "solution": "每笔分录过两次：借方账户记左边、摘要写贷方账户名；贷方账户记右边、摘要写借方账户名。课件这一页只过账，不结账。",
+     "numeric": false,
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "taccounts"
+       ],
+       "journal": [
+        {
+         "date": "1 Feb",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           10000
+          ]
+         ],
+         "cr": [
+          [
+           "Capital",
+           "equity",
+           10000
+          ]
+         ]
+        },
+        {
+         "date": "6 Feb",
+         "dr": [
+          [
+           "Office Furniture",
+           "asset",
+           5000
+          ]
+         ],
+         "cr": [
+          [
+           "A/P – Fantastic",
+           "liability",
+           5000
+          ]
+         ]
+        },
+        {
+         "date": "13 Feb",
+         "dr": [
+          [
+           "A/R – Barry",
+           "asset",
+           100
+          ]
+         ],
+         "cr": [
+          [
+           "Sales",
+           "revenue",
+           100
+          ]
+         ]
+        },
+        {
+         "date": "22 Feb",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           100
+          ]
+         ],
+         "cr": [
+          [
+           "A/R – Barry",
+           "asset",
+           100
+          ]
+         ]
+        },
+        {
+         "date": "25 Feb",
+         "dr": [
+          [
+           "A/P – Fantastic",
+           "liability",
+           1000
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           1000
+          ]
+         ]
+        }
+       ],
+       "endDate": "",
+       "nextDate": "",
+       "balance": false
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "摘要栏写自己的账户名：要写<strong>对方</strong>账户。",
+    "借贷记反：分录借记谁就记在谁的左边。",
+    "漏过一边：每笔分录至少两个账户。"
+   ],
+   "faqs": [
+    {
+     "q": "T 形格式和多栏式有什么区别？",
+     "a": "多栏式日期、摘要只写一次，借贷并排，并多一栏随时更新的余额；T 形格式没有余额栏，要定期结账。下周学多栏式。"
+    }
+   ]
+  },
+  {
+   "title": "结账：Balance c/d 与 Balance b/d（Balancing T-accounts）",
+   "sources": [
+    {
+     "file": "unit6 lecture slides t-format.pdf",
+     "pages": "p24–31"
+    },
+    {
+     "file": "unit6 reading materials ledger accounts t-format.pdf",
+     "pages": "p3–4"
+    },
+    {
+     "file": "unit5b practice balancing an account (t-account).pdf",
+     "pages": "p1–3"
+    },
+    {
+     "file": "unit6 tutorial guide t-format.pdf",
+     "pages": "p2–4, p13"
+    }
+   ],
+   "concept": "①两边分别加总；②<strong>较大的合计</strong>写在两边 Total；③较小一边写 <strong>Balance c/d</strong>（本月最后一天）；④下月 1 日在<strong>另一边</strong>写 <strong>Balance b/d</strong>。\n余额通常在借方：资产、费用、提款；通常在贷方：负债、所有者权益、收入。",
+   "examples": [
+    {
+     "label": "例 2",
+     "ref": "Lecture Ex 2",
+     "question": "Cash at Bank: Dr Jan 1 Capital 30 000, Jan 2 Loans 10 000; Cr Jan 13 Furniture 2 000, Jan 14 Equipment 6 000. Balance the account.",
+     "solution": "借方 40 000，贷方 8 000，贷方差 32 000 记 Balance c/d；2 月 1 日借方记 Balance b/d 32 000。",
+     "numeric": false,
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "taccounts"
+       ],
+       "journal": [
+        {
+         "date": "1 Jan",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           30000
+          ]
+         ],
+         "cr": [
+          [
+           "Capital",
+           "equity",
+           30000
+          ]
+         ]
+        },
+        {
+         "date": "2 Jan",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           10000
+          ]
+         ],
+         "cr": [
+          [
+           "Loans",
+           "equity",
+           10000
+          ]
+         ]
+        },
+        {
+         "date": "13 Jan",
+         "dr": [
+          [
+           "Furniture",
+           "expense",
+           2000
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           2000
+          ]
+         ]
+        },
+        {
+         "date": "14 Jan",
+         "dr": [
+          [
+           "Equipment",
+           "expense",
+           6000
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           6000
+          ]
+         ]
+        }
+       ],
+       "endDate": "31 Jan",
+       "nextDate": "1 Feb",
+       "balance": true,
+       "show": [
+        "Cash at Bank"
+       ],
+       "expect": {
+        "Cash at Bank": 32000
+       }
+      }
+     ],
+     "answer": "Balance b/d $32,000 Dr"
+    },
+    {
+     "label": "例 3",
+     "ref": "Reading p3",
+     "question": "Cash at Bank for October: Dr Oct 1 Capital 40 000, Oct 3 Bank Loan 7 000, Oct 7 Sales 8 000; Cr Oct 5 Rent Expense 12 000, Oct 12 Office Equipment 2 000, Oct 18 Drawings 2 000. Balance the account.",
+     "solution": "借方 55 000，贷方 16 000，Balance c/d 39 000；Nov 1 Balance b/d 39 000。c/d 只是让两边相等的平衡数，真正的余额是下月的 b/d。",
+     "numeric": false,
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "taccounts"
+       ],
+       "journal": [
+        {
+         "date": "Oct 1",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           40000
+          ]
+         ],
+         "cr": [
+          [
+           "Capital",
+           "equity",
+           40000
+          ]
+         ]
+        },
+        {
+         "date": "Oct 3",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           7000
+          ]
+         ],
+         "cr": [
+          [
+           "Bank Loan",
+           "equity",
+           7000
+          ]
+         ]
+        },
+        {
+         "date": "Oct 7",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           8000
+          ]
+         ],
+         "cr": [
+          [
+           "Sales",
+           "equity",
+           8000
+          ]
+         ]
+        },
+        {
+         "date": "Oct 5",
+         "dr": [
+          [
+           "Rent Expense",
+           "expense",
+           12000
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           12000
+          ]
+         ]
+        },
+        {
+         "date": "Oct 12",
+         "dr": [
+          [
+           "Office Equipment",
+           "expense",
+           2000
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           2000
+          ]
+         ]
+        },
+        {
+         "date": "Oct 18",
+         "dr": [
+          [
+           "Drawings",
+           "expense",
+           2000
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           2000
+          ]
+         ]
+        }
+       ],
+       "endDate": "Oct 31",
+       "nextDate": "Nov 1",
+       "balance": true,
+       "show": [
+        "Cash at Bank"
+       ],
+       "expect": {
+        "Cash at Bank": 39000
+       }
+      }
+     ]
+    },
+    {
+     "label": "例 4",
+     "ref": "Reading p4",
+     "question": "Cash at Bank for March: Dr Mar 1 Capital 15 000, Mar 5 Sales 1 000; Cr Mar 4 Salaries expense 500, Mar 14 Office Equipment 2 000, Mar 19 Drawings 60, Mar 27 Office Rent 560. Balance the account.",
+     "solution": "借方 16 000，贷方 3 120，差 12 880，是借方余额。",
+     "numeric": false,
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "taccounts"
+       ],
+       "journal": [
+        {
+         "date": "Mar 1",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           15000
+          ]
+         ],
+         "cr": [
+          [
+           "Capital",
+           "equity",
+           15000
+          ]
+         ]
+        },
+        {
+         "date": "Mar 5",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           1000
+          ]
+         ],
+         "cr": [
+          [
+           "Sales",
+           "equity",
+           1000
+          ]
+         ]
+        },
+        {
+         "date": "Mar 4",
+         "dr": [
+          [
+           "Salaries expense",
+           "expense",
+           500
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           500
+          ]
+         ]
+        },
+        {
+         "date": "Mar 14",
+         "dr": [
+          [
+           "Office Equipment",
+           "expense",
+           2000
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           2000
+          ]
+         ]
+        },
+        {
+         "date": "Mar 19",
+         "dr": [
+          [
+           "Drawings",
+           "expense",
+           60
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           60
+          ]
+         ]
+        },
+        {
+         "date": "Mar 27",
+         "dr": [
+          [
+           "Office Rent",
+           "expense",
+           560
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           560
+          ]
+         ]
+        }
+       ],
+       "endDate": "Mar 31",
+       "nextDate": "Apr 1",
+       "balance": true,
+       "show": [
+        "Cash at Bank"
+       ],
+       "expect": {
+        "Cash at Bank": 12880
+       }
+      }
+     ]
+    },
+    {
+     "label": "例 5",
+     "ref": "Practice 5b",
+     "question": "Barry's Doctor Clinic, February: owner contributed $10 000 cash; treatment $2 500 to Vicky on credit; received $2 500 from Vicky; paid 3 months' rent in advance $3 000; received $1 000 cash from Angelina for future treatment. Balance the Cash at Bank account.",
+     "solution": "收到现金都记现金借方，包括 Feb 28 的预收款（Unearned Revenue 是负债）。借方 13 500，贷方 3 000，余额 10 500。",
+     "numeric": false,
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "taccounts"
+       ],
+       "journal": [
+        {
+         "date": "1/2",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           10000
+          ]
+         ],
+         "cr": [
+          [
+           "Capital",
+           "equity",
+           10000
+          ]
+         ]
+        },
+        {
+         "date": "4/2",
+         "dr": [
+          [
+           "A/R – Vicky",
+           "asset",
+           2500
+          ]
+         ],
+         "cr": [
+          [
+           "Service Revenue",
+           "revenue",
+           2500
+          ]
+         ]
+        },
+        {
+         "date": "8/2",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           2500
+          ]
+         ],
+         "cr": [
+          [
+           "A/R – Vicky",
+           "asset",
+           2500
+          ]
+         ]
+        },
+        {
+         "date": "21/2",
+         "dr": [
+          [
+           "Prepaid Rent",
+           "asset",
+           3000
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           3000
+          ]
+         ]
+        },
+        {
+         "date": "28/2",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           1000
+          ]
+         ],
+         "cr": [
+          [
+           "Unearned Revenue",
+           "liability",
+           1000
+          ]
+         ]
+        }
+       ],
+       "endDate": "28/2",
+       "nextDate": "1/3",
+       "balance": true,
+       "show": [
+        "Cash at Bank"
+       ],
+       "expect": {
+        "Cash at Bank": 10500
+       }
+      }
+     ],
+     "sourceNote": "练习答案页把 Feb 28 的 1 000 写在现金账户的贷方，与同一份练习的分析表（Cash 增加、Dr）矛盾；收到现金一定记借方，这里按借方处理。"
+    },
+    {
+     "label": "例 6",
+     "ref": "Tutorial Terms",
+     "question": "Explain: Ledger; The T format; Balance c/d or closing balance; Balance b/d or opening balance.",
+     "solution": "<strong>Ledger</strong>（分类账）：按账户汇总全部交易记录的账簿，每个账户一页。\n<strong>T format</strong>（T 形格式）：账户呈 T 字形，左边借方、右边贷方，各有日期、摘要、金额三栏。\n<strong>Balance c/d</strong>（期末余额、结转下期）：月末写在较小一边、使两边相等的差额，日期为本月最后一天。\n<strong>Balance b/d</strong>（期初余额、承前）：下月 1 日写在另一边的同一金额，是账户真正的余额。",
+     "numeric": false
+    },
+    {
+     "label": "例 7",
+     "ref": "Tutorial Q1",
+     "question": "T. Trader: complete the accounts in the ledger from the General Journal (1/6 Cash 10 000 / Capital 10 000；2/6 Office Furniture 2 000 / Cash 2 000；3/6 Cash 30 000 / Loan 30 000) and balance the cash account.",
+     "solution": "题目要求<strong>四个账户都要完成</strong>，只结现金账户。现金借方 40 000、贷方 2 000，Balance c/d 38 000；其余三个账户各只有一笔，不结账。",
+     "numeric": false,
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "taccounts"
+       ],
+       "journal": [
+        {
+         "date": "1/6",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           10000
+          ]
+         ],
+         "cr": [
+          [
+           "Capital",
+           "equity",
+           10000
+          ]
+         ]
+        },
+        {
+         "date": "2/6",
+         "dr": [
+          [
+           "Office Furniture",
+           "asset",
+           2000
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           2000
+          ]
+         ]
+        },
+        {
+         "date": "3/6",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           30000
+          ]
+         ],
+         "cr": [
+          [
+           "Loan",
+           "liability",
+           30000
+          ]
+         ]
+        }
+       ],
+       "endDate": "30/6",
+       "nextDate": "1/7",
+       "balance": [
+        "Cash at Bank"
+       ],
+       "show": [
+        "Cash at Bank",
+        "Office Furniture",
+        "Loan",
+        "Capital"
+       ],
+       "expect": {
+        "Cash at Bank": 38000,
+        "Office Furniture": 2000,
+        "Loan": -30000,
+        "Capital": -10000
+       }
+      }
+     ]
+    },
+    {
+     "label": "例 8",
+     "ref": "Tutorial Q3",
+     "question": "Complete: Other than the columnar format, the other format of the ledger is the __1__. T-format accounts are balanced at the __2__ of the month. The totals of the __3__ and Cr sides are determined; the difference is the balance __4__ __5__ (c/d), dated at the __6__ of the current month, then __7__ down (b/d).",
+     "solution": "1 T format　2 end　3 Dr（debit）　4 carried　5 down　6 end　7 brought\n分类账有多栏式和 T 形两种格式；T 形账户在月末结账：先加总借贷两边，差额记为 Balance c/d（结转下期），日期为本月最后一天，再在下月 1 日以 Balance b/d（承前）记到另一边。",
+     "numeric": false,
+     "parts": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+     ]
+    }
+   ],
+   "mistakes": [
+    "c/d 写在较大的一边：c/d 写在<strong>较小</strong>的一边。",
+    "b/d 写回同一边：b/d 写在 c/d 的对面，日期是下月 1 日。",
+    "两边 Total 写不同的数。",
+    "把 c/d 当余额抄进试算表：试算表用 b/d 那一边。"
+   ],
+   "faqs": [
+    {
+     "q": "只有一笔的账户要不要结账？",
+     "a": "题目要求全部结账时要结；只说 balance the cash account 时只结现金。"
+    },
+    {
+     "q": "资产账户会出现贷方余额吗？",
+     "a": "正常不会；算出来是贷方余额，先检查是否过账记反。"
+    }
+   ]
+  },
+  {
+   "title": "从交易到试算平衡表：综合练习",
+   "sources": [
+    {
+     "file": "unit6 reading materials ledger accounts t-format.pdf",
+     "pages": "p5–8"
+    },
+    {
+     "file": "unit6 tutorial guide t-format.pdf",
+     "pages": "p4–24"
+    }
+   ],
+   "concept": "<strong>试算平衡表</strong>（trial balance）把每个账户的余额分列 Dr、Cr 两栏，两栏合计相等说明过账时借贷金额没有记错。完整流程：分析交易 → 写分录 → 过账 → 结账 → 试算平衡表。题目要求哪几张表，下面就完整给出哪几张，没有用汇总表代替。",
+   "examples": [
+    {
+     "label": "例 9",
+     "ref": "Reading Worked Example",
+     "question": "J. Jay Trading, March: commenced business with cash $15 000; office furniture on credit from Furniture Warehouse $8 000; additional capital $7 000; paid $500 to Furniture Warehouse; office equipment $2 000 cash; owner withdrew $50; motor vehicle on credit from Daisy Car Dealer $4 500; office furniture with cash $560. (i) Prepare the analysis chart. (ii)–(iii) Record in T-format accounts and balance all accounts.",
+     "solution": "分析要点：Mar 7 付欠款是负债减少、资产减少；Mar 19 提款记 Drawings 借方。分析表、全部账户和补充的试算表如下，与阅读材料 p7–8 的答案一致。",
+     "numeric": false,
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "analysis",
+        "taccounts"
+       ],
+       "journal": [
+        {
+         "date": "Mar 1",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           15000
+          ]
+         ],
+         "cr": [
+          [
+           "Capital",
+           "equity",
+           15000
+          ]
+         ]
+        },
+        {
+         "date": "Mar 2",
+         "dr": [
+          [
+           "Office Furniture",
+           "asset",
+           8000
+          ]
+         ],
+         "cr": [
+          [
+           "A/P – Furniture Warehouse",
+           "liability",
+           8000
+          ]
+         ]
+        },
+        {
+         "date": "Mar 5",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           7000
+          ]
+         ],
+         "cr": [
+          [
+           "Capital",
+           "equity",
+           7000
+          ]
+         ]
+        },
+        {
+         "date": "Mar 7",
+         "dr": [
+          [
+           "A/P – Furniture Warehouse",
+           "liability",
+           500
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           500
+          ]
+         ]
+        },
+        {
+         "date": "Mar 14",
+         "dr": [
+          [
+           "Office Equipment",
+           "asset",
+           2000
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           2000
+          ]
+         ]
+        },
+        {
+         "date": "Mar 19",
+         "dr": [
+          [
+           "Drawings",
+           "drawings",
+           50
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           50
+          ]
+         ]
+        },
+        {
+         "date": "Mar 26",
+         "dr": [
+          [
+           "Motor Vehicle",
+           "asset",
+           4500
+          ]
+         ],
+         "cr": [
+          [
+           "A/P – Daisy Car Dealer",
+           "liability",
+           4500
+          ]
+         ]
+        },
+        {
+         "date": "Mar 27",
+         "dr": [
+          [
+           "Office Furniture",
+           "asset",
+           560
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           560
+          ]
+         ]
+        }
+       ],
+       "endDate": "Mar 31",
+       "nextDate": "Apr 1",
+       "balance": true,
+       "trialBalance": "J. Jay Trading Trial Balance as at 31 March（补充核对）",
+       "expect": {
+        "Cash at Bank": 18890,
+        "Capital": -22000,
+        "Office Furniture": 8560,
+        "Office Equipment": 2000,
+        "Drawings": 50,
+        "Motor Vehicle": 4500,
+        "A/P – Furniture Warehouse": -7500,
+        "A/P – Daisy Car Dealer": -4500
+       }
+      }
+     ]
+    },
+    {
+     "label": "例 10",
+     "ref": "Tutorial Q4",
+     "question": "Grunweld, May: post the entries (May 1 Cash 10 000 / Capital；May 2 Motor vehicle 5 000 / A/P – BMX Auto；May 3 A/R – Mira Ltd 1 800 / Service revenue；May 4 Cash 700 / A/R；May 5 A/P – BMX Auto 3 000 / Cash) to the general ledger.",
+     "solution": "按题目模板，六个账户全部过账；结账和试算表是补充核对。",
+     "numeric": false,
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "taccounts"
+       ],
+       "journal": [
+        {
+         "date": "May 1",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           10000
+          ]
+         ],
+         "cr": [
+          [
+           "Capital – L Grunweld",
+           "equity",
+           10000
+          ]
+         ]
+        },
+        {
+         "date": "May 2",
+         "dr": [
+          [
+           "Motor Vehicle",
+           "asset",
+           5000
+          ]
+         ],
+         "cr": [
+          [
+           "Accounts Payable",
+           "liability",
+           5000
+          ]
+         ]
+        },
+        {
+         "date": "May 3",
+         "dr": [
+          [
+           "Accounts Receivable",
+           "asset",
+           1800
+          ]
+         ],
+         "cr": [
+          [
+           "Service Fees Revenue",
+           "revenue",
+           1800
+          ]
+         ]
+        },
+        {
+         "date": "May 4",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           700
+          ]
+         ],
+         "cr": [
+          [
+           "Accounts Receivable",
+           "asset",
+           700
+          ]
+         ]
+        },
+        {
+         "date": "May 5",
+         "dr": [
+          [
+           "Accounts Payable",
+           "liability",
+           3000
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           3000
+          ]
+         ]
+        }
+       ],
+       "endDate": "May 31",
+       "nextDate": "Jun 1",
+       "balance": true,
+       "trialBalance": "Trial Balance as at 31 May（补充核对）",
+       "expect": {
+        "Cash at Bank": 7700,
+        "Accounts Receivable": 1100,
+        "Accounts Payable": -2000
+       }
+      }
+     ]
+    },
+    {
+     "label": "例 11",
+     "ref": "Tutorial In-class",
+     "question": "Christie's Toys Shoppe, January (opening balances: Cash $50 000, A/R $8 000, A/P $5 000, Capital $53 000): Jan 1 additional investment $50 000; Jan 2 toys for resale on credit from Mira Ltd $5 000; Jan 5 Mr Blacksend bought teddy bears on credit $1 000; Jan 15 paid Mira Ltd $3 000; Jan 19 Mr Blacksend paid in full. (A) Enter in the General Journal. (B) Post and balance the T-accounts.",
+     "solution": "(A) 分录表如下。(B) 有期初余额的账户，第一行先写 Jan 1 Balance b/d，再过本月分录，最后结账。",
+     "numeric": false,
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "journal",
+        "taccounts"
+       ],
+       "journal": [
+        {
+         "date": "Jan 1",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           50000
+          ]
+         ],
+         "cr": [
+          [
+           "Capital",
+           "equity",
+           50000
+          ]
+         ],
+         "narration": "Christie invested additional cash"
+        },
+        {
+         "date": "Jan 2",
+         "dr": [
+          [
+           "Purchases",
+           "expense",
+           5000
+          ]
+         ],
+         "cr": [
+          [
+           "Accounts Payable",
+           "liability",
+           5000
+          ]
+         ],
+         "narration": "Purchased toys from Mira Ltd on credit"
+        },
+        {
+         "date": "Jan 5",
+         "dr": [
+          [
+           "Accounts Receivable",
+           "asset",
+           1000
+          ]
+         ],
+         "cr": [
+          [
+           "Sales",
+           "revenue",
+           1000
+          ]
+         ],
+         "narration": "Sold teddy bears to Mr Blacksend on credit"
+        },
+        {
+         "date": "Jan 15",
+         "dr": [
+          [
+           "Accounts Payable",
+           "liability",
+           3000
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           3000
+          ]
+         ],
+         "narration": "Partial payment to Mira Ltd"
+        },
+        {
+         "date": "Jan 19",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           1000
+          ]
+         ],
+         "cr": [
+          [
+           "Accounts Receivable",
+           "asset",
+           1000
+          ]
+         ],
+         "narration": "Mr Blacksend paid in full"
+        }
+       ],
+       "endDate": "Jan 31",
+       "nextDate": "Feb 1",
+       "balance": true,
+       "trialBalance": "Christie's Toys Shoppe Trial Balance as at 31 January（补充核对）",
+       "expect": {
+        "Cash at Bank": 98000,
+        "Accounts Receivable": 8000,
+        "Accounts Payable": -7000,
+        "Capital": -103000
+       },
+       "openings": [
+        {
+         "account": "Cash at Bank",
+         "kind": "asset",
+         "amount": 50000,
+         "date": "Jan 1"
+        },
+        {
+         "account": "Accounts Receivable",
+         "kind": "asset",
+         "amount": 8000,
+         "date": "Jan 1"
+        },
+        {
+         "account": "Accounts Payable",
+         "kind": "liability",
+         "amount": 5000,
+         "date": "Jan 1"
+        },
+        {
+         "account": "Capital",
+         "kind": "equity",
+         "amount": 53000,
+         "date": "Jan 1"
+        }
+       ]
+      }
+     ],
+     "parts": [
+      "A",
+      "B"
+     ]
+    },
+    {
+     "label": "例 12",
+     "ref": "Tutorial Extra 1",
+     "question": "Ben's Pharmacy, January: (a) Prepare the transaction analysis table (b) Prepare the journal entries (c) Post to the T-accounts (d) Prepare the trial balance. Transactions: invested $111 900; rent $840; cash sales $1 380; goods on credit from Randwick $300; telephone set-up $18; credit sale to Vicky $680; $500 from Grace for goods; Vicky paid $360; paid Randwick $180; wages $2 660.",
+     "solution": "(a) 分析表、(b) 分录表、(c) 九个 T 形账户、(d) 试算平衡表依次如下。",
+     "numeric": false,
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "analysis",
+        "journal",
+        "taccounts"
+       ],
+       "journal": [
+        {
+         "date": "Jan 1",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           111900
+          ]
+         ],
+         "cr": [
+          [
+           "Capital",
+           "equity",
+           111900
+          ]
+         ],
+         "narration": "Ben invested cash"
+        },
+        {
+         "date": "Jan 2",
+         "dr": [
+          [
+           "Rent Expense",
+           "expense",
+           840
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           840
+          ]
+         ],
+         "narration": "Paid rent by cheque"
+        },
+        {
+         "date": "Jan 3",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           1380
+          ]
+         ],
+         "cr": [
+          [
+           "Sales",
+           "revenue",
+           1380
+          ]
+         ],
+         "narration": "Cash sales"
+        },
+        {
+         "date": "Jan 4",
+         "dr": [
+          [
+           "Purchases",
+           "expense",
+           300
+          ]
+         ],
+         "cr": [
+          [
+           "Accounts Payable",
+           "liability",
+           300
+          ]
+         ],
+         "narration": "Goods on credit from Randwick Trading"
+        },
+        {
+         "date": "Jan 8",
+         "dr": [
+          [
+           "Telephone Expense",
+           "expense",
+           18
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           18
+          ]
+         ],
+         "narration": "Telephone set-up fee"
+        },
+        {
+         "date": "Jan 9",
+         "dr": [
+          [
+           "Accounts Receivable",
+           "asset",
+           680
+          ]
+         ],
+         "cr": [
+          [
+           "Sales",
+           "revenue",
+           680
+          ]
+         ],
+         "narration": "Sold goods on credit to Vicky"
+        },
+        {
+         "date": "Jan 12",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           500
+          ]
+         ],
+         "cr": [
+          [
+           "Sales",
+           "revenue",
+           500
+          ]
+         ],
+         "narration": "Cash received from Grace for goods"
+        },
+        {
+         "date": "Jan 18",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           360
+          ]
+         ],
+         "cr": [
+          [
+           "Accounts Receivable",
+           "asset",
+           360
+          ]
+         ],
+         "narration": "Vicky's partial payment"
+        },
+        {
+         "date": "Jan 27",
+         "dr": [
+          [
+           "Accounts Payable",
+           "liability",
+           180
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           180
+          ]
+         ],
+         "narration": "Partial payment to Randwick Trading"
+        },
+        {
+         "date": "Jan 31",
+         "dr": [
+          [
+           "Wages Expense",
+           "expense",
+           2660
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           2660
+          ]
+         ],
+         "narration": "Paid wages"
+        }
+       ],
+       "endDate": "Jan 31",
+       "nextDate": "Feb 1",
+       "balance": true,
+       "trialBalance": "Ben's Pharmacy Trial Balance as at 31 January 2025",
+       "expect": {
+        "Cash at Bank": 110442,
+        "Accounts Receivable": 320,
+        "Accounts Payable": -120
+       }
+      }
+     ],
+     "sourceNote": "Tutorial Guide 的试算表模板漏了 Rent Expense 一行，T 形账户模板也没有它；Jan 2 付了租金，必须设这个账户，否则试算表两边差 840。",
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ]
+    },
+    {
+     "label": "例 13",
+     "ref": "Tutorial Q2",
+     "question": "Alex Roger's flower shop, July: post the journal entries (Tutorial Guide p5–7) to the relevant T-accounts and prepare a trial balance.",
+     "solution": "按 Tutorial Guide 给出的分录过账：Jul 7、Jul 17 收款有现金折扣（三个账户），Jul 11 付款享受 2% 折扣。全部 13 个账户与试算表如下。",
+     "numeric": false,
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "taccounts"
+       ],
+       "journal": [
+        {
+         "date": "2 Jul",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           30000
+          ]
+         ],
+         "cr": [
+          [
+           "Capital",
+           "equity",
+           30000
+          ]
+         ]
+        },
+        {
+         "date": "3 Jul",
+         "dr": [
+          [
+           "Delivery Van",
+           "asset",
+           20000
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           4000
+          ],
+          [
+           "Accounts Payable",
+           "liability",
+           16000
+          ]
+         ]
+        },
+        {
+         "date": "5 Jul",
+         "dr": [
+          [
+           "Accounts Receivable",
+           "asset",
+           2000
+          ]
+         ],
+         "cr": [
+          [
+           "Sales",
+           "revenue",
+           2000
+          ]
+         ]
+        },
+        {
+         "date": "6 Jul",
+         "dr": [
+          [
+           "Drawings",
+           "drawings",
+           400
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           400
+          ]
+         ]
+        },
+        {
+         "date": "7 Jul",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           1470
+          ],
+          [
+           "Discount Allowed",
+           "expense",
+           30
+          ]
+         ],
+         "cr": [
+          [
+           "Accounts Receivable",
+           "asset",
+           1500
+          ]
+         ]
+        },
+        {
+         "date": "7 Jul",
+         "dr": [
+          [
+           "Purchases",
+           "expense",
+           3000
+          ]
+         ],
+         "cr": [
+          [
+           "Accounts Payable",
+           "liability",
+           3000
+          ]
+         ]
+        },
+        {
+         "date": "9 Jul",
+         "dr": [
+          [
+           "Accounts Payable",
+           "liability",
+           3000
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           3000
+          ]
+         ]
+        },
+        {
+         "date": "11 Jul",
+         "dr": [
+          [
+           "Accounts Payable",
+           "liability",
+           3000
+          ]
+         ],
+         "cr": [
+          [
+           "Discount Received",
+           "revenue",
+           60
+          ],
+          [
+           "Cash at Bank",
+           "asset",
+           2940
+          ]
+         ]
+        },
+        {
+         "date": "12 Jul",
+         "dr": [
+          [
+           "Accounts Receivable",
+           "asset",
+           7200
+          ]
+         ],
+         "cr": [
+          [
+           "Sales",
+           "revenue",
+           7200
+          ]
+         ]
+        },
+        {
+         "date": "12 Jul",
+         "dr": [
+          [
+           "Salaries Expense",
+           "expense",
+           1500
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           1500
+          ]
+         ]
+        },
+        {
+         "date": "13 Jul",
+         "dr": [
+          [
+           "Sales Returns",
+           "contra-revenue",
+           200
+          ]
+         ],
+         "cr": [
+          [
+           "Accounts Receivable",
+           "asset",
+           200
+          ]
+         ]
+        },
+        {
+         "date": "15 Jul",
+         "dr": [
+          [
+           "Purchases",
+           "expense",
+           2100
+          ]
+         ],
+         "cr": [
+          [
+           "Accounts Payable",
+           "liability",
+           2100
+          ]
+         ]
+        },
+        {
+         "date": "17 Jul",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           6930
+          ],
+          [
+           "Discount Allowed",
+           "expense",
+           70
+          ]
+         ],
+         "cr": [
+          [
+           "Accounts Receivable",
+           "asset",
+           7000
+          ]
+         ]
+        },
+        {
+         "date": "18 Jul",
+         "dr": [
+          [
+           "Accounts Payable",
+           "liability",
+           100
+          ]
+         ],
+         "cr": [
+          [
+           "Purchase Returns",
+           "contra-expense",
+           100
+          ]
+         ]
+        },
+        {
+         "date": "23 Jul",
+         "dr": [
+          [
+           "Purchases",
+           "expense",
+           1500
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           1500
+          ]
+         ]
+        },
+        {
+         "date": "29 Jul",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           4000
+          ]
+         ],
+         "cr": [
+          [
+           "Sales",
+           "revenue",
+           4000
+          ]
+         ]
+        }
+       ],
+       "endDate": "31 Jul",
+       "nextDate": "1 Aug",
+       "balance": true,
+       "trialBalance": "Alex Roger Trial Balance as at 31 July",
+       "expect": {
+        "Cash at Bank": 29060,
+        "Accounts Receivable": 500,
+        "Accounts Payable": -15000
+       }
+      }
+     ],
+     "sourceNote": "Tutorial Guide 的分录里有一笔 Jul 12「Salaries Expense 1 500 / Cash 1 500」，交易清单里没有这一条；这里按分录过账。"
+    },
+    {
+     "label": "例 14",
+     "ref": "Tutorial Extra 2",
+     "question": "Thor Painting, May: post the given journal entries (May 1–9) into the T-accounts Cash at Bank, Account Receivable, Sales, Discount Allowed and Sales Returns.",
+     "solution": "按模板只设一个应收账款控制账户。Sales 22 900、Sales Returns 900 与 Tutorial Guide 给出的余额一致。",
+     "numeric": false,
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "taccounts"
+       ],
+       "journal": [
+        {
+         "date": "May 1",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           7000
+          ]
+         ],
+         "cr": [
+          [
+           "Sales",
+           "revenue",
+           7000
+          ]
+         ]
+        },
+        {
+         "date": "May 2",
+         "dr": [
+          [
+           "Accounts Receivable",
+           "asset",
+           12400
+          ]
+         ],
+         "cr": [
+          [
+           "Sales",
+           "revenue",
+           12400
+          ]
+         ]
+        },
+        {
+         "date": "May 3",
+         "dr": [
+          [
+           "Sales Returns",
+           "contra-revenue",
+           400
+          ]
+         ],
+         "cr": [
+          [
+           "Accounts Receivable",
+           "asset",
+           400
+          ]
+         ]
+        },
+        {
+         "date": "May 4",
+         "dr": [
+          [
+           "Accounts Receivable",
+           "asset",
+           3500
+          ]
+         ],
+         "cr": [
+          [
+           "Sales",
+           "revenue",
+           3500
+          ]
+         ]
+        },
+        {
+         "date": "May 5",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           11760
+          ],
+          [
+           "Discount Allowed",
+           "expense",
+           240
+          ]
+         ],
+         "cr": [
+          [
+           "Accounts Receivable",
+           "asset",
+           12000
+          ]
+         ]
+        },
+        {
+         "date": "May 9",
+         "dr": [
+          [
+           "Sales Returns",
+           "contra-revenue",
+           500
+          ]
+         ],
+         "cr": [
+          [
+           "Accounts Receivable",
+           "asset",
+           500
+          ]
+         ]
+        }
+       ],
+       "endDate": "May 31",
+       "nextDate": "1 June",
+       "balance": [
+        "Cash at Bank",
+        "Accounts Receivable",
+        "Sales",
+        "Sales Returns"
+       ],
+       "show": [
+        "Cash at Bank",
+        "Accounts Receivable",
+        "Sales",
+        "Discount Allowed",
+        "Sales Returns"
+       ],
+       "expect": {
+        "Sales": -22900,
+        "Sales Returns": 900,
+        "Accounts Receivable": 3000
+       }
+      }
+     ],
+     "sourceNote": "May 10 Violet 付 4 月欠款 $4 000 没有给分录，也没有给 A/R 期初余额，账页只过 May 1–9；若要过这一笔，是借 Cash 4 000、贷 A/R 4 000。"
+    },
+    {
+     "label": "例 15",
+     "ref": "Tutorial Extra 3",
+     "question": "Lois Lane Bookshop, June (opening balances Cash $15 000, A/P $5 000): post the transactions into the T-accounts Cash at Bank, Account Payable, Purchase Returns, Discount Received and Purchase.",
+     "solution": "五个账户全部过账，现金和应付账款结出余额。",
+     "numeric": false,
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "taccounts"
+       ],
+       "journal": [
+        {
+         "date": "June 1",
+         "dr": [
+          [
+           "Purchases",
+           "expense",
+           7300
+          ]
+         ],
+         "cr": [
+          [
+           "Accounts Payable",
+           "liability",
+           7300
+          ]
+         ]
+        },
+        {
+         "date": "June 2",
+         "dr": [
+          [
+           "Accounts Payable",
+           "liability",
+           1200
+          ]
+         ],
+         "cr": [
+          [
+           "Purchase Returns",
+           "contra-expense",
+           1200
+          ]
+         ]
+        },
+        {
+         "date": "June 3",
+         "dr": [
+          [
+           "Accounts Payable",
+           "liability",
+           300
+          ]
+         ],
+         "cr": [
+          [
+           "Purchase Returns",
+           "contra-expense",
+           300
+          ]
+         ]
+        },
+        {
+         "date": "June 4",
+         "dr": [
+          [
+           "Accounts Payable",
+           "liability",
+           7000
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           6650
+          ],
+          [
+           "Discount Received",
+           "revenue",
+           350
+          ]
+         ]
+        },
+        {
+         "date": "June 7",
+         "dr": [
+          [
+           "Accounts Payable",
+           "liability",
+           2400
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           2400
+          ]
+         ]
+        }
+       ],
+       "endDate": "June 30",
+       "nextDate": "1 July",
+       "balance": [
+        "Cash at Bank",
+        "Accounts Payable"
+       ],
+       "show": [
+        "Cash at Bank",
+        "Accounts Payable",
+        "Purchase Returns",
+        "Discount Received",
+        "Purchases"
+       ],
+       "expect": {
+        "Cash at Bank": 5950,
+        "Accounts Payable": -1400
+       },
+       "openings": [
+        {
+         "account": "Cash at Bank",
+         "kind": "asset",
+         "amount": 15000,
+         "date": "June 1"
+        },
+        {
+         "account": "Accounts Payable",
+         "kind": "liability",
+         "amount": 5000,
+         "date": "June 1"
+        }
+       ]
+      }
+     ],
+     "sourceNote": "题目写 6 月 1 日买书 $7 300，6 月 4 日的付款分录也按 7 300 算折扣（(7 300 − 300) × 5% = 350），但 6 月 1 日的分录写成 7 000；按 7 000 过账会让欠 Oak 的账多冲 300。这里按 7 300 过账。"
+    },
+    {
+     "label": "例 16",
+     "ref": "Worksheet 4",
+     "question": "Transfer the 10 transactions in Worksheet Transaction Analysis 2 to the accounts in the General Ledger and balance the cash account only (T format).",
+     "solution": "这份工作纸要用到「Worksheet Transaction Analysis 2」里的 10 笔交易，本周资料里只有现金账户第一行（Today Capital 1 500），其余交易不在本周文件中，所以无法给出完整答案。做法与例 7 相同：每笔分录过到模板里对应的账户，只结现金账户。",
+     "numeric": false,
+     "sourceNote": "本周资料缺少 Worksheet Transaction Analysis 2，答案待补。"
+    },
+    {
+     "label": "例 17",
+     "ref": "Lecture p32",
+     "question": "Kingsford Trading trial balance: check that the debit total equals the credit total.",
+     "solution": "14 个借方余额合计 42 000，7 个贷方余额合计 42 000。Accum. Depreciation、Discounts Received、Purchases Returns 在贷方；Sales Returns、Discount Allowed 在借方。",
+     "numeric": true,
+     "checks": [
+      {
+       "expr": "1940+3110+3500+30+104+21800+0+740+9700+26+250+20+100+680",
+       "equals": "42000"
+      },
+      {
+       "expr": "550+20950+100+12900+6840+10+650",
+       "equals": "42000"
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "用一张余额汇总表代替 T 形账户：题目要求「post to the T-accounts」时，模板里的每个账户都要画出来。",
+    "折扣分录只过两个账户：收款有折扣时是三个账户，过账也要三处。",
+    "有期初余额的账户忘记先写 Balance b/d。",
+    "试算表放错栏：Purchase Returns、Discount Received 是贷方余额。"
+   ],
+   "faqs": [
+    {
+     "q": "试算平衡了，账就一定对吗？",
+     "a": "不一定。整笔漏记、记错账户、两边同时记错同一金额，试算表都看不出来。"
+    },
+    {
+     "q": "A/R 要不要按客户分开？",
+     "a": "跟着题目模板走：模板只有一个 Account Receivable 时用一个控制账户；题目要求按客户分开时再分。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "步骤",
+   "做什么",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "1 过账",
+    "找账户 → 定借贷方 → 写金额 → 摘要写对方账户 → 写日期",
+    "例 1、7、10"
+   ],
+   [
+    "2 期初余额",
+    "账页第一行写 Balance b/d",
+    "例 11、15"
+   ],
+   [
+    "3 结账",
+    "两边加总 → 大数写两边 Total → 小的一边 c/d → 下月 1 日对面 b/d",
+    "例 2–5"
+   ],
+   [
+    "4 交齐所有表",
+    "题目列了几个账户、要不要分析表、分录表、试算表，逐项画全",
+    "例 9、11–15"
+   ],
+   [
+    "5 试算平衡表",
+    "借方余额进 Dr，贷方余额进 Cr，合计相等",
+    "例 12、13"
+   ]
+  ]
+ },
+ "practice": "本周任务：worksheet 4；阅读 unit6 reading materials 的 Posting 与 Balancing；完成 unit6 tutorial guide。"
+}

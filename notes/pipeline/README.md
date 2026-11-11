@@ -15,8 +15,9 @@
 
 1. **取资料**：本周文件清单来自 `data.js` 里这一周的 `files`。PDF 抽取文字；含公式或图的页面同时渲染成图片，供能看图的模型使用（数学讲义的公式抽成文字后经常错位）。
 2. **第一轮：列清单**。让模型只做一件事：列出资料里每一道例题、练习题的编号和页码，以及每页讲的知识点。结果存为 `inventory`。
+   同时由程序（`extract.js`，不经过模型）从 Tutorial Guide、讲义的文字里提取「每道题要交什么」：模板里列出的账户、要不要分析表、分录表、试算表、要不要作图、有哪些小问，存为 `原文要求.json`。模型写的清单要与它逐项对上，防止「只答一半」。
 3. **第二轮：写笔记**。把 `SPEC.md`、标准样例、资料和清单一起交给模型，输出 JSON。
-4. **校验与修改**：运行 `validate.js`。有错误就把错误原文发回模型修改，最多重试 3 次（防止无限消耗额度）；仍不通过则停下，交给人处理。
+4. **校验与修改**：运行 `validate.js`（带上 `--requirements`）。除了答案复算、账页平衡，还逐题核对交付物：清单写了要画的账户、要给的表、要答的小问，答案里缺一样就是错误。有错误就把错误原文发回模型修改，最多重试 3 次（防止无限消耗额度）；仍不通过则停下，交给人处理。
 5. **写入**：渲染出 `graphicHtml`，通过 `/__api/boards/notes-<课程>`（数学是 `math-notes`）写入条目 `<term>/<week>` 的 `graphicHtml` 字段。旧内容留档，可以回滚。
 6. **标记**：页面上标注「AI 生成，已通过自动核对」，人工抽查后去掉标记。
 
@@ -24,12 +25,15 @@
 
 ```bash
 npm run notes -- notes/pipeline/examples/mathematics-term2-w5.json /tmp/out.html --files L13_Basic_Probability.pdf,L14_Probability_Permutations_Combinations.pdf,L15_Union_Intersection_Complement.pdf
-npm test   # 包含 checks/notes-pipeline.cjs：错答案、漏题、不平的账都必须被拦下
+npm run notes -- notes/pipeline/examples/accounting-term1-w5.json /tmp/acct.html --requirements notes/pipeline/examples/accounting-term1-w5.requirements.json
+npm test   # 包含 checks/notes-pipeline.cjs：错答案、漏题、不平的账、缺账户、缺表、漏小问都必须被拦下
 ```
 
 ## 目前的状态
 
-- 已完成：数据格式、渲染器、校验器、命令行、回归测试、生成规范、一份标准样例（数学 T2 第 5 周）、账页样式（`public/notes-quality.css`）。
+- 已完成：数据格式、渲染器、校验器、命令行、回归测试、生成规范、账页样式（`public/notes-quality.css`）；标准样例两份：数学 T2 第 5 周、会计 T1 第 5 周（17 道题，分析表、分录表、全部 T 形账户、试算表都由程序生成）。
+- 原文要求提取（`extract.js`）：在会计第 5、6 周的 Tutorial Guide 上试过，账户清单准确；题号和小问编号还有误识别，多栏式模板的识别在第 6 周失败，需要继续改进。目前提取结果人工核对后存成 `examples/*.requirements.json`。
+- 会计第 8–11 周（财务报表）还需要一个「报表」交付物类型（利润表、资产负债表、现金流量表），尚未实现。
 - 手工写好的周笔记（`notes/math`、`notes/accounting`）还是旧的 HTML 形式，之后转成 JSON，作为各科的标准样例。
 - **还没接上的部分（需要在原电脑上做）**：
   1. 第 1、2、3 步的自动调用：服务器里加一个仅主人可用的「生成本周笔记」接口，读取 `ai_config.json` 调用模型。

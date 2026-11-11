@@ -5,7 +5,9 @@
 ## 一、总体要求
 
 1. **只依据本周上传的资料**（讲义、阅读材料、Tutorial Guide、答案文件）。不得引入资料以外的题目、数据或「补充讲义」。资料里没有的内容，宁可不写。
-2. **课件里的每一道例题都要讲到**。先做「例题清单」（`inventory`），再逐题写解答；一道题拆成多问时写在同一个例题里。
+2. **课件里的每一道例题都要讲到，题目要求交的每一样东西都要交齐**。先做「例题清单」（`inventory`），每道题写明要交什么（`deliverables`：哪几个账户、要不要分析表、分录表、试算表、图）和有哪些小问（`parts`），再逐题写解答。一道题拆成多问时写在同一个例题里，每一问都要答。
+   - **不得用汇总表、文字或「同理」代替题目要求的表**。题目模板列了 9 个账户就画 9 个；要求 (a) 分析表 (b) 分录 (c) 过账 (d) 试算表，四张都要有。
+   - 原文模板漏了必需的账户（例如付了租金却没有 Rent Expense），照样补上，并在 `sourceNote` 里说明。
 3. **题目保留英文原文**（考试是英文），讲解用中文，关键术语中英并列，如「样本空间（sample space）」。
 4. **每个知识点按固定顺序**：概念 → 公式 → 图 → 例题（解答默认折叠）→ 易错 → 常见疑惑。
 5. **发现原文有错或前后矛盾**（印刷错误、分录金额不一致、答案页记错方向），在该例题的 `sourceNote` 里写明：原文怎么写、为什么不对、笔记按什么处理。不得悄悄改题。
@@ -21,7 +23,10 @@
   - `venn`：两集合韦恩图，`counts` 填 `aOnly/both/bOnly/neither`。
   - `grid`：二维网格（如两颗骰子），`cell` 与 `highlight` 是含 `r`、`c` 的表达式。
   - `table`：普通表格。
-  - `ledger`：会计账页。只写**分录**（`journal`）和期初余额（`openings`），过账、结账、试算平衡表由程序完成；原文给出的余额写进 `expect` 用来核对。账户类型：`asset / liability / equity / revenue / expense / drawings`。
+  - `ledger`：会计账页。只写**分录**（`journal`）和期初余额（`openings`），过账、结账、试算平衡表由程序完成；原文给出的余额写进 `expect` 用来核对。账户类型：`asset / liability / equity / revenue / expense / drawings / contra-revenue`（如 Sales Returns）`/ contra-expense`（如 Purchase Returns）。
+    - `views` 决定画哪几张表：`analysis`（交易分析表）、`journal`（分录表）、`taccounts`（T 形账户）、`columnar`（多栏式账户），默认只有 `taccounts`。
+    - `show` 列出要画的账户（默认全部）；`balance` 为 `true` 时全部结账，或写成账户列表只结其中几个；`trialBalance` 写试算平衡表标题；`endDate`、`nextDate` 是 c/d、b/d 的日期。
+    - 只给出一个账户两边金额的结账题，用一个对方账户把它补成分录，再用 `show` 只显示这个账户。
 - **例题 `examples`**：`ref` 写原文编号（如 `L14 Ex 3`、`Tutorial Q2`）；`question` 用英文原题；`solution` 用中文分步讲解，最后一步写结论；`answer` 写英文简答，带单位和题目要求的精度。
   - **能算的都要给 `checks`**：`{"expr": "comb(7,2)/comb(12,2)", "equals": "7/22"}`，程序会把两边各算一遍；有舍入时加 `tol`。纯概念题写 `"numeric": false`。
 - **易错 `mistakes`**：写学生真的会犯的具体错误，最好指向某道例题（「例 3 把 ln(x+1) 当成右移」）。
@@ -32,7 +37,9 @@
 ```json
 {
   "course": "mathematics", "term": "term2", "week": 5, "title": "…",
-  "inventory": ["L13 Ex 1", "L13 Ex 2"],
+  "inventory": ["L13 Ex 1", { "ref": "Tutorial Extra 1", "parts": ["a", "b", "c", "d"],
+    "deliverables": [{ "type": "analysis" }, { "type": "journal" },
+      { "type": "taccounts", "accounts": ["Cash at Bank", "Rent Expense"] }, { "type": "trialBalance" }] }],
   "intro": ["本周学什么、各讲之间的关系、共多少道例题"],
   "studyOrder": "可选；不写时用默认的自学顺序",
   "sections": [{
@@ -49,8 +56,10 @@
 }
 ```
 
-完整样例：`notes/pipeline/examples/mathematics-term2-w5.json`。
+`inventory` 的每一项可以只写编号（字符串），也可以写成对象。交付物类型：`taccounts` / `columnar`（`accounts` 列出必须画出的账户）、`balanced`（必须结出余额的账户）、`analysis`、`journal`、`trialBalance`、`figure`（要求作图）、`table`、`terms`（要求解释的术语，解答里必须出现）。小问编号写进 `parts`，答到这一问的例题也要在自己的 `parts` 里写上它。
+
+完整样例：`notes/pipeline/examples/mathematics-term2-w5.json`（数学）、`notes/pipeline/examples/accounting-term1-w5.json`（会计，含全部账页交付物）。
 
 ## 四、交付前自查
 
-运行 `npm run notes -- <周笔记.json> <输出.html> --files <本周文件名，逗号分隔>`。有任何「错误」都必须修改后重跑，直到通过；「提示」逐条确认。常见错误：漏讲 `inventory` 里的例题、核对式算不出写的答案、解答没有中文、来源文件不在本周资料里、分录借贷不等、账页余额与原文给出的不一致。
+运行 `npm run notes -- <周笔记.json> <输出.html> --files <本周文件名，逗号分隔> --requirements <原文要求.json>`。`原文要求.json` 由程序从 Tutorial Guide 的文字里提取（`extract.js`），不经过模型；模板里出现的每个账户、Required 里要求的每一张表，你的 `inventory` 里都必须有对应的交付项。有任何「错误」都必须修改后重跑，直到通过；「提示」逐条确认。常见错误：漏讲 `inventory` 里的例题、要求的账户没有画、要求的表（分析表、分录表、试算表）没有给、小问没有答、核对式算不出写的答案、解答没有中文、来源文件不在本周资料里、分录借贷不等、账页余额与原文给出的不一致。

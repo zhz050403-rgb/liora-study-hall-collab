@@ -95,6 +95,16 @@ function validateWeek(note, opts = {}) {
       } else err(ref, '不认识的交付物类型：' + t);
     }
   }
+  /* 与原文提取的要求交叉核对（extract.js 的结果，不经过模型）：原文模板里的每个账户都必须出现在某道题的交付清单里。 */
+  for (const req of opts.requirements || []) {
+    for (const d of req.deliverables || []) {
+      for (const a of d.accounts || []) {
+        const found = (note.inventory || []).some(item => typeof item === 'object' && (item.deliverables || []).some(x => x.type === d.type && (x.accounts || []).some(b => { const p = normName(a), q = normName(b); return p === q || p.startsWith(q) || q.startsWith(p); })));
+        if (!found) err('原文要求', `${req.page} 的题目要求「${a}」（${d.type}），清单里没有对应的交付项`);
+      }
+      if (!d.accounts && !(note.inventory || []).some(item => typeof item === 'object' && (item.deliverables || []).some(x => x.type === d.type))) err('原文要求', `${req.page} 的题目要求 ${d.type}，清单里没有`);
+    }
+  }
   const raw = textOf(note);
   const tags = raw.match(/<\/?([a-z]+)/g) || [];
   const bad = [...new Set(tags.map(t => t.replace(/[</]/g, '')).filter(t => !['strong', 'em', 'br', 'sub', 'sup'].includes(t)))];
