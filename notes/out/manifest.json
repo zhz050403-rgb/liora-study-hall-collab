@@ -839,6 +839,21 @@
  },
  {
   "board": "math-notes",
+  "key": "term2/4",
+  "course": "mathematics",
+  "term": "term2",
+  "week": 4,
+  "title": "Counting & Arrangements · 计数原理与排列组合",
+  "fields": {
+   "graphicHtml": "out/mathematics/term2/w04.graphic.html"
+  },
+  "examples": 29,
+  "checks": 47,
+  "deliverables": 35,
+  "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
   "key": "term2/5",
   "course": "mathematics",
   "term": "term2",
