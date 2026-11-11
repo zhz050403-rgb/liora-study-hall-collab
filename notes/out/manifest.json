@@ -493,6 +493,53 @@
   "requirementsChecked": false
  },
  {
+  "board": "notes-economics",
+  "key": "term2/7",
+  "course": "economics",
+  "term": "term2",
+  "week": 7,
+  "title": "Week 7 · 复习与巩固",
+  "fields": {
+   "graphicHtml": "out/economics/term2/w07.graphic.html"
+  },
+  "examples": 0,
+  "checks": 0,
+  "deliverables": 0,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term2/8",
+  "course": "economics",
+  "term": "term2",
+  "week": 8,
+  "title": "Week 8 · Unit 6 Tutorial + Unit 7 The Financial Sector 金融部门",
+  "fields": {
+   "graphicHtml": "out/economics/term2/w08.graphic.html",
+   "tutorialAnswers": "out/economics/term2/w08.answers.html"
+  },
+  "examples": 15,
+  "checks": 10,
+  "deliverables": 23,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term2/9",
+  "course": "economics",
+  "term": "term2",
+  "week": 9,
+  "title": "Week 9 · Unit 7 Tutorial + Unit 8 Monetary Policy 货币政策",
+  "fields": {
+   "graphicHtml": "out/economics/term2/w09.graphic.html",
+   "tutorialAnswers": "out/economics/term2/w09.answers.html"
+  },
+  "examples": 19,
+  "checks": 12,
+  "deliverables": 21,
+  "requirementsChecked": false
+ },
+ {
   "board": "math-notes",
   "key": "term1/1",
   "course": "mathematics",
