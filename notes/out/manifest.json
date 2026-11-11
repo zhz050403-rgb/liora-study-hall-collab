@@ -881,5 +881,20 @@
   "checks": 49,
   "deliverables": 44,
   "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
+  "key": "term2/7",
+  "course": "mathematics",
+  "term": "term2",
+  "week": 7,
+  "title": "Descriptive Statistics I · 描述统计（数据类型与集中趋势）",
+  "fields": {
+   "graphicHtml": "out/mathematics/term2/w07.graphic.html"
+  },
+  "examples": 17,
+  "checks": 20,
+  "deliverables": 32,
+  "requirementsChecked": false
  }
 ]

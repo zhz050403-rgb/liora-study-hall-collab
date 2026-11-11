@@ -1,0 +1,2537 @@
+{
+ "course": "mathematics",
+ "term": "term2",
+ "week": 7,
+ "title": "Descriptive Statistics I · 描述统计（数据类型与集中趋势）",
+ "files": [
+  "L19_Types_of_Data.pdf",
+  "L20_Freq_Tables_Polygons.pdf",
+  "L21_Central_Tendency.pdf",
+  "L21a_Statistics_Mode.pdf"
+ ],
+ "inventory": [
+  {
+   "ref": "L19 Ex 1",
+   "parts": [
+    "a",
+    "b",
+    "c"
+   ],
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "L19 Ex 2",
+   "parts": [
+    "a",
+    "b",
+    "c"
+   ],
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "L19 Ex 3",
+   "parts": [
+    "a",
+    "b",
+    "c"
+   ],
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "L19 Ex 4",
+   "parts": [
+    "a",
+    "b",
+    "c"
+   ],
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "L20 Ex 1",
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  {
+   "ref": "L20 Ex 2",
+   "parts": [
+    "a",
+    "b"
+   ]
+  },
+  "L20 Ex 3",
+  {
+   "ref": "L20 Ex 4",
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  {
+   "ref": "L20 Ex 5",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "L20 Ex 6",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "L21 Ex 1",
+   "parts": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ]
+  },
+  {
+   "ref": "L21 Ex 2",
+   "parts": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "ref": "L21 Ex 3",
+   "parts": [
+    "a",
+    "b"
+   ]
+  },
+  "L21 Ex 4",
+  {
+   "ref": "L21 Ex 5",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "L21 Strengths",
+  "L21a Calculator"
+ ],
+ "intro": [
+  "Term 2 第 7 周：数据类型与常用图表（L19）；频数表、相对频数、累积频数、分组数据、直方图、频数折线和累积频数折线（L20）；众数、平均数、中位数及分组数据的中位数（L21）；计算器统计模式（L21a）。讲义里的柱状图、折线图数值由读图得到，已在图注里说明。"
+ ],
+ "sections": [
+  {
+   "title": "数据类型与图表（L19）",
+   "sources": [
+    {
+     "file": "L19_Types_of_Data.pdf",
+     "pages": "p1–5"
+    }
+   ],
+   "concept": "统计过程：收集、整理、分析、解释数据。<strong>总体</strong>是研究的整个群体，<strong>样本</strong>是其中的一部分；样本有代表性且足够大时可以用来估计总体。\n<strong>数据类型</strong>：①<strong>数值型</strong>：<strong>离散</strong>（计数得到，如房间数）和<strong>连续</strong>（测量得到，如温度）；②<strong>类别型</strong>：<strong>有序</strong>（有内在顺序，如满意度低、中、高；间距不一定均匀）和<strong>无序 / 名义</strong>（如出生国家）。\n<strong>选图</strong>：类别数据用柱状图（有序数据按自然顺序排；名义数据通常按频数从大到小排）；离散数值用柱状图；连续数值用折线图。柱状图适合比较（扇形图也可），折线图适合观察随时间的变化。<strong>帕累托图</strong>：柱子从高到低排，再画累积百分比折线（80/20 法则）。",
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "L19 Ex 1",
+     "question": "Customer satisfaction bar chart (Very Dissatisfied 11, Mildly Dissatisfied 3, Neutral 19, Mildly Satisfied 14, Very Satisfied 7). (a) How many customers were surveyed? (b) Which levels were most and least common? (c) What percentage were Very or Mildly Dissatisfied?",
+     "solution": "满意度是有序类别数据，柱子按自然顺序排列。\n(a) 11 + 3 + 19 + 14 + 7 = <strong>54</strong> 人。\n(b) 最多：Neutral（19）；最少：Mildly Dissatisfied（3）。\n(c) {{frac 11 + 3|54}} × 100 = <strong>25.9%</strong>。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0.3,
+        5.7
+       ],
+       "yr": [
+        0,
+        22
+       ],
+       "width": 340,
+       "height": 240,
+       "xLabel": " ",
+       "yLabel": "customers",
+       "curves": [],
+       "caption": "Satisfaction with service (read from the lecture chart)",
+       "lines": [
+        {
+         "pts": [
+          [
+           1,
+           0
+          ],
+          [
+           1,
+           11
+          ]
+         ],
+         "color": "blue",
+         "width": 20
+        },
+        {
+         "pts": [
+          [
+           2,
+           0
+          ],
+          [
+           2,
+           3
+          ]
+         ],
+         "color": "blue",
+         "width": 20
+        },
+        {
+         "pts": [
+          [
+           3,
+           0
+          ],
+          [
+           3,
+           19
+          ]
+         ],
+         "color": "blue",
+         "width": 20
+        },
+        {
+         "pts": [
+          [
+           4,
+           0
+          ],
+          [
+           4,
+           14
+          ]
+         ],
+         "color": "blue",
+         "width": 20
+        },
+        {
+         "pts": [
+          [
+           5,
+           0
+          ],
+          [
+           5,
+           7
+          ]
+         ],
+         "color": "blue",
+         "width": 20
+        }
+       ],
+       "texts": [
+        {
+         "x": 1,
+         "y": -1.54,
+         "text": "Very dis.",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 2,
+         "y": -1.54,
+         "text": "Mildly dis.",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 3,
+         "y": -1.54,
+         "text": "Neutral",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 4,
+         "y": -1.54,
+         "text": "Mildly sat.",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 5,
+         "y": -1.54,
+         "text": "Very sat.",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 1,
+         "y": 11.44,
+         "text": "11",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 2,
+         "y": 3.44,
+         "text": "3",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 3,
+         "y": 19.44,
+         "text": "19",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 4,
+         "y": 14.44,
+         "text": "14",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 5,
+         "y": 7.44,
+         "text": "7",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        }
+       ],
+       "padLeft": 34
+      }
+     ],
+     "answer": "(a) 54 (b) Neutral; Mildly Dissatisfied (c) 25.9%",
+     "checks": [
+      {
+       "expr": "11+3+19+14+7",
+       "equals": "54"
+      },
+      {
+       "expr": "14/54*100",
+       "equals": "25.93",
+       "tol": 0.005
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    {
+     "label": "例 2",
+     "ref": "L19 Ex 2",
+     "question": "Pareto chart of home injuries (Fall 18, Foreign body 15, Burn 7, Bite/sting 6, Cut 3, Poisoning 1). (a) Total number of children? (b) Where should a campaign concentrate? (c) What is the sector angle for 'Burn' in a sector graph?",
+     "solution": "(a) 18 + 15 + 7 + 6 + 3 + 1 = <strong>50</strong>。\n(b) 累积百分比：跌倒 36%，加异物 66%，加烧伤 80%。前三类占 80%，宣传应集中在<strong>跌倒和异物</strong>（其次是烧伤）。\n(c) 烧伤占 {{frac 7|50}}，扇形角 = {{frac 7|50}} × 360° = <strong>50.4°</strong>。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0.3,
+        6.7
+       ],
+       "yr": [
+        0,
+        21
+       ],
+       "width": 340,
+       "height": 240,
+       "xLabel": " ",
+       "yLabel": "children",
+       "curves": [],
+       "caption": "Pareto chart: bars in descending order; red line = cumulative % (20 on the axis = 100%)",
+       "lines": [
+        {
+         "pts": [
+          [
+           1,
+           0
+          ],
+          [
+           1,
+           18
+          ]
+         ],
+         "color": "blue",
+         "width": 20
+        },
+        {
+         "pts": [
+          [
+           2,
+           0
+          ],
+          [
+           2,
+           15
+          ]
+         ],
+         "color": "blue",
+         "width": 20
+        },
+        {
+         "pts": [
+          [
+           3,
+           0
+          ],
+          [
+           3,
+           7
+          ]
+         ],
+         "color": "blue",
+         "width": 20
+        },
+        {
+         "pts": [
+          [
+           4,
+           0
+          ],
+          [
+           4,
+           6
+          ]
+         ],
+         "color": "blue",
+         "width": 20
+        },
+        {
+         "pts": [
+          [
+           5,
+           0
+          ],
+          [
+           5,
+           3
+          ]
+         ],
+         "color": "blue",
+         "width": 20
+        },
+        {
+         "pts": [
+          [
+           6,
+           0
+          ],
+          [
+           6,
+           1
+          ]
+         ],
+         "color": "blue",
+         "width": 20
+        },
+        {
+         "pts": [
+          [
+           1,
+           7.199999999999999
+          ],
+          [
+           2,
+           13.200000000000001
+          ],
+          [
+           3,
+           16.0
+          ],
+          [
+           4,
+           18.400000000000002
+          ],
+          [
+           5,
+           19.6
+          ],
+          [
+           6,
+           20.0
+          ]
+         ],
+         "color": "red"
+        }
+       ],
+       "texts": [
+        {
+         "x": 1,
+         "y": -1.4700000000000002,
+         "text": "Fall",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 2,
+         "y": -1.4700000000000002,
+         "text": "Foreign",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 3,
+         "y": -1.4700000000000002,
+         "text": "Burn",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 4,
+         "y": -1.4700000000000002,
+         "text": "Bite",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 5,
+         "y": -1.4700000000000002,
+         "text": "Cut",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 6,
+         "y": -1.4700000000000002,
+         "text": "Poison",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 1,
+         "y": 18.42,
+         "text": "18",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 2,
+         "y": 15.42,
+         "text": "15",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 3,
+         "y": 7.42,
+         "text": "7",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 4,
+         "y": 6.42,
+         "text": "6",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 5,
+         "y": 3.42,
+         "text": "3",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 6,
+         "y": 1.42,
+         "text": "1",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 1.15,
+         "y": 7.799999999999999,
+         "text": "36%",
+         "anchor": "start",
+         "size": 8,
+         "color": "red"
+        },
+        {
+         "x": 2.15,
+         "y": 13.8,
+         "text": "66%",
+         "anchor": "start",
+         "size": 8,
+         "color": "red"
+        },
+        {
+         "x": 3.15,
+         "y": 16.6,
+         "text": "80%",
+         "anchor": "start",
+         "size": 8,
+         "color": "red"
+        },
+        {
+         "x": 4.15,
+         "y": 19.000000000000004,
+         "text": "92%",
+         "anchor": "start",
+         "size": 8,
+         "color": "red"
+        },
+        {
+         "x": 5.15,
+         "y": 20.200000000000003,
+         "text": "98%",
+         "anchor": "start",
+         "size": 8,
+         "color": "red"
+        },
+        {
+         "x": 6.15,
+         "y": 20.6,
+         "text": "100%",
+         "anchor": "start",
+         "size": 8,
+         "color": "red"
+        }
+       ],
+       "padLeft": 34
+      }
+     ],
+     "answer": "(a) 50 (b) falls and foreign bodies (then burns) (c) 50.4°",
+     "checks": [
+      {
+       "expr": "18+15+7+6+3+1",
+       "equals": "50"
+      },
+      {
+       "expr": "(18+15+7)/50*100",
+       "equals": "80"
+      },
+      {
+       "expr": "7/50*360",
+       "equals": "50.4",
+       "tol": 1e-09
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    {
+     "label": "例 3",
+     "ref": "L19 Ex 3",
+     "question": "Jobs held by 100 retirees: 1 job 11, 2 jobs 35, 3 jobs 31, 4 jobs 17, 5 or more 6. (a) Most common number of jobs? (b) How many had at least 3 jobs? (c) Can the average number of jobs be calculated from this data?",
+     "solution": "(a) <strong>2 份</strong>（35 人）。\n(b) 31 + 17 + 6 = <strong>54</strong> 人。\n(c) <strong>不能</strong>精确计算：「5 or more」是开放的一组，不知道这 6 人各做过几份工作，只能估计。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0.3,
+        5.7
+       ],
+       "yr": [
+        0,
+        40
+       ],
+       "width": 340,
+       "height": 240,
+       "xLabel": " ",
+       "yLabel": "retirees",
+       "curves": [],
+       "caption": "Number of jobs during career (100 retirees)",
+       "lines": [
+        {
+         "pts": [
+          [
+           1,
+           0
+          ],
+          [
+           1,
+           11
+          ]
+         ],
+         "color": "blue",
+         "width": 20
+        },
+        {
+         "pts": [
+          [
+           2,
+           0
+          ],
+          [
+           2,
+           35
+          ]
+         ],
+         "color": "blue",
+         "width": 20
+        },
+        {
+         "pts": [
+          [
+           3,
+           0
+          ],
+          [
+           3,
+           31
+          ]
+         ],
+         "color": "blue",
+         "width": 20
+        },
+        {
+         "pts": [
+          [
+           4,
+           0
+          ],
+          [
+           4,
+           17
+          ]
+         ],
+         "color": "blue",
+         "width": 20
+        },
+        {
+         "pts": [
+          [
+           5,
+           0
+          ],
+          [
+           5,
+           6
+          ]
+         ],
+         "color": "blue",
+         "width": 20
+        }
+       ],
+       "texts": [
+        {
+         "x": 1,
+         "y": -2.8000000000000003,
+         "text": "1",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 2,
+         "y": -2.8000000000000003,
+         "text": "2",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 3,
+         "y": -2.8000000000000003,
+         "text": "3",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 4,
+         "y": -2.8000000000000003,
+         "text": "4",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 5,
+         "y": -2.8000000000000003,
+         "text": "5+",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 1,
+         "y": 11.8,
+         "text": "11",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 2,
+         "y": 35.8,
+         "text": "35",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 3,
+         "y": 31.8,
+         "text": "31",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 4,
+         "y": 17.8,
+         "text": "17",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 5,
+         "y": 6.8,
+         "text": "6",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        }
+       ],
+       "padLeft": 34
+      }
+     ],
+     "answer": "(a) 2 (b) 54 (c) no",
+     "checks": [
+      {
+       "expr": "31+17+6",
+       "equals": "54"
+      },
+      {
+       "expr": "11+35+31+17+6",
+       "equals": "100"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    {
+     "label": "例 4",
+     "ref": "L19 Ex 4",
+     "question": "Line graph of air temperature in Ctown from 8am to 4pm. (a) Difference between maximum and minimum? (b) During which hour did the temperature rise most quickly? (c) Average rate of change over the period?",
+     "solution": "读图：8am 约 7°C，最高约 14.9°C（2pm），4pm 约 14°C。\n(a) 约 14.9 − 7 ≈ <strong>8°C</strong>。\n(b) 折线最陡的一段是 <strong>10am 到 11am</strong>（约上升 2.5°C）。\n(c) 平均变化率 = {{frac 14 − 7|8 小时}} ≈ <strong>0.875°C / 小时</strong>。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        16.5
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "time",
+       "yLabel": "°C",
+       "curves": [],
+       "caption": "Air temperature in Ctown (values read from the lecture's graph)",
+       "yticks": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16
+       ],
+       "lines": [
+        {
+         "pts": [
+          [
+           1,
+           7
+          ],
+          [
+           2,
+           9.2
+          ],
+          [
+           3,
+           10.3
+          ],
+          [
+           4,
+           12.8
+          ],
+          [
+           5,
+           13.6
+          ],
+          [
+           6,
+           14.4
+          ],
+          [
+           7,
+           14.9
+          ],
+          [
+           8,
+           14.2
+          ],
+          [
+           9,
+           14.0
+          ]
+         ],
+         "color": "navy"
+        }
+       ],
+       "points": [
+        {
+         "x": 1,
+         "y": 7
+        },
+        {
+         "x": 2,
+         "y": 9.2
+        },
+        {
+         "x": 3,
+         "y": 10.3
+        },
+        {
+         "x": 4,
+         "y": 12.8
+        },
+        {
+         "x": 5,
+         "y": 13.6
+        },
+        {
+         "x": 6,
+         "y": 14.4
+        },
+        {
+         "x": 7,
+         "y": 14.9
+        },
+        {
+         "x": 8,
+         "y": 14.2
+        },
+        {
+         "x": 9,
+         "y": 14.0
+        }
+       ],
+       "texts": [
+        {
+         "x": 1,
+         "y": -1.2,
+         "text": "8am",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 2,
+         "y": -1.2,
+         "text": "9",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 3,
+         "y": -1.2,
+         "text": "10",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 4,
+         "y": -1.2,
+         "text": "11",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 5,
+         "y": -1.2,
+         "text": "12pm",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 6,
+         "y": -1.2,
+         "text": "1",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 7,
+         "y": -1.2,
+         "text": "2",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 8,
+         "y": -1.2,
+         "text": "3",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 9,
+         "y": -1.2,
+         "text": "4pm",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        }
+       ]
+      }
+     ],
+     "answer": "(a) ≈ 8°C (b) 10am–11am (c) ≈ 0.88°C per hour",
+     "checks": [
+      {
+       "expr": "(14-7)/8",
+       "equals": "0.875"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ],
+     "sourceNote": "题目只给图，没有数值；温度是读图的近似值，答案以读图为准。"
+    }
+   ],
+   "mistakes": [
+    "把有序类别当成数值型直接算平均。",
+    "名义数据的柱子也按「自然顺序」：名义数据没有顺序，常按频数从大到小排。",
+    "开放组（5 or more）还去算精确平均数。"
+   ],
+   "faqs": [
+    {
+     "q": "离散数据和有序类别都用柱状图，有什么不同？",
+     "a": "离散数值的取值间距是均匀的（1、2、3…），可以计算平均；有序类别的「间距」不一定相等，不能当数字运算。"
+    }
+   ]
+  },
+  {
+   "title": "频数表、直方图与累积频数（L20）",
+   "sources": [
+    {
+     "file": "L20_Freq_Tables_Polygons.pdf",
+     "pages": "p1–6"
+    }
+   ],
+   "concept": "<strong>频数表</strong>：每个不同的值叫<strong>分数 x</strong>，出现次数叫<strong>频数 f</strong>；分数从小到大排列，可以加计数（tally）栏。\n<strong>相对频数</strong> = f ÷ 总频数（总和为 1），就是实验概率。<strong>累积频数 cf</strong>：到该分数为止的频数之和，最后一个等于总频数。\n<strong>分组数据</strong>：值很多或是连续数据时分成等宽的<strong>组区间</strong>，边界取在数据精度的一半处（如 0.15–0.35），保证每个数只属于一组；<strong>组中值</strong>是上下界的中点。\n<strong>直方图</strong>：柱子之间没有空隙；<strong>频数折线</strong>连接各柱顶的中点。<strong>累积频数直方图</strong>和<strong>累积频数折线（ogive）</strong>：点画在每根柱子的<strong>右上角</strong>（到这个值为止的累积数）。",
+   "examples": [
+    {
+     "label": "例 5",
+     "ref": "L20 Ex 1",
+     "question": "Goals kicked in 38 games (data listed). Organise them into a frequency table.",
+     "solution": "逐个计数：0 球 3 场，1 球 8 场，2 球 10 场，3 球 10 场，4 球 7 场，合计 38 场。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "Score x",
+        "Frequency f",
+        "Cumulative frequency",
+        "Relative frequency",
+        "Cumulative relative frequency"
+       ],
+       "rows": [
+        [
+         "0",
+         "3",
+         "3",
+         "0.079",
+         "0.079"
+        ],
+        [
+         "1",
+         "8",
+         "11",
+         "0.211",
+         "0.289"
+        ],
+        [
+         "2",
+         "10",
+         "21",
+         "0.263",
+         "0.553"
+        ],
+        [
+         "3",
+         "10",
+         "31",
+         "0.263",
+         "0.816"
+        ],
+        [
+         "4",
+         "7",
+         "38",
+         "0.184",
+         "1.000"
+        ],
+        [
+         "Total",
+         "38",
+         "",
+         "1",
+         ""
+        ]
+       ],
+       "title": "Goals per game"
+      }
+     ],
+     "checks": [
+      {
+       "expr": "3+8+10+10+7",
+       "equals": "38"
+      }
+     ]
+    },
+    {
+     "label": "例 6",
+     "ref": "L20 Ex 2",
+     "question": "(a) Complete a relative frequency column. (b) Find the probability that in a random game the team scored at least 3 goals.",
+     "solution": "(a) 相对频数 = f ÷ 38：0.079、0.211、0.263、0.263、0.184（见表），总和为 1。\n(b) {{frac 10 + 7|38}} = {{frac 17|38}} ≈ <strong>0.447</strong>。",
+     "answer": "(b) 17/38 ≈ 0.447",
+     "checks": [
+      {
+       "expr": "3/38",
+       "equals": "0.079",
+       "tol": 0.0005
+      },
+      {
+       "expr": "17/38",
+       "equals": "0.447",
+       "tol": 0.0005
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 7",
+     "ref": "L20 Ex 3",
+     "question": "Complete the cumulative frequency and cumulative relative frequency columns.",
+     "solution": "累积频数：3、11、21、31、38（最后等于总数）；累积相对频数：0.079、0.289、0.553、0.816、1（见表）。",
+     "checks": [
+      {
+       "expr": "3+8+10+10",
+       "equals": "31"
+      },
+      {
+       "expr": "21/38",
+       "equals": "0.553",
+       "tol": 0.0005
+      }
+     ]
+    },
+    {
+     "label": "例 8",
+     "ref": "L20 Ex 4",
+     "question": "Commute times (hours) for 32 employees. Complete the grouped frequency table with class intervals of width 0.2.",
+     "solution": "边界在 0.05 处，所以 0.4 属于 0.35–0.55 组，0.7 属于 0.55–0.75 组。逐个计数得频数 3、6、8、6、7、2，累积频数 3、9、17、23、30、32（与讲义第 6 页给出的一致）。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "Class interval",
+        "Class centre",
+        "Frequency",
+        "Cumulative frequency"
+       ],
+       "rows": [
+        [
+         "0.15 – 0.35",
+         "0.25",
+         "3",
+         "3"
+        ],
+        [
+         "0.35 – 0.55",
+         "0.45",
+         "6",
+         "9"
+        ],
+        [
+         "0.55 – 0.75",
+         "0.65",
+         "8",
+         "17"
+        ],
+        [
+         "0.75 – 0.95",
+         "0.85",
+         "6",
+         "23"
+        ],
+        [
+         "0.95 – 1.15",
+         "1.05",
+         "7",
+         "30"
+        ],
+        [
+         "1.15 – 1.35",
+         "1.25",
+         "2",
+         "32"
+        ],
+        [
+         "Total",
+         "",
+         "32",
+         ""
+        ]
+       ],
+       "title": "Commute times (hours)"
+      }
+     ],
+     "checks": [
+      {
+       "expr": "3+6+8+6+7+2",
+       "equals": "32"
+      }
+     ]
+    },
+    {
+     "label": "例 9",
+     "ref": "L20 Ex 5",
+     "question": "Draw a frequency histogram and polygon for the goals data.",
+     "solution": "以 0, 1, 2, 3, 4 为中心画宽度 1 的柱子，高度为频数，柱子之间没有空隙，第一根柱子前留半格；频数折线连接各柱顶中点，两端连到相邻的空组（频数 0）。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -1.5,
+        5.5
+       ],
+       "yr": [
+        0,
+        12.0
+       ],
+       "width": 340,
+       "height": 240,
+       "xLabel": "goals",
+       "yLabel": "f",
+       "curves": [],
+       "caption": "Frequency histogram and polygon (red) for goals per game",
+       "xticks": [
+        0,
+        1,
+        2,
+        3,
+        4
+       ],
+       "polygons": [
+        {
+         "pts": [
+          [
+           -0.5,
+           0
+          ],
+          [
+           0.5,
+           0
+          ],
+          [
+           0.5,
+           3
+          ],
+          [
+           -0.5,
+           3
+          ]
+         ],
+         "color": "blue",
+         "opacity": 0.25
+        },
+        {
+         "pts": [
+          [
+           0.5,
+           0
+          ],
+          [
+           1.5,
+           0
+          ],
+          [
+           1.5,
+           8
+          ],
+          [
+           0.5,
+           8
+          ]
+         ],
+         "color": "blue",
+         "opacity": 0.25
+        },
+        {
+         "pts": [
+          [
+           1.5,
+           0
+          ],
+          [
+           2.5,
+           0
+          ],
+          [
+           2.5,
+           10
+          ],
+          [
+           1.5,
+           10
+          ]
+         ],
+         "color": "blue",
+         "opacity": 0.25
+        },
+        {
+         "pts": [
+          [
+           2.5,
+           0
+          ],
+          [
+           3.5,
+           0
+          ],
+          [
+           3.5,
+           10
+          ],
+          [
+           2.5,
+           10
+          ]
+         ],
+         "color": "blue",
+         "opacity": 0.25
+        },
+        {
+         "pts": [
+          [
+           3.5,
+           0
+          ],
+          [
+           4.5,
+           0
+          ],
+          [
+           4.5,
+           7
+          ],
+          [
+           3.5,
+           7
+          ]
+         ],
+         "color": "blue",
+         "opacity": 0.25
+        }
+       ],
+       "lines": [
+        {
+         "pts": [
+          [
+           -0.5,
+           0
+          ],
+          [
+           -0.5,
+           3
+          ],
+          [
+           0.5,
+           3
+          ],
+          [
+           0.5,
+           0
+          ]
+         ],
+         "color": "navy",
+         "width": 1
+        },
+        {
+         "pts": [
+          [
+           0.5,
+           0
+          ],
+          [
+           0.5,
+           8
+          ],
+          [
+           1.5,
+           8
+          ],
+          [
+           1.5,
+           0
+          ]
+         ],
+         "color": "navy",
+         "width": 1
+        },
+        {
+         "pts": [
+          [
+           1.5,
+           0
+          ],
+          [
+           1.5,
+           10
+          ],
+          [
+           2.5,
+           10
+          ],
+          [
+           2.5,
+           0
+          ]
+         ],
+         "color": "navy",
+         "width": 1
+        },
+        {
+         "pts": [
+          [
+           2.5,
+           0
+          ],
+          [
+           2.5,
+           10
+          ],
+          [
+           3.5,
+           10
+          ],
+          [
+           3.5,
+           0
+          ]
+         ],
+         "color": "navy",
+         "width": 1
+        },
+        {
+         "pts": [
+          [
+           3.5,
+           0
+          ],
+          [
+           3.5,
+           7
+          ],
+          [
+           4.5,
+           7
+          ],
+          [
+           4.5,
+           0
+          ]
+         ],
+         "color": "navy",
+         "width": 1
+        },
+        {
+         "pts": [
+          [
+           -1.0,
+           0
+          ],
+          [
+           0.0,
+           3
+          ],
+          [
+           1.0,
+           8
+          ],
+          [
+           2.0,
+           10
+          ],
+          [
+           3.0,
+           10
+          ],
+          [
+           4.0,
+           7
+          ],
+          [
+           5.0,
+           0
+          ]
+         ],
+         "color": "red"
+        }
+       ],
+       "hideYAxis": true,
+       "texts": [
+        {
+         "x": 0.0,
+         "y": 3.24,
+         "text": "3",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 1.0,
+         "y": 8.24,
+         "text": "8",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 2.0,
+         "y": 10.24,
+         "text": "10",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 3.0,
+         "y": 10.24,
+         "text": "10",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 4.0,
+         "y": 7.24,
+         "text": "7",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        }
+       ]
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 10",
+     "ref": "L20 Ex 6",
+     "question": "Draw a cumulative frequency histogram and polygon (ogive) for the commute data.",
+     "solution": "柱高是累积频数 3、9、17、23、30、32，逐级升高。ogive 的点画在每根柱子的<strong>右上角</strong>（上边界处），从第一组下边界 0.15、累积 0 开始。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -0.04999999999999999,
+        1.55
+       ],
+       "yr": [
+        0,
+        38.4
+       ],
+       "width": 340,
+       "height": 240,
+       "xLabel": "hours",
+       "yLabel": "cf",
+       "curves": [],
+       "caption": "Cumulative frequency histogram and ogive (red, through the top-right corners)",
+       "xticks": [
+        0.25,
+        0.45,
+        0.65,
+        0.85,
+        1.05,
+        1.25
+       ],
+       "polygons": [
+        {
+         "pts": [
+          [
+           0.15,
+           0
+          ],
+          [
+           0.35,
+           0
+          ],
+          [
+           0.35,
+           3
+          ],
+          [
+           0.15,
+           3
+          ]
+         ],
+         "color": "blue",
+         "opacity": 0.25
+        },
+        {
+         "pts": [
+          [
+           0.35,
+           0
+          ],
+          [
+           0.55,
+           0
+          ],
+          [
+           0.55,
+           9
+          ],
+          [
+           0.35,
+           9
+          ]
+         ],
+         "color": "blue",
+         "opacity": 0.25
+        },
+        {
+         "pts": [
+          [
+           0.55,
+           0
+          ],
+          [
+           0.75,
+           0
+          ],
+          [
+           0.75,
+           17
+          ],
+          [
+           0.55,
+           17
+          ]
+         ],
+         "color": "blue",
+         "opacity": 0.25
+        },
+        {
+         "pts": [
+          [
+           0.75,
+           0
+          ],
+          [
+           0.95,
+           0
+          ],
+          [
+           0.95,
+           23
+          ],
+          [
+           0.75,
+           23
+          ]
+         ],
+         "color": "blue",
+         "opacity": 0.25
+        },
+        {
+         "pts": [
+          [
+           0.95,
+           0
+          ],
+          [
+           1.15,
+           0
+          ],
+          [
+           1.15,
+           30
+          ],
+          [
+           0.95,
+           30
+          ]
+         ],
+         "color": "blue",
+         "opacity": 0.25
+        },
+        {
+         "pts": [
+          [
+           1.15,
+           0
+          ],
+          [
+           1.35,
+           0
+          ],
+          [
+           1.35,
+           32
+          ],
+          [
+           1.15,
+           32
+          ]
+         ],
+         "color": "blue",
+         "opacity": 0.25
+        }
+       ],
+       "lines": [
+        {
+         "pts": [
+          [
+           0.15,
+           0
+          ],
+          [
+           0.15,
+           3
+          ],
+          [
+           0.35,
+           3
+          ],
+          [
+           0.35,
+           0
+          ]
+         ],
+         "color": "navy",
+         "width": 1
+        },
+        {
+         "pts": [
+          [
+           0.35,
+           0
+          ],
+          [
+           0.35,
+           9
+          ],
+          [
+           0.55,
+           9
+          ],
+          [
+           0.55,
+           0
+          ]
+         ],
+         "color": "navy",
+         "width": 1
+        },
+        {
+         "pts": [
+          [
+           0.55,
+           0
+          ],
+          [
+           0.55,
+           17
+          ],
+          [
+           0.75,
+           17
+          ],
+          [
+           0.75,
+           0
+          ]
+         ],
+         "color": "navy",
+         "width": 1
+        },
+        {
+         "pts": [
+          [
+           0.75,
+           0
+          ],
+          [
+           0.75,
+           23
+          ],
+          [
+           0.95,
+           23
+          ],
+          [
+           0.95,
+           0
+          ]
+         ],
+         "color": "navy",
+         "width": 1
+        },
+        {
+         "pts": [
+          [
+           0.95,
+           0
+          ],
+          [
+           0.95,
+           30
+          ],
+          [
+           1.15,
+           30
+          ],
+          [
+           1.15,
+           0
+          ]
+         ],
+         "color": "navy",
+         "width": 1
+        },
+        {
+         "pts": [
+          [
+           1.15,
+           0
+          ],
+          [
+           1.15,
+           32
+          ],
+          [
+           1.35,
+           32
+          ],
+          [
+           1.35,
+           0
+          ]
+         ],
+         "color": "navy",
+         "width": 1
+        },
+        {
+         "pts": [
+          [
+           0.15,
+           0
+          ],
+          [
+           0.35,
+           3
+          ],
+          [
+           0.55,
+           9
+          ],
+          [
+           0.75,
+           17
+          ],
+          [
+           0.95,
+           23
+          ],
+          [
+           1.15,
+           30
+          ],
+          [
+           1.35,
+           32
+          ]
+         ],
+         "color": "red"
+        }
+       ],
+       "hideYAxis": true,
+       "texts": [
+        {
+         "x": 0.25,
+         "y": 3.768,
+         "text": "3",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 0.45,
+         "y": 9.768,
+         "text": "9",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 0.65,
+         "y": 17.768,
+         "text": "17",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 0.85,
+         "y": 23.768,
+         "text": "23",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 1.0499999999999998,
+         "y": 30.768,
+         "text": "30",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 1.25,
+         "y": 32.768,
+         "text": "32",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        }
+       ]
+      }
+     ],
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "分组时把边界值（如 0.35）同时算进两组：边界取在半个精度单位处就不会发生。",
+    "ogive 的点画在柱子中间：应画在右上角。",
+    "相对频数之和不等于 1 时没有检查（四舍五入误差除外）。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么组界是 0.15、0.35 而不是 0.2、0.4？",
+     "a": "数据精确到 0.1，把边界放在 0.05 处，每个数据都只落在一组里，不会出现「在边界上」的问题。"
+    }
+   ]
+  },
+  {
+   "title": "集中趋势：众数、平均数、中位数（L21、L21a）",
+   "sources": [
+    {
+     "file": "L21_Central_Tendency.pdf",
+     "pages": "p1–5"
+    },
+    {
+     "file": "L21a_Statistics_Mode.pdf",
+     "pages": "p1–4"
+    }
+   ],
+   "concept": "<strong>众数</strong>：频数最高的分数。一个众数叫单峰，两个叫双峰（直方图有两个峰也算），更多则说没有众数；分组数据说<strong>众数组</strong>。\n<strong>平均数</strong> = 所有分数之和 ÷ 个数；频数表中用 Σfx ÷ Σf；分组数据用组中值作 x。\n<strong>中位数</strong>：从小到大排列后的中间值。n 为奇数时位置是 {{frac n + 1|2}}；n 为偶数时取第 {{frac n|2}} 和第 {{frac n|2}} + 1 个的平均。频数表用累积频数找位置。\n<strong>分组数据的中位数</strong>：中位数 M 把直方图面积平分。①用累积频数找中位数所在组；②总面积 = 组宽 × 总频数；③列方程：M 左边的面积 = 总面积的一半。\n比较：众数简单、是类别数据唯一可用的，但可能不存在或不唯一；中位数不受极端值影响，但只用了部分信息；平均数用到所有数据，但对极端值很敏感。\n计算器（Casio FX82AU PlusII）：MODE 2 1 进入统计模式，SHIFT MODE ↓ 3 1 打开频数栏；SHIFT 1 4 2 求平均数，SHIFT 1 5 4 求中位数（分组数据的中位数不能用计算器）。",
+   "formulas": [
+    "x̄ = {{frac Σfx|Σf}}",
+    "中位数位置 {{frac n + 1|2}}"
+   ],
+   "examples": [
+    {
+     "label": "例 11",
+     "ref": "L21 Ex 1",
+     "question": "Find the mode or modal class: (a) 2, 1, 2, 1, 1, 5, 1, 9, 4 (b) 2, 5, 1, 4, 9, 8, 7 (c) scores 10, 12, 13, 17 with frequencies 3, 5, 11, 7 (d) classes 3.5–4.5, …, 8.5–9.5 with frequencies 4, 2, 3, 5, 4, 3.",
+     "solution": "(a) 1 出现 4 次：众数 <strong>1</strong>。\n(b) 每个数只出现一次：<strong>没有众数</strong>。\n(c) 13 的频数 11 最高：众数 <strong>13</strong>。\n(d) 频数 5 最高的组：众数组 <strong>6.5–7.5</strong>。",
+     "answer": "(a) 1 (b) none (c) 13 (d) 6.5–7.5",
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ],
+     "sourceNote": "讲义 (d) 的组区间印成「3·5 − 4·5、4·5 − 4·5、5·5 − 4·5 …」，上界都写成了 4·5；按等宽为 1 的分组应为 3.5–4.5、4.5–5.5、…、8.5–9.5。",
+     "numeric": false
+    },
+    {
+     "label": "例 12",
+     "ref": "L21 Ex 2",
+     "question": "Find the mean: (a) 2, 1, 2, 1, 1, 5, 1, 9 (b) the frequency table in Ex 1(c) (c) the grouped table in Ex 1(d).",
+     "solution": "(a) {{frac 22|8}} = <strong>2.75</strong>。\n(b) Σfx = 30 + 60 + 143 + 119 = 352，Σf = 26：352 ÷ 26 ≈ <strong>13.54</strong>。\n(c) 组中值 4, 5, 6, 7, 8, 9：Σfx = 16 + 10 + 18 + 35 + 32 + 27 = 138，Σf = 21：138 ÷ 21 ≈ <strong>6.57</strong>。",
+     "answer": "(a) 2.75 (b) 13.54 (c) 6.57",
+     "checks": [
+      {
+       "expr": "(2+1+2+1+1+5+1+9)/8",
+       "equals": "2.75"
+      },
+      {
+       "expr": "(10*3+12*5+13*11+17*7)/26",
+       "equals": "13.538",
+       "tol": 0.0005
+      },
+      {
+       "expr": "(4*4+5*2+6*3+7*5+8*4+9*3)/21",
+       "equals": "6.571",
+       "tol": 0.0005
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    {
+     "label": "例 13",
+     "ref": "L21 Ex 3",
+     "question": "Find the median: (a) 2, 1, 2, 1, 1, 5, 1, 9, 4 (b) 2, 5, 1, 4, 9, 8, 7, 3",
+     "solution": "(a) 排序：1, 1, 1, 1, 2, 2, 4, 5, 9，n = 9，第 5 个：<strong>2</strong>。\n(b) 排序：1, 2, 3, 4, 5, 7, 8, 9，n = 8，第 4、5 个的平均：{{frac 4 + 5|2}} = <strong>4.5</strong>。",
+     "answer": "(a) 2 (b) 4.5",
+     "parts": [
+      "a",
+      "b"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 14",
+     "ref": "L21 Ex 4",
+     "question": "Find the median of scores 10, 12, 13, 17 with frequencies 3, 5, 11, 7.",
+     "solution": "n = 26，中位数是第 13、14 个的平均。累积频数 3、8、19、26：第 9 到 19 个都是 13，所以中位数 = <strong>13</strong>。",
+     "answer": "13",
+     "checks": [
+      {
+       "expr": "3+5+11",
+       "equals": "19"
+      }
+     ]
+    },
+    {
+     "label": "例 15",
+     "ref": "L21 Ex 5",
+     "question": "Find the median of the grouped data: 0.0–2.5 (4), 2.5–5.0 (32), 5.0–7.5 (10), 7.5–10.0 (3), 10.0–12.5 (1).",
+     "solution": "累积频数 4、36、46、49、50；n = 50，中间位置 25 在 2.5–5.0 组。\n总面积 = 2.5 × 50 = 125，一半是 62.5。M 左边的面积：2.5 × 4 + (M − 2.5) × 32 = 62.5，(M − 2.5) × 32 = 52.5，M − 2.5 = 1.640 625，<strong>M ≈ 4.14</strong>。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -2.5,
+        15.0
+       ],
+       "yr": [
+        0,
+        38.4
+       ],
+       "width": 340,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "f",
+       "curves": [],
+       "caption": "Median M ≈ 4.14: the shaded area is half the histogram",
+       "xticks": [
+        0,
+        2.5,
+        5,
+        7.5,
+        10,
+        12.5
+       ],
+       "polygons": [
+        {
+         "pts": [
+          [
+           0,
+           0
+          ],
+          [
+           2.5,
+           0
+          ],
+          [
+           2.5,
+           4
+          ],
+          [
+           0,
+           4
+          ]
+         ],
+         "color": "blue",
+         "opacity": 0.25
+        },
+        {
+         "pts": [
+          [
+           2.5,
+           0
+          ],
+          [
+           5,
+           0
+          ],
+          [
+           5,
+           32
+          ],
+          [
+           2.5,
+           32
+          ]
+         ],
+         "color": "blue",
+         "opacity": 0.25
+        },
+        {
+         "pts": [
+          [
+           5,
+           0
+          ],
+          [
+           7.5,
+           0
+          ],
+          [
+           7.5,
+           10
+          ],
+          [
+           5,
+           10
+          ]
+         ],
+         "color": "blue",
+         "opacity": 0.25
+        },
+        {
+         "pts": [
+          [
+           7.5,
+           0
+          ],
+          [
+           10,
+           0
+          ],
+          [
+           10,
+           3
+          ],
+          [
+           7.5,
+           3
+          ]
+         ],
+         "color": "blue",
+         "opacity": 0.25
+        },
+        {
+         "pts": [
+          [
+           10,
+           0
+          ],
+          [
+           12.5,
+           0
+          ],
+          [
+           12.5,
+           1
+          ],
+          [
+           10,
+           1
+          ]
+         ],
+         "color": "blue",
+         "opacity": 0.25
+        },
+        {
+         "pts": [
+          [
+           0,
+           0
+          ],
+          [
+           2.5,
+           0
+          ],
+          [
+           2.5,
+           4
+          ],
+          [
+           0,
+           4
+          ]
+         ],
+         "color": "gold",
+         "opacity": 0.55
+        },
+        {
+         "pts": [
+          [
+           2.5,
+           0
+          ],
+          [
+           4.140625,
+           0
+          ],
+          [
+           4.140625,
+           32
+          ],
+          [
+           2.5,
+           32
+          ]
+         ],
+         "color": "gold",
+         "opacity": 0.55
+        }
+       ],
+       "lines": [
+        {
+         "pts": [
+          [
+           0,
+           0
+          ],
+          [
+           0,
+           4
+          ],
+          [
+           2.5,
+           4
+          ],
+          [
+           2.5,
+           0
+          ]
+         ],
+         "color": "navy",
+         "width": 1
+        },
+        {
+         "pts": [
+          [
+           2.5,
+           0
+          ],
+          [
+           2.5,
+           32
+          ],
+          [
+           5,
+           32
+          ],
+          [
+           5,
+           0
+          ]
+         ],
+         "color": "navy",
+         "width": 1
+        },
+        {
+         "pts": [
+          [
+           5,
+           0
+          ],
+          [
+           5,
+           10
+          ],
+          [
+           7.5,
+           10
+          ],
+          [
+           7.5,
+           0
+          ]
+         ],
+         "color": "navy",
+         "width": 1
+        },
+        {
+         "pts": [
+          [
+           7.5,
+           0
+          ],
+          [
+           7.5,
+           3
+          ],
+          [
+           10,
+           3
+          ],
+          [
+           10,
+           0
+          ]
+         ],
+         "color": "navy",
+         "width": 1
+        },
+        {
+         "pts": [
+          [
+           10,
+           0
+          ],
+          [
+           10,
+           1
+          ],
+          [
+           12.5,
+           1
+          ],
+          [
+           12.5,
+           0
+          ]
+         ],
+         "color": "navy",
+         "width": 1
+        }
+       ],
+       "hideYAxis": true,
+       "texts": [
+        {
+         "x": 1.25,
+         "y": 4.768,
+         "text": "4",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 3.75,
+         "y": 32.768,
+         "text": "32",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 6.25,
+         "y": 10.768,
+         "text": "10",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 8.75,
+         "y": 3.768,
+         "text": "3",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 11.25,
+         "y": 1.768,
+         "text": "1",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        }
+       ],
+       "vlines": [
+        {
+         "x": 4.1406,
+         "label": "M",
+         "color": "red"
+        }
+       ]
+      }
+     ],
+     "answer": "M ≈ 4.14",
+     "checks": [
+      {
+       "expr": "2.5*4+(4.140625-2.5)*32",
+       "equals": "62.5",
+       "tol": 1e-09
+      }
+     ]
+    },
+    {
+     "label": "例 16",
+     "ref": "L21 Strengths",
+     "question": "Compare the strengths and weaknesses of the mode, median and mean.",
+     "solution": "<strong>众数</strong>：容易求，是类别数据唯一能用的；但可能不存在、不唯一，也可能不代表大多数数据。<strong>中位数</strong>：不受极端值影响；但只用了部分数据的信息。<strong>平均数</strong>：用到全部数据；但对极端值非常敏感。所以有极端值（如收入、房价）时常用中位数。",
+     "numeric": false
+    },
+    {
+     "label": "例 17",
+     "ref": "L21a Calculator",
+     "question": "Use statistics mode to find (1) the means of Ex 2 (a)–(c) and (2) the medians of Ex 3(a) and Ex 4.",
+     "solution": "按 MODE 2 1 进入统计模式，SHIFT MODE ↓ 3 1 打开频数栏，输入数据和频数，AC 后 SHIFT 1 4 2 = 求平均数，SHIFT 1 5 4 = 求中位数。结果与手算相同：平均数 2.75、13.54、6.57（分组数据输入组中值）；中位数 2、13。注意：<strong>分组数据的中位数不能用计算器</strong>，因为它把每组都当成组中值。",
+     "checks": [
+      {
+       "expr": "352/26",
+       "equals": "13.538",
+       "tol": 0.0005
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "中位数没先排序。",
+    "频数表的平均数用 Σx ÷ 个数而不是 Σfx ÷ Σf。",
+    "分组中位数直接取组中值。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么分组中位数用面积？",
+     "a": "假设每组内的数据均匀分布，面积就代表数据个数；把面积平分的点左右各有一半的数据，这正是中位数的定义。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "题型",
+   "做法",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "选图",
+    "类别 / 离散用柱状图，连续用折线图",
+    "例 1–4"
+   ],
+   [
+    "频数表",
+    "计数 → 相对频数 → 累积频数",
+    "例 5–8"
+   ],
+   [
+    "直方图 / ogive",
+    "无空隙；ogive 点在右上角",
+    "例 9、10"
+   ],
+   [
+    "众数 / 平均 / 中位",
+    "最多 / Σfx÷Σf / 排序取中间",
+    "例 11–14"
+   ],
+   [
+    "分组中位数",
+    "面积平分列方程",
+    "例 15"
+   ]
+  ]
+ },
+ "practice": "讲义建议练习：Tutorial Guide 9-1、9-2、9-3。"
+}

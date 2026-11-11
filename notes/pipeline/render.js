@@ -47,7 +47,8 @@ function plotSvg(fig) {
   }
   for (const [a, b, c] of fig.shade || []) o.push(`<rect x="${fmt(X(a))}" y="${pad}" width="${fmt(X(b) - X(a))}" height="${h - pad - padB}" fill="${color(c || 'green')}" fill-opacity="0.18"/>`);
   if (y0 <= 0 && y1 > 0) o.push(`<line x1="${padL}" y1="${fmt(Y(0))}" x2="${w - pad + 6}" y2="${fmt(Y(0))}" stroke="#7a8ba3"/><text x="${w - 4}" y="${axisAtBottom ? h - 4 : fmt(Y(0) - 5)}" font-size="11" fill="#4a5d75" text-anchor="end">${escapeHtml(fig.xLabel || 'x')}</text>`);
-  if (x0 <= 0 && x1 > 0) o.push(`<line x1="${fmt(X(0))}" y1="${h - padB}" x2="${fmt(X(0))}" y2="${pad - 6}" stroke="#7a8ba3"/><text x="${fmt(X(0) + 5)}" y="${pad - 2}" font-size="11" fill="#4a5d75">${escapeHtml(fig.yLabel || 'y')}</text>`);
+  /* hideYAxis：数据横跨 0 时（如以 0 为中心的直方图柱子）不在 x = 0 处画竖轴。 */
+  if (x0 <= 0 && x1 > 0 && !fig.hideYAxis) o.push(`<line x1="${fmt(X(0))}" y1="${h - padB}" x2="${fmt(X(0))}" y2="${pad - 6}" stroke="#7a8ba3"/><text x="${fmt(X(0) + 5)}" y="${pad - 2}" font-size="11" fill="#4a5d75">${escapeHtml(fig.yLabel || 'y')}</text>`);
   for (const v of fig.xticks || []) o.push(`<text x="${fmt(X(v))}" y="${fmt(Y(Math.max(y0, Math.min(0, y1))) + 13)}" font-size="10" fill="#4a5d75" text-anchor="middle">${v}</text>`);
   for (const v of fig.yticks || []) o.push(`<text x="${fmt(X(Math.max(x0, Math.min(0, x1))) - 4)}" y="${fmt(Y(v) + 3)}" font-size="10" fill="#4a5d75" text-anchor="end">${v}</text>`);
   for (const l of fig.vlines || []) o.push(`<line x1="${fmt(X(l.x))}" y1="${pad}" x2="${fmt(X(l.x))}" y2="${h - padB}" stroke="${color(l.color || 'grey')}" stroke-dasharray="3 3"/>` + (l.label ? `<text x="${fmt(X(l.x) + 3)}" y="${pad + 10}" font-size="10" fill="${color(l.color || 'grey')}">${escapeHtml(l.label)}</text>` : ''));
