@@ -10,7 +10,7 @@
 | 数学 T2 | W5 概率基础 | 完成（样稿） | 22 | 20 项全部通过 | 用户已确认格式 |
 | 数学 T1 | W5 对数图像、定义域与分段函数、用图像解题 | 完成 | 33 | 36 项全部通过；13 张图已渲染目视检查 | 讲义印刷问题：L14 例 14 第二段应为 x > 2；L15 例 2 无 (e) |
 | 数学 T1 | W6 经济应用、指数对数模型、前半段复习 | 完成 | 31 | 21 项全部通过；15 张图已渲染目视检查 | 本周有课堂测验 |
-| 会计 T1 | W5 T 形账户：过账、结账、试算平衡表 | 完成（流水线生成） | 17 | 36 项全部通过；交付物逐题核对，与原文要求交叉核对通过 | 原手写版漏了 Q1 的 Office Furniture、Loan，Thor、Lois 只有汇总表，Ben 缺分析表；现由 `pipeline/examples/accounting-term1-w5.json` 生成，所有表齐全。讲义问题：5b 练习把预收现金记在现金贷方；Lois Lane 6/1 分录 7000 应为 7300；Alex Roger 分录多一笔交易清单里没有的工资 1500；Ben 试算表模板漏 Rent Expense；Worksheet 4 缺交易数据 |
+| 会计 T1 | W5 T 形账户：过账、结账、试算平衡表 | 完成（流水线生成） | 17 | 36 项全部通过；交付物逐题核对，与原文要求交叉核对通过 | 原手写版漏了 Q1 的 Office Furniture、Loan，Thor、Lois 只有汇总表，Ben 缺分析表；现由 `weeks/accounting/term1/w05.json` 生成，所有表齐全。讲义问题：5b 练习把预收现金记在现金贷方；Lois Lane 6/1 分录 7000 应为 7300；Alex Roger 分录多一笔交易清单里没有的工资 1500；Ben 试算表模板漏 Rent Expense；Worksheet 4 缺交易数据 |
 
 ## 生成方式
 
@@ -18,4 +18,4 @@
 - 函数图由 `checks/svgplot.py` 按真实函数采样生成；读图题的曲线按讲义图上的关键点插值，图注写明是示意图。
 - 当前学期：Term 1 第 5 周（2026-11-09 至 11-15）。顺序：数学 T1 W5、W6（测验周），再做会计、经济学的当前周，之后逐周往后。
 
-- 会计 T1 W5 改为流水线生成：`python3 checks/make_acct_t1_w05_json.py` 写出 JSON，`node pipeline/cli.js pipeline/examples/accounting-term1-w5.json accounting/term1/w05.html --requirements pipeline/examples/accounting-term1-w5.requirements.json` 校验并输出。旧的 `accounting/term1/w05.src.html` 和 `checks/acct_t1_w05.py` 只作参考，不要再运行（会覆盖成旧的不完整版本）。
+- 会计 T1 W5 改为流水线生成：`python3 checks/make_acct_t1_w05_json.py` 写出 JSON，`node pipeline/cli.js weeks/accounting/term1/w05.json accounting/term1/w05.html --requirements weeks/accounting/term1/w05.requirements.json` 校验并输出。旧的 `accounting/term1/w05.src.html` 和 `checks/acct_t1_w05.py` 只作参考，不要再运行（会覆盖成旧的不完整版本）。

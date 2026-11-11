@@ -202,6 +202,6 @@ note = {
 }
 note["sections"][2]["examples"][-1]["checks"] = [{"expr": "1940+3110+3500+30+104+21800+0+740+9700+26+250+20+100+680", "equals": "42000"},
                                                  {"expr": "550+20950+100+12900+6840+10+650", "equals": "42000"}]
-out = os.path.join(ROOT, "pipeline/examples/accounting-term1-w5.json")
+out = os.path.join(ROOT, "weeks/accounting/term1/w05.json")
 json.dump(note, open(out, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 print("wrote", out)

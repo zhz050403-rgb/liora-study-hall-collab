@@ -1,0 +1,1705 @@
+{
+ "course": "accounting",
+ "term": "term1",
+ "week": 6,
+ "title": "Week 6 · Unit 7 多栏式账户与试算平衡表",
+ "answersTitle": "Unit 7 Columnar Format & Trial Balance",
+ "files": [
+  "unit5a practice balancing an account (columnar).pdf",
+  "unit7 lecture slides column format & tb.pdf",
+  "unit7 reading materials columnar & trial balance.pdf",
+  "unit7 tutorial guide columnar & tb.pdf"
+ ],
+ "inventory": [
+  {
+   "ref": "Lecture p9",
+   "deliverables": [
+    {
+     "type": "columnar",
+     "accounts": [
+      "Cash at Bank"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "Reading p1",
+   "deliverables": [
+    {
+     "type": "columnar",
+     "accounts": [
+      "Cash at Bank"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "Lecture Exercise 5a",
+   "deliverables": [
+    {
+     "type": "columnar",
+     "accounts": [
+      "Cash at Bank",
+      "Accounts Receivable",
+      "Office Furniture",
+      "Accounts Payable",
+      "Sales",
+      "Capital"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "Reading Worked Example",
+   "parts": [
+    "i",
+    "ii"
+   ],
+   "deliverables": [
+    {
+     "type": "columnar",
+     "accounts": [
+      "Cash at Bank",
+      "Capital",
+      "Office Furniture",
+      "Accounts Payable",
+      "Office Equipment",
+      "Drawings",
+      "Motor Vehicle"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial Terms",
+   "deliverables": [
+    {
+     "type": "terms",
+     "terms": [
+      "Columnar format",
+      "Trial balance"
+     ]
+    }
+   ]
+  },
+  "Tutorial Q1",
+  {
+   "ref": "Tutorial Q2",
+   "deliverables": [
+    {
+     "type": "columnar",
+     "accounts": [
+      "Cash at Bank",
+      "Office Furniture",
+      "Loan",
+      "Capital"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial Q3",
+   "deliverables": [
+    {
+     "type": "columnar",
+     "accounts": [
+      "Cash at Bank",
+      "Mobile Phone",
+      "Wages Expense",
+      "Sales"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial Q4",
+   "deliverables": [
+    {
+     "type": "trialBalance"
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial Q5",
+   "deliverables": [
+    {
+     "type": "columnar",
+     "accounts": [
+      "Cash at Bank",
+      "Accounts Receivable",
+      "Accounts Payable",
+      "Capital",
+      "Sales",
+      "Purchases",
+      "Wages Expense",
+      "Telephone Expense"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial Q6",
+   "parts": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h"
+   ]
+  },
+  {
+   "ref": "Tutorial Additional 1",
+   "parts": [
+    "a",
+    "b"
+   ],
+   "deliverables": [
+    {
+     "type": "columnar",
+     "accounts": [
+      "Cash at Bank",
+      "Accounts Receivable",
+      "Accounts Payable",
+      "Purchases",
+      "Sales",
+      "Discount Allowed",
+      "Discount Received",
+      "Sales Returns",
+      "Purchase Returns",
+      "Capital",
+      "Drawings",
+      "Delivery Van"
+     ]
+    },
+    {
+     "type": "trialBalance"
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial Additional 2",
+   "deliverables": [
+    {
+     "type": "columnar",
+     "accounts": [
+      "Cash at Bank",
+      "Accounts Receivable",
+      "Accounts Payable",
+      "Purchases",
+      "Sales",
+      "Telephone Expense",
+      "Wages Expense",
+      "Capital"
+     ]
+    },
+    {
+     "type": "trialBalance"
+    }
+   ]
+  },
+  "Lecture p17",
+  "Lecture p18"
+ ],
+ "intro": [
+  "本周学分类账的第二种格式<strong>多栏式</strong>（columnar format），以及会计循环第 5 步<strong>试算平衡表</strong>（trial balance）。多栏式每过一笔就算一次余额，并标明 Dr 或 Cr。Tutorial Guide 每道题要求的每一个多栏式账户和试算表都由程序从分录生成，余额不会算错；原文模板里的几处笔误在对应题目下说明。"
+ ],
+ "sections": [
+  {
+   "title": "多栏式账户（Columnar Format）",
+   "sources": [
+    {
+     "file": "unit7 lecture slides column format & tb.pdf",
+     "pages": "p4–12"
+    },
+    {
+     "file": "unit7 reading materials columnar & trial balance.pdf",
+     "pages": "p1–3"
+    },
+    {
+     "file": "unit5a practice balancing an account (columnar).pdf",
+     "pages": "p1–2"
+    },
+    {
+     "file": "unit7 tutorial guide columnar & tb.pdf",
+     "pages": "p2–7"
+    }
+   ],
+   "concept": "多栏式账户的栏目：日期、摘要（对方账户）、借方、贷方、<strong>余额</strong>，余额后写 Dr 或 Cr。\n<strong>每过一笔就更新余额</strong>：余额在借方时，再来借方就加、来贷方就减；余额在贷方时相反。最后一行的余额就是期末余额，不需要像 T 形账户那样另做 c/d、b/d。\n过账步骤：①找账户；②看记在借方栏还是贷方栏；③先写金额；④摘要写对方账户；⑤写日期；⑥算出余额并标 Dr/Cr。\n与 T 形格式的区别：日期、摘要只有一栏，借贷并排，多一栏随时更新的余额；结果与 T 形账户相同。",
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "Tutorial Terms",
+     "question": "Explain: Columnar format; Trial balance.",
+     "solution": "<strong>Columnar format</strong>：多栏式账户，栏目为日期、摘要、借方、贷方、余额，每笔交易后更新余额并标明 Dr 或 Cr。\n<strong>Trial balance</strong>：试算平衡表，某一时点列出总分类账全部账户余额，借方余额一栏、贷方余额一栏，两栏合计应相等。",
+     "numeric": false
+    },
+    {
+     "label": "例 2",
+     "ref": "Tutorial Q1",
+     "question": "If using the columnar format of accounts, how often should the balancing occur?",
+     "solution": "每一笔交易过账后都要算一次余额（continuously），所以期末不需要单独结账，最后一行的余额就是期末余额。",
+     "numeric": false
+    },
+    {
+     "label": "例 3",
+     "ref": "Lecture p9",
+     "question": "Cash at Bank (columnar): Feb 1 Capital 10,000 Dr; Feb 8 A/C Receivable – A Vicky 2,500 Dr; Feb 21 Prepaid Rent 3,000 Cr; Feb 28 Unearned Revenue 1,000 Dr. Show the running balance.",
+     "solution": "10 000 + 2 500 = 12 500；− 3 000 = 9 500；+ 1 000 = 10 500 Dr，这是期末余额。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "columnar"
+       ],
+       "journal": [
+        {
+         "date": "Feb 1",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           10000
+          ]
+         ],
+         "cr": [
+          [
+           "Capital",
+           "equity",
+           10000
+          ]
+         ]
+        },
+        {
+         "date": "8",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           2500
+          ]
+         ],
+         "cr": [
+          [
+           "A/C Receivable – A Vicky",
+           "equity",
+           2500
+          ]
+         ]
+        },
+        {
+         "date": "21",
+         "dr": [
+          [
+           "Prepaid Rent",
+           "expense",
+           3000
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           3000
+          ]
+         ]
+        },
+        {
+         "date": "28",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           1000
+          ]
+         ],
+         "cr": [
+          [
+           "Unearned Revenue",
+           "equity",
+           1000
+          ]
+         ]
+        }
+       ],
+       "show": [
+        "Cash at Bank"
+       ],
+       "expect": {
+        "Cash at Bank": 10500
+       }
+      }
+     ]
+    },
+    {
+     "label": "例 4",
+     "ref": "Reading p1",
+     "question": "Cash at Bank (columnar), March: 1 Capital 15,000 Dr; 5 Capital 1,000 Dr; 7 Office furniture 500 Cr; 14 Office equipment 2,000 Cr; 19 Drawings 60 Cr; 27 Office rent 560 Cr.",
+     "solution": "逐行加减：15 000 → 16 000 → 15 500 → 13 500 → 13 440 → 12 880 Dr。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "columnar"
+       ],
+       "journal": [
+        {
+         "date": "Mar 1",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           15000
+          ]
+         ],
+         "cr": [
+          [
+           "Capital",
+           "equity",
+           15000
+          ]
+         ]
+        },
+        {
+         "date": "5",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           1000
+          ]
+         ],
+         "cr": [
+          [
+           "Capital",
+           "equity",
+           1000
+          ]
+         ]
+        },
+        {
+         "date": "7",
+         "dr": [
+          [
+           "Office furniture",
+           "expense",
+           500
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           500
+          ]
+         ]
+        },
+        {
+         "date": "14",
+         "dr": [
+          [
+           "Office equipment",
+           "expense",
+           2000
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           2000
+          ]
+         ]
+        },
+        {
+         "date": "19",
+         "dr": [
+          [
+           "Drawings",
+           "expense",
+           60
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           60
+          ]
+         ]
+        },
+        {
+         "date": "27",
+         "dr": [
+          [
+           "Office rent",
+           "expense",
+           560
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           560
+          ]
+         ]
+        }
+       ],
+       "show": [
+        "Cash at Bank"
+       ],
+       "expect": {
+        "Cash at Bank": 12880
+       }
+      }
+     ]
+    },
+    {
+     "label": "例 5",
+     "ref": "Lecture Exercise 5a",
+     "question": "Post to the General Ledger (columnar) from the analysis table and balance: Feb 1 Cash/Capital 10,000; 6 Office Furniture/Accounts Payable – Fantastic Chairs 5,000; 13 Accounts Receivable – Barry/Sales 100; 22 Cash/Accounts Receivable – Barry 100; 25 Accounts Payable – Fantastic Chairs/Cash 1,000.",
+     "solution": "每个账户逐笔过账并算余额。A/R 收回后余额为 0；现金 10 000 + 100 − 1 000 = 9 100 Dr；应付账款 5 000 − 1 000 = 4 000 Cr。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "columnar"
+       ],
+       "journal": [
+        {
+         "date": "1/2",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           10000
+          ]
+         ],
+         "cr": [
+          [
+           "Capital",
+           "equity",
+           10000
+          ]
+         ]
+        },
+        {
+         "date": "6/2",
+         "dr": [
+          [
+           "Office Furniture",
+           "asset",
+           5000
+          ]
+         ],
+         "cr": [
+          [
+           "Accounts Payable",
+           "liability",
+           5000
+          ]
+         ]
+        },
+        {
+         "date": "13/2",
+         "dr": [
+          [
+           "Accounts Receivable",
+           "asset",
+           100
+          ]
+         ],
+         "cr": [
+          [
+           "Sales",
+           "revenue",
+           100
+          ]
+         ]
+        },
+        {
+         "date": "22/2",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           100
+          ]
+         ],
+         "cr": [
+          [
+           "Accounts Receivable",
+           "asset",
+           100
+          ]
+         ]
+        },
+        {
+         "date": "25/2",
+         "dr": [
+          [
+           "Accounts Payable",
+           "liability",
+           1000
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           1000
+          ]
+         ]
+        }
+       ],
+       "expect": {
+        "Cash at Bank": 9100,
+        "Accounts Payable": -4000,
+        "Accounts Receivable": 0
+       }
+      }
+     ],
+     "sourceNote": "练习页的账户模板写的是「Office Equipment Account」，但分析表里买的是 Office Furniture，这里按分析表用 Office Furniture。"
+    },
+    {
+     "label": "例 6",
+     "ref": "Reading Worked Example",
+     "question": "J. Jay Trading (March): from the analysis table — Cash/Capital 15,000; Office Furniture/A/P – Furniture Warehouse 8,000; Cash/Capital 7,000; A/P – Furniture Warehouse/Cash 500; Office Equipment/Cash 2,000; Drawings/Cash 50; Motor Vehicle/A/P – Daisy Car Dealer 4,500; Office furniture/Cash 560. i. Record in columnar accounts. ii. Balance all accounts and note debit or credit balance.",
+     "solution": "阅读材料把两个供应商放在一个 Accounts Payable Control 账户里，这里照做：8 000 − 500 + 4 500 = 12 000 Cr。现金 18 890 Dr，资本 22 000 Cr，办公家具 8 560 Dr。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "columnar"
+       ],
+       "journal": [
+        {
+         "date": "Mar 1",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           15000
+          ]
+         ],
+         "cr": [
+          [
+           "Capital",
+           "equity",
+           15000
+          ]
+         ]
+        },
+        {
+         "date": "2",
+         "dr": [
+          [
+           "Office Furniture",
+           "asset",
+           8000
+          ]
+         ],
+         "cr": [
+          [
+           "Accounts Payable",
+           "liability",
+           8000
+          ]
+         ]
+        },
+        {
+         "date": "5",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           7000
+          ]
+         ],
+         "cr": [
+          [
+           "Capital",
+           "equity",
+           7000
+          ]
+         ]
+        },
+        {
+         "date": "7",
+         "dr": [
+          [
+           "Accounts Payable",
+           "liability",
+           500
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           500
+          ]
+         ]
+        },
+        {
+         "date": "14",
+         "dr": [
+          [
+           "Office Equipment",
+           "asset",
+           2000
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           2000
+          ]
+         ]
+        },
+        {
+         "date": "19",
+         "dr": [
+          [
+           "Drawings",
+           "drawings",
+           50
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           50
+          ]
+         ]
+        },
+        {
+         "date": "26",
+         "dr": [
+          [
+           "Motor Vehicle",
+           "asset",
+           4500
+          ]
+         ],
+         "cr": [
+          [
+           "Accounts Payable",
+           "liability",
+           4500
+          ]
+         ]
+        },
+        {
+         "date": "27",
+         "dr": [
+          [
+           "Office Furniture",
+           "asset",
+           560
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           560
+          ]
+         ]
+        }
+       ],
+       "expect": {
+        "Cash at Bank": 18890,
+        "Capital": -22000,
+        "Office Furniture": 8560,
+        "Accounts Payable": -12000
+       }
+      }
+     ],
+     "parts": [
+      "i",
+      "ii"
+     ]
+    },
+    {
+     "label": "例 7",
+     "ref": "Tutorial Q2",
+     "question": "Using the analysis table (1/6 Cash at bank/Capital 10,000; 2/6 Office Furniture/Cash 2,000; 3/6 Cash/Loan 30,000), post to the ledger in columnar format and balance.",
+     "solution": "现金 10 000 → 8 000 → 38 000 Dr；办公家具 2 000 Dr；贷款 30 000 Cr；资本 10 000 Cr。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "columnar"
+       ],
+       "journal": [
+        {
+         "date": "1/6",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           10000
+          ]
+         ],
+         "cr": [
+          [
+           "Capital",
+           "equity",
+           10000
+          ]
+         ]
+        },
+        {
+         "date": "2/6",
+         "dr": [
+          [
+           "Office Furniture",
+           "asset",
+           2000
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           2000
+          ]
+         ]
+        },
+        {
+         "date": "3/6",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           30000
+          ]
+         ],
+         "cr": [
+          [
+           "Loan",
+           "liability",
+           30000
+          ]
+         ]
+        }
+       ],
+       "expect": {
+        "Cash at Bank": 38000,
+        "Loan": -30000
+       }
+      }
+     ]
+    },
+    {
+     "label": "例 8",
+     "ref": "Tutorial Q3",
+     "question": "Using the analysis table (13/1 Cash/Sales; 26/1 Mobile Phone/Cash 500; 28/1 Wages Expense/Cash 3,000), post to the ledger in columnar format and balance.",
+     "solution": "现金 100 → −400 → −3 400，最后是贷方余额 3 400 Cr：付出的钱比收到的多，现金账户出现贷方余额，实务中就是银行透支。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "columnar"
+       ],
+       "journal": [
+        {
+         "date": "13/1",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           100
+          ]
+         ],
+         "cr": [
+          [
+           "Sales",
+           "revenue",
+           100
+          ]
+         ]
+        },
+        {
+         "date": "26/1",
+         "dr": [
+          [
+           "Mobile Phone",
+           "asset",
+           500
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           500
+          ]
+         ]
+        },
+        {
+         "date": "28/1",
+         "dr": [
+          [
+           "Wages Expense",
+           "expense",
+           3000
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           3000
+          ]
+         ]
+        }
+       ],
+       "expect": {
+        "Cash at Bank": -3400
+       }
+      }
+     ],
+     "sourceNote": "原表把 Sales 的要素写成 L、把 Wages Expense 写成 A，应为 R 和 E；13/1 的金额写成「1 00 00」，第 2 周同一题是 $100，这里按 100.00 处理。"
+    },
+    {
+     "label": "例 9",
+     "ref": "Tutorial Q5",
+     "question": "Ben's Pharmacy (analysis table, January): 1 Cash/Capital 111,900; 3 Cash/Sales 1,380; 4 Purchases/A/P – Randwick Trading 300; 8 Telephone Expense/Cash 18; 9 A/R – Vicky/Sales 680; 18 Cash/A/R – Vicky 360; 27 A/P – Randwick/Cash 180; 31 Wages Expense/Cash 2,660. Post to the columnar ledger and balance.",
+     "solution": "按模板 8 个账户全部过账。现金 110 782 Dr，应收 320 Dr，应付 120 Cr，销售 2 060 Cr。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "columnar"
+       ],
+       "journal": [
+        {
+         "date": "1 Jan",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           111900
+          ]
+         ],
+         "cr": [
+          [
+           "Capital",
+           "equity",
+           111900
+          ]
+         ]
+        },
+        {
+         "date": "3",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           1380
+          ]
+         ],
+         "cr": [
+          [
+           "Sales",
+           "revenue",
+           1380
+          ]
+         ]
+        },
+        {
+         "date": "4",
+         "dr": [
+          [
+           "Purchases",
+           "expense",
+           300
+          ]
+         ],
+         "cr": [
+          [
+           "Accounts Payable",
+           "liability",
+           300
+          ]
+         ]
+        },
+        {
+         "date": "8",
+         "dr": [
+          [
+           "Telephone Expense",
+           "expense",
+           18
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           18
+          ]
+         ]
+        },
+        {
+         "date": "9",
+         "dr": [
+          [
+           "Accounts Receivable",
+           "asset",
+           680
+          ]
+         ],
+         "cr": [
+          [
+           "Sales",
+           "revenue",
+           680
+          ]
+         ]
+        },
+        {
+         "date": "18",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           360
+          ]
+         ],
+         "cr": [
+          [
+           "Accounts Receivable",
+           "asset",
+           360
+          ]
+         ]
+        },
+        {
+         "date": "27",
+         "dr": [
+          [
+           "Accounts Payable",
+           "liability",
+           180
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           180
+          ]
+         ]
+        },
+        {
+         "date": "31",
+         "dr": [
+          [
+           "Wages Expense",
+           "expense",
+           2660
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           2660
+          ]
+         ]
+        }
+       ],
+       "expect": {
+        "Cash at Bank": 110782,
+        "Accounts Receivable": 320,
+        "Accounts Payable": -120,
+        "Sales": -2060
+       }
+      }
+     ],
+     "sourceNote": "本周的分析表没有第 5 周那两笔（Jan 2 房租 840、Jan 12 Grace 现金 500），这里按本周分析表过账。"
+    }
+   ],
+   "mistakes": [
+    "余额后不写 Dr/Cr。",
+    "贷方余额的账户遇到借方时继续相加：贷方余额遇借方要减。",
+    "摘要写本账户名：要写对方账户。"
+   ],
+   "faqs": [
+    {
+     "q": "多栏式和 T 形算出来会不一样吗？",
+     "a": "不会，只是格式不同，期末余额一样。"
+    },
+    {
+     "q": "资产账户出现 Cr 余额怎么办？",
+     "a": "先检查是否过账记反；现金出现贷方余额也可能是真的透支。"
+    }
+   ]
+  },
+  {
+   "title": "试算平衡表（Trial Balance）",
+   "sources": [
+    {
+     "file": "unit7 lecture slides column format & tb.pdf",
+     "pages": "p13–18"
+    },
+    {
+     "file": "unit7 reading materials columnar & trial balance.pdf",
+     "pages": "p4–5"
+    },
+    {
+     "file": "unit7 tutorial guide columnar & tb.pdf",
+     "pages": "p4–15"
+    }
+   ],
+   "concept": "<strong>试算平衡表</strong>列出某一时点所有分类账账户的余额，用来检查借贷是否相等，是编报表前的准备。\n编制：①列出全部账户；②资产、费用、提款的余额放借方栏；③负债、所有者权益、收入的余额放贷方栏；④两栏加总；⑤核对相等。抵减账户：Sales Returns、Discount Allowed 在借方，Purchase Returns、Discount Received、Accumulated Depreciation 在贷方。\n<strong>局限</strong>：借贷仍然相等的错误查不出来——整笔漏记、记错账户、数字颠倒（同一错数记两边）、借贷方向整笔记反、整笔重复记录。",
+   "examples": [
+    {
+     "label": "例 10",
+     "ref": "Lecture p17",
+     "question": "Kingsford Trading trial balance (21 accounts): check that debit total equals credit total.",
+     "solution": "借方：1 940 + 3 110 + 3 500 + 30 + 104 + 21 800 + 0 + 740 + 9 700 + 26 + 250 + 20 + 100 + 680 = 42 000。贷方：550 + 20 950 + 100 + 12 900 + 6 840 + 10 + 650 = 42 000。",
+     "checks": [
+      {
+       "expr": "1940+3110+3500+30+104+21800+0+740+9700+26+250+20+100+680",
+       "equals": "42000"
+      },
+      {
+       "expr": "550+20950+100+12900+6840+10+650",
+       "equals": "42000"
+      }
+     ]
+    },
+    {
+     "label": "例 11",
+     "ref": "Tutorial Q4",
+     "question": "P. Holden, April 2025 balances: Accounts Receivable 27,184; Accounts payable 14,692; Cash ?; Delivery Equipment 120,000; Fuel Expense 1,416; Insurance expense 946; Bank Loan 65,000; Repair expense 1,822; Sales 35,000; Salaries expense 9,000; Capital 80,000. Prepare a trial balance and calculate cash.",
+     "solution": "贷方合计 14 692 + 65 000 + 35 000 + 80 000 = 194 692（模板已给出）。借方合计必须相等：现金 = 194 692 − (27 184 + 120 000 + 1 416 + 946 + 1 822 + 9 000) = 34 324。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [],
+       "journal": [],
+       "openings": [
+        {
+         "account": "Accounts Receivable",
+         "kind": "asset",
+         "amount": 27184,
+         "date": "30 Apr"
+        },
+        {
+         "account": "Accounts Payable",
+         "kind": "liability",
+         "amount": 14692,
+         "date": "30 Apr"
+        },
+        {
+         "account": "Cash at Bank",
+         "kind": "asset",
+         "amount": 34324,
+         "date": "30 Apr"
+        },
+        {
+         "account": "Delivery Equipment",
+         "kind": "asset",
+         "amount": 120000,
+         "date": "30 Apr"
+        },
+        {
+         "account": "Fuel Expense",
+         "kind": "expense",
+         "amount": 1416,
+         "date": "30 Apr"
+        },
+        {
+         "account": "Insurance Expense",
+         "kind": "expense",
+         "amount": 946,
+         "date": "30 Apr"
+        },
+        {
+         "account": "Bank Loan",
+         "kind": "liability",
+         "amount": 65000,
+         "date": "30 Apr"
+        },
+        {
+         "account": "Repair Expense",
+         "kind": "expense",
+         "amount": 1822,
+         "date": "30 Apr"
+        },
+        {
+         "account": "Sales",
+         "kind": "revenue",
+         "amount": 35000,
+         "date": "30 Apr"
+        },
+        {
+         "account": "Salaries Expense",
+         "kind": "expense",
+         "amount": 9000,
+         "date": "30 Apr"
+        },
+        {
+         "account": "Capital",
+         "kind": "equity",
+         "amount": 80000,
+         "date": "30 Apr"
+        }
+       ],
+       "trialBalance": "P. Holden Trial Balance as at 30 April 2025"
+      }
+     ],
+     "checks": [
+      {
+       "expr": "194692-(27184+120000+1416+946+1822+9000)",
+       "equals": "34324"
+      }
+     ]
+    },
+    {
+     "label": "例 12",
+     "ref": "Tutorial Q6",
+     "question": "Will the trial balance still balance (YES/NO)? a) a debit of $20 and a credit of $200; b) a whole transaction never posted; c) a debit posted twice to the same account; d) an invoice lost and the transaction not recorded; e) a transaction recorded in the journal twice; f) $540 printer recorded as Dr Office Equipment $54 and Cr Cash $54; g) $400 payment to a creditor recorded as Dr A/P $400 and Cr Cash $40; h) $800 receivable collected, recorded as Dr Cash $800 and Dr Accounts Payable $800.",
+     "solution": "判断标准：借方总额是否仍等于贷方总额。\na) NO（20 ≠ 200）\nb) YES（两边都没记）\nc) NO（借方多记一次）\nd) YES（两边都没记）\ne) YES（两边都多记一次）\nf) YES（两边同样错成 54）\ng) NO（400 ≠ 40）\nh) NO（两个借方，没有贷方）",
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 13",
+     "ref": "Tutorial Additional 1",
+     "question": "Alex Roger (July): post the given journal entries (Tutorial Guide p8–10) to the ledger accounts (columnar templates) and prepare a trial balance at 31 July 2025.",
+     "solution": "按 Tutorial Guide 给出的分录逐笔过账。模板只有一个 Account Receivable 和一个 Account Payable，所以用控制账户。现金 30 560 Dr。试算平衡表两边都是 58 360。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "columnar"
+       ],
+       "journal": [
+        {
+         "date": "2 Jul",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           30000
+          ]
+         ],
+         "cr": [
+          [
+           "Capital",
+           "equity",
+           30000
+          ]
+         ]
+        },
+        {
+         "date": "3",
+         "dr": [
+          [
+           "Delivery Van",
+           "asset",
+           20000
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           4000
+          ],
+          [
+           "Accounts Payable",
+           "liability",
+           16000
+          ]
+         ]
+        },
+        {
+         "date": "5",
+         "dr": [
+          [
+           "Accounts Receivable",
+           "asset",
+           2000
+          ]
+         ],
+         "cr": [
+          [
+           "Sales",
+           "revenue",
+           2000
+          ]
+         ]
+        },
+        {
+         "date": "6",
+         "dr": [
+          [
+           "Drawings",
+           "drawings",
+           400
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           400
+          ]
+         ]
+        },
+        {
+         "date": "7",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           1470
+          ],
+          [
+           "Discount Allowed",
+           "expense",
+           30
+          ]
+         ],
+         "cr": [
+          [
+           "Accounts Receivable",
+           "asset",
+           1500
+          ]
+         ]
+        },
+        {
+         "date": "7",
+         "dr": [
+          [
+           "Purchases",
+           "expense",
+           3000
+          ]
+         ],
+         "cr": [
+          [
+           "Accounts Payable",
+           "liability",
+           3000
+          ]
+         ]
+        },
+        {
+         "date": "9",
+         "dr": [
+          [
+           "Accounts Payable",
+           "liability",
+           3000
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           3000
+          ]
+         ]
+        },
+        {
+         "date": "11",
+         "dr": [
+          [
+           "Accounts Payable",
+           "liability",
+           3000
+          ]
+         ],
+         "cr": [
+          [
+           "Discount Received",
+           "revenue",
+           60
+          ],
+          [
+           "Cash at Bank",
+           "asset",
+           2940
+          ]
+         ]
+        },
+        {
+         "date": "12",
+         "dr": [
+          [
+           "Accounts Receivable",
+           "asset",
+           7200
+          ]
+         ],
+         "cr": [
+          [
+           "Sales",
+           "revenue",
+           7200
+          ]
+         ]
+        },
+        {
+         "date": "13",
+         "dr": [
+          [
+           "Sales Returns",
+           "contra-revenue",
+           200
+          ]
+         ],
+         "cr": [
+          [
+           "Accounts Receivable",
+           "asset",
+           200
+          ]
+         ]
+        },
+        {
+         "date": "15",
+         "dr": [
+          [
+           "Purchases",
+           "expense",
+           2100
+          ]
+         ],
+         "cr": [
+          [
+           "Accounts Payable",
+           "liability",
+           2100
+          ]
+         ]
+        },
+        {
+         "date": "17",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           6930
+          ],
+          [
+           "Discount Allowed",
+           "expense",
+           70
+          ]
+         ],
+         "cr": [
+          [
+           "Accounts Receivable",
+           "asset",
+           7000
+          ]
+         ]
+        },
+        {
+         "date": "18",
+         "dr": [
+          [
+           "Accounts Payable",
+           "liability",
+           100
+          ]
+         ],
+         "cr": [
+          [
+           "Purchase Returns",
+           "contra-expense",
+           100
+          ]
+         ]
+        },
+        {
+         "date": "23",
+         "dr": [
+          [
+           "Purchases",
+           "expense",
+           1500
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           1500
+          ]
+         ]
+        },
+        {
+         "date": "29",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           4000
+          ]
+         ],
+         "cr": [
+          [
+           "Sales",
+           "revenue",
+           4000
+          ]
+         ]
+        }
+       ],
+       "trialBalance": "Alex Roger Trial Balance as at 31 July 2025",
+       "expect": {
+        "Cash at Bank": 30560,
+        "Accounts Receivable": 500,
+        "Accounts Payable": -15000
+       }
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ],
+     "sourceNote": "题目写「post to the relevant T-Accounts」，给的模板却是多栏式，这里按模板用多栏式。试算表模板里有 Salaries Expense，但本周给出的分录里没有工资这一笔（第 5 周的版本有一笔 Jul 12 工资 1 500），所以这里没有这个账户。"
+    },
+    {
+     "label": "例 14",
+     "ref": "Tutorial Additional 2",
+     "question": "Ben's Pharmacy, January 2025 (same transactions as Q5): complete the General Ledger in column format and c. prepare a trial balance.",
+     "solution": "过账与第 9 题相同，再把 8 个账户的余额列成试算表：借方 110 782 + 320 + 300 + 2 660 + 18 = 114 080；贷方 120 + 111 900 + 2 060 = 114 080。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "columnar"
+       ],
+       "journal": [
+        {
+         "date": "1 Jan",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           111900
+          ]
+         ],
+         "cr": [
+          [
+           "Capital",
+           "equity",
+           111900
+          ]
+         ]
+        },
+        {
+         "date": "3",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           1380
+          ]
+         ],
+         "cr": [
+          [
+           "Sales",
+           "revenue",
+           1380
+          ]
+         ]
+        },
+        {
+         "date": "4",
+         "dr": [
+          [
+           "Purchases",
+           "expense",
+           300
+          ]
+         ],
+         "cr": [
+          [
+           "Accounts Payable",
+           "liability",
+           300
+          ]
+         ]
+        },
+        {
+         "date": "8",
+         "dr": [
+          [
+           "Telephone Expense",
+           "expense",
+           18
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           18
+          ]
+         ]
+        },
+        {
+         "date": "9",
+         "dr": [
+          [
+           "Accounts Receivable",
+           "asset",
+           680
+          ]
+         ],
+         "cr": [
+          [
+           "Sales",
+           "revenue",
+           680
+          ]
+         ]
+        },
+        {
+         "date": "18",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           360
+          ]
+         ],
+         "cr": [
+          [
+           "Accounts Receivable",
+           "asset",
+           360
+          ]
+         ]
+        },
+        {
+         "date": "27",
+         "dr": [
+          [
+           "Accounts Payable",
+           "liability",
+           180
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           180
+          ]
+         ]
+        },
+        {
+         "date": "31",
+         "dr": [
+          [
+           "Wages Expense",
+           "expense",
+           2660
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           2660
+          ]
+         ]
+        }
+       ],
+       "trialBalance": "Ben's Pharmacy Trial Balance as at 31 January 2025",
+       "expect": {
+        "Cash at Bank": 110782
+       }
+      }
+     ],
+     "checks": [
+      {
+       "expr": "110782+320+300+2660+18",
+       "equals": "120+111900+2060"
+      }
+     ]
+    },
+    {
+     "label": "例 15",
+     "ref": "Lecture p18",
+     "question": "Give four types of error that a trial balance will not detect, with an example of each.",
+     "solution": "① 漏记（omission）：整笔分录没有记入日记账或分类账。\n② 记错账户：电费记进了电话费，借贷仍相等。\n③ 数字颠倒（transposition）：540 写成 450，两边都写错时查不出。\n④ 借贷方向整笔记反：Sales 借 700、Accounts Receivable 贷 700。",
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "把 c/d 当余额列进试算表：用期末余额（多栏式的最后一行）。",
+    "Purchase Returns 放借方：它是贷方余额。",
+    "试算平衡就以为全对：上面四类错误都查不出。"
+   ],
+   "faqs": [
+    {
+     "q": "试算平衡表的账户按什么顺序排？",
+     "a": "按分类账（会计科目表）的顺序：资产、负债、所有者权益、收入、费用。"
+    },
+    {
+     "q": "试算表不平怎么查？",
+     "a": "先核对两栏加总，再看有没有余额放错栏，最后逐笔核对过账金额。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "步骤",
+   "做什么",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "1 过账",
+    "摘要写对方账户；借贷分栏",
+    "例 5–9"
+   ],
+   [
+    "2 算余额",
+    "同方向加、反方向减，标 Dr/Cr",
+    "例 3–9"
+   ],
+   [
+    "3 试算表",
+    "借方余额 → Dr 栏；贷方余额 → Cr 栏；合计相等",
+    "例 10–14"
+   ],
+   [
+    "4 查错",
+    "知道哪些错误试算表查不出",
+    "例 12、15"
+   ]
+  ]
+ },
+ "practice": "本周任务：阅读 Unit 7 Readings；完成 Tutorial Questions 1–4、课堂第 5–6 题、两道补充练习；Lecture Exercise 5a。"
+}

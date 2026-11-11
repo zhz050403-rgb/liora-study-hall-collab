@@ -13,7 +13,8 @@ function cleanAccount(name) {
 function deliverablesFrom(text) {
   const d = [];
   const accounts = [...new Set([...text.matchAll(TEMPLATE_RE)].map(m => cleanAccount(m[1])).filter(n => n.length > 2 && !/^(Date|Particulars?)$/i.test(n)))];
-  const columnar = /columnar|column format|Balance \$/i.test(text) && /Debit\s*\$?\s*Credit\s*\$?\s*Balance/i.test(text);
+  /* 多栏式模板的表头有多种写法：Debit Credit Balance、Dr Cr Bal Dr/Cr、DR CR Balance Dr/Cr。 */
+  const columnar = /\b(?:Debit|Dr)\s*\$?\s*(?:Credit|Cr)\s*\$?\s*(?:Balance|Bal)\b/i.test(text);
   if (accounts.length) d.push({ type: columnar ? 'columnar' : 'taccounts', accounts });
   else if (/post\b[^.]{0,80}\b(T\s*-?\s*accounts?|ledger)/i.test(text)) d.push({ type: columnar ? 'columnar' : 'taccounts', accounts: [] });
   const bal = [...text.matchAll(/balance the ([A-Za-z ]{3,30}?) account/gi)].map(m => m[1].trim());

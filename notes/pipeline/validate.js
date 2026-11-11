@@ -2,13 +2,15 @@
 /* 校验一周的结构化笔记：结构是否完整、课件例题有没有漏、答案能否复算、账页是否平衡、引用是否规范。
    errors 不为空时不允许发布；warnings 提示人工复查。 */
 const { evaluate } = require('./expr');
-const { postLedger, balanceOf, renderWeek, normName } = require('./render');
+const { postLedger, balanceOf, renderWeek, renderAnswers, normName, computeStatement } = require('./render');
 
 const CJK = /[一-鿿]/;
 
 function textOf(note) { return JSON.stringify(note); }
 
 function validateWeek(note, opts = {}) {
+  /* 本周资料清单：命令行 --files 优先，否则用 JSON 里的 files（来自网站 data.js 的这一周文件）。 */
+  const files = opts.files || (Array.isArray(note.files) ? note.files : null);
   const errors = [], warnings = [];
   const err = (where, msg) => errors.push(where + '：' + msg), warn = (where, msg) => warnings.push(where + '：' + msg);
   for (const k of ['course', 'term', 'week', 'sections', 'inventory']) if (note[k] == null) err('顶层', '缺少字段 ' + k);
@@ -22,7 +24,7 @@ function validateWeek(note, opts = {}) {
     if (!Array.isArray(s.sources) || !s.sources.length) err(at, '缺少来源（文件名和页码）');
     for (const src of s.sources || []) {
       if (!src.file || !src.pages) err(at, '来源要同时写文件名和页码');
-      else if (opts.files && !opts.files.includes(src.file)) err(at, '来源文件不在本周资料里：' + src.file);
+      else if (files && !files.includes(src.file)) err(at, '来源文件不在本周资料里：' + src.file);
     }
     if (!s.concept || !CJK.test(s.concept)) err(at, '缺少中文「概念」讲解');
     if (!(s.mistakes || []).length) err(at, '缺少「易错」');
@@ -35,7 +37,7 @@ function validateWeek(note, opts = {}) {
       for (const r of [ex.ref, ...(ex.covers || [])]) if (r) covered.add(r);
       if (!ex.question) err(where, '缺少题目');
       if (!ex.solution || !CJK.test(ex.solution)) err(where, '缺少中文解答');
-      if (ex.numeric !== false && !(ex.checks || []).length && !(ex.figures || []).some(f => f.type === 'ledger')) warn(where, '没有可复算的核对项（纯概念题请写 numeric: false）');
+      if (ex.numeric !== false && !(ex.checks || []).length && !(ex.figures || []).some(f => f.type === 'ledger' || f.type === 'statement')) warn(where, '没有可复算的核对项（纯概念题请写 numeric: false）');
       for (const c of ex.checks || []) {
         checkCount++;
         try {
@@ -44,6 +46,17 @@ function validateWeek(note, opts = {}) {
         } catch (e) { err(where, '核对式无法计算：' + e.message); }
       }
       for (const fig of [...(ex.figures || []), ...(ex.questionFigures || [])]) {
+        if (fig.type === 'statement') {
+          try {
+            const val = computeStatement(fig);
+            for (const [id, want] of Object.entries(fig.expect || {})) {
+              checkCount++;
+              if (!val.has(id)) err(where, `报表「${fig.title}」没有 ${id} 这一行`);
+              else if (Math.abs(val.get(id) - want) > 1e-6) err(where, `报表「${fig.title}」${id} 算出来是 ${val.get(id)}，与原文给出的 ${want} 不符`);
+            }
+          } catch (e) { err(where, e.message); }
+          continue;
+        }
         if (fig.type !== 'ledger') continue;
         try {
           const acc = postLedger(fig);
@@ -85,6 +98,10 @@ function validateWeek(note, opts = {}) {
         if (!views.has(t)) err(ref, t === 'journal' ? '要求写分录表，但答案里没有' : '要求写交易分析表，但答案里没有');
       } else if (t === 'trialBalance') {
         if (!ledgers.some(f => f.trialBalance)) err(ref, '要求编试算平衡表，但答案里没有');
+      } else if (t === 'statement') {
+        const st = figs.filter(f => f.type === 'statement');
+        if (!st.length) err(ref, '要求编财务报表，但答案里没有');
+        if (d.kind && !st.some(f => f.kind === d.kind)) err(ref, `要求的报表（${d.kind}）没有给出`);
       } else if (t === 'figure') {
         if (!figs.some(f => f.type !== 'ledger')) err(ref, '要求作图，但答案里没有图');
       } else if (t === 'table') {
@@ -109,7 +126,7 @@ function validateWeek(note, opts = {}) {
   const tags = raw.match(/<\/?([a-z]+)/g) || [];
   const bad = [...new Set(tags.map(t => t.replace(/[</]/g, '')).filter(t => !['strong', 'em', 'br', 'sub', 'sup'].includes(t)))];
   if (bad.length) warn('格式', '正文里出现了不允许的标签（会被转义显示）：' + bad.join(', '));
-  try { renderWeek(note); } catch (e) { err('渲染', e.message); }
+  try { renderWeek(note); renderAnswers(note); } catch (e) { err('渲染', e.message); }
   return { errors, warnings, stats: { sections: note.sections.length, examples: exampleCount, inventory: (note.inventory || []).length, deliverables: (note.inventory || []).reduce((n, i) => n + ((i.deliverables || []).length + (i.parts || []).length), 0), checks: checkCount } };
 }
 

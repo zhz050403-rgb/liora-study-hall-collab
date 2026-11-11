@@ -1,0 +1,146 @@
+{
+ "course": "accounting",
+ "term": "term1",
+ "week": 7,
+ "title": "Week 7 · 期中复习与巩固",
+ "files": [
+  "unit2 tutorial guide accounting conventions.pdf",
+  "unit3 tutorial guide double entry & transaction analysis.pdf",
+  "unit4 tutorial guide journal entries.pdf",
+  "unit5 tutorial guide adjusting entries.pdf",
+  "unit6 tutorial guide t-format.pdf",
+  "unit7 tutorial guide columnar & tb.pdf"
+ ],
+ "inventory": [
+  "Midterm Map",
+  "Midterm Self-test"
+ ],
+ "intro": [
+  "第 7 周没有新的课件，是期中复习周。本页把第 1–6 周（会计循环第 1–5 步）串成一张复习地图，并列出一套按难度排列的自测题——全部是前几周笔记里已有完整解答的原题，做完直接回到对应周核对。"
+ ],
+ "sections": [
+  {
+   "title": "会计循环第 1–5 步复习地图",
+   "sources": [
+    {
+     "file": "unit2 tutorial guide accounting conventions.pdf",
+     "pages": "p2–7"
+    },
+    {
+     "file": "unit3 tutorial guide double entry & transaction analysis.pdf",
+     "pages": "p2–13"
+    },
+    {
+     "file": "unit4 tutorial guide journal entries.pdf",
+     "pages": "p2–13"
+    },
+    {
+     "file": "unit5 tutorial guide adjusting entries.pdf",
+     "pages": "p2–8"
+    },
+    {
+     "file": "unit6 tutorial guide t-format.pdf",
+     "pages": "p1–24"
+    },
+    {
+     "file": "unit7 tutorial guide columnar & tb.pdf",
+     "pages": "p2–16"
+    }
+   ],
+   "concept": "一笔交易从发生到试算表的完整路线：\n① 判断是不是交易、用哪种会计基础（第 1 周）；② 分析：哪两个账户、A/L/OE/R/E、增减、Dr/Cr（第 2 周）；③ 写分录，含折扣、退货、坏账（第 3 周）；④ 期末调整：预付、预收、折旧、应计（第 4 周）；⑤ 过账到 T 形账户并结账（第 5 周）或多栏式账户（第 6 周）；⑥ 试算平衡表（第 5、6 周）。\n每一步都可以用 A + E = L + OE + R 检查。",
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "Midterm Map",
+     "question": "Map each mid-term topic to the week and worked examples to revise.",
+     "solution": "见下表。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "主题",
+        "关键规则",
+        "去哪一周练"
+       ],
+       "rows": [
+        [
+         "会计惯例、会计等式",
+         "主体、历史成本、复式记账、权责发生",
+         "第 1 周 例 14–26"
+        ],
+        [
+         "五要素与借贷规则",
+         "A、E 增加记借；L、OE、R 增加记贷",
+         "第 2 周 例 9–21"
+        ],
+        [
+         "分录、折扣、退货、坏账",
+         "Discount Received 是收入，Discount Allowed 是费用；退货用 Returns 账户",
+         "第 3 周 例 4–20"
+        ],
+        [
+         "调整分录",
+         "不动现金；本期金额 = 总额 × 本期月数 ÷ 总月数",
+         "第 4 周 例 2–24"
+        ],
+        [
+         "T 形账户过账、结账",
+         "摘要写对方账户；c/d 在小的一边，b/d 在下月对面",
+         "第 5 周 例 1–16"
+        ],
+        [
+         "多栏式与试算表",
+         "每笔更新余额；借方余额进 Dr 栏",
+         "第 6 周 例 3–15"
+        ]
+       ]
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 2",
+     "ref": "Midterm Self-test",
+     "question": "Self-test in increasing difficulty (answers are in the weekly notes): 1 Week 2 Q14 Willow Convenience Store analysis table; 2 Week 3 Q1 Jack Hammer journal; 3 Week 3 Thor Painting (discounts, returns, bad debt); 4 Week 4 Q8 Willow Wind adjusting entries; 5 Week 5 Extra 1 Ben's Pharmacy (analysis, journal, T-accounts, trial balance); 6 Week 6 Additional 1 Alex Roger (columnar accounts and trial balance).",
+     "solution": "按顺序做，每题限时：1 题 10 分钟，2 题 15 分钟，3 题 15 分钟，4 题 20 分钟，5 题 30 分钟，6 题 30 分钟。做完回到对应周核对：第 2 周 例 20、第 3 周 例 4 和例 20、第 4 周 例 23、第 5 周 例 12、第 6 周 例 13。错的题记下错因（借贷记反、漏账户、折扣算错、月份数错），再做一遍同类题。",
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "只看答案不动笔：会计题要自己写一遍格式。",
+    "每题只做一半：分析表、分录、账户、试算表要逐项交齐。"
+   ],
+   "faqs": [
+    {
+     "q": "期中会考报表吗？",
+     "a": "按课程顺序，报表（第 8–11 周）在期中之后；期中以会计循环前 5 步为主，具体范围以老师通知为准。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "步骤",
+   "做什么",
+   "对应"
+  ],
+  "rows": [
+   [
+    "1 看地图",
+    "找出没把握的主题",
+    "例 1"
+   ],
+   [
+    "2 限时自测",
+    "按顺序做 6 题",
+    "例 2"
+   ],
+   [
+    "3 改错",
+    "回到对应周核对并重做同类题",
+    "例 2"
+   ]
+  ]
+ },
+ "practice": "本周任务：完成自测 6 题，整理错题。"
+}

@@ -5,7 +5,7 @@ const path = require('node:path');
 const { validateWeek } = require('../notes/pipeline/validate');
 const { renderWeek, inline } = require('../notes/pipeline/render');
 
-const sample = require(path.join(__dirname, '../notes/pipeline/examples/mathematics-term2-w5.json'));
+const sample = require(path.join(__dirname, '../notes/weeks/mathematics/term2/w05.json'));
 const clone = () => JSON.parse(JSON.stringify(sample));
 
 let r = validateWeek(sample);
@@ -44,8 +44,8 @@ assert.match(renderWeek(expect), /Balance c\/d<\/td><td>950/);
 
 /* 会计样例：题目要求交的每一张表、每个账户、每个小问都必须交齐，并与原文提取的要求对上。 */
 const { extractRequirements } = require('../notes/pipeline/extract');
-const acct = require(path.join(__dirname, '../notes/pipeline/examples/accounting-term1-w5.json'));
-const acctReq = require(path.join(__dirname, '../notes/pipeline/examples/accounting-term1-w5.requirements.json'));
+const acct = require(path.join(__dirname, '../notes/weeks/accounting/term1/w05.json'));
+const acctReq = require(path.join(__dirname, '../notes/weeks/accounting/term1/w05.requirements.json'));
 const aclone = () => JSON.parse(JSON.stringify(acct));
 const exOf = (n, ref) => n.sections.flatMap(s => s.examples).find(e => e.ref === ref);
 r = validateWeek(acct, { requirements: acctReq });

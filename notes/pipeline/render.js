@@ -31,9 +31,14 @@ function plotSvg(fig) {
   const color = c => COLORS[c] || COLORS.navy;
   const o = [`<svg viewBox="0 0 ${w} ${h}" width="${w}" role="img" aria-label="${escapeHtml(fig.alt || fig.caption || '函数图像')}" font-family="sans-serif">`,
     `<rect x="0" y="0" width="${w}" height="${h}" rx="8" fill="#fbfcfe" stroke="#dfe9f5"/>`];
+  const pts = list => list.map(([x, y]) => fmt(X(x)) + ',' + fmt(Y(y))).join(' ');
+  for (const p of fig.polygons || []) {
+    o.push(`<polygon points="${pts(p.pts)}" fill="${color(p.color || 'gold')}" fill-opacity="${p.opacity ?? 0.28}" stroke="none"/>`);
+    if (p.label) o.push(`<text x="${fmt(X(p.label[0]))}" y="${fmt(Y(p.label[1]))}" font-size="11" fill="${color(p.color || 'gold')}" font-weight="700" text-anchor="middle">${escapeHtml(p.label[2])}</text>`);
+  }
   for (const [a, b, c] of fig.shade || []) o.push(`<rect x="${fmt(X(a))}" y="${pad}" width="${fmt(X(b) - X(a))}" height="${h - 2 * pad}" fill="${color(c || 'green')}" fill-opacity="0.18"/>`);
-  if (y0 < 0 && y1 > 0) o.push(`<line x1="${pad}" y1="${fmt(Y(0))}" x2="${w - pad + 6}" y2="${fmt(Y(0))}" stroke="#7a8ba3"/><text x="${w - pad + 2}" y="${fmt(Y(0) - 5)}" font-size="11" fill="#4a5d75">${escapeHtml(fig.xLabel || 'x')}</text>`);
-  if (x0 < 0 && x1 > 0) o.push(`<line x1="${fmt(X(0))}" y1="${h - pad}" x2="${fmt(X(0))}" y2="${pad - 6}" stroke="#7a8ba3"/><text x="${fmt(X(0) + 5)}" y="${pad - 2}" font-size="11" fill="#4a5d75">${escapeHtml(fig.yLabel || 'y')}</text>`);
+  if (y0 <= 0 && y1 > 0) o.push(`<line x1="${pad}" y1="${fmt(Y(0))}" x2="${w - pad + 6}" y2="${fmt(Y(0))}" stroke="#7a8ba3"/><text x="${w - pad + 2}" y="${fmt(Y(0) - 5)}" font-size="11" fill="#4a5d75">${escapeHtml(fig.xLabel || 'x')}</text>`);
+  if (x0 <= 0 && x1 > 0) o.push(`<line x1="${fmt(X(0))}" y1="${h - pad}" x2="${fmt(X(0))}" y2="${pad - 6}" stroke="#7a8ba3"/><text x="${fmt(X(0) + 5)}" y="${pad - 2}" font-size="11" fill="#4a5d75">${escapeHtml(fig.yLabel || 'y')}</text>`);
   for (const v of fig.xticks || []) o.push(`<text x="${fmt(X(v))}" y="${fmt(Y(Math.max(y0, Math.min(0, y1))) + 13)}" font-size="10" fill="#4a5d75" text-anchor="middle">${v}</text>`);
   for (const v of fig.yticks || []) o.push(`<text x="${fmt(X(Math.max(x0, Math.min(0, x1))) - 4)}" y="${fmt(Y(v) + 3)}" font-size="10" fill="#4a5d75" text-anchor="end">${v}</text>`);
   for (const l of fig.vlines || []) o.push(`<line x1="${fmt(X(l.x))}" y1="${pad}" x2="${fmt(X(l.x))}" y2="${h - pad}" stroke="${color(l.color || 'grey')}" stroke-dasharray="3 3"/>` + (l.label ? `<text x="${fmt(X(l.x) + 3)}" y="${pad + 10}" font-size="10" fill="${color(l.color || 'grey')}">${escapeHtml(l.label)}</text>` : ''));
@@ -60,6 +65,13 @@ function plotSvg(fig) {
     if (c.label) o.push(`<text x="${fmt(X(c.label[0]))}" y="${fmt(Y(c.label[1]))}" font-size="11" fill="${color(c.color)}" font-weight="700">${escapeHtml(c.label[2])}</text>`);
   }
   o.push('</g>');
+  /* 线段与箭头：经济学图里的虚线投影（P*、Q*）和曲线移动方向。 */
+  if ((fig.segments || []).some(g => g.arrow)) o.push(`<defs><marker id="${cid}a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4a5d75"/></marker></defs>`);
+  for (const g of fig.segments || []) {
+    o.push(`<line x1="${fmt(X(g.from[0]))}" y1="${fmt(Y(g.from[1]))}" x2="${fmt(X(g.to[0]))}" y2="${fmt(Y(g.to[1]))}" stroke="${g.arrow ? '#4a5d75' : color(g.color || 'grey')}" stroke-width="${g.arrow ? 1.6 : 1.2}"${g.dash !== false && !g.arrow ? ' stroke-dasharray="3 3"' : ''}${g.arrow ? ` marker-end="url(#${cid}a)"` : ''}/>`);
+    if (g.label) o.push(`<text x="${fmt(X(g.to[0]) + (g.dx ?? 4))}" y="${fmt(Y(g.to[1]) + (g.dy ?? -4))}" font-size="10" fill="#4a5d75">${escapeHtml(g.label)}</text>`);
+  }
+  for (const t of fig.texts || []) o.push(`<text x="${fmt(X(t.x))}" y="${fmt(Y(t.y))}" font-size="${t.size || 10}" fill="${color(t.color || 'navy')}"${t.bold ? ' font-weight="700"' : ''} text-anchor="${t.anchor || 'start'}">${escapeHtml(t.text)}</text>`);
   for (const pt of fig.points || []) {
     o.push(`<circle cx="${fmt(X(pt.x))}" cy="${fmt(Y(pt.y))}" r="3.5" fill="${pt.open ? '#fff' : COLORS.navy}" stroke="${COLORS.navy}" stroke-width="1.5"/>`);
     if (pt.label) o.push(`<text x="${fmt(X(pt.x) + (pt.dx ?? 6))}" y="${fmt(Y(pt.y) + (pt.dy ?? -6))}" font-size="10" fill="${COLORS.navy}">${escapeHtml(pt.label)}</text>`);
@@ -96,6 +108,29 @@ function gridSvg(fig) {
     });
   });
   o.push('</g></svg>');
+  return o.join('');
+}
+
+/* 循环图：例如会计循环的 6 个阶段，按顺时针排布，箭头首尾相接；loopLabel 标在最后一步回到第一步的箭头旁。 */
+function cycleSvg(fig) {
+  const n = fig.steps.length, W = 360, H = 300, cx = 180, cy = 150, R = 110, bw = 104, bh = 40;
+  const at = i => { const t = -Math.PI / 2 + 2 * Math.PI * i / n; return [cx + R * Math.cos(t), cy + R * Math.sin(t)]; };
+  const o = [`<svg viewBox="0 0 ${W} ${H}" width="${W}" role="img" aria-label="${escapeHtml(fig.alt || fig.caption || '循环图')}" font-family="sans-serif">`,
+    `<defs><marker id="cyc${++clipSeq}" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#4a5d75"/></marker></defs>`];
+  const mk = `cyc${clipSeq}`;
+  for (let i = 0; i < n; i++) {
+    const [x1, y1] = at(i), [x2, y2] = at((i + 1) % n);
+    const dx = x2 - x1, dy = y2 - y1, L = Math.hypot(dx, dy), k = Math.min(0.32, 34 / L);
+    o.push(`<line x1="${fmt(x1 + dx * k)}" y1="${fmt(y1 + dy * k)}" x2="${fmt(x2 - dx * k)}" y2="${fmt(y2 - dy * k)}" stroke="${i === n - 1 ? COLORS.gold : '#4a5d75'}" stroke-width="1.6"${i === n - 1 ? ' stroke-dasharray="4 3"' : ''} marker-end="url(#${mk})"/>`);
+  }
+  fig.steps.forEach((s, i) => {
+    const [x, y] = at(i);
+    o.push(`<rect x="${fmt(x - bw / 2)}" y="${fmt(y - bh / 2)}" width="${bw}" height="${bh}" rx="8" fill="${i === 0 ? '#f6e3b4' : '#eaf3fc'}" stroke="#9fb3cc"/>`);
+    const lines = String(s).split('\n');
+    lines.forEach((t, j) => o.push(`<text x="${fmt(x)}" y="${fmt(y + 4 + (j - (lines.length - 1) / 2) * 13)}" font-size="11" text-anchor="middle" fill="#173860">${escapeHtml(t)}</text>`));
+  });
+  if (fig.loopLabel) o.push(`<text x="${cx}" y="${cy + 4}" font-size="11" text-anchor="middle" fill="${COLORS.gold}">${escapeHtml(fig.loopLabel)}</text>`);
+  o.push('</svg>');
   return o.join('');
 }
 
@@ -144,7 +179,7 @@ function taccount(name, a, endDate, nextDate, balanceIt) {
   return `<table class="kp-tbl ledger"><caption>${escapeHtml(name)}</caption><thead><tr><th>Date</th><th>Particulars</th><th>Dr $</th><th>Date</th><th>Particulars</th><th>Cr $</th></tr></thead><tbody>${rows.join('')}</tbody></table>`;
 }
 
-const KIND_CODE = { asset: 'A', liability: 'L', equity: 'OE', revenue: 'R', expense: 'E', drawings: 'OE (Drawings)', 'contra-revenue': 'R (contra)', 'contra-expense': 'E (contra)' };
+const KIND_CODE = { asset: 'A', liability: 'L', equity: 'OE', revenue: 'R', expense: 'E', drawings: 'OE (Drawings)', 'contra-revenue': 'R (contra)', 'contra-expense': 'E (contra)', 'contra-asset': 'A (contra)' };
 /* 借记资产、费用、提款是增加；贷记负债、权益、收入是增加；反过来就是减少。 */
 const effect = (kind, side) => (DEBIT_NORMAL.has(kind) === (side === 'dr')) ? 'Increase' : 'Decrease';
 
@@ -197,12 +232,63 @@ function ledgerHtml(fig) {
   return `<div class="ledger-set">${html}</div>`;
 }
 
+/* 财务报表：明细金额由 AI 抄原文，小计、合计全部由程序按 sum 计算；原文给出的合计写进 expect 核对。 */
+function computeStatement(fig) {
+  const val = new Map();
+  for (const l of fig.lines) {
+    if (l.sum) {
+      let v = 0;
+      for (const ref of l.sum) {
+        const neg = ref.startsWith('-'), id = neg ? ref.slice(1) : ref;
+        if (!val.has(id)) throw new Error(`报表「${fig.title}」的合计行 ${l.id || l.label} 引用了不存在或排在后面的行：${id}`);
+        v += neg ? -val.get(id) : val.get(id);
+      }
+      if (l.id) val.set(l.id, v);
+      l._v = v;
+    } else if (l.amount != null) { if (l.id) val.set(l.id, l.amount); l._v = l.amount; }
+  }
+  return val;
+}
+function statementHtml(fig) {
+  computeStatement(fig);
+  const cols = fig.columns || 2;
+  const cell = l => { const v = l._v; return v == null ? '' : v < 0 ? `(${money(-v)})` : money(v); };
+  const rows = fig.lines.map(l => {
+    const amt = Array.from({ length: cols }, (_, i) => `<td>${(l.col || cols) === i + 1 ? cell(l) : ''}</td>`).join('');
+    const cls = [l.head ? 'st-head' : '', l.total ? 'st-total' : '', l.double ? 'st-double' : ''].filter(Boolean).join(' ');
+    return `<tr${cls ? ` class="${cls}"` : ''}><td style="padding-left:${8 + 16 * (l.indent || 0)}px">${inline(l.label)}</td>${l.head ? '<td></td>'.repeat(cols) : amt}</tr>`;
+  });
+  const head = fig.headers ? `<thead><tr>${['', ...fig.headers].map(h => `<th>${inline(h)}</th>`).join('')}</tr></thead>` : '';
+  return `<table class="kp-tbl statement"><caption>${inline(fig.title)}</caption>${head}<tbody>${rows.join('')}</tbody></table>`;
+}
+
 function figureHtml(fig) {
-  const body = { plot: plotSvg, venn: vennSvg, grid: gridSvg, table: tableHtml, ledger: ledgerHtml }[fig.type];
+  const body = { plot: plotSvg, venn: vennSvg, grid: gridSvg, table: tableHtml, ledger: ledgerHtml, statement: statementHtml, cycle: cycleSvg }[fig.type];
   if (!body) throw new Error('不支持的图类型：' + fig.type);
   const inner = body(fig);
-  if (fig.type === 'ledger' || fig.type === 'table') return inner + (fig.caption ? `<p class="cap">${inline(fig.caption)}</p>` : '');
+  if (fig.type === 'ledger' || fig.type === 'table' || fig.type === 'statement') return inner + (fig.caption ? `<p class="cap">${inline(fig.caption)}</p>` : '');
   return `<div class="diagram">${inner}${fig.caption ? `<p class="cap">${inline(fig.caption)}</p>` : ''}</div>`;
+}
+
+function exampleHtml(ex, folded) {
+  const h = [`<p class="c-blue"><strong>${inline(ex.label)}（${escapeHtml(ex.ref)}）</strong> ${inline(ex.question)}</p>`];
+  for (const fig of ex.questionFigures || []) h.push(figureHtml(fig));
+  if (folded) h.push('<details><summary>看解答</summary>');
+  h.push(`<p>${inline(ex.solution)}${ex.sourceNote ? '<br>注：' + inline(ex.sourceNote) : ''}${ex.answer ? '<br>Answer: ' + inline(ex.answer) : ''}</p>`);
+  for (const fig of ex.figures || []) h.push(figureHtml(fig));
+  if (folded) h.push('</details>');
+  return h.join('\n');
+}
+
+/* 课后作业答案页（tutorialAnswers）：与笔记来自同一份 JSON，只取 Tutorial / Worksheet 题，解答直接展开。 */
+const isHomework = ex => ex.homework ?? /^(tutorial|tut\b|worksheet|homework|assignment|practice|exercise)/i.test(ex.ref || '');
+function renderAnswers(note) {
+  const exs = note.sections.flatMap(s => s.examples || []).filter(isHomework);
+  if (!exs.length) return '';
+  const h = [`<h3 class="gx-h">课后作业答案 · ${inline(note.answersTitle || note.title || '')}</h3>`,
+    `<p class="sup">共 ${exs.length} 题，题目保留英文原文，解答与本周笔记里的「看解答」相同；题目要求画的表、图全部给出。</p>`];
+  for (const ex of exs) h.push(exampleHtml(ex, false));
+  return h.join('\n');
 }
 
 function renderWeek(note) {
@@ -216,14 +302,7 @@ function renderWeek(note) {
     h.push(`<div class="callout blue"><strong>概念</strong><br>${inline(s.concept)}</div>`);
     for (const f of s.formulas || []) h.push(`<div class="formula">${inline(f)}</div>`);
     for (const fig of s.figures || []) h.push(figureHtml(fig));
-    for (const ex of s.examples || []) {
-      h.push(`<p class="c-blue"><strong>${inline(ex.label)}（${escapeHtml(ex.ref)}）</strong> ${inline(ex.question)}</p>`);
-      for (const fig of ex.questionFigures || []) h.push(figureHtml(fig));
-      h.push('<details><summary>看解答</summary>');
-      h.push(`<p>${inline(ex.solution)}${ex.sourceNote ? '<br>注：' + inline(ex.sourceNote) : ''}${ex.answer ? '<br>Answer: ' + inline(ex.answer) : ''}</p>`);
-      for (const fig of ex.figures || []) h.push(figureHtml(fig));
-      h.push('</details>');
-    }
+    for (const ex of s.examples || []) h.push(exampleHtml(ex, true));
     if ((s.mistakes || []).length) h.push(`<div class="callout red"><strong>易错</strong><br>${s.mistakes.map((m, i) => '①②③④⑤⑥⑦⑧'[i] + ' ' + inline(m)).join('<br>')}</div>`);
     if ((s.faqs || []).length) h.push(`<div class="callout blue"><strong>常见疑惑</strong><br>${s.faqs.map(f => `<strong>问：${inline(f.q)}</strong> ${inline(f.a)}`).join('<br>')}</div>`);
   }
@@ -235,4 +314,4 @@ function renderWeek(note) {
   return h.join('\n');
 }
 
-module.exports = { renderWeek, figureHtml, inline, postLedger, balanceOf, normName };
+module.exports = { renderWeek, renderAnswers, isHomework, figureHtml, inline, postLedger, balanceOf, normName, computeStatement };

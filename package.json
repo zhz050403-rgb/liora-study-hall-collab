@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "start": "node server.js",
-    "test": "node checks/server-regression.cjs && node checks/notes-regression.cjs && node checks/notes-pipeline.cjs",
-    "notes": "node notes/pipeline/cli.js"
+    "test": "node checks/server-regression.cjs && node checks/notes-regression.cjs && node checks/notes-pipeline.cjs && node notes/pipeline/build.js --check",
+    "notes": "node notes/pipeline/cli.js",
+    "notes:build": "node notes/pipeline/build.js"
   },
   "engines": {
     "node": ">=18"

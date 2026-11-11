@@ -24,15 +24,15 @@
 ## 命令
 
 ```bash
-npm run notes -- notes/pipeline/examples/mathematics-term2-w5.json /tmp/out.html --files L13_Basic_Probability.pdf,L14_Probability_Permutations_Combinations.pdf,L15_Union_Intersection_Complement.pdf
-npm run notes -- notes/pipeline/examples/accounting-term1-w5.json /tmp/acct.html --requirements notes/pipeline/examples/accounting-term1-w5.requirements.json
+npm run notes -- notes/weeks/mathematics/term2/w05.json /tmp/out.html --files L13_Basic_Probability.pdf,L14_Probability_Permutations_Combinations.pdf,L15_Union_Intersection_Complement.pdf
+npm run notes -- notes/weeks/accounting/term1/w05.json /tmp/acct.html --requirements notes/weeks/accounting/term1/w05.requirements.json
 npm test   # 包含 checks/notes-pipeline.cjs：错答案、漏题、不平的账、缺账户、缺表、漏小问都必须被拦下
 ```
 
 ## 目前的状态
 
 - 已完成：数据格式、渲染器、校验器、命令行、回归测试、生成规范、账页样式（`public/notes-quality.css`）；标准样例两份：数学 T2 第 5 周、会计 T1 第 5 周（17 道题，分析表、分录表、全部 T 形账户、试算表都由程序生成）。
-- 原文要求提取（`extract.js`）：在会计第 5、6 周的 Tutorial Guide 上试过，账户清单准确；题号和小问编号还有误识别，多栏式模板的识别在第 6 周失败，需要继续改进。目前提取结果人工核对后存成 `examples/*.requirements.json`。
+- 原文要求提取（`extract.js`）：在会计第 5、6 周的 Tutorial Guide 上试过，账户清单准确；题号和小问编号还有误识别，多栏式模板的识别在第 6 周失败，需要继续改进。目前提取结果人工核对后存成 `weeks/<课程>/<学期>/wNN.requirements.json`。
 - 会计第 8–11 周（财务报表）还需要一个「报表」交付物类型（利润表、资产负债表、现金流量表），尚未实现。
 - 手工写好的周笔记（`notes/math`、`notes/accounting`）还是旧的 HTML 形式，之后转成 JSON，作为各科的标准样例。
 - **还没接上的部分（需要在原电脑上做）**：

@@ -1,0 +1,132 @@
+{
+ "course": "accounting",
+ "term": "term1",
+ "week": 12,
+ "title": "Week 12 · Revision 总复习与考试结构",
+ "files": [
+  "revision lecture.pdf"
+ ],
+ "inventory": [
+  "Revision Exam Format",
+  "Revision Topic Map"
+ ],
+ "intro": [
+  "第 12 周是总复习：讲期末考试的结构和每个单元考什么。下面把考试格式和「考点 → 哪一周的例题」对照表整理好，复习时按表回到对应周的笔记做题。第 13 周是完整的样卷解答。"
+ ],
+ "sections": [
+  {
+   "title": "期末考试结构与复习地图",
+   "sources": [
+    {
+     "file": "revision lecture.pdf",
+     "pages": "p1–14"
+    }
+   ],
+   "concept": "纸笔考试，2 小时 10 分钟 + 5 分钟阅读时间，满分 100，占总成绩 50%。\n<strong>Section A</strong> 选择题 10 题 × 1 分（约 15 分钟，用铅笔涂答题卡，只有 A–D）。\n<strong>Section B</strong> 简答 4 题 × 5 分（约 25–30 分钟）。\n<strong>Section C</strong> 实务 4 题共 70 分（约 70–75 分钟）：财务报表、调整分录、财务报表分析、会计循环（交易分析表、分录、过账 T 形和多栏式、试算表）。\n带黑笔、允许使用的非编程计算器、铅笔、橡皮；禁止一切电子设备。比率公式需要时会提供。",
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "Revision Exam Format",
+     "question": "What is the structure of the final examination and how should time be allocated?",
+     "solution": "Section A：10 道选择题共 10 分，约 15 分钟；Section B：4 道简答题共 20 分，约 25–30 分钟；Section C：4 道实务题共 70 分（样卷为 20、20、20、10 分），约 70–75 分钟。总时长 2 小时 10 分钟，另有 5 分钟阅读时间。阅读时间先看 Section C，确定每题要交哪些表。",
+     "numeric": false
+    },
+    {
+     "label": "例 2",
+     "ref": "Revision Topic Map",
+     "question": "For each revision topic in the lecture, which sections can it appear in, and where are the worked examples?",
+     "solution": "见下表。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "考点",
+        "可能出现在",
+        "练习哪里"
+       ],
+       "rows": [
+        [
+         "会计惯例：在情境中判断",
+         "A、B",
+         "第 1 周 例 14–21"
+        ],
+        [
+         "使用者（内部、外部）；报告的 5 项要求；会计领域",
+         "A、B",
+         "第 1 周 例 5–9"
+        ],
+        [
+         "交易：现金制与权责发生制；原始凭证",
+         "A、B",
+         "第 1 周 例 23–26"
+        ],
+        [
+         "交易分析表；带摘要的分录；调整分录（预付、预收）",
+         "A、B、C",
+         "第 2 周 例 15–21；第 3 周；第 4 周"
+        ],
+        [
+         "分类账：T 形和多栏式过账、结账",
+         "A、B、C",
+         "第 5 周；第 6 周"
+        ],
+        [
+         "试算平衡表及其局限",
+         "A、B",
+         "第 5 周 例 12–13；第 6 周 例 10–15"
+        ],
+        [
+         "利润表与资产负债表的格式",
+         "A、B、C",
+         "第 8 周；第 9 周"
+        ],
+        [
+         "现金流量表：三类活动的识别与分析",
+         "A、B 为主",
+         "第 11 周"
+        ],
+        [
+         "比率分析：盈利、流动性、偿债，与往年或行业比较",
+         "A、B、C",
+         "第 10 周"
+        ]
+       ]
+      }
+     ],
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "Section C 只交一部分表：题目写 (a)(b)(c) 就要交三样。",
+    "不写摘要：分录题要求「including narrations」时，摘要有分。",
+    "比率题只算不评：要与往年或行业平均比较并给出结论。"
+   ],
+   "faqs": [
+    {
+     "q": "比率公式要背吗？",
+     "a": "复习讲义写「formula will be provided if required」，但理解每个比率的含义和好坏标准仍然必须掌握。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "步骤",
+   "做什么",
+   "对应"
+  ],
+  "rows": [
+   [
+    "1 先做样卷",
+    "第 13 周完整做一遍，再对答案",
+    "第 13 周"
+   ],
+   [
+    "2 补弱项",
+    "错在哪类题，就回到复习地图里的对应周",
+    "例 2"
+   ]
+  ]
+ },
+ "practice": "本周任务：按复习地图复习，完成第 13 周的样卷。"
+}

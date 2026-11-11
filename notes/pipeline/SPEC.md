@@ -23,7 +23,7 @@
   - `venn`：两集合韦恩图，`counts` 填 `aOnly/both/bOnly/neither`。
   - `grid`：二维网格（如两颗骰子），`cell` 与 `highlight` 是含 `r`、`c` 的表达式。
   - `table`：普通表格。
-  - `ledger`：会计账页。只写**分录**（`journal`）和期初余额（`openings`），过账、结账、试算平衡表由程序完成；原文给出的余额写进 `expect` 用来核对。账户类型：`asset / liability / equity / revenue / expense / drawings / contra-revenue`（如 Sales Returns）`/ contra-expense`（如 Purchase Returns）。
+  - `ledger`：会计账页。只写**分录**（`journal`）和期初余额（`openings`），过账、结账、试算平衡表由程序完成；原文给出的余额写进 `expect` 用来核对。账户类型：`asset / liability / equity / revenue / expense / drawings / contra-revenue`（如 Sales Returns）`/ contra-expense`（如 Purchase Returns）`/ contra-asset`（如 Accumulated Depreciation）。
     - `views` 决定画哪几张表：`analysis`（交易分析表）、`journal`（分录表）、`taccounts`（T 形账户）、`columnar`（多栏式账户），默认只有 `taccounts`。
     - `show` 列出要画的账户（默认全部）；`balance` 为 `true` 时全部结账，或写成账户列表只结其中几个；`trialBalance` 写试算平衡表标题；`endDate`、`nextDate` 是 c/d、b/d 的日期。
     - 只给出一个账户两边金额的结账题，用一个对方账户把它补成分录，再用 `show` 只显示这个账户。
@@ -58,7 +58,7 @@
 
 `inventory` 的每一项可以只写编号（字符串），也可以写成对象。交付物类型：`taccounts` / `columnar`（`accounts` 列出必须画出的账户）、`balanced`（必须结出余额的账户）、`analysis`、`journal`、`trialBalance`、`figure`（要求作图）、`table`、`terms`（要求解释的术语，解答里必须出现）。小问编号写进 `parts`，答到这一问的例题也要在自己的 `parts` 里写上它。
 
-完整样例：`notes/pipeline/examples/mathematics-term2-w5.json`（数学）、`notes/pipeline/examples/accounting-term1-w5.json`（会计，含全部账页交付物）。
+完整样例：`notes/weeks/mathematics/term2/w05.json`（数学）、`notes/weeks/accounting/term1/w05.json`（会计，含全部账页交付物）。
 
 ## 四、交付前自查
 

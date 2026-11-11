@@ -1,0 +1,3120 @@
+{
+ "course": "accounting",
+ "term": "term1",
+ "week": 9,
+ "title": "Week 9 · Unit 9 资产负债表",
+ "answersTitle": "Unit 9 Financial Statements 2 – Balance Sheet",
+ "files": [
+  "practice 2 8 & 9.xlsx",
+  "unit10 reading materials balance sheet.pdf",
+  "unit8 and 9 practice financial statements.pdf",
+  "unit9 lecture exercise.xlsx",
+  "unit9 lecture slides balance sheet.pdf",
+  "unit9 tutorial guide balance sheet.pdf"
+ ],
+ "inventory": [
+  {
+   "ref": "Reading Kingsford",
+   "deliverables": [
+    {
+     "type": "statement",
+     "kind": "balance"
+    }
+   ]
+  },
+  {
+   "ref": "Lecture Kingsford",
+   "deliverables": [
+    {
+     "type": "statement",
+     "kind": "balance"
+    }
+   ]
+  },
+  {
+   "ref": "Lecture Exercise Abbey",
+   "deliverables": [
+    {
+     "type": "statement",
+     "kind": "balance"
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial Terms",
+   "deliverables": [
+    {
+     "type": "terms",
+     "terms": [
+      "Balance Sheet",
+      "Net Assets"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial Q1",
+   "deliverables": [
+    {
+     "type": "statement",
+     "kind": "balance"
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial Q2",
+   "deliverables": [
+    {
+     "type": "statement",
+     "kind": "income"
+    },
+    {
+     "type": "statement",
+     "kind": "balance"
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial Q3",
+   "deliverables": [
+    {
+     "type": "statement",
+     "kind": "balance"
+    }
+   ]
+  },
+  {
+   "ref": "Practice Phil Trading",
+   "parts": [
+    "1",
+    "2"
+   ],
+   "deliverables": [
+    {
+     "type": "statement",
+     "kind": "income"
+    },
+    {
+     "type": "statement",
+     "kind": "balance"
+    }
+   ]
+  },
+  {
+   "ref": "Practice xlsx",
+   "parts": [
+    "Company a",
+    "Company b",
+    "Superquick P&L",
+    "Superquick BS"
+   ],
+   "deliverables": [
+    {
+     "type": "statement",
+     "kind": "income"
+    },
+    {
+     "type": "statement",
+     "kind": "balance"
+    }
+   ]
+  }
+ ],
+ "intro": [
+  "本周学<strong>资产负债表</strong>（Balance Sheet / Statement of Financial Position）：某一时点企业拥有什么（资产）、欠什么（负债）、属于所有者的是多少（权益）。核心等式 A = L + OE，或写成 A − L = 净资产 = OE。每张表都分流动、非流动；所有者权益 = 期初资本 + 净利润 − 提款。下面每张资产负债表都由程序加总，并核对两边相等。"
+ ],
+ "sections": [
+  {
+   "title": "分类资产负债表（Classified Balance Sheet）",
+   "sources": [
+    {
+     "file": "unit9 lecture slides balance sheet.pdf",
+     "pages": "p3–15"
+    },
+    {
+     "file": "unit10 reading materials balance sheet.pdf",
+     "pages": "p1–3"
+    },
+    {
+     "file": "unit9 tutorial guide balance sheet.pdf",
+     "pages": "p2–9"
+    },
+    {
+     "file": "unit9 lecture exercise.xlsx",
+     "pages": "Sheet1"
+    }
+   ],
+   "concept": "资产负债表反映<strong>某一时点</strong>的财务状况，标题写「as at 30 June 20XX」。\n<strong>流动资产</strong>：现金、应收账款、期末存货、预付费用、物料，1 年或一个营业周期内变现或用掉。<strong>非流动资产</strong>：土地、房屋、机器设备、车辆、家具，按成本列示并减去累计折旧。\n<strong>流动负债</strong>：应付账款、应付工资、透支、应付利息、预收收入，1 年内偿还。<strong>非流动负债</strong>：5 年期贷款、抵押贷款。\n<strong>所有者权益</strong>：期初资本 + 净利润（亏损则减）− 提款。利润表的净利润就是这样连到资产负债表上的。\n两种竖式格式：A = L + OE（资产合计等于负债加权益合计），或 A − L = 净资产 = OE。也可以用左右对照的 T 式。\n利润表里的项目（收入、费用）不进资产负债表；资产负债表只用期末存货。",
+   "formulas": [
+    "Assets = Liabilities + Owner's Equity　　Net Assets = Total Assets − Total Liabilities = Owner's Equity",
+    "Owner's Equity = Capital + Net Profit − Drawings"
+   ],
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "Tutorial Terms",
+     "question": "Explain: Balance Sheet; Net Assets.",
+     "solution": "<strong>Balance Sheet</strong>：资产负债表，列示某一时点的资产、负债和所有者权益，A = L + OE，并分流动和非流动。\n<strong>Net Assets</strong>：净资产 = 总资产 − 总负债，等于所有者权益。",
+     "numeric": false
+    },
+    {
+     "label": "例 2",
+     "ref": "Reading Kingsford",
+     "question": "Kingsford Trading balance sheet as at 31 July 20XX: Cash 1,940; Stock 9,200; A/R 3,110; Stationery Supplies 30; Prepaid Advertising 104; Motor vehicle 21,800 less accumulated depreciation 550; A/P 10,950; Accrued Wages 100; Bank Loan 10,000; Capital 1 July 12,900; Net Profit 1,984; Drawings 300. Present it in A = L + OE and A − L = OE formats.",
+     "solution": "同一组数字两种格式：竖式 A = L + OE 时资产 35 634 = 负债 21 050 + 权益 14 584；A − L = OE 时净资产 14 584 = 权益 14 584。",
+     "figures": [
+      {
+       "type": "statement",
+       "title": "Kingsford Trading Balance Sheet as at 31 July 20XX",
+       "columns": 2,
+       "lines": [
+        {
+         "label": "Current Assets",
+         "head": true
+        },
+        {
+         "label": "Cash at bank",
+         "id": "ca0",
+         "amount": 1940,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Stock / inventory",
+         "id": "ca1",
+         "amount": 9200,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Accounts Receivable",
+         "id": "ca2",
+         "amount": 3110,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Stationery Supplies",
+         "id": "ca3",
+         "amount": 30,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Prepaid Advertising",
+         "id": "ca4",
+         "amount": 104,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Current Assets",
+         "id": "tca",
+         "sum": [
+          "ca0",
+          "ca1",
+          "ca2",
+          "ca3",
+          "ca4"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Non-current Assets",
+         "head": true
+        },
+        {
+         "label": "Motor vehicle",
+         "id": "nc0",
+         "amount": 21800,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Less Accumulated depreciation",
+         "id": "nd0",
+         "amount": -550,
+         "col": 1,
+         "indent": 2
+        },
+        {
+         "label": "Carrying amount",
+         "id": "n0",
+         "sum": [
+          "nc0",
+          "nd0"
+         ],
+         "col": 1,
+         "indent": 2
+        },
+        {
+         "label": "Total Non-current Assets",
+         "id": "tnca",
+         "sum": [
+          "n0"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Total Assets",
+         "id": "ta",
+         "sum": [
+          "tca",
+          "tnca"
+         ],
+         "col": 2,
+         "total": true
+        },
+        {
+         "label": "Current Liabilities",
+         "head": true
+        },
+        {
+         "label": "Accounts Payable",
+         "id": "cl0",
+         "amount": 10950,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Accrued Wages / Wages Payable",
+         "id": "cl1",
+         "amount": 100,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Current Liabilities",
+         "id": "tcl",
+         "sum": [
+          "cl0",
+          "cl1"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Non-current Liabilities",
+         "head": true
+        },
+        {
+         "label": "Bank Loan",
+         "id": "nl0",
+         "amount": 10000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Non-current Liabilities",
+         "id": "tncl",
+         "sum": [
+          "nl0"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Total Liabilities",
+         "id": "tl",
+         "sum": [
+          "tcl",
+          "tncl"
+         ],
+         "col": 2,
+         "total": true
+        },
+        {
+         "label": "Owner's Equity",
+         "head": true
+        },
+        {
+         "label": "Capital 1 July 20XX",
+         "id": "e0",
+         "amount": 12900,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Add Net Profit",
+         "id": "e1",
+         "amount": 1984,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Less Drawings",
+         "id": "e2",
+         "amount": -300,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Owner's Equity",
+         "id": "toe",
+         "sum": [
+          "e0",
+          "e1",
+          "e2"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Total Liabilities & Owner's Equity",
+         "id": "tle",
+         "sum": [
+          "tl",
+          "toe"
+         ],
+         "col": 2,
+         "total": true,
+         "double": true
+        }
+       ],
+       "kind": "balance",
+       "expect": {
+        "tca": 14384,
+        "ta": 35634,
+        "tl": 21050,
+        "toe": 14584,
+        "tle": 35634
+       }
+      },
+      {
+       "type": "statement",
+       "title": "Kingsford Trading Balance Sheet as at 31 July 20XX (A − L = OE format)",
+       "columns": 2,
+       "lines": [
+        {
+         "label": "Current Assets",
+         "head": true
+        },
+        {
+         "label": "Cash at bank",
+         "id": "ca0",
+         "amount": 1940,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Stock / inventory",
+         "id": "ca1",
+         "amount": 9200,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Accounts Receivable",
+         "id": "ca2",
+         "amount": 3110,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Stationery Supplies",
+         "id": "ca3",
+         "amount": 30,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Prepaid Advertising",
+         "id": "ca4",
+         "amount": 104,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Current Assets",
+         "id": "tca",
+         "sum": [
+          "ca0",
+          "ca1",
+          "ca2",
+          "ca3",
+          "ca4"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Non-current Assets",
+         "head": true
+        },
+        {
+         "label": "Motor vehicle",
+         "id": "nc0",
+         "amount": 21800,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Less Accumulated depreciation",
+         "id": "nd0",
+         "amount": -550,
+         "col": 1,
+         "indent": 2
+        },
+        {
+         "label": "Carrying amount",
+         "id": "n0",
+         "sum": [
+          "nc0",
+          "nd0"
+         ],
+         "col": 1,
+         "indent": 2
+        },
+        {
+         "label": "Total Non-current Assets",
+         "id": "tnca",
+         "sum": [
+          "n0"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Total Assets",
+         "id": "ta",
+         "sum": [
+          "tca",
+          "tnca"
+         ],
+         "col": 2,
+         "total": true
+        },
+        {
+         "label": "Current Liabilities",
+         "head": true
+        },
+        {
+         "label": "Accounts Payable",
+         "id": "cl0",
+         "amount": 10950,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Accrued Wages / Wages Payable",
+         "id": "cl1",
+         "amount": 100,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Current Liabilities",
+         "id": "tcl",
+         "sum": [
+          "cl0",
+          "cl1"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Non-current Liabilities",
+         "head": true
+        },
+        {
+         "label": "Bank Loan",
+         "id": "nl0",
+         "amount": 10000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Non-current Liabilities",
+         "id": "tncl",
+         "sum": [
+          "nl0"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Total Liabilities",
+         "id": "tl",
+         "sum": [
+          "tcl",
+          "tncl"
+         ],
+         "col": 2,
+         "total": true
+        },
+        {
+         "label": "Net Assets (TA − TL)",
+         "id": "na",
+         "sum": [
+          "ta",
+          "-tl"
+         ],
+         "col": 2,
+         "total": true,
+         "double": true
+        },
+        {
+         "label": "Owner's Equity",
+         "head": true
+        },
+        {
+         "label": "Capital 1 July 20XX",
+         "id": "e0",
+         "amount": 12900,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Add Net Profit",
+         "id": "e1",
+         "amount": 1984,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Less Drawings",
+         "id": "e2",
+         "amount": -300,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Owner's Equity",
+         "id": "toe",
+         "sum": [
+          "e0",
+          "e1",
+          "e2"
+         ],
+         "col": 2
+        }
+       ],
+       "kind": "balance",
+       "expect": {
+        "ta": 35634,
+        "tl": 21050,
+        "toe": 14584,
+        "na": 14584
+       }
+      }
+     ],
+     "sourceNote": "阅读材料这里的净利润是 1 984、提款 300，而第 8 周 Kingsford 的利润表算出 1 684、试算表的提款是 0；两份材料数字不一致，各自内部是平衡的。"
+    },
+    {
+     "label": "例 3",
+     "ref": "Lecture Kingsford",
+     "question": "Lecture version: Motor vehicle 41,250 less accumulated depreciation 10,000; A/P 21,050; Loan 10,000; Capital 12,900; Net Profit 1,900; Drawings 216 (other current assets as above). Show A − L = Net Assets = OE.",
+     "solution": "讲义版本的数字又不同，但同样平衡：资产 45 634 − 负债 31 050 = 净资产 14 584 = 权益 14 584。",
+     "figures": [
+      {
+       "type": "statement",
+       "title": "Kingsford Trading Balance Sheet as at 31 July 20XX (lecture version)",
+       "columns": 2,
+       "lines": [
+        {
+         "label": "Current Assets",
+         "head": true
+        },
+        {
+         "label": "Cash at bank",
+         "id": "ca0",
+         "amount": 1940,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Stock",
+         "id": "ca1",
+         "amount": 9200,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Accounts Receivable",
+         "id": "ca2",
+         "amount": 3110,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Stationery Supplies",
+         "id": "ca3",
+         "amount": 30,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Prepaid Advertising",
+         "id": "ca4",
+         "amount": 104,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Current Assets",
+         "id": "tca",
+         "sum": [
+          "ca0",
+          "ca1",
+          "ca2",
+          "ca3",
+          "ca4"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Non-current Assets",
+         "head": true
+        },
+        {
+         "label": "Motor vehicle",
+         "id": "nc0",
+         "amount": 41250,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Less Accumulated depreciation",
+         "id": "nd0",
+         "amount": -10000,
+         "col": 1,
+         "indent": 2
+        },
+        {
+         "label": "Carrying amount",
+         "id": "n0",
+         "sum": [
+          "nc0",
+          "nd0"
+         ],
+         "col": 1,
+         "indent": 2
+        },
+        {
+         "label": "Total Non-current Assets",
+         "id": "tnca",
+         "sum": [
+          "n0"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Total Assets",
+         "id": "ta",
+         "sum": [
+          "tca",
+          "tnca"
+         ],
+         "col": 2,
+         "total": true
+        },
+        {
+         "label": "Current Liabilities",
+         "head": true
+        },
+        {
+         "label": "Accounts Payable",
+         "id": "cl0",
+         "amount": 21050,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Current Liabilities",
+         "id": "tcl",
+         "sum": [
+          "cl0"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Non-current Liabilities",
+         "head": true
+        },
+        {
+         "label": "Loan",
+         "id": "nl0",
+         "amount": 10000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Non-current Liabilities",
+         "id": "tncl",
+         "sum": [
+          "nl0"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Total Liabilities",
+         "id": "tl",
+         "sum": [
+          "tcl",
+          "tncl"
+         ],
+         "col": 2,
+         "total": true
+        },
+        {
+         "label": "Net Assets (TA − TL)",
+         "id": "na",
+         "sum": [
+          "ta",
+          "-tl"
+         ],
+         "col": 2,
+         "total": true,
+         "double": true
+        },
+        {
+         "label": "Owner's Equity",
+         "head": true
+        },
+        {
+         "label": "Capital 1st July",
+         "id": "e0",
+         "amount": 12900,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Add Net Profit",
+         "id": "e1",
+         "amount": 1900,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Less Drawings",
+         "id": "e2",
+         "amount": -216,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Owner's Equity",
+         "id": "toe",
+         "sum": [
+          "e0",
+          "e1",
+          "e2"
+         ],
+         "col": 2
+        }
+       ],
+       "kind": "balance",
+       "expect": {
+        "ta": 45634,
+        "tl": 31050,
+        "toe": 14584,
+        "na": 14584
+       }
+      }
+     ]
+    },
+    {
+     "label": "例 4",
+     "ref": "Lecture Exercise Abbey",
+     "question": "Abbey Traders (trial balance in Week 8, with closing inventory $10,000, depreciation $3,000, interest payable $2,000; net profit $17,000): prepare the balance sheet (also the unit9 lecture exercise.xlsx template).",
+     "solution": "累计折旧 5 000 + 3 000 = 8 000；应付利息 2 000 是流动负债；净利润 17 000 加到资本上。与讲义答案 p15 一致。",
+     "figures": [
+      {
+       "type": "statement",
+       "title": "Abbey Traders Balance Sheet as at 31 December 20XX",
+       "columns": 2,
+       "lines": [
+        {
+         "label": "Current Assets",
+         "head": true
+        },
+        {
+         "label": "Cash at Bank",
+         "id": "ca0",
+         "amount": 29500,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Accounts Receivable",
+         "id": "ca1",
+         "amount": 8000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Inventory (Closing)",
+         "id": "ca2",
+         "amount": 10000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Current Assets",
+         "id": "tca",
+         "sum": [
+          "ca0",
+          "ca1",
+          "ca2"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Non-current Assets",
+         "head": true
+        },
+        {
+         "label": "Furniture and Equipment",
+         "id": "nc0",
+         "amount": 30000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Less Accumulated depreciation",
+         "id": "nd0",
+         "amount": -8000,
+         "col": 1,
+         "indent": 2
+        },
+        {
+         "label": "Carrying amount",
+         "id": "n0",
+         "sum": [
+          "nc0",
+          "nd0"
+         ],
+         "col": 1,
+         "indent": 2
+        },
+        {
+         "label": "Total Non-current Assets",
+         "id": "tnca",
+         "sum": [
+          "n0"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Total Assets",
+         "id": "ta",
+         "sum": [
+          "tca",
+          "tnca"
+         ],
+         "col": 2,
+         "total": true
+        },
+        {
+         "label": "Current Liabilities",
+         "head": true
+        },
+        {
+         "label": "Accounts Payable",
+         "id": "cl0",
+         "amount": 500,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Interest Payable",
+         "id": "cl1",
+         "amount": 2000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Current Liabilities",
+         "id": "tcl",
+         "sum": [
+          "cl0",
+          "cl1"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Non-current Liabilities",
+         "head": true
+        },
+        {
+         "label": "Bank Loan",
+         "id": "nl0",
+         "amount": 20000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Non-current Liabilities",
+         "id": "tncl",
+         "sum": [
+          "nl0"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Total Liabilities",
+         "id": "tl",
+         "sum": [
+          "tcl",
+          "tncl"
+         ],
+         "col": 2,
+         "total": true
+        },
+        {
+         "label": "Owner's Equity",
+         "head": true
+        },
+        {
+         "label": "Capital",
+         "id": "e0",
+         "amount": 30000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Add: Net Profit",
+         "id": "e1",
+         "amount": 17000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Owner's Equity",
+         "id": "toe",
+         "sum": [
+          "e0",
+          "e1"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Total Liabilities & Owner's Equity",
+         "id": "tle",
+         "sum": [
+          "tl",
+          "toe"
+         ],
+         "col": 2,
+         "total": true,
+         "double": true
+        }
+       ],
+       "kind": "balance",
+       "expect": {
+        "tca": 47500,
+        "ta": 69500,
+        "tl": 22500,
+        "toe": 47000,
+        "tle": 69500
+       }
+      }
+     ]
+    },
+    {
+     "label": "例 5",
+     "ref": "Tutorial Q1",
+     "question": "Lynn Trading, 30 June: Cash 12,500; Closing inventory 21,000; A/R 7,290; Motor vehicle 86,400; Office Equipment 75,000; Accumulated depreciation – MV 10,000; – office equipment 2,000; A/P 4,800; Mortgage Loans 70,000. Capital $77,700; drawings $1,100; net profit $38,790. Prepare the balance sheet in T-format and vertical formats.",
+     "solution": "每项非流动资产各自减去自己的累计折旧。净资产 115 390 = 77 700 + 38 790 − 1 100。下面给出 A − L = OE（模板格式）和 A = L + OE 两种竖式；T 式就是把资产放左边、负债和权益放右边，数字相同。",
+     "figures": [
+      {
+       "type": "statement",
+       "title": "Lynn Trading Balance Sheet as at 30 June 20XX",
+       "columns": 2,
+       "lines": [
+        {
+         "label": "Current Assets",
+         "head": true
+        },
+        {
+         "label": "Cash at bank",
+         "id": "ca0",
+         "amount": 12500,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Inventories",
+         "id": "ca1",
+         "amount": 21000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Accounts Receivable",
+         "id": "ca2",
+         "amount": 7290,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Current Assets",
+         "id": "tca",
+         "sum": [
+          "ca0",
+          "ca1",
+          "ca2"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Non-current Assets",
+         "head": true
+        },
+        {
+         "label": "Motor vehicle",
+         "id": "nc0",
+         "amount": 86400,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Less Accumulated depreciation",
+         "id": "nd0",
+         "amount": -10000,
+         "col": 1,
+         "indent": 2
+        },
+        {
+         "label": "Carrying amount",
+         "id": "n0",
+         "sum": [
+          "nc0",
+          "nd0"
+         ],
+         "col": 1,
+         "indent": 2
+        },
+        {
+         "label": "Office equipment",
+         "id": "nc1",
+         "amount": 75000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Less Accumulated depreciation",
+         "id": "nd1",
+         "amount": -2000,
+         "col": 1,
+         "indent": 2
+        },
+        {
+         "label": "Carrying amount",
+         "id": "n1",
+         "sum": [
+          "nc1",
+          "nd1"
+         ],
+         "col": 1,
+         "indent": 2
+        },
+        {
+         "label": "Total Non-current Assets",
+         "id": "tnca",
+         "sum": [
+          "n0",
+          "n1"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Total Assets",
+         "id": "ta",
+         "sum": [
+          "tca",
+          "tnca"
+         ],
+         "col": 2,
+         "total": true
+        },
+        {
+         "label": "Current Liabilities",
+         "head": true
+        },
+        {
+         "label": "Accounts Payable",
+         "id": "cl0",
+         "amount": 4800,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Current Liabilities",
+         "id": "tcl",
+         "sum": [
+          "cl0"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Non-current Liabilities",
+         "head": true
+        },
+        {
+         "label": "Mortgage Loans",
+         "id": "nl0",
+         "amount": 70000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Non-current Liabilities",
+         "id": "tncl",
+         "sum": [
+          "nl0"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Total Liabilities",
+         "id": "tl",
+         "sum": [
+          "tcl",
+          "tncl"
+         ],
+         "col": 2,
+         "total": true
+        },
+        {
+         "label": "Net Assets (TA − TL)",
+         "id": "na",
+         "sum": [
+          "ta",
+          "-tl"
+         ],
+         "col": 2,
+         "total": true,
+         "double": true
+        },
+        {
+         "label": "Owner's Equity",
+         "head": true
+        },
+        {
+         "label": "Capital",
+         "id": "e0",
+         "amount": 77700,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Add Net Profit",
+         "id": "e1",
+         "amount": 38790,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Less Drawings",
+         "id": "e2",
+         "amount": -1100,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Owner's Equity",
+         "id": "toe",
+         "sum": [
+          "e0",
+          "e1",
+          "e2"
+         ],
+         "col": 2
+        }
+       ],
+       "kind": "balance",
+       "expect": {
+        "tca": 40790,
+        "tnca": 149400,
+        "ta": 190190,
+        "tl": 74800,
+        "toe": 115390,
+        "na": 115390
+       }
+      },
+      {
+       "type": "statement",
+       "title": "Lynn Trading Balance Sheet as at 30 June 20XX (A = L + OE)",
+       "columns": 2,
+       "lines": [
+        {
+         "label": "Current Assets",
+         "head": true
+        },
+        {
+         "label": "Cash at bank",
+         "id": "ca0",
+         "amount": 12500,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Inventories",
+         "id": "ca1",
+         "amount": 21000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Accounts Receivable",
+         "id": "ca2",
+         "amount": 7290,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Current Assets",
+         "id": "tca",
+         "sum": [
+          "ca0",
+          "ca1",
+          "ca2"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Non-current Assets",
+         "head": true
+        },
+        {
+         "label": "Motor vehicle",
+         "id": "nc0",
+         "amount": 86400,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Less Accumulated depreciation",
+         "id": "nd0",
+         "amount": -10000,
+         "col": 1,
+         "indent": 2
+        },
+        {
+         "label": "Carrying amount",
+         "id": "n0",
+         "sum": [
+          "nc0",
+          "nd0"
+         ],
+         "col": 1,
+         "indent": 2
+        },
+        {
+         "label": "Office equipment",
+         "id": "nc1",
+         "amount": 75000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Less Accumulated depreciation",
+         "id": "nd1",
+         "amount": -2000,
+         "col": 1,
+         "indent": 2
+        },
+        {
+         "label": "Carrying amount",
+         "id": "n1",
+         "sum": [
+          "nc1",
+          "nd1"
+         ],
+         "col": 1,
+         "indent": 2
+        },
+        {
+         "label": "Total Non-current Assets",
+         "id": "tnca",
+         "sum": [
+          "n0",
+          "n1"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Total Assets",
+         "id": "ta",
+         "sum": [
+          "tca",
+          "tnca"
+         ],
+         "col": 2,
+         "total": true
+        },
+        {
+         "label": "Current Liabilities",
+         "head": true
+        },
+        {
+         "label": "Accounts Payable",
+         "id": "cl0",
+         "amount": 4800,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Current Liabilities",
+         "id": "tcl",
+         "sum": [
+          "cl0"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Non-current Liabilities",
+         "head": true
+        },
+        {
+         "label": "Mortgage Loans",
+         "id": "nl0",
+         "amount": 70000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Non-current Liabilities",
+         "id": "tncl",
+         "sum": [
+          "nl0"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Total Liabilities",
+         "id": "tl",
+         "sum": [
+          "tcl",
+          "tncl"
+         ],
+         "col": 2,
+         "total": true
+        },
+        {
+         "label": "Owner's Equity",
+         "head": true
+        },
+        {
+         "label": "Capital",
+         "id": "e0",
+         "amount": 77700,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Add Net Profit",
+         "id": "e1",
+         "amount": 38790,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Less Drawings",
+         "id": "e2",
+         "amount": -1100,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Owner's Equity",
+         "id": "toe",
+         "sum": [
+          "e0",
+          "e1",
+          "e2"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Total Liabilities & Owner's Equity",
+         "id": "tle",
+         "sum": [
+          "tl",
+          "toe"
+         ],
+         "col": 2,
+         "total": true,
+         "double": true
+        }
+       ],
+       "kind": "balance",
+       "expect": {
+        "ta": 190190,
+        "toe": 115390,
+        "tle": 190190
+       }
+      }
+     ]
+    },
+    {
+     "label": "例 6",
+     "ref": "Tutorial Q2",
+     "question": "Lou's Advertising Agency, trial balance 31 December: Cash 31,000; A/R 60,200; Art Supplies 14,000; Prepaid insurance 7,000; Printing Equipment 168,000; Accumulated depreciation 80,000; A/P 14,000; Interest Payable 420; Unearned revenue 15,680; Salaries payable 3,640; Bank Loan 5-year 14,000; Capital 56,000; Advertising revenue 172,200; Salaries 31,640; Insurance 2,380; Interest 1,400; (second line labelled Interest Expense) 19,600; Depreciation 9,520; Rent 11,200. Prepare the balance sheet (calculate net profit first).",
+     "solution": "先算净利润：收入 172 200 − 费用 56 140 = 116 060。再编资产负债表，权益 = 56 000 + 116 060 − 19 600 = 152 460，等于资产 200 200 − 负债 47 740。",
+     "figures": [
+      {
+       "type": "statement",
+       "title": "Lou's Advertising Agency — Net profit for the year (working)",
+       "columns": 2,
+       "lines": [
+        {
+         "label": "Advertising revenue",
+         "id": "r",
+         "amount": 172200,
+         "col": 2
+        },
+        {
+         "label": "Less Expenses",
+         "head": true
+        },
+        {
+         "label": "Salaries Expense",
+         "id": "e1",
+         "amount": 31640,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Insurance Expense",
+         "id": "e2",
+         "amount": 2380,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Interest Expense",
+         "id": "e3",
+         "amount": 1400,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Depreciation Expense",
+         "id": "e4",
+         "amount": 9520,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Rent Expense",
+         "id": "e5",
+         "amount": 11200,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total expenses",
+         "id": "te",
+         "sum": [
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Net Profit",
+         "id": "np",
+         "sum": [
+          "r",
+          "-te"
+         ],
+         "col": 2,
+         "total": true,
+         "double": true
+        }
+       ],
+       "expect": {
+        "te": 56140,
+        "np": 116060
+       },
+       "kind": "income"
+      },
+      {
+       "type": "statement",
+       "title": "Lou's Advertising Agency Balance Sheet as at 31 December 20XX",
+       "columns": 2,
+       "lines": [
+        {
+         "label": "Current Assets",
+         "head": true
+        },
+        {
+         "label": "Cash",
+         "id": "ca0",
+         "amount": 31000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Accounts Receivable",
+         "id": "ca1",
+         "amount": 60200,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Art Supplies",
+         "id": "ca2",
+         "amount": 14000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Prepaid insurance",
+         "id": "ca3",
+         "amount": 7000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Current Assets",
+         "id": "tca",
+         "sum": [
+          "ca0",
+          "ca1",
+          "ca2",
+          "ca3"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Non-current Assets",
+         "head": true
+        },
+        {
+         "label": "Printing Equipment",
+         "id": "nc0",
+         "amount": 168000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Less Accumulated depreciation",
+         "id": "nd0",
+         "amount": -80000,
+         "col": 1,
+         "indent": 2
+        },
+        {
+         "label": "Carrying amount",
+         "id": "n0",
+         "sum": [
+          "nc0",
+          "nd0"
+         ],
+         "col": 1,
+         "indent": 2
+        },
+        {
+         "label": "Total Non-current Assets",
+         "id": "tnca",
+         "sum": [
+          "n0"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Total Assets",
+         "id": "ta",
+         "sum": [
+          "tca",
+          "tnca"
+         ],
+         "col": 2,
+         "total": true
+        },
+        {
+         "label": "Current Liabilities",
+         "head": true
+        },
+        {
+         "label": "Accounts Payable",
+         "id": "cl0",
+         "amount": 14000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Interest Payable",
+         "id": "cl1",
+         "amount": 420,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Unearned revenue",
+         "id": "cl2",
+         "amount": 15680,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Salaries payable",
+         "id": "cl3",
+         "amount": 3640,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Current Liabilities",
+         "id": "tcl",
+         "sum": [
+          "cl0",
+          "cl1",
+          "cl2",
+          "cl3"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Non-current Liabilities",
+         "head": true
+        },
+        {
+         "label": "Bank Loan (5-year)",
+         "id": "nl0",
+         "amount": 14000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Non-current Liabilities",
+         "id": "tncl",
+         "sum": [
+          "nl0"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Total Liabilities",
+         "id": "tl",
+         "sum": [
+          "tcl",
+          "tncl"
+         ],
+         "col": 2,
+         "total": true
+        },
+        {
+         "label": "Owner's Equity",
+         "head": true
+        },
+        {
+         "label": "Capital 1 January",
+         "id": "e0",
+         "amount": 56000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Add Net Profit",
+         "id": "e1",
+         "amount": 116060,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Less Drawings",
+         "id": "e2",
+         "amount": -19600,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Owner's Equity",
+         "id": "toe",
+         "sum": [
+          "e0",
+          "e1",
+          "e2"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Total Liabilities & Owner's Equity",
+         "id": "tle",
+         "sum": [
+          "tl",
+          "toe"
+         ],
+         "col": 2,
+         "total": true,
+         "double": true
+        }
+       ],
+       "kind": "balance",
+       "expect": {
+        "tca": 112200,
+        "ta": 200200,
+        "tcl": 33740,
+        "tl": 47740,
+        "toe": 152460,
+        "tle": 200200
+       }
+      }
+     ],
+     "sourceNote": "试算表里有两行都叫 Interest Expense（1 400 和 19 600），而模板要求「Less Drawings」，所以 19 600 这一行应是 Drawings。即使把它当费用，净利润变成 96 460，权益合计仍是 152 460，资产负债表不变。"
+    },
+    {
+     "label": "例 7",
+     "ref": "Tutorial Q3",
+     "question": "Wellington Wall Coverings Pty Ltd (items from Week 8 self-study 1): prepare a classified statement of financial position at 30 June 2021, given a net profit of $8,000.",
+     "solution": "只用资产、负债、权益项目：期末存货 20 000 是流动资产；预收租金 2 000 是流动负债；累计折旧 14 000 从房屋中扣除；银行贷款列为非流动负债。权益 = 股本 160 000 + 净利润 8 000 = 168 000 = 资产 291 000 − 负债 123 000。",
+     "figures": [
+      {
+       "type": "statement",
+       "title": "Wellington Wall Coverings Pty Ltd Statement of Financial Position as at 30 June 2021",
+       "columns": 2,
+       "lines": [
+        {
+         "label": "Current Assets",
+         "head": true
+        },
+        {
+         "label": "Cash",
+         "id": "ca0",
+         "amount": 25000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Inventory",
+         "id": "ca1",
+         "amount": 20000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Current Assets",
+         "id": "tca",
+         "sum": [
+          "ca0",
+          "ca1"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Non-current Assets",
+         "head": true
+        },
+        {
+         "label": "Land",
+         "id": "n0",
+         "amount": 120000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Building",
+         "id": "nc1",
+         "amount": 140000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Less Accumulated depreciation",
+         "id": "nd1",
+         "amount": -14000,
+         "col": 1,
+         "indent": 2
+        },
+        {
+         "label": "Carrying amount",
+         "id": "n1",
+         "sum": [
+          "nc1",
+          "nd1"
+         ],
+         "col": 1,
+         "indent": 2
+        },
+        {
+         "label": "Total Non-current Assets",
+         "id": "tnca",
+         "sum": [
+          "n0",
+          "n1"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Total Assets",
+         "id": "ta",
+         "sum": [
+          "tca",
+          "tnca"
+         ],
+         "col": 2,
+         "total": true
+        },
+        {
+         "label": "Current Liabilities",
+         "head": true
+        },
+        {
+         "label": "Accounts payable",
+         "id": "cl0",
+         "amount": 11000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Rent revenue received in advance",
+         "id": "cl1",
+         "amount": 2000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Current Liabilities",
+         "id": "tcl",
+         "sum": [
+          "cl0",
+          "cl1"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Non-current Liabilities",
+         "head": true
+        },
+        {
+         "label": "Bank loan",
+         "id": "nl0",
+         "amount": 110000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Non-current Liabilities",
+         "id": "tncl",
+         "sum": [
+          "nl0"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Total Liabilities",
+         "id": "tl",
+         "sum": [
+          "tcl",
+          "tncl"
+         ],
+         "col": 2,
+         "total": true
+        },
+        {
+         "label": "Owner's Equity",
+         "head": true
+        },
+        {
+         "label": "Share capital",
+         "id": "e0",
+         "amount": 160000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Add Net profit for the year",
+         "id": "e1",
+         "amount": 8000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Owner's Equity",
+         "id": "toe",
+         "sum": [
+          "e0",
+          "e1"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Total Liabilities & Owner's Equity",
+         "id": "tle",
+         "sum": [
+          "tl",
+          "toe"
+         ],
+         "col": 2,
+         "total": true,
+         "double": true
+        }
+       ],
+       "kind": "balance",
+       "expect": {
+        "tca": 45000,
+        "tnca": 246000,
+        "ta": 291000,
+        "tl": 123000,
+        "toe": 168000,
+        "tle": 291000
+       }
+      }
+     ],
+     "sourceNote": "原表有一行（期初留存收益）被涂黑；按其余数字倒推，它的金额是 0。题目没说银行贷款的期限，这里按非流动负债处理。"
+    }
+   ],
+   "mistakes": [
+    "把期初存货放进资产负债表：只用期末存货。",
+    "累计折旧加到资产上：要减去。",
+    "把收入、费用、Unearned Revenue 弄混：前两者进利润表，预收收入是负债。",
+    "忘记减提款。"
+   ],
+   "faqs": [
+    {
+     "q": "资产负债表为什么叫「as at」？",
+     "a": "它是某一天结束时的快照；利润表是一段期间，所以用「for the year ended」。"
+    },
+    {
+     "q": "净利润为什么出现在资产负债表上？",
+     "a": "利润属于所有者，期末加到所有者权益里，这样两张表就连起来了。"
+    }
+   ]
+  },
+  {
+   "title": "综合练习：先利润表，再资产负债表",
+   "sources": [
+    {
+     "file": "unit8 and 9 practice financial statements.pdf",
+     "pages": "p1–3"
+    },
+    {
+     "file": "practice 2 8 & 9.xlsx",
+     "pages": "Profit & Loss, SuperQuick sheets"
+    }
+   ],
+   "concept": "综合题的顺序：①从试算表挑出收入和费用编利润表，算出净利润；②其余账户编资产负债表，权益 = 资本 + 净利润 − 提款；③核对 A = L + OE。两张表通过净利润相连，算错利润，资产负债表就不会平。",
+   "examples": [
+    {
+     "label": "例 8",
+     "ref": "Practice Phil Trading",
+     "question": "1. Phil Trading, 30 June: Sales 20,400; Sales returns 500; Purchases 6,140; Purchases returns 140; Discounts received 120; Freight in 200; Shop salaries 3,500; Office salaries 1,250; Advertising 2,400; Rent 250; Insurance 150; Electricity 175; Shop stationery 300; Office stationery 125; Depreciation – shop equipment 105; – office equipment 80; inventory $3,400 at the beginning, $2,600 at the end. Prepare the P&L. 2. From Cash 10,400; Inventories 11,000; A/R 25,569; Motor vehicle 51,500; Office Equipment 10,000; Buildings 520,000; A/P 28,600; Mortgage Loans 400,000; Capital $150,000; drawings $5,000; net profit $54,869, prepare a T-format balance sheet.",
+     "solution": "1. 程序算出的净利润 4 685 与模板给出的一致。\n2. T 式：左边资产合计 628 469，右边负债 428 600 + 权益 199 869 = 628 469。第 2 题给的净利润是 54 869，与第 1 题无关（两题数据独立）。",
+     "figures": [
+      {
+       "type": "statement",
+       "title": "Phil Trading Profit & Loss Statement for the period ending 30 June 20XX",
+       "columns": 2,
+       "lines": [
+        {
+         "label": "Sales",
+         "id": "s",
+         "amount": 20400,
+         "col": 1
+        },
+        {
+         "label": "Less: Sales returns and allowances",
+         "id": "sr",
+         "amount": -500,
+         "col": 1
+        },
+        {
+         "label": "Net sales",
+         "id": "ns",
+         "sum": [
+          "s",
+          "sr"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Less: Cost of Goods Sold",
+         "head": true
+        },
+        {
+         "label": "Opening inventory",
+         "id": "oi",
+         "amount": 3400,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Purchases",
+         "id": "p",
+         "amount": 6140,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Less: Purchases returns",
+         "id": "pr",
+         "amount": -140,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Add Freight inwards",
+         "id": "fi",
+         "amount": 200,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Less Closing inventory",
+         "id": "ci",
+         "amount": -2600,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Cost of Goods Sold",
+         "id": "cogs",
+         "sum": [
+          "oi",
+          "p",
+          "pr",
+          "fi",
+          "ci"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Gross Profit",
+         "id": "gp",
+         "sum": [
+          "ns",
+          "-cogs"
+         ],
+         "col": 2,
+         "total": true
+        },
+        {
+         "label": "Plus Discounts received",
+         "id": "dr",
+         "amount": 120,
+         "col": 2
+        },
+        {
+         "label": "Total Operating Income",
+         "id": "toi",
+         "sum": [
+          "gp",
+          "dr"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Less Other Operating expenses",
+         "head": true
+        },
+        {
+         "label": "Selling expenses",
+         "head": true
+        },
+        {
+         "label": "Shop salaries",
+         "id": "a1",
+         "amount": 3500,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Advertising",
+         "id": "a2",
+         "amount": 2400,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Depreciation – shop equipment",
+         "id": "a3",
+         "amount": 105,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Shop stationery expenses",
+         "id": "a4",
+         "amount": 300,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total selling expenses",
+         "id": "tse",
+         "sum": [
+          "a1",
+          "a2",
+          "a3",
+          "a4"
+         ],
+         "col": 2
+        },
+        {
+         "label": "General and administrative expenses",
+         "head": true
+        },
+        {
+         "label": "Office salaries",
+         "id": "b1",
+         "amount": 1250,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Depreciation – office equipment",
+         "id": "b2",
+         "amount": 80,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Rent",
+         "id": "b3",
+         "amount": 250,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Insurance",
+         "id": "b4",
+         "amount": 150,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Electricity",
+         "id": "b5",
+         "amount": 175,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Office stationery expenses",
+         "id": "b6",
+         "amount": 125,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total general expenses",
+         "id": "tge",
+         "sum": [
+          "b1",
+          "b2",
+          "b3",
+          "b4",
+          "b5",
+          "b6"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Total Operating expenses",
+         "id": "tox",
+         "sum": [
+          "tse",
+          "tge"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Net Profit",
+         "id": "np",
+         "sum": [
+          "toi",
+          "-tox"
+         ],
+         "col": 2,
+         "total": true,
+         "double": true
+        }
+       ],
+       "expect": {
+        "ns": 19900,
+        "cogs": 7000,
+        "gp": 12900,
+        "tox": 8335,
+        "np": 4685
+       },
+       "kind": "income"
+      },
+      {
+       "type": "statement",
+       "title": "Balance Sheet of Phil Trading as at 30 June 20XX — Assets side (T-format)",
+       "columns": 2,
+       "lines": [
+        {
+         "label": "Current Assets",
+         "head": true
+        },
+        {
+         "label": "Cash at bank",
+         "id": "c",
+         "amount": 10400,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Inventories",
+         "id": "i",
+         "amount": 11000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Accounts Receivable",
+         "id": "r",
+         "amount": 25569,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Current Assets",
+         "id": "tca",
+         "sum": [
+          "c",
+          "i",
+          "r"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Non-current Assets",
+         "head": true
+        },
+        {
+         "label": "Motor vehicle",
+         "id": "m",
+         "amount": 51500,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Office equipment",
+         "id": "o",
+         "amount": 10000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Buildings",
+         "id": "b",
+         "amount": 520000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Non-current Assets",
+         "id": "tnca",
+         "sum": [
+          "m",
+          "o",
+          "b"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Total",
+         "id": "ta",
+         "sum": [
+          "tca",
+          "tnca"
+         ],
+         "col": 2,
+         "total": true,
+         "double": true
+        }
+       ],
+       "expect": {
+        "ta": 628469
+       },
+       "kind": "balance"
+      },
+      {
+       "type": "statement",
+       "title": "Balance Sheet of Phil Trading as at 30 June 20XX — Liabilities & Owner's Equity side",
+       "columns": 2,
+       "lines": [
+        {
+         "label": "Current Liabilities",
+         "head": true
+        },
+        {
+         "label": "Accounts Payable",
+         "id": "ap",
+         "amount": 28600,
+         "col": 2,
+         "indent": 1
+        },
+        {
+         "label": "Non-current Liabilities",
+         "head": true
+        },
+        {
+         "label": "Mortgage Loans",
+         "id": "ml",
+         "amount": 400000,
+         "col": 2,
+         "indent": 1
+        },
+        {
+         "label": "Total Liabilities",
+         "id": "tl",
+         "sum": [
+          "ap",
+          "ml"
+         ],
+         "col": 2,
+         "total": true
+        },
+        {
+         "label": "Owner's Equity",
+         "head": true
+        },
+        {
+         "label": "Capital",
+         "id": "cap",
+         "amount": 150000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Add Net Profit",
+         "id": "np",
+         "amount": 54869,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Less Drawings",
+         "id": "dr",
+         "amount": -5000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Owner's Equity",
+         "id": "toe",
+         "sum": [
+          "cap",
+          "np",
+          "dr"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Total",
+         "id": "tot",
+         "sum": [
+          "tl",
+          "toe"
+         ],
+         "col": 2,
+         "total": true,
+         "double": true
+        }
+       ],
+       "expect": {
+        "tot": 628469
+       },
+       "kind": "balance"
+      }
+     ],
+     "parts": [
+      "1",
+      "2"
+     ]
+    },
+    {
+     "label": "例 9",
+     "ref": "Practice xlsx",
+     "question": "Excel practice 2 (8 & 9): (a) prepare income statements for Company a and Company b (b's figures are 3 × a's: Sales 20,000/60,000; Sales returns 2,000/6,000; Purchases 7,000/21,000; Purchase returns 1,000/3,000; Closing stock 1,500/4,500; Opening stock 500/1,500; Freight in 250/750; Freight out 200/600; Discount received 300/900; Interest received 700/2,100; Interest expense 1,000/3,000; Wages 3,000/9,000). (b) Superquick Couriers: from the trial balance prepare the statement of profit or loss and the statement of financial position at 30 June 2022.",
+     "solution": "(a) 运出费用（cartage out）是经营费用，不进 COGS；收到的利息是其他收入。B 公司每项都是 A 的 3 倍，所以利润也是 3 倍。\n(b) Superquick：费用合计后利润 26 396（与表中一致）；资产负债表上期末资本 = 42 075 + 26 396 − 27 000 = 41 471。银行贷款题目没注明期限，按非流动负债列示。",
+     "figures": [
+      {
+       "type": "statement",
+       "title": "Company a Income Statement for 2022",
+       "columns": 2,
+       "lines": [
+        {
+         "label": "Sales",
+         "id": "s",
+         "amount": 20000,
+         "col": 1
+        },
+        {
+         "label": "Sales returns",
+         "id": "sr",
+         "amount": -2000,
+         "col": 1
+        },
+        {
+         "label": "Net Sales",
+         "id": "ns",
+         "sum": [
+          "s",
+          "sr"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Less: COGS",
+         "head": true
+        },
+        {
+         "label": "Inventory on 1 Jan 2022",
+         "id": "oi",
+         "amount": 500,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Add: Purchase",
+         "id": "p",
+         "amount": 7000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Less: Purchase returns",
+         "id": "pr",
+         "amount": -1000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Add: Freight/cartage in",
+         "id": "fi",
+         "amount": 250,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Less: Inventory 31 December 2022",
+         "id": "ci",
+         "amount": -1500,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "COGS",
+         "id": "cogs",
+         "sum": [
+          "oi",
+          "p",
+          "pr",
+          "fi",
+          "ci"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Gross profit",
+         "id": "gp",
+         "sum": [
+          "ns",
+          "-cogs"
+         ],
+         "col": 2,
+         "total": true
+        },
+        {
+         "label": "Add: Discount received",
+         "id": "dr",
+         "amount": 300,
+         "col": 2
+        },
+        {
+         "label": "Add: Interest received",
+         "id": "ir",
+         "amount": 700,
+         "col": 2
+        },
+        {
+         "label": "Less: Operating Expenses",
+         "head": true
+        },
+        {
+         "label": "Wages expense",
+         "id": "w",
+         "amount": 3000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Freight/cartage out",
+         "id": "fo",
+         "amount": 200,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Interest expense",
+         "id": "ie",
+         "amount": 1000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Operating Expenses",
+         "id": "tox",
+         "sum": [
+          "w",
+          "fo",
+          "ie"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Net profit",
+         "id": "np",
+         "sum": [
+          "gp",
+          "dr",
+          "ir",
+          "-tox"
+         ],
+         "col": 2,
+         "total": true,
+         "double": true
+        }
+       ],
+       "expect": {
+        "cogs": 5250,
+        "gp": 12750,
+        "np": 9550
+       },
+       "kind": "income"
+      },
+      {
+       "type": "statement",
+       "title": "Company b Income Statement for 2022",
+       "columns": 2,
+       "lines": [
+        {
+         "label": "Sales",
+         "id": "s",
+         "amount": 60000,
+         "col": 1
+        },
+        {
+         "label": "Sales returns",
+         "id": "sr",
+         "amount": -6000,
+         "col": 1
+        },
+        {
+         "label": "Net Sales",
+         "id": "ns",
+         "sum": [
+          "s",
+          "sr"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Less: COGS",
+         "head": true
+        },
+        {
+         "label": "Inventory on 1 Jan 2022",
+         "id": "oi",
+         "amount": 1500,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Add: Purchase",
+         "id": "p",
+         "amount": 21000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Less: Purchase returns",
+         "id": "pr",
+         "amount": -3000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Add: Freight/cartage in",
+         "id": "fi",
+         "amount": 750,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Less: Inventory 31 December 2022",
+         "id": "ci",
+         "amount": -4500,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "COGS",
+         "id": "cogs",
+         "sum": [
+          "oi",
+          "p",
+          "pr",
+          "fi",
+          "ci"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Gross profit",
+         "id": "gp",
+         "sum": [
+          "ns",
+          "-cogs"
+         ],
+         "col": 2,
+         "total": true
+        },
+        {
+         "label": "Add: Discount received",
+         "id": "dr",
+         "amount": 900,
+         "col": 2
+        },
+        {
+         "label": "Add: Interest received",
+         "id": "ir",
+         "amount": 2100,
+         "col": 2
+        },
+        {
+         "label": "Less: Operating Expenses",
+         "head": true
+        },
+        {
+         "label": "Wages expense",
+         "id": "w",
+         "amount": 9000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Freight/cartage out",
+         "id": "fo",
+         "amount": 600,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Interest expense",
+         "id": "ie",
+         "amount": 3000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Operating Expenses",
+         "id": "tox",
+         "sum": [
+          "w",
+          "fo",
+          "ie"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Net profit",
+         "id": "np",
+         "sum": [
+          "gp",
+          "dr",
+          "ir",
+          "-tox"
+         ],
+         "col": 2,
+         "total": true,
+         "double": true
+        }
+       ],
+       "expect": {
+        "cogs": 15750,
+        "gp": 38250,
+        "np": 28650
+       },
+       "kind": "income"
+      },
+      {
+       "type": "statement",
+       "title": "Superquick Couriers Statement of Profit or Loss for the year ended 30 June 2022",
+       "columns": 2,
+       "lines": [
+        {
+         "label": "Courier Charges Revenue",
+         "id": "r",
+         "amount": 106500,
+         "col": 2
+        },
+        {
+         "label": "Expenses:",
+         "head": true
+        },
+        {
+         "label": "Salaries Expense",
+         "id": "e1",
+         "amount": 41795,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Advertising Expense",
+         "id": "e2",
+         "amount": 2250,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Repairs Expense",
+         "id": "e3",
+         "amount": 1260,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Fuel Expense",
+         "id": "e4",
+         "amount": 8400,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Electricity Expense",
+         "id": "e5",
+         "amount": 3405,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Telephone Expense",
+         "id": "e6",
+         "amount": 1030,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Interest Expense",
+         "id": "e7",
+         "amount": 2314,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Office Supplies expense",
+         "id": "e8",
+         "amount": 6560,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Insurance Expense",
+         "id": "e9",
+         "amount": 1540,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Depr. Exp. Del. Vans",
+         "id": "e10",
+         "amount": 11550,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total expenses",
+         "id": "te",
+         "sum": [
+          "e1",
+          "e2",
+          "e3",
+          "e4",
+          "e5",
+          "e6",
+          "e7",
+          "e8",
+          "e9",
+          "e10"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Profit",
+         "id": "np",
+         "sum": [
+          "r",
+          "-te"
+         ],
+         "col": 2,
+         "total": true,
+         "double": true
+        }
+       ],
+       "expect": {
+        "np": 26396
+       },
+       "kind": "income"
+      },
+      {
+       "type": "statement",
+       "title": "Superquick Couriers Statement of Financial Position as at 30 June 2022",
+       "columns": 2,
+       "lines": [
+        {
+         "label": "Current Assets",
+         "head": true
+        },
+        {
+         "label": "Cash at Bank",
+         "id": "ca0",
+         "amount": 4725,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Office Supplies",
+         "id": "ca1",
+         "amount": 700,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Prepaid Insurance",
+         "id": "ca2",
+         "amount": 185,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Current Assets",
+         "id": "tca",
+         "sum": [
+          "ca0",
+          "ca1",
+          "ca2"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Non-current Assets",
+         "head": true
+        },
+        {
+         "label": "Delivery Vans",
+         "id": "nc0",
+         "amount": 109695,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Less Accumulated depreciation",
+         "id": "nd0",
+         "amount": -40470,
+         "col": 1,
+         "indent": 2
+        },
+        {
+         "label": "Carrying amount",
+         "id": "n0",
+         "sum": [
+          "nc0",
+          "nd0"
+         ],
+         "col": 1,
+         "indent": 2
+        },
+        {
+         "label": "Total Non-current Assets",
+         "id": "tnca",
+         "sum": [
+          "n0"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Total Assets",
+         "id": "ta",
+         "sum": [
+          "tca",
+          "tnca"
+         ],
+         "col": 2,
+         "total": true
+        },
+        {
+         "label": "Current Liabilities",
+         "head": true
+        },
+        {
+         "label": "Salaries Payable",
+         "id": "cl0",
+         "amount": 830,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Fuel Costs Payable",
+         "id": "cl1",
+         "amount": 1200,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Telephone payable",
+         "id": "cl2",
+         "amount": 370,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Interest Payable",
+         "id": "cl3",
+         "amount": 964,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Current Liabilities",
+         "id": "tcl",
+         "sum": [
+          "cl0",
+          "cl1",
+          "cl2",
+          "cl3"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Non-current Liabilities",
+         "head": true
+        },
+        {
+         "label": "Bank Loan Payable",
+         "id": "nl0",
+         "amount": 30000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Non-current Liabilities",
+         "id": "tncl",
+         "sum": [
+          "nl0"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Total Liabilities",
+         "id": "tl",
+         "sum": [
+          "tcl",
+          "tncl"
+         ],
+         "col": 2,
+         "total": true
+        },
+        {
+         "label": "Owner's Equity",
+         "head": true
+        },
+        {
+         "label": "B. Flash, Capital",
+         "id": "e0",
+         "amount": 42075,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Add Profit",
+         "id": "e1",
+         "amount": 26396,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Less B. Flash, Drawings",
+         "id": "e2",
+         "amount": -27000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Owner's Equity",
+         "id": "toe",
+         "sum": [
+          "e0",
+          "e1",
+          "e2"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Total Liabilities & Owner's Equity",
+         "id": "tle",
+         "sum": [
+          "tl",
+          "toe"
+         ],
+         "col": 2,
+         "total": true,
+         "double": true
+        }
+       ],
+       "kind": "balance",
+       "expect": {
+        "tca": 5610,
+        "ta": 74835,
+        "tl": 33364,
+        "toe": 41471,
+        "tle": 74835
+       }
+      }
+     ],
+     "parts": [
+      "Company a",
+      "Company b",
+      "Superquick P&L",
+      "Superquick BS"
+     ]
+    }
+   ],
+   "mistakes": [
+    "运出费用放进 COGS：运出是销售费用。",
+    "把应付工资、应付利息漏掉：调整后的 payable 都是流动负债。",
+    "资产负债表不平就硬凑：先回头检查净利润和提款。"
+   ],
+   "faqs": [
+    {
+     "q": "资产负债表不平最常见的原因？",
+     "a": "净利润算错、漏了提款、累计折旧方向弄反，或把预收收入当成收入。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "步骤",
+   "做什么",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "1 分类",
+    "流动 / 非流动资产；流动 / 非流动负债",
+    "例 2–7"
+   ],
+   [
+    "2 非流动资产",
+    "成本 − 累计折旧 = 账面价值",
+    "例 4–7"
+   ],
+   [
+    "3 所有者权益",
+    "资本 + 净利润 − 提款",
+    "例 5、6"
+   ],
+   [
+    "4 核对",
+    "A = L + OE 或 A − L = OE",
+    "全部"
+   ]
+  ]
+ },
+ "practice": "本周任务：阅读 Unit 9 Readings；完成 Tutorial Questions 1–2、课堂第 3 题；Lecture 9 exercise 和两份 Excel 练习。"
+}

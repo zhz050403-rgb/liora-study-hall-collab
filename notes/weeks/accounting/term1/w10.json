@@ -1,0 +1,542 @@
+{
+ "course": "accounting",
+ "term": "term1",
+ "week": 10,
+ "title": "Week 10 · Unit 10 财务报表分析",
+ "answersTitle": "Unit 10 Financial Statement Analysis",
+ "files": [
+  "unit10 lecture slides financial statement analysis.pdf",
+  "unit10 reading materials financial statement analysis.pdf",
+  "unit10 tutorial guide fsa.pdf"
+ ],
+ "inventory": [
+  "Lecture NPR",
+  "Lecture Current Ratio",
+  "Lecture Stock Turnover",
+  "Lecture Debt to Equity",
+  {
+   "ref": "Tutorial Terms",
+   "deliverables": [
+    {
+     "type": "terms",
+     "terms": [
+      "Ratio analysis",
+      "Profitability",
+      "Liquidity",
+      "Management Efficiency",
+      "Solvency",
+      "Return on Owner's Equity",
+      "Return on Assets",
+      "Net Profit Ratio",
+      "Current Ratio",
+      "Quick Asset Ratio",
+      "Stock turnover",
+      "Debtors Turnover",
+      "Debt to equity",
+      "Debt to assets"
+     ]
+    }
+   ]
+  },
+  "Tutorial Q1",
+  "Tutorial Q2",
+  "Tutorial Q3",
+  "Tutorial Q4",
+  "Tutorial Q5",
+  "Tutorial Q6",
+  "Tutorial Q7",
+  "Tutorial Q8",
+  "Tutorial Q9",
+  {
+   "ref": "Tutorial Q10",
+   "parts": [
+    "i",
+    "ii",
+    "iii"
+   ]
+  },
+  "Tutorial Q11",
+  "Tutorial Q12",
+  "Tutorial Q13",
+  {
+   "ref": "Tutorial Q14",
+   "parts": [
+    "i",
+    "ii",
+    "iii",
+    "iv",
+    "v"
+   ]
+  },
+  {
+   "ref": "Tutorial Q15",
+   "parts": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ],
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  }
+ ],
+ "intro": [
+  "报表编好以后要会<strong>读</strong>：本周用比率分析（ratio analysis）从四个角度评价企业——盈利能力、流动性、管理效率、偿债能力，共九个比率。比率本身没有好坏，一定要和往年（趋势）、同行（行业平均）或目标比较。Tutorial Guide 第 1–15 题全部作答，计算题由核对式复算；讲义里两处计算错误在对应例题下说明。"
+ ],
+ "sections": [
+  {
+   "title": "比率分析的作用与局限；四类比率",
+   "sources": [
+    {
+     "file": "unit10 lecture slides financial statement analysis.pdf",
+     "pages": "p3–7"
+    },
+    {
+     "file": "unit10 reading materials financial statement analysis.pdf",
+     "pages": "p1"
+    },
+    {
+     "file": "unit10 tutorial guide fsa.pdf",
+     "pages": "p2–7"
+    }
+   ],
+   "concept": "<strong>比率分析</strong>用报表数字之间的比例，快速评价企业的相对状况和业绩，能显示强项和弱点，但<strong>不能说明原因</strong>。\n比较对象：往年（趋势）、同行或行业平均、预算或目标。\n<strong>局限</strong>：①结果取决于报表质量；②需要比较基础，而企业各不相同；③资产负债表只是某一天的快照，未必代表全年；④一次性、异常项目会扭曲结果；⑤季节性波动；⑥报表可能没有披露分析需要的信息。",
+   "figures": [
+    {
+     "type": "table",
+     "headers": [
+      "类别",
+      "比率",
+      "公式",
+      "怎么看"
+     ],
+     "rows": [
+      [
+       "Profitability 盈利能力",
+       "Return on Owner's Equity",
+       "Net Profit ÷ Average OE × 100",
+       "越高越好：所有者投入的每一元赚了多少"
+      ],
+      [
+       "",
+       "Return on Assets",
+       "Net Profit ÷ Average Total Assets × 100",
+       "越高越好：资产用得是否有效"
+      ],
+      [
+       "",
+       "Net Profit Ratio",
+       "Net Profit ÷ Net Sales × 100",
+       "每 100 元销售留下多少净利润"
+      ],
+      [
+       "Liquidity 流动性",
+       "Current Ratio",
+       "Current Assets ÷ Current Liabilities",
+       "一般 > 1:1 为好；太高（如 7:1、8:1）说明资产闲置"
+      ],
+      [
+       "",
+       "Quick Asset Ratio",
+       "(CA − stock − prepaid) ÷ (CL − bank overdraft)",
+       "至少 1:1，衡量马上能还的能力"
+      ],
+      [
+       "Efficiency 管理效率",
+       "Stock Turnover",
+       "COGS ÷ Average Stock；天数 = 365 ÷ 次数",
+       "次数越高越好，一般 6–7 次/年（约 52 天）"
+      ],
+      [
+       "",
+       "Debtors Turnover",
+       "Credit Sales ÷ Average Debtors；天数 = 365 ÷ 次数",
+       "天数应不超过信用期"
+      ],
+      [
+       "Solvency 偿债能力",
+       "Debt to Equity",
+       "Total Liabilities ÷ OE × 100",
+       "< 100% 风险较低"
+      ],
+      [
+       "",
+       "Debt to Assets",
+       "Total Liabilities ÷ Total Assets × 100",
+       "越高越依赖借款，风险越大"
+      ]
+     ],
+     "title": "九个比率一览"
+    }
+   ],
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "Tutorial Terms",
+     "question": "Explain: Ratio analysis, Profitability, Liquidity, Management Efficiency, Solvency, Return on Owner's Equity Ratio, Return on Assets Ratio, Net Profit Ratio, Current Ratio, Quick Asset Ratio, Stock turnover Ratio, Debtors Turnover Ratio, Debt to equity Ratio, Debt to assets Ratio.",
+     "solution": "<strong>Ratio analysis</strong>：用报表数字的比例分析企业的业绩和状况。\n<strong>Profitability</strong>：盈利能力，企业赚取利润的能力（与销售、资产、权益比较）。\n<strong>Liquidity</strong>：流动性，按时偿还短期债务的能力。\n<strong>Management Efficiency</strong>：管理效率，存货和应收账款变成现金的速度。\n<strong>Solvency</strong>：偿债能力，偿还长期债务、长期经营下去的能力。\n<strong>Return on Owner's Equity</strong>：净利润 ÷ 平均所有者权益 × 100。\n<strong>Return on Assets</strong>：净利润 ÷ 平均总资产 × 100。\n<strong>Net Profit Ratio</strong>：净利润 ÷ 净销售额 × 100。\n<strong>Current Ratio</strong>：流动资产 ÷ 流动负债。\n<strong>Quick Asset Ratio</strong>：（流动资产 − 存货 − 预付费用）÷（流动负债 − 银行透支）。\n<strong>Stock turnover</strong>：销货成本 ÷ 平均存货，表示一年卖完并补货几次。\n<strong>Debtors Turnover</strong>：赊销额 ÷ 平均应收账款，表示一年收回几次。\n<strong>Debt to equity</strong>：总负债 ÷ 所有者权益 × 100。\n<strong>Debt to assets</strong>：总负债 ÷ 总资产 × 100。",
+     "numeric": false
+    },
+    {
+     "label": "例 2",
+     "ref": "Tutorial Q1",
+     "question": "What is the purpose of ratio analysis?",
+     "solution": "快速评价企业的盈利、流动性、效率和偿债能力，与往年、同行比较，找出强项和弱点，帮助管理者、投资者、债权人做决策；也能提示将来可能出现的财务困难。",
+     "numeric": false
+    },
+    {
+     "label": "例 3",
+     "ref": "Tutorial Q2",
+     "question": "List the 3 ratios that can be used to assess profitability.",
+     "solution": "Return on Owner's Equity（所有者权益回报率）、Return on Assets（资产回报率）、Net Profit Ratio（净利率）。",
+     "numeric": false
+    },
+    {
+     "label": "例 4",
+     "ref": "Tutorial Q3",
+     "question": "State what is measured by Return on Owner's Equity and show the formula.",
+     "solution": "衡量企业用所有者投入的资本赚取利润的效果，帮助判断这项投资是否划算。公式：净利润 ÷ 平均所有者权益 × 100，平均所有者权益 = (期初 + 期末) ÷ 2。",
+     "numeric": false
+    },
+    {
+     "label": "例 5",
+     "ref": "Tutorial Q4",
+     "question": "State 2 reasons why some expenses must increase in the pursuit of profit.",
+     "solution": "① 要卖得更多，就要多做广告、多请销售人员，销售费用会增加；② 业务扩大需要更大的店面、更多设备，租金、折旧、工资随之增加。只要收入增长快于费用，利润仍会上升。",
+     "numeric": false
+    },
+    {
+     "label": "例 6",
+     "ref": "Tutorial Q5",
+     "question": "State what is measured by Net Profit Ratio and show the formula.",
+     "solution": "衡量每 100 元净销售额中有多少成为净利润，反映定价、销售量和费用控制的综合效果。公式：净利润 ÷ 净销售额 × 100。",
+     "numeric": false
+    },
+    {
+     "label": "例 7",
+     "ref": "Tutorial Q6",
+     "question": "List the 2 indicators that can be used to assess liquidity.",
+     "solution": "Current Ratio（流动比率）和 Quick Asset Ratio（速动比率）。",
+     "numeric": false
+    },
+    {
+     "label": "例 8",
+     "ref": "Tutorial Q7",
+     "question": "State what is measured by Current Ratio and show the formula.",
+     "solution": "衡量用流动资产偿还短期债务的能力（又叫 working capital ratio）。公式：流动资产 ÷ 流动负债，一般希望大于 1:1。",
+     "numeric": false
+    },
+    {
+     "label": "例 9",
+     "ref": "Tutorial Q8",
+     "question": "State two actions the owner may be required to take if the Current Ratio is too high or too low.",
+     "solution": "太低（< 1:1）：① 追加现金投资（capital contribution）；② 减少个人提款。\n太高（如 8:1）：① 把闲置现金拿去投资或偿还长期债务；② 减少过多的存货、加快收回应收账款。",
+     "numeric": false
+    },
+    {
+     "label": "例 10",
+     "ref": "Tutorial Q9",
+     "question": "State what is measured by the Quick Asset Ratio and show the formula.",
+     "solution": "衡量用马上能变现的资产偿还马上要付的债务的能力（又叫 liquid ratio / acid test）。公式：（流动资产 − 存货 − 预付费用）÷（流动负债 − 银行透支），希望至少 1:1。",
+     "numeric": false
+    },
+    {
+     "label": "例 11",
+     "ref": "Tutorial Q10",
+     "question": "Explain why these are excluded from the Quick Asset Ratio: i. Stock ii. Prepaid Expenses iii. Bank Overdraft.",
+     "solution": "i. 存货要先卖出、再收款，不能立即变成现金。\nii. 预付费用已经付出去了，只能换来将来的服务，不能变现。\niii. 银行透支通常是长期滚动使用的融资，不会被要求马上还清，所以不算在马上要付的负债里。",
+     "parts": [
+      "i",
+      "ii",
+      "iii"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 12",
+     "ref": "Tutorial Q11",
+     "question": "List the 2 indicators that can be used to assess efficiency.",
+     "solution": "Stock Turnover（存货周转率）和 Debtors Turnover（应收账款周转率）。",
+     "numeric": false
+    },
+    {
+     "label": "例 13",
+     "ref": "Tutorial Q12",
+     "question": "State what is measured by Stock Turnover and show the formula.",
+     "solution": "衡量存货卖出并补充的速度：一个会计期间平均卖完几次存货。公式：销货成本 ÷ 平均存货，平均存货 = (期初 + 期末) ÷ 2；换算成天数：365 ÷ 周转次数。",
+     "numeric": false
+    },
+    {
+     "label": "例 14",
+     "ref": "Tutorial Q13",
+     "question": "State what is measured by Debtors Turnover and show the formula.",
+     "solution": "衡量收回应收账款的速度：平均每年收回几次。公式：赊销额 ÷ 平均应收账款；平均收账期 = 365 ÷ 周转次数，应不超过给客户的信用期。",
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "用期末数代替平均数：ROE、ROA、存货周转都要用期初和期末的平均。",
+    "只给数字不比较：比率要与往年或同行比较才有意义。",
+    "把速动比率的分母也减了存货：分母只扣银行透支。"
+   ],
+   "faqs": [
+    {
+     "q": "比率高一定好吗？",
+     "a": "不一定。流动比率太高说明现金、存货闲置；负债比率越高风险越大。要看是哪一个比率。"
+    },
+    {
+     "q": "为什么说比率分析不能说明原因？",
+     "a": "它只告诉你哪里变好或变坏，原因要回到报表和经营情况里去找。"
+    }
+   ]
+  },
+  {
+   "title": "计算与解读（Kingsford Trading 与综合题）",
+   "sources": [
+    {
+     "file": "unit10 lecture slides financial statement analysis.pdf",
+     "pages": "p8–35"
+    },
+    {
+     "file": "unit10 reading materials financial statement analysis.pdf",
+     "pages": "p2–7"
+    },
+    {
+     "file": "unit10 tutorial guide fsa.pdf",
+     "pages": "p8–11"
+    }
+   ],
+   "concept": "解读比率的固定写法：<strong>数字 → 含义 → 与基准比较 → 可能原因 → 结论</strong>。例如「流动比率 0.68:1：每 1 元流动负债只有 0.68 元流动资产，低于 1:1，短期偿债能力不足，可能原因是应付账款过多……」。\n流动比率和速动比率差距大，说明流动资产里存货（和预付）占比大。",
+   "examples": [
+    {
+     "label": "例 15",
+     "ref": "Lecture NPR",
+     "question": "Kingsford Trading (July): Net profit 1,684; Sales 6,840; Sales returns 740. Calculate and interpret the Net Profit Ratio; is 24.62% favourable?",
+     "solution": "净利率应该用<strong>净销售额</strong>：6 840 − 740 = 6 100，1 684 ÷ 6 100 × 100 = 27.61%。好不好要比较：若行业平均 20%，Kingsford 表现较好；若行业平均 30%，则较差。净利率下降说明费用占销售的比例上升（费用增长快于销售，或销售下降快于费用）。",
+     "checks": [
+      {
+       "expr": "1684/6100*100",
+       "equals": "27.61",
+       "tol": 0.01
+      },
+      {
+       "expr": "1684/6840*100",
+       "equals": "24.62",
+       "tol": 0.01
+      }
+     ],
+     "sourceNote": "讲义用 1 684 ÷ 6 840 = 24.62%，但 6 840 是扣除退货前的销售额，讲义的利润表里也把「Net sales」写成了 6 840；按公式应除以净销售额 6 100，得 27.61%。"
+    },
+    {
+     "label": "例 16",
+     "ref": "Lecture Current Ratio",
+     "question": "Kingsford Trading balance sheet at 31 July: current assets 14,384 (cash 1,940, stock 9,200, A/R 3,110, stationery supplies 30, prepaid advertising 104); current liabilities 21,050 (A/P 20,950, accrued wages 100). Calculate and interpret the current ratio (and the quick asset ratio).",
+     "solution": "流动比率 14 384 ÷ 21 050 = 0.68:1（68%）：每 1 元流动负债只有 0.68 元流动资产，低于 1:1，不利。\n速动比率：速动资产 = 14 384 − 存货 9 200 − 预付广告 104 = 5 080，5 080 ÷ 21 050 = 0.24:1，更差，说明流动资产主要压在存货上。",
+     "checks": [
+      {
+       "expr": "14384/21050",
+       "equals": "0.683",
+       "tol": 0.001
+      },
+      {
+       "expr": "(14384-9200-104)/21050",
+       "equals": "0.241",
+       "tol": 0.001
+      }
+     ],
+     "sourceNote": "速动比率这里把 Stationery Supplies 30 留在速动资产里；严格按「物料也是预付」的口径扣掉，结果是 0.24，不变。"
+    },
+    {
+     "label": "例 17",
+     "ref": "Lecture Stock Turnover",
+     "question": "Kingsford: COGS 3,350; opening stock 3,500; closing stock 9,200. Calculate stock turnover and stock turnover in days; is it favourable?",
+     "solution": "平均存货 (3 500 + 9 200) ÷ 2 = 6 350；周转次数 3 350 ÷ 6 350 = 0.53 次；天数 365 ÷ 0.53 ≈ 689 天。远低于一般水平（约 7 次、52 天），不利。可能原因：存货太多、有过时商品、为旺季预先囤货、进货过量。",
+     "checks": [
+      {
+       "expr": "3350/((3500+9200)/2)",
+       "equals": "0.5276",
+       "tol": 0.0001
+      },
+      {
+       "expr": "365/0.53",
+       "equals": "688.68",
+       "tol": 0.01
+      }
+     ],
+     "sourceNote": "讲义写 688.67 天，是用四舍五入后的 0.53 计算的；用未取整的 0.5276 算是约 691.8 天，结论相同。"
+    },
+    {
+     "label": "例 18",
+     "ref": "Lecture Debt to Equity",
+     "question": "Kingsford: total liabilities 21,050; owner's equity 14,584; total assets 35,634. Calculate the debt to equity and debt to assets ratios.",
+     "solution": "负债权益比 21 050 ÷ 14 584 = 1.44:1（144%）：每 1 元权益对应 1.44 元负债，超过 100%，偿债风险较高。\n负债资产比 21 050 ÷ 35 634 × 100 = 59.07%：近六成资产靠借款支撑。",
+     "checks": [
+      {
+       "expr": "21050/14584",
+       "equals": "1.443",
+       "tol": 0.001
+      },
+      {
+       "expr": "21050/35634*100",
+       "equals": "59.07",
+       "tol": 0.01
+      }
+     ]
+    },
+    {
+     "label": "例 19",
+     "ref": "Tutorial Q14",
+     "question": "Joy's Books: Current Ratio 7.01:1 (20X1) → 2.78:1 (20X2); Quick Assets Ratio 1.68:1 → 0.3:1; Stock Turnover 98 days → 126 days; Debtors Turnover 54 days → 39 days. i. Comment on the trend in the current ratio, two possible reasons, and whether 20X1 was too high. ii. Explain the relationship between the current ratio and the quick assets ratio. iii. Comment on the trend in the quick assets ratio, two possible causes, and whether it is a concern. iv. Comment on the trend in debtors turnover and its impact on customers. v. Comment on the trend in stock turnover and its main cause.",
+     "solution": "i. 流动比率从 7.01:1 降到 2.78:1，下降明显，但仍高于 1:1，短期偿债没有问题。可能原因：① 用闲置现金还债或投资了非流动资产，现金减少；② 流动负债增加（如赊购更多存货）。20X1 年的 7.01:1 太高：说明有大量闲置现金或存货，现金赚不到多少利息，存货有储存和过时风险。\nii. 两者的区别是速动比率扣除了存货和预付费用（分母扣除透支）。两者差距大，说明流动资产里存货占了很大比例。20X2 年流动比率 2.78 而速动比率只有 0.3，差距更大，说明存货占比更高。\niii. 速动比率从 1.68:1 降到 0.3:1，远低于 1:1，令人担忧：每 1 元马上要付的债务只有 0.3 元马上能用的资产。可能原因：① 现金被用来购买存货（存货天数也在上升）；② 应收账款收得更快、余额减少，或流动负债（应付账款）增加。需要关注，Joy 可能付不起马上到期的账单。\niv. 应收账款收账期从 54 天缩短到 39 天，有利：收款更快，现金更早到手。对客户的影响：收款政策变严（更快催款或缩短信用期），可能让部分客户不满甚至流失。\nv. 存货周转天数从 98 天增加到 126 天，不利：存货卖得更慢。主要原因很可能是进货过多（与速动比率下降、流动比率仍较高一致），也可能有过时、滞销的书。",
+     "parts": [
+      "i",
+      "ii",
+      "iii",
+      "iv",
+      "v"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 20",
+     "ref": "Tutorial Q15",
+     "question": "Lily Ltd vs Rose Ltd (in millions). Lily: net sales 40,000; cost of sales 32,000; selling and admin 7,200; finance 600; gain on sale of equipment 800; income tax 300; profit 700; current assets 11,000; total assets 20,000 (beginning 17,504); current liabilities 5,500; non-current liabilities 8,200; equity 6,300. Rose: net sales 82,000; cost of sales 65,000; selling and admin 13,000; finance 1,000; gain 200; income tax 1,200; profit 2,000; current assets 11,000; total assets 28,481 (beginning 26,441); current liabilities 9,000; non-current liabilities 11,000; equity 8,481. (a) Calculate current ratio, profit margin, return on assets and debt to total assets. (b) Compare liquidity, solvency and profitability. (c) Underlying reason for the profitability difference. (d) Underlying reason for the solvency difference.",
+     "solution": "(a) 见下表。ROA 用平均总资产：Lily (17 504 + 20 000) ÷ 2 = 18 752；Rose (26 441 + 28 481) ÷ 2 = 27 461。\n(b) 流动性：Lily 2.00:1 好于 Rose 1.22:1，两者都高于 1:1。偿债能力：两家负债都约占资产七成（68.5% 对 70.2%），Rose 略高、风险略大。盈利能力：Rose 明显更好，净利率 2.44% 对 1.75%，ROA 7.28% 对 3.73%。\n(c) Rose 的费用控制更好：销售和管理费用占销售额 15.9%（Lily 18.0%），毛利率也略高（20.7% 对 20.0%）；而且 Lily 的利润有一大部分来自一次性的设备出售收益 800，扣除后 Lily 实际是亏损的。\n(d) 两家的负债资产比都很高。Rose 的权益从 10 753 降到 8 481（可能分配了大量股利或回购），资产却在增加，靠负债融资的比例上升；Lily 的权益从 6 093 升到 6 300。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "Ratio",
+        "Lily Ltd",
+        "Rose Ltd"
+       ],
+       "rows": [
+        [
+         "Current ratio",
+         "11,000 ÷ 5,500 = 2.00:1",
+         "11,000 ÷ 9,000 = 1.22:1"
+        ],
+        [
+         "Profit margin",
+         "700 ÷ 40,000 = 1.75%",
+         "2,000 ÷ 82,000 = 2.44%"
+        ],
+        [
+         "Return on assets",
+         "700 ÷ 18,752 = 3.73%",
+         "2,000 ÷ 27,461 = 7.28%"
+        ],
+        [
+         "Debt to total assets",
+         "13,700 ÷ 20,000 = 68.50%",
+         "20,000 ÷ 28,481 = 70.22%"
+        ]
+       ]
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ],
+     "checks": [
+      {
+       "expr": "40000-32000-7200-600+800-300",
+       "equals": "700"
+      },
+      {
+       "expr": "82000-65000-13000-1000+200-1200",
+       "equals": "2000"
+      },
+      {
+       "expr": "11000/9000",
+       "equals": "1.222",
+       "tol": 0.001
+      },
+      {
+       "expr": "700/40000*100",
+       "equals": "1.75"
+      },
+      {
+       "expr": "2000/82000*100",
+       "equals": "2.439",
+       "tol": 0.001
+      },
+      {
+       "expr": "700/((17504+20000)/2)*100",
+       "equals": "3.733",
+       "tol": 0.001
+      },
+      {
+       "expr": "2000/((26441+28481)/2)*100",
+       "equals": "7.283",
+       "tol": 0.001
+      },
+      {
+       "expr": "(5500+8200)/20000*100",
+       "equals": "68.5"
+      },
+      {
+       "expr": "(9000+11000)/28481*100",
+       "equals": "70.22",
+       "tol": 0.01
+      },
+      {
+       "expr": "7200/40000*100",
+       "equals": "18"
+      },
+      {
+       "expr": "13000/82000*100",
+       "equals": "15.85",
+       "tol": 0.01
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "净利率除以未扣退货的销售额。",
+    "周转天数用四舍五入后的次数再算，结果有偏差；最好用未取整的数。",
+    "解读时只说「好」或「不好」，不给比较基准和原因。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么一次性收益要单独看？",
+     "a": "它不会每年发生，算进利润会让盈利能力看起来比实际好，比较时要剔除。"
+    },
+    {
+     "q": "收账天数下降一定是好事吗？",
+     "a": "对现金流是好事，但如果是因为收紧信用，可能失去客户，影响销售。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "步骤",
+   "做什么",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "1 选比率",
+    "盈利 3 个、流动性 2 个、效率 2 个、偿债 2 个",
+    "例 1、3、7、12"
+   ],
+   [
+    "2 算",
+    "用平均数的比率先算平均；注意净销售额",
+    "例 15–18、20"
+   ],
+   [
+    "3 解读",
+    "数字 → 含义 → 与基准比较 → 原因 → 结论",
+    "例 19、20"
+   ]
+  ]
+ },
+ "practice": "本周任务：阅读 Unit 10 Readings；完成 Tutorial Questions 1–14 和课堂第 15 题；准备小组展示。"
+}
