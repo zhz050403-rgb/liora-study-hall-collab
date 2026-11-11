@@ -40,6 +40,15 @@
     }
   }
 
+  function setOpen(open) {
+    var btn = document.getElementById('cbSettingsBtn');
+    var box = document.getElementById('cbModeCtrl');
+    if (!btn || !box) return;
+    box.hidden = !open;
+    btn.setAttribute('aria-expanded', String(open));
+  }
+
+  /* 字号、专注、静效合成一个「Aa」按钮，点开才显示，减少右下角常驻的浮动控件 */
   function build() {
     if (document.getElementById('cbModeCtrl')) return;
 
@@ -47,12 +56,44 @@
     box.className = 'cb-mode-ctrl';
     box.id = 'cbModeCtrl';
     box.setAttribute('role', 'group');
-    box.setAttribute('aria-label', '显示偏好');
+    box.setAttribute('aria-label', '阅读设置');
+    box.hidden = true;
     box.innerHTML =
+      '<div class="cb-row cb-row-mode">' +
       '<span class="cb-label">显示</span>' +
       '<button type="button" id="cbFocusBtn" aria-pressed="false" aria-label="专注模式">专注</button>' +
-      '<button type="button" id="cbMotionBtn" aria-pressed="false" aria-label="减少动效">静效</button>';
+      '<button type="button" id="cbMotionBtn" aria-pressed="false" aria-label="减少动效">静效</button>' +
+      '</div>';
+    /* 主站页面自带字号控件：整体移进面板，原有的点击逻辑随节点保留 */
+    var font = document.getElementById('font-ctrl');
+    if (font) {
+      var row = document.createElement('div');
+      row.className = 'cb-row cb-row-font';
+      row.appendChild(font);
+      box.insertBefore(row, box.firstChild);
+    }
+
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.id = 'cbSettingsBtn';
+    btn.className = 'cb-settings-btn';
+    btn.textContent = 'Aa';
+    btn.title = '阅读设置：字号 / 专注 / 静效';
+    btn.setAttribute('aria-label', '阅读设置');
+    btn.setAttribute('aria-controls', 'cbModeCtrl');
+    btn.setAttribute('aria-expanded', 'false');
+
     document.body.appendChild(box);
+    document.body.appendChild(btn);
+
+    btn.addEventListener('click', function () { setOpen(box.hidden); });
+    document.addEventListener('click', function (e) {
+      if (box.hidden || box.contains(e.target) || btn.contains(e.target)) return;
+      setOpen(false);
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && !box.hidden) { setOpen(false); btn.focus(); }
+    });
 
     document.getElementById('cbFocusBtn').addEventListener('click', function () {
       write(KEY_FOCUS, document.body.classList.contains('cb-focus') ? '0' : '1');

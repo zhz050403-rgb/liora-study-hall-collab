@@ -65,20 +65,40 @@ body {
 .main-nav a { min-height:40px; display:inline-flex; align-items:center; }
 .chip { min-height:26px; }
 .font-ctrl .fc-btn { min-height:36px; }
+/* 图标小按钮外观不变，用透明伪元素把可点区域扩到 24×32 以上 */
+.tarrow, .kp-tools-btn { position:relative; }
+.tarrow::after { content:""; position:absolute; inset:-8px -4px; }
+.kp-tools-btn::after { content:""; position:absolute; inset:-7px -4px; }
+@media (max-width:960px) {
+  .ws-check { width:22px; height:22px; }
+  .search-box input { min-height:28px; }
+  #briefSearch, #briefCategory { min-height:34px; }
+}
 
-/* ============ 6. 显示偏好开关（site-polish.js 动态创建） ============ */
+/* ============ 6. 阅读设置：字号 / 专注 / 静效收进一个「Aa」按钮（site-polish.js 创建） ============
+   原来字号条、显示条和 AI 按钮三个浮动控件叠在一起，放哪里都会盖住勾选框和导航。
+   现在只留一个 40px 圆形按钮，和 AI 按钮、回到顶部排成右下角一列，点开才显示选项。 */
+.cb-settings-btn {
+  position:fixed; right:28px; bottom:88px; z-index:71;
+  width:40px; height:40px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  background:#fff; color:#173860; border:1px solid #c9a55c;
+  box-shadow:0 4px 16px rgba(18,46,82,.18);
+  font:700 15px/1 var(--cb-serif, Georgia, serif); cursor:pointer;
+}
+.cb-settings-btn[aria-expanded="true"] { background:#173860; color:#fff; }
 .cb-mode-ctrl {
-  position:fixed; right:88px; bottom:26px; z-index:71;
-  display:flex; align-items:center; gap:6px;
-  background:rgba(255,255,255,.96);
-  border:1px solid var(--cb-line);
-  border-radius:999px; padding:5px 9px;
-  box-shadow:0 4px 16px rgba(18,46,82,.14);
+  position:fixed; right:22px; bottom:136px; z-index:72;
+  display:flex; flex-direction:column; align-items:stretch; gap:8px;
+  background:#fff; border:1px solid var(--cb-line); border-radius:14px;
+  padding:10px 12px; box-shadow:0 10px 28px rgba(18,46,82,.2);
   font-family:var(--cb-sans);
 }
-.cb-mode-ctrl .cb-label {
-  font-size:12px; font-weight:700; letter-spacing:1px;
-  color:var(--cb-muted); padding-left:4px;
+.cb-mode-ctrl[hidden] { display:none !important; }
+.cb-mode-ctrl .cb-row { display:flex; align-items:center; gap:6px; }
+.cb-mode-ctrl .cb-label, .cb-mode-ctrl .font-ctrl .fc-label {
+  min-width:2.6em; font-size:12px; font-weight:700; letter-spacing:1px;
+  color:var(--cb-muted); margin:0;
 }
 .cb-mode-ctrl button {
   min-height:40px; padding:6px 14px;
@@ -88,29 +108,37 @@ body {
   cursor:pointer;
 }
 .cb-mode-ctrl button:hover { border-color:var(--cb-navy-700); color:var(--cb-navy-800); }
-.cb-mode-ctrl button[aria-pressed="true"] {
+.cb-mode-ctrl button[aria-pressed="true"], .cb-mode-ctrl .fc-btn.active {
   background:#173860; color:#fff; border-color:#173860;
 }
-/* 原有「字号」控件压在左下角会挡住侧栏目录，一起挪到右下角成一组，
-   左侧长目录不再被浮动控件遮挡（对 ADHD 阅读尤其重要）。 */
-.font-ctrl {
-  left:auto !important; right:88px !important; bottom:78px !important;
+/* 字号条原本是独立的浮动条，放进面板后改为普通一行 */
+.cb-mode-ctrl .font-ctrl {
+  position:static !important; left:auto !important; right:auto !important; bottom:auto !important;
+  gap:6px; padding:0; border:0; background:transparent; box-shadow:none;
 }
+body:not(:has(.week-panel)) .cb-mode-ctrl .cb-row-font { display:none; }
+/* 回到顶部排在设置按钮上方；没有 AI 按钮（或专注模式隐藏了它）时整列下移 */
+.to-top { right:22px; bottom:136px; }
+body:not(:has(#ai-fab[style*="flex"])) .cb-settings-btn, body.cb-focus .cb-settings-btn { bottom:26px; }
+body:not(:has(#ai-fab[style*="flex"])) .cb-mode-ctrl, body.cb-focus .cb-mode-ctrl { bottom:74px; }
+body:not(:has(#ai-fab[style*="flex"])) .to-top, body.cb-focus .to-top { bottom:74px; }
+/* AI 面板打开时收起设置，避免盖住面板内容和「提问」按钮 */
+body:has(#ai-panel[style*="display: flex"]) .cb-settings-btn,
+body:has(#ai-panel[style*="display: flex"]) .cb-mode-ctrl { display:none !important; }
 @media (max-width:960px) {
-  .font-ctrl { right:12px !important; bottom:120px !important; }
-  .cb-mode-ctrl { right:12px !important; bottom:70px !important; padding:4px 7px; }
-  .cb-mode-ctrl button { padding:5px 11px; }
-  /* 手机上「显示/专注/静效」原本被右下角的 AI 悬浮球压住：把球缩小并落到最底部 */
   #ai-fab { right:12px !important; bottom:14px !important; width:44px !important; height:44px !important; font-size:20px !important; }
-  /* 移动端右下角叠了字号 / 显示 / AI 三个浮动控件，给正文留出底部空间，避免勾选框与按钮被压住 */
-  #app { padding-bottom: 168px !important; }
-  /* AI 面板打开时收起浮动控件，避免盖住面板内容和「提问」按钮 */
-  body:has(#ai-panel[style*="display: flex"]) .font-ctrl,
-  body:has(#ai-panel[style*="display: flex"]) .cb-mode-ctrl { display:none !important; }
+  .cb-settings-btn { right:14px; bottom:66px; }
+  .cb-mode-ctrl { right:12px; bottom:114px; }
+  .to-top { right:12px !important; bottom:114px !important; }
+  body:not(:has(#ai-fab[style*="flex"])) .cb-settings-btn, body.cb-focus .cb-settings-btn { bottom:14px; }
+  body:not(:has(#ai-fab[style*="flex"])) .cb-mode-ctrl, body.cb-focus .cb-mode-ctrl { bottom:62px; }
+  body:not(:has(#ai-fab[style*="flex"])) .to-top, body.cb-focus .to-top { bottom:62px !important; }
+  /* 正文底部留出右下角按钮列的高度，滚到底时最后的勾选框和按钮不被盖住 */
+  #app { padding-bottom: 120px !important; }
 }
+@media print { .cb-settings-btn, .cb-mode-ctrl { display:none !important; } }
 .ai-panel .ai-hint { max-height:4.8em; overflow-y:auto; }
-/* 手机：AI 面板固定成底部抽屉，不用记住的坐标和尺寸，否则内容变长会把输入框顶出屏幕；
-   字号 / 显示控件排到左下一行，不再压住右侧的勾选框 */
+/* 手机：AI 面板固定成底部抽屉，不用记住的坐标和尺寸，否则内容变长会把输入框顶出屏幕 */
 @media (max-width:640px) {
   .ai-panel {
     left:8px !important; right:8px !important; top:auto !important;
@@ -119,12 +147,6 @@ body {
     height:70vh !important; height:70dvh !important; min-height:0 !important;
   }
   .ai-panel .ai-resizer { display:none; }
-  .font-ctrl .fc-label, .cb-mode-ctrl .cb-label { display:none; }
-  .font-ctrl { left:8px !important; right:auto !important; bottom:14px !important; padding:4px 6px; }
-  .font-ctrl .fc-btn { padding:3px 7px; }
-  .cb-mode-ctrl { left:138px !important; right:auto !important; bottom:14px !important; padding:4px 6px; }
-  .cb-mode-ctrl button { padding:3px 8px; }
-  #app { padding-bottom: 84px !important; }
 }
 
 /* ============ 7. 专注模式：收起干扰，只留正文 ============ */
