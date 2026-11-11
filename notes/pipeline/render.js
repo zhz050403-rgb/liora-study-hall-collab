@@ -95,7 +95,36 @@ function plotSvg(fig) {
   return o.join('');
 }
 
+/* 韦恩图。shade 是要涂色的区域，每个区域用 0/1 串表示「在不在」各集合，例如两集合 "10" = 只在 A，"00" = 两个都不在（全集里）。
+   涂色用 clipPath（必须在的集合）加 mask（必须不在的集合）精确画出，任何组合都不会画错。三集合或有 shade 时走这里。 */
+function vennShadeSvg(fig) {
+  const sets = fig.sets, n = sets.length, W = 320, H = n === 3 ? 230 : 200;
+  const C = n === 3 ? [[125, 95], [195, 95], [160, 155]] : [[125, 105], [200, 105]], R = n === 3 ? 58 : 70;
+  const id = 'vn' + (++clipSeq), col = ['#16569c', '#b08a3c', '#2e7d4f'];
+  const o = [`<svg viewBox="0 0 ${W} ${H}" width="${W}" role="img" aria-label="${escapeHtml(fig.alt || fig.caption || '韦恩图')}" font-family="sans-serif"><defs>`];
+  C.forEach(([x, y], i) => {
+    o.push(`<clipPath id="${id}c${i}"><circle cx="${x}" cy="${y}" r="${R}"/></clipPath>`);
+    o.push(`<mask id="${id}m${i}"><rect x="0" y="0" width="${W}" height="${H}" fill="#fff"/><circle cx="${x}" cy="${y}" r="${R}" fill="#000"/></mask>`);
+  });
+  o.push('</defs>', `<rect x="4" y="4" width="${W - 8}" height="${H - 8}" rx="10" fill="#fbfcfe" stroke="#9fb3cc"/>`);
+  for (const pat of fig.shade || []) {
+    let el = `<rect x="4" y="4" width="${W - 8}" height="${H - 8}" fill="${COLORS.gold}" fill-opacity="0.45"/>`;
+    [...pat].forEach((bit, i) => { el = `<g ${bit === '1' ? `clip-path="url(#${id}c${i})"` : `mask="url(#${id}m${i})"`}>${el}</g>`; });
+    o.push(el);
+  }
+  C.forEach(([x, y], i) => o.push(`<circle cx="${x}" cy="${y}" r="${R}" fill="none" stroke="${col[i]}" stroke-width="1.6"/>`));
+  const lab = n === 3 ? [[78, 48], [242, 48], [160, 228]] : [[95, 30], [232, 30]];
+  sets.forEach((name, i) => o.push(`<text x="${lab[i][0]}" y="${lab[i][1] - (n === 3 && i === 2 ? 6 : 0)}" font-size="12" font-weight="700" fill="${col[i]}" text-anchor="middle">${escapeHtml(name)}</text>`));
+  o.push(`<text x="${W - 14}" y="22" font-size="12" fill="#4a5d75" text-anchor="end">${escapeHtml(fig.universe || 'U')}</text>`);
+  const pos = n === 3 ? { '100': [100, 80], '010': [220, 80], '001': [160, 185], '110': [160, 72], '101': [122, 140], '011': [198, 140], '111': [160, 118], '000': [290, 205] }
+                      : { '10': [92, 112], '11': [162, 112], '01': [235, 112], '00': [290, 182] };
+  for (const [k, v] of Object.entries(fig.regionCounts || {})) if (pos[k]) o.push(`<text x="${pos[k][0]}" y="${pos[k][1]}" font-size="15" fill="#173860" text-anchor="middle">${escapeHtml(v)}</text>`);
+  o.push('</svg>');
+  return o.join('');
+}
+
 function vennSvg(fig) {
+  if (fig.shade || fig.sets.length === 3 || fig.regionCounts) return vennShadeSvg(fig);
   const [a, b] = fig.sets, c = fig.counts || {};
   const t = v => v == null ? '' : escapeHtml(v);
   return `<svg viewBox="0 0 320 200" width="320" role="img" aria-label="${escapeHtml(fig.alt || fig.caption || '韦恩图')}" font-family="sans-serif">` +

@@ -824,6 +824,21 @@
  },
  {
   "board": "math-notes",
+  "key": "term2/3",
+  "course": "mathematics",
+  "term": "term2",
+  "week": 3,
+  "title": "Present Value & Mixed Finance · 现值与综合金融数学",
+  "fields": {
+   "graphicHtml": "out/mathematics/term2/w03.graphic.html"
+  },
+  "examples": 15,
+  "checks": 18,
+  "deliverables": 2,
+  "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
   "key": "term2/5",
   "course": "mathematics",
   "term": "term2",
