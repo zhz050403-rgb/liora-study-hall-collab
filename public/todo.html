@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>学习小屋 · 待办</title>
+<meta name="description" content="从学习小屋摘出来的待办清单，可安装到桌面，与网站任务互通。">
+<meta name="theme-color" content="#0b2545">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="待办">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!-- 线上分享链接有网关校验：桌面图标由浏览器自行打开，地址里必须自带通行码，
+     否则凭证过期后会显示「链接不完整」。以下所有地址都带上站点分享码。 -->
+<link rel="manifest" href="/manifest.webmanifest?sharecode=">
+<link rel="icon" href="/favicon.ico?v=20261106-crest1&sharecode=" sizes="any">
+<link rel="icon" type="image/png" sizes="192x192" href="/cabin-art/crest-icon-192.png?v=20261106-crest1&sharecode=">
+<link rel="apple-touch-icon" href="/cabin-art/crest-apple-touch-180.png?v=20261106-crest1&sharecode=">
+<link rel="stylesheet" href="/todo-widget.css?v=20261108-banner-repair">
+<!-- 与主站共用账号与云同步：待办打勾后，网站、平板、桌面小组件自动一致 -->
+<script src="https://cdn.jsdelivr.net/npm/@tencent-ai/workbuddy-cloud-sdk@0.1.4-dev.ca27990.202610161713/lib/index.global.js"></script>
+<script src="/cloud-config.js?v=1"></script>
+<script src="/cloud-sync.js?v=20261107c&sharecode="></script>
+<link rel="stylesheet" href="section-banners.css?v=20261108-banner-repair">
+<link rel="stylesheet" href="/blocks/site-tokens.css?v=20261107-polish1">
+</head>
+<body>
+<header class="cabin-header">
+  <a class="cabin-brand" href="/index.html#/">
+    <img src="/cabin-art/crest.webp" alt="" width="48" height="48">
+    <span>Liora 的学习小屋<small>Learning Cabin</small></span>
+  </a>
+  <nav aria-label="学习小屋导航">
+    <a href="/index.html#/">首页</a>
+    <a href="/index.html#/courses">课程中心</a>
+    <a href="/index.html#/extra">课外拓展</a>
+    <a href="/index.html#/reading">读书</a>
+    <a href="/index.html#/prep">复习计划</a>
+    <a href="/english/index.html">英语学习</a><a href="/todo.html" aria-current="page">学习待办</a>
+  </nav>
+</header>
+<div class="td-shell">
+
+  <header class="td-top">
+    <div class="td-top-row">
+      <img class="td-logo" src="/todo-icon.svg?sharecode=" alt="" width="38" height="38">
+      <div class="td-titles">
+        <h1>我的待办</h1>
+        <p id="tdDate">学习小屋 · To Do</p>
+      </div>
+      <button class="td-top-btn" id="tdBack" type="button" title="打开完整的学习小屋" aria-label="打开完整的学习小屋">↗</button>
+      <button class="td-pet-close" id="tdClose" type="button" title="关闭小卡片（或按 Alt+F4）" aria-label="关闭小卡片">×</button>
+    </div>
+  </header>
+
+  <div class="td-progress">
+    <div class="td-progress-txt"><span id="tdLeft">还剩 0 项待办</span><span id="tdPct">0%</span></div>
+    <div class="td-bar"><i id="tdBar"></i></div>
+  </div>
+
+  <div class="td-add">
+    <input id="tdInput" type="text" maxlength="120" autocomplete="off" placeholder="加一条待办，回车即可…" aria-label="新待办内容">
+    <button id="tdAdd" type="button" title="添加" aria-label="添加待办">＋</button>
+  </div>
+
+  <main class="td-lists" id="tdLists"></main>
+
+  <footer class="td-foot">
+    <!-- ① APP 模式（首选）：由浏览器自己安装成应用，启动的是系统已信任的浏览器，
+         不运行我们提供的任何脚本，所以 Windows 保护提示 / Mac 隔离都不会拦。 -->
+    <button class="td-install is-app" id="tdInstall" type="button"><span class="td-app-title">🪟 安装成应用（APP 模式）</span><span class="td-app-sub">推荐 · 系统不会拦截 · 点一下就有独立小窗，不用下载文件</span></button>
+    <div class="td-installed" id="tdInstalled" hidden>✓ 已经运行在应用模式，打勾会自动同步到网站</div>
+
+    <!-- ② 可选：想要一直贴在桌面上、不用点开的小卡片，才需要下载。两个入口始终都在。 -->
+    <div class="td-optional">下载桌面待办小窗</div>
+    <div class="td-downloads">
+      <a class="td-download" id="tdDownloadWin" href="/downloads/LioraTodoSetup.exe" download="LioraTodoSetup.exe">⬇ 下载 Windows 安装程序<small>下载完成后打开安装程序，按提示安装并打开待办</small></a>
+      <a class="td-download" id="tdDownloadMac" href="/downloads/LioraTodoMac.zip?sharecode=" download="LioraTodo-Mac.zip">⬇ 下载 Mac 版<small>双击 .app 即可 · 右键打开可绕过拦截</small></a>
+    </div>
+    <div class="td-tip" id="tdInstallTip" hidden>
+      <b>为什么 APP 模式不会被电脑拦？</b><br>
+      安装成应用时，系统启动的是你电脑上本来就装好的浏览器，不是从网上下载的脚本 —— 所以 Windows 不会弹「已保护你的电脑」，Mac 也不会提示「身份不明的开发者」。<br>
+      <b>按钮点了没弹窗？手动两下就好（Edge / Chrome）</b><br>
+      点地址栏最右边的「安装」小图标；或右上角 <b>⋯</b> → <b>应用</b> → <b>安装此站点</b>。确认后桌面出现「学习小屋 · 待办」，双击就是没有地址栏的独立小窗。<br>
+      <b>手机 / 平板</b>：浏览器菜单 → <b>添加到主屏幕</b>。<br>
+      <b>想要一直贴在桌面、不用点开的小卡片？</b><br>
+      用下面「下载 Windows 版」，解压后双击 <b>打开待办网页.url</b>（纯文本，系统不拦），再点页面上的「安装成应用」；Mac 则下载真正的 <b>.app</b> 应用包。两个入口都在，想给别的电脑下包直接点另一个。<br>
+      <span style="color:#68788c">不管用哪种方式，待办都是同一份，打勾会同步到网站（同一账号）。</span>
+    </div>
+    <div class="td-foot-row">
+      <button class="td-link" id="tdClearDone" type="button">清除已完成</button>
+      <span class="td-foot-note" style="margin-top:0">☁ 与学习小屋自动同步 · 双击文字可修改</span>
+    </div>
+  </footer>
+</div>
+
+<div class="td-toast" id="tdToast" role="status"></div>
+
+<script src="/prep-data.js?v=20261106d&sharecode="></script>
+<script src="/todo-widget.js?v=20261108-tabletmob&sharecode="></script>
+<script>
+/* 让页面具备「可安装到桌面」的能力；只缓存小组件自己的几个小文件，
+   绝不碰主站的数据文件与接口，所以不会影响学习小屋本身的加载。 */
+if ('serviceWorker' in navigator && location.protocol.indexOf('http') === 0) {
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('/sw.js?v=9&sharecode=').catch(function () {});
+  });
+}
+</script>
+</body>
+</html>

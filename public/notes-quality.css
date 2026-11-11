@@ -1,0 +1,20 @@
+
+.notes-review-state{font-size:13px;color:#252525;border-left:3px solid #b03030;padding:10px 14px;margin:18px 0;background:#fff}
+.notes,.gx,.notes strong,.notes h4,.gx h3.gx-h,.gx-def .en,.gx-def .cn{color:#171717}
+.notes h4::before,.gx h3.gx-h{border-color:#171717}.notes h4::before{background:#171717}
+.gx .c-gold,.gx-t .hl{color:#b03030;font-weight:700}.gx-def,.callout,.gx-page.gx-example{background:#fff}
+.callout.red{background:#fff;color:#171717;border-color:#ddd;border-left:3px solid #b03030}.callout.blue{background:#fff;color:#16569c;border-color:#ddd;border-left:3px solid #16569c}
+.callout.gold{background:#fff;color:#171717;border-color:#ddd}.callout.gold .ct{color:#b03030}
+.gx-t th,.gx-tbl th,.notes th{background:#fff;color:#171717;border:1px solid #bbb}.gx-t,.formula,.diagram{box-shadow:none}
+.notes .en-term{color:#171717}.notes blockquote{background:#fff;border-color:#b03030;color:#171717}
+.gx .example,.gx-example,.gx .answer,.c-blue{color:#16569c}.gx table{display:table}
+@media print{.site-header,.util-bar,.site-footer,.sidebar,.ai-fab,#ai-fab,.note-tabs,.task-progress,.task-row,.prep-q{display:none!important}body{background:#fff;color:#000}.note-pane{display:block!important}.week-panel{box-shadow:none;border:0}.unit-start{break-before:page;page-break-before:always}table,.gx-t,.gx-tbl,tr,figure,.diagram{break-inside:avoid;page-break-inside:avoid}h1,h2,h3,h4,caption{break-after:avoid;page-break-after:avoid}.notes,.gx{font-size:11pt}p{orphans:3;widows:3}.main-layout,.course-layout{display:block}.week-panel{width:100%}.wp-head{break-after:avoid}}
+
+.source-fold{border-top:1px solid #ddd;border-bottom:1px solid #ddd;padding:14px 0;margin:18px 0}.source-fold>summary{cursor:pointer;font-weight:700;color:#164a82}.source-fold[open]>summary{margin-bottom:18px}.gx h2{font-size:22px;margin:24px 0 12px}.gx h3{break-after:avoid}.gx-page .gx-pg-h{display:block}.gx-page p{margin:9px 0}.gx-page .blue{color:#16569c}
+
+.gx-t tr,.gx-t tbody tr:nth-child(even),.gx-t td,.gx-page.gx-example{background:#fff!important}.gx-t thead{display:table-header-group}.gx-t{margin:12px 0 18px}.gx-t th{font-size:12px}.gx-t td{font-size:13px}
+
+.page-coverage{padding:16px 0;border-top:1px solid #ddd;border-bottom:1px solid #ddd;margin:22px 0}.page-coverage>summary{cursor:pointer;font-weight:700;color:#171717}.gx-t td strong{display:block;color:#16569c}
+
+/* Accessible stacked fractions for audited mathematics notes. */
+.audit-frac{display:inline-flex;flex-direction:column;vertical-align:middle;text-align:center;line-height:1.3;margin:0 .15em}.audit-frac>span:first-child{border-bottom:1px solid currentColor;padding:0 .15em}.audit-frac>span:last-child{padding:0 .15em}

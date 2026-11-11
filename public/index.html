@@ -1090,11 +1090,11 @@ table.kp-tbl th.kp-num,table.kp-tbl td.kp-num{text-align:left}
   <div class="footer-bottom">Liora 的学习小屋 · 本地私有学习助手 · 生成于 <span id="footDate"></span></div>
 </footer>
 
-<script src="data.js?v=20261109-t1w5-computing-resources"></script>
+<script src="data.js?v=20261111-camus-summer"></script>
 <script src="records.js"></script>
 <script src="progress.js"></script>
 <script src="prep-data.js?v=20261107-merge-review"></script>
-<script src="question-bank.js?v=20261108-unify1-hc4cc8e2b"></script>
+<script src="question-bank.js?v=20261108-unify1-h19d9f6fb"></script>
 <script src="/board-overrides.js"></script>
 
 <script src="prep-center.js?v=20261109-claude-b4eebbf"></script>
@@ -1347,7 +1347,7 @@ function renderHomeTaskBoards(courses){
   try { completed = JSON.parse(localStorage.getItem(weeklyKey) || "{}") || {}; } catch(e) {}
   var names = {accounting:"会计", economics:"经济", mathematics:"数学", computing:"计算机", english:"学术英语"};
   /* 预习任务：目标 = 你「当前学到单元 + 1」，跟着进度走，不按日历周。
-     当前单元存 localStorage，首页可随时改；经济学默认 5。 */
+     当前单元存 localStorage，首页可随时改；经济学默认 5（用户确认学到 Unit 5 → 预习 Unit 6）。 */
   var PREVIEW_WORD = { economics:"Unit", accounting:"Unit", mathematics:"周", computing:"周", english:"周" };
   function getCurUnit(cid){
     var v = null;
@@ -5151,8 +5151,9 @@ sr.addEventListener("click", function(){ sr.className = "search-results"; si.val
 </script>
 <!-- prep-data.js / prep-center.js 已移至页首（progress.js 之后）：
      启动脚本会立即 route()，直接打开 index.html#/prep 时必须保证 renderPrepCenter 已定义 -->
-<script src="course-tree.js?v=20261108-glossary"></script>
+<script src="course-tree.js?v=20261110-outline-top1"></script>
 <script src="blocks/site-polish.js?v=20261107-polish1"></script>
 <script src="blocks/guide-link.js?v=20261108-guide1"></script>
+<script src="blocks/unit-groups.js?v=20261110-unitgrp6"></script>
 </body>
 </html>

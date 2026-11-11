@@ -1,0 +1,12 @@
+{
+  "name": "liora-study-hall",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "test": "node checks/server-regression.cjs && node checks/notes-regression.cjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

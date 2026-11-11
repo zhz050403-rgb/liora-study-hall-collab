@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#122e52">
+<title>学习小屋 · 使用指南</title>
+<link rel="icon" href="cabin-art/crest-badge-clean.png">
+<link rel="stylesheet" href="blocks/site-tokens.css?v=20261107-polish1">
+<link rel="stylesheet" href="blocks/site-polish.css?v=20261108-mobilefab-h2d339cd9">
+<style>
+/* ============ 使用指南 · 版式（只作用于本页 g- 前缀类名） ============ */
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--cb-ink);font-family:var(--cb-sans);font-size:17px;line-height:1.85;-webkit-font-smoothing:antialiased}
+.g-wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+a{color:var(--cb-navy-800);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* ---------- 页头 ---------- */
+.g-hero{background-image:var(--cb-banner-texture);background-color:#0d2340;color:#fff;padding:44px 0 40px;border-bottom:3px solid var(--cb-gold)}
+.g-hero-in{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.g-crest{width:74px;height:78px;object-fit:contain;flex:none;filter:drop-shadow(0 3px 10px rgba(0,0,0,.35))}
+.g-hero h1{font-family:var(--cb-serif);font-size:34px;line-height:1.25;margin:0 0 6px;letter-spacing:1px}
+.g-hero p{margin:0;color:#d7e6f7;font-size:16px}
+.g-hero .g-kicker{font-size:12px;letter-spacing:3px;color:var(--cb-gold);font-weight:700;margin-bottom:8px}
+.g-hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.g-btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:9px 20px;border-radius:999px;font-size:15px;font-weight:700;cursor:pointer;border:1px solid transparent;font-family:var(--cb-sans)}
+.g-btn-gold{background:var(--cb-gold);color:#122e52}
+.g-btn-gold:hover{background:#dcbb78;text-decoration:none}
+.g-btn-ghost{background:transparent;color:#eaf3fc;border-color:rgba(255,255,255,.45)}
+.g-btn-ghost:hover{background:rgba(255,255,255,.12);text-decoration:none}
+.g-btn-quiet{background:#fff;color:var(--cb-navy-800);border-color:var(--cb-line)}
+.g-btn-quiet:hover{border-color:var(--cb-navy-700);text-decoration:none}
+
+/* ---------- 页内目录 ---------- */
+.g-jump{background:#fff;border-bottom:1px solid var(--cb-line);position:sticky;top:0;z-index:60}
+.g-jump-in{display:flex;gap:6px;overflow-x:auto;padding:10px 0;scrollbar-width:thin}
+.g-jump a{white-space:nowrap;padding:7px 15px;border-radius:999px;font-size:14px;font-weight:600;color:var(--cb-ink-2);border:1px solid var(--cb-line-2)}
+.g-jump a:hover{background:#eaf3fc;border-color:var(--cb-line);text-decoration:none}
+
+/* ---------- 分区 ---------- */
+.g-sec{padding:46px 0 8px;scroll-margin-top:66px}
+.g-sec-head{display:flex;align-items:baseline;gap:14px;border-bottom:1px solid #e0cfab;padding-bottom:12px;margin-bottom:24px}
+.g-num{font-family:var(--cb-serif);font-size:40px;line-height:1;color:var(--cb-gold-deep);font-weight:700;flex:none}
+.g-sec h2{font-family:var(--cb-serif);font-size:26px;margin:0;letter-spacing:.5px}
+.g-sec-head .g-en{margin-left:auto;font-size:12px;letter-spacing:2px;color:var(--cb-muted);font-weight:700;text-transform:uppercase}
+.g-lead{font-size:17px;color:var(--cb-ink-2);margin:-6px 0 22px;max-width:72ch}
+
+/* ---------- 卡片 ---------- */
+.g-grid{display:grid;gap:16px}
+.g-grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.g-grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.g-card{background:#fff;border:1px solid var(--cb-line);border-radius:var(--cb-radius);padding:20px 22px;box-shadow:inset 3px 0 0 rgba(201,165,92,.55),0 6px 18px rgba(18,46,82,.05)}
+.g-card h3{margin:0 0 8px;font-size:18px;font-family:var(--cb-serif);color:var(--cb-navy-900)}
+.g-card p{margin:0;color:var(--cb-ink-2);font-size:15.5px;line-height:1.8}
+.g-card .g-when{display:inline-block;margin-top:12px;background:#f4f8fd;border:1px solid var(--cb-line-2);border-radius:8px;padding:4px 10px;font-size:13px;color:var(--cb-muted);font-weight:600}
+.g-card a.g-go{display:inline-block;margin-top:12px;font-size:14px;font-weight:700}
+
+/* ---------- 三步上手 ---------- */
+.g-step{position:relative;background:#fff;border:1px solid var(--cb-line);border-radius:var(--cb-radius);padding:22px 22px 20px 74px;box-shadow:0 6px 18px rgba(18,46,82,.05)}
+.g-step .g-n{position:absolute;left:18px;top:18px;width:40px;height:40px;border-radius:50%;background:var(--cb-navy-900);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--cb-serif);font-size:21px;font-weight:700}
+.g-step h3{margin:2px 0 6px;font-size:19px;font-family:var(--cb-serif)}
+.g-step p{margin:0;color:var(--cb-ink-2);font-size:15.5px}
+.g-url{margin-top:14px;background:#f4f8fd;border:1px dashed var(--cb-line);border-radius:10px;padding:10px 12px;font-size:13.5px;word-break:break-all;color:var(--cb-ink);font-family:ui-monospace,Consolas,monospace}
+.g-note{margin-top:12px;background:#f9f2e2;border-left:3px solid var(--cb-gold);border-radius:0 8px 8px 0;padding:10px 14px;font-size:14.5px;color:#5c4718}
+
+/* ---------- 一天时间线 ---------- */
+.g-timeline{position:relative;padding-left:34px}
+.g-timeline::before{content:"";position:absolute;left:9px;top:8px;bottom:8px;width:2px;background:linear-gradient(180deg,var(--cb-gold),var(--cb-line))}
+.g-tl{position:relative;margin-bottom:18px;background:#fff;border:1px solid var(--cb-line);border-radius:12px;padding:16px 20px}
+.g-tl::before{content:"";position:absolute;left:-30px;top:22px;width:12px;height:12px;border-radius:50%;background:#fff;border:3px solid var(--cb-gold-deep)}
+.g-tl .g-time{font-size:12.5px;font-weight:800;letter-spacing:1.5px;color:var(--cb-gold-deep)}
+.g-tl h3{margin:2px 0 5px;font-size:17px;font-family:var(--cb-serif)}
+.g-tl p{margin:0;color:var(--cb-ink-2);font-size:15.5px}
+
+/* ---------- 右下角控件示意 ---------- */
+.g-screen{position:relative;background:#eef4fa;border:1px solid var(--cb-line);border-radius:14px;height:238px;overflow:hidden;margin-bottom:18px}
+.g-screen::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(180deg,transparent 0 26px,rgba(18,46,82,.035) 26px 27px)}
+.g-screen-bar{position:absolute;top:0;left:0;right:0;height:34px;background:#fff;border-bottom:1px solid var(--cb-line);display:flex;align-items:center;padding:0 14px;gap:10px;font-size:12px;color:var(--cb-muted);font-weight:700}
+.g-screen-bar i{width:8px;height:8px;border-radius:50%;background:var(--cb-line);display:inline-block;margin-right:3px}
+.g-screen-line{position:absolute;left:22px;height:9px;border-radius:5px;background:rgba(18,46,82,.11)}
+.g-mock{position:absolute;right:16px;display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.97);border:1px solid var(--cb-line);border-radius:999px;padding:6px 11px;box-shadow:0 4px 16px rgba(18,46,82,.14);font-size:12.5px;font-weight:700;color:var(--cb-muted)}
+.g-mock b{background:#fff;border:1px solid var(--cb-line-2);border-radius:999px;padding:6px 12px;color:var(--cb-ink-2);font-weight:600}
+.g-mock b.on{background:#173860;color:#fff;border-color:#173860}
+.g-mock-fs{right:82px;bottom:76px}
+.g-mock-mode{right:82px;bottom:24px}
+.g-fab{position:absolute;right:18px;bottom:24px;width:52px;height:52px;border-radius:50%;background:var(--cb-navy-900);color:#fff;display:flex;align-items:center;justify-content:center;font-size:22px;box-shadow:0 6px 18px rgba(18,46,82,.3)}
+.g-callout{position:absolute;left:22px;bottom:26px;max-width:46%;background:#fff;border:1px solid var(--cb-line);border-left:3px solid var(--cb-navy-700);border-radius:8px;padding:10px 14px;font-size:13.5px;color:var(--cb-ink-2)}
+
+/* ---------- 折叠 FAQ ---------- */
+details.g-faq{background:#fff;border:1px solid var(--cb-line);border-radius:12px;margin-bottom:10px;overflow:hidden}
+details.g-faq summary{cursor:pointer;list-style:none;padding:15px 20px;font-size:16.5px;font-weight:700;color:var(--cb-navy-900);display:flex;align-items:center;gap:12px}
+details.g-faq summary::-webkit-details-marker{display:none}
+details.g-faq summary::after{content:"+";margin-left:auto;color:var(--cb-gold-deep);font-size:22px;font-weight:400;line-height:1}
+details.g-faq[open] summary::after{content:"−"}
+details.g-faq[open] summary{border-bottom:1px solid var(--cb-line-2);background:#fbfdff}
+.g-faq-body{padding:14px 20px 18px;color:var(--cb-ink-2);font-size:15.5px}
+.g-faq-body p{margin:0 0 10px}
+.g-faq-body p:last-child{margin-bottom:0}
+.g-tag{display:inline-block;background:#eaf3fc;color:var(--cb-navy-800);border-radius:6px;padding:1px 8px;font-size:13.5px;font-weight:700}
+
+/* ---------- 结尾 ---------- */
+.g-final{margin:44px 0 8px;background:linear-gradient(135deg,#122e52,#1a3f6e);color:#fff;border-radius:16px;padding:28px 30px;border:1px solid var(--cb-gold)}
+.g-final h2{font-family:var(--cb-serif);font-size:23px;margin:0 0 14px;color:#fff}
+.g-final ol{margin:0;padding-left:22px;font-size:16px;line-height:2;color:#e6f0fb}
+.g-final strong{color:var(--cb-gold)}
+.g-footer{text-align:center;padding:28px 0 120px;color:var(--cb-muted);font-size:13.5px}
+.g-footer a{font-weight:700}
+
+/* ---------- 专注模式在本页也生效 ---------- */
+body.cb-focus .g-hero{padding:24px 0}
+body.cb-focus .g-crest,body.cb-focus .g-screen,body.cb-focus .g-jump{display:none}
+body.cb-focus .g-wrap{max-width:760px}
+body.cb-focus .g-card,body.cb-focus .g-step,body.cb-focus .g-tl{box-shadow:none}
+body.cb-focus .g-sec-head .g-num{font-size:30px}
+
+/* ---------- 手机 ---------- */
+@media (max-width:820px){
+  .g-grid-3,.g-grid-2{grid-template-columns:1fr}
+  .g-hero h1{font-size:27px}
+  .g-sec h2{font-size:22px}
+  .g-sec-head .g-en{display:none}
+  .g-mock-fs,.g-mock-mode{right:12px}
+  .g-callout{display:none}
+  .g-final{padding:22px}
+  body{font-size:16px}
+}
+
+/* ---------- 打印 / 存成 PDF ---------- */
+@media print{
+  @page{margin:14mm}
+  body{background:#fff!important;font-size:12pt;color:#111}
+  .g-hero{background:#122e52!important;-webkit-print-color-adjust:exact;print-color-adjust:exact;padding:20px 0}
+  .g-crest,.g-hero-actions,.g-jump,.g-btn,.cb-mode-ctrl,.g-screen,.g-footer{display:none!important}
+  .g-wrap{max-width:none;padding:0}
+  .g-sec{padding:16px 0 0;page-break-inside:avoid;scroll-margin-top:0}
+  .g-card,.g-step,.g-tl,details.g-faq{box-shadow:none;border:1px solid #bbb;page-break-inside:avoid}
+  .g-card,.g-step,.g-tl{background:#fff}
+  details.g-faq .g-faq-body{display:block!important}
+  details.g-faq:not([open]) .g-faq-body{display:block!important}
+  .g-final{background:#fff!important;color:#111;border:1px solid #122e52}
+  .g-final h2,.g-final ol{color:#111}
+  .g-final strong{color:#7d5a1c}
+  a{color:#122e52}
+}
+</style>
+</head>
+<body>
+
+<header class="g-hero">
+  <div class="g-wrap">
+    <div class="g-hero-in">
+      <img class="g-crest" src="cabin-art/crest-badge-clean.png?v=20261106-crest1" alt="学习小屋徽章">
+      <div>
+        <div class="g-kicker">LIORA · LEARNING CABIN</div>
+        <h1>学习小屋 · 使用指南</h1>
+        <p>一页看懂：怎么打开、每天怎么用、按钮都在哪儿、遇到问题怎么办。</p>
+      </div>
+    </div>
+    <div class="g-hero-actions">
+      <a class="g-btn g-btn-gold" href="./index.html?sharecode=#/">打开学习小屋 →</a>
+      <button class="g-btn g-btn-ghost" id="gPrint" type="button">打印 / 存成 PDF</button>
+      <button class="g-btn g-btn-ghost" id="gCopy" type="button">复制网址</button>
+    </div>
+  </div>
+</header>
+
+<nav class="g-jump" aria-label="本页目录">
+  <div class="g-wrap g-jump-in">
+    <a href="#start">30 秒上手</a>
+    <a href="#map">顶部导航地图</a>
+    <a href="#day">一天怎么用</a>
+    <a href="#controls">右下角三个按钮</a>
+    <a href="#more">四个进阶功能</a>
+    <a href="#faq">常见问题</a>
+    <a href="#remember">记住这三条</a>
+  </div>
+</nav>
+
+<main class="g-wrap">
+
+  <!-- ========== 1 ========== -->
+  <section class="g-sec" id="start">
+    <div class="g-sec-head"><span class="g-num">01</span><h2>30 秒上手</h2><span class="g-en">Quick Start</span></div>
+    <p class="g-lead">第一次用，只要做这三步。之后每次打开，网站会直接回到你上次看的那一页。</p>
+    <div class="g-grid" style="gap:14px">
+      <div class="g-step">
+        <span class="g-n">1</span>
+        <h3>打开这个网址，存成书签</h3>
+        <p>网址一直没变，不用重新下载、不用装软件。手机上也能开。</p>
+        <div class="g-url">https://liora-study-hall.app.workbuddy.host/?sharecode=</div>
+      </div>
+      <div class="g-step">
+        <span class="g-n">2</span>
+        <h3>点右上角「登录同步」，登录一次</h3>
+        <p>用邮箱收 6 位验证码，或直接点「使用 WorkBuddy 账号登录」。登录后打卡、任务、备考记录在手机和电脑之间自动同步；不登录也能用，只是进度只留在这台设备。</p>
+        <div class="g-note">这一步只为了「换设备不丢进度」。只想先看看，可以直接跳到第 3 步。</div>
+      </div>
+      <div class="g-step">
+        <span class="g-n">3</span>
+        <h3>点顶部「课程中心」→ 选课程 → 选周次</h3>
+        <p>笔记、本周任务、课件链接都在这一页。看不懂的地方，点右下角深蓝色 🤖 直接问 AI 老师。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 2 ========== -->
+  <section class="g-sec" id="map">
+    <div class="g-sec-head"><span class="g-num">02</span><h2>顶部导航地图</h2><span class="g-en">Where To Go</span></div>
+    <p class="g-lead">顶部那一排就是全部入口。不知道该点哪儿时，看这张表。</p>
+    <div class="g-grid g-grid-2">
+
+      <div class="g-card">
+        <h3>首页</h3>
+        <p>一进来就能看到「今日看板」「本周看板」「我的课程」和学习进度百分比。想知道「现在该干嘛」，先看这里。</p>
+        <span class="g-when">每天早上第一眼</span><br>
+        <a class="g-go" href="./index.html?sharecode=#/">打开首页 →</a>
+      </div>
+
+      <div class="g-card">
+        <h3>课程中心</h3>
+        <p>五门课按「学期 → 周次」排列。点进某一周：左边是周次目录，中间是笔记，上方能切换四种笔记视图，下面是本周任务清单，勾完自动记进度。</p>
+        <span class="g-when">上课、写作业、复习</span><br>
+        <a class="g-go" href="./index.html?sharecode=#/courses">打开课程中心 →</a>
+      </div>
+
+      <div class="g-card">
+        <h3>课外拓展</h3>
+        <p>课堂之外的知识探索、能力提升、兴趣素养模块，按主题索引。这个栏目只有你自己的主人账号登录后才看得到。</p>
+        <span class="g-when">有余力时逛一逛</span><br>
+        <a class="g-go" href="./index.html?sharecode=#/extra">打开课外拓展 →</a>
+      </div>
+
+      <div class="g-card">
+        <h3>每日简报</h3>
+        <p>独立一页的报纸式简报：文章默认折成卡片，可以「展开全部」，也能用页内搜索框找关键词。适合碎片时间读一段。</p>
+        <span class="g-when">休息、等车、睡前</span><br>
+        <a class="g-go" href="./daily-brief.html?sharecode=">打开每日简报 →</a>
+      </div>
+
+      <div class="g-card">
+        <h3>读书</h3>
+        <p>小书库：按章节读正文，支持中英对照、划高亮、目录跳章，选中一段文字点「问AI」就能让老师讲这一段。还有「原版 PDF」「在新窗口打开正文」。</p>
+        <span class="g-when">读课外书、查原文</span><br>
+        <a class="g-go" href="./index.html?sharecode=#/reading">打开读书 →</a>
+      </div>
+
+      <div class="g-card">
+        <h3>复习计划</h3>
+        <p>「今天必做」「本周 DDL」、作业批改与学习档案都在这里。档案页还能导出 / 导入学习进度，等于给自己的进度留个备份。</p>
+        <span class="g-when">考前、周日晚上排计划</span><br>
+        <a class="g-go" href="./index.html?sharecode=#/prep">打开复习计划 →</a>
+      </div>
+
+      <div class="g-card">
+        <h3>英语学习</h3>
+        <p>独立的英语工作台：精读、精听、口语、写作、生词本、素材库。首页有概览数字，点卡片进入对应练习，提交后可以让 AI 分析。</p>
+        <span class="g-when">每天固定练 15 分钟</span><br>
+        <a class="g-go" href="./english/index.html?sharecode=">打开英语学习台 →</a>
+      </div>
+
+      <div class="g-card">
+        <h3>我的待办（APP 模式）</h3>
+        <p>轻量的小卡片：输入一句话按回车就加一条待办。可以「安装成应用」放到桌面，也有 Windows / Mac 下载包，打开更快。</p>
+        <span class="g-when">随手记、不想开大站时</span><br>
+        <a class="g-go" href="./todo.html?sharecode=">打开我的待办 →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== 3 ========== -->
+  <section class="g-sec" id="day">
+    <div class="g-sec-head"><span class="g-num">03</span><h2>一天怎么用</h2><span class="g-en">A Typical Day</span></div>
+    <p class="g-lead">照这个顺序走一遍，基本就把网站用起来了。每一步都不用设置，点开就能做。</p>
+    <div class="g-timeline">
+
+      <div class="g-tl">
+        <div class="g-time">早上 · 1 分钟</div>
+        <h3>先看「今天」</h3>
+        <p>首页的「今日看板」，或者复习计划里的「今天必做」。只看这一块，不用把整站翻一遍 —— 一次只看一件事，不容易被岔开。</p>
+      </div>
+
+      <div class="g-tl">
+        <div class="g-time">上课前后 · 主要时间</div>
+        <h3>进本周笔记，用四种视图来回切</h3>
+        <p>先用「文字版」顺一遍内容；记不住就切「填空复习」自测；想理清结构切「思维导图」；考前切「知识点归纳」看概念、要点和易错点。</p>
+      </div>
+
+      <div class="g-tl">
+        <div class="g-time">卡住的时候</div>
+        <h3>点右下角 🤖 问 AI 老师</h3>
+        <p>直接打字提问就行（例如「本周的弹性计算怎么一步一步做？」）。在读书页里更省事：选中看不懂的那句话，点「问AI」，它会带着原文一起解释。</p>
+      </div>
+
+      <div class="g-tl">
+        <div class="g-time">收尾 · 30 秒</div>
+        <h3>勾掉做完的任务</h3>
+        <p>本周任务勾完，左侧那一周会自动标成已完成，进度百分比跟着变。顺手在「我的待办」加一条明天要做的事，明早就不用想了。</p>
+      </div>
+
+      <div class="g-tl">
+        <div class="g-time">周日 / 考前</div>
+        <h3>去复习计划看整体</h3>
+        <p>看「本周 DDL」和作业批改，再到学习档案看趋势与薄弱点。需要留底就点「导出学习进度」存一份。</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== 4 ========== -->
+  <section class="g-sec" id="controls">
+    <div class="g-sec-head"><span class="g-num">04</span><h2>右下角三个按钮</h2><span class="g-en">Display Controls</span></div>
+    <p class="g-lead">这三个一直浮在右下角，不会挡住左边的长目录。按过一次就会被记住，刷新、换页面都不用重设。</p>
+
+    <div class="g-screen" aria-hidden="true">
+      <div class="g-screen-bar"><i></i><i></i><i></i><span>学习小屋 · 页面内容</span></div>
+      <div class="g-screen-line" style="top:58px;width:46%"></div>
+      <div class="g-screen-line" style="top:80px;width:62%"></div>
+      <div class="g-screen-line" style="top:102px;width:54%"></div>
+      <div class="g-screen-line" style="top:124px;width:38%"></div>
+      <div class="g-callout">左边是长长的周次目录，<br>现在完整露出来，不被遮挡。</div>
+      <div class="g-mock g-mock-fs"><span>字号</span><b>小</b><b class="on">中</b><b>大</b></div>
+      <div class="g-mock g-mock-mode"><span>显示</span><b>专注</b><b>静效</b></div>
+      <div class="g-fab">🤖</div>
+    </div>
+
+    <div class="g-grid g-grid-3">
+      <div class="g-card">
+        <h3>显示：专注 / 静效</h3>
+        <p><strong>专注</strong>：一键收起横幅、统计条、侧栏、装饰和 AI 悬浮入口，正文限宽、行距放宽，读长笔记不累。<br><strong>静效</strong>：关掉页面所有动画与平滑滚动；如果电脑本身开了「减少动态效果」，网站会自动跟着生效。</p>
+        <span class="g-when">看不进去 / 觉得晃眼时</span>
+      </div>
+      <div class="g-card">
+        <h3>字号：小 / 中 / 大</h3>
+        <p>三档正文大小，点一下立刻变。搭配「专注」一起用，就是最清爽的阅读状态。再点一次原来的档位即可恢复。</p>
+        <span class="g-when">字太小、屏幕太远时</span>
+      </div>
+      <div class="g-card">
+        <h3>深蓝圆形 🤖</h3>
+        <p>AI 学习助手。点开是个小窗口，能提问、清空对话、拖动调整大小。登录后在课程周页会自动带上本周内容，回答更贴题。</p>
+        <span class="g-when">有不懂的地方随时点</span>
+      </div>
+    </div>
+    <div class="g-note">顶部搜索框也很有用：直接搜课程名、周次或知识点，比一层层翻目录快。</div>
+  </section>
+
+  <!-- ========== 5 ========== -->
+  <section class="g-sec" id="more">
+    <div class="g-sec-head"><span class="g-num">05</span><h2>四个进阶功能</h2><span class="g-en">Good To Know</span></div>
+    <p class="g-lead">用顺手了再看这块，不看也不影响日常使用。</p>
+    <div class="g-grid g-grid-2">
+      <div class="g-card">
+        <h3>四种笔记视图</h3>
+        <p>课程周页上方一排页签：<span class="g-tag">📖 文字版</span>（完整笔记）· <span class="g-tag">🧠 思维导图</span>（结构图）· <span class="g-tag">✏️ 填空复习</span>（挖空自测）· <span class="g-tag">📋 知识点归纳</span>（本单元复习提纲：概念、公式、案例、串联、易错点）。第一次点开才生成内容，所以切换可能慢半秒。</p>
+      </div>
+      <div class="g-card">
+        <h3>AI 老师的两种用法</h3>
+        <p>① 右下角 🤖 直接提问；② 在读书页选中一段正文，点「问AI」，它会只针对这一段讲。作业批改页还能「提交并让 AI 分析」，或复制现成的讲评 / 复盘模板。</p>
+      </div>
+      <div class="g-card">
+        <h3>云同步与备份</h3>
+        <p>右上角「登录同步」登录后，打卡、任务、备考记录、英语工作台会在设备间自动同步。没登录或断网时先存在本机，联网后补上。想留个底，去学习档案点「导出学习进度」。</p>
+      </div>
+      <div class="g-card">
+        <h3>待办装到桌面</h3>
+        <p>打开「我的待办」，按页面里的「安装成应用」就能像普通软件一样从桌面打开；也有 Windows / Mac 下载包。它比主站轻，随手记一条特别快。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 6 ========== -->
+  <section class="g-sec" id="faq">
+    <div class="g-sec-head"><span class="g-num">06</span><h2>常见问题</h2><span class="g-en">Troubleshooting</span></div>
+    <p class="g-lead">点开对应那条就行，都是一句话能解决的事。</p>
+
+    <details class="g-faq"><summary>打开还是旧样子，没看到新按钮</summary>
+      <div class="g-faq-body"><p>按一次 <span class="g-tag">Ctrl + F5</span>（Mac 用 <span class="g-tag">Cmd + Shift + R</span>）强制刷新。网站会给样式文件做长期缓存，强刷一次就能拿到最新版。</p></div></details>
+
+    <details class="g-faq"><summary>字太小、看着费劲</summary>
+      <div class="g-faq-body"><p>右下角「字号」点<span class="g-tag">大</span>；再点「显示」里的<span class="g-tag">专注</span>，把侧栏和装饰收起来，正文会更宽更松。</p></div></details>
+
+    <details class="g-faq"><summary>页面动画晃眼、滚动太"飘"</summary>
+      <div class="g-faq-body"><p>点右下角「显示 → <span class="g-tag">静效</span>」，所有动画和平滑滚动立刻关闭并记住。系统开了「减少动态效果」的话，网站会自动照做，不用手动点。</p></div></details>
+
+    <details class="g-faq"><summary>点「查看源 PDF」跳出「此文件未上传线上版」</summary>
+      <div class="g-faq-body"><p>这是正常的。课程原版 PDF 和整本书扫描件体积太大，为了站点能稳定发布没有上传到线上；网站里的笔记、公式、例题答案、目录都是完整的，日常复习不受影响。需要看原件时，去电脑上的课程资料夹打开。</p></div></details>
+
+    <details class="g-faq"><summary>换手机 / 换电脑，进度不见了</summary>
+      <div class="g-faq-body"><p>两台设备都点右上角「登录同步」，用<span class="g-tag">同一个账号</span>登录即可。登录后云端会把打卡、任务、备考记录自动带过来。未登录时进度只保存在当前这台设备的浏览器里。</p></div></details>
+
+    <details class="g-faq"><summary>断网了还能用吗</summary>
+      <div class="g-faq-body"><p>大部分页面可以离线打开已经看过的内容，勾选和待办会先存本机，联网后自动补同步。刚发布的新内容需要联网拉一次。</p></div></details>
+
+    <details class="g-faq"><summary>找不到某一周 / 某个知识点</summary>
+      <div class="g-faq-body"><p>用顶部搜索框（提示文字是「搜索课程 / 周次 / 知识点…」），比一层层点目录快。课程周页左侧也有本周 Activity 导航，能直接跳到对应小节。</p></div></details>
+
+    <details class="g-faq"><summary>按错了按钮，会不会把内容弄乱</summary>
+      <div class="g-faq-body"><p>不会。「专注」「静效」「字号」都只是显示方式，再点一次就恢复，不改动任何课程内容和进度。勾选任务也只是记进度，随时可以取消勾选。</p></div></details>
+
+  </section>
+
+  <!-- ========== 7 ========== -->
+  <section class="g-sec" id="remember">
+    <div class="g-final">
+      <h2>记住这三条就够了</h2>
+      <ol>
+        <li><strong>不知道该干嘛</strong> → 首页「今日看板」或复习计划「今天必做」。</li>
+        <li><strong>看不进去 / 字太小 / 觉得晃</strong> → 右下角：专注、静效、字号「大」。</li>
+        <li><strong>有不懂的</strong> → 点 🤖 直接问；读书页选中句子点「问AI」更准。</li>
+      </ol>
+    </div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:18px">
+      <a class="g-btn g-btn-quiet" href="./index.html?sharecode=#/">回到学习小屋 →</a>
+      <button class="g-btn g-btn-quiet" id="gPrint2" type="button">打印 / 存成 PDF</button>
+    </div>
+  </section>
+
+</main>
+
+<footer class="g-footer">
+  <div class="g-wrap">Liora 的学习小屋 · 使用指南 · 更新于 2026-11-08　|　<a href="./index.html?sharecode=#/">打开网站</a></div>
+</footer>
+
+<script src="blocks/site-polish.js?v=20261107-polish1"></script>
+<script>
+(function () {
+  'use strict';
+  var URL = 'https://liora-study-hall.app.workbuddy.host/?sharecode=';
+
+  /* 从别处带着 #锚点 进来时立即定位，不等待平滑滚动动画 */
+  if (location.hash && location.hash.length > 1) {
+    var target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    if (target) {
+      requestAnimationFrame(function () {
+        try { target.scrollIntoView({ behavior: 'instant', block: 'start' }); }
+        catch (e) { target.scrollIntoView(); }
+      });
+    }
+  }
+
+  /* 打印前临时展开全部折叠问答，打印后恢复（否则 PDF 里看不到答案） */
+  var closedBeforePrint = [];
+  window.addEventListener('beforeprint', function () {
+    closedBeforePrint = [];
+    Array.prototype.forEach.call(document.querySelectorAll('details.g-faq'), function (d) {
+      if (!d.open) { closedBeforePrint.push(d); d.open = true; }
+    });
+  });
+  window.addEventListener('afterprint', function () {
+    closedBeforePrint.forEach(function (d) { d.open = false; });
+    closedBeforePrint = [];
+  });
+  function printIt() { window.print(); }
+  var p1 = document.getElementById('gPrint');
+  var p2 = document.getElementById('gPrint2');
+  if (p1) p1.addEventListener('click', printIt);
+  if (p2) p2.addEventListener('click', printIt);
+
+  var c = document.getElementById('gCopy');
+  if (c) c.addEventListener('click', function () {
+    var done = function () {
+      var old = c.textContent;
+      c.textContent = '已复制 ✓';
+      setTimeout(function () { c.textContent = old; }, 1800);
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(URL).then(done, function () { fallback(); });
+    } else { fallback(); }
+    function fallback() {
+      var t = document.createElement('textarea');
+      t.value = URL; t.style.position = 'fixed'; t.style.opacity = '0';
+      document.body.appendChild(t); t.select();
+      try { document.execCommand('copy'); done(); } catch (e) { c.textContent = '请手动复制下方网址'; }
+      document.body.removeChild(t);
+    }
+  });
+})();
+</script>
+</body>
+</html>

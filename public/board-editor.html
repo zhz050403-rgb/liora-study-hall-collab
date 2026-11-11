@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>板块更新 · 学习小屋</title>
+<style>
+body{font:16px system-ui;color:#17365e;background:#f5f8fc;max-width:70rem;margin:2rem auto;padding:0 1rem}
+label,textarea{display:block;margin:1rem 0}
+textarea{width:100%;box-sizing:border-box;min-height:22rem;font:14px/1.5 monospace}
+button,select{font:inherit;padding:.35rem .55rem}
+</style>
+<main>
+  <p><a href="/">返回学习小屋</a></p>
+  <h1>板块更新</h1>
+  <p>选择板块和条目，编辑可修改的字段后提交。若板块已被别人更新，先保存草稿，再重新读取并合并。</p>
+  <label>板块 <select id="board"></select></label>
+  <label>条目 <select id="entry"></select></label>
+  <label>内容（JSON） <textarea id="content" spellcheck="false"></textarea></label>
+  <button id="save" disabled>更新本条</button>
+  <button id="load">重新读取</button>
+  <p id="status" role="status"></p>
+</main>
+<script src="board-catalog.js?v=2"></script>
+<script>
+const board = document.querySelector('#board'), entry = document.querySelector('#entry');
+const content = document.querySelector('#content'), status = document.querySelector('#status');
+const save = document.querySelector('#save'), load = document.querySelector('#load');
+let snapshot;
+for (const [id, spec] of Object.entries(window.LIORA_BOARD_CATALOG)) {
+  board.add(new Option(spec.label, id));
+}
+board.value = 'math-notes';
+function showEntry() {
+  content.value = JSON.stringify(snapshot.entries[entry.value], null, 2);
+}
+async function request(method, payload) {
+  const response = await fetch('/__api/boards/' + board.value, {
+    method,
+    headers: { 'Content-Type': 'application/json', 'X-Liora-Board': '1' },
+    body: payload && JSON.stringify(payload)
+  });
+  const data = await response.json();
+  if (!response.ok) throw new Error(response.status === 409 ? '板块已更新，请先保存草稿，再读取并合并。' : data.error);
+  return data;
+}
+async function refresh() {
+  board.disabled = entry.disabled = load.disabled = save.disabled = true;
+  status.textContent = '正在读取…';
+  try {
+    const selected = entry.value;
+    snapshot = await request('GET');
+    entry.replaceChildren(...Object.keys(snapshot.entries).map(key => new Option(key, key)));
+    if (Object.hasOwn(snapshot.entries, selected)) entry.value = selected;
+    showEntry();
+    status.textContent = '已读取当前版本。';
+    save.disabled = false;
+  } catch (error) { status.textContent = error.message; }
+  finally { board.disabled = entry.disabled = load.disabled = false; }
+}
+save.addEventListener('click', async () => {
+  board.disabled = entry.disabled = load.disabled = save.disabled = true;
+  try {
+    const edited = JSON.parse(content.value);
+    if (!edited || typeof edited !== 'object' || Array.isArray(edited)) throw new Error('请输入 JSON 对象。');
+    const previous = snapshot.entries[entry.value];
+    const changed = Object.fromEntries(Object.entries(edited).filter(([key, value]) => previous[key] !== value));
+    if (!Object.keys(changed).length) { status.textContent = '内容没有变化。'; return; }
+    const result = await request('POST', { revision: snapshot.revision, changes: { [entry.value]: changed } });
+    snapshot.revision = result.revision;
+    Object.assign(previous, changed);
+    status.textContent = '本条已更新。刷新学习小屋即可查看。';
+  } catch (error) { status.textContent = error.message; }
+  finally { board.disabled = entry.disabled = load.disabled = save.disabled = false; }
+});
+board.addEventListener('change', refresh);
+entry.addEventListener('change', showEntry);
+load.addEventListener('click', refresh);
+refresh();
+</script>

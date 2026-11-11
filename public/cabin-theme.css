@@ -1,0 +1,1539 @@
+/* ============================================================
+ * 月光下的哥特图书馆 · Moonlit Gothic Library
+ * Liora 的学习小屋 — 统一视觉主题（对应 8 张效果图）
+ * 本文件是唯一主题层，加载于 index.html 内联基础样式之后。
+ * ============================================================ */
+
+:root{
+  --navy-900:#122e52;
+  --navy-800:#1c4375;
+  --navy-700:#2a5689;
+  --navy-100:#e8f1fb;
+  --navy-050:#f3f8fd;
+  --gold:#c9a55c;
+  --gold-deep:#a98440;
+  --gold-light:#f9f2e2;
+  --paper:#f7fafd;
+  --card:#ffffff;
+  --ink:#1b3557;
+  --ink-2:#465e7b;
+  --muted:#7b8ea8;
+  --line:#d8e4f2;
+  --line-2:#e8eff7;
+  --blue:#1c4375;
+  --blue-bg:#eaf3fc;
+  --amber:#9a7531;
+  --amber-bg:#f9f2e2;
+  --green:#27714f;
+  --green-bg:#e7f4ec;
+  --shadow:0 2px 10px rgba(18,46,82,.06);
+  --shadow-md:0 8px 24px rgba(18,46,82,.10);
+  --shadow-lg:0 18px 46px rgba(12,34,66,.18);
+  --serif:"Noto Serif CJK SC","Source Han Serif SC","Songti SC","STSong","SimSun",Georgia,"Times New Roman",serif;
+  --radius:14px;
+
+  --ac-navy:#122e52;
+  --ac-navy-deep:#0d2340;
+  --ac-gold:#c9a55c;
+  --ac-pale:#eaf3fc;
+  --ac-line:#d8e4f2;
+  --ac-page:#f7fafd;
+}
+
+body{background:var(--ac-page);color:var(--ink);font-size:15px}
+a{color:var(--blue)}
+a:hover{color:var(--navy-900)}
+::selection{background:#e5d3aa;color:#122e52}
+/* 全宽布局（2026-11-07）：栏目撑满屏幕，两侧只留窄边距 */
+.container,.header-inner,.hero-inner,.stats-inner,.footer-inner{max-width:none;width:100%}
+.container{padding-inline:clamp(16px,2vw,28px)}
+
+/* ============ 顶部导航 ============ */
+.site-header{background:#fff;border-bottom:1px solid #dfe9f5;box-shadow:0 2px 14px rgba(18,46,82,.05)}
+.header-inner{height:74px;padding-inline:clamp(16px,2vw,28px);gap:16px}
+.brand{gap:11px}
+.brand-crest{width:54px;height:50px;object-fit:contain}
+.brand-text .t1{font:700 20px/1.25 var(--serif);color:#122e52;letter-spacing:.06em}
+.brand-text .t2{font:italic 12px/1.3 var(--serif);color:#8a9cb5;letter-spacing:1.2px;text-transform:none}
+.main-nav{gap:3px;margin-left:14px;flex-wrap:nowrap}
+.main-nav a{
+  position:relative;padding:9px 15px;border-radius:10px;
+  color:#425a77;font-size:14px;font-weight:500;letter-spacing:.02em;white-space:nowrap;
+}
+.main-nav a:hover{background:#eef5fd;color:#122e52;text-decoration:none}
+.main-nav a.active{
+  background:#173860;color:#fff;font-weight:600;border:0;border-radius:10px;
+  box-shadow:0 4px 12px rgba(23,56,96,.22);
+}
+.main-nav a.active::after{
+  content:"✦";position:absolute;left:50%;bottom:-11px;transform:translateX(-50%);
+  font-size:9px;color:var(--ac-gold);
+}
+.search-wrap{margin-left:auto}
+.search-box{width:238px;background:#f6f9fd;border:1px solid #e0e9f4;border-radius:22px;padding:7px 15px}
+.search-box:focus-within{width:262px;border-color:#9ab8dc;background:#fff;box-shadow:0 0 0 3px rgba(42,86,137,.09)}
+.search-box input{font-size:13px}
+.search-results{border-radius:14px;border-color:var(--ac-line);box-shadow:var(--shadow-lg)}
+
+/* ============ 通用装饰 ============ */
+.section{padding:38px 0 8px}
+.section-head{align-items:center;gap:12px;margin-bottom:20px;border-bottom:0;padding-bottom:0}
+.section-head h2{
+  position:relative;padding-left:24px;
+  font:700 26px/1.3 var(--serif);color:#122e52;letter-spacing:.04em;
+}
+.section-head h2::before{
+  content:"✦";position:absolute;left:0;top:50%;transform:translateY(-50%);
+  font:16px var(--serif);color:var(--ac-gold);
+}
+.section-head .en{font-size:11px;letter-spacing:2px;color:#8fa2ba;text-transform:uppercase}
+.section-head .more{
+  margin-left:auto;font-size:13px;color:#1c4375;background:#fff;
+  border:1px solid var(--ac-line);border-radius:999px;padding:6px 15px;
+}
+.section-head .more:hover{background:#eaf3fc;text-decoration:none}
+
+.btn{border-radius:999px;padding:12px 26px;font-size:14px;letter-spacing:.02em}
+.btn-gold{background:#f6ecd2;color:#17365e;box-shadow:0 6px 20px rgba(8,24,48,.22)}
+.btn-gold:hover{background:#fff6e2;color:#122e52}
+.btn-ghost{border:1px solid rgba(255,255,255,.6);background:rgba(255,255,255,.06)}
+.btn-ghost:hover{background:rgba(255,255,255,.18)}
+.btn-navy{background:#173860;border-radius:999px}
+.btn-outline{border-radius:999px}
+
+.chip{border-radius:999px;background:#eef5fd;border-color:#d8e7f6;color:#3a5576}
+.chip-gold{background:#f9f2e2;border-color:#eadbb6;color:#8a6d33}
+
+/* ============ 首页 Hero ============ */
+.hero{background:#0d2340;color:#fff;isolation:isolate}
+.hero::before{
+  content:"";position:absolute;inset:0;
+  background:
+    linear-gradient(90deg,#0b2140 0%,#0b2140f2 26%,#0b2140b8 48%,#0b214038 76%,#0b214018 100%),
+    url("cabin-art/library.webp") right 44% / auto 130% no-repeat;
+}
+.hero::after{
+  content:"";position:absolute;left:0;right:0;bottom:0;height:2px;
+  background:linear-gradient(90deg,transparent,#c9a55c 35%,#e6cf9c 50%,#c9a55c 65%,transparent);
+}
+.hero-inner{min-height:430px;padding:46px 32px;gap:28px;align-items:center}
+.hero-left{flex:1 1 540px;padding-left:clamp(0px,3vw,44px);text-shadow:0 3px 18px rgba(5,18,38,.75)}
+.hero-kicker{
+  display:inline-flex;align-items:center;gap:10px;
+  font:italic 15px var(--serif);letter-spacing:.28em;color:#e6cf9c;margin-bottom:16px;text-transform:none;
+}
+.hero-kicker::before{content:"";width:0;height:0;background:none}
+.hero h1{
+  font:700 clamp(32px,3.7vw,52px)/1.3 var(--serif);
+  letter-spacing:.05em;margin-bottom:0;white-space:nowrap;text-shadow:0 4px 22px rgba(4,16,36,.85);
+}
+.hero h1 em{color:#f5e7c6;font-style:normal}
+.hero-flourish{
+  display:block;max-width:430px;margin:16px 0 14px;text-align:center;
+  font:16px var(--serif);color:#edd69c;
+  background:
+    linear-gradient(#d9c391,#d9c391) left center/38% 1px no-repeat,
+    linear-gradient(#d9c391,#d9c391) right center/38% 1px no-repeat;
+}
+.hero-sub{color:#dde9f7;max-width:560px;font-size:15px;line-height:2;margin-bottom:26px;letter-spacing:.02em}
+.hero-cta{gap:14px}
+
+/* 今日学习看板 */
+.hero-right{flex:0 1 386px}
+.hero-card{
+  position:relative;background:#fbfdff;color:#1b3557;
+  border:1px solid #d8e6f6;border-radius:18px;padding:20px 22px 18px;
+  box-shadow:0 20px 50px rgba(4,16,38,.48);text-shadow:none;
+}
+.hero-card::before{
+  content:"✦";position:absolute;top:-14px;left:50%;transform:translateX(-50%);
+  display:grid;place-items:center;width:27px;height:27px;
+  border-radius:50%;background:#fbfdff;color:#c9a55c;font-size:13px;
+  box-shadow:0 -2px 8px rgba(4,16,38,.18);
+}
+.hero-card h3{
+  display:flex;align-items:center;gap:8px;
+  font:700 21px var(--serif);color:#173860;
+  padding-bottom:12px;margin-bottom:12px;border-bottom:1px solid #dce8f5;letter-spacing:.04em;
+}
+.hero-card h3 .hc-em{font-size:19px}
+.hc-date{text-align:left;border:0;margin:0 0 14px;padding:0;color:#7b8ea8;font-size:12.5px;letter-spacing:.03em}
+.cabin-completion{display:flex;align-items:center;gap:16px;padding:0 0 14px;margin-bottom:12px;border-bottom:1px solid #e4edf7}
+.cabin-ring{
+  display:grid;place-items:center;width:74px;height:74px;flex:none;
+  background:conic-gradient(#2d629f var(--completion),#e0ecf8 0);
+  box-shadow:0 2px 10px rgba(29,67,120,.14);border-radius:50%;
+}
+.cabin-ring b{display:grid;place-items:center;width:60px;height:60px;border-radius:50%;background:#fff;color:#173860;font:700 19px var(--serif)}
+.hc-ring-t{font-size:13.5px;font-weight:600;color:#1b3557;line-height:1.6}
+.hc-ring-t small{display:block;color:#7b8ea8;font-size:12px;font-weight:400}
+.hc-plan-t,.hc-tasks-t{font:700 14px var(--serif);color:#173860;margin:0 0 8px}
+.hc-plan-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:14px}
+.hc-plan-cell{background:#eff6fe;border:1px solid #dceaf8;border-radius:9px;padding:7px 4px;text-align:center}
+.hc-plan-cell b{display:block;font:700 18px var(--serif);color:#1c4375;line-height:1.2}
+.hc-plan-cell span{font-size:10.5px;color:#6f86a2}
+.hc-task{
+  display:flex;align-items:flex-start;gap:8px;padding:6px 0;
+  font-size:12.5px;line-height:1.55;color:#3c5472;border-bottom:1px dashed #e7eff8;
+}
+.hc-task:last-of-type{border-bottom:0}
+.hc-box{
+  flex:none;width:15px;height:15px;margin-top:2px;border:1.5px solid #b7cde6;border-radius:4px;
+  display:grid;place-items:center;color:transparent;font-size:10px;
+}
+.hc-task.is-done .hc-box{background:#2d629f;border-color:#2d629f;color:#fff}
+.hc-task a{color:#3c5472;flex:1;min-width:0}
+.hc-task a:hover{color:#1c4375}
+.hc-more{display:block;margin-top:12px;padding-top:10px;border-top:1px solid #e4edf7;text-align:center;font-size:12.5px;font-weight:600;color:#1c4375}
+
+/* ============ 统计条 ============ */
+.stats-band{background:#fff;border-bottom:1px solid var(--ac-line)}
+.stats-inner{grid-template-columns:repeat(4,1fr);gap:0;padding:24px 32px}
+.stat{display:flex;align-items:center;justify-content:center;gap:14px;text-align:left;padding:6px 12px}
+.stat + .stat::before{top:18%;height:64%;background:#e6edf6}
+.stat-ic{
+  flex:none;display:grid;place-items:center;width:46px;height:46px;border-radius:50%;
+  background:#eaf3fc;border:1px solid #d7e7f7;color:#1c4375;font:20px var(--serif);
+}
+.stat .num{font:700 30px/1.1 var(--serif);color:#122e52}
+.stat .num span{font-size:13px;color:var(--ac-gold);font-family:var(--sans);font-weight:600}
+.stat .lbl{font-size:12px;color:#7b8ea8;letter-spacing:.06em;margin-top:2px}
+.stat-goal-bar{height:6px;background:#e8f0f9;border-radius:4px;overflow:hidden;margin-top:6px;width:105px}
+.stat-goal-bar i{display:block;height:100%;background:linear-gradient(90deg,#2d629f,#c9a55c);border-radius:4px}
+
+/* ============ 首页课程卡片 ============ */
+.cabin-courses{grid-template-columns:repeat(auto-fit,minmax(min(100%,228px),1fr));gap:17px}
+.cabin-courses .course-card{
+  position:relative;background:#fff;border:1px solid #d6e3f2;border-radius:15px;
+  box-shadow:0 4px 18px rgba(18,46,82,.06);overflow:hidden;
+}
+.cabin-courses .course-card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(18,46,82,.14);border-color:#b9d1eb}
+.cabin-courses .cc-cover{height:110px;margin:0;border-radius:0;background:#0e2848;overflow:hidden}
+.cabin-courses .cc-cover img{width:100%;height:100%;object-fit:cover;aspect-ratio:auto}
+.cabin-courses .cc-body{padding:14px 16px 4px}
+.cabin-courses .cc-icon,.cabin-courses .cc-meta,.cabin-courses .cc-foot{display:none}
+.cabin-courses .cc-name{font:700 19px/1.3 var(--serif);color:#122e52}
+.cabin-courses .cc-name-en{font-size:11.5px;color:#8a9cb5;margin:2px 0 7px;letter-spacing:.02em}
+.cc-desc{font-size:12px;color:#5c728e;line-height:1.6;min-height:38px}
+.cabin-courses .cc-progress{padding:10px 16px 20px;position:relative}
+.cabin-courses .cc-progress .bar{height:6px;background:#e8f0f9;border-radius:4px}
+.cabin-courses .cc-progress .bar i{background:linear-gradient(90deg,#2d629f,#5a8bc0)!important;border-radius:4px}
+.cabin-courses .cc-progress .txt{font-size:11.5px;color:#7b8ea8;margin-top:6px}
+.cc-play{
+  position:absolute;right:16px;bottom:18px;display:grid;place-items:center;
+  width:34px;height:34px;border-radius:50%;background:#173860;color:#fff;font-size:15px;
+  box-shadow:0 4px 12px rgba(23,56,96,.28);
+}
+
+.svc-grid{gap:17px}
+.svc-card{border:1px solid #d8e4f2;border-radius:15px;box-shadow:var(--shadow);padding:24px 22px}
+.svc-card::before{width:3px;background:linear-gradient(#c9a55c,#e7d3a8)}
+.svc-card .n{color:#a98440}
+.svc-card h4{font:700 19px var(--serif)}
+.svc-card p{color:#5c728e}
+
+/* ============ 目录页横幅 ============ */
+.cabin-banner,.catalog-banner,.academy-masthead{
+  color:#fff;background-color:#0d2340!important;
+  background-image:
+    linear-gradient(90deg,#0b2140f2 0%,#0b2140c4 38%,#0b214050 72%,#0b214020 100%),
+    url("cabin-art/library.webp")!important;
+  background-repeat:no-repeat!important;
+  background-size:cover!important;
+  background-position:center 44%!important;
+  box-shadow:inset 0 -2px 0 rgba(201,165,92,.55);
+}
+.cabin-banner{min-height:250px;display:grid;place-items:center}
+.catalog-banner{min-height:225px;place-items:center stretch;text-align:center}
+.cabin-banner-title{padding:20px clamp(24px,5vw,84px);text-shadow:0 3px 16px #061630;text-align:center}
+.cabin-banner-title > span{display:block;color:#edd69c;font-size:24px;margin-bottom:6px}
+.cabin-banner-title h1{font:700 clamp(38px,5vw,62px)/1.24 var(--serif);letter-spacing:.18em;color:#fff}
+.cabin-banner-title p{font:italic 17px/1.7 var(--serif);letter-spacing:.12em;color:#dce8f7;margin-top:8px}
+.catalog-banner .cabin-banner-title p{font-style:normal;font-family:var(--sans);font-size:14px;letter-spacing:.06em}
+
+/* ============ 课程中心 · 拱窗卡片 ============ */
+.cabin-catalog{padding:30px 0 56px;background:transparent}
+.cabin-catalog-heading{text-align:left;margin-bottom:26px}
+.cabin-catalog-heading h2{font:700 29px var(--serif);color:#122e52;display:flex;align-items:center;gap:12px}
+.cabin-catalog-heading h2::before{content:"✦";color:#c9a55c;font-size:19px}
+.cabin-catalog-heading h2::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,#c9d9ea,transparent);margin-left:6px}
+.cabin-catalog-heading p{font:italic 14px var(--serif);color:#7b8ea8;padding-left:31px;margin-top:2px;letter-spacing:.06em}
+.catalog-tools{display:flex;align-items:center;gap:12px;margin-bottom:22px;flex-wrap:wrap}
+.catalog-tools .ct-label{font-size:13px;color:#5c728e}
+.catalog-select{
+  border:1px solid #cfdff0;border-radius:999px;background:#fff;color:#1c4375;
+  font:13px var(--sans);padding:8px 18px;outline:none;cursor:pointer;
+}
+.catalog-tools .ct-note{margin-left:auto;font-size:12.5px;color:#8a9cb5}
+
+.cabin-arches{grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
+.cabin-arches .course-card{
+  position:relative;border:3px double #b6cbe4;
+  border-radius:50% 50% 14px 14px / 96px 96px 14px 14px;
+  background:radial-gradient(ellipse at 50% 4%,#dcebfb,transparent 62%),linear-gradient(#f4f9ff,#fff 55%);
+  text-align:center;padding:22px 12px 16px;overflow:hidden;
+  box-shadow:0 6px 20px rgba(18,46,82,.07);
+}
+.cabin-arches .course-card:hover{border-color:#c9a55c;transform:translateY(-4px)}
+.cabin-arches .course-card::before{
+  content:"✦";position:absolute;top:12px;left:50%;transform:translateX(-50%);
+  color:#d6bc88;font-size:12px;
+}
+.cabin-arches .cc-icon{
+  width:82px;height:82px;margin:12px auto 10px;border-radius:50%;
+  background:#e2eefb!important;color:#1d4372!important;
+  border:1px solid #c6daf0;box-shadow:0 6px 16px rgba(29,67,114,.12);display:grid;place-items:center;
+}
+.cabin-arches .cc-icon svg{width:40px;height:40px}
+.cabin-arches .cc-name{font:700 clamp(20px,1.9vw,27px)/1.3 var(--serif);color:#122e52}
+.cabin-arches .cc-name-en{font-size:11.5px;color:#8a9cb5;margin:3px 0 10px}
+.cabin-arches .cc-meta{justify-content:center;gap:5px;margin-bottom:4px}
+.cabin-arches .cc-sem{
+  display:inline-block;font-size:11px;color:#3e618b;background:#e6f0fb;
+  border:1px solid #cddff2;border-radius:999px;padding:3px 12px;
+}
+.cc-laurel{display:block;height:48px;margin:4px auto 0;background:url("cabin-art/laurel.svg") center/contain no-repeat;opacity:1}
+.cabin-arches .cc-progress{padding:6px 12px 0}
+.cabin-arches .cc-progress .bar{height:6px;background:#e3edf8}
+.cabin-arches .cc-progress .bar i{background:#2d629f!important}
+.cabin-arches .cc-progress .txt{font-size:11.5px;color:#7b8ea8;margin-top:5px}
+.cabin-arches .cc-foot{
+  margin:12px 8px 0;padding:9px;border:0;border-radius:999px;
+  background:#173860;color:#fff;justify-content:center;gap:8px;font-size:13px;
+}
+.cabin-arches .course-card:hover .cc-foot{background:#2d629f}
+
+/* ============ 学院通用浅色横幅（读书 / 指南） ============ */
+.academy-masthead.cabin-light,.cabin-banner.cabin-light{
+  color:#122e52;background-color:#eef5fd!important;
+  background-image:
+    linear-gradient(90deg,#f2f8ff 0%,#f2f8ffeb 42%,#f2f8ff22 78%,transparent),
+    url("cabin-art/chapter-east.webp")!important;
+  background-position:right center!important;
+  background-size:auto 100%,auto 128%!important;
+  background-repeat:no-repeat!important;
+  box-shadow:inset 0 -1px #cfdff0;
+}
+.academy-masthead.cabin-light .container{padding-block:clamp(34px,5vw,68px)}
+.academy-masthead h1{font:700 clamp(32px,4.4vw,54px)/1.24 var(--serif);letter-spacing:.08em}
+.academy-masthead h1::before{content:"✦";color:#c9a55c;font-size:.62em;margin-right:.5em}
+.academy-masthead p{font:italic 17px/1.7 var(--serif);margin:8px 0 0 32px;letter-spacing:.08em;color:#5c728e}
+.academy-masthead:not(.cabin-light) p{color:#dce8f7}
+.academy-directory{padding-block:26px 54px}
+.academy-directory .stats-band{border:1px solid #d8e4f2;border-radius:14px;background:#fff;box-shadow:var(--shadow);margin-bottom:22px}
+.academy-directory .stats-inner{padding:16px 20px}
+.academy-directory .course-card{border:1px solid #d8e4f2;border-radius:14px;background:#fff;box-shadow:var(--shadow)}
+
+/* ============ 课程周详情页 ============ */
+.crumb{padding:18px 0 14px;color:#8a9cb5}
+.course-hero.cabin-chapter{
+  background:#0d2340!important;
+  background-image:
+    linear-gradient(90deg,#0b2140e8,#0b2140a8 55%,#0b214038),
+    url("cabin-art/chapter-east.webp")!important;
+  background-size:cover!important;background-position:center!important;
+  border-radius:16px;border:1px solid #2b4c75;
+  box-shadow:0 10px 28px rgba(12,34,66,.18);padding:24px 30px;
+}
+.course-hero.cabin-chapter::before,.course-hero.cabin-chapter::after{display:none}
+.cabin-chapter .ch-row{justify-content:center;gap:14px}
+.cabin-chapter .ch-icon{display:none}
+.cabin-chapter .ch-title{flex:0 1 auto;text-align:center}
+.cabin-chapter .ch-title h1{font:700 clamp(26px,3vw,38px) var(--serif);letter-spacing:.12em;text-shadow:0 2px 12px #061630}
+.cabin-chapter .ch-title .en{font:italic 14px var(--serif);opacity:.85;letter-spacing:.1em}
+.cabin-chapter .ch-title .code{background:rgba(246,236,210,.14);border-color:rgba(233,213,168,.4);color:#f0e2c2;font-size:11px}
+.cabin-chapter .term-tabs{margin-left:0;justify-content:center;width:100%}
+.term-tab{border-radius:999px;background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.3)}
+.term-tab.active{background:#f6ecd2;color:#17365e;border-color:#f6ecd2}
+
+.course-body{grid-template-columns:250px minmax(0,1fr);gap:20px;margin:22px 0 44px}
+.week-side{
+  border:3px double #bed2e8;border-radius:18px;background:linear-gradient(#eaf3fd,#fff 38%);
+  box-shadow:var(--shadow);overflow:hidden;position:sticky;top:92px;
+}
+.ws-head{
+  padding:16px 14px 12px;border-bottom:1px solid #dce8f5;
+  font:700 14px var(--serif);letter-spacing:.06em;color:#173860;
+  flex-direction:column;align-items:flex-start;gap:2px;
+}
+.ws-head span:last-child{font:11px var(--sans);letter-spacing:.04em;color:#8a9cb5}
+.ws-list{max-height:calc(100vh - 340px);padding:8px}
+.ws-item{border-radius:10px;border-left:0;position:relative;padding:9px 10px 9px 14px}
+.ws-item::before{content:"";position:absolute;left:19px;top:-8px;bottom:-8px;width:1px;background:#d8e6f5}
+.ws-item:first-child::before{top:50%}
+.ws-item:last-child::before{bottom:50%}
+.ws-item:hover{background:#eef6ff}
+.ws-item.active{background:#173860;border-left-color:transparent}
+.ws-item.active::before{background:#8fb2da}
+.ws-item.active .ws-info .t,.ws-item.active .ws-info .s{color:#fff}
+.ws-item.active .ws-num{background:#f6ecd2;border-color:#f6ecd2;color:#17365e}
+.ws-num{z-index:1;position:relative;width:26px;height:26px;background:#fff;border:1px solid #cbdcee;color:#4a6282;font-size:12px}
+.ws-info .t{font-size:13px}
+.ws-info .s{font-size:10.5px}
+.ws-check{z-index:1;position:relative;width:15px;height:15px;accent-color:#2d629f}
+.ws-arch{height:170px;margin:2px 8px 10px;background:url("cabin-art/arch-watermark.svg") center bottom/contain no-repeat;opacity:.62;pointer-events:none}
+
+.week-panel{border:1px solid #d8e4f2;border-radius:16px;box-shadow:var(--shadow);background:#fff}
+.wp-head{text-align:center;padding:26px 30px 20px;background:linear-gradient(180deg,#f4f9ff,#fff)}
+.wp-week{color:#a98440;letter-spacing:.22em;font-size:12px;margin-bottom:8px}
+.wp-head h2{
+  display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;
+  font:700 clamp(25px,3.2vw,40px)/1.35 var(--serif);color:#122e52;letter-spacing:.04em;
+}
+.wp-head h2::before,.wp-head h2::after{
+  content:"";width:clamp(16px,5vw,74px);height:1px;
+  background:linear-gradient(90deg,transparent,#cfb277,transparent);
+}
+.wp-topics{justify-content:center;margin-top:12px}
+.wp-head .badge-outline{background:#fff;border-color:#d8e4f2;color:#5c728e}
+.mark-done{background:#e7f4ec;border-color:#bcdcc8;color:#27714f;border-radius:999px}
+.mark-done.is-done{background:#27714f;color:#fff}
+.wp-sections{padding:6px 26px 28px}
+
+.wp-quick{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:14px 0 18px}
+.wp-quick > .wp-sec{
+  min-width:0;margin:0;padding:0 0 12px;border:1px solid #d5e3f2;
+  border-radius:14px;background:#fff;overflow:hidden;
+}
+.wp-quick .wp-sec-t{
+  margin:0 0 10px;padding:10px 16px;background:#eaf3fc;border-bottom:1px solid #d8e7f6;
+  font:700 16px var(--serif);color:#173860;
+}
+.wp-quick .wp-sec-t .ic{display:none}
+.wp-quick .wp-sec-t .cnt{color:#6f86a2;font-size:12px}
+.wp-quick .file-group{margin-inline:14px}
+.wp-quick .file-row{margin:0 14px 7px;padding:8px 10px;border-color:#e4edf7;border-radius:9px;background:#fbfdff}
+.wp-quick .empty-hint{margin:0 14px}
+.f-actions{margin-left:auto;display:flex;gap:6px}
+.f-open{border-radius:999px;border-color:#cfdff0;color:#1c4375}
+.f-download{background:#173860;color:#fff!important;border-color:#173860!important;border-radius:999px;padding:5px 13px;font-size:12px}
+.f-download:hover{background:#2d629f!important;color:#fff!important;text-decoration:none}
+
+.note-tabs{gap:8px;margin:12px 0 16px;padding:0;border-bottom:0}
+.note-tab{border:1px solid #d6e3f2;border-radius:999px;background:#f5f9fe;color:#5c728e;padding:8px 18px;font-size:13px}
+.note-tab:hover{background:#eaf3fc;border-color:#bcd4ee;color:#1c4375}
+.note-tab.active{background:#173860;color:#fff;border-color:#173860;box-shadow:0 4px 12px rgba(23,56,96,.18)}
+.note-tab.active .cnt{background:rgba(255,255,255,.2)}
+.note-info-bar{background:linear-gradient(120deg,#eef6ff,#f8fbff);border:1px solid #d8e7f6;border-left:3px solid #2d629f;border-radius:12px}
+.ne-btn{border-radius:999px;border-color:#d6e3f2}
+.ne-btn:hover{background:#173860;border-color:#173860}
+.wp-sec-t{font:700 17px var(--serif);color:#173860}
+.wp-sec{border-bottom:1px solid #e8eff7}
+.callout.blue,.prep-q{background:#eef6ff;border-color:#cfe0f3}
+.file-row,.task-row{border-color:#e4edf7;border-radius:10px}
+
+/* ============ 课外拓展 ============ */
+.academy-extra-layout{display:grid;grid-template-columns:238px minmax(0,1fr);gap:20px;align-items:start}
+.extra-index{background:#fff;border:1px solid #d8e4f2;border-radius:16px;box-shadow:var(--shadow);overflow:hidden;position:sticky;top:92px}
+.extra-index h3{font:700 16px var(--serif);color:#173860;padding:15px 16px 12px;border-bottom:1px solid #e4edf7}
+.extra-index .ei-group{padding:10px 10px 2px}
+.extra-index .ei-cap{font-size:10.5px;letter-spacing:.14em;color:#9aabc0;padding:4px 8px}
+.extra-index a{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:8px 10px;border-radius:9px;color:#3c5472;font-size:13px}
+.extra-index a:hover{background:#eef6ff;color:#1c4375;text-decoration:none}
+.extra-index a.on{background:#173860;color:#fff}
+.extra-index a span.n{font-size:11px;color:#8a9cb5}
+.extra-index a.on span.n{color:#c9dcf2}
+.extra-index .ei-overview{margin:8px 12px 0;padding:12px;border-radius:11px;background:#f2f8ff;border:1px solid #dceaf8}
+.extra-index .ei-overview div{display:flex;justify-content:space-between;font-size:12px;color:#5c728e;padding:3px 0}
+.extra-index .ei-overview b{color:#1c4375;font:700 14px var(--serif)}
+.extra-index .ei-bar{height:6px;background:#e0ecf9;border-radius:4px;margin-top:8px;overflow:hidden}
+.extra-index .ei-bar i{display:block;height:100%;background:#2d629f}
+.extra-index .ei-arch{height:168px;background:url("cabin-art/arch-watermark.svg") center bottom/contain no-repeat;opacity:.55}
+.academy-modules{background:#fff;border:1px solid #d8e4f2;border-radius:16px;padding:18px;margin:0 0 20px;box-shadow:var(--shadow)}
+.module-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+.module-card{display:block;border:1px solid #d8e4f2;border-radius:13px;overflow:hidden;background:#fff;box-shadow:var(--shadow);color:inherit}
+.module-card:hover{text-decoration:none;border-color:#b9d1eb;box-shadow:var(--shadow-md);transform:translateY(-2px)}
+.module-thumb{height:92px;background:linear-gradient(135deg,#1a3b66,#2d629f);position:relative;overflow:hidden}
+.module-thumb img{width:100%;height:100%;object-fit:cover;opacity:.85}
+.module-thumb::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#0b214088,transparent 60%)}
+.module-body{padding:11px 13px 13px}
+.module-body h4{font:700 16px var(--serif);color:#122e52;margin-bottom:3px}
+.module-body p{font-size:11.5px;color:#7b8ea8;line-height:1.5;min-height:34px}
+.module-body .m-bar{height:5px;background:#e8f0f9;border-radius:4px;margin-top:8px;overflow:hidden}
+.module-body .m-bar i{display:block;height:100%;background:#2d629f}
+.module-body .m-meta{display:flex;justify-content:space-between;font-size:11px;color:#8a9cb5;margin-top:5px}
+.theme-index{background:#fff;border:1px solid #d8e4f2;border-radius:16px;padding:18px 20px;box-shadow:var(--shadow)}
+.theme-index h3{font:700 18px var(--serif);color:#173860;margin-bottom:4px}
+.theme-index > p{font-size:12.5px;color:#8a9cb5;margin-bottom:14px}
+.theme-group{margin-bottom:13px}
+.theme-group b{display:block;font-size:12px;color:#5c728e;margin-bottom:7px}
+.theme-tags{display:flex;flex-wrap:wrap;gap:7px}
+.theme-tag{display:inline-block;padding:5px 14px;border-radius:999px;background:#f1f7fe;border:1px solid #d8e7f6;color:#3c618c;font-size:12px}
+.theme-tag:hover{background:#173860;color:#fff;border-color:#173860;text-decoration:none}
+.academy-extra .coming-card{background:#f9fbfe;border:1px dashed #c8d9ec;border-radius:14px}
+.academy-extra .note-callout{background:#f2f8ff;border:1px solid #d8e7f6;border-radius:12px;color:#3c5472}
+
+/* 拓展阅览室 · 细分领域分类（2026-11-08） */
+.extra-index .ei-domain{margin:1px 0}
+.extra-index .ei-dom-head{font-weight:600}
+.extra-index .ei-dom-subs{display:flex;flex-direction:column;padding:1px 0 5px 14px}
+.extra-index .ei-dom-subs a{font-size:12.5px;padding:6px 10px}
+.extra-index .ei-dom-subs a .n{font-size:10.5px}
+
+/* 领域速览 tile 条 */
+.domain-strip{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 16px}
+.domain-tile{display:flex;flex-direction:column;align-items:flex-start;gap:2px;padding:11px 15px;border:1px solid #d8e4f2;border-radius:13px;background:#fff;box-shadow:var(--shadow);cursor:pointer;color:#3c5472;font:inherit;text-align:left;transition:.15s}
+.domain-tile:hover{border-color:#b9d1eb;transform:translateY(-2px);text-decoration:none}
+.domain-tile.on{background:#173860;border-color:#173860;color:#fff}
+.domain-tile .dt-ic{font-size:18px;line-height:1}
+.domain-tile .dt-name{font:700 14px var(--serif);color:#122e52}
+.domain-tile.on .dt-name{color:#fff}
+.domain-tile .dt-n{font-size:11px;color:#8a9cb5}
+.domain-tile.on .dt-n{color:#c9dcf2}
+
+/* 当前筛选条 */
+.filter-bar{display:flex;align-items:center;gap:10px;margin:0 0 14px;padding:9px 14px;background:#f2f8ff;border:1px solid #d8e7f6;border-radius:11px;font-size:13px;color:#3c5472}
+.filter-bar b{color:#173860}
+.filter-clear{margin-left:auto;padding:5px 12px;border:1px solid #cdddee;background:#fff;border-radius:999px;color:#3c618c;font:600 12px var(--sans);cursor:pointer}
+.filter-clear:hover{background:#173860;color:#fff;border-color:#173860}
+
+/* 模块卡片细分领域徽章 */
+.module-body .m-top{display:flex;align-items:flex-start;justify-content:space-between;gap:8px}
+.module-body .m-domain{flex-shrink:0;margin-top:2px;padding:2px 9px;border-radius:999px;background:#eaf2fb;border:1px solid #cfdef0;color:#2d629f;font-size:10.5px;font-weight:600;white-space:nowrap}
+
+/* ============ 读书 · 学院书库 ============ */
+.reading-layout{display:grid;grid-template-columns:210px minmax(0,1fr) 238px;gap:18px;align-items:start}
+.reading-index{background:#fff;border:1px solid #d8e4f2;border-radius:16px;padding:14px;box-shadow:var(--shadow);position:sticky;top:92px}
+.reading-index h3{font:700 16px var(--serif);color:#173860;padding:4px 8px 12px;border-bottom:1px solid #e4edf7}
+.reading-index a{display:flex;align-items:center;gap:8px;padding:9px 10px;border-radius:9px;color:#3c5472;font-size:13px}
+.reading-index a:hover{background:#eef6ff;text-decoration:none;color:#1c4375}
+.reading-index a.on{background:#173860;color:#fff}
+.reading-index .ei-arch{height:150px;background:url("cabin-art/arch-watermark.svg") center bottom/contain no-repeat;opacity:.55}
+.reading-side{display:flex;flex-direction:column;gap:14px}
+.panel-card{background:#fff;border:1px solid #d8e4f2;border-radius:14px;padding:15px;box-shadow:var(--shadow)}
+.panel-card h3{font:700 15px var(--serif);color:#173860;padding-bottom:9px;border-bottom:1px solid #e4edf7;margin-bottom:10px}
+.panel-row{display:flex;justify-content:space-between;align-items:center;font-size:12.5px;color:#5c728e;padding:5px 0}
+.panel-row b{color:#1c4375;font:700 15px var(--serif)}
+.panel-bar{height:7px;background:#e8f0f9;border-radius:5px;overflow:hidden;margin:6px 0 3px}
+.panel-bar i{display:block;height:100%;background:linear-gradient(90deg,#2d629f,#c9a55c)}
+.panel-note{font-size:11.5px;color:#8a9cb5;line-height:1.7}
+.panel-list{margin:0;padding-left:17px;font-size:12px;color:#5c728e;line-height:1.9}
+.book-shelf{
+  display:flex;gap:16px;overflow-x:auto;padding:12px 8px 0;
+  background:linear-gradient(180deg,transparent 0%,transparent 86%,#e8d9c4 86%,#cdb79c 92%,#b89f81 96%,transparent 96%);
+}
+.book-item{flex:0 0 118px;text-align:center;color:#3c5472}
+.book-item:hover{text-decoration:none;color:#1c4375}
+.book-item img{width:112px;height:158px;object-fit:contain;filter:drop-shadow(4px 6px 8px rgba(12,34,66,.28))}
+.book-item .b-t{font:700 13px var(--serif);margin-top:8px;line-height:1.35}
+.book-item .b-s{font-size:10.5px;color:#8a9cb5}
+.more-books{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:14px}
+.more-books > span{font:700 13px var(--serif);color:#173860;margin-right:4px}
+.more-books a{
+  padding:5px 13px;border:1px solid #d8e7f6;border-radius:999px;
+  background:#f2f8ff;color:#3c618c;font-size:12px;
+}
+.more-books a:hover{background:#173860;color:#fff;text-decoration:none}
+.current-read{margin-top:22px}
+.current-read-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+.current-read-head h2{font:700 22px var(--serif);color:#122e52}
+.current-read-head span{font-size:12.5px;color:#8a9cb5}
+.chapter-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));gap:9px}
+.chapter-link{display:flex;align-items:center;gap:9px;padding:10px 12px;border:1px solid #dfeaf6;border-radius:10px;background:#fff;color:#3c5472;font-size:12.5px}
+.chapter-link:hover{background:#eef6ff;text-decoration:none;border-color:#bcd4ee}
+.chapter-link .ch-n{flex:none;display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:#eaf3fc;color:#1c4375;font-size:11px;font-weight:700}
+.academy-reading .course-grid{display:none}
+
+/* ===== 整宽横滑书架：一排约 8 本，可左右滑动 =====
+   注意：用 3 类选择器提高特异性，盖过本文件后面 .academy-reading .book-shelf
+   那段对 --shelf-cover / --shelf-width 的覆盖（否则封面会被压到 79px 宽）。 */
+.reading-shelf-band{margin-bottom:18px}
+.academy-reading .reading-shelf-band .book-shelf{
+  --shelf-cover:clamp(150px,15vw,190px);
+  --shelf-width:calc(var(--shelf-cover) * .70);
+  gap:14px;
+  padding:16px 12px 18px;
+  background:linear-gradient(#ecdfc8,#cbb18f) 0 calc(14px + var(--shelf-cover)) / 100% 9px no-repeat;
+  border-radius:14px;
+}
+.reading-shelf-band .book-check-wrap{width:var(--shelf-width);flex:0 0 auto}
+.reading-shelf-band .book-done-label{justify-content:center;font-size:11.5px;margin:7px 0 2px}
+/* 无封面书：用确定性彩色书封替代纯文字（避免变成文字墙） */
+.book-fallback-item .b-t{display:none}
+
+/* ============ 使用指南 ============ */
+.cabin-guide{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;padding:28px 0 46px}
+.cabin-guide a{
+  display:flex;align-items:flex-start;gap:20px;min-height:172px;padding:24px 22px;
+  border:1px solid #d5e3f2;border-radius:16px;
+  background:linear-gradient(135deg,#f4f9ff,#fff);box-shadow:var(--shadow);color:inherit;
+}
+.cabin-guide a:hover{text-decoration:none;transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:#b9d1eb}
+.cabin-guide a > span{
+  flex:none;display:grid;place-items:center;width:78px;height:78px;border-radius:50%;
+  background:radial-gradient(circle at 35% 30%,#f7ecd2,#e3eefb);
+  border:1px solid #d8e5f4;color:#1c4375;font:34px var(--serif);
+  box-shadow:0 6px 16px rgba(23,56,96,.10);
+}
+.cabin-guide h2{font:700 22px var(--serif);color:#122e52;margin-bottom:8px}
+.cabin-guide > a > div > p{font-size:12.5px;color:#7b8ea8;margin-bottom:8px;line-height:1.6}
+.guide-check{list-style:none;margin:0;padding:0}
+.guide-check li{position:relative;padding-left:19px;font-size:12.5px;color:#5c728e;line-height:1.85}
+.guide-check li::before{content:"✓";position:absolute;left:0;top:0;color:#2d629f;font-weight:700;font-size:12px}
+
+/* ============ 其它页面 / 通用 ============ */
+.assist-hero,.prof-hero{
+  color:#fff;border-radius:16px;
+  background:linear-gradient(90deg,#0b2140ee,#0b2140a0 62%,#0b214030),
+    url("cabin-art/chapter-east.webp") right center/cover no-repeat,#0d2340!important;
+}
+.assist-hero::after,.prof-hero::after{background:linear-gradient(90deg,transparent,#c9a55c,transparent);height:2px}
+.assist-hero p,.prof-hero p{color:#dce8f7}
+.course-card,.pf-card,.svc-card,.sub-card,.tpl-box{border-radius:14px}
+.academy-directory .cc-top{background:#173860!important}
+.font-ctrl{display:none;background:rgba(255,255,255,.94);border-color:#d8e4f2;border-radius:999px;box-shadow:0 4px 16px rgba(18,46,82,.14);padding:5px 9px}
+body:has(.week-panel) .font-ctrl{display:flex}
+.font-ctrl .fc-btn{border-radius:999px;font-size:12px;padding:3px 11px}
+.font-ctrl .fc-btn.active{background:#173860;border-color:#173860}
+#ai-fab{background:#173860;border:1px solid #c9a55c}
+#engFrame{border:1px solid #d8e4f2!important;border-radius:16px!important;box-shadow:var(--shadow-md)!important}
+.eng-tip{background:#eaf3fc;border-color:#d8e7f6;border-radius:12px}
+
+.site-footer{background:#0d2340;color:#a8bcd4;margin-top:56px}
+.footer-brand .fb-t{font:700 21px var(--serif);color:#fff}
+.site-footer::before{content:"";display:block;height:2px;background:linear-gradient(90deg,transparent,#c9a55c,transparent)}
+.footer-col h5{color:#ddc38a}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);color:#7f96b3}
+
+/* ============ 响应式 ============ */
+@media (max-width:1200px){
+  .cabin-arches{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .reading-layout{grid-template-columns:190px minmax(0,1fr)}
+  .reading-side{grid-column:1/-1;flex-direction:row;flex-wrap:wrap}
+  .reading-side .panel-card{flex:1 1 220px}
+  .header-inner{gap:8px}
+  .main-nav a{padding:8px 10px;font-size:13px}
+  .search-box{width:190px}
+}
+@media (max-width:960px){
+  .container,.header-inner,.hero-inner,.stats-inner,.footer-inner{padding-inline:16px}
+  .header-inner{height:66px}
+  .hero-inner{flex-direction:column;align-items:stretch;gap:24px;padding-block:34px}
+  .hero::before{background-position:62% center;background-size:auto 100%}
+  .hero-left{padding-left:0}
+  .hero-right{flex:auto;width:min(100%,440px)}
+  .course-body{grid-template-columns:minmax(0,1fr)}
+  .week-side{position:static}
+  .ws-list{max-height:300px}
+  .wp-quick{grid-template-columns:minmax(0,1fr)}
+  .academy-extra-layout,.reading-layout{grid-template-columns:minmax(0,1fr)}
+  .extra-index,.reading-index{position:static}
+  .extra-index .ei-arch,.reading-index .ei-arch,.ws-arch{display:none}
+  .module-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cabin-guide{grid-template-columns:minmax(0,1fr)}
+  .stats-inner{grid-template-columns:repeat(2,1fr);gap:10px}
+  .stat + .stat::before{display:none}
+  .cabin-arches{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .wp-head h2::before,.wp-head h2::after{width:16px}
+  .main-nav{display:none}
+  .search-wrap{margin-left:auto}
+  .search-box,.search-box:focus-within{width:min(100%,220px)}
+}
+@media (max-width:600px){
+  .brand-crest{width:40px;height:38px}
+  .brand-text .t1{font-size:16px}
+  .brand-text .t2{display:none}
+  .search-wrap{min-width:0;flex:1}
+  .search-box,.search-box:focus-within{width:100%}
+  .hero h1{font-size:clamp(26px,7.6vw,34px);white-space:normal}
+  .hero-sub{font-size:13.5px}
+  .hero-card{padding:16px}
+  .stats-inner{padding:16px}
+  .stat{flex-direction:column;text-align:center;gap:6px}
+  .cabin-arches,.module-grid{grid-template-columns:minmax(0,1fr)}
+  .cabin-banner,.catalog-banner{min-height:180px}
+  .cabin-banner-title h1{font-size:34px}
+  .cabin-banner-title p{font-size:13px}
+  .wp-head,.wp-sections{padding-inline:14px}
+  .wp-head h2{font-size:24px}
+  .catalog-tools .ct-note{margin-left:0}
+  .book-shelf{gap:8px}
+  .cabin-guide a{flex-direction:column;gap:14px}
+}
+
+/* ============ 移动端汉堡菜单 ============ */
+.nav-toggle{
+  display:none;flex-direction:column;justify-content:center;gap:5px;
+  width:42px;height:42px;padding:9px;flex:none;
+  border:1px solid #d8e4f2;border-radius:10px;background:#fff;cursor:pointer;
+}
+.nav-toggle span{display:block;height:2px;width:20px;background:#173860;border-radius:2px;transition:.22s}
+.site-header.nav-open .nav-toggle span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.site-header.nav-open .nav-toggle span:nth-child(2){opacity:0}
+.site-header.nav-open .nav-toggle span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media (max-width:1024px){
+  .nav-toggle{display:flex}
+  .header-inner{position:relative}
+  .main-nav{
+    display:none;position:absolute;left:0;right:0;top:100%;
+    flex-direction:column;gap:2px;margin:0;z-index:60;
+    background:#fff;border-top:1px solid #e4edf7;
+    box-shadow:0 14px 30px rgba(18,46,82,.14);
+    padding:8px 14px 14px;
+  }
+  .site-header.nav-open .main-nav{display:flex}
+  .main-nav a{padding:13px 12px;border-radius:10px;font-size:15px;white-space:normal}
+  .main-nav a.active::after{display:none}
+  .main-nav a.active{background:#173860;color:#fff}
+  .search-wrap{margin-left:auto;flex:0 1 auto;min-width:0}
+  .search-box,.search-box:focus-within{width:min(100%,200px)}
+}
+@media (max-width:600px){
+  .search-wrap{flex:1 1 130px}
+  .search-box,.search-box:focus-within{width:100%}
+}
+/* ============ 内容区移动端防溢出 ============ */
+.notes,.gx,.wp-sections,.week-panel,.eng-class,.eng-homework,.eng-howto,
+.wp-quick,.extra-index,.reading-index,.academy-modules,.module-card,.book-shelf{
+  overflow-wrap:break-word;word-break:break-word;
+}
+.notes img,.gx img,.wp-sections img,.week-panel img,.eng-class img,.eng-homework img,.eng-howto img,
+.rich-content img{max-width:100%;height:auto}
+.notes table,.gx table,.wp-sections table,.eng-class table,.eng-homework table,.eng-howto table{
+  display:block;width:100%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;
+}
+.notes pre,.gx pre,.wp-sections pre,.eng-class pre,.eng-homework pre,.eng-howto pre{
+  max-width:100%;overflow-x:auto;
+}
+.notes table table{display:table}
+.reading-main{min-width:0}
+.book-fallback{
+  display:flex;flex-direction:column;justify-content:center;gap:8px;
+  width:112px;height:158px;margin:0 auto;padding:14px 10px;
+  background:linear-gradient(145deg,#1a3b66,#0d2340);
+  border:1px solid #c9a55c;border-left:6px solid #a98440;border-radius:3px 7px 7px 3px;
+  color:#f3e7cd;text-align:center;box-shadow:4px 6px 12px rgba(12,34,66,.3);
+}
+.book-fallback span{font:700 15px/1.4 var(--serif)}
+.book-fallback small{font:italic 9px/1.35 var(--serif);color:#b9cde5}
+
+@media print{
+  .hero,.cabin-banner,.academy-masthead,.course-hero,.site-footer,.stats-band,
+  .extra-index,.reading-index,.reading-side,.ws-arch,.font-ctrl,.section-head .more{display:none!important}
+  .wp-quick{display:none}
+  body{background:#fff}
+}
+
+/* Homepage composition at the reference desktop proportions. */
+.site-header .main-nav a.active {
+  color: #142c54;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: inset 0 -3px #254981;
+}
+.hero::before {
+  inset: 0;
+  height: auto;
+  opacity: 1;
+  background:
+    linear-gradient(90deg, #10223b 25%, #10223b00 47%, #10223b00 72%, #10223b 91%),
+    url("cabin-art/library.webp") 62% center / auto 100% no-repeat;
+}
+.hero-inner {
+  min-height: 405px;
+  padding-block: 24px;
+  gap: 28px;
+}
+.hero h1 { line-height: 1.1; font-size: clamp(30px, 3.65vw, 58px); }
+.hero h1 em { font-style: italic; }
+.hero-welcome { font-size: .65em; font-weight: 500; }
+.hero h1::after { max-width: 440px; }
+.hero-card {
+  border: 4px double #c0cee3;
+  border-radius: 8px;
+  padding: 14px 22px;
+}
+.hero-card::before { display: none; }
+.hero-card h3 { margin-bottom: 10px; }
+.hero-card .hc-date { margin-top: 8px; padding-top: 7px; }
+.hero .btn { padding: 11px 20px; border-radius: 9px; }
+.hero + .stats-band { border-block: 1px solid #ccd9ea; }
+.hero + .stats-band .stats-inner { padding-block: 9px; }
+.hero + .stats-band .num { font-size: 29px; }
+.home-courses { padding-top: 23px; }
+.home-courses .section-head {
+  border-bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: 14px;
+}
+.home-courses .section-head h2::before { content: "♧"; color: #365d88; margin-right: .45em; }
+.home-courses .course-grid { gap: 11px; }
+.home-courses .course-card { border: 3px double #c9d8eb; background: #fbfdff; }
+.home-courses .cc-cover { position: relative; }
+.home-courses .cc-code {
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  padding: 2px 11px;
+  background: #edf4f9e8;
+  color: #122943;
+  border-radius: 999px;
+  font: 600 12px Georgia, serif;
+}
+.home-courses .cc-body { padding: 5px 13px 0; }
+.home-courses .cc-name { font-size: clamp(18px, 1.5vw, 23px); }
+.home-courses .cc-name-en { font-family: Georgia, serif; margin-bottom: 5px; }
+.home-courses .cc-progress { padding: 3px 13px; display: flex; flex-direction: column-reverse; gap: 4px; }
+.home-courses .cc-foot { justify-content: flex-end; padding: 4px 13px 7px; border: 0; background: transparent; }
+@media (min-width: 1200px) {
+  .home-courses .course-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  .hero-left { padding-left: clamp(34px, 4.7vw, 76px); }
+}
+@media (max-width: 960px) {
+  .hero::before {
+    background: linear-gradient(90deg, #10223beb, #10223b60),
+      url("cabin-art/library.webp") right top / auto 430px no-repeat;
+  }
+}
+
+/* Original line drawings for the book mark and constellation. */
+.home-courses .section-head h2::before {
+  content: "";
+  display: inline-block;
+  width: 1.25em;
+  height: 1em;
+  vertical-align: -.12em;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 32' fill='none' stroke='%23365d88' stroke-width='1.6' stroke-linejoin='round'%3E%3Cpath d='M20 8Q12 1 4 5v19q9-3 16 4 7-7 16-4V5q-8-4-16 3Zm0 0v20M4 8H1v20q11-3 19 2 8-5 19-2V8h-3M8 10q6-1 9 2m-9 3q6-1 9 2m6-5q3-3 9-2m-9 7q3-3 9-2'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+.hero-left::before {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset: 0 auto auto 23%;
+  width: min(26%, 340px);
+  height: 180px;
+  opacity: .65;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 340 180'%3E%3Cg stroke='%23b5cbe6' fill='none' opacity='.6'%3E%3Cpath d='M7 38Q147-42 274 44T287 174M32 14Q176 58 315 28M137 16l48 33 66-9 46 52-35 47'/%3E%3C/g%3E%3Cg fill='%23f5e7c9'%3E%3Cpath d='M185 42l1 6 6 1-6 1-1 6-1-6-6-1 6-1zm112 44 1 5 5 1-5 1-1 5-1-5-5-1 5-1z'/%3E%3Ccircle cx='137' cy='16' r='2'/%3E%3Ccircle cx='251' cy='40' r='2'/%3E%3Ccircle cx='262' cy='139' r='2'/%3E%3C/g%3E%3C/svg%3E") center / contain no-repeat;
+}
+@media (max-width: 960px) {
+  .hero-left::before { display: none; }
+}
+
+/* Reading directory only */
+.reading-masthead .container { padding-block: clamp(28px, 4vw, 56px); }
+.academy-reading { padding-block: 22px 44px; }
+.academy-reading :is(#reading-shelf, #reading-chapters, #reading-notes) { scroll-margin-top: 96px; }
+.academy-reading .reading-index {
+  background: linear-gradient(#fff, #eef5fc);
+  border-color: #cbdbee;
+}
+.academy-reading .reading-index button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 9px 10px;
+  border: 0;
+  border-radius: 8px;
+  color: #173860;
+  background: transparent;
+  text-align: left;
+  font: inherit;
+  cursor: pointer;
+}
+.academy-reading .reading-index button:hover { background: #dceafa; }
+.academy-reading .reading-index button:disabled { opacity: .5; cursor: default; }
+.academy-reading .reading-main > .section-head { border-bottom: 1px solid #ccdbee; }
+.academy-reading .book-shelf {
+  --shelf-cover: clamp(110px, 12vw, 180px);
+  gap: 12px;
+  padding: 12px 8px 14px;
+  background: linear-gradient(#e2d3bc, #c3a98b) 0 calc(12px + var(--shelf-cover)) / 100% 8px no-repeat;
+}
+.academy-reading .book-item {
+  flex: 1 0 0;
+  min-width: 92px;
+  color: #183250;
+}
+.academy-reading .book-item img {
+  display: block;
+  width: 100%;
+  height: var(--shelf-cover);
+  object-position: center bottom;
+}
+.academy-reading .book-item .b-t { margin-top: 16px; font-size: 15px; }
+.academy-reading .book-item .b-s { color: #4b637e; font-size: 12px; }
+.academy-reading .book-progress {
+  display: block;
+  width: min(86%, 135px);
+  height: 6px;
+  margin: 5px auto 0;
+  accent-color: #345f8d;
+}
+.academy-reading .current-read {
+  padding: 18px;
+  border: 1px solid #cbdbee;
+  border-radius: 14px;
+  background: #f8fbff;
+}
+.academy-reading .current-read-head span { color: #4b637e; }
+.academy-reading .reading-side .panel-card { border-color: #cbdbee; }
+@media (max-width: 760px) {
+  .academy-reading .reading-index .ei-arch { display: none; }
+  .academy-reading .reading-index button { display: inline-flex; width: auto; }
+}
+
+.academy-reading .book-item .book-fallback {
+  width: var(--shelf-width);
+  height: var(--shelf-cover);
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 12px 11px;
+  text-align: left;
+  color: #fff;
+  border-radius: 2px 5px 5px 2px;
+  background: linear-gradient(135deg, var(--c1, #2d629f), var(--c2, #173860));
+  box-shadow: inset 5px 0 0 rgba(255,255,255,.16), -2px 0 0 #1c263b, 3px 5px 9px rgba(12,34,66,.28);
+  overflow: hidden;
+}
+.academy-reading .book-item .book-fallback span{font:700 clamp(12px,1.05vw,15px)/1.32 var(--serif);display:block}
+.academy-reading .book-item .book-fallback small{display:block;margin-top:7px;font-size:10px;font-weight:400;opacity:.85;line-height:1.3}
+
+.academy-reading .book-illustrated {
+  position: relative;
+  width: fit-content;
+  max-width: 100%;
+  margin-inline: auto;
+}
+.academy-reading .book-illustrated img { width: auto; max-width: 100%; }
+.academy-reading .book-illustrated span {
+  position: absolute;
+  inset: 12% 8% auto;
+  padding: 4px 2px;
+  background: #142743ed;
+  color: #fff1c8;
+  font: 700 clamp(10px, 1vw, 15px)/1.3 var(--serif);
+}
+
+.academy-reading .book-shelf {
+  --shelf-cover: clamp(116px, 11vw, 168px);
+  --shelf-width: calc(var(--shelf-cover) * .68);
+}
+.academy-reading .book-item { min-width: max(92px, var(--shelf-width)); }
+.academy-reading .book-item img,
+.academy-reading .book-illustrated,
+.academy-reading .book-item .book-fallback {
+  width: var(--shelf-width);
+  height: var(--shelf-cover);
+  margin-inline: auto;
+}
+.academy-reading .book-item img {
+  object-fit: cover;
+  object-position: center;
+  border-radius: 2px 4px 4px 2px;
+  box-shadow: -2px 0 0 #1c263b, 3px 5px 8px #10294538;
+  filter: none;
+}
+.academy-reading .book-illustrated span {
+  inset: 10% 8% auto;
+  padding: 8px 2px 10px;
+  background: linear-gradient(180deg, transparent, #101a28bb 26%, #101a28bb 72%, transparent);
+  color: #f2dba4;
+  text-shadow: 0 1px 2px #080f1b;
+  font: 700 clamp(11px, 1.05vw, 15px)/1.25 var(--serif);
+}
+
+/* Section artwork, separate from the homepage hero. */
+.cabin-banner.catalog-banner {
+  background-image: linear-gradient(90deg, #0d1d34df, transparent 73%),
+    url("cabin-art/banner-courses.webp") !important;
+}
+.course-hero.cabin-chapter {
+  background-image: linear-gradient(90deg, #11274333, #10233d99 50%, #11274333),
+    url("cabin-art/banner-chapter.webp") !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+.academy-masthead.extra-masthead {
+  background-image: linear-gradient(90deg, #0d203cee, #10243e22 78%), url("cabin-art/banner-extra.webp") !important;
+  background-position: center 48% !important;
+}
+.academy-masthead.reading-masthead { --masthead-image: url("cabin-art/banner-reading.webp"); }
+.academy-masthead.guide-masthead { --masthead-image: url("cabin-art/banner-guide.webp"); }
+.academy-masthead:is(.reading-masthead, .guide-masthead) {
+  background-image: linear-gradient(90deg, #f8fbff 24%, #f8fbffeb 43%, #f8fbff00 82%), var(--masthead-image) !important;
+  background-size: cover !important;
+  background-position: center 50% !important;
+}
+.academy-masthead.prep-masthead {
+  background-image: linear-gradient(90deg, #f8fbff18, #f8fbffed 35%, #f8fbffbb), url("cabin-art/banner-prep.webp") !important;
+  background-size: cover !important;
+  background-position: left 50% !important;
+}
+@media (max-width: 600px) {
+  .academy-masthead.prep-masthead {
+    background-image: linear-gradient(90deg, #f8fbfff5, #f8fbffb8), url("cabin-art/banner-prep.webp") !important;
+  }
+}
+
+/* Course directory: the same illustrated cards as the home course shelf. */
+.cabin-catalog .catalog-cards { gap: 12px; }
+.catalog-cards .course-card {
+  display: flex;
+  flex-direction: column;
+  border: 3px double #c9d8eb;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #f9fcff;
+}
+.catalog-cards .cc-cover { position: relative; margin: 0 !important; border-radius: 0 !important; }
+.catalog-cards .cc-cover img { width: 100%; aspect-ratio: 2.3; object-fit: cover; }
+.catalog-cards .cc-code {
+  position: absolute;
+  inset: 8px auto auto 8px;
+  max-width: calc(100% - 16px);
+  padding: 3px 9px;
+  border-radius: 14px;
+  background: #f1f6fbea;
+  color: #102b48;
+  font: 600 12px/1.2 var(--serif);
+}
+.catalog-cards .cc-body { flex: 1; padding: 9px 12px 15px; }
+.catalog-cards .cc-name { font: 700 clamp(18px, 1.6vw, 25px) var(--serif); }
+.catalog-cards .cc-name-en { color: #526b88; font-family: var(--serif); }
+.catalog-cards .cc-progress { padding: 0 12px 10px; }
+.catalog-cards .cc-progress .txt { margin-bottom: 5px; color: #526b88; }
+@media (min-width: 1200px) {
+  .cabin-catalog .catalog-cards { grid-template-columns: repeat(5,minmax(0,1fr)); }
+}
+
+/* Exploration: compact illustrated module entries beside the overview. */
+.academy-extra .module-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 14px; }
+.academy-extra .module-card {
+  display: grid;
+  grid-template-columns: minmax(80px, .36fr) minmax(0, 1fr);
+  padding: 7px;
+  background: linear-gradient(115deg, #fff, #f5f9fe);
+}
+.academy-extra .module-thumb { height: auto; min-height: 105px; border-radius: 8px; }
+.academy-extra .module-body { display: flex; flex-direction: column; padding: 6px 10px; }
+.academy-extra .module-body p { min-height: 0; margin-bottom: auto; color: #4b6482; }
+.academy-extra .module-body .m-meta { color: #35577f; }
+.academy-extra .extra-index { background: linear-gradient(#fff,#eef5fc); }
+@media (max-width: 620px) {
+  .academy-extra .module-grid { grid-template-columns: 1fr; }
+}
+
+/* ===== 计算机 Activity：老师课件原图 + 更清楚的逐步骤卡片 ===== */
+.gx-stage {
+  margin: 14px 0 24px;
+  padding: 15px 18px 14px;
+  background: linear-gradient(180deg, #fff 0%, #f7fbff 100%);
+  border: 1px solid #d9e6f4;
+  border-left: 4px solid #2d629f;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(18, 46, 82, .06);
+}
+.gx-stage .gx-step {
+  gap: 12px;
+  margin: 0;
+  padding: 9px 10px 9px 8px;
+  border-bottom: 1px dashed #dce8f5;
+  border-radius: 8px;
+  align-items: flex-start;
+}
+.gx-stage .gx-step:last-of-type { border-bottom: 0; }
+.gx-stage .gx-step:hover { background: #eef6ff; }
+.gx-stage .gx-step .n {
+  flex: none;
+  width: 26px;
+  height: 26px;
+  margin-top: 1px;
+  font-size: 13px;
+  background: linear-gradient(145deg, #2d629f, #173860);
+  box-shadow: 0 2px 6px rgba(23, 56, 96, .25);
+}
+.gx-stage .gx-step .b {
+  font-size: calc(12.6px * var(--rf, 1));
+  line-height: 1.8;
+  color: #274063;
+}
+.gx-stage .gx-tbl { margin: 9px 0; }
+.gx-path {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+  margin: 8px 0 3px 38px;
+}
+.gp-lab {
+  margin-right: 3px;
+  font: 700 10.5px var(--sans, system-ui);
+  color: #8a6a2f;
+  letter-spacing: .05em;
+}
+.gp-chip {
+  display: inline-block;
+  padding: 2px 9px;
+  border: 1px solid #c9dcf2;
+  border-radius: 6px;
+  background: #e8f1fc;
+  color: #1c4375;
+  font: 700 11.5px var(--sans, system-ui);
+}
+.gp-ar { color: #8aa5c4; font-size: 13px; }
+.cfig {
+  margin: 14px 0 6px;
+  padding: 10px;
+  border: 1px solid #d9e6f4;
+  border-radius: 10px;
+  background: #fbfdff;
+  text-align: center;
+}
+.cfig-img { display: block; border-radius: 7px; }
+.cfig img {
+  display: block;
+  max-width: 100%;
+  max-height: 460px;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid #e2ecf7;
+  border-radius: 6px;
+  background: #fff;
+  object-fit: contain;
+}
+.cfig-img:hover img { box-shadow: 0 6px 20px rgba(18, 46, 82, .18); }
+.cfig figcaption {
+  margin-top: 8px;
+  font: 400 11px var(--sans, system-ui);
+  color: #6d829e;
+}
+.gx-check {
+  margin-top: 10px;
+  padding: 9px 12px;
+  border: 1px solid #cfe6d7;
+  border-radius: 8px;
+  background: #eef7f1;
+  color: #256b43;
+  font-size: calc(11.8px * var(--rf, 1));
+  font-weight: 600;
+  line-height: 1.65;
+}
+.cfig-gallery {
+  margin: 12px 0 20px;
+  padding: 13px 15px 15px;
+  border: 1px solid #d9e6f4;
+  border-radius: 12px;
+  background: linear-gradient(120deg, #f2f8ff, #fff);
+}
+.cfig-gal-h {
+  margin-bottom: 10px;
+  font: 700 13px var(--serif, Georgia, serif);
+  color: #173860;
+  letter-spacing: .03em;
+}
+.cfig-gal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+.cfig-thumb {
+  display: block;
+  overflow: hidden;
+  border: 1px solid #d9e6f4;
+  border-radius: 8px;
+  background: #fff;
+  text-align: center;
+}
+.cfig-thumb img {
+  display: block;
+  width: 100%;
+  height: 112px;
+  padding: 5px;
+  object-fit: contain;
+  background: #f7fafd;
+}
+.cfig-thumb span {
+  display: block;
+  padding: 5px;
+  font: 400 10.5px var(--sans, system-ui);
+  color: #5c7696;
+}
+.cfig-thumb:hover {
+  border-color: #2d629f;
+  box-shadow: 0 5px 16px rgba(18, 46, 82, .12);
+}
+@media (max-width: 620px) {
+  .gx-stage { padding: 12px; }
+  .gx-path { margin-left: 0; }
+  .cfig-gal-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cfig img { max-height: 320px; }
+  .course-hero.cabin-chapter { padding: 18px 14px; }
+  .cabin-chapter .ch-title h1 { font-size: 23px; letter-spacing: .05em; }
+  .cabin-chapter .ch-title .en {
+    font-size: 11px; letter-spacing: .02em;
+    white-space: normal; overflow-wrap: anywhere;
+  }
+  .cabin-chapter .ch-title .code { font-size: 10px; white-space: normal; }
+  .wp-head { padding: 18px 14px 16px; }
+  .wp-topics { gap: 5px; }
+  .wp-topics .chip { font-size: 10px; white-space: normal; }
+}
+@media print {
+  .gx-stage { break-inside: avoid; box-shadow: none; }
+  .cfig, .cfig-gallery { break-inside: avoid; }
+  .cfig img { max-height: 300px; }
+}
+
+.academy-masthead.extra-masthead > .container {
+  padding-block: clamp(27px, 3.6vw, 58px);
+}
+.hero-card .hc-row .k { color: #476282; }
+.hero-card .hc-row .v { color: #173860; }
+.hero-card .hc-row { border-bottom-color: #dce8f5; }
+
+.academy-masthead.extra-masthead {
+  text-align: center;
+  background-image: linear-gradient(90deg, #0d203c15, #0d203ca3 48%, #10243e10), url("cabin-art/banner-extra.webp") !important;
+  background-position: center 46% !important;
+}
+.academy-masthead.extra-masthead h1 {
+  font-size: clamp(28px, 3.6vw, 48px);
+  text-shadow: 0 2px 10px #07182a;
+}
+.academy-masthead.extra-masthead p {
+  margin: 8px 0 0;
+  font-style: normal;
+  text-shadow: 0 1px 6px #07182a;
+}
+
+/* ---- 本周看板（移植自历史版） ---- */
+.home-board-date { margin: 0 0 10px; color: #516987; font-size: 13px; }
+.home-task-list { display: grid; gap: 6px; }
+.home-task {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  padding: 7px 9px;
+  border: 1px solid #d9e5f3;
+  border-radius: 8px;
+  background: #f7faff;
+  color: #173860;
+  cursor: pointer;
+}
+.home-task input { flex: none; margin-top: .32em; accent-color: #254f80; }
+.home-board-link { display: inline-block; margin-top: 10px; font-size: 13px; }
+.home-week-board .home-task-list { grid-template-columns: repeat(auto-fit,minmax(min(100%,170px),1fr)); }
+.home-board-cols { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,280px),1fr)); gap: 18px; margin-top: 6px; }
+.home-board-sub { font-size: 15px; color: #254f80; margin: 4px 0 10px; font-weight: 600; }
+
+/* Readable global navigation */
+.site-header .main-nav a { font-size: 18px; font-weight: 600; }
+@media (max-width: 1100px) {
+  .site-header .main-nav a { font-size: 16px; padding-inline: 10px; }
+}
+
+/* Full source pages retain the worksheet context and page numbering. */
+.cfig-source-pages summary { cursor: pointer; overflow-wrap: anywhere; }
+.cfig-source-pages .cfig-gal-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 270px), 1fr));
+  align-items: start;
+}
+.cfig-source-pages .cfig-thumb img {
+  height: auto;
+  max-height: 700px;
+  padding: 0;
+  object-fit: contain;
+}
+@media (max-width:620px) {
+  .cfig-source-pages .cfig-gal-grid { grid-template-columns: minmax(0,1fr); }
+}
+
+/* Home at normal browser zoom */
+.hero:has(.home-today-panel) .hero-inner {
+  min-height: 420px;
+  max-width: none;
+  padding: 36px clamp(16px,2vw,28px);
+  align-items: center;
+}
+.hero:has(.home-today-panel) .hero-left { flex: 1 1 540px; }
+.hero:has(.home-today-panel) .hero-right { flex: 0 0 390px; max-width: 100%; }
+.hero:has(.home-today-panel) h1 { font-size: clamp(34px, 3.8vw, 58px); }
+.hero:has(.home-today-panel) .hero-sub { font-size: 18px; line-height: 1.8; }
+.hero:has(.home-today-panel) .btn { font-size: 16px; }
+.home-today-panel summary {
+  cursor: pointer;
+  color: #173860;
+  font: 700 23px/1.5 var(--serif);
+  padding-block: 4px 12px;
+}
+.home-today-panel summary span { float: right; font: 400 12px/3 system-ui,sans-serif; color: #526c89; }
+.home-today-panel .home-board-date { font-size: 14px; }
+.home-today-scroll { max-height: 255px; overflow-y: auto; scrollbar-gutter: stable; padding-right: 5px; }
+.home-today-scroll .home-task { font-size: 16px; line-height: 1.7; }
+.home-today-scroll .home-task input { width: 19px; height: 19px; }
+.home-today-panel summary:focus-visible { outline: 2px solid #315f91; outline-offset: 4px; }
+.home-board-cols.home-week-only { grid-template-columns: 1fr; }
+@media (max-width: 960px) {
+  .hero:has(.home-today-panel) .hero-inner { padding: 28px 18px; }
+  .hero:has(.home-today-panel) .hero-left { flex: auto; }
+  .hero:has(.home-today-panel) .hero-right { flex: auto; width: 100%; }
+}
+
+.hero-card.home-board-stack {
+  display: grid;
+  gap: 16px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.home-board-panel {
+  padding: 17px 20px;
+  border: 4px double #b7cbe5;
+  border-radius: 9px;
+  background: #fbfdff;
+  color: #173860;
+  box-shadow: 0 10px 24px #06172b26;
+}
+.home-board-panel summary {
+  cursor: pointer;
+  padding: 3px 0;
+  color: #173860;
+  font: 700 23px/1.5 var(--serif);
+}
+.home-board-panel summary span { float: right; color: #526c89; font: 400 12px/3 system-ui,sans-serif; }
+.home-board-panel[open] summary { margin-bottom: 12px; }
+.home-board-panel summary:focus-visible { outline: 2px solid #315f91; outline-offset: 4px; }
+.home-week-content { max-height: 280px; overflow-y: auto; scrollbar-gutter: stable; }
+.home-week-panel #homeWeekDates { display: block; margin-bottom: 10px; color: #526c89; font: 13px/1.6 system-ui,sans-serif; }
+.home-week-panel .home-task { font-size: 16px; line-height: 1.7; }
+.home-preview-block { margin-top: 14px; padding-top: 12px; border-top: 1px dashed #cdd9e6; }
+.home-board-sub2 { font-size: 14px; color: #2e7d5b; margin: 6px 0 8px; font-weight: 600; }
+.home-preview-hint { font-size: 12px; color: #7a8aa0; line-height: 1.6; margin: 8px 0 0; }
+.cu-edit { font-size: 12px; color: #526c89; white-space: nowrap; display:inline-flex; align-items:center; gap:4px; }
+.cu-in { width: 3.4em; padding: 2px 4px; font-size: 12px; border: 1px solid #cdd9e6; border-radius: 6px; color: #254f80; background: #fff; }
+
+/* ===== 笔记三色 / 头部信息块 / 图注（自 W2 样板起统一规范） ===== */
+.c-red{color:#b03030;font-weight:600}
+.c-blue{color:#16569c;font-weight:600}
+.gx h4.c-red,.notes h4.c-red{color:#b03030}
+.gx h4.c-blue,.notes h4.c-blue{color:#16569c}
+.note-head{border:1px solid #d8e7f6;border-left:4px solid #2d629f;background:linear-gradient(120deg,#eef6ff,#f8fbff);border-radius:12px;padding:14px 18px;margin:0 0 20px}
+.note-head .nh-course{font:700 12px/1.4 system-ui,sans-serif;letter-spacing:.12em;color:#2d629f}
+.note-head .nh-title{font:700 20px/1.45 var(--serif);color:#173860;margin:4px 0 6px}
+.note-head .nh-meta{font-size:12.5px;color:#5c728e;line-height:1.6}
+.note-head .nh-legend{display:flex;gap:16px;flex-wrap:wrap;margin-top:8px;font-size:12px;color:#48617e}
+.note-head .nh-legend span{display:inline-flex;align-items:center;gap:5px}
+.lg-black::before,.lg-red::before,.lg-blue::before{content:"";width:11px;height:11px;border-radius:2px;display:inline-block}
+.lg-black::before{background:#171717}
+.lg-red::before{background:#b03030}
+.lg-blue::before{background:#16569c}
+figure.note-fig{margin:14px auto 18px;max-width:min(100%,920px);text-align:center}
+/* 数学/经济图形：居中并随容器合理缩放（原 max-width:560px 且左对齐会造成右侧空白） */
+.diagram{text-align:center}
+.diagram svg{display:block!important;margin:0 auto!important;max-width:min(100%,820px)!important}
+figure.note-fig img{max-width:100%;height:auto;border:1px solid #dde7f2;border-radius:8px;background:#fff;box-shadow:0 2px 8px rgba(23,56,96,.08)}
+figure.note-fig figcaption{font-size:12px;color:#5c728e;margin-top:7px;line-height:1.5;text-align:center}
+.callout.red{border-left:3px solid #b03030;background:#fff7f7;padding:10px 14px;margin:12px 0;border-radius:0 8px 8px 0;color:#3a2a2a}
+.callout.blue{border-left:3px solid #16569c;background:#f3f8ff;padding:10px 14px;margin:12px 0;border-radius:0 8px 8px 0;color:#1c2a3a}
+
+/* ============================================================
+ * 阅读舒适度优化（2026-11-05）
+ * 症结：笔记一行 60+ 字横向扫读累；单周 3.7 万字全部平铺找不到重点；
+ *       「逐页精读」上方 106px 大空白；34 个小节标题同字号、主次不分；
+ *       蓝字加粗满篇，重点被淹没。以下均为样式层调整，不动笔记内容。
+ * ============================================================ */
+/* 1) 笔记区宽度：填满正文容器，仅在超宽屏上做舒适行长上限（不再固定 820px 造成右侧大片空白） */
+.week-panel .wp-sections{max-width:none;margin-inline:0}
+.note-pane .gx p,.note-pane .gx li,.note-pane .notes p,.note-pane .notes li,
+.note-pane .gx .callout,.note-pane .gx blockquote,.note-pane .notes blockquote{max-width:min(100%,1500px)}
+/* Answer prose follows the answer panel; ordinary notes retain their reading width. */
+.note-pane .gx .gx-answer :is(p, li, blockquote, .callout),
+.note-pane .notes .gx-answer :is(p, li, blockquote, .callout) { max-width: min(100%, 1500px); overflow-wrap: anywhere; }
+/* 表格在正文容器内铺满宽度（覆盖任何继承的内联/默认收缩，杜绝右侧空白） */
+.note-pane table,.week-panel table,.wp-sections table{width:100%}
+/* 2) 压缩大空白、收敛标题层级，让主次一眼可分 */
+.gx h4.kp-h{margin:calc(14px * var(--rf,1.9)) 0 10px;font-size:calc(13px * var(--rf,1.9));padding-bottom:9px;border-bottom:1px solid var(--line-2)}
+.week-panel .gx h4.kp-h::before { content: none !important; }
+.gx .kp-pg{margin:16px 0;padding:12px 16px 14px;border:1px solid var(--line-2);border-radius:10px;background:#fcfdff}
+.gx .kp-pg:hover{border-color:#cfdff0}
+.gx h4.kp-pg-h{font-size:calc(11px * var(--rf,1.9));margin:0 0 10px;cursor:pointer;user-select:none}
+.gx h4.kp-pg-h::after{content:"▾";margin-left:8px;font-size:.75em;color:var(--muted);font-weight:400}
+.gx .kp-pg.collapsed h4.kp-pg-h{margin-bottom:0}
+.gx .kp-pg.collapsed h4.kp-pg-h::after{content:"▸"}
+.gx .kp-pg.collapsed > *:not(h4.kp-pg-h){display:none}
+/* 3) 三色降噪：蓝色例题改常规字重（全站 2400+ 处不再整片加粗），红色重点保留强调 */
+.gx .c-blue,.notes .c-blue{color:#2b6ca8;font-weight:500}
+.gx .c-red,.notes .c-red{color:#b03030;font-weight:600}
+.gx h4.c-blue,.notes h4.c-blue{color:#2b6ca8}
+/* 4) 长文工具条：小节目录 + 一键收起/展开（吸顶，滚动时随手可点） */
+.reading-tools{position:sticky;top:8px;z-index:20;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin:0 0 16px;box-shadow:var(--shadow-md)}
+.reading-tools .rt-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.reading-tools .rt-label{font-size:12px;font-weight:800;color:var(--navy-800);letter-spacing:.5px;white-space:nowrap}
+.reading-tools .rt-btn{border:1px solid var(--line-2);background:#f6faff;color:var(--navy-800);border-radius:16px;padding:4px 12px;font-size:12px;font-weight:700;cursor:pointer;font-family:var(--sans)}
+.reading-tools .rt-btn:hover{border-color:var(--navy-700);background:#eef6ff}
+.reading-tools .rt-chips{display:flex;gap:6px;overflow-x:auto;margin-top:9px;padding-bottom:4px;scrollbar-width:thin}
+.reading-tools .rt-chip{flex:0 0 auto;border:1px solid var(--line-2);background:#fff;color:var(--ink-2);border-radius:14px;padding:4px 11px;font-size:12px;cursor:pointer;white-space:nowrap;font-family:var(--sans)}
+.reading-tools .rt-chip:hover{background:var(--navy-050);border-color:var(--navy-700);color:var(--navy-900)}
+/* 5) 长页回到顶部 */
+.to-top{position:fixed;right:20px;bottom:26px;z-index:70;width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--navy-800);font-size:18px;cursor:pointer;box-shadow:var(--shadow-md);display:none}
+.to-top.show{display:block}
+@media (max-width:960px){
+  .week-panel .wp-sections{max-width:100%}
+  .note-pane .gx p,.note-pane .gx li,.note-pane .notes p,.note-pane .notes li{max-width:100%}
+  .reading-tools{position:static}
+  .to-top{right:14px;bottom:14px}
+}
+
+/* Larger note text follows the existing small / medium / large controls. */
+body.rf-small { --note-scale: 1.85; }
+body.rf-medium { --note-scale: 2.2; }
+body.rf-large { --note-scale: 2.65; }
+.note-sec, .er-content { --rf: var(--note-scale, 2.2); }
+.note-sec .gx, .note-sec .notes { line-height: 1.9; }
+.note-sec .gx h4.kp-h {
+  font-size: calc(13px * var(--rf));
+  margin-top: 36px;
+}
+.note-sec figure { margin: 18px 0; }
+.note-sec figure img {
+  display: block;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  max-height: 720px;
+  margin: 0 auto;
+}
+.note-sec figure figcaption { font-size: 14px; color: #48617e; }
+.note-sec details { margin: 12px 0; }
+.note-sec summary { cursor: pointer; font-weight: 600; overflow-wrap: anywhere; }
+.note-sec table { display: block; width: 100%; max-width: 100%; overflow-x: auto; }
+@media print {
+  .note-sec, .er-content { --rf: 1.3; }
+}
+
+.home-desktop-todo {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border: 1px solid #b7cbe5;
+  border-radius: 9px;
+  background: #f4f8ff;
+  color: #173860;
+}
+.home-desktop-todo:hover { background: #e8f1fd; text-decoration: none; }
+.home-desktop-todo strong, .home-desktop-todo small { display: block; }
+.home-desktop-todo strong { font-size: 17px; }
+.home-desktop-todo small { color: #476282; font-size: 13px; }
+.home-desktop-todo:focus-visible { outline: 2px solid #315f91; outline-offset: 3px; }
+
+.wp-quick { align-items: start; }
+.wp-fold > summary.wp-sec-t {
+  cursor: pointer;
+  margin-bottom: 0;
+  list-style: none;
+  gap: 8px;
+}
+.wp-fold > summary::-webkit-details-marker { display: none; }
+.wp-fold > summary::after { content: "▸"; color: #315f91; margin-left: 5px; }
+.wp-fold[open] > summary::after { content: "▾"; }
+.wp-fold > summary:hover { background: #dfecfa; }
+.wp-fold > summary:focus-visible { outline: 2px solid #315f91; outline-offset: -3px; }
+.wp-fold[open] > :is(.rv-lead,.rv-grid,.rv-links) { margin-inline: 14px; }
+.wp-fold .f-name { word-break: normal; overflow-wrap: anywhere; }
+
+/* Course outline: readable parent headings and indented topics. */
+.week-side .kp-list { padding: 6px 5px 10px 8px; }
+.week-side .kp-category,
+.week-side .kp-item.lv1 {
+  color: #193b60;
+  background: #eaf2fb;
+  border-radius: 6px;
+  font-weight: 700;
+}
+.week-side .kp-category { margin-top: 8px; padding: 7px 9px; font-size: 13px; }
+.week-side .kp-item { padding-block: 6px; text-align: left; }
+.week-side .kp-item .kp-tx { white-space: normal; overflow: visible; overflow-wrap: anywhere; line-height: 1.45; font-size: 13px; }
+.week-side .kp-item.lv2 { padding-left: 15px; color: #405a76; }
+.week-side .kp-item.active { background: #d9e9fa; color: #153b64; font-weight: 700; }
+.week-side .kp-item:focus-visible { outline: 2px solid #315f91; outline-offset: -2px; }
+
+.ws-week-nav > summary { cursor: pointer; list-style: none; }
+.ws-week-nav > summary::-webkit-details-marker { display: none; }
+.ws-week-nav > summary::after { content: "▸"; color: #315f91; }
+.ws-week-nav[open] > summary::after { content: "▾"; }
+.week-side .ws-note-outline { border-top: 1px solid #ceddef; }
+.week-side .ws-note-outline .kp-list { max-height: min(55vh, 520px); overflow-y: auto; }
+.week-side .ws-outline-empty { margin: 12px; color: #526b88; font-size: 13px; }
+
+/* ============ 学习目标 + 笔记大类折叠（全站，2026-11-06） ============ */
+.reading-tools.nb-tools{position:static}
+.goal-card{background:#f4f9ff;border:1px solid #cfe0f3;border-left:4px solid #16569c;border-radius:10px;padding:12px 16px 14px;margin:0 0 14px}
+.goal-h{font-size:14px;font-weight:800;color:#123f73;letter-spacing:.5px;margin-bottom:8px}
+.goal-list{margin:0;padding-left:20px;color:#273b52;font-size:14px;line-height:1.85}
+.goal-list li{margin:3px 0}
+.goal-more{border:0;background:transparent;color:#16569c;font-size:12.5px;font-weight:700;cursor:pointer;padding:8px 0 0;font-family:var(--sans)}
+.goal-topics{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}
+.goal-topics[hidden]{display:none}
+.goal-tag{display:inline-block;background:#fff;border:1px solid #d8e7f7;border-radius:14px;padding:3px 10px;font-size:12px;color:#31577c}
+.nb-chips{display:flex;gap:6px;overflow-x:auto;margin-top:9px;padding-bottom:4px;scrollbar-width:thin}
+.nb-chips .rt-chip{flex:0 0 auto}
+.nb-tip{font-size:12px;color:#7a8ca3;margin-top:8px;line-height:1.6}
+.nb-grp-h{display:flex;align-items:center;gap:10px;width:100%;min-height:44px;margin:22px 0 10px;padding:10px 14px;border:1px solid #cfe0f3;border-radius:10px;background:#eef6ff;color:#123f73;font-family:var(--sans);font-size:15px;font-weight:800;cursor:pointer;text-align:left}
+.nb-grp-h:hover{border-color:#8fb8e2;background:#e4f1ff}
+.nb-grp-h.closed{background:#f7fafd;border-color:#dde8f3}
+.nb-grp-n{flex:1;min-width:0}
+.nb-grp-c{font-size:12px;font-weight:600;color:#5a7ca3;white-space:nowrap}
+.nb-grp-a{font-size:13px;color:#16569c}
+.nb-hide{display:none!important}
+.nb-handle{cursor:pointer;user-select:none}
+.gx h3.nb-handle::after,.notes h3.nb-handle::after,.gx h4.nb-handle:not(.kp-pg-h)::after,.notes h4.nb-handle::after{content:"▾";margin-left:8px;font-size:.75em;color:var(--muted);font-weight:400}
+.gx h3.nb-handle.nb-collapsed::after,.notes h3.nb-handle.nb-collapsed::after,.gx h4.nb-handle:not(.kp-pg-h).nb-collapsed::after,.notes h4.nb-handle.nb-collapsed::after{content:"▸"}
+@media(max-width:600px){
+  .goal-card{padding:10px 12px}
+  .goal-list{font-size:13.5px;padding-left:18px}
+  .nb-grp-h{font-size:14px;padding:10px 12px;margin:16px 0 8px}
+  .nb-chips .rt-chip{min-height:38px}
+  .nb-tip{font-size:11.5px}
+}
+@media print{
+  .goal-card,.nb-chips,.nb-tip,.nb-grp-h{display:none!important}
+  .nb-hide,.gx .kp-pg.collapsed > *:not(h4.kp-pg-h){display:revert!important}
+}
+
+.week-panel .wp-quick { display: grid; grid-template-columns: minmax(0, 1fr); }
+.week-side > .ws-week-nav { margin-bottom: 12px; }
+.ws-tree .tree-direct { background: #eaf2fb; border-radius: 8px; margin-block: 6px; padding: 4px 8px; }
+.week-panel .rv-grid { grid-template-columns: repeat(auto-fit,minmax(min(100%,250px),1fr)); gap: 14px; }
+.week-panel .rv-wrap .rv-lead { padding: 12px 14px; background: #edf5fd; border-radius: 8px; line-height: 1.75; }
+
+/* Let the sidebar scroll as one unit so the first outline entry stays reachable. */
+.week-side .ws-tree .ws-note-outline .kp-list {
+  max-height: none;
+  overflow: visible;
+}
+
+.week-panel .gx h4.kp-h { border: 1px solid #bfd5ee; border-radius: 9px; padding-inline: 16px; }
+
+/* Native corner grip resizes the sidebar and its grid column together. */
+@media screen and (min-width: 961px) {
+  .course-body:has(> .week-side) {
+    grid-template-columns: max-content minmax(0, 1fr);
+  }
+  .course-body > .week-side {
+    width: 270px;
+    min-width: 210px;
+    max-width: min(520px, 42vw);
+    min-height: 160px;
+    max-height: calc(100dvh - 105px);
+    overflow: auto;
+    resize: both;
+    padding: 0 10px 12px 0;
+    scrollbar-color: #9cb8d3 transparent;
+  }
+}
+
+/* Economics Unit 5 glossary */
+.elasticity-glossary { display: grid; gap: .6rem; max-width: 76ch; }
+.elasticity-term { border: 1px solid #cddded; border-radius: .65rem; background: #fff; }
+.elasticity-term summary { padding: .7rem 1rem; cursor: pointer; color: #17395d; }
+.elasticity-term summary:focus-visible { outline: 2px solid #386aa0; outline-offset: 2px; }
+.elasticity-term summary small { display: block; margin: .2rem 0 0 1.2rem; color: #4c6481; }
+.elasticity-term[open] summary { background: #edf5fd; border-radius: .65rem .65rem 0 0; }
+.elasticity-definition { padding: .5rem 1rem; color: #17395d; line-height: 1.75; }

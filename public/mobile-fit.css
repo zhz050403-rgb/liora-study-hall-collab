@@ -1,0 +1,206 @@
+/* ============================================================
+   手机 / Pad 浏览器适配补丁  (2026-11-06)
+   目标：任何屏幕宽度下页面都不横向撑破、不变形、触控好点。
+   说明：本文件在 index.html 中最后加载，用于覆盖旧样式；
+        不改动笔记内容、不改动 16/19/23 字号约定。
+   ============================================================ */
+
+/* ---------- 1. 全局兜底 ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+html { max-width: 100%; overflow-x: clip; -webkit-text-size-adjust: 100%; }
+body { max-width: 100%; overflow-x: clip; }
+
+#app, .container, .header-inner, .hero-inner, .stats-inner,
+.week-panel, .wp-sections, .course-body, .reading-layout,
+.academy-extra-layout, .pp-hero-inner, .pp-dashboard {
+  min-width: 0;
+  max-width: 100%;
+}
+
+/* 长文字 / 长链接 / 英文长单词不把容器撑破 */
+p, li, td, th, h1, h2, h3, h4, h5, h6, a, span, summary, figcaption, label {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+img, svg, canvas, iframe, video, embed { max-width: 100%; }
+pre, code { max-width: 100%; overflow-x: auto; overflow-wrap: anywhere; }
+.katex-display { max-width: 100%; overflow-x: auto; overflow-y: hidden; padding: 2px 0; }
+
+/* ---------- 2. 表格：在自身容器内横向滑动，绝不撑破整页 ---------- */
+.rec-table-wrap {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.rec-table { min-width: 640px; }
+.notes table, .gx table, .note-sec table, .wp-sections table,
+.eng-class table, .eng-homework table, .eng-howto table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.notes table table, .gx table table { display: table; }
+
+/* ---------- 3. 统计卡 / 各类网格：列宽用 minmax(0,1fr) 防撑开 ---------- */
+.pf-stats, .stats-inner, .cabin-arches, .module-grid, .wp-quick,
+.reading-layout, .academy-extra-layout, .course-body,
+.pp-grid, .pp-panels, .pp-overview, .pp-dashboard-grid {
+  min-width: 0;
+  max-width: 100%;
+}
+.pf-stats, .stats-inner { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+/* ---------- 4. 顶栏：Pad 收窄搜索框；手机搜索框独占第二行 ---------- */
+@media (min-width: 601px) and (max-width: 1400px) {
+  .header-inner { padding-inline: 16px; gap: 10px; }
+  .search-wrap { min-width: 0; }
+  .search-box, .search-box:focus-within { width: min(100%, 180px); }
+  .site-header .main-nav a { font-size: 15px; padding-inline: 9px; }
+}
+
+@media (max-width: 600px) {
+  .header-inner {
+    flex-wrap: wrap;
+    height: auto;
+    min-height: 60px;
+    padding: 10px 14px;
+    gap: 9px;
+  }
+  .brand-text .t1 { font-size: 15px; }
+  .search-wrap {
+    order: 5;
+    flex: 1 1 100%;
+    width: 100%;
+    min-width: 0;
+    margin-left: 0;
+  }
+  .search-box, .search-box:focus-within { width: 100%; padding: 9px 14px; }
+  .search-box input { font-size: 16px; } /* 防止 iOS 聚焦时自动放大整页 */
+  .search-results { left: 0; right: auto; width: 100%; max-width: 100%; }
+  .nav-toggle { width: 44px; height: 44px; }
+}
+
+/* ---------- 5. Pad / 中小屏：多列改少列，侧栏不再外伸 ---------- */
+@media (max-width: 1599px) {
+  /* 读书页右侧竖排工具：屏幕留白不够时会伸出页面，改成内容区顶部的横条 */
+  .novel-tools {
+    float: none;
+    position: static;
+    width: auto;
+    margin: 0 0 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 8px;
+    border-radius: 10px;
+    background: var(--paper, #f8f3e8);
+    z-index: 2;
+  }
+  .novel-tools a, .novel-tools button, .novel-tools summary {
+    width: auto;
+    min-height: 44px;
+    padding: 9px 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .novel-tools details[open] { width: auto; }
+  .novel-tools .reading-language { width: auto; margin-left: 0; }
+  .novel-directory div {
+    position: static;
+    left: auto;
+    right: auto;
+    top: auto;
+    width: 100%;
+    max-width: 100%;
+    max-height: 45vh;
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 960px) {
+  .stats-inner, .pf-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cabin-arches, .module-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .reading-layout, .academy-extra-layout, .wp-quick, .pp-panels {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .course-body { grid-template-columns: minmax(0, 1fr); }
+  .reading-index, .reading-side, .extra-index { position: static; }
+  .hero-inner { padding-inline: 18px; }
+  .reading-tools { position: static; }
+}
+
+/* ---------- 6. 手机：单列 + 更大触控区 + 收紧留白 ---------- */
+@media (max-width: 600px) {
+  .container { padding-inline: 12px; }
+  .header-inner { padding-inline: 12px; }
+  .hero-inner, .pp-hero-inner { padding-inline: 14px; }
+  .stats-inner { padding-inline: 12px; }
+  .wp-head, .wp-sections { padding-inline: 12px; }
+
+  .cabin-arches, .module-grid, .wp-quick, .pp-grid, .pp-overview,
+  .pp-dashboard-grid, .glossary, .svc-grid, .steps {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .pf-stats, .stats-inner { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .pf-stat { padding: 12px 8px; }
+  .pf-stat .num { font-size: 22px; }
+
+  .pp-flow .pp-node, .pp-od-label, .pp-kpi { min-width: 0; }
+  .pp-grid { gap: 10px; }
+
+  .reading-tools { position: static; padding: 9px; }
+  .rt-chips { max-width: 100%; overflow-x: auto; }
+  .rt-btn, .rt-chip, .fc-btn, .note-tabs button, .ne-btn {
+    min-height: 40px;
+    padding: 7px 12px;
+  }
+  .to-top { width: 44px; height: 44px; right: 14px; bottom: 14px; }
+  .font-ctrl { left: 10px; bottom: 12px; }
+
+  .wp-quick > .wp-sec { min-width: 0; }
+  .wp-quick .file-group { margin-inline: 10px; }
+  .wp-quick .file-row { margin-inline: 10px; }
+  .note-pane .gx p, .note-pane .gx li, .note-pane .notes p, .note-pane .notes li {
+    max-width: 100%;
+  }
+  .note-sec figure img { max-height: 420px; }
+  .wp-head h2 {
+    display: block;
+    font-size: clamp(19px, 5.6vw, 24px);
+    line-height: 1.45;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+  .wp-head h2::before, .wp-head h2::after { display: none; }
+  .note-head { padding: 12px; }
+  .note-head .nh-title { font-size: 17px; line-height: 1.5; overflow-wrap: anywhere; word-break: break-word; }
+  .note-head .nh-meta, .note-info-bar .ni-l2 { overflow-wrap: anywhere; word-break: break-word; }
+}
+
+/* ---------- 7. 横屏 / 矮屏（Pad 横放、手机横放） ---------- */
+@media (max-height: 520px) {
+  .reading-tools { position: static; }
+  .to-top, .font-ctrl { bottom: 10px; }
+  .week-side, .reading-index, .extra-index { position: static; }
+}
+
+/* ---------- 8. iPhone 刘海与安全区 ---------- */
+@supports (padding: max(0px, env(safe-area-inset-left))) {
+  .site-header, .site-footer {
+    padding-left: max(12px, env(safe-area-inset-left));
+    padding-right: max(12px, env(safe-area-inset-right));
+  }
+  body { padding-bottom: env(safe-area-inset-bottom); }
+}
+
+/* ---------- 9. 打印 / 导出 PDF 时恢复原样 ---------- */
+@media print {
+  html, body { overflow-x: visible; }
+  .rec-table-wrap, .notes table, .gx table, .note-sec table { overflow-x: visible; }
+  .novel-tools { display: none; }
+}
