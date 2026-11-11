@@ -461,6 +461,38 @@
   "requirementsChecked": false
  },
  {
+  "board": "notes-economics",
+  "key": "term2/5",
+  "course": "economics",
+  "term": "term2",
+  "week": 5,
+  "title": "Week 5 · Unit 4 Tutorial + Unit 5 International Economics: Trade and Protection 国际贸易与保护",
+  "fields": {
+   "graphicHtml": "out/economics/term2/w05.graphic.html",
+   "tutorialAnswers": "out/economics/term2/w05.answers.html"
+  },
+  "examples": 17,
+  "checks": 14,
+  "deliverables": 18,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term2/6",
+  "course": "economics",
+  "term": "term2",
+  "week": 6,
+  "title": "Week 6 · Unit 5 Tutorial + Unit 6 International Economics: Exchange Rates 汇率",
+  "fields": {
+   "graphicHtml": "out/economics/term2/w06.graphic.html",
+   "tutorialAnswers": "out/economics/term2/w06.answers.html"
+  },
+  "examples": 18,
+  "checks": 5,
+  "deliverables": 15,
+  "requirementsChecked": false
+ },
+ {
   "board": "math-notes",
   "key": "term1/1",
   "course": "mathematics",

@@ -1,0 +1,1793 @@
+{
+ "course": "economics",
+ "term": "term2",
+ "week": 5,
+ "title": "Week 5 · Unit 4 Tutorial + Unit 5 International Economics: Trade and Protection 国际贸易与保护",
+ "answersTitle": "Tutorial 4 Aggregate Demand and Supply",
+ "files": [
+  "unit4 PPT aggregate demand supply.pdf",
+  "unit4 TG aggregate demand supply.pdf",
+  "unit5 PPT international economics trade and protection.pdf",
+  "unit5 TG international economics trade and protection.pdf"
+ ],
+ "inventory": [
+  {
+   "ref": "Tutorial 4 Terms",
+   "deliverables": [
+    {
+     "type": "terms",
+     "terms": [
+      "Aggregate demand",
+      "Aggregate supply",
+      "Stagflation"
+     ]
+    }
+   ]
+  },
+  "Tutorial 4 Q1",
+  "Tutorial 4 Q2",
+  {
+   "ref": "Tutorial 4 Q3",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial 4 Q4",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "Tutorial 4 Q5",
+  {
+   "ref": "Tutorial 4 Q6",
+   "parts": [
+    "Step 1",
+    "Step 2",
+    "Step 3",
+    "Step 4"
+   ],
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial 4 Q7",
+   "parts": [
+    "Step 1",
+    "Step 2",
+    "Step 3",
+    "Step 4"
+   ],
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial 4 Writing",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "Lecture 5 Trade",
+  {
+   "ref": "Lecture 5 Absolute Advantage",
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  {
+   "ref": "Lecture 5 Gains from Trade",
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  "Lecture 5 Protection",
+  {
+   "ref": "Lecture 5 Tariff",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Lecture 5 Subsidy",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "Lecture 5 Arguments",
+  "Lecture 5 Terms of Trade"
+ ],
+ "intro": [
+  "本周前半是 <strong>Unit 4 Tutorial</strong>（AD、AS 的形状，用 AD–AS 图解释两种通胀和滞胀，经济低迷与接近充分就业时刺激政策的不同效果）；后半是 <strong>Unit 5 讲座</strong>：贸易的好处、绝对优势与比较优势、专业化的收益、自由贸易与保护（关税、配额、禁运、补贴）、关税和补贴的图、贸易条件。Unit 5 Tutorial 的答案在第 6 周。",
+  "Term 2 的 Tutorial 没有官方答案文件，以下答案依据讲义和 Tutorial 阅读材料写出；图按讲义的形状由函数画出，均衡点由程序解出。"
+ ],
+ "sections": [
+  {
+   "title": "Unit 4 Tutorial：AD–AS 模型",
+   "sources": [
+    {
+     "file": "unit4 TG aggregate demand supply.pdf",
+     "pages": "p1–9"
+    },
+    {
+     "file": "unit4 PPT aggregate demand supply.pdf",
+     "pages": "p1–27"
+    }
+   ],
+   "concept": "AD 向右下倾斜（财富效应、利率效应、净出口效应）；AS 向右上倾斜，接近充分就业产出 Y_FE 时变陡并竖直。\n同样大小的 AD 右移：在平坦（凯恩斯）段主要提高产出和就业；在陡峭（古典）段主要提高物价。所以经济低于充分就业时，政府注入需求最有效。AS 左移导致物价上升、产出下降，即滞胀。",
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "Tutorial 4 Terms",
+     "question": "Explain: Aggregate demand; Aggregate supply; Stagflation.",
+     "solution": "<strong>Aggregate demand</strong>（总需求）：在不同物价水平下，经济中所有部门计划购买的实际 GDP 总量，AD = C + I + G + (X − M)。\n<strong>Aggregate supply</strong>（总供给）：在不同物价水平下，经济中所有企业愿意生产的实际 GDP 总量；接近充分就业时变陡。\n<strong>Stagflation</strong>（滞胀）：通胀和失业（产出停滞或下降）同时出现，通常由成本推动、AS 左移造成。",
+     "numeric": false
+    },
+    {
+     "label": "例 2",
+     "ref": "Tutorial 4 Q1",
+     "question": "Explain why the AD curve slopes down to the right.",
+     "solution": "物价水平下降时需求的实际 GDP 增加，原因有三：①<strong>实际收入（财富）效应</strong>：物价下降，同样的货币收入能买更多商品；②<strong>净出口效应</strong>：本国物价下降使本国产品更有竞争力，出口增加、进口减少；③<strong>利率效应</strong>：物价（通胀）下降使利率下降，投资和消费增加。",
+     "numeric": false
+    },
+    {
+     "label": "例 3",
+     "ref": "Tutorial 4 Q2",
+     "question": "Explain why the AS curve becomes steeper as the economy approaches full employment.",
+     "solution": "产出很低时有大量闲置资源，企业不必提价就能增产，AS 平坦（资源价格有粘性，需求下降时更多是就业减少而不是工资下降）。接近充分就业时，劳动、原材料等资源越来越稀缺，企业争夺资源推高资源价格和成本，再增产就必须大幅提价，AS 变得缺乏弹性、更陡；到充分就业产出 Y_FE 时，资源已全部使用，产出无法再增加，AS 竖直。",
+     "numeric": false
+    },
+    {
+     "label": "例 4",
+     "ref": "Tutorial 4 Q3",
+     "question": "Using an AD–AS model, explain how demand-pull inflation can occur.",
+     "solution": "总需求增加（如消费、投资、政府支出或出口增加）使 AD 从 AD₁ 右移到 AD₂。在 AS 的陡峭段，企业无法大幅增产，过剩需求抬高价格，物价水平从 P₁ 升到 P₂，产出只略有增加。越接近充分就业，需求拉动的通胀越严重。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        11.5
+       ],
+       "yr": [
+        0,
+        11
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Real GDP",
+       "yLabel": "Price level",
+       "curves": [
+        {
+         "expr": "1.5+4/(10-x)",
+         "dom": [
+          0,
+          9.556
+         ],
+         "color": "red",
+         "label": [
+          8.36,
+          10.1,
+          "AS"
+         ]
+        },
+        {
+         "expr": "9.5-0.6*x",
+         "dom": [
+          0,
+          11.5
+         ],
+         "color": "navy",
+         "label": [
+          9.68,
+          4.14,
+          "AD₁"
+         ]
+        },
+        {
+         "expr": "11.8-0.6*x",
+         "dom": [
+          0,
+          11.5
+         ],
+         "color": "navy",
+         "label": [
+          9.68,
+          6.44,
+          "AD₂"
+         ],
+         "dash": true
+        }
+       ],
+       "points": [
+        {
+         "x": 8.593,
+         "y": 4.344,
+         "label": ""
+        },
+        {
+         "x": 9.167,
+         "y": 6.3,
+         "label": ""
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          4.344
+         ],
+         "to": [
+          8.593,
+          4.344
+         ]
+        },
+        {
+         "from": [
+          8.593,
+          0
+         ],
+         "to": [
+          8.593,
+          4.344
+         ]
+        },
+        {
+         "from": [
+          0,
+          6.3
+         ],
+         "to": [
+          9.167,
+          6.3
+         ]
+        },
+        {
+         "from": [
+          9.167,
+          0
+         ],
+         "to": [
+          9.167,
+          6.3
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": -0.15,
+         "y": 4.224,
+         "text": "P₁",
+         "anchor": "end",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 8.593,
+         "y": -0.55,
+         "text": "Y₁",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": -0.15,
+         "y": 6.18,
+         "text": "P₂",
+         "anchor": "end",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 10,
+         "y": -0.55,
+         "text": "Y_FE",
+         "anchor": "middle",
+         "size": 9,
+         "color": "red"
+        }
+       ],
+       "caption": "Q3 demand-pull: AD shifts right, the price level rises",
+       "padLeft": 34,
+       "vlines": [
+        {
+         "x": 10,
+         "color": "grey"
+        }
+       ]
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 5",
+     "ref": "Tutorial 4 Q4",
+     "question": "Using an AD–AS model, explain how cost-push inflation can occur.",
+     "solution": "工资、原材料、能源、税收等成本上升，使企业在每个物价水平下愿意生产的数量减少，AS 从 AS₁ 左移到 AS₂。AD 不变时，物价水平从 P₁ 升到 P₂，同时实际 GDP 从 Y₁ 降到 Y₂。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        11.5
+       ],
+       "yr": [
+        0,
+        11
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Real GDP",
+       "yLabel": "Price level",
+       "curves": [
+        {
+         "expr": "1.5+4/(10-x)",
+         "dom": [
+          0,
+          9.556
+         ],
+         "color": "red",
+         "label": [
+          8.36,
+          10.1,
+          "AS₁"
+         ]
+        },
+        {
+         "expr": "3.2+4/(8.8-x)",
+         "dom": [
+          0,
+          8.252
+         ],
+         "color": "red",
+         "label": [
+          7.05,
+          10.1,
+          "AS₂"
+         ],
+         "dash": true
+        },
+        {
+         "expr": "9-0.6*x",
+         "dom": [
+          0,
+          11.5
+         ],
+         "color": "navy",
+         "label": [
+          9.68,
+          3.64,
+          "AD"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 8.381,
+         "y": 3.971,
+         "label": ""
+        },
+        {
+         "x": 6.615,
+         "y": 5.031,
+         "label": ""
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          3.971
+         ],
+         "to": [
+          8.381,
+          3.971
+         ]
+        },
+        {
+         "from": [
+          8.381,
+          0
+         ],
+         "to": [
+          8.381,
+          3.971
+         ]
+        },
+        {
+         "from": [
+          0,
+          5.031
+         ],
+         "to": [
+          6.615,
+          5.031
+         ]
+        },
+        {
+         "from": [
+          6.615,
+          0
+         ],
+         "to": [
+          6.615,
+          5.031
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": -0.15,
+         "y": 3.851,
+         "text": "P₁",
+         "anchor": "end",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 8.381,
+         "y": -0.55,
+         "text": "Y₁",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": -0.15,
+         "y": 4.911,
+         "text": "P₂",
+         "anchor": "end",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 6.615,
+         "y": -0.55,
+         "text": "Y₂",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 10,
+         "y": -0.55,
+         "text": "Y_FE",
+         "anchor": "middle",
+         "size": 9,
+         "color": "red"
+        }
+       ],
+       "caption": "Q4/Q5 cost-push: AS shifts left, prices rise and output falls (stagflation)",
+       "padLeft": 34,
+       "vlines": [
+        {
+         "x": 10,
+         "color": "grey"
+        }
+       ]
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 6",
+     "ref": "Tutorial 4 Q5",
+     "question": "Explain why your diagram in Question 4 also represents stagflation.",
+     "solution": "在第 4 题的图中，物价上升（通胀）的同时实际 GDP 从 Y₁ 下降到 Y₂。产出下降意味着企业需要的工人减少，失业上升。通胀和失业（经济停滞）同时出现，就是<strong>滞胀</strong>。",
+     "numeric": false
+    },
+    {
+     "label": "例 7",
+     "ref": "Tutorial 4 Q6",
+     "question": "Step 1: Illustrate an economy with low growth (AD crosses AS in the flat Keynesian range). Step 2: What fiscal and monetary policies should the government adopt to stimulate activity? Step 3: Show the effect on the diagram — which way will AD shift? Step 4: Show the likely effects on employment and inflation. Which is affected most?",
+     "solution": "Step 1：AD₁ 与 AS 交在平坦段，产出 Y₁ 远低于 Y_FE（见图）。\nStep 2：<strong>扩张性财政政策</strong>（增加政府支出、减税、预算赤字）和<strong>扩张性货币政策</strong>（降低利率）。\nStep 3：两种政策都增加 C、I 或 G，AD 从 AD₁ <strong>右移</strong>到 AD₂。\nStep 4：产出从 3.9 升到 7.0（图中单位），就业明显增加；物价只从 2.16 升到 2.82。<strong>就业受影响最大</strong>，通胀压力小，因为经济中有大量闲置资源。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        11.5
+       ],
+       "yr": [
+        0,
+        11
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Real GDP",
+       "yLabel": "Price level",
+       "curves": [
+        {
+         "expr": "1.5+4/(10-x)",
+         "dom": [
+          0,
+          9.556
+         ],
+         "color": "red",
+         "label": [
+          8.36,
+          10.1,
+          "AS"
+         ]
+        },
+        {
+         "expr": "4.5-0.6*x",
+         "dom": [
+          0,
+          7.5
+         ],
+         "color": "navy",
+         "label": [
+          6.6,
+          0.99,
+          "AD₁"
+         ]
+        },
+        {
+         "expr": "7-0.6*x",
+         "dom": [
+          0,
+          11.5
+         ],
+         "color": "navy",
+         "label": [
+          9.68,
+          1.64,
+          "AD₂"
+         ],
+         "dash": true
+        }
+       ],
+       "points": [
+        {
+         "x": 3.906,
+         "y": 2.156,
+         "label": ""
+        },
+        {
+         "x": 6.968,
+         "y": 2.819,
+         "label": ""
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          2.156
+         ],
+         "to": [
+          3.906,
+          2.156
+         ]
+        },
+        {
+         "from": [
+          3.906,
+          0
+         ],
+         "to": [
+          3.906,
+          2.156
+         ]
+        },
+        {
+         "from": [
+          0,
+          2.819
+         ],
+         "to": [
+          6.968,
+          2.819
+         ]
+        },
+        {
+         "from": [
+          6.968,
+          0
+         ],
+         "to": [
+          6.968,
+          2.819
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": -0.15,
+         "y": 2.036,
+         "text": "P₁",
+         "anchor": "end",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 3.906,
+         "y": -0.55,
+         "text": "Y₁",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": -0.15,
+         "y": 2.699,
+         "text": "P₂",
+         "anchor": "end",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 6.968,
+         "y": -0.55,
+         "text": "Y₂",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 10,
+         "y": -0.55,
+         "text": "Y_FE",
+         "anchor": "middle",
+         "size": 9,
+         "color": "red"
+        }
+       ],
+       "caption": "Q6: in the flat (Keynesian) range, stimulus raises output and employment a lot, prices only a little",
+       "padLeft": 34,
+       "vlines": [
+        {
+         "x": 10,
+         "color": "grey"
+        }
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "4.5-0.6*3.906",
+       "equals": "1.5+4/(10-3.906)",
+       "tol": 0.002
+      },
+      {
+       "expr": "7-0.6*6.968",
+       "equals": "1.5+4/(10-6.968)",
+       "tol": 0.002
+      }
+     ],
+     "parts": [
+      "Step 1",
+      "Step 2",
+      "Step 3",
+      "Step 4"
+     ]
+    },
+    {
+     "label": "例 8",
+     "ref": "Tutorial 4 Q7",
+     "question": "Step 1: Illustrate an economy close to full employment (AD crosses AS in the near-vertical Classical range). Step 2: The government eases monetary policy or budgets for a deficit — which way will AD shift? Step 3: Show the likely effects on employment and inflation. Which is affected most? Step 4: Contrast the diagrams for Q6 and Q7. When is government stimulus most effective?",
+     "solution": "Step 1：AD₁ 与 AS 交在接近 Y_FE 的陡峭段（见图）。\nStep 2：降息或预算赤字增加总需求，AD <strong>右移</strong>到 AD₂。\nStep 3：产出只从 8.70 增加到 9.24，就业几乎不变；物价从 4.58 升到 6.76。<strong>通胀受影响最大</strong>，因为资源已接近充分利用。\nStep 4：两图的 AD 右移幅度相同，但第 6 题主要增加产出和就业，第 7 题主要推高物价。所以政府刺激在经济<strong>低于充分就业</strong>（AS 平坦段、有闲置资源）时最有效；接近充分就业时刺激只会带来通胀。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        11.5
+       ],
+       "yr": [
+        0,
+        11
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Real GDP",
+       "yLabel": "Price level",
+       "curves": [
+        {
+         "expr": "1.5+4/(10-x)",
+         "dom": [
+          0,
+          9.556
+         ],
+         "color": "red",
+         "label": [
+          8.36,
+          10.1,
+          "AS"
+         ]
+        },
+        {
+         "expr": "9.8-0.6*x",
+         "dom": [
+          0,
+          11.5
+         ],
+         "color": "navy",
+         "label": [
+          9.68,
+          4.44,
+          "AD₁"
+         ]
+        },
+        {
+         "expr": "12.3-0.6*x",
+         "dom": [
+          0,
+          11.5
+         ],
+         "color": "navy",
+         "label": [
+          9.68,
+          6.94,
+          "AD₂"
+         ],
+         "dash": true
+        }
+       ],
+       "points": [
+        {
+         "x": 8.701,
+         "y": 4.579,
+         "label": ""
+        },
+        {
+         "x": 9.239,
+         "y": 6.757,
+         "label": ""
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          4.579
+         ],
+         "to": [
+          8.701,
+          4.579
+         ]
+        },
+        {
+         "from": [
+          8.701,
+          0
+         ],
+         "to": [
+          8.701,
+          4.579
+         ]
+        },
+        {
+         "from": [
+          0,
+          6.757
+         ],
+         "to": [
+          9.239,
+          6.757
+         ]
+        },
+        {
+         "from": [
+          9.239,
+          0
+         ],
+         "to": [
+          9.239,
+          6.757
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": -0.15,
+         "y": 4.459,
+         "text": "P₁",
+         "anchor": "end",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 8.701,
+         "y": -0.55,
+         "text": "Y₁",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": -0.15,
+         "y": 6.637,
+         "text": "P₂",
+         "anchor": "end",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 10,
+         "y": -0.55,
+         "text": "Y_FE",
+         "anchor": "middle",
+         "size": 9,
+         "color": "red"
+        }
+       ],
+       "caption": "Q7: near full employment, the same stimulus mainly raises prices",
+       "padLeft": 34,
+       "vlines": [
+        {
+         "x": 10,
+         "color": "grey"
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        11.5
+       ],
+       "yr": [
+        0,
+        11
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Real GDP",
+       "yLabel": "Price level",
+       "curves": [
+        {
+         "expr": "1.5+4/(10-x)",
+         "dom": [
+          0,
+          9.556
+         ],
+         "color": "red",
+         "label": [
+          8.36,
+          10.1,
+          "AS"
+         ]
+        },
+        {
+         "expr": "4.5-0.6*x",
+         "dom": [
+          0,
+          7.5
+         ],
+         "color": "navy",
+         "label": [
+          6.6,
+          0.99,
+          "AD₁"
+         ]
+        },
+        {
+         "expr": "7-0.6*x",
+         "dom": [
+          0,
+          11.5
+         ],
+         "color": "navy",
+         "label": [
+          9.68,
+          1.64,
+          "AD₂"
+         ],
+         "dash": true
+        }
+       ],
+       "points": [
+        {
+         "x": 3.906,
+         "y": 2.156,
+         "label": ""
+        },
+        {
+         "x": 6.968,
+         "y": 2.819,
+         "label": ""
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          2.156
+         ],
+         "to": [
+          3.906,
+          2.156
+         ]
+        },
+        {
+         "from": [
+          3.906,
+          0
+         ],
+         "to": [
+          3.906,
+          2.156
+         ]
+        },
+        {
+         "from": [
+          0,
+          2.819
+         ],
+         "to": [
+          6.968,
+          2.819
+         ]
+        },
+        {
+         "from": [
+          6.968,
+          0
+         ],
+         "to": [
+          6.968,
+          2.819
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": -0.15,
+         "y": 2.036,
+         "text": "P₁",
+         "anchor": "end",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 3.906,
+         "y": -0.55,
+         "text": "Y₁",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": -0.15,
+         "y": 2.699,
+         "text": "P₂",
+         "anchor": "end",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 6.968,
+         "y": -0.55,
+         "text": "Y₂",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 10,
+         "y": -0.55,
+         "text": "Y_FE",
+         "anchor": "middle",
+         "size": 9,
+         "color": "red"
+        }
+       ],
+       "caption": "Q6: in the flat (Keynesian) range, stimulus raises output and employment a lot, prices only a little",
+       "padLeft": 34,
+       "vlines": [
+        {
+         "x": 10,
+         "color": "grey"
+        }
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "9.8-0.6*8.701",
+       "equals": "1.5+4/(10-8.701)",
+       "tol": 0.002
+      },
+      {
+       "expr": "12.3-0.6*9.239",
+       "equals": "1.5+4/(10-9.239)",
+       "tol": 0.002
+      }
+     ],
+     "parts": [
+      "Step 1",
+      "Step 2",
+      "Step 3",
+      "Step 4"
+     ]
+    },
+    {
+     "label": "例 9",
+     "ref": "Tutorial 4 Writing",
+     "question": "Possible writing task: Use an AD/AS diagram to illustrate the likely effect of a large increase in government spending on an economy operating near full employment (Classical section). What are the likely consequences for growth, employment and inflation?",
+     "solution": "政府支出 G 是总需求的组成部分，大幅增加 G 会使 AD 从 AD₁ 右移到 AD₂。经济接近充分就业时，均衡点处在 AS 的古典段，曲线几乎竖直。\n<strong>增长</strong>：劳动和资本已接近充分利用，企业无法大幅增产，实际 GDP 只略有增加。\n<strong>就业</strong>：可用的工人很少，就业几乎不变；失业已接近自然失业率，进一步下降的空间很小。\n<strong>通胀</strong>：过剩需求在资源稀缺时只能抬高价格，企业争夺劳动和原材料，工资和成本上升，物价水平大幅上涨，形成需求拉动型通胀；政府支出还可能挤占私人部门可用的资源。\n结论：在充分就业附近扩大政府支出，主要结果是通胀而不是增长和就业；这时更合适的是中性或紧缩的政策。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        11.5
+       ],
+       "yr": [
+        0,
+        11
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Real GDP",
+       "yLabel": "Price level",
+       "curves": [
+        {
+         "expr": "1.5+4/(10-x)",
+         "dom": [
+          0,
+          9.556
+         ],
+         "color": "red",
+         "label": [
+          8.36,
+          10.1,
+          "AS"
+         ]
+        },
+        {
+         "expr": "9.8-0.6*x",
+         "dom": [
+          0,
+          11.5
+         ],
+         "color": "navy",
+         "label": [
+          9.68,
+          4.44,
+          "AD₁"
+         ]
+        },
+        {
+         "expr": "12.3-0.6*x",
+         "dom": [
+          0,
+          11.5
+         ],
+         "color": "navy",
+         "label": [
+          9.68,
+          6.94,
+          "AD₂"
+         ],
+         "dash": true
+        }
+       ],
+       "points": [
+        {
+         "x": 8.701,
+         "y": 4.579,
+         "label": ""
+        },
+        {
+         "x": 9.239,
+         "y": 6.757,
+         "label": ""
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          4.579
+         ],
+         "to": [
+          8.701,
+          4.579
+         ]
+        },
+        {
+         "from": [
+          8.701,
+          0
+         ],
+         "to": [
+          8.701,
+          4.579
+         ]
+        },
+        {
+         "from": [
+          0,
+          6.757
+         ],
+         "to": [
+          9.239,
+          6.757
+         ]
+        },
+        {
+         "from": [
+          9.239,
+          0
+         ],
+         "to": [
+          9.239,
+          6.757
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": -0.15,
+         "y": 4.459,
+         "text": "P₁",
+         "anchor": "end",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 8.701,
+         "y": -0.55,
+         "text": "Y₁",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": -0.15,
+         "y": 6.637,
+         "text": "P₂",
+         "anchor": "end",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 10,
+         "y": -0.55,
+         "text": "Y_FE",
+         "anchor": "middle",
+         "size": 9,
+         "color": "red"
+        }
+       ],
+       "caption": "Q7: near full employment, the same stimulus mainly raises prices",
+       "padLeft": 34,
+       "vlines": [
+        {
+         "x": 10,
+         "color": "grey"
+        }
+       ]
+      }
+     ],
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "Q6 的 AD 画在陡峭段：题目要求交在平坦（凯恩斯）段。",
+    "把滞胀画成 AD 左移：AD 左移时物价下降，不是滞胀。",
+    "说「刺激总是提高就业」：要看处在 AS 的哪一段。"
+   ],
+   "faqs": [
+    {
+     "q": "图里的数字有什么意义？",
+     "a": "AS、AD 是按讲义形状画的示意曲线，数字只用来比较两次移动的大小：同样的 AD 移动，在平坦段产出增加得多，在陡峭段物价上升得多。"
+    }
+   ]
+  },
+  {
+   "title": "Unit 5 讲座：国际贸易与保护",
+   "sources": [
+    {
+     "file": "unit5 PPT international economics trade and protection.pdf",
+     "pages": "p1–37"
+    },
+    {
+     "file": "unit5 TG international economics trade and protection.pdf",
+     "pages": "p2–5"
+    }
+   ],
+   "concept": "<strong>国际贸易</strong>让一国消费超出本国 PPF 的商品：得到本国不能生产或产量不足的商品、以更低价格购买、通过<strong>国际专业化</strong>提高产出和实际 GDP。各国资源（土地、劳动、资本、企业家才能）不同，适合不同生产。\n<strong>绝对优势</strong>：用同样资源生产更多，或用更少资源、更低成本生产同样数量。<strong>比较优势</strong>：以<strong>更低的机会成本</strong>生产某商品。机会成本 = {{frac 放弃的数量|得到的数量}}。即使一国两种商品都有绝对优势，只要各自按比较优势专业化，总产出仍会增加。\n<strong>自由贸易</strong>：政府不设人为障碍。<strong>保护</strong>：用人为障碍保护本国生产者：<strong>关税</strong>（进口税）、<strong>配额</strong>（进口数量上限）、<strong>禁运</strong>（全面禁止）、<strong>补贴</strong>（给本国生产者的现金）。\n<strong>贸易条件</strong> ToT = {{frac 出口价格指数|进口价格指数}} × 100：出口价格上升或进口价格下降，ToT 改善（同样的出口能换更多进口）；反之恶化。",
+   "formulas": [
+    "Opportunity cost = {{frac Loss|Gain}}",
+    "Terms of Trade = {{frac Export price index|Import price index}} × 100"
+   ],
+   "examples": [
+    {
+     "label": "例 10",
+     "ref": "Lecture 5 Trade",
+     "question": "Why do countries trade? (Include Adam Smith's argument.)",
+     "solution": "亚当·斯密的比喻：裁缝不自己做鞋，而向鞋匠买；鞋匠也不自己做衣服。国家也一样，外国能更便宜地提供的商品，就用本国擅长生产的产品去换。贸易让国家：①得到本国不能生产或产量不足的商品；②以更低价格从海外购买；③国际专业化，提高产出和实际 GDP；消费可以超出本国的 PPF。",
+     "numeric": false
+    },
+    {
+     "label": "例 11",
+     "ref": "Lecture 5 Absolute Advantage",
+     "question": "With the same resources Australia can produce 30 computers or 30 wheat; Singapore 20 computers or 10 wheat. Who has the absolute advantage? Find each country's opportunity costs and who has the comparative advantage.",
+     "solution": "<strong>绝对优势</strong>：澳大利亚两种商品都生产得更多（30 > 20，30 > 10），两种都有绝对优势。\n<strong>机会成本</strong>：澳大利亚 1 小麦 = 30 ÷ 30 = 1 电脑，1 电脑 = 1 小麦；新加坡 1 小麦 = 20 ÷ 10 = 2 电脑，1 电脑 = 10 ÷ 20 = 0.5 小麦。\n<strong>比较优势</strong>：生产电脑的机会成本新加坡更低（0.5 < 1），新加坡在电脑上有比较优势；生产小麦的机会成本澳大利亚更低（1 < 2），澳大利亚在小麦上有比较优势。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "",
+        "Computers",
+        "or Wheat",
+        "Opportunity cost of 1 computer",
+        "Opportunity cost of 1 wheat"
+       ],
+       "rows": [
+        [
+         "Australia",
+         "30",
+         "30",
+         "30 ÷ 30 = 1 wheat",
+         "30 ÷ 30 = 1 computer"
+        ],
+        [
+         "Singapore",
+         "20",
+         "10",
+         "10 ÷ 20 = 0.5 wheat",
+         "20 ÷ 10 = 2 computers"
+        ]
+       ],
+       "title": "Same resources in each country"
+      }
+     ],
+     "checks": [
+      {
+       "expr": "30/30",
+       "equals": "1"
+      },
+      {
+       "expr": "20/10",
+       "equals": "2"
+      },
+      {
+       "expr": "10/20",
+       "equals": "0.5"
+      }
+     ]
+    },
+    {
+     "label": "例 12",
+     "ref": "Lecture 5 Gains from Trade",
+     "question": "Compare total output when each country splits its resources equally between the two goods with total output when each specialises according to comparative advantage.",
+     "solution": "<strong>贸易前</strong>（资源各用一半）：澳大利亚 15 电脑 + 15 小麦，新加坡 10 电脑 + 5 小麦，合计 25 电脑 + 20 小麦 = 45 单位。\n<strong>专业化后</strong>：澳大利亚全部生产小麦 30，新加坡全部生产电脑 20，合计 20 电脑 + 30 小麦 = 50 单位。\n总产出从 45 增加到 50，两国通过交换都能消费更多，全球生活水平提高。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "",
+        "Computers",
+        "Wheat",
+        "Total"
+       ],
+       "rows": [
+        [
+         "Before trade: Australia (half each)",
+         "15",
+         "15",
+         ""
+        ],
+        [
+         "Before trade: Singapore (half each)",
+         "10",
+         "5",
+         ""
+        ],
+        [
+         "Before trade: total",
+         "25",
+         "20",
+         "45"
+        ],
+        [
+         "After specialising: Australia (all wheat)",
+         "0",
+         "30",
+         ""
+        ],
+        [
+         "After specialising: Singapore (all computers)",
+         "20",
+         "0",
+         ""
+        ],
+        [
+         "After specialising: total",
+         "20",
+         "30",
+         "50"
+        ]
+       ],
+       "title": "Gains from trade"
+      }
+     ],
+     "checks": [
+      {
+       "expr": "15+15+10+5",
+       "equals": "45"
+      },
+      {
+       "expr": "30+20",
+       "equals": "50"
+      }
+     ]
+    },
+    {
+     "label": "例 13",
+     "ref": "Lecture 5 Protection",
+     "question": "What is protection and what are its main methods?",
+     "solution": "保护是用人为障碍限制国际贸易中商品和服务的自由流动，保护本国生产者免受外国竞争。主要方法：<strong>关税</strong>（对进口征税）、<strong>配额</strong>（限制进口数量）、<strong>禁运</strong>（完全禁止贸易）、<strong>补贴</strong>（给本国生产者现金）。保护有很多理由，但不全是经济理由；没有国家完全实行自由贸易。",
+     "numeric": false
+    },
+    {
+     "label": "例 14",
+     "ref": "Lecture 5 Tariff",
+     "question": "Use a demand and supply diagram to explain the effects of a tariff. Who wins and who loses?",
+     "solution": "开放贸易时国内价格等于世界价格 PW：本国生产 Q1，需求 Q2，进口 Q1Q2。\n征收关税后国内价格升到 PT：需求减少到 Q4，本国产量增加到 Q3（资源转向本国生产者），进口减少到 Q3Q4；本国生产者的收入从 0·PW·D·Q1 增加到 0·PT·A·Q3；政府得到关税收入 ABCD（每单位税 × 进口量 Q3Q4）。\n<strong>赢家</strong>：本国企业（销量和价格上升）、其工人（就业更稳、工资可能上升）、政府（税收）、资源供应商。<strong>输家</strong>：消费者（价格更高、消费更少）、其他行业（投入成本上升，可能推高通胀）、进口商。配额的图相同，但政府没有税收。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        12
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 340,
+       "height": 240,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "Price (P)",
+       "curves": [
+        {
+         "expr": "10+(-0.8)*x",
+         "dom": [
+          0,
+          12
+         ],
+         "color": "navy",
+         "label": [
+          1.3,
+          8.2,
+          "D"
+         ]
+        },
+        {
+         "expr": "1+(0.7)*x",
+         "dom": [
+          0,
+          11
+         ],
+         "color": "red",
+         "label": [
+          10.2,
+          8.4,
+          "S (local)"
+         ]
+        },
+        {
+         "expr": "2.5+0*x",
+         "dom": [
+          0,
+          12
+         ],
+         "color": "grey",
+         "label": [
+          11.2,
+          2.75,
+          "PW"
+         ]
+        },
+        {
+         "expr": "4.2+0*x",
+         "dom": [
+          0,
+          12
+         ],
+         "color": "gold",
+         "dash": true,
+         "label": [
+          11.2,
+          4.45,
+          "PT"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 4.571428571428572,
+         "y": 4.2,
+         "label": "A",
+         "dx": -12,
+         "dy": -6
+        },
+        {
+         "x": 7.249999999999999,
+         "y": 4.2,
+         "label": "B",
+         "dx": 4,
+         "dy": -6
+        },
+        {
+         "x": 7.249999999999999,
+         "y": 2.5,
+         "label": "C",
+         "dx": 4,
+         "dy": 12
+        },
+        {
+         "x": 4.571428571428572,
+         "y": 2.5,
+         "label": "D",
+         "dx": -12,
+         "dy": 12
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          2.142857142857143,
+          0
+         ],
+         "to": [
+          2.142857142857143,
+          2.5
+         ]
+        },
+        {
+         "from": [
+          9.375,
+          0
+         ],
+         "to": [
+          9.375,
+          2.5
+         ]
+        },
+        {
+         "from": [
+          4.571428571428572,
+          0
+         ],
+         "to": [
+          4.571428571428572,
+          4.2
+         ]
+        },
+        {
+         "from": [
+          7.249999999999999,
+          0
+         ],
+         "to": [
+          7.249999999999999,
+          4.2
+         ]
+        }
+       ],
+       "polygons": [
+        {
+         "pts": [
+          [
+           4.571428571428572,
+           2.5
+          ],
+          [
+           7.249999999999999,
+           2.5
+          ],
+          [
+           7.249999999999999,
+           4.2
+          ],
+          [
+           4.571428571428572,
+           4.2
+          ]
+         ],
+         "color": "gold",
+         "label": [
+          5.910714285714286,
+          3.15,
+          "tax"
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": 2.142857142857143,
+         "y": -0.6,
+         "text": "Q1",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 9.375,
+         "y": -0.6,
+         "text": "Q2",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 4.571428571428572,
+         "y": -0.6,
+         "text": "Q3",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 7.249999999999999,
+         "y": -0.6,
+         "text": "Q4",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        }
+       ],
+       "caption": "Tariff: price rises from PW to PT; local output Q1 → Q3; imports fall from Q1Q2 to Q3Q4; tax revenue ABCD"
+      }
+     ],
+     "checks": [
+      {
+       "expr": "1+0.7*2.142857142857143",
+       "equals": "2.5",
+       "tol": 1e-09
+      },
+      {
+       "expr": "10-0.8*9.375",
+       "equals": "2.5",
+       "tol": 1e-09
+      },
+      {
+       "expr": "1+0.7*4.571428571428572",
+       "equals": "4.2",
+       "tol": 1e-09
+      },
+      {
+       "expr": "10-0.8*7.249999999999999",
+       "equals": "4.2",
+       "tol": 1e-09
+      }
+     ]
+    },
+    {
+     "label": "例 15",
+     "ref": "Lecture 5 Subsidy",
+     "question": "Use a diagram to explain the effects of a subsidy and compare tariffs with subsidies.",
+     "solution": "补贴降低本国生产者成本，本国供给从 S 右移到 S1。世界价格 PW 和总需求 Q3 不变，本国产量从 Q1 增加到 Q2，进口从 Q1Q3 减少到 Q2Q3。消费者价格不变，但补贴来自税收，消费者间接负担。\n<strong>对比</strong>：关税给政府带来收入，补贴是政府（纳税人）的支出；关税使消费者付更高价格、推高通胀，补贴下消费者付的价格更低；关税只在国内市场起作用、只能阻挡进口，补贴还能帮助本国企业在海外市场竞争。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        12
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 340,
+       "height": 240,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "Price (P)",
+       "curves": [
+        {
+         "expr": "10+(-0.8)*x",
+         "dom": [
+          0,
+          12
+         ],
+         "color": "navy",
+         "label": [
+          1.3,
+          8.2,
+          "D"
+         ]
+        },
+        {
+         "expr": "1+(0.7)*x",
+         "dom": [
+          0,
+          11
+         ],
+         "color": "red",
+         "label": [
+          10.2,
+          8.4,
+          "S"
+         ]
+        },
+        {
+         "expr": "-0.4+(0.7)*x",
+         "dom": [
+          0.6,
+          11.5
+         ],
+         "color": "red",
+         "dash": true,
+         "label": [
+          11.2,
+          7.0,
+          "S1"
+         ]
+        },
+        {
+         "expr": "2.5+0*x",
+         "dom": [
+          0,
+          12
+         ],
+         "color": "grey",
+         "label": [
+          11.2,
+          2.75,
+          "PW"
+         ]
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          2.142857142857143,
+          0
+         ],
+         "to": [
+          2.142857142857143,
+          2.5
+         ]
+        },
+        {
+         "from": [
+          4.142857142857143,
+          0
+         ],
+         "to": [
+          4.142857142857143,
+          2.5
+         ]
+        },
+        {
+         "from": [
+          9.375,
+          0
+         ],
+         "to": [
+          9.375,
+          2.5
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": 2.142857142857143,
+         "y": -0.6,
+         "text": "Q1",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 4.142857142857143,
+         "y": -0.6,
+         "text": "Q2",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 9.375,
+         "y": -0.6,
+         "text": "Q3",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        }
+       ],
+       "caption": "Subsidy: local supply S → S1; local output Q1 → Q2 at the same world price; imports fall to Q2Q3"
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 16",
+     "ref": "Lecture 5 Arguments",
+     "question": "What arguments are used to support protection?",
+     "solution": "①<strong>幼稚产业</strong>：新行业在成长期需要保护；②<strong>国家安全 / 多元化</strong>：关键产业要保留在国内；③<strong>保护就业</strong>；④<strong>反倾销</strong>：防止外国以低于成本的价格倾销。讲义指出，这些理由大多只得到经济学家有限的支持，因为任何市场干预都会带来低效率。",
+     "numeric": false
+    },
+    {
+     "label": "例 17",
+     "ref": "Lecture 5 Terms of Trade",
+     "question": "What are the terms of trade and when do they improve or worsen?",
+     "solution": "贸易条件是一国为换取一定数量的进口必须放弃的出口数量，用指数表示：ToT = 出口价格指数 ÷ 进口价格指数 × 100。出口价格上升或进口价格下降时 ToT <strong>改善</strong>：同样的出口能买更多进口，国民收入的购买力上升；出口价格下降或进口价格上升时 ToT <strong>恶化</strong>。",
+     "checks": [
+      {
+       "expr": "110/100*100",
+       "equals": "110"
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "用绝对优势决定专业化：应比较机会成本（比较优势）。",
+    "机会成本的分子分母颠倒：放弃的 ÷ 得到的。",
+    "关税收入画成整个价格差乘全部需求：只是税 × 进口量（Q3Q4）。"
+   ],
+   "faqs": [
+    {
+     "q": "两种商品都有绝对优势的国家为什么还要贸易？",
+     "a": "因为机会成本不同。澳大利亚生产 1 台电脑要放弃 1 单位小麦，新加坡只放弃 0.5 单位，让新加坡生产电脑、澳大利亚生产小麦，总产出更多。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "题型",
+   "做法",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "AD–AS 刺激效果",
+    "看交点在平坦段还是陡峭段",
+    "例 7–9"
+   ],
+   [
+    "滞胀",
+    "AS 左移：物价↑ 产出↓",
+    "例 5、6"
+   ],
+   [
+    "比较优势",
+    "算机会成本 = 放弃 ÷ 得到，选低的",
+    "例 11"
+   ],
+   [
+    "专业化收益",
+    "比较前后总产出",
+    "例 12"
+   ],
+   [
+    "关税图",
+    "PW → PT，Q1→Q3，进口 Q3Q4，收入 ABCD",
+    "例 14"
+   ],
+   [
+    "贸易条件",
+    "出口价格指数 ÷ 进口价格指数 × 100",
+    "例 17"
+   ]
+  ]
+ },
+ "practice": "Unit 5 Tutorial 的题目在 Tutorial 前完成，答案见第 6 周。"
+}
