@@ -70,16 +70,17 @@ body {
 .tarrow::after { content:""; position:absolute; inset:-8px -4px; }
 .kp-tools-btn::after { content:""; position:absolute; inset:-7px -4px; }
 @media (max-width:960px) {
-  .ws-check { width:22px; height:22px; }
-  .search-box input { min-height:28px; }
-  #briefSearch, #briefCategory { min-height:34px; }
+  .ws-check, .book-done-label input[type="checkbox"] { width:24px; height:24px; }
+  #searchInput { min-height:28px; }
+  #briefSearch, #briefCategory, [id^="ppWb"] { min-height:34px; }
 }
 
 /* ============ 6. 阅读设置：字号 / 专注 / 静效收进一个「Aa」按钮（site-polish.js 创建） ============
    原来字号条、显示条和 AI 按钮三个浮动控件叠在一起，放哪里都会盖住勾选框和导航。
-   现在只留一个 40px 圆形按钮，和 AI 按钮、回到顶部排成右下角一列，点开才显示选项。 */
+   现在只留一个 40px 圆形按钮，放在 AI 按钮左侧同一行（只占底部一条），
+   回到顶部在 AI 按钮正上方，点开「Aa」才显示选项。 */
 .cb-settings-btn {
-  position:fixed; right:28px; bottom:88px; z-index:71;
+  position:fixed; right:84px; bottom:32px; z-index:71;
   width:40px; height:40px; border-radius:50%;
   display:flex; align-items:center; justify-content:center;
   background:#fff; color:#173860; border:1px solid #c9a55c;
@@ -88,7 +89,7 @@ body {
 }
 .cb-settings-btn[aria-expanded="true"] { background:#173860; color:#fff; }
 .cb-mode-ctrl {
-  position:fixed; right:22px; bottom:136px; z-index:72;
+  position:fixed; right:22px; bottom:84px; z-index:72;
   display:flex; flex-direction:column; align-items:stretch; gap:8px;
   background:#fff; border:1px solid var(--cb-line); border-radius:14px;
   padding:10px 12px; box-shadow:0 10px 28px rgba(18,46,82,.2);
@@ -117,20 +118,20 @@ body {
   gap:6px; padding:0; border:0; background:transparent; box-shadow:none;
 }
 body:not(:has(.week-panel)) .cb-mode-ctrl .cb-row-font { display:none; }
-/* 回到顶部排在设置按钮上方；没有 AI 按钮（或专注模式隐藏了它）时整列下移 */
-.to-top { right:22px; bottom:136px; }
-body:not(:has(#ai-fab[style*="flex"])) .cb-settings-btn, body.cb-focus .cb-settings-btn { bottom:26px; }
-body:not(:has(#ai-fab[style*="flex"])) .cb-mode-ctrl, body.cb-focus .cb-mode-ctrl { bottom:74px; }
-body:not(:has(#ai-fab[style*="flex"])) .to-top, body.cb-focus .to-top { bottom:74px; }
+/* 回到顶部在 AI 按钮正上方；没有 AI 按钮（或专注模式隐藏了它）时「Aa」移到角落 */
+.to-top { right:27px; bottom:88px; }
+body:not(:has(#ai-fab[style*="flex"])) .cb-settings-btn, body.cb-focus .cb-settings-btn { right:22px; bottom:26px; }
+body:not(:has(#ai-fab[style*="flex"])) .cb-mode-ctrl, body.cb-focus .cb-mode-ctrl { bottom:76px; }
+body:not(:has(#ai-fab[style*="flex"])) .to-top, body.cb-focus .to-top { right:21px; bottom:76px; }
 /* AI 面板打开时收起设置，避免盖住面板内容和「提问」按钮 */
 body:has(#ai-panel[style*="display: flex"]) .cb-settings-btn,
 body:has(#ai-panel[style*="display: flex"]) .cb-mode-ctrl { display:none !important; }
 @media (max-width:960px) {
   #ai-fab { right:12px !important; bottom:14px !important; width:44px !important; height:44px !important; font-size:20px !important; }
-  .cb-settings-btn { right:14px; bottom:66px; }
-  .cb-mode-ctrl { right:12px; bottom:114px; }
-  .to-top { right:12px !important; bottom:114px !important; }
-  body:not(:has(#ai-fab[style*="flex"])) .cb-settings-btn, body.cb-focus .cb-settings-btn { bottom:14px; }
+  .cb-settings-btn { right:64px; bottom:16px; }
+  .cb-mode-ctrl { right:12px; bottom:66px; }
+  .to-top { right:12px !important; bottom:66px !important; }
+  body:not(:has(#ai-fab[style*="flex"])) .cb-settings-btn, body.cb-focus .cb-settings-btn { right:14px; bottom:14px; }
   body:not(:has(#ai-fab[style*="flex"])) .cb-mode-ctrl, body.cb-focus .cb-mode-ctrl { bottom:62px; }
   body:not(:has(#ai-fab[style*="flex"])) .to-top, body.cb-focus .to-top { bottom:62px !important; }
   /* 正文底部留出右下角按钮列的高度，滚到底时最后的勾选框和按钮不被盖住 */
