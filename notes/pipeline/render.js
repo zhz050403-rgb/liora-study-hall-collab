@@ -49,7 +49,7 @@ function plotSvg(fig) {
   for (const v of fig.xticks || []) o.push(`<text x="${fmt(X(v))}" y="${fmt(Y(Math.max(y0, Math.min(0, y1))) + 13)}" font-size="10" fill="#4a5d75" text-anchor="middle">${v}</text>`);
   for (const v of fig.yticks || []) o.push(`<text x="${fmt(X(Math.max(x0, Math.min(0, x1))) - 4)}" y="${fmt(Y(v) + 3)}" font-size="10" fill="#4a5d75" text-anchor="end">${v}</text>`);
   for (const l of fig.vlines || []) o.push(`<line x1="${fmt(X(l.x))}" y1="${pad}" x2="${fmt(X(l.x))}" y2="${h - padB}" stroke="${color(l.color || 'grey')}" stroke-dasharray="3 3"/>` + (l.label ? `<text x="${fmt(X(l.x) + 3)}" y="${pad + 10}" font-size="10" fill="${color(l.color || 'grey')}">${escapeHtml(l.label)}</text>` : ''));
-  for (const l of fig.hlines || []) o.push(`<line x1="${padL}" y1="${fmt(Y(l.y))}" x2="${w - pad}" y2="${fmt(Y(l.y))}" stroke="${color(l.color || 'grey')}" stroke-dasharray="4 3"/>` + (l.label ? `<text x="${w - pad - 2}" y="${fmt(Y(l.y) - 4)}" font-size="10" fill="${color(l.color || 'grey')}" text-anchor="end">${escapeHtml(l.label)}</text>` : ''));
+  for (const l of fig.hlines || []) o.push(`<line x1="${padL}" y1="${fmt(Y(l.y))}" x2="${w - pad}" y2="${fmt(Y(l.y))}" stroke="${color(l.color || 'grey')}" stroke-dasharray="4 3"/>` + (l.label ? `<text x="${l.labelLeft ? padL + 2 : w - pad - 2}" y="${fmt(Y(l.y) - 4)}" font-size="10" fill="${color(l.color || 'grey')}" text-anchor="${l.labelLeft ? 'start' : 'end'}">${escapeHtml(l.label)}</text>` : ''));
   const cid = 'npc' + (++clipSeq);
   o.push(`<clipPath id="${cid}"><rect x="${padL}" y="${pad - 4}" width="${w - padL - pad}" height="${h - pad - padB + 8}"/></clipPath><g clip-path="url(#${cid})">`);
   for (const c of fig.curves || []) {
@@ -74,7 +74,7 @@ function plotSvg(fig) {
   }
   /* 折线：原文只给出数据点的曲线（如生产可能性表），按点连线，不编造函数式。 */
   for (const l of fig.lines || []) {
-    o.push(`<polyline points="${pts(l.pts)}" fill="none" stroke="${color(l.color)}" stroke-width="2"${l.dash ? ' stroke-dasharray="4 3"' : ''}/>`);
+    o.push(`<polyline points="${pts(l.pts)}" fill="none" stroke="${color(l.color)}" stroke-width="${l.width || 2}"${l.dash ? ' stroke-dasharray="4 3"' : ''}/>`);
     if (l.label) o.push(`<text x="${fmt(X(l.label[0]))}" y="${fmt(Y(l.label[1]))}" font-size="11" fill="${color(l.color)}" font-weight="700">${escapeHtml(l.label[2])}</text>`);
   }
   o.push('</g>');

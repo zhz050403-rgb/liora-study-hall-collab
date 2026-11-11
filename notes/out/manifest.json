@@ -398,6 +398,66 @@
  },
  {
   "board": "math-notes",
+  "key": "term1/1",
+  "course": "mathematics",
+  "term": "term1",
+  "week": 1,
+  "title": "Basic Algebra, Surds & Equations · 基础代数、根式与方程",
+  "fields": {
+   "graphicHtml": "out/mathematics/term1/w01.graphic.html"
+  },
+  "examples": 24,
+  "checks": 63,
+  "deliverables": 0,
+  "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
+  "key": "term1/2",
+  "course": "mathematics",
+  "term": "term1",
+  "week": 2,
+  "title": "Coordinate Geometry & Functions · 坐标几何与函数",
+  "fields": {
+   "graphicHtml": "out/mathematics/term1/w02.graphic.html"
+  },
+  "examples": 23,
+  "checks": 21,
+  "deliverables": 5,
+  "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
+  "key": "term1/3",
+  "course": "mathematics",
+  "term": "term1",
+  "week": 3,
+  "title": "Parabolas, Hyperbolas & Absolute Value Graphs · 抛物线、双曲线与绝对值图像",
+  "fields": {
+   "graphicHtml": "out/mathematics/term1/w03.graphic.html"
+  },
+  "examples": 16,
+  "checks": 44,
+  "deliverables": 12,
+  "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
+  "key": "term1/4",
+  "course": "mathematics",
+  "term": "term1",
+  "week": 4,
+  "title": "Inverse Functions, Logarithms & Exponentials · 反函数、对数与指数",
+  "fields": {
+   "graphicHtml": "out/mathematics/term1/w04.graphic.html"
+  },
+  "examples": 20,
+  "checks": 49,
+  "deliverables": 8,
+  "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
   "key": "term2/5",
   "course": "mathematics",
   "term": "term2",

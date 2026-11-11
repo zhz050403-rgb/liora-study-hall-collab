@@ -19,7 +19,7 @@
 - **概念 `concept`**：先说「这是什么」，再说「怎么用」。定义要与讲义一致，并写出讲义页码（放在 `sources`）。
 - **公式 `formulas`**：分数写成 `{{frac 分子|分母}}`，上标用 `<sup>`、下标用 `<sub>`。
 - **图 `figures`**：只写规格，不画图。可用的类型：
-  - `plot`：函数图。`curves[].expr` 是以 x 为变量的表达式（支持 `ln log log2 logb(b,x) exp sqrt abs comb perm fact`、`^`、隐式乘法），配 `dom`、`label`、`color`、`openLo/openHi`；关键点放 `points`（`open: true` 为空心点），渐近线放 `vlines/hlines`，解集用 `shade`。只给图、不给函数式的读图题，按图上标出的关键点写一个近似式，并在 `caption` 注明「示意图」。
+  - `plot`：函数图。`curves[].expr` 是以 x 为变量的表达式（支持 `ln log log2 logb(b,x) exp sqrt abs comb perm fact`、`^`、隐式乘法），配 `dom`、`label`、`color`、`openLo/openHi`；关键点放 `points`（`open: true` 为空心点），渐近线放 `vlines/hlines`（曲线挡住右端标签时加 `labelLeft: true`），解集用 `shade`（竖条）或 `lines` 画在 x 轴上的加粗线段（`width`）；只有数据点的折线、竖直线也用 `lines`。只给图、不给函数式的读图题，按图上标出的关键点写一个近似式，并在 `caption` 注明「示意图」。
   - `venn`：两集合韦恩图，`counts` 填 `aOnly/both/bOnly/neither`。
   - `grid`：二维网格（如两颗骰子），`cell` 与 `highlight` 是含 `r`、`c` 的表达式。
   - `table`：普通表格。

@@ -1,0 +1,2156 @@
+{
+ "course": "mathematics",
+ "term": "term1",
+ "week": 3,
+ "title": "Parabolas, Hyperbolas & Absolute Value Graphs · 抛物线、双曲线与绝对值图像",
+ "files": [
+  "L07_Graphs_of_Parabolas_and_Hyperbolas.pdf",
+  "L08_More_Parabolas_Max_Min_Quadratic_Inequalities.pdf",
+  "L09_Absolute_Value_Graphs.pdf"
+ ],
+ "inventory": [
+  {
+   "ref": "L7 Ex 1",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "L7 Ex 2",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "L7 Ex 3",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "L7 Ex 4",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "L7 Ex 5",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "L7 Ex 6",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "L8 Ex 1",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "L8 Ex 2",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "L8 Ex 3",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "L9 Ex 1",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "L9 Ex 2",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "L9 Ex 3",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "L8 Ex 4",
+  "L8 Ex 5",
+  "L8 Ex 6",
+  "L8 Ex 7"
+ ],
+ "intro": [
+  "第 3 周：顶点式抛物线 y = a(x − h)² + k 和双曲线 y = a/(x − h) + k 的画法与求方程（L7）；一般式 y = ax² + bx + c 的顶点、最大最小值和二次不等式（L8）；绝对值图像 y = |x − h| + k、y = |f(x)| 的顶点和平行线组（L9）。讲义每道例题逐题讲解并配图；图由程序按函数画出，所有截距、顶点有核对式。"
+ ],
+ "sections": [
+  {
+   "title": "顶点式抛物线（L7）",
+   "sources": [
+    {
+     "file": "L07_Graphs_of_Parabolas_and_Hyperbolas.pdf",
+     "pages": "p1–2"
+    }
+   ],
+   "concept": "y = x² 是最基本的<strong>抛物线</strong>：偶函数（关于 y 轴对称），定义域全体实数，值域 y ≥ 0，顶点 (0, 0)。\n用上周的变换得到<strong>顶点式</strong> y = a(x − h)² + k：先右移 h、再按 a 拉伸或翻折、最后上移 k。顶点 (h, k)；a > 0 开口向上（顶点是最低点，值域 y ≥ k），a < 0 开口向下（顶点是最高点，值域 y ≤ k）。\n画图要标出：顶点、y 截距（令 x = 0）、x 截距（令 y = 0，可能没有）。\n<strong>求方程</strong>：已知顶点 (h, k) 就先写 y = a(x − h)² + k，再代入图上另一个点解出 a。",
+   "formulas": [
+    "y = a(x − h)² + k　顶点 (h, k)　a > 0 向上，a < 0 向下"
+   ],
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "L7 Ex 1",
+     "question": "Using the graph of y = x² and transformation methods sketch each parabola, showing the main features: (a) y = x² + 1 (b) y = 3(x + 1)² (c) y = ½(x − 2)² (d) y = (x + 2)² − 1 (e) y = 9 − x² (f) y = 4 − (x − 2)²",
+     "solution": "每题先读出顶点和开口方向，再求截距。\n(a) y = x² 上移 1：顶点 (0, 1)，开口向上，没有 x 截距，y 截距 1。\n(b) 左移 1、纵向拉伸 3 倍：顶点 (−1, 0)（与 x 轴相切），y 截距 3(0 + 1)² = 3。\n(c) 右移 2、压缩一半：顶点 (2, 0)，y 截距 ½ × 4 = 2。\n(d) 左移 2、下移 1：顶点 (−2, −1)；令 y = 0：(x + 2)² = 1，x + 2 = ±1，x = −1 或 −3；y 截距 4 − 1 = 3。\n(e) y = −x² + 9：开口向下，顶点 (0, 9) 是最高点；令 y = 0：x² = 9，x = ±3。\n(f) 开口向下，顶点 (2, 4)；令 y = 0：(x − 2)² = 4，x = 0 或 4；y 截距 4 − 4 = 0（过原点）。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -3,
+        3
+       ],
+       "yr": [
+        -1,
+        6
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "x^2+1",
+         "color": "navy",
+         "dom": [
+          -2.2,
+          2.2
+         ]
+        }
+       ],
+       "caption": "(a) y = x² + 1",
+       "points": [
+        {
+         "x": 0,
+         "y": 1,
+         "label": "(0, 1)",
+         "dx": 6
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -3,
+        2
+       ],
+       "yr": [
+        -1,
+        5
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "3*(x+1)^2",
+         "color": "navy",
+         "dom": [
+          -2.4,
+          0.4
+         ]
+        }
+       ],
+       "caption": "(b) y = 3(x + 1)²",
+       "points": [
+        {
+         "x": -1,
+         "y": 0,
+         "label": "(−1, 0)",
+         "dy": 14
+        },
+        {
+         "x": 0,
+         "y": 3,
+         "label": "3",
+         "dx": 6
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -1,
+        5
+       ],
+       "yr": [
+        -1,
+        4.5
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "0.5*(x-2)^2",
+         "color": "navy",
+         "dom": [
+          -0.8,
+          4.8
+         ]
+        }
+       ],
+       "caption": "(c) y = ½(x − 2)²",
+       "points": [
+        {
+         "x": 2,
+         "y": 0,
+         "label": "(2, 0)",
+         "dy": 14
+        },
+        {
+         "x": 0,
+         "y": 2,
+         "label": "2",
+         "dx": 6
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -5,
+        2
+       ],
+       "yr": [
+        -2,
+        5
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "(x+2)^2-1",
+         "color": "navy",
+         "dom": [
+          -4.4,
+          0.4
+         ]
+        }
+       ],
+       "caption": "(d) y = (x + 2)² − 1",
+       "points": [
+        {
+         "x": -2,
+         "y": -1,
+         "label": "(−2, −1)",
+         "dy": 14
+        },
+        {
+         "x": -3,
+         "y": 0,
+         "label": "−3",
+         "dy": -8
+        },
+        {
+         "x": -1,
+         "y": 0,
+         "label": "−1",
+         "dy": -8
+        },
+        {
+         "x": 0,
+         "y": 3,
+         "label": "3",
+         "dx": 6
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -4,
+        4
+       ],
+       "yr": [
+        -3,
+        10.5
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "9-x^2",
+         "color": "navy",
+         "dom": [
+          -3.6,
+          3.6
+         ]
+        }
+       ],
+       "caption": "(e) y = 9 − x²",
+       "points": [
+        {
+         "x": 0,
+         "y": 9,
+         "label": "(0, 9)",
+         "dx": 6
+        },
+        {
+         "x": -3,
+         "y": 0,
+         "label": "−3",
+         "dy": 14
+        },
+        {
+         "x": 3,
+         "y": 0,
+         "label": "3",
+         "dy": 14
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -1,
+        5
+       ],
+       "yr": [
+        -3,
+        5
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "4-(x-2)^2",
+         "color": "navy",
+         "dom": [
+          -0.6,
+          4.6
+         ]
+        }
+       ],
+       "caption": "(f) y = 4 − (x − 2)²",
+       "points": [
+        {
+         "x": 2,
+         "y": 4,
+         "label": "(2, 4)",
+         "dx": 6
+        },
+        {
+         "x": 0,
+         "y": 0,
+         "label": "0",
+         "dy": 14
+        },
+        {
+         "x": 4,
+         "y": 0,
+         "label": "4",
+         "dy": 14
+        }
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "3*(0+1)^2",
+       "equals": "3"
+      },
+      {
+       "expr": "0.5*(0-2)^2",
+       "equals": "2"
+      },
+      {
+       "expr": "(-1+2)^2-1",
+       "equals": "0"
+      },
+      {
+       "expr": "(-3+2)^2-1",
+       "equals": "0"
+      },
+      {
+       "expr": "(0+2)^2-1",
+       "equals": "3"
+      },
+      {
+       "expr": "9-3^2",
+       "equals": "0"
+      },
+      {
+       "expr": "4-(0-2)^2",
+       "equals": "0"
+      },
+      {
+       "expr": "4-(4-2)^2",
+       "equals": "0"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+     ],
+     "sourceNote": "讲义 L07 p1「The General Parabola」处写的 Range: y ≥ 0 是从 y = x² 那一栏照抄的，对 y = a(x − h)² + k 应为 y ≥ k（a > 0）或 y ≤ k（a < 0）。"
+    },
+    {
+     "label": "例 2",
+     "ref": "L7 Ex 2",
+     "question": "Find the equation of each parabola: (a) vertex (2, 6), passing through (0, 4); (b) vertex (1, −2), x-intercepts 0 and 2.",
+     "solution": "顶点已知，先写顶点式，再代一个点求 a。\n(a) y = a(x − 2)² + 6，代 (0, 4)：4 = 4a + 6，a = −½。y = −½(x − 2)² + 6。\n(b) y = a(x − 1)² − 2，代 (0, 0)：0 = a − 2，a = 2。y = 2(x − 1)² − 2（展开得 y = 2x² − 4x），验证 x = 2 时 y = 0。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -2,
+        6
+       ],
+       "yr": [
+        -1,
+        7.5
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "-0.5*(x-2)^2+6",
+         "color": "navy",
+         "dom": [
+          -1.6,
+          5.6
+         ]
+        }
+       ],
+       "caption": "(a) y = −½(x − 2)² + 6",
+       "points": [
+        {
+         "x": 2,
+         "y": 6,
+         "label": "(2, 6)",
+         "dx": 6
+        },
+        {
+         "x": 0,
+         "y": 4,
+         "label": "(0, 4)",
+         "dx": 6
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -1,
+        3
+       ],
+       "yr": [
+        -3,
+        4
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "2*(x-1)^2-2",
+         "color": "navy",
+         "dom": [
+          -0.6,
+          2.6
+         ]
+        }
+       ],
+       "caption": "(b) y = 2(x − 1)² − 2",
+       "points": [
+        {
+         "x": 1,
+         "y": -2,
+         "label": "(1, −2)",
+         "dy": 14
+        },
+        {
+         "x": 0,
+         "y": 0,
+         "label": "0",
+         "dy": -8
+        },
+        {
+         "x": 2,
+         "y": 0,
+         "label": "2",
+         "dy": -8
+        }
+       ]
+      }
+     ],
+     "answer": "(a) y = −½(x − 2)² + 6 (b) y = 2(x − 1)² − 2",
+     "checks": [
+      {
+       "expr": "-0.5*(0-2)^2+6",
+       "equals": "4"
+      },
+      {
+       "expr": "2*(0-1)^2-2",
+       "equals": "0"
+      },
+      {
+       "expr": "2*(2-1)^2-2",
+       "equals": "0"
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    }
+   ],
+   "mistakes": [
+    "y = 3(x + 1)² 的顶点写成 (1, 0)：括号里是 + 就向左。",
+    "y = 9 − x² 当成开口向上。",
+    "求方程时忘了 a，直接写 y = (x − 2)² + 6：要用另一点解出 a。"
+   ],
+   "faqs": [
+    {
+     "q": "讲义说一般抛物线的值域是 y ≥ 0，对吗？",
+     "a": "不对。y = a(x − h)² + k 在 a > 0 时值域是 y ≥ k，a < 0 时是 y ≤ k；只有 k = 0、a > 0 时才是 y ≥ 0。见例 1 的注。"
+    }
+   ]
+  },
+  {
+   "title": "双曲线与渐近线（L7）",
+   "sources": [
+    {
+     "file": "L07_Graphs_of_Parabolas_and_Hyperbolas.pdf",
+     "pages": "p3–5"
+    }
+   ],
+   "concept": "基本<strong>双曲线</strong> y = 1/x：两支，x ≠ 0、y ≠ 0；x 轴、y 轴是<strong>渐近线</strong>（曲线无限接近但不相交）。奇函数。\n一般形式 y = {{frac a|x − h}} + k：<strong>竖直渐近线 x = h</strong>（分母为 0），<strong>水平渐近线 y = k</strong>；定义域 x ≠ h，值域 y ≠ k。a > 0 两支在渐近线交点的右上、左下（讲义说「第 1、3 象限」）；a < 0 在左上、右下（第 2、4 象限）。\n画图步骤：①画两条渐近线（虚线）；②求 y 截距（x = 0）和 x 截距（y = 0）；③按 a 的符号画两支。\n<strong>求方程</strong>：从图读出两条渐近线，写 y = a/(x − h) + k，再代入一点求 a。",
+   "formulas": [
+    "y = {{frac a|x − h}} + k　渐近线 x = h、y = k"
+   ],
+   "examples": [
+    {
+     "label": "例 3",
+     "ref": "L7 Ex 3",
+     "question": "Sketch, showing asymptotes and intercepts: (a) y = {{frac 2|x − 1}} (b) y = 1 − {{frac 1|x}} (c) y = {{frac 1|x + 1}} + 2",
+     "solution": "(a) 分母 x − 1 = 0：竖直渐近线 x = 1；没有加常数，水平渐近线 y = 0。y 截距 2/(0 − 1) = −2；分子不为 0，没有 x 截距。\n(b) 改写为 y = −{{frac 1|x}} + 1：a = −1，两支在左上、右下。渐近线 x = 0、y = 1。x 截距：1/x = 1，x = 1；x = 0 无定义，没有 y 截距。\n(c) 渐近线 x = −1、y = 2。y 截距 1 + 2 = 3；x 截距：1/(x + 1) = −2，x + 1 = −½，x = −{{frac 3|2}}。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -4,
+        5
+       ],
+       "yr": [
+        -5,
+        5
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "2/(x-1)",
+         "color": "navy",
+         "dom": [
+          -4,
+          0.98
+         ]
+        },
+        {
+         "expr": "2/(x-1)",
+         "color": "navy",
+         "dom": [
+          1.02,
+          5
+         ]
+        }
+       ],
+       "caption": "(a) y = 2/(x − 1)",
+       "points": [
+        {
+         "x": 0,
+         "y": -2,
+         "label": "(0, −2)",
+         "dx": 6
+        }
+       ],
+       "vlines": [
+        {
+         "x": 1,
+         "label": "x = 1"
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -4,
+        4
+       ],
+       "yr": [
+        -4,
+        5
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "1-1/x",
+         "color": "navy",
+         "dom": [
+          -4,
+          -0.02
+         ]
+        },
+        {
+         "expr": "1-1/x",
+         "color": "navy",
+         "dom": [
+          0.02,
+          4
+         ]
+        }
+       ],
+       "caption": "(b) y = 1 − 1/x",
+       "points": [
+        {
+         "x": 1,
+         "y": 0,
+         "label": "(1, 0)",
+         "dy": 14
+        }
+       ],
+       "hlines": [
+        {
+         "y": 1,
+         "label": "y = 1"
+        }
+       ],
+       "vlines": [
+        {
+         "x": 0,
+         "label": "x = 0"
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -5,
+        3
+       ],
+       "yr": [
+        -2,
+        6
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "1/(x+1)+2",
+         "color": "navy",
+         "dom": [
+          -5,
+          -1.02
+         ]
+        },
+        {
+         "expr": "1/(x+1)+2",
+         "color": "navy",
+         "dom": [
+          -0.98,
+          3
+         ]
+        }
+       ],
+       "caption": "(c) y = 1/(x + 1) + 2",
+       "points": [
+        {
+         "x": 0,
+         "y": 3,
+         "label": "(0, 3)",
+         "dx": 6
+        },
+        {
+         "x": -1.5,
+         "y": 0,
+         "label": "(−3/2, 0)",
+         "dx": -62,
+         "dy": -6
+        }
+       ],
+       "hlines": [
+        {
+         "y": 2,
+         "label": "y = 2",
+         "labelLeft": true
+        }
+       ],
+       "vlines": [
+        {
+         "x": -1,
+         "label": "x = −1"
+        }
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "2/(0-1)",
+       "equals": "-2"
+      },
+      {
+       "expr": "1-1/1",
+       "equals": "0"
+      },
+      {
+       "expr": "1/(0+1)+2",
+       "equals": "3"
+      },
+      {
+       "expr": "1/(-1.5+1)+2",
+       "equals": "0"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    {
+     "label": "例 4",
+     "ref": "L7 Ex 4",
+     "question": "Write down the equations of the asymptotes for the hyperbola y + 2 = {{frac 1|1 − x}} and hence sketch the graph.",
+     "solution": "先化成标准形式：y = {{frac 1|1 − x}} − 2 = −{{frac 1|x − 1}} − 2，a = −1。\n渐近线 x = 1、y = −2；两支在左上、右下。\ny 截距：1/1 − 2 = −1；x 截距：1/(1 − x) = 2，1 − x = ½，x = ½。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -3,
+        5
+       ],
+       "yr": [
+        -6,
+        3
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "1/(1-x)-2",
+         "color": "navy",
+         "dom": [
+          -3,
+          0.98
+         ]
+        },
+        {
+         "expr": "1/(1-x)-2",
+         "color": "navy",
+         "dom": [
+          1.02,
+          5
+         ]
+        }
+       ],
+       "caption": "y + 2 = 1/(1 − x)",
+       "points": [
+        {
+         "x": 0,
+         "y": -1,
+         "label": "(0, −1)",
+         "dx": -50
+        },
+        {
+         "x": 0.5,
+         "y": 0,
+         "label": "(½, 0)",
+         "dx": 8,
+         "dy": 12
+        }
+       ],
+       "hlines": [
+        {
+         "y": -2,
+         "label": "y = −2"
+        }
+       ],
+       "vlines": [
+        {
+         "x": 1,
+         "label": "x = 1"
+        }
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "1/(1-0)-2",
+       "equals": "-1"
+      },
+      {
+       "expr": "1/(1-0.5)-2",
+       "equals": "0"
+      }
+     ]
+    },
+    {
+     "label": "例 5",
+     "ref": "L7 Ex 5",
+     "question": "The graph shown is a transformation of f(x) = {{frac 1|x}} (asymptotes x = 1 and y = −1, passing through the origin). Find its equation.",
+     "solution": "写 y = {{frac a|x − 1}} − 1，代 (0, 0)：0 = −a − 1，a = −1。\ny = −{{frac 1|x − 1}} − 1，也可以写成 y = {{frac 1|1 − x}} − 1。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -3,
+        5
+       ],
+       "yr": [
+        -5,
+        3
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "1/(1-x)-1",
+         "color": "navy",
+         "dom": [
+          -3,
+          0.98
+         ]
+        },
+        {
+         "expr": "1/(1-x)-1",
+         "color": "navy",
+         "dom": [
+          1.02,
+          5
+         ]
+        }
+       ],
+       "caption": "y = 1/(1 − x) − 1",
+       "points": [
+        {
+         "x": 0,
+         "y": 0,
+         "label": "(0, 0)",
+         "dx": -40,
+         "dy": -6
+        }
+       ],
+       "hlines": [
+        {
+         "y": -1,
+         "label": "y = −1"
+        }
+       ],
+       "vlines": [
+        {
+         "x": 1,
+         "label": "x = 1"
+        }
+       ]
+      }
+     ],
+     "answer": "y = 1/(1 − x) − 1",
+     "checks": [
+      {
+       "expr": "1/(1-0)-1",
+       "equals": "0"
+      }
+     ]
+    },
+    {
+     "label": "例 6",
+     "ref": "L7 Ex 6",
+     "question": "The graph shown has an equation of the form y = {{frac a|x − h}} + k (asymptotes x = −2 and y = 3, passing through (0, 4)). Find its equation.",
+     "solution": "写 y = {{frac a|x + 2}} + 3，代 (0, 4)：4 = a/2 + 3，a = 2。y = {{frac 2|x + 2}} + 3。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -6,
+        3
+       ],
+       "yr": [
+        -1,
+        8
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "2/(x+2)+3",
+         "color": "navy",
+         "dom": [
+          -6,
+          -2.02
+         ]
+        },
+        {
+         "expr": "2/(x+2)+3",
+         "color": "navy",
+         "dom": [
+          -1.98,
+          3
+         ]
+        }
+       ],
+       "caption": "y = 2/(x + 2) + 3",
+       "points": [
+        {
+         "x": 0,
+         "y": 4,
+         "label": "(0, 4)",
+         "dx": 6
+        }
+       ],
+       "hlines": [
+        {
+         "y": 3,
+         "label": "y = 3",
+         "labelLeft": true
+        }
+       ],
+       "vlines": [
+        {
+         "x": -2,
+         "label": "x = −2"
+        }
+       ]
+      }
+     ],
+     "answer": "y = 2/(x + 2) + 3",
+     "checks": [
+      {
+       "expr": "2/(0+2)+3",
+       "equals": "4"
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "竖直渐近线符号读反：x + 1 = 0 得 x = −1。",
+    "把 y + 2 = … 的 +2 当成水平渐近线 y = 2：移项后是 y = … − 2。",
+    "1/(1 − x) 与 1/(x − 1) 当成同一个：两者相差一个负号，两支位置相反。"
+   ],
+   "faqs": [
+    {
+     "q": "双曲线会穿过渐近线吗？",
+     "a": "y = a/(x − h) + k 这种形式不会：x = h 处没有定义，而 a/(x − h) 永远不等于 0，所以 y 永远不等于 k。"
+    }
+   ]
+  },
+  {
+   "title": "一般式抛物线：顶点与最大最小值（L8）",
+   "sources": [
+    {
+     "file": "L08_More_Parabolas_Max_Min_Quadratic_Inequalities.pdf",
+     "pages": "p1–2"
+    }
+   ],
+   "concept": "一般式 y = ax² + bx + c：a > 0 开口向上，顶点处 y 取<strong>最小值</strong>；a < 0 开口向下，顶点处 y 取<strong>最大值</strong>。\n求顶点的三种方法：①x = −{{frac b|2a}}；②已知 x 截距 α、β 时，x = ½(α + β)（对称轴在两根正中间）；③配方。求出 x 后代回原式得到顶点的 y。\n与 x 轴的交点个数：两个、一个（相切）或没有，就是 ax² + bx + c = 0 的实数解个数（判别式 b² − 4ac 大于、等于或小于 0）。",
+   "formulas": [
+    "顶点 x = −{{frac b|2a}} = ½(α + β)",
+    "Δ = b² − 4ac：> 0 两个交点，= 0 一个，< 0 没有"
+   ],
+   "examples": [
+    {
+     "label": "例 7",
+     "ref": "L8 Ex 1",
+     "question": "Sketch the parabola y = x² − 2x − 3 showing the intercepts and the vertex. State the minimum value of the function.",
+     "solution": "因式分解：y = (x − 3)(x + 1)，x 截距 −1、3；y 截距 −3。\n顶点 x = ½(−1 + 3) = 1（或 −b/2a = 2/2 = 1），y = 1 − 2 − 3 = −4，顶点 (1, −4)。\na = 1 > 0，最小值 −4。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -2.5,
+        4.5
+       ],
+       "yr": [
+        -5,
+        5
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "x^2-2*x-3",
+         "color": "navy",
+         "dom": [
+          -2,
+          4
+         ]
+        }
+       ],
+       "caption": "y = x² − 2x − 3",
+       "points": [
+        {
+         "x": -1,
+         "y": 0,
+         "label": "−1",
+         "dy": -8
+        },
+        {
+         "x": 3,
+         "y": 0,
+         "label": "3",
+         "dy": -8
+        },
+        {
+         "x": 0,
+         "y": -3,
+         "label": "(0, −3)",
+         "dx": -50
+        },
+        {
+         "x": 1,
+         "y": -4,
+         "label": "(1, −4)",
+         "dx": -16,
+         "dy": 16
+        }
+       ]
+      }
+     ],
+     "answer": "最小值 −4（x = 1 时）",
+     "checks": [
+      {
+       "expr": "(-1)^2-2*(-1)-3",
+       "equals": "0"
+      },
+      {
+       "expr": "3^2-2*3-3",
+       "equals": "0"
+      },
+      {
+       "expr": "1-2-3",
+       "equals": "-4"
+      }
+     ]
+    },
+    {
+     "label": "例 8",
+     "ref": "L8 Ex 2",
+     "question": "Sketch the parabola y = 9x − x². Find the maximum value of the function. State the equation of the axis of symmetry and show it on the sketch.",
+     "solution": "y = x(9 − x)，x 截距 0、9；a = −1 < 0，开口向下。\n对称轴 x = ½(0 + 9) = 4½；最大值 y = 9 × 4.5 − 4.5² = 40.5 − 20.25 = 20¼。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -1.5,
+        10.5
+       ],
+       "yr": [
+        -4,
+        26
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "9*x-x^2",
+         "color": "navy",
+         "dom": [
+          -0.8,
+          9.8
+         ]
+        }
+       ],
+       "caption": "y = 9x − x²",
+       "points": [
+        {
+         "x": 0,
+         "y": 0,
+         "label": "0",
+         "dy": 14
+        },
+        {
+         "x": 9,
+         "y": 0,
+         "label": "9",
+         "dy": 14
+        },
+        {
+         "x": 4.5,
+         "y": 20.25,
+         "label": "(4½, 20¼)",
+         "dx": 8,
+         "dy": -4
+        }
+       ],
+       "vlines": [
+        {
+         "x": 4.5,
+         "label": "x = 4½"
+        }
+       ]
+      }
+     ],
+     "answer": "最大值 81/4 = 20¼；对称轴 x = 4½",
+     "checks": [
+      {
+       "expr": "9*4.5-4.5^2",
+       "equals": "81/4"
+      },
+      {
+       "expr": "-9/(2*(-1))",
+       "equals": "4.5"
+      }
+     ]
+    },
+    {
+     "label": "例 9",
+     "ref": "L8 Ex 3",
+     "question": "Sketch the parabola y = x² − 3x + 7 showing the main features.",
+     "solution": "判别式 (−3)² − 4 × 1 × 7 = 9 − 28 = −19 < 0：没有 x 截距，整条曲线在 x 轴上方。\n顶点 x = 3/2，y = 9/4 − 9/2 + 7 = 19/4，顶点 (1½, 4¾)；y 截距 7。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -1.5,
+        4.5
+       ],
+       "yr": [
+        -1,
+        12
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "x^2-3*x+7",
+         "color": "navy",
+         "dom": [
+          -1.2,
+          4.2
+         ]
+        }
+       ],
+       "caption": "y = x² − 3x + 7",
+       "points": [
+        {
+         "x": 0,
+         "y": 7,
+         "label": "(0, 7)",
+         "dx": 6
+        },
+        {
+         "x": 1.5,
+         "y": 4.75,
+         "label": "(1½, 4¾)",
+         "dy": 16
+        }
+       ]
+      }
+     ],
+     "answer": "顶点 (3/2, 19/4)，y 截距 7，无 x 截距",
+     "checks": [
+      {
+       "expr": "9-28",
+       "equals": "-19"
+      },
+      {
+       "expr": "1.5^2-3*1.5+7",
+       "equals": "19/4"
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "−b/2a 的负号漏掉：y = 9x − x² 中 a = −1、b = 9，x = −9/(−2) = 4.5。",
+    "求了顶点 x 不代回求 y。",
+    "判别式为负时硬去「因式分解」。"
+   ],
+   "faqs": [
+    {
+     "q": "「最小值」要写 x 还是 y？",
+     "a": "最小值指 y 的值（如 −4）；「在 x = 1 处取到」是另外的信息，两者都写最稳。"
+    }
+   ]
+  },
+  {
+   "title": "二次不等式（L8）",
+   "sources": [
+    {
+     "file": "L08_More_Parabolas_Max_Min_Quadratic_Inequalities.pdf",
+     "pages": "p3–4"
+    }
+   ],
+   "concept": "解二次不等式：①把所有项移到一边，变成 ax² + bx + c > 0（或 <、≥、≤）；②求出 = 0 时的根；③<strong>画出抛物线</strong>，看曲线在 x 轴上方（> 0）还是下方（< 0）的部分，阴影标出对应的 x。\n开口向上时：< 0 是两根之间，> 0 是两根之外。≤、≥ 包括端点（实心），<、> 不包括（空心）。\n没有实根时，整条抛物线在 x 轴一侧：要么全体实数都满足，要么无解。",
+   "examples": [
+    {
+     "label": "例 10",
+     "ref": "L8 Ex 4",
+     "question": "Solve the quadratic inequality x² − 3x − 4 < 0.",
+     "solution": "(x − 4)(x + 1) < 0，根 −1、4。开口向上，曲线在两根之间位于 x 轴下方：−1 < x < 4。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -2.5,
+        5.5
+       ],
+       "yr": [
+        -7,
+        8
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "x^2-3*x-4",
+         "color": "navy"
+        }
+       ],
+       "caption": "x² − 3x − 4 < 0: below the x-axis",
+       "points": [
+        {
+         "x": -1,
+         "y": 0,
+         "label": "−1",
+         "open": true,
+         "dy": -8
+        },
+        {
+         "x": 4,
+         "y": 0,
+         "label": "4",
+         "open": true,
+         "dy": -8
+        }
+       ],
+       "lines": [
+        {
+         "pts": [
+          [
+           -1,
+           0
+          ],
+          [
+           4,
+           0
+          ]
+         ],
+         "color": "green",
+         "width": 5
+        }
+       ]
+      }
+     ],
+     "answer": "−1 < x < 4",
+     "checks": [
+      {
+       "expr": "0^2-3*0-4",
+       "equals": "-4"
+      },
+      {
+       "expr": "4^2-3*4-4",
+       "equals": "0"
+      }
+     ]
+    },
+    {
+     "label": "例 11",
+     "ref": "L8 Ex 5",
+     "question": "Solve the inequality (x + 2)(x + 3) ≤ (2x − 1)(x + 3).",
+     "solution": "不能两边同除以 (x + 3)：它可能是负数或 0。把所有项移到左边并提取公因式：\n(x + 3)[(x + 2) − (2x − 1)] ≤ 0\n(x + 3)(3 − x) ≤ 0，两边乘 −1 并变号：(x + 3)(x − 3) ≥ 0。\n开口向上，两根之外（含端点）：x ≤ −3 或 x ≥ 3。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -5,
+        5
+       ],
+       "yr": [
+        -10,
+        12
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "(x+3)*(x-3)",
+         "color": "navy"
+        }
+       ],
+       "caption": "(x + 3)(x − 3) ≥ 0: on or above the x-axis",
+       "points": [
+        {
+         "x": -3,
+         "y": 0,
+         "label": "−3",
+         "dy": -8
+        },
+        {
+         "x": 3,
+         "y": 0,
+         "label": "3",
+         "dy": -8
+        }
+       ],
+       "lines": [
+        {
+         "pts": [
+          [
+           -5,
+           0
+          ],
+          [
+           -3,
+           0
+          ]
+         ],
+         "color": "green",
+         "width": 5
+        },
+        {
+         "pts": [
+          [
+           3,
+           0
+          ],
+          [
+           5,
+           0
+          ]
+         ],
+         "color": "green",
+         "width": 5
+        }
+       ]
+      }
+     ],
+     "answer": "x ≤ −3 或 x ≥ 3",
+     "checks": [
+      {
+       "expr": "(4+2)*(4+3)-(2*4-1)*(4+3)",
+       "equals": "-7"
+      },
+      {
+       "expr": "(0+2)*(0+3)-(2*0-1)*(0+3)",
+       "equals": "9"
+      }
+     ]
+    },
+    {
+     "label": "例 12",
+     "ref": "L8 Ex 6",
+     "question": "Solve the inequality x² − 4x + 5 ≤ 0.",
+     "solution": "判别式 16 − 20 = −4 < 0，没有实根。配方 y = (x − 2)² + 1，最小值 1 > 0，曲线始终在 x 轴上方，所以 ≤ 0 <strong>无解</strong>。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -1,
+        5
+       ],
+       "yr": [
+        -1,
+        8
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "x^2-4*x+5",
+         "color": "navy",
+         "dom": [
+          -0.6,
+          4.6
+         ]
+        }
+       ],
+       "caption": "y = x² − 4x + 5 never reaches y ≤ 0",
+       "points": [
+        {
+         "x": 2,
+         "y": 1,
+         "label": "(2, 1)",
+         "dy": 16
+        }
+       ]
+      }
+     ],
+     "answer": "无实数解",
+     "checks": [
+      {
+       "expr": "2^2-4*2+5",
+       "equals": "1"
+      }
+     ]
+    },
+    {
+     "label": "例 13",
+     "ref": "L8 Ex 7",
+     "question": "Solve the inequality 9 − 2x − x² > 0.",
+     "solution": "乘 −1 并变号：x² + 2x − 9 < 0。根 x = (−2 ± √(4 + 36))/2 = −1 ± √10。\ny = 9 − 2x − x² 开口向下，在两根之间位于 x 轴上方：−1 − √10 < x < −1 + √10（约 −4.16 < x < 2.16）。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -6.5,
+        4.5
+       ],
+       "yr": [
+        -8,
+        12
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "9-2*x-x^2",
+         "color": "navy"
+        }
+       ],
+       "caption": "9 − 2x − x² > 0: above the x-axis",
+       "points": [
+        {
+         "x": -4.16227766016838,
+         "y": 0,
+         "label": "−1 − √10",
+         "open": true,
+         "dy": 14
+        },
+        {
+         "x": 2.1622776601683795,
+         "y": 0,
+         "label": "−1 + √10",
+         "open": true,
+         "dy": 14
+        },
+        {
+         "x": -1,
+         "y": 10,
+         "label": "(−1, 10)",
+         "dx": 6
+        }
+       ],
+       "lines": [
+        {
+         "pts": [
+          [
+           -4.16227766016838,
+           0
+          ],
+          [
+           2.1622776601683795,
+           0
+          ]
+         ],
+         "color": "green",
+         "width": 5
+        }
+       ]
+      }
+     ],
+     "answer": "−1 − √10 < x < −1 + √10",
+     "checks": [
+      {
+       "expr": "9-2*(-1+sqrt(10))-(-1+sqrt(10))^2",
+       "equals": "0",
+       "tol": 1e-09
+      },
+      {
+       "expr": "9-2*(-1-sqrt(10))-(-1-sqrt(10))^2",
+       "equals": "0",
+       "tol": 1e-09
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "两边同除含 x 的式子（例 11），会丢掉 x ≤ −3 那一段。",
+    "乘 −1 后忘记变号。",
+    "把 −1 < x < 4 写成 x < 4 且 x > −1 以外的形式，或端点虚实写错。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么一定要画图？",
+     "a": "画图后「上方还是下方」一眼可见，不用死记「大于取两边、小于取中间」，开口向下时也不会弄反。"
+    }
+   ]
+  },
+  {
+   "title": "绝对值图像（L9）",
+   "sources": [
+    {
+     "file": "L09_Absolute_Value_Graphs.pdf",
+     "pages": "p1–3"
+    }
+   ],
+   "concept": "|x| = x（x ≥ 0），|x| = −x（x < 0）。y = |x| 是 V 形，顶点在原点，顶点处是<strong>尖角</strong>。\n变换：y = |x − h| + k 的顶点在 (h, k)；前面加负号 y = k − |x − h| 是倒 V 形。\n<strong>找顶点法</strong>：y = |f(x)| 的顶点 x 坐标是 f(x) = 0 的解；再求一个点（如 y 截距）就能画出。y = |mx + c| 两边的斜率是 ±m。\n<strong>平行线组</strong>：|x| = 2 是两条竖线 x = ±2；|y| = 1 是两条横线 y = ±1；|x + y| = 1 是两条直线 x + y = 1 和 x + y = −1。",
+   "examples": [
+    {
+     "label": "例 14",
+     "ref": "L9 Ex 1",
+     "question": "Using the graph of y = |x| and transformation methods sketch each V shaped graph showing the main features: (a) y = |x| − 2 (b) y = |x − 1| (c) y = 3 − |x| (d) y = |x + 2| − 1",
+     "solution": "(a) 下移 2：顶点 (0, −2)；|x| = 2，x 截距 ±2。\n(b) 右移 1：顶点 (1, 0)；y 截距 1。\n(c) 翻折后上移 3：倒 V，顶点 (0, 3)；x 截距 ±3。\n(d) 左移 2、下移 1：顶点 (−2, −1)；|x + 2| = 1，x = −1 或 −3；y 截距 2 − 1 = 1。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -4.5,
+        4.5
+       ],
+       "yr": [
+        -3,
+        3
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "abs(x)-2",
+         "color": "navy",
+         "dom": [
+          -4,
+          4
+         ]
+        }
+       ],
+       "caption": "(a) y = |x| − 2",
+       "points": [
+        {
+         "x": 0,
+         "y": -2,
+         "label": "(0, −2)",
+         "dx": 6
+        },
+        {
+         "x": -2,
+         "y": 0,
+         "label": "−2",
+         "dy": -8
+        },
+        {
+         "x": 2,
+         "y": 0,
+         "label": "2",
+         "dy": -8
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -3,
+        5
+       ],
+       "yr": [
+        -1,
+        4
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "abs(x-1)",
+         "color": "navy",
+         "dom": [
+          -2.5,
+          4.5
+         ]
+        }
+       ],
+       "caption": "(b) y = |x − 1|",
+       "points": [
+        {
+         "x": 1,
+         "y": 0,
+         "label": "(1, 0)",
+         "dy": 14
+        },
+        {
+         "x": 0,
+         "y": 1,
+         "label": "1",
+         "dx": -14
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -5,
+        5
+       ],
+       "yr": [
+        -2,
+        4
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "3-abs(x)",
+         "color": "navy",
+         "dom": [
+          -4.5,
+          4.5
+         ]
+        }
+       ],
+       "caption": "(c) y = 3 − |x|",
+       "points": [
+        {
+         "x": 0,
+         "y": 3,
+         "label": "(0, 3)",
+         "dx": 6
+        },
+        {
+         "x": -3,
+         "y": 0,
+         "label": "−3",
+         "dy": 14
+        },
+        {
+         "x": 3,
+         "y": 0,
+         "label": "3",
+         "dy": 14
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -6,
+        2
+       ],
+       "yr": [
+        -2,
+        4
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "abs(x+2)-1",
+         "color": "navy",
+         "dom": [
+          -5.5,
+          1.5
+         ]
+        }
+       ],
+       "caption": "(d) y = |x + 2| − 1",
+       "points": [
+        {
+         "x": -2,
+         "y": -1,
+         "label": "(−2, −1)",
+         "dy": 14
+        },
+        {
+         "x": -3,
+         "y": 0,
+         "label": "−3",
+         "dy": -8
+        },
+        {
+         "x": -1,
+         "y": 0,
+         "label": "−1",
+         "dy": -8
+        },
+        {
+         "x": 0,
+         "y": 1,
+         "label": "1",
+         "dx": 6
+        }
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "abs(2)-2",
+       "equals": "0"
+      },
+      {
+       "expr": "abs(0-1)",
+       "equals": "1"
+      },
+      {
+       "expr": "3-abs(3)",
+       "equals": "0"
+      },
+      {
+       "expr": "abs(-1+2)-1",
+       "equals": "0"
+      },
+      {
+       "expr": "abs(-3+2)-1",
+       "equals": "0"
+      },
+      {
+       "expr": "abs(0+2)-1",
+       "equals": "1"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ]
+    },
+    {
+     "label": "例 15",
+     "ref": "L9 Ex 2",
+     "question": "First find the vertex of each absolute value graph and hence sketch: (a) y = |2x − 4| (b) y = |5 + 3x|",
+     "solution": "(a) 2x − 4 = 0，x = 2，顶点 (2, 0)；y 截距 |−4| = 4；两边斜率 ±2。\n(b) 5 + 3x = 0，x = −{{frac 5|3}}，顶点 (−5/3, 0)；y 截距 5；两边斜率 ±3。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -1.5,
+        5
+       ],
+       "yr": [
+        -1,
+        7
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "abs(2*x-4)",
+         "color": "navy",
+         "dom": [
+          -0.8,
+          4.8
+         ]
+        }
+       ],
+       "caption": "(a) y = |2x − 4|",
+       "points": [
+        {
+         "x": 2,
+         "y": 0,
+         "label": "(2, 0)",
+         "dy": 14
+        },
+        {
+         "x": 0,
+         "y": 4,
+         "label": "4",
+         "dx": 6
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -4.5,
+        2
+       ],
+       "yr": [
+        -1,
+        8
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "abs(5+3*x)",
+         "color": "navy",
+         "dom": [
+          -4,
+          1.2
+         ]
+        }
+       ],
+       "caption": "(b) y = |5 + 3x|",
+       "points": [
+        {
+         "x": -1.6666666666666667,
+         "y": 0,
+         "label": "(−5/3, 0)",
+         "dy": 14
+        },
+        {
+         "x": 0,
+         "y": 5,
+         "label": "5",
+         "dx": 6
+        }
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "abs(2*2-4)",
+       "equals": "0"
+      },
+      {
+       "expr": "abs(0-4)",
+       "equals": "4"
+      },
+      {
+       "expr": "abs(5+3*(-5/3))",
+       "equals": "0",
+       "tol": 1e-12
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 16",
+     "ref": "L9 Ex 3",
+     "question": "In the following cases the graph is a pair of parallel lines. Sketch: (a) |x| = 2 (b) |y| = 1 (c) |x + y| = 1",
+     "solution": "去掉绝对值得到两种情况，每种是一条直线。\n(a) x = 2 或 x = −2：两条竖线。\n(b) y = 1 或 y = −1：两条横线。\n(c) x + y = 1 或 x + y = −1，即 y = 1 − x 和 y = −1 − x：两条斜率 −1 的平行线，分别过 (1, 0)、(0, 1) 和 (−1, 0)、(0, −1)。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -3,
+        3
+       ],
+       "yr": [
+        -3,
+        3
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [],
+       "caption": "(a) |x| = 2: x = 2 or x = −2",
+       "points": [
+        {
+         "x": -2,
+         "y": 0,
+         "label": "−2",
+         "dx": -16,
+         "dy": 14
+        },
+        {
+         "x": 2,
+         "y": 0,
+         "label": "2",
+         "dx": 4,
+         "dy": 14
+        }
+       ],
+       "lines": [
+        {
+         "pts": [
+          [
+           -2,
+           -3
+          ],
+          [
+           -2,
+           3
+          ]
+         ],
+         "color": "navy"
+        },
+        {
+         "pts": [
+          [
+           2,
+           -3
+          ],
+          [
+           2,
+           3
+          ]
+         ],
+         "color": "navy"
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -3,
+        3
+       ],
+       "yr": [
+        -3,
+        3
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [],
+       "caption": "(b) |y| = 1: y = 1 or y = −1",
+       "points": [
+        {
+         "x": 0,
+         "y": 1,
+         "label": "1",
+         "dx": 4,
+         "dy": -6
+        },
+        {
+         "x": 0,
+         "y": -1,
+         "label": "−1",
+         "dx": 4,
+         "dy": 14
+        }
+       ],
+       "lines": [
+        {
+         "pts": [
+          [
+           -3,
+           1
+          ],
+          [
+           3,
+           1
+          ]
+         ],
+         "color": "navy"
+        },
+        {
+         "pts": [
+          [
+           -3,
+           -1
+          ],
+          [
+           3,
+           -1
+          ]
+         ],
+         "color": "navy"
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -3,
+        3
+       ],
+       "yr": [
+        -3,
+        3
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [],
+       "caption": "(c) |x + y| = 1: y = 1 − x or y = −1 − x",
+       "points": [
+        {
+         "x": 1,
+         "y": 0,
+         "label": "1",
+         "dy": 14
+        },
+        {
+         "x": -1,
+         "y": 0,
+         "label": "−1",
+         "dy": -8
+        },
+        {
+         "x": 0,
+         "y": 1,
+         "label": "1",
+         "dx": 4
+        },
+        {
+         "x": 0,
+         "y": -1,
+         "label": "−1",
+         "dx": 4
+        }
+       ],
+       "lines": [
+        {
+         "pts": [
+          [
+           -2,
+           3
+          ],
+          [
+           3,
+           -2
+          ]
+         ],
+         "color": "navy"
+        },
+        {
+         "pts": [
+          [
+           -3,
+           2
+          ],
+          [
+           2,
+           -3
+          ]
+         ],
+         "color": "navy"
+        }
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "abs(1+0)",
+       "equals": "1"
+      },
+      {
+       "expr": "abs(-1+0)",
+       "equals": "1"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ]
+    }
+   ],
+   "mistakes": [
+    "y = |x − 1| 的顶点写成 (−1, 0)。",
+    "画成 U 形曲线：绝对值图像在顶点是尖角，两边是直线。",
+    "|x + y| = 1 只画一条线。"
+   ],
+   "faqs": [
+    {
+     "q": "y = |2x − 4| 和 y = 2|x − 2| 一样吗？",
+     "a": "一样：|2x − 4| = |2(x − 2)| = 2|x − 2|，所以顶点 (2, 0)、斜率 ±2。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "题型",
+   "第一步",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "顶点式抛物线",
+    "读顶点 (h, k) 和开口，再求截距",
+    "例 1、2"
+   ],
+   [
+    "双曲线",
+    "先画两条渐近线，再求截距",
+    "例 3–6"
+   ],
+   [
+    "一般式抛物线",
+    "x = −b/2a 或两根中点，代回求 y",
+    "例 7–9"
+   ],
+   [
+    "二次不等式",
+    "移项 → 求根 → 画图看上下",
+    "例 10–13"
+   ],
+   [
+    "绝对值图像",
+    "令里面 = 0 求顶点，再求 y 截距",
+    "例 14–16"
+   ]
+  ]
+ },
+ "practice": "讲义建议练习：Tutorial Guide 1-3、1-4、1-5。"
+}
