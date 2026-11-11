@@ -540,6 +540,70 @@
   "requirementsChecked": false
  },
  {
+  "board": "notes-economics",
+  "key": "term2/10",
+  "course": "economics",
+  "term": "term2",
+  "week": 10,
+  "title": "Week 10 · Unit 8 Tutorial + Unit 9 The Government Budget and Fiscal Policy 政府预算与财政政策",
+  "fields": {
+   "graphicHtml": "out/economics/term2/w10.graphic.html",
+   "tutorialAnswers": "out/economics/term2/w10.answers.html"
+  },
+  "examples": 20,
+  "checks": 8,
+  "deliverables": 21,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term2/11",
+  "course": "economics",
+  "term": "term2",
+  "week": 11,
+  "title": "Week 11 · Unit 9 Tutorial + Unit 10 Interpretation of Economic Statistics 经济统计解读",
+  "fields": {
+   "graphicHtml": "out/economics/term2/w11.graphic.html",
+   "tutorialAnswers": "out/economics/term2/w11.answers.html"
+  },
+  "examples": 20,
+  "checks": 0,
+  "deliverables": 13,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term2/12",
+  "course": "economics",
+  "term": "term2",
+  "week": 12,
+  "title": "Week 12 · Unit 10 Tutorial + Unit 11 Using Economic Policy to Influence the Economy 运用经济政策",
+  "fields": {
+   "graphicHtml": "out/economics/term2/w12.graphic.html",
+   "tutorialAnswers": "out/economics/term2/w12.answers.html"
+  },
+  "examples": 14,
+  "checks": 8,
+  "deliverables": 25,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term2/13",
+  "course": "economics",
+  "term": "term2",
+  "week": 13,
+  "title": "Week 13 · Unit 11 Tutorial + 考试复习",
+  "fields": {
+   "graphicHtml": "out/economics/term2/w13.graphic.html",
+   "tutorialAnswers": "out/economics/term2/w13.answers.html"
+  },
+  "examples": 8,
+  "checks": 11,
+  "deliverables": 23,
+  "requirementsChecked": false
+ },
+ {
   "board": "math-notes",
   "key": "term1/1",
   "course": "mathematics",
