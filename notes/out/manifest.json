@@ -512,6 +512,81 @@
  },
  {
   "board": "math-notes",
+  "key": "term1/9",
+  "course": "mathematics",
+  "term": "term1",
+  "week": 9,
+  "title": "Curve Sketching, Optimisation & Indefinite Integrals · 曲线作图、最优化与不定积分",
+  "fields": {
+   "graphicHtml": "out/mathematics/term1/w09.graphic.html"
+  },
+  "examples": 13,
+  "checks": 36,
+  "deliverables": 2,
+  "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
+  "key": "term1/10",
+  "course": "mathematics",
+  "term": "term1",
+  "week": 10,
+  "title": "Definite Integrals & Areas · 定积分与面积",
+  "fields": {
+   "graphicHtml": "out/mathematics/term1/w10.graphic.html"
+  },
+  "examples": 14,
+  "checks": 34,
+  "deliverables": 9,
+  "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
+  "key": "term1/11",
+  "course": "mathematics",
+  "term": "term1",
+  "week": 11,
+  "title": "Calculus of Exponential & Logarithmic Functions · 指数对数函数微积分",
+  "fields": {
+   "graphicHtml": "out/mathematics/term1/w11.graphic.html"
+  },
+  "examples": 18,
+  "checks": 54,
+  "deliverables": 3,
+  "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
+  "key": "term1/12",
+  "course": "mathematics",
+  "term": "term1",
+  "week": 12,
+  "title": "Logarithmic Integration & Exam Revision · 对数积分与考试复习",
+  "fields": {
+   "graphicHtml": "out/mathematics/term1/w12.graphic.html"
+  },
+  "examples": 21,
+  "checks": 57,
+  "deliverables": 7,
+  "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
+  "key": "term1/13",
+  "course": "mathematics",
+  "term": "term1",
+  "week": 13,
+  "title": "Week 13 · 考前综合复习",
+  "fields": {
+   "graphicHtml": "out/mathematics/term1/w13.graphic.html"
+  },
+  "examples": 0,
+  "checks": 0,
+  "deliverables": 0,
+  "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
   "key": "term2/5",
   "course": "mathematics",
   "term": "term2",
