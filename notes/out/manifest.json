@@ -866,5 +866,20 @@
   "checks": 36,
   "deliverables": 0,
   "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
+  "key": "term2/6",
+  "course": "mathematics",
+  "term": "term2",
+  "week": 6,
+  "title": "Conditional Probability & Review · 条件概率与单元复习",
+  "fields": {
+   "graphicHtml": "out/mathematics/term2/w06.graphic.html"
+  },
+  "examples": 31,
+  "checks": 49,
+  "deliverables": 44,
+  "requirementsChecked": false
  }
 ]

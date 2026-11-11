@@ -1,0 +1,2759 @@
+{
+ "course": "mathematics",
+ "term": "term2",
+ "week": 6,
+ "title": "Conditional Probability & Review · 条件概率与单元复习",
+ "files": [
+  "L16_Successive_Outcomes.pdf",
+  "L17_Conditional_Probability.pdf",
+  "L18_Review.pdf"
+ ],
+ "inventory": [
+  "L16 Spinners",
+  "L16 Ex 1",
+  "L16 Ex 2",
+  {
+   "ref": "L16 Ex 3",
+   "parts": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ]
+  },
+  {
+   "ref": "L16 Ex 4",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "L16 Ex 5",
+   "parts": [
+    "a",
+    "b"
+   ],
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "L16 Ex 6",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "L17 Ex 1",
+  "L17 Die",
+  {
+   "ref": "L17 Ex 2",
+   "parts": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ]
+  },
+  "L17 Reverse",
+  {
+   "ref": "L17 Ex 3",
+   "parts": [
+    "a",
+    "b",
+    "c"
+   ],
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "L17 Ex 4",
+   "parts": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "ref": "L17 Ex 5",
+   "parts": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "ref": "L17 Ex 6",
+   "parts": [
+    "a",
+    "b"
+   ]
+  },
+  "L18 Ex 1",
+  {
+   "ref": "L18 Ex 2",
+   "parts": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "ref": "L18 Ex 3",
+   "parts": [
+    "a",
+    "b"
+   ]
+  },
+  "L18 Ex 4",
+  "L18 Ex 5",
+  "L18 Ex 6",
+  "L18 Ex 7",
+  {
+   "ref": "L18 Ex 8",
+   "parts": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f"
+   ]
+  },
+  "L18 Ex 9",
+  {
+   "ref": "L18 Ex 10",
+   "parts": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "ref": "L18 Ex 11",
+   "parts": [
+    "a",
+    "b"
+   ]
+  },
+  "L18 Ex 12",
+  {
+   "ref": "L18 Ex 13",
+   "parts": [
+    "a",
+    "b"
+   ]
+  },
+  "L18 Ex 14",
+  {
+   "ref": "L18 Ex 15",
+   "parts": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "ref": "L18 Ex 16",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  }
+ ],
+ "intro": [
+  "Term 2 第 6 周：多阶段事件的概率与概率树（L16）；条件概率、条件概率公式、独立事件与互斥事件（L17）；第 1–6 周的复习题（L18：数列、金融数学、集合、计数、概率）。所有概率都用分数或小数核对。"
+ ],
+ "sections": [
+  {
+   "title": "多阶段事件与概率树（L16）",
+   "sources": [
+    {
+     "file": "L16_Successive_Outcomes.pdf",
+     "pages": "p1–4"
+    }
+   ],
+   "concept": "两个转盘：A–D 四等分、1–3 三等分，组合结果 4 × 3 = 12 种，P(C2) = {{frac 1|12}} = {{frac 1|4}} × {{frac 1|3}}。\n<strong>多阶段事件</strong>：各阶段的概率<strong>相乘</strong>，P(A 且 B) = P(A) × P(B)（后一阶段不受前一阶段影响时）。\n<strong>概率树</strong>：只关心部分结果时可以合并分支；此时各结果不再等可能，要把概率写在分支上，沿路径<strong>相乘</strong>得到该结果的概率，再把需要的路径<strong>相加</strong>。\n如果前一阶段的结果改变了后一阶段的概率（如不放回地取球），后面分支上的概率要相应改变。",
+   "figures": [
+    {
+     "type": "plot",
+     "xr": [
+      0.81,
+      4.6
+     ],
+     "yr": [
+      0.41000000000000003,
+      5
+     ],
+     "width": 340,
+     "height": 160,
+     "xLabel": "",
+     "yLabel": "",
+     "curves": [],
+     "caption": "Simplified tree: multiply along each branch",
+     "lines": [
+      {
+       "pts": [
+        [
+         2.12,
+         4.0
+        ],
+        [
+         2.88,
+         4.5
+        ]
+       ],
+       "color": "grey"
+      },
+      {
+       "pts": [
+        [
+         2.12,
+         4.0
+        ],
+        [
+         2.88,
+         3.5
+        ]
+       ],
+       "color": "grey"
+      },
+      {
+       "pts": [
+        [
+         2.12,
+         2.0
+        ],
+        [
+         2.88,
+         2.5
+        ]
+       ],
+       "color": "grey"
+      },
+      {
+       "pts": [
+        [
+         2.12,
+         2.0
+        ],
+        [
+         2.88,
+         1.5
+        ]
+       ],
+       "color": "grey"
+      },
+      {
+       "pts": [
+        [
+         1.12,
+         3.0
+        ],
+        [
+         1.88,
+         4.0
+        ]
+       ],
+       "color": "grey"
+      },
+      {
+       "pts": [
+        [
+         1.12,
+         3.0
+        ],
+        [
+         1.88,
+         2.0
+        ]
+       ],
+       "color": "grey"
+      }
+     ],
+     "texts": [
+      {
+       "x": 3,
+       "y": 4.38,
+       "text": "2",
+       "anchor": "middle",
+       "size": 10,
+       "color": "navy",
+       "bold": true
+      },
+      {
+       "x": 2.5,
+       "y": 4.43,
+       "text": "1/3",
+       "anchor": "middle",
+       "size": 9,
+       "color": "gold"
+      },
+      {
+       "x": 3.35,
+       "y": 4.38,
+       "text": "P(C2) = 1/12",
+       "anchor": "start",
+       "size": 9,
+       "color": "green"
+      },
+      {
+       "x": 3,
+       "y": 3.38,
+       "text": "not 2",
+       "anchor": "middle",
+       "size": 10,
+       "color": "navy",
+       "bold": true
+      },
+      {
+       "x": 2.5,
+       "y": 3.93,
+       "text": "2/3",
+       "anchor": "middle",
+       "size": 9,
+       "color": "gold"
+      },
+      {
+       "x": 3.35,
+       "y": 3.38,
+       "text": "1/6",
+       "anchor": "start",
+       "size": 9,
+       "color": "green"
+      },
+      {
+       "x": 3,
+       "y": 2.38,
+       "text": "2",
+       "anchor": "middle",
+       "size": 10,
+       "color": "navy",
+       "bold": true
+      },
+      {
+       "x": 2.5,
+       "y": 2.4299999999999997,
+       "text": "1/3",
+       "anchor": "middle",
+       "size": 9,
+       "color": "gold"
+      },
+      {
+       "x": 3.35,
+       "y": 2.38,
+       "text": "1/4",
+       "anchor": "start",
+       "size": 9,
+       "color": "green"
+      },
+      {
+       "x": 3,
+       "y": 1.38,
+       "text": "not 2",
+       "anchor": "middle",
+       "size": 10,
+       "color": "navy",
+       "bold": true
+      },
+      {
+       "x": 2.5,
+       "y": 1.93,
+       "text": "2/3",
+       "anchor": "middle",
+       "size": 9,
+       "color": "gold"
+      },
+      {
+       "x": 3.35,
+       "y": 1.38,
+       "text": "1/2",
+       "anchor": "start",
+       "size": 9,
+       "color": "green"
+      },
+      {
+       "x": 2,
+       "y": 3.88,
+       "text": "C",
+       "anchor": "middle",
+       "size": 10,
+       "color": "navy",
+       "bold": true
+      },
+      {
+       "x": 1.5,
+       "y": 3.68,
+       "text": "1/4",
+       "anchor": "middle",
+       "size": 9,
+       "color": "gold"
+      },
+      {
+       "x": 2,
+       "y": 1.88,
+       "text": "not C",
+       "anchor": "middle",
+       "size": 10,
+       "color": "navy",
+       "bold": true
+      },
+      {
+       "x": 1.5,
+       "y": 2.6799999999999997,
+       "text": "3/4",
+       "anchor": "middle",
+       "size": 9,
+       "color": "gold"
+      }
+     ],
+     "padLeft": 14
+    }
+   ],
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "L16 Spinners",
+     "question": "Two spinners (A–D and 1–3). Find P(C2) from the tree and by multiplying.",
+     "solution": "12 种结果等可能，P(C2) = {{frac 1|12}}；也可以直接相乘：P(C) × P(2) = {{frac 1|4}} × {{frac 1|3}} = {{frac 1|12}}。",
+     "checks": [
+      {
+       "expr": "1/4*1/3",
+       "equals": "1/12",
+       "tol": 1e-12
+      }
+     ]
+    },
+    {
+     "label": "例 2",
+     "ref": "L16 Ex 1",
+     "question": "A fair coin is tossed and a die rolled. Find the probability of a head and a 6.",
+     "solution": "两个阶段互不影响，相乘：{{frac 1|2}} × {{frac 1|6}} = {{frac 1|12}}。",
+     "answer": "1/12",
+     "checks": [
+      {
+       "expr": "1/2*1/6",
+       "equals": "1/12",
+       "tol": 1e-12
+      }
+     ]
+    },
+    {
+     "label": "例 3",
+     "ref": "L16 Ex 2",
+     "question": "A die is tossed 4 times. Find the probability of a six every time.",
+     "solution": "每次都是 1/6，四次相乘：({{frac 1|6}})⁴ = {{frac 1|1296}}。",
+     "answer": "1/1296",
+     "checks": [
+      {
+       "expr": "(1/6)^4",
+       "equals": "1/1296",
+       "tol": 1e-15
+      }
+     ]
+    },
+    {
+     "label": "例 4",
+     "ref": "L16 Ex 3",
+     "question": "Henry, Alix and Chen pass with probabilities 70%, 20% and 90%. Find the probability that (a) all pass (b) all fail (c) Henry passes but Alix and Chen fail (d) at least one passes.",
+     "solution": "不及格的概率分别是 0.3、0.8、0.1。\n(a) 0.7 × 0.2 × 0.9 = <strong>0.126</strong>。\n(b) 0.3 × 0.8 × 0.1 = <strong>0.024</strong>。\n(c) 0.7 × 0.8 × 0.1 = <strong>0.056</strong>。\n(d) 至少一人及格 = 1 − 全部不及格 = 1 − 0.024 = <strong>0.976</strong>。",
+     "answer": "(a) 0.126 (b) 0.024 (c) 0.056 (d) 0.976",
+     "checks": [
+      {
+       "expr": "0.7*0.2*0.9",
+       "equals": "0.126",
+       "tol": 1e-12
+      },
+      {
+       "expr": "0.3*0.8*0.1",
+       "equals": "0.024",
+       "tol": 1e-12
+      },
+      {
+       "expr": "1-0.3*0.8*0.1",
+       "equals": "0.976",
+       "tol": 1e-12
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ]
+    },
+    {
+     "label": "例 5",
+     "ref": "L16 Ex 4",
+     "question": "A football team wins any game with probability 0.4. Draw a probability tree and find the probability of winning at least 2 of the first 3 games.",
+     "solution": "恰好赢 2 场：WWL、WLW、LWW 三条路径，各 0.4² × 0.6 = 0.096，共 0.288；赢 3 场：0.4³ = 0.064。至少 2 场 = 0.288 + 0.064 = <strong>0.352</strong>。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0.81,
+        5.6
+       ],
+       "yr": [
+        0.41000000000000003,
+        9
+       ],
+       "width": 340,
+       "height": 238,
+       "xLabel": "",
+       "yLabel": "",
+       "curves": [],
+       "caption": "Three games: ✓ marks at least 2 wins (total 0.352)",
+       "lines": [
+        {
+         "pts": [
+          [
+           3.12,
+           8.0
+          ],
+          [
+           3.88,
+           8.5
+          ]
+         ],
+         "color": "grey"
+        },
+        {
+         "pts": [
+          [
+           3.12,
+           8.0
+          ],
+          [
+           3.88,
+           7.5
+          ]
+         ],
+         "color": "grey"
+        },
+        {
+         "pts": [
+          [
+           3.12,
+           6.0
+          ],
+          [
+           3.88,
+           6.5
+          ]
+         ],
+         "color": "grey"
+        },
+        {
+         "pts": [
+          [
+           3.12,
+           6.0
+          ],
+          [
+           3.88,
+           5.5
+          ]
+         ],
+         "color": "grey"
+        },
+        {
+         "pts": [
+          [
+           2.12,
+           7.0
+          ],
+          [
+           2.88,
+           8.0
+          ]
+         ],
+         "color": "grey"
+        },
+        {
+         "pts": [
+          [
+           2.12,
+           7.0
+          ],
+          [
+           2.88,
+           6.0
+          ]
+         ],
+         "color": "grey"
+        },
+        {
+         "pts": [
+          [
+           3.12,
+           4.0
+          ],
+          [
+           3.88,
+           4.5
+          ]
+         ],
+         "color": "grey"
+        },
+        {
+         "pts": [
+          [
+           3.12,
+           4.0
+          ],
+          [
+           3.88,
+           3.5
+          ]
+         ],
+         "color": "grey"
+        },
+        {
+         "pts": [
+          [
+           3.12,
+           2.0
+          ],
+          [
+           3.88,
+           2.5
+          ]
+         ],
+         "color": "grey"
+        },
+        {
+         "pts": [
+          [
+           3.12,
+           2.0
+          ],
+          [
+           3.88,
+           1.5
+          ]
+         ],
+         "color": "grey"
+        },
+        {
+         "pts": [
+          [
+           2.12,
+           3.0
+          ],
+          [
+           2.88,
+           4.0
+          ]
+         ],
+         "color": "grey"
+        },
+        {
+         "pts": [
+          [
+           2.12,
+           3.0
+          ],
+          [
+           2.88,
+           2.0
+          ]
+         ],
+         "color": "grey"
+        },
+        {
+         "pts": [
+          [
+           1.12,
+           5.0
+          ],
+          [
+           1.88,
+           7.0
+          ]
+         ],
+         "color": "grey"
+        },
+        {
+         "pts": [
+          [
+           1.12,
+           5.0
+          ],
+          [
+           1.88,
+           3.0
+          ]
+         ],
+         "color": "grey"
+        }
+       ],
+       "texts": [
+        {
+         "x": 4,
+         "y": 8.379999999999999,
+         "text": "W",
+         "anchor": "middle",
+         "size": 10,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 3.5,
+         "y": 8.43,
+         "text": "0.4",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 4.35,
+         "y": 8.379999999999999,
+         "text": "0.064 ✓",
+         "anchor": "start",
+         "size": 9,
+         "color": "green"
+        },
+        {
+         "x": 4,
+         "y": 7.38,
+         "text": "L",
+         "anchor": "middle",
+         "size": 10,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 3.5,
+         "y": 7.93,
+         "text": "0.6",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 4.35,
+         "y": 7.38,
+         "text": "0.096 ✓",
+         "anchor": "start",
+         "size": 9,
+         "color": "green"
+        },
+        {
+         "x": 4,
+         "y": 6.38,
+         "text": "W",
+         "anchor": "middle",
+         "size": 10,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 3.5,
+         "y": 6.43,
+         "text": "0.4",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 4.35,
+         "y": 6.38,
+         "text": "0.096 ✓",
+         "anchor": "start",
+         "size": 9,
+         "color": "green"
+        },
+        {
+         "x": 4,
+         "y": 5.38,
+         "text": "L",
+         "anchor": "middle",
+         "size": 10,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 3.5,
+         "y": 5.93,
+         "text": "0.6",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 4.35,
+         "y": 5.38,
+         "text": "0.144",
+         "anchor": "start",
+         "size": 9,
+         "color": "green"
+        },
+        {
+         "x": 3,
+         "y": 7.88,
+         "text": "W",
+         "anchor": "middle",
+         "size": 10,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 2.5,
+         "y": 7.68,
+         "text": "0.4",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 3,
+         "y": 5.88,
+         "text": "L",
+         "anchor": "middle",
+         "size": 10,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 2.5,
+         "y": 6.68,
+         "text": "0.6",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 4,
+         "y": 4.38,
+         "text": "W",
+         "anchor": "middle",
+         "size": 10,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 3.5,
+         "y": 4.43,
+         "text": "0.4",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 4.35,
+         "y": 4.38,
+         "text": "0.096 ✓",
+         "anchor": "start",
+         "size": 9,
+         "color": "green"
+        },
+        {
+         "x": 4,
+         "y": 3.38,
+         "text": "L",
+         "anchor": "middle",
+         "size": 10,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 3.5,
+         "y": 3.93,
+         "text": "0.6",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 4.35,
+         "y": 3.38,
+         "text": "0.144",
+         "anchor": "start",
+         "size": 9,
+         "color": "green"
+        },
+        {
+         "x": 4,
+         "y": 2.38,
+         "text": "W",
+         "anchor": "middle",
+         "size": 10,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 3.5,
+         "y": 2.4299999999999997,
+         "text": "0.4",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 4.35,
+         "y": 2.38,
+         "text": "0.144",
+         "anchor": "start",
+         "size": 9,
+         "color": "green"
+        },
+        {
+         "x": 4,
+         "y": 1.38,
+         "text": "L",
+         "anchor": "middle",
+         "size": 10,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 3.5,
+         "y": 1.93,
+         "text": "0.6",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 4.35,
+         "y": 1.38,
+         "text": "0.216",
+         "anchor": "start",
+         "size": 9,
+         "color": "green"
+        },
+        {
+         "x": 3,
+         "y": 3.88,
+         "text": "W",
+         "anchor": "middle",
+         "size": 10,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 2.5,
+         "y": 3.68,
+         "text": "0.4",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 3,
+         "y": 1.88,
+         "text": "L",
+         "anchor": "middle",
+         "size": 10,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 2.5,
+         "y": 2.6799999999999997,
+         "text": "0.6",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 2,
+         "y": 6.88,
+         "text": "W",
+         "anchor": "middle",
+         "size": 10,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 1.5,
+         "y": 6.18,
+         "text": "0.4",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 2,
+         "y": 2.88,
+         "text": "L",
+         "anchor": "middle",
+         "size": 10,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 1.5,
+         "y": 4.18,
+         "text": "0.6",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        }
+       ],
+       "padLeft": 14
+      }
+     ],
+     "answer": "0.352",
+     "checks": [
+      {
+       "expr": "3*0.4^2*0.6+0.4^3",
+       "equals": "0.352",
+       "tol": 1e-12
+      }
+     ]
+    },
+    {
+     "label": "例 6",
+     "ref": "L16 Ex 5",
+     "question": "A bag has 5 red and 4 black balls. Two are drawn. Find the probability both are the same colour (a) with replacement (b) without replacement.",
+     "solution": "(a) 放回：每次概率不变。({{frac 5|9}})² + ({{frac 4|9}})² = {{frac 25|81}} + {{frac 16|81}} = <strong>{{frac 41|81}}</strong>。\n(b) 不放回：第二次的概率随第一次改变。{{frac 5|9}} × {{frac 4|8}} + {{frac 4|9}} × {{frac 3|8}} = {{frac 20|72}} + {{frac 12|72}} = <strong>{{frac 4|9}}</strong>。（也可以用组合：{{frac ⁵C₂ + ⁴C₂|⁹C₂}} = {{frac 10 + 6|36}} = 4/9。）",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0.81,
+        4.6
+       ],
+       "yr": [
+        0.41000000000000003,
+        5
+       ],
+       "width": 340,
+       "height": 160,
+       "xLabel": "",
+       "yLabel": "",
+       "curves": [],
+       "caption": "Without replacement: same colour = 20/72 + 12/72 = 4/9",
+       "lines": [
+        {
+         "pts": [
+          [
+           2.12,
+           4.0
+          ],
+          [
+           2.88,
+           4.5
+          ]
+         ],
+         "color": "grey"
+        },
+        {
+         "pts": [
+          [
+           2.12,
+           4.0
+          ],
+          [
+           2.88,
+           3.5
+          ]
+         ],
+         "color": "grey"
+        },
+        {
+         "pts": [
+          [
+           2.12,
+           2.0
+          ],
+          [
+           2.88,
+           2.5
+          ]
+         ],
+         "color": "grey"
+        },
+        {
+         "pts": [
+          [
+           2.12,
+           2.0
+          ],
+          [
+           2.88,
+           1.5
+          ]
+         ],
+         "color": "grey"
+        },
+        {
+         "pts": [
+          [
+           1.12,
+           3.0
+          ],
+          [
+           1.88,
+           4.0
+          ]
+         ],
+         "color": "grey"
+        },
+        {
+         "pts": [
+          [
+           1.12,
+           3.0
+          ],
+          [
+           1.88,
+           2.0
+          ]
+         ],
+         "color": "grey"
+        }
+       ],
+       "texts": [
+        {
+         "x": 3,
+         "y": 4.38,
+         "text": "R",
+         "anchor": "middle",
+         "size": 10,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 2.5,
+         "y": 4.43,
+         "text": "4/8",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 3.35,
+         "y": 4.38,
+         "text": "20/72",
+         "anchor": "start",
+         "size": 9,
+         "color": "green"
+        },
+        {
+         "x": 3,
+         "y": 3.38,
+         "text": "B",
+         "anchor": "middle",
+         "size": 10,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 2.5,
+         "y": 3.93,
+         "text": "4/8",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 3.35,
+         "y": 3.38,
+         "text": "20/72",
+         "anchor": "start",
+         "size": 9,
+         "color": "green"
+        },
+        {
+         "x": 3,
+         "y": 2.38,
+         "text": "R",
+         "anchor": "middle",
+         "size": 10,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 2.5,
+         "y": 2.4299999999999997,
+         "text": "5/8",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 3.35,
+         "y": 2.38,
+         "text": "20/72",
+         "anchor": "start",
+         "size": 9,
+         "color": "green"
+        },
+        {
+         "x": 3,
+         "y": 1.38,
+         "text": "B",
+         "anchor": "middle",
+         "size": 10,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 2.5,
+         "y": 1.93,
+         "text": "3/8",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 3.35,
+         "y": 1.38,
+         "text": "12/72",
+         "anchor": "start",
+         "size": 9,
+         "color": "green"
+        },
+        {
+         "x": 2,
+         "y": 3.88,
+         "text": "R",
+         "anchor": "middle",
+         "size": 10,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 1.5,
+         "y": 3.68,
+         "text": "5/9",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 2,
+         "y": 1.88,
+         "text": "B",
+         "anchor": "middle",
+         "size": 10,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 1.5,
+         "y": 2.6799999999999997,
+         "text": "4/9",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        }
+       ],
+       "padLeft": 14
+      }
+     ],
+     "answer": "(a) 41/81 (b) 4/9",
+     "checks": [
+      {
+       "expr": "(5/9)^2+(4/9)^2",
+       "equals": "41/81",
+       "tol": 1e-12
+      },
+      {
+       "expr": "5/9*4/8+4/9*3/8",
+       "equals": "4/9",
+       "tol": 1e-12
+      },
+      {
+       "expr": "(comb(5,2)+comb(4,2))/comb(9,2)",
+       "equals": "4/9",
+       "tol": 1e-12
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 7",
+     "ref": "L16 Ex 6",
+     "question": "P(pass first try) = 0.6; if he fails, P(pass second) = 0.8; if he fails again, P(pass third) = 0.9. Find the probability of passing in one of the first three tries.",
+     "solution": "沿树形图：第一次过 0.6；第一次没过第二次过 0.4 × 0.8 = 0.32；前两次没过第三次过 0.4 × 0.2 × 0.9 = 0.072。合计 <strong>0.992</strong>（= 1 − 0.4 × 0.2 × 0.1）。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0.81,
+        5.6
+       ],
+       "yr": [
+        0.41000000000000003,
+        5
+       ],
+       "width": 340,
+       "height": 160,
+       "xLabel": "",
+       "yLabel": "",
+       "curves": [],
+       "caption": "Pass within three tries: 0.6 + 0.32 + 0.072 = 0.992",
+       "lines": [
+        {
+         "pts": [
+          [
+           3.12,
+           2.0
+          ],
+          [
+           3.88,
+           2.5
+          ]
+         ],
+         "color": "grey"
+        },
+        {
+         "pts": [
+          [
+           3.12,
+           2.0
+          ],
+          [
+           3.88,
+           1.5
+          ]
+         ],
+         "color": "grey"
+        },
+        {
+         "pts": [
+          [
+           2.12,
+           2.75
+          ],
+          [
+           2.88,
+           3.5
+          ]
+         ],
+         "color": "grey"
+        },
+        {
+         "pts": [
+          [
+           2.12,
+           2.75
+          ],
+          [
+           2.88,
+           2.0
+          ]
+         ],
+         "color": "grey"
+        },
+        {
+         "pts": [
+          [
+           1.12,
+           3.625
+          ],
+          [
+           1.88,
+           4.5
+          ]
+         ],
+         "color": "grey"
+        },
+        {
+         "pts": [
+          [
+           1.12,
+           3.625
+          ],
+          [
+           1.88,
+           2.75
+          ]
+         ],
+         "color": "grey"
+        }
+       ],
+       "texts": [
+        {
+         "x": 4,
+         "y": 2.38,
+         "text": "Pass",
+         "anchor": "middle",
+         "size": 10,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 3.5,
+         "y": 2.4299999999999997,
+         "text": "0.9",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 4.35,
+         "y": 2.38,
+         "text": "0.072",
+         "anchor": "start",
+         "size": 9,
+         "color": "green"
+        },
+        {
+         "x": 4,
+         "y": 1.38,
+         "text": "Fail",
+         "anchor": "middle",
+         "size": 10,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 3.5,
+         "y": 1.93,
+         "text": "0.1",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 4.35,
+         "y": 1.38,
+         "text": "0.008",
+         "anchor": "start",
+         "size": 9,
+         "color": "green"
+        },
+        {
+         "x": 3,
+         "y": 3.38,
+         "text": "Pass",
+         "anchor": "middle",
+         "size": 10,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 2.5,
+         "y": 3.305,
+         "text": "0.8",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 4.35,
+         "y": 3.38,
+         "text": "0.32",
+         "anchor": "start",
+         "size": 9,
+         "color": "green"
+        },
+        {
+         "x": 3,
+         "y": 1.88,
+         "text": "Fail",
+         "anchor": "middle",
+         "size": 10,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 2.5,
+         "y": 2.5549999999999997,
+         "text": "0.2",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 2,
+         "y": 4.38,
+         "text": "Pass",
+         "anchor": "middle",
+         "size": 10,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 1.5,
+         "y": 4.2425,
+         "text": "0.6",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 4.35,
+         "y": 4.38,
+         "text": "0.6",
+         "anchor": "start",
+         "size": 9,
+         "color": "green"
+        },
+        {
+         "x": 2,
+         "y": 2.63,
+         "text": "Fail",
+         "anchor": "middle",
+         "size": 10,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 1.5,
+         "y": 3.3675,
+         "text": "0.4",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        }
+       ],
+       "padLeft": 14
+      }
+     ],
+     "answer": "0.992",
+     "checks": [
+      {
+       "expr": "0.6+0.4*0.8+0.4*0.2*0.9",
+       "equals": "0.992",
+       "tol": 1e-12
+      },
+      {
+       "expr": "1-0.4*0.2*0.1",
+       "equals": "0.992",
+       "tol": 1e-12
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "「至少一个」逐项相加而漏掉情况：用 1 − 一个都没有更快。",
+    "不放回时第二次仍用原来的概率。",
+    "概率树沿路径相加、路径之间相乘（应反过来）。"
+   ],
+   "faqs": [
+    {
+     "q": "什么时候沿路径乘、什么时候路径之间加？",
+     "a": "同一条路径上是「先…又…」，用乘；不同路径是「要么这样、要么那样」，用加。"
+    }
+   ]
+  },
+  {
+   "title": "条件概率与独立事件（L17）",
+   "sources": [
+    {
+     "file": "L17_Conditional_Probability.pdf",
+     "pages": "p1–7"
+    }
+   ],
+   "concept": "<strong>条件概率</strong> P(A | B)：在已知 B 发生的条件下 A 发生的概率，读作「A given B」。条件不一定是「先发生的」，而是「已知的信息」：掷骰子已知是奇数，P(3 | 奇数) = {{frac 1|3}}。\n方法一：<strong>缩小样本空间</strong>（只看满足条件的那部分）。方法二：公式 <strong>P(A | B) = {{frac P(A ∩ B)|P(B)}}</strong>，适用于条件在后一阶段的情况（如已知第二个球是黑的，求第一个是黑的）。\n<strong>独立事件</strong>：一个发生与否不影响另一个的概率。判断（满足任一即可）：P(A | B) = P(A)；P(B | A) = P(B)；P(A ∩ B) = P(A) × P(B)。\n不要把独立和<strong>互斥</strong>混淆：互斥是 A ∩ B = ∅，P(A ∩ B) = 0。",
+   "formulas": [
+    "P(A | B) = {{frac P(A ∩ B)|P(B)}}",
+    "独立：P(A ∩ B) = P(A) × P(B)；互斥：P(A ∩ B) = 0"
+   ],
+   "examples": [
+    {
+     "label": "例 8",
+     "ref": "L17 Ex 1",
+     "question": "Two balls without replacement from 5 red and 4 black. Find P(B₂ | R₁) and P(B₂ | B₁).",
+     "solution": "第一次取红后剩 4 红 4 黑：P(B₂ | R₁) = {{frac 4|8}} = {{frac 1|2}}。第一次取黑后剩 5 红 3 黑：P(B₂ | B₁) = {{frac 3|8}}。（讲义中 P(R₂ | R₁) = 4/8，P(R₂ | B₁) = 5/8。）",
+     "answer": "1/2; 3/8",
+     "numeric": false
+    },
+    {
+     "label": "例 9",
+     "ref": "L17 Die",
+     "question": "A die is rolled. Find P(3) and P(3 | odd).",
+     "solution": "P(3) = {{frac 1|6}}。已知是奇数，样本空间缩小为 {1, 3, 5}：P(3 | odd) = {{frac 1|3}}。条件是「已知的信息」，不一定是先发生的事。",
+     "checks": [
+      {
+       "expr": "1/3",
+       "equals": "(1/6)/(1/2)",
+       "tol": 1e-12
+      }
+     ]
+    },
+    {
+     "label": "例 10",
+     "ref": "L17 Ex 2",
+     "question": "1200 shoppers (table). Find the probability that a random shopper (a) shops on Monday (b) shops at Coolworths (c) shops on Monday given Coolworths (d) shops at Coolworths given Monday.",
+     "solution": "(a) {{frac 560|1200}} = {{frac 7|15}}。\n(b) {{frac 500|1200}} = {{frac 5|12}}。\n(c) 只看 Coolworths 的 500 人：{{frac 260|500}} = {{frac 13|25}}。\n(d) 只看周一的 560 人：{{frac 260|560}} = {{frac 13|28}}。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "",
+        "Monday",
+        "Tuesday",
+        "Totals"
+       ],
+       "rows": [
+        [
+         "Coolworths",
+         "260",
+         "240",
+         "500"
+        ],
+        [
+         "Woles",
+         "300",
+         "400",
+         "700"
+        ],
+        [
+         "Totals",
+         "560",
+         "640",
+         "1200"
+        ]
+       ],
+       "title": "Survey of 1200 shoppers"
+      }
+     ],
+     "answer": "(a) 7/15 (b) 5/12 (c) 13/25 (d) 13/28",
+     "checks": [
+      {
+       "expr": "560/1200",
+       "equals": "7/15",
+       "tol": 1e-12
+      },
+      {
+       "expr": "260/500",
+       "equals": "13/25",
+       "tol": 1e-12
+      },
+      {
+       "expr": "260/560",
+       "equals": "13/28",
+       "tol": 1e-12
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ]
+    },
+    {
+     "label": "例 11",
+     "ref": "L17 Reverse",
+     "question": "Two balls without replacement. Find P(B₁ | B₂), the probability the first is black given the second is black.",
+     "solution": "第二个球还没取，无法先缩小第一个球的样本空间，所以用概率：P(B₁ | B₂) = {{frac P(B₁ ∩ B₂)|P(B₂)}} = {{frac 4/9 × 3/8|4/9 × 3/8 + 5/9 × 4/8}} = {{frac 12|12 + 20}} = {{frac 3|8}}。",
+     "answer": "3/8",
+     "checks": [
+      {
+       "expr": "(4/9*3/8)/(4/9*3/8+5/9*4/8)",
+       "equals": "3/8",
+       "tol": 1e-12
+      }
+     ],
+     "sourceNote": "讲义这一页写「5 black and 4 red balls」，但计算用的是 4 黑 5 红（与前一页的袋子一致），笔记按 4 黑 5 红计算。"
+    },
+    {
+     "label": "例 12",
+     "ref": "L17 Ex 3",
+     "question": "Yuni and Emily: the first to win 2 sets wins. Yuni wins any set with probability ¾. (a) Draw a tree. (b) Find P(Yuni wins). (c) Find P(Yuni wins | she loses the second set).",
+     "solution": "(b) Yuni 赢的路径：YY = {{frac 9|16}}；YEY = {{frac 3|4}} × {{frac 1|4}} × {{frac 3|4}} = {{frac 9|64}}；EYY = {{frac 9|64}}。合计 {{frac 36 + 9 + 9|64}} = <strong>{{frac 27|32}}</strong>。\n(c) 输掉第二盘：YE 或 EE，P = {{frac 3|16}} + {{frac 1|16}} = {{frac 1|4}}。其中 Yuni 最后赢的只有 YEY = {{frac 9|64}}。P = {{frac 9/64|1/4}} = <strong>{{frac 9|16}}</strong>。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0.81,
+        5.6
+       ],
+       "yr": [
+        0.41000000000000003,
+        7
+       ],
+       "width": 340,
+       "height": 186,
+       "xLabel": "",
+       "yLabel": "",
+       "curves": [],
+       "caption": "Best of three sets (Y = Yuni wins the set)",
+       "lines": [
+        {
+         "pts": [
+          [
+           3.12,
+           5.0
+          ],
+          [
+           3.88,
+           5.5
+          ]
+         ],
+         "color": "grey"
+        },
+        {
+         "pts": [
+          [
+           3.12,
+           5.0
+          ],
+          [
+           3.88,
+           4.5
+          ]
+         ],
+         "color": "grey"
+        },
+        {
+         "pts": [
+          [
+           2.12,
+           5.75
+          ],
+          [
+           2.88,
+           6.5
+          ]
+         ],
+         "color": "grey"
+        },
+        {
+         "pts": [
+          [
+           2.12,
+           5.75
+          ],
+          [
+           2.88,
+           5.0
+          ]
+         ],
+         "color": "grey"
+        },
+        {
+         "pts": [
+          [
+           3.12,
+           3.0
+          ],
+          [
+           3.88,
+           3.5
+          ]
+         ],
+         "color": "grey"
+        },
+        {
+         "pts": [
+          [
+           3.12,
+           3.0
+          ],
+          [
+           3.88,
+           2.5
+          ]
+         ],
+         "color": "grey"
+        },
+        {
+         "pts": [
+          [
+           2.12,
+           2.25
+          ],
+          [
+           2.88,
+           3.0
+          ]
+         ],
+         "color": "grey"
+        },
+        {
+         "pts": [
+          [
+           2.12,
+           2.25
+          ],
+          [
+           2.88,
+           1.5
+          ]
+         ],
+         "color": "grey"
+        },
+        {
+         "pts": [
+          [
+           1.12,
+           4.0
+          ],
+          [
+           1.88,
+           5.75
+          ]
+         ],
+         "color": "grey"
+        },
+        {
+         "pts": [
+          [
+           1.12,
+           4.0
+          ],
+          [
+           1.88,
+           2.25
+          ]
+         ],
+         "color": "grey"
+        }
+       ],
+       "texts": [
+        {
+         "x": 4,
+         "y": 5.38,
+         "text": "Y",
+         "anchor": "middle",
+         "size": 10,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 3.5,
+         "y": 5.43,
+         "text": "3/4",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 4.35,
+         "y": 5.38,
+         "text": "Yuni 9/64",
+         "anchor": "start",
+         "size": 9,
+         "color": "green"
+        },
+        {
+         "x": 4,
+         "y": 4.38,
+         "text": "E",
+         "anchor": "middle",
+         "size": 10,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 3.5,
+         "y": 4.93,
+         "text": "1/4",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 4.35,
+         "y": 4.38,
+         "text": "Emily 3/64",
+         "anchor": "start",
+         "size": 9,
+         "color": "green"
+        },
+        {
+         "x": 3,
+         "y": 6.38,
+         "text": "Y",
+         "anchor": "middle",
+         "size": 10,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 2.5,
+         "y": 6.305,
+         "text": "3/4",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 4.35,
+         "y": 6.38,
+         "text": "Yuni 9/16",
+         "anchor": "start",
+         "size": 9,
+         "color": "green"
+        },
+        {
+         "x": 3,
+         "y": 4.88,
+         "text": "E",
+         "anchor": "middle",
+         "size": 10,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 2.5,
+         "y": 5.555,
+         "text": "1/4",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 4,
+         "y": 3.38,
+         "text": "Y",
+         "anchor": "middle",
+         "size": 10,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 3.5,
+         "y": 3.43,
+         "text": "3/4",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 4.35,
+         "y": 3.38,
+         "text": "Yuni 9/64",
+         "anchor": "start",
+         "size": 9,
+         "color": "green"
+        },
+        {
+         "x": 4,
+         "y": 2.38,
+         "text": "E",
+         "anchor": "middle",
+         "size": 10,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 3.5,
+         "y": 2.9299999999999997,
+         "text": "1/4",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 4.35,
+         "y": 2.38,
+         "text": "Emily 3/64",
+         "anchor": "start",
+         "size": 9,
+         "color": "green"
+        },
+        {
+         "x": 3,
+         "y": 2.88,
+         "text": "Y",
+         "anchor": "middle",
+         "size": 10,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 2.5,
+         "y": 2.8049999999999997,
+         "text": "3/4",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 3,
+         "y": 1.38,
+         "text": "E",
+         "anchor": "middle",
+         "size": 10,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 2.5,
+         "y": 2.0549999999999997,
+         "text": "1/4",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 4.35,
+         "y": 1.38,
+         "text": "Emily 1/16",
+         "anchor": "start",
+         "size": 9,
+         "color": "green"
+        },
+        {
+         "x": 2,
+         "y": 5.63,
+         "text": "Y",
+         "anchor": "middle",
+         "size": 10,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 1.5,
+         "y": 5.055,
+         "text": "3/4",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 2,
+         "y": 2.13,
+         "text": "E",
+         "anchor": "middle",
+         "size": 10,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 1.5,
+         "y": 3.305,
+         "text": "1/4",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        }
+       ],
+       "padLeft": 14
+      }
+     ],
+     "answer": "(b) 27/32 (c) 9/16",
+     "checks": [
+      {
+       "expr": "9/16+2*9/64",
+       "equals": "27/32",
+       "tol": 1e-12
+      },
+      {
+       "expr": "(9/64)/(3/16+1/16)",
+       "equals": "9/16",
+       "tol": 1e-12
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    {
+     "label": "例 13",
+     "ref": "L17 Ex 4",
+     "question": "Spinner probabilities for 1–6: 0.1, 0.2, 0.1, 0.1, 0.3, 0.2. E: lands on 6; F: lands on a multiple of 2. Find (a) P(E) (b) P(F) (c) P(E | F).",
+     "solution": "直接从表中读概率，再用条件概率公式。\n(a) P(E) = 0.2。\n(b) F = {2, 4, 6}：P(F) = 0.2 + 0.1 + 0.2 = 0.5。\n(c) E ∩ F = {6}：P(E | F) = {{frac 0.2|0.5}} = <strong>0.4</strong>。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "Integer",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+       ],
+       "rows": [
+        [
+         "Probability",
+         "0.1",
+         "0.2",
+         "0.1",
+         "0.1",
+         "0.3",
+         "0.2"
+        ]
+       ],
+       "title": "Spinner"
+      }
+     ],
+     "answer": "(a) 0.2 (b) 0.5 (c) 0.4",
+     "checks": [
+      {
+       "expr": "0.2+0.1+0.2",
+       "equals": "0.5",
+       "tol": 1e-12
+      },
+      {
+       "expr": "0.2/0.5",
+       "equals": "0.4",
+       "tol": 1e-12
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    {
+     "label": "例 14",
+     "ref": "L17 Ex 5",
+     "question": "P(man watches) = 0.4, P(wife watches) = 0.5, P(man | wife) = 0.7. (a) Find P(both). (b) Are the events independent? (c) Find P(wife | man).",
+     "solution": "(a) P(M ∩ W) = P(M | W) × P(W) = 0.7 × 0.5 = <strong>0.35</strong>。\n(b) P(M | W) = 0.7 ≠ P(M) = 0.4（或 0.35 ≠ 0.4 × 0.5 = 0.2），<strong>不独立</strong>：妻子看会提高丈夫看的概率。\n(c) P(W | M) = {{frac 0.35|0.4}} = <strong>0.875</strong>。",
+     "answer": "(a) 0.35 (b) not independent (c) 0.875",
+     "checks": [
+      {
+       "expr": "0.7*0.5",
+       "equals": "0.35",
+       "tol": 1e-12
+      },
+      {
+       "expr": "0.35/0.4",
+       "equals": "0.875",
+       "tol": 1e-12
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    {
+     "label": "例 15",
+     "ref": "L17 Ex 6",
+     "question": "A card is drawn from 52. C: a club; F: a face card. (a) Are C and F independent? (b) Are they mutually exclusive?",
+     "solution": "P(C) = {{frac 13|52}} = {{frac 1|4}}，P(F) = {{frac 12|52}} = {{frac 3|13}}，P(C ∩ F) = {{frac 3|52}}（梅花 J、Q、K）。\n(a) {{frac 1|4}} × {{frac 3|13}} = {{frac 3|52}} = P(C ∩ F)，<strong>独立</strong>。\n(b) C ∩ F 有 3 张牌，不是空集，<strong>不互斥</strong>。",
+     "answer": "(a) independent (b) not mutually exclusive",
+     "checks": [
+      {
+       "expr": "1/4*3/13",
+       "equals": "3/52",
+       "tol": 1e-12
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    }
+   ],
+   "mistakes": [
+    "P(A | B) 和 P(B | A) 弄反。",
+    "以为独立就是互斥：互斥的两个事件（概率都不为 0）一定不独立。",
+    "条件在后一阶段时还去「缩小第一阶段的样本空间」。"
+   ],
+   "faqs": [
+    {
+     "q": "怎么记条件概率公式？",
+     "a": "「已知 B」就是把 B 当作新的全集：在 B 里面同时也是 A 的那部分占 B 的比例，P(A ∩ B) ÷ P(B)。"
+    }
+   ]
+  },
+  {
+   "title": "复习（L18）",
+   "sources": [
+    {
+     "file": "L18_Review.pdf",
+     "pages": "p1–6"
+    }
+   ],
+   "concept": "L18 覆盖第 1–6 周：Σ 记号、等差与等比数列、极限和、复利与单利、年金、集合与计数、排列组合、概率与条件概率。每道题先判断属于哪一类，再选公式。",
+   "examples": [
+    {
+     "label": "例 16",
+     "ref": "L18 Ex 1",
+     "question": "Calculate {{sum n=3|6}} (n² − 1).",
+     "solution": "从 n = 3 代到 n = 6（共 4 项），每项是 n² − 1：8 + 15 + 24 + 35 = <strong>82</strong>。",
+     "answer": "82",
+     "checks": [
+      {
+       "expr": "8+15+24+35",
+       "equals": "82"
+      }
+     ]
+    },
+    {
+     "label": "例 17",
+     "ref": "L18 Ex 2",
+     "question": "For 3 + 7 + 11 + …, find (a) T₁₇ (b) S₁₇.",
+     "solution": "这是等差数列，首项 a = 3，公差 d = 4。\n(a) T₁₇ = 3 + 16 × 4 = <strong>67</strong>。(b) S₁₇ = {{frac 17|2}}(3 + 67) = <strong>595</strong>。",
+     "answer": "(a) 67 (b) 595",
+     "checks": [
+      {
+       "expr": "3+16*4",
+       "equals": "67"
+      },
+      {
+       "expr": "17/2*(3+67)",
+       "equals": "595"
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 18",
+     "ref": "L18 Ex 3",
+     "question": "For 2 − 6 + 18 − 54 + …, find (a) T₁₁ (b) S₁₁.",
+     "solution": "这是等比数列，首项 a = 2，公比 r = −3。\n(a) T₁₁ = 2 × (−3)¹⁰ = <strong>118 098</strong>。(b) S₁₁ = {{frac 2(1 − (−3)¹¹)|1 − (−3)}} = {{frac 2 × 177 148|4}} = <strong>88 574</strong>。",
+     "answer": "(a) 118 098 (b) 88 574",
+     "checks": [
+      {
+       "expr": "2*(-3)^10",
+       "equals": "118098"
+      },
+      {
+       "expr": "2*(1-(-3)^11)/4",
+       "equals": "88574"
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 19",
+     "ref": "L18 Ex 4",
+     "question": "The infinite series a − a/2 + a/4 − a/8 + … has sum 14/3. Find a.",
+     "solution": "相邻两项之比是 −½，|r| < 1，极限和存在：S∞ = {{frac a|1 + ½}} = {{frac 2a|3}} = {{frac 14|3}}，a = <strong>7</strong>。",
+     "answer": "a = 7",
+     "checks": [
+      {
+       "expr": "7/(1+0.5)",
+       "equals": "14/3",
+       "tol": 1e-12
+      }
+     ]
+    },
+    {
+     "label": "例 20",
+     "ref": "L18 Ex 5",
+     "question": "$10 000 for 5 years at 6% p.a. Find the extra interest if compounded monthly rather than flat.",
+     "solution": "按月复利：10 000 × 1.005⁶⁰ = $13 488.50，利息 $3488.50。单利：10 000 × 0.06 × 5 = $3000。多出 <strong>$488.50</strong>。",
+     "answer": "$488.50",
+     "checks": [
+      {
+       "expr": "10000*1.005^60-10000-3000",
+       "equals": "488.50",
+       "tol": 0.005
+      }
+     ]
+    },
+    {
+     "label": "例 21",
+     "ref": "L18 Ex 6",
+     "question": "Calculate the value of an annuity if $300 is deposited monthly at 4.8% p.a. compounded monthly.",
+     "solution": "题目没有给出存款年限，无法算出具体数值。方法：i = 0.048 ÷ 12 = 0.004，存 t 年时 n = 12t，FV = 300 × {{frac 1.004ⁿ − 1|0.004}}。例如存 10 年（n = 120）：FV = 300 × {{frac 1.004¹²⁰ − 1|0.004}} ≈ $46 089.59（这个年限是示例假设）。",
+     "checks": [
+      {
+       "expr": "300*(1.004^120-1)/0.004",
+       "equals": "46089.59",
+       "tol": 0.01
+      }
+     ],
+     "sourceNote": "讲义第 6 题缺少存款期限（几年），笔记给出方法，并用 10 年作示例计算；做 Tutorial 时以老师给出的完整题目为准。"
+    },
+    {
+     "label": "例 22",
+     "ref": "L18 Ex 7",
+     "question": "A loan is repaid over 10 years in equal monthly instalments of $4500. Calculate the interest charged in the fifth year.",
+     "solution": "题目没有给出利率，无法算出数值。方法：第 4 年末余额 B₄₈ = 4500 × {{frac 1 − (1 + i)⁻⁷²|i}}（还剩 72 期），第 5 年末余额 B₆₀ = 4500 × {{frac 1 − (1 + i)⁻⁶⁰|i}}；第 5 年利息 = B₆₀ − B₄₈ + 12 × 4500。例如年利率 6%（i = 0.005，示例假设）：B₄₈ ≈ $271 527.81，B₆₀ ≈ $232 765.02，第 5 年利息 = 232 765.02 − 271 527.81 + 54 000 ≈ $15 237.21。",
+     "checks": [
+      {
+       "expr": "4500*(1-1.005^(-72))/0.005",
+       "equals": "271527.81",
+       "tol": 0.01
+      },
+      {
+       "expr": "4500*(1-1.005^(-60))/0.005-4500*(1-1.005^(-72))/0.005+54000",
+       "equals": "15237.21",
+       "tol": 0.01
+      }
+     ],
+     "sourceNote": "讲义第 7 题缺少利率，笔记给出方法，并用 6% p.a. 作示例计算。"
+    },
+    {
+     "label": "例 23",
+     "ref": "L18 Ex 8",
+     "question": "U = counting numbers less than 50, A = multiples of 4, B = multiples of 6. Find (a) n(U) (b) n(A) (c) n(B) (d) n(A ∩ B) (e) n(A ∪ B) (f) n(A′).",
+     "solution": "(a) U = {1, …, 49}：<strong>49</strong>。(b) 4, 8, …, 48：<strong>12</strong>。(c) 6, 12, …, 48：<strong>8</strong>。(d) 同时是 4 和 6 的倍数即 12 的倍数：12, 24, 36, 48，<strong>4</strong>。(e) 12 + 8 − 4 = <strong>16</strong>。(f) 49 − 12 = <strong>37</strong>。",
+     "figures": [
+      {
+       "type": "venn",
+       "sets": [
+        "A (×4) 12",
+        "B (×6) 8"
+       ],
+       "shade": [],
+       "caption": "U = {1, …, 49}, n(U) = 49",
+       "universe": "U",
+       "regionCounts": {
+        "10": "8",
+        "11": "4",
+        "01": "4",
+        "00": "33"
+       }
+      }
+     ],
+     "answer": "49, 12, 8, 4, 16, 37",
+     "checks": [
+      {
+       "expr": "floor(49/4)",
+       "equals": "12"
+      },
+      {
+       "expr": "floor(49/6)",
+       "equals": "8"
+      },
+      {
+       "expr": "floor(49/12)",
+       "equals": "4"
+      },
+      {
+       "expr": "12+8-4",
+       "equals": "16"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+     ]
+    },
+    {
+     "label": "例 24",
+     "ref": "L18 Ex 9",
+     "question": "Three dice are rolled at the same time as two coins are tossed. Find the total number of outcomes.",
+     "solution": "乘法原理：6³ × 2² = 216 × 4 = <strong>864</strong>。",
+     "answer": "864",
+     "checks": [
+      {
+       "expr": "6^3*2^2",
+       "equals": "864"
+      }
+     ]
+    },
+    {
+     "label": "例 25",
+     "ref": "L18 Ex 10",
+     "question": "Four-letter 'words' from SILENT, no repetition. How many if (a) no restrictions (b) the word begins with a vowel?",
+     "solution": "SILENT 有 6 个不同字母，元音 I、E。(a) ⁶P₄ = <strong>360</strong>。(b) 首字母 2 种，其余 5 个字母排 3 个：2 × ⁵P₃ = <strong>120</strong>。",
+     "answer": "(a) 360 (b) 120",
+     "checks": [
+      {
+       "expr": "perm(6,4)",
+       "equals": "360"
+      },
+      {
+       "expr": "2*perm(5,3)",
+       "equals": "120"
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 26",
+     "ref": "L18 Ex 11",
+     "question": "Five-card hands from 52. How many if (a) no restrictions (b) exactly 3 clubs?",
+     "solution": "(a) ⁵²C₅ = <strong>2 598 960</strong>。(b) 13 张梅花选 3，其余 39 张选 2：¹³C₃ × ³⁹C₂ = 286 × 741 = <strong>211 926</strong>。",
+     "answer": "(a) 2 598 960 (b) 211 926",
+     "checks": [
+      {
+       "expr": "comb(13,3)*comb(39,2)",
+       "equals": "211926"
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 27",
+     "ref": "L18 Ex 12",
+     "question": "A die is rolled twice and the lower number recorded. Find the probability it is greater than 4.",
+     "solution": "较小的数大于 4 ⇔ 两次都是 5 或 6：({{frac 2|6}})² = <strong>{{frac 1|9}}</strong>。",
+     "answer": "1/9",
+     "checks": [
+      {
+       "expr": "(2/6)^2",
+       "equals": "1/9",
+       "tol": 1e-12
+      }
+     ]
+    },
+    {
+     "label": "例 28",
+     "ref": "L18 Ex 13",
+     "question": "15 students include Cindy and Patrick. (a) In a line, find the probability they stand next to each other. (b) A committee of 5 is chosen; find the probability Cindy is on it but Patrick is not.",
+     "solution": "(a) {{frac 14! × 2!|15!}} = {{frac 2|15}}。\n(b) Cindy 已在，从除两人外的 13 人中选 4：{{frac ¹³C₄|¹⁵C₅}} = {{frac 715|3003}} = <strong>{{frac 5|21}}</strong> ≈ 0.238。",
+     "answer": "(a) 2/15 (b) 5/21",
+     "checks": [
+      {
+       "expr": "fact(14)*2/fact(15)",
+       "equals": "2/15",
+       "tol": 1e-12
+      },
+      {
+       "expr": "comb(13,4)/comb(15,5)",
+       "equals": "5/21",
+       "tol": 1e-12
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 29",
+     "ref": "L18 Ex 14",
+     "question": "Every student speaks at least one of the two languages; 53% speak Chinese and 61% speak English. Find the probability a random student speaks both.",
+     "solution": "每人至少说一种，P(C ∪ E) = 1：1 = 0.53 + 0.61 − P(C ∩ E)，P(C ∩ E) = <strong>0.14</strong>。",
+     "answer": "0.14",
+     "checks": [
+      {
+       "expr": "0.53+0.61-1",
+       "equals": "0.14",
+       "tol": 1e-12
+      }
+     ],
+     "sourceNote": "讲义写「every student speaks at least either French or German」，与后面的中文、英文不一致，应为「至少说中文或英文中的一种」，笔记按此计算。"
+    },
+    {
+     "label": "例 30",
+     "ref": "L18 Ex 15",
+     "question": "7 red and 8 blue marbles; two drawn in succession. Find the probability they are different colours (a) with replacement (b) without replacement.",
+     "solution": "不同颜色 = 红蓝 + 蓝红。\n(a) 2 × {{frac 7|15}} × {{frac 8|15}} = <strong>{{frac 112|225}}</strong>。\n(b) 2 × {{frac 7|15}} × {{frac 8|14}} = <strong>{{frac 8|15}}</strong>。",
+     "answer": "(a) 112/225 (b) 8/15",
+     "checks": [
+      {
+       "expr": "2*7/15*8/15",
+       "equals": "112/225",
+       "tol": 1e-12
+      },
+      {
+       "expr": "2*7/15*8/14",
+       "equals": "8/15",
+       "tol": 1e-12
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 31",
+     "ref": "L18 Ex 16",
+     "question": "3 in 1000 people have a disease. The test is positive for 90% of people with it and negative for 90% without it. My test is positive. Find the probability I have the disease.",
+     "solution": "P(+) = 0.003 × 0.9 + 0.997 × 0.1 = 0.0027 + 0.0997 = 0.1024。\nP(病 | +) = {{frac 0.0027|0.1024}} ≈ <strong>0.0264</strong>，只有约 2.6%：患病率很低，大部分阳性来自没病的人。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0.81,
+        4.6
+       ],
+       "yr": [
+        0.41000000000000003,
+        5
+       ],
+       "width": 340,
+       "height": 160,
+       "xLabel": "",
+       "yLabel": "",
+       "curves": [],
+       "caption": "P(+) = 0.0027 + 0.0997 = 0.1024",
+       "lines": [
+        {
+         "pts": [
+          [
+           2.12,
+           4.0
+          ],
+          [
+           2.88,
+           4.5
+          ]
+         ],
+         "color": "grey"
+        },
+        {
+         "pts": [
+          [
+           2.12,
+           4.0
+          ],
+          [
+           2.88,
+           3.5
+          ]
+         ],
+         "color": "grey"
+        },
+        {
+         "pts": [
+          [
+           2.12,
+           2.0
+          ],
+          [
+           2.88,
+           2.5
+          ]
+         ],
+         "color": "grey"
+        },
+        {
+         "pts": [
+          [
+           2.12,
+           2.0
+          ],
+          [
+           2.88,
+           1.5
+          ]
+         ],
+         "color": "grey"
+        },
+        {
+         "pts": [
+          [
+           1.12,
+           3.0
+          ],
+          [
+           1.88,
+           4.0
+          ]
+         ],
+         "color": "grey"
+        },
+        {
+         "pts": [
+          [
+           1.12,
+           3.0
+          ],
+          [
+           1.88,
+           2.0
+          ]
+         ],
+         "color": "grey"
+        }
+       ],
+       "texts": [
+        {
+         "x": 3,
+         "y": 4.38,
+         "text": "+",
+         "anchor": "middle",
+         "size": 10,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 2.5,
+         "y": 4.43,
+         "text": "0.9",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 3.35,
+         "y": 4.38,
+         "text": "0.0027",
+         "anchor": "start",
+         "size": 9,
+         "color": "green"
+        },
+        {
+         "x": 3,
+         "y": 3.38,
+         "text": "−",
+         "anchor": "middle",
+         "size": 10,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 2.5,
+         "y": 3.93,
+         "text": "0.1",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 3.35,
+         "y": 3.38,
+         "text": "0.0003",
+         "anchor": "start",
+         "size": 9,
+         "color": "green"
+        },
+        {
+         "x": 3,
+         "y": 2.38,
+         "text": "+",
+         "anchor": "middle",
+         "size": 10,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 2.5,
+         "y": 2.4299999999999997,
+         "text": "0.1",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 3.35,
+         "y": 2.38,
+         "text": "0.0997",
+         "anchor": "start",
+         "size": 9,
+         "color": "green"
+        },
+        {
+         "x": 3,
+         "y": 1.38,
+         "text": "−",
+         "anchor": "middle",
+         "size": 10,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 2.5,
+         "y": 1.93,
+         "text": "0.9",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 3.35,
+         "y": 1.38,
+         "text": "0.8973",
+         "anchor": "start",
+         "size": 9,
+         "color": "green"
+        },
+        {
+         "x": 2,
+         "y": 3.88,
+         "text": "Disease",
+         "anchor": "middle",
+         "size": 10,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 1.5,
+         "y": 3.68,
+         "text": "0.003",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        },
+        {
+         "x": 2,
+         "y": 1.88,
+         "text": "No disease",
+         "anchor": "middle",
+         "size": 10,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 1.5,
+         "y": 2.6799999999999997,
+         "text": "0.997",
+         "anchor": "middle",
+         "size": 9,
+         "color": "gold"
+        }
+       ],
+       "padLeft": 14
+      }
+     ],
+     "answer": "≈ 0.0264",
+     "checks": [
+      {
+       "expr": "0.003*0.9/(0.003*0.9+0.997*0.1)",
+       "equals": "0.02637",
+       "tol": 5e-05
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "复习题先判断类型再选公式，不要直接套。",
+    "(b) 类「只有一个」的问题注意排除另一个人。"
+   ],
+   "faqs": [
+    {
+     "q": "例 31 为什么阳性却只有 2.6%？",
+     "a": "1000 人中只有 3 人有病（约 2.7 人阳性），而 997 个没病的人里约 99.7 人误报阳性；阳性的人绝大多数其实没病。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "题型",
+   "做法",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "多阶段",
+    "沿路径乘，路径之间加",
+    "例 2–7"
+   ],
+   [
+    "至少一个",
+    "1 − 一个都没有",
+    "例 4"
+   ],
+   [
+    "条件概率",
+    "缩小样本空间，或 P(A ∩ B)/P(B)",
+    "例 8–14"
+   ],
+   [
+    "独立 / 互斥",
+    "P(A ∩ B) = P(A)P(B) / P(A ∩ B) = 0",
+    "例 14、15"
+   ],
+   [
+    "贝叶斯型",
+    "树形图求 P(B)，再求 P(A | B)",
+    "例 11、31"
+   ]
+  ]
+ },
+ "practice": "讲义建议练习：Tutorial Guide 8-8、8-9；L18 是复习课。"
+}
