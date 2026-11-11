@@ -2,6 +2,7 @@
 'use strict';
 /* 一次构建全部周笔记：notes/weeks/<课程>/<学期>/wNN.json → 校验 → notes/out/ 下的笔记页、作业答案页和发布清单。
    用法：node notes/pipeline/build.js [--only 课程/学期] [--check]
+   清单里 fields 的路径都相对 notes/ 目录；legacy: true 的条目是流水线之前的手工版本。
    --check 只校验并比对 notes/out 是否与 JSON 一致（提交前、CI 用），不写文件。
    任何一周校验不通过，这一周不输出，整体以非零状态退出。 */
 const fs = require('fs');
@@ -55,6 +56,26 @@ for (const course of fs.readdirSync(WEEKS).sort()) {
     }
   }
 }
+
+/* 流水线之前手工生成、已核算过的周（notes/<目录>/<学期>/wNN.html），没有对应 JSON 时照样列进发布清单，标记 legacy。 */
+const LEGACY_DIRS = { math: 'mathematics', accounting: 'accounting', economics: 'economics' };
+for (const [dir, course] of Object.entries(LEGACY_DIRS)) {
+  const base = path.join(NOTES, dir);
+  if (!fs.existsSync(base)) continue;
+  for (const term of fs.readdirSync(base).sort()) {
+    if (only && only !== `${course}/${term}` && only !== course) continue;
+    const tdir = path.join(base, term);
+    if (!fs.statSync(tdir).isDirectory()) continue;
+    for (const f of fs.readdirSync(tdir).filter(n => /^w\d+\.html$/.test(n)).sort()) {
+      const wk = Number(f.match(/\d+/)[0]);
+      if (fs.existsSync(path.join(WEEKS, course, term, `w${String(wk).padStart(2, '0')}.json`))) continue;
+      manifest.push({ board: boardOf(course), key: `${term}/${wk}`, course, term, week: wk, title: null,
+        fields: { graphicHtml: `${dir}/${term}/${f}` }, legacy: true });
+      console.log(`·  ${dir}/${term}/${f}  手工生成的旧版（已核算），按原样列入发布清单`);
+    }
+  }
+}
+manifest.sort((a, b) => a.course.localeCompare(b.course) || a.term.localeCompare(b.term) || a.week - b.week);
 
 if (!only) write('manifest.json', JSON.stringify(manifest, null, 1) + '\n');
 let failed = 0;

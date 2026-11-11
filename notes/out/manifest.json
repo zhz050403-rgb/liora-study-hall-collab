@@ -458,6 +458,60 @@
  },
  {
   "board": "math-notes",
+  "key": "term1/5",
+  "course": "mathematics",
+  "term": "term1",
+  "week": 5,
+  "title": null,
+  "fields": {
+   "graphicHtml": "math/term1/w05.html"
+  },
+  "legacy": true
+ },
+ {
+  "board": "math-notes",
+  "key": "term1/6",
+  "course": "mathematics",
+  "term": "term1",
+  "week": 6,
+  "title": null,
+  "fields": {
+   "graphicHtml": "math/term1/w06.html"
+  },
+  "legacy": true
+ },
+ {
+  "board": "math-notes",
+  "key": "term1/7",
+  "course": "mathematics",
+  "term": "term1",
+  "week": 7,
+  "title": "Introduction to Calculus & Differentiation · 微积分入门与求导",
+  "fields": {
+   "graphicHtml": "out/mathematics/term1/w07.graphic.html"
+  },
+  "examples": 14,
+  "checks": 37,
+  "deliverables": 3,
+  "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
+  "key": "term1/8",
+  "course": "mathematics",
+  "term": "term1",
+  "week": 8,
+  "title": "Tangents, Normals & Derivative Signs · 切线、法线与导数符号",
+  "fields": {
+   "graphicHtml": "out/mathematics/term1/w08.graphic.html"
+  },
+  "examples": 17,
+  "checks": 46,
+  "deliverables": 2,
+  "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
   "key": "term2/5",
   "course": "mathematics",
   "term": "term2",
