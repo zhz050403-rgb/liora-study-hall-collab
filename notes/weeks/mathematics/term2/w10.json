@@ -1,0 +1,1267 @@
+{
+ "course": "mathematics",
+ "term": "term2",
+ "week": 10,
+ "title": "Discrete Random Variables · 离散型随机变量",
+ "files": [
+  "L27_Discrete_Random_Variables.pdf",
+  "L28_Applications_Expected_Value.pdf"
+ ],
+ "inventory": [
+  "L27 Die",
+  {
+   "ref": "L27 Ex 1",
+   "parts": [
+    "a",
+    "b"
+   ],
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  {
+   "ref": "L27 Ex 2",
+   "parts": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "ref": "L27 Ex 3",
+   "parts": [
+    "a",
+    "b",
+    "c"
+   ],
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "L27 Ex 4",
+   "parts": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "ref": "L28 Ex 1",
+   "parts": [
+    "a",
+    "b",
+    "c"
+   ],
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  "L28 Ex 2",
+  {
+   "ref": "L28 Ex 3",
+   "parts": [
+    "a",
+    "b"
+   ],
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  {
+   "ref": "L28 Ex 4",
+   "parts": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "ref": "L28 Ex 5",
+   "parts": [
+    "a",
+    "b"
+   ]
+  },
+  "L28 Ex 6",
+  {
+   "ref": "L28 Ex 7",
+   "parts": [
+    "a",
+    "b"
+   ],
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  }
+ ],
+ "intro": [
+  "Term 2 第 10 周：离散型随机变量与概率分布、期望（平均数）、方差、众数与中位数（L27）；期望的应用：收益表、公平游戏、抽奖、保险、比较两个分布（L28）。所有期望和方差都用分数核对。"
+ ],
+ "sections": [
+  {
+   "title": "概率分布、期望与方差（L27）",
+   "sources": [
+    {
+     "file": "L27_Discrete_Random_Variables.pdf",
+     "pages": "p1–6"
+    }
+   ],
+   "concept": "掷骰子 600 次，理想情况下每个点数各约 100 次，平均 2100 ÷ 600 = 3.5。把频数换成<strong>相对频数</strong>（即概率），就得到<strong>概率分布</strong>。\n<strong>随机变量</strong> X：取不同的值（变量），每个值有对应的概率（随机）；只能取有限个不同值时是<strong>离散</strong>型。分布表列出每个 xᵢ 和 pᵢ，要求 pᵢ ≥ 0 且 Σpᵢ = 1。\n<strong>期望</strong>（平均数）：E(X) = μ = Σxᵢpᵢ（加权平均）。对称分布的期望在正中间；每个值概率相同叫<strong>均匀</strong>分布。\n<strong>方差</strong>：Var(X) = Σ(xᵢ − μ)²pᵢ = <strong>E(X²) − [E(X)]²</strong>（第二种更好算），E(X²) = Σxᵢ²pᵢ。\n<strong>众数</strong>：概率最大的值。<strong>中位数</strong>：使 P(X ≤ M) ≥ 0.5 的最小值。",
+   "formulas": [
+    "E(X) = μ = Σxᵢpᵢ",
+    "Var(X) = E(X²) − [E(X)]²，E(X²) = Σxᵢ²pᵢ"
+   ],
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "L27 Die",
+     "question": "What total would you expect from six rolls of a die, and what is the expected value of one roll?",
+     "solution": "理想情况下 1 到 6 各出现一次：1 + 2 + … + 6 = 21，平均每次 21 ÷ 6 = 3.5。用概率：E(X) = 1 × {{frac 1|6}} + 2 × {{frac 1|6}} + … + 6 × {{frac 1|6}} = {{frac 21|6}} = 3.5。实际掷 6 次结果可能和 21 差很多，掷很多次时平均数才会接近 3.5。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        7
+       ],
+       "yr": [
+        0,
+        0.20833333333333331
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "P(X = x)",
+       "curves": [],
+       "caption": "One die: uniform and symmetrical, E(X) = 3.5",
+       "xticks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "hideYAxis": true,
+       "lines": [
+        {
+         "pts": [
+          [
+           1,
+           0
+          ],
+          [
+           1,
+           0.16666666666666666
+          ]
+         ],
+         "color": "blue",
+         "width": 10
+        },
+        {
+         "pts": [
+          [
+           2,
+           0
+          ],
+          [
+           2,
+           0.16666666666666666
+          ]
+         ],
+         "color": "blue",
+         "width": 10
+        },
+        {
+         "pts": [
+          [
+           3,
+           0
+          ],
+          [
+           3,
+           0.16666666666666666
+          ]
+         ],
+         "color": "blue",
+         "width": 10
+        },
+        {
+         "pts": [
+          [
+           4,
+           0
+          ],
+          [
+           4,
+           0.16666666666666666
+          ]
+         ],
+         "color": "blue",
+         "width": 10
+        },
+        {
+         "pts": [
+          [
+           5,
+           0
+          ],
+          [
+           5,
+           0.16666666666666666
+          ]
+         ],
+         "color": "blue",
+         "width": 10
+        },
+        {
+         "pts": [
+          [
+           6,
+           0
+          ],
+          [
+           6,
+           0.16666666666666666
+          ]
+         ],
+         "color": "blue",
+         "width": 10
+        }
+       ],
+       "texts": [
+        {
+         "x": 1,
+         "y": 0.17291666666666666,
+         "text": "1/6",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 2,
+         "y": 0.17291666666666666,
+         "text": "1/6",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 3,
+         "y": 0.17291666666666666,
+         "text": "1/6",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 4,
+         "y": 0.17291666666666666,
+         "text": "1/6",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 5,
+         "y": 0.17291666666666666,
+         "text": "1/6",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 6,
+         "y": 0.17291666666666666,
+         "text": "1/6",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        }
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "(1+2+3+4+5+6)/6",
+       "equals": "3.5"
+      }
+     ]
+    },
+    {
+     "label": "例 2",
+     "ref": "L27 Ex 1",
+     "question": "Two dice are tossed and the maximum is recorded as X. (a) Construct the probability distribution. (b) Find E(X).",
+     "solution": "(a) 在 6 × 6 的格子里数：最大值为 k 的格子有 2k − 1 个，所以 P(X = k) = {{frac 2k − 1|36}}：1/36、3/36、5/36、7/36、9/36、11/36（和为 1）。\n(b) E(X) = {{frac 1 × 1 + 2 × 3 + 3 × 5 + 4 × 7 + 5 × 9 + 6 × 11|36}} = {{frac 161|36}} ≈ <strong>4.47</strong>。",
+     "figures": [
+      {
+       "type": "grid",
+       "rows": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "cols": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "cell": "max(r, c)",
+       "highlight": "max(r, c) >= 6",
+       "rowTitle": "Die 1",
+       "colTitle": "Die 2",
+       "caption": "Sample space for the maximum (11 outcomes give 6)"
+      },
+      {
+       "type": "table",
+       "headers": [
+        "x",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+       ],
+       "rows": [
+        [
+         "P(X = x)",
+         "1/36",
+         "3/36",
+         "5/36",
+         "7/36",
+         "9/36",
+         "11/36"
+        ]
+       ],
+       "title": "Maximum of two dice"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        7
+       ],
+       "yr": [
+        0,
+        0.3819444444444445
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "P(X = x)",
+       "curves": [],
+       "caption": "Maximum of two dice: skewed towards 6, E(X) ≈ 4.47",
+       "xticks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "hideYAxis": true,
+       "lines": [
+        {
+         "pts": [
+          [
+           1,
+           0
+          ],
+          [
+           1,
+           0.027777777777777776
+          ]
+         ],
+         "color": "blue",
+         "width": 10
+        },
+        {
+         "pts": [
+          [
+           2,
+           0
+          ],
+          [
+           2,
+           0.08333333333333333
+          ]
+         ],
+         "color": "blue",
+         "width": 10
+        },
+        {
+         "pts": [
+          [
+           3,
+           0
+          ],
+          [
+           3,
+           0.1388888888888889
+          ]
+         ],
+         "color": "blue",
+         "width": 10
+        },
+        {
+         "pts": [
+          [
+           4,
+           0
+          ],
+          [
+           4,
+           0.19444444444444445
+          ]
+         ],
+         "color": "blue",
+         "width": 10
+        },
+        {
+         "pts": [
+          [
+           5,
+           0
+          ],
+          [
+           5,
+           0.25
+          ]
+         ],
+         "color": "blue",
+         "width": 10
+        },
+        {
+         "pts": [
+          [
+           6,
+           0
+          ],
+          [
+           6,
+           0.3055555555555556
+          ]
+         ],
+         "color": "blue",
+         "width": 10
+        }
+       ],
+       "texts": [
+        {
+         "x": 1,
+         "y": 0.03923611111111111,
+         "text": "1/36",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 2,
+         "y": 0.09479166666666666,
+         "text": "3/36",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 3,
+         "y": 0.15034722222222224,
+         "text": "5/36",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 4,
+         "y": 0.20590277777777777,
+         "text": "7/36",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 5,
+         "y": 0.26145833333333335,
+         "text": "9/36",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 6,
+         "y": 0.31701388888888893,
+         "text": "11/36",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        }
+       ]
+      }
+     ],
+     "answer": "(b) 161/36 ≈ 4.47",
+     "checks": [
+      {
+       "expr": "(1+3+5+7+9+11)/36",
+       "equals": "1"
+      },
+      {
+       "expr": "(1*1+2*3+3*5+4*7+5*9+6*11)/36",
+       "equals": "161/36",
+       "tol": 1e-12
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 3",
+     "ref": "L27 Ex 2",
+     "question": "X takes values 2, b, 4, 7, 11 with probabilities 0.15, a, 0.25, 0.15, 0.05. (a) Find a. (b) The mean is 4.1; find b.",
+     "solution": "(a) 概率和为 1：0.15 + a + 0.25 + 0.15 + 0.05 = 1，a = <strong>0.4</strong>。\n(b) E(X) = 2 × 0.15 + 0.4b + 4 × 0.25 + 7 × 0.15 + 11 × 0.05 = 2.9 + 0.4b = 4.1，b = <strong>3</strong>。",
+     "answer": "(a) 0.4 (b) 3",
+     "checks": [
+      {
+       "expr": "1-0.15-0.25-0.15-0.05",
+       "equals": "0.4",
+       "tol": 1e-12
+      },
+      {
+       "expr": "2*0.15+3*0.4+4*0.25+7*0.15+11*0.05",
+       "equals": "4.1",
+       "tol": 1e-12
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 4",
+     "ref": "L27 Ex 3",
+     "question": "(a) Find the variance for one roll of a die. (b) Find the variance for the maximum of two dice. (c) Compare E(X) and Var(X) for the two distributions.",
+     "solution": "(a) E(X²) = {{frac 1 + 4 + 9 + 16 + 25 + 36|6}} = {{frac 91|6}}；Var(X) = {{frac 91|6}} − 3.5² = {{frac 35|12}} ≈ <strong>2.92</strong>。\n(b) E(X²) = {{frac 1 + 12 + 45 + 112 + 225 + 396|36}} = {{frac 791|36}}；Var(X) = {{frac 791|36}} − ({{frac 161|36}})² = {{frac 2555|1296}} ≈ <strong>1.97</strong>。\n(c) 取最大值时期望更大（4.47 > 3.5），因为结果偏向大的点数；方差更小（1.97 < 2.92），因为结果集中在 5、6 附近，更稳定。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        7
+       ],
+       "yr": [
+        0,
+        0.20833333333333331
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "P(X = x)",
+       "curves": [],
+       "caption": "One die: uniform and symmetrical, E(X) = 3.5",
+       "xticks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "hideYAxis": true,
+       "lines": [
+        {
+         "pts": [
+          [
+           1,
+           0
+          ],
+          [
+           1,
+           0.16666666666666666
+          ]
+         ],
+         "color": "blue",
+         "width": 10
+        },
+        {
+         "pts": [
+          [
+           2,
+           0
+          ],
+          [
+           2,
+           0.16666666666666666
+          ]
+         ],
+         "color": "blue",
+         "width": 10
+        },
+        {
+         "pts": [
+          [
+           3,
+           0
+          ],
+          [
+           3,
+           0.16666666666666666
+          ]
+         ],
+         "color": "blue",
+         "width": 10
+        },
+        {
+         "pts": [
+          [
+           4,
+           0
+          ],
+          [
+           4,
+           0.16666666666666666
+          ]
+         ],
+         "color": "blue",
+         "width": 10
+        },
+        {
+         "pts": [
+          [
+           5,
+           0
+          ],
+          [
+           5,
+           0.16666666666666666
+          ]
+         ],
+         "color": "blue",
+         "width": 10
+        },
+        {
+         "pts": [
+          [
+           6,
+           0
+          ],
+          [
+           6,
+           0.16666666666666666
+          ]
+         ],
+         "color": "blue",
+         "width": 10
+        }
+       ],
+       "texts": [
+        {
+         "x": 1,
+         "y": 0.17291666666666666,
+         "text": "1/6",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 2,
+         "y": 0.17291666666666666,
+         "text": "1/6",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 3,
+         "y": 0.17291666666666666,
+         "text": "1/6",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 4,
+         "y": 0.17291666666666666,
+         "text": "1/6",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 5,
+         "y": 0.17291666666666666,
+         "text": "1/6",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 6,
+         "y": 0.17291666666666666,
+         "text": "1/6",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        7
+       ],
+       "yr": [
+        0,
+        0.3819444444444445
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "P(X = x)",
+       "curves": [],
+       "caption": "Maximum of two dice: skewed towards 6, E(X) ≈ 4.47",
+       "xticks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+       ],
+       "hideYAxis": true,
+       "lines": [
+        {
+         "pts": [
+          [
+           1,
+           0
+          ],
+          [
+           1,
+           0.027777777777777776
+          ]
+         ],
+         "color": "blue",
+         "width": 10
+        },
+        {
+         "pts": [
+          [
+           2,
+           0
+          ],
+          [
+           2,
+           0.08333333333333333
+          ]
+         ],
+         "color": "blue",
+         "width": 10
+        },
+        {
+         "pts": [
+          [
+           3,
+           0
+          ],
+          [
+           3,
+           0.1388888888888889
+          ]
+         ],
+         "color": "blue",
+         "width": 10
+        },
+        {
+         "pts": [
+          [
+           4,
+           0
+          ],
+          [
+           4,
+           0.19444444444444445
+          ]
+         ],
+         "color": "blue",
+         "width": 10
+        },
+        {
+         "pts": [
+          [
+           5,
+           0
+          ],
+          [
+           5,
+           0.25
+          ]
+         ],
+         "color": "blue",
+         "width": 10
+        },
+        {
+         "pts": [
+          [
+           6,
+           0
+          ],
+          [
+           6,
+           0.3055555555555556
+          ]
+         ],
+         "color": "blue",
+         "width": 10
+        }
+       ],
+       "texts": [
+        {
+         "x": 1,
+         "y": 0.03923611111111111,
+         "text": "1/36",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 2,
+         "y": 0.09479166666666666,
+         "text": "3/36",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 3,
+         "y": 0.15034722222222224,
+         "text": "5/36",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 4,
+         "y": 0.20590277777777777,
+         "text": "7/36",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 5,
+         "y": 0.26145833333333335,
+         "text": "9/36",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        },
+        {
+         "x": 6,
+         "y": 0.31701388888888893,
+         "text": "11/36",
+         "anchor": "middle",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        }
+       ]
+      }
+     ],
+     "answer": "(a) 35/12 ≈ 2.92 (b) 2555/1296 ≈ 1.97",
+     "checks": [
+      {
+       "expr": "91/6-3.5^2",
+       "equals": "35/12",
+       "tol": 1e-12
+      },
+      {
+       "expr": "791/36-(161/36)^2",
+       "equals": "2555/1296",
+       "tol": 1e-12
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    {
+     "label": "例 5",
+     "ref": "L27 Ex 4",
+     "question": "For the maximum of two dice, find (a) the mode (b) the median.",
+     "solution": "(a) 概率最大的是 X = 6（11/36）：众数 <strong>6</strong>。\n(b) 累积概率：P(X ≤ 4) = {{frac 1 + 3 + 5 + 7|36}} = {{frac 16|36}} < 0.5，P(X ≤ 5) = {{frac 25|36}} ≥ 0.5：中位数 <strong>5</strong>。",
+     "answer": "(a) 6 (b) 5",
+     "checks": [
+      {
+       "expr": "16/36",
+       "equals": "0.444",
+       "tol": 0.0005
+      },
+      {
+       "expr": "25/36",
+       "equals": "0.694",
+       "tol": 0.0005
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    }
+   ],
+   "mistakes": [
+    "概率和不等于 1 时没有检查。",
+    "方差算成 E(X²) − E(X)（忘了平方）。",
+    "中位数直接取 x 值的中间（3.5）：要看累积概率。"
+   ],
+   "faqs": [
+    {
+     "q": "期望一定是 X 能取到的值吗？",
+     "a": "不一定。掷骰子的期望是 3.5，任何一次都掷不出 3.5；它是很多次的平均。"
+    }
+   ]
+  },
+  {
+   "title": "期望的应用：收益表与决策（L28）",
+   "sources": [
+    {
+     "file": "L28_Applications_Expected_Value.pdf",
+     "pages": "p1–5"
+    }
+   ],
+   "concept": "<strong>收益表</strong>：随机变量是<strong>净</strong>财务结果（游戏、保险、投资等）。期望收益为 <strong>0</strong> 的游戏叫<strong>公平游戏</strong>。\n比较两个分布：哪个「更好」看期望（视情况越高或越低越好）；哪个「更稳定」看方差（越小越稳定）。",
+   "examples": [
+    {
+     "label": "例 6",
+     "ref": "L28 Ex 1",
+     "question": "Pay $20 to play; roll a die: a 6 wins $40 plus your $20 back, otherwise you lose your $20. (a) Construct the payoff table. (b) Find the expected value. (c) Is it fair?",
+     "solution": "(a) 净收益：掷到 6 为 +$40（拿回的 $20 是自己的本钱），否则 −$20。\n(b) E = 40 × {{frac 1|6}} − 20 × {{frac 5|6}} = {{frac 40 − 100|6}} = <strong>−$10</strong>。\n(c) 期望不为 0，<strong>不公平</strong>：平均每玩一次亏 $10。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "Outcome",
+        "Payoff x",
+        "P(X = x)"
+       ],
+       "rows": [
+        [
+         "Roll a 6",
+         "+$40",
+         "1/6"
+        ],
+        [
+         "Roll 1–5",
+         "−$20",
+         "5/6"
+        ]
+       ],
+       "title": "Payoff table"
+      }
+     ],
+     "answer": "(b) −$10 (c) not fair",
+     "checks": [
+      {
+       "expr": "40/6-20*5/6",
+       "equals": "-10"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    {
+     "label": "例 7",
+     "ref": "L28 Ex 2",
+     "question": "Roll a die once: you lose $12 if the number is divisible by 3. What net payoff for other numbers makes the game fair?",
+     "solution": "能被 3 整除的是 3、6，概率 {{frac 2|6}}；其他 {{frac 4|6}}。公平：−12 × {{frac 2|6}} + y × {{frac 4|6}} = 0，y = <strong>$6</strong>。",
+     "answer": "$6",
+     "checks": [
+      {
+       "expr": "-12*2/6+6*4/6",
+       "equals": "0"
+      }
+     ]
+    },
+    {
+     "label": "例 8",
+     "ref": "L28 Ex 3",
+     "question": "Pay $x. 3 balls are drawn without replacement from 8 yellow and 3 blue; you win (number of blue)² dollars. (a) Find the expected value when x = 4. (b) Find x for a fair game.",
+     "solution": "P(k 个蓝球) = {{frac ³Cₖ × ⁸C₃₋ₖ|¹¹C₃}}：k = 0, 1, 2, 3 的概率是 56/165、84/165、24/165、1/165。\n期望奖金 = 0 × 56/165 + 1 × 84/165 + 4 × 24/165 + 9 × 1/165 = {{frac 189|165}} = {{frac 63|55}} ≈ $1.15。\n(a) 期望收益 = 1.15 − 4 ≈ <strong>−$2.85</strong>（= −{{frac 157|55}}）。\n(b) 公平：x = {{frac 63|55}} ≈ <strong>$1.15</strong>。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "Blue balls k",
+        "0",
+        "1",
+        "2",
+        "3"
+       ],
+       "rows": [
+        [
+         "Winnings k²",
+         "0",
+         "1",
+         "4",
+         "9"
+        ],
+        [
+         "Net payoff (x = 4)",
+         "−4",
+         "−3",
+         "0",
+         "5"
+        ],
+        [
+         "P",
+         "56/165",
+         "84/165",
+         "24/165",
+         "1/165"
+        ]
+       ],
+       "title": "Three balls from 8 yellow and 3 blue"
+      }
+     ],
+     "answer": "(a) −157/55 ≈ −$2.85 (b) x = 63/55 ≈ $1.15",
+     "checks": [
+      {
+       "expr": "comb(8,3)/comb(11,3)",
+       "equals": "56/165",
+       "tol": 1e-12
+      },
+      {
+       "expr": "(84+4*24+9)/165",
+       "equals": "63/55",
+       "tol": 1e-12
+      },
+      {
+       "expr": "63/55-4",
+       "equals": "-157/55",
+       "tol": 1e-12
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 9",
+     "ref": "L28 Ex 4",
+     "question": "10 000 raffle tickets are sold at $2. Prizes: 3 × $1000, 4 × $500, 10 × $100. (a) Expected value of buying 1 ticket? (b) Profit of the organisers?",
+     "solution": "奖金总额 = 3000 + 2000 + 1000 = $6000。\n(a) 每张票的期望奖金 = 6000 ÷ 10 000 = $0.60，减去票价：期望收益 <strong>−$1.40</strong>。\n(b) 收入 20 000 − 奖金 6000 = <strong>$14 000</strong>（还没扣除其他成本）。",
+     "answer": "(a) −$1.40 (b) $14 000",
+     "checks": [
+      {
+       "expr": "(3*1000+4*500+10*100)/10000-2",
+       "equals": "-1.4",
+       "tol": 1e-12
+      },
+      {
+       "expr": "20000-6000",
+       "equals": "14000"
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 10",
+     "ref": "L28 Ex 5",
+     "question": "Insuring a $500 car stereo for 1 year costs a $60 premium; the probability of theft is 0.1. (a) Expected value of the policy to you? (b) What would be a fair premium?",
+     "solution": "(a) 被盗：得到 500 − 60 = +$440，概率 0.1；不被盗：−$60，概率 0.9。E = 440 × 0.1 − 60 × 0.9 = 44 − 54 = <strong>−$10</strong>。\n(b) 公平保费 = 期望赔付 = 500 × 0.1 = <strong>$50</strong>。",
+     "answer": "(a) −$10 (b) $50",
+     "checks": [
+      {
+       "expr": "440*0.1-60*0.9",
+       "equals": "-10",
+       "tol": 1e-12
+      },
+      {
+       "expr": "500*0.1",
+       "equals": "50"
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 11",
+     "ref": "L28 Ex 6",
+     "question": "A concert makes $100 000 if it doesn't rain and $10 000 if it rains (P(rain) = 0.24). Insurance pays $100 000 if it rains, for a $20 000 premium. Should the promoter insure?",
+     "solution": "<strong>不保险</strong>：E = 100 000 × 0.76 + 10 000 × 0.24 = 76 000 + 2400 = <strong>$78 400</strong>。\n<strong>保险</strong>：不下雨 100 000 − 20 000 = 80 000；下雨 10 000 + 100 000 − 20 000 = 90 000。E = 80 000 × 0.76 + 90 000 × 0.24 = 60 800 + 21 600 = <strong>$82 400</strong>。\n保险后期望收益更高（还消除了下雨的风险），<strong>应该买保险</strong>。",
+     "answer": "Insure: $82 400 > $78 400",
+     "checks": [
+      {
+       "expr": "100000*0.76+10000*0.24",
+       "equals": "78400"
+      },
+      {
+       "expr": "80000*0.76+90000*0.24",
+       "equals": "82400"
+      }
+     ]
+    },
+    {
+     "label": "例 12",
+     "ref": "L28 Ex 7",
+     "question": "Score distributions: Tiger 69 (0.6), 70 (0), 71 (0.2), 72 (0.2); Ko 69 (0), 70 (0.2), 71 (0.6), 72 (0.2). (a) Find each E(X): who performs better (lower is better)? (b) Find each Var(X): who is more consistent?",
+     "solution": "(a) Tiger：69 × 0.6 + 71 × 0.2 + 72 × 0.2 = <strong>70.0</strong>；Ko：70 × 0.2 + 71 × 0.6 + 72 × 0.2 = <strong>71.0</strong>。高尔夫杆数越低越好，<strong>Tiger 整体更好</strong>。\n(b) Tiger：E(X²) = 4901.6，Var = 4901.6 − 70² = <strong>1.6</strong>；Ko：E(X²) = 5041.4，Var = 5041.4 − 71² = <strong>0.4</strong>。Ko 方差更小，<strong>更稳定</strong>。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "Score",
+        "69",
+        "70",
+        "71",
+        "72",
+        "E(X)",
+        "Var(X)"
+       ],
+       "rows": [
+        [
+         "Tiger",
+         "0.6",
+         "0",
+         "0.2",
+         "0.2",
+         "70.0",
+         "1.6"
+        ],
+        [
+         "Ko",
+         "0",
+         "0.2",
+         "0.6",
+         "0.2",
+         "71.0",
+         "0.4"
+        ]
+       ],
+       "title": "Golf score distributions"
+      }
+     ],
+     "answer": "(a) Tiger 70, Ko 71: Tiger better (b) Tiger 1.6, Ko 0.4: Ko more consistent",
+     "checks": [
+      {
+       "expr": "69*0.6+71*0.2+72*0.2",
+       "equals": "70",
+       "tol": 1e-09
+      },
+      {
+       "expr": "69^2*0.6+71^2*0.2+72^2*0.2-70^2",
+       "equals": "1.6",
+       "tol": 1e-06
+      },
+      {
+       "expr": "70^2*0.2+71^2*0.6+72^2*0.2-71^2",
+       "equals": "0.4",
+       "tol": 1e-06
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    }
+   ],
+   "mistakes": [
+    "收益表把拿回的本钱也算作赢的钱（例 6 的 +$40 是净收益）。",
+    "公平游戏写成「期望奖金为 0」：是期望净收益为 0。",
+    "保险题只算一种情况。"
+   ],
+   "faqs": [
+    {
+     "q": "期望为负为什么还有人买彩票、买保险？",
+     "a": "期望只反映长期平均。买保险是用小额确定的损失换掉大额不确定的损失（降低风险）；彩票则是为了小概率的大奖。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "题型",
+   "做法",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "概率分布",
+    "列出所有值和概率，检查和为 1",
+    "例 2、3"
+   ],
+   [
+    "期望",
+    "Σxp",
+    "例 1–3"
+   ],
+   [
+    "方差",
+    "E(X²) − [E(X)]²",
+    "例 4、12"
+   ],
+   [
+    "众数 / 中位数",
+    "概率最大 / 累积到 0.5",
+    "例 5"
+   ],
+   [
+    "收益表",
+    "净收益；公平 ⇔ E = 0",
+    "例 6–11"
+   ]
+  ]
+ },
+ "practice": "讲义建议练习：Tutorial Guide 10-1、10-2。"
+}
