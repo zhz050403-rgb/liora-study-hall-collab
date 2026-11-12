@@ -896,5 +896,20 @@
   "checks": 20,
   "deliverables": 32,
   "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
+  "key": "term2/8",
+  "course": "mathematics",
+  "term": "term2",
+  "week": 8,
+  "title": "Descriptive Statistics II · 描述统计（离散程度与应用）",
+  "fields": {
+   "graphicHtml": "out/mathematics/term2/w08.graphic.html"
+  },
+  "examples": 16,
+  "checks": 31,
+  "deliverables": 20,
+  "requirementsChecked": false
  }
 ]

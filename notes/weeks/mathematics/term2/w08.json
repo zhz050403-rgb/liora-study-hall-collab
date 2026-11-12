@@ -1,0 +1,1856 @@
+{
+ "course": "mathematics",
+ "term": "term2",
+ "week": 8,
+ "title": "Descriptive Statistics II · 描述统计（离散程度与应用）",
+ "files": [
+  "L22_Measures_of_Spread_I.pdf",
+  "L23_Measures_of_Spread_II.pdf",
+  "L24_Applications_Central_Tendency_and_Spread.pdf"
+ ],
+ "inventory": [
+  {
+   "ref": "L22 Ex 1",
+   "parts": [
+    "a",
+    "b"
+   ]
+  },
+  "L22 Sets",
+  {
+   "ref": "L22 Ex 2",
+   "parts": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "ref": "L22 Ex 3",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "L23 Sets",
+  {
+   "ref": "L23 Ex 1",
+   "parts": [
+    "a",
+    "b"
+   ]
+  },
+  "L23 Ex 2",
+  {
+   "ref": "L23 Ex 3",
+   "parts": [
+    "a",
+    "b"
+   ]
+  },
+  "L23 Strengths",
+  {
+   "ref": "L24 Ex 1",
+   "parts": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "ref": "L24 Ex 2",
+   "parts": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "ref": "L24 Ex 3",
+   "parts": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "ref": "L24 Ex 4",
+   "parts": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  "L24 Ex 5",
+  "L24 Ex 6",
+  {
+   "ref": "L24 Ex 7",
+   "parts": [
+    "a",
+    "b"
+   ]
+  }
+ ],
+ "intro": [
+  "Term 2 第 8 周：极差、四分位数与四分位距、五数概括与箱线图（L22）；方差、标准差和 z 分数（L23）；集中趋势与离散程度的应用：比较、预测、异常值（L24）。标准差一律用讲义的总体标准差 σₙ（计算器 SHIFT 1 4 3），所有数值都由程序重算核对；四分位数按讲义和计算器的方法取「上下两半的中位数」。"
+ ],
+ "sections": [
+  {
+   "title": "极差、四分位距与箱线图（L22）",
+   "sources": [
+    {
+     "file": "L22_Measures_of_Spread_I.pdf",
+     "pages": "p1–5"
+    }
+   ],
+   "concept": "<strong>极差</strong> = 最大值 − 最小值，最简单，但只用了两个数，看不出其余数据的分布（Sets A–D 的极差都是 9，分布却完全不同）。\n<strong>四分位数</strong>：Q₀ 最小值，Q₂ 中位数，Q₁ 是 Q₀ 到 Q₂ 这一半的中位数（下四分位数），Q₃ 是 Q₂ 到 Q₄ 这一半的中位数（上四分位数），Q₄ 最大值，合称<strong>五数概括</strong>。\n<strong>四分位距 IQR = Q₃ − Q₁</strong>：中间一半数据的范围（去掉最高和最低各 25%）。计算器：SHIFT 1 5 3 = 得 Q₁，SHIFT 1 5 5 = 得 Q₃。\n<strong>箱线图</strong>：箱子从 Q₁ 到 Q₃（长度就是 IQR），箱中画中位数线，两端的「须」伸到最小值和最大值。",
+   "formulas": [
+    "Range = 最大 − 最小　　IQR = Q₃ − Q₁"
+   ],
+   "figures": [
+    {
+     "type": "plot",
+     "xr": [
+      0,
+      11
+     ],
+     "yr": [
+      0.3,
+      4.7
+     ],
+     "width": 340,
+     "height": 220,
+     "xLabel": " ",
+     "yLabel": "",
+     "curves": [],
+     "caption": "Box-and-whisker plots of Sets A–D (range 9 for all)",
+     "xticks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ],
+     "hideYAxis": true,
+     "lines": [
+      {
+       "pts": [
+        [
+         1,
+         4
+        ],
+        [
+         1,
+         4
+        ]
+       ],
+       "color": "navy"
+      },
+      {
+       "pts": [
+        [
+         10,
+         4
+        ],
+        [
+         10,
+         4
+        ]
+       ],
+       "color": "navy"
+      },
+      {
+       "pts": [
+        [
+         1,
+         3.85
+        ],
+        [
+         1,
+         4.15
+        ]
+       ],
+       "color": "navy"
+      },
+      {
+       "pts": [
+        [
+         10,
+         3.85
+        ],
+        [
+         10,
+         4.15
+        ]
+       ],
+       "color": "navy"
+      },
+      {
+       "pts": [
+        [
+         5.5,
+         3.7
+        ],
+        [
+         5.5,
+         4.3
+        ]
+       ],
+       "color": "red",
+       "width": 3
+      },
+      {
+       "pts": [
+        [
+         1,
+         3.7
+        ],
+        [
+         10,
+         3.7
+        ],
+        [
+         10,
+         4.3
+        ],
+        [
+         1,
+         4.3
+        ],
+        [
+         1,
+         3.7
+        ]
+       ],
+       "color": "navy",
+       "width": 1
+      },
+      {
+       "pts": [
+        [
+         1,
+         3
+        ],
+        [
+         5,
+         3
+        ]
+       ],
+       "color": "navy"
+      },
+      {
+       "pts": [
+        [
+         5,
+         3
+        ],
+        [
+         10,
+         3
+        ]
+       ],
+       "color": "navy"
+      },
+      {
+       "pts": [
+        [
+         1,
+         2.85
+        ],
+        [
+         1,
+         3.15
+        ]
+       ],
+       "color": "navy"
+      },
+      {
+       "pts": [
+        [
+         10,
+         2.85
+        ],
+        [
+         10,
+         3.15
+        ]
+       ],
+       "color": "navy"
+      },
+      {
+       "pts": [
+        [
+         5,
+         2.7
+        ],
+        [
+         5,
+         3.3
+        ]
+       ],
+       "color": "red",
+       "width": 3
+      },
+      {
+       "pts": [
+        [
+         5,
+         2.7
+        ],
+        [
+         5,
+         2.7
+        ],
+        [
+         5,
+         3.3
+        ],
+        [
+         5,
+         3.3
+        ],
+        [
+         5,
+         2.7
+        ]
+       ],
+       "color": "navy",
+       "width": 1
+      },
+      {
+       "pts": [
+        [
+         1,
+         2
+        ],
+        [
+         3,
+         2
+        ]
+       ],
+       "color": "navy"
+      },
+      {
+       "pts": [
+        [
+         8,
+         2
+        ],
+        [
+         10,
+         2
+        ]
+       ],
+       "color": "navy"
+      },
+      {
+       "pts": [
+        [
+         1,
+         1.85
+        ],
+        [
+         1,
+         2.15
+        ]
+       ],
+       "color": "navy"
+      },
+      {
+       "pts": [
+        [
+         10,
+         1.85
+        ],
+        [
+         10,
+         2.15
+        ]
+       ],
+       "color": "navy"
+      },
+      {
+       "pts": [
+        [
+         5.5,
+         1.7
+        ],
+        [
+         5.5,
+         2.3
+        ]
+       ],
+       "color": "red",
+       "width": 3
+      },
+      {
+       "pts": [
+        [
+         3,
+         1.7
+        ],
+        [
+         8,
+         1.7
+        ],
+        [
+         8,
+         2.3
+        ],
+        [
+         3,
+         2.3
+        ],
+        [
+         3,
+         1.7
+        ]
+       ],
+       "color": "navy",
+       "width": 1
+      },
+      {
+       "pts": [
+        [
+         1,
+         1
+        ],
+        [
+         10,
+         1
+        ]
+       ],
+       "color": "navy"
+      },
+      {
+       "pts": [
+        [
+         10,
+         1
+        ],
+        [
+         10,
+         1
+        ]
+       ],
+       "color": "navy"
+      },
+      {
+       "pts": [
+        [
+         1,
+         0.85
+        ],
+        [
+         1,
+         1.15
+        ]
+       ],
+       "color": "navy"
+      },
+      {
+       "pts": [
+        [
+         10,
+         0.85
+        ],
+        [
+         10,
+         1.15
+        ]
+       ],
+       "color": "navy"
+      },
+      {
+       "pts": [
+        [
+         10,
+         0.7
+        ],
+        [
+         10,
+         1.3
+        ]
+       ],
+       "color": "red",
+       "width": 3
+      },
+      {
+       "pts": [
+        [
+         10,
+         0.7
+        ],
+        [
+         10,
+         0.7
+        ],
+        [
+         10,
+         1.3
+        ],
+        [
+         10,
+         1.3
+        ],
+        [
+         10,
+         0.7
+        ]
+       ],
+       "color": "navy",
+       "width": 1
+      }
+     ],
+     "polygons": [
+      {
+       "pts": [
+        [
+         1,
+         3.7
+        ],
+        [
+         10,
+         3.7
+        ],
+        [
+         10,
+         4.3
+        ],
+        [
+         1,
+         4.3
+        ]
+       ],
+       "color": "blue",
+       "opacity": 0.3
+      },
+      {
+       "pts": [
+        [
+         5,
+         2.7
+        ],
+        [
+         5,
+         2.7
+        ],
+        [
+         5,
+         3.3
+        ],
+        [
+         5,
+         3.3
+        ]
+       ],
+       "color": "blue",
+       "opacity": 0.3
+      },
+      {
+       "pts": [
+        [
+         3,
+         1.7
+        ],
+        [
+         8,
+         1.7
+        ],
+        [
+         8,
+         2.3
+        ],
+        [
+         3,
+         2.3
+        ]
+       ],
+       "color": "blue",
+       "opacity": 0.3
+      },
+      {
+       "pts": [
+        [
+         10,
+         0.7
+        ],
+        [
+         10,
+         0.7
+        ],
+        [
+         10,
+         1.3
+        ],
+        [
+         10,
+         1.3
+        ]
+       ],
+       "color": "blue",
+       "opacity": 0.3
+      }
+     ],
+     "texts": [
+      {
+       "x": 0.55,
+       "y": 4.38,
+       "text": "Set A",
+       "anchor": "start",
+       "size": 9,
+       "color": "navy",
+       "bold": true
+      },
+      {
+       "x": 0.55,
+       "y": 3.38,
+       "text": "Set B",
+       "anchor": "start",
+       "size": 9,
+       "color": "navy",
+       "bold": true
+      },
+      {
+       "x": 0.55,
+       "y": 2.38,
+       "text": "Set C",
+       "anchor": "start",
+       "size": 9,
+       "color": "navy",
+       "bold": true
+      },
+      {
+       "x": 0.55,
+       "y": 1.38,
+       "text": "Set D",
+       "anchor": "start",
+       "size": 9,
+       "color": "navy",
+       "bold": true
+      }
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "L22 Ex 1",
+     "question": "Find the range: (a) 2, 1, 2, 1, 1, 5, 1, 9, 4 (b) scores 10, 12, 13, 14 with frequencies 3, 5, 11, 7.",
+     "solution": "极差只看最大和最小值（频数不影响）。\n(a) 9 − 1 = <strong>8</strong>。(b) 14 − 10 = <strong>4</strong>。",
+     "answer": "(a) 8 (b) 4",
+     "checks": [
+      {
+       "expr": "9-1",
+       "equals": "8"
+      },
+      {
+       "expr": "14-10",
+       "equals": "4"
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 2",
+     "ref": "L22 Sets",
+     "question": "Sets A: 1,1,1,1,1,10,10,10,10,10; B: 1,5,…,5,10; C: 1,2,…,10; D: 1,10,…,10. All have range 9. Compare their IQRs.",
+     "solution": "Set C：Q₁ = 3，Q₂ = 5.5，Q₃ = 8，IQR = 5（均匀分布，中等）。Set A：Q₁ = 1，Q₃ = 10，IQR = 9（集中在两端，最大）。Set B：Q₁ = Q₃ = 5，IQR = 0；Set D：Q₁ = Q₃ = 10，IQR = 0（数据扎堆）。IQR 反映了极差反映不出的差别。",
+     "checks": [
+      {
+       "expr": "8-3",
+       "equals": "5"
+      },
+      {
+       "expr": "10-1",
+       "equals": "9"
+      }
+     ]
+    },
+    {
+     "label": "例 3",
+     "ref": "L22 Ex 2",
+     "question": "Find the IQR: (a) 2, 1, 2, 1, 1, 5, 1, 9, 4 (b) scores 10, 12, 13, 14 with frequencies 3, 5, 11, 7.",
+     "solution": "(a) 排序：1, 1, 1, 1, 2, 2, 4, 5, 9。中位数是第 5 个 = 2；下半部分 1, 1, 1, 1 → Q₁ = 1；上半部分 2, 4, 5, 9 → Q₃ = {{frac 4 + 5|2}} = 4.5。IQR = 4.5 − 1 = <strong>3.5</strong>。\n(b) n = 26，下半部分是前 13 个，Q₁ = 第 7 个；上半部分是后 13 个，Q₃ = 第 20 个。累积频数 3、8、19、26：第 7 个是 12，第 20 个是 14。IQR = 14 − 12 = <strong>2</strong>。",
+     "answer": "(a) 3.5 (b) 2",
+     "checks": [
+      {
+       "expr": "4.5-1",
+       "equals": "3.5"
+      },
+      {
+       "expr": "14-12",
+       "equals": "2"
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 4",
+     "ref": "L22 Ex 3",
+     "question": "Draw a box-and-whisker plot for scores 10, 12, 13, 14, 16 with frequencies 3, 5, 11, 7, 2.",
+     "solution": "n = 28，累积频数 3、8、19、26、28。中位数 = 第 14、15 个的平均 = 13；Q₁ = 前 14 个的中位数 = 第 7、8 个的平均 = 12；Q₃ = 后 14 个的中位数 = 第 21、22 个的平均 = 14；Q₀ = 10，Q₄ = 16。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        9,
+        17
+       ],
+       "yr": [
+        0.3,
+        1.7
+       ],
+       "width": 340,
+       "height": 100,
+       "xLabel": " ",
+       "yLabel": "",
+       "curves": [],
+       "caption": "Q0 = 10, Q1 = 12, Q2 = 13, Q3 = 14, Q4 = 16",
+       "xticks": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+       ],
+       "hideYAxis": true,
+       "lines": [
+        {
+         "pts": [
+          [
+           10,
+           1
+          ],
+          [
+           12,
+           1
+          ]
+         ],
+         "color": "navy"
+        },
+        {
+         "pts": [
+          [
+           14,
+           1
+          ],
+          [
+           16,
+           1
+          ]
+         ],
+         "color": "navy"
+        },
+        {
+         "pts": [
+          [
+           10,
+           0.85
+          ],
+          [
+           10,
+           1.15
+          ]
+         ],
+         "color": "navy"
+        },
+        {
+         "pts": [
+          [
+           16,
+           0.85
+          ],
+          [
+           16,
+           1.15
+          ]
+         ],
+         "color": "navy"
+        },
+        {
+         "pts": [
+          [
+           13,
+           0.7
+          ],
+          [
+           13,
+           1.3
+          ]
+         ],
+         "color": "red",
+         "width": 3
+        },
+        {
+         "pts": [
+          [
+           12,
+           0.7
+          ],
+          [
+           14,
+           0.7
+          ],
+          [
+           14,
+           1.3
+          ],
+          [
+           12,
+           1.3
+          ],
+          [
+           12,
+           0.7
+          ]
+         ],
+         "color": "navy",
+         "width": 1
+        }
+       ],
+       "polygons": [
+        {
+         "pts": [
+          [
+           12,
+           0.7
+          ],
+          [
+           14,
+           0.7
+          ],
+          [
+           14,
+           1.3
+          ],
+          [
+           12,
+           1.3
+          ]
+         ],
+         "color": "blue",
+         "opacity": 0.3
+        }
+       ],
+       "texts": [
+        {
+         "x": 9.4,
+         "y": 1.38,
+         "text": "Ex 3",
+         "anchor": "start",
+         "size": 9,
+         "color": "navy",
+         "bold": true
+        }
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "3+5+11+7+2",
+       "equals": "28"
+      },
+      {
+       "expr": "14-12",
+       "equals": "2"
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "求四分位数前没排序。",
+    "n 为奇数时把中位数也算进上下两半（讲义和计算器都不算）。",
+    "箱线图的箱子画到最小、最大值。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么 Set B 的箱子只有一条线？",
+     "a": "Q₁ = Q₂ = Q₃ = 5，箱子长度（IQR）为 0，只剩中位数线。"
+    }
+   ]
+  },
+  {
+   "title": "方差、标准差与 z 分数（L23）",
+   "sources": [
+    {
+     "file": "L23_Measures_of_Spread_II.pdf",
+     "pages": "p1–6"
+    }
+   ],
+   "concept": "IQR 只用了排序信息，三组极差和 IQR 都相同的数据（Sets A、B、C）分布仍可能不同，需要用到所有数据的度量。\n<strong>方差</strong> σₙ² = {{frac Σ(x − x̄)²|n}}：每个数减去平均数、平方（变正，并加大远离平均数的数的权重）、求和、除以 n。\n<strong>标准差</strong> σₙ = √方差，与数据同单位。（讲义用总体方差 σₙ²；样本方差用 n − 1。）计算器：SHIFT 1 4 3 = 得 σₙ。\n<strong>z 分数</strong> z = {{frac x − x̄|σₙ}}：这个数比平均数高几个标准差；高于平均为正，低于平均为负。用来比较不同数据集的数。\n比较：极差易算但信息少；IQR 不受极端值影响但忽略一半数据；方差 / 标准差用到全部数据、用于很多公式，但受极端值影响、手算麻烦。",
+   "formulas": [
+    "σₙ² = {{frac Σ(x − x̄)²|n}}　σₙ = √σₙ²",
+    "z = {{frac x − x̄|σₙ}}"
+   ],
+   "figures": [
+    {
+     "type": "plot",
+     "xr": [
+      0.3,
+      10.7
+     ],
+     "yr": [
+      0,
+      5
+     ],
+     "width": 220,
+     "height": 150,
+     "xLabel": "score",
+     "yLabel": "f",
+     "curves": [],
+     "caption": "Set A",
+     "xticks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ],
+     "lines": [
+      {
+       "pts": [
+        [
+         1,
+         0
+        ],
+        [
+         1,
+         2
+        ]
+       ],
+       "color": "blue",
+       "width": 10
+      },
+      {
+       "pts": [
+        [
+         2,
+         0
+        ],
+        [
+         2,
+         0
+        ]
+       ],
+       "color": "blue",
+       "width": 10
+      },
+      {
+       "pts": [
+        [
+         3,
+         0
+        ],
+        [
+         3,
+         1
+        ]
+       ],
+       "color": "blue",
+       "width": 10
+      },
+      {
+       "pts": [
+        [
+         4,
+         0
+        ],
+        [
+         4,
+         0
+        ]
+       ],
+       "color": "blue",
+       "width": 10
+      },
+      {
+       "pts": [
+        [
+         5,
+         0
+        ],
+        [
+         5,
+         4
+        ]
+       ],
+       "color": "blue",
+       "width": 10
+      },
+      {
+       "pts": [
+        [
+         6,
+         0
+        ],
+        [
+         6,
+         0
+        ]
+       ],
+       "color": "blue",
+       "width": 10
+      },
+      {
+       "pts": [
+        [
+         7,
+         0
+        ],
+        [
+         7,
+         0
+        ]
+       ],
+       "color": "blue",
+       "width": 10
+      },
+      {
+       "pts": [
+        [
+         8,
+         0
+        ],
+        [
+         8,
+         1
+        ]
+       ],
+       "color": "blue",
+       "width": 10
+      },
+      {
+       "pts": [
+        [
+         9,
+         0
+        ],
+        [
+         9,
+         0
+        ]
+       ],
+       "color": "blue",
+       "width": 10
+      },
+      {
+       "pts": [
+        [
+         10,
+         0
+        ],
+        [
+         10,
+         2
+        ]
+       ],
+       "color": "blue",
+       "width": 10
+      }
+     ]
+    },
+    {
+     "type": "plot",
+     "xr": [
+      0.3,
+      10.7
+     ],
+     "yr": [
+      0,
+      5
+     ],
+     "width": 220,
+     "height": 150,
+     "xLabel": "score",
+     "yLabel": "f",
+     "curves": [],
+     "caption": "Set B",
+     "xticks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ],
+     "lines": [
+      {
+       "pts": [
+        [
+         1,
+         0
+        ],
+        [
+         1,
+         1
+        ]
+       ],
+       "color": "blue",
+       "width": 10
+      },
+      {
+       "pts": [
+        [
+         2,
+         0
+        ],
+        [
+         2,
+         1
+        ]
+       ],
+       "color": "blue",
+       "width": 10
+      },
+      {
+       "pts": [
+        [
+         3,
+         0
+        ],
+        [
+         3,
+         1
+        ]
+       ],
+       "color": "blue",
+       "width": 10
+      },
+      {
+       "pts": [
+        [
+         4,
+         0
+        ],
+        [
+         4,
+         1
+        ]
+       ],
+       "color": "blue",
+       "width": 10
+      },
+      {
+       "pts": [
+        [
+         5,
+         0
+        ],
+        [
+         5,
+         2
+        ]
+       ],
+       "color": "blue",
+       "width": 10
+      },
+      {
+       "pts": [
+        [
+         6,
+         0
+        ],
+        [
+         6,
+         0
+        ]
+       ],
+       "color": "blue",
+       "width": 10
+      },
+      {
+       "pts": [
+        [
+         7,
+         0
+        ],
+        [
+         7,
+         1
+        ]
+       ],
+       "color": "blue",
+       "width": 10
+      },
+      {
+       "pts": [
+        [
+         8,
+         0
+        ],
+        [
+         8,
+         1
+        ]
+       ],
+       "color": "blue",
+       "width": 10
+      },
+      {
+       "pts": [
+        [
+         9,
+         0
+        ],
+        [
+         9,
+         1
+        ]
+       ],
+       "color": "blue",
+       "width": 10
+      },
+      {
+       "pts": [
+        [
+         10,
+         0
+        ],
+        [
+         10,
+         1
+        ]
+       ],
+       "color": "blue",
+       "width": 10
+      }
+     ]
+    },
+    {
+     "type": "plot",
+     "xr": [
+      0.3,
+      10.7
+     ],
+     "yr": [
+      0,
+      5
+     ],
+     "width": 220,
+     "height": 150,
+     "xLabel": "score",
+     "yLabel": "f",
+     "curves": [],
+     "caption": "Set C",
+     "xticks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+     ],
+     "lines": [
+      {
+       "pts": [
+        [
+         1,
+         0
+        ],
+        [
+         1,
+         1
+        ]
+       ],
+       "color": "blue",
+       "width": 10
+      },
+      {
+       "pts": [
+        [
+         2,
+         0
+        ],
+        [
+         2,
+         0
+        ]
+       ],
+       "color": "blue",
+       "width": 10
+      },
+      {
+       "pts": [
+        [
+         3,
+         0
+        ],
+        [
+         3,
+         3
+        ]
+       ],
+       "color": "blue",
+       "width": 10
+      },
+      {
+       "pts": [
+        [
+         4,
+         0
+        ],
+        [
+         4,
+         0
+        ]
+       ],
+       "color": "blue",
+       "width": 10
+      },
+      {
+       "pts": [
+        [
+         5,
+         0
+        ],
+        [
+         5,
+         2
+        ]
+       ],
+       "color": "blue",
+       "width": 10
+      },
+      {
+       "pts": [
+        [
+         6,
+         0
+        ],
+        [
+         6,
+         0
+        ]
+       ],
+       "color": "blue",
+       "width": 10
+      },
+      {
+       "pts": [
+        [
+         7,
+         0
+        ],
+        [
+         7,
+         0
+        ]
+       ],
+       "color": "blue",
+       "width": 10
+      },
+      {
+       "pts": [
+        [
+         8,
+         0
+        ],
+        [
+         8,
+         3
+        ]
+       ],
+       "color": "blue",
+       "width": 10
+      },
+      {
+       "pts": [
+        [
+         9,
+         0
+        ],
+        [
+         9,
+         0
+        ]
+       ],
+       "color": "blue",
+       "width": 10
+      },
+      {
+       "pts": [
+        [
+         10,
+         0
+        ],
+        [
+         10,
+         1
+        ]
+       ],
+       "color": "blue",
+       "width": 10
+      }
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "label": "例 5",
+     "ref": "L23 Sets",
+     "question": "Set A: 1,1,3,5,5,5,5,8,10,10; Set B: 1,2,3,4,5,5,7,8,9,10; Set C: 1,3,3,3,5,5,8,8,8,10. All have range 9 and IQR 5. Find σₙ and σₙ² for each.",
+     "solution": "用计算器：Set A σₙ = 3.0676，σₙ² = 9.41；Set B σₙ = 2.8705，σₙ² = 8.24；Set C σₙ = 2.8，σₙ² = 7.84。Set A 最大：十个数中有四个在两个极端值上，离平均数远的数对方差影响更大。",
+     "checks": [
+      {
+       "expr": "sqrt(9.41)",
+       "equals": "3.0676",
+       "tol": 5e-05
+      },
+      {
+       "expr": "(1+4+9+16+25+25+49+64+81+100)/10-5.4^2",
+       "equals": "8.24",
+       "tol": 1e-09
+      }
+     ],
+     "sourceNote": "讲义写 Set B 的 σₙ = 2.872281323、σₙ² = 8.25；按列出的数据计算 σₙ² = 37.4 − 5.4² = 8.24，σₙ ≈ 2.8705，差别很小，结论不变。"
+    },
+    {
+     "label": "例 6",
+     "ref": "L23 Ex 1",
+     "question": "Find σₙ and σₙ²: (a) 1, 1, 3, 4, 5, 6, 8, 8 (b) 3, 3, 3, 4, 4, 5",
+     "solution": "(a) x̄ = 36 ÷ 8 = 4.5；离差平方：12.25, 12.25, 2.25, 0.25, 0.25, 2.25, 12.25, 12.25，和为 54；σₙ² = 54 ÷ 8 = <strong>6.75</strong>，σₙ ≈ <strong>2.598</strong>。\n(b) x̄ = 22 ÷ 6 ≈ 3.667；Σx² = 84，σₙ² = 84 ÷ 6 − 3.667² ≈ <strong>0.556</strong>，σₙ ≈ <strong>0.745</strong>。",
+     "answer": "(a) 2.598, 6.75 (b) 0.745, 0.556",
+     "checks": [
+      {
+       "expr": "54/8",
+       "equals": "6.75"
+      },
+      {
+       "expr": "sqrt(6.75)",
+       "equals": "2.598",
+       "tol": 0.0005
+      },
+      {
+       "expr": "84/6-(22/6)^2",
+       "equals": "0.5556",
+       "tol": 5e-05
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 7",
+     "ref": "L23 Ex 2",
+     "question": "Scores 10, 12, 13, 14, 15. Set A frequencies 3, 5, 11, 7, 4; Set B frequencies 9, 3, 6, 7, 7. Find the mean and variance of each and comment.",
+     "solution": "Set A：n = 30，Σfx = 391，x̄ ≈ <strong>13.03</strong>；σₙ ≈ 1.354，σₙ² ≈ <strong>1.83</strong>。\nSet B：n = 32，Σfx = 407，x̄ ≈ <strong>12.72</strong>；σₙ ≈ 1.908，σₙ² ≈ <strong>3.64</strong>。\n两组平均数接近（A 略高），但 B 的方差约为 A 的两倍：A 的数据集中在 13 附近，B 有很多 10 分，分布更分散。",
+     "answer": "A: 13.03, 1.83; B: 12.72, 3.64",
+     "checks": [
+      {
+       "expr": "391/30",
+       "equals": "13.033",
+       "tol": 0.0005
+      },
+      {
+       "expr": "1.353596^2",
+       "equals": "1.8322",
+       "tol": 0.0005
+      },
+      {
+       "expr": "407/32",
+       "equals": "12.719",
+       "tol": 0.0005
+      },
+      {
+       "expr": "1.9077863^2",
+       "equals": "3.6396",
+       "tol": 0.0005
+      }
+     ]
+    },
+    {
+     "label": "例 8",
+     "ref": "L23 Ex 3",
+     "question": "A set of scores has mean 83 and σ = 15. Find the z-score for (a) 105 (b) 37.",
+     "solution": "(a) z = {{frac 105 − 83|15}} ≈ <strong>1.47</strong>（高于平均 1.47 个标准差）。\n(b) z = {{frac 37 − 83|15}} ≈ <strong>−3.07</strong>（低于平均 3.07 个标准差）。",
+     "answer": "(a) 1.47 (b) −3.07",
+     "checks": [
+      {
+       "expr": "(105-83)/15",
+       "equals": "1.467",
+       "tol": 0.0005
+      },
+      {
+       "expr": "(37-83)/15",
+       "equals": "-3.067",
+       "tol": 0.0005
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ],
+     "sourceNote": "讲义第 5 页两条注释都写「If the score is above the mean」，第二条应为「below the mean」时 z 为负。"
+    },
+    {
+     "label": "例 9",
+     "ref": "L23 Strengths",
+     "question": "Compare the strengths and weaknesses of the range, IQR and standard deviation.",
+     "solution": "<strong>极差</strong>：易算；只用两个值，信息少。<strong>IQR</strong>：不受极端值影响；忽略了一半数据。<strong>方差 / 标准差</strong>：用到全部数据，很多公式要用；受极端值影响，手算麻烦。",
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "方差忘了平方或忘了除以 n。",
+    "标准差和方差混用：标准差是方差的平方根。",
+    "计算器选了 sx（样本）而不是 σx（总体）。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么要平方而不是直接加离差？",
+     "a": "离差有正有负，直接相加总是 0；平方后都为正，而且离平均越远的数影响越大。"
+    }
+   ]
+  },
+  {
+   "title": "应用：比较、预测与异常值（L24）",
+   "sources": [
+    {
+     "file": "L24_Applications_Central_Tendency_and_Spread.pdf",
+     "pages": "p1–4"
+    }
+   ],
+   "concept": "平均数比较「水平」，标准差比较「稳定性」（越小越一致）。\n平移和缩放：每个数<strong>加</strong>常数 c，中位数、平均数都加 c，IQR 和标准差<strong>不变</strong>；每个数<strong>乘</strong> k（k > 0），四个量都乘 k。\n<strong>z 分数比较</strong>：不同数据集的成绩，z 越大相对表现越好。<strong>预测</strong>：假设同一个人在同类测试中 z 分数相同，x = x̄ + zσ。\n<strong>异常值</strong>：|z| > 3（有时用 2）；或 x < Q₁ − 1.5 × IQR、x > Q₃ + 1.5 × IQR。异常值会扭曲平均数，对中位数影响小。",
+   "formulas": [
+    "异常值：|z| > 3 或 x < Q₁ − 1.5 IQR、x > Q₃ + 1.5 IQR"
+   ],
+   "examples": [
+    {
+     "label": "例 10",
+     "ref": "L24 Ex 1",
+     "question": "Cliff and Dick each played 10 rounds (scores listed). (a) Find each mean; who is the better golfer (lower is better)? (b) Find each σₙ; who is more consistent?",
+     "solution": "(a) 两人总分都是 780，平均数都是 <strong>78.0</strong>：按平均杆数一样好。\n(b) Cliff σₙ ≈ <strong>4.07</strong>，Dick σₙ ≈ <strong>5.06</strong>：Cliff 的成绩波动小，<strong>更稳定</strong>。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "",
+        "Scores",
+        "Mean",
+        "σₙ"
+       ],
+       "rows": [
+        [
+         "Cliff",
+         "73 81 77 85 76 76 84 73 80 75",
+         "78.0",
+         "4.07"
+        ],
+        [
+         "Dick",
+         "70 84 82 78 83 73 73 74 85 78",
+         "78.0",
+         "5.06"
+        ]
+       ],
+       "title": "Golf scores"
+      }
+     ],
+     "answer": "(a) both 78 (b) Cliff",
+     "checks": [
+      {
+       "expr": "(73+81+77+85+76+76+84+73+80+75)/10",
+       "equals": "78"
+      },
+      {
+       "expr": "(70+84+82+78+83+73+73+74+85+78)/10",
+       "equals": "78"
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ],
+     "sourceNote": "两人平均数相同，讲义 (a) 问「谁更好」时按平均数无法区分，只能说一样；(b) 用标准差区分。"
+    },
+    {
+     "label": "例 11",
+     "ref": "L24 Ex 2",
+     "question": "Mark distributions for classes 10M and 10P (graph). (a) Which class has the higher standard deviation? (b) Which has the higher mode?",
+     "solution": "讲义图中 10P 是又高又窄的曲线，10M 是又低又宽的曲线。\n(a) <strong>10M</strong>：分数分布更宽，标准差更大。\n(b) 10M 的峰在更高的分数处（约 83 分，10P 约 69 分），<strong>10M</strong> 的众数更高。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        100
+       ],
+       "yr": [
+        0,
+        11
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "mark",
+       "yLabel": "frequency",
+       "curves": [
+        {
+         "expr": "max(0,1-abs(x-69)/9)*10",
+         "color": "red",
+         "dom": [
+          55,
+          85
+         ],
+         "label": [
+          73,
+          9.4,
+          "10P"
+         ]
+        },
+        {
+         "expr": "(x-40)/43*4.2",
+         "color": "navy",
+         "dom": [
+          40,
+          83
+         ],
+         "label": [
+          45,
+          1.6,
+          "10M"
+         ]
+        },
+        {
+         "expr": "(95-x)/12*4.2",
+         "color": "navy",
+         "dom": [
+          83,
+          95
+         ]
+        }
+       ],
+       "caption": "Sketch of the lecture's graph: 10M is wider (larger σ) and peaks at a higher mark",
+       "xticks": [
+        0,
+        100
+       ]
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ],
+     "sourceNote": "图是按讲义原图的形状重画的示意图，峰值位置为读图估计。",
+     "numeric": false
+    },
+    {
+     "label": "例 12",
+     "ref": "L24 Ex 3",
+     "question": "Ten swimmers' 50 m times (s): 24.5, 24.7, 25.2, 24.9, 25.0, 26.1, 24.8, 24.2, 25.1, 27.3. (a) Find the mean and σₙ. (b) Swimmers more than one standard deviation above the mean are eliminated. How many?",
+     "solution": "(a) x̄ = <strong>25.18</strong> 秒，σₙ ≈ <strong>0.852</strong> 秒。\n(b) 淘汰线 = 25.18 + 0.852 ≈ 26.03 秒：26.1 和 27.3 超过，淘汰 <strong>2 人</strong>。",
+     "answer": "(a) 25.18, 0.852 (b) 2",
+     "checks": [
+      {
+       "expr": "(24.5+24.7+25.2+24.9+25.0+26.1+24.8+24.2+25.1+27.3)/10",
+       "equals": "25.18",
+       "tol": 1e-09
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 13",
+     "ref": "L24 Ex 4",
+     "question": "Scores 10, 12, 13, 14, 15 with frequencies 3, 5, 11, 7, 4. (a) Find the median, mean, IQR and σₙ. (b) Add 5 to each score: effect? (c) Multiply each original score by 3: effect?",
+     "solution": "(a) n = 30，累积频数 3、8、19、26、30。中位数 = 第 15、16 个的平均 = <strong>13</strong>；平均数 = 391 ÷ 30 ≈ <strong>13.03</strong>；Q₁ = 前 15 个的中位数 = 第 8 个 = 12，Q₃ = 后 15 个的中位数 = 第 23 个 = 14，IQR = <strong>2</strong>；σₙ ≈ <strong>1.354</strong>。\n(b) 加 5：中位数 18，平均数 18.03（都加 5）；IQR 2、σₙ 1.354 <strong>不变</strong>（整体平移，离散程度不变）。\n(c) 乘 3：中位数 39，平均数 39.1，IQR 6，σₙ ≈ 4.061（<strong>都乘 3</strong>）。",
+     "answer": "(a) 13, 13.03, 2, 1.354",
+     "checks": [
+      {
+       "expr": "391/30*3",
+       "equals": "39.1",
+       "tol": 1e-09
+      },
+      {
+       "expr": "1.353596*3",
+       "equals": "4.0608",
+       "tol": 0.0005
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    {
+     "label": "例 14",
+     "ref": "L24 Ex 5",
+     "question": "Esti scored 80 in English (mean 75, σ 5), Mathematics (mean 55, σ 15) and Science (mean 60, σ 10). In which subject did she perform best relative to her class?",
+     "solution": "比较 z 分数：英语 1.00，数学 1.67，科学 <strong>2.00</strong>。科学的 z 最大，相对全班表现最好。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "Test",
+        "Class mean",
+        "Class σ",
+        "Esti's mark",
+        "z-score"
+       ],
+       "rows": [
+        [
+         "English",
+         "75",
+         "5",
+         "80",
+         "(80 − 75)/5 = 1.00"
+        ],
+        [
+         "Mathematics",
+         "55",
+         "15",
+         "80",
+         "(80 − 55)/15 = 1.67"
+        ],
+        [
+         "Science",
+         "60",
+         "10",
+         "80",
+         "(80 − 60)/10 = 2.00"
+        ]
+       ],
+       "title": "Comparing with z-scores"
+      }
+     ],
+     "answer": "Science",
+     "checks": [
+      {
+       "expr": "(80-75)/5",
+       "equals": "1"
+      },
+      {
+       "expr": "(80-55)/15",
+       "equals": "1.667",
+       "tol": 0.0005
+      },
+      {
+       "expr": "(80-60)/10",
+       "equals": "2"
+      }
+     ]
+    },
+    {
+     "label": "例 15",
+     "ref": "L24 Ex 6",
+     "question": "Esti missed another Mathematics test. Use her previous Mathematics result to estimate her mark.",
+     "solution": "假设她在新测试中的相对位置不变，z = 1.67（上一次数学）。估计分数 = 新测试的平均数 + 1.67 × 新测试的标准差。例如新测试平均 60、标准差 12，估计约 60 + 1.67 × 12 = 80 分（这组数字只是示例）。",
+     "checks": [
+      {
+       "expr": "60+(25/15)*12",
+       "equals": "80"
+      }
+     ],
+     "sourceNote": "讲义第 6 题没有给出新数学测试的平均数和标准差，笔记给出方法，并用示例数字演示；Tutorial 中以老师给出的数据为准。"
+    },
+    {
+     "label": "例 16",
+     "ref": "L24 Ex 7",
+     "question": "Data: 63, 10, 32, 19, 22, 29, 36, 24, 41, 3. (a) Find any outliers using (i) the standard deviation (ii) the IQR. (b) Find the mean and median with outliers included and excluded.",
+     "solution": "排序：3, 10, 19, 22, 24, 29, 32, 36, 41, 63。x̄ = 27.9，σₙ ≈ 15.99。\n(a)(i) 63 的 z = {{frac 63 − 27.9|15.99}} ≈ 2.20，3 的 z ≈ −1.56，都没超过 3：按 |z| > 3 <strong>没有异常值</strong>（若用 |z| > 2，63 是异常值）。\n(ii) Q₁ = 19，Q₃ = 36，IQR = 17；上界 36 + 25.5 = 61.5，下界 19 − 25.5 = −6.5：<strong>63 是异常值</strong>。\n(b) 含 63：平均数 27.9，中位数 {{frac 24 + 29|2}} = 26.5。去掉 63：平均数 216 ÷ 9 = 24.0，中位数 24。平均数变化更大：异常值主要影响平均数。",
+     "answer": "(i) none with |z| > 3 (ii) 63; mean 27.9 → 24.0, median 26.5 → 24",
+     "checks": [
+      {
+       "expr": "(63+10+32+19+22+29+36+24+41+3)/10",
+       "equals": "27.9",
+       "tol": 1e-09
+      },
+      {
+       "expr": "36+1.5*17",
+       "equals": "61.5"
+      },
+      {
+       "expr": "(279-63)/9",
+       "equals": "24"
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    }
+   ],
+   "mistakes": [
+    "加常数后以为标准差也变了。",
+    "比较不同科目直接比原始分数。",
+    "异常值的 IQR 界限用 1.5 × IQR 但忘了从 Q₁、Q₃ 出发。"
+   ],
+   "faqs": [
+    {
+     "q": "什么时候用中位数和 IQR，什么时候用平均数和标准差？",
+     "a": "有异常值或分布偏斜时，中位数和 IQR 更可靠；数据比较对称、没有明显异常值时用平均数和标准差，信息更完整。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "题型",
+   "做法",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "四分位数",
+    "排序 → 中位数 → 上下两半的中位数",
+    "例 3、4"
+   ],
+   [
+    "箱线图",
+    "五数概括",
+    "例 4"
+   ],
+   [
+    "标准差",
+    "计算器 σₙ；方差 = σₙ²",
+    "例 5–7"
+   ],
+   [
+    "z 分数",
+    "(x − x̄)/σₙ",
+    "例 8、14"
+   ],
+   [
+    "平移 / 缩放",
+    "加：位置变、离散不变；乘：都变",
+    "例 13"
+   ],
+   [
+    "异常值",
+    "|z| > 3 或 1.5 × IQR 规则",
+    "例 16"
+   ]
+  ]
+ },
+ "practice": "讲义建议练习：Tutorial Guide 9-4、9-5、9-6。"
+}
