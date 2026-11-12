@@ -956,5 +956,20 @@
   "checks": 22,
   "deliverables": 18,
   "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
+  "key": "term2/12",
+  "course": "mathematics",
+  "term": "term2",
+  "week": 12,
+  "title": "Continuous Random Variables · 连续型随机变量",
+  "fields": {
+   "graphicHtml": "out/mathematics/term2/w12.graphic.html"
+  },
+  "examples": 10,
+  "checks": 17,
+  "deliverables": 11,
+  "requirementsChecked": false
  }
 ]
