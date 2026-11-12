@@ -941,5 +941,20 @@
   "checks": 23,
   "deliverables": 25,
   "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
+  "key": "term2/11",
+  "course": "mathematics",
+  "term": "term2",
+  "week": 11,
+  "title": "Binomial Distribution · 二项分布",
+  "fields": {
+   "graphicHtml": "out/mathematics/term2/w11.graphic.html"
+  },
+  "examples": 10,
+  "checks": 22,
+  "deliverables": 18,
+  "requirementsChecked": false
  }
 ]
