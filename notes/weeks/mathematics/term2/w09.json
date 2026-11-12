@@ -1,0 +1,1143 @@
+{
+ "course": "mathematics",
+ "term": "term2",
+ "week": 9,
+ "title": "Bivariate Data & Regression · 双变量数据与回归",
+ "files": [
+  "L25_Bivariate_Data_Correlation.pdf",
+  "L26_Bivariate_Data_Linear_Regression.pdf"
+ ],
+ "inventory": [
+  "L25 Study",
+  {
+   "ref": "L25 Kinds",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "L25 Ex 1",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "L25 Pearson",
+  "L25 Ex 2",
+  {
+   "ref": "L25 Ex 3",
+   "parts": [
+    "a",
+    "b",
+    "c"
+   ],
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "L26 Ex 1",
+   "parts": [
+    "a",
+    "b"
+   ],
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "L26 Ex 2",
+  {
+   "ref": "L26 Ex 3",
+   "parts": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "ref": "L26 Ex 4",
+   "parts": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ],
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "L26 Ex 5",
+   "parts": [
+    "a",
+    "b",
+    "c"
+   ],
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  }
+ ],
+ "intro": [
+  "Term 2 第 9 周：双变量数据、散点图与相关（L25）；用皮尔逊相关系数 r 量化线性相关；最小二乘回归直线 y = a + bx 与内插、外推预测（L26）。r、a、b 全部由程序用讲义公式重算（与计算器 MODE 2 2 的结果相同）。"
+ ],
+ "sections": [
+  {
+   "title": "相关与皮尔逊相关系数（L25）",
+   "sources": [
+    {
+     "file": "L25_Bivariate_Data_Correlation.pdf",
+     "pages": "p1–6"
+    }
+   ],
+   "concept": "只有一个变量的数据叫<strong>单变量</strong>数据；成对的两个变量叫<strong>双变量</strong>数据，关心两者的关系。\n把数据画成<strong>散点图</strong>，看一个变量变化时另一个变量怎样变：这种趋势叫<strong>相关</strong>。相关可以是线性（正、负）、不存在或非线性；本课程只详细研究<strong>线性相关</strong>（很多非线性关系可以变换成线性）。关心两点：正还是负？强还是弱？\n<strong>皮尔逊相关系数</strong> r = {{frac nΣxy − ΣxΣy|√[(nΣx² − (Σx)²)(nΣy² − (Σy)²)]}}，分子本质上是协方差，分母是缩放因子，使 −1 ≤ r ≤ 1。只适用于线性相关。\n计算器：MODE 2 2 进入双变量模式，先输入全部 x 再输入对应的 y，AC SHIFT 1 5 3 = 得 r。",
+   "formulas": [
+    "r = {{frac nΣxy − ΣxΣy|√[(nΣx² − (Σx)²)(nΣy² − (Σy)²)]}}"
+   ],
+   "figures": [
+    {
+     "type": "table",
+     "headers": [
+      "r",
+      "Description"
+     ],
+     "rows": [
+      [
+       "−1",
+       "perfect negative"
+      ],
+      [
+       "−1 to −0.75",
+       "strong negative"
+      ],
+      [
+       "−0.75 to −0.5",
+       "moderate negative"
+      ],
+      [
+       "−0.5 to −0.25",
+       "weak negative"
+      ],
+      [
+       "−0.25 to 0.25",
+       "no correlation"
+      ],
+      [
+       "0.25 to 0.5",
+       "weak positive"
+      ],
+      [
+       "0.5 to 0.75",
+       "moderate positive"
+      ],
+      [
+       "0.75 to 1",
+       "strong positive"
+      ],
+      [
+       "1",
+       "perfect positive"
+      ]
+     ],
+     "title": "Rough guide to Pearson's r (from the lecture's scale)"
+    }
+   ],
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "L25 Study",
+     "question": "A student who does no study is predicted to have GPA 4 and one who studies 20 hours a week GPA 10. Plot the relationship.",
+     "solution": "点 (0, 4) 和 (20, 10) 连成直线，斜率 {{frac 10 − 4|20 − 0}} = 0.3，GPA = 4 + 0.3 × 小时数。现实中数据点不会都在一条线上，所以要研究「相关」。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        21
+       ],
+       "yr": [
+        0,
+        11
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "hours of study",
+       "yLabel": "GPA",
+       "curves": [
+        {
+         "expr": "4+0.3*x",
+         "color": "red",
+         "dom": [
+          0,
+          20
+         ],
+         "label": [
+          13,
+          7.6,
+          "ideal line"
+         ]
+        }
+       ],
+       "caption": "Ideal case: (0, 4) and (20, 10) on a straight line",
+       "points": [
+        {
+         "x": 0,
+         "y": 4,
+         "label": "(0, 4)",
+         "dx": 6
+        },
+        {
+         "x": 20,
+         "y": 10,
+         "label": "(20, 10)",
+         "dx": -50
+        }
+       ],
+       "xticks": [
+        5,
+        10,
+        15,
+        20
+       ],
+       "yticks": [
+        2,
+        4,
+        6,
+        8,
+        10
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "(10-4)/20",
+       "equals": "0.3"
+      }
+     ]
+    },
+    {
+     "label": "例 2",
+     "ref": "L25 Kinds",
+     "question": "What kinds of correlation can there be?",
+     "solution": "线性相关（正、负），没有相关，非线性相关（见四个示意图）。正相关：一个变量增大，另一个也增大；负相关：一个增大，另一个减小。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 160,
+       "height": 130,
+       "xLabel": " ",
+       "yLabel": " ",
+       "curves": [],
+       "caption": "positive linear",
+       "points": [
+        {
+         "x": 1,
+         "y": 2
+        },
+        {
+         "x": 2,
+         "y": 2.6
+        },
+        {
+         "x": 3,
+         "y": 3.8
+        },
+        {
+         "x": 4,
+         "y": 4.1
+        },
+        {
+         "x": 5,
+         "y": 5.5
+        },
+        {
+         "x": 6,
+         "y": 5.9
+        },
+        {
+         "x": 7,
+         "y": 7.2
+        },
+        {
+         "x": 8,
+         "y": 7.6
+        },
+        {
+         "x": 9,
+         "y": 8.9
+        }
+       ],
+       "hideYAxis": false
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 160,
+       "height": 130,
+       "xLabel": " ",
+       "yLabel": " ",
+       "curves": [],
+       "caption": "negative linear",
+       "points": [
+        {
+         "x": 1,
+         "y": 8.8
+        },
+        {
+         "x": 2,
+         "y": 8.1
+        },
+        {
+         "x": 3,
+         "y": 6.9
+        },
+        {
+         "x": 4,
+         "y": 6.5
+        },
+        {
+         "x": 5,
+         "y": 5.2
+        },
+        {
+         "x": 6,
+         "y": 4.6
+        },
+        {
+         "x": 7,
+         "y": 3.4
+        },
+        {
+         "x": 8,
+         "y": 2.8
+        },
+        {
+         "x": 9,
+         "y": 1.6
+        }
+       ],
+       "hideYAxis": false
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 160,
+       "height": 130,
+       "xLabel": " ",
+       "yLabel": " ",
+       "curves": [],
+       "caption": "none",
+       "points": [
+        {
+         "x": 1,
+         "y": 6
+        },
+        {
+         "x": 2,
+         "y": 2
+        },
+        {
+         "x": 3,
+         "y": 8
+        },
+        {
+         "x": 4,
+         "y": 4
+        },
+        {
+         "x": 5,
+         "y": 7
+        },
+        {
+         "x": 6,
+         "y": 1.5
+        },
+        {
+         "x": 7,
+         "y": 5
+        },
+        {
+         "x": 8,
+         "y": 3
+        },
+        {
+         "x": 9,
+         "y": 7.5
+        }
+       ],
+       "hideYAxis": false
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 160,
+       "height": 130,
+       "xLabel": " ",
+       "yLabel": " ",
+       "curves": [],
+       "caption": "nonlinear",
+       "points": [
+        {
+         "x": 1,
+         "y": 8.6
+        },
+        {
+         "x": 2,
+         "y": 5.9
+        },
+        {
+         "x": 3,
+         "y": 3.8
+        },
+        {
+         "x": 4,
+         "y": 2.4
+        },
+        {
+         "x": 5,
+         "y": 1.8
+        },
+        {
+         "x": 6,
+         "y": 2.2
+        },
+        {
+         "x": 7,
+         "y": 3.6
+        },
+        {
+         "x": 8,
+         "y": 5.8
+        },
+        {
+         "x": 9,
+         "y": 8.4
+        }
+       ],
+       "hideYAxis": false
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 3",
+     "ref": "L25 Ex 1",
+     "question": "Draw a scatter plot of % motivation (x) against GPA (y) for 10 students and describe the relationship.",
+     "solution": "点大致沿一条向右上的直线分布，离直线不远：<strong>强正相关</strong>，动机越高 GPA 越高。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        105
+       ],
+       "yr": [
+        0,
+        10.5
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "% motivation",
+       "yLabel": "GPA",
+       "curves": [],
+       "caption": "Motivation vs GPA: strong positive (r ≈ 0.958)",
+       "points": [
+        {
+         "x": 50,
+         "y": 6.0
+        },
+        {
+         "x": 48,
+         "y": 6.0
+        },
+        {
+         "x": 100,
+         "y": 9.2
+        },
+        {
+         "x": 12,
+         "y": 5.1
+        },
+        {
+         "x": 34,
+         "y": 4.9
+        },
+        {
+         "x": 30,
+         "y": 5.0
+        },
+        {
+         "x": 78,
+         "y": 8.5
+        },
+        {
+         "x": 87,
+         "y": 8.3
+        },
+        {
+         "x": 84,
+         "y": 9.0
+        },
+        {
+         "x": 75,
+         "y": 7.5
+        }
+       ],
+       "xticks": [
+        20,
+        40,
+        60,
+        80,
+        100
+       ],
+       "yticks": [
+        2,
+        4,
+        6,
+        8,
+        10
+       ]
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 4",
+     "ref": "L25 Pearson",
+     "question": "How is the strength of a linear correlation described using r?",
+     "solution": "r 接近 1 是强正相关，接近 −1 是强负相关，接近 0 没有线性相关；|r| 在 0.25、0.5、0.75 处大致划分弱、中等、强（讲义说明只是粗略指引）。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "r",
+        "Description"
+       ],
+       "rows": [
+        [
+         "−1",
+         "perfect negative"
+        ],
+        [
+         "−1 to −0.75",
+         "strong negative"
+        ],
+        [
+         "−0.75 to −0.5",
+         "moderate negative"
+        ],
+        [
+         "−0.5 to −0.25",
+         "weak negative"
+        ],
+        [
+         "−0.25 to 0.25",
+         "no correlation"
+        ],
+        [
+         "0.25 to 0.5",
+         "weak positive"
+        ],
+        [
+         "0.5 to 0.75",
+         "moderate positive"
+        ],
+        [
+         "0.75 to 1",
+         "strong positive"
+        ],
+        [
+         "1",
+         "perfect positive"
+        ]
+       ],
+       "title": "Rough guide to Pearson's r (from the lecture's scale)"
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 5",
+     "ref": "L25 Ex 2",
+     "question": "Find Pearson's r to 3 decimal places for the motivation and GPA data, and describe the correlation.",
+     "solution": "用计算器或公式：r ≈ <strong>0.958</strong>，大于 0.75：<strong>强正线性相关</strong>。",
+     "answer": "r ≈ 0.958",
+     "checks": [
+      {
+       "expr": "0.9575026829242884",
+       "equals": "0.958",
+       "tol": 0.0005
+      }
+     ]
+    },
+    {
+     "label": "例 6",
+     "ref": "L25 Ex 3",
+     "question": "For x: 2, 4, 28, 24, 5, 36, 12, 20 and y: 46, 28, 4, 24, 17, 12, 25, 23: (a) find r to 3 d.p. (b) classify the correlation (c) sketch the scatter plot.",
+     "solution": "(a) r ≈ <strong>-0.701</strong>。\n(b) 在 −0.75 到 −0.5 之间：<strong>中等负相关</strong>（接近强的边界）。\n(c) 散点图中点大致向右下分布，但比较分散（图中红线是回归直线，帮助看趋势）。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        40
+       ],
+       "yr": [
+        0,
+        50
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "33.7216+-0.6929*x",
+         "color": "red",
+         "dom": [
+          0,
+          40
+         ]
+        }
+       ],
+       "caption": "Ex 3: moderate negative (r ≈ -0.701)",
+       "points": [
+        {
+         "x": 2,
+         "y": 46
+        },
+        {
+         "x": 4,
+         "y": 28
+        },
+        {
+         "x": 28,
+         "y": 4
+        },
+        {
+         "x": 24,
+         "y": 24
+        },
+        {
+         "x": 5,
+         "y": 17
+        },
+        {
+         "x": 36,
+         "y": 12
+        },
+        {
+         "x": 12,
+         "y": 25
+        },
+        {
+         "x": 20,
+         "y": 23
+        }
+       ],
+       "xticks": [
+        10,
+        20,
+        30,
+        40
+       ],
+       "yticks": [
+        10,
+        20,
+        30,
+        40,
+        50
+       ]
+      }
+     ],
+     "answer": "(a) -0.701 (b) moderate negative",
+     "checks": [
+      {
+       "expr": "-0.7012577544031297",
+       "equals": "-0.701",
+       "tol": 0.0005
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ]
+    }
+   ],
+   "mistakes": [
+    "把 r 接近 0 理解为「没有任何关系」：可能有非线性关系。",
+    "相关当成因果：r 大只说明一起变化，不说明谁导致谁。",
+    "计算器 x、y 输入顺序弄反（r 不受影响，但回归系数会受影响）。"
+   ],
+   "faqs": [
+    {
+     "q": "r = −0.9 和 r = 0.9 哪个更强？",
+     "a": "一样强，只是方向相反。强弱看 |r|。"
+    }
+   ]
+  },
+  {
+   "title": "线性回归与预测（L26）",
+   "sources": [
+    {
+     "file": "L26_Bivariate_Data_Linear_Regression.pdf",
+     "pages": "p1–5"
+    }
+   ],
+   "concept": "凭目测画<strong>拟合直线</strong>误差很大，直线稍微不同方程就差很多。\n<strong>线性回归</strong>（最小二乘法）：使各点到直线的竖直距离的平方和最小，得到<strong>回归直线 y = a + bx</strong>，\n<strong>b = {{frac nΣxy − ΣxΣy|nΣx² − (Σx)²}}</strong>（斜率），<strong>a = ȳ − bx̄</strong>（y 截距）。注意这里 b 是斜率、a 是截距，与坐标几何的写法顺序相反。计算器：AC SHIFT 1 5 1 = 得 a，AC SHIFT 1 5 2 = 得 b。\n<strong>预测</strong>：<strong>内插</strong>（在已有数据范围内）一般可靠；<strong>外推</strong>（范围外）可靠性不确定，越远越不可靠。可靠性也取决于线性相关的强弱。",
+   "formulas": [
+    "y = a + bx，b = {{frac nΣxy − ΣxΣy|nΣx² − (Σx)²}}，a = ȳ − bx̄"
+   ],
+   "examples": [
+    {
+     "label": "例 7",
+     "ref": "L26 Ex 1",
+     "question": "Energy use (MJ, x) and mass (kg, y) for 12 people. (a) Draw a scatter plot and a line of best fit by eye. (b) Estimate its equation.",
+     "solution": "(a) 点沿向右上的直线分布（见图）。\n(b) 目测直线大约经过 (1.5, 52) 和 (2.5, 128)：斜率 ≈ {{frac 128 − 52|2.5 − 1.5}} = 76，y − 52 = 76(x − 1.5)，y ≈ −62 + 76x。目测结果因人而异，下一题用回归得到唯一的直线。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        1.4,
+        2.65
+       ],
+       "yr": [
+        40,
+        135
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "energy (MJ)",
+       "yLabel": "mass (kg)",
+       "curves": [
+        {
+         "expr": "-68.447+79.1818*x",
+         "color": "red",
+         "dom": [
+          1.4,
+          2.65
+         ],
+         "label": [
+          2.3,
+          128,
+          "regression line"
+         ]
+        }
+       ],
+       "caption": "Regression line y = -68.45 + 79.18x (r ≈ 0.987)",
+       "points": [
+        {
+         "x": 1.5,
+         "y": 50
+        },
+        {
+         "x": 1.6,
+         "y": 54
+        },
+        {
+         "x": 1.7,
+         "y": 70
+        },
+        {
+         "x": 1.8,
+         "y": 71
+        },
+        {
+         "x": 1.9,
+         "y": 78
+        },
+        {
+         "x": 2.0,
+         "y": 88
+        },
+        {
+         "x": 2.0,
+         "y": 98
+        },
+        {
+         "x": 2.1,
+         "y": 101
+        },
+        {
+         "x": 2.2,
+         "y": 110
+        },
+        {
+         "x": 2.3,
+         "y": 115
+        },
+        {
+         "x": 2.4,
+         "y": 119
+        },
+        {
+         "x": 2.5,
+         "y": 125
+        }
+       ],
+       "xticks": [
+        1.5,
+        1.7,
+        1.9,
+        2.1,
+        2.3,
+        2.5
+       ],
+       "yticks": [
+        50,
+        70,
+        90,
+        110,
+        130
+       ],
+       "hideYAxis": true
+      }
+     ],
+     "checks": [
+      {
+       "expr": "(128-52)/(2.5-1.5)",
+       "equals": "76"
+      },
+      {
+       "expr": "52-76*1.5",
+       "equals": "-62"
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ],
+     "sourceNote": "目测拟合线没有唯一答案，这里给出一种合理的估计。"
+    },
+    {
+     "label": "例 8",
+     "ref": "L26 Ex 2",
+     "question": "Find the equation of the regression line for the energy and mass data.",
+     "solution": "用计算器（或公式）：a ≈ -68.45，b ≈ 79.18。回归直线 <strong>y = -68.45 + 79.18x</strong>（r ≈ 0.987，强正相关）。",
+     "answer": "y = -68.45 + 79.18x",
+     "checks": [
+      {
+       "expr": "-68.44696969696871+79.18181818181769*2.0",
+       "equals": "89.91666666666667",
+       "tol": 1e-06
+      }
+     ]
+    },
+    {
+     "label": "例 9",
+     "ref": "L26 Ex 3",
+     "question": "Using the regression line, predict the mass of a person who uses (a) 1.75 MJ (b) 2.6 MJ (c) 0.8 MJ, and comment on reliability.",
+     "solution": "(a) y = -68.45 + 79.18 × 1.75 ≈ <strong>70.1 kg</strong>：内插，r 很接近 1，<strong>可靠</strong>。\n(b) ≈ <strong>137.4 kg</strong>：外推，但离数据范围（1.5–2.5）很近，<strong>较为可靠</strong>。\n(c) ≈ <strong>-5.1 kg</strong>：外推太远，得到负的质量，<strong>完全不可靠</strong>——线性关系只在数据范围附近成立。",
+     "answer": "(a) 70.1 (b) 137.4 (c) -5.1 (meaningless)",
+     "checks": [
+      {
+       "expr": "-68.44696969696871+79.18181818181769*1.75",
+       "equals": "70.121",
+       "tol": 0.001
+      },
+      {
+       "expr": "-68.44696969696871+79.18181818181769*0.8",
+       "equals": "-5.102",
+       "tol": 0.001
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    {
+     "label": "例 10",
+     "ref": "L26 Ex 4",
+     "question": "Mothers' heights x (cm) and sons' heights y (cm). (a) Find the regression line. (b) Predict the son's height for a mother of 163 cm. (c) Predict the mother's height for a son of 178 cm. (d) Comment on reliability.",
+     "solution": "(a) a ≈ 19.71，b ≈ 0.9143：<strong>y = 19.71 + 0.9143x</strong>（r ≈ 0.997）。\n(b) y = 19.71 + 0.9143 × 163 ≈ <strong>168.7 cm</strong>。\n(c) 178 = 19.71 + 0.9143x，x ≈ <strong>173.1 cm</strong>。\n(d) 两个预测都在数据范围内（内插），r 接近 1，相关很强，预测<strong>比较可靠</strong>；但只有 7 组数据，样本很小。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        150,
+        190
+       ],
+       "yr": [
+        155,
+        195
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "mother (cm)",
+       "yLabel": "son (cm)",
+       "curves": [
+        {
+         "expr": "19.7143+0.914286*x",
+         "color": "red",
+         "dom": [
+          150,
+          190
+         ]
+        }
+       ],
+       "caption": "y = 19.71 + 0.9143x (r ≈ 0.997)",
+       "points": [
+        {
+         "x": 155,
+         "y": 161
+        },
+        {
+         "x": 160,
+         "y": 167
+        },
+        {
+         "x": 165,
+         "y": 171
+        },
+        {
+         "x": 170,
+         "y": 174
+        },
+        {
+         "x": 175,
+         "y": 179
+        },
+        {
+         "x": 180,
+         "y": 185
+        },
+        {
+         "x": 185,
+         "y": 189
+        }
+       ],
+       "xticks": [
+        155,
+        165,
+        175,
+        185
+       ],
+       "yticks": [
+        160,
+        170,
+        180,
+        190
+       ],
+       "hideYAxis": true
+      }
+     ],
+     "answer": "(a) y = 19.71 + 0.9143x (b) 168.7 cm (c) 173.1 cm",
+     "checks": [
+      {
+       "expr": "19.714285714285722+0.9142857142857143*163",
+       "equals": "168.743",
+       "tol": 0.001
+      },
+      {
+       "expr": "(178-19.714285714285722)/0.9142857142857143",
+       "equals": "173.125",
+       "tol": 0.001
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ],
+     "sourceNote": "(c) 按讲义的做法用同一条回归直线反解 x；严格地说，由 y 预测 x 应另求 x 关于 y 的回归直线，这里两者结果接近，因为 r 很接近 1。"
+    },
+    {
+     "label": "例 11",
+     "ref": "L26 Ex 5",
+     "question": "Ages (7–16) and heights of 10 students. (a) Find the regression line. (b) Predict the height at age 19. (c) State the limitations of this linear model.",
+     "solution": "(a) <strong>y = 94.62 + 5.56x</strong>（r ≈ 0.995）。\n(b) y = 94.62 + 5.56 × 19 ≈ <strong>200.3 cm</strong>。\n(c) 19 岁超出数据范围（外推）。人的身高到青春期后增长变慢、最终停止，并不会按直线一直增加；按这条直线 40 岁会超过 3 米，显然不合理。所以模型只适用于大约 7–16 岁之间。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        6,
+        20
+       ],
+       "yr": [
+        125,
+        205
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "age",
+       "yLabel": "height (cm)",
+       "curves": [
+        {
+         "expr": "94.6182+5.5636*x",
+         "color": "red",
+         "dom": [
+          6,
+          20
+         ]
+        }
+       ],
+       "caption": "y = 94.62 + 5.56x; at 19 the line predicts 200.3 cm (extrapolation)",
+       "points": [
+        {
+         "x": 7,
+         "y": 133
+        },
+        {
+         "x": 8,
+         "y": 139
+        },
+        {
+         "x": 9,
+         "y": 144
+        },
+        {
+         "x": 10,
+         "y": 149
+        },
+        {
+         "x": 11,
+         "y": 156
+        },
+        {
+         "x": 12,
+         "y": 163
+        },
+        {
+         "x": 13,
+         "y": 170
+        },
+        {
+         "x": 14,
+         "y": 174
+        },
+        {
+         "x": 15,
+         "y": 177
+        },
+        {
+         "x": 16,
+         "y": 181
+        },
+        {
+         "x": 19,
+         "y": 200.3272727272727,
+         "label": "19 → ?",
+         "open": true,
+         "dx": -40
+        }
+       ],
+       "xticks": [
+        8,
+        10,
+        12,
+        14,
+        16,
+        18
+       ],
+       "yticks": [
+        130,
+        150,
+        170,
+        190
+       ],
+       "hideYAxis": true
+      }
+     ],
+     "answer": "(a) y = 94.62 + 5.56x (b) ≈ 200 cm (unreliable)",
+     "checks": [
+      {
+       "expr": "94.61818181818182+5.5636363636363635*19",
+       "equals": "200.327",
+       "tol": 0.001
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ]
+    }
+   ],
+   "mistakes": [
+    "把 a 当斜率、b 当截距（与 y = mx + b 的习惯相反）。",
+    "外推得到的数不加评论直接当答案。",
+    "x、y 输入顺序反了，得到的是另一条直线。"
+   ],
+   "faqs": [
+    {
+     "q": "内插一定可靠吗？",
+     "a": "还要看相关强弱：r 很接近 ±1 时内插可靠；r 较小时点很分散，即使在范围内预测也会有较大误差。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "题型",
+   "做法",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "描述相关",
+    "散点图：方向 + 强弱",
+    "例 3、6"
+   ],
+   [
+    "求 r",
+    "计算器 MODE 2 2，SHIFT 1 5 3",
+    "例 5、6"
+   ],
+   [
+    "回归直线",
+    "a = SHIFT 1 5 1，b = SHIFT 1 5 2，写成 y = a + bx",
+    "例 8、10、11"
+   ],
+   [
+    "预测",
+    "代入；判断内插还是外推，并评论可靠性",
+    "例 9–11"
+   ]
+  ]
+ },
+ "practice": "讲义建议练习：Tutorial Guide 9-7、9-8。"
+}

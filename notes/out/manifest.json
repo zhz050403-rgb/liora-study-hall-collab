@@ -911,5 +911,20 @@
   "checks": 31,
   "deliverables": 20,
   "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
+  "key": "term2/9",
+  "course": "mathematics",
+  "term": "term2",
+  "week": 9,
+  "title": "Bivariate Data & Regression · 双变量数据与回归",
+  "fields": {
+   "graphicHtml": "out/mathematics/term2/w09.graphic.html"
+  },
+  "examples": 11,
+  "checks": 11,
+  "deliverables": 21,
+  "requirementsChecked": false
  }
 ]
