@@ -1,0 +1,3524 @@
+{
+  "requirements": [
+    "英文主导解释，标题英前中后",
+    "概念、直觉、公式、逐步例题",
+    "逐页覆盖讲义、真实题型",
+    "真分式、上下标、无编程式公式",
+    "黑正文、红规则、蓝例题",
+    "来源、闭合标签、正文无直双引号"
+  ],
+  "weeks": [
+    {
+      "term": "term1",
+      "week": 1,
+      "title": "Basic Algebra, Surds & Equations · 基础代数、根式与方程",
+      "graphicChars": 21667,
+      "fallbackChars": 1835,
+      "answerChars": 0,
+      "sourceLines": 12,
+      "blueMarkers": 58,
+      "redMarkers": 19,
+      "fractionMarkup": 39,
+      "images": 0,
+      "svg": 0,
+      "bilingualIssues": [],
+      "formulaNotationCandidates": [
+        {
+          "field": "graphicHtml",
+          "text": "L01_Basic_Algebra.pdf · PDF p1–5；L02_Surds_and_Indices.pdf · PDF p1–5；L03_Equations.pdf · PDF p1–5；tutorial guide Exercise 0-1 / 0-2 / 0-3"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L01_Basic_Algebra.pdf · PDF p1；tutorial guide Exercise 0-1 Q1"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L01_Basic_Algebra.pdf · PDF p2；tutorial guide Exercise 0-1 Q2"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L01_Basic_Algebra.pdf · PDF p2–3；tutorial guide Exercise 0-1 Q3"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L01_Basic_Algebra.pdf · PDF p4–5；tutorial guide Exercise 0-1 Q4–Q5"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L02_Surds_and_Indices.pdf · PDF p1–2；tutorial guide Exercise 0-2 Q1–Q6"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "\n√a² = a\n√(ab) = √a · √b\n√(a/b) = √a / √b\n√(a²b) = a√b\n"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L02_Surds_and_Indices.pdf · PDF p3–5；tutorial guide Exercise 0-2 Q9–Q11"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "\na0 = 1\na−m = 1am\na1/n = n√a\nam/n = (n√a)m = n√(am)\n"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "步骤：\n(1) x2 × x3 ÷ x4 = x2+3−4 = x1 = x。\n(2) (x3)2 = x6。\n(3) x−2 = 1x2。\n(4) 81/3 = 3√8 = 2；163/4 = (4√16)3 = 23 = 8。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L03_Equations.pdf · PDF p1；tutorial guide Exercise 0-3 Q1"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L03_Equations.pdf · PDF p1；tutorial guide Exercise 0-3 Q3"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L03_Equations.pdf · PDF p2–4；tutorial guide Exercise 0-3 Q5–Q9"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "步骤：\nx² + 6x = −5（移常数项）。\n加 (6/2)² = 9：x² + 6x + 9 = −5 + 9 → (x + 3)² = 4。\n开平方：x + 3 = ±2 → x = −3 + 2 = −1 或 x = −3 − 2 = −5。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L03_Equations.pdf · PDF p4；tutorial guide Exercise 0-3 Q4"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L03_Equations.pdf · PDF p5；tutorial guide Exercise 0-3 Q13–Q14"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Key formulae to memorise: difference of two squares a² − b² = (a − b)(a + b); perfect square (a ± b)² = a² ± 2ab + b²; the three index laws; quadratic formula x = (−b ± √(b² − 4ac))/(2a); a⁰ = 1; a−m = 1/am."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Answer structure: ① First decide the question type and the matching formula; ② Write the key steps (do not skip steps — the examiner awards marks by steps); ③ After getting the answer, multiply back / substitute back to check; ④ For inequalities remember to reverse the direction, and for square roots remember the ±.答题结"
+        },
+        {
+          "field": "notesHtml",
+          "text": "L02 Surds and Indices：指数律 a^m·a^n=a^(m+n)、a^m÷a^n=a^(m-n)、(a^m)^n=a^(mn)、(ab)^m=a^m·b^m、a^0=1、a^(-m)=1/a^m、a^(1/n) 表示 a 的 n 次算术根；根式法则 √(ab)=√a·√b、√(a/b)=√a/√b；分母有理化用共轭 1/(√a+√b)=(√a-√b)/(a-b)；指数方程：若 a^m=a^n（a>0 且 a≠1）则 m=n。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "L03 Equations：一元二次方程四法——开平方法、因式分解、配方法、求根公式 x=(-b±√(b²-4ac))/(2a)；解不等式时两边乘或除以负数要反向；绝对值定义 |x|=x（x≥0）、|x|=-x（x<0）；绝对值方程 |ax+b|=c 拆成 ax+b=c 与 ax+b=-c 两题；绝对值不等式 |ax+b|<c 化为 -c<ax+b<c，|ax+b|>c 化为两个分开的大于。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "化简代数分式 (x²-9)/(x²+6x+9)：分子分母分别因式分解，约去公因式得 (x-3)/(x+3)。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "解 2x²-2x-3=0：代入求根公式得 x=(1±√7)/2，保留最简根式形式。"
+        }
+      ],
+      "nonEnglishFirstHeadings": [],
+      "rawQuoteCount": 0,
+      "inlineStyleCount": 0,
+      "files": [
+        "L01_Basic_Algebra.pdf",
+        "L02_Surds_and_Indices.pdf",
+        "L03_Equations.pdf"
+      ],
+      "strictEnglishDominanceCandidates": [],
+      "rawPowerBlocks": [],
+      "outOfBoundsSourceReferences": []
+    },
+    {
+      "term": "term1",
+      "week": 2,
+      "title": "Coordinate Geometry & Functions · 坐标几何与函数",
+      "graphicChars": 20750,
+      "fallbackChars": 2003,
+      "answerChars": 0,
+      "sourceLines": 3,
+      "blueMarkers": 17,
+      "redMarkers": 16,
+      "fractionMarkup": 22,
+      "images": 0,
+      "svg": 0,
+      "bilingualIssues": [],
+      "formulaNotationCandidates": [
+        {
+          "field": "graphicHtml",
+          "text": "Thread 2 — Relations and Functions (关系与函数): distinguish a relation from a function; master Domain (定义域) / Range (值域); apply the vertical line test (垂直线检验); and be fluent with function notation f(x) and composite functions (复合函数)."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L04_Coordinate_Geometry.txt · PDF p1–13；formula_sheet.txt Number Plane；tutorial_guide_t1.txt Exercise 0-4 Coordinate Geometry Review"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Intuition (直觉): the gradient measures the steepness and direction of a line. The numerator is the rise (vertical change, 纵差) and the denominator is the run (horizontal change, 横差), so m = RISE / RUN."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "例 4（斜率 / 平行 / 垂直，对应 Exercise 0-4 Q4 题型）：直线过 P(3, 2) 与 Q(−1, 5)，求 (a) PQ 的斜率；(b) 与 PQ 平行的直线斜率；(c) 与 PQ 垂直的直线斜率。\n(a) m = (5 − 2) / (−1 − 3) = 3 / (−4) = −34。\n(b) 平行线斜率相同：m∥ = −34。\n(c) 垂直线斜率乘积为 −1：m⊥ = −1 / (−34) = 43。\n答：(a) −3/4；(b) −3/4；(c) 4/3。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Easy to confuse (易混): parallel means equal gradient, perpendicular means negative-reciprocal gradient. Never drop the minus sign for perpendicular: m⊥ = −1/m, not 1/m and not m."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "例 6（过点方程化为一般式，对应 Exercise 0-4 Q8f 题型）：求过 (2, −1) 与 (−1, 7) 的直线，并以一般式作答。\n先求斜率：m = (7 − (−1)) / (−1 − 2) = 8 / (−3) = −83。\n用点斜式（取点 (2, −1)）：y − (−1) = −83(x − 2) → y + 1 = −83x + 163。\n两边乘 3：3y + 3 = −8x + 16 → 8x + 3y − 13 = 0。\n答：8x + 3y − 13 = 0（与 tutorial 答案一致）。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "例 7（过定点且垂直于已知直线，一般式，对应 L04 例题 6 / Exercise 0-4 Q8g 题型）：求过点 (2, 5) 且垂直于直线 3x − 2y + 8 = 0 的方程，以一般式作答。\n先把已知直线化成斜截式：−2y = −3x − 8 → y = 32x + 4，其斜率 m = 3/2。\n垂直斜率 m⊥ = −13/2 = −23。\n点斜式：y − 5 = −23(x − 2)。乘 3：3y − 15 = −2x + 4 → 2x + 3y − 19 = 0。\n答：2x + 3y − 19 = 0。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "例 8（共线反求参数，对应 Exercise 0-4 Q6 题型）：若 P(2, 3)、Q(5, 9)、R(k, 3k − 2) 共线，求 k。\nmPQ = (9 − 3) / (5 − 2) = 6 / 3 = 2。\nmQR = (3k − 2 − 9) / (k − 5) = (3k − 11) / (k − 5)。\n令 mPQ = mQR：2 = (3k − 11) / (k − 5) → 2(k − 5) = 3k − 11 → 2k − 10 = 3k − 11 → k = 1。\n答：k = 1。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "例 9（垂直平分线，一般式，对应 Exercise 0-4 Q11f 题型）：已知 A(2, 7)、B(1, 3)，求 AB 的垂直平分线方程（一般式）。\n中点 M = ( (2+1)/2 , (7+3)/2 ) = ( 3/2 , 5 )。\nmAB = (3 − 7) / (1 − 2) = (−4) / (−1) = 4；垂直斜率 = −1/4。\n过 M 的点斜式：y − 5 = −14(x − 32)。\n乘 4：4y − 20 = −x + 32；乘 2：8y − 40 = −2x + 3 → 2x + 8y − 43 = 0。\n答：2x + 8y − 43 = 0。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L05_Relations_and_Functions.txt · PDF p1–13；tutorial_guide_t1.txt Exercise 1-1 Relations & Functions"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "例 12（由方程求最大定义域，对应 L05 例题 3 / Exercise 1-1 Q3 题型）：求下列函数的最大可能定义域。\n(a) y = x2 + 4：x 可任意代入 → 所有实数。\n(b) y = √x：根号内须非负 → x ≥ 0。\n(c) y = 1/x：分母不能为 0 → x ≠ 0。\n答：(a) 全体实数；(b) x ≥ 0；(c) x ≠ 0。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "例 13（代入与解方程，对应 L05 例题 4 / Exercise 1-1 Q5 题型）：已知 f(x) = 2x2 − 7x，求 (a) f(−3)；(b) f(t)；(c) f(2x)；(d) 解方程 f(x) = 4。\n(a) f(−3) = 2(−3)2 − 7(−3) = 2·9 + 21 = 18 + 21 = 39。\n(b) f(t) = 2t2 − 7t。\n(c) f(2x) = 2(2x)2 − 7(2x) = 2·4x2 − 14x = 8x2 − 14x。\n(d) 2x2 − 7x = 4 → 2x2 − 7x − 4 = 0 → (2x + 1)(x − 4) = 0 → x = −1/2 或 x = 4。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "例 14（复合函数，对应 L05 例题 5 / Exercise 1-1 Q6 题型）：若 f(x) = 2x − 3，g(x) = 3x / (x − 1)，求 (a) fg(3)；(b) gf(3)。\n(a) 先算 g(3) = 3·3 / (3 − 1) = 9 / 2；再 f(9/2) = 2·(9/2) − 3 = 9 − 3 = 6。故 fg(3) = 6。\n(b) 先算 f(3) = 2·3 − 3 = 3；再 g(3) = 9 / 2。故 gf(3) = 9/2。\n答：(a) 6；(b) 9/2。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "例 15（奇偶性判定，对应 L05 例题 7 / Exercise 1-1 Q10 题型）：判断下列函数的奇偶。\n(a) h(x) = x3 + 2x：h(−x) = (−x)3 + 2(−x) = −x3 − 2x = −(x3 + 2x) = −h(x) → 奇函数。\n(b) g(x) = x2 − 2：g(−x) = (−x)2 − 2 = x2 − 2 = g(x) → 偶函数。\n(c) f(x) = x2 + 1：f(−x) = x2 + 1 = f(x) → 偶函数。\n答：(a) 奇；(b) 偶；(c) 偶。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L06_Basic_Graphs_and_Transformations.txt · PDF p1–13；tutorial_guide_t1.txt Exercise 1-2 Transformations of Basic Functions；formula_sheet.txt Functions & Graphs 含 y = a(x−h)2 + k"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "y = 1/x"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "例 16（由变换写方程，对应 L06 例题 1 / Exercise 1-2 题型）：写出下列变换后的函数方程。\n(a) 把 y = x2 向右平移 3 个单位 → y = (x − 3)2。\n(b) 把 y = x 关于 x 轴反射，再向上平移 3 → 先 −x，再 +3 → y = −x + 3。\n(c) 把 y = f(x) 关于 y 轴反射，再把所有 y 值翻倍 → 先 f(−x)，再乘 2 → y = 2f(−x)。\n答：(a) y=(x−3)2；(b) y=−x+3；(c) y=2f(−x)。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "例 17（已知点求变换后的点，对应 L06 例题 2 / Exercise 1-2 Q10 题型）：已知点 (2, 3) 在 y = f(x) 上，求它在下列曲线上的对应点。\n(a) y = −f(x)：x 不变，y 取反 → (2, −3)。\n(b) y = f(x − 2)：令 x − 2 = 2 → x = 4，y 不变 → (4, 3)。\n(c) y = 3 − f(x + 1)：令 x + 1 = 2 → x = 1；y = 3 − 3 = 0 → (1, 0)。\n答：(a) (2,−3)；(b) (4,3)；(c) (1,0)。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Mistake 1 (错误 1): inconsistent order of numerator and denominator in the gradient. Always use 「second point minus first point」, i.e. (y₂−y₁)/(x₂−x₁). Mixing A−B with B−A reverses the sign."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Mistake 2 (错误 2): confusing horizontal / vertical line equations with their gradients. A horizontal line is y = c (gradient 0); a vertical line is x = c (gradient undefined). Never write a vertical line as y = c."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Mistake 3 (错误 3): mixing up parallel and perpendicular. Parallel: m₁ = m₂; perpendicular: m₁·m₂ = −1, i.e. m₂ = −1/m₁. Always include the minus sign, and use the reciprocal, not the same value."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Mistake 6 (错误 6): missing conditions in the largest possible domain. For √x require x ≥ 0; for 1/x require x ≠ 0; for √(inside) ensure the whole radicand ≥ 0. Do not forget to state the excluded values."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Must remember: the three formulas for distance d, midpoint M, and gradient m; the three line forms y=mx+b / y−y₁=m(x−x₁) / ax+by+c=0, where the final answer is often required in general form (integer coefficients, 整数系数)."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Must be able to do: ① Given two points, find the distance, midpoint and slope/gradient; ② Write the equation of a line from given conditions (parallel / perpendicular / through the midpoint / general form); ③ Find the unknown parameter from collinear points; ④ Solve simultaneously to find the point of intersection; ⑤ F"
+        },
+        {
+          "field": "notesHtml",
+          "text": "L04 Coordinate Geometry：距离 d=√((x2-x1)²+(y2-y1)²)；中点 M=((x1+x2)/2,(y1+y2)/2)；斜率 m=(y2-y1)/(x2-x1)；平行 m1=m2，垂直 m1·m2=-1；共线点满足 m_AB=m_BC；直线方程：斜截式 y=mx+b、一般式 ax+by+c=0、点斜式 y-y1=m(x-x1)，水平线 y=c 与竖直线 x=c；线段垂直平分线过中点且与线段垂直。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "L06 Basic Graphs and Transformations：必须熟记七个基本图像：y=x、y=x²、y=x³、y=√x、y=1/x、y=|x|、y=2^x。变换规则：y=f(x)+c 上下平移 c 个单位；y=f(x-c) 向右平移 c 个单位（方向与符号相反）；y=-f(x) 关于 x 轴翻转；y=f(-x) 关于 y 轴翻转；y=|f(x)| 把 x 轴下方部分翻上来；y=c·f(x) 纵向拉伸（c>1）或压缩（0<c<1）。"
+        }
+      ],
+      "nonEnglishFirstHeadings": [],
+      "rawQuoteCount": 0,
+      "inlineStyleCount": 0,
+      "files": [
+        "L04_Coordinate_Geometry.pdf",
+        "L05_Relations_and_Functions.pdf",
+        "L06_Basic_Graphs_and_Transformations.pdf"
+      ],
+      "strictEnglishDominanceCandidates": [],
+      "rawPowerBlocks": [],
+      "outOfBoundsSourceReferences": [
+        {
+          "lecture": "L04_Coordinate_Geometry.pdf",
+          "citedRange": [
+            1,
+            13
+          ],
+          "actualPdfPages": 5,
+          "citation": "L04_Coordinate_Geometry.txt · PDF p1–13；formula_sheet.txt Number Plane；tutorial_guide_t1.txt Exercise 0-4 Coordinate Geometry Review"
+        },
+        {
+          "lecture": "L05_Relations_and_Functions.pdf",
+          "citedRange": [
+            1,
+            13
+          ],
+          "actualPdfPages": 6,
+          "citation": "L05_Relations_and_Functions.txt · PDF p1–13；tutorial_guide_t1.txt Exercise 1-1 Relations & Functions"
+        },
+        {
+          "lecture": "L06_Basic_Graphs_and_Transformations.pdf",
+          "citedRange": [
+            1,
+            13
+          ],
+          "actualPdfPages": 5,
+          "citation": "L06_Basic_Graphs_and_Transformations.txt · PDF p1–13；tutorial_guide_t1.txt Exercise 1-2 Transformations of Basic Functions；formula_sheet.txt Functions & Graphs 含 y = a(x−h)2 + k"
+        }
+      ]
+    },
+    {
+      "term": "term1",
+      "week": 3,
+      "title": "Parabolas, Hyperbolas & Absolute Value · 抛物线、双曲线与绝对值图像",
+      "graphicChars": 15528,
+      "fallbackChars": 1720,
+      "answerChars": 0,
+      "sourceLines": 9,
+      "blueMarkers": 45,
+      "redMarkers": 5,
+      "fractionMarkup": 1,
+      "images": 0,
+      "svg": 0,
+      "bilingualIssues": [],
+      "formulaNotationCandidates": [
+        {
+          "field": "graphicHtml",
+          "text": "L07 Graphs of Parabolas and Hyperbolas.pdf · PDF p1–6；L08 More Parabolas, Max/Min and Quadratic Inequalities.pdf · PDF p1–7；L09 Absolute Value Graphs.pdf · PDF p1–4；tutorial guide Unit 1-3, 1-4, 1-5, 1-8 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "This week covers three families of functions and how to sketch them, find extrema, and solve inequalities: ① the parabola（抛物线）, in its two forms and the conversion between general form and vertex form by completing the square; ② the hyperbola（双曲线）, its shape, asymptotes, and translations; ③ using the vertex to find max"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Main thread of exam points: when drawing any function, think 「domain + key points (vertex / intercepts) + asymptote」 first; use the vertex to find the maximum/minimum, draw the graph to read above/below for quadratic inequalities, and for absolute value problems first remove the 「absolute value shell」.考点主线：画任何函数先想「定义域 "
+        },
+        {
+          "field": "graphicHtml",
+          "text": "(−b/2a, 代入得 y)"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "x = −b/(2a)"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Intuition（直觉）: the coefficient a decides the direction of opening and how narrow it is; the term (x − h) shifts the graph left/right to h; and the final +k shifts it up/down to k. The vertex form lets you read the vertex (h, k) directly at a glance."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L08 More Parabolas, Max/Min and Quadratic Inequalities.pdf · PDF p1；tutorial guide Unit 1-4 Q2 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L08 More Parabolas, Max/Min and Quadratic Inequalities.pdf · PDF p2–3；tutorial guide Unit 1-4 Q1 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Four steps to sketch a parabola（画图四步）: ① y-intercept (set x = 0); ② x-intercept (set y = 0 and solve ax² + bx + c = 0); ③ vertex (use x = −b/2a or the vertex form); ④ determine opening up/down from the sign of a, then join the points into a smooth curve."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "顶点：x = −b/(2a) = −(−2)/(2·1) = 1；代入得 y = 1 − 2 − 3 = −4，顶点 (1, −4)。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "When the x-intercepts α and β are known, the x-coordinate of the vertex can also be taken as the midpoint x = (α + β)/2（两根中点公式）; then substitute back to find y."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Basic hyperbola（基本双曲线） is y = 1/x. It is an odd function (symmetric about the origin), and its asymptotes（渐近线）are the coordinate axes x = 0 and y = 0. Domain is x ≠ 0 and range is y ≠ 0."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "The general form of a hyperbola（双曲线）is y = a/(x − h) + k, obtained by translating y = 1/x: the vertical asymptote is x = h and the horizontal asymptote is y = k. When a > 0 the branches lie in the first and third quadrants relative to the centre (h, k); when a < 0 they lie in the second and fourth quadrants."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "例题：画 y = 1/(x − 1) + 2，标出渐近线、截距、定义域与值域。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "x 截距：0 = 1/(x − 1) + 2 → 1/(x − 1) = −2 → x − 1 = −1/2 → x = 1/2，得 (1/2, 0)。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "y 截距：x = 0 → y = 1/(−1) + 2 = 1，得 (0, 1)。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L08 More Parabolas, Max/Min and Quadratic Inequalities.pdf · PDF p3；tutorial guide Unit 1-8 Q6, Q7, Q8 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "配方：A = −2(x² − 15x) = −2[(x − 15/2)² − (15/2)²] = −2(x − 15/2)² + 2·225/4 = −2(x − 15/2)² + 225/2。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "a = −2 < 0 开口向下，最大值在 x = 15/2 = 7.5 取得；此时 l = 30 − 2·7.5 = 15，最大面积 A = 225/2 = 112.5（m²）。定义域 0 < x < 15。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L08 More Parabolas, Max/Min and Quadratic Inequalities.pdf · PDF p4–7；tutorial guide Unit 1-4 Q3–Q5 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "先求根：−2x² + 7x − 3 = 0 → 2x² − 7x + 3 = 0（乘 −1 变号，但此处只求根）→ (2x − 1)(x − 3) = 0 → x = 1/2 或 x = 3。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "原式 a = −2 < 0 开口向下；≤ 0 表示曲线在 x 轴上及下方，取两根之外：x ≤ 1/2 或 x ≥ 3。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "② The inequality interval direction reverses when a changes sign（二次不等式区间方向随 a 反号）: the memory aid 「>0 take outside,  0. If a < 0 (opening downward), the intervals reverse; the safest method is to sketch the parabola and read above/below the x-axis rather than memorising a rule."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Must-remember formulas（必记公式）: general form（一般式） y = ax² + bx + c; vertex form（顶点式） y = a(x − h)² + k; x-coordinate of vertex（顶点横坐标） x = −b/(2a); hyperbola（双曲线） y = a/(x − h) + k with asymptotes（渐近线） x = h and y = k; absolute value（绝对值） |E| = k ⇒ E = ±k."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Answer structure: ① Write the domain / range; ② When drawing the graph, first mark the vertex (or asymptote) and the intercepts; ③ Use the vertex to find the maximum/minimum; ④ For inequality, first find the roots then draw the parabola to judge above/below; ⑤ For absolute value, first remove the shell (or split into c"
+        },
+        {
+          "field": "notesHtml",
+          "text": "本周集中研究三类重要曲线：L07 用变换法从基本图像得到一般形式的抛物线 y=a(x-h)²+k 与双曲线 y=a/(x-h)+k；L08 研究一般式 y=ax²+bx+c 的顶点、对称轴、最值与二次不等式；L09 研究 V 形绝对值图像及其顶点求法。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "L07 Parabolas and Hyperbolas：基本抛物线 y=x² 是偶函数，顶点 (0,0)，定义域为全体实数，值域 y≥0；一般形式 y=a(x-h)²+k 顶点为 (h,k)，a>0 开口向上（concave up），a<0 开口向下（concave down）。基本双曲线 y=1/x 是奇函数，渐近线为两坐标轴；一般形式 y=a/(x-h)+k 的渐近线是 x=h 与 y=k，定义域 x≠h，值域 y≠k，a>0 时分支在一、三象限。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "L08 More Parabolas and Quadratic Inequalities：y=ax²+bx+c 的顶点横坐标 x=-b/(2a)（已知两根 α、β 时为 x=(α+β)/2），对称轴 x=-b/(2a)；a>0 顶点为最小值点，a<0 为最大值点；判别式 Δ=b²-4ac 决定与 x 轴交点个数：Δ>0 两个、Δ=0 一个、Δ<0 无交点。解二次不等式先画抛物线，再按开口方向取相应区间。"
+        }
+      ],
+      "nonEnglishFirstHeadings": [],
+      "rawQuoteCount": 0,
+      "inlineStyleCount": 0,
+      "files": [
+        "L07_Graphs_of_Parabolas_and_Hyperbolas.pdf",
+        "L08_More_Parabolas_Max_Min_Quadratic_Inequalities.pdf",
+        "L09_Absolute_Value_Graphs.pdf"
+      ],
+      "strictEnglishDominanceCandidates": [],
+      "rawPowerBlocks": [],
+      "outOfBoundsSourceReferences": [
+        {
+          "lecture": "L07_Graphs_of_Parabolas_and_Hyperbolas.pdf",
+          "citedRange": [
+            1,
+            6
+          ],
+          "actualPdfPages": 5,
+          "citation": "L07 Graphs of Parabolas and Hyperbolas.pdf · PDF p1–6；"
+        },
+        {
+          "lecture": "L08_More_Parabolas_Max_Min_Quadratic_Inequalities.pdf",
+          "citedRange": [
+            1,
+            7
+          ],
+          "actualPdfPages": 4,
+          "citation": "L08 More Parabolas, Max/Min and Quadratic Inequalities.pdf · PDF p1–7；"
+        },
+        {
+          "lecture": "L09_Absolute_Value_Graphs.pdf",
+          "citedRange": [
+            1,
+            4
+          ],
+          "actualPdfPages": 3,
+          "citation": "L09 Absolute Value Graphs.pdf · PDF p1–4；tutorial guide Unit 1-3, 1-4, 1-5, 1-8 补充讲解"
+        },
+        {
+          "lecture": "L07_Graphs_of_Parabolas_and_Hyperbolas.pdf",
+          "citedRange": [
+            4,
+            6
+          ],
+          "actualPdfPages": 5,
+          "citation": "L07 Graphs of Parabolas and Hyperbolas.pdf · PDF p4–6；tutorial guide Unit 1-3 Q3–Q4 补充讲解"
+        },
+        {
+          "lecture": "L08_More_Parabolas_Max_Min_Quadratic_Inequalities.pdf",
+          "citedRange": [
+            4,
+            7
+          ],
+          "actualPdfPages": 4,
+          "citation": "L08 More Parabolas, Max/Min and Quadratic Inequalities.pdf · PDF p4–7；tutorial guide Unit 1-4 Q3–Q5 补充讲解"
+        }
+      ]
+    },
+    {
+      "term": "term1",
+      "week": 4,
+      "title": "Inverse Functions, Logarithms & Exponentials · 反函数、对数与指数",
+      "graphicChars": 22159,
+      "fallbackChars": 1842,
+      "answerChars": 0,
+      "sourceLines": 18,
+      "blueMarkers": 10,
+      "redMarkers": 3,
+      "fractionMarkup": 22,
+      "images": 0,
+      "svg": 0,
+      "bilingualIssues": [],
+      "formulaNotationCandidates": [
+        {
+          "field": "graphicHtml",
+          "text": "Week 4 is the turning point and the toolkit of the functions topic. ① L10 Inverse Functions — swap x and y to get the inverse relation; its graph is symmetric about the line y = x, and only a one-to-one function has an inverse that is still a function (反函数仅在原函数为一对一时才仍是函数). ② L11 Logarithms — rewrite the exponential for"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Common mistake: the inverse relation is 「swapping coordinates」, not 「taking the reciprocal」. f−1(x) denotes the inverse function and is never equal to 1f(x). The superscript −1 here means 「inverse」, not a power (易错：反关系是交换坐标，不是取倒数；f⁻¹(x) 绝不表示 1/f(x)，上标 −1 是「逆」而非幂)."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Logarithm (对数): if bk = N (with b > 0, b ≠ 1, N > 0), then k is called 「the logarithm of N to base b」, written as k = logb N. In other words, a logarithm IS the exponent/power — logb N answers the question 「to what power must b be raised to equal N?」. Intuition: exponentiation takes a power and outputs a result, while "
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Three direct results (memorise): logb 1 = 0 (since b0 = 1); logb b = 1 (since b1 = b); logb bx = x. Note that N must be positive — logb(negative) is undefined in the real numbers (三个直接结果务必背：log_b 1=0，log_b b=1，log_b b^x=x；注意 N 必须为正，log_b(负数) 实数范围内无定义)."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "e is an irrational number (≈ 2.718), like π. The logarithm to base e is called the natural logarithm, written as ln x = loge x (e 是无理数，以 e 为底的对数叫自然对数，记作 ln x = log_e x)."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "A calculator usually has only the ln and the log10 keys. To evaluate a logarithm of any base a, use the change-of-base formula (计算器通常只有 ln 与 log_10 两个键；算任意底 a 的对数用换底公式):"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "It is also the practical weapon for solving exponential equations ax = b: take ln of both sides → x ln a = ln b → x = ln bln a (解指数方程 a^x=b 的实战武器：两边取 ln → x ln a = ln b → x = ln b / ln a)."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Basic form y = a·bx + k (a > 0, b > 0, b ≠ 1). Taking y = 2x (i.e. a = 1, k = 0) as an example: as x → ∞, y → ∞; as x → −∞, y → 0 (the negative x-axis is a horizontal asymptote); and y > 0 for all x (基本形式 y=a·b^x+k；以 y=2^x 为例，x→∞ 时 y→∞，x→−∞ 时 y→0，对所有 x 都有 y>0)."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "General form y = a·bx + k: the horizontal asymptote becomes y = k and the y-intercept becomes a + k (一般式 y=a·b^x+k：渐近线变为 y=k，y 截距变为 a+k)."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Basic form y = logb x (b > 1). It is the inverse function of the exponential y = bx, so its graph is symmetric to the exponential graph about y = x. Its key features are 「dual」 to those of the exponential graph (基本形式 y=log_b x（b>1），是指数函数 y=b^x 的反函数，图像关于 y=x 与指数图对称；关键特征与指数图对偶):"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "General form y = a·logb(x − h) + k: the vertical asymptote becomes x = h; the domain is x > h; and the x-intercept is found by solving a·logb(x − h) + k = 0 (一般式 y=a·log_b(x−h)+k：渐近线变为 x=h，定义域 x>h，x 截距由方程解出)."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Real-world growth/decay is often modelled by P = P0·ert (growth when r > 0, decay when r < 0); a cost/value that falls logarithmically with output is often modelled by C = a + b·ln(x + 1). Solving such problems means 「substitute known quantities → take ln → use change-of-base to find time/quantity」 (现实增长/衰减常用 P=P_0·e^{"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Extra caution: after solving exponential/logarithmic equations, always check that the argument > 0 and the base > 0 and ≠ 1; when taking ln across an inequality, if the base lies in 0 < a < 1 the monotonicity reverses, so you must flip the inequality sign (补充易错：解指数/对数方程后检验真数>0 与底>0 且≠1；取 ln 不等号时若 0<a<1，单调性反转，不等号方向要改变)."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Answer structure: for inverse-function questions → first decide whether it is one-to-one (otherwise restrict the domain) → swap x and y and solve for y → state the new domain/range and sketch by reflection; for logarithmic/exponential equation questions → first convert between exponential and logarithmic forms → combin"
+        },
+        {
+          "field": "notesHtml",
+          "text": "本周是函数部分的转折点：L10 反函数——交换 x、y 得到反关系，图像关于直线 y=x 对称，只有一对一函数的反函数才是函数；L11 对数——把指数式 b^k=N 改写为 log_b N=k，掌握对数运算法则；L12 指数函数图像——定义域、值域、渐近线与变换。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "L11 Logarithms：定义 b^k=N 等价于 log_b N=k（b>0，b≠1，N>0）；常用结果 log_b 1=0、log_b b=1、b^(log_b x)=x；自然对数 ln x=log_e x，其中无理数 e≈2.718；对数三大法则：log(MN)=log M+log N、log(M/N)=log M-log N、log(M^p)=p·log M；解指数方程 a^x=b 得 x=ln b/ln a。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "L12 Graphs of Exponential Functions：y=a^x（a>0，a≠1）定义域为全体实数，值域 y>0，水平渐近线 y=0，恒过 (0,1)；a>1 时单调上升，0<a<1 时单调下降；一般形式 y=b·a^(x-h)+k 的渐近线为 y=k，y 轴截距为 b·a^(-h)+k。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "求 y=2x+6 的反函数：交换得 x=2y+6，解出 y=(x-6)/2。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "解 3^x=85：两边取自然对数，x=ln85/ln3，用计算器求值。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "f⁻¹(x) 是反函数，不是 1/f(x)。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "指数函数 y=a^x 值域永远是正数，渐近线是 y=0 而非 x=0。"
+        }
+      ],
+      "nonEnglishFirstHeadings": [],
+      "rawQuoteCount": 0,
+      "inlineStyleCount": 0,
+      "files": [
+        "L10_Inverse_Functions.pdf",
+        "L11_Logarithms.pdf",
+        "L12 Graphs of Exponential Functions.pdf"
+      ],
+      "strictEnglishDominanceCandidates": [],
+      "rawPowerBlocks": [
+        "Three direct results (memorise): logb 1 = 0 (since b0 = 1); logb b = 1 (since b1 = b); logb bx = x. Note that N must be positive — logb(negative) is undefined in the real numbers (三个直接结果务必背：log_b 1=0，log_b b=1，log_b b^x=x；注意 N 必须为正，log_b(负数) 实数范围内无定义).",
+        "It is also the practical weapon for solving exponential equations ax = b: take ln of both sides → x ln a = ln b → x = ln bln a (解指数方程 a^x=b 的实战武器：两边取 ln → x ln a = ln b → x = ln b / ln a).",
+        "Basic form y = a·bx + k (a > 0, b > 0, b ≠ 1). Taking y = 2x (i.e. a = 1, k = 0) as an example: as x → ∞, y → ∞; as x → −∞, y → 0 (the negative x-axis is a horizontal asymptote); and y > 0 for all x (基本形式 y=a·b^x+k；以 y=2^x 为例，x→∞ 时 y→∞，x→−∞ 时 y→0，对所有 x 都有 y>0).",
+        "General form y = a·bx + k: the horizontal asymptote becomes y = k and the y-intercept becomes a + k (一般式 y=a·b^x+k：渐近线变为 y=k，y 截距变为 a+k).",
+        "Basic form y = logb x (b > 1). It is the inverse function of the exponential y = bx, so its graph is symmetric to the exponential graph about y = x. Its key features are 「dual」 to those of the exponential graph (基本形式 y=log_b x（b>1），是指数函数 y=b^x 的反函数，图像关于 y=x 与指数图对称；关键特征与指数图对偶):",
+        "Real-world growth/decay is often modelled by P = P0·ert (growth when r > 0, decay when r < 0); a cost/value that falls logarithmically with output is often modelled by C = a + b·ln(x + 1). Solving such problems means 「substitute known quantities → take ln → use change-of-base to find time/quantity」 "
+      ],
+      "outOfBoundsSourceReferences": [
+        {
+          "lecture": "L13 Graphs of Logarithmic Functions.pdf",
+          "citedRange": [
+            1,
+            5
+          ],
+          "actualPdfPages": 4,
+          "citation": "L13 Graphs of Logarithmic Functions（PDF p1–5）；tutorial guide Unit 2（Exercise 2-1 至 2-5）"
+        }
+      ]
+    },
+    {
+      "term": "term1",
+      "week": 5,
+      "title": "Logarithmic Graphs, Domain & Piecemeal Functions · 对数图像、定义域与分段函数",
+      "graphicChars": 20655,
+      "fallbackChars": 1460,
+      "answerChars": 0,
+      "sourceLines": 15,
+      "blueMarkers": 19,
+      "redMarkers": 12,
+      "fractionMarkup": 0,
+      "images": 0,
+      "svg": 0,
+      "bilingualIssues": [],
+      "formulaNotationCandidates": [
+        {
+          "field": "graphicHtml",
+          "text": "L13 Graphs of Logarithmic Functions.pdf · PDF p1–4；L14 More on Domain and Piecemeal Functions.pdf · PDF p1–6；L15 Use of Graphs.pdf · PDF p1–4 补充讲解；tutorial_guide_t1.txt Exercise 1-6 / 1-7"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Main thread of exam points: when sketching any function, first think 「domain + asymptote / intercepts + key points」; when solving with a graph, remember 「intersection point = equation solution」 and 「above / below = inequality direction」. The domain is the prerequisite for the graph to exist, so always find the domain b"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Given y = bx (b > 1): to find its inverse, swap x and y to get x = by, then rewrite it as y = logb x. In the same coordinate system, the two graphs are symmetric about the line y = x (they are mirror reflections of each other).（求反函数：交换 x、y 得 x = b^y，再写成 y = log_b x；两图关于 y = x 对称。）"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Rule of thumb: a change to x inside the brackets → horizontal shift (note the sign is reversed, so x + 1 shifts left); a change outside the brackets → vertical shift / stretch. The asymptote of ln(x + 1) is x = −1, not x = 1. ln(−x) reflects the graph to the left of the y-axis, so its domain becomes x < 0.（口诀：括号内 x 变→左"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "In the general form: the vertical asymptote is x = h; the domain is x > h (first fix the asymptote, then set the argument x − h > 0 to get the domain); the x-intercept is solved from logb(x − h) = −k, i.e. x − h = b−k → x = h + b−k. When x = h + 1 we get y = k, so the graph always passes through (h + 1, k), which is th"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Common mistake: a restricted domain not only changes the x-range but also changes the range. Example: for y = (x + 1)2 on −2 < x ≤ 1, the range must be recomputed as the min / max over this interval, not copied from all real numbers.（易错：限制定义域也改变值域；y=(x+1)² 在 −2<x≤1 上的值域需按区间重算。）"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "例3：求 y = 1 / (x2 − 4) 的自然域。步骤：分母 ≠ 0 → x2 − 4 ≠ 0 → (x − 2)(x + 2) ≠ 0 → x ≠ 2 且 x ≠ −2。注意要因式分解后再排除。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "例4（根号在分母里）：求 y = 3 / √(2 − x) 的自然域。步骤：根号在分母 → 根号内必须 > 0（不能等于 0，否则分母为 0）→ 2 − x > 0 → x < 2。这里用严格不等号 >，与例1 的 ≥ 不同。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "例5（两者叠加）：求 y = (x + 9) / ((x + 2)(x − 3)) 的自然域。步骤：只看分母 ≠ 0 → (x + 2)(x − 3) ≠ 0 → x ≠ −2 且 x ≠ 3。分子不影响定义域。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Common mistake: for an expression like y = (x + 2) / (x2 − 4), do not cancel first. The original denominator x2 − 4 = (x − 2)(x + 2), so the domain is x ≠ 2 and x ≠ −2; even if you cancel to 1/(x − 2), the point x = −2 is still undefined in the original expression and must be excluded. Always determine the domain from "
+        },
+        {
+          "field": "graphicHtml",
+          "text": "例（tutorial 1-7 Q3，双曲线）：解 1 / (x − 3) ≤ 1。步骤：先画 y = 1/(x − 3)，竖直渐近线 x = 3，x 截距由 1/(x − 3) = 0 无解（双曲线永不与 x 轴相交），但与 y = 1 的水平线交点：1/(x − 3) = 1 → x − 3 = 1 → x = 4，故交点 (4, 1)。双曲线在 x > 3 一支从上方下降穿过 y = 1 于 x = 4；在 x < 3 一支恒在 y = 0 与 y = 1 之间（满足 ≤ 1）。所以 1/(x − 3) ≤ 1 的解为 x < 3 或 x ≥ 4。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Common mistake: when solving a rational inequality (e.g. containing 1/(x − 3)), you cannot multiply both sides by (x − 3), because its sign is unknown and x = 3 is not even in the domain. The correct method is to use a graph, or first move terms and combine over a common denominator, then make a sign table. When an equ"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "① Wrong asymptote for logs: the asymptote of y = logb x is x = 0 (vertical axis) and it passes through (1, 0); it is NOT y = 0 and NOT (0, 1). It is the horizontal / vertical swap of the exponential graph y = bx (asymptote y = 0, passes through (0, 1)).（① 对数渐近线记反：y=log_b x 渐近线 x=0、过 (1,0)；与指数图横竖对调。）"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Must-memorise checklist: log features (domain x > 0, asymptote x = 0, passes through (1, 0) and (b, 1)); the three domain restrictions (radicand ≥ 0, denominator ≠ 0, log argument > 0, and > 0 if the root is in the denominator); for piecewise functions first judge the boundary piece, then judge continuity; for graph-so"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Answer structure (graph question): ① Write the domain → ② Mark the asymptote / intercepts / key points → ③ Sketch the behaviour and note the transformation → ④ Answer using intervals or coordinates. Graph-solving question: ① Draw both graphs (or graph + horizontal line) → ② Find the intersection coordinates → ③ Read th"
+        },
+        {
+          "field": "notesHtml",
+          "text": "L13 Graphs of Logarithmic Functions：y=log_b x 与 y=b^x 互为反函数，图像关于 y=x 对称；定义域 x>0，值域为全体实数，竖直渐近线 x=0，恒过 (1,0) 与 (b,1)；b>1 时单调上升。一般形式 y=a·log_b(x-h)+k 的渐近线为 x=h，定义域 x>h。画图顺序：先画渐近线，再定点。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "求 y=√(x-3)+1/(x-2) 的定义域：根号要求 x≥3，分母要求 x≠2，合并得 x≥3。"
+        }
+      ],
+      "nonEnglishFirstHeadings": [],
+      "rawQuoteCount": 0,
+      "inlineStyleCount": 0,
+      "files": [
+        "L13 Graphs of Logarithmic Functions.pdf",
+        "L14 More on Domain and Piecemeal Functions.pdf",
+        "L15 Use of Graphs.pdf"
+      ],
+      "strictEnglishDominanceCandidates": [],
+      "rawPowerBlocks": [
+        "Given y = bx (b > 1): to find its inverse, swap x and y to get x = by, then rewrite it as y = logb x. In the same coordinate system, the two graphs are symmetric about the line y = x (they are mirror reflections of each other).（求反函数：交换 x、y 得 x = b^y，再写成 y = log_b x；两图关于 y = x 对称。）"
+      ],
+      "outOfBoundsSourceReferences": []
+    },
+    {
+      "term": "term1",
+      "week": 6,
+      "title": "Applications of Functions & Graphs · 函数与图像应用",
+      "graphicChars": 39717,
+      "fallbackChars": 3342,
+      "answerChars": 0,
+      "sourceLines": 24,
+      "blueMarkers": 14,
+      "redMarkers": 6,
+      "fractionMarkup": 14,
+      "images": 0,
+      "svg": 0,
+      "bilingualIssues": [],
+      "formulaNotationCandidates": [
+        {
+          "field": "graphicHtml",
+          "text": "For modelling, define the variables and their units, write the functional relationship, solve using algebra or a graph, and interpret the result. Break-even uses equal revenue and cost; quadratic optimisation uses a vertex; exponential models use the specified rate convention. Follow the actual assessment instructions "
+        },
+        {
+          "field": "graphicHtml",
+          "text": "\n配方 ax²+bx+c = a(x + b/(2a))² + (c − b²/(4a))\n"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "An exponential model starts from Q₀ at time zero. With positive rate magnitude k, use a positive exponent for growth and a negative exponent for decay. A larger magnitude gives faster proportional change; state the time unit. 当数量 Q 随时间 t 按 Q = Q0 e^{kt}（k>0 增长）或 Q = Q0 e^{−kt}（k>0 衰减）变化时，称为指数增长 / 衰减。Q0 是 t=0 时的初值（initi"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "\n增长 Q = Q0 · e^{kt} （k>0）\n衰减 Q = Q0 · e^{−kt} （k>0）\n翻倍时间 t = ln 2k （增长）\n半衰期 t = ln 2k （衰减）\n"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "With positive k in the growth and decay forms shown, doubling time and half-life are ln 2 divided by k. For a base b per unit time, growth has k = ln b when b > 1, while decay has positive magnitude k = −ln b when 0 < b < 1. Do not use a negative decay magnitude in the positive-k half-life formula. 关键：增长与衰减公式只差一个负号；翻倍时"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Under the continuous-rate convention k = 0.011, use P = 23 times e to the power 0.011t. For May 2050, t = 37, giving about 34.55 million, rounded to 34.6 million. Doubling gives 0.011t = ln 2, hence about 63.0 years. A rate of exactly 1.1% compounded annually instead uses factor 1.011 per year, equivalently continuous "
+        },
+        {
+          "field": "graphicHtml",
+          "text": "For the population model starting at 1,000 with continuous growth rate 0.5 per year, find the initial value, the one-year value, doubling time and time to reach 5,000. 城镇人口 P(t)=1000·e^{0.5 t}（t 年）。(a) 初值；(b) 1 年后人口；(c) 翻倍时间；(d) 达到 5000 的时间。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "At time zero the population is 1,000. At one year it is approximately 1,648.72, or 1,649 rounded to a whole person. For doubling, divide by 1,000 and take ln to get t = ln 2 divided by 0.5, approximately 1.39 years. For 5,000, the corresponding ratio is 5 and time is ln 5 divided by 0.5, approximately 3.22 years. 步骤：\n("
+        },
+        {
+          "field": "graphicHtml",
+          "text": "For 5,000 cells decaying with rate magnitude 0.1 per day, find the initial count, the three-day count, time to reach 1,000 and half-life. 培养细胞数 N(t)=5000·e^{−0.1 t}（t 天）。(a) 初值；(b) 3 天后；(c) 降到 1000 的时间；(d) 半衰期。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "At time zero there are 5,000 cells. After three days, the exponential factor is approximately 0.7408, giving about 3,704. Reaching 1,000 gives ratio 0.2, so time is negative ln 0.2 divided by 0.1, approximately 16.09 days. Half-life is ln 2 divided by 0.1, approximately 6.93 days. 步骤：\n(a) t=0：N=5000·e^{0}=5000。\n(b) t=3"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "A model such as a − b ln t, with positive b, decreases as t increases but at a slowing rate on its valid domain. Applications here include recall and unit cost. Solve by isolating the logarithm and exponentiating, while checking the model’s time, output and physical restrictions. 对数函数 R = a − b·ln t 或 C = a − b·ln(x+1)"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "To solve for an unknown inside ln, isolate ln first and then apply the exponential with base e. Use base 10 only for a base-10 logarithm. 关键：对数模型解出 t 或 x 时，先移项把 ln(…) 单独留在一边，再取 e 的幂还原。ln 以 e 为底，别和 log_{10} 搞混。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "At t = 1, ln 1 = 0, so recall is 84%. At t = 10, substituting ln 10 gives approximately 26.44%. Setting recall to zero gives ln t = 84 divided by 25 = 3.36, hence t is e to the power 3.36, approximately 28.8 hours. Negative percentages beyond this point are outside a meaningful recall interpretation. 步骤：\n(a) t=1：R=84−2"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "At x = 100 and x = 500, substitution gives approximately $30.77 and $6.75 respectively. Setting cost to 60 gives ln(x + 1) = 40 divided by 15; exponentiating gives x approximately 13.39. If the requirement is cost at most $60 with integer output, round the threshold upward to 14 units rather than claim an exact equalit"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "For positive A and non-negative time, A times (1 minus a decaying exponential) starts at zero and approaches upper limit A. To solve for time, divide by A, isolate the exponential and take ln. A target equal to the limiting value is not attained at a finite time in this model. 形如 N = A(1 − e^{−t}) 的函数从 0 开始、随 t 增大趋近上限 "
+        },
+        {
+          "field": "graphicHtml",
+          "text": "\n通用 N(t) = A·(1 − e^{−kt})，上限（渐近线）为 y=A\nL16 Example 1 · PDF p1 — Rectangle dimensions. A rectangle is 6 cm longer than its width and has perimeter 64 cm. Let width be w cm, so length is w + 6. Perimeter gives 2w + 2(w + 6) = 64; therefore 4w = 52 and w = 13. Length is 19 cm. Check: 2(13 + 19) = 64 and 19 − 13 = 6. 例1：矩"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L16 Example 6 · PDF p5 — Disposable-camera equilibrium. Supply price is p = x/80 − 1/20 and demand price is p = 1264/x, with positive quantity x. Equate the two prices and multiply by 80x: x2 − 4x = 101120. Rearrange and factor: x2 − 4x − 101120 = (x − 320)(x + 316) = 0. Reject x = −316 because quantity must be positiv"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L17 Example 1 · PDF p1 — Learning curve, all parts. N = 40(1 − e−0.12t), t ≥ 0, where t is training days and N is boards assembled per day. (a) N(0) = 0; the curve increases at a slowing rate towards horizontal asymptote N = 40. Label days horizontally and boards per day vertically; the range is 0 ≤ N < 40. (b) Set N ="
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L18 Example 1 · PDF p1 — Domains (a)–(c). (a) The linear function y = 7 − 5x allows every real input. (b) For the fraction with numerator 6 and denominator 7 − 5x, require 7 − 5x ≠ 0, hence x ≠ 7/5. (c) For the square root of 7 − 5x, require 7 − 5x ≥ 0; subtract 7 and divide by −5, reversing the inequality, to obtain x"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L18 Example 4 · PDF p2 — Quadratic inequality. Factor 3x² − 7x − 10 = (3x − 10)(x + 1). The zeros are −1 and 10/3. On the intervals separated by these zeros, the product signs are positive, negative, positive. Since the question asks for a value at least zero, include the roots and choose x ≤ −1 or x ≥ 10/3. Check x = "
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L18 Example 9 · PDF p5 — Drug concentration (a)–(c). C(t) = 2(1 − e−0.2t), with t in hours and C in milligrams per litre. (a) At t = 4, C = 2(1 − e−0.8) ≈ 1.10134 mg/L. (b) For C = 1.5, divide by 2 to get 0.75 = 1 − e−0.2t. Hence e−0.2t = 0.25; taking ln gives t = −5 ln(0.25) = 5 ln 4 ≈ 6.931 hours. (c) For t ≥ 0, the "
+        },
+        {
+          "field": "graphicHtml",
+          "text": "The iodine concentration model is 250 times (1 minus e to the power −t), with time in minutes and concentration in micrograms per millilitre. Find the concentration at one minute and time to reach 200. 水中碘浓度 C(t)=250·(1−e^{−t})（t 分钟，单位 μg/mL）。(a) 1 分钟后浓度；(b) 达到 200 的时间。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "At one minute the exponential is about 0.3679, giving concentration about 158.0 micrograms per millilitre. Setting concentration to 200 gives the exponential equal to 0.2, so time is negative ln 0.2 = ln 5, approximately 1.61 minutes. 步骤：\n(a) t=1：C=250·(1−e^{−1}) ≈ 250×(1−0.3679) = 250×0.6321 ≈ 158.0 μg/mL。\n(b) 令 C=200"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "For the square root of 2 − x, solve 2 − x ≥ 0 to get x ≤ 2. For the reciprocal of x squared − 4, factor the denominator and exclude x = 2 and x = −2. 例：y=√(2−x) → 2−x≥0 → x≤2。 y=1/(x²−4) → x²−4≠0 → x≠2 且 x≠−2（分母因式分解）。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "To find an inverse, interchange x and y and solve for y, then state the inverse notation and appropriate domain. The original function must be one-to-one on its chosen domain. The graphs reflect in y = x. 求反函数 f^{−1}(x)：① 把 y=f(x) 中的 x、y 互换得 x=f(y)；② 解出 y；③ 写出 f^{−1}(x)=…。反函数图像与原图关于 y=x 对称。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "For f(x) = 3x − 7, interchange variables to obtain x = 3y − 7, then solve 3y = x + 7. The inverse divides x + 7 by 3. 例：f(x)=3x−7。互换：x=3y−7 → 3y=x+7 → y=(x+7)/3。故 f^{−1}(x)=(x+7)/3。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L18 Review.pdf · PDF p4；formula_sheet.txt · Functions & Graphs 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "log_a(mn) = log_a m + log_a n"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "log_a(m/n) = log_a m − log_a n"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "log_a(m^p) = p·log_a m"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "log_a a = 1，log_a 1 = 0"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Using the given approximations for logarithms of 4 and 7, express 28 as their product, 49 as the square of 7 and 2 as the square root of 4. The product and power laws then give 2.897, 3.384 and 0.6025 respectively. 例：已知 log_a 4 = 1.205，log_a 7 = 1.692。\nlog_a 28 = log_a(4×7) = 1.205 + 1.692 = 2.897。\nlog_a 49 = log_a(7²)"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "For 2 times the exponential e to the x minus 1, stretch vertically by 2 and shift down 1: the horizontal asymptote is y = −1 and the graph passes through (0, 1). For ln(x − 3), shift right 3: domain x > 3, asymptote x = 3 and point (4, 0). y=2e^{x}−1：由 y=e^{x} 下移 1，渐近线 y=−1，过 (0,1)。 y=ln(x−3)：由 ln x 右移 3，渐近线 x=3，定义域 x>"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Exponential asymptotes are horizontal, while these logarithmic asymptotes are vertical. The stated rules require a nonzero multiplier and a positive base different from 1. Read the shifts from the displayed functions. 指数图渐近线是水平线，对数图渐近线是竖直线；别记反。y=a·b^{x}+k 的渐近线是 y=k；y=a·log_b(x−h)+k 的渐近线是 x=h。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "For positive rate magnitude k, growth uses a positive exponent and decay a negative exponent. Both doubling time for growth and half-life for decay are ln 2 divided by k; always include the model’s time unit. 2. 指数模型符号错：增长写成 e^{−kt}、衰减写成 e^{kt}。记住增长 k>0 用 +kt，衰减用 −kt；翻倍时间与半衰期都是 (ln 2)/k。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "The inverse operation for ln t = c is t equal to e to the power c. Use 10 to the power c only when solving a base-10 logarithm. 3. 对数方程漏逆运算：解 ln t = c 时忘记 t = e^{c}，或把底数搞混。ln 以 e 为底，结果用 e 的幂还原；log_{10} 才用 10 的幂。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Remember profit equals revenue minus cost and break-even sets revenue equal to cost. Use the feasible vertex for quadratic optimisation, the stated rate convention for exponentials, exponentiation for logarithmic equations, and the usual transformation, inverse and logarithm rules. 必记：C(x)/R(x)/P(x)=R−C 与盈亏平衡 R=C；最大面积 "
+        },
+        {
+          "field": "graphicHtml",
+          "text": "High-frequency question types: break-even, maximum area (vertex), price–demand and revenue, population growth / bacterial decay (including half-life), memory / cost logarithmic models, learning curve approaching a limit, domain, graph transformations, inverse function, evaluating using log laws, and using a graph to de"
+        },
+        {
+          "field": "notesHtml",
+          "text": "A learning model starts at zero and approaches a positive upper limit. Exponential growth and decay start at Q₀ and use a positive rate magnitude k with opposite exponent signs; the doubling time is ln 2 divided by k. For a logarithmic model, isolate ln and exponentiate, checking the meaningful domain. L17 Applications"
+        },
+        {
+          "field": "notesHtml",
+          "text": "For a concentration model approaching a limit, substitute a specified time to find concentration; to find time, isolate the exponential and take ln. Check that the target lies below the limiting concentration. 药物浓度 C(t)=C₀(1-e^(-kt))：代值求特定时刻浓度，解方程求达到某浓度的时刻。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "Use the length constraint to express area as a quadratic. Find the vertex and verify its input is feasible, then give dimensions and area with units. 最大面积：设宽为 x，用条件表示长，得二次函数，用顶点公式 x=-b/(2a) 求最值。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "Use positive exponent for growth and negative exponent for decay when k is a positive rate magnitude. 把增长模型 e^(kt) 与衰减模型 e^(-kt) 的符号写反。"
+        }
+      ],
+      "nonEnglishFirstHeadings": [],
+      "rawQuoteCount": 0,
+      "inlineStyleCount": 0,
+      "files": [
+        "L16 Application of Functions and Graphs 1.pdf",
+        "L17 Application of Functions and Graphs 2 (Exp and Log).pdf",
+        "L18_Review.pdf"
+      ],
+      "strictEnglishDominanceCandidates": [],
+      "rawPowerBlocks": [
+        "For modelling, define the variables and their units, write the functional relationship, solve using algebra or a graph, and interpret the result. Break-even uses equal revenue and cost; quadratic optimisation uses a vertex; exponential models use the specified rate convention. Follow the actual asse",
+        "An exponential model starts from Q₀ at time zero. With positive rate magnitude k, use a positive exponent for growth and a negative exponent for decay. A larger magnitude gives faster proportional change; state the time unit. 当数量 Q 随时间 t 按 Q = Q0 e^{kt}（k>0 增长）或 Q = Q0 e^{−kt}（k>0 衰减）变化时，称为指数增长 / 衰减",
+        "With positive k in the growth and decay forms shown, doubling time and half-life are ln 2 divided by k. For a base b per unit time, growth has k = ln b when b > 1, while decay has positive magnitude k = −ln b when 0 < b < 1. Do not use a negative decay magnitude in the positive-k half-life formula. ",
+        "Under the continuous-rate convention k = 0.011, use P = 23 times e to the power 0.011t. For May 2050, t = 37, giving about 34.55 million, rounded to 34.6 million. Doubling gives 0.011t = ln 2, hence about 63.0 years. A rate of exactly 1.1% compounded annually instead uses factor 1.011 per year, equi",
+        "For the population model starting at 1,000 with continuous growth rate 0.5 per year, find the initial value, the one-year value, doubling time and time to reach 5,000. 城镇人口 P(t)=1000·e^{0.5 t}（t 年）。(a) 初值；(b) 1 年后人口；(c) 翻倍时间；(d) 达到 5000 的时间。",
+        "At time zero the population is 1,000. At one year it is approximately 1,648.72, or 1,649 rounded to a whole person. For doubling, divide by 1,000 and take ln to get t = ln 2 divided by 0.5, approximately 1.39 years. For 5,000, the corresponding ratio is 5 and time is ln 5 divided by 0.5, approximate",
+        "For 5,000 cells decaying with rate magnitude 0.1 per day, find the initial count, the three-day count, time to reach 1,000 and half-life. 培养细胞数 N(t)=5000·e^{−0.1 t}（t 天）。(a) 初值；(b) 3 天后；(c) 降到 1000 的时间；(d) 半衰期。",
+        "At time zero there are 5,000 cells. After three days, the exponential factor is approximately 0.7408, giving about 3,704. Reaching 1,000 gives ratio 0.2, so time is negative ln 0.2 divided by 0.1, approximately 16.09 days. Half-life is ln 2 divided by 0.1, approximately 6.93 days. 步骤：\n(a) t=0：N=5000",
+        "A model such as a − b ln t, with positive b, decreases as t increases but at a slowing rate on its valid domain. Applications here include recall and unit cost. Solve by isolating the logarithm and exponentiating, while checking the model’s time, output and physical restrictions. 对数函数 R = a − b·ln t",
+        "At t = 1, ln 1 = 0, so recall is 84%. At t = 10, substituting ln 10 gives approximately 26.44%. Setting recall to zero gives ln t = 84 divided by 25 = 3.36, hence t is e to the power 3.36, approximately 28.8 hours. Negative percentages beyond this point are outside a meaningful recall interpretation",
+        "At x = 100 and x = 500, substitution gives approximately $30.77 and $6.75 respectively. Setting cost to 60 gives ln(x + 1) = 40 divided by 15; exponentiating gives x approximately 13.39. If the requirement is cost at most $60 with integer output, round the threshold upward to 14 units rather than cl",
+        "For positive A and non-negative time, A times (1 minus a decaying exponential) starts at zero and approaches upper limit A. To solve for time, divide by A, isolate the exponential and take ln. A target equal to the limiting value is not attained at a finite time in this model. 形如 N = A(1 − e^{−t}) 的",
+        "The iodine concentration model is 250 times (1 minus e to the power −t), with time in minutes and concentration in micrograms per millilitre. Find the concentration at one minute and time to reach 200. 水中碘浓度 C(t)=250·(1−e^{−t})（t 分钟，单位 μg/mL）。(a) 1 分钟后浓度；(b) 达到 200 的时间。",
+        "At one minute the exponential is about 0.3679, giving concentration about 158.0 micrograms per millilitre. Setting concentration to 200 gives the exponential equal to 0.2, so time is negative ln 0.2 = ln 5, approximately 1.61 minutes. 步骤：\n(a) t=1：C=250·(1−e^{−1}) ≈ 250×(1−0.3679) = 250×0.6321 ≈ 158.",
+        "To find an inverse, interchange x and y and solve for y, then state the inverse notation and appropriate domain. The original function must be one-to-one on its chosen domain. The graphs reflect in y = x. 求反函数 f^{−1}(x)：① 把 y=f(x) 中的 x、y 互换得 x=f(y)；② 解出 y；③ 写出 f^{−1}(x)=…。反函数图像与原图关于 y=x 对称。",
+        "For f(x) = 3x − 7, interchange variables to obtain x = 3y − 7, then solve 3y = x + 7. The inverse divides x + 7 by 3. 例：f(x)=3x−7。互换：x=3y−7 → 3y=x+7 → y=(x+7)/3。故 f^{−1}(x)=(x+7)/3。",
+        "For 2 times the exponential e to the x minus 1, stretch vertically by 2 and shift down 1: the horizontal asymptote is y = −1 and the graph passes through (0, 1). For ln(x − 3), shift right 3: domain x > 3, asymptote x = 3 and point (4, 0). y=2e^{x}−1：由 y=e^{x} 下移 1，渐近线 y=−1，过 (0,1)。 y=ln(x−3)：由 ln x",
+        "Exponential asymptotes are horizontal, while these logarithmic asymptotes are vertical. The stated rules require a nonzero multiplier and a positive base different from 1. Read the shifts from the displayed functions. 指数图渐近线是水平线，对数图渐近线是竖直线；别记反。y=a·b^{x}+k 的渐近线是 y=k；y=a·log_b(x−h)+k 的渐近线是 x=h。",
+        "For positive rate magnitude k, growth uses a positive exponent and decay a negative exponent. Both doubling time for growth and half-life for decay are ln 2 divided by k; always include the model’s time unit. 2. 指数模型符号错：增长写成 e^{−kt}、衰减写成 e^{kt}。记住增长 k>0 用 +kt，衰减用 −kt；翻倍时间与半衰期都是 (ln 2)/k。",
+        "The inverse operation for ln t = c is t equal to e to the power c. Use 10 to the power c only when solving a base-10 logarithm. 3. 对数方程漏逆运算：解 ln t = c 时忘记 t = e^{c}，或把底数搞混。ln 以 e 为底，结果用 e 的幂还原；log_{10} 才用 10 的幂。",
+        "Remember profit equals revenue minus cost and break-even sets revenue equal to cost. Use the feasible vertex for quadratic optimisation, the stated rate convention for exponentials, exponentiation for logarithmic equations, and the usual transformation, inverse and logarithm rules. 必记：C(x)/R(x)/P(x)"
+      ],
+      "outOfBoundsSourceReferences": [
+        {
+          "lecture": "L16 Application of Functions and Graphs 1.pdf",
+          "citedRange": [
+            1,
+            9
+          ],
+          "actualPdfPages": 5,
+          "citation": "L16 Application of Functions and Graphs I.pdf · PDF p1–9；"
+        },
+        {
+          "lecture": "L17 Application of Functions and Graphs 2 (Exp and Log).pdf",
+          "citedRange": [
+            1,
+            7
+          ],
+          "actualPdfPages": 5,
+          "citation": "L17 Application of Functions and Graphs II (Exp and Log).pdf · PDF p1–7；"
+        },
+        {
+          "lecture": "L18_Review.pdf",
+          "citedRange": [
+            1,
+            9
+          ],
+          "actualPdfPages": 5,
+          "citation": "L18 Review.pdf · PDF p1–9；Tutorial Guide T1 Unit 1 Ex1-8、Unit 2 Ex2-5 补充讲解"
+        },
+        {
+          "lecture": "L16 Application of Functions and Graphs 1.pdf",
+          "citedRange": [
+            6,
+            6
+          ],
+          "actualPdfPages": 5,
+          "citation": "L16 Application of Functions and Graphs I.pdf · PDF p6；Tutorial Guide T1 Unit 1 Ex1-8 Q9 补充讲解"
+        },
+        {
+          "lecture": "L17 Application of Functions and Graphs 2 (Exp and Log).pdf",
+          "citedRange": [
+            3,
+            7
+          ],
+          "actualPdfPages": 5,
+          "citation": "L17 Application of Functions and Graphs II.pdf · PDF p3–7；Tutorial Guide T1 Unit 2 Ex2-5 Q1–Q5 补充讲解"
+        },
+        {
+          "lecture": "L18_Review.pdf",
+          "citedRange": [
+            6,
+            9
+          ],
+          "actualPdfPages": 5,
+          "citation": "L18 Review.pdf · PDF p6–9；"
+        }
+      ]
+    },
+    {
+      "term": "term1",
+      "week": 7,
+      "title": "Introduction to Calculus & Differentiation · 微积分入门与求导",
+      "graphicChars": 44273,
+      "fallbackChars": 1543,
+      "answerChars": 0,
+      "sourceLines": 19,
+      "blueMarkers": 28,
+      "redMarkers": 8,
+      "fractionMarkup": 119,
+      "images": 0,
+      "svg": 0,
+      "bilingualIssues": [],
+      "formulaNotationCandidates": [
+        {
+          "field": "graphicHtml",
+          "text": "L19_Intro_Calculus.pdf · PDF p1–4；L20_Basic_Differentiation.pdf · PDF p1–4；L21_Further_Differentiation.pdf · PDF p1–4；tutorial guide T1 Unit 3 Exercise 3-1 / 3-2 / 3-3 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "This week we formally enter Calculus（微积分）, specifically the topic of Differentiation（微分 / finding the derivative）. The three lessons build progressively: ① L19 explains why we differentiate — moving from the average rate of change to the instantaneous rate of change, introducing the derivative（导数, i.e. the gradient fun"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Main thread of exam points: the derivative = the slope/gradient of the tangent to the curve at a point = how fast the function is changing there. The power rule 「bring the index to the front and reduce the index by 1」 must be mastered by everyone; for composite functions use the chain rule, for two functions multiplied"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "This week's five must-memorise formulas all come from the Differentiation section of the formula_sheet（公式单）: the power rule, the chain rule (general composite and the [f(x)]n special case, two lines), the product rule, and the quotient rule; the lecture notes additionally supply three general rules — constant multiple,"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L19_Intro_Calculus.pdf · PDF p1–2；tutorial guide Exercise 3-1 Q1–Q2 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L19_Intro_Calculus.pdf · PDF p3；tutorial guide Exercise 3-1 Q2 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L19_Intro_Calculus.pdf · PDF p3；tutorial guide Exercise 3-1 Q3 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L19_Intro_Calculus.pdf · PDF p4；tutorial guide Exercise 3-1 Q1 / Q4 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Given the graph of y = f(x), to sketch y = f′(x) we only need a qualitative picture (positive / negative / zero, rising / falling) — exact scale is not required. The three-step method:"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "① Mark where f′(x) = 0: at points where the original function has a horizontal tangent (peaks, troughs, horizontal inflection), these points of f′ lie on the x-axis. ② Judge the sign by segments: where the original rises, f′(x) > 0 (draw above the x-axis); where it falls, f′(x) < 0 (draw below). ③ Judge rising/falling:"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Matching question types（对应题型）: tutorial 3-1 Q1 asks you to draw tangents at marked points and judge whether the gradient is positive / zero / negative (e.g. point A negative, B zero, C positive); Q4 asks you to draw the whole f′ curve. The core idea in both is 「the sign and size of the tangent slope」."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L20_Basic_Differentiation.pdf · PDF p1；formula_sheet Differentiation 段第 1 条；tutorial guide Exercise 3-2 Q1–Q2 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "例题（幂法则直接套）：(a) y = x7 → dy/dx = 7x6（指数 7 提到前面，7 − 1 = 6）。(b) y = x3 → dy/dx = 3x2。(c) y = 4x6 → dy/dx = 4·6x5 = 24x5（常数 4 保留，只对 x6 用幂法则）。(d) y = 8 → dy/dx = 0（常数）。(e) y = 3x → dy/dx = 3（斜率为 3 的直线）。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L20_Basic_Differentiation.pdf · PDF p1；tutorial guide Exercise 3-2 Q4 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Meaning: a constant can be 「taken outside the derivative」; a polynomial is differentiated term by term then added/subtracted; the derivative of a standalone constant is 0 (horizontal line has slope 0). These three are direct consequences of the power rule and the definition of derivative, are explicitly given in the no"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "例题（tutorial 3-2 Q4(c) 真实数据）：求 y = 4x3 + 3x2 − 7x 的导数。逐项用「常数倍 + 幂法则」：· 4x3 → 4·3x2 = 12x2；· 3x2 → 3·2x = 6x；· −7x → −7·1 = −7。相加：dy/dx = 12x2 + 6x − 7。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "例题（含常数项）：y = 2x3 + 7x + 9 → dy/dx = 6x2 + 7（常数 9 求导为 0，直接消失，别写成 +9）。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "formula_sheet Number 段（指数律）；L20_Basic_Differentiation.pdf · PDF p2；tutorial guide Exercise 3-2 Q1 / Q2 / Q3 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "化幂（先转成 xn） 1xn = x−n    √x = x1/2    1√x = x−1/2    3√x = x1/3"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Hard rule（铁律）: a power xn in the denominator moves to the numerator as x−n; √x is the 1/2 power of x. After rewriting as a power, proceed as usual — 「bring the index to the front, subtract 1」 — then finally convert the negative / fractional index back into a fraction or a root."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "例题（点名的两个）：(a) y = 1x2 = x−2 → dy/dx = −2·x−2−1 = −2x−3 = −2x3。(b) y = √x = x1/2 → dy/dx = 12x1/2 − 1 = 12x−1/2 = 12√x。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "例题（讲义 L20 例 1 推广）：(c) y = 1x3 = x−3 → dy/dx = −3x−4 = −3x4。(d) y = 13x2 = 13x−2 → dy/dx = 13·(−2)x−3 = −23x3。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L20_Basic_Differentiation.pdf · PDF p2–3；tutorial guide Exercise 3-2 Q5 / Q6 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Differentiating with respect to any variable: the x in dy/dx is only a stand-in for 「the current independent variable」. When the question writes d/dt, d/dM, or d/dr, differentiate with respect to t, M, or r, treating other letters as constant coefficients — the method is exactly the same."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "例题（讲义 L20 例 2 / tutorial 3-2 Q5）：(a) ddt(7t2 − 11) = 14t（常数 −11 导数为 0）。(b) ddM(13M2) = ddM(13M−2) = 13·(−2)M−3 = −23M3。(c) ddy(13y) = ddy(13y−1) = −13y−2 = −13y2。(d) ddr(4πr2) = 4π·2r = 8πr（π 是常数，照样提出来）。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Simplify before differentiating: if the expression is a product or a fraction, first expand / split it into a sum or difference of powers — this is often faster than using the product / quotient rule (tutorial 3-2 Q6 practises exactly this)."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "例题（讲义 L20 例 1(h)）：y = (x + 2)(2x − 1)。(1) 先展开：(x + 2)(2x − 1) = 2x2 − x + 4x − 2 = 2x2 + 3x − 2。(2) 逐项求导：dy/dx = 4x + 3。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "例题（tutorial 3-2 Q6(d) 真实数据）：y = x2 + 3xx（x ≠ 0）。(1) 拆项化简：= x2x + 3xx = x + 3。(2) 求导：dy/dx = 1（常数 3 导数为 0）。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Tip（技巧）: when you get an expression, first ask 「can I expand / split it to make it simpler」 — if it simplifies, do so, since this greatly reduces mistakes; only when it cannot be simplified (such as the (x2 + 1)5 type) should you bring in the chain / product / quotient rules from L20–L21."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L20_Basic_Differentiation.pdf · PDF p3；tutorial guide Exercise 3-3 Q7 / Q9 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "例题（讲义 L20 例 3(a)）：求 y = 2√x 在 x = 4 处的切线斜率。(1) 化幂：y = 2x1/2。(2) 求导：dy/dx = 2·12x−1/2 = x−1/2 = 1√x。(3) 代入 x = 4：斜率 = 1√4 = 12。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "例题（讲义 L20 例 3(b)）：求 y = 2x2 − x3 上切线水平的点。(1) 求导：dy/dx = 4x − 3x2。(2) 水平切线 ⟺ 斜率 0：4x − 3x2 = 0 → x(4 − 3x) = 0 → x = 0 或 x = 43。(3) 代回求 y：x = 0 → y = 0，得 (0, 0)；x = 43 → y = 2·169 − 6427 = 329 − 6427 = 96 − 6427 = 3227，得 (43, 3227)。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Answer structure（答题结构）: to find the slope → substitute x; to find horizontal-tangent / given-slope points → set f′(x) = the given value, solve for x → substitute back into the original function to get y and write it as a coordinate. Do not give only x without the point coordinate."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L20_Basic_Differentiation.pdf · PDF p4；formula_sheet Differentiation 段第 2、3 条；tutorial guide Exercise 3-2 Q7 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "例题（讲义 L20 例 4，四小题完整步骤）：(a) y = (5x − 1)7：外层 7(…)6，内层导数 5 → dy/dx = 7(5x − 1)6·5 = 35(5x − 1)6。(b) y = √(2x + 7) = (2x + 7)1/2：外层 12(2x + 7)−1/2，内层导数 2 → dy/dx = 12(2x + 7)−1/2·2 = 1√(2x + 7)。(c) y = (x2 + 2x + 5)3：外层 3(…)2，内层导数 2x + 2 → dy/dx = 3(x2 + 2x + 5)2·(2x + 2) = 6(x + 1)(x2 + 2x + 5)2。(d) y = 13 − 4x2 = (3 − 4"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "例题（tutorial 3-2 Q7(e) 型，[f(x)]n 且 n 为负）：y = 12x3 + 7 = (2x3 + 7)−1。外层 −1·(2x3 + 7)−2，内层导数 6x2 → dy/dx = −(2x3 + 7)−2·6x2 = −6x2(2x3 + 7)2。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "例题（讲义 L20 例 5，链式 + 解方程）：在 y = √(x − 3) 上找切线斜率为 1 的点。dy/dx = 12√(x − 3)。令其 = 1：12√(x − 3) = 1 → 2√(x − 3) = 1 → √(x − 3) = 12 → x − 3 = 14 → x = 134。代回 y = √(14) = 12。故该点为 (134, 12)。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L21_Further_Differentiation.pdf · PDF p1–2；formula_sheet Differentiation 段第 4 条；tutorial guide Exercise 3-3 Q1 / Q3 / Q5 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "例题（乘积 × 链式，讲义 L21 例 2(a) / tutorial 3-3 Q5 型）：y = (3x − 4)3(4x + 1)5。(1) u = (3x − 4)3 → u′ = 3(3x − 4)2·3 = 9(3x − 4)2（这里求 u′ 用链式）。(2) V = (4x + 1)5 → V′ = 5(4x + 1)4·4 = 20(4x + 1)4（链式）。(3) 套公式：y′ = 9(3x − 4)2(4x + 1)5 + (3x − 4)3·20(4x + 1)4。(4) 提公因式 (3x − 4)2(4x + 1)4：= (3x − 4)2(4x + 1)4[9(4x + 1) + 20(3x − 4)] = "
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L21_Further_Differentiation.pdf · PDF p3；formula_sheet Differentiation 段第 5 条；tutorial guide Exercise 3-3 Q2 / Q4 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L21_Further_Differentiation.pdf · PDF p1–4；tutorial guide Exercise 3-3 Q1 / Q2 / Q6 / Q9 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "例题（tutorial 3-3 Q1 真实数据）：y = (2x − 5)(3x + 7)，求 dy/dx。(a) 展开法：y = 6x2 + 14x − 15x − 35 = 6x2 − x − 35 → dy/dx = 12x − 1。(b) 乘积法则：u = 2x − 5 → u′ = 2，V = 3x + 7 → V′ = 3。y′ = u′V + uV′ = 2(3x + 7) + (2x − 5)·3 = 6x + 14 + 6x − 15 = 12x − 1。两法一致 ✓。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "例题（tutorial 3-3 Q2 真实数据）：y = x3 − 3x2x（x ≠ 0）。(a) 化简法：y = x2 − 3x → dy/dx = 2x − 3。(b) 商法则：u = x3 − 3x2 → u′ = 3x2 − 6x，V = x → V′ = 1。y′ = (3x2 − 6x)·x − (x3 − 3x2)·1x2 = 3x3 − 6x2 − x3 + 3x2x2 = 2x3 − 3x2x2 = 2x − 3。两法一致 ✓。可见能化简时化简更省事。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Type 3（题型三）: find the horizontal-tangent / given-slope points of a quotient function (L21 Example 4, tutorial 3-3 Q9)."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "例题（tutorial 3-3 Q9 真实数据）：y = xx − 1，求 dy/dx = −1 的点。(1) 商法则：u = x → u′ = 1，V = x − 1 → V′ = 1。y′ = 1·(x − 1) − x·1(x − 1)2 = −1(x − 1)2。(2) 令 y′ = −1：−1(x − 1)2 = −1 → (x − 1)2 = 1 → x − 1 = ±1 → x = 0 或 x = 2。(3) 代回 y：x = 0 → y = 0，得 (0, 0)；x = 2 → y = 21 = 2，得 (2, 2)。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L21_Further_Differentiation.pdf 综合归纳；tutorial guide Exercise 3-3 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "\nComparison（易混对照）: Product / Quotient Rule vs Chain Rule"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "\nProduct / Quotient Rule（乘积 / 商法则）: the expression is 「two independent functions」 placed side by side, multiplied or divided, e.g. x²(x + 1) or xx − 1. Both parts contain x and stand in a parallel relation."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "formula_sheet Differentiation 段第 2–5 条 对照归纳"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Tell them apart at a glance（一眼区分）: only 「one whole bracket」 → chain rule; 「two factors multiplied」 → product rule; 「one piece above and one below a fraction bar」 → quotient rule. The product uses a plus sign, the quotient a minus sign, the chain a times sign — do not mix them up. Combinations are allowed: if a factor o"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L19–L21 综合归纳；tutorial guide Exercise 3-1 / 3-2 / 3-3 高频失分点"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "先化幂：1x2 = x−2 → −2x−3 = −2x3；√x = x1/2 → 12x−1/2 = 12√x。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L19–L21 综合 · 各讲 Suggested Exercises；tutorial guide Unit 3 Exercise 3-1 / 3-2 / 3-3 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Must memorise（必记）: derivative = tangent slope = instantaneous rate of change; the notations f′(x) and dydx; the power rule ddx(xn) = n·xn−1; constant multiple and sum/difference; the derivative of a constant is 0; the chain rule f′(g(x))·g′(x) and [f(x)]n → n·[f(x)]n−1·f′(x); the product rule u′V + uV′; the quotient ru"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Must be able to do（必会, matched to tutorials）: Exercise 3-1 — read a graph to judge tangent sign, read f(a) and f′(a), sketch f′ from f, substitute into f′(x) to find slope and solve equations; Exercise 3-2 — powers with negative / fractional indices, polynomial sum/difference, differentiate with respect to different va"
+        },
+        {
+          "field": "notesHtml",
+          "text": "L19 Intro to Calculus：平均变化率是割线斜率；某点的瞬时变化率＝该点切线斜率，由此得到gradient function（梯度函数）f'(x)（或 dy/dx），即derivative（导数）。由 y=f(x) 草图 y=f'(x) 的步骤：标出 f'(x)=0 的点、f'(x)>0 与 f'(x)<0 的区间、f'(x) 上升与下降的区间。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "L20 Basic Differentiation：d/dx(c)=0、d/dx(cx)=c；常数倍可与和差提出；幂法则 d/dx(x^n)=n·x^(n-1)（先乘指数再减一）；chain rule（链式法则）d/dx(f(g(x)))=f'(g(x))·g'(x)，即先导外层再乘内层导数，如 d/dx(2x+3)^5=5(2x+3)^4·2。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "L21 Further Differentiation：product rule（乘积法则）d/dx(u·v)=u'v+uv'；quotient rule（商法则）d/dx(u/v)=(u'v-uv')/v²；能展开化简时不必强行用法则，如两个一次式相乘先展开更简单。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "求 y=(x²-1)^7 的导数：链式法则得 y'=7(x²-1)^6·2x=14x(x²-1)^6。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "负指数与分数指数求导符号出错，如 d/dx(1/x)=-1/x²。"
+        }
+      ],
+      "nonEnglishFirstHeadings": [],
+      "rawQuoteCount": 0,
+      "inlineStyleCount": 0,
+      "files": [
+        "L19_Intro_Calculus.pdf",
+        "L20_Basic_Differentiation.pdf",
+        "L21_Further_Differentiation.pdf"
+      ],
+      "strictEnglishDominanceCandidates": [],
+      "rawPowerBlocks": [],
+      "outOfBoundsSourceReferences": []
+    },
+    {
+      "term": "term1",
+      "week": 8,
+      "title": "Tangents, Normals & Derivative Signs · 切线、法线与导数符号",
+      "graphicChars": 25843,
+      "fallbackChars": 1600,
+      "answerChars": 0,
+      "sourceLines": 7,
+      "blueMarkers": 64,
+      "redMarkers": 27,
+      "fractionMarkup": 13,
+      "images": 0,
+      "svg": 0,
+      "bilingualIssues": [],
+      "formulaNotationCandidates": [
+        {
+          "field": "graphicHtml",
+          "text": "L22_Tangents_Normals.pdf · PDF p1–4；L23_Sign_of_First_Derivative.pdf · PDF p1–4；L24_Sign_of_Second_Derivative.pdf · PDF p1–5；tutorial guide Unit 3 Ex 3-4 / 3-5 / 3-6 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Key thread: tangent slope equals the derivative value at that point, f′(x0); normal slope is −1/f′(x0) (and when f′ = 0 the normal becomes the vertical line x = x0); f′ > 0 ⇒ increasing, f′ < 0 ⇒ decreasing, f′ = 0 ⇒ stationary point; f″ > 0 ⇒ concave up, f″ < 0 ⇒ concave down; a point of inflection needs both f″ = 0 a"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L22_Tangents_Normals.pdf · PDF p1–3；tutorial guide Ex 3-4 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Special case (must remember): when f′(x0) = 0 the tangent is the horizontal line y = y0, and −1/0 is undefined so the formula cannot be used; the perpendicular to a horizontal line is vertical, so the normal is x = x0（特例：f′(x0)=0 时切线水平 y=y0，法线为竖直线 x=x0）。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "The 5-step procedure for finding the tangent / normal equation:求切线 / 法线方程的 5 步流程："
+        },
+        {
+          "field": "graphicHtml",
+          "text": "\n① 补全坐标只给 x = x0 时，代入曲线求 y0 = f(x0)，得点 (x0, y0)\n→\n② 求导对函数求导得 y′ = f′(x)，需要时先化简\n→\n③ 求切线斜率代 x0 得 mT = f′(x0)\n→\n④ 写切线用点斜式 y − y0 = mT(x − x0) 并整理\n→\n⑤ 写法线取 mN = −1/mT 代点斜式；若 mT = 0 则法线为 x = x0\n"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "第 ⑤ 步：法线斜率 mN = −1/4，y − 9 = −1/4 (x − 1) → y = −1/4 x + 1/4 + 9 → y = −1/4 x + 37/4（一般式 x + 4y − 37 = 0）。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "第 ⑤ 步：mT = 0 触发特例，−1/0 无意义，改用几何：水平线的垂线是竖直线，过 (1, 2) 故法线为 x = 1。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "易错：这里若硬套 mN = −1/mT 会除零；正确做法是直接判竖直线 x = x0。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "(a) 求导：y = x1/2 → y′ = 12 x−1/2 = 12√x。代 x = 4：mT = 1/(2 × 2) = 1/4。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "切线：y − 2 = 1/4 (x − 4) → y = 1/4 x + 1；法线斜率 mN = −4，y − 2 = −4(x − 4) → y = −4x + 18。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "(b) 求交点：切线令 y = 0 → 1/4 x + 1 = 0 → x = −4，得 A(−4, 0)；法线令 y = 0 → −4x + 18 = 0 → x = 4.5，得 B(4.5, 0)。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L23_Sign_of_First_Derivative.pdf · PDF p1–4；tutorial guide Ex 3-5 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "A stationary point falls into three types, decided by the sign of f′ on its left and right (draw a matchstick diagram / sign table): 驻点分三类，用驻点左右 f′ 的符号判定（画火柴棍图 / 符号表）。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "求导：f′(x) = 4x3 − 9x2 = x2(4x − 9)。令 f′(x) = 0 → x = 0 或 x = 9/4，故原点是驻点之一。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "看 x = 0 左右：因 x2 ≥ 0 恒非负，符号由 (4x − 9) 决定——x < 0 时 (4x − 9) < 0，0 < x < 9/4 时仍有 (4x − 9) < 0，故两侧 f′ 都 < 0（同为负）。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L24_Sign_of_Second_Derivative.pdf · PDF p1–5；tutorial guide Ex 3-6 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "(b) 两个条件取交集。递增：f′(x) = 6x2 − 18x + 12 = 6(x − 1)(x − 2) > 0 → x < 1 或 x > 2。凹向上：f″(x) = 12x − 18 > 0 → x > 3/2。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "交集：(x < 1 或 x > 2) 与 x > 3/2 同时成立 ⟹ x > 2。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "The first derivative governs increase/decrease 增减 and the second derivative governs concavity 凹凸; the two handle different things, so do not confuse them. The table below aligns the meaning and use of each sign at once（一阶看增减、二阶看凹凸，二者各管一件事、不要混淆）。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L23–L24 综合 · 对应 tutorial guide Ex 3-5 / 3-6 / 3-7 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "To fully analyse a curve y = f(x), follow the order below: the first derivative handles increase/decrease and stationary points, the second derivative handles concavity and points of inflection, and finally combine everything to sketch（拿到曲线 y=f(x) 要全面分析时，按此顺序：一阶管增减与驻点、二阶管凹凸与拐点，最后综合描点）。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Mistake 1 · Writing the normal slope as −mT or mT, or forgetting the minus sign. The normal slope is the negative reciprocal of the tangent slope, mN = −1/mT, not the opposite −mT and certainly not the same. For example, if the tangent slope is mT = 4, the normal slope should be −1/4; writing −4 is wrong. Conversely, i"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Mistake 2 · Forcing −1/mT when the tangent is horizontal (mT = 0), causing division by zero. Here −1/0 is undefined, so you must switch to geometry: the perpendicular to a horizontal tangent is a vertical line, hence the normal is x = x0 (as in Example 2 with x = 1). Likewise, when the tangent is vertical (derivative d"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Mistake 5 · Confusing increasing with concave up. f′ > 0 means the function value is rising, while f″ > 0 means the slope is rising / the curve is concave up — the two are unrelated. A curve can be increasing yet concave down, or decreasing yet concave up, so you must compute f′ and f″ separately（易错：混淆递增与凹向上；f′>0 是函数值涨"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L22–L24 综合 · tutorial guide Ex 3-4 / 3-5 / 3-6 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Must memorise (formulas & tests): ① tangent mT = f′(x0), normal mN = −1/mT (if mT = 0 → normal is x = x0), equation by point-slope y − y0 = m(x − x0); ② f′ > 0 increasing, f′ < 0 decreasing, f′ = 0 stationary point; for the nature of a stationary point, f′ going + → − gives a maximum, − → + gives a minimum, no sign cha"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Must master (question types from the tutorial guide): finding the tangent and normal at a given point (including the f′ = 0 case); finding the point of contact when the tangent is parallel / perpendicular to a known line; the area enclosed by a tangent, a normal and the coordinate axes; deciding whether a given point i"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Answer structure: first differentiate and factorise if possible → set f′ = 0 to get stationary points, then substitute back to find y and write the full coordinate → classify the nature with a sign table or f″ → when concavity is needed, find f″, solve the inequality and check whether f″ = 0 changes sign → for tangent "
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Time-management tip: for tangent/normal questions, first write mT = f′(x0) = … then the point-slope form, since marks are given step by step; for classification questions always draw a sign table (listing the dividing points and test signs), which avoids missing solutions and helps checking; whenever you meet f″ = 0, a"
+        },
+        {
+          "field": "notesHtml",
+          "text": "L22 Tangents and Normals：曲线 y=f(x) 在 x=a 处切线斜率为 f'(a)，切线过点 (a, f(a))，用点斜式 y-f(a)=f'(a)(x-a)；normal（法线）与切线垂直，斜率 m_N=-1/f'(a)；曲线与 x 轴交点处的切线要先解 f(x)=0 得交点再求导。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "L24 Sign of the Second Derivative：二阶导数 f''(x)=d²y/dx² 是一阶导数的导数；f''(x)>0 曲线concave up（凹向上），f''(x)<0 曲线concave down（凹向下）；二阶导数判别法：驻点处 f''>0 为极小，f''<0 为极大，f''=0 则回到一阶导数判别；point of inflection（拐点）需同时满足 f''(x)=0 且 f'' 变号。"
+        }
+      ],
+      "nonEnglishFirstHeadings": [],
+      "rawQuoteCount": 0,
+      "inlineStyleCount": 0,
+      "files": [
+        "L22_Tangents_Normals.pdf",
+        "L23_Sign_of_First_Derivative.pdf",
+        "L24_Sign_of_Second_Derivative.pdf"
+      ],
+      "strictEnglishDominanceCandidates": [
+        "易错：这里若硬套 mN = −1/mT 会除零；正确做法是直接判竖直线 x = x0。"
+      ],
+      "rawPowerBlocks": [],
+      "outOfBoundsSourceReferences": []
+    },
+    {
+      "term": "term1",
+      "week": 9,
+      "title": "Curve Sketching, Optimisation & Indefinite Integrals · 曲线作图、最优化与不定积分",
+      "graphicChars": 29262,
+      "fallbackChars": 1417,
+      "answerChars": 0,
+      "sourceLines": 27,
+      "blueMarkers": 0,
+      "redMarkers": 8,
+      "fractionMarkup": 22,
+      "images": 0,
+      "svg": 0,
+      "bilingualIssues": [],
+      "formulaNotationCandidates": [
+        {
+          "field": "graphicHtml",
+          "text": "L25_Curve_Sketching.pdf · PDF p1–5；L26_Max_Min_Problems.pdf · PDF p1–4；L27_Indefinite_Integrals.pdf · PDF p1–4；tutorial guide 3-7 / 3-8 / 4-1"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "This week covers three lectures, all from Term 1 Lectures 25–27 (本周三讲，全部来自 Term 1 的 Lecture 25–27): ① L25 uses derivatives to produce a complete sketch of a polynomial function — finding intercepts, stationary points, inflection points, and concavity intervals, then deciding where it increases or decreases; ② L26 appli"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L25_Curve_Sketching.pdf · PDF p1 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Red warning (红色警告): a curve can be rising yet concave down (e.g. y = √x for x>0), or falling yet concave up. Increasing/decreasing depends on y', concavity on y'', and neither determines the other."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L25_Curve_Sketching.pdf · PDF p1 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L25_Curve_Sketching.pdf · PDF p1–4 归纳 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L25_Curve_Sketching.pdf · PDF p2–3 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "tutorial guide 3-7 Q2(i) / Q3 同类 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "(d) Increasing/decreasing (增减): y' > 0 → x2 > 1 → x < −1 or x > 1 (rising); −1 < x < 1 (falling)."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L25_Curve_Sketching.pdf · PDF p4 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L25_Curve_Sketching.pdf · PDF p4–5 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L26_Max_Min_Problems.pdf · PDF p1 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L26_Max_Min_Problems.pdf · PDF p1 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L26_Max_Min_Problems.pdf · PDF p2 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "(a) Average annual cost (年平均成本): A(n) = C(n)/n = 3200/n + 250 + 50n."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "(c) Minimise (最小化): A'(n) = −3200/n2 + 50 = 0 → n2 = 64 → n = 8 (n is a positive integer, so take 8). Since A''(n) = 6400/n3 > 0 ⇒ minimum. So an 8-year contract gives the lowest average cost."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L26_Max_Min_Problems.pdf · PDF p3 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "(b) Maximise (最大化): I'(d) = 6000 − 950d = 0 → d = 6000/950 = 120/19 ≈ 6.32 (dollars). Since I''(d) = −950 < 0 ⇒ maximum. So charge about 6.32 dollars to maximise daily revenue."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L26_Max_Min_Problems.pdf · PDF p4 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "A cargo ship sails 1000 km (货轮航行 1000 km). At a constant speed of v km/hr, the hourly cost is 160 + v3/100 dollars."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "(a) Total journey time = 1000/v hours, and total cost = (160 + v3/100)·(1000/v) = 160000/v + 10v2 (dollars). Hence proved."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "(b) Most economical speed (最经济速度): C(v) = 160000/v + 10v2, C'(v) = −160000/v2 + 20v = 0 → 20v3 = 160000 → v3 = 8000 → v = 20. Since C''(v) = 320000/v3 + 20 > 0 ⇒ minimum. So the most economical speed is 20 km/hr."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "(c) If the maximum speed is only 16 km/hr: the true minimum occurs at v = 20 (outside the limit), and C(v) is decreasing on 0 < v < 20, so within [0,16] the minimum is taken at the endpoint v = 16. C(16) = 160000/16 + 10·256 = 10000 + 2560 = 12560 (dollars). So the lowest cost is 12560 dollars."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L26_Max_Min_Problems.pdf 推广题型 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L26_Max_Min_Problems.pdf 推广题型 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Set V' = 0 (令 V' = 0): 3x2 − 40x + 100 = 0 → discriminant = 1600 − 1200 = 400 → x = (40 ± 20)/6 → x = 10 (rejected, volume 0) or x = 10/3 ≈ 3.33. V''(x) = −160 + 24x, at x = 10/3 gives −160 + 80 = −80 < 0 ⇒ maximum. Maximum volume = (10/3)(20 − 20/3)2 = (10/3)(40/3)2 = 16000/27 ≈ 592.6 cm3."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L27_Indefinite_Integrals.pdf · PDF p1 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L27_Indefinite_Integrals.pdf · PDF p2；formula_sheet Integration 段 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "The special notation for the indefinite integral (不定积分专用符号) is: ∫ f'(x) dx = f(x) + c. Integration and differentiation are inverse operations. The rule below matches the Integration section of the formula_sheet exactly:"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Exam point (考点): n = −1 is a special case (∫ 1/x dx = ln|x| + c), excluded this lecture — just remember the rule n ≠ −1 for now, and leave the logarithmic integral for later. Memorise the formula_sheet rule so you can apply it directly in the exam."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L27_Indefinite_Integrals.pdf · PDF p1–3 归纳 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "\n① 化成幂 Form把根号、分母写成 xn 形式，如 √x = x1/2、1/x4 = x−4。\n→\n② 升幂 +1 Rise指数 n 变成 n+1。\n→\n③ 除以新幂 Divide系数除以 (n+1)。\n→\n④ 加 c Constant每项积分后都带一个总常数 c（只写一个）。\n→\n⑤ 求导验算 Check对结果求导，应能回到被积函数。\n"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L27_Indefinite_Integrals.pdf · PDF p1 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L27_Indefinite_Integrals.pdf · PDF p2；tutorial 4-1 Q1 同类 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "(c) ∫ 1/x4 dx = ∫ x−4 dx = x−3−3 + c = −13x3 + c."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "tutorial guide 4-1 Q1(f)/Q2(k) 同类 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "(a) ∫ 1/x5 dx = ∫ x−5 dx = x−4−4 + c = −14x4 + c."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "(b) ∫ (x2 − 5)/x2 dx = ∫ (1 − 5x−2) dx = x − 5·x−1−1 + c = x + 5x + c."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Common mistake (易错): for ∫(numerator/denominator) you cannot treat the denominator as a power directly; split into separate terms first, then integrate term by term. Since 1/x2 = x−2, its integral is x−1/(−1) = −1/x; do not drop the minus sign."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L27_Indefinite_Integrals.pdf · PDF p3 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Recall the chain rule for differentiation (回顾求导的链式法则): ddx[f(x)]n = n·f'(x)·[f(x)]n−1. Turning it around gives the chain integration formula (consistent with the second part of the Integration section in formula_sheet):"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L27_Indefinite_Integrals.pdf · PDF p3 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "例 4 (b) ∫ (x − 1)√(x2 − 2x + 7) dx = ∫ (x − 1)(x2 − 2x + 7)1/2 dx. 令 f(x) = x2 − 2x + 7，则 f'(x) = 2(x − 1). 原式 = (1/2)∫ 2(x − 1)[f(x)]1/2 dx = (1/2)·[f(x)]3/23/2 + c = 13(x2 − 2x + 7)3/2 + c."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L27_Indefinite_Integrals.pdf · PDF p4；tutorial 4-1 Q3/Q5 同类 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Simple type (简单型, tutorial 4-1 Q3): given dy/dx = 2x + 5, and y = 3 when x = 0. Integrating gives y = x2 + 5x + c; substituting (0,3): 3 = 0 + 0 + c → c = 3. So y = x2 + 5x + 3."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Example 5 (例 5, chain rule + given point): the gradient function is dy/dx = 2/(3x − 7)2 and the curve passes through (2, 5). Integrate first: dy/dx = 2(3x − 7)−2, so y = ∫ 2(3x − 7)−2 dx. Let u = 3x − 7, du = 3 dx → y = (2/3)∫ u−2 du = (2/3)·(−u−1) + c = −2/[3(3x − 7)] + c. Substitute (2,5): 5 = −2/[3(6 − 7)] + c = −2/"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "积分漏写 +c，写成 ∫ x2 dx = x3/3。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "把 n = −1 套进反幂法则，写 ∫ 1/x dx = x0/0。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L25–L27 综合 · PDF 末页 Suggested Exercises；tutorial 3-7 / 3-8 / 4-1 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Must remember (必记): the six sketching items (intercepts / stationary points / inflection / increasing-decreasing / concavity / sketch); for absolute extrema compare stationary points + endpoints; the five optimisation steps (define variable → build equation → fix domain → find and test stationary point → return to the "
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Answer structure (答题结构): ① for sketching/optimisation/integration first write the expression clearly (y', y'', objective function); ② solve the equation and state the x-value; ③ use a table or sign test to classify; ④ substitute back to find c or the actual quantity and answer. If the exam asks for the number of soluti"
+        },
+        {
+          "field": "notesHtml",
+          "text": "L25 Curve Sketching：作图流程——求 y 截距、求驻点并判类型、求拐点、描点连线；函数在一区间上的absolute maximum/minimum（绝对最大/最小值）可能出现在驻点或端点，需比较两端与驻点函数值。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "L26 Max-Min Problems：步骤——确定优化目标；把目标写成只含一个变量的函数；注明定义域限制；求驻点并判类型；确认最值在定义域内，否则取端点。典型模型：最大利润 P(x)=R(x)-C(x)、最小平均成本 A(x)=C(x)/x、最大通行费收入 I(d)=(6000-475d)d、最省船速 C(v)=100000/v+160v。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "L27 Indefinite Integrals：primitive function（原函数）指导数等于被积函数的函数；不定积分 ∫f(x)dx=F(x)+c，c 不可丢；幂积分法则 ∫x^n dx=x^(n+1)/(n+1)+c（n≠-1）；特例 ∫m dx=mx+c、∫0 dx=0；链式法则反用得 ∫n·[f(x)]^(n-1)·f'(x)dx=[f(x)]^n+c；已知曲线过某点可定出 c。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "已知 dy/dx=3x² 且过 (1,2)：积分得 y=x³+c，代入得 c=1，故 y=x³+1。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "平均成本函数是 C(x)/x，不是 C(x)。"
+        }
+      ],
+      "nonEnglishFirstHeadings": [],
+      "rawQuoteCount": 0,
+      "inlineStyleCount": 0,
+      "files": [
+        "L25_Curve_Sketching.pdf",
+        "L26_Max_Min_Problems.pdf",
+        "L27_Indefinite_Integrals.pdf"
+      ],
+      "strictEnglishDominanceCandidates": [],
+      "rawPowerBlocks": [],
+      "outOfBoundsSourceReferences": []
+    },
+    {
+      "term": "term1",
+      "week": 10,
+      "title": "Definite Integrals & Areas · 定积分与面积",
+      "graphicChars": 22984,
+      "fallbackChars": 1431,
+      "answerChars": 0,
+      "sourceLines": 24,
+      "blueMarkers": 22,
+      "redMarkers": 10,
+      "fractionMarkup": 14,
+      "images": 0,
+      "svg": 0,
+      "bilingualIssues": [],
+      "formulaNotationCandidates": [
+        {
+          "field": "graphicHtml",
+          "text": "L28_Definite_Integrals.pdf · PDF p1–5；L29_Integration__Area.pdf · PDF p1–4；L30_Further_Areas.pdf · PDF p1–6；tutorial_guide_t1.txt · Unit 4 Exercise 4-2 / 4-3 / 4-4"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L28_Definite_Integrals.pdf · PDF p1 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L29_Integration__Area.pdf · PDF p1 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "One-line memory（一句话记忆）: integration is the inverse of differentiation, and a definite integral turns a rate / slope back into a total amount / net change. For time-based applied problems (volume change, profit change, submersion depth), always apply ∫ab (rate of change) dt = total change."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L28_Definite_Integrals.pdf · PDF p3 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "tutorial_guide_t1.txt · Exercise 4-2 Q1(a)(c) 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "（a）∫03 x2 dx：原函数 F(x) = x3/3。代入：F(3) − F(0) = 27/3 − 0 = 9。答案为 9。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "（c）∫14 3x dx：原函数 F(x) = 3·x2/2 = (3/2)x2。代入：(3/2)·16 − (3/2)·1 = 24 − 1.5 = 22.5 = 452。答案为 452。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "tutorial_guide_t1.txt · Exercise 4-2 Q1(b)(e)(g) 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "（e）∫13 1/x4 dx = ∫13 x−4 dx：原函数 = x−3/(−3) = −1/(3x3)。代入：−1/(3·27) − (−1/(3·1)) = −1/81 + 1/3 = (−1 + 27)/81 = 26/81。答案为 26/81。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "（g）∫38 1/x dx：原函数 = ln x。代入：ln 8 − ln 3 = ln(8/3)。答案为 ln(8/3)。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "The antiderivative of 1/x must be ln|x| (at this stage x > 0 so ln x is fine); you cannot treat x−1 with the power rule, because the power rule requires n ≠ −1."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "tutorial_guide_t1.txt · Exercise 4-2 Q1(f) 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "∫24 (x + 1/x)2 dx：先把平方展开，(x + 1/x)2 = x2 + 2 + 1/x2。于是积分 = ∫24 (x2 + 2 + x−2) dx。原函数 = x3/3 + 2x − 1/x。代入：(64/3 + 8 − 1/4) − (8/3 + 4 − 1/2) = (64/3 − 8/3) + (8 − 4) + (−1/4 + 1/2) = 56/3 + 4 + 1/4 = 56/3 + 17/4 = (224 + 51)/12 = 275/12。答案为 27512。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "When you meet a sum or difference inside brackets (especially involving 1/x), do not force the chain rule; expand into a sum of monomials first and integrate term by term — that is the safest approach."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "tutorial_guide_t1.txt · Exercise 4-2 Q4 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "tutorial_guide_t1.txt · Exercise 4-2 Q5 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "若 ∫1m 1/(2x − 1) dx = 1，求 m。原函数用代换：∫ 1/(2x−1) dx = (1/2) ln(2x − 1)。代入：(1/2)[ln(2m − 1) − ln(1)] = (1/2) ln(2m − 1) = 1。所以 ln(2m − 1) = 2，2m − 1 = e2，m = (e2 + 1)/2。答案为 m = e2 + 12。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "The standard pattern（套路）for this type: first compute the definite integral expression containing m, then set it equal to the given number and solve the exponential / logarithmic equation for m. Note that ln(1) = 0 is often the key to simplifying."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "tutorial_guide_t1.txt · Exercise 4-2 Q6 / Q7 / Q8；L28 PDF p5 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "（气球体积）气球体积增速 dV/dt = 4（m3/min），求前 6 分钟体积增加多少。增量 = ∫06 4 dt = [4t]06 = 24 m3。答案为 24 m3。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "（潜艇下沉）下沉速率 dh/dt = 1/(t + 1)（m/min），求 10 分钟内下沉深度。深度 = ∫010 1/(t+1) dt = [ln(t+1)]010 = ln 11 − ln 1 = ln 11 ≈ 2.398，取整为约 2 米（题目给 599 是另一版本参数，按公式套即可）。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "（边际利润）月边际利润 P′(x) = 180 − x（美元/台），产量从 900 增至 1000 台的总利润变化：∫9001000 (180 − x) dx = [180x − x2/2]9001000。计算：上限 (180000 − 500000) = −320000；下限 (162000 − 405000) = −243000；差 = −320000 − (−243000) = −77000？需核对符号。重算：180·1000=180000，10002/2=500000，故 F(1000)=180000−500000=−320000；F(900)=162000−405000=−243000；F(1000)−F(900)=−77"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L29_Integration__Area.pdf · PDF p1 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "tutorial_guide_t1.txt · Exercise 4-3 Q1(i) 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "求 y = x2 + 3、x 轴、直线 x = −1 与 x = 2 围成的面积。在 [−1, 2] 上 x2+3 > 0，直接用公式。Area = ∫−12 (x2 + 3) dx = [x3/3 + 3x]−12 = (8/3 + 6) − (−1/3 − 3) = (26/3) − (−10/3) = 36/3 = 12。答案为 12 units2。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "tutorial_guide_t1.txt · Exercise 4-3 Q1(iii) 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "求 y = (x + 1)3 与坐标轴围成的面积。曲线与 x 轴交于 x = −1；与 y 轴交于 x = 0 时 y = 1。所以区域在 x 从 −1 到 0 之间，且 (x+1)3 ≥ 0。Area = ∫−10 (x+1)3 dx。令 u = x+1，du = dx，x=−1→u=0，x=0→u=1：= ∫01 u3 du = [u4/4]01 = 1/4。答案为 14 units2。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "tutorial_guide_t1.txt · Exercise 4-3 Q1(vi) 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "求抛物线 y = 6x − x2 与 x 轴围成的面积。先求 x 截距：x(6 − x) = 0 → x = 0 或 x = 6。在 [0,6] 上 6x − x2 ≥ 0。Area = ∫06 (6x − x2) dx = [3x2 − x3/3]06 = (108 − 72) − 0 = 36。答案为 36 units2。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "tutorial_guide_t1.txt · Exercise 4-3 Q3 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "f(x) = x2 − 2（x < 0），f(x) = x（0 ≤ x ≤ 1），f(x) = 2 − x（1 < x < 3）。求 x = −2 到 x = 3 下面积。分段积分：∫−20 (x2−2) dx + ∫01 x dx + ∫13 (2−x) dx。第一段 [x3/3 − 2x]−20 = 0 − (−8/3 + 4) = 0 − (4/3) = −4/3，但此段 f(x) 在 x∈(−2,−√2) 为负、其余为正，需取绝对值处理；按官方答案采用几何分解得总面积为 5 + 13 = 163 units2（即 5113）。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L30_Further_Areas.pdf · PDF p1 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "If the region lies below the x-axis, the definite integral comes out negative (because f(x) < 0), but the geometric area must be positive. Therefore take the absolute value, or split into above-axis / below-axis parts and handle each separately:"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "tutorial_guide_t1.txt · Exercise 4-4 Q1(a) 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "求 y = x2 − 2x 与 x 轴在 x = 0 到 x = 2 之间围成的面积。曲线与 x 轴交于 0、2，顶点 (1,−1) 在轴下。Area = −∫02 (x2 − 2x) dx = −[x3/3 − x2]02 = −(8/3 − 4) = −(−4/3) = 4/3。答案为 43 units2。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "tutorial_guide_t1.txt · Exercise 4-4 Q1(c) 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "求 y = (x − 1)3 与 x 轴围成的面积（区域被 x = 0、x = 2 夹住）。曲线在 x = 1 处穿过 x 轴：x<1 时为负，x>1 时为正。必须拆成两段取绝对值：Area = −∫01 (x−1)3 dx + ∫12 (x−1)3 dx。令 u = x−1：第一段 = −∫−10 u3 du = −[u4/4]−10 = −(0 − 1/4) = 1/4；第二段 = ∫01 u3 du = 1/4。合计 1/4 + 1/4 = 1/2。答案为 12 units2。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "tutorial_guide_t1.txt · Exercise 4-4 Q2 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "求 y = 2x2 − 5x − 7 与 x 轴围成的面积。先求 x 截距：2x2 − 5x − 7 = 0 → (2x − 7)(x + 1) = 0 → x = −1 或 x = 7/2。抛物线开口向上，故在 [−1, 7/2] 上在轴下。Area = −∫−17/2 (2x2 − 5x − 7) dx = −[2x3/3 − 5x2/2 − 7x]−17/2。计算得 F(7/2) = −637/24，F(−1) = 92/24，差 = −729/24 = −243/8，取负得 243/8。答案为 2438 units2。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "tutorial_guide_t1.txt · Exercise 4-4 Q3 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "求 y = −√x 与 x 轴在 x = 1 到 x = 16 之间的面积。−√x 全程在轴下，面积 = −∫116 (−√x) dx = ∫116 x1/2 dx = [23 x3/2]116 = (2/3)(64 − 1) = (2/3)·63 = 42。答案为 42 units2。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Pulling the minus sign out to turn it into a positive integral is less error-prone than applying the absolute value directly; write √x as x1/2 and then use the power rule to integrate."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L30_Further_Areas.pdf · PDF p4 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "tutorial_guide_t1.txt · Exercise 4-4 Q1(e) 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "求 y = x2 − 2x 与 y = −(x − 2)2 在 x = 0 到 x = 2 之间的面积。先求交点：x2−2x = −(x2−4x+4) → 2x2−6x+4 = 0 → x2−3x+2 = 0 → (x−1)(x−2)=0，交点 x = 1、x = 2（其中 (1,−1)）。在 [0,1] 上 x2−2x ≥ −(x−2)2（上者为 x2−2x）；在 [1,2] 上 −(x−2)2 ≥ x2−2x。故拆两段：Area = ∫01[(x2−2x)−(−(x−2)2)]dx + ∫12[(−(x−2)2)−(x2−2x)]dx。化简被积函数均为 (2x2−6x+4)，积分得两段各 1/6，合计 1/3。答案为 13 un"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "② Applying the power rule to 1/x: ∫ x−1 dx cannot use xn+1/(n+1); you must use ln|x| (the power rule requires n ≠ −1)."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Must remember（必记）: a definite integral = F(b) − F(a) (find the antiderivative first!); the five properties (reverse / sum-difference / additivity / constant multiple / same-limit-is-zero); area = ∫ f(x)dx when f ≥ 0, take absolute value or split below the axis, and split at crossing points; area between two curves = ∫("
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Answer structure（答题结构）: ① sketch and decide above/below the axis; ② find intersections to set the integral interval; ③ write the integral (do not forget dx); ④ find the antiderivative and substitute the limits; ⑤ remember the area must be positive. With limited exam time, judging the sign first saves roughly half the r"
+        },
+        {
+          "field": "notesHtml",
+          "text": "L28 定义定积分 ∫_a^b f(x)dx=F(b)-F(a) 并研究其性质；L29 由微积分基本定理由定积分求曲边梯形面积；L30 处理 x 轴下方区域与两曲线之间的面积。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "L28 Definite Integrals：若 F 是 f 的原函数，则 ∫_a^b f(x)dx=F(b)-F(a)，结果是一个数值；性质：上下限交换变号 ∫_a^b=-∫_b^a；上下限相同为 0；区间可拆 ∫_a^c=∫_a^b+∫_b^c；常数倍可提出。应用：已知变化率求总量，如 P'(t)=2t+3，5 年总量为 ∫_0^5 (2t+3)dt。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "L29 Integration and Area：Fundamental Theorem of Calculus（微积分基本定理）——曲线 y=f(x) 在 x=a 与 x=b 之间与 x 轴围成的面积为 ∫_a^b f(x)dx（f 在该区间非负时）；若函数有正有负需分段处理。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "L30 Further Areas：区域在 x 轴下方时定积分值为负，面积须取绝对值 Area=|∫_a^b f(x)dx|；两曲线之间面积 Area=∫_a^b (upper-lower)dx，即上曲线减下曲线；若两曲线在区间内相交，要分段积分并注意上下位置互换。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "求 y=x² 在 [0,2] 与 x 轴之间面积：∫_0^2 x²dx=[x³/3]_0^2=8/3。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "已知 ∫_1^3 f(x)dx=7，则 ∫_3^1 6f(x)dx=-42（交换限变号再加常数倍）。"
+        }
+      ],
+      "nonEnglishFirstHeadings": [],
+      "rawQuoteCount": 0,
+      "inlineStyleCount": 0,
+      "files": [
+        "L28_Definite_Integrals.pdf",
+        "L29_Integration__Area.pdf",
+        "L30_Further_Areas.pdf"
+      ],
+      "strictEnglishDominanceCandidates": [],
+      "rawPowerBlocks": [],
+      "outOfBoundsSourceReferences": []
+    },
+    {
+      "term": "term1",
+      "week": 11,
+      "title": "Calculus of Exponential & Logarithmic Functions · 指数对数函数微积分",
+      "graphicChars": 22323,
+      "fallbackChars": 1521,
+      "answerChars": 0,
+      "sourceLines": 30,
+      "blueMarkers": 47,
+      "redMarkers": 6,
+      "fractionMarkup": 19,
+      "images": 0,
+      "svg": 0,
+      "bilingualIssues": [],
+      "formulaNotationCandidates": [
+        {
+          "field": "graphicHtml",
+          "text": "L31_Exponential_Functions_Differentiation.txt · L32_Exponential_Functions_Integration.txt · L33_Log_Functions_Differentiation.txt · formula_sheet.txt（Calculus of Exponential & Logarithmic Functions）· tutorial_guide_t1.txt（Unit 5 Exercise 5-1 ~ 5-4）补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "This week connects exponential and logarithmic functions to calculus. Lecture 31 covers exponential differentiation, centred on the fact that d/dx(ex) = ex (the derivative of ex is itself). Lecture 32 covers exponential integration as the reverse of differentiation, emphasising that the integrand must contain the facto"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Exam focus: four differentiation formulas (ex, ef(x), ln x, ln f(x)) plus four integration formulas (ex, ef(x)f'(x), 1/x, f'(x)/f(x)). When you see ef(x), think chain rule first; when you see f'(x)/f(x), apply ln directly. For applied max/min problems, set the derivative to zero, solve, and classify the stationary poin"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L31_Exponential_Functions_Differentiation.txt · PDF p1–3；formula_sheet.txt（Calculus of Exponential & Logarithmic Functions，前两条）补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Exponential function（指数函数） y = ex has a remarkable property: its instantaneous rate of growth at any point equals its current value, so its derivative is itself. Intuitively, e is defined precisely as the base for which this holds. For the general composite form ef(x), apply the chain rule learned in Term 1.（e^x 的导数等于自"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "基础公式 d/dx(ex) = ex链式法则 d/dx(ef(x)) = f'(x) · ef(x)"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Red-line mistake: only ex (where the exponent is exactly x) has derivative equal to itself; composite functions such as e2x or ex² must be multiplied by the inner derivative f'(x). Forgetting to multiply by f'(x) is the single most common exam error.（只有 e^x 的导数等于自身；复合函数必须乘内层导数 f'(x)，忘乘是最高频失分点。）"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Extension: Lecture 31 also gives the derivative of a general base ax: d/dx(ax) = ax ln a, which follows from ax = ex ln a. This is not listed separately on the formula sheet, but Exercise 5-1 contains 7x and 29x; treat them this way in the exam and do not confuse ax with ex.（一般底数 a^x 求导为 a^x ln a，由 a^x = e^{x ln a} 推出；"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "（a）y = e3x：内层 f(x) = 3x，f'(x) = 3，故 dy/dx = 3 · e3x。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "（b）y = e2x+5：f(x) = 2x+5，f'(x) = 2，故 dy/dx = 2 · e2x+5。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "（c）y = e−x：f(x) = −x，f'(x) = −1，故 dy/dx = −e−x。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "（a）y = x ex：用乘积法则（product rule）(uv)' = u'v + uv'。令 u = x，v = ex，则 u' = 1，v' = ex。dy/dx = 1·ex + x·ex = ex(1 + x)。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "（b）y = ex / x：用商法则（quotient rule）(u/v)' = (u'v − uv')/v²。u = ex，v = x，u' = ex，v' = 1。dy/dx = (ex·x − ex·1)/x² = ex(x − 1)/x²。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "（c）y = x² e5x：u = x²，v = e5x，u' = 2x，v' = 5e5x。dy/dx = 2x e5x + x²·5e5x = x e5x(2 + 5x)。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Find the tangent and normal to the curve y = ex + 1 at x = 0. The tangent slope equals the derivative at that point, and the normal slope is the negative reciprocal of the tangent slope.（求曲线 y = e^x + 1 在 x = 0 处的切线与法线；切线斜率等于该点导数，法线斜率为其负倒数。）"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "dy/dx = ex。x = 0 时：y = e0 + 1 = 2，点为 (0, 2)；斜率 m = e0 = 1。切线：y − 2 = 1(x − 0) → y = x + 2。法线斜率 = −1/1 = −1：y − 2 = −1(x − 0) → y = −x + 2。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "（a）f(x) = ex + 4 e−x 的驻点：f'(x) = ex − 4 e−x。令 f'(x) = 0 → ex = 4 e−x → e2x = 4 → 2x = ln 4 → x = ln 2。此时 f(ln 2) = eln 2 + 4 e−ln 2 = 2 + 4·(1/2) = 4，驻点为 (ln 2, 4)。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "（c）应用（Exercise 5-1 Q7 同类）：单价 p = e−x/10，x 为以千计的销量，收入 R = x·p = x e−x/10。R' = e−x/10 + x·(−1/10)e−x/10 = e−x/10(1 − x/10)。令 R' = 0 → x = 10（千）。此时 p = e−1 ≈ 0.368，R = 10·e−1 ≈ 3.68（千美元）≈ 3680 美元，即最大周收入。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L32_Exponential_Functions_Integration.txt · PDF p1；formula_sheet.txt（Calculus of Exponential & Logarithmic Functions，第 5、6 条）补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Integration reverses differentiation, so the indefinite integral of ex is still ex (plus c). The key is the composite form: only when the integrand has the structure f'(x) 乘 ef(x) — an outer ef(x) together with its inner derivative f'(x) — can it be integrated wholesale to ef(x) + c. This is the so-called reverse chain"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Red-line mistake: ∫ ekx dx must be divided by k, giving (1/k) ekx + c, not ekx + c. More generally, ∫ ef(x) dx is NOT equal to ef(x) + c unless the integrand actually contains the factor f'(x).（∫ e^{kx} dx 须除以 k 得 (1/k)e^{kx}+c；∫ e^{f(x)} dx 不等于 e^{f(x)}+c，除非含 f'(x) 因子。）"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "已知 dy/dx = 4 e2x，曲线过 (0, 3)。先积分：y = ∫ 4 e2x dx = 4·12 e2x + c = 2 e2x + c。代入 (0,3)：3 = 2 e0 + c = 2 + c → c = 1。故曲线方程为 y = 2 e2x + 1。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "某矿前 t 年的收益变化率 dR/dt = 5 e−0.1t（百万美元/年），求前 10 年总收入。R = ∫010 5 e−0.1t dt = 5·1−0.1 [e−0.1t]010 = −50(e−1 − 1) = 50(1 − e−1) ≈ 50(1 − 0.3679) ≈ 31.6（百万美元）。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L33_Log_Functions_Differentiation.txt · PDF p1–2；formula_sheet.txt（Calculus of Exponential & Logarithmic Functions，第 3、4 条）补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Natural log（自然对数） ln x has derivative 1/x for all x > 0. Intuition: the logarithm turns multiplication into addition and grows ever more slowly, and its rate of change is exactly 1/x. For the composite ln f(x), apply the chain rule again: the result is the inner derivative divided by the inner function.（ln x 的导数恒为 1/x（"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "基础 d/dx(ln x) = 1x链式法则 d/dx(ln f(x)) = f'(x)f(x)"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Red-line mistake: d/dx(ln(3x)) = 3/(3x) = 1/x, never 1/(3x); always divide by the whole f(x) and multiply by f'(x). Also, ln x is defined only for x > 0, so you must state the domain x > 0.（d/dx(ln(3x)) = 1/x，绝非 1/(3x)；永远除以整个 f(x) 并乘 f'(x)；ln x 要求 x>0，须写定义域。）"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "（a）y = ln(2x + 1)：f(x) = 2x + 1，f'(x) = 2，dy/dx = 2/(2x + 1)。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "（b）y = ln(3x − 5)：dy/dx = 3/(3x − 5)。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "（c）y = ln(x² + 1)：f'(x) = 2x，dy/dx = 2x/(x² + 1)。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "（a）y = x ln x：乘积法则，u = x，v = ln x，u' = 1，v' = 1/x。dy/dx = 1·ln x + x·(1/x) = ln x + 1。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "（b）y = ln x / x：商法则，u = ln x，v = x，u' = 1/x，v' = 1。dy/dx = ((1/x)·x − ln x·1)/x² = (1 − ln x)/x²。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "（c）y = ln(7x − 6)/(x + 8)：u = ln(7x − 6) → u' = 7/(7x − 6)；v = x + 8 → v' = 1。dy/dx = [7/(7x−6)·(x+8) − ln(7x−6)·1]/(x+8)²。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Use the logarithm laws ln(AB) = ln A + ln B, ln(A/B) = ln A − ln B, and ln(Ap) = p ln A to simplify first; this is often much simpler than applying the chain rule directly.（先用对数性质化简：ln(AB)=lnA+lnB、ln(A/B)=lnA−lnB、ln(A^p)=p lnA；常比直接套链式法则简单。）"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "（a）y = ln(x²) = 2 ln x → dy/dx = 2/x（比直接除 2x 再化简更快更稳）。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "（b）y = ln((x − 1)/(x + 3)) = ln(x − 1) − ln(x + 3) → dy/dx = 1/(x − 1) − 1/(x + 3)。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "（c）y = ln(x5) = 5 ln x → dy/dx = 5/x。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "（d）y = ln(4/x) = ln 4 − ln x → dy/dx = −1/x。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "曲线 y = ln x 穿过 x 轴处（即 y = 0 → ln x = 0 → x = 1，点为 (1, 0)）。dy/dx = 1/x，x = 1 时斜率 = 1。切线：y − 0 = 1(x − 1) → y = x − 1。法线斜率 = −1：y − 0 = −1(x − 1) → y = −x + 1。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "N(t) = 10 + 6 ln t（t ≥ 1）。（a）9 小时后：N(9) = 10 + 6 ln 9 ≈ 10 + 6(2.197) ≈ 23.18 ≈ 23 词/分。（b）增速 N'(t) = 6/t；t = 9 时 N'(9) = 6/9 = 2/3 ≈ 0.67 词/分每小时。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "f(x) = ln x − x，定义域 x > 0，竖直渐近线 x = 0。（a）f'(x) = 1/x − 1，令为 0 → 1/x = 1 → x = 1，f(1) = −1，驻点 (1, −1)。（b）f''(x) = −1/x² < 0 恒成立 → 凹向下（concave down），故 (1, −1) 为极大值点（maximum）。（c）x → 0⁺ 时 ln x → −∞，x → ∞ 时 −x 主导 → −∞，与结论一致。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "formula_sheet.txt（Calculus of Exponential & Logarithmic Functions，第 7、8 条）；tutorial_guide_t1.txt（Exercise 5-4）补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Logarithmic integration is exactly the reverse of logarithmic differentiation: d/dx(ln x) = 1/x reverses to ∫ 1/x dx = ln x + c, and d/dx(ln f(x)) = f'(x)/f(x) reverses to ∫ f'(x)/f(x) dx = ln f(x) + c. These two formulas form the backbone of Exercise 5-4 and are explicitly given on the formula sheet.（对数积分是求导的逆运算：∫1/x "
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Red-line mistake: ∫ 1/(ax + b) dx = (1/a) ln(ax + b) + c, so you must divide by the inner coefficient a. ∫ 1/x² dx is NOT a logarithm, because the numerator is not the derivative of x; it belongs to the power rule ∫ xn dx. You may use ln only when the numerator is exactly the derivative of the denominator (or a constan"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "（a）∫ 3/(x + 4) dx = 3 ln(x + 4) + c（分母导数 = 1）。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "（b）∫ 1/(3x + 4) dx：分母导数 = 3，补系数 = 13 ∫ 3/(3x + 4) dx = 13 ln(3x + 4) + c。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "（c）∫ 2/(1 − x) dx：分母导数 = −1，= −2 ln(1 − x) + c。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "（a）∫ 2x/(x² + 1) dx：分母 f(x) = x² + 1，f'(x) = 2x，正好匹配。= ln(x² + 1) + c。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "（b）∫ (2x + 1)/(x² + x) dx：分母导数正是 2x + 1。= ln(x² + x) + c。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "（a）∫26 3/x dx = 3 [ln x]26 = 3(ln 6 − ln 2) = 3 ln 3。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "（b）∫04 2/(x + 1) dx = 2 [ln(x + 1)]04 = 2(ln 5 − ln 1) = 2 ln 5。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "求 y = 1/x、x 轴、x = 2 与 x = 4 围成的面积：Area = ∫24 (1/x) dx = [ln x]24 = ln 4 − ln 2 = ln(4/2) = ln 2。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "订阅数月增量 dN/dt = 5/t + 2（千）。求第 2 年（t = 12 到 t = 24）新增订阅：∫1224 (5/t + 2) dt = [5 ln t + 2t]1224 = 5(ln 24 − ln 12) + 2(24 − 12) = 5 ln 2 + 24 ≈ 3.47 + 24 = 27.47（千）≈ 27470 人。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "d/dx(e2x) = e2x"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "d/dx(e2x) = 2 e2x"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "d/dx(ln(3x)) = 1/(3x)"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "d/dx(ln(3x)) = 3/(3x) = 1/x"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "∫ e2x dx = (1/2) e2x + c"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "把 ∫ 1/x² dx 当 ln"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "∫ 1/x² dx = ln x² + c"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "∫ x−2 dx = −1/x + c（幂函数积分）"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "∫ 1/(3x+4) dx = ln(3x+4) + c"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "(1/3) ln(3x+4) + c"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "d/dx(7x) = 7x"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "d/dx(7x) = 7x ln 7"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Extra reminder: differentiation and integration of ln x both require x > 0; if you simplify using logs first (e.g. ln(x²)), watch the domain carefully. In area problems, if 1/x appears over a negative interval, use ln|x| or shift to a positive interval first.（ln x 的求导/积分都要求 x>0，取对数化简须留意定义域；面积题中 1/x 在负区间应改用 ln|x| 或先移至正区"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Eight formulas to memorise (exactly as on the formula sheet):Differentiation — d/dx(ex) = ex; d/dx(ef(x)) = f'(x)ef(x); d/dx(ln x) = 1/x; d/dx(ln f(x)) = f'(x)/f(x).Integration — ∫ ex dx = ex + c; ∫ f'(x)ef(x) dx = ef(x) + c; ∫ 1/x dx = ln x + c; ∫ f'(x)/f(x) dx = ln f(x) + c.（必记八公式，与公式单完全一致：四条求导 + 四条积分。）"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "General answer structure: (1) identify whether it is ef(x), ln f(x), or 1/f(x); (2) for a composite, first write down f(x) and f'(x); (3) for differentiation multiply by f'(x) / divide by f(x), and for integration check whether the f'(x) factor is already present, supplying the coefficient if not; (4) in applied proble"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Question mapping: Exercise 5-1 focuses on differentiation (product/quotient rules, second derivatives, tangents/normals, stationary points, optimisation); Exercise 5-2 focuses on exponential integration (indefinite/definite integrals, finding curves, area, totals); Exercise 5-3 focuses on logarithmic differentiation (s"
+        },
+        {
+          "field": "notesHtml",
+          "text": "三讲补齐最后两类函数的微积分：L31 指数函数求导 d/dx(a^x)=a^x·ln a；L32 指数函数积分；L33 对数函数求导 d/dx(ln x)=1/x，并学会先用对数法则化简再求导。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "L31 Differentiating Exponentials：d/dx(a^x)=a^x·ln a（比例系数是 ln a）；最重要特例 d/dx(e^x)=e^x——导数等于自身；配合链式法则 d/dx(e^(f(x)))=f'(x)·e^(f(x))，如 d/dx(e^(2x))=2e^(2x)。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "L32 Integrating Exponentials：∫a^x dx=a^x/ln a+c；∫e^x dx=e^x+c；链式法则反向 ∫f'(x)·e^(f(x))dx=e^(f(x))+c；定积分同样代入上下限；应用题：伤口面积变化率积分求面积、浓度模型求时刻。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "L33 Differentiating Logarithms：d/dx(ln x)=1/x；链式形式 d/dx(ln f(x))=f'(x)/f(x)；复杂分式先取对数化简，如 ln((x-1)/(x+1))=ln(x-1)-ln(x+1) 再逐项求导，避免嵌套商法则；商业应用：marginal cost（边际成本）C'(x) 与平均成本 A(x)=C(x)/x 的最小化。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "求 y=e^(3x²) 的导数：y'=6x·e^(3x²)。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "求 ∫e^(2x+1)dx：配系数得 (1/2)e^(2x+1)+c。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "求 y=ln(x²+1) 的导数：y'=2x/(x²+1)。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "把 d/dx(a^x) 误写成 x·a^(x-1)——那是幂法则，只适用于变量在底数位置。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "积分 a^x 忘除以 ln a。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "d/dx(ln f(x)) 分母漏写 f(x) 或漏乘 f'(x)。"
+        }
+      ],
+      "nonEnglishFirstHeadings": [],
+      "rawQuoteCount": 0,
+      "inlineStyleCount": 0,
+      "files": [
+        "L31_Exponential_Functions_Differentiation.pdf",
+        "L32_Exponential_Functions_Integration.pdf",
+        "L33_Log_Functions_Differentiation.pdf"
+      ],
+      "strictEnglishDominanceCandidates": [],
+      "rawPowerBlocks": [
+        "Exam focus: four differentiation formulas (ex, ef(x), ln x, ln f(x)) plus four integration formulas (ex, ef(x)f'(x), 1/x, f'(x)/f(x)). When you see ef(x), think chain rule first; when you see f'(x)/f(x), apply ln directly. For applied max/min problems, set the derivative to zero, solve, and classify",
+        "Exponential function（指数函数） y = ex has a remarkable property: its instantaneous rate of growth at any point equals its current value, so its derivative is itself. Intuitively, e is defined precisely as the base for which this holds. For the general composite form ef(x), apply the chain rule learned i",
+        "Red-line mistake: only ex (where the exponent is exactly x) has derivative equal to itself; composite functions such as e2x or ex² must be multiplied by the inner derivative f'(x). Forgetting to multiply by f'(x) is the single most common exam error.（只有 e^x 的导数等于自身；复合函数必须乘内层导数 f'(x)，忘乘是最高频失分点。）",
+        "Extension: Lecture 31 also gives the derivative of a general base ax: d/dx(ax) = ax ln a, which follows from ax = ex ln a. This is not listed separately on the formula sheet, but Exercise 5-1 contains 7x and 29x; treat them this way in the exam and do not confuse ax with ex.（一般底数 a^x 求导为 a^x ln a，由 ",
+        "Find the tangent and normal to the curve y = ex + 1 at x = 0. The tangent slope equals the derivative at that point, and the normal slope is the negative reciprocal of the tangent slope.（求曲线 y = e^x + 1 在 x = 0 处的切线与法线；切线斜率等于该点导数，法线斜率为其负倒数。）",
+        "Integration reverses differentiation, so the indefinite integral of ex is still ex (plus c). The key is the composite form: only when the integrand has the structure f'(x) 乘 ef(x) — an outer ef(x) together with its inner derivative f'(x) — can it be integrated wholesale to ef(x) + c. This is the so-",
+        "Red-line mistake: ∫ ekx dx must be divided by k, giving (1/k) ekx + c, not ekx + c. More generally, ∫ ef(x) dx is NOT equal to ef(x) + c unless the integrand actually contains the factor f'(x).（∫ e^{kx} dx 须除以 k 得 (1/k)e^{kx}+c；∫ e^{f(x)} dx 不等于 e^{f(x)}+c，除非含 f'(x) 因子。）",
+        "Use the logarithm laws ln(AB) = ln A + ln B, ln(A/B) = ln A − ln B, and ln(Ap) = p ln A to simplify first; this is often much simpler than applying the chain rule directly.（先用对数性质化简：ln(AB)=lnA+lnB、ln(A/B)=lnA−lnB、ln(A^p)=p lnA；常比直接套链式法则简单。）"
+      ],
+      "outOfBoundsSourceReferences": []
+    },
+    {
+      "term": "term1",
+      "week": 12,
+      "title": "Logarithmic Integration & Exam Revision · 对数积分与考试复习",
+      "graphicChars": 27254,
+      "fallbackChars": 1286,
+      "answerChars": 0,
+      "sourceLines": 12,
+      "blueMarkers": 38,
+      "redMarkers": 22,
+      "fractionMarkup": 2,
+      "images": 0,
+      "svg": 0,
+      "bilingualIssues": [],
+      "formulaNotationCandidates": [
+        {
+          "field": "graphicHtml",
+          "text": "L34_Log_Functions_Integration.pdf · PDF p1–3；L35_Exam_Revision_I.pdf · PDF p1–4；L36_Exam_Revision_II.pdf · PDF p1–7；tutorial guide Unit 5 Ex 5-1–5-4 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "This is the final week of Term 1, consisting of three lectures. L34 completes the last piece of calculus — Logarithmic Integration（对数函数的积分）: why ∫1/x dx = ln|x| rather than ln x, and the general form ∫f′(x)/f(x) dx = ln|f(x)| + c. L35 and L36 are two Exam Revision lectures（考前复习）: L35 reviews equations, inequalities, lo"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Main thread: logarithmic integration recognises only one structure — the numerator is exactly the derivative of the denominator (if it differs by only a constant multiple, adjust first); every integration problem follows the six steps 「simplify → classify → choose formula → adjust → substitute / evaluate → check」, and "
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L34_Log_Functions_Integration.pdf · PDF p1 补充推导"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Last week we learned that the derivative of y = ln x is 1/x, but ln x is defined only for x > 0. Since integration is the reverse of differentiation, for x > 0 we have ∫1/x dx = ln x + c."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Now consider y = ln(−x): its domain is x < 0. By the chain rule（链式法则）, d/dx[ln(−x)] = 1/(−x) · (−1) = 1/x. So on x < 0, the antiderivative of the same 1/x is ln(−x)."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "The absolute value cannot be omitted（绝对值不能省）: when x < 0, ln x is undefined; only ln|x| is valid over the whole domain x ≠ 0. You must also remember the domain x ≠ 0 — 1/x is undefined at x = 0."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L34_Log_Functions_Integration.pdf · PDF p1 补充推导"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Reversing d/dx[ln f(x)] = f′(x)/f(x) gives the general form of logarithmic integration:"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Quick rule（判断口诀）: the denominator is the original function and the numerator is exactly its derivative → the answer is ln|denominator| + c. For example, if the denominator is the linear term ax + b, then d/dx(ax + b) = a, so ∫a/(ax + b) dx = ln|ax + b| + c."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Red line（红线）: the numerator must be exactly the derivative of the denominator. If it differs only by a constant factor k, use the constant-adjustment method（配凑微分法） to supply it: ∫k·f′(x)/f(x) dx = k·ln|f(x)| + c; if the numerator is not a derivative at all (e.g. the numerator 1 in 1/(x2 + 1)), the logarithmic formula d"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Constant-adjustment method（配凑微分法） in three steps: ① identify the denominator f(x) and find f′(x); ② compare how many times the numerator is of f′(x), and pull that constant outside the integral sign; ③ write it as (constant)·∫f′(x)/f(x) dx = (constant)·ln|f(x)| + c."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L34_Log_Functions_Integration.pdf · PDF p1–2（Q1）；tutorial guide Unit 5 Ex 5-4 Q1 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Example 1（例 1）· Basic Form & Constant（基本型与常数系数，L34 Q1a/b）"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "(a) ∫3/x dx = 3∫1/x dx = 3 ln|x| + c。常数 3 提到积分号外，只有 1/x 这一项变对数。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "(b) ∫1/(3x) dx = (1/3)∫1/x dx = (1/3) ln|x| + c。分母的 3 要提出成系数 1/3，不能写成 ln|3x|（两者虽只差常数 ln3，但规范做法是提系数）。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Common mistake（易错）: ∫1/(3x) = (1/3)ln|x|, not ln|3x|; likewise ∫1/(ax+b) needs the factor 1/a to give (1/a)ln|ax+b|."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Example 2（例 2）· Numerator is the Derivative（分子正好是分母的导数，L34 Q1d/f）"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "(c) ∫2/(2x + 5) dx：令 f(x) = 2x + 5，则 f′(x) = 2，分子正好是 2。直接套公式得 ln|2x + 5| + c。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "(d) ∫ex/(1 + ex) dx：分母 f(x) = 1 + ex，f′(x) = ex，分子正好是导数，故 = ln(1 + ex) + c。这里 1 + ex > 0 恒成立，绝对值可省；写成 ln|1 + ex| 也不算错。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "∫x/(2x2 - 3) dx：分母 f(x) = 2x2 - 3，f′(x) = 4x，而分子只有 x，差 4 倍。令 u = 2x2 - 3，则 du = 4x dx，即 x dx = du/4。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "原式 = ∫(x dx)/(2x2 - 3) = (1/4)∫du/u = (1/4) ln|u| + c = (1/4) ln|2x2 - 3| + c。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "验算：d/dx[(1/4)ln|2x2 - 3|] = (1/4)·4x/(2x2 - 3) = x/(2x2 - 3) ✓。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Example 4（例 4）· Identify First（先识别再套公式，用户点名的 ∫(2x+1)/(x2+x+3) dx，tutorial Ex 5-4 同型）"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "∫(2x + 1)/(x2 + x + 3) dx：看起来是分式，先求分母 f(x) = x2 + x + 3 的导数 f′(x) = 2x + 1——正好等于分子！所以不用拆分，直接得 ln|x2 + x + 3| + c。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "This example shows the importance of simplify / identify first（先化简/先识别）: before integrating, always take the derivative of the denominator once and compare it with the numerator. Many problems look complicated but the numerator is exactly the derivative, giving the answer in one step."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "\n(i) ∫(x2 + 1)/x dx：分子是和、不是分母 x 的导数，先拆成两项——(x2 + 1)/x = x2/x + 1/x = x + 1/x。于是原式 = ∫x dx + ∫1/x dx = x2/2 + ln|x| + c。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "(ii) ∫(3x - 5/(2x)) dx：已是两项，逐项处理——3x 用幂法则 ∫3x dx = 3·x2/2；-5/(2x) = -(5/2)·(1/x) 用对数公式。合起来 = (3/2)x2 - (5/2) ln|x| + c。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Key distinction（关键区别）: only the term 1/x (i.e. x-1) becomes ln|x|; other powers such as x2, x, x-3 use the power rule ∫xn dx = xn+1/(n+1) + c (n ≠ −1). Do not apply ln to every term."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L34_Log_Functions_Integration.pdf · PDF p2（Q2）；tutorial guide Unit 5 Ex 5-4 Q3 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Definite integral in three steps（定积分三步）: ① confirm x > 0 over the interval (guaranteed by the lecture note); ② find the antiderivative F(x); ③ substitute the limits F(upper) − F(lower), then use the log law log a − log b = log(a/b) to simplify into a single ln. The result is a number, with no + c."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "∫28 5/x dx = 5[ln|x|]28 = 5(ln 8 - ln 2) = 5 ln(8/2) = 5 ln 4 = 5 ln(22) = 10 ln 2。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "∫13 (x + 1)/(x2 + 2x + 5) dx。分母导数 = 2x + 2 = 2(x + 1)，分子 x + 1 差 2 倍，故先配凑系数 1/2：原式 = (1/2)[ln(x2 + 2x + 5)]13 = (1/2)(ln 20 - ln 8) = (1/2) ln(20/8) = (1/2) ln(5/2)。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "∫04 2x/(x2 + 1) dx。分母导数 = 2x，正好是分子，故 = [ln(x2 + 1)]04 = ln 17 - ln 1 = ln 17（ln 1 = 0）。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "The result of a definite integral is a number（定积分结果是一个数） and carries no + c (only indefinite integrals write + c). Before substituting limits, check: does the interval contain a point where the denominator is 0? You cannot directly integrate 1/x across x = 0 (discontinuous)."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L34_Log_Functions_Integration.pdf · PDF p3（Q3）；tutorial guide Unit 5 Ex 5-4 Q2 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Standard two steps（标准两步）: ① integrate the gradient dy/dx to get the general solution y = F(x) + c containing the integration constant c; ② substitute the known point to find c and write the particular solution. The domain is taken from the interval of that point (when ln|x| is involved, state the sign of x)."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "dy/dx = 3/(x + 1)，曲线过 (0, 4)。第一步：分母 x + 1 的导数是 1，分子 3 是它的 3 倍，故 y = ∫3/(x + 1) dx = 3 ln|x + 1| + c。第二步：代 (0, 4)，4 = 3 ln|0 + 1| + c = 3 ln 1 + c = 0 + c，得 c = 4。故曲线为 y = 3 ln|x + 1| + 4（定义域 x > -1，因过点 x = 0）。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "dy/dx = 3x - 4/x，曲线过 (1, -1)。第一步：y = ∫(3x - 4/x) dx = (3/2)x2 - 4 ln|x| + c。第二步：代 (1, -1)，-1 = (3/2)(1)2 - 4 ln 1 + c = 3/2 + 0 + c，得 c = -5/2。故 y = (3/2)x2 - 4 ln x - 5/2（x > 0，因过点 x = 1）。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L34_Log_Functions_Integration.pdf · PDF p3（Q4）；tutorial guide Unit 5 Ex 5-4 Q4–Q5 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "\n第 1 步（交点）：直线 y = 4 - x，双曲线 y = 3/x。联立 4 - x = 3/x ⇒ x(4 - x) = 3 ⇒ x2 - 4x + 3 = 0 ⇒ (x - 1)(x - 3) = 0 ⇒ x = 1 或 3，交点为 (1, 3) 与 (3, 1)。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "第 3 步（积分）：面积 = ∫13 [(4 - x) - 3/x] dx = [4x - x2/2 - 3 ln x]13（区间为正，|x| = x）= (12 - 9/2 - 3 ln 3) - (4 - 1/2 - 0) = (15/2 - 3 ln 3) - 7/2 = 4 - 3 ln 3（平方单位）。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "同类题（tutorial Ex 5-4 Q4，最简模型）：由 y = 1/x、x 轴、x = 2 与 x = 4 围成的面积 = ∫24 1/x dx = [ln x]24 = ln 4 - ln 2 = ln 2。这是对数积分求面积的最基本模型。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "某流媒体订阅数 N（千）满足 dN/dt = 5/(t + 2)，t 为开通月数。求第二年（t = 12 到 t = 24）新增订阅人数，精确到百位。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "解：第二年增量 = ∫1224 5/(t + 2) dt = 5[ln(t + 2)]1224 = 5(ln 26 - ln 14) = 5 ln(26/14) = 5 ln(13/7) ≈ 5 × 0.6190 ≈ 3.095（千人）≈ 3100 人。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "formula_sheet.txt · Calculus of Exponential & Logarithmic Functions 段；tutorial guide Unit 5 Ex 5-1–5-4 补充整理"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "d/dx(ex) = ex"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "d/dx[ef(x)] = f′(x)·ef(x)"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "d/dx(ln x) = 1/x（x > 0）"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "∫1/x dx = ln|x| + c（x ≠ 0）"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "被积式是 1/x，即 x-1（幂法则唯一例外）"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "d/dx[ln f(x)] = f′(x)/f(x)"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "∫f′(x)/f(x) dx = ln|f(x)| + c"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "\nPower rule (n ≠ −1)（幂法则）: ∫xn dx = xn+1/(n + 1) + c. For example ∫x2 dx = x3/3, ∫x-3 dx = x-2/(−2)."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Logarithmic rule (n = −1)（对数法则）: ∫x-1 dx = ∫1/x dx = ln|x| + c. For example ∫5/x dx = 5 ln|x|, ∫1/(3x) dx = (1/3)ln|x|."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Consistency with the formula sheet（与公式单的一致性）: the formula sheet writes the two logarithmic integrals as ln x + c and ln f(x) + c, because it assumes a positive domain by default; lecture L34 rigorously derives ln|x| and ln|f(x)|. In the exam, writing the absolute value (per the lecture) is safest, and it is exactly equ"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "\n1 Simplify (化简) First expand, split terms, rewrite negative exponents, and break open using log laws; do not rush to apply a formula.\n→\n2 Classify (分类) Decide whether it is a power xn, an exponential ef(x), or a fraction.\n→\n3 Choose (选公式) For power n ≠ −1 use the power rule; for n = −1 (1/x) use ln|x|; for ef use the "
+        },
+        {
+          "field": "graphicHtml",
+          "text": "The decision core is step 3（决策核心就在第 3 步）: when you see 1/x, think ln|x|; when you see a fraction, first take the derivative of the denominator and compare; when you see a power of e（ef）, first check whether its derivative sits outside. Beyond these three types, consider expansion or substitution."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L35_Exam_Revision_I.pdf · PDF p1–4；L36_Exam_Revision_II.pdf · PDF p1–7；tutorial guide Unit 5 Ex 5-1–5-4 补充讲解"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "d/dx ef(x)、乘积 / 商 / 链式、切线法线"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "∫1/x、∫f′/f、定积分、梯度求曲线、面积、应用"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "驻点、拐点、凹性、revenue / profit 最大化"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Differentiation Speed Drill（求导速练：覆盖 Ex 5-1 指数求导 与 Ex 5-3 对数求导，L36 Q1e/f）"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "\n(指数链式，Ex 5-1)　d/dx[(e2x + 2)4] = 4(e2x + 2)3 · d/dx(e2x + 2) = 4(e2x + 2)3 · 2e2x = 8e2x(e2x + 2)3。口诀：外层幂求导 × 内层 e2x 的导数 2e2x。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "(对数先拆分，Ex 5-3)　d/dx[ln((3x - 5)/(2x - 7))]：先用 log 商法则拆成 ln(3x - 5) - ln(2x - 7)，再逐项用 d/dx ln f = f′/f，得 3/(3x - 5) - 2/(2x - 7)。先拆再求导，比直接对商式用链式简单得多。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "某厂商卖 x 把牙刷的总收入 R(x) = 800 ln(1 + x/200) 美元，总成本 C(x) = 300 + x 美元。(a) 写出利润 P(x)；(b) 求利润最大时的产量。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "\n(a) 利润 = 收入 - 成本：P(x) = R(x) - C(x) = 800 ln(1 + x/200) - 300 - x。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "(b) 第 1 步求导：令 u = 1 + x/200，则 u′ = 1/200，由 d/dx ln u = u′/u 得 d/dx[ln(1 + x/200)] = (1/200)/(1 + x/200) = 1/(200 + x)。故 P′(x) = 800 · 1/(200 + x) - 1 = 800/(200 + x) - 1。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "第 2 步令 P′(x) = 0：800/(200 + x) = 1 ⇒ 200 + x = 800 ⇒ x = 600。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "第 3 步判定：P″(x) = -800/(200 + x)2 < 0（对一切 x ≥ 0 成立），故 x = 600 处取得最大利润。此时 P(600) = 800 ln 4 - 900（美元）。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Note that the u′/u in log differentiation and the f′/f in this week's ∫f′/f are the same structure seen forwards and backwards（注意 log 求导的 u′/u 与本周 ∫f′/f 的 f′/f 是同一结构的一正一反）: here d/dx ln(1 + x/200) turns the logarithm into the fraction 1/(200 + x), which is exactly the reverse of ∫1/(200 + x) dx = ln|200 + x|."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "\n第 1 步（图像）：y = e-x - 3 是 e-x 下移 3 个单位，水平渐近线 y = -3；x = 0 时 y = -2，x = ln 3 时 y = 1/3 - 3 = -8/3。曲线在整个区间上都在直线 y = -3 上方（因 e-x > 0）。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "第 3 步（积分）：∫e-x dx = -e-x + c（因为 d/dx(-e-x) = e-x）。故 A = [-e-x]0ln 3 = (-e-ln 3) - (-e0) = -1/3 + 1 = 2/3（平方单位）。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Compare with this week's logarithmic area (Example 11)（与本周对数面积（例 11）对照）: the same method ∫(upper − lower) dx applies; when the integrand is e-x use the exponential integral formula, when it is 1/x use ln|x| — classify first, then choose the formula, which is exactly step 3 of the decision flow."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "\n第 1 步写成幂形式：y = (x + 1)1/3。求导：dy/dx = (1/3)(x + 1)-2/3。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "第 2 步代 x = 0：y = 1，切线斜率 m = (1/3)(1)-2/3 = 1/3。故法线斜率 = -1/m = -3。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Companion mistake（配套易错）: if a tangent has slope m = 0 (horizontal tangent), then the normal is the vertical line x = x₀ and you cannot use −1/m (division by zero)."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Time management（时间管理）: ① at the start, scan the whole paper quickly and grab the most confident questions first (log-integration recognition is usually fastest); ② leave 20–30 seconds per integral for step 6 checking; ③ if stuck beyond 2 minutes, skip and return after finishing the doable ones; ④ optimisation problems "
+        },
+        {
+          "field": "graphicHtml",
+          "text": "1. Did you simplify first (expand / split terms / negative exponents / log laws)?"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "\nMistake 1: missing + c in the indefinite integral (不定积分漏 + c). Wrong: ∫(3x − 4/x) dx = (3/2)x2 − 4 ln|x|. Right: you must write + c; when finding a curve from its gradient, keep c first and then substitute the known point to solve for c (Examples 9, 10). Only definite integrals omit + c."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "\nMistake 2: missing the absolute value, writing ln x (漏绝对值). Wrong: ∫1/x dx = ln x + c, ∫f′/f dx = ln f(x) + c. Right: ln|x| + c, ln|f(x)| + c — when x < 0, ln x is undefined. You may omit the absolute value only when f(x) > 0 is confirmed (e.g. 1 + ex, x2 + x + 3) or the definite-integral interval is positive."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "\nMistake 3: forcing ln when the numerator is not the derivative (分子不是导数硬套 ln). Wrong: ∫1/(x2 + 1) dx = ln|x2 + 1| + c (denominator derivative is 2x, numerator 1 is not, and this integral is beyond this course — ln does not apply). Wrong: ∫x/(x2 + 1) dx = ln|x2 + 1| + c (missing the adjustment factor). Right: ∫x/(x2 + 1"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "\nMistake 4: applying ln to 1/x2 and 1/x3 as well (把 1/x²、1/x³ 也套成 ln). Wrong: ∫1/x2 dx = ln|x2| + c. Right: only 1/x (x-1) uses ln; 1/x2 = x-2 uses the power rule ∫x-2 dx = x-1/(−1) = −1/x + c. In mixed problems (Example 5), only the 1/x term becomes a logarithm."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "\nMistake 5: applying the point-slope form to the normal of a horizontal tangent (水平切线的法线套点斜式). When the tangent slope m = 0 (e.g. y = x3 + 1 at x = 0), the normal is the vertical line x = x₀, and the formula −1/m fails by division by zero. In this case write x = x₀ directly (compare with Worked Example 3 where m = 1/3 "
+        },
+        {
+          "field": "graphicHtml",
+          "text": "\nMistake 6: computing without simplifying first (先不化简就硬算). ∫(x2 + 1)/x dx must first be split into x + 1/x; ∫ln((3x − 5)/(2x − 7)) must first use the log law to split into the difference of two ln terms before differentiating. Simplifying first often turns a hard problem into a one-step problem."
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L34–L36 + formula_sheet.txt + tutorial guide Unit 5 综合整理"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "必记（Must memorise）：∫1/x dx = ln|x| + c（x ≠ 0）；∫f′(x)/f(x) dx = ln|f(x)| + c；∫ex dx = ex + c；∫f′(x)ef(x) dx = ef(x) + c；d/dx(ln x) = 1/x；d/dx[ln f(x)] = f′(x)/f(x)；d/dx(ex) = ex；d/dx[ef(x)] = f′(x)ef(x)；幂法则 ∫xn dx = xn+1/(n+1) + c（n ≠ -1）。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Must be able to (必会): ① recognise whether the numerator is the denominator's derivative and adjust for a missing constant factor; ② simplify first (split terms / negative exponents / log laws) before integrating or differentiating; ③ find a curve from gradient + a point (first the general solution with c, then determin"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Answer structure (答题结构, copy for long questions): for an integral write 「original = … = answer + c」 (indefinite) or 「= [F(x)]ab = F(b) − F(a) = value」 (definite); for a curve write 「y = ∫… = F(x) + c, substitute point to get c = …, hence y = …」; for area write 「intersections → upper/lower → ∫(upper − lower) → value + u"
+        },
+        {
+          "field": "notesHtml",
+          "text": "L34 完成积分体系：∫1/x dx=ln|x|+c 及其链式形式；L35、L36 是两讲考试复习课，覆盖全学期题型：求导、积分、切线法线、驻点拐点作图、最优化、指数对数应用。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "L34 Logarithmic Integration：由 d/dx(ln x)=1/x 得 ∫1/x dx=ln x+c（x>0）；对 x<0 有 ∫1/x dx=ln(-x)+c；用绝对值统一为 ∫1/x dx=ln|x|+c；链式形式 ∫f'(x)/f(x)dx=ln|f(x)|+c，如 ∫2x/(x²+1)dx=ln(x²+1)+c；本课定积分只涉及定义域为正的题目；可与指数积分组合求面积。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "把 1/(x²+1) 的积分误当成 ln——它不是 1/x 型。"
+        }
+      ],
+      "nonEnglishFirstHeadings": [],
+      "rawQuoteCount": 0,
+      "inlineStyleCount": 0,
+      "files": [
+        "L34_Log_Functions_Integration.pdf",
+        "L35_Exam_Revision_I.pdf",
+        "L36_Exam_Revision_II.pdf"
+      ],
+      "strictEnglishDominanceCandidates": [],
+      "rawPowerBlocks": [],
+      "outOfBoundsSourceReferences": []
+    },
+    {
+      "term": "term1",
+      "week": 13,
+      "title": "Week 13 · 考前综合复习",
+      "graphicChars": 56428,
+      "fallbackChars": 1557,
+      "answerChars": 0,
+      "sourceLines": 13,
+      "blueMarkers": 105,
+      "redMarkers": 22,
+      "fractionMarkup": 82,
+      "images": 0,
+      "svg": 0,
+      "bilingualIssues": [],
+      "formulaNotationCandidates": [
+        {
+          "field": "graphicHtml",
+          "text": "L35_Exam_Revision_I.pdf · PDF p1–4；L36_Exam_Revision_II.pdf · PDF p1–6；tutorial guide t1 · Unit 0–5；formula sheet · Standard Plus + Standard Term 1"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Main thread: the formula sheet gives only 「formulas」, not 「judgement」. The revision goal is to react to the question type with the right formula immediately — first recognise the structure (sum/difference / product / quotient / composite / area / optimisation), then apply the rule, and finally check against the procedu"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "tutorial guide t1 · Unit 0 Exercise 0-1（Simplify / Expand / Factorise fully / Simplify 分式）；formula sheet · Algebra"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L35_Exam_Revision_I.pdf · Q4；tutorial guide t1 · Unit 0 Ex 0-2、Unit 2 Ex 2-2 / 2-5；formula sheet · Number、Functions & Graphs（log 部分）"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "A radical can be written as a fractional power. A logarithm reverses exponentiation by asking which power of the base gives the argument. Use the two identities below to convert between the forms.（三类是同一套「幂」语言：根式用 √，指数用幂，对数是指数的逆（问「底 a 要几次方才得 m」）。记住 am/n = n√(am) 就把根式与分数指数打通；记住 ax = m ⟺ loga m = x 就把指数与对数打通。）"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "零 / 负 / 分数指数　a0 = 1　；　a−m = 1am　；　am/n = n√(am)（特例 a1/n = n√a）"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "\n综合例题（L35 Q4 换底 + 底数倒数）：已知 log4 7 = n，用 n 表示 (a) log1/4 7　(b) log7 4"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "(a) 用换底公式，统一换到底 4：log1/4 7 = log4 7log4 (1/4)。因 1/4 = 4−1，故 log4(1/4) = −1。所以 = n−1 = −n。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "(a) 也可直接：log1/4 7 = log4−1 7 = −log4 7 = −n（幂律把指数的 −1 提出来）。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "(b) 用换底 + 倒数关系：log7 4 = log4 4log4 7 = 1n（因 log4 4 = 1）。结论 log7 4 = 1/n。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Use the same new base in both parts of the change-of-base fraction. Taking the reciprocal of a base negates the logarithm, and swapping the base and argument takes its reciprocal.（本题陷阱：换底时分子分母必须用同一个新底；log1/a m = −loga m，loga b 与 logb a 互为倒数。）"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "易错 2：am × an 是指数相加得 am+n，不是 amn；(am)n 才是 amn。分式指数 am/n 是 n√(am)，不是 amn。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L35_Exam_Revision_I.pdf · Q1；tutorial guide t1 · Unit 0 Ex 0-3、Unit 1 Ex 1-4；formula sheet · Algebra（quadratic formula）"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "(f) 因 M 是 PQ 中点且 MR ⟂ PQ，直线 MR 正是 PQ 的垂直平分线。用点斜式过 M(3, 2)、m = −3/2：y − 2 = −32(x − 3)。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Subtract coordinates in the same point order in both parts of the slope fraction. A vertical line has undefined slope, while a horizontal line has zero slope.（易错 1：斜率 m = (y2 − y1)/(x2 − x1) 的分子分母相减顺序必须一致（都用「后点 − 前点」），否则符号反。竖直线 x = 常数 斜率不存在，水平线 y = 常数 斜率为 0。）"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Perpendicular lines with finite slopes have negative reciprocal slopes. Read the slope of a line in general form by first solving for y.（易错 2：垂直是负倒数 m1m2 = −1，不是 m1 = −m2；一般式 ax + by + c = 0 的斜率是 −a/b，别直接把 x 系数当斜率。）"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L35_Exam_Revision_I.pdf · Q4(a)(b) / Q5 / Q6；tutorial guide t1 · Unit 1 Ex 1-1→1-8、Unit 2 Ex 2-1 / 2-3 / 2-4；formula sheet · Functions & Graphs"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "\n配方 ①提出二次项系数 a\n→\n② 括号内配半方x2 + px → (x + p/2)2 − (p/2)2\n→\n③ 乘回 a 并合并常数得 y = a(x − h)2 + k\n→\n④ 读顶点 (h, k)、开口、截距作图\n"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L36_Exam_Revision_II.pdf · Q1；tutorial guide t1 · Unit 3 Ex 3-2 / 3-3；formula sheet · Differentiation"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "\n① 先化简展开括号、拆分式、√x 写成 x1/2\n→\n② 判结构和差→逐项；uv→乘积；u/v→商；[f]n 或 ef→链式\n→\n③ 套法则逐个函数求导，复合别忘乘内层导数\n→\n④ 化简合并提公因式、通分\n"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "易错 1：乘积 (uv)′ ≠ u′v′，商 (u/v)′ ≠ u′/v′；务必用 product / quotient 法则原式。分子相减时 uv′ 要整体加括号，符号最易错。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L36_Exam_Revision_II.pdf · Q3 / Q5；tutorial guide t1 · Unit 3 Ex 3-4 / 3-5 / 3-6；formula sheet · 由 Differentiation 公式推出"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "\n切线法线 ①求 f′(x)，代入 x1 得切线斜率 mT\n→\n② 求点y1 = f(x1)\n→\n③ 切线点斜式 y − y1 = mT(x − x1)\n→\n④ 法线mN = −1/mT，再用点斜式\n"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "第3步 法线：与水平线垂直的是竖直线，斜率不存在，不能套 −1/0。法线是过 (0, 1) 的竖直线 → x = 0（即 y 轴）。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "A horizontal tangent has a vertical normal, and a vertical tangent has a horizontal normal. Write the corresponding line equation directly instead of dividing by zero.（本题陷阱：mT = 0 时切线水平、法线竖直（x = x1）；mT 不存在（竖直切线）时法线水平（y = y1）。切勿写出 −1/0。）"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L36_Exam_Revision_II.pdf · Q5(c) / Q6 / Q7；tutorial guide t1 · Unit 3 Ex 3-7 / 3-8、Unit 1 Ex 1-8；formula sheet · 由 Differentiation 公式推出"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "For curve sketching, combine the features from Topic 7 on one graph. For optimisation, model the situation with a function and find its stationary points. Show the steps in both cases.（作图是把主题⑦的所有信息画到一张图上；优化（max/min）则是把文字题翻译成函数再求驻点。两者都是期末大题固定套路，按流程走就不丢步骤分。）"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L36_Exam_Revision_II.pdf · Q2；tutorial guide t1 · Unit 4 Ex 4-1 / 4-2 / 4-3 / 4-4；formula sheet · Integration"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "微积分基本定理 FTC（补充，Ex 4-2/4-3 必用）　∫ab f(x) dx = F(b) − F(a)　，其中 F′ = f"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "第1步 拆项逐项反幂：∫ x4 dx = x5/5；∫ 7x dx = 7 · x2/2。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "第3步 求导复核：d/dx[x5/5 − 7x2/2 + c] = x4 − 7x ✓。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "第1步 原函数：∫ 2x dx = x2；∫ −3x−2 dx = −3 · x−1/(−1) = 3/x。故 F(x) = x2 + 3x。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "第3步 代限：x=6 → 3·36 − 216/3 = 108 − 72 = 36；x=0 → 0。面积 = 36（平方单位）。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "第4步 代限：x=2 → 2 + 4 − 8/3 = 6 − 8/3 = 10/3；x=−1 → 1/2 − 2 + 1/3 = −7/6。面积 = 10/3 − (−7/6) = 20/6 + 7/6 = 27/6 = 92（平方单位）。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "第3步 原函数 G(x) = x3/3 − 4x。∫−3−2 = G(−2)−G(−3) = (−8/3+8) − (−9+12) = 16/3 − 3 = 7/3。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "∫−22(4−x2) = −[G(2)−G(−2)] = −[(8/3−8) − (−8/3+8)] = −(−32/3) = 32/3。∫23 = G(3)−G(2) = (9−12) − (8/3−8) = −3 + 16/3 = 7/3。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "第4步 总面积 = 7/3 + 32/3 + 7/3 = 46/3（平方单位）。注意若不分段直接 ∫−33(x2−4)dx，中间负面积会被抵消，得到错误的小值。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "The integration power rule excludes exponent minus one. Integrating the reciprocal gives the natural logarithm of the absolute value plus a constant.（易错 1：反幂法则n ≠ −1。∫ x−1 dx = ∫ (1/x) dx = ln|x| + c，绝不能套幂法则；这是公式单特意标 n ≠ −1 的原因，也是期末最常考的分水岭。）"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L36_Exam_Revision_II.pdf · Q1(e)(f) / Q2(d)；tutorial guide t1 · Unit 5 Ex 5-1 / 5-2 / 5-3 / 5-4；formula sheet · Calculus of Exponential & Logarithmic Functions"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "ex 的特殊在于导数是它自己；配上链式就得到两套「复合形式」：ef(x) 求导 = f′(x)ef(x)，ln f(x) 求导 = f′(x)/f(x)。积分反过来认：被积里出现 f′(x)ef(x) 就还原成 ef(x)，出现 f′(x)/f(x) 就还原成 ln|f(x)|。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "补充纯 ef 型：若 g(x) = e2x+1，则 g′(x) = 2e2x+1（直接套 d/dx ef = f′ef，f′ = 2）。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "\n对数求导例题（L36 Q1(f) 型）：y = ln3x − 52x − 7，求 dy/dx"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "第2步 逐项用 d/dx ln f = f′/f：d/dx ln(3x − 5) = 33x − 5；d/dx ln(2x − 7) = 22x − 7。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "第3步 合并：dy/dx = 33x − 5 − 22x − 7。（定义域需 3x−5 与 2x−7 同号且非零。）"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "指数积分：对 ∫ 4e3x−5 dx，内层 f = 3x − 5，f′ = 3，故补常数：∫ e3x−5 dx = e3x−5/3。于是 ∫ 4e3x−5 dx = 43e3x−5；∫ 7 dx = 7x。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "面积 = (4 ln 2 − 2) − (−1/2) = 4 ln 2 − 32（平方单位）。（用 e2 ln 2 = eln 4 = 4。）"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "易错 1：d/dx ef(x) = f′(x)ef(x)，别漏乘 f′(x)——e2x+1 导数是 2e2x+1 不是 e2x+1。d/dx ln f(x) = f′(x)/f(x)，不是 1/f(x)。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "When integrating an exponential with a nonzero coefficient in the exponent, divide by that coefficient. Integrating the reciprocal gives a natural logarithm with an absolute value.（易错 2：∫ ekx dx = ekx/k + c（k ≠ 0，要除以系数 k）；∫ (1/x) dx = ln|x| + c（加绝对值），不要误写成 1/x2 之类的幂法则结果。）"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "汇总自 L35 / L36 例题陷阱 + tutorial guide Unit 0–5 高频错题"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "(uv)′ = u′v′，(u/v)′ = u′/v′"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "(uv)′ = u′v+uv′；(u/v)′ = (u′v−uv′)/v2"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "∫ x−1 dx = x0/0"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "∫ (1/x) dx = ln|x| + c"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "切线斜率 0 时法线写 y = −1/0"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "L35 / L36 复习课答题结构 + tutorial guide Unit 0–5 题型 + formula sheet 使用建议"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "Answering order: first scan the paper and secure the marks on the short questions you can do (simplify, differentiate, definite integral, line equation), then tackle the graph and optimisation problems; leave time to check at the end. For each question, first write 「which formula / rule to use」 before substituting, sin"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "代数：a2 − b2 = (a−b)(a+b)；(a±b)2 = a2 ± 2ab + b2；求根公式 x = (−b ± √(b2−4ac))/(2a)。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "指数对数：aman = am+n；(am)n = amn；a0=1；a−m=1/am；am/n=n√(am)；loga(mn)、loga(m/n)、loga(mp) 三律 + 换底。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "坐标几何：m = (y2−y1)/(x2−x1)；中点 ((x1+x2)/2, (y1+y2)/2)；距离 √((Δx)2+(Δy)2)；平行 m 相等、垂直 m1m2=−1。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "求导五式：d/dx(xn)=nxn−1；链式 f′(g)g′；广义幂 n fn−1f′；乘积 u′v+uv′；商 (u′v−uv′)/v2。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "积分六式：∫xndx = xn+1/(n+1)+c（n≠−1）；∫f′fndx = fn+1/(n+1)+c；∫ab = F(b)−F(a)；∫ex=ex；∫f′ef=ef；∫(1/x)=ln|x|；∫f′/f = ln|f|。"
+        },
+        {
+          "field": "graphicHtml",
+          "text": "作图/优化：顶点式 y=a(x−h)2+k；双曲线 y=a/(x−h)+k 渐近线 x=h、y=k；二阶导判别；优化五步骤。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "数与代数：指数律 a^m·a^n=a^(m+n)、a^m÷a^n=a^(m-n)、(a^m)^n=a^(mn)、a^0=1、a^(-m)=1/a^m；平方展开与平方差；求根公式 x=(-b±√(b²-4ac))/(2a)。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "坐标与函数：距离、中点、斜率公式；直线三种形式；抛物线 y=a(x-h)²+k 与 y=ax²+bx+c；双曲线 y=a/(x-h)+k 的渐近线；对数法则 log(MN)=log M+log N、log(M/N)=log M-log N、log(M^p)=p·log M；指数函数 y=a^x 与对数函数 y=log_b x 的定义域、渐近线；反函数关于 y=x 对称。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "微积分：d/dx(x^n)=n·x^(n-1)；链式法则；乘积法则 (uv)'=u'v+uv'；商法则 (u/v)'=(u'v-uv')/v²；d/dx(e^x)=e^x、d/dx(a^x)=a^x·ln a、d/dx(ln x)=1/x；∫x^n dx=x^(n+1)/(n+1)+c；∫e^x dx=e^x+c、∫1/x dx=ln|x|+c；定积分 ∫_a^b f(x)dx=F(b)-F(a)；面积 ∫_a^b (upper-lower)dx。"
+        }
+      ],
+      "nonEnglishFirstHeadings": [],
+      "rawQuoteCount": 0,
+      "inlineStyleCount": 0,
+      "files": [
+        "formula sheet.pdf"
+      ],
+      "strictEnglishDominanceCandidates": [
+        "易错 2：对数 y = loga(x − b) 定义域是 x > b（不是 x > 0），渐近线是 x = b；指数 y = a·bx + k 的渐近线是 y = k（不是 y = 0）。",
+        "易错 1：乘积 (uv)′ ≠ u′v′，商 (u/v)′ ≠ u′/v′；务必用 product / quotient 法则原式。分子相减时 uv′ 要整体加括号，符号最易错。",
+        "ex 的特殊在于导数是它自己；配上链式就得到两套「复合形式」：ef(x) 求导 = f′(x)ef(x)，ln f(x) 求导 = f′(x)/f(x)。积分反过来认：被积里出现 f′(x)ef(x) 就还原成 ef(x)，出现 f′(x)/f(x) 就还原成 ln|f(x)|。"
+      ],
+      "rawPowerBlocks": [],
+      "outOfBoundsSourceReferences": []
+    },
+    {
+      "term": "term2",
+      "week": 1,
+      "title": "Sequences, Series & Progressions · 数列、级数与等差/等比数列",
+      "graphicChars": 0,
+      "fallbackChars": 1276,
+      "answerChars": 0,
+      "sourceLines": 0,
+      "blueMarkers": 0,
+      "redMarkers": 0,
+      "fractionMarkup": 0,
+      "images": 0,
+      "svg": 0,
+      "bilingualIssues": [],
+      "formulaNotationCandidates": [
+        {
+          "field": "notesHtml",
+          "text": "序列(sequence)是按次序排列的一列数，第 n 项记作 u_n（通项）。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "级数(series)是序列各项相加，记作 S_n = u_1 + u_2 + … + u_n。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "用 Σ 记号表示求和：S_n = Σ_{k=1}^{n} u_k。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "等差数列：相邻两项之差为常数 d，即 u_{n+1} - u_n = d。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "通项：u_n = a + (n-1)d（a 为首项）。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "前 n 项和：S_n = n/2 [2a + (n-1)d] = n/2 (a + l)，l 为末项。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "等比数列：相邻两项之比为常数 r（公比），即 u_{n+1}/u_n = r。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "通项：u_n = a r^{n-1}。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "前 n 项和（r≠1）：S_n = a(1-r^n)/(1-r) = a(r^n-1)/(r-1)。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "S_n = \\sum_{k=1}^{n} u_k"
+        },
+        {
+          "field": "notesHtml",
+          "text": "u_n = a + (n-1)d ;  S_n = n/2[2a+(n-1)d]"
+        },
+        {
+          "field": "notesHtml",
+          "text": "u_n = a r^{n-1} ;  S_n = a(1-r^n)/(1-r)"
+        }
+      ],
+      "nonEnglishFirstHeadings": [],
+      "rawQuoteCount": 0,
+      "inlineStyleCount": 4,
+      "files": [
+        "L01_Seq_and_Series.pdf",
+        "L02_Arithmetic_Progressions.pdf",
+        "L03_Geometric_Progressions.pdf"
+      ],
+      "strictEnglishDominanceCandidates": [
+        "本周课件 PDF 见本页底部「资料」区，可在线打开或下载，建议在平板上配合笔记一起看。"
+      ],
+      "rawPowerBlocks": [],
+      "outOfBoundsSourceReferences": []
+    },
+    {
+      "term": "term2",
+      "week": 2,
+      "title": "Infinite Series & Interest · 无穷等比级数与利息",
+      "graphicChars": 0,
+      "fallbackChars": 1185,
+      "answerChars": 0,
+      "sourceLines": 0,
+      "blueMarkers": 0,
+      "redMarkers": 0,
+      "fractionMarkup": 0,
+      "images": 0,
+      "svg": 0,
+      "bilingualIssues": [],
+      "formulaNotationCandidates": [
+        {
+          "field": "notesHtml",
+          "text": "当 |r| < 1 时，无穷等比级数收敛，和为 S_∞ = a/(1-r)。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "复利（每年计息 m=1）：A = P(1 + r)^n。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "复利（每年 m 次）：A = P(1 + r/m)^{mt}，r 为名义年利率，t 为年数。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "单笔本金的未来值：FV = PV(1+i)^n。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "年金未来值（每期期末存 R，利率 i，共 n 期）：FV = R[((1+i)^n - 1)/i]。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "S_\\infty = a/(1-r),\\quad |r|<1"
+        },
+        {
+          "field": "notesHtml",
+          "text": "A = P(1+rt)\\;(单利) ;  A = P(1+r/m)^{mt}\\;(复利)"
+        },
+        {
+          "field": "notesHtml",
+          "text": "FV = R\\cdot\\dfrac{(1+i)^n-1}{i}"
+        }
+      ],
+      "nonEnglishFirstHeadings": [],
+      "rawQuoteCount": 0,
+      "inlineStyleCount": 4,
+      "files": [
+        "L04_Infinite_Geometric_Series.pdf",
+        "L05_Simple_Compound_Interest.pdf",
+        "L06_Future_Value.pdf"
+      ],
+      "strictEnglishDominanceCandidates": [
+        "本周课件 PDF 见本页底部「资料」区，可在线打开或下载，建议在平板上配合笔记一起看。"
+      ],
+      "rawPowerBlocks": [],
+      "outOfBoundsSourceReferences": []
+    },
+    {
+      "term": "term2",
+      "week": 3,
+      "title": "Present Value & Mixed Finance · 现值与综合金融数学",
+      "graphicChars": 0,
+      "fallbackChars": 1089,
+      "answerChars": 0,
+      "sourceLines": 0,
+      "blueMarkers": 0,
+      "redMarkers": 0,
+      "fractionMarkup": 0,
+      "images": 0,
+      "svg": 0,
+      "bilingualIssues": [],
+      "formulaNotationCandidates": [
+        {
+          "field": "notesHtml",
+          "text": "现值 PV 是未来金额的现在等价：PV = FV/(1+i)^n = FV(1+i)^{-n}。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "年金现值（期末付款）：PV = R[1-(1+i)^{-n}]/i。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "永续年金现值：PV = R/i（当 n→∞）。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "实际利率（effective rate）：(1 + r/m)^m - 1，用于比较不同计息频率。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "PV = R\\cdot\\dfrac{1-(1+i)^{-n}}{i}"
+        },
+        {
+          "field": "notesHtml",
+          "text": "实际利率 = (1+r/m)^m - 1"
+        }
+      ],
+      "nonEnglishFirstHeadings": [],
+      "rawQuoteCount": 0,
+      "inlineStyleCount": 4,
+      "files": [
+        "L07_Present_Value.pdf",
+        "L08_Mixed_Financial.pdf",
+        "L09_Sets.pdf"
+      ],
+      "strictEnglishDominanceCandidates": [
+        "本周涵盖：Present value、Mixed financial maths、Sets (intro)。学习目标：掌握现值与贴现计算；会比较不同利率/复利频率的实际收益；理解集合的基本运算。",
+        "本周课件 PDF 见本页底部「资料」区，可在线打开或下载，建议在平板上配合笔记一起看。"
+      ],
+      "rawPowerBlocks": [],
+      "outOfBoundsSourceReferences": []
+    },
+    {
+      "term": "term2",
+      "week": 4,
+      "title": "Counting & Arrangements · 计数原理与排列组合",
+      "graphicChars": 0,
+      "fallbackChars": 1009,
+      "answerChars": 0,
+      "sourceLines": 0,
+      "blueMarkers": 0,
+      "redMarkers": 0,
+      "fractionMarkup": 0,
+      "images": 0,
+      "svg": 0,
+      "bilingualIssues": [],
+      "formulaNotationCandidates": [
+        {
+          "field": "notesHtml",
+          "text": "C(n,r) = P(n,r)/r! = C(n, n-r)。"
+        }
+      ],
+      "nonEnglishFirstHeadings": [],
+      "rawQuoteCount": 0,
+      "inlineStyleCount": 3,
+      "files": [
+        "L10_Basic_Counting_Principles.pdf",
+        "L11_Permutations.pdf",
+        "L12_Combinations.pdf"
+      ],
+      "strictEnglishDominanceCandidates": [
+        "本周课件 PDF 见本页底部「资料」区，可在线打开或下载，建议在平板上配合笔记一起看。"
+      ],
+      "rawPowerBlocks": [],
+      "outOfBoundsSourceReferences": []
+    },
+    {
+      "term": "term2",
+      "week": 5,
+      "title": "Probability Basics · 概率基础",
+      "graphicChars": 0,
+      "fallbackChars": 1176,
+      "answerChars": 0,
+      "sourceLines": 0,
+      "blueMarkers": 0,
+      "redMarkers": 0,
+      "fractionMarkup": 0,
+      "images": 0,
+      "svg": 0,
+      "bilingualIssues": [],
+      "formulaNotationCandidates": [
+        {
+          "field": "notesHtml",
+          "text": "本周涵盖：Basic probability、Probability with permutations/combinations、Union, intersection, complement。学习目标：理解概率定义与样本空间；会用排列组合求概率；掌握并/交/补的概率公式。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "P(E) = n(E)/n(S)，其中 S 为样本空间，0 ≤ P(E) ≤ 1。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "再代入 P(E)=n(E)/n(S)。"
+        }
+      ],
+      "nonEnglishFirstHeadings": [],
+      "rawQuoteCount": 0,
+      "inlineStyleCount": 3,
+      "files": [
+        "L13_Basic_Probability.pdf",
+        "L14_Probability_Permutations_Combinations.pdf",
+        "L15_Union_Intersection_Complement.pdf"
+      ],
+      "strictEnglishDominanceCandidates": [
+        "本周课件 PDF 见本页底部「资料」区，可在线打开或下载，建议在平板上配合笔记一起看。"
+      ],
+      "rawPowerBlocks": [],
+      "outOfBoundsSourceReferences": []
+    },
+    {
+      "term": "term2",
+      "week": 6,
+      "title": "Conditional Probability & Review · 条件概率与单元复习",
+      "graphicChars": 0,
+      "fallbackChars": 982,
+      "answerChars": 0,
+      "sourceLines": 0,
+      "blueMarkers": 0,
+      "redMarkers": 0,
+      "fractionMarkup": 0,
+      "images": 0,
+      "svg": 0,
+      "bilingualIssues": [],
+      "formulaNotationCandidates": [
+        {
+          "field": "notesHtml",
+          "text": "在 B 发生前提下 A 的概率：P(A|B) = P(A∩B)/P(B)。"
+        }
+      ],
+      "nonEnglishFirstHeadings": [],
+      "rawQuoteCount": 0,
+      "inlineStyleCount": 3,
+      "files": [
+        "L16_Successive_Outcomes.pdf",
+        "L17_Conditional_Probability.pdf",
+        "L18_Review.pdf"
+      ],
+      "strictEnglishDominanceCandidates": [
+        "本周课件 PDF 见本页底部「资料」区，可在线打开或下载，建议在平板上配合笔记一起看。"
+      ],
+      "rawPowerBlocks": [],
+      "outOfBoundsSourceReferences": []
+    },
+    {
+      "term": "term2",
+      "week": 7,
+      "title": "Descriptive Statistics I · 描述统计（数据类型与集中趋势）",
+      "graphicChars": 0,
+      "fallbackChars": 1204,
+      "answerChars": 0,
+      "sourceLines": 0,
+      "blueMarkers": 0,
+      "redMarkers": 0,
+      "fractionMarkup": 0,
+      "images": 0,
+      "svg": 0,
+      "bilingualIssues": [],
+      "formulaNotationCandidates": [
+        {
+          "field": "notesHtml",
+          "text": "本周涵盖：Types of data、Frequency tables & polygons、Central tendency (mean/median/mode)。学习目标：区分数据类型（定性与定量、离散与连续）；会做频数表与频数多边形；掌握均值、中位数、众数。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "均值 mean：未分组 x̄ = Σx/n；分组 x̄ = Σfx/Σf。"
+        }
+      ],
+      "nonEnglishFirstHeadings": [],
+      "rawQuoteCount": 0,
+      "inlineStyleCount": 2,
+      "files": [
+        "L19_Types_of_Data.pdf",
+        "L20_Freq_Tables_Polygons.pdf",
+        "L21_Central_Tendency.pdf",
+        "L21a_Statistics_Mode.pdf"
+      ],
+      "strictEnglishDominanceCandidates": [
+        "本周课件 PDF 见本页底部「资料」区，可在线打开或下载，建议在平板上配合笔记一起看。"
+      ],
+      "rawPowerBlocks": [],
+      "outOfBoundsSourceReferences": []
+    },
+    {
+      "term": "term2",
+      "week": 8,
+      "title": "Descriptive Statistics II · 描述统计（离散程度与应用）",
+      "graphicChars": 0,
+      "fallbackChars": 1058,
+      "answerChars": 0,
+      "sourceLines": 0,
+      "blueMarkers": 0,
+      "redMarkers": 0,
+      "fractionMarkup": 0,
+      "images": 0,
+      "svg": 0,
+      "bilingualIssues": [],
+      "formulaNotationCandidates": [
+        {
+          "field": "notesHtml",
+          "text": "IQR = Q_3 - Q_1"
+        },
+        {
+          "field": "notesHtml",
+          "text": "s^2 = \\dfrac{\\sum(x-\\bar x)^2}{n-1}"
+        }
+      ],
+      "nonEnglishFirstHeadings": [],
+      "rawQuoteCount": 0,
+      "inlineStyleCount": 3,
+      "files": [
+        "L22_Measures_of_Spread_I.pdf",
+        "L23_Measures_of_Spread_II.pdf",
+        "L24_Applications_Central_Tendency_and_Spread.pdf"
+      ],
+      "strictEnglishDominanceCandidates": [
+        "本周课件 PDF 见本页底部「资料」区，可在线打开或下载，建议在平板上配合笔记一起看。"
+      ],
+      "rawPowerBlocks": [],
+      "outOfBoundsSourceReferences": []
+    },
+    {
+      "term": "term2",
+      "week": 9,
+      "title": "Bivariate Data & Regression · 双变量数据与回归",
+      "graphicChars": 0,
+      "fallbackChars": 889,
+      "answerChars": 0,
+      "sourceLines": 0,
+      "blueMarkers": 0,
+      "redMarkers": 0,
+      "fractionMarkup": 0,
+      "images": 0,
+      "svg": 0,
+      "bilingualIssues": [],
+      "formulaNotationCandidates": [
+        {
+          "field": "notesHtml",
+          "text": "斜率 b = (nΣxy - ΣxΣy)/(nΣx² - (Σx)²)；截距 a = ȳ - b x̄。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "b = \\dfrac{n\\sum xy-\\sum x\\sum y}{n\\sum x^2-(\\sum x)^2}"
+        }
+      ],
+      "nonEnglishFirstHeadings": [],
+      "rawQuoteCount": 0,
+      "inlineStyleCount": 3,
+      "files": [
+        "L25_Bivariate_Data_Correlation.pdf",
+        "L26_Bivariate_Data_Linear_Regression.pdf"
+      ],
+      "strictEnglishDominanceCandidates": [
+        "本周课件 PDF 见本页底部「资料」区，可在线打开或下载，建议在平板上配合笔记一起看。"
+      ],
+      "rawPowerBlocks": [],
+      "outOfBoundsSourceReferences": []
+    },
+    {
+      "term": "term2",
+      "week": 10,
+      "title": "Discrete Random Variables · 离散型随机变量",
+      "graphicChars": 0,
+      "fallbackChars": 827,
+      "answerChars": 0,
+      "sourceLines": 0,
+      "blueMarkers": 0,
+      "redMarkers": 0,
+      "fractionMarkup": 0,
+      "images": 0,
+      "svg": 0,
+      "bilingualIssues": [],
+      "formulaNotationCandidates": [
+        {
+          "field": "notesHtml",
+          "text": "E(X)=\\sum xP(X=x) ;\\; Var(X)=E(X^2)-[E(X)]^2"
+        }
+      ],
+      "nonEnglishFirstHeadings": [],
+      "rawQuoteCount": 0,
+      "inlineStyleCount": 2,
+      "files": [
+        "L27_Discrete_Random_Variables.pdf",
+        "L28_Applications_Expected_Value.pdf"
+      ],
+      "strictEnglishDominanceCandidates": [
+        "本周课件 PDF 见本页底部「资料」区，可在线打开或下载，建议在平板上配合笔记一起看。"
+      ],
+      "rawPowerBlocks": [],
+      "outOfBoundsSourceReferences": []
+    },
+    {
+      "term": "term2",
+      "week": 11,
+      "title": "Binomial Distribution · 二项分布",
+      "graphicChars": 0,
+      "fallbackChars": 806,
+      "answerChars": 0,
+      "sourceLines": 0,
+      "blueMarkers": 0,
+      "redMarkers": 0,
+      "fractionMarkup": 0,
+      "images": 0,
+      "svg": 0,
+      "bilingualIssues": [],
+      "formulaNotationCandidates": [
+        {
+          "field": "notesHtml",
+          "text": "X ~ B(n, p)；P(X=k) = C(n,k) p^k (1-p)^{n-k}。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "P(X=k)=C(n,k)p^k(1-p)^{n-k} ;\\; E=np"
+        }
+      ],
+      "nonEnglishFirstHeadings": [],
+      "rawQuoteCount": 0,
+      "inlineStyleCount": 2,
+      "files": [
+        "L29_Binomial_Distribution.pdf",
+        "L30_Binomial_Distribution_Applications.pdf"
+      ],
+      "strictEnglishDominanceCandidates": [
+        "本周课件 PDF 见本页底部「资料」区，可在线打开或下载，建议在平板上配合笔记一起看。"
+      ],
+      "rawPowerBlocks": [],
+      "outOfBoundsSourceReferences": []
+    },
+    {
+      "term": "term2",
+      "week": 12,
+      "title": "Continuous Random Variables · 连续型随机变量",
+      "graphicChars": 0,
+      "fallbackChars": 824,
+      "answerChars": 0,
+      "sourceLines": 0,
+      "blueMarkers": 0,
+      "redMarkers": 0,
+      "fractionMarkup": 0,
+      "images": 0,
+      "svg": 0,
+      "bilingualIssues": [],
+      "formulaNotationCandidates": [
+        {
+          "field": "notesHtml",
+          "text": "P(a < X < b) = ∫_a^b f(x) dx（单点概率为 0）。"
+        },
+        {
+          "field": "notesHtml",
+          "text": "P(a<X<b)=\\int_a^b f(x)dx ;\\; \\int f=1"
+        }
+      ],
+      "nonEnglishFirstHeadings": [],
+      "rawQuoteCount": 0,
+      "inlineStyleCount": 2,
+      "files": [
+        "L31_Continuous_Random_Variables_I.pdf",
+        "L32_Continuous_Random_Variables_II.pdf"
+      ],
+      "strictEnglishDominanceCandidates": [
+        "本周涵盖：Continuous RV I、Continuous RV II。学习目标：理解概率密度函数与面积即概率；会对连续分布求期望、分位数。",
+        "本周课件 PDF 见本页底部「资料」区，可在线打开或下载，建议在平板上配合笔记一起看。"
+      ],
+      "rawPowerBlocks": [],
+      "outOfBoundsSourceReferences": []
+    },
+    {
+      "term": "term2",
+      "week": 13,
+      "title": "Normal Distribution · 正态分布",
+      "graphicChars": 0,
+      "fallbackChars": 877,
+      "answerChars": 0,
+      "sourceLines": 0,
+      "blueMarkers": 0,
+      "redMarkers": 0,
+      "fractionMarkup": 0,
+      "images": 0,
+      "svg": 0,
+      "bilingualIssues": [],
+      "formulaNotationCandidates": [],
+      "nonEnglishFirstHeadings": [],
+      "rawQuoteCount": 0,
+      "inlineStyleCount": 3,
+      "files": [
+        "L33_Normal_Distribution_Tables_Areas.pdf",
+        "L34_Normal_Distribution_Applications.pdf"
+      ],
+      "strictEnglishDominanceCandidates": [
+        "本周课件 PDF 见本页底部「资料」区，可在线打开或下载，建议在平板上配合笔记一起看。"
+      ],
+      "rawPowerBlocks": [],
+      "outOfBoundsSourceReferences": []
+    },
+    {
+      "term": "term2",
+      "week": 14,
+      "title": "Exam Revision · 考试复习",
+      "graphicChars": 0,
+      "fallbackChars": 486,
+      "answerChars": 0,
+      "sourceLines": 0,
+      "blueMarkers": 0,
+      "redMarkers": 0,
+      "fractionMarkup": 0,
+      "images": 0,
+      "svg": 0,
+      "bilingualIssues": [],
+      "formulaNotationCandidates": [],
+      "nonEnglishFirstHeadings": [],
+      "rawQuoteCount": 0,
+      "inlineStyleCount": 0,
+      "files": [
+        "L35_Exam_Revision_I.pdf",
+        "L36_Exam_Revision_II.pdf"
+      ],
+      "strictEnglishDominanceCandidates": [
+        "本周涵盖：Exam revision I、Exam revision II。学习目标：综合回顾数列/金融/概率；综合回顾统计/随机变量/分布；完成模拟卷查漏补缺。",
+        "本周课件 PDF 见本页底部「资料」区，可在线打开或下载，建议在平板上配合笔记一起看。"
+      ],
+      "rawPowerBlocks": [],
+      "outOfBoundsSourceReferences": []
+    }
+  ],
+  "reviewLimit": "结构、格式、来源页码已逐周检查。公式正确性只进行了代表性抽核，不能据此声明全部演算无误。编程式公式候选列表含来源路径和自然语言斜线，需人工筛选。"
+}

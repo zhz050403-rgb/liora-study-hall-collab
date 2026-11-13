@@ -1,0 +1,1934 @@
+{
+  "slim": false,
+  "maxMB": null,
+  "files": [
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/course outline.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/foundation studies handbook.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/monopoly slides.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week1/UNSW_Accounting_Unit1-2Notes.docx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week1/unit1 lecture slides introduction to accounting.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week1/unit1 reading materials introduction to accounting.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week1/unit1 tutorial guide introduction to accounting.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week1/unit2 lecture slides accounting conventions.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week1/unit2 reading materials accounting conventions.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week1/unit2 tutorial guide accounting conventions.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week2/unit1 class exercise elements.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week2/unit2 practice transaction analysis.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week2/unit3 lecture slides double entry and transaction analysis.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week2/unit3 reading materials double entry & transaction analysis.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week2/unit3 tutorial guide double entry & transaction analysis.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/worksheet 1 - transaction analysis.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/worksheet 2.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week3/unit4 lecture slides journal entries.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week3/unit4 reading materials journal entries.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week3/unit4 tutorial guide journal entries.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/worksheet 3 - journal entries.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week4/unit5 lecture slides adjusting journal entries.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week4/unit5 reading materials adjusting journal entries.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week4/unit5 tutorial guide adjusting entries.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week5/unit5b practice balancing an account (t-account).pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week5/unit6 lecture slides t-format.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week5/unit6 reading materials ledger accounts t-format.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week5/unit6 tutorial guide t-format.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week5/workbook excel for tutorial qs.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/worksheet 4.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week6/unit5a practice balancing an account (columnar).pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week6/unit7 lecture slides column format & tb.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week6/unit7 reading materials columnar & trial balance.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week6/unit7 tutorial guide columnar & tb.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week8/introduction to excel.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week8/unit8 lecture slides fin stmnt 1 - income statement.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week8/unit8 practice income statement.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week8/unit8 reading materials income statement.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week8/unit8 tutorial guide income statement.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week9/practice 2 8 & 9.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week9/unit10 reading materials balance sheet.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week9/unit8 and 9 practice financial statements.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week9/unit9 lecture exercise.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week9/unit9 lecture slides balance sheet.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week9/unit9 tutorial guide balance sheet.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week10/unit10 lecture slides financial statement analysis.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week10/unit10 reading materials financial statement analysis.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week10/unit10 tutorial guide fsa.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week11/unit10 lecture exercise cf statement.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week11/unit10 lecture slides cash flow statement.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week11/unit10 reading materials cash flow statement.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week11/unit10 tutorial guide cash flow.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week12/revision lecture.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week13/sample exam paper.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Accounting 2026 STD O2 _ UNSW_week type unit/week13/section a - mcq bubble sheet.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/20250305 UNSW College_ECONOMICS Assessment Guide_2025.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/20250305 UNSW College_Economics Course Outline_2025.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 1 - Introduction to Economics (Week 1 Lecture and Week 2 Tutorial) Microeconomics/Lecture Slides 1.1 Introduction to Economics.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 1 - Introduction to Economics (Week 1 Lecture and Week 2 Tutorial) Microeconomics/Lecture Slides 1.2 Introduction to Economics.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 1 - Introduction to Economics (Week 1 Lecture and Week 2 Tutorial) Microeconomics/UNSW College_Unit 1 LG Microeconomics Introduction to Economics.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 1 - Introduction to Economics (Week 1 Lecture and Week 2 Tutorial) Microeconomics/UNSW_Economics_Unit0-1_Revised_Complete_With_Market_Systems.docx",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 1 - Introduction to Economics (Week 1 Lecture and Week 2 Tutorial) Microeconomics/Unit 01_课件01_Introduction to Economics.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 1 - Introduction to Economics (Week 1 Lecture and Week 2 Tutorial) Microeconomics/Unit 01_课件02_Introduction to Economics.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 1 - Introduction to Economics (Week 1 Lecture and Week 2 Tutorial) Microeconomics/Unit 01_课后练习_Learning Guide_Introduction to Economics.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 2 - Production Possibility Curve (PPC), Opportunity Cost and Comparative Advantage (Week 2 Lecture and Week 3 Tutorial)/Lecture 2.1 PPC and Opportunity Cost.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 2 - Production Possibility Curve (PPC), Opportunity Cost and Comparative Advantage (Week 2 Lecture and Week 3 Tutorial)/Lecture 2.2 Absolute and Comparative Advantage.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 2 - Production Possibility Curve (PPC), Opportunity Cost and Comparative Advantage (Week 2 Lecture and Week 3 Tutorial)/UNSW College_Unit 2 LG Microeconomics Opportunity.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 2 - Production Possibility Curve (PPC), Opportunity Cost and Comparative Advantage (Week 2 Lecture and Week 3 Tutorial)/Unit 02_课件01_PPC Opportunity Cost and Comparative Advantage.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 2 - Production Possibility Curve (PPC), Opportunity Cost and Comparative Advantage (Week 2 Lecture and Week 3 Tutorial)/Unit 02_课件02_PPC Opportunity Cost and Comparative Advantage.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 2 - Production Possibility Curve (PPC), Opportunity Cost and Comparative Advantage (Week 2 Lecture and Week 3 Tutorial)/Unit 02_课后练习_Learning Guide_PPC Opportunity Cost and Comparative Advantage.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 3 - Demand and Supply (Week 3 Lecture and Week 4 Tutorial)/Lecture 3.1 Demand  Supply.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 3 - Demand and Supply (Week 3 Lecture and Week 4 Tutorial)/Lecture 3.2 Demand  Supply.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 3 - Demand and Supply (Week 3 Lecture and Week 4 Tutorial)/Unit 03_课件01_Demand and Supply.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 3 - Demand and Supply (Week 3 Lecture and Week 4 Tutorial)/Unit 03_课件02_Demand and Supply.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 3 - Demand and Supply (Week 3 Lecture and Week 4 Tutorial)/Unit 03_课后练习_Learning Guide_Demand and Supply.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 3 - Demand and Supply (Week 3 Lecture and Week 4 Tutorial)/Unit 3 LG Demand  Supply.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 4 - Markets in Action (Week 4 Lecture and Week 5 Tutorial)/Lecture 4.1 Markets in Action.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 4 - Markets in Action (Week 4 Lecture and Week 5 Tutorial)/Lecture 4.2 Marking in Action (cont.).pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 4 - Markets in Action (Week 4 Lecture and Week 5 Tutorial)/Unit 04_课件01_Markets in Action.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 4 - Markets in Action (Week 4 Lecture and Week 5 Tutorial)/Unit 04_课件02_Markets in Action.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 4 - Markets in Action (Week 4 Lecture and Week 5 Tutorial)/Unit 04_课后练习_Learning Guide_Markets in Action.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 4 - Markets in Action (Week 4 Lecture and Week 5 Tutorial)/Unit 4 LG Microeconomics Market in Action.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 - Sample final examinations/2025_SAMPLE_ B_ECON final exam _PART A_B_C_.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 - Sample final examinations/2025_SAMPLE_A_ECON Final Exam _PART A_B_C_Answer Guide.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 - Sample final examinations/2025_SAMPLE_B_ECON Final Exam _PART A_B_C_Answer Guide.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 - Sample final examinations/2025_SAMPLE_ECON final exam SAMPLE A _PART A_B_C_.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 Challenge Week - Assessable Group Oral Presentation (15%)/FINAL TNE TERM 2 Challenge Week Question 2024 Update (1).pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 Challenge Week - Assessable Group Oral Presentation (15%)/Presentation tips - A STD.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 Challenge Week - Assessable Group Oral Presentation (15%)/TERM 2 ECON CW Presentation Marking Rubric_MASTER.docx",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 Challenge Week - Assessable Group Oral Presentation (15%)/TNE_ECONOMIC_Challenge Week Group Presentation_PowerPoint Template_NEW (5).pptx",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 Unit 0 - Introduction and the Circular Flow Model/UNSW College Workshop Slides Unit 0 - The Circular Flow Model.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 Unit 0 - Introduction and the Circular Flow Model/UNSW College_Unit 0 Circular Flow of Income Model.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 Unit 0 - Introduction and the Circular Flow Model/UNSWCollege_ECON_term 2_Lecture Slides Unit 0 - Circular Flow of Income Model.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 Unit 1 - Economic Growth and Gross Domestic Product (GDP)/Learning Guide Unit 1 - GDP.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 Unit 1 - Economic Growth and Gross Domestic Product (GDP)/UNSW College Workshop Slides Unit 1 - Economic Growth and GDP.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 Unit 1 - Economic Growth and Gross Domestic Product (GDP)/UNSWCollege_ECON_term 2_Lecture Slides Unit 1 - Economic Growth and GDP (1).pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 Unit 10 - Interpretation of Economic Statistics/UNSW College Workshop Slides Unit 10 - Interpretating Economic Statistics.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 Unit 10 - Interpretation of Economic Statistics/UNSW College_Unit 10 Interpretation of Economic Statistics.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 Unit 10 - Interpretation of Economic Statistics/UNSWCollege_ECON_term 2_Lecture Slides Unit 10 - Interpretating Economic Statistics.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 Unit 11 - Using Economic Policy to Influence the Economy/UNSW College Workshop Slides Unit 11 - Using Economic Policy to influence the Economy.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 Unit 11 - Using Economic Policy to Influence the Economy/UNSW College_Unit 11 Using Economic Policy to influence the Economy.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 Unit 11 - Using Economic Policy to Influence the Economy/UNSWCollege_ECON_term 2_Lecture Slides Unit 11 - Using Economic Policy to influence the Economy.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 Unit 2 - Inflation/UNSW College Workshop Slides Unit 2 - Inflation.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 Unit 2 - Inflation/UNSW College_Unit 2 Inflation.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 Unit 2 - Inflation/UNSWCollege_ECON_term 2_Lecture Slides Unit 2 - Inflation.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 Unit 3 - Unemployment/UNSW College Workshop Slides Unit 3 - Unemployment.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 Unit 3 - Unemployment/UNSW College_Unit 3 Unemployment.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 Unit 3 - Unemployment/UNSWCollege_ECON_term 2_Lecture Slides Unit 3 - Unemployment.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 Unit 4 - Aggregate Demand and Aggregate Supply/UNSW College Workshop slides Unit 4 - Aggregate Demand and Aggregate Supply.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 Unit 4 - Aggregate Demand and Aggregate Supply/UNSW College_Unit 4 Aggregrate Demand  Supply.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 Unit 4 - Aggregate Demand and Aggregate Supply/UNSWCollege_ECON_term 2_Lecture Slides Unit 4 - Aggregate Demand  Supply.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 Unit 5 - International Economics (1) Trade and Protection/20250305 UNSW College_ECONOMICS Assessment Guide_2025.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 Unit 5 - International Economics (1) Trade and Protection/UNSW College Workshop slides Unit 5 - International Economics 1.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 Unit 5 - International Economics (1) Trade and Protection/UNSW College_Unit 5 International Economics 1.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 Unit 6 - International Economics (2) Exchange Rates/UNSW College_Unit 6 International Econmics 2.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 Unit 6 - International Economics (2) Exchange Rates/UNSW college Workshop slides Unit 6 - International Economics 2.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 Unit 6 - International Economics (2) Exchange Rates/UNSWCollege_ECON_term 2_Lecture Slides Unit 6 - International Economics 2 - Exchange rates.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 Unit 7 - The Financial Sector/UNSW College_Unit 7 The Financial Sector.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 Unit 7 - The Financial Sector/UNSW college Workshop slides Unit 7 - The Financial Sector.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 Unit 7 - The Financial Sector/UNSWCollege_ECON_term 2_Lecture Slides Unit 7 - The Financial Sector.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 Unit 8 - Monetary Policy/UNSW College Workshop Slides Unit 8 - Monetary Policy.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 Unit 8 - Monetary Policy/UNSW College_Unit 8 Monetary Policy.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 Unit 8 - Monetary Policy/UNSWCollege_ECON_term 2_Lecture Slides Unit 8 - Monetary Policy.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 Unit 9 - The Government Budget and Fiscal Policy/UNSW College_Unit 9 Fiscal Policy.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 Unit 9 - The Government Budget and Fiscal Policy/UNSW college Workshop slides Unit 9 - Government Fiscal Policy.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 2 Unit 9 - The Government Budget and Fiscal Policy/UNSWCollege_ECON_term 2_Lecture Slides Unit 9 - The Government and Fiscal Policy.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/第一学期.zip",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/课程总览_Microeconomics Assessment Guide 2025.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/课程总览_Microeconomics Course Outline 2025.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/economics ARCHIVE economics 2025 std o1.zip",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term1/unit0/unit0 TG答案 writing and presenting in economics.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term1/unit0/unit0-1 NOTE revised complete with market systems.docx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term1/unit1/unit1 PPT introduction to economics.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term1/unit1/unit1 TG introduction to economics.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term1/unit1/unit1 TG答案 introduction to economics.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term1/unit2/unit2 NOTE production and technology.docx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term1/unit2/unit2 PPT production and technology.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term1/unit2/unit2 TG production and technology - copy2.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term1/unit2/unit2 TG production and technology.docx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term1/unit2/unit2 TG production and technology.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term1/unit2/unit2 TG答案 production and technology - copy2.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term1/unit2/unit2 TG答案 production and technology.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term1/unit3/unit3 PPT demand and supply.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term1/unit3/unit3 TG demand and supply.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term1/unit3/unit3 TG答案 demand and supply.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term1/unit4/Unit4_Markets_in_Action_Notes.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term1/unit4/unit4 ANSWER markets in action and self assessment.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term1/unit4/unit4 PPT market successes and failures.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term1/unit4/unit4 TG market successes and failures.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term1/unit4/unit4 WORKSHEET markets in action price floors and ceilings.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term1/unit5/unit5 lecture pricing and income of the firm and its customers.pdf.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term1/unit5/unit5 tutorial guide tg pricing and income of the firm and its customers.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term2/unit0/unit0 PPT the circular flow model.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term2/unit0/unit0 TG the circular flow model.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term2/unit1/unit1 PPT economic growth and gdp.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term2/unit1/unit1 TG economic growth and gdp.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term2/unit10/unit10 PPT interpretation of economic statistics.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term2/unit10/unit10 TG interpretation of economic statistics - copy2.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term2/unit10/unit10 TG interpretation of economic statistics.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term2/unit11/unit11 PPT using economic policy to influence the economy.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term2/unit2/unit2 PPT inflation.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term2/unit2/unit2 TG inflation.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term2/unit3/unit3 PPT unemployment.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term2/unit3/unit3 TG unemployment.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term2/unit4/unit4 PPT aggregate demand supply.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term2/unit4/unit4 TG aggregate demand supply.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term2/unit5/unit5 PPT international economics trade and protection.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term2/unit5/unit5 TG international economics trade and protection.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term2/unit6/unit6 PPT international economics exchange rates.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term2/unit6/unit6 TG international economics exchange rates.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term2/unit7/unit7 PPT the financial sector.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term2/unit7/unit7 TG the financial sector.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term2/unit8/unit8 PPT monetary policy.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term2/unit8/unit8 TG monetary policy.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term2/unit9/unit9 PPT the government budget and fiscal policy.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/term2/unit9/unit9 TG the government budget and fiscal policy.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/杂七杂八/A6 ASSESSMENT pair presentation instructions and rubric.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/杂七杂八/A6 POSTER pair presentation steps.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/杂七杂八/economics GUIDE group presentation tips.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/杂七杂八/economics GUIDE textbook discount.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/杂七杂八/economics GUIDE textbook purchase.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/杂七杂八/economics OUTLINE economics 2026 term1-2.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/杂七杂八/economics POLICY academic integrity and AI.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/杂七杂八/economics SAMPLE ARTICLE circular flow presentation.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/杂七杂八/economics SAMPLE SCRIPT circular flow presentation palm cards.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/杂七杂八/economics TEMPLATE presentation palm cards and classroom instructions.docx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/杂七杂八/economics TEXTBOOK economics for today 7th asia-pacific edition.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/杂七杂八/economics WORKSHEET audience questions and note taking.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/杂七杂八/term1 GLOSSARY economics concepts.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/杂七杂八/term2 EXAM sample A.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Economics 2026 STD O2 _ UNSW_term week type unit/杂七杂八/term2 EXAM sample B.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 5 - Elasticity (Week 5 Lecture and Week 6 Tutorial)/Elasticity further guidance and examples.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 5 - Elasticity (Week 5 Lecture and Week 6 Tutorial)/Lecture 5.1 Elasticity.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 5 - Elasticity (Week 5 Lecture and Week 6 Tutorial)/Lecture 5.2 Elasticity (cont.).pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 5 - Elasticity (Week 5 Lecture and Week 6 Tutorial)/Unit 05_补充讲解_Elasticity Examples.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 5 - Elasticity (Week 5 Lecture and Week 6 Tutorial)/Unit 05_课件01_Elasticity.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 5 - Elasticity (Week 5 Lecture and Week 6 Tutorial)/Unit 05_课件02_Elasticity.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 5 - Elasticity (Week 5 Lecture and Week 6 Tutorial)/Unit 05_课后练习_Learning Guide_Elasticity.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 5 - Elasticity (Week 5 Lecture and Week 6 Tutorial)/Unit 5 LG Microeconomics Elasticity.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 6 - Economics of the Firm 1 Short run (Week 6 Lecture and Week 8 Tutorial)/Lecture 6.1.PDF",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 6 - Economics of the Firm 1 Short run (Week 6 Lecture and Week 8 Tutorial)/Lecture 6.2 Economics of the Firm 1.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 6 - Economics of the Firm 1 Short run (Week 6 Lecture and Week 8 Tutorial)/Unit 06_课件01_Economics of the Firm Short Run.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 6 - Economics of the Firm 1 Short run (Week 6 Lecture and Week 8 Tutorial)/Unit 06_课件02_Economics of the Firm Short Run.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 6 - Economics of the Firm 1 Short run (Week 6 Lecture and Week 8 Tutorial)/Unit 06_课后练习_Learning Guide_Economics of the Firm Short Run.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 6 - Economics of the Firm 1 Short run (Week 6 Lecture and Week 8 Tutorial)/Unit 6 LG Microeconomics Economics of the Firm 1.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Challenge Week - Assessable Group Oral Presentation (15%) (Week 7)/20240305 Economics Challenge Week Group Presentation PowerPoint Template.pptx",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Challenge Week - Assessable Group Oral Presentation (15%) (Week 7)/20250428 T1 Economics Challenge Week - Global warming.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Challenge Week - Assessable Group Oral Presentation (15%) (Week 7)/Challenge Week_任务说明_Global Warming.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Challenge Week - Assessable Group Oral Presentation (15%) (Week 7)/Challenge Week_模板_Group Presentation.pptx",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 7 - Economics of the Firm 2 Long run (Week 8 Lecture and Week 9 Tutorial)/Lecture 7.1 Economics of the Firm 2.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 7 - Economics of the Firm 2 Long run (Week 8 Lecture and Week 9 Tutorial)/Lecture 7.2 Economics of the Firm 2.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 7 - Economics of the Firm 2 Long run (Week 8 Lecture and Week 9 Tutorial)/Unit 07_课件01_Economics of the Firm Long Run.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 7 - Economics of the Firm 2 Long run (Week 8 Lecture and Week 9 Tutorial)/Unit 07_课件02_Economics of the Firm Long Run.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 7 - Economics of the Firm 2 Long run (Week 8 Lecture and Week 9 Tutorial)/Unit 07_课后练习_Learning Guide_Economics of the Firm Long Run.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 7 - Economics of the Firm 2 Long run (Week 8 Lecture and Week 9 Tutorial)/Unit 7 LG Microeconomics Economics of the Firm 2 Activity Book.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 8 - Perfect Competition (Week 9 Lecture and Week 10 Tutorial)/Lecture 8.1 Perfect Competition.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 8 - Perfect Competition (Week 9 Lecture and Week 10 Tutorial)/Lecture 8.2 Perfect Competition.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 8 - Perfect Competition (Week 9 Lecture and Week 10 Tutorial)/Unit 08_课件01_Perfect Competition.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 8 - Perfect Competition (Week 9 Lecture and Week 10 Tutorial)/Unit 08_课件02_Perfect Competition.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 8 - Perfect Competition (Week 9 Lecture and Week 10 Tutorial)/Unit 08_课后练习_Learning Guide_Perfect Competition.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 8 - Perfect Competition (Week 9 Lecture and Week 10 Tutorial)/Unit 8 LG Microeconomics Perfect Competition.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 9 - Monopoly (Week 10 Lecture & Week 11 Tutorial)/Lecture 9.1 Monopoly.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 9 - Monopoly (Week 10 Lecture & Week 11 Tutorial)/Lecture 9.2 Monopoly Updated.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 9 - Monopoly (Week 10 Lecture & Week 11 Tutorial)/Unit 09_课件01_Monopoly.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 9 - Monopoly (Week 10 Lecture & Week 11 Tutorial)/Unit 09_课件02_Monopoly.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 9 - Monopoly (Week 10 Lecture & Week 11 Tutorial)/Unit 09_课后练习_Learning Guide_Monopoly.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 9 - Monopoly (Week 10 Lecture & Week 11 Tutorial)/Unit 9 LG Microeconomics Monopoly.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 10 - Monopolistic Competition & Oligopoly (Week 11 Lecture & Week 12 Tutorial)/Lecture 10.1 Monopolistic Competition.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 10 - Monopolistic Competition & Oligopoly (Week 11 Lecture & Week 12 Tutorial)/Lecture 10.2 Oligopoly .pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 10 - Monopolistic Competition & Oligopoly (Week 11 Lecture & Week 12 Tutorial)/Unit 10 LG Microeconomics Monopolistic Competition and Oligopoly.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 10 - Monopolistic Competition & Oligopoly (Week 11 Lecture & Week 12 Tutorial)/Unit 10_课件01_Monopolistic Competition and Oligopoly.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 10 - Monopolistic Competition & Oligopoly (Week 11 Lecture & Week 12 Tutorial)/Unit 10_课件02_Monopolistic Competition and Oligopoly.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 10 - Monopolistic Competition & Oligopoly (Week 11 Lecture & Week 12 Tutorial)/Unit 10_课后练习_Learning Guide_Monopolistic Competition and Oligopoly.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 11 - Revision and Sample final examination (Week 12 & 13)/2020 Econ Sem 1 Sample Exams .pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 11 - Revision and Sample final examination (Week 12 & 13)/2020 Econ Sem 1 Sample Exams Answers.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 11 - Revision and Sample final examination (Week 12 & 13)/Extra written questions - Term 1 Economics.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 11 - Revision and Sample final examination (Week 12 & 13)/Final Exam_样题_2020 Sample.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 11 - Revision and Sample final examination (Week 12 & 13)/Final Exam_答案_2020 Sample.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 11 - Revision and Sample final examination (Week 12 & 13)/Final Exam_答案_Sample A Expanded Answers.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 11 - Revision and Sample final examination (Week 12 & 13)/Lecture Examination Preparation.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 11 - Revision and Sample final examination (Week 12 & 13)/Market structures summary - student.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 11 - Revision and Sample final examination (Week 12 & 13)/Revision_写作练习_Extra Questions.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 11 - Revision and Sample final examination (Week 12 & 13)/Revision_图表答案_Microeconomics Diagrams.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 11 - Revision and Sample final examination (Week 12 & 13)/Revision_图表练习_Microeconomics Diagrams.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 11 - Revision and Sample final examination (Week 12 & 13)/Revision_总结练习_Market Structures.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 11 - Revision and Sample final examination (Week 12 & 13)/Revision_补充练习_Perfect Competition.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 11 - Revision and Sample final examination (Week 12 & 13)/Revision_词汇_Term 1 Key Words.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 11 - Revision and Sample final examination (Week 12 & 13)/Revision_课件_Examination Preparation.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 11 - Revision and Sample final examination (Week 12 & 13)/Sample exam A expanded answers - Term 1 Economics.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 11 - Revision and Sample final examination (Week 12 & 13)/Term1 key words list.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 11 - Revision and Sample final examination (Week 12 & 13)/UNSW College_Unit 8 LG Microeconomics Perfect Competition.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 11 - Revision and Sample final examination (Week 12 & 13)/Useful microeconomics diagrams - answers.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "FNDN Economics 2025 STD O1/Term 1 Unit 11 - Revision and Sample final examination (Week 12 & 13)/Useful microeconomics diagrams - student.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/TERM 1/Course_Program_Standard_Term_1.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/TERM 1/MATH1202_Term_1_Tutorial_Guide.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/TERM 1/TNE Mathematics for Commerce Course Outline_v1-1_2025-09-11.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/TERM 1/Terms in Mathematics MaC.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/approved calculators.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/entering maths in moodle quiz.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/mathematics for commerce - course outline.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/moodle quiz program infomation.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/terms in mathematics book.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/tutorial guide term 1.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/TERM 1/Lecture Notes/L01_Basic_Algebra.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/TERM 1/Lecture Notes/L02_Surds_and_Indices.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/TERM 1/Lecture Notes/L03_Equations.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/TERM 1/Lecture Notes/L04_Coordinate_Geometry.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/TERM 1/Lecture Notes/L05_Relations_and_Functions.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/TERM 1/Lecture Notes/L06_Basic_Graphs_and_Transformations.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/TERM 1/Lecture Notes/L07_Graphs_of_Parabolas_and_Hyperbolas.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/TERM 1/Lecture Notes/L08_More_Parabolas_Max_Min_Quadratic_Inequalities.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/TERM 1/Lecture Notes/L09_Absolute_Value_Graphs.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/TERM 1/Lecture Notes/L10_Inverse_Functions.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/TERM 1/Lecture Notes/L11_Logarithms.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/TERM 1/Lecture Notes/L12 Graphs of Exponential Functions.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/TERM 1/Lecture Notes/L13 Graphs of Logarithmic Functions.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/TERM 1/Lecture Notes/L14 More on Domain and Piecemeal Functions.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/TERM 1/Lecture Notes/L15 Use of Graphs.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/TERM 1/Lecture Notes/L16 Application of Functions and Graphs 1.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/TERM 1/Lecture Notes/L17 Application of Functions and Graphs 2 (Exp and Log).pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/TERM 1/Lecture Notes/L18_Review.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/TERM 1/Lecture Notes/L19_Intro_Calculus.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/TERM 1/Lecture Notes/L20_Basic_Differentiation.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/TERM 1/Lecture Notes/L21_Further_Differentiation.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/TERM 1/Lecture Notes/L22_Tangents_Normals.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/TERM 1/Lecture Notes/L23_Sign_of_First_Derivative.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/TERM 1/Lecture Notes/L24_Sign_of_Second_Derivative.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/TERM 1/Lecture Notes/L25_Curve_Sketching.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/TERM 1/Lecture Notes/L26_Max_Min_Problems.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/TERM 1/Lecture Notes/L27_Indefinite_Integrals.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/TERM 1/Lecture Notes/L28_Definite_Integrals.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/TERM 1/Lecture Notes/L29_Integration__Area.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/TERM 1/Lecture Notes/L30_Further_Areas.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/TERM 1/Lecture Notes/L31_Exponential_Functions_Differentiation.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/TERM 1/Lecture Notes/L32_Exponential_Functions_Integration.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/TERM 1/Lecture Notes/L33_Log_Functions_Differentiation.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/TERM 1/Lecture Notes/L34_Log_Functions_Integration.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/TERM 1/Lecture Notes/L35_Exam_Revision_I.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/TERM 1/Lecture Notes/L36_Exam_Revision_II.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/formula sheet.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Mathematics for Commerce 2026 STD O2 _ UNSW_term week type unit/tutorial guide term 2 - exercises.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/adjusting language and time settings in office 365.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/download and install office 365 - instructions.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/foundation studies course outline t1 computing for business science and design.pdf.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week1/WHY WE LIK.pptx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week1/aquarium-1851003_640.jpg.jpg",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week1/beach-1367282_640.jpg.jpg",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week1/beach-1751455_640.jpg.jpg",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week1/beach-2179183_1920.jpg.jpg",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week1/beach-2216615_640.jpg.jpg",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week1/beach2.wav.wav",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week1/jelly-fish-1911686_640.jpg.jpg",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week1/more beach slides_slides 4-7.pptx.pptx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week1/sand-castle-2962584_640 (1).jpg.jpg",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week1/seashells-1337565_640.jpg.jpg",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week1/shark-1403388_640.jpg.jpg",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week1/surfing - 368.mp4.mp4",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week1/surfing-926822_1920.jpg.jpg",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week1/tutorial guide cput 1201_2_3 t1 wk1 powerpoint tutorial .pdf.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week1/water-polo-2520019_640.jpg.jpg",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week1/wave-1246560_1920.jpg.jpg",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week10/car sales.xlsx.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week10/cput1201_2_3 t1 wk10 excel functions-filling-absolute referencing tutorial learning guide_o.pdf.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week10/filling data.xlsx.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week10/fruit shop.xlsx.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week10/museum.xlsx.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week10/plumber.xlsx.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week11/books.xlsx.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week11/cookies.xlsx.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week11/cput1201_2_3 t1 wk11 if function tutorial learning guide_o.pdf.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week11/rentals.xlsx.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week11/staff pay.xlsx.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week11/suppliers.xlsx.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week12/car hire.xlsx.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week12/coach.xlsx.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week12/college.xlsx.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week12/cput1201_2_3 t1 wk 12 xlookup tutorial learning guide_o.pdf.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week12/football results.xlsx.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week12/golf club.xlsx.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week12/payrates.xlsx.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week12/planets.xlsx.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week13/bicycle.docx.docx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week13/excel revision activity gardens questions.pdf.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week13/excel revision activity volleyball questions.pdf.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week13/fdm.docx.docx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week13/gardens.xlsx.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week13/volleyball.xlsx.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week13/word processing revision - bicycle.pdf.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week13/word revision activity fdm questions.pdf.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week2/Lorikeet.docx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week2/cput 1201_2_3 t1 wk2 powerpoint activity brief.pdf.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week2/cput 1201_2_3 t1 wk2 powerpoint group activity information_o.pdf.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week2/cput1201_2_3 t1 wk2 lecture word overview and concepts_lecture slides_o.pdf.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week2/lecture slides t1 wk2 ms word overview and concepts and files folder.docx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week3/cars.docx.docx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week3/cloud.docx.docx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week3/cput1201_2_3 t1 wk3 word formatting tutorial learning guide_o.pdf.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week3/sydney weather.docx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week3/z5804266cars.docx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week3/z5804266cars.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week4/code kids.docx.docx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week4/cput1201_2_3 t1 wk4 word academic documents tutorial learning guide_o.pdf.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week4/developments.docx.docx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week4/ergo.jpg.jpg",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week4/ergonomics cover page.docx.docx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week4/ergonomics.docx.docx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week4/ergosteps.docx.docx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week4/prevent eye strain.docx.docx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week5/alpha.docx.docx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week5/cput1201_02_03 t1 wk5 word revision and surveys tutorial learning guide_o.pdf.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week5/cput1201_2_3 t1 wk5 computing systems lecture slides_o.pdf.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week5/technologies.docx.docx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week6/bravo.docx.docx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week6/cput1201_2_3 t1 wk6 computing excel lecture slides_o.pdf.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week6/cput1201_2_3 t1 wk6 word citing and referencing tutorial learning guide_o.pdf.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week6/paper.xlsx.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week8/bunbury.xlsx.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week8/cput1201_2_3 t1 wk8 excel introduction tutorial learning guide_o.pdf.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week8/practice sorting .xlsx.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week8/shares.xlsx.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week8/snacks.xlsx.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week9/cput1201_2_3 t1 wk9 excel charts tutorial learning guide_o.pdf.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week9/developments.xlsx.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week9/enrolments.xlsx.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week9/house.jfif.jfif",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week9/livestock _for charts.xlsx.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week9/wages.xlsx.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/adjusting language and time settings in office 365.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/download and install office 365 - instructions.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/foundation studies computing for business term 2 course outline.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/practice air advanced excel exam folder.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/practice air advanced excel exam folder.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/practice air advanced excel exam solution.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/practice flights advanced excel exam folder.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/practice flights advanced excel exam folder.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/practice flights advanced excel exam solution.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/practice tunes advanced excel exam folder.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/practice tunes advanced excel exam folder.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/practice tunes advanced excel exam solution.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/tutorial guide 1 - download media presentation and brief folder.docx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/tutorial guide 1 - download media presentation and brief folder.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week1/lecture slides welcome to computing course overview and powerpoint.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week3/lecture slides understanding computers the internet.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week4/computing t1 wk4 - word section breaks video (2.40 minutes).mp4",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week4/lecture slides t1 wk4 website evaluation.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term1/week13/term 1 exam information.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/week1/term 2 tutorial 1 learning materials folder (2).pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/week1/term 2 tutorial 1 learning materials folder (2).xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/week1/term 2 tutorial 1 learning materials folder (3).xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/week1/term 2 tutorial 1 learning materials folder (4).xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/week1/term 2 tutorial 1 learning materials folder (5).xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/week1/term 2 tutorial 1 learning materials folder.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/week1/term 2 tutorial 1 learning materials folder.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/week2/term 2 tutorial 2 learning materials folder (2).xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/week2/term 2 tutorial 2 learning materials folder (3).xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/week2/term 2 tutorial 2 learning materials folder (4).xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/week2/term 2 tutorial 2 learning materials folder (5).xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/week2/term 2 tutorial 2 learning materials folder.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/week2/term 2 tutorial 2 learning materials folder.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/week3/term 2 tutorial 3 learning materials folder (2).xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/week3/term 2 tutorial 3 learning materials folder.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/week3/term 2 tutorial 3 learning materials folder.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/week4/term 2 learning materials folder (2).xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/week4/term 2 learning materials folder (3).xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/week4/term 2 learning materials folder.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/week4/term 2 learning materials folder.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/week5/term 2 learning materials folder (2).xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/week5/term 2 learning materials folder (3).xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/week5/term 2 learning materials folder (4).xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/week5/term 2 learning materials folder (5).xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/week5/term 2 learning materials folder.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/week5/term 2 learning materials folder.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/week6/term 2 learning materials and exam information folder (2).pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/week6/term 2 learning materials and exam information folder (2).xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/week6/term 2 learning materials and exam information folder.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/week6/term 2 learning materials and exam information folder.xlsx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/week8/media presentation planning document.docx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/week8/mp wk 8 tutorial slides.pdf.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/week9/feedback document.docx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/week9/lecture slides com-b t2 mp plan produce .pdf.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/week9/tutorial slides.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Computing for Business, Science and Design 2026 STD O2 _ UNSW_补下载_2026-10-22T05-35-58-957Z/term2/week13/lecture slides advanced excel.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Academic English 2026 STD O2 _ UNSW_week type unit/FS Reading Guide SDG 11.docx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Academic English 2026 STD O2 _ UNSW_week type unit/Student Book.docx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Academic English 2026 STD O2 _ UNSW_week type unit/course outline & assessment guide.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Academic English 2026 STD O2 _ UNSW_week type unit/T1 ALSW Student Book Weeks 1-6 DF 191225 (1).docx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Academic English 2026 STD O2 _ UNSW_week type unit/progress support listening workshop 1 audio.mp3",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Academic English 2026 STD O2 _ UNSW_week type unit/progress support listening workshop 2 - task 4 section a.mp3",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Academic English 2026 STD O2 _ UNSW_week type unit/progress support workshop 2 - task 4 section a.mp3",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Academic English 2026 STD O2 _ UNSW_week type unit/progress support listening workshop 2 - task 3.mp3",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Academic English 2026 STD O2 _ UNSW_week type unit/progress support workshop 2 - task 5 section b.mp3",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Academic English 2026 STD O2 _ UNSW_week type unit/progress support listening workshop 3 - section c.wav",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Academic English 2026 STD O2 _ UNSW_week type unit/progress support workshop 3 section d.wav",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Academic English 2026 STD O2 _ UNSW_week type unit/progress support workshop 3 section e.wav",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Academic English 2026 STD O2 _ UNSW_week type unit/progress support workshop 4 section f.wav",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Academic English 2026 STD O2 _ UNSW_week type unit/T1 ALSW Student Book Weeks 8-13 MB 120525 (3).docx",
+      "mb": 0
+    },
+    {
+      "rel": "Course_ FNDN Academic English 2026 STD O2 _ UNSW_week type unit/FS Core Text SDG 11.docx",
+      "mb": 0
+    },
+    {
+      "rel": "课外/企业法律、财富管理与商业能力.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "小岛经济学/小岛经济学.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "国富论/The_Wealth_of_Nations.txt",
+      "mb": 0
+    },
+    {
+      "rel": "股票作手回忆录/Reminiscences_of_a_Stock_Operator.txt",
+      "mb": 0
+    },
+    {
+      "rel": "大癫狂/Extraordinary_Popular_Delusions.txt",
+      "mb": 0
+    },
+    {
+      "rel": "富爸爸穷爸爸/富爸爸穷爸爸_竖屏.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "活得更好/HowToLiveBetter.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "小岛经济学/小岛经济学.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "国富论/The_Wealth_of_Nations.txt",
+      "mb": 0
+    },
+    {
+      "rel": "股票作手回忆录/Reminiscences_of_a_Stock_Operator.txt",
+      "mb": 0
+    },
+    {
+      "rel": "大癫狂/Extraordinary_Popular_Delusions.txt",
+      "mb": 0
+    },
+    {
+      "rel": "富爸爸穷爸爸/富爸爸穷爸爸_竖屏.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "富爸爸穷爸爸/富爸爸穷爸爸_竖屏.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "富爸爸穷爸爸/富爸爸穷爸爸_竖屏.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "富爸爸穷爸爸/富爸爸穷爸爸_竖屏.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "富爸爸穷爸爸/富爸爸穷爸爸_竖屏.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "富爸爸穷爸爸/富爸爸穷爸爸_竖屏.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "富爸爸穷爸爸/富爸爸穷爸爸_竖屏.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "富爸爸穷爸爸/富爸爸穷爸爸_竖屏.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "富爸爸穷爸爸/富爸爸穷爸爸_竖屏.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "富爸爸穷爸爸/富爸爸穷爸爸_竖屏.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "富爸爸穷爸爸/富爸爸穷爸爸_竖屏.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "富爸爸穷爸爸/富爸爸穷爸爸_竖屏.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "富爸爸穷爸爸/富爸爸穷爸爸_竖屏.pdf",
+      "mb": 0
+    },
+    {
+      "rel": "活得更好/HowToLiveBetter.pdf",
+      "mb": 0
+    }
+  ]
+}

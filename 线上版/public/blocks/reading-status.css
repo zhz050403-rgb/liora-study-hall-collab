@@ -1,0 +1,90 @@
+/* ============================================================
+ * 读书区 · 「待收录」状态样式
+ * ------------------------------------------------------------
+ * 背景：书架上 61 本书里，有 48 本是「想读清单」占位（正文还没收录）。
+ * 以前点开这些占位会走到空白/报错页，2026-11-08 起改为：
+ *   - 书架卡片打「待收录」标签、不再显示假的 0% 进度条；
+ *   - 点开进入说明页，告诉使用者怎么把书收录进来。
+ * 只作用于读书区，不改动其它页面选择器。
+ * ============================================================ */
+
+/* ---- 书架上的「待收录」卡片 ---- */
+.book-item.is-empty {
+  border: 1px dashed var(--line-2);
+  background: linear-gradient(180deg,#fbfcfe,#f3f7fc);
+  box-shadow: none;
+}
+.book-item.is-empty:hover { border-color: var(--gold, #c9a55c); }
+.book-item.is-empty .book-fallback {
+  background: linear-gradient(160deg,#6b7d93,#42566d);
+  opacity: .92;
+}
+.book-item.is-empty .book-fallback.is-wait span { font-size: 15px; letter-spacing: .04em; }
+.book-item.is-empty .book-fallback.is-wait small { opacity: .8; }
+.book-item.is-empty .b-t { color: var(--muted); }
+.book-item.is-empty .b-s { color: var(--muted); font-size: 12px; }
+.book-empty-wrap { position: relative; }
+.b-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.6;
+  letter-spacing: .04em;
+}
+
+/* ---- 「待收录」说明页 ---- */
+.empty-book-page { padding: 8px 0 80px; }
+.empty-book-card {
+  max-width: 720px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid var(--line-2);
+  border-radius: var(--radius, 14px);
+  padding: 30px 32px 26px;
+  box-shadow: 0 2px 10px rgba(27, 53, 87, .05);
+}
+.empty-book-card h2 {
+  margin: 4px 0 2px;
+  font-family: var(--cb-serif, Georgia, serif);
+  font-size: 26px;
+  color: var(--navy-800, #1c4375);
+}
+.empty-book-en { margin: 0 0 16px; color: var(--muted); font-size: 13px; letter-spacing: .04em; }
+.empty-book-card p { color: var(--ink, #1b3557); line-height: 1.9; font-size: 15px; margin: 0 0 12px; }
+.empty-book-hint {
+  background: #f7fafd;
+  border-left: 3px solid var(--gold, #c9a55c);
+  border-radius: 0 8px 8px 0;
+  padding: 12px 14px;
+  font-size: 14px !important;
+  color: var(--muted) !important;
+}
+.empty-book-tag {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: #f7f2e6;
+  color: var(--amber, #7d5a1c);
+  border: 1px solid #eadfc4;
+  font-size: 12px;
+  letter-spacing: .06em;
+}
+.empty-book-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+.empty-book-actions .note-tab { text-decoration: none; }
+
+@media (max-width: 620px) {
+  .empty-book-card { padding: 22px 18px 20px; }
+  .empty-book-card h2 { font-size: 21px; }
+}
+
+/* 手机上「可读 13 本 · 待收录 48 本 · 左右滑动查看」这行提示会把标题挤出去，窄屏直接隐藏 */
+@media (max-width: 620px) {
+  .reading-shelf-band .section-head .more { display: none !important; }
+  .reading-shelf-band .section-head h2 { font-size: 19px; }
+}

@@ -1,0 +1,302 @@
+[
+  [
+    [
+      "Sequences and partial sums（数列与部分和）",
+      "A sequence lists terms in order. A series adds terms. Substitute the required positive integer into the nth-term rule. If a partial sum is given, recover a term by subtracting successive partial sums.（数列与求和分开。）",
+      "T<sub>n</sub> = S<sub>n</sub> − S<sub>n−1</sub> for n ≥ 2; T<sub>1</sub> = S<sub>1</sub>.",
+      "Given S<sub>n</sub> = 3n<sup>2</sup> + n, find T<sub>2</sub> and T<sub>n</sub>.",
+      "S<sub>2</sub> = 3(4)+2 = 14 and S<sub>1</sub> = 4. Hence T<sub>2</sub> = 14−4 = 10. Expand S<sub>n−1</sub> = 3(n−1)<sup>2</sup>+(n−1) = 3n<sup>2</sup>−5n+2. Subtract to obtain T<sub>n</sub> = 6n−2. Check n=2 to get 10.",
+      "Do not confuse a term T<sub>n</sub> with its cumulative sum S<sub>n</sub>."
+    ],
+    [
+      "Arithmetic progressions（等差数列）",
+      "An arithmetic progression has a constant difference d. Start with a and add d exactly n−1 times to reach term n. Pair the first and last terms to understand the sum formula.",
+      "T<sub>n</sub> = a+(n−1)d; S<sub>n</sub> = <span class=\"frac\"><span class=\"n\">n</span><span class=\"d\">2</span></span>[2a+(n−1)d].",
+      "For 5, 8, 11, …, find the tenth term and the sum of ten terms.",
+      "a=5 and d=3. T<sub>10</sub>=5+9(3)=32. S<sub>10</sub>=<span class=\"frac\"><span class=\"n\">10</span><span class=\"d\">2</span></span>(5+32)=5(37)=185. There are nine gaps between ten terms.",
+      "Use n−1 gaps, not n gaps."
+    ],
+    [
+      "Geometric progressions（等比数列）",
+      "A geometric progression multiplies each term by the same ratio r. Divide a term by the preceding nonzero term to identify r. The finite sum exists for negative ratios too.",
+      "T<sub>n</sub> = ar<sup>n−1</sup>; S<sub>n</sub> = <span class=\"frac\"><span class=\"n\">a(1−r<sup>n</sup>)</span><span class=\"d\">1−r</span></span> for r ≠ 1; if r=1, S<sub>n</sub>=na.",
+      "For 3, 6, 12, …, find T<sub>5</sub> and S<sub>5</sub>.",
+      "a=3, r=2. T<sub>5</sub>=3(2<sup>4</sup>)=48. S<sub>5</sub>=3(1−32)÷(1−2)=93. Directly, 3+6+12+24+48=93.",
+      "Check the sign of r and keep the numerator and denominator in matching order."
+    ]
+  ],
+  [
+    [
+      "Infinite geometric series（无穷等比级数）",
+      "An infinite sum approaches a finite limit only when the magnitudes of successive terms shrink. This requires the absolute value of the ratio to be less than one.",
+      "S<sub>∞</sub> = <span class=\"frac\"><span class=\"n\">a</span><span class=\"d\">1−r</span></span> when |r| &lt; 1.",
+      "Find the infinite sum 12+6+3+….",
+      "a=12 and r=0.5. Since |0.5| &lt; 1, the sum converges. S<sub>∞</sub>=12÷(1−0.5)=24. For comparison, the first three terms sum to 21, below the limiting value.",
+      "For |r| ≥ 1, do not apply the infinite-sum formula."
+    ],
+    [
+      "Interest and periodic rates（利息与每期利率）",
+      "Simple interest uses the original principal throughout. Compound interest earns interest on the accumulated balance. Match the rate period to the number of periods.",
+      "A=P(1+rt) for simple interest; A=P(1+i)<sup>n</sup> for compound interest; i=<span class=\"frac\"><span class=\"n\">r</span><span class=\"d\">m</span></span>, n=mt.",
+      "Invest $1000 at a nominal 6% per year, compounded monthly, for two years.",
+      "Write r=0.06, m=12, i=0.005, n=24. A=1000(1.005)<sup>24</sup>≈$1127.16. Interest earned is A−1000≈$127.16. Retain calculator precision until the final cent.",
+      "A nominal annual rate is not a monthly rate."
+    ],
+    [
+      "Future value of an annuity（年金终值）",
+      "For equal end-of-period deposits, the first deposit earns interest for n−1 periods and the final deposit earns none. Adding these balances gives a geometric series.",
+      "FV=R<span class=\"frac\"><span class=\"n\">(1+i)<sup>n</sup>−1</span><span class=\"d\">i</span></span>; an annuity due multiplies this value by (1+i).",
+      "Deposit $100 at the end of each month for one year at 1% monthly interest.",
+      "R=100, i=0.01, n=12. FV=100[(1.01)<sup>12</sup>−1]÷0.01≈$1268.25. Total deposits are $1200, so interest is about $68.25.",
+      "Decide whether deposits occur at the beginning or end before choosing the formula."
+    ]
+  ],
+  [
+    [
+      "Present value and discounting（现值与贴现）",
+      "Present value reverses compound growth. A future payment is worth less today when the discount rate is positive. A stream of equal end-of-period payments is an ordinary annuity.",
+      "PV=<span class=\"frac\"><span class=\"n\">FV</span><span class=\"d\">(1+i)<sup>n</sup></span></span>; PV<sub>annuity</sub>=R<span class=\"frac\"><span class=\"n\">1−(1+i)<sup>−n</sup></span><span class=\"d\">i</span></span>.",
+      "Find the present value of five annual $1000 receipts at 5% per year.",
+      "Use R=1000, i=0.05, n=5. PV=1000[1−(1.05)<sup>−5</sup>]÷0.05≈$4329.48. Five undiscounted payments total $5000, so the smaller result is reasonable.",
+      "Do not use the future-value formula for a value at time zero."
+    ],
+    [
+      "Comparing financial offers（比较金融方案）",
+      "Use the same valuation date and rate period when comparing alternatives. The effective annual rate includes compounding within a year.",
+      "Effective annual rate = (1+<span class=\"frac\"><span class=\"n\">r</span><span class=\"d\">m</span></span>)<sup>m</sup>−1.",
+      "Compare a nominal 6% compounded monthly with 6% compounded annually.",
+      "Monthly compounding gives (1+0.06÷12)<sup>12</sup>−1≈0.061678=6.1678%. Annual compounding gives 6%. Thus monthly compounding earns more on an investment, and costs more on a comparable debt.",
+      "Compare effective rates, not just quoted nominal percentages."
+    ],
+    [
+      "Sets and complements（集合与补集）",
+      "A union contains outcomes in either set. An intersection contains outcomes in both. A complement is always relative to the stated universal set.",
+      "n(A∪B)=n(A)+n(B)−n(A∩B).",
+      "In a group of 30, 18 study A, 15 study B, and 8 study both. How many study neither?",
+      "The union contains 18+15−8=25 people. Neither contains 30−25=5. The subtraction removes the duplicate counting of the eight people in both sets.",
+      "Do not subtract the intersection twice."
+    ]
+  ],
+  [
+    [
+      "Counting choices（计数原理）",
+      "Multiply counts for successive choices when every earlier choice has the stated number of later choices. Add counts for disjoint alternatives.",
+      "For independent stages with a and b choices, total choices = ab.",
+      "How many outfits can be formed from 3 shirts and 2 trousers?",
+      "Choose a shirt in 3 ways. Each shirt can be paired with either of 2 trousers. Total=3×2=6. List the six pairs as a check.",
+      "For alternatives that overlap, remove the overlap before adding."
+    ],
+    [
+      "Permutations（排列）",
+      "Order matters in an arrangement. Choosing the first position leaves one fewer choice for the next position when repetition is forbidden.",
+      "P(n,r)=<span class=\"frac\"><span class=\"n\">n!</span><span class=\"d\">(n−r)!</span></span>; repeated identical items give <span class=\"frac\"><span class=\"n\">n!</span><span class=\"d\">n<sub>1</sub>!n<sub>2</sub>!⋯</span></span>.",
+      "Choose a president and secretary from 5 people, with no person holding both posts.",
+      "The president has 5 choices. For each, the secretary has 4. Total=5×4=20=P(5,2). A and B swapping roles produces a different result.",
+      "Do not use combinations when roles or order differ."
+    ],
+    [
+      "Combinations（组合）",
+      "A combination selects an unordered group. Divide the permutation count by the r! orders of the selected people.",
+      "C(n,r)=<span class=\"frac\"><span class=\"n\">n!</span><span class=\"d\">r!(n−r)!</span></span>.",
+      "Select a committee of 2 from 5 people.",
+      "P(5,2)=20 ordered selections. Every pair is counted 2!=2 times. C(5,2)=20÷2=10.",
+      "State whether repetition is allowed before calculating."
+    ]
+  ],
+  [
+    [
+      "Equally likely outcomes（等可能概率）",
+      "The counting formula applies when all elementary outcomes are equally likely. Specify the sample space before counting favourable outcomes.",
+      "P(A)=<span class=\"frac\"><span class=\"n\">n(A)</span><span class=\"d\">n(S)</span></span>; P(A′)=1−P(A).",
+      "Roll one fair die. Find the probability of an even result.",
+      "S={1,2,3,4,5,6}. A={2,4,6}. There are 3 favourable outcomes out of 6. P(A)=3÷6=0.5.",
+      "Do not assume unequal outcomes have equal probabilities."
+    ],
+    [
+      "Probability using combinations（用组合求概率）",
+      "For a sample drawn without replacement, count unordered selections in the numerator and denominator when order is irrelevant.",
+      "P(A)=<span class=\"frac\"><span class=\"n\">favourable selections</span><span class=\"d\">all equally likely selections</span></span>.",
+      "A bag has 3 red and 2 blue balls. Draw 2 without replacement. Find the probability both are red.",
+      "All pairs=C(5,2)=10. Red pairs=C(3,2)=3. Therefore P=3÷10=0.3. Sequentially, (3÷5)(2÷4)=0.3 as a check.",
+      "Without replacement, the second denominator decreases."
+    ],
+    [
+      "Union and intersection（并集与交集概率）",
+      "Inclusive or allows both events to occur. Mutually exclusive events cannot occur together, but independent events can.",
+      "P(A∪B)=P(A)+P(B)−P(A∩B).",
+      "Given P(A)=0.4, P(B)=0.5 and P(A∩B)=0.2, find P(A∪B) and P(neither).",
+      "P(A∪B)=0.4+0.5−0.2=0.7. P(neither)=1−0.7=0.3.",
+      "Mutually exclusive and independent are different conditions."
+    ]
+  ],
+  [
+    [
+      "Tree diagrams（树状图）",
+      "Multiply probabilities along a branch. Add disjoint complete branches that meet the event description. Branch probabilities leaving any node must total one.",
+      "P(A∩B)=P(A)P(B|A).",
+      "A bag has 3 red and 2 blue balls. Draw 2 without replacement. Find exactly one red.",
+      "Red then blue has probability (3÷5)(2÷4)=0.3. Blue then red has probability (2÷5)(3÷4)=0.3. These paths are disjoint, so total=0.6.",
+      "Include both orders when the event is exactly one red."
+    ],
+    [
+      "Conditional probability（条件概率）",
+      "Conditioning restricts the sample space to the given event. Independence means this restriction does not change the probability of the other event.",
+      "P(A|B)=<span class=\"frac\"><span class=\"n\">P(A∩B)</span><span class=\"d\">P(B)</span></span> for P(B)&gt;0.",
+      "A group has 20 students, 12 taking A, 10 taking B and 6 taking both. Find P(A|B).",
+      "There are 10 B students, of whom 6 take A. P(A|B)=6÷10=0.6. Also P(A)=12÷20=0.6, consistent here with independence.",
+      "The denominator is the probability of the given event, not automatically P(A)."
+    ],
+    [
+      "Probability review（概率复习）",
+      "Translate the event wording before selecting a formula. For at least one, a complement is often shorter than listing all cases.",
+      "P(at least one success)=1−P(no successes).",
+      "An independent trial succeeds with probability 0.2. Find at least one success in 3 trials.",
+      "P(no successes)=0.8<sup>3</sup>=0.512. Subtract from 1 to get 0.488.",
+      "The simple product requires independence."
+    ]
+  ],
+  [
+    [
+      "Types of data（数据类型）",
+      "Categorical data describe categories. Numerical data describe counts or measurements. Counts are discrete; measurements are usually treated as continuous. Choose summaries appropriate to the variable.",
+      "Mode: most frequent value. Median: middle ordered value. Mean: <span class=\"frac\"><span class=\"n\">Σx</span><span class=\"d\">n</span></span>.",
+      "Classify transport type, number of siblings and measured height.",
+      "Transport type is categorical nominal. Number of siblings is numerical discrete. Height is numerical continuous. A mean of transport category codes has no meaningful interpretation.",
+      "Numerical labels do not make a categorical variable quantitative."
+    ],
+    [
+      "Frequency distributions（频数分布）",
+      "A frequency table counts observations. Cumulative frequency tracks how many observations lie at or below successive ordered values. For grouped means, use class midpoints as estimates.",
+      "Mean = <span class=\"frac\"><span class=\"n\">Σfx</span><span class=\"d\">Σf</span></span>.",
+      "Values 1,2,3 have frequencies 2,3,1. Find the mean and median.",
+      "Total frequency=6. Weighted sum=1(2)+2(3)+3(1)=11. Mean=11÷6≈1.833. The ordered data are 1,1,2,2,2,3; the middle two are both 2, so median=2 and mode=2.",
+      "A grouped-data mean is generally an estimate, not an exact raw-data mean."
+    ]
+  ],
+  [
+    [
+      "Variance and standard deviation（方差与标准差）",
+      "Variance measures squared distance from the mean. Standard deviation restores the original units. Choose population or sample notation according to the question.",
+      "σ<sup>2</sup>=<span class=\"frac\"><span class=\"n\">Σ(x−μ)<sup>2</sup></span><span class=\"d\">N</span></span>; s<sup>2</sup>=<span class=\"frac\"><span class=\"n\">Σ(x−x̄)<sup>2</sup></span><span class=\"d\">n−1</span></span>.",
+      "For the population 2,4,6, find its standard deviation.",
+      "μ=4. Squared deviations are 4,0,4. Population variance=8÷3. Population standard deviation=√(8÷3)≈1.633. Treating these data as a sample instead gives s=√(8÷2)=2.",
+      "The population and sample divisors are different."
+    ],
+    [
+      "Quartiles and transformations（四分位数与变换）",
+      "Interquartile range describes the spread of the middle half. Use the quartile convention required by the course or calculator. Adding a constant moves location without changing spread.",
+      "IQR=Q<sub>3</sub>−Q<sub>1</sub>; SD(aX+b)=|a|SD(X).",
+      "A variable has mean 10 and SD 3. Let Y=2X+5. Find its mean and SD.",
+      "E(Y)=2(10)+5=25. SD(Y)=|2|(3)=6. Variance(Y)=6<sup>2</sup>=36. Adding 5 changes the mean but not the SD.",
+      "Do not add a shift constant to standard deviation."
+    ]
+  ],
+  [
+    [
+      "Correlation（相关）",
+      "A scatterplot shows direction, form and strength of association. Pearson correlation describes linear association. An outlier can strongly affect the fitted result.",
+      "−1 ≤ r ≤ 1.",
+      "If r=−0.9, describe the association and assess a causal claim.",
+      "The data show a strong negative linear association: larger x tends to accompany smaller y. The value alone does not prove that changing x causes y to change. Inspect the scatterplot and study design.",
+      "Correlation does not establish causation; r near zero does not rule out a nonlinear relationship."
+    ],
+    [
+      "Least-squares regression（最小二乘回归）",
+      "A regression line predicts y from x. The line passes through the pair of sample means. Predictions far beyond the observed x values are extrapolations.",
+      "ŷ=a+bx; b=r<span class=\"frac\"><span class=\"n\">s<sub>y</sub></span><span class=\"d\">s<sub>x</sub></span></span>; a=ȳ−bx̄.",
+      "Given x̄=10, ȳ=30, s<sub>x</sub>=2, s<sub>y</sub>=4 and r=0.8, find the regression line and predict at x=12.",
+      "b=0.8(4÷2)=1.6. a=30−1.6(10)=14. Thus ŷ=14+1.6x, and at x=12 the prediction is 33.2.",
+      "The regression of x on y is generally not obtained by reversing the fitted y-on-x equation."
+    ]
+  ],
+  [
+    [
+      "Discrete distributions（离散型分布）",
+      "A probability distribution assigns a nonnegative probability to each possible value, with total one. Expected value is a long-run weighted average and need not be a possible single outcome.",
+      "E(X)=Σxp(x); Var(X)=Σx<sup>2</sup>p(x)−[E(X)]<sup>2</sup>.",
+      "X takes 0,1,2 with probabilities 0.2,0.5,0.3. Find mean and variance.",
+      "Check 0.2+0.5+0.3=1. E(X)=0+0.5+0.6=1.1. E(X<sup>2</sup>)=0+0.5+1.2=1.7. Var(X)=1.7−1.21=0.49; SD=0.7.",
+      "Do not square probabilities when calculating E(X<sup>2</sup>)."
+    ],
+    [
+      "Expected profit（期望利润）",
+      "Distinguish a gross payout from net profit after paying a fee. A fixed fee changes expected profit but not its variance.",
+      "E(aX+b)=aE(X)+b; Var(aX+b)=a<sup>2</sup>Var(X).",
+      "Using the previous distribution as dollar payouts, charge a $1 fee. Find expected net profit for the player.",
+      "Let Y=X−1. E(Y)=1.1−1=$0.10. Var(Y)=Var(X)=0.49. A fair fee for zero expected net profit would be $1.10.",
+      "State whose profit is being calculated: player and organiser have opposite signs."
+    ]
+  ],
+  [
+    [
+      "Binomial model（二项分布）",
+      "A binomial variable counts successes in a fixed number of independent trials with the same success probability. Check these assumptions before using the formula.",
+      "P(X=k)=C(n,k)p<sup>k</sup>(1−p)<sup>n−k</sup>; E(X)=np; Var(X)=np(1−p).",
+      "Let X be binomial with n=5 and p=0.2. Find P(X=2).",
+      "C(5,2)=10. P(X=2)=10(0.2)<sup>2</sup>(0.8)<sup>3</sup>=10(0.04)(0.512)=0.2048. E(X)=1 and Var(X)=0.8.",
+      "Sampling without replacement from a small finite population usually violates constant p and independence."
+    ],
+    [
+      "Cumulative binomial events（二项累积事件）",
+      "Convert words such as at most, fewer than and at least into integer inequalities. Use a complement when it reduces calculation.",
+      "P(X≥1)=1−P(X=0).",
+      "For the same X, find at least one success and at most one success.",
+      "P(X≥1)=1−0.8<sup>5</sup>=0.67232. P(X≤1)=0.8<sup>5</sup>+5(0.2)(0.8)<sup>4</sup>=0.32768+0.4096=0.73728.",
+      "At least one includes one; more than one does not."
+    ]
+  ],
+  [
+    [
+      "Density and cumulative probability（密度与累积概率）",
+      "A continuous variable has probability equal to area under its density. The density may exceed one; only the total area must equal one. The probability at a single point is zero.",
+      "P(a≤X≤b)=∫<sub>a</sub><sup>b</sup>f(x) dx; F(x)=P(X≤x).",
+      "Let f(x)=kx on 0≤x≤2 and zero elsewhere. Find k and P(1≤X≤2).",
+      "Normalise: ∫<sub>0</sub><sup>2</sup>kx dx=2k=1, so k=0.5. The required area is ∫<sub>1</sub><sup>2</sup>0.5x dx=[x<sup>2</sup>÷4]<sub>1</sub><sup>2</sup>=0.75.",
+      "A density value f(x) is not the point probability P(X=x)."
+    ],
+    [
+      "Mean, variance and median（均值、方差与中位数）",
+      "Use weighted integrals instead of sums for a continuous distribution. The median divides the total area into equal halves.",
+      "E(X)=∫xf(x) dx; Var(X)=∫x<sup>2</sup>f(x) dx−[E(X)]<sup>2</sup>; F(m)=0.5.",
+      "For f(x)=0.5x on [0,2], find mean, variance and median.",
+      "E(X)=∫<sub>0</sub><sup>2</sup>0.5x<sup>2</sup> dx=4÷3. E(X<sup>2</sup>)=∫<sub>0</sub><sup>2</sup>0.5x<sup>3</sup> dx=2. Var(X)=2−16÷9=2÷9. Since F(x)=x<sup>2</sup>÷4 inside the interval, m<sup>2</sup>÷4=0.5, so m=√2.",
+      "Use the positive root for a median lying in [0,2]."
+    ]
+  ],
+  [
+    [
+      "Normal standardisation（正态标准化）",
+      "A normal model is symmetric about its mean. Standardisation measures distance from the mean in standard-deviation units. Keep track of whether the second parameter represents variance or SD.",
+      "Z=<span class=\"frac\"><span class=\"n\">X−μ</span><span class=\"d\">σ</span></span>; Z has standard normal distribution.",
+      "Let X be normal with mean 100 and SD 15. Find P(85≤X≤115).",
+      "Standardise both bounds: (85−100)÷15=−1 and (115−100)÷15=1. The standard normal area between −1 and 1 is approximately 0.6827.",
+      "Divide by SD σ, not by variance σ<sup>2</sup>."
+    ],
+    [
+      "Percentiles and inverse normal（百分位数与反求）",
+      "A percentile specifies cumulative area to the left. Use symmetry or a complement if your course table reports a different area convention.",
+      "x=μ+zσ.",
+      "Find the 90th percentile for the previous normal model.",
+      "Left-tail probability 0.9 corresponds to z≈1.2816. Therefore x=100+1.2816(15)≈119.22. Check that a 90th percentile lies above the mean.",
+      "For an upper-tail probability of 0.1, the left-tail area is 0.9, not 0.1."
+    ]
+  ],
+  [
+    [
+      "Selecting a model（选择模型）",
+      "Start with the question type and assumptions. Fixed independent success trials suggest binomial; continuous bell-shaped measurements suggest normal; fixed repeated payments suggest an annuity.",
+      "Binomial: E(X)=np. Finance: match i and n to the same period.",
+      "A factory tests 10 independent items, each defective with probability 0.1. Find the probability none is defective.",
+      "Define X as the number defective. X is binomial with n=10, p=0.1. P(X=0)=0.9<sup>10</sup>≈0.34868. The definition of success is defectiveness here.",
+      "Define the counted event before assigning p."
+    ],
+    [
+      "Exam response and verification（考试作答与复核）",
+      "Write the model, substituted values, calculation and interpretation. State assumptions and units. Verify bounds, signs and numerical plausibility before rounding.",
+      "A probability must lie in [0,1]; variance must be nonnegative.",
+      "A response gives a probability of 1.2 and variance −0.4. Can either be accepted?",
+      "Neither is valid. Recheck whether the number 1.2 is actually a density rather than a probability. Recheck E(X<sup>2</sup>)−[E(X)]<sup>2</sup> for the variance and use full precision. Then state the corrected interpretation.",
+      "Do not round intermediate values before subtracting close quantities."
+    ]
+  ]
+]

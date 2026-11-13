@@ -1,0 +1,1395 @@
+{
+  "weeks": 26,
+  "activities": 100,
+  "sourcePages": 141,
+  "replacedImageOccurrences": 565,
+  "results": [
+    {
+      "term": "term1",
+      "week": 1,
+      "activities": 1,
+      "references": [
+        {
+          "title": "💻 Week 1 — Activity 1：创建并美化海滩主题 PowerPoint 演示文稿",
+          "pdf": "tutorial guide cput 1201_2_3 t1 wk1 powerpoint tutorial .pdf.pdf",
+          "pages": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "oldImageOccurrences": 19,
+          "references": [
+            "cabin-art/comp-reference/term1-w01-f347471ede-p09.webp",
+            "cabin-art/comp-reference/term1-w01-f347471ede-p10.webp",
+            "cabin-art/comp-reference/term1-w01-f347471ede-p11.webp",
+            "cabin-art/comp-reference/term1-w01-f347471ede-p12.webp",
+            "cabin-art/comp-reference/term1-w01-f347471ede-p13.webp",
+            "cabin-art/comp-reference/term1-w01-f347471ede-p14.webp",
+            "cabin-art/comp-reference/term1-w01-f347471ede-p15.webp",
+            "cabin-art/comp-reference/term1-w01-f347471ede-p16.webp",
+            "cabin-art/comp-reference/term1-w01-f347471ede-p17.webp",
+            "cabin-art/comp-reference/term1-w01-f347471ede-p18.webp",
+            "cabin-art/comp-reference/term1-w01-f347471ede-p19.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "term": "term1",
+      "week": 2,
+      "activities": 2,
+      "references": [
+        {
+          "title": "💻 Week 2 — Activity 1：分组制作城市旅游 PowerPoint 演示文稿（任务说明）",
+          "pdf": "cput 1201_2_3 t1 wk2 powerpoint activity brief.pdf.pdf",
+          "pages": [
+            1
+          ],
+          "oldImageOccurrences": 7,
+          "references": [
+            "cabin-art/comp-reference/term1-w02-4bdff6f2d1-p01.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 2 — Activity 2：课堂分组协作完成演示文稿（实操流程）",
+          "pdf": "cput 1201_2_3 t1 wk2 powerpoint group activity information_o.pdf.pdf",
+          "pages": [
+            2
+          ],
+          "oldImageOccurrences": 6,
+          "references": [
+            "cabin-art/comp-reference/term1-w02-be5a94295e-p02.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "term": "term1",
+      "week": 3,
+      "activities": 3,
+      "references": [
+        {
+          "title": "💻 Week 3 — Activity 1：Edit and Format a Document（编辑并格式化文档）",
+          "pdf": "cput1201_2_3 t1 wk3 word formatting tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            6,
+            7,
+            8
+          ],
+          "oldImageOccurrences": 12,
+          "references": [
+            "cabin-art/comp-reference/term1-w03-6d4e92784b-p06.webp",
+            "cabin-art/comp-reference/term1-w03-6d4e92784b-p07.webp",
+            "cabin-art/comp-reference/term1-w03-6d4e92784b-p08.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 3 — Activity 2：Create an Infographic（制作信息图）",
+          "pdf": "cput1201_2_3 t1 wk3 word formatting tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            9
+          ],
+          "oldImageOccurrences": 9,
+          "references": [
+            "cabin-art/comp-reference/term1-w03-6d4e92784b-p09.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 3 — Activity 3：Project Status Report（项目状态报告）",
+          "pdf": "cput1201_2_3 t1 wk3 word formatting tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            10,
+            11,
+            12,
+            13
+          ],
+          "oldImageOccurrences": 12,
+          "references": [
+            "cabin-art/comp-reference/term1-w03-6d4e92784b-p10.webp",
+            "cabin-art/comp-reference/term1-w03-6d4e92784b-p11.webp",
+            "cabin-art/comp-reference/term1-w03-6d4e92784b-p12.webp",
+            "cabin-art/comp-reference/term1-w03-6d4e92784b-p13.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "term": "term1",
+      "week": 4,
+      "activities": 3,
+      "references": [
+        {
+          "title": "💻 Week 4 — Activity 1：多级列表编号（Outline Numbering）",
+          "pdf": "cput1201_2_3 t1 wk4 word academic documents tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            3
+          ],
+          "oldImageOccurrences": 8,
+          "references": [
+            "cabin-art/comp-reference/term1-w04-a052f254a9-p03.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 4 — Activity 2：学术文档（样式、分节符、封面页）",
+          "pdf": "cput1201_2_3 t1 wk4 word academic documents tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12
+          ],
+          "oldImageOccurrences": 19,
+          "references": [
+            "cabin-art/comp-reference/term1-w04-a052f254a9-p04.webp",
+            "cabin-art/comp-reference/term1-w04-a052f254a9-p05.webp",
+            "cabin-art/comp-reference/term1-w04-a052f254a9-p06.webp",
+            "cabin-art/comp-reference/term1-w04-a052f254a9-p07.webp",
+            "cabin-art/comp-reference/term1-w04-a052f254a9-p08.webp",
+            "cabin-art/comp-reference/term1-w04-a052f254a9-p09.webp",
+            "cabin-art/comp-reference/term1-w04-a052f254a9-p10.webp",
+            "cabin-art/comp-reference/term1-w04-a052f254a9-p11.webp",
+            "cabin-art/comp-reference/term1-w04-a052f254a9-p12.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 4 — Activity 3：长文档整合练习（Consolidation）",
+          "pdf": "cput1201_2_3 t1 wk4 word academic documents tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            13
+          ],
+          "oldImageOccurrences": 7,
+          "references": [
+            "cabin-art/comp-reference/term1-w04-a052f254a9-p13.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "term": "term1",
+      "week": 5,
+      "activities": 3,
+      "references": [
+        {
+          "title": "💻 Week 5 — Activity 1：制作一份问卷调查（Formatting a Survey）",
+          "pdf": "cput1201_02_03 t1 wk5 word revision and surveys tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            2,
+            3
+          ],
+          "oldImageOccurrences": 9,
+          "references": [
+            "cabin-art/comp-reference/term1-w05-fb546b535f-p02.webp",
+            "cabin-art/comp-reference/term1-w05-fb546b535f-p03.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 5 — Activity 2：复习与巩固（Revision and Consolidation）",
+          "pdf": "cput1201_02_03 t1 wk5 word revision and surveys tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            4,
+            5,
+            6
+          ],
+          "oldImageOccurrences": 11,
+          "references": [
+            "cabin-art/comp-reference/term1-w05-fb546b535f-p04.webp",
+            "cabin-art/comp-reference/term1-w05-fb546b535f-p05.webp",
+            "cabin-art/comp-reference/term1-w05-fb546b535f-p06.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 5 — Activity 3：长文档整合与练习（Long Document Consolidation）",
+          "pdf": "cput1201_02_03 t1 wk5 word revision and surveys tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            7
+          ],
+          "oldImageOccurrences": 10,
+          "references": [
+            "cabin-art/comp-reference/term1-w05-fb546b535f-p07.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "term": "term1",
+      "week": 6,
+      "activities": 9,
+      "references": [
+        {
+          "title": "💻 Week 6 — Activity 1：打开引用工具并选择引用格式",
+          "pdf": "cput1201_2_3 t1 wk6 word citing and referencing tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            6
+          ],
+          "oldImageOccurrences": 5,
+          "references": [
+            "cabin-art/comp-reference/term1-w06-535e5bcdfb-p06.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 6 — Activity 2：添加新来源与引用",
+          "pdf": "cput1201_2_3 t1 wk6 word citing and referencing tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            7,
+            8,
+            9,
+            10
+          ],
+          "oldImageOccurrences": 6,
+          "references": [
+            "cabin-art/comp-reference/term1-w06-535e5bcdfb-p07.webp",
+            "cabin-art/comp-reference/term1-w06-535e5bcdfb-p08.webp",
+            "cabin-art/comp-reference/term1-w06-535e5bcdfb-p09.webp",
+            "cabin-art/comp-reference/term1-w06-535e5bcdfb-p10.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 6 — Activity 3：添加占位符（Placeholder）",
+          "pdf": "cput1201_2_3 t1 wk6 word citing and referencing tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            11
+          ],
+          "oldImageOccurrences": 4,
+          "references": [
+            "cabin-art/comp-reference/term1-w06-535e5bcdfb-p11.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 6 — Activity 4：编辑来源或占位符",
+          "pdf": "cput1201_2_3 t1 wk6 word citing and referencing tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            12,
+            13,
+            14
+          ],
+          "oldImageOccurrences": 5,
+          "references": [
+            "cabin-art/comp-reference/term1-w06-535e5bcdfb-p12.webp",
+            "cabin-art/comp-reference/term1-w06-535e5bcdfb-p13.webp",
+            "cabin-art/comp-reference/term1-w06-535e5bcdfb-p14.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 6 — Activity 5：添加更多来源与引用",
+          "pdf": "cput1201_2_3 t1 wk6 word citing and referencing tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            15,
+            16
+          ],
+          "oldImageOccurrences": 5,
+          "references": [
+            "cabin-art/comp-reference/term1-w06-535e5bcdfb-p15.webp",
+            "cabin-art/comp-reference/term1-w06-535e5bcdfb-p16.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 6 — Activity 6：编辑引文（隐藏作者/标题）",
+          "pdf": "cput1201_2_3 t1 wk6 word citing and referencing tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            17
+          ],
+          "oldImageOccurrences": 4,
+          "references": [
+            "cabin-art/comp-reference/term1-w06-535e5bcdfb-p17.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 6 — Activity 7：添加并更新参考文献列表",
+          "pdf": "cput1201_2_3 t1 wk6 word citing and referencing tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            18
+          ],
+          "oldImageOccurrences": 4,
+          "references": [
+            "cabin-art/comp-reference/term1-w06-535e5bcdfb-p18.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 6 — Activity 8：更改引用格式",
+          "pdf": "cput1201_2_3 t1 wk6 word citing and referencing tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            19
+          ],
+          "oldImageOccurrences": 4,
+          "references": [
+            "cabin-art/comp-reference/term1-w06-535e5bcdfb-p19.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 6 — Activity 9：格式化并完成文档",
+          "pdf": "cput1201_2_3 t1 wk6 word citing and referencing tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            19,
+            20
+          ],
+          "oldImageOccurrences": 8,
+          "references": [
+            "cabin-art/comp-reference/term1-w06-535e5bcdfb-p19.webp",
+            "cabin-art/comp-reference/term1-w06-535e5bcdfb-p20.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "term": "term1",
+      "week": 7,
+      "activities": 0,
+      "references": []
+    },
+    {
+      "term": "term1",
+      "week": 8,
+      "activities": 6,
+      "references": [
+        {
+          "title": "💻 Week 8 — Activity 1：创建、编辑并格式化电子表格（Livestock）",
+          "pdf": "cput1201_2_3 t1 wk8 excel introduction tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            8,
+            9,
+            10
+          ],
+          "oldImageOccurrences": 10,
+          "references": [
+            "cabin-art/comp-reference/term1-w08-a520642d10-p08.webp",
+            "cabin-art/comp-reference/term1-w08-a520642d10-p09.webp",
+            "cabin-art/comp-reference/term1-w08-a520642d10-p10.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 8 — Activity 2：排序数据（Sorting Practice）",
+          "pdf": "cput1201_2_3 t1 wk8 excel introduction tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            15
+          ],
+          "oldImageOccurrences": 6,
+          "references": [
+            "cabin-art/comp-reference/term1-w08-a520642d10-p15.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 8 — Activity 3：编辑并格式化电子表格（Bunbury）",
+          "pdf": "cput1201_2_3 t1 wk8 excel introduction tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            16
+          ],
+          "oldImageOccurrences": 6,
+          "references": [
+            "cabin-art/comp-reference/term1-w08-a520642d10-p16.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 8 — Activity 4：计算（Bunbury Difference）",
+          "pdf": "cput1201_2_3 t1 wk8 excel introduction tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            17
+          ],
+          "oldImageOccurrences": 7,
+          "references": [
+            "cabin-art/comp-reference/term1-w08-a520642d10-p17.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 8 — Activity 5：计算与格式化（Snacks）",
+          "pdf": "cput1201_2_3 t1 wk8 excel introduction tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            18
+          ],
+          "oldImageOccurrences": 6,
+          "references": [
+            "cabin-art/comp-reference/term1-w08-a520642d10-p18.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 8 — Activity 6：计算练习（Shares）",
+          "pdf": "cput1201_2_3 t1 wk8 excel introduction tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            19
+          ],
+          "oldImageOccurrences": 5,
+          "references": [
+            "cabin-art/comp-reference/term1-w08-a520642d10-p19.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "term": "term1",
+      "week": 9,
+      "activities": 8,
+      "references": [
+        {
+          "title": "💻 Week 9 — Activity 1：创建并格式化图表（Livestock 柱形图与饼图）",
+          "pdf": "cput1201_2_3 t1 wk9 excel charts tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            7,
+            8
+          ],
+          "oldImageOccurrences": 6,
+          "references": [
+            "cabin-art/comp-reference/term1-w09-4023f682d5-p07.webp",
+            "cabin-art/comp-reference/term1-w09-4023f682d5-p08.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 9 — Activity 2：切换行列与更改图表类型（Enrolments）",
+          "pdf": "cput1201_2_3 t1 wk9 excel charts tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            9
+          ],
+          "oldImageOccurrences": 4,
+          "references": [
+            "cabin-art/comp-reference/term1-w09-4023f682d5-p09.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 9 — Activity 3：筛选数据并制图（Bunbury）",
+          "pdf": "cput1201_2_3 t1 wk9 excel charts tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            10,
+            11,
+            12
+          ],
+          "oldImageOccurrences": 6,
+          "references": [
+            "cabin-art/comp-reference/term1-w09-4023f682d5-p10.webp",
+            "cabin-art/comp-reference/term1-w09-4023f682d5-p11.webp",
+            "cabin-art/comp-reference/term1-w09-4023f682d5-p12.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 9 — Activity 4：选择不相邻数据制图",
+          "pdf": "cput1201_2_3 t1 wk9 excel charts tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            12
+          ],
+          "oldImageOccurrences": 4,
+          "references": [
+            "cabin-art/comp-reference/term1-w09-4023f682d5-p12.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 9 — Activity 5：饼图练习（Shares）",
+          "pdf": "cput1201_2_3 t1 wk9 excel charts tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            13
+          ],
+          "oldImageOccurrences": 3,
+          "references": [
+            "cabin-art/comp-reference/term1-w09-4023f682d5-p13.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 9 — Activity 6：条形图练习",
+          "pdf": "cput1201_2_3 t1 wk9 excel charts tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            14
+          ],
+          "oldImageOccurrences": 4,
+          "references": [
+            "cabin-art/comp-reference/term1-w09-4023f682d5-p14.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 9 — Activity 7：带负值的柱形图与折线图（Wages）",
+          "pdf": "cput1201_2_3 t1 wk9 excel charts tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            15,
+            16
+          ],
+          "oldImageOccurrences": 4,
+          "references": [
+            "cabin-art/comp-reference/term1-w09-4023f682d5-p15.webp",
+            "cabin-art/comp-reference/term1-w09-4023f682d5-p16.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 9 — Activity 8：综合练习（Developments）",
+          "pdf": "cput1201_2_3 t1 wk9 excel charts tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            17
+          ],
+          "oldImageOccurrences": 3,
+          "references": [
+            "cabin-art/comp-reference/term1-w09-4023f682d5-p17.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "term": "term1",
+      "week": 10,
+      "activities": 7,
+      "references": [
+        {
+          "title": "💻 Week 10 — Activity 1：自动填充（AutoFill）",
+          "pdf": "cput1201_2_3 t1 wk10 excel functions-filling-absolute referencing tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            2,
+            3
+          ],
+          "oldImageOccurrences": 8,
+          "references": [
+            "cabin-art/comp-reference/term1-w10-67708bc8ab-p02.webp",
+            "cabin-art/comp-reference/term1-w10-67708bc8ab-p03.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 10 — Activity 2：快速填充（Flash Fill）",
+          "pdf": "cput1201_2_3 t1 wk10 excel functions-filling-absolute referencing tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            3
+          ],
+          "oldImageOccurrences": 5,
+          "references": [
+            "cabin-art/comp-reference/term1-w10-67708bc8ab-p03.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 10 — Activity 3：常用函数（Filling Data）",
+          "pdf": "cput1201_2_3 t1 wk10 excel functions-filling-absolute referencing tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            4
+          ],
+          "oldImageOccurrences": 6,
+          "references": [
+            "cabin-art/comp-reference/term1-w10-67708bc8ab-p04.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 10 — Activity 4：绝对引用（Car Sales）",
+          "pdf": "cput1201_2_3 t1 wk10 excel functions-filling-absolute referencing tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            6,
+            7
+          ],
+          "oldImageOccurrences": 6,
+          "references": [
+            "cabin-art/comp-reference/term1-w10-67708bc8ab-p06.webp",
+            "cabin-art/comp-reference/term1-w10-67708bc8ab-p07.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 10 — Activity 5：绝对引用与公式练习（Fruit Shop）",
+          "pdf": "cput1201_2_3 t1 wk10 excel functions-filling-absolute referencing tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            7
+          ],
+          "oldImageOccurrences": 4,
+          "references": [
+            "cabin-art/comp-reference/term1-w10-67708bc8ab-p07.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 10 — Activity 6：绝对引用与函数练习（Plumber）",
+          "pdf": "cput1201_2_3 t1 wk10 excel functions-filling-absolute referencing tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            8
+          ],
+          "oldImageOccurrences": 6,
+          "references": [
+            "cabin-art/comp-reference/term1-w10-67708bc8ab-p08.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 10 — Activity 7：综合——绝对引用与格式化（Museum）",
+          "pdf": "cput1201_2_3 t1 wk10 excel functions-filling-absolute referencing tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            9
+          ],
+          "oldImageOccurrences": 5,
+          "references": [
+            "cabin-art/comp-reference/term1-w10-67708bc8ab-p09.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "term": "term1",
+      "week": 11,
+      "activities": 6,
+      "references": [
+        {
+          "title": "💻 Week 11 — Activity 1：构建 IF 函数（Staff Pay）",
+          "pdf": "cput1201_2_3 t1 wk11 if function tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            3
+          ],
+          "oldImageOccurrences": 5,
+          "references": [
+            "cabin-art/comp-reference/term1-w11-d64704ade5-p03.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 11 — Activity 2：IF 练习（Suppliers）",
+          "pdf": "cput1201_2_3 t1 wk11 if function tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            4
+          ],
+          "oldImageOccurrences": 4,
+          "references": [
+            "cabin-art/comp-reference/term1-w11-d64704ade5-p04.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 11 — Activity 3：进一步 IF 练习（Rentals）",
+          "pdf": "cput1201_2_3 t1 wk11 if function tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            4
+          ],
+          "oldImageOccurrences": 4,
+          "references": [
+            "cabin-art/comp-reference/term1-w11-d64704ade5-p04.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 11 — Activity 4：综合（Cookies）",
+          "pdf": "cput1201_2_3 t1 wk11 if function tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            4,
+            5
+          ],
+          "oldImageOccurrences": 6,
+          "references": [
+            "cabin-art/comp-reference/term1-w11-d64704ade5-p04.webp",
+            "cabin-art/comp-reference/term1-w11-d64704ade5-p05.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 11 — Activity 5：挑战活动（Guessing）",
+          "pdf": "cput1201_2_3 t1 wk11 if function tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            5
+          ],
+          "oldImageOccurrences": 4,
+          "references": [
+            "cabin-art/comp-reference/term1-w11-d64704ade5-p05.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 11 — Activity 6：复习与综合（Books）",
+          "pdf": "cput1201_2_3 t1 wk11 if function tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            6
+          ],
+          "oldImageOccurrences": 4,
+          "references": [
+            "cabin-art/comp-reference/term1-w11-d64704ade5-p06.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "term": "term1",
+      "week": 12,
+      "activities": 8,
+      "references": [
+        {
+          "title": "💻 Week 12 — Activity 1：XLOOKUP 精确匹配（Coach）",
+          "pdf": "cput1201_2_3 t1 wk 12 xlookup tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            3,
+            4
+          ],
+          "oldImageOccurrences": 5,
+          "references": [
+            "cabin-art/comp-reference/term1-w12-8b747de338-p03.webp",
+            "cabin-art/comp-reference/term1-w12-8b747de338-p04.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 12 — Activity 2：XLOOKUP 未找到时显示提示（Coach）",
+          "pdf": "cput1201_2_3 t1 wk 12 xlookup tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            5
+          ],
+          "oldImageOccurrences": 2,
+          "references": [
+            "cabin-art/comp-reference/term1-w12-8b747de338-p05.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 12 — Activity 3：XLOOKUP 匹配模式与溢出（College）",
+          "pdf": "cput1201_2_3 t1 wk 12 xlookup tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            5,
+            6
+          ],
+          "oldImageOccurrences": 5,
+          "references": [
+            "cabin-art/comp-reference/term1-w12-8b747de338-p05.webp",
+            "cabin-art/comp-reference/term1-w12-8b747de338-p06.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 12 — Activity 4：XLOOKUP 与 IF（Golf Club）",
+          "pdf": "cput1201_2_3 t1 wk 12 xlookup tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            9
+          ],
+          "oldImageOccurrences": 4,
+          "references": [
+            "cabin-art/comp-reference/term1-w12-8b747de338-p09.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 12 — Activity 5：XLOOKUP 横向参考（Pay Rates）",
+          "pdf": "cput1201_2_3 t1 wk 12 xlookup tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            10,
+            11
+          ],
+          "oldImageOccurrences": 5,
+          "references": [
+            "cabin-art/comp-reference/term1-w12-8b747de338-p10.webp",
+            "cabin-art/comp-reference/term1-w12-8b747de338-p11.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 12 — Activity 6：XLOOKUP 练习——横向溢出（Planets）",
+          "pdf": "cput1201_2_3 t1 wk 12 xlookup tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            12
+          ],
+          "oldImageOccurrences": 4,
+          "references": [
+            "cabin-art/comp-reference/term1-w12-8b747de338-p12.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 12 — Activity 7：综合与 XLOOKUP 练习（Car Hire）",
+          "pdf": "cput1201_2_3 t1 wk 12 xlookup tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            13
+          ],
+          "oldImageOccurrences": 5,
+          "references": [
+            "cabin-art/comp-reference/term1-w12-8b747de338-p13.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 12 — Activity 8：XLOOKUP 挑战（Football Results）",
+          "pdf": "cput1201_2_3 t1 wk 12 xlookup tutorial learning guide_o.pdf.pdf",
+          "pages": [
+            14
+          ],
+          "oldImageOccurrences": 6,
+          "references": [
+            "cabin-art/comp-reference/term1-w12-8b747de338-p14.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "term": "term1",
+      "week": 13,
+      "activities": 7,
+      "references": [
+        {
+          "title": "💻 Week 13 — Activity 1：Gardens 服务计算（Excel · Services 工作表）",
+          "pdf": "excel revision activity gardens questions.pdf.pdf",
+          "pages": [
+            1
+          ],
+          "oldImageOccurrences": 6,
+          "references": [
+            "cabin-art/comp-reference/term1-w13-438958eaa9-p01.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 13 — Activity 2：Gardens 图表（Excel · Income 工作表）",
+          "pdf": "excel revision activity gardens questions.pdf.pdf",
+          "pages": [
+            2
+          ],
+          "oldImageOccurrences": 4,
+          "references": [
+            "cabin-art/comp-reference/term1-w13-438958eaa9-p02.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 13 — Activity 3：Gardens 成本计算器（Excel · Costing 工作表）",
+          "pdf": "excel revision activity gardens questions.pdf.pdf",
+          "pages": [
+            3
+          ],
+          "oldImageOccurrences": 3,
+          "references": [
+            "cabin-art/comp-reference/term1-w13-438958eaa9-p03.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 13 — Activity 4：Volleyball 球员数据（Excel · Players 工作表）",
+          "pdf": "excel revision activity volleyball questions.pdf.pdf",
+          "pages": [
+            1
+          ],
+          "oldImageOccurrences": 5,
+          "references": [
+            "cabin-art/comp-reference/term1-w13-7acdb9acb5-p01.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 13 — Activity 5：Volleyball 俱乐部图表与预测（Excel · Clubs 工作表）",
+          "pdf": "excel revision activity volleyball questions.pdf.pdf",
+          "pages": [
+            2
+          ],
+          "oldImageOccurrences": 4,
+          "references": [
+            "cabin-art/comp-reference/term1-w13-7acdb9acb5-p02.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 13 — Activity 6：Volleyball 裁判付款（Excel · Umpires 工作表）",
+          "pdf": "excel revision activity volleyball questions.pdf.pdf",
+          "pages": [
+            2
+          ],
+          "oldImageOccurrences": 3,
+          "references": [
+            "cabin-art/comp-reference/term1-w13-7acdb9acb5-p02.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 13 — Activity 7：FDM 文档修订（Word）",
+          "pdf": "word revision activity fdm questions.pdf.pdf",
+          "pages": [
+            1,
+            2
+          ],
+          "oldImageOccurrences": 11,
+          "references": [
+            "cabin-art/comp-reference/term1-w13-50bc98b20a-p01.webp",
+            "cabin-art/comp-reference/term1-w13-50bc98b20a-p02.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "term": "term2",
+      "week": 1,
+      "activities": 7,
+      "references": [
+        {
+          "title": "💻 Week 1 — Activity 1a：构造嵌套函数（Nested.xlsx）",
+          "pdf": "term 2 tutorial 1 learning materials folder (2).pdf",
+          "pages": [
+            5
+          ],
+          "oldImageOccurrences": 8,
+          "references": [
+            "cabin-art/comp-reference/term2-w01-943e880d03-p05.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 1 — Activity 1b：构造嵌套 IF 函数（Harwood.xlsx）",
+          "pdf": "term 2 tutorial 1 learning materials folder (2).pdf",
+          "pages": [
+            6
+          ],
+          "oldImageOccurrences": 9,
+          "references": [
+            "cabin-art/comp-reference/term2-w01-943e880d03-p06.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 1 — Activity 1c：使用 IF/AND（Overdue.xlsx）",
+          "pdf": "term 2 tutorial 1 learning materials folder (2).pdf",
+          "pages": [
+            7
+          ],
+          "oldImageOccurrences": 6,
+          "references": [
+            "cabin-art/comp-reference/term2-w01-943e880d03-p07.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 1 — Activity 1d：嵌套 IF 或 IF/AND（Machine Parts.xlsx）",
+          "pdf": "term 2 tutorial 1 learning materials folder (2).pdf",
+          "pages": [
+            8
+          ],
+          "oldImageOccurrences": 7,
+          "references": [
+            "cabin-art/comp-reference/term2-w01-943e880d03-p08.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 1 — Activity 1e：IF/OR 公式（Malley.xlsx）",
+          "pdf": "term 2 tutorial 1 learning materials folder (2).pdf",
+          "pages": [
+            8
+          ],
+          "oldImageOccurrences": 6,
+          "references": [
+            "cabin-art/comp-reference/term2-w01-943e880d03-p08.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 1 — Challenge 1f：Bonus 1 工作表（Malley.xlsx）",
+          "pdf": "term 2 tutorial 1 learning materials folder (2).pdf",
+          "pages": [
+            9
+          ],
+          "oldImageOccurrences": 3,
+          "references": [
+            "cabin-art/comp-reference/term2-w01-943e880d03-p09.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 1 — Challenge 1g：Bonus 2 工作表（Malley.xlsx）",
+          "pdf": "term 2 tutorial 1 learning materials folder (2).pdf",
+          "pages": [
+            9
+          ],
+          "oldImageOccurrences": 3,
+          "references": [
+            "cabin-art/comp-reference/term2-w01-943e880d03-p09.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "term": "term2",
+      "week": 2,
+      "activities": 6,
+      "references": [
+        {
+          "title": "💻 Week 2 — Activity 2a：工作表分组（Grouping worksheets）",
+          "pdf": "term 2 tutorial 2 learning materials folder.pdf",
+          "pages": [
+            2
+          ],
+          "oldImageOccurrences": 9,
+          "references": [
+            "cabin-art/comp-reference/term2-w02-9c62001c1f-p02.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 2 — Activity 2b：分组练习（Coffee Sales.xlsx）",
+          "pdf": "term 2 tutorial 2 learning materials folder.pdf",
+          "pages": [
+            4
+          ],
+          "oldImageOccurrences": 6,
+          "references": [
+            "cabin-art/comp-reference/term2-w02-9c62001c1f-p04.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 2 — Activity 2c：分组与合并（StoreData.xlsx）",
+          "pdf": "term 2 tutorial 2 learning materials folder.pdf",
+          "pages": [
+            5
+          ],
+          "oldImageOccurrences": 4,
+          "references": [
+            "cabin-art/comp-reference/term2-w02-9c62001c1f-p05.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 2 — Activity 3a：XLOOKUP 数据分析（Metals.xlsx）",
+          "pdf": "term 2 tutorial 2 learning materials folder.pdf",
+          "pages": [
+            6
+          ],
+          "oldImageOccurrences": 4,
+          "references": [
+            "cabin-art/comp-reference/term2-w02-9c62001c1f-p06.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 2 — Activity 3b：XLOOKUP 表单（Car Parts.xlsx）",
+          "pdf": "term 2 tutorial 2 learning materials folder.pdf",
+          "pages": [
+            7
+          ],
+          "oldImageOccurrences": 3,
+          "references": [
+            "cabin-art/comp-reference/term2-w02-9c62001c1f-p07.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 2 — Challenge：嵌套 IF 与 XLOOKUP（Flight Cost.xlsx）",
+          "pdf": "term 2 tutorial 2 learning materials folder.pdf",
+          "pages": [
+            8
+          ],
+          "oldImageOccurrences": 2,
+          "references": [
+            "cabin-art/comp-reference/term2-w02-9c62001c1f-p08.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "term": "term2",
+      "week": 3,
+      "activities": 6,
+      "references": [
+        {
+          "title": "💻 Week 3 — Activity 4a：日期函数与格式（Dates.xlsx）",
+          "pdf": "term 2 tutorial 3 learning materials folder.pdf",
+          "pages": [
+            2,
+            3
+          ],
+          "oldImageOccurrences": 7,
+          "references": [
+            "cabin-art/comp-reference/term2-w03-e01ea8560e-p02.webp",
+            "cabin-art/comp-reference/term2-w03-e01ea8560e-p03.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 3 — Challenge 1：TEXT 函数",
+          "pdf": "term 2 tutorial 3 learning materials folder.pdf",
+          "pages": [
+            4
+          ],
+          "oldImageOccurrences": 3,
+          "references": [
+            "cabin-art/comp-reference/term2-w03-e01ea8560e-p04.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 3 — Activity 5a：COUNTIF 函数（Counting and Adding.xlsx）",
+          "pdf": "term 2 tutorial 3 learning materials folder.pdf",
+          "pages": [
+            5,
+            6
+          ],
+          "oldImageOccurrences": 3,
+          "references": [
+            "cabin-art/comp-reference/term2-w03-e01ea8560e-p05.webp",
+            "cabin-art/comp-reference/term2-w03-e01ea8560e-p06.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 3 — Activity 5b：SUMIF 函数（Counting and Adding.xlsx）",
+          "pdf": "term 2 tutorial 3 learning materials folder.pdf",
+          "pages": [
+            6
+          ],
+          "oldImageOccurrences": 4,
+          "references": [
+            "cabin-art/comp-reference/term2-w03-e01ea8560e-p06.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 3 — Activity 5c：COUNTIFS 与 SUMIFS（Counting and Adding.xlsx）",
+          "pdf": "term 2 tutorial 3 learning materials folder.pdf",
+          "pages": [
+            7
+          ],
+          "oldImageOccurrences": 4,
+          "references": [
+            "cabin-art/comp-reference/term2-w03-e01ea8560e-p07.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 3 — Activity 5d：综合练习（Transport Costs.xlsx）",
+          "pdf": "term 2 tutorial 3 learning materials folder.pdf",
+          "pages": [
+            8
+          ],
+          "oldImageOccurrences": 4,
+          "references": [
+            "cabin-art/comp-reference/term2-w03-e01ea8560e-p08.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "term": "term2",
+      "week": 4,
+      "activities": 8,
+      "references": [
+        {
+          "title": "💻 Week 4 — Activity 6a：PMT 函数（Financial.xlsx）",
+          "pdf": "term 2 learning materials folder.pdf",
+          "pages": [
+            4
+          ],
+          "oldImageOccurrences": 3,
+          "references": [
+            "cabin-art/comp-reference/term2-w04-61bc64ece8-p04.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 4 — Activity 6b：计算贷款还款（Financial.xlsx）",
+          "pdf": "term 2 learning materials folder.pdf",
+          "pages": [
+            5
+          ],
+          "oldImageOccurrences": 2,
+          "references": [
+            "cabin-art/comp-reference/term2-w04-61bc64ece8-p05.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 4 — Activity 6c：合并与练习（Financial.xlsx）",
+          "pdf": "term 2 learning materials folder.pdf",
+          "pages": [
+            5
+          ],
+          "oldImageOccurrences": 3,
+          "references": [
+            "cabin-art/comp-reference/term2-w04-61bc64ece8-p05.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 4 — Challenge 6d：FV 函数（Financial.xlsx）",
+          "pdf": "term 2 learning materials folder.pdf",
+          "pages": [
+            6
+          ],
+          "oldImageOccurrences": 4,
+          "references": [
+            "cabin-art/comp-reference/term2-w04-61bc64ece8-p06.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 4 — Activity 7a：转换大小写（Text.xlsx）",
+          "pdf": "term 2 learning materials folder.pdf",
+          "pages": [
+            6
+          ],
+          "oldImageOccurrences": 4,
+          "references": [
+            "cabin-art/comp-reference/term2-w04-61bc64ece8-p06.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 4 — Activity 7b：拼接文本（Text.xlsx）",
+          "pdf": "term 2 learning materials folder.pdf",
+          "pages": [
+            7
+          ],
+          "oldImageOccurrences": 4,
+          "references": [
+            "cabin-art/comp-reference/term2-w04-61bc64ece8-p07.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 4 — Activity 7c：拼接并改大小写（Text.xlsx）",
+          "pdf": "term 2 learning materials folder.pdf",
+          "pages": [
+            7
+          ],
+          "oldImageOccurrences": 4,
+          "references": [
+            "cabin-art/comp-reference/term2-w04-61bc64ece8-p07.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 4 — Activity 7d：综合（Vance.xlsx）",
+          "pdf": "term 2 learning materials folder.pdf",
+          "pages": [
+            8
+          ],
+          "oldImageOccurrences": 5,
+          "references": [
+            "cabin-art/comp-reference/term2-w04-61bc64ece8-p08.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "term": "term2",
+      "week": 5,
+      "activities": 6,
+      "references": [
+        {
+          "title": "💻 Week 5 — Activity 8a：柱形图（Wages.xlsx）",
+          "pdf": "term 2 learning materials folder.pdf",
+          "pages": [
+            9,
+            10
+          ],
+          "oldImageOccurrences": 5,
+          "references": [
+            "cabin-art/comp-reference/term2-w05-61bc64ece8-p09.webp",
+            "cabin-art/comp-reference/term2-w05-61bc64ece8-p10.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 5 — Activity 8b：单轴组合图（Wages.xlsx）",
+          "pdf": "term 2 learning materials folder.pdf",
+          "pages": [
+            11,
+            12
+          ],
+          "oldImageOccurrences": 5,
+          "references": [
+            "cabin-art/comp-reference/term2-w05-61bc64ece8-p11.webp",
+            "cabin-art/comp-reference/term2-w05-61bc64ece8-p12.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 5 — Activity 8c：散点图加趋势线（Property.xlsx）",
+          "pdf": "term 2 learning materials folder.pdf",
+          "pages": [
+            13
+          ],
+          "oldImageOccurrences": 4,
+          "references": [
+            "cabin-art/comp-reference/term2-w05-61bc64ece8-p13.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 5 — Activity 8d：大数据集双轴组合图与筛选（SOI.xlsx）",
+          "pdf": "term 2 learning materials folder.pdf",
+          "pages": [
+            14,
+            15,
+            16,
+            17
+          ],
+          "oldImageOccurrences": 7,
+          "references": [
+            "cabin-art/comp-reference/term2-w05-61bc64ece8-p14.webp",
+            "cabin-art/comp-reference/term2-w05-61bc64ece8-p15.webp",
+            "cabin-art/comp-reference/term2-w05-61bc64ece8-p16.webp",
+            "cabin-art/comp-reference/term2-w05-61bc64ece8-p17.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 5 — Activity 8e：双轴组合图综合（Marlin.xlsx）",
+          "pdf": "term 2 learning materials folder.pdf",
+          "pages": [
+            18
+          ],
+          "oldImageOccurrences": 4,
+          "references": [
+            "cabin-art/comp-reference/term2-w05-61bc64ece8-p18.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 5 — Activity 8f：双轴组合图练习（ComProject.xlsx）",
+          "pdf": "term 2 learning materials folder.pdf",
+          "pages": [
+            19
+          ],
+          "oldImageOccurrences": 6,
+          "references": [
+            "cabin-art/comp-reference/term2-w05-61bc64ece8-p19.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "term": "term2",
+      "week": 6,
+      "activities": 0,
+      "references": []
+    },
+    {
+      "term": "term2",
+      "week": 7,
+      "activities": 0,
+      "references": []
+    },
+    {
+      "term": "term2",
+      "week": 8,
+      "activities": 1,
+      "references": [
+        {
+          "title": "💻 Week 8 — Task：创建并提交小组规划文档（Planning Document）",
+          "pdf": "mp wk 8 tutorial slides.pdf.pdf",
+          "pages": [
+            2,
+            3,
+            4
+          ],
+          "oldImageOccurrences": 8,
+          "references": [
+            "cabin-art/comp-reference/term2-w08-b5ceecb95d-p02.webp",
+            "cabin-art/comp-reference/term2-w08-b5ceecb95d-p03.webp",
+            "cabin-art/comp-reference/term2-w08-b5ceecb95d-p04.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "term": "term2",
+      "week": 9,
+      "activities": 3,
+      "references": [
+        {
+          "title": "💻 Week 9 — Activity 1：复查并完善小组规划文档（Improved Planning Document）",
+          "pdf": "tutorial slides.pdf",
+          "pages": [
+            4
+          ],
+          "oldImageOccurrences": 6,
+          "references": [
+            "cabin-art/comp-reference/term2-w09-58f69d9129-p04.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 9 — Activity 2：绘制简单的导航图（Navigation Diagram）",
+          "pdf": "tutorial slides.pdf",
+          "pages": [
+            5
+          ],
+          "oldImageOccurrences": 4,
+          "references": [
+            "cabin-art/comp-reference/term2-w09-58f69d9129-p05.webp"
+          ]
+        },
+        {
+          "title": "💻 Week 9 — Activity 3：把交付物交给另一组并准备反馈",
+          "pdf": "tutorial slides.pdf",
+          "pages": [
+            3,
+            7
+          ],
+          "oldImageOccurrences": 5,
+          "references": [
+            "cabin-art/comp-reference/term2-w09-58f69d9129-p03.webp",
+            "cabin-art/comp-reference/term2-w09-58f69d9129-p07.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "term": "term2",
+      "week": 10,
+      "activities": 0,
+      "references": []
+    },
+    {
+      "term": "term2",
+      "week": 11,
+      "activities": 0,
+      "references": []
+    },
+    {
+      "term": "term2",
+      "week": 12,
+      "activities": 0,
+      "references": []
+    },
+    {
+      "term": "term2",
+      "week": 13,
+      "activities": 0,
+      "references": []
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+/* ============================================================
+ * 学习小屋 · 网页本体点缀层 + 专注模式
+ * ------------------------------------------------------------
+ * 只在 index.html / daily-brief.html 加载（待办小窗口、英语台只引 tokens）。
+ * 设计目标：不新增一张插图，用纯 CSS 把「底子」做出来：
+ *   纸感底纹 / 金色细线 / 卡片色条 / 当前项锚点
+ * 同时提供 ADHD 友好的「专注模式」与「减少动效」开关样式。
+ * ============================================================ */
+
+/* ============ 1. 纸感底纹：给「底」加一层极淡质感 ============ */
+body {
+  background-color:var(--cb-paper) !important;
+  background-image:
+    radial-gradient(ellipse at 10% 4%, rgba(42,86,137,.035) 0, transparent 44%),
+    radial-gradient(ellipse at 92% 74%, rgba(201,165,92,.032) 0, transparent 42%),
+    radial-gradient(rgba(18,46,82,.045) .6px, transparent .6px) !important;
+  background-size:auto, auto, 22px 22px;
+}
+
+/* ============ 2b. 首页 Hero：盖过 index.html 内联的极淡点阵 ============
+   index.html 内联 .hero::before 只是近乎不可见的点阵，且 library.webp 只写在
+   被内联覆盖的 cabin-theme.css 里，所以横幅长期是「纯深蓝空块」。这里用 !important
+   从本文件（已在 head 加载）覆盖内联规则：纹理打底，图书馆照片叠在右侧，
+   照片万一加载失败也绝不退化为空块。 */
+.hero::before{
+  background-color:#0d2340 !important;
+  background-image:
+    linear-gradient(90deg, rgba(11,33,64,.92) 0%, rgba(11,33,64,.50) 34%, rgba(11,33,64,0) 52%),
+    url("../cabin-art/library.webp"),
+    radial-gradient(140% 150% at 84% 50%, rgba(247,242,226,.98) 0%, rgba(235,216,170,.88) 50%, transparent 68%),
+    radial-gradient(ellipse at 86% 20%, rgba(201,165,92,.40) 0%, transparent 48%),
+    radial-gradient(ellipse at 10% 100%, rgba(120,170,220,.24) 0%, transparent 44%),
+    repeating-linear-gradient(90deg, rgba(230,207,156,.12) 0 1px, transparent 1px 60px),
+    repeating-linear-gradient(0deg, rgba(230,207,156,.09) 0 1px, transparent 1px 60px),
+    linear-gradient(135deg,#122e52 0%,#0d2340 55%,#1a3f6e 100%) !important;
+  background-repeat:no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,repeat,repeat,no-repeat !important;
+  background-position:left top,84% center,center,center,center,center,center,center !important;
+  background-size:auto,auto 132%,auto,auto,auto,auto,auto,auto !important;
+}
+
+/* ============ 3. 分区金色细线 + 卡片左侧色条 ============ */
+.home-courses .section-head,
+.cabin-catalog .section-head,
+.academy-extra .section-head,
+.academy-reading .section-head,
+.brief-edition .hub-slot-head {
+  border-bottom:1px solid #e0cfab !important;
+  padding-bottom:12px;
+}
+.brief-page .reading-card,
+.academy-extra .module-card {
+  box-shadow:inset 3px 0 0 rgba(201,165,92,.55), 0 6px 18px rgba(18,46,82,.05) !important;
+}
+
+/* ============ 4. 当前位置锚点：长页面里一眼找到「我在哪」 ============ */
+.week-side .kp-item[aria-current],
+.week-side .kp-item.active,
+.novel-directory [aria-current] {
+  background:#eaf3fc !important;
+  box-shadow:inset 3px 0 0 var(--cb-navy-700);
+  border-radius:6px;
+}
+
+/* ============ 5. 交互目标尺寸（WCAG 2.2 最小 24px，舒适 44px） ============ */
+.main-nav a { min-height:40px; display:inline-flex; align-items:center; }
+.chip { min-height:26px; }
+.font-ctrl .fc-btn { min-height:36px; }
+/* 图标小按钮外观不变，用透明伪元素把可点区域扩到 24×32 以上 */
+.tarrow, .kp-tools-btn { position:relative; }
+.tarrow::after { content:""; position:absolute; inset:-8px -4px; }
+.kp-tools-btn::after { content:""; position:absolute; inset:-7px -4px; }
+@media (max-width:960px) {
+  /* 每周勾选、整本读完、复习计划任务等原生勾选框原本只有 13~19px */
+  /* 首页看板的勾选框把尺寸写在行内样式里，需要 !important 才能覆盖 */
+  #app input[type="checkbox"] { width:24px !important; height:24px !important; flex-shrink:0; }
+  #searchInput { min-height:28px; }
+  #briefSearch, #briefCategory, [id^="ppWb"] { min-height:34px; }
+}
+
+/* ============ 6. 阅读设置：字号 / 专注 / 静效收进一个「Aa」按钮（site-polish.js 创建） ============
+   原来字号条、显示条和 AI 按钮三个浮动控件叠在一起，放哪里都会盖住勾选框和导航。
+   现在只留一个 40px 圆形按钮，放在 AI 按钮左侧同一行（只占底部一条），
+   回到顶部在 AI 按钮正上方，点开「Aa」才显示选项。 */
+.cb-settings-btn {
+  position:fixed; right:84px; bottom:32px; z-index:71;
+  width:40px; height:40px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  background:#fff; color:#173860; border:1px solid #c9a55c;
+  box-shadow:0 4px 16px rgba(18,46,82,.18);
+  font:700 15px/1 var(--cb-serif, Georgia, serif); cursor:pointer;
+}
+.cb-settings-btn[aria-expanded="true"] { background:#173860; color:#fff; }
+.cb-mode-ctrl {
+  position:fixed; right:22px; bottom:84px; z-index:72;
+  display:flex; flex-direction:column; align-items:stretch; gap:8px;
+  background:#fff; border:1px solid var(--cb-line); border-radius:14px;
+  padding:10px 12px; box-shadow:0 10px 28px rgba(18,46,82,.2);
+  font-family:var(--cb-sans);
+}
+.cb-mode-ctrl[hidden] { display:none !important; }
+.cb-mode-ctrl .cb-row { display:flex; align-items:center; gap:6px; }
+.cb-mode-ctrl .cb-label, .cb-mode-ctrl .font-ctrl .fc-label {
+  min-width:2.6em; font-size:12px; font-weight:700; letter-spacing:1px;
+  color:var(--cb-muted); margin:0;
+}
+.cb-mode-ctrl button {
+  min-height:40px; padding:6px 14px;
+  border:1px solid var(--cb-line-2); border-radius:999px;
+  background:#fff; color:var(--cb-ink-2);
+  font:600 12px/1.2 var(--cb-sans);
+  cursor:pointer;
+}
+.cb-mode-ctrl button:hover { border-color:var(--cb-navy-700); color:var(--cb-navy-800); }
+.cb-mode-ctrl button[aria-pressed="true"], .cb-mode-ctrl .fc-btn.active {
+  background:#173860; color:#fff; border-color:#173860;
+}
+/* 字号条原本是独立的浮动条，放进面板后改为普通一行 */
+.cb-mode-ctrl .font-ctrl {
+  position:static !important; left:auto !important; right:auto !important; bottom:auto !important;
+  gap:6px; padding:0; border:0; background:transparent; box-shadow:none;
+}
+body:not(:has(.week-panel)) .cb-mode-ctrl .cb-row-font { display:none; }
+/* 回到顶部在 AI 按钮正上方；没有 AI 按钮（或专注模式隐藏了它）时「Aa」移到角落 */
+.to-top { right:27px; bottom:88px; }
+body:not(:has(#ai-fab[style*="flex"])) .cb-settings-btn, body.cb-focus .cb-settings-btn { right:22px; bottom:26px; }
+body:not(:has(#ai-fab[style*="flex"])) .cb-mode-ctrl, body.cb-focus .cb-mode-ctrl { bottom:76px; }
+body:not(:has(#ai-fab[style*="flex"])) .to-top, body.cb-focus .to-top { right:21px; bottom:76px; }
+/* AI 面板打开时收起设置，避免盖住面板内容和「提问」按钮 */
+body:has(#ai-panel[style*="display: flex"]) .cb-settings-btn,
+body:has(#ai-panel[style*="display: flex"]) .cb-mode-ctrl { display:none !important; }
+@media (max-width:960px) {
+  #ai-fab { right:12px !important; bottom:14px !important; width:44px !important; height:44px !important; font-size:20px !important; }
+  .cb-settings-btn { right:64px; bottom:16px; }
+  .cb-mode-ctrl { right:12px; bottom:66px; }
+  .to-top { right:12px !important; bottom:66px !important; }
+  body:not(:has(#ai-fab[style*="flex"])) .cb-settings-btn, body.cb-focus .cb-settings-btn { right:14px; bottom:14px; }
+  body:not(:has(#ai-fab[style*="flex"])) .cb-mode-ctrl, body.cb-focus .cb-mode-ctrl { bottom:62px; }
+  body:not(:has(#ai-fab[style*="flex"])) .to-top, body.cb-focus .to-top { bottom:62px !important; }
+  /* 正文底部留出右下角按钮列的高度，滚到底时最后的勾选框和按钮不被盖住 */
+  #app { padding-bottom: 120px !important; }
+}
+@media print { .cb-settings-btn, .cb-mode-ctrl { display:none !important; } }
+.ai-panel .ai-hint { max-height:4.8em; overflow-y:auto; }
+/* 手机：AI 面板固定成底部抽屉，不用记住的坐标和尺寸，否则内容变长会把输入框顶出屏幕 */
+@media (max-width:640px) {
+  .ai-panel {
+    left:8px !important; right:8px !important; top:auto !important;
+    bottom:calc(8px + env(safe-area-inset-bottom, 0px)) !important;
+    width:auto !important; min-width:0 !important; max-width:none !important;
+    height:70vh !important; height:70dvh !important; min-height:0 !important;
+  }
+  .ai-panel .ai-resizer { display:none; }
+}
+
+/* ============ 7. 专注模式：收起干扰，只留正文 ============ */
+body.cb-focus .hero,
+body.cb-focus .stats-band,
+body.cb-focus .coming-grid,
+body.cb-focus .svc-grid,
+body.cb-focus #ai-fab,
+body.cb-focus .ws-arch,
+body.cb-focus .ei-arch,
+body.cb-focus .cc-laurel,
+body.cb-focus .home-desktop-todo,
+body.cb-focus .course-body > .week-side,
+body.cb-focus .reading-index,
+body.cb-focus .extra-index {
+  display:none !important;
+}
+body.cb-focus .course-body:has(> .week-side) {
+  grid-template-columns:minmax(0,1fr) !important;
+}
+body.cb-focus .academy-extra-layout {
+  grid-template-columns: minmax(0, 1fr);
+}
+body.cb-focus :is(p,li,dd,dt,.sum-def,.sum-bullets):not(.course-body .week-panel *) { max-width:68ch; }
+body.cb-focus :is(p,li,dd) { line-height:1.9; }
+body.cb-focus .brief-page .reading-card,
+body.cb-focus .academy-extra .module-card {
+  box-shadow:inset 3px 0 0 rgba(201,165,92,.35) !important;
+}

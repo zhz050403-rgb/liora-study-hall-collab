@@ -1,0 +1,363 @@
+/* 学习小屋 · 待办小组件 —— 独立样式，不依赖主站 cabin-theme.css
+   设计目标：可安装到桌面的小窗口（320~460px），也能在浏览器里正常打开 */
+:root{
+  --td-navy:#0b2545; --td-navy-2:#13315c; --td-gold:#c9a227; --td-gold-l:#f7efd8;
+  --td-paper:#f4f6f9; --td-card:#ffffff; --td-ink:#16202b; --td-ink-2:#3c4a5a;
+  --td-muted:#68788c; --td-line:#dde4ec; --td-line-2:#e9edf3;
+  --td-green:#276749; --td-green-bg:#e6f4ec; --td-red:#b03030;
+  --td-serif:Georgia,"Times New Roman","Songti SC","SimSun",serif;
+  --td-sans:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family:var(--td-sans);background:var(--td-paper);color:var(--td-ink);
+  font-size:14px;line-height:1.6;-webkit-font-smoothing:antialiased;
+}
+button,input{font-family:inherit;font-size:inherit}
+button{cursor:pointer;border:none;background:none;color:inherit}
+a{color:var(--td-navy-2)}
+
+.td-shell{
+  width:100%;max-width:460px;min-height:100%;margin:0 auto;background:var(--td-card);
+  display:flex;flex-direction:column;position:relative;overflow:hidden;
+}
+@media (min-width:560px){
+  body{padding:22px}
+  .td-shell{min-height:calc(100vh - 44px);height:calc(100vh - 44px);border-radius:16px;
+    box-shadow:0 18px 50px rgba(11,37,69,.16);border:1px solid var(--td-line)}
+}
+
+/* ---------- 顶部 ---------- */
+.td-top{
+  background:linear-gradient(135deg,var(--td-navy) 0%,var(--td-navy-2) 60%,#1a4a7d 100%);
+  color:#fff;padding:18px 20px 16px;position:relative;flex-shrink:0;
+}
+.td-top::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;
+  background:linear-gradient(90deg,var(--td-gold),#a8831a)}
+.td-top-row{display:flex;align-items:center;gap:12px}
+.td-logo{width:38px;height:38px;flex-shrink:0;border-radius:9px}
+.td-titles{flex:1;min-width:0}
+.td-titles h1{font-family:var(--td-serif);font-size:19px;font-weight:700;letter-spacing:.5px;line-height:1.25}
+.td-titles p{font-size:11.5px;color:#a9bad0;letter-spacing:.4px;margin-top:2px}
+.td-top-btn{
+  width:32px;height:32px;border-radius:8px;border:1px solid rgba(255,255,255,.24);
+  background:rgba(255,255,255,.08);color:#fff;font-size:16px;line-height:1;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;transition:.15s;
+}
+.td-top-btn:hover{background:rgba(255,255,255,.2)}
+.td-top-btn[hidden]{display:none}
+
+/* ---------- 进度 ---------- */
+.td-progress{padding:13px 20px 12px;background:#fbfcfe;border-bottom:1px solid var(--td-line-2);flex-shrink:0}
+.td-progress-txt{display:flex;justify-content:space-between;font-size:12px;color:var(--td-muted);margin-bottom:7px}
+.td-progress-txt b{color:var(--td-navy);font-weight:700}
+.td-bar{height:6px;border-radius:6px;background:#e6edf5;overflow:hidden}
+.td-bar i{display:block;height:100%;width:0;border-radius:6px;
+  background:linear-gradient(90deg,var(--td-gold),#e0bd4a);transition:width .35s ease}
+
+/* ---------- 添加框 ---------- */
+.td-add{display:flex;gap:8px;padding:14px 20px 12px;flex-shrink:0}
+.td-add input{
+  flex:1;min-width:0;padding:10px 13px;border:1px solid var(--td-line);border-radius:9px;
+  background:var(--td-paper);outline:none;transition:.15s;color:var(--td-ink);
+}
+.td-add input:focus{border-color:var(--td-navy-2);background:#fff;box-shadow:0 0 0 3px rgba(29,67,104,.08)}
+.td-add input::placeholder{color:#94a3b5}
+.td-add button{
+  width:42px;flex-shrink:0;border-radius:9px;background:var(--td-navy);color:#fff;
+  font-size:22px;line-height:1;display:flex;align-items:center;justify-content:center;transition:.15s;
+}
+.td-add button:hover{background:var(--td-navy-2)}
+
+/* ---------- 列表 ---------- */
+.td-lists{flex:1;overflow-y:auto;padding:2px 20px 16px;scrollbar-width:thin}
+.td-sec{margin-top:14px;border:1px solid var(--td-line-2);border-radius:11px;overflow:hidden;background:#fff}
+.td-sec-head{
+  width:100%;display:flex;align-items:center;gap:9px;padding:10px 13px;
+  background:#f8fafc;border-bottom:1px solid var(--td-line-2);text-align:left;
+}
+.td-sec.open .td-sec-head{border-bottom-color:var(--td-line-2)}
+.td-sec:not(.open) .td-sec-head{border-bottom-color:transparent}
+.td-sec-title{font-size:13px;font-weight:700;color:var(--td-navy);letter-spacing:.3px;flex:1}
+.td-sec-tag{font-size:10.5px;color:var(--td-muted);font-weight:500;letter-spacing:0}
+.td-count{font-size:11px;color:var(--td-navy-2);background:#e8eef6;border-radius:20px;padding:1px 8px;font-weight:700}
+.td-caret{font-size:10px;color:var(--td-muted);transition:transform .2s}
+.td-sec.open .td-caret{transform:rotate(180deg)}
+.td-sec-body{padding:4px 0}
+.td-sec:not(.open) .td-sec-body{display:none}
+
+.td-item{
+  display:flex;align-items:flex-start;gap:9px;padding:9px 13px;border-bottom:1px solid #f1f4f8;
+  position:relative;
+}
+.td-item:last-child{border-bottom:none}
+.td-item:hover{background:#fbfcfe}
+.td-check{position:relative;flex-shrink:0;width:18px;height:18px;margin-top:1px;cursor:pointer}
+.td-check input{position:absolute;inset:0;opacity:0;width:100%;height:100%;margin:0;cursor:pointer;z-index:2}
+.td-box{
+  display:block;width:18px;height:18px;border:1.5px solid #b8c6d6;border-radius:5px;
+  background:#fff;transition:.15s;position:relative;
+}
+.td-check input:checked + .td-box{background:var(--td-green);border-color:var(--td-green)}
+.td-check input:checked + .td-box::after{
+  content:"";position:absolute;left:5px;top:1px;width:5px;height:10px;
+  border:solid #fff;border-width:0 2px 2px 0;transform:rotate(42deg);
+}
+.td-check input:focus-visible + .td-box{box-shadow:0 0 0 3px rgba(29,67,104,.18)}
+.td-text{flex:1;min-width:0;font-size:13.5px;color:var(--td-ink);word-break:break-word;line-height:1.5}
+.td-item.done .td-text{text-decoration:line-through;color:#9aa8b8}
+.td-edit{flex:1;min-width:0;padding:3px 7px;border:1px solid var(--td-navy-2);border-radius:6px;outline:none;font-size:13.5px}
+.td-del{
+  flex-shrink:0;width:22px;height:22px;border-radius:6px;color:#a8b6c6;font-size:17px;line-height:1;
+  display:flex;align-items:center;justify-content:center;opacity:.55;transition:.15s;
+}
+.td-del:hover{opacity:1;color:var(--td-red);background:#fbeaea}
+.td-go{flex-shrink:0;font-size:11.5px;color:var(--td-navy-2);text-decoration:none;white-space:nowrap;padding-top:1px}
+.td-go:hover{text-decoration:underline}
+.td-badge{font-size:10px;color:#9a6b12;background:var(--td-gold-l);border-radius:4px;padding:1px 5px;margin-right:4px;white-space:nowrap}
+.td-empty{padding:14px 13px;font-size:12.5px;color:var(--td-muted);text-align:center;line-height:1.7}
+.td-sub{
+  width:100%;display:flex;align-items:center;gap:7px;padding:8px 13px;
+  font-size:11.5px;color:var(--td-muted);background:#fcfdfe;border-top:1px dashed var(--td-line);
+}
+.td-sub:hover{background:#f5f8fc;color:var(--td-navy-2)}
+.td-sub .td-caret{margin-left:auto}
+.td-late{background:#fffdf8}
+.td-late-note{padding:8px 13px;font-size:11.5px;color:var(--td-muted);border-top:1px dashed var(--td-line)}
+
+/* ---------- 底部 ---------- */
+.td-foot{flex-shrink:0;border-top:1px solid var(--td-line-2);background:#fbfcfe;padding:12px 20px 14px}
+.td-install{
+  width:100%;padding:10px 14px;border-radius:9px;background:var(--td-gold);color:var(--td-navy);
+  font-weight:700;font-size:13.5px;letter-spacing:.3px;transition:.15s;
+}
+.td-install:hover{background:#dcb63c}
+.td-install[hidden]{display:none}
+.td-installed{font-size:12.5px;color:var(--td-green);text-align:center;padding:6px 0}
+.td-tip{font-size:12px;color:var(--td-ink-2);line-height:1.85;background:#fff;border:1px solid var(--td-line);
+  border-radius:9px;padding:11px 13px;margin-bottom:10px}
+.td-tip[hidden]{display:none}
+.td-tip b{color:var(--td-navy)}
+.td-foot-row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:9px}
+.td-link{font-size:11.5px;color:var(--td-muted);text-decoration:underline;text-underline-offset:2px}
+.td-link:hover{color:var(--td-navy-2)}
+.td-foot-note{font-size:10.5px;color:#a0aebe;text-align:center;margin-top:8px;line-height:1.6}
+.td-toast{
+  position:fixed;left:50%;bottom:18px;transform:translate(-50%,12px);z-index:50;
+  background:var(--td-navy);color:#fff;font-size:12.5px;padding:8px 16px;border-radius:20px;
+  box-shadow:0 8px 24px rgba(11,37,69,.25);opacity:0;pointer-events:none;transition:.25s;
+}
+.td-toast.show{opacity:1;transform:translate(-50%,0)}
+
+@media (max-width:360px){
+  .td-top,.td-progress,.td-add,.td-foot{padding-left:14px;padding-right:14px}
+  .td-lists{padding-left:14px;padding-right:14px}
+}
+
+/* ---------- 两个下载入口：Windows / Mac（两者始终都可点） ---------- */
+.td-downloads{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:10px}
+.td-download{
+  position:relative;
+  display:block;width:100%;text-align:center;
+  padding:12px 10px;border-radius:11px;text-decoration:none;
+  background:linear-gradient(135deg,#1d4ed8 0%,#2f7bf6 55%,#4a9bff 100%);
+  color:#fff;font-size:14.5px;font-weight:700;letter-spacing:.3px;
+  box-shadow:0 6px 18px rgba(37,99,235,.32),0 0 0 1px rgba(255,255,255,.14) inset;
+  transition:transform .15s,box-shadow .15s,opacity .15s;
+}
+.td-download:hover{transform:translateY(-1px);box-shadow:0 9px 24px rgba(37,99,235,.42)}
+.td-download:active{transform:translateY(0)}
+.td-download small{display:block;font-size:10.5px;font-weight:500;opacity:.82;letter-spacing:0;margin-top:1px;line-height:1.45}
+/* 只是标出「这台电脑该用哪个」，另一个入口照样能点 */
+.td-downloads > .td-download:not(.is-recommended){opacity:.74}
+.td-downloads > .td-download:not(.is-recommended):hover{opacity:1}
+.td-download.is-recommended::before{
+  content:"✓ 这台电脑";position:absolute;top:-8px;right:8px;
+  padding:1px 7px;border-radius:9px;background:#bfa36e;color:#0b2545;
+  font-size:10px;font-weight:700;letter-spacing:0;
+  box-shadow:0 2px 6px rgba(11,37,69,.22);
+}
+@media (max-width:430px){
+  .td-downloads{grid-template-columns:1fr;gap:8px}
+}
+/* 手机 / 平板：桌面安装包（Windows .exe / Mac .zip）无法使用，
+   由 JS 在移动端给 body 加 .td-mobile 后隐藏，仅保留「添加到主屏幕」指引 */
+body.td-mobile .td-downloads,
+body.td-mobile .td-optional{display:none}
+.td-install.is-minor{
+  background:#eef2f8;color:var(--td-navy-2);font-size:12.5px;font-weight:600;box-shadow:none;
+}
+.td-install.is-minor:hover{background:#e2e9f3}
+/* ---------- APP 模式：浏览器原生安装，不运行任何下载来的脚本，系统不拦 ---------- */
+.td-install.is-app{
+  display:block;width:100%;text-align:center;
+  padding:13px 14px;margin-bottom:12px;border-radius:11px;
+  background:linear-gradient(135deg,#0b2545,#173860);
+  color:#fff;font-size:15px;letter-spacing:.3px;
+  box-shadow:0 6px 18px rgba(11,37,69,.22);
+  transition:background .15s,transform .15s;
+}
+.td-install.is-app:hover{background:linear-gradient(135deg,#173860,#254f80);transform:translateY(-1px)}
+.td-install.is-app[hidden]{display:none}
+.td-app-title{display:block;font-weight:700}
+.td-app-sub{display:block;font-size:10.5px;font-weight:500;opacity:.86;margin-top:3px;line-height:1.5;letter-spacing:0}
+.td-optional{font-size:11.5px;color:var(--td-muted);text-align:center;margin:2px 0 8px;line-height:1.6}
+
+/* ---------- 桌宠模式：常驻桌面的小卡片（pet=1） ----------
+   由下载包启动的无边框置顶窗口加载；只保留「看清单 + 打勾 + 加一条」，
+   不需要安装提示、说明文字和页脚，尽量让内容一眼可见。 */
+body.pet{padding:0;background:#fff;font-size:13px;overflow:hidden}
+body.pet .td-shell{max-width:none;min-height:100%;height:100vh;border:0;border-radius:0;box-shadow:none}
+body.pet .td-top{padding:9px 12px 8px}
+body.pet .td-top-row{gap:9px}
+body.pet .td-logo{width:26px;height:26px;border-radius:7px}
+body.pet .td-titles h1{font-size:15px;letter-spacing:0}
+body.pet .td-titles p{font-size:10px;margin-top:0}
+body.pet .td-top-btn{width:25px;height:25px;border-radius:7px;font-size:13px}
+body.pet .td-progress{padding:7px 12px 6px}
+body.pet .td-progress-txt{font-size:10.5px;margin-bottom:4px}
+body.pet .td-bar{height:4px}
+body.pet .td-add{padding:8px 12px 6px;gap:6px}
+body.pet .td-add input{padding:7px 10px;border-radius:8px;font-size:12.5px}
+body.pet .td-add button{width:33px;border-radius:8px;font-size:18px}
+body.pet .td-lists{padding:1px 10px 8px;overscroll-behavior:contain}
+body.pet .td-sec{margin-top:9px;border-radius:9px}
+body.pet .td-sec-head{padding:7px 10px;gap:6px}
+body.pet .td-sec-title{font-size:12px}
+body.pet .td-sec-tag{font-size:9.5px}
+body.pet .td-count{font-size:10px;padding:0 6px}
+body.pet .td-item{padding:7px 10px;gap:7px}
+body.pet .td-text{font-size:12.5px;line-height:1.45}
+body.pet .td-go{display:none}
+body.pet .td-edit{font-size:12.5px}
+body.pet .td-empty{padding:11px 10px;font-size:12px}
+body.pet .td-sub{padding:6px 10px;font-size:11px}
+body.pet .td-late-note{padding:6px 10px;font-size:11px}
+body.pet .td-foot{display:none}
+body.pet .td-toast{bottom:10px;font-size:11.5px;padding:6px 12px}
+/* 桌宠窗口顶部的小工具条：打开完整网站 / 关闭小卡片 */
+.td-pet-close{
+  width:25px;height:25px;border-radius:7px;border:1px solid rgba(255,255,255,.24);
+  background:rgba(255,255,255,.08);color:#fff;font-size:14px;line-height:1;flex-shrink:0;
+  display:none;align-items:center;justify-content:center;transition:.15s;
+}
+.td-pet-close:hover{background:rgba(255,255,255,.22)}
+body.pet .td-pet-close{display:flex}
+
+/* Full browser view, with the study hall's moonlit palette. */
+body:not(.pet) {
+  padding: clamp(12px, 3vw, 40px);
+  background: #edf3fa;
+  color: #183553;
+}
+body:not(.pet) .td-shell {
+  width: 100%;
+  max-width: 920px;
+  height: auto;
+  max-height: none;
+  overflow: visible;
+  border: 1px solid #c6d8ee;
+  border-radius: 16px;
+  background: #fff;
+}
+body:not(.pet) .td-top {
+  padding: clamp(22px, 5vw, 48px) clamp(16px, 4vw, 36px);
+  border-radius: 15px 15px 0 0;
+  border-bottom: 2px solid #bfa36e;
+  background: linear-gradient(90deg,#0d2342f5,#0d23424d),
+    url("/cabin-art/library.webp") right 38% / cover no-repeat;
+}
+body:not(.pet) .td-titles h1 { font-size: clamp(24px, 4vw, 38px); color: #fff; }
+body:not(.pet) .td-titles p { color: #e1ebf8; }
+body:not(.pet) .td-lists { overflow: visible; padding-block: 0 24px; }
+body:not(.pet) .td-sec { border-color: #d3e1f1; }
+body:not(.pet) .td-sec-head { padding-block: 13px; background: #eef5fd; }
+body:not(.pet) .td-sec-title { font-size: 17px; color: #173860; }
+body:not(.pet) .td-item { padding-block: 13px; }
+body:not(.pet) .td-text { font-size: 16px; overflow-wrap: anywhere; }
+body:not(.pet) .td-foot { background: #f4f8fd; border-radius: 0 0 15px 15px; }
+body:not(.pet) .td-download {
+  background: #173860;
+  box-shadow: none;
+  font-size: 15px;
+}
+body:not(.pet) .td-download:hover { background: #254f80; box-shadow: none; transform: none; }
+body:not(.pet) .td-foot-note { color: #526b88; }
+.td-shell :is(button, a, input):focus-visible { outline: 2px solid #5986b7; outline-offset: 3px; }
+
+body:not(.pet) { padding: 0 0 30px; }
+body:not(.pet) .td-shell {
+  max-width: none;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+body:not(.pet) .td-top {
+  display: grid;
+  align-content: center;
+  min-height: clamp(180px, 16vw, 248px);
+  padding: 24px clamp(16px, 4vw, 64px);
+  border-radius: 0;
+  background: linear-gradient(90deg,#10233d22,#10233dcc 50%,#10233d22),
+    url("/cabin-art/banner-todo-library.webp") center / cover no-repeat, #10233d;
+}
+body:not(.pet) .td-top-row { position: relative; justify-content: center; text-align: center; }
+body:not(.pet) .td-titles { flex: initial; }
+body:not(.pet) .td-titles h1 { font: 700 clamp(27px, 3.2vw, 48px)/1.2 Georgia, SimSun, serif; }
+body:not(.pet) .td-top-btn { position: absolute; right: 0; }
+body:not(.pet) .td-logo { display: none; }
+body:not(.pet) .td-shell > :is(.td-progress,.td-add,.td-lists,.td-foot) {
+  width: min(920px, calc(100% - 24px));
+  margin-inline: auto;
+  background: #fff;
+}
+body:not(.pet) .td-progress { margin-top: 20px; border-radius: 12px 12px 0 0; }
+body:not(.pet) .td-foot { border-radius: 0 0 12px 12px; }
+/* 普通页面把按钮统一压成深藏蓝，这里让「推荐」的那个重新亮起来（放在最后以覆盖前面规则） */
+body:not(.pet) .td-download.is-recommended{
+  background:linear-gradient(135deg,#1d4ed8 0%,#2f7bf6 55%,#4a9bff 100%);
+  box-shadow:0 6px 18px rgba(37,99,235,.32),0 0 0 1px rgba(255,255,255,.14) inset;
+}
+body:not(.pet) .td-download.is-recommended:hover{
+  background:linear-gradient(135deg,#1d4ed8,#5aa8ff);
+  box-shadow:0 9px 24px rgba(37,99,235,.42);
+  transform:translateY(-1px);
+}
+.cabin-header {
+  display: flex;
+  align-items: center;
+  gap: clamp(14px, 3vw, 44px);
+  min-height: 72px;
+  padding: 8px clamp(14px, 3vw, 42px);
+  background: #fff;
+  border-bottom: 1px solid #d6e2f0;
+}
+.cabin-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: none;
+  color: #102c4e;
+  text-decoration: none;
+  font: 700 21px Georgia, SimSun, serif;
+}
+.cabin-brand img { object-fit: contain; }
+.cabin-brand small { display: block; font: italic 13px Georgia, serif; color: #526b88; }
+.cabin-header nav { display: flex; flex-wrap: wrap; gap: 4px 10px; }
+.cabin-header nav a {
+  padding: 8px 9px;
+  white-space: nowrap;
+  color: #2c4768;
+  text-decoration: none;
+}
+.cabin-header nav a:hover { background: #eef5fd; }
+.cabin-header nav a[aria-current="page"] { color: #173860; box-shadow: inset 0 -3px #254981; font-weight: 700; }
+
+body.pet > .cabin-header { display: none; }
+@media (display-mode: standalone) { body > .cabin-header { display: none; } }
+@media (max-width: 950px) {
+  .cabin-header { flex-wrap: wrap; gap: 6px; padding-inline: 14px; }
+  .cabin-header nav a { font-size: 15px; }
+}

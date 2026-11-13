@@ -1,0 +1,45 @@
+# Liora 学习小屋 · 版本控制排除规则
+# ---------------------------------------------------------------
+# 红线：账号、密钥、用户进度绝不进入版本库 / 快照 / 回退
+线上版/auth.json
+线上版/ai_config.json
+线上版/data/
+线上版/public/data/
+线上版/checks/backups/
+线上版/notes/review/
+线上版/.workbuddy/
+线上版/build/
+*.log
+*.lock
+*.bak
+node_modules/
+__pycache__/
+
+# 与本分支无关的大体积目录 / 运行产物（保持 status 干净）
+归档/
+_bak/
+_deploy_excluded/
+_tmp*/
+_toolchain/
+android-app/
+双AI协作/
+AI英语教学自动化系统/
+Mac桌面小组件/
+学习小屋高清素材/
+技能包/
+xiaodao-skill/
+vendor/
+website_tmp/
+国富论/
+大癫狂/
+小岛经济学/
+富爸爸穷爸爸/
+*.zip
+*.apk
+*.genie
+
+# build/ 下只跟踪本分支的脚本与注册表，生成物不入库
+build/*
+!build/exam-prep/
+!build/exam-prep/**
+!build/module-registry.json

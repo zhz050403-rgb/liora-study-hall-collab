@@ -1,0 +1,186 @@
+{
+  "schema": 1,
+  "siteDir": "线上版",
+  "snapshotDir": "归档/板块版本",
+  "protected": [
+    "auth.json",
+    "data/state.json",
+    "data/u_*.json",
+    "data/board-*.json"
+  ],
+  "modules": {
+    "notes-layout": {
+      "label": "学习笔记 · 排版渲染",
+      "owner": "WorkBuddy",
+      "files": ["public/blocks/notes-layout.js"],
+      "desc": "中文另起一行、概念名字重、公式横线分数"
+    },
+    "notes-views": {
+      "label": "学习笔记 · 四种视图",
+      "owner": "WorkBuddy",
+      "files": ["public/note-views.js"],
+      "desc": "文字版 / 思维导图 / 填空复习 / 知识点归纳"
+    },
+    "notes-content": {
+      "label": "学习笔记 · 课程内容",
+      "owner": "WorkBuddy",
+      "files": ["public/data.js"],
+      "desc": "全部课程周次笔记数据；禁止全量重跑 build_data.py"
+    },
+    "notes-theme": {
+      "label": "学习笔记 · 样式与字号",
+      "owner": "WorkBuddy",
+      "files": [
+        "public/cabin-theme.css",
+        "public/notes-quality.css",
+        "public/mobile-fit.css",
+        "public/section-banners.css"
+      ],
+      "desc": "主题配色、正文三档字号、响应式"
+    },
+    "site-polish": {
+      "label": "全站统一视觉与专注模式",
+      "owner": "WorkBuddy",
+      "files": [
+        "public/blocks/site-tokens.css",
+        "public/blocks/site-polish.css",
+        "public/blocks/site-polish.js"
+      ],
+      "desc": "收敛四套 token、网页本体纯 CSS 点缀、对比度修正、减少动效与专注模式；四张 HTML 只加引用行，不在本板块内以免回退覆盖其它板块"
+    },
+    "usage-guide": {
+      "label": "网页使用指南（独立页）",
+      "owner": "WorkBuddy",
+      "files": ["public/guide.html", "public/blocks/guide-link.js"],
+      "desc": "面向使用者的图文指南 + 页脚入口；独立页，不改主站导航，index.html 只加一行 script 引用"
+    },
+    "question-bank": {
+      "label": "备考题库与备考中心",
+      "owner": "Codex",
+      "files": [
+        "public/question-bank.js",
+        "public/prep-data.js",
+        "public/prep-center.js",
+        "public/prep-center.css"
+      ],
+      "desc": "题目、备考排期、备考中心页面"
+    },
+    "board-editor": {
+      "label": "板块内容管理（19 个内容板块）",
+      "owner": "Codex",
+      "files": [
+        "public/board-catalog.js",
+        "public/board-overrides-client.js",
+        "public/board-editor.html"
+      ],
+      "desc": "改内容即时生效，不需要整站发布；补丁在线上 data/ 里"
+    },
+    "study-plan": {
+      "label": "备考计划",
+      "owner": "Codex",
+      "files": ["public/study-plan.js"],
+      "desc": "目标、周计划、考试安排"
+    },
+    "learning-profile": {
+      "label": "学科学习档案",
+      "owner": "Codex",
+      "files": ["public/learning-profile-data.js"],
+      "desc": "各科进度与评语"
+    },
+    "english": {
+      "label": "英语学习素材库",
+      "owner": "Codex",
+      "files": ["public/english/js/data.js"],
+      "desc": "文章、题目、词汇缓存入口"
+    },
+    "english-workbench": {
+      "label": "英语学习台 · 首页 UI",
+      "owner": "WorkBuddy",
+      "files": [
+        "public/english/index.html",
+        "public/english/css/style.css",
+        "public/english/js/app.js"
+      ],
+      "desc": "工作台卡片布局与字号；改 css/js 必须升 english/index.html 的 ?v="
+    },
+    "reading": {
+      "label": "小书库 / 读书",
+      "owner": "WorkBuddy",
+      "files": ["public/guofulun-translations.js"],
+      "desc": "读书页对照译文"
+    },
+    "todo": {
+      "label": "桌面待办小组件",
+      "owner": "WorkBuddy",
+      "files": [
+        "public/todo.html",
+        "public/todo-widget.js",
+        "public/todo-widget.css",
+        "public/todo-bridge.js",
+        "public/sw.js",
+        "public/manifest.webmanifest"
+      ],
+      "desc": "待办页、离线缓存、PWA 图标"
+    },
+    "cloud": {
+      "label": "云服务与进度同步",
+      "owner": "WorkBuddy",
+      "files": ["public/cloud-config.js", "public/cloud-sync.js"],
+      "desc": "云端登录、user_state 同步、AI 调用"
+    },
+    "home": {
+      "label": "首页与课程目录",
+      "owner": "WorkBuddy",
+      "files": [
+        "public/course-tree.js",
+        "public/progress.js",
+        "public/records.js"
+      ],
+      "desc": "课程树、进度、记录"
+    },
+    "server": {
+      "label": "服务端",
+      "owner": "共享",
+      "files": ["server.js", "package.json"],
+      "desc": "登录、API、板块补丁接口、静态服务"
+    },
+    "daily-brief": {
+      "label": "每日简报（独立页）",
+      "owner": "ChatGPT",
+      "files": [
+        "public/daily-brief.html",
+        "public/blocks/daily-brief.css",
+        "public/blocks/daily-brief.js"
+      ],
+      "desc": "独立一页「每日简报」，整页一个内容区 #dailyBriefContent；导航仅两个入口之一（另一个是 #/extra「课外拓展」）；extra-hub 独立页已删除，不要重建"
+    },
+    "unit-groups": {
+      "label": "一周双 Unit · 目录两级折叠",
+      "owner": "WorkBuddy",
+      "files": ["public/blocks/unit-groups.js"],
+      "desc": "学习笔记目录按 Unit 分成上一级可折叠分组，展开后才显示小类目；覆盖全站 15 个标题双 Unit 周：目录条目自带 Unit 前缀的按起点精确切分（会计 W1），标题双 Unit 但目录无前缀的前一组放课后作业答案里的真实习题、后一组放原有知识点（经济学 14 周）；单 Unit 周次不受影响；index.html 只加一行 script 引用"
+    },
+    "content-update": {
+      "label": "内容更新提醒（游戏式热更新）",
+      "owner": "WorkBuddy",
+      "files": ["public/blocks/content-update.js", "public/android-install.html"],
+      "desc": "网页自检线上版本：新增简报/换资源时弹顶部「发现新一期简报」提示，左下角 ↻ 可主动检查；纯前端、不改 APK、不新增接口；index.html 与 daily-brief.html 只加一行 script 引用"
+    },
+    "bilingual-video": {
+      "label": "中英对照讲解（同一内容中英两讲）",
+      "owner": "WorkBuddy",
+      "files": [
+        "public/blocks/bilingual-video.js",
+        "public/bilingual-video.html"
+      ],
+      "desc": "独立页 bilingual-video.html 按课程分组展示卡片，三门课都按「每个知识点单独一行」；课程周页由 JS 注入「🎬 中英视频」标签与 wp-head 直达链接；主站页脚加入口、不动顶部导航。会计（2026-11-12 bv5）按第二批表格改成 rowsMode：11 Unit / 36 行，数据源 build/accounting_data.py（6 个 B 站合集 + Tera Courses 系列 BV1Yy9zBPEBj 全部分集号经官方接口核验），U8–U11 是同一合集中文 p=N ↔ 英文 p=N+11 的双版本可直接播；U1–U7 英文主源已换 B 站 Tera Courses 财务会计系列（BV1Yy9zBPEBj，英文原声+中英字幕，国内可直接播），enV 改用 [bili(BV...,p,标题), yt(原YouTube)] 数组，渲染层 sideHtml/topicCard 增加 hasBili&&hasYt 混合徽标「B 站可播·含 YouTube 原链接」与 mixedNoteText；YouTube 原链接降级为「原网址」备用，系列与 U1–U7 属相近主题非逐讲对应；U2「会计假设」原表「暂缺」已用 BV1Yy9zBPEBj P1 补上，不再 missing() 也不编造网址；U4 中文为国家智慧教育平台课程页链接卡；第一批表格独有的 6 条 YouTube 保留在 FALLBACK.extra。经济学 9 Unit / 49 行（build/economics_data.py）；商业数学 U0–U10 按 Term 1/2 分组，U2 补齐第 17–22 集共 6 集、U7 补 2 条真实年金中文课 + Khan Academy 现值专题入口。数据表 window.BILINGUAL_VIDEOS 在 bilingual-video.js 内，换网址/加课程只改这一处；index.html / daily-brief.html / 独立页三条 ?v= 必须同步升。诚实边界：分集号存在与链接可达已查实，音轨、逐条时间点跳转与嵌入播放未全部实测，不标记「全部验证通过」（bv6：记忆每门课上次停留的 Unit，下次打开自动跳到该 Unit 并高亮，不再每次停在 U1；支持 &unit= 直达，周页链接尽力带入当前 Unit。bv7：修复「课程总览页 #/c/<course>（点课程中心进入后停的第一页）不显示中英视频入口」——courseOfHash 正则原为 ^#\/c\/([^/]+)\/ 必须带斜杠，改为 ^#\/c\/([^/]+)(?:\/|$) 兼容无 term/week 的总览页，总览页 now 也有「🎬 中英视频」标签 + wp-head 直达链接，会计/经济/商业数学三课一致）"
+    },
+    "skeleton": {
+      "label": "共享骨架（谨慎回退）",
+      "owner": "共享",
+      "shared": true,
+      "files": ["public/index.html"],
+      "desc": "只允许加/改引用行与版本号，禁止在此新增业务逻辑；回退可能丢掉其它板块的引用行"
+    }
+  }
+}

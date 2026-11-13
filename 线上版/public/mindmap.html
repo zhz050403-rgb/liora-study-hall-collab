@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>填空版思维导图 · Liora 的学习小屋</title>
+<style>
+:root{
+  --navy-900:#0b2545; --navy-800:#13315c; --navy-700:#1d4368;
+  --navy-100:#e8eef6; --navy-050:#f3f6fa;
+  --gold:#c9a227; --gold-light:#f7efd8;
+  --paper:#f4f6f9; --card:#fff;
+  --ink:#16202b; --ink-2:#3c4a5a; --muted:#68788c;
+  --line:#dde4ec; --line-2:#e9edf3;
+  --sans:"PingFang SC","Microsoft YaHei","Segoe UI",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.6}
+.top{background:linear-gradient(135deg,var(--navy-900),var(--navy-800) 60%,#1a4a7d);color:#fff;padding:20px 24px}
+.top .in{max-width:880px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.brand{font-size:17px;font-weight:700;letter-spacing:.5px}
+.brand small{display:block;font-size:11px;font-weight:400;opacity:.7;letter-spacing:1px}
+.back{color:#fff;text-decoration:none;border:1px solid rgba(255,255,255,.45);border-radius:999px;padding:6px 14px;font-size:12.5px;font-weight:600}
+.back:hover{background:rgba(255,255,255,.14)}
+.wrap{max-width:880px;margin:28px auto 60px;padding:0 20px}
+.hero{background:var(--card);border:1px solid var(--line-2);border-left:4px solid var(--gold);border-radius:14px;padding:22px 24px;margin-bottom:18px}
+.hero .tag{display:inline-block;background:var(--gold-light);color:#8a6d1f;border:1px solid #f0e2bb;border-radius:999px;font-size:11.5px;font-weight:800;padding:3px 11px;letter-spacing:.4px}
+.hero h1{font-size:26px;margin:12px 0 8px;color:var(--navy-900);line-height:1.3}
+.hero p{margin:0;color:var(--ink-2);font-size:14.5px}
+.loc{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.loc span{background:var(--navy-050);border:1px solid var(--line-2);border-radius:8px;padding:5px 11px;font-size:12.5px;color:var(--navy-800);font-weight:600}
+.card{background:var(--card);border:1px solid var(--line-2);border-radius:14px;padding:20px 24px;margin-bottom:16px}
+.card h2{font-size:17px;color:var(--navy-900);margin:0 0 12px;display:flex;align-items:center;gap:8px}
+.card p{font-size:13.5px;color:var(--ink-2);margin:0 0 10px}
+ol,ul{margin:0;padding-left:20px}
+li{font-size:13.5px;color:var(--ink-2);margin:7px 0}
+li b{color:var(--navy-800)}
+.wip{background:#fffdf8;border-color:#f0dcbc}
+.note{background:var(--navy-050);border:1px solid var(--line-2);border-left:3px solid var(--navy-700);border-radius:0 10px 10px 0;padding:12px 16px;font-size:13px;color:var(--ink-2);margin:14px 0 0}
+.note b{color:var(--navy-800)}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.btn{display:inline-flex;align-items:center;gap:6px;text-decoration:none;font-size:13px;font-weight:700;padding:9px 16px;border-radius:9px;border:1px solid var(--navy-800);background:var(--navy-900);color:#fff}
+.btn:hover{background:var(--navy-700)}
+.btn.ghost{background:#fff;color:var(--navy-800);border-color:var(--line)}
+.btn.ghost:hover{background:var(--navy-050)}
+.todo{background:#fbfdff;border:1px dashed #b9c9dc}
+.todo .st{display:inline-block;background:var(--navy-100);color:var(--navy-800);font-size:11px;font-weight:800;border-radius:999px;padding:3px 10px;margin-bottom:8px}
+footer{text-align:center;color:var(--muted);font-size:12px;padding:20px}
+@media(max-width:600px){.hero h1{font-size:22px}.wrap{margin-top:18px}}
+</style>
+<style>
+.study-map{max-width:1140px;margin:32px auto;padding:0 20px;color:#173858}
+.study-map h1{margin-bottom:24px}
+.study-map-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:16px;margin-bottom:24px}
+.study-map-grid section{padding:18px;background:#eff7ff;border:1px solid #bfd6ea;border-top:5px solid #4078a8;border-radius:12px}
+.study-map-grid section:nth-child(3n+2){background:#fff7e4;border-top-color:#bb872e}
+.study-map-grid section:nth-child(3n){background:#eef8f3;border-top-color:#4e8d74}
+.study-map-grid summary{cursor:pointer;font-weight:700}
+</style>
+</head>
+<body>
+<div class="top"><div class="in">
+  <div class="brand">Liora 的学习小屋<small>STUDY HALL · REVIEW NAV</small></div>
+  <a class="back" id="backTop" href="index.html">← 回到学习小屋</a>
+</div></div>
+
+<div class="wrap">
+  <div class="hero">
+    <span class="tag">⚠️ 预留入口 · 内容制作中</span>
+    <h1>🧠 填空版思维导图</h1>
+    <p>这个页面是「复习导航」里 <b>+30 天月度自测</b> 的落脚点。导图本身还没有做，现在先占好位置，做好后直接替换本页内容即可，各周的跳转链接不用改。</p>
+    <div class="loc" id="loc"></div>
+  </div>
+
+  <div class="card wip">
+    <h2>📌 当前状态：只记录了需求，尚未制作</h2>
+    <p>你点进来看到这一页，说明「复习导航 → 填空版思维导图」这条链路<b>已经接通</b>。导图内容属于下一步要做的工作，本页不会自动变成导图。</p>
+    <div class="note"><b>现在不会丢东西：</b>所有已做的打卡记录、备考排期、课程笔记都在原来的位置，这个新页面不影响它们。</div>
+  </div>
+
+  <div class="card">
+    <h2>🎯 将来这里会放什么（待办清单）</h2>
+    <p>按「每一周」各做一张<b>挖空的知识结构图</b>，用来做学完一个月后的自测，而不是重新看一遍笔记：</p>
+    <ol>
+      <li><b>空白导图</b>：只保留本周知识点的框和连线，关键术语、公式、结论一律留空。</li>
+      <li><b>凭记忆填写</b>：直接在页面上填，不翻笔记；填不出的空格先留白。</li>
+      <li><b>一键核对答案</b>：按「显示答案」逐格比对，错的和不确定的自动标红。</li>
+      <li><b>薄弱点入清单</b>：标红的空格自动记进复习清单，并在下次间隔回顾时优先出现。</li>
+      <li><b>完成标准</b>：能独立填对全部空格，且能说出任意两个框之间为什么相连，才算这一周过关。</li>
+    </ol>
+    <div class="note"><b>⚠️ 尚未确定的部分：</b>先从哪门课开始做、导图是按周还是按单元划分、是否需要打印版 —— 这几项还没定，做之前会先跟你确认，不会替你假设。</div>
+  </div>
+
+  <div class="card">
+    <h2>✅ 导图没做好之前，这 30 天自测先这样替代</h2>
+    <ul>
+      <li><b>当天 / +1 天 / +3 天</b>：回看本周笔记，合上能复述 3 个关键点。</li>
+      <li><b>+7 天</b>：只看上一周的标题与框架，想不起来的再展开笔记，不从头重读。</li>
+      <li><b>+15 天</b>：拿两周前的一道课后题或例题，不看答案先做，错了写明错因。</li>
+      <li><b>+30 天</b>：先拿一张白纸自己画本周的知识结构，画完再和图文笔记对一遍；等导图做好，这一步就改成在线填空。</li>
+      <li><b>精确到日的排期</b>：去「复习计划」看今天的必做 / 选做，不用自己算日子。</li>
+    </ul>
+    <div class="btns">
+      <a class="btn" id="backWeek" href="index.html">← 回到这一周</a>
+      <a class="btn ghost" href="index.html#/prep">📅 打开复习计划</a>
+      <a class="btn ghost" href="index.html">🏠 首页看板</a>
+    </div>
+  </div>
+
+  <div class="card todo">
+    <span class="st">待办已记录</span>
+    <h2>🗒️ 这条需求已记下</h2>
+    <p>「在复习导航里加入填空版思维导图入口，点击直达填空版」——入口与跳转已就绪，<b>导图内容待制作</b>。这项待办同时写进了项目工作日志，下次接着做时不会漏。</p>
+  </div>
+</div>
+
+<footer>Liora 的学习小屋 · 复习导航预留页</footer>
+
+<script>
+/* 从复习导航传来的定位参数；只用于显示位置，不改动任何数据 */
+(function(){
+  var q = new URLSearchParams(location.search);
+  var names = {accounting:"会计学", economics:"经济学", mathematics:"商科数学",
+               computing:"计算机应用", english:"学术英语", extracurricular:"课外拓展"};
+  var c = q.get("course") || "", t = q.get("term") || "", w = q.get("week") || "";
+  var parts = [];
+  parts.push("课程：" + (names[c] || c || "未指定"));
+  if(t) parts.push("学期：" + t);
+  if(w) parts.push((c && !/^(accounting|economics|mathematics|computing|english)$/.test(c) ? "第 " : "W") + w);
+  if(!c && !t && !w) parts.push("从周页面的「复习导航」进入时，这里会显示对应课程与周次");
+  var box = document.getElementById("loc");
+  parts.forEach(function(p){
+    var s = document.createElement("span"); s.textContent = p; box.appendChild(s);
+  });
+  if(c && t && w){
+    var back = "index.html#/c/" + encodeURIComponent(c) + "/" + encodeURIComponent(t) + "/" + encodeURIComponent(w);
+    document.getElementById("backWeek").href = back;
+    document.getElementById("backTop").href = back;
+  }
+})();
+</script>
+<script src="data.js"></script>
+<script>
+(function(){
+  const params = new URLSearchParams(location.search);
+  const course = window.PORTAL_DATA?.courses.find(item => item.id === params.get("course"));
+  const term = course?.terms.find(item => item.id === params.get("term"));
+  const week = term?.weeks.find(item => String(item.num) === params.get("week"));
+  if (!week) return;
+  const cards = course.id === "economics" && week.num === 5 ? [
+    ["需求价格弹性", "价格改变时，需求量的反应有多大？", "|PED| = |需求量变动百分比 ÷ 价格变动百分比|。大于 1 是富有弹性，等于 1 是单位弹性，小于 1 是缺乏弹性。"],
+    ["中点公式", "两点之间的百分比变化用什么作分母？", "数量变化除以两点数量的平均值，价格变化除以两点价格的平均值，再用前者除以后者。"],
+    ["收益关系", "降价后，总收益什么时候会上升？", "TR = P × Q。需求富有弹性时，降价带来的销量增幅足以弥补单价下降。AR = TR ÷ Q，MR = ΔTR ÷ ΔQ。"],
+    ["其他弹性", "收入、其他商品价格、自己的价格分别对应哪种弹性？", "收入对应 YED，其他商品价格对应 XED。供给价格弹性用供给量的百分比变化除以自身价格的百分比变化。"],
+    ["决定因素", "为什么替代品多时需求更有弹性？为什么长期供给通常更有弹性？", "消费者更容易换购。生产者在长期有更多时间调整投入、产能和库存。"]
+  ] : (week.objectives?.length ? week.objectives : week.topics || []).map(topic => [topic, "合上笔记，用自己的话复述，并举一个例子。", "回到本周笔记，核对你的定义、推理步骤和例子。"]);
+  if (!cards.length) return;
+  const main = document.createElement("main");
+  main.className = "study-map";
+  const heading = document.createElement("h1");
+  heading.textContent = week.title;
+  main.append(heading);
+  const grid = document.createElement("div");
+  grid.className = "study-map-grid";
+  cards.forEach(([title, question, answer], index) => {
+    const card = document.createElement("section");
+    const name = document.createElement("h2");
+    name.textContent = (index + 1) + ". " + title;
+    const prompt = document.createElement("p");
+    prompt.textContent = question;
+    const reveal = document.createElement("details");
+    const summary = document.createElement("summary");
+    summary.textContent = "查看核对提示";
+    const content = document.createElement("p");
+    content.textContent = answer;
+    reveal.append(summary, content);
+    card.append(name, prompt, reveal);
+    grid.append(card);
+  });
+  main.append(grid);
+  const back = document.createElement("a");
+  back.textContent = "返回本周笔记";
+  back.href = document.getElementById("backWeek").href;
+  main.append(back);
+  document.body.replaceChildren(main);
+})();
+</script>
+</body>
+</html>

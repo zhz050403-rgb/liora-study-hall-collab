@@ -1,0 +1,142 @@
+{
+  "timestamp": "20261105-233330",
+  "beforeSha256": "c3370e4072b24a5dc0763bc07f123d03bfc19cc18497d021c83e04b87c1e8eff",
+  "afterSha256": "355f2aac6213c9a71caf79c283a4e520575707829eae555979b8d697f45fd3ac",
+  "removedEconomicFormulaWrappers": 7907,
+  "changes": [
+    {
+      "section": "economics/term1/3",
+      "field": "graphicHtml",
+      "paragraphs": 1
+    },
+    {
+      "section": "economics/term1/3",
+      "field": "notesHtml",
+      "paragraphs": 1
+    },
+    {
+      "section": "economics/term1/4",
+      "field": "graphicHtml",
+      "paragraphs": 1
+    },
+    {
+      "section": "economics/term2/1",
+      "field": "graphicHtml",
+      "paragraphs": 1
+    },
+    {
+      "section": "economics/term2/5",
+      "field": "graphicHtml",
+      "paragraphs": 1
+    },
+    {
+      "section": "economics/term2/8",
+      "field": "graphicHtml",
+      "paragraphs": 1
+    },
+    {
+      "section": "economics/term2/9",
+      "field": "graphicHtml",
+      "paragraphs": 1
+    },
+    {
+      "section": "economics/term2/12",
+      "field": "graphicHtml",
+      "paragraphs": 2
+    },
+    {
+      "section": "accounting/term1/2",
+      "field": "graphicHtml",
+      "paragraphs": 1
+    },
+    {
+      "section": "accounting/term1/3",
+      "field": "graphicHtml",
+      "paragraphs": 1
+    },
+    {
+      "section": "accounting/term1/4",
+      "field": "graphicHtml",
+      "paragraphs": 1
+    },
+    {
+      "section": "accounting/term1/5",
+      "field": "graphicHtml",
+      "paragraphs": 4
+    },
+    {
+      "section": "accounting/5",
+      "fix": "complete trial balance"
+    },
+    {
+      "section": "accounting/5",
+      "fix": "c/d credit-side placement"
+    },
+    {
+      "section": "accounting/5",
+      "fix": "January T-account debit/credit placement"
+    },
+    {
+      "section": "accounting/5",
+      "fix": "January T-account debit/credit placement"
+    },
+    {
+      "section": "accounting/5",
+      "fix": "c/d credit-side placement"
+    },
+    {
+      "section": "accounting/5",
+      "fix": "c/d credit-side placement"
+    },
+    {
+      "section": "accounting/5",
+      "fix": "c/d credit-side placement"
+    },
+    {
+      "section": "accounting/5",
+      "fix": "c/d credit-side placement"
+    },
+    {
+      "section": "accounting/5",
+      "fix": "c/d credit-side placement"
+    },
+    {
+      "section": "accounting/term1/6",
+      "field": "graphicHtml",
+      "paragraphs": 1
+    },
+    {
+      "section": "accounting/6",
+      "fix": "complete trial balance"
+    },
+    {
+      "section": "accounting/term1/8",
+      "field": "graphicHtml",
+      "paragraphs": 1
+    },
+    {
+      "section": "accounting/term1/10",
+      "field": "graphicHtml",
+      "paragraphs": 1
+    },
+    {
+      "section": "accounting/term1/12",
+      "field": "graphicHtml",
+      "paragraphs": 1
+    }
+  ],
+  "protectedDataUnchanged": true,
+  "unresolved": [
+    "Accounting source discrepancies: journal 4500/5000, sample-exam ratio datasets and obscured adjustment remain explicitly labelled.",
+    "Economic source interest-spread and exam timing inconsistencies are identified rather than silently reconciled."
+  ],
+  "scope": "Repairs of identified defects; not a certification that every source page and exercise has been independently checked.",
+  "verification": {
+    "routes": 65,
+    "fractions": 1093,
+    "mathSourceReferences": 937,
+    "trialBalances": 2,
+    "scriptErrors": 0
+  },
+  "deployment": "Pending: Windows locked; WorkBuddy update/publish action could not be executed."
+}

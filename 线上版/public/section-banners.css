@@ -1,0 +1,79 @@
+/* Shared banner treatment for non-home sections. */
+.section-banner.section-banner {
+  box-sizing: border-box;
+  min-height: clamp(180px, 16vw, 248px) !important;
+  display: grid;
+  align-content: center;
+  padding: 24px clamp(16px, 4vw, 64px) !important;
+  border-radius: 0 !important;
+  text-align: center;
+  color: #fff !important;
+  background-color: #10233d !important;
+  background-image: linear-gradient(90deg, #10233d40, #10233da0 50%, #10233d40), var(--section-art, none) !important;
+  background-position: center !important;
+  background-size: 100% 100%, cover !important;
+  background-repeat: no-repeat !important;
+  box-shadow: inset 0 -1px #c4aa75 !important;
+}
+.section-banner > .container,
+.section-banner > .cabin-banner-title {
+  padding: 0 !important;
+  text-align: center;
+}
+.section-banner :is(h1,h2) {
+  margin: 0;
+  color: #fff;
+  font: 700 clamp(27px, 3.2vw, 48px)/1.2 Georgia, "Songti SC", SimSun, serif !important;
+  letter-spacing: .045em;
+  text-shadow: 0 2px 10px #081427;
+}
+.section-banner p {
+  margin: 8px auto 0 !important;
+  color: #e2ecf8 !important;
+  font: 400 clamp(13px, 1.2vw, 17px)/1.55 system-ui, sans-serif !important;
+}
+.section-banner h1::before,
+.section-banner .cabin-banner-title > span { display: none; }
+.section-banner.catalog-banner { --section-art: url("cabin-art/banner-courses.webp"); }
+.section-banner.extra-masthead { --section-art: url("cabin-art/banner-extra.webp"); }
+.section-banner.reading-masthead { --section-art: url("cabin-art/banner-reading.webp"); }
+.section-banner.prep-masthead { --section-art: url("cabin-art/banner-prep.webp"); }
+.section-banner.guide-masthead { --section-art: url("cabin-art/banner-guide.webp"); }
+.section-banner.cabin-chapter { --section-art: url("cabin-art/banner-chapter.webp"); }
+#english-banner .section-banner.section-banner {
+  --section-art: url("cabin-art/banner-english.webp");
+  justify-items: center;
+  display: block;
+  align-content: center;
+}
+#english-banner .section-banner p { margin-bottom: 12px !important; }
+
+@media screen {
+  .site-footer, .brief-page, .english-page #main, body:not(.pet) .td-foot {
+    --cabin-rule: #9a7846;
+  }
+  .site-footer::before, .brief-page::after,
+  .english-page #main::after, body:not(.pet) .td-foot::after {
+    content: "✦";
+    display: grid;
+    place-items: center;
+    width: min(420px, 76%);
+    margin: 28px auto 0;
+    padding-block: 8px;
+    color: var(--cabin-rule);
+    background: linear-gradient(90deg, transparent, currentColor) left center / 44% 1px no-repeat,
+      linear-gradient(90deg, currentColor, transparent) right center / 44% 1px no-repeat;
+  }
+  .site-footer { padding-top: 1px; }
+  .site-footer::before { --cabin-rule: #dbbd83; margin-top: 14px; }
+  .site-footer .footer-bottom { color: #b1c4dc; }
+  :is(.home-courses,.cabin-catalog,.academy-extra,.academy-reading) .section-head,
+  .brief-edition .hub-slot-head { border-bottom: 1px solid #ccdaea; }
+  :is(.home-courses,.cabin-catalog,.academy-extra,.academy-reading) :is(.course-card,.module-card),
+  .brief-page .reading-card, .english-page .workbench-shortcuts .module-card {
+    border-color: #ccdced;
+    box-shadow: 0 6px 18px #183b5b0b;
+  }
+  .brief-page .reading-card { background: #fff; }
+  .brief-page .reading-card dd { line-height: 1.7; }
+}

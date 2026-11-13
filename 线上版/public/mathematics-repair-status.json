@@ -1,0 +1,168 @@
+{
+  "weeks": [
+    {
+      "term": "term1",
+      "week": 1,
+      "sourcePdfs": 3,
+      "pages": 16
+    },
+    {
+      "term": "term1",
+      "week": 2,
+      "sourcePdfs": 3,
+      "pages": 16
+    },
+    {
+      "term": "term1",
+      "week": 3,
+      "sourcePdfs": 3,
+      "pages": 12
+    },
+    {
+      "term": "term1",
+      "week": 4,
+      "sourcePdfs": 3,
+      "pages": 18
+    },
+    {
+      "term": "term1",
+      "week": 5,
+      "sourcePdfs": 3,
+      "pages": 14
+    },
+    {
+      "term": "term1",
+      "week": 6,
+      "sourcePdfs": 3,
+      "pages": 16
+    },
+    {
+      "term": "term1",
+      "week": 7,
+      "sourcePdfs": 3,
+      "pages": 12
+    },
+    {
+      "term": "term1",
+      "week": 8,
+      "sourcePdfs": 3,
+      "pages": 13
+    },
+    {
+      "term": "term1",
+      "week": 9,
+      "sourcePdfs": 3,
+      "pages": 13
+    },
+    {
+      "term": "term1",
+      "week": 10,
+      "sourcePdfs": 3,
+      "pages": 15
+    },
+    {
+      "term": "term1",
+      "week": 11,
+      "sourcePdfs": 3,
+      "pages": 12
+    },
+    {
+      "term": "term1",
+      "week": 12,
+      "sourcePdfs": 3,
+      "pages": 13
+    },
+    {
+      "term": "term1",
+      "week": 13,
+      "sourcePdfs": 1,
+      "pages": 2
+    },
+    {
+      "term": "term2",
+      "week": 1,
+      "sourcePdfs": 3,
+      "pages": 14
+    },
+    {
+      "term": "term2",
+      "week": 2,
+      "sourcePdfs": 3,
+      "pages": 14
+    },
+    {
+      "term": "term2",
+      "week": 3,
+      "sourcePdfs": 3,
+      "pages": 13
+    },
+    {
+      "term": "term2",
+      "week": 4,
+      "sourcePdfs": 3,
+      "pages": 15
+    },
+    {
+      "term": "term2",
+      "week": 5,
+      "sourcePdfs": 3,
+      "pages": 11
+    },
+    {
+      "term": "term2",
+      "week": 6,
+      "sourcePdfs": 3,
+      "pages": 17
+    },
+    {
+      "term": "term2",
+      "week": 7,
+      "sourcePdfs": 4,
+      "pages": 20
+    },
+    {
+      "term": "term2",
+      "week": 8,
+      "sourcePdfs": 3,
+      "pages": 15
+    },
+    {
+      "term": "term2",
+      "week": 9,
+      "sourcePdfs": 2,
+      "pages": 11
+    },
+    {
+      "term": "term2",
+      "week": 10,
+      "sourcePdfs": 2,
+      "pages": 11
+    },
+    {
+      "term": "term2",
+      "week": 11,
+      "sourcePdfs": 2,
+      "pages": 8
+    },
+    {
+      "term": "term2",
+      "week": 12,
+      "sourcePdfs": 2,
+      "pages": 10
+    },
+    {
+      "term": "term2",
+      "week": 13,
+      "sourcePdfs": 2,
+      "pages": 8
+    },
+    {
+      "term": "term2",
+      "week": 14,
+      "sourcePdfs": 2,
+      "pages": 10
+    }
+  ],
+  "completeWorkingsForEveryTutorialQuestion": false,
+  "note": "官方答案页已提供，但并非每题都有新增的完整推导。逐页索引用于核对来源；详细内容与题型覆盖仍需继续逐题复核。"
+}

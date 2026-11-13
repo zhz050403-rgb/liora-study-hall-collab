@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#122e52">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<title>学习小屋 · 中英对照讲解</title>
+<link rel="icon" href="cabin-art/crest-badge-clean.png">
+<link rel="stylesheet" href="blocks/site-tokens.css?v=20261107-polish1">
+<link rel="stylesheet" href="blocks/site-polish.css?v=20261111-readability-cf5b05b">
+<style>
+/* ===== 中英对照讲解 · 独立页版式（v- 前缀，与组件 bv- 前缀分开） ===== */
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--cb-ink);font-family:var(--cb-sans);font-size:17px;line-height:1.8;background:var(--cb-paper);-webkit-font-smoothing:antialiased}
+.v-wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+a{color:var(--cb-navy-800);text-decoration:none}
+a:hover{text-decoration:underline}
+
+.v-hero{background-image:var(--cb-banner-texture);background-color:#0d2340;color:#fff;padding:38px 0 34px;border-bottom:3px solid var(--cb-gold)}
+.v-hero-in{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.v-crest{width:68px;height:72px;object-fit:contain;flex:none;filter:drop-shadow(0 3px 10px rgba(0,0,0,.35))}
+.v-kicker{font-size:12px;letter-spacing:3px;color:var(--cb-gold);font-weight:700;margin-bottom:7px}
+.v-hero h1{font-family:var(--cb-serif);font-size:32px;line-height:1.25;margin:0 0 6px;letter-spacing:1px}
+.v-hero p{margin:0;color:#d7e6f7;font-size:15.5px}
+.v-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.v-btn{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:8px 18px;border-radius:999px;font-size:14.5px;font-weight:700;cursor:pointer;border:1px solid transparent;font-family:var(--cb-sans)}
+.v-btn-gold{background:var(--cb-gold);color:#122e52}
+.v-btn-gold:hover{background:#dcbb78;text-decoration:none}
+.v-btn-ghost{background:transparent;color:#e8f1fb;border-color:rgba(255,255,255,.5)}
+.v-btn-ghost:hover{background:rgba(255,255,255,.1);text-decoration:none}
+
+.v-main{padding:30px 0 20px}
+.v-intro{background:#fff;border:1px solid var(--cb-line);border-left:4px solid var(--cb-gold);border-radius:12px;padding:16px 18px;margin:0 0 22px;font-size:14.5px;line-height:1.85;color:var(--cb-ink-2)}
+.v-intro b{color:var(--cb-navy-900)}
+.v-intro ul{margin:8px 0 0;padding-left:20px}
+.v-intro li{margin:3px 0}
+.v-foot{text-align:center;padding:26px 0 120px;color:var(--cb-muted);font-size:13.5px}
+.v-foot a{font-weight:700}
+
+@media(max-width:640px){
+  .v-wrap{padding:0 15px}
+  .v-hero{padding:26px 0 24px}
+  .v-crest{width:52px;height:56px}
+  .v-hero h1{font-size:25px}
+  .v-hero p{font-size:14px}
+  .v-main{padding:20px 0 10px}
+  body{font-size:16px}
+}
+</style>
+</head>
+<body>
+
+<header class="v-hero">
+  <div class="v-wrap">
+    <div class="v-hero-in">
+      <img class="v-crest" src="cabin-art/crest-badge-clean.png?v=20261106-crest1" alt="学习小屋徽章">
+      <div>
+        <div class="v-kicker">LIORA · BILINGUAL LECTURES</div>
+        <h1>中英对照讲解</h1>
+        <p>三门课都按「每个知识点单独一行」配好中文与 English —— 能播的直接在页面里播，课程页面一键打开。</p>
+      </div>
+    </div>
+    <div class="v-actions">
+      <a class="v-btn v-btn-gold" href="./index.html?sharecode=L4NKT6REQ6#/">← 回学习小屋</a>
+      <a class="v-btn v-btn-ghost" href="daily-brief.html?sharecode=L4NKT6REQ6">每日简报</a>
+    </div>
+  </div>
+</header>
+
+<main class="v-main">
+  <div class="v-wrap">
+    <section class="v-intro">
+      <b>怎么用：</b>选课程 → 找 Unit → 点「▶ 播放中文」或「▶ 播放 English」。<b>每行一个知识点，固定一条中文 + 一条 English</b>，同一个 Unit 下可以有多行。
+      <ul>
+        <li><b>会计学 U1–U11（36 行，本次补齐）</b>：按你第二批表格逐行配课。中文是北大光华《会计学基础》等 B 站具体分集，<b>可直接播放</b>；U8–U11 的英文是同一合集的中英双版本，也能直接播。<b>U1–U7 的英文已换成 B 站 Tera Courses 财务会计系列（BV1Yy9zBPEBj，英文原声 + 中英字幕，国内可直接播）</b>，页面里点「播放 English」就会从对应的 P 集开始，不再依赖翻墙；YouTube 原链接保留作「原网址」备用。该系列是进阶完整课，与 U1–U7 属相近主题、并非逐讲一一对应，U2「会计假设」已用 P1 补上。U2「会计假设」原表英文写「暂缺」，现在用 B 站系列补上了，没有编造别的网址。</li>
+        <li><b>经济学 U1–U9（49 行）</b>：中文优先中文教师授课的 B 站分集，<b>能直接播</b>；英文以 Khan Academy 为主，是完整课程页面而非可内嵌播放器，点「打开英文课程 ↗」在新标签页看。中文分集号已逐个核验，并修正了「四种商品类型 / 负外部性」两处错位。</li>
+        <li><b>商业数学 U0–U10</b>（按 Term 1 / Term 2 分组）：中文是从 B 站合集里挑好的具体分集，可直接播放；英文是 <b>Khan Academy 课程目录页</b>，点「打开课程页 ↗」后按单元选课。本次把 U2 表格里写的「第 17–22 集」补成完整 6 集，并补上 U7 空缺的年金 / 现值专题。</li>
+        <li>课程周页的「🎬 中英视频」标签里也能直接看。<b>诚实边界：</b>B 站分集号已逐个用官方接口核验存在，但链接按知识点主题匹配，<b>音轨、逐条时间点跳转与嵌入播放尚未全部实测</b>，不标记为「全部验证通过」、也不代表官方知识点 100% 覆盖；U1–U7 属相同主题的中英文辅助课程，讲解内容和案例未必完全一致。</li>
+      </ul>
+    </section>
+
+    <div id="bvApp"></div>
+  </div>
+</main>
+
+<footer class="v-foot">
+  <div class="v-wrap">Liora 的学习小屋 · 中英对照讲解 · 2026-11-12　|　<a href="./index.html?sharecode=L4NKT6REQ6#/">打开网站</a></div>
+</footer>
+
+<script src="blocks/site-polish.js?v=20261111-readability-cf5b05b"></script>
+<script src="blocks/bilingual-video.js?v=20261112-bv7"></script>
+</body>
+</html>

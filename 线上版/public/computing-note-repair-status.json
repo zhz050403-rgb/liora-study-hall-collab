@@ -1,0 +1,147 @@
+{
+  "timestamp": "20261106-095502",
+  "beforeSha256": "1a504a42f7c19310ccf02807d464e0a365185104cbb32543d165c2c8c30c7fb8",
+  "afterSha256": "8ab5c312720593fbbab2fadccc2cc55121589e33c4c056ba1047151cf21066aa",
+  "weeks": 26,
+  "activities": 100,
+  "activitySourcePageReferences": 156,
+  "removedImageOccurrences": 494,
+  "additionalCompleteSourcePages": 23,
+  "results": [
+    {
+      "term": "term1",
+      "week": 1,
+      "activities": 1,
+      "removedOldImages": 19,
+      "sourcePageReferences": 11
+    },
+    {
+      "term": "term1",
+      "week": 2,
+      "activities": 2,
+      "removedOldImages": 9,
+      "sourcePageReferences": 2
+    },
+    {
+      "term": "term1",
+      "week": 3,
+      "activities": 3,
+      "removedOldImages": 33,
+      "sourcePageReferences": 8
+    },
+    {
+      "term": "term1",
+      "week": 4,
+      "activities": 3,
+      "removedOldImages": 34,
+      "sourcePageReferences": 11
+    },
+    {
+      "term": "term1",
+      "week": 5,
+      "activities": 3,
+      "removedOldImages": 30,
+      "sourcePageReferences": 6
+    },
+    {
+      "term": "term1",
+      "week": 6,
+      "activities": 9,
+      "removedOldImages": 45,
+      "sourcePageReferences": 16
+    },
+    {
+      "term": "term1",
+      "week": 8,
+      "activities": 6,
+      "removedOldImages": 38,
+      "sourcePageReferences": 8
+    },
+    {
+      "term": "term1",
+      "week": 9,
+      "activities": 8,
+      "removedOldImages": 34,
+      "sourcePageReferences": 12
+    },
+    {
+      "term": "term1",
+      "week": 10,
+      "activities": 7,
+      "removedOldImages": 30,
+      "sourcePageReferences": 9
+    },
+    {
+      "term": "term1",
+      "week": 11,
+      "activities": 6,
+      "removedOldImages": 22,
+      "sourcePageReferences": 7
+    },
+    {
+      "term": "term1",
+      "week": 12,
+      "activities": 8,
+      "removedOldImages": 29,
+      "sourcePageReferences": 11
+    },
+    {
+      "term": "term1",
+      "week": 13,
+      "activities": 7,
+      "removedOldImages": 36,
+      "sourcePageReferences": 8
+    },
+    {
+      "term": "term2",
+      "week": 1,
+      "activities": 7,
+      "removedOldImages": 31,
+      "sourcePageReferences": 7
+    },
+    {
+      "term": "term2",
+      "week": 2,
+      "activities": 6,
+      "removedOldImages": 22,
+      "sourcePageReferences": 6
+    },
+    {
+      "term": "term2",
+      "week": 3,
+      "activities": 6,
+      "removedOldImages": 17,
+      "sourcePageReferences": 8
+    },
+    {
+      "term": "term2",
+      "week": 4,
+      "activities": 8,
+      "removedOldImages": 11,
+      "sourcePageReferences": 8
+    },
+    {
+      "term": "term2",
+      "week": 5,
+      "activities": 6,
+      "removedOldImages": 31,
+      "sourcePageReferences": 11
+    },
+    {
+      "term": "term2",
+      "week": 8,
+      "activities": 1,
+      "removedOldImages": 8,
+      "sourcePageReferences": 3
+    },
+    {
+      "term": "term2",
+      "week": 9,
+      "activities": 3,
+      "removedOldImages": 15,
+      "sourcePageReferences": 4
+    }
+  ],
+  "protectedDataUnchanged": true,
+  "deployment": "Pending update/publish to existing WorkBuddy app."
+}

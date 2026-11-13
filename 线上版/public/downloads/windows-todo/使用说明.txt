@@ -1,0 +1,3 @@
+解压后双击 START-HERE.cmd。首次打开如出现登录页，请使用原学习小屋账号。
+待办小窗可保持打开，网站和小窗使用同一个线上账号的数据。
+如需随 Windows 自动打开，按 Win+R，输入 shell:startup，然后将 START-HERE.cmd 的快捷方式放进打开的文件夹。

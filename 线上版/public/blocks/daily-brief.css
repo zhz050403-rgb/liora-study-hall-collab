@@ -1,0 +1,255 @@
+/* ============================================================
+   每日简报 · 独立空白页的骨架样式（WorkBuddy 搭）
+   ------------------------------------------------------------
+   只放「能让骨架立起来」的结构样式：页头、单栏内容区、占位框。
+   视觉设计、配色、卡片、动效、内容排版交给 ChatGPT / Codex，
+   可以直接在本文件后面追加或覆盖；不要改 public/index.html。
+
+   本文件只服务 daily-brief.html；课外拓展页用独立的 extra-hub.css，
+   两边互不加载、互不影响，可以同时改。
+
+   改完请同步升 daily-brief.html 里的 ?v=（.css 是 immutable 长缓存）。
+   ============================================================ */
+:root{
+  --hub-navy:#0b2545; --hub-navy-2:#13315c;
+  --hub-paper:#f4f6f9; --hub-card:#ffffff;
+  --hub-ink:#16202b; --hub-ink-2:#3c4a5a; --hub-muted:#68788c;
+  --hub-line:#dde4ec; --hub-line-2:#e9edf3;
+  --hub-sans:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",sans-serif;
+  --hub-serif:Georgia,"Times New Roman","Songti SC","STSong","SimSun",serif;
+}
+
+.hub-body{
+  margin:0;
+  font-family:var(--hub-sans);
+  font-size:15px;
+  line-height:1.65;
+  color:var(--hub-ink);
+  background:var(--hub-paper);
+}
+
+/* 页头 / 导航 */
+.hub-header{background:#fff;border-bottom:1px solid var(--hub-line)}
+.hub-header-inner{
+  max-width:1200px;margin:0 auto;padding:12px 20px;
+  display:flex;align-items:center;gap:22px;flex-wrap:wrap;
+}
+.hub-brand{display:flex;flex-direction:column;line-height:1.2;text-decoration:none;white-space:nowrap}
+.hub-brand-t{font-family:var(--hub-serif);font-size:19px;font-weight:700;color:var(--hub-navy)}
+.hub-brand-s{font-size:11px;letter-spacing:1px;color:var(--hub-muted)}
+.hub-nav{display:flex;gap:4px;flex-wrap:wrap}
+.hub-nav a{
+  padding:7px 12px;border-radius:6px;font-size:13.5px;
+  color:var(--hub-ink-2);text-decoration:none;white-space:nowrap;
+}
+.hub-nav a:hover{background:var(--hub-paper);color:var(--hub-navy-2)}
+.hub-nav a.on{background:#e8eef6;color:var(--hub-navy);font-weight:700}
+
+/* 页面容器 */
+.hub-container{max-width:1200px;margin:0 auto;padding:28px 20px 48px}
+.hub-page-head{margin-bottom:22px}
+.hub-page-head h1{font-family:var(--hub-serif);font-size:28px;font-weight:700;color:var(--hub-navy)}
+.hub-page-sub{margin-top:6px;font-size:13px;color:var(--hub-muted)}
+
+/* 单栏：整页都是「每日简报」的内容区 */
+.hub-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:22px;align-items:start}
+.hub-slot{
+  min-width:0;background:var(--hub-card);
+  border:1px solid var(--hub-line);border-radius:10px;padding:18px;
+  box-shadow:0 1px 3px rgba(11,37,69,.06);
+}
+.hub-slot-head{
+  display:flex;align-items:baseline;justify-content:space-between;gap:10px;
+  border-bottom:2px solid var(--hub-navy);padding-bottom:10px;margin-bottom:14px;
+}
+.hub-slot-head h2{font-family:var(--hub-serif);font-size:20px;font-weight:700;color:var(--hub-navy)}
+.hub-slot-tag{font-size:11px;color:var(--hub-muted);white-space:nowrap}
+
+/* 占位内容框：虚线只用于标识「此处待接入」，做 UI 时可直接覆盖 */
+.hub-slot-body{
+  min-height:360px;
+  border:1px dashed var(--hub-line);border-radius:8px;
+  padding:16px;background:#fcfdff;
+  color:var(--hub-ink-2);font-size:14px;
+}
+
+.hub-foot{
+  margin-top:26px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+  font-size:12px;color:var(--hub-muted);
+}
+.hub-foot a{color:var(--hub-navy-2);text-decoration:none}
+
+@media(max-width:600px){
+  .hub-container{padding:18px 14px 36px}
+  .hub-slot{padding:14px}
+  .hub-page-head h1{font-size:23px}
+}
+
+.brief-banner {
+  min-height: clamp(148px, 13vw, 200px);
+  display: grid;
+  place-items: center;
+  box-sizing: border-box;
+  padding: 24px clamp(16px, 4vw, 64px);
+  text-align: center;
+  color: #f8f2e5;
+  background: #10233d linear-gradient(90deg,#10233d12,#10233da8 50%,#10233d12), url("../cabin-art/banner-daily-brief-painted.webp") center / cover no-repeat;
+  border-bottom: 1px solid #bca477;
+}
+.brief-banner h1 { margin: 0; font: 700 clamp(27px,3.2vw,48px)/1.2 Georgia,SimSun,serif; }
+.brief-banner p { margin: 8px auto 0; color: #d7e7f6; font: 400 clamp(13px, 1.2vw, 17px)/1.55 system-ui, sans-serif; }
+.brief-page { max-width: 1060px; margin-inline: auto; }
+.brief-edition .hub-slot-head { display: flex; flex-wrap: wrap; gap: 8px 20px; justify-content: space-between; }
+.brief-edition time { color: #4b6480; font-size: 14px; }
+.brief-empty { margin: 0; padding-block: 14px; color: #506a87; }
+.brief-actions { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,230px),1fr)); gap: 14px; margin-top: 20px; }
+.brief-actions a { padding: 16px; border: 1px solid #ccdded; border-radius: 10px; color: #173860; background: #f6faff; text-decoration: none; }
+.brief-actions a:hover { background: #e9f3fc; }
+.brief-actions a:focus-visible { outline: 2px solid #315f91; outline-offset: 3px; }
+.brief-actions span { display: block; margin-top: 4px; color: #4d6581; font-size: 14px; }
+
+.reading-card { padding: clamp(16px, 3vw, 30px); margin-block: 12px; background: #fff; border: 1px solid #dedbd4; border-radius: 14px; line-height: 1.75; overflow-wrap: anywhere; }
+.reading-card h3 { margin: .3rem 0 .7rem; font-size: clamp(1.2rem, 3vw, 1.65rem); }
+.reading-card small, .reading-card a, .reading-card summary, .reading-card dt { color: #235a65; font-weight: 700; }
+.reading-card summary { cursor: pointer; }
+.reading-card dd { margin: 0 0 .75rem; }
+.reading-card a { display: inline-block; padding-block: .35rem; }
+
+/* ============================================================
+   2026-11-07 · 统一导航 / 全宽栏目 / 报纸式折叠
+   追加式覆盖：上方保留 ChatGPT 的样式，这里只做统一与增强。
+   改完请同步升 daily-brief.html 里对应的 ?v=。
+   ============================================================ */
+[hidden]{display:none!important}
+
+/* 主站 index.html 内联的基础布局在此补齐（cabin-theme.css 只放视觉层） */
+.site-header{position:sticky;top:0;z-index:100}
+.header-inner{display:flex;align-items:center;box-sizing:border-box;width:100%;margin:0}
+.brand{display:flex;align-items:center;flex-shrink:0;text-decoration:none}
+.brand-crest{flex-shrink:0}
+.main-nav{display:flex;align-items:center}
+.main-nav a{text-decoration:none}
+.search-wrap{position:relative;flex-shrink:0;min-width:0}
+.search-box{display:flex;align-items:center;box-sizing:border-box}
+.search-box input{border:0;outline:0;background:transparent;width:100%;color:#1b3557;font-family:var(--hub-sans)}
+.search-box svg{flex-shrink:0;margin-right:6px}
+.hub-body{background:#f7fafd}
+
+/* 修正横幅：原 background 把颜色写在非最后一层，整条声明被浏览器丢弃，导致白底白字 */
+.brief-banner{
+  background:
+    linear-gradient(90deg, rgba(16,35,61,.12), rgba(16,35,61,.72) 50%, rgba(16,35,61,.12)),
+    url("../cabin-art/banner-daily-brief-painted.webp") center / cover no-repeat #10233d;
+  color:#fff;
+}
+.brief-banner h1{color:#fff;font:700 clamp(27px,3.2vw,48px)/1.2 var(--hub-serif);text-shadow:0 3px 14px rgba(5,20,40,.85)}
+.brief-banner p{color:#e2ecf8;text-shadow:0 2px 10px rgba(5,20,40,.85)}
+
+/* 栏目撑满屏幕，两侧只留窄边距 */
+.hub-container{box-sizing:border-box;max-width:none;width:100%;margin:0;padding:26px clamp(16px,2vw,28px) 56px}
+.brief-page{max-width:none;margin-inline:0}
+.hub-slot{max-width:none;width:100%;box-sizing:border-box;padding:clamp(16px,2vw,28px)}
+.hub-slot-body{max-width:none;min-height:0;padding:0;border:0;background:transparent}
+.brief-banner{width:100%}
+
+/* 本期工具条 */
+.brief-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:0 0 18px;padding-bottom:14px;border-bottom:1px solid #d8e4f2}
+.brief-count{font:400 14px/1.5 var(--hub-sans);color:#7b8ea8}
+.brief-fold-all{border:1px solid #173860;background:#173860;color:#fff;border-radius:10px;padding:9px 18px;font:600 14px/1.2 var(--hub-sans);cursor:pointer;transition:.18s}
+.brief-fold-all:hover{background:#254f80;border-color:#254f80}
+.brief-fold-all:focus-visible{outline:3px solid #c9a55c;outline-offset:2px}
+
+/* Article index */
+.brief-page { max-width: 1080px; margin-inline: auto; }
+.brief-page .brief-edition { padding: 0; border: 0; background: transparent; box-shadow: none; }
+.brief-edition .hub-slot-head { flex-wrap: wrap; gap: 8px 20px; }
+.brief-toolbar { margin-bottom: 0; }
+.brief-fold-all { color: #173860; background: transparent; border-color: #bccde1; border-radius: 5px; }
+.brief-fold-all:hover { color: #173860; background: #eaf2fb; }
+.brief-page .brief-edition .reading-card {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-bottom: 1px solid #cfdbeb;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none !important;
+}
+.reading-card > summary {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas: "meta hint" "title hint";
+  align-items: center;
+  gap: 4px 16px;
+  padding: 15px 4px;
+  list-style: none;
+  cursor: pointer;
+}
+.reading-card > summary::-webkit-details-marker { display: none; }
+.reading-card > summary::marker { content: ""; }
+.reading-card > summary:hover, .reading-card[open] > summary { background: #eaf2fb; }
+.reading-card > summary:focus-visible { outline: 2px solid #315f91; outline-offset: -2px; }
+.rc-no { display: none; }
+.rc-meta { grid-area: meta; display: flex; flex-wrap: wrap; gap: 2px 12px; font-size: 13px; color: #536981; }
+.rc-cat { color: #31536f; font-weight: 600; }
+.rc-title { grid-area: title; font: 700 clamp(17px,1.5vw,22px)/1.4 var(--hub-serif); color: #122e52; overflow-wrap: anywhere; }
+.rc-hint { grid-area: hint; color: #31536f; font-size: 13px; white-space: nowrap; }
+.rc-hint::after { content: " ▾"; }
+.reading-card[open] .rc-hint::after { content: " ▴"; }
+.rc-body{padding:18px clamp(16px,2vw,28px) 22px;border-top:1px solid #e8eff7}
+.rc-body dl{display:grid;grid-template-columns:96px minmax(0,1fr);gap:10px 18px;margin:0 0 12px}
+.rc-body dt{color:#235a65;font-weight:700}
+.rc-body dd{margin:0;color:#465e7b;overflow-wrap:anywhere}
+.rc-body a{display:inline-block;color:#1c4375;font-weight:600;padding-block:.35rem;text-decoration:none;border-bottom:1px solid #c9a55c}
+.rc-body a:hover{color:#122e52}
+.brief-empty{margin:0;padding:28px 16px;text-align:center;color:#506a87;font-size:15px}
+
+@media(max-width:700px){
+  .rc-body dl{grid-template-columns:1fr;gap:3px}
+  .header-inner{gap:8px}
+}
+
+.brief-banner { position: relative; isolation: isolate; overflow: hidden; background: #10233d; }
+.brief-banner-art { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
+.brief-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(90deg, #10233d20, #10233db8 50%, #10233d20);
+}
+
+/* ============================================================
+   2026-11-11 · 头部响应式修复（390/768/1280/1536 真实视口验收发现）
+   ① 上方无媒体限定的 .main-nav{display:flex} 覆盖了 cabin-theme.css 在
+      ≤1024px 的折叠规则，导致移动菜单常驻展开（浮层高约 497px），
+      遮住「展开全部 / 分类筛选」等控件。
+   ② cloud-sync.js 注入的 .cloud-acct 带 margin-left:auto;flex-shrink:0，
+      与本页偏宽的导航(669px)+搜索(238px)相加，把 390px 顶出 82px、
+      1280px 顶出 29px，页面出现水平滚动条。
+   仅作用于 daily-brief.html，不改主站 index.html。
+   改本文件请同步升 daily-brief.html 的 daily-brief.css?v=。
+   ============================================================ */
+@media(max-width:1024px){
+  .site-header:not(.nav-open) .main-nav{display:none}
+  .site-header.nav-open .main-nav{display:flex}
+  .site-header .header-inner{position:relative}
+}
+@media(max-width:1400px){
+  .site-header .header-inner{gap:10px;padding-inline:16px}
+  .site-header .main-nav a{padding-inline:9px;font-size:15px}
+  .site-header .search-wrap{flex:0 1 auto;min-width:0;margin-left:auto}
+  .search-box,.search-box:focus-within{width:min(100%,200px)}
+  .header-inner > .cloud-acct{margin-left:0;flex-shrink:1;min-width:0}
+}
+@media(max-width:640px){
+  .site-header .header-inner{flex-wrap:wrap;row-gap:6px;padding:8px 12px}
+  .site-header .brand{flex:0 1 auto;min-width:0}
+  .site-header .brand .t2{display:none}
+  .site-header .search-wrap{flex:1 1 80px;min-width:70px;margin-left:0}
+  .search-box,.search-box:focus-within{width:100%}
+  .site-header .nav-toggle{flex:0 0 auto}
+  .header-inner > .cloud-acct{order:5;flex:0 0 100%;justify-content:flex-end;margin-left:0}
+  .cloud-acct a{white-space:nowrap}
+}

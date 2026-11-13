@@ -1,0 +1,649 @@
+{
+  "accounting": {
+    "#/c/accounting/term1/1": {
+      "title": "Week 1 · Unit 1 会计导论 与 Unit 2 会计惯例",
+      "field": "graphicHtml",
+      "sha256": "deb19218cb8ac49d2072c6d35b12fa0ac63a7c6f133603de63509966e7ea3712",
+      "tutorialSha256": "44e6fd2ee87348c5e1b9b087b8ed33550ca587921e03529721c84db2bcefd937"
+    },
+    "#/c/accounting/term1/2": {
+      "title": "Week 2 · Unit 3 复式记账与交易分析",
+      "field": "graphicHtml",
+      "sha256": "84b35a93338b05e6e0c3298793c252e1276b15d190ab5003cfcfb390ec17829c",
+      "tutorialSha256": "d719427788f08af8214f3ea3a2f7c1799612ccf2b5c4806b72808fe2ef33cbf4"
+    },
+    "#/c/accounting/term1/3": {
+      "title": "Week 3 · Unit 4 日记账分录",
+      "field": "graphicHtml",
+      "sha256": "3e0a5a8b72b00372421a793d62c5605040b5280d04141b2305e908f26a12e72a",
+      "tutorialSha256": "5a48e4161caa9c63fdcbc34dc53290c9f4af6653267761395e1325b37c91643d"
+    },
+    "#/c/accounting/term1/4": {
+      "title": "Week 4 · Unit 5 调整分录",
+      "field": "graphicHtml",
+      "sha256": "fe7fb76d44a4b45415063172cc3e976ee5bde675bcf586236b982db6d4c96aba",
+      "tutorialSha256": "34030a19fa2a476ceabfd6557feaec844560b2d762ebafe8da08d3988c7ee62a"
+    },
+    "#/c/accounting/term1/5": {
+      "title": "Week 5 · Unit 6 分类账 T 型账户",
+      "field": "graphicHtml",
+      "sha256": "998fae9dcbe8c9dfa3c6149954d1a4c4f47da9314915903a7b00f752ac8563c1",
+      "tutorialSha256": "604cb804cd4d2a84465bead0c6860d00dc7f003f431009d84e52a68e7820fae7"
+    },
+    "#/c/accounting/term1/6": {
+      "title": "Week 6 · Unit 7 多栏式账户与试算平衡表",
+      "field": "graphicHtml",
+      "sha256": "f9defe0bc8962d2b888b1ed381028ef0a1004c9214e8b6ba765d4edd2ffd128d",
+      "tutorialSha256": "054de39746ad93efe4f6847d76cca077fd96d6b986a2955225cc0ccae044cb73"
+    },
+    "#/c/accounting/term1/7": {
+      "title": "Week 7 · 期中复习与巩固",
+      "field": "graphicHtml",
+      "sha256": "d267b27c3442e489af5565faa1c47f096755c664be6f48d570ae9353c48aec55",
+      "tutorialSha256": "ef3dbafb7b22e8f7a95c0a1e6eb71c0b037957fd3488fdc165248aec598a92f1"
+    },
+    "#/c/accounting/term1/8": {
+      "title": "Week 8 · Unit 8 利润表与 Excel 入门",
+      "field": "graphicHtml",
+      "sha256": "344a73afdf89e9ac5ef7c8e91ed9aec185e6b5ec442c32ce8b0e49246b752203",
+      "tutorialSha256": "4582f5e38b322edc818c96e9bfa76cb507d2f9fb509cb19ae248c5be4df21ea2"
+    },
+    "#/c/accounting/term1/9": {
+      "title": "Week 9 · Unit 9 资产负债表",
+      "field": "graphicHtml",
+      "sha256": "a7b034002f0f36950635b744a29c190403223867f9dda56f3d95c33623064683",
+      "tutorialSha256": "8ecd9fd125eeebf56637e58547cbe5052eaa6b28706547a84207c2174ee6be1f"
+    },
+    "#/c/accounting/term1/10": {
+      "title": "Week 10 · Unit 10 财务报表分析",
+      "field": "graphicHtml",
+      "sha256": "9410ec5666f108488a94758cae9e4d6067854033c145d2addb7ed1872beeb3c2",
+      "tutorialSha256": "fcaaf4b35d6d2250199a0728b17dbc0df75c7e78fc34d62c3d6a04b2ba6551c2"
+    },
+    "#/c/accounting/term1/11": {
+      "title": "Week 11 · Unit 10 现金流量表",
+      "field": "graphicHtml",
+      "sha256": "187e83d61bcc4240014510db90b88a52d2fe5fbd09d2be26afc6efcd1dfbc875",
+      "tutorialSha256": "4d91ff9fe27ddefb4544998c900d1bea4d7084770961f3ce83d20bae49f96e01"
+    },
+    "#/c/accounting/term1/12": {
+      "title": "Week 12 · Revision 总复习与考试结构",
+      "field": "graphicHtml",
+      "sha256": "645842df278fcee2870bbadd649b0d0bf926661a35b95503364c02a1079a72d4",
+      "tutorialSha256": "761b3df2a872c5baa3aa4d49bb82c12f0b5e34fbc61246cc4abed828f9bfd1d0"
+    },
+    "#/c/accounting/term1/13": {
+      "title": "Week 13 · Sample Exam 模拟考试",
+      "field": "graphicHtml",
+      "sha256": "2adf51f2ca44e7731399200ec6ca5a54893df6b2edd882dfde1cfda1b3a88c17",
+      "tutorialSha256": "9a5e3fcfd7243dcacad43983a72e8bf90260ef1c103a7c9b719672d71681c849"
+    }
+  },
+  "economics": {
+    "#/c/economics/term1/1": {
+      "title": "Week 1 · Unit 0 经济学导航 + Unit 1 Introduction to Economics 经济学导论",
+      "field": "graphicHtml",
+      "sha256": "e9900a74046d4794f059e51d57cb2b7e40f44eeb959828dd635da1bdd9a0f6c8",
+      "tutorialSha256": "04c970688a181fb51b7855598f4c64a99c91e499fb7487989510aa0b1b165c04"
+    },
+    "#/c/economics/term1/2": {
+      "title": "Week 2 · Unit 1 Tutorial + Unit 2 Production and Technology 生产与技术",
+      "field": "graphicHtml",
+      "sha256": "1f44b19d4c85f62d560cc424d09017a820b46d3b109c27bc273bdacb5fa0265c",
+      "tutorialSha256": "2a84c98a4f882dcb01b45b86324f6f88e59725bce6fd605a0050376838444e3d"
+    },
+    "#/c/economics/term1/3": {
+      "title": "Week 3 · Unit 2 Tutorial + Unit 3 Demand & Supply 需求与供给",
+      "field": "graphicHtml",
+      "sha256": "18f860ae1e30edcf255519e52d95f122dfa498396b917d7c03e11fb82acad68b",
+      "tutorialSha256": "ad59a410c03e7586a8323acdc708c00a2dfe61c8f89d8ccbcc69d4c8899ec971"
+    },
+    "#/c/economics/term1/4": {
+      "title": "Week 4 · Unit 4 Market Successes and Failures（市场成功与失灵）",
+      "field": "graphicHtml",
+      "sha256": "adcdc0d0d4d9545d7352c1228ba5e9fa9ef347fbd98407a46381e73ad8aad7ad",
+      "tutorialSha256": "c3a4a8e4b47ec313da960cf3b0dc7e59ca17e0dd635a1f576fc9432554104fe5"
+    },
+    "#/c/economics/term1/5": {
+      "title": "Week 5 · Unit 5 Pricing and income of the firm and its customers",
+      "field": "graphicHtml",
+      "sha256": "a7a98b35fd00a1c7dee39f00abd6eb1091bd300940bb5e7f93b50a2e1fd186d4",
+      "tutorialSha256": "c556ee5a982740816267803dc273738abb2321b71f9e999ea79103438d12c991"
+    },
+    "#/c/economics/term2/1": {
+      "title": "Week 1 · Unit 0 The Circular Flow Model 循环流量模型 + Unit 1 Economic Growth and GDP 经济增长与GDP",
+      "field": "graphicHtml",
+      "sha256": "2752a9f0ccf363e27ff80999a3d68b912ce4ae34a27dae7a1c197bb69326b5df",
+      "tutorialSha256": "2fa2611bb42750de52aaa6054a04ce7d6615a096c2ab9a9d8c3c521090644a18"
+    },
+    "#/c/economics/term2/2": {
+      "title": "Week 2 · Unit 1 Tutorial + Unit 2 Inflation 通货膨胀",
+      "field": "graphicHtml",
+      "sha256": "1f08d122aecb42529ce20a60e05f2405a5429c7d77f969cb561d9c6eb7cfad92",
+      "tutorialSha256": "5ca342557a43aae2c1270ed0029ecfed6e271e3981a3bf249bc275ed574946bc"
+    },
+    "#/c/economics/term2/3": {
+      "title": "Week 3 · Unit 2 Tutorial + Unit 3 Unemployment 失业",
+      "field": "graphicHtml",
+      "sha256": "c997363c04468689082b3204a9730d28744da1eba979c7191ac0c45eaeda7f12",
+      "tutorialSha256": "c7cbb4d15fae27da475e3cdcdecab1ec8301ccda1c6405f23b68a4ac186c2368"
+    },
+    "#/c/economics/term2/4": {
+      "title": "Week 4 · Unit 3 Tutorial + Unit 4 Aggregate Demand & Supply 总需求与总供给",
+      "field": "graphicHtml",
+      "sha256": "48985210190af9a427fad64717f1f149eace39a8761104cd2ed2cd88bec5619a",
+      "tutorialSha256": "e8bb56df339f491a2d7c722116264282ebdb500526457b53bd4cf3f12766b9b9"
+    },
+    "#/c/economics/term2/5": {
+      "title": "Week 5 · Unit 4 Tutorial + Unit 5 International Economics: Trade and Protection 国际贸易与保护",
+      "field": "graphicHtml",
+      "sha256": "39ca68c0bcfb7428144347ecff61323bb5c08e6bbc3f3cae54faef64cffa9047",
+      "tutorialSha256": "2753945bc8d189d2774cd0dcbff9811ff2a8609d836df4379610e882b4bd31a7"
+    },
+    "#/c/economics/term2/6": {
+      "title": "Week 6 · Unit 5 Tutorial + Unit 6 International Economics: Exchange Rates 汇率",
+      "field": "graphicHtml",
+      "sha256": "0169858eae325bda07357dab8fa8c6c9ded10f6dfb5d770e2d1a2b572e225655",
+      "tutorialSha256": "27a0b37136be224e6bd11798e44a2a1ea317370681080cfc150562fbdcdc5dd8"
+    },
+    "#/c/economics/term2/7": {
+      "title": "Week 7 · 复习与巩固",
+      "field": "graphicHtml",
+      "sha256": "77c32f7155e9c54780259cfc2df329f62aa230a58c9bc7d844de5774288f74e4",
+      "tutorialSha256": "5f0d85093fdc187982ee2616796527b32dac4c98c91e0e765a72d0cd1c6741cf"
+    },
+    "#/c/economics/term2/8": {
+      "title": "Week 8 · Unit 6 Tutorial + Unit 7 The Financial Sector 金融部门",
+      "field": "graphicHtml",
+      "sha256": "ec22cbaf18ec28e3ac701c12ebf3f41f9d1b224c53d10f28ca9459728fb972b5",
+      "tutorialSha256": "ab178a91889570f1a7d38599fe63e6519432b79cc17e312113ad6e0f68bb8e0d"
+    },
+    "#/c/economics/term2/9": {
+      "title": "Week 9 · Unit 7 Tutorial + Unit 8 Monetary Policy 货币政策",
+      "field": "graphicHtml",
+      "sha256": "9b4bed282aa6a9b51a966b8a35e760ef0b7746bc8f6d311b9f1128a57e4f7809",
+      "tutorialSha256": "c6e527f5a0f5da664e0306486fa21fc5bb89d440292b7015eeb67756c833ca78"
+    },
+    "#/c/economics/term2/10": {
+      "title": "Week 10 · Unit 8 Tutorial + Unit 9 The Government Budget and Fiscal Policy 政府预算与财政政策",
+      "field": "graphicHtml",
+      "sha256": "bf993f0945162d31504b7b504a82ac039f3a5013f2dbde11aa0fea84ca01d443",
+      "tutorialSha256": "ab20b00feeadf7a9cc76bf4376fd2af4ee2aef1a1c54389fb141c6215f2a82f8"
+    },
+    "#/c/economics/term2/11": {
+      "title": "Week 11 · Unit 9 Tutorial + Unit 10 Interpretation of Economic Statistics 经济统计解读",
+      "field": "graphicHtml",
+      "sha256": "03bc51e1175462bfcdf6e4b96b9c2a1251115a6d85c667422efaada79c1647fb",
+      "tutorialSha256": "a9ac21dfd2715b0c79dd738a5ea90a2cd14fabfad5750e2b1ae5af3a68de563e"
+    },
+    "#/c/economics/term2/12": {
+      "title": "Week 12 · Unit 10 Tutorial + Unit 11 Using Economic Policy to Influence the Economy 运用经济政策",
+      "field": "graphicHtml",
+      "sha256": "b1631085c5ba786922ebfb848fd3d8e9bd99b30cae261aea229973ec3c4f76c0",
+      "tutorialSha256": "f88acba6fc87edcc92c51be30404a5627f08d5bb7684ba66d0a1702cdaf40616"
+    },
+    "#/c/economics/term2/13": {
+      "title": "Week 13 · Unit 11 Tutorial + 考试复习",
+      "field": "graphicHtml",
+      "sha256": "575693203259f21040fddc10bf1252ec465f543c46ff3d8eb43aec8ce1669e8d",
+      "tutorialSha256": "ef22746cd14f12022d51da1a00493cda0993cd658671b02628e2029957bb13b3"
+    },
+    "#/c/economics/term1x/5": {
+      "title": "Unit 5 · Elasticity 弹性",
+      "field": "graphicHtml",
+      "sha256": "323e1b81f10f8038106610485910ebbb3f0963c28ba62e315301365713c07bda",
+      "tutorialSha256": "4e965782b3ffc09b14a9229de439732a09194a9a15964a504190fef5e20b9cf7"
+    },
+    "#/c/economics/term1x/6": {
+      "title": "Unit 6 · Economics of the Firm 1 Short run 厂商短期生产与成本",
+      "field": "graphicHtml",
+      "sha256": "979bada44243f903854ac3e08f6cda06f55c98be5c210f6ba73a161c368ba59a",
+      "tutorialSha256": "4e965782b3ffc09b14a9229de439732a09194a9a15964a504190fef5e20b9cf7"
+    },
+    "#/c/economics/term1x/7": {
+      "title": "Challenge Week · Global Warming 小组展示（15%）",
+      "field": "graphicHtml",
+      "sha256": "16e69ea15109adaca463df83ab785b12651f227895c8777ef39258fa457121e3",
+      "tutorialSha256": "4e965782b3ffc09b14a9229de439732a09194a9a15964a504190fef5e20b9cf7"
+    },
+    "#/c/economics/term1x/8": {
+      "title": "Unit 7 · Economics of the Firm 2 Long run 厂商长期规模与成本",
+      "field": "graphicHtml",
+      "sha256": "dd7e2a8c8a4ad4e63dcbfb72f462f2c991b892f25665b641907b8d2c86cbc36f",
+      "tutorialSha256": "4e965782b3ffc09b14a9229de439732a09194a9a15964a504190fef5e20b9cf7"
+    },
+    "#/c/economics/term1x/9": {
+      "title": "Unit 8 · Perfect Competition 完全竞争",
+      "field": "graphicHtml",
+      "sha256": "6a5240406df4c43672aa07cc96530007988f794cf3b91273760cbba21ef307f3",
+      "tutorialSha256": "4e965782b3ffc09b14a9229de439732a09194a9a15964a504190fef5e20b9cf7"
+    },
+    "#/c/economics/term1x/10": {
+      "title": "Unit 9 · Monopoly 垄断",
+      "field": "graphicHtml",
+      "sha256": "034b7b6633501f9d79a2ddfb50aef9e726932baf27fc4ef3dddadec0baf79b73",
+      "tutorialSha256": "4e965782b3ffc09b14a9229de439732a09194a9a15964a504190fef5e20b9cf7"
+    },
+    "#/c/economics/term1x/11": {
+      "title": "Unit 10 · Monopolistic Competition & Oligopoly 垄断竞争与寡头",
+      "field": "graphicHtml",
+      "sha256": "bfa880b62abc42363d5c9dfb74f8c9fa014070e0029dbb2932ebe667d06dfb7a",
+      "tutorialSha256": "4e965782b3ffc09b14a9229de439732a09194a9a15964a504190fef5e20b9cf7"
+    },
+    "#/c/economics/term1x/12": {
+      "title": "Unit 11 · Revision & Sample Final 复习与样题",
+      "field": "graphicHtml",
+      "sha256": "c708fc11111cfb5523d46acc954b8ed2ef4bb907078e480a6c0b70d634ada20c",
+      "tutorialSha256": "c15f6fa48f5c7fe2e0dfac5ff5642ac7429769d2555678f78685368a20698530"
+    }
+  },
+  "management": null,
+  "mathematics": {
+    "#/c/mathematics/term1/1": {
+      "title": "Basic Algebra, Surds & Equations · 基础代数、根式与方程",
+      "field": "graphicHtml",
+      "sha256": "4c730b52c21fc3a2e0f6bee97067b78c4fcc890ccc4bb4e756342cbbfbd585a6",
+      "tutorialSha256": "fb982c82f4336170a7083ac93f4fb8308d90df94e2857afd10fbd8d045cf2ece"
+    },
+    "#/c/mathematics/term1/2": {
+      "title": "Coordinate Geometry & Functions · 坐标几何与函数",
+      "field": "graphicHtml",
+      "sha256": "4d9f9777eaf2bfb3c8fa786e0c8d14ae55557f811723f8c87bd54df699a3f7cc",
+      "tutorialSha256": "39419b409dfc7b863543c977828375033c2b0c0022939e22df78fe8509403557"
+    },
+    "#/c/mathematics/term1/3": {
+      "title": "Parabolas, Hyperbolas & Absolute Value · 抛物线、双曲线与绝对值图像",
+      "field": "graphicHtml",
+      "sha256": "1ee20c600fc8b055407d3dd01d27a14110de72d690b304d32bfc794f43ee606b",
+      "tutorialSha256": "3ea4383f6785a4aa846c70f0ba7746eedc282009e34961d29ad757450bba8f39"
+    },
+    "#/c/mathematics/term1/4": {
+      "title": "Inverse Functions, Logarithms & Exponentials · 反函数、对数与指数",
+      "field": "graphicHtml",
+      "sha256": "481f3f2458a1bc6264be7ed0a67f6234a49733de588415661ceb7aa06a5fb2ea",
+      "tutorialSha256": "730ff2ebc5abf419e1bb7ab711fe6873a000203b0fb76980646751e08284f681"
+    },
+    "#/c/mathematics/term1/5": {
+      "title": "Logarithmic Graphs, Domain & Piecemeal Functions · 对数图像、定义域与分段函数",
+      "field": "graphicHtml",
+      "sha256": "c073aa604ef5b7a2ec797d63b0b4cffdecc0166c07e386f3ab05171d41364273",
+      "tutorialSha256": "b8d51b5b4eb457881c826e9bd8f37aae42c163604401b9a9605b9e1839d29291"
+    },
+    "#/c/mathematics/term1/6": {
+      "title": "Applications of Functions & Graphs · 函数与图像应用",
+      "field": "graphicHtml",
+      "sha256": "a8f440098fd82717f70ed987c20db4ee0e3538eadd391a6b5401babcd127e869",
+      "tutorialSha256": "f5ae6ac93da6e1a6fb6f34239873d22bfee5191ea20bf76a0cc893fcbf0453da"
+    },
+    "#/c/mathematics/term1/7": {
+      "title": "Introduction to Calculus & Differentiation · 微积分入门与求导",
+      "field": "graphicHtml",
+      "sha256": "0637835437a57d1a8842adc219acb02e35ee6fbda2b669adc503926f0ed19147",
+      "tutorialSha256": "db4f36896a7725fcc09a26f24f8b289f30426dfdb98425aabd2574fac4d35c29"
+    },
+    "#/c/mathematics/term1/8": {
+      "title": "Tangents, Normals & Derivative Signs · 切线、法线与导数符号",
+      "field": "graphicHtml",
+      "sha256": "700f3e007c736af429662e6cf186a0f9fb6f811ec445c9af6f7775beb6323c74",
+      "tutorialSha256": "9ecd89055886fa57f763cb665b94047ac47a6631e96474c33d00ae86d2e1b44d"
+    },
+    "#/c/mathematics/term1/9": {
+      "title": "Curve Sketching, Optimisation & Indefinite Integrals · 曲线作图、最优化与不定积分",
+      "field": "graphicHtml",
+      "sha256": "d7c176847bd5256b125a8226713775965bffe2ef8d3608aeff2fba4e4c14c22f",
+      "tutorialSha256": "ca1c68e6816b808ff4d229230bc0554b581455df571f40762e53bebf2eb4e4f3"
+    },
+    "#/c/mathematics/term1/10": {
+      "title": "Definite Integrals & Areas · 定积分与面积",
+      "field": "graphicHtml",
+      "sha256": "ddf06affee350a9a65744e0ad0fee62f7d3b5d70e57afae5d6e121b85038080d",
+      "tutorialSha256": "7fcabcd005e93c78b3d3cd985a81220ea0d9fb97dce042dea89bf073bc35604a"
+    },
+    "#/c/mathematics/term1/11": {
+      "title": "Calculus of Exponential & Logarithmic Functions · 指数对数函数微积分",
+      "field": "graphicHtml",
+      "sha256": "d62e85d84f6e6730cbf8550508001fd01956e4f8cd513947fed0609689e0a7e6",
+      "tutorialSha256": "59943ff77740bfd0340b2d1be670c7091a10c8949d3c3c417385225f45e55306"
+    },
+    "#/c/mathematics/term1/12": {
+      "title": "Logarithmic Integration & Exam Revision · 对数积分与考试复习",
+      "field": "graphicHtml",
+      "sha256": "dcb4f382d0822f98e283ec6444c2c85e6d73c34666035959a6aef3200796aa3d",
+      "tutorialSha256": "67b9fb399e48ce8bdb4c699aa15aee5f69b564837b4d6f6ed5078ecc25adef92"
+    },
+    "#/c/mathematics/term1/13": {
+      "title": "Week 13 · 考前综合复习",
+      "field": "graphicHtml",
+      "sha256": "3f43fa571b9256bfa0eb35ae9b0806a462f04c4545d99d294e580e9ae6a5b2a7",
+      "tutorialSha256": "7ecdfbfbe7f25e320d0ed4aa7b8f611d0dbb6d86a98996cbfc30288607ddb959"
+    },
+    "#/c/mathematics/term2/1": {
+      "title": "Sequences, Series & Progressions · 数列、级数与等差/等比数列",
+      "field": "graphicHtml",
+      "sha256": "d8217f0b285cb5c296c895c4562e3bba1f490304ea2fef1742f038de6367e455",
+      "tutorialSha256": "7fb8b4e2ab076015182adc71a50fa494c6cf850ff4b1e6098a7cd0bf69ffd6f2"
+    },
+    "#/c/mathematics/term2/2": {
+      "title": "Infinite Series & Interest · 无穷等比级数与利息",
+      "field": "graphicHtml",
+      "sha256": "0bd6fdb6465451dc8f0317696be1be6e3708f7743b6d4e7995409faf858ec24a",
+      "tutorialSha256": "06de9244dbb2de6ccb9974cd2dfc35e98dc28f4e6a2abbf051ef545eb4eb0664"
+    },
+    "#/c/mathematics/term2/3": {
+      "title": "Present Value & Mixed Finance · 现值与综合金融数学",
+      "field": "graphicHtml",
+      "sha256": "84bccad2f2070ffb98fbf2b0515064da2080684a84321638606f60fa52cb3d82",
+      "tutorialSha256": "7dbf806e5104e4cb9412b620130b92d44536429fcd1ff715ef35d193daef39ba"
+    },
+    "#/c/mathematics/term2/4": {
+      "title": "Counting & Arrangements · 计数原理与排列组合",
+      "field": "graphicHtml",
+      "sha256": "8652f36262058be57225d99fabac431ca973f31b54353582e0eaa2cc249cf713",
+      "tutorialSha256": "a02738a96b1d6860792068657e1585c9235a3b6bce24c7b4786b0d4aea8f1d7d"
+    },
+    "#/c/mathematics/term2/5": {
+      "title": "Probability Basics · 概率基础",
+      "field": "graphicHtml",
+      "sha256": "a5bc92bcbf976e862d671011782779f770265c4ae092926768ca8c3114d47ac4",
+      "tutorialSha256": "71404ab78014662b67975faa9ef1c0497da332e9f82a960bf86a9018f7087d5b"
+    },
+    "#/c/mathematics/term2/6": {
+      "title": "Conditional Probability & Review · 条件概率与单元复习",
+      "field": "graphicHtml",
+      "sha256": "ca4b3b63417b9d3e89182ca04e27bbdce38c4c7d293df396a6067f30d3c21427",
+      "tutorialSha256": "7ea29b746f832f6d150413aa397bbdac04475ea5cf2994630f6639c5c0e823a8"
+    },
+    "#/c/mathematics/term2/7": {
+      "title": "Descriptive Statistics I · 描述统计（数据类型与集中趋势）",
+      "field": "graphicHtml",
+      "sha256": "3504f9cb9c86cfe9a89a6c87d35351822751c8f10e2ca7cb2c13dcd390b1dd35",
+      "tutorialSha256": "c90a27448de5c75dbb31d91e0c06c61acff4b3e424940901676da77ee1103cb0"
+    },
+    "#/c/mathematics/term2/8": {
+      "title": "Descriptive Statistics II · 描述统计（离散程度与应用）",
+      "field": "graphicHtml",
+      "sha256": "4fa1895c0e6baaeb2d80f4be0e93d7c082e7c7c04a4c5a753b2e4308513d553d",
+      "tutorialSha256": "fd8a54b59b6776e592eb0e5a741c65dcda2317301848fecdc7e5cae8ae7fe6c6"
+    },
+    "#/c/mathematics/term2/9": {
+      "title": "Bivariate Data & Regression · 双变量数据与回归",
+      "field": "graphicHtml",
+      "sha256": "5059833781f6d35cb54d25a84e00ab51ea1fd76ab89879a6488e5ca7312c4323",
+      "tutorialSha256": "ff1da6633d08fa3c4274240a57ebb3f1cbc955829375a2fe0cc939455caef46d"
+    },
+    "#/c/mathematics/term2/10": {
+      "title": "Discrete Random Variables · 离散型随机变量",
+      "field": "graphicHtml",
+      "sha256": "db8ec758871b89a5c13a66675d4da4e6e8a3e2311b988ecbb80f4faee4034404",
+      "tutorialSha256": "66528d8747966747fbc9afcb1bb8ff4f7c06260bae02eb965026183dfa3810c2"
+    },
+    "#/c/mathematics/term2/11": {
+      "title": "Binomial Distribution · 二项分布",
+      "field": "graphicHtml",
+      "sha256": "8bd3109a092ba76c6735e80614f34ad3ecbc9fb691b708bde83967a4882ad0a8",
+      "tutorialSha256": "a03b9dd644170bf362342f3a8050995a6e5e09af29d966ff8b402318efb3e5eb"
+    },
+    "#/c/mathematics/term2/12": {
+      "title": "Continuous Random Variables · 连续型随机变量",
+      "field": "graphicHtml",
+      "sha256": "c0439489554bd6a4bc19b8cfba2fe510f02dc74456b282cd60e29d39d65cc33f",
+      "tutorialSha256": "b2705ab8f07baa1ea62ed0df867878c0c1463d1d27c8d7277ce98dd567713f2f"
+    },
+    "#/c/mathematics/term2/13": {
+      "title": "Normal Distribution · 正态分布",
+      "field": "graphicHtml",
+      "sha256": "f298381a59989cbb27cf0681a9f9f6c6433d7a9c128831e01c6dd1e29bde0810",
+      "tutorialSha256": "f8ca5f99fccc38eb0b8e5ce0cf757f1f94a60ca68ba0d27e61c12b73b12c2d4a"
+    },
+    "#/c/mathematics/term2/14": {
+      "title": "Exam Revision · 考试复习",
+      "field": "graphicHtml",
+      "sha256": "294a5415f5eb69ac17bdb38e10d5505b0f3eef2610a99bfddf3942f656666bfa",
+      "tutorialSha256": "3025b1bc1080a4379b1a2278055eebf7b261cca3ad18b4ad986847a1d06d5a81"
+    }
+  },
+  "english": {
+    "#/c/english/term1/1": {
+      "title": "Week 1 · Speaking: Studying in a Foreign Country（海外留学）",
+      "field": "graphicHtml",
+      "sha256": "7db9961073c0090595135869a17b2f898c610af8b2572fc2c9c8f14ce58efb3a",
+      "tutorialSha256": null
+    },
+    "#/c/english/term1/2": {
+      "title": "Week 2 · Listening: Studying in a Foreign Country（因果表达）",
+      "field": "graphicHtml",
+      "sha256": "4f4003853c0dd9146efca0e873d4f0b3c207f8ddeb71a5d66d5fd7e844bb10ea",
+      "tutorialSha256": null
+    },
+    "#/c/english/term1/3": {
+      "title": "Week 3 · Speaking: Working in Groups（小组合作）",
+      "field": "graphicHtml",
+      "sha256": "f0e7888b140170ec7baa45b38f72c300ce9a221161d475d8d098fb6016147041",
+      "tutorialSha256": null
+    },
+    "#/c/english/term1/4": {
+      "title": "Week 4 · Listening and Writing: Working in Groups（模糊限制语）",
+      "field": "graphicHtml",
+      "sha256": "88b8604e7aee7907e6f89e3f980bf9dfe42a0eb92eb655bc6e20b86d2c7810b4",
+      "tutorialSha256": null
+    },
+    "#/c/english/term1/5": {
+      "title": "Week 5 · Speaking: Natural Disasters（信息图总结）",
+      "field": "graphicHtml",
+      "sha256": "1853d2285e718bf2e68037a596c7fd8bcb0eed3bc918b21047dac3e1bf328b23",
+      "tutorialSha256": null
+    },
+    "#/c/english/term1/6": {
+      "title": "Week 6 · Listening and Writing: Natural Disasters（衔接手段）",
+      "field": "graphicHtml",
+      "sha256": "54e22c657873995654dbf78b7db95b6e85b1dd2a0e1f50b05726121ab1eaaab4",
+      "tutorialSha256": null
+    },
+    "#/c/english/term1/7": {
+      "title": "Week 7 · 期中反馈与复习",
+      "field": "graphicHtml",
+      "sha256": "92651dd24ac582977b98c765cf88ffe660fd3887b3a13ebd6445bd885a7923a1",
+      "tutorialSha256": null
+    },
+    "#/c/english/term1/8": {
+      "title": "Week 8 · Speaking and Listening: AI in Education（AI 与教育）",
+      "field": "graphicHtml",
+      "sha256": "99dc638bb3fd19e398eafc60dc8d3bf6bced0da779d3e3b6972dda9709713352",
+      "tutorialSha256": null
+    },
+    "#/c/english/term1/9": {
+      "title": "Week 9 · Writing: AI in Education（转述动词）",
+      "field": "graphicHtml",
+      "sha256": "e9c4fe23abd0dad8a5ce394ec46a2b9865b46e079ab1f5079aadc2038972e6d1",
+      "tutorialSha256": null
+    },
+    "#/c/english/term1/10": {
+      "title": "Week 10 · Speaking: Causes of Climate Change（SDG 11 复习与讨论）",
+      "field": "graphicHtml",
+      "sha256": "e96b7dbb92973b3b09602f5781b83a210118fbf2d1626dad72aa30627e0df6e3",
+      "tutorialSha256": null
+    },
+    "#/c/english/term1/11": {
+      "title": "Week 11 · Writing: Causes of Climate Change（名词化）",
+      "field": "graphicHtml",
+      "sha256": "09d2685ccfd76d96ce962126366070ec03cb109965eabd739294de6cceff1cc9",
+      "tutorialSha256": null
+    },
+    "#/c/english/term1/12": {
+      "title": "Week 12 · Writing and Speaking: Dangerous Australians（词性与词形）",
+      "field": "graphicHtml",
+      "sha256": "327e30c5a1ac9ba3afa696cec15900e4bcc0cae4650029d77657ed2fcd85f47f",
+      "tutorialSha256": null
+    },
+    "#/c/english/term1/13": {
+      "title": "Week 13 · Listening and Writing: Australian Animals（甘蔗蟾蜍与考拉）",
+      "field": "graphicHtml",
+      "sha256": "18ad9ee3ce917b9fe7d9f1c4e3dee9cc3ed6c298d99a85d9e6bc502d65d640d4",
+      "tutorialSha256": null
+    },
+    "#/c/english/term1/14": {
+      "title": "Reading · SDG 11 Core Text（SDG 11 核心文本逐句翻译）",
+      "field": "graphicHtml",
+      "sha256": "b48ff269766bf4f57f95a3f3aba96d23b3f0185e28a4d5b6ec7cb4ca6edfc109",
+      "tutorialSha256": null
+    }
+  },
+  "computing": {
+    "#/c/computing/term1/1": {
+      "title": "欢迎与课程概览：PowerPoint 演示设计",
+      "field": "graphicHtml",
+      "sha256": "ef371ed92e898c563019044a003085266773dd53a0485ae630e772034a1d5e13",
+      "tutorialSha256": null
+    },
+    "#/c/computing/term1/2": {
+      "title": "MS Word 概述与概念：PowerPoint 小组项目启动",
+      "field": "graphicHtml",
+      "sha256": "4562aee984cc4f08e8c32f2cbfda9b223c1f33584e2ac05959160ee7a5aeae49",
+      "tutorialSha256": null
+    },
+    "#/c/computing/term1/3": {
+      "title": "了解计算机与互联网",
+      "field": "graphicHtml",
+      "sha256": "6625be40f161674b2592a54611f799426e7ee954cf1c35ea476ad863bdb9d16b",
+      "tutorialSha256": null
+    },
+    "#/c/computing/term1/4": {
+      "title": "网站评价与 Word 分节排版",
+      "field": "graphicHtml",
+      "sha256": "6c75e3eb7ab0d8247043110b01a8ee89113c2d31d34609e51c8e37df48c8cc7a",
+      "tutorialSha256": null
+    },
+    "#/c/computing/term1/5": {
+      "title": "系统开发生命周期（SDLC）",
+      "field": "graphicHtml",
+      "sha256": "cbe4470516d2709b9ea8b1cfc5b4bc3eab25585a107bb3a51b5faa3128c1c434",
+      "tutorialSha256": null
+    },
+    "#/c/computing/term1/6": {
+      "title": "MS Excel 概述与核心概念",
+      "field": "graphicHtml",
+      "sha256": "b5741113e0337de877e90579932174968cd7d65f3ec195032c4c9989964a851a",
+      "tutorialSha256": null
+    },
+    "#/c/computing/term1/7": {
+      "title": "复习与巩固",
+      "field": "graphicHtml",
+      "sha256": "affb90f1ab06024d7ac8bbd70a1950233f0e77f5e6240ab3dfcebea6ecfcd73d",
+      "tutorialSha256": null
+    },
+    "#/c/computing/term1/8": {
+      "title": "Excel 入门：创建、编辑、格式化与排序",
+      "field": "graphicHtml",
+      "sha256": "e07c934ebdd3d2852dd5fdf8d46937fd07145a360f2649ba2b2010ce310af463",
+      "tutorialSha256": null
+    },
+    "#/c/computing/term1/9": {
+      "title": "Excel 图表：创建与格式化",
+      "field": "graphicHtml",
+      "sha256": "310d49e3b4eae1a2bce45312a48d14a002af703bbba635b52a0cad72b653d33f",
+      "tutorialSha256": null
+    },
+    "#/c/computing/term1/10": {
+      "title": "Excel 数据填充、常用函数与单元格引用",
+      "field": "graphicHtml",
+      "sha256": "ad6df9ee36e9cdc5acd327b7eaf7c147a7e61f6ecbf81a4db70b9dff45782b50",
+      "tutorialSha256": null
+    },
+    "#/c/computing/term1/11": {
+      "title": "Excel IF 条件函数",
+      "field": "graphicHtml",
+      "sha256": "37116493ab59d20e384dfd726fe8a043ea027ccbcf102d9de7643204982a1c12",
+      "tutorialSha256": null
+    },
+    "#/c/computing/term1/12": {
+      "title": "Excel XLOOKUP 查找函数",
+      "field": "graphicHtml",
+      "sha256": "382e9470448ed4000aaac0219b7f9f77c85b0cee70561447cbd41fd1eb3189cf",
+      "tutorialSha256": null
+    },
+    "#/c/computing/term1/13": {
+      "title": "期末考信息与 Word/Excel 复习活动",
+      "field": "graphicHtml",
+      "sha256": "ee2865a43268ed41041093439236420cef0dc431a80435856b11738e972c8a5c",
+      "tutorialSha256": null
+    },
+    "#/c/computing/term2/1": {
+      "title": "高级 Excel：嵌套函数与 IF/AND、IF/OR",
+      "field": "graphicHtml",
+      "sha256": "ba10a66e959d8df72fd7998cc481eb217e26bc76f4f5df928853f53e512acb6c",
+      "tutorialSha256": null
+    },
+    "#/c/computing/term2/2": {
+      "title": "多工作表分组与 XLOOKUP 复习",
+      "field": "graphicHtml",
+      "sha256": "9d97d797c54973daeb78ff568900c8bdfd4ea13f5e7310b682032e57d30b463c",
+      "tutorialSha256": null
+    },
+    "#/c/computing/term2/3": {
+      "title": "DATE 日期函数与条件统计函数",
+      "field": "graphicHtml",
+      "sha256": "d44e94efaed7b9b33544de2a861634f4f81c3542f34b267160fef0eb87b4f1bf",
+      "tutorialSha256": null
+    },
+    "#/c/computing/term2/4": {
+      "title": "财务函数与文本函数",
+      "field": "graphicHtml",
+      "sha256": "23a9e76cc187d1152111a67a0811bcb0cc1cfb0f18f7c337a634c50fea85f5ba",
+      "tutorialSha256": null
+    },
+    "#/c/computing/term2/5": {
+      "title": "高级图表制作",
+      "field": "graphicHtml",
+      "sha256": "5958822febd735b81f6179a649e67b178860d5ba7ace0a0562933ba0b59873ed",
+      "tutorialSha256": null
+    },
+    "#/c/computing/term2/6": {
+      "title": "Advanced Excel 考试信息与综合复习",
+      "field": "graphicHtml",
+      "sha256": "c218e6c10727feead7c3affbf882c4b64bf5b1c05bd0c9a341e26a2b2ba79503",
+      "tutorialSha256": null
+    },
+    "#/c/computing/term2/7": {
+      "title": "复习与巩固",
+      "field": "graphicHtml",
+      "sha256": "12cddfcdbac976792565c295ed832ac2f4b25f159ee157969d3a2ad12c5119dc",
+      "tutorialSha256": null
+    },
+    "#/c/computing/term2/8": {
+      "title": "Media Presentation 策划：Planning Document",
+      "field": "graphicHtml",
+      "sha256": "d9c83783da2c3bed9c14a0edfcc34e52eef99a723d9d665340c5813d2b044cb2",
+      "tutorialSha256": null
+    },
+    "#/c/computing/term2/9": {
+      "title": "Media Presentation 策划与制作：Plan and Produce",
+      "field": "graphicHtml",
+      "sha256": "4814843f16242b39b0982adda68cabf90b7376795b778bd6a421d03ce44479ae",
+      "tutorialSha256": null
+    },
+    "#/c/computing/term2/10": {
+      "title": "复习与巩固（媒体演示制作阶段）",
+      "field": "graphicHtml",
+      "sha256": "f1da12883372f3a04fda6abf4065b6611159e8d743aa8af5c235f33ae7045bad",
+      "tutorialSha256": null
+    },
+    "#/c/computing/term2/11": {
+      "title": "复习与巩固（演示提交与考前复习）",
+      "field": "graphicHtml",
+      "sha256": "1ee6aac4cf9c4c9af6903c5e925ac72ba1fa1b13286cc5e62ad2868ff12470fc",
+      "tutorialSha256": null
+    },
+    "#/c/computing/term2/12": {
+      "title": "复习与巩固（考前综合准备）",
+      "field": "graphicHtml",
+      "sha256": "45dada9c7c4c54ccebd39a67ef33e64a69ef638b2d7123894e9688111badbd1d",
+      "tutorialSha256": null
+    },
+    "#/c/computing/term2/13": {
+      "title": "Advanced Excel 综合项目与练习考试",
+      "field": "graphicHtml",
+      "sha256": "f6719288445bab925b6eb8831317b587a07e5abcdbe9f4677218381deafd47f7",
+      "tutorialSha256": null
+    }
+  }
+}

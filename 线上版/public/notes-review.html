@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>学习笔记待审</title>
+<link rel="stylesheet" href="notes-quality.css?v=20261111-notes-pipeline">
+<main style="max-width:72rem;margin:2rem auto;padding:1rem">
+<a href="/">返回学习小屋</a>
+<h1>学习笔记待审</h1>
+<form id="review-form">
+<label>课程 <select name="course">
+<option value="economics">经济学</option><option value="mathematics">数学</option>
+<option value="accounting">会计</option><option value="computing">计算机</option><option value="english">学术英语</option>
+</select></label>
+<label>学期 <select name="term"><option value="term1">Term 1</option><option value="term2">Term 2</option><option value="term1x">Term 1 补充</option></select></label>
+<label>周次 <input name="week" type="number" min="1" required value="5"></label>
+<button type="submit">生成待审笔记</button>
+<button type="button" id="load-draft">读取待审笔记</button>
+</form>
+<pre id="review-status" role="status" style="white-space:pre-wrap"></pre>
+<button type="button" id="publish-draft" hidden>发布这份笔记</button>
+<iframe id="review-preview" title="笔记预览" sandbox="" hidden style="width:100%;height:70vh;border:1px solid #becadb;margin-top:1rem"></iframe>
+</main>
+<script src="notes-review.js?v=1"></script>
+</html>
