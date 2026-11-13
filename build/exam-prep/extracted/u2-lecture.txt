@@ -1,0 +1,202 @@
+# week1/unit2 lecture slides accounting conventions.pdf
+# sha256=e55660cca4359996e303dc3778d58258291ead1a8e8b65ab6cb09412bb8009ad
+
+=== PAGE 1 ===
+Unit 2:
+Accounting
+Conventions
+
+=== PAGE 2 ===
+Learning objectives
+At the end of this lecture, you should be able to:
+•
+Describe and identify the key accounting conventions.
+•
+Apply the accounting conventions to business transactions.
+
+=== PAGE 3 ===
+Accounting Conventions
+• Practices or rules and accepted customs that have
+developed over time in the accounting profession.
+• Concerned with preparing and presenting financial
+information that is assumed by all accountants including
+students.
+
+=== PAGE 4 ===
+Accounting Conventions
+• Monetary Unit
+• Historical Cost
+• Accounting Entity
+• Going Concern
+• Accounting Period
+• Double Entry
+• Accrual
+• Consistency
+• Conservatism
+
+=== PAGE 5 ===
+Monetary Unit Convention
+Assumes that all financial information will be described the
+currency of the operating country.
+For example:
+• in Dollars and Cents for Australian purposes.
+• in Yen for Japanese purposes.
+• In Pounds for UK purposes
+https://media3.giphy.com/media/3o85xmvtuHkTM2pQNW/giphy.gif
+
+=== PAGE 6 ===
+Historical Cost Convention
+Assets are valued at the original purchase price and recorded
+at the actual amount paid.
+
+=== PAGE 7 ===
+• The owner’s personal financial dealings are separate from
+the business.
+• All business transactions are recorded from the point of
+view of the business, not the owner.
+• Any business, small or large, is an accounting entity.
+Accounting Entity Convention
+
+=== PAGE 8 ===
+Capital
+Drawings
+Source: www.freepik.com
+
+=== PAGE 9 ===
+Going Concern Convention
+• Assumes a business is set up to continue indefinitely
+• Also known as the Continuity Convention
+
+=== PAGE 10 ===
+Accounting Period Convention
+• The indefinite life of the business is split into regular intervals.
+    usually 12 months or 1 year (eg 1 July 2020 to 30 June 2021).
+• financial period = accounting period = reporting period.
+• This allows the business activities and performance to be
+measured, enable an assessment of the results and a meaningful
+comparison with expected or past results.
+
+=== PAGE 11 ===
+The Accounting Equation
+•
+Applying the double entry convention helps to maintain the equality of the
+accounting equation.
+•
+A basic accounting equation is used to implicitly express that Assets (A) equals
+Liabilities (L) plus Owner’s Equity (OE).
+Owner's
+Equity
+Liabilities
+Assets
+Assets
+Liabilities
+Owner's
+Equity
+OR
+
+=== PAGE 12 ===
+The Expanded Accounting Equation – discussed in Week 3
+The basic accounting equation can also be expanded to include Revenue (R) and Expenses
+(E). The expanded equation can be represented as:
+or
+
+=== PAGE 13 ===
+Double Entry Convention
+•
+Each transaction affects two or more accounts
+•
+Also known as the Dual Aspect Convention
+•
+Any of the five elements could be affected
+Example
+On 18 February 20XX the business paid $1,000 Cash to purchase office furniture for business use.
+Source: www.freepik.com
+Cash
+Office Furniture
+
+=== PAGE 14 ===
+Accrual Convention
+14
+• This convention ensures that financial statements reflect all relevant income
+and expenses within the period in which they occur, providing a more
+accurate picture of a company’s financial performance and position.
+• The matching of Revenues and Expenses for the defined accounting
+period is an important part of profit/loss measurement and the subsequent
+preparation of the Income Statement and Balance Sheet.
+• Expenses are recognized when they are incurred, not when
+cash is paid.
+• Revenues are recognized when they are earned, not when
+cash is received
+
+=== PAGE 15 ===
+Accrual vs Cash Method
+Accrual Accounting is the method of recording
+transactions
+at
+the
+time
+they
+take
+place
+irrespective of the exchange of cash.
+• This means that in an accounting period
+recording revenues as earned, and expenses as
+incurred regardless of cash being paid or
+received.
+• Uses the concept of matching revenues and
+expenses in an accounting period as to when and
+how to record transactions.
+• This provides a more meaningful profit/loss
+result.
+• Most medium/large businesses use this method.
+Cash Accounting is the method of recording
+transactions only when cash is received, and
+cash is paid.
+•
+Most small businesses use this method.
+15
+
+=== PAGE 16 ===
+Consistency Convention
+16
+•
+Once an organization adopts a particular accounting method or practice, it
+should consistently apply it in future periods unless a change is warranted
+and justified.
+•
+Consistency in accounting methods allows for accurate comparison of
+financial statements over time, enhancing the reliability and comparability of
+financial information.
+•
+This convention helps ensure that
+•
+financial statements are comparable across different periods,
+•
+providing stakeholders with a clearer view of the organization’s financial
+performance and position.
+
+=== PAGE 17 ===
+Conservatism
+17
+This convention aims to provide a more cautious and prudent view of a
+company's financial position, minimizing the risk of overstatement of assets and
+income.
+•
+Revenue Recognition Principle: Revenues and profits should only be
+recognized when they are realized and there is a high level of certainty,
+avoiding the premature recognition of income.
+•
+Expense and Loss Recognition: Expenses and losses should be
+recognized as soon as they are probable or foreseeable, even if they have
+not yet been incurred, to ensure that financial statements do not overstate
+financial health.
+
+=== PAGE 18 ===
+Next Week:
+18
+• Tutorial: Please do the assigned homework in the Tutorial guide for Unit 2
+– Accounting Conventions before attending class
+• Lecture in Week 2 – Double Entry & Transaction Analysis. Tutorial on
+Double Entry & Transaction Analysis will be in Week 3.
+• Attend consultation hours to clarify any questions that you may have!
+THANK YOU!

@@ -1,0 +1,238 @@
+# week1/unit1 lecture slides introduction to accounting.pdf
+# sha256=45e74f3e9bf43d5dffc3f68a1db0fcf5d6caf74847dab37a8d40f849200a333b
+
+=== PAGE 1 ===
+Unit 1:
+Introduction to
+Accounting
+L e c t u r e W e e k 1
+
+=== PAGE 2 ===
+2
+Learning objectives
+At the end of this lecture, you should be able to
+•
+Define the accounting cycle and its stages and identify common business
+transactions.
+•
+Describe accounting and identify the main users of accounting information.
+•
+Outline the key concepts in recording and reporting accounting information.
+•
+Develop an appreciation for accounting knowledge.
+
+=== PAGE 3 ===
+What is Accounting?
+•
+The language of business
+•
+A method of processing financial information for different users
+•
+Helps to make informed/business decisions
+
+=== PAGE 4 ===
+Accounting has been defined as the process of identifying,
+measuring, recording and communicating economic information to
+permit informed judgements and economic decisions by users of the
+information
+(Hoggett, John. Accounting, 10th Edition, Wiley, 2017).
+
+=== PAGE 5 ===
+• Businesses that provide services
+rather than goods. Provides
+intangible services
+• Revenue: Service fees
+• Have No inventory
+• Focus on operational costs
+Service Business                                         Merchandising Business
+• Businesses that buy and sell
+goods.
+• Sells tangible goods
+• Revenue: Product sales.
+• Have Inventory
+• Includes cost of goods sold.
+5
+Types of Business: Merchandising Vs Service
+
+=== PAGE 6 ===
+•
+The accountant must prepare information designed to meet a
+wide variety of needs and expectations and is responsible to the
+users of that information.
+•
+Reporting on the performance and position of a business.
+•
+Designing, implementing and managing systems for accurately
+recording and classifying transactions.
+•
+Identifying, gathering, summarising, analysing and
+communicating financial information.
+The Role of an Accountant
+
+=== PAGE 7 ===
+Accounting
+Management
+Cost
+Taxation
+Financial
+Auditing
+Some different areas of accounting
+
+=== PAGE 8 ===
+Some different areas of accounting
+• Financial - prepare financial statements as well as analyse and interpret financial
+information.
+• Managerial - produce, analyse and communicate information to managers to
+assist internal users in making well informed business decisions e.g. budgeting,
+pricing and planning for future needs.
+• Cost - control the costs of producing goods and services.
+• Taxation - preparation of tax returns and tax payments
+• Auditing – review to provide assurance that Financial Statements provide a true
+and fair view
+
+=== PAGE 9 ===
+Book-keeping Vs Accounting
+Book-keeping
+•
+The systematic recording of daily transactions,
+such as sales, purchases, and expenses.
+•
+Generally, involves routine tasks and
+straightforward data entry.
+•
+Maintains the financial data and ensures that it
+is complete and accurate.
+•
+Typically requires basic accounting knowledge
+and may not require advanced qualifications.
+Accounting
+•
+Broader range of activities: summarizing,
+analyzing, reporting financial data to provide
+insights and strategic information, interpreting
+and analyzing the financial records.
+•
+More complex tasks: adjusting entries, financial
+analysis, and compliance with accounting
+standards.
+•
+Uses the financial data to prepare reports,
+conduct a
+•
+Formal education: a degree in accounting or
+finance, certification (e.g., CPA).
+
+=== PAGE 10 ===
+Users of Accounting Information
+https://www.coursesidekick.com/business/study-guides/wmopen-introductiontobusiness/stakeholders
+https://i.ytimg.com/vi/lFJ1iPqdobg/maxresdefault.jpg
+https://i.ytimg.com/vi/lFJ1iPqdobg/maxresdefault.jpg
+
+=== PAGE 11 ===
+Users of Accounting Information
+1. Owners/shareholders/managers - assess the financial position
+and performance and make informed decisions.
+2. Investors - assess investment potential.
+3. Lenders/banks - assess whether the line of credit is sound.
+4. Tax authorities - assess tax liabilities.
+5. Competitors - assess performance against that of the
+business in the same Industry.
+
+=== PAGE 12 ===
+Requirements of Accounting Reports
+•
+Clarity (Understandability) – comprehendible and clearly presented with the use of
+headings and subheadings.
+•
+Accuracy (Reliability) - The information should correspond with the actual
+underlying transactions and events, and is capable of independent verification and is
+free from bias, not misleading.
+•
+Consistency (Comparability) - identify similarities and differences between the
+current information and information from previous years' reports or reports of
+different entities.
+•
+Timely - reports should be prepared in plenty of time for the people requiring the
+information to make decisions.
+•
+Compliance - comply with any regulation eg accounting standards
+
+=== PAGE 13 ===
+This course will follow the accounting cycle with added
+accounting concepts and fundamentals.
+▪
+The accounting cycle refers
+to the regular repetition of a
+standardised set of stages.
+1.
+Transactions
+2. Source
+Documents
+3. Journals
+4. Ledgers
+5. Trial
+Balance
+6. Reports
+The cycle begins again
+for the next accounting
+period.
+▪
+The accounting cycle is a
+continual process because
+business activity is ongoing.
+
+=== PAGE 14 ===
+1. Accounting Cycle: Transactions
+•
+Transactions are events that alter the financial position of a
+business and require the entering of information in accounting
+records
+•
+Generally, this could involve activities of:
+1. Buying
+2. Selling
+3. Exchanging of goods and services for cash or on credit.
+Only 2 ways:  1. Cash
+                   2. Credit (pay later)
+
+=== PAGE 15 ===
+2. Accounting Cycle: Source Documents
+•
+The evidence/proof of a transaction occurring
+•
+Capture and contain details of the transaction that will be recorded into the
+journals
+•
+Examples of Source documents:
+a)
+Invoice : issued by seller when goods are sold on credit
+b)
+Credit Note : issued by seller goods are returned by the buyer due to
+damage, wrong size etc.
+c)
+Receipt : Issued by seller when payment is received to confirm payment
+has been collected
+
+=== PAGE 16 ===
+Accounting Cycle – Journal, Ledger, Trial Balance
+3. Journal: Journals are the first book of entry that are used to record details
+and information from source documents and identify the accounts affected by
+a transaction
+4. Ledger: The ledger is a book of secondary entry and contains all the
+accounts of a business.
+• T-format
+• Column Format
+5. Trial Balance: The Trial Balance is a list of all the account balances in the
+General Ledger (after the balancing process for each account is completed).
+
+=== PAGE 17 ===
+6. Accounting Cycle: Reports/Financial Statements
+•
+The Profit and Loss Statement is also known as the Income Statement
+or the Statement of Financial Performance
+•
+The Balance Sheet or the Statement of Financial Position displays the
+assets, liabilities and owner’s equity of the business at a point in time.
+•
+The Cash Flow Statement shows the inflow and outflow of cash from the
+business during an accounting period.

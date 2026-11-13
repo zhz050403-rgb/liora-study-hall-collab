@@ -1,0 +1,720 @@
+# week3/unit4 tutorial guide journal entries.pdf
+# sha256=2bc0fd7232b50d1eb33a13487a24b1c3dec882e256f64821446bca7da827ee70
+
+=== PAGE 1 ===
+UNSW College Foundation Studies
+Accounting
+
+
+
+
+
+
+
+
+
+
+
+
+
+`
+
+
+Learning objectives
+At the end of this tutorial, you should be able to
+•
+Write a journal entry in the prescribed format
+•
+Record transactions related to returns and discounts
+•
+Record transactions related to bad debts
+
+Before this tutorial, you should have
+•
+Attended the Unit 4 lecture
+•
+Read the Readings
+•
+Completed the Tutorial Questions
+•
+Read the In-Class Activities question
+
+
+During this tutorial, you will
+•
+Complete the In-Class Activities
+
+
+After this tutorial, you should
+•
+Consider attending one of the scheduled consultations and attempt to resolve any
+questions that you have as soon as possible.
+
+
+
+
+
+
+
+
+
+
+
+Accounting
+Unit
+4
+Week 4
+Journal Entries
+
+=== PAGE 2 ===
+Accounting – Unit 4: Journal Entries
+Accounting | Page
+
+
+
+
+Tutorial Questions (To be completed before class)
+
+Terms and Concepts
+
+The following terms and concepts must be understood in the context of the
+tutorial. Provide written explanations of these terms and concepts in the space
+provided.
+
+Terms/Concepts
+Explanation
+
+Journal Entries
+
+Trade Discount
+ Discount Allowed
+
+
+Discount Received
+
+Purchase Returns
+
+Sales returns
+Bad debts
+ Drawings (revision)
+
+=== PAGE 3 ===
+Accounting – Unit 4: Journal Entries
+Accounting | Page
+
+
+
+Question 1
+
+Jack Hammer owns a hardware store. Record the following transactions that occurred during the
+month of April.
+
+Apr 1
+Owner invested $40,000 cash in the company
+7
+Purchased equipment for $5000 cash
+11
+Paid advertising expense $600
+15
+Paid $1200 for office supplies
+19
+Sold goods worth $16000 on account to Fern Limited
+23
+Sold goods worth $2000 for cash
+27
+Purchased hardware inventory for resale $4200 on account
+28
+Paid employee salaries for April $2500
+30
+Fern Limited paid the amount due (transaction on 19 April)
+30
+Withdrew $400 cash for personal use
+
+Remember the rules of posting!
+
+=== PAGE 4 ===
+Accounting – Unit 4: Journal Entries
+Accounting | Page
+
+
+
+
+
+
+DATE
+
+
+PARTICULARS
+
+DEBIT
+$
+
+CREDIT
+$
+Apr 1
+
+
+
+
+
+
+
+
+
+
+
+7
+
+
+
+
+
+
+
+
+
+
+
+11
+
+
+
+
+
+
+
+
+
+
+
+15
+
+
+
+
+
+
+
+
+
+
+
+19
+
+
+
+
+
+
+
+
+
+
+
+23
+
+
+
+
+
+
+
+
+
+
+
+27
+
+
+
+
+
+
+
+
+
+
+
+28
+
+
+
+
+
+
+
+
+
+
+
+30
+
+
+
+
+
+
+
+
+
+
+
+30
+
+=== PAGE 5 ===
+Accounting – Unit 4: Journal Entries
+Accounting | Page
+
+
+
+Question 2
+
+Explain what the terms 2%/7 days and net 30 days represents when included in a sales invoice (refer to
+your reading materials please).
+
+
+
+
+Question 3
+a. On January 5 Greenheart Co purchased trading goods from BlueGem Co worth $5000. BlueGem Co
+has payment terms of 2%, 7 days n=14 days. Greenheart paid back on 10 January. Record the
+journal entry on 10 January for Greenheart Co.
+
+Answer:
+
+Particulars
+DR
+CR
+
+
+
+
+
+
+
+
+
+
+
+b.
+On March 7th Greenheart Co sold $7000 worth of goods to RedRhombus Co. Greenheart’s payment
+terms are 1%, 8 days, n=21 days. RedRhombus paid Greenheart on 11 March. Record the journal
+entry on 11 March for Greenheart Co.
+
+Answer:
+
+Particulars
+DR
+CR
+
+=== PAGE 6 ===
+Accounting – Unit 4: Journal Entries
+Accounting | Page
+
+
+In-Class Activities
+
+Question 4
+Alex Roger started his own flower shop & delivery service. The following transactions occurred
+during the month of July.
+
+2  July
+Owner invested $30,000 in the business.
+3
+Purchased a used van for deliveries for $20,000 from Packham
+Autos. Rogers paid $4000 in cash and remaining was on account.
+5
+Performed delivery services of $2000 on account.
+6
+Withdrew cash for personal use $400
+7
+Purchased flowers worth $3000 from Dural Nursery on account.
+Dural’s terms of payment is 2%/5 days, net 14 days
+7
+Received partial payment of $1500 for services provided on 5th July
+9
+Made cash payment of $3000 on amount owing for the delivery van
+purchased on 3 July
+11
+Paid Dural Nursery the entire outstanding amount. (Hint: look for
+discounts)
+12
+Delivered flowers for a wedding to Lily Event Management $7200 on
+account. Roger’s terms of payment is 1%/7 days, net 21 days.
+13
+Lily Event Management returned flowers worth $200 due to damage
+in transit.
+15
+Lily Event Management paid its outstanding amount.
+15
+Roger purchased accessories worth $2100 from Winter limited on
+account, 2%/7days, net 18 days
+18
+Rogers returned accessories worth $100 to Winter Limited due to
+damage.
+20
+Roger paid the outstanding amount to Winter ltd.
+23
+Purchased orchids for resale $1500 for cash
+29
+Sold flowers worth $ 4000 for cash
+
+=== PAGE 7 ===
+Accounting – Unit 4: Journal Entries
+Accounting | Page
+
+
+
+
+Answer:
+
+
+
+
+
+DATE
+
+
+
+PARTICULARS
+
+DEBIT
+$
+
+CREDIT
+$
+
+=== PAGE 8 ===
+Accounting – Unit 4: Journal Entries
+Accounting | Page
+
+
+
+Date
+20XX
+Particulars
+Debit
+$
+Credit
+$
+
+=== PAGE 9 ===
+Accounting – Unit 4: Journal Entries
+Accounting | Page
+
+
+
+ADDITIONAL SELF STUDY PRACTICE PROBLEMS:
+
+1. Anthony Bingara owns AB Civil Engineers which commenced business on the
+1st June 2024. During the first month of operations the following business
+transactions took place:
+
+June 1
+Anthony contributed $20,000 cash to commence the business
+June 4
+Purchased office furniture for $3,500 cash from Furniture’R’Us
+June 13
+Purchased stationery supplies for $320 on credit from Omega
+Stationery Supplies
+June 20
+Anthony provided a $3,000 quote for engineering services to a
+prospective client (Hint: is this a transaction?)
+June 28
+Provided engineering services worth $5000 on credit.
+June 30
+Paid Omega Stationery Supplies for stationery supplies purchased
+on June 13 above
+Complete the General Journal below for Anthony.
+
+Date
+Particular
+         Dr
+      Cr
+Jun 1
+4
+13
+20
+28
+30
+
+=== PAGE 10 ===
+Accounting – Unit 4: Journal Entries
+Accounting | Page
+
+=== PAGE 11 ===
+Accounting – Unit 4: Journal Entries
+Accounting | Page
+
+
+
+2. Christie’s Toys Shoppe had the following transactions in the month of January:
+1. Jan 1: Christie invested $50,000 cash into the business.
+2. Jan 2: Christie purchased toys from Mira Ltd for reselling them to
+customers on credit $5000. (trading goods)
+3. Jan 5: Mr Blacksend purchased $1000 worth of teddy bears on credit from
+Christie’s Toy Shoppe to distribute in the orphanage.
+4. January 15: Christie partially paid back Mira Ltd $3000.
+5. January 19: Mr Blacksend paid the whole amount due for the purchase of teddy
+bears on 5th Jan.
+
+Required:  Enter the above transactions in the General Journal below:
+
+
+Date
+
+Particulars
+
+Dr
+
+Cr
+
+=== PAGE 12 ===
+Accounting – Unit 4: Journal Entries
+Accounting | Page
+
+
+Question 3
+
+Lois Lane Bookshop had the following transactions related to the purchase of new books for the shop
+in June.
+
+June 1
+Lois bought books from Oak Limited worth $7300. Oak Limited had payment terms of
+5%/5 days, net 14days
+June 2
+Lois returned the Jane Austen Collection worth $1200 to Richmond Limited as the
+bindings had been damaged.
+June 3
+Lois returned books worth $300 to Oak Limited
+June 4
+Lois paid Oak Limited (Hint: Look for discounts!).
+June 7
+Lois Lane paid Richmond Limited the outstanding amount of $2400. Lois did not receive
+any discounts.
+
+Record the above transactions in the table provided below.
+
+DATE
+PARTICULARS
+DEBIT
+CREDIT
+June 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7
+
+=== PAGE 13 ===
+Accounting – Unit 4: Journal Entries
+Accounting | Page
+
+
+
+Question 3
+
+Thor Painting provides painting supplies for construction purposes. The terms of payment for Thor’s
+customers is 2%/7 days, net 21 days. The following sales transactions occurred for Thor Painting in May.
+
+May 1
+Thor Painting sold paint worth $7000 to Willow Limited for cash
+2
+Thor Painting sold paint worth $12400 to Acacia Limited on account.
+3
+Thor Painting sold painting accessories worth $3500 on account to Aloe Limited
+4
+Acacia Limited returned paint worth $400 due to incorrect color.
+5
+Acacia Limited paid the amount due for the transaction on 2nd May. (Hint: discounts)
+9
+Aloe Limited returned painting accessories worth $500 due to damage in transit.
+10
+Violet Trading, a customer, paid an outstanding amount from April $4000 and did not
+receive any discounts.
+12
+Received a letter from the solicitor informing Thor Painting that debtor T. Evans has been
+declared bankrupt. Amount owing was $450.
+
+Record the above transactions in the table provided below.
+
+DATE
+PARTICULARS
+DEBIT
+CREDIT
+May 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12

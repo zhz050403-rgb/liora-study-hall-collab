@@ -1,0 +1,654 @@
+# week5/unit6 lecture slides t-format.pdf
+# sha256=d38cc5d13d63a08fdb4e430d034507e63316fcad7df88ce9383ee14ec6f0aa98
+
+=== PAGE 1 ===
+Unit 5:
+Ledger Accounts:
+T-Format
+
+=== PAGE 2 ===
+2
+At the end of this lecture, you should be able to:
+•
+Post from the Journal Entries to T-format Ledger accounts
+• Balance T-accounts
+Learning Objectives:
+
+=== PAGE 3 ===
+3
+Remember the Accounting Cycle?
+1.
+Transactions
+2. Source
+Documents
+3. Journals
+4. Ledgers
+5. Trial
+Balance
+6. Reports
+We are
+now here!
+
+=== PAGE 4 ===
+Recall the Chart of Accounts…
+4
+Elements
+Accounts
+
+=== PAGE 5 ===
+General Ledger
+5
+• Definition: A General Ledger (GL) is a comprehensive record of all
+financial transactions within a company. It is the accounting record from
+which financial statements are prepared.
+• All the accounts are in the General Ledger
+• Purpose: To provide a complete record of all financial transactions,
+ensuring accuracy and completeness in financial reporting.
+
+=== PAGE 6 ===
+General Ledger: Function
+6
+Recording Transactions
+•
+Transactions are initially recorded in the journal (Journal Entries).
+•
+Entries are then posted to the respective accounts in the General Ledger.
+Debits and Credits
+•
+Each transaction affects at least two accounts on each side: Dr & Cr
+•
+While posting in the General Ledger, Debit posts must equal to the Credit
+posts.
+
+=== PAGE 7 ===
+T Format
+Date
+Particulars
+Debit
+Date
+Particulars
+Credit
+Debit side
+Credit side
+Account Name
+
+=== PAGE 8 ===
+Rules when recording in the ledger
+8
+1. Find the account (The heading of the Account)
+2. Look at which side you are going to record in (Dr or Cr)
+3. Write the dollar amount first
+4. Write the opposite/other account in the Particulars
+column
+5. Write the date
+
+=== PAGE 9 ===
+Example 1:  Posting to the Cash Account
+Eg: Owner contributed $10,000 cash into the business
+Date
+Particulars
+Dr $
+Cr$
+Feb-01
+Cash
+10000
+Capital
+10000
+1. Find the
+account heading
+in the ledger
+2. Record on
+the Debit side
+3. Write the
+amount
+
+=== PAGE 10 ===
+Date
+Particulars
+Debit $
+Date
+Particulars
+Credit $
+1. Find the
+account
+10,000
+3. Write the amount
+CASH ACCOUNT
+2. Record on
+the Debit side
+CAPITAL ACCOUNT
+
+=== PAGE 11 ===
+Date
+Particulars
+Debit $
+Date
+Particulars
+Credit $
+1. Find the
+account
+10,000
+3. Write the amount
+CASH ACCOUNT
+2. Record on
+the Debit side
+T format
+5. Write the date
+4. Record the opposite
+account affected in the
+particulars
+Capital
+1 Feb
+
+=== PAGE 12 ===
+Example 1:  Posting to the Capital Account
+1. Find the
+account heading
+in the ledger
+2. Record on
+the Credit side
+3. Write the
+amount
+Date
+Particulars
+Dr $
+Cr$
+Feb-01
+Cash
+10000
+Capital
+10000
+
+=== PAGE 13 ===
+CAPITAL ACCOUNT
+Date
+Particulars
+Debit $
+Date
+Particulars
+Credit $
+1-Feb
+Cash
+10,000
+CASH ACCOUNT
+1. Find the
+account
+3. Write the amount
+2. Record on
+the Credit side
+5. Write the date
+4. Record the opposite
+account affected in the
+particulars
+T format
+
+=== PAGE 14 ===
+Now, let’s work
+through the rest of
+the Journal Entries
+from 6th February!
+14
+Date
+Particulars
+Dr $
+Cr$
+Feb-01 Cash
+10000
+Capital
+10000
+Feb-06 Office furniture
+5000
+A/P - Fantastic
+5000
+Feb-13 A/R - Barry
+100
+     Sales
+100
+Feb-22 Cash
+100
+A/R - Barry
+100
+Feb-25 A/P - Fantastic
+1000
+Cash
+1000
+
+=== PAGE 15 ===
+Date
+Particulars
+Dr $
+Cr$
+Feb-01 Cash
+10000
+Capital
+10000
+Feb-06 Office furniture
+5000
+A/P - Fantastic
+5000
+Feb-13 A/R - Barry
+100
+    Sales
+100
+Feb-22 Cash
+100
+A/R - Barry
+100
+Feb-25 A/P - Fantastic
+1000
+Cash
+1000
+
+=== PAGE 16 ===
+6 Feb      Accounts Payable -     $5,000
+                Fantastic Chairs
+6 Feb        Office Furniture       $5,000
+Date
+Particulars
+Dr $
+Cr$
+Feb-01 Cash
+10000
+Capital
+10000
+Feb-06 Office furniture
+5000
+A/P - Fantastic
+5000
+Feb-13 A/R - Barry
+100
+    Sales
+100
+Feb-22 Cash
+100
+A/R - Barry
+100
+Feb-25 A/P - Fantastic
+1000
+Cash
+1000
+
+=== PAGE 17 ===
+Date
+Particulars
+Dr $
+Cr$
+Feb-01 Cash
+10000
+Capital
+10000
+Feb-06 Office furniture
+5000
+A/P - Fantastic
+5000
+Feb-13 A/R - Barry
+100
+     Sales
+100
+Feb-22 Cash
+100
+A/R - Barry
+100
+Feb-25 A/P - Fantastic
+1000
+Cash
+1000
+
+=== PAGE 18 ===
+13 Feb      Sales                        $100
+
+13 Feb    Accounts Receivable -    $100
+                 Barry
+Date
+Particulars
+Dr $
+Cr$
+Feb-01 Cash
+10000
+Capital
+10000
+Feb-06 Office furniture
+5000
+A/P - Fantastic
+5000
+Feb-13 A/R - Barry
+100
+    Sales
+100
+Feb-22 Cash
+100
+A/R - Barry
+100
+Feb-25 A/P - Fantastic
+1000
+Cash
+1000
+
+=== PAGE 19 ===
+Date
+Particulars
+Dr $
+Cr$
+Feb-01 Cash
+10000
+Capital
+10000
+Feb-06 Office furniture
+5000
+A/P - Fantastic
+5000
+Feb-13 A/R - Barry
+100
+    Sales
+100
+Feb-22 Cash
+100
+A/R - Barry
+100
+Feb-25 A/P - Fantastic
+1000
+Cash
+1000
+
+=== PAGE 20 ===
+22 Feb      Accounts Receivable -     $100
+                Barry
+22 Feb      Cash at Bank           $100
+
+Date
+Particulars
+Dr $
+Cr$
+Feb-01 Cash
+10000
+Capital
+10000
+Feb-06 Office furniture
+5000
+A/P - Fantastic
+5000
+Feb-13 A/R - Barry
+100
+    Sales
+100
+Feb-22 Cash
+100
+A/R - Barry
+100
+Feb-25 A/P - Fantastic
+1000
+Cash
+1000
+
+=== PAGE 21 ===
+Date
+Particulars
+Dr $
+Cr$
+Feb-01 Cash
+10000
+Capital
+10000
+Feb-06 Office furniture
+5000
+A/P - Fantastic
+5000
+Feb-13 A/R - Barry
+100
+    Sales
+100
+Feb-22 Cash
+100
+A/R - Barry
+100
+Feb-25 A/P - Fantastic
+1000
+Cash
+1000
+
+=== PAGE 22 ===
+25 Feb      Accounts Payable -     $1,000
+                Fantastic Chairs
+25 Feb             Cash at Bank     $1,000
+
+Date
+Particulars
+Dr $
+Cr$
+Feb-01 Cash
+10000
+Capital
+10000
+Feb-06 Office furniture
+5000
+A/P - Fantastic
+5000
+Feb-13 A/R - Barry
+100
+   Sales
+100
+Feb-22 Cash
+100
+A/R - Barry
+100
+Feb-25 A/P - Fantastic
+1000
+Cash
+1000
+
+=== PAGE 23 ===
+Answer
+
+=== PAGE 24 ===
+24
+After recording in the
+ledger, we balance!
+
+=== PAGE 25 ===
+T-Format balancing
+1. Periodic balancing is required (usually monthly/at the end of the
+accounting period)
+2. Begin on the larger side:
+•
+Debit side for Assets & Expenses
+•
+Credit side for Liabilities, Owner’s Equity and Revenue
+3. Write down the larger total on both sides. Write Balance c/d
+(closing balance) on the smaller side (end of current month)
+
+=== PAGE 26 ===
+T-Format balancing
+4. Calculate the balance on the smaller side at the end of the period, called Balance c/d. This is
+also the Closing Balance of the account, as this is what you are closing your business with at
+the end of the accounting period. c/d = carried down
+5. Record Balance b/d on the opposite side, showing the balance that you are beginning your
+business with. Hence, also known as the Opening Balance (start of next month). b/d = brought
+down
+6. Opening balances/Balance b/d  for Assets, Expenses Drawings – Debit. That is why they are
+called Debit Accounts
+7. Opening balances/balance b/d for Liabilities, OE, Revenue – Credit. That is why they are
+called Credit Accounts
+
+=== PAGE 27 ===
+27
+27
+Note: T format balancing
+• If the debit side total > credit
+side total, the balance is called
+a debit balance
+• A debit balance must be
+brought down (b/d) to the
+debit side of the account at the
+start of the next month
+• If the credit side total >
+debit side total, the
+balance is called a credit
+balance
+• A credit balance must be
+brought down (b/d) to the
+credit side of the account
+at the start of the next
+month
+
+=== PAGE 28 ===
+28
+Example 1: Cash a/c balancing
+
+=== PAGE 29 ===
+29
+Example 2: Cash at Bank Account
+29
+At the end of the month:
+Calculate the debit side total and the credit side total
+The debit side total is 30,000 + 10,000 = 40,000
+The credit side total is 2,000 + 6,000 = 8,000
+Date
+Particulars
+Debit $
+Date
+Particulars
+Credit $
+1 Jan
+2
+Capital
+Loans
+30,000
+10,000
+13 Jan
+14
+Furniture
+Equipment
+2,000
+6,000
+Total
+Total
+
+=== PAGE 30 ===
+30
+30
+Date
+Particulars
+Debit $
+Date
+Particulars
+Credit $
+1 Jan
+2
+Capital
+Loans
+30,000
+10,000
+13 Jan
+14
+31
+Furniture
+Equipment
+Balance c/d
+2,000
+6,000
+32,000
+Total
+40,000
+Total
+40,000
+1. Write the larger total on both sides of the T-account $40,000.
+2. Calculate the difference between the debit side and the credit side
+(40,000 – 8,000 = 32,000).
+This is called the balance c/d for the end of the current month.
+8000
+Example 2: Cash at Bank Account
+
+=== PAGE 31 ===
+31
+Example 2: Cash at Bank Account
+This balance is then recorded in the
+debit column of the trial balance
+
+=== PAGE 32 ===
+Kingsford Trading
+Trial Balance
+Account no.
+Account Names
+Debit
+($)
+Credit
+($)
+101
+Cash at Bank
+1940
+105
+Accounts Receivable
+3110
+110
+Stock
+3500
+115
+Stationery Supplies
+30
+120
+Prepaid Advertising
+104
+150
+Motor Vehicle
+21800
+151
+Accum. Depreciation MV
+550
+205
+Accounts Payable
+20950
+210
+Accrued Wages
+100
+300
+Capital
+12900
+305
+Drawings
+0
+400
+Sales
+6840
+401
+Sales Returns
+740
+410
+Discounts Received
+10
+500
+Purchases
+9700
+501
+Purchases Returns
+650
+505
+Advertising Expense
+26
+510
+Depreciation Expense MV
+250
+515
+Discount Allowed
+20
+520
+Stationery Expense
+100
+525
+Wages Expense
+680
+Total:
+42000
+42000
+Example: Trial Balance
+Debit total must equal to
+the Credit total
+
+=== PAGE 33 ===
+Next Week:
+33
+• Tutorial: Please do the assigned homework in the Tutorial guide for Unit 5
+– T-accounts before attending class
+• Lecture in Week 5 – Ledger Accounts: Column format & Trial Balance.
+Tutorial on Column format & Trial Balance will be in Week 6.
+• Attend consultation hours to clarify any questions that you may have!
+THANK YOU!

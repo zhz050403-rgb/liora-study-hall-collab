@@ -1,0 +1,276 @@
+# week1/unit1 reading materials introduction to accounting.pdf
+# sha256=7c0a0c7672799ba30b80452b27f56ccb1d6fb3c0fb85a112dae603b56221dad8
+
+=== PAGE 1 ===
+Accounting
+
+UNSW College Foundation Studies
+Accounting
+What is Accounting
+Unit
+1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Readings
+
+
+What is Accounting?
+Accounting is an information process, i.e. a method of processing financial information
+for different users. Accounting is often been called ‘the language of business’ as it is the
+means of communicating financial information. It provides a way of recording, measuring
+and describing economic activities.
+
+
+The accounting function involves identifying, gathering, classifying, recording,
+summarising, analysing, reporting and communicating financial information. Accounting
+is practical tool used by many in varying jobs. People running a business need an
+understanding of accounting to help them make sound decisions about their business.
+The Role of an Accountant
+As the commercial world has grown in size and complexity, the importance of the
+accountant has also increased. The accountant's role has changed as the number of
+interested parties has grown. The accountant must prepare information designed to
+meet a wide variety of needs and expectations and is responsible to the users of that
+information. The accountant's role is dynamic, important and varied. The principal role of
+an accountant is to report on the performance of a business. This can involve tasks such
+as:
+•
+Designing, implementing and managing systems for accurately recording and
+classifying transactions and other data.
+•
+Using information obtained to prepare accounting reports which show the
+financial performance and position of a business.
+•
+Communicating the information to all interested parties in a form which the users
+can understand.
+
+Areas of Accounting
+Financial accountants prepare year-end financial statements as well as analyse and
+interpret financial information. Managerial accountants produce, analyse and coordinate
+the flow of information which will help in running the business e.g. budgeting, pricing
+and planning for future needs. Cost accountants control the costs of producing goods
+and services.
+
+=== PAGE 2 ===
+Accounting – Unit 0: Introduction and Accounting Cycle
+Accounting | Page 1
+
+
+
+
+Auditors check the financial statements to ensure that the financial statements show a
+'true and fair view' about the financial affairs of the business. They ensure that the
+financial reports comply with regulations. Large companies employ independent auditors
+to conduct audits in order to protect the interests of shareholders. Accountants may also
+specialise in taxation, investment, estate control, banking or teaching.
+
+Book-keeping Vs Accounting
+
+Bookkeeping is the foundational process of recording financial transactions. It involves:
+•
+Data entry: Recording sales, purchases, and payments accurately and consistently.
+•
+Categorization: Sorting transactions into appropriate accounts accordingly.
+•
+Reconciliation: Matching
+bank
+statements
+to
+financial
+records
+to
+identify
+discrepancies and ensure accuracy.
+•
+Financial reports: Generating basic financial statements like income statements
+and balance sheets, providing a snapshot of the company’s financial health at a
+specific time.
+Bookkeepers are the meticulous record-keepers who ensure financial data is accurate, up-
+to-date, and organized. Their work is essential for maintaining the integrity of a company’s
+financial records and providing the raw data needed for accounting analysis.
+
+Accountants take the raw data bookkeepers produce and transform it into meaningful
+information. Their role involves:
+•
+Financial analysis: Examining a company’s financial data can reveal its financial
+health, growth patterns, and competitive position. This involves calculating financial
+ratios, tracking performance over time, and comparing results to industry
+benchmarks.
+•
+Tax preparation: Calculating and filing tax returns accurately and on time, ensuring
+compliance with tax laws and regulations.
+•
+Financial planning: Developing strategies to optimize financial resources and
+improve overall performance. This includes creating and managing budgets, ensuring
+efficient cash flow, and making sound investment decisions.
+•
+Compliance: Upholding accounting standards and regulations to ensure financial
+integrity and transparency.
+•
+Auditing: Reviewing financial records to ensure accuracy and compliance, providing
+assurance to stakeholders.
+
+Some users of accounting information
+•
+Owners/ shareholders/ managers use the accounting information to assess the
+financial position and performance and make informed decisions accordingly.
+•
+Investors use the accounting information to assess investment potential.
+•
+Lenders/ creditors/ banks use the accounting information to assess whether the
+line of credit is sound.
+•
+Auditors use the accounting information to ensure internal controls are working
+effectively and to prepare audit reports.
+•
+Tax authorities use the accounting information to assess tax liabilities.
+•
+Competitors use the accounting information to assess their own performance
+against that of the business in the same Industry.
+
+=== PAGE 3 ===
+Accounting – Unit 0: Introduction and Accounting Cycle
+Accounting | Page 2
+
+
+
+The essential requirements of accounting reports if they are to be useful for the
+users are:
+Clarity (understandability):
+The reports are presented in such a way that reasonably-informed users can
+comprehend their meaning, e.g. the use of headings and sub-headings may help to
+highlight important information in a Profit and Loss Statement.
+Accuracy (reliability):
+The information should correspond with the actual underlying transactions and events,
+and is capable of independent verification and is free from bias. The reports can be used
+to confirm or correct expectations about past events and assist in forming, revising or
+confirming expectations about the future.
+Consistency (comparability):
+Users must be able to identify similarities and differences between the current
+information and information from previous years' reports or reports of different entities.
+Timely
+To be useful, the information prepared by accountants must also be timely i.e. reports
+should be prepared in plenty of time for the people requiring the information to make
+decisions. If information is not available when it is needed, it is of no use.
+Compliance
+Reports should comply with the requirements of accounting regulations and accounting
+standards.
+
+=== PAGE 4 ===
+Accounting – Unit 0: Introduction and Accounting Cycle
+Accounting | Page 3
+
+
+
+The Accounting Cycle
+Overall, this Introduction to Accounting course will follow the accounting cycle through
+each stage as a reference point with additional accounting concepts and fundamentals
+added. Note also that this course refers to a manual accounting system as a
+computerised accounting system automates some of the stages.
+The accounting cycle refers to the regular repetition of a standardised set of stages
+commencing once transactions occur and capturing the financial information in source
+documents to the preparation of financial reports. It describes the sequence of events
+once a transaction occurs. Refer to the accounting cycle flowchart 1 below for a visual
+representation;
+
+Flowchart 1
+
+=== PAGE 5 ===
+Accounting – Unit 0: Introduction and Accounting Cycle
+Accounting | Page 4
+
+
+
+The Accounting Cycle steps
+The accounting cycle is a continual process because business activity is ongoing. The
+source documents, journals, ledgers, financial reports and subsequent analysis are then
+carefully stored in a safe place and/or archived as they may be required for future
+reference, comparisons and/or taxation purposes.
+Stage 1 - Transactions:
+Transactions are events that alter the financial position of a business and require the
+entering of information into accounting records. Generally, this involves activities of
+buying, selling and/or exchanging of goods and services for cash or on credit.
+Stage 2 - Source Documents
+Source Documents are the original financial documents that contains evidence and/or
+proof of transactions occurring. The transaction information and details are collected in
+the form of source documents. Some commonly used source documents include;
+invoices, cheques, receipts, credit notes, bank deposit slips and bank statements. These
+source documents contain the details that will then be recorded in the journals.
+Stage 3 - Journals
+Journals are the first book of entry that are used to record details and information from
+source documents.
+Stage 4 - Ledgers
+The ledger is a book of secondary entry and contains all the accounts of a business.
+Information from the journals are posted (or transferred) to the corresponding accounts
+in the ledger.
+Ledgers include the General Ledger where values from the journals are entered and
+Accounts Payable and Receivable Subsidiary Ledgers individually.
+The accounts in the ledger can be presented in either T format or columnar format. The
+accounts are also classified and grouped into five elements. These include the Assets,
+Liabilities, Owner’s Equity, Revenue and Expenses of a business (refer to Lecture 3).
+Stage 5 - Trial balance
+The Trial Balance is a list of all the account balances in the General Ledger (after the
+balancing process for each account is completed). Debit balances are listed in the debit
+column of the Trial Balance and credit balances are listed in the credit column. The totals
+for the debit and credit columns are calculated to check if they are equal. This ensures
+that the accounting rules have been followed (ie double entry rule) and the equality of
+the accounting equation has been maintained.
+Stage 6 - Reports
+The trial balance is used to prepare the financial reports of a business. The reports are
+prepared at the end of the accounting period. The 2 main reports for the purposes of this
+course are the Profit and Loss Statement and the Balance Sheet.
+
+=== PAGE 6 ===
+Accounting – Unit 0: Introduction and Accounting Cycle
+Accounting | Page 5
+
+
+1.
+Transactions
+6. Reports
+2. Source
+Documents
+5. Trial
+Balance
+3. Journals
+4. Ledgers
+
+
+The Profit and Loss Statement is also known as the Income Statement or the
+Statement of Financial Performance. It contains information about the revenues (R) and
+expenses (E) of a business for a defined accounting period, hence the profit or loss (R-E)
+of a business and how the business has performed.
+The Balance Sheet or the Statement of Financial Position displays the assets, liabilities
+and owner’s equity of the business at a point in time.
+The Cash Flow Statement is a financial report that tracks the movement of cash into and
+out of a business over a specific period, detailing how much cash is generated and spent
+from operating, investing, and financing activities. Unlike an income statement that includes
+non-cash transactions, a cash flow statement focuses solely on actual cash movements to
+provide insight into a company's liquidity, financial health, and ability to meet its financial
+obligations
+After the financial statements are prepared and presented they are then analysed in
+order to assess the profitability, liquidity, solvency and management effectiveness of the
+business. The financial reports and their subsequent analysis will be used by interested
+parties such as owners, managers, creditors and investors for informed decision making.
+The accounting cycle then begins for the next accounting period.
+
+=== PAGE 7 ===
+Accounting – Unit 1: What is Accounting
+Accounting | Page 6

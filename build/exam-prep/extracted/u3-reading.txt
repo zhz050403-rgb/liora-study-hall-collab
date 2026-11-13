@@ -1,0 +1,574 @@
+# week2/unit3 reading materials double entry & transaction analysis.pdf
+# sha256=d62c282718e7cf08c4f016cb3687a92fdfa19820d403d4d425dfb5fc8931054a
+
+=== PAGE 1 ===
+UNSW College Foundation Studies
+Accounting
+Double Entry & Transaction Analysis
+Unit
+3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Readings
+
+
+Elements of Accounting
+In order to classify and describe items exchanged in accounting transactions, five (5)
+elements or groupings are required.
+The 5 elements (or groupings) are:
+Assets (A): items of value a business owns or owed to a business eg cash, furniture and
+motor vehicle. The Assets can be subdivided into current assets and non-current assets.
+•
+Current assets are assets expected to be consumed or used up within one
+accounting period. They can be easily converted into cash. The examples
+of current assets are cash, stock and accounts receivable (debtors).
+•
+Non-current assets are assets that will remain with the business for
+longer than one accounting period. They will be used up over many
+accounting periods.
+Examples are equipment, furniture, motor vehicle, goodwill and investments.
+Liabilities (L): what the business owes to persons or other businesses other than the
+owners eg trade creditors and loans. Liabilities can be subdivided into current liabilities
+and non-current liabilities.
+•
+Current liabilities are amounts owed to persons or businesses that have to
+be repaid within one accounting year, for example, accounts payable
+(creditors) and bank overdraft.
+•
+Non-current liabilities are commitments which do not need to be met
+within twelve months of the balance date, for example, mortgage loans.
+
+Revenues (R) are the income of the business. Revenue can be from different
+sources such as sales, rent received, interest received, commission received,
+discounts received, and service fees received. The accounts that keep record of such
+revenue items are found in the general ledger of a business. They include sales,
+rent received, interest received, commission received, discounts received and
+service revenue.
+
+Revenue items help to generate profit for the business and subsequently increases
+owner’s equity.
+
+Expenses (E) are outgoings or costs to pay for items that enable the business to
+operate to continue earning income. Some examples of expenses are cost of goods
+sold, wages, rent, bank fees, telephone and advertising.
+
+=== PAGE 2 ===
+Expenses decrease profits for the business and subsequently decreases owner’s equity
+Owner’s Equity (OE): what the business owes its owners or what belongs to the owners
+eg capital and drawings.
+•
+Capital is the amount the owner has put into or contributed to the business.
+•
+Drawings is a withdrawal of cash or stock from the business by the owner.
+•
+Any profit made by the business will increase the owner’s equity in the business.
+•
+Any loss incurred by the business will reduce the owner’s equity in the business.
+
+Why do you have to separate into current or non current?
+
+•
+Clear presentation
+•
+To comply with accounting standards and regulations
+•
+Required for good business planning. For example the business should be aware
+of the liquid assets in order to meet short debts or fund any future purchases
+and/or investments.
+
+Accounts associated with the income statement
+
+An income statement (or a profit and loss statement) is another important financial
+report of a business. It is a statement of the financial performance of a business over
+a period of time. The income statement reports on the revenues (incomes) and
+expenses of a business. Because the income statement reports on the revenues and
+expenses, the accounts associated with these two groups are referred to as the
+income statement accounts.
+
+In general, the difference between the revenue (R) and expenses (E) is shown as
+either a profit or a loss and usually the report is presented in the vertical format.
+
+Revenues are the income of the business. Revenue can be from different sources
+such as sales, rent received, interest received, commission received, discounts
+received, and service fees received. The accounts that keep record of such revenue
+items are found in the general ledger of a business. They include sales, rent
+received, interest received, commission received, discounts received and service
+revenue.
+Revenue items help to generate profit for the business and subsequently increases
+owner’s equity.
+
+Expenses are outgoings or costs to pay for items that enable the business to operate
+to continue earning income. Some examples of expenses are cost of goods sold,
+wages, rent, bank fees, telephone and advertising.
+
+Expenses decrease profits for the business and subsequently decreases owner’s equity.
+
+=== PAGE 3 ===
+Accounting
+
+
+Accounts associated with the balance sheet
+
+The balance sheet is an important financial report. It is a report or statement about
+the financial position of a business as at a particular date. It is a detailed version of
+the accounting equation. In report format, it is a listing of the assets owned by a
+business, the liabilities of the business and the owner’s equity in the business.
+
+•
+Some examples of accounts in the asset element or group are cash at bank,
+accounts receivable, stock, machinery, furniture, land and building, plant and
+equipment and motor vehicles.
+•
+Some examples of accounts in the liability element or group are accounts
+payable and loans.
+•
+Some examples of accounts in the owner’s equity element or group are capital
+and drawings.
+
+The Expanded Accounting Equation
+The expanded equation can be represented as:
+A + E = L + OE + R
+or
+A = L + OE + (R – E)
+(R - E) represents the calculation of profit or loss.
+If R > E, the business makes a profit. Profit is a reward for risk taking and is added to
+the owner’s equity as it belongs to the owners.
+If R < E, the business makes a loss. Losses reduce the owner’s equity as it also belongs
+to the owners.
+The (R – E) shows the relationship between the balance sheet and the income statement as
+any profits or losses belong to the owners (owed to the owners).
+A = L+OE is also presented by the balance sheet whilst (R-E) is presented by the income
+statement and it has an effect on the balance sheet via OE.
+
+Applying the double entry convention helps to maintain the equality of the accounting
+equation. Equality of the accounting equation must be maintained at all times.
+
+What is an account?
+
+The basic recording unit. Each transaction is recorded into accounts. Accounts are the items
+that are affected by the transaction. Accounts are the items that are affected by the
+transaction and where transactions are subsequently recorded.
+
+An account records any increase and decrease of assets, liabilities, revenue, expenses
+and owner’s equity.
+
+Accounts are found in the General Ledger. Accounts can be presented in either the T
+format or the columnar format. As part of this course both formats will be discovered
+and assessed. The overall and end results will be the same.
+
+T-account
+Accounts in T format are similar to the capital letter T with the name of an account
+shown at the top. The left hand side of the T account is called the debit side and includes
+column headings of the date, particulars and debit amount. The right hand side of the
+T account is called the credit side and also includes column headings of the date,
+particulars and credit amount. The particulars can also be called the description column
+and is used to record the name of the corresponding account affected.
+
+=== PAGE 4 ===
+Accounting
+
+
+
+The example below shows the Cash Account being presented in the T format.
+
+Cash at Bank Account (in T format)
+
+Date
+Particulars
+Debit $
+Date
+Particulars
+Credit $
+
+Column format account
+Accounts in the columnar format show the name of the account at the top and include the
+column headings of the date, particulars, debit amount, credit amount and balance. The
+particulars can also be called the description column and is used to record the name of the
+corresponding account affected.
+
+The main differences between the T and columnar formats are the one date and particular
+columns, the debit and credit columns are side by side and the additional balance column in
+the columnar format. T format similarities are the date, particulars, debit is on the left
+hand side and credit is on the right hand side.
+
+The example below shows the Cash Account being presented in the columnar format.
+
+Cash at Bank Account (in columnar format)
+
+Date
+Particulars
+Debit $
+Credit $ Balance $
+
+=== PAGE 5 ===
+Accounting – Unit 3: Accounts
+Accounting | Page 1
+
+
+
+Chart of accounts
+
+As there can be a large number of accounts in a business, a chart of accounts is
+necessary and prepared to list all the accounts in the general ledger under the 5
+groups/elements. Each account listed in the chart of accounts is allocated an account
+code. This is necessary for easy identification and sorting of accounts. The account
+code may be in a numeric or alpha-numeric sequence. The chart of accounts is
+prepared at the commencement of the business and added to as the need arises in the
+future.
+
+Businesses in different industries will tend to have different accounts and therefore a
+different chart of accounts. A chart of accounts is tailored to each individual business.
+The common elements or groupings will remain the same.
+
+The table below is an example of a chart of account
+
+
+Current Assets ---1
+1.1
+Cash at bank
+1.2
+Accounts receivable control
+1.3
+Stock
+Non-current assets ---2
+2.1
+Machinery
+2.2
+Office furniture
+2.3
+Land and buildings
+Current liabilities ---3
+3.1 Accounts payable control
+Non-current liabilities –-4
+4.1 Bank loans
+Owner’s equity ---5
+5.1
+Capital
+5.2
+Drawings
+Revenue ---6
+6.1
+Sales
+6.2
+Discount received
+6.3
+Commissions received
+6.4
+Interest received
+6.5
+Sales Returns
+Expense ---7
+7.1
+Purchases
+7.2
+Wages
+7.3
+Discount allowed
+7.4
+Rent
+7.5
+Bad debts
+
+=== PAGE 6 ===
+Accounting – Unit 3: Accounts
+Accounting | Page 2
+
+
+
+Double entry explained
+
+Under the universally used double-entry system, the dual (two-sided) effect of each
+transaction is recorded in appropriate accounts. This system provides a logical method for
+recording transactions. The double-entry system also offers a means of ensuring the accuracy
+of the recorded amounts. If every transaction is recorded with equal debits and credits, then
+the sum of all the debits to the accounts must equal the sum of all the credits. The double-
+entry system for determining the equality of the accounting equation is much more efficient
+than the plus/minus procedure used earlier. Therefore, it was necessary after each transaction
+to compare total assets with total liabilities and equity to determine the equality of the two
+sides of the accounting equation.
+
+Analyze transactions and prepare an analysis table
+
+Recording transactions in the accounts requires following all the conventions and
+concepts especially the double entry rule. The double entry rule requires that each
+transaction affect at least two accounts; one on the debit side and the other on the
+credit side. To decide which account has to be debited and which has to be credited,
+each transaction has to be analysed. A table is drawn up to help analyse the transactions.
+It is called an analysis chart.
+
+Using the accounting equation as a guide Debits (Dr) and Credits (Cr) are used in
+business to help explain associated increases and/or decreases of assets, liabilities,
+revenue, expenses and owner’s equity.
+
+Rules that should be followed are:
+•
+Record on the debit side if assets and expenses  increase.
+•
+Record on the credit side if assets and expenses decrease.
+•
+Record on the credit side if liabilities, revenues and
+owner’s equity increase.
+•
+Record on the debit side if liabilities, revenues and owner’s
+equity decrease.
+The rules can be summarised in the table below:
+
+
+A
++
+E
+=
+L
++
+OE
++
+R
+Increase
+dr
+
+dr
+
+cr
+
+cr
+
+cr
+Decrease
+cr
+
+cr
+
+dr
+
+dr
+
+dr
+
+
+To analyse transactions:
+
+Follow the steps below to analyse a transaction.
+1. Read the transaction description and identify the key words.
+2. Determine the 2 accounts affected as a minimum (ie is it the cash at
+bank account, capital account, furniture or loan account).
+3. Determine the element or group of accounts for each account affected (ie A,
+L, OE, R or E)
+4. Determine the effect of the transaction on the accounting
+equation (ie increase the assets or decrease the assets or
+increase the owner’s equity or decrease the owner’s equity).
+5. Apply the double entry rule to decide if each account should be
+recorded on the debit side a n d / or credit side.
+
+=== PAGE 7 ===
+Accounting – Unit 3: Accounts
+Accounting | Page 3
+
+
+
+Practice:
+
+On 1 January 20XX, the owner contributed $10,000 cash as capital to start a business.
+1. The key words are ‘cash’ and ‘capital’.
+2. Thus, the two accounts affected are the Cash at Bank Account and the
+Capital Account.
+3. The Cash at Bank Account belong to the Asset element while the
+Capital Account belongs to the Owner’s Equity element.
+4. The effects of the transactions are: Assets increase and Owner’s
+Equity increases.
+5. According to the double entry rule table: When assets increase, debit.
+When Owner’s Equity increases, credit. Thus, debit the Cash at Bank
+Account and credit the Capital Account.
+
+In short, this is written and read as:
+
+Dr
+Cash at Bank Account
+$10,000
+Cr
+Capital Account
+$10,000
+
+The table below shows the transactions and how each transaction can be analysed using an
+analysis chart. The transactions are given in the first column. You may practice to analyse
+the transactions using the blank analysis chart provided for you. Then check your answers
+in the page that follows.
+
+An analysis table:
+
+Transactions
+Accounts affected Element A
+,L,OE, R, E
+Increase
+or
+decrease
+Dr
+or
+Cr
+Paid
+employees
+for
+work performed
+Purchased stock on credit
+Purchased stock with cash
+Paid fees charged by
+the bank
+Credit sale of stock
+Cash sale of stock
+Paid freight charges
+
+=== PAGE 8 ===
+Accounting – Unit 3: Accounts
+Accounting | Page 4
+
+
+
+
+Practice Question solution:
+
+Transactions
+Accounts affected
+Elemnt
+A, L, OE,
+R, E
+Increase
+or
+decrease
+Dr
+or
+Cr
+Paid
+employees
+for
+work performed
+Wages
+Cash at Bank
+E
+ A
+increase
+decrease
+Dr
+Cr
+Purchased stock on credit
+Purchases
+ A/c payable
+E
+ L
+increase
+increase
+Dr
+Cr
+Purchased stock with cash
+Purchases
+Cash at Bank
+E
+ A
+increase
+decrease
+Dr
+Cr
+Paid fees charged by
+the bank
+Fees Expenses
+Cash at Bank
+E
+ A
+increase
+decrease
+Dr
+Cr
+Credit sale of stock
+Accounts
+receivable Sales
+A
+ R
+increase
+increase
+Dr
+Cr
+Cash sale of stock
+Cash
+at
+Bank
+Sales
+A
+ R
+increase
+increase
+Dr
+Cr
+Paid freight charges
+Freight charges
+Cash at Bank
+E
+ A
+increase
+decrease
+Dr
+Cr
+
+Note: The 2 important accounts
+Accounts payable
+Accounts payable is also known as creditors and is an example of current liabilities.
+Accounts payable are businesses or persons from whom the business purchases trading
+goods on credit and thus owes amounts.
+
+E.g. Kingsford Trading bought toys from Queen Limited for $400, to be paid in
+21 days.
+
+Queen Limited is an Accounts payable for Kingsford Trading as they owe Queen
+Limited money in return for goods purchased on credit.
+
+
+Accounts receivable
+Accounts receivable is also known as debtors and is an example of current assets.
+Accounts receivable are businesses or persons that the business sells goods to on
+credit.
+ E.g. Kingsford Trading sold toys to Princess Limited for $500, to be paid in 14
+days.
+
+Princess Limited is an Accounts Receivable for Kingsford Trading as they will
+receive money from Princess Limited for toys sold on credit.
+
+=== PAGE 9 ===
+Accounting – Unit 3: Accounts
+Accounting | Page 5
+
+
+
+
+
+Note: The 2 methods of recording inventory transactions
+
+1. Perpetual – this method involves the business keeping track of each inventory item
+and purchases of inventory are recorded in the Inventory account. Once a sale of
+goods occurs the original cost is transferred out of the inventory account and into
+the expense account named Cost Of Goods Sold (COGS). This method allows the
+business to calculate the Gross Profit (ie Sales – COGS) immediately. This method
+usually suits businesses where the tracking of individual inventory items is feasible
+and cost effective. This course will not use this method.
+
+2. Periodic – this method involves the business recording the purchase of Inventory
+into the expense account named Purchases. Therefore once a sale of goods occurs
+no transaction is required to the Inventory account at that point in time. However,
+at the end of the accounting period a stocktake is undertaken (a physical counting
+of Inventory on hand/not sold) and this is used together with the Inventory at the
+beginning of the accounting period to determine the Cost of Goods Sold (COGS)
+and hence the Gross Profit. This method usually suits businesses where the
+tracking of individual inventory items is not feasible and too costly. This course
+will use this method only.

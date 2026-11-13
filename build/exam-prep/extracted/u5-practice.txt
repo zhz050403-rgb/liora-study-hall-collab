@@ -1,0 +1,209 @@
+# week5/unit5b practice balancing an account (t-account).pdf
+# sha256=a0be91730adc2f8ab653f59d87eb6bdede7be66bfce1944cf0385dc8a5bb9589
+
+=== PAGE 1 ===
+Page 1 of 3
+Lecture Exercise: Unit 5b
+Balancing an account (T format)
+Given below are the transactions of Barry’s Doctor Clinic.
+Transactions:
+1 February - Barry (the owner) contributed $10,000 cash to the business
+4 February - The business provided treatment (Service Revenue) worth $2,500 to Vicky on credit.
+Hint: “on credit” means Vicky will pay cash later.
+8 February - The business received $2,500 cash from Vicky for the treatment provided on 4
+February. Hint: Remember to decrease the amount Vicki owes from Accounts Receivable.
+21 February - Paid 3 months rent in advance (ie rent is for March, April and May) for $3,000 cash.
+28 February - Received $1000 cash from Angelina for future treatment. Hint: the service hasn’t
+been provided yet.
+Analysis Table:
+Date
+Accounts Affected
+Type of
+Account
+(A, L, OE,
+R, E)
+Increase/
+Decrease
+Dr or Cr
+Amount
+$
+February
+1
+Cash
+Capital
+A
+OE
+Increase
+Increase
+DR
+CR
+10,000
+10,000
+4
+Accounts Receivable- Vicky
+Service Revenue
+A
+R
+Increase
+Increase
+DR
+CR
+2,500
+2,500
+8
+Cash
+Accounts Receivable- Vicky
+A
+A
+Increase
+Decrease
+DR
+CR
+2,500
+2,500
+21
+Prepaid Rent
+Cash
+A
+A
+Increase
+Decrease
+DR
+CR
+3,000
+3,000
+28
+Cash
+Unearned Revenue
+A
+L
+Increase
+Increase
+DR
+CR
+1,000
+1,000
+
+=== PAGE 2 ===
+Page 2 of 3
+
+Balance the cash at bank account
+
+General Ledger (T-Format)
+
+Cash at Bank
+Date
+Particulars
+$
+Date
+Particulars
+$
+1/2
+Capital
+10,000  21/2
+Prepaid Rent
+3,000
+8/2
+A/C Receivable- Vicky
+2,500
+28/2
+Unearned Revenues
+1,000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Accounts Receivable
+Date
+Particulars
+$
+Date
+Particulars
+$
+4/2
+Service Revenue
+2,500 8/2
+Cash at Bank
+2,500
+
+=== PAGE 3 ===
+Page 3 of 3
+
+
+Prepaid Rent
+Date
+Particulars
+$
+Date
+Particulars
+$
+21/2
+Cash at bank
+3,000
+
+
+
+
+
+
+
+
+
+
+
+
+
+Unearned Revenue
+Date
+Particulars
+$
+Date
+Particulars
+$
+ 28/2
+Cash at bank
+1,000
+
+
+
+
+
+Service Revenue
+Date
+Particulars
+$
+Date
+Particulars
+$
+4/2
+Accounts
+Receivable- Vicky
+2,500
+
+
+
+
+
+Capital
+Date
+Particulars
+$
+Date
+Particulars
+$
+ 1/2
+Cash at bank
+10,000

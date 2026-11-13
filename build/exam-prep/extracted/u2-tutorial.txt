@@ -1,0 +1,304 @@
+# week1/unit2 tutorial guide accounting conventions.pdf
+# sha256=c13605564fa7b33fb5e847ea7f9a3ba13b656fb7e52d190c244bba217b2316a0
+
+=== PAGE 1 ===
+UNSW College Foundation Studies
+Accounting
+
+
+
+Accounting
+
+Unit
+2
+
+
+Accounting Conventions
+
+Week 2
+
+Learning objectives
+At the end of this tutorial, you should be able to
+•
+Describe the key accounting conventions.
+•
+Identify and apply the accounting conventions to business transactions.
+
+Before this tutorial, you should have
+•
+Attended the Unit 2 lecture
+•
+Read the Unit 2 Readings
+•
+Completed the Unit 2 Tutorial Questions
+•
+Read the In-Class Activities question
+
+During this tutorial, you will
+•
+Complete the In-Class Activities
+
+After this tutorial, you should
+•
+Complete any applicable quiz.
+•
+Consider attending one of the scheduled consultations and attempt to resolve any
+questions that you have as soon as possible.
+
+=== PAGE 2 ===
+Accounting – Unit 2: Accounting Conventions
+
+Accounting | Page 1
+
+Tutorial Questions
+
+Terms and Concepts
+
+The following terms and concepts must be understood in the context of the tutorial.
+Provide written explanations of these terms and concepts in the space provided.
+
+Terms/Concepts
+Explanation
+Accounting
+Conventions
+
+Accounting Entity
+
+Continuity/Going
+Concern
+
+Historical Cost
+
+Accounting Period
+
+Double Entry
+
+Monetary
+
+Accounting
+Equation
+
+Consistency
+Convention
+
+Accrual
+Convention
+
+Conservatism
+
+Cash Accounting
+
+Accrual Accounting
+
+Account
+Receivable
+
+Account Payable
+
+=== PAGE 3 ===
+Accounting – Unit 2: Accounting Conventions
+
+Accounting | Page 2
+
+1. All but the smallest of businesses record transactions at the time a purchase or sale
+takes place irrespective of payment or receipt of cash. This also gives rise to Accounts
+Payable and Accounts Receivable. Distinguish between the cash and accrual basis of
+accounting.
+
+Cash Accounting
+Accrual Accounting
+
+
+
+2. According to the cash basis of accounting, state the date as to when revenue must be
+recognised when goods are sold on 30 April and paid for on 31 May.
+
+
+
+
+3. According to the accrual basis of accounting, state the date as to when
+revenue must be recognized when goods are sold on 30 April and paid for on
+31 May.
+
+=== PAGE 4 ===
+Accounting – Unit 2: Accounting Conventions
+
+Accounting | Page 3
+
+4. Match the following Accounting Convention with the appropriate definition.
+
+Convention
+Answer (letter
+A, B …. G)
+Definition
+Accounting Entity
+
+A. This convention assumes
+that a business is set up
+to continue indefinitely.
+
+Continuity/Going Concern
+
+B. The life of a business is
+split into regular
+intervals so that business
+activities and
+performance can be
+measured.
+Consistency
+
+C. The business and its
+records are separate
+from the owner and
+other entities.
+
+Historical Cost
+
+D. The same accounting
+rules are applied every
+year for comparability
+Accounting Period
+
+E. Each transaction affects
+at least two Accounts.
+
+Double Entry
+
+F. Assets are recorded in
+the balance sheet in their
+original purchase price.
+Accrual Convention
+
+G. All information must be
+described in money
+terms in the country of
+operation.
+Monetary
+
+H. Assets (A) equals
+Liabilities (L) plus
+Owner’s Equity (OE) and
+must be maintained at all
+times.
+Accounting Equation
+
+I. Transactions are
+recorded at their original
+purchase price as verified
+by their source
+document.
+
+=== PAGE 5 ===
+Accounting – Unit 2: Accounting Conventions
+
+Accounting | Page 4
+
+In-Class Activities
+
+5. Jay is the owner of the business Jay’s Supplies and wants to buy a motor vehicle. He
+has a friend named Kyle who works at Cars R Us and offers Jay a motor vehicle worth
+$30,000 for $20,000. Jay decides to buy the motor vehicle to be used in the business
+with a bank loan and has an invoice issued.
+Jay’s Supplies also hasn’t been performing well this year and therefore Jay wants to use
+a trading period of 2 years for accounting purposes to make the performance look
+better.
+Answer the following questions using applicable accounting conventions to support your
+answers where appropriate;
+a) At what price must Jay record the motor vehicle for and why?
+
+b) Can Jay use a 2-year trading period and why/why not?
+
+
+
+c) How many accounts are affected in this transaction? Why and what are they?
+
+
+
+d) Prove that equality of the accounting equation is maintained.
+
+Assets $
+=
+Liabilities $
++
+OE $
+
+=== PAGE 6 ===
+Accounting – Unit 2: Accounting Conventions
+
+Accounting | Page 5
+
+6. Stef’s new business is called ‘Stylish Flares’ and trades in the fashion and clothes
+industry. For each numbered scenario state and explain which accounting
+convention has not been adequately met.
+Stef has just started her business and doesn’t have enough money/cash to hire an
+Accountant. Thus, she decides to prepare her reports after 1 year of operation as she
+believes the business will take a long time to start running properly.
+
+Convention
+
+Explanation
+
+
+7. Stef decides to withdraw some cash from the business for personal use. She doesn’t
+feel she needs to record this in the business as she owns the business, and she
+thinks all the cash in the business belongs to her.
+
+Convention
+
+Explanation
+
+
+8. Stef buys some of her trading clothes from China in order to resell in Australia.
+She believes that it would be more accurate to record her stock in Chinese Yuan
+(RMB) since that is the currency her business actually paid.
+
+Convention
+
+Explanation
+
+
+9. Stef contributes additional cash to the business and records this transaction in the
+cash at bank account only.
+
+Convention
+
+Explanation
+
+
+10. Stef’s accounting used straight line depreciation method to calculate depreciation
+expense last year. But this year he used the double declining method to calculate
+the depreciation expense of the company.
+Convention
+
+Explanation
+
+=== PAGE 7 ===
+Accounting – Unit 2: Accounting Conventions
+
+Accounting | Page 6
+
+11. In January 2024, Stef added the January 2024 revenue to her 2023 income
+statement.
+
+Convention
+
+Explanation
+
+=== PAGE 8 ===
+Accounting – Unit 2: Accounting Conventions
+
+Accounting | Page 7
+
+ADDITIONAL PROBLEM: SELF STUDY
+12. Joel owns and manages a sports shop named ‘Sports Magic’ that uses the accrual
+method of accounting. Joel has been having a few issues recently that he needs
+your help with:
+
+On 11 August 20XX the business sold a basketball for $50 on credit to a regular customer
+named Mel. Since the business has not received the money yet, Joel decides not to record
+this as a sale. Mel pays the amount owing on 5 September 20XX, to which Joel then records
+the cash received from Mel as a cash sale.
+
+Required:
+Advise Joel on his recording of the sale transactions. (Hint: Think of the accrual
+method of accounting)

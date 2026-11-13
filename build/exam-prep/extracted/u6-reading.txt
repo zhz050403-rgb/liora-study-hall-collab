@@ -1,0 +1,648 @@
+# week5/unit6 reading materials ledger accounts t-format.pdf
+# sha256=aa68e658258abca17c4f3e7c917e6ddb2fd4715afc5728bae409e97345abe75d
+
+=== PAGE 1 ===
+Accounting – Unit 5: Ledger Accounts – T-format
+Accounting | Page 1
+
+
+UNSW College Foundation Studies
+Accounting
+Ledger Accounts: T-format
+
+Unit
+5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Readings
+
+
+The general journal provides a chronological list of all of the transactions for a business. A
+chronological list on its own, however, is of limited use. Classifying and summarising data
+improves their usefulness for decision making. For example, a business’s general journal could
+contain hundreds of purchases, cash receipts and cash payments transactions in any given month.
+If a sales manager wants to know the total sales revenue for any particular month, this information
+cannot be easily obtained from the general journal, but it can be obtained from the sales revenue
+account in the ledger. The ledger accumulates all the information about changes in specific
+account balances such as sales revenue, cash, and wages expense.
+
+The entire group of accounts maintained by a business is referred to collectively as the general
+ledger. A general ledger contains all the assets, liabilities and equity accounts, as shown below.
+
+=== PAGE 2 ===
+Accounting – Unit 5: Ledger Accounts – T-format
+Accounting | Page 2
+
+
+
+T-format vs Column format
+
+Accounts are found in the General Ledger. Accounts can be presented in the T format or the
+columnar format. Once a transaction is analysed, entries can be made to the related accounts and
+the double entry rule followed.
+Accounts in T format are similar to the capital letter T with the name of an account shown at the top of
+the T. The left hand side of the T account is called the debit side and includes column headings of the
+date, particulars and debit amount. The right hand side of the T account is called the credit side and
+also includes column headings of the date, particulars and credit amount. The particulars can also be
+called the description column and is used to record the name of the corresponding account affected.
+
+The example below shows the Cash Account being presented in the T format.
+
+Cash at Bank Account (in T format)
+
+Date
+Particulars
+Debit $
+Date
+Particulars
+Credit $
+Accounts in the columnar format show the name of the account at the top and include the column headings of
+the date, particulars, debit amount, credit amount and balance. The particulars can also be called the
+description column and is used to record the name of the corresponding account affected.
+
+The main differences between the T and columnar formats are the one date and particular columns, the debit
+and credit columns are side by side and the additional balance column in the columnar format. T format
+similarities are the date, particulars, debit is on the left hand side and credit is on the right hand side.
+The example below shows the Cash Account being presented in the columnar format.
+
+Cash at Bank Account (in columnar format)
+
+Date
+Particulars
+Debit $
+Credit $
+Balance $
+
+Posting in T-format
+
+The procedure of transferring journal entries to ledger accounts is called posting. This phase of the recording
+process accumulates the effects of journalised transactions in the individual asset, liability, equity, revenue and
+expense accounts.
+
+Each account has a name. To record a transaction in an account:
+•
+the same date is recorded in both accounts because they refer to the same transaction
+that occurs on 1 January.
+•
+ In the particulars column, write the name of the corresponding account so the two
+accounts cross refer to one another. The amount is written in the debit and credit column
+accordingly.
+
+For example, to record the transaction:
+“On 1 January, the owner contributes $10,000 cash as capital to start their business”.
+
+In the Cash at Bank Account below, the date is Jan 1, the corresponding account name is Capital,
+and the amount is 10,000 on the debit side.
+
+In the Capital Account below, the date is Jan 1, the corresponding account name is Cash at Bank,
+and the amount is 10,000 on the credit side.
+
+=== PAGE 3 ===
+Accounting – Unit 5: Ledger Accounts – T-format
+Accounting | Page 3
+
+
+Cash at Bank Account
+
+Date
+Particulars
+Debit
+Date
+Particulars
+Credit $
+Jan 1
+Capital
+10,000
+Capital Account
+
+Date
+Particulars
+Debit
+Date
+Particular
+Credit $
+Jan 1
+Cash at Bank
+10,000
+
+To read an account say the side, name and amount.
+For example:
+•
+Debit cash at bank account $10,000.
+•
+Credit Capital account $10,000.
+
+Balancing in T-format
+
+(Note: b/d = brought down, c/d = carried down)
+
+Once recording is complete, a trial balance is prepared. To facilitate this process, the balance of each account
+in the general ledger must be calculated. The process of balancing a T account is illustrated using the cash
+account below. Balancing involves the following main steps:
+•
+For each account, add each side. Generally, the normal account balance side will be larger - (Debit side
+for Assets, Expenses & Drawings, Credit side for Liabilities, Owner’s Equity & Revenue)
+•
+The closing balance for the account can now be determined by subtracting the amounts listed on the
+lesser side from the total. The words ‘balance c/d or closing balance’ and the amount calculated in this
+step are recorded on the lesser side (generally the side opposite to the normal balance side).
+•
+The date (the first day of the next month), the words ‘balance b/d or opening balance’ and the balance
+calculated in step 3 are written below the ruled-off lines on the greater account balance side (usually the
+normal balance side).
+
+Cash at Bank
+Date
+Particular
+DR
+Date
+Particular
+Cr
+Oct-01 Capital
+40000
+Oct-05 Rent Expense
+12000
+3 Bank Loan
+7000
+12 Office Equipment
+2000
+7 Sales
+8000
+18 Drawings
+2000
+
+
+
+31 Balance c/d
+39000
+
+
+55000
+
+55000
+Nov-01 Balance b/d
+39000
+
+
+
+Once these four steps have been completed, the account has been balanced. It is very important to remember
+that the closing balance is only a balancing item, i.e. the amount needed to make the debit side equal the credit
+side and have the totals in balance. It is not the correct account balance because it is on the wrong side. The
+opening balance will be the correct account balance for the account.
+
+In the Cash account above, the debit side of the cash account is the greater side and the normal account balance
+of the cash account. Adding the debit side reveals a total of $55000. This amount is written between the ruled
+lines on both the debit and credit side of the account. All the amounts listed on the credit side of the account are
+then subtracted from the total to reveal a closing balance/balance c/d of $39000. This means that the debit side
+of the account is $39000 greater than the credit side. This amount is recorded on the debit side of the cash
+account on 1 November as the opening balance/balance b/d. The November transactions can then be recorded
+in the account.
+
+=== PAGE 4 ===
+Accounting – Unit 5: Ledger Accounts – T-format
+Accounting
+
+
+
+
+
+
+
+Balancing a T format account -Illustration
+The balance of an account is essentially the difference between the debit side and the credit side of
+the account. If the debit side adds up to be greater than the credit side, the balance is called a debit
+balance. If, on the other hand, the credit side adds up to be greater than the debit side, the difference
+is a credit balance. The T format account requires periodic balancing. This is a disadvantage.
+
+To balance an account, the following steps should be followed. A Cash at Bank Account is used
+as an example to illustrate how to balance an account.
+
+Find the total of the debit side. The debit total is $16,000 (15,000 + 1,000 = 16,000).
+Find the total of the credit side. The credit total is $3,120 (500 + 2,000 + 60
++ 560 = 3,120).
+Find the difference by subtracting the smaller total from the bigger total. The difference is
+$12,880 (16,000 – 3,120 = 12,880).
+Place the difference under the side that has a smaller total. In this example,
+$12,880 is placed under the credit side. This difference is noted as Balance to be
+carried down or simply Balance c/d for short.
+Then total up the debit side, write down the total ($16,000) with a double underline.
+Then total up the credit side, write down the total ($16,000) with a double underline.
+•
+At the start of the next period, the balance is brought down to the opposite side and is
+noted as Balance b/d for short.
+
+Cash at Bank Account
+
+
+Date
+Particulars
+
+Debit $
+Date
+Particulars
+Credit $
+
+Mar 1
+Capital
+15000
+Mar 4
+Salaries expense
+500
+5
+Sales
+1,000
+14
+Office Equipment
+2,000
+19
+Drawings
+60
+27
+Office Rent
+560
+31
+Balance c/d
+12,880
+16,000
+16,000
+Apr 1
+Balance b/d
+12,880
+
+
+
+
+
+In this example, $12,880 is called a debit balance because the debit amount is greater than the credit
+amount by $12,880. A debit balance is brought down to the debit side at the start of the next month
+as shown above on “Apr 1 Balance b/d $12,880”.
+
+The balance at the start of a month is also known as the opening balance/balance b/d of an
+account. In this example, $12, 880 is the opening balance for the month of April.
+
+The balance at the end of a month is also known as the closing balance/balance b/d of an
+account. In this example, the closing balance of the account for March is $12, 880.
+
+=== PAGE 5 ===
+Accounting – Unit 5: Balancing an Account
+Accounting | Page 1
+
+
+
+
+Worked Example:
+
+Given below are the transactions of J. Jay Trading in March 20XX.
+
+Date
+Transactions of J. Jay Trading.
+1 March 20XX
+Commenced business with cash of $15 000 as his capital
+2
+Purchased office furniture on credit from Furniture Warehouse for
+$8000
+5
+The owner contributed additional cash of $7000 as capital
+7
+Paid $500 as part of the amount owing to Furniture Warehouse in
+cheque
+14
+Bought office equipment, a fixed asset, for $2000 cash
+19
+Owner withdrew $50 cash for his personal use
+26
+Purchased a motor vehicle on credit from Daisy Car Dealer for
+$4500
+27
+Bought office furniture with cash $560
+i. Using the five steps suggested for analyzing transactions, analyse the
+transactions of J. Jay Trading for the month of March and prepare an analysis
+chart for J. Jay Trading.
+ii. Record the information into the relevant T format accounts in the General
+Ledger of J. Jay Trading.
+iii. Balance all the accounts in the General Ledger of J. Jay Trading. Note whether
+the balance is a debit or a credit balance. Show clearly the Balance c/d and the
+Balance b/d for each account.
+iv. Prepare all the accounts in the T- format. Note whether each account has a
+debit or a credit balance.
+
+=== PAGE 6 ===
+Accounting – Unit 5: Balancing an Account
+Accounting | Page 2
+
+
+
+Answer to worked example:
+
+Analysis table of J. Jay Trading
+Date
+Accounts Affected
+Type of
+Account
+Increase
+Decrease
+DR
+CR
+Amount
+$
+Mar
+20XX
+1
+Cash at Bank
+Capital
+A
+OE
+Inc
+Inc
+DR
+CR
+15,000
+15,000
+2
+Office Furniture
+Accounts payable -
+Furniture Warehouse
+A
+L
+Inc
+Inc
+DR
+CR
+8,000
+8,000
+5
+Cash at Bank Capital
+A
+OE
+Inc
+Inc
+DR
+CR
+7,000
+7,000
+7
+Accounts payable –
+Furniture Warehouse
+Cash at Bank
+L
+A
+Dec
+Dec
+DR
+CR
+500
+500
+14
+Office Equipment
+Cash at Bank
+A
+A
+Inc
+Dec
+DR
+CR
+2,000
+2,000
+19
+Drawings
+Cash at bank
+OE
+A
+Dec
+Dec
+DR
+CR
+50
+50
+26
+Motor Vehicle
+Accounts payable
+- Daisy Car Dealer
+A
+L
+Inc
+Inc
+DR
+CR
+4,500
+4,500
+27
+Office furniture
+Cash at bank
+A
+A
+Inc
+Dec
+DR
+CR
+560
+560
+
+=== PAGE 7 ===
+Accounting – Unit 5: Balancing an Account
+Accounting | Page 3
+
+
+
+
+Answers to suggested practice
+Cash at Bank Account
+Date
+Particulars
+Debit $ Date
+Particulars
+Credit $
+Mar 1
+Capital
+15,000
+Mar 7
+Accounts payable
+control
+–
+Furniture
+500
+5
+Capital
+7,000
+14 Office equipment
+2,000
+19 Drawings
+50
+27 Office furniture
+560
+31 Balance c/d
+18,890
+Total
+22,000
+Total
+22,000
+Apr 1 Balance b/d
+18,890
+
+Capital Account
+
+Date
+Particulars
+Debit $
+Date
+Particulars
+Credit $
+Mar 31
+Balance c/d
+22,000
+Mar 1
+Cash at bank
+15,000
+5
+Cash at bank
+7,000
+Total
+22,000
+Total
+22,000
+
+
+Office Furniture Account
+Date
+Particulars
+Debit $
+Date
+Particulars
+Credit $
+Mar 2
+Accounts
+payable
+control
+– Furniture
+8,000
+Mar 31
+Balance c/d
+8,560
+27
+Cash at bank
+560
+Total
+8,560
+Total
+8,560
+April 1
+Balance b/d
+8,560
+
+=== PAGE 8 ===
+Accounting – Unit 5: Balancing an Account
+Accounting
+
+
+
+
+Accounts Payable Account
+
+Date
+Particulars
+Debit $
+Date
+Particulars
+Credit $
+Mar 7
+Cash at bank
+500
+Mar 2
+Office furniture
+8,000
+31
+Balance c/d
+12,000
+26
+Motor vehicle
+4,500
+Total
+12,500
+Total
+12,500
+April 1
+Balance b/d
+12,000
+
+Office Equipment Account
+Date
+Particulars
+Debit $
+Date
+Particulars
+Credit $
+Mar 14
+Cash at bank
+2,000
+Mar 31
+Balance c/d
+2,000
+Total
+2,000
+Total
+2,000
+April 1
+Balance b/d
+2,000
+
+Drawings Account
+Date
+Particulars
+Debit $
+Date
+Particulars
+Credit $
+Mar 19
+Cash at bank
+50
+Mar 31
+Balance c/d
+50
+Total
+50
+Total
+50
+April 1
+Balance b/d
+50
+
+Motor Vehicle Account
+Date
+Particulars
+Debit $
+Date
+Particulars
+Credit $
+Mar 26
+Accounts
+payable
+control
+–Daisy Car
+4,500
+Mar 31
+Balance c/d
+4,500
+Total
+4,500
+Total
+4,500
+April 1
+Balance b/d
+4,500

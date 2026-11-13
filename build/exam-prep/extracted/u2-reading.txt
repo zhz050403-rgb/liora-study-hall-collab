@@ -1,0 +1,336 @@
+# week1/unit2 reading materials accounting conventions.pdf
+# sha256=eed2bf23644bc263f688c5de312bf3ccadc56eaee9e161acb1811ef20b3a6c0c
+
+=== PAGE 1 ===
+Accounting
+
+UNSW College Foundation Studies
+Accounting
+Accounting Conventions
+Unit
+2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Readings
+
+Accounting Conventions
+Development of Accounting
+The double entry system was first outlined in the late 1400’s by Pacioli, a Franciscan
+monk and mathematician. Accounting was used by merchants to record their
+expenditure and to show 'what they had left’ (ie stewardship).
+
+Over the centuries, the emphasis of accounting has changed from asking 'what
+happened?' (collecting, recording and summarising) to 'what should we do?'
+(analysing and reporting). The preparation of financial information for decision making
+is now the key focus.
+
+The nature of accounting has changed to meet the needs of different types and sizes
+of businesses. Businesses can vary greatly in size - from sole traders to large
+companies. They can be profit-making enterprises or not-for-profit organisations such
+as clubs, charities or societies. Any organisation where money changes hands for
+goods or services can be regarded as a business.
+
+Businesses differ in their types of activities:
+
+Service businesses provide a service, eg a motel, doctor, or education
+providers.
+
+Trading or merchandising businesses buy and sell goods, eg an
+importer of shoes.
+
+Manufacturing businesses purchase raw materials and produce products
+to sell, eg shoe manufacturing.
+
+Farming businesses use the land to produce food or raw materials eg
+wool.
+
+As the nature of commerce has changed, the demands on the accounting profession
+have increased. Today the accounting system must cope with complicated and
+changing tax laws and high-pressure business activity. It must assist in decision
+making for all users of accounting information, from individuals and clubs to huge
+multinational corporations and governments.
+
+=== PAGE 2 ===
+Accounting – Unit 2: Accounting Conventions
+Accounting | Page 1
+
+
+
+Sources of accounting regulation
+Historically, the accounting system is based on a number of conventions and
+doctrines. They provide a foundation for the accounting process. However, the
+complexity of business activity found the conventions to be inadequate for the needs
+of modern accounting. The need to provide more direction has given rise to the
+development and implementation of Australian Accounting Standards and also
+Statements of Accounting Concepts.
+
+Conventions are practices or rules and accepted customs that have developed over
+time in the accounting profession. They are practices concerned with preparing
+and presenting financial information that is assumed by all accountants including
+students. Some of these are listed below.
+
+Monetary convention
+Monetary measurement means that all information must be described in dollar terms.
+Limitations:
+Inflation makes comparisons difficult because the purchasing power of the dollar
+changes from year to year. The changing value of the dollar means, for example, that
+a profit of $10,000 in 1970 cannot be directly compared with a profit of $20,000 in
+2020.
+
+Some things cannot be measured in monetary terms, eg good management and
+excellent employer-employee relations. These contribute greatly to the success of a
+business but cannot be measured easily in dollar terms.
+
+Accounting entity convention
+There needs to be a clear boundary (from an accounting point of view) separating the
+financial affairs of the accounting entity from other activities. For example, the
+personal financial affairs of the owner of a business are kept separate from the affairs
+of the business itself. All business transactions are recorded from the point of view of
+the business, not the owner.
+
+For example, John is the owner of the business Lighting Warehouse. The business has
+cash $10,000, stock $16,000 and a bank loan $30,000. The assets of the business
+total $56,000. John’s wedding ring worth $2,000 is not an asset of the business. It
+is not included in the calculation of the business assets.
+
+Continuity/Going concern convention
+This convention assumes that a business is set up to continue indefinitely. Therefore
+the assets other than stock for sale are assumed to be used in the operation rather
+than sold for profit.
+
+Historical cost convention
+Assets are valued at the original purchase price and recorded at the actual amount.
+Therefore, it is acceptable to use historical costs in the Statement of Financial
+Position.
+
+Accounting period convention
+The life of a business is split into regular and equal intervals or periods, usually one
+year or annually. This allows the business activities and performance to be measured.
+Eg the accounting period could be from 1 July 2020 to 30 June 2021 (also known as
+the financial year in Australia) or 1 January 2020 to 31 December 2020. The accounting
+reports are prepared for the specific period to enable an assessment of the results from
+trading, and a meaningful comparison with expected or past results.
+
+=== PAGE 3 ===
+Accounting – Unit 2: Accounting Conventions
+Accounting | Page 2
+
+
+
+Double Entry convention or Dual aspect convention
+This convention states that each transaction has a minimum of two aspects and thus
+a minimum of two accounts are affected. For example the introduction of cash as
+capital will increase the asset (cash) and also increase the owner’s equity (capital).
+Thus the purchase of a car for cash would result in an increase in the asset (car) and
+a decrease in another asset (cash). Any of the five elements could be affected.
+Applying the double entry convention helps to maintain the equality of the accounting
+equation.
+
+Consistency Convention
+This is a principle that the same accounting principles should be used for
+preparing financial statements over a number of time periods. This enables the
+management to draw important conclusions regarding the working of the concern over
+a longer period. It allows a comparison in the performance of different periods. If
+different accounting procedures and processes are used for preparing financial
+statements of different years then the results will not be comparable because these
+will be based on different postulates.
+
+Accrual Convention
+An accounting system that tries to match the recognition of revenues earned with
+the expenses incurred in generating those revenues. It ignores the timing of the cash
+flows associated with revenues and expenses.
+
+Cash Vs Accrual Accounting
+1. Cash accounting – cash accounting is concerned with recording accounting
+transactions at the time only when cash is received and cash is paid. As an
+example this means recording revenue only when cash is received and
+expenses when cash is paid. Most small businesses use this method.
+2. Accrual accounting – accrual accounting is concerned with recording accounting
+transactions at the time they take place irrespective of the exchange of cash. This
+means that in an accounting period recording revenues as earned and expenses as
+incurred regardless of cash being paid or received. This method uses the concept
+of matching revenues and expenses in an accounting period as to when and how
+to record transactions. Thus a sale of goods on credit gives rise to revenue and
+accounts receivable and a purchase of goods on credit gives rise to purchases and
+accounts payable in the accounting period. This method provides a more
+meaningful profit/loss result and most medium/large businesses use this method.
+ For most merchandising businesses, using the accrual basis of accounting means
+recording revenues when goods are sold rather than when the cash is received.
+For entities that generate revenue by providing services, the accrual basis of
+accounting is typically applied by recording revenue when the service is performed
+rather than when the customer or client pays for the service. If services are part
+of a long-term contract, the revenue may need to be recognised progressively
+over several periods. The accounting reports prepared using the accrual-based
+system better reflect the true position and performance of the business for the
+period covered by the accounting period.
+The matching of Revenues and Expenses for the defined accounting period is an important
+part of profit/loss measurement and the subsequent preparation of the Income Statement
+and Balance Sheet. A business could use either of 2 accounting methods in order to record
+transactions and determine their profit; cash accounting or accrual accounting.
+
+Conservatism
+Conservatism, or prudence, is a principle that dictates accountants should recognize potential
+losses when they are possible, but only record potential gains when they are certain. This
+practice ensures that financial statements are not misleading by overstating assets or income.
+
+=== PAGE 4 ===
+Accounting – Unit 2: Accounting Conventions
+Accounting | Page 3
+
+
+
+The revenue recognition principle
+The revenue recognition principle is an accounting concept under accrual
+accounting that states revenue should be recorded only when it has been earned and
+is realized or realizable, regardless of when payment is received.
+
+Accounting Equation convention
+A basic accounting equation is used to implicitly express that Assets (A) equals Liabilities
+(L) plus Owner’s Equity (OE). The accounting equation can thus be expressed as:
+A = L + OE
+Or
+A – L = OE (this is also known as Net Assets)
+The basic accounting equation can also be expanded to include Revenues (R) and
+Expenses (E).
+Refer to the following examples illustrating equality of the accounting equation.
+
+Example 1:
+The owner, John, starts a business called Lighting Warehouse. The owner introduces
+assets in the form of cash $30,000 into the business as his capital.
+
+The effects on the equation are:
+Asset (which is cash) has increased by $30,000; at the same time, the owner’s
+equity (which is the capital contributed by the owner) has increased by $30,000. The
+equation shows:
+Assets $
+=
+Liabilities $
++
+OE $
+Cash:
++30,000
+
+
+
+Capital: +30,000
+Total:
+30,000
+=
+0
++
+30,000
+
+
+Example 2:
+The business purchased a car with cash $20,000.
+
+The effects on the equation are:
+The asset (which is the car) has increased by $20,000; at the same time the asset
+(which is the cash in the business) has decreased by $20,000.
+
+Now the equation shows:
+
+Assets $
+= Liabilities $
++
+OE $
+Cash:
++30,000
+Car:
++20,000
+Cash:
+-20,000
+Capital:
++30,000
+Total:
+30,000
+= 0
++
+30,000
+
+=== PAGE 5 ===
+Accounting – Unit 2: Accounting Conventions
+Accounting | Page 4
+
+
+
+Example 3:
+The owner withdraws $2000 cash for his personal use.
+
+The effects on the equation are:
+The asset (which is cash) has decreased by $2000; at the same time, the owner’s
+equity has decreased by $2000 (because of the drawings). Drawings decrease the
+owner’s equity in the business.
+
+Now the equation shows:
+
+Assets $
+= Liabilities $
++
+OE $
+Cash:
++30,000
+Car:
++20,000
+Cash:
+-20,000
+Cash:
+-2000
+Capital:
++30,000
+Drawings:
+-2000
+Total:
+28,000 = 0
++
+28,000
+
+Example 4:
+The business takes out a bank loan of $40,000. The effects
+on the equation are:
+The asset (which is cash) has increased by $40,000; at the same time, the liability of
+the business has increased by $40,000 (because of the loan).
+
+Now the equation shows:
+
+Assets $
+=
+Liabilities $
++
+OE $
+Cash:
++30,000
+Car:
++20,000
+Cash:
+-20,000
+Cash:
+-2000
+Cash:
++40,000
+Loan: +40,000
+Capital:
++30,000
+Drawings:
+-2000
+Total:
+68,000 = 40,000
++
+28,000

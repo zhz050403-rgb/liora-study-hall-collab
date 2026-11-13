@@ -1,0 +1,419 @@
+# week4/unit5 lecture slides adjusting journal entries.pdf
+# sha256=9e975f661942b238af843f6ab2eab153b9d8ba43dffa36ced5f8b8ac4607f1a6
+
+=== PAGE 1 ===
+Unit 5:
+Adjusting Journal Entries
+
+=== PAGE 2 ===
+Learning objectives
+At the end of the lecture this week, you should be able to:
+• Comprehend the concepts of:
+✓Prepaid Expenses
+✓Unearned revenue
+✓Depreciation
+✓Accrued Revenue
+✓Accrued Expenses
+• Prepare adjusting entries.
+
+=== PAGE 3 ===
+3
+Remember this???
+
+=== PAGE 4 ===
+Why do we need Adjusting Entries?
+4
+•
+Only arises when accrual-based accounting is adopted
+•
+ Accrual-based, in some cases the period in which cash is paid or received
+does not coincide with the period in which expense and income are
+recognised.
+•
+Therefore, some accounts must be adjusted on the last day of the
+accounting period to correctly recognise expenses and income not
+reflected in cash receipts or payments.
+Never adjusts cash account !
+
+=== PAGE 5 ===
+Why do we need Adjusting Entries?
+5
+Received cash in 2024 for
+services in future (e.g.2025)
+Expense paid for but not yet
+used
+Accurate Profit – includes all
+transactions in the
+accounting period regardless
+of cash
+Understand true business
+performance
+Better decision-making by
+stakeholders
+Compliance with Accounts
+standards & conventions
+Recorded through adjusting
+entries
+Expenses in 2024, not paid
+cash yet
+Revenue in 2024, not received
+cash yet
+Not recorded
+Overstatement/
+understatement
+of profit
+Incorrect decision
+making
+
+=== PAGE 6 ===
+6
+
+=== PAGE 7 ===
+Classification of Adjusting Entries
+7
+Prepayments
+Prepaid Expense
+Costs/expenses paid for
+before they are
+consumed
+Unearned revenue
+Revenues that are
+collected or received but
+not yet earned
+Accruals
+Accrued Expense
+Expenses incurred but
+not yet paid
+Accrued Revenue
+Revenue earned but not
+yet received
+
+=== PAGE 8 ===
+Prepayments: Prepaid Expenses
+8
+•
+The payment of expenses in advance
+•
+Cash paid before benefits are consumed/expired (future benefit)
+•
+Initially recorded as a current asset at time of payment
+•
+Over time, the future benefits are consumed/expired. This
+consumed/expired portion needs to be recorded as an expense.
+•
+E.g. prepaid insurance, prepaid rent
+Initial transaction
+Adjusting Entry
+Prepaid Expense – Dr (Asset)
+Expense - Dr
+Cash - Cr
+Prepaid Expense – Cr (Asset)
+
+=== PAGE 9 ===
+9
+On 1 May 2025, Kingsford Trading paid their rent for 8 months commencing 1
+May to 31 December 2025 in advance, $80,000.
+Prepayments: Prepaid Expenses -
+Example
+Entry on 1 May 2025 (initial
+transaction)
+Entry on June 30 – 2 months rent
+used/consumed
+Entry on November 30 – 7
+months rent used/consumed
+Prepaid rent  Dr $80,000
+Rent expense Dr $20000
+ (80000/8*2 months)
+Rent expense  Dr $70000
+(80000/8*7 months)
+Cash  Cr                $80,000
+Prepaid Expense Cr  $20000
+(Asset reduces)
+Prepaid Expense  Cr   $70000
+Paid 8 months rent in advance
+Adjusted two months of rent
+Adjusted seven months of rent
+
+=== PAGE 10 ===
+10
+•
+Revenue received in advance
+•
+Cash received in advance for services that are to be performed in the future
+•
+Initially recorded as a current liability when received (you owe your customers
+something → the service)
+•
+Recognised as revenue when earned (after the service is performed)
+•
+E.g. Subscriptions
+Prepayments: Unearned Revenue
+Initial transaction
+Adjusting Entry
+Cash - Dr
+Unearned Revenue  Dr (Liability Decreases)
+Unearned Revenue – Cr
+        (Liability increases)
+Sales/Revenue - Cr
+
+=== PAGE 11 ===
+11
+On 1 May 2025, Sue pays Kingsford Trading $100 in advance for goods
+(blue bicycle) that Kingsford do not have on hand (in stock) on that date.
+Sue is told that the goods will be ready for pick up on 5 May. On 5 May Sue
+picks up the bicycle from Kingsford Trading.
+Prepayments: Unearned Revenue - Example 1
+Entry on 1 May 2025 (initial transaction)
+Entry on May 5 –Bicycle is provided to Sue
+Cash  - Dr $100
+Unearned revenue – Dr $100
+
+Unearned revenue – Dr $100
+Sales/Revenue – Cr $100
+      (product/service has been delivered)
+Customer paid in advance for a bicycle
+Delivered product to customer who paid in
+advance
+
+=== PAGE 12 ===
+12
+On 1 May, 24-Hour Fitness received $1200 for 6 months gym membership from
+Mr J. Rhodes. Prepare an adjusting entry on 31 May and 30 November for 24-
+Hour Fitness.
+Prepayments: Unearned Revenue - Example 2: Subscriptions
+Entry on 1 May 2025 (initial
+transaction)
+Entry on May 31 – 1 month
+membership provided
+Entry on November 30 –6 months
+membership provided
+Cash - $1200 Dr
+Unearned revenue  Dr $200
+ (1200/6*1 month)
+Unearned revenue  Dr $1200
+Unearned revenue – Cr $1200
+Revenue Cr  $200
+         (One month of service
+          provided hence earned)
+Revenue Cr  $1200
+         (6 months of service
+          provided hence earned)
+Received subscription for 6 months
+from J. Rhodes
+1 month of membership provided
+to J. Rhodes
+6 months of membership provided
+to J. Rhodes
+
+=== PAGE 13 ===
+•
+Depreciation is the reduction in value of a non-current asset over time, normally
+brought about by the use of the asset.
+•
+This includes wear or obsolescence over the life.
+•
+Depreciation is an Expense and calculated for each accounting period.
+▪
+Adjusting entry:
+▪
+Dr – Depreciation Expense
+▪
+   Cr – Accumulated Depreciation         this account is used to reduce the value
+                                                   of the asset – application of historical cost convention.
+Prepayments: Depreciation
+
+=== PAGE 14 ===
+Prepayments: Depreciation Example
+Kingsford Trading purchases a car for the business for $50,000. The car has
+a useful life of 5 years and no residual/salvage value.
+Depreciation = Purchase price of asset – Salvage Value  = $50000 -  0 =  $10000
+                                   Estimated useful life of asset                       5
+Depreciation Schedule for the car:
+
+YEAR
+Depreciation
+Expense
+Accumulated
+Depreciation
+Book Value
+(purchase price –
+Acc dep)
+30 June 2025
+$10,000
+$10,000
+$40,000
+30 June 2026
+$10,000
+$20,000
+$30,000
+30 June 2027
+$10,000
+$30,000
+$20,000
+30 June 2028
+$10,000
+$40,000
+$10,000
+30 June 2029
+$10,000
+$50,000
+$0
+
+=== PAGE 15 ===
+Prepayments: Depreciation Example: Adjusting Entry
+Entry on 30 June  2025
+Entry on 30 June  2026
+Entry on 30 June  2027
+Depreciation Expense Dr $10000
+Depreciation Expense Dr $10000
+Depreciation Exp Dr $10000
+Accumulated depreciation Cr
+                                            $10000
+Accumulated dep Cr  $10000
+
+Accumulated dep Cr $10000
+Depreciation expense for the year
+Depreciation expense for the
+year
+Depreciation expense for the
+year
+Depreciation entry at the end of the reporting period is the same
+every year.
+
+=== PAGE 16 ===
+Prepayments: Accumulated Depreciation: Presentation
+Entry on 30 June  2025
+Entry on 30 June  2026
+Entry on 30 June  2027
+Motor Vehicle                 $50000
+-Accumulated dep         ($10000)
+Book Value                      $40000
+Motor Vehicle                 $50000
+-Accumulated dep         ($20000)
+Book Value                      $30000
+Motor Vehicle                 $50000
+-Accumulated dep         ($30000)
+Book Value                      $20000
+• Accumulated depreciation—office equipment is a contra asset account, which
+means that it is offset against the asset on the Balance Sheet
+• Its normal balance is a credit.
+• This account is used instead of decreasing (crediting) the asset directly
+
+=== PAGE 17 ===
+Accruals : Accrued Revenue
+17
+•
+Revenues that have been earned in the period, but payment has not yet been
+received
+•
+Revenue must be recognised along with a receivable account (for a future
+receipt of cash)
+•
+E.g. of accounts : accounts receivable, interest receivable
+Adjusting entry:
+Dr – Receivable (asset)
+
+Cr – Revenue (service/product provided therefore revenue increases)
+
+=== PAGE 18 ===
+18
+Example: Marketing services
+On 1 June an agreement was signed to provide cleaning services for a monthly fee of $800. On
+30 June services for the month were performed, but cash was yet to be received.
+The adjusting entry on the monthly reporting day 30 June, is:
+Adjusting Entry
+June 30
+Accounts Receivable/Fees receivable
+800
+Cleaning Services Revenue
+800
+Cleaning services fee receivable for June
+Accruals: Accrued Revenue: Example 1
+
+=== PAGE 19 ===
+19
+On 1 July 2024 Kingsford Trading deposited $50,000 in a saving certificate for a year at an
+interest rate of 10% per year. The bank will pay the deposit and the interest back to Kingsford
+on 30 June 2025. Kingsford Trading closes its accounts on 31 December.
+Adjusting Entry on 31 December 2024
+31 Dec
+Interest Receivable (50000*10%*6/12)
+$2500
+Interest Revenue
+2500
+Interest fee receivable for 6 months
+Accruals: Accrued Revenue: Example 2: Bank interest
+When interest is paid on 30 June 2025
+June 30
+Cash
+$5000
+Interest Receivable (from 31 December entry)
+$2500
+Interest Revenue
+$2500
+
+=== PAGE 20 ===
+20
+• Expenses that have been incurred in the period, but payment has not yet
+been made, thus are unrecorded expenses
+•
+Need to record:
+
+ a) Expense; and
+
+ b) Payable (Accrual)
+•
+E.g. Wages expense, interest expense
+Adjusting entry
+Dr – Expense
+
+Cr – Expense payable (Liability)             do not use Accounts Payable as it is an account
+                                                                                     only  meant for our suppliers
+Accruals : Accrued Expenses
+
+=== PAGE 21 ===
+21
+Kingsford trading received the electricity bill of $1500 for the month of June
+2025. Kingsford will make the payment in July. Kingsford Trading closes its
+accounts on 30 June.
+Adjusting Entry 30 June 2025
+June 30
+Electricity Expense
+$1500
+Electricity bill payable/Utilities payable
+$1500
+Received electricity bill for the month of June.
+Accruals: Accrued Expenses: Example 1
+
+=== PAGE 22 ===
+22
+Kingsford Trading pays salaries of $1500 every Friday for a Monday-Friday week. The last pay
+day was Friday June 25 and the next pay day is Friday 2 July. However, Kingsford closes its
+accounts on 30 June 2024 which is a Wednesday.
+Accruals: Accrued Expenses: Example 2: Salaries accrued
+When salary is paid on 2 July 2024
+July 2
+Salaries payable (Monday – Wed already recorded)
+$900
+Salaries expense (salaries for Thursday & Friday)
+600
+Cash
+$1500
+Adjusting entry on 30 June 2024
+June 30
+Salaries Expense (3 days salaries Monday to Wednesday)
+$900
+Salaries Payable (1500/5*3)
+900
+Accrued salaries from Monday 28th June to Wednesday 30
+June
+
+=== PAGE 23 ===
+Next Week:
+23
+• Tutorial: Please do the assigned homework in the Tutorial guide for Unit 7
+– Adjusting Entries before attending class
+• Lecture in Week 8 – Financial Statement Part 1 – Income Statements.
+Tutorial on Income Statements will be in Week 9.
+• Attend consultation hours to clarify any questions that you may have!
+THANK YOU!

@@ -1,0 +1,252 @@
+# week4/unit5 reading materials adjusting journal entries.pdf
+# sha256=add2ce1b1b9518977b4ec5309f1fa75e1ad6d79553ba5d212ac0c69f4cab881d
+
+=== PAGE 1 ===
+Accounting
+
+UNSW College Foundation Studies
+Accounting
+Adjusting Entries
+Unit
+7
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Adjusting Entries
+
+In order for revenues and expenses to be recorded in the correct accounting period, adjusting
+entries are made to revenue and expense accounts at the end of the accounting period. In short,
+adjusting entries are needed to ensure that the recognition criteria are followed for assets,
+liabilities, revenues and expenses.
+
+The use of adjusting entries makes it possible to produce accurate financial statements at the
+end of the accounting period. Thus, the statement of financial position reports appropriate
+assets, liabilities and equity at the end of the reporting period, and the statement of profit or loss
+shows the appropriate profit (or loss) for the period. Adjusting entries are necessary because
+the general ledger may not contain up-to-date and complete data, for the following reasons.
+
+Some events are not journalised daily because it would not be useful or efficient to do so.
+Examples are depreciation and the earning of wages by employees.
+
+Some costs are not journalised during the accounting period because the economic benefits
+expire with the passage of time rather than as a result of recurring daily transactions. Examples
+include building and equipment deterioration, rent and insurance.
+
+Some items may be unrecorded. An example is an electricity or telephone bill that will not be
+received until the next accounting period.
+
+Adjusting entries are required every time financial statements are prepared. An essential
+starting point is an analysis of each account in the trial balance to determine whether it is
+complete and up to date for financial statement purposes.
+
+Adjusting entries can be classified as either prepayments or accruals. Each of these classes
+has two subcategories as shown below:
+
+Prepayments
+Prepaid expenses: Amounts paid in cash and recorded as assets until the economic benefits
+are used or consumed.
+
+Unearned Revenue/Revenue received in advance: Amounts received from customers and
+recorded as liabilities until the services are performed or the goods are provided and revenue is
+recognised.
+
+Accruals
+Accrued revenues: Amounts not yet received and not yet recorded for which the goods or
+
+=== PAGE 2 ===
+Accounting
+
+services have been provided.
+
+Accrued expenses: Amounts not yet paid and not yet recorded for which the consumption of
+economic benefits has occurred.
+
+Prepaid Expenses
+Payments of amounts that will provide economic benefits for more than the current accounting
+period are called prepaid expenses or prepayments. When such a cost is incurred, an asset
+account is increased (debited) to show the service or benefit that will be received in the future.
+Examples of common prepayments are insurance, supplies, advertising and rent.
+
+Prepaid expenses expire as the service is provided with the passage of time (e.g. rent and
+insurance) or through use (e.g. supplies). The expiration of these benefits does not require daily
+entries — that would be impractical and unnecessary. Accordingly, we postpone the recognition
+of the expiry of prepaid expenses until financial statements are prepared. At the end of each
+reporting period, adjusting entries are made to record the expenses applicable to the current
+accounting period and to show the remaining amounts in the asset accounts. Before
+adjustment, assets are overstated and expenses are understated. Therefore, an adjusting entry
+for prepaid expenses results in an increase (a debit) to an expense account and a decrease (a
+credit) to an asset account.
+
+Prepaid Expense: Example: Insurance
+Entities purchase insurance to protect themselves from losses due to fire, theft and other
+unforeseen events. Insurance must be paid in advance, usually for a period of 1 year. Insurance
+payments (premiums) made in advance are normally recorded in the asset account prepaid
+insurance. At the end of the reporting period it is necessary to increase (debit) insurance
+expense and decrease (credit) prepaid insurance for the cost of insurance that has expired
+during the period.
+
+On 4 October Wong Pty Ltd paid $600 for a 1-year insurance policy. Coverage began on 1
+October. The payment was recorded by increasing (debiting) prepaid insurance when it was
+paid. This account shows a balance of $600 in the 31 October trial balance. An analysis of the
+policy reveals that $50 ($600/12) of insurance expires each month. The expiration of prepaid
+insurance has the following effect on the accounting equation in October (and each of the next
+11 months):
+
+
+
+
+Unearned Revenue/Revenue Received in Advance
+Cash received before the revenue recognition criteria have been met is recorded by increasing
+(crediting) a liability account called revenues received in advance. Items such as rent and
+customer deposits for future service result in unearned revenue. Airlines such as Qantas and
+Virgin Australia treat receipts from the sale of tickets as unearned revenue until the flight service
+is provided. Health clubs treat membership revenue as deferred income until the service has
+been provided in accordance with the membership contract. Unearned revenue is the opposite
+of prepaid expenses.
+
+When payment is received for services to be provided in a future accounting period, an unearned
+revenue (a liability) account should be credited to recognise the obligation that exists. Unearned
+revenues are subsequently recognised as revenue when the service is provided to a customer.
+
+=== PAGE 3 ===
+Accounting
+
+During the accounting period, it is not always practical to make daily entries to the unearned
+revenue accounts as the services are provided. Instead, we delay recognition of revenue until
+the adjustment process. Then an adjusting entry is made to record the revenue during the period
+and to show the liability that remains at the end of the accounting period.
+
+Wong Pty Ltd received $1200 on 2 October from R. Knox for advertising services expected to be
+completed by 31 December. The payment was credited to service revenue received in advance,
+and this liability account shows a balance of $1200 in the 31 October trial balance. An evaluation
+of the work performed by Wong for Knox indicated that services worth $400 were performed in
+October.
+
+
+
+Depreciation
+A business typically owns a variety of assets that have long lives, such as buildings, equipment
+and motor vehicles. These assets are called non-current assets as they provide future economic
+benefits to the business for more than one accounting period. The term useful life of the asset
+refers to the estimated total service potential or estimated period of time over which the future
+economic benefits are expected to be consumed by the entity. Because a building is expected
+to provide service for many years, it is recorded as an asset, rather than an expense, on the date
+it is acquired. As explained in chapter 1, such assets are recorded at cost, as required by the
+historical cost principle. According to expense recognition criteria, a portion of this cost should
+then be reported as an expense during each period of the asset’s useful life. Depreciation is the
+process of allocating the cost of an asset to expense over its useful life.
+
+Need for adjustment:  From an accounting standpoint, the acquisition of long-lived assets is
+essentially a long-term prepayment for economic benefits. The need for making periodic
+adjusting entries for depreciation is therefore the same as described before for other prepaid
+expenses — that is, to recognise the cost of economic benefits that have been consumed during
+the period as expenses and to report the cost of economic benefits that remain at the end of the
+period as assets. One point is very important to understand: depreciation is an allocation
+concept, not a valuation concept. That is, we depreciate an asset to allocate its cost to the
+periods in which we use the asset. We are not attempting to reflect the actual change in the
+value of the asset.
+
+For Wong Pty Ltd, assume that depreciation on the office equipment is estimated to be $480 a
+year, or $40 per month. This would have the following impact on the accounting equation:
+
+
+The balance in the accumulated depreciation account will increase by $40 each month.
+
+Statement presentation: Accumulated depreciation—office equipment is a contra asset
+account, which means that it is offset against office equipment on the statement of financial
+position, and its normal balance is a credit. This account is used instead of decreasing
+(crediting) office equipment in order to record both the original cost of the equipment and the
+total cost that has expired to date. In the statement of financial position, accumulated
+depreciation—office equipment is deducted from the related asset account as shown below:
+
+=== PAGE 4 ===
+Accounting
+
+
+
+
+The difference between the cost of any depreciable asset and its related accumulated
+depreciation is referred to as its carrying amount (also referred to as book value). The carrying
+amount of the equipment at the end of the reporting period is $4960.
+
+Accrued Revenue
+Accrued revenues are revenues that are recorded as adjusting entries because they have not
+been recorded in the daily recording of transactions. Accrued revenues may accumulate
+(accrue) over time, as in the case of rent revenue and interest revenue, or they may result from
+services that have been performed but neither invoiced nor collected, as in the case of
+commissions and fees. The former are unrecorded because the receipt of rent and interest
+revenues does not involve daily transactions. Fee revenue, or service revenue, may be
+unrecorded because only a portion of the total service has been provided and the clients won’t
+be invoiced until the service has been completed. Alternatively, commissions revenue may be
+due but not received by the end of the reporting period.
+
+An adjusting entry is required to show the receivable that exists at the end of the reporting period
+and to record the revenue for the period. Before adjustment, both assets and revenues are
+understated. Accordingly, an adjusting entry for accrued revenues results in an increase (a debit)
+to an asset account and an increase (a credit) to a revenue account.
+
+Wong Pty Ltd earns commission of 1% of sales revenue from one of its advertising clients.
+Although the client has not yet paid, Wong has been advised that the amount for October is
+$200. As this revenue has not yet been recorded, revenue and assets are understated.
+
+
+
+
+Accrued Expense
+Expenses not yet paid or recorded at the end of the reporting period are called accrued
+expenses. Interest, rent, taxes and salaries are common examples of accrued expenses.
+Accrued expenses result from the same factors as accrued revenues. In fact, an accrued
+expense in the records of one business is likely to be an accrued revenue to another business.
+For example, the $200 accrual of service revenue by Wong Pty Ltd is an accrued expense to the
+client that received the service.
+
+Adjustments for accrued expenses are necessary to record the obligations that exist at the end
+of the reporting period and to recognise the expenses that apply to the current accounting
+period. Before adjustment, both liabilities and expenses are understated. Therefore, an adjusting
+entry for accrued expenses results in an increase (a debit) to an expense account and an
+increase (a credit) to a liability account.
+
+Accrued Expenses: Example 1: Accrued Salaries
+Some types of expenses, such as employee salaries and commissions, are paid for after the
+
+=== PAGE 5 ===
+Accounting
+
+services have been performed. At Wong Pty Ltd, salaries were last paid on 26 October; the next
+payment of salaries will not occur until 9 November. As shown in the calendar, 3 working days
+remain in October (29–31 October). (Accrued salaries can also be termed accrued wages.)
+
+
+
+
+
+Wong Pty Ltd pays salaries every 2 weeks. Consequently, the next payday is 9 November, when
+total salaries of $4000 will again be paid. The payment consists of $1200 of salaries payable at
+31 October plus $2800 of salaries expense for November (7 working days × $400). The following
+entry is made on 9 November:
+
+
+
+Accrued Expenses: Example 2: Accrued Interest
+On 1 October Wong Pty Ltd borrowed $5000 from a bank, with interest payments required
+quarterly. The bank charges Wong Pty Ltd interest at an annual rate of 12%. The amount of the
+interest accumulation is determined by three factors: (1) the principal borrowed, (2) the interest
+rate, which is always expressed as an annual rate, and (3) the length of time the loan is
+outstanding. In this instance, the interest for October has not been paid because interest is not
+due until 1 January, 3 months after the commencement of the loan.
+
+=== PAGE 6 ===
+Accounting

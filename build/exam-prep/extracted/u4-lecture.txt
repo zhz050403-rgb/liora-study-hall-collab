@@ -1,0 +1,629 @@
+# week3/unit4 lecture slides journal entries.pdf
+# sha256=5a8a173363082a37b0c8cf7eb6787770f9234c9570ea9c7ea0224618c8ef51e2
+
+=== PAGE 1 ===
+Unit 4:
+Journal Entries
+
+=== PAGE 2 ===
+2
+Learning objectives
+At the end of this lecture, you should be able to:
+•
+Translate transactions to journal entries, in the prescribed format
+•
+Record transactions related to returns and discounts
+•
+Record transactions related to bad debts
+
+=== PAGE 3 ===
+3
+Remember the Accounting Cycle?
+1.
+Transactions
+2. Source
+Documents
+3. Journals
+4. Ledgers
+5. Trial
+Balance
+6. Reports
+We are
+now here!
+
+=== PAGE 4 ===
+Journal Entries
+4
+• Definition: The General Journal is a chronological
+record of all financial transactions of a business.
+• Purpose: It serves as the initial book of entry where
+transactions are first recorded before they are posted to
+individual accounts in the General Ledger.
+
+=== PAGE 5 ===
+Journal Entries
+5
+• Date: When the transaction occurred.
+• Account Titles: Accounts affected by the transaction.
+• Debits and Credits: Amounts to be debited and credited
+to the respective accounts.
+• Narration: A brief explanation of the transaction.
+
+=== PAGE 6 ===
+6
+Transaction Analysis Table
+Narration = short description of
+transaction/summary
+Constructing Journal Entries from the Transaction Analysis Table
+Date
+Description
+Posting ref
+Debit
+Credit
+4-Feb
+Account Receivable (Elise)
+4500
+Revenue
+4500
+Sold toys to Elise on account worth $5000
+Account code from
+Chart of accounts
+
+=== PAGE 7 ===
+•
+A small description/summary of the transaction
+•
+It is necessary since the General Journal records a variety
+of transactions
+•
+Users of the accounting information will be able to
+understand the transactions
+7
+Journal Entries : Narration
+
+=== PAGE 8 ===
+88
+Journal Entries: Format
+Rules:
+1. Debit account must be written first
+2. Credit account must be indented
+3. After each transaction leave a line blank & then begin the next
+transaction
+
+=== PAGE 9 ===
+Terms of payment
+9
+• Conditions of payment for a
+transaction that has been made
+on account/credit i.e. payment
+will be made later
+• Contains the discount that will be
+given if payment is made by a
+certain time and the maximum
+time allowed to make full
+payment
+Discount
+Days in which
+payment must
+be made to avail
+the discount
+Maximum number of
+days in which payment
+must be made.
+
+=== PAGE 10 ===
+Discounts
+0
+Discounts
+Purchase/Creditor/ A/P
+Related
+Sales/Debtor/ A/R Related
+Trade
+Settlement
+Trade
+Settlement
+Not recorded
+Discount Received
+Element: Revenue
+Not recorded
+Discount Allowed
+Element: Expense
+Dr Account payable (L decrease)
+Cr Discount Received (R increase)
+Dr Discount Allowed (E increase)
+   Cr Accounts Receivable (A decrease)
+
+=== PAGE 11 ===
+Trade Discount
+•
+You buy/sell (trade) often with a business or maybe buy in bulk amounts.
+•
+It has an immediate effect as the business is giving/receiving a discount at
+the time of sale/purchase.
+•
+The trade discount is included in the invoice.
+•
+This trade discount is not recorded in the accounting books or records.
+•
+This is also known as a Price Discount.
+1
+
+=== PAGE 12 ===
+Trade Discount Example
+•
+The original value was $100 (Discount of 10% given as the
+buyer/customer will buy a high volume of units).
+•
+In the buyer’s/customer’s accounting records we record this transaction
+as a cash purchase of software for $90 cash.
+2
+https://image.shutterstock.com/z/stock-photo--d-illustration-licensed-software-box-with-a-soft-disc-111085967.jpg
+NOW $90
+WAS $100
+No
+discount is
+recorded in
+the
+accounting
+records
+
+=== PAGE 13 ===
+Settlement Discount
+•
+Discounts are usually received/allowed to encourage early payment/receipt of
+cash to settle an outstanding account/debt early.
+•
+This is also known as a prompt payment discount.
+3
+Discount Received
+•
+The business receives a discount from
+creditors/accounts payable for early
+payment of outstanding debt/amount
+owing.
+•
+This discount is recognised as Revenue
+as the business receives a benefit.
+•
+Less cash is paid to settle the
+transaction.
+Discount Allowed
+•
+The business allows/gives a discount
+to the debtors/accounts receivable for
+their early payment of outstanding
+debt/amount owing.
+•
+This discount is recognised as an
+Expense as it is a cost to the
+business.
+•
+Less cash is received to settle the
+transaction.
+
+=== PAGE 14 ===
+Discount Received: Example
+•
+Kingsford Trading (your business!) bought baby cribs worth $10,000 from
+Queen Limited. Queen’s terms of sale is 1%/7 days, net 21 days.
+•
+Kingsford pays back within 7 days, therefore receives the discount for
+prompt payment. (10,000 X 1% = 100). Kingsford pays Queen Limited
+$9900 instead of $10,000.
+4
+Date
+Accounts
+A, L, OE, R, E
+Inc/ Dec
+DR/ CR
+Amount
+1/2
+Accounts Payable- Queen
+L
+Dec
+Dr
+100
+Discount Received
+R
+Inc
+Cr
+100
+
+=== PAGE 15 ===
+15
+f transactions recorded
+Initial transaction with Queen  – purchased goods on credit:
+Dr  Purchase            10,000
+
+Cr A/Payable-Queen             10,000
+Kingsford paid within 7 days:
+Dr A/payable -Queen
+10,000                         A/P 9900
+
+Cr Cash
+
+
+ 9900                    Cash 9900
+          Cr Disc Received
+100                 A/P -100
+
+Disc Rec 100
+Kingsford paid after 7 days:
+Dr A/Payable -Queen
+10,000
+
+Cr Cash
+
+10,000
+Discount received, Cash and Account Payable - Analysis
+
+=== PAGE 16 ===
+Discount Allowed: Example
+6
+Date
+Accounts
+A, L, OE, R,
+E
+Inc/ Dec
+DR/ CR
+Amount
+1/2
+Discount Allowed
+E
+Inc
+Dr
+400
+Accounts Receivable-
+Princess
+A
+Dec
+Cr
+400
+• Kingsford Trading (your business) sold baby cribs worth $20,000 to
+Princess Limited. Kingsford’s terms of sale is 2%/10 days, net 30 days.
+• Princess pays back within 10 days, therefore receives the 2% discount
+($20,000 X 2% = $400). Kingsford receives $19,600 instead of $20,000
+from Princess Limited.
+
+=== PAGE 17 ===
+17
+f transactions recorded
+Initial transaction with Princess  – sold goods on credit:
+Dr  A/receivable –Princess         20,000
+
+Cr Sales
+         20,000
+Princess paid within 10 days:
+Dr Cash
+
+
+
+19,600
+Dr Disc Allowed
+
+
+    400
+
+Cr A/receivable -Princess
+20,000
+Princess paid after 10 days:
+Dr Cash
+
+
+
+20,000 A+
+
+Cr A/receivable-Princess
+
+20,000 A-
+Discount allowed, Cash and A/C Receivable - Analysis
+Cash 19600 A+
+       A/R 19600 A-
+Disc All 400 E+
+      A/R 400 A-
+
+=== PAGE 18 ===
+Purchase & Purchase Returns
+•
+Purchase = The business buys trading goods from a supplier either for
+cash or on credit.
+For example:  Kingsford Trading, a toy shop, purchases toys from Queen
+Limited worth $5000 for resale.
+8
+Date
+Description
+Posting ref
+Debit
+Credit
+4-Feb
+Purchase E+
+5000
+A/P - Queen Ltd L+
+5000
+Purchase toys from Queen on account worth $5000
+
+=== PAGE 19 ===
+Purchase & Purchase Returns
+•
+Purchase Returns = The business returns items to the supplier either due to
+incorrect specifications or damage.
+•
+Purchase account cannot be reduced directly; hence a purchase returns
+account is required.
+•
+For example:  Kingsford Trading returns toys worth $400 to Queen Limited
+due to incorrect colour.
+9
+Date
+Description
+Posting ref
+Debit
+Credit
+4-Feb
+A/P – Queen Ltd L-
+400
+Purchase returns E-
+400
+Returned toys to Queen due to incorrect colour, $400
+
+=== PAGE 20 ===
+Sales & Sales Returns
+•
+Sale/Revenue = The business sells its products to customers either
+for cash or on credit.
+For example:  Kingsford Trading sells toys to Princess Limited worth
+$7500 on account.
+0
+Date
+Description
+Posting ref
+Debit
+Credit
+4-Feb
+A/R – Princess Limited A+
+7500
+Sales R+
+7500
+Sold toys on account to Princess Limited
+
+=== PAGE 21 ===
+Sales & Sales Returns
+•
+Sales returns  = The customer returns products due to incorrect
+specification, or damage.
+•
+Sales account cannot be reduced directly; hence a sales
+returns account is required
+•
+For example: Princess Limited returned toys worth $600 due to
+damage in transit
+1
+Date
+Description
+Posting ref
+Debit
+Credit
+4-Feb
+Sales returns R-
+600
+A/R - Princess Ltd A-
+600
+Princess returned toys due to damage in transit
+
+=== PAGE 22 ===
+22
+Kingsford Trading is a small business that sells children’s toys. During the first week of
+August 2024, the company completed several transactions as listed below:
+August 1: The owner, John Doe, invested $50,000 cash into the business.
+August 2: The company purchased inventory worth $15,000 on credit from Willow Suppliers.
+August 3: Kingsford Trading sold inventory for $12,000 on credit to Oak Limited.
+August 4: The company paid $5,000 of the amount owed to Willow Suppliers.
+August 5: Kingsford Trading paid $2,000 for advertising expenses.
+August 6: The company received $10,000 from Oak Limited for amount due.
+The company uses a periodic inventory accounting system. Based on accrual accounting:
+a) Complete the Transaction Analysis Table.
+b) Prepare General Journal entries for the transactions.
+Worked Lecture Example: Kingsford Trading
+
+=== PAGE 23 ===
+Worked Example: Identifying Accounts
+23
+Date
+Transaction Description
+Assets
+Expenses
+Liabilities
+Equity
+Revenues
+August 1 Owner invests $50,000 cash into the business
+Cash
++$50,000
+Capital
++$50,000
+August 2 Purchased $15,000 inventory on credit from
+Willow Suppliers
+Purchases
++$15,000
+A/P
++$15,000
+August 3 Sold inventory for $12,000 on credit to Oak
+Limited
+A/R
++$12,000
+Sales/Reve
+nue
++$12,000
+August 4 Paid $5,000 to Willow Suppliers
+Cash
+-$5,000
+A/P
+-$5,000
+August 5 Paid $2,000 for advertising expenses
+Cash
+-$2,000
+Adv. Exp.
++$2,000
+August 6 Received $10,000 cash from Oak Limited
+Cash
++$10,000
+A/R
+-10,000
+
+=== PAGE 24 ===
+Worked Example: Transaction Analysis Table
+24
+DATE
+ACCOUNTS
+A, L, OE, R, E
+INC/ DEC
+DR/ CR
+AMOUNT
+1-Aug
+Cash
+A
+Inc
+Dr
+50000
+Capital
+OE
+Inc
+Cr
+50000
+2-Aug
+Purchase
+E
+Inc
+Dr
+15000
+A/P - Willow Suppliers
+L
+Inc
+Cr
+15000
+3-Aug
+A/R - Oak Limited
+A
+Inc
+Dr
+12000
+Sales
+R
+Inc
+Cr
+12000
+4-Aug
+A/P - Willow Suppliers
+L
+Dec
+Dr
+5000
+Cash
+A
+Dec
+Cr
+5000
+5-Aug
+Advertising expense
+E
+Inc
+Dr
+2000
+Cash
+A
+Dec
+Cr
+2000
+6-Aug
+Cash
+A
+Inc
+Dr
+10000
+A/R - Oak Limited
+A
+Dec
+Cr
+10000
+
+=== PAGE 25 ===
+Worked Example: Journal Entries
+25
+Date
+Description
+Posting ref
+Debit
+Credit
+1-Aug
+Cash
+50000
+Capital
+50000
+Owner invested capital in the business
+2-Aug
+Purchase
+15000
+A/P - Willow Suppliers
+15000
+Purchased inventory from Willow Suppliers
+3-Aug
+A/R - Oak Limited
+12000
+Sales
+12000
+Sold toys on credit to Oak Limited
+4-Aug
+A/P - Willow Suppliers
+5000
+Cash
+5000
+Partial payment to Willow Suppliers
+5-Aug
+Advertising expense
+2000
+Cash
+2000
+Paid for advertising
+6-Aug
+Cash
+10000
+A/R - Oak Limited
+10000
+Received cash from Oak Limited for amount due
+
+=== PAGE 26 ===
+26
+• A customer (Account receivable) will not be paying the
+amount due. A debt owed that is not recoverable.
+
+• Usually, the amount owing will not be paid in future
+• It also needs to be written off (taken out) from Account
+Receivable as the debt will not be paid
+• It is a cost to the business and therefore an Expense
+Journal Entries: Bad debt (Expense)
+
+=== PAGE 27 ===
+27
+Dat
+e
+Particulars
+Ref
+Debit
+Credit
+1/1
+Bad debts expense E+
+        Accounts receivable – J. Hammer A-
+Bad debt written off for J. Hammer has
+declared bankruptcy.
+$160
+$160
+Journal Entries: Bad debt (Expense)
+
+=== PAGE 28 ===
+Next Week:
+28
+• Tutorial: Please do the assigned homework in the Tutorial guide for Unit 4
+– Journal Entries before attending class
+• Lecture in Week 4 – Recording and balancing T-accounts. Tutorial on T-
+accounts will be in Week 5.
+• Attend consultation hours to clarify any questions that you may have!
+THANK YOU!

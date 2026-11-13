@@ -1,0 +1,493 @@
+# week4/unit5 tutorial guide adjusting entries.pdf
+# sha256=1565b8a274b71267dd53b401d033490f718c8906eafc0bca569f0419f5d0f9c9
+
+=== PAGE 1 ===
+UNSW College Foundation Studies
+Accounting
+
+
+
+Accounting
+
+Unit
+5
+
+
+Adjusting Journal Entries
+
+
+
+Learning objectives
+At the end of this tutorial, you should be able to
+•
+Understand Prepaid Expense, Unearned Revenue, Depreciation, Accrued Revenue, &
+Accrued Expense
+•
+Prepare adjusting entries.
+
+Before this tutorial, you should have
+•
+Attended the Unit 5 lecture
+•
+Read the Unit 5 Readings
+•
+Completed the Unit 5 Tutorial Questions
+•
+Read the In-Class Activities question
+
+During this tutorial, you will
+•
+Complete the In-Class Activities
+
+After this tutorial, you should
+•
+Consider attending one of the scheduled consultations and attempt to resolve any
+questions that you have as soon as possible.
+
+=== PAGE 2 ===
+Accounting – Unit 5: Adjusting Journal Entries
+
+Accounting | Page 1
+
+
+Tutorial Questions
+
+Terms and Concepts
+
+The following terms and concepts must be understood in the context of the tutorial.
+Provide written explanations of these terms and concepts in the space provided.
+
+Terms/Concepts
+Explanation
+Adjusting Entry
+
+Depreciation
+Expense
+
+Accumulated
+Depreciation
+
+Unearned Revenue
+
+Prepaid Expense
+
+Accrued Expenses
+
+Accrued Revenue
+
+=== PAGE 3 ===
+Accounting – Unit 5: Adjusting Journal Entries
+
+Accounting | Page 2
+
+1. Kingsford Trading purchased equipment for $30,000 on January 1. The equipment has
+an estimated useful life of 5 years and no salvage value. Calculate the annual
+depreciation expense and make the adjusting journal entry for the depreciation
+expense at the end of the financial year on 31 December.
+
+Answer:
+
+Date
+Account Title
+Debit ($)
+Credit ($)
+
+
+
+
+
+
+
+
+2. Shell Company paid $12,000 on January 1 for a one-year insurance policy. Prepare
+the adjusting journal entry for the insurance expense at the end of the financial year
+on 30th June.
+
+Answer:
+
+Date
+Account Title
+Debit ($)
+Credit ($)
+June 30
+
+
+
+
+
+
+
+3. Jade Corporation received $10,000 in advance for IT services to be performed over
+the next five months, to be charged equally every month. Prepare the journal entry to
+record the receipt of the cash and the adjusting entry at the end of the first month.
+
+Answer:
+
+Initial Journal Entry: When the cash is received:
+Date
+Account Title
+Debit ($)
+Credit ($)
+
+
+
+
+
+
+
+
+Adjusting Journal Entry: For the revenue earned in the first month:
+
+Date
+Account Title
+Debit ($)
+Credit ($)
+Jan 31
+
+
+
+
+
+
+
+4. On 1 June, 20X1, ABC Enterprises purchased a one-year insurance policy for $9,000.
+At the end of June, 20X1, $750 of insurance had expired. Prepare journal entries for
+the original entry on 1 June and the adjusting entry on 30 June.
+Original Entry on 1 June:
+Date
+Account Title
+Debit ($)
+Credit ($)
+
+=== PAGE 4 ===
+Accounting – Unit 5: Adjusting Journal Entries
+
+Accounting | Page 3
+
+Adjusting Entry on 30 June:
+Date
+Account Title
+Debit ($)
+Credit ($)
+
+
+
+
+
+
+
+
+
+5. Sunny Day Designs borrowed $50,000 on 1 June from the bank. The loan and all the
+interest on the loan are due in 3 months. The bank is charging interest at a rate of 6%
+per annum. Prepare the original journal entries for Sunny Day on 1 June and the
+adjusting entry on 30 June.
+Initial Entry on 1 June:
+Date
+Account Title
+Debit (USD)
+Credit (USD)
+
+
+
+
+
+
+
+
+Adjusting Entry on 30 June:
+Date
+Account Title
+Debit ($)
+Credit ($)
+
+
+
+
+
+
+
+
+
+6. On 1st May, MNO Services received and recorded a $6,000 payment for services to be
+rendered on 31st May. Prepare the initial entry and the adjusting entry on 31st May for
+the revenue earned.
+Initial Entry on 1 May:
+Date
+Account Title
+Debit ($)
+Credit ($)
+1 May
+
+
+
+
+
+
+
+Adjusting Entry on 31 May:
+Date
+Account Title
+Debit ($)
+Credit ($)
+31 May
+
+=== PAGE 5 ===
+Accounting – Unit 5: Adjusting Journal Entries
+
+Accounting | Page 4
+
+7. Willy Wonka borrowed $100,000 from the bank on June 1, 2024 for 6 years at an
+annual interest rate of 6% per annum  . The interest is payable every six months. Willy
+Wonka closes his accounts on 30 June every year.
+a. Prepare the adjusting entry on June 30:
+Date
+Account Title
+Debit ($)
+Credit ($)
+30 June
+
+
+
+
+
+
+
+
+b. Prepare the journal entry on November 30 when the interest is paid.
+
+Date
+Account Title
+Debit ($)
+Credit ($)
+30 Nov
+
+=== PAGE 6 ===
+Accounting – Unit 5: Adjusting Journal Entries
+
+Accounting | Page 5
+
+
+IN-CLASS ACTIVITIES
+
+8. Willow Wind sells artisan ceramic products and closes its accounts on 31 October 2024.
+The following transactions have not been included in the books of Willow Wind:
+
+a. Electricity bill of $1200 has not been recorded and will not be paid till next month
+b. The insurance policy of $9600 is for 1 year commencing 1 May 2024.
+c. Services were performed during the period in relation to $3000 of revenue received in
+advance
+d. Salaries of $6400 were owed at 31 October.
+e. Office equipment has a life of 5 years with no resale value. It was purchased for
+$86,400
+f. Invoices representing $8000 of services performed during the month have not been
+recorded as of 31 October.
+g. Willow Wind took a bank loan for $ 50,000 at an interest rate of 10% per annum on 1
+June 2024.
+
+Required: a) Prepare the adjusting entries for the above transactions.
+
+DATE
+PARTICULAR
+DR
+CR
+a.
+
+
+
+
+
+
+
+
+
+
+
+b.
+
+
+
+
+
+
+
+
+
+
+
+c.
+
+
+
+
+
+
+
+
+
+
+
+d.
+
+
+
+
+
+
+
+
+
+
+
+e.
+
+
+
+
+
+
+
+
+
+
+
+f.
+
+
+
+
+
+
+
+
+
+
+
+g.
+
+=== PAGE 7 ===
+Accounting – Unit 5: Adjusting Journal Entries
+
+Accounting | Page 6
+
+Required: b) Salaries of $10000 was paid out on 5th November for the last two weeks.
+Prepare the journal to record the transaction. (Refer to transaction d above)
+
+Transaction on 5th November
+
+Date
+Account Title
+Debit ($)
+Credit ($)
+5 Nov
+
+=== PAGE 8 ===
+Accounting – Unit 5: Adjusting Journal Entries
+
+Accounting | Page 7
+
+ADDITIONAL SELF STUDY PRACTICE QUESTION
+9. Lois Lane Books closes its accounts on 31st December 2024. The following transactions
+were not included in the books of Lois Lane:
+
+A
+Insurance expires at the rate of $210 per month
+B
+The building had a purchase price of $150000 with no salvage value and an estimated
+life of 30 years.
+C
+The mortgage for the building is 12% and was purchased with a loan of $100,000 on
+May 1 2024
+D
+A customer paid $5000 for an original collection of books by George Elliot in advance.
+$3000 worth of the collection had been provided to the customer by 31 December.
+E
+Salaries of $500 remain unpaid on 31 December 2024
+F
+A customer purchased the Jane Austen collection on 30 December 2024 and will
+pay after 2 weeks, $750
+
+Required: a) Prepare the adjusting entries for the above transactions.
+
+DATE
+PARTICULAR
+DR
+CR
+a.
+
+
+
+
+
+
+
+
+
+
+
+b.
+
+
+
+
+
+
+
+
+
+
+
+c.
+
+
+
+
+
+
+
+
+
+
+
+d.
+
+
+
+
+
+
+
+
+
+
+
+e.
+
+
+
+
+
+
+
+
+
+
+
+f.
+
+
+
+
+
+
+
+
+
+
+
+
+Required: b) The building was purchased 0n January 1 2015 . Show the presentation of
+depreciation in the balance sheet as at 31 December 2024. The depreciation method has not
+changed since its purchase.
+
+Answer:

@@ -175,6 +175,20 @@
       ],
       "desc": "独立页 bilingual-video.html 按课程分组展示卡片，三门课都按「每个知识点单独一行」；课程周页由 JS 注入「🎬 中英视频」标签与 wp-head 直达链接；主站页脚加入口、不动顶部导航。会计（2026-11-12 bv5）按第二批表格改成 rowsMode：11 Unit / 36 行，数据源 build/accounting_data.py（6 个 B 站合集 + Tera Courses 系列 BV1Yy9zBPEBj 全部分集号经官方接口核验），U8–U11 是同一合集中文 p=N ↔ 英文 p=N+11 的双版本可直接播；U1–U7 英文主源已换 B 站 Tera Courses 财务会计系列（BV1Yy9zBPEBj，英文原声+中英字幕，国内可直接播），enV 改用 [bili(BV...,p,标题), yt(原YouTube)] 数组，渲染层 sideHtml/topicCard 增加 hasBili&&hasYt 混合徽标「B 站可播·含 YouTube 原链接」与 mixedNoteText；YouTube 原链接降级为「原网址」备用，系列与 U1–U7 属相近主题非逐讲对应；U2「会计假设」原表「暂缺」已用 BV1Yy9zBPEBj P1 补上，不再 missing() 也不编造网址；U4 中文为国家智慧教育平台课程页链接卡；第一批表格独有的 6 条 YouTube 保留在 FALLBACK.extra。经济学 9 Unit / 49 行（build/economics_data.py）；商业数学 U0–U10 按 Term 1/2 分组，U2 补齐第 17–22 集共 6 集、U7 补 2 条真实年金中文课 + Khan Academy 现值专题入口。数据表 window.BILINGUAL_VIDEOS 在 bilingual-video.js 内，换网址/加课程只改这一处；index.html / daily-brief.html / 独立页三条 ?v= 必须同步升。诚实边界：分集号存在与链接可达已查实，音轨、逐条时间点跳转与嵌入播放未全部实测，不标记「全部验证通过」（bv6：记忆每门课上次停留的 Unit，下次打开自动跳到该 Unit 并高亮，不再每次停在 U1；支持 &unit= 直达，周页链接尽力带入当前 Unit。bv7：修复「课程总览页 #/c/<course>（点课程中心进入后停的第一页）不显示中英视频入口」——courseOfHash 正则原为 ^#\/c\/([^/]+)\/ 必须带斜杠，改为 ^#\/c\/([^/]+)(?:\/|$) 兼容无 term/week 的总览页，总览页 now 也有「🎬 中英视频」标签 + wp-head 直达链接，会计/经济/商业数学三课一致）"
     },
+    "exam-prep": {
+      "label": "细节型考试备考（P0 · Accounting U1-U6）",
+      "owner": "WorkBuddy",
+      "files": [
+        "public/exam-prep.html",
+        "public/exam-bank-data.js",
+        "public/exam-sources.js",
+        "public/blocks/exam-prep.css",
+        "public/blocks/exam-prep.js",
+        "public/blocks/exam-prep-link.js",
+        "public/sources/accounting-2026"
+      ],
+      "desc": "以 2026 UNSW 官方课件为依据的英文细节题库。构建脚本 build/exam-prep/{extract_sources.py,bank_source.py,build_exam_bank.py} 会逐页抽取真实 PDF 并强制校验每条官方引文，校验失败即拒绝生成；数据文件为生成物，禁止手改。独立页 exam-prep.html 提供闭卷测试、严格批改、知识点索引、覆盖率、1/3/7 天变式错题库与逐页原文查看；主站只在页脚「学习」列与会计课程周页 .wp-head 注入入口胶囊，顶部导航仍只有两个入口，不注入 .note-tab、不接管 active 切换。改 css/js/数据必须同步升 exam-prep.html 的 ?v= 与 index.html 的 exam-prep-link.js ?v=。视频仅单元级辅助链接，官方资料决定考试范围。P1/P2（U7-U11 及其他科目）未纳入本包，覆盖率页面如实标为未覆盖。"
+    },
     "skeleton": {
       "label": "共享骨架（谨慎回退）",
       "owner": "共享",

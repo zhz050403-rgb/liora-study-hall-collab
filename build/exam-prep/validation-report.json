@@ -1,0 +1,61 @@
+{
+  "version": "20261113-exam-prep-p0",
+  "quoteChecks": 132,
+  "quoteFailures": 0,
+  "warnings": [],
+  "knowledgePoints": 104,
+  "questions": 496,
+  "kpsWithoutQuestions": [],
+  "perUnit": {
+    "1": {
+      "kp": 26,
+      "q": 122
+    },
+    "2": {
+      "kp": 14,
+      "q": 62
+    },
+    "3": {
+      "kp": 22,
+      "q": 104
+    },
+    "4": {
+      "kp": 13,
+      "q": 66
+    },
+    "5": {
+      "kp": 16,
+      "q": 80
+    },
+    "6": {
+      "kp": 13,
+      "q": 62
+    }
+  },
+  "questionTypes": {
+    "single": 104,
+    "definition": 104,
+    "fill": 102,
+    "tf": 149,
+    "classification": 13,
+    "multiple": 14,
+    "calculation": 4,
+    "journal": 4,
+    "taccount": 1,
+    "trialbalance": 1
+  },
+  "sources": 21,
+  "sourcePages": 277,
+  "verifiedSources": 18,
+  "unverifiedSources": [
+    "u1-class-exercise",
+    "u2-practice",
+    "u5-tutorial"
+  ],
+  "examFeedbackHits": [
+    "u1-09",
+    "u1-10",
+    "u1-21",
+    "u3-03"
+  ]
+}

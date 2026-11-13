@@ -1,0 +1,687 @@
+[u1-lecture p.2] At the end of this lecture, you should be able to
+[u1-lecture p.3] What is Accounting?
+[u1-lecture p.4] Accounting has been defined as the process of identifying,
+[u1-lecture p.5] • Includes cost of goods sold.
+[u1-lecture p.6] The accountant must prepare information designed to meet a
+[u1-lecture p.6] wide variety of needs and expectations and is responsible to the
+[u1-lecture p.9] is complete and accurate.
+[u1-lecture p.11] 3. Lenders/banks - assess whether the line of credit is sound.
+[u1-lecture p.12] Clarity (Understandability) – comprehendible and clearly presented with the use of
+[u1-lecture p.12] Accuracy (Reliability) - The information should correspond with the actual
+[u1-lecture p.12] underlying transactions and events, and is capable of independent verification and is
+[u1-lecture p.12] Timely - reports should be prepared in plenty of time for the people requiring the
+[u1-lecture p.13] The accounting cycle is a
+[u1-lecture p.13] business activity is ongoing.
+[u1-lecture p.14] Transactions are events that alter the financial position of a
+[u1-lecture p.14] Only 2 ways:  1. Cash
+[u1-lecture p.15] Invoice : issued by seller when goods are sold on credit
+[u1-lecture p.15] Credit Note : issued by seller goods are returned by the buyer due to
+[u1-lecture p.15] Receipt : Issued by seller when payment is received to confirm payment
+[u1-lecture p.16] 3. Journal: Journals are the first book of entry that are used to record details
+[u1-lecture p.16] 4. Ledger: The ledger is a book of secondary entry and contains all the
+[u1-lecture p.16] 5. Trial Balance: The Trial Balance is a list of all the account balances in the
+[u1-lecture p.16] General Ledger (after the balancing process for each account is completed).
+[u1-lecture p.17] The Profit and Loss Statement is also known as the Income Statement
+[u1-reading p.1] What is Accounting
+[u1-reading p.1] What is Accounting?
+[u1-reading p.1] Accounting is an information process, i.e. a method of processing financial information
+[u1-reading p.1] for different users. Accounting is often been called ‘the language of business’ as it is the
+[u1-reading p.1] means of communicating financial information. It provides a way of recording, measuring
+[u1-reading p.1] is practical tool used by many in varying jobs. People running a business need an
+[u1-reading p.1] interested parties has grown. The accountant must prepare information designed to
+[u1-reading p.1] meet a wide variety of needs and expectations and is responsible to the users of that
+[u1-reading p.1] information. The accountant's role is dynamic, important and varied. The principal role of
+[u1-reading p.1] an accountant is to report on the performance of a business. This can involve tasks such
+[u1-reading p.2] Bookkeeping is the foundational process of recording financial transactions. It involves:
+[u1-reading p.2] Bookkeepers are the meticulous record-keepers who ensure financial data is accurate, up-
+[u1-reading p.2] to-date, and organized. Their work is essential for maintaining the integrity of a company’s
+[u1-reading p.2] improve overall performance. This includes creating and managing budgets, ensuring
+[u1-reading p.2] line of credit is sound.
+[u1-reading p.2] Auditors use the accounting information to ensure internal controls are working
+[u1-reading p.3] The essential requirements of accounting reports if they are to be useful for the
+[u1-reading p.3] Clarity (understandability):
+[u1-reading p.3] The reports are presented in such a way that reasonably-informed users can
+[u1-reading p.3] The information should correspond with the actual underlying transactions and events,
+[u1-reading p.3] and is capable of independent verification and is free from bias. The reports can be used
+[u1-reading p.3] Users must be able to identify similarities and differences between the current
+[u1-reading p.3] To be useful, the information prepared by accountants must also be timely i.e. reports
+[u1-reading p.3] should be prepared in plenty of time for the people requiring the information to make
+[u1-reading p.3] decisions. If information is not available when it is needed, it is of no use.
+[u1-reading p.3] Reports should comply with the requirements of accounting regulations and accounting
+[u1-reading p.4] added. Note also that this course refers to a manual accounting system as a
+[u1-reading p.4] The accounting cycle refers to the regular repetition of a standardised set of stages
+[u1-reading p.5] The accounting cycle is a continual process because business activity is ongoing. The
+[u1-reading p.5] source documents, journals, ledgers, financial reports and subsequent analysis are then
+[u1-reading p.5] Transactions are events that alter the financial position of a business and require the
+[u1-reading p.5] Source Documents are the original financial documents that contains evidence and/or
+[u1-reading p.5] proof of transactions occurring. The transaction information and details are collected in
+[u1-reading p.5] the form of source documents. Some commonly used source documents include;
+[u1-reading p.5] Journals are the first book of entry that are used to record details and information from
+[u1-reading p.5] The ledger is a book of secondary entry and contains all the accounts of a business.
+[u1-reading p.5] Information from the journals are posted (or transferred) to the corresponding accounts
+[u1-reading p.5] Ledgers include the General Ledger where values from the journals are entered and
+[u1-reading p.5] accounts are also classified and grouped into five elements. These include the Assets,
+[u1-reading p.5] The Trial Balance is a list of all the account balances in the General Ledger (after the
+[u1-reading p.5] balancing process for each account is completed). Debit balances are listed in the debit
+[u1-reading p.5] column of the Trial Balance and credit balances are listed in the credit column. The totals
+[u1-reading p.5] for the debit and credit columns are calculated to check if they are equal. This ensures
+[u1-reading p.5] The trial balance is used to prepare the financial reports of a business. The reports are
+[u1-reading p.5] course are the Profit and Loss Statement and the Balance Sheet.
+[u1-reading p.6] The Profit and Loss Statement is also known as the Income Statement or the
+[u1-reading p.6] The Cash Flow Statement is a financial report that tracks the movement of cash into and
+[u1-reading p.6] out of a business over a specific period, detailing how much cash is generated and spent
+[u1-reading p.6] from operating, investing, and financing activities. Unlike an income statement that includes
+[u1-reading p.6] After the financial statements are prepared and presented they are then analysed in
+[u1-reading p.7] Accounting – Unit 1: What is Accounting
+[u1-tutorial p.1] At the end of this tutorial, you should be able to
+[u1-tutorial p.1] Before this tutorial, you should have
+[u1-tutorial p.1] After this tutorial, you should
+[u1-tutorial p.2] Accounting – Unit 1: What is Accounting?
+[u1-tutorial p.2] The following terms and concepts must be understood in the context of the tutorial.
+[u1-tutorial p.3] Accounting – Unit 1: What is Accounting?
+[u1-tutorial p.3] 1. In your own words, using definitions from other sources, define what is Accounting.
+[u1-tutorial p.3] 3. Bookkeeping is only one area of accounting; the profession of accounting has many
+[u1-tutorial p.4] Accounting – Unit 1: What is Accounting?
+[u1-tutorial p.4] 4. The owners of the business are the main users of relevant accounting information
+[u1-tutorial p.4] What is the current position?
+[u1-tutorial p.4] Is the business making a profit?
+[u1-tutorial p.5] Accounting – Unit 1: What is Accounting?
+[u1-tutorial p.5] “The accounting cycle refers to the regular repetition of a standardised set of stages
+[u1-tutorial p.5] a) Complete the accounting cycle below as it is missing 3 stage names and the
+[u1-tutorial p.6] Accounting – Unit 1: What is Accounting?
+[u1-tutorial p.7] Accounting – Unit 1: What is Accounting?
+[u1-tutorial p.7] c) The accounting cycle below is in incorrect order and the stage number is not
+[u1-tutorial p.7] included. Place the correct number next to each accounting cycle step name.
+[u1-tutorial p.8] Accounting – Unit 1: What is Accounting?
+[u1-tutorial p.9] Accounting – Unit 1: What is Accounting?
+[u1-tutorial p.9] 2. The 5 essential requirements of accounting reports to aid usefulness are noted
+[u1-tutorial p.9] (understandability):
+[u1-tutorial p.9] A.  Users must be able to identify similarities
+[u1-tutorial p.9] accountants must also be timely i.e. reports
+[u1-tutorial p.9] should be prepared in plenty of time for the
+[u1-tutorial p.9] decisions. If information is not available
+[u1-tutorial p.9] when it is needed, it is of no use.
+[u1-tutorial p.9] C. The reports are presented in such a way
+[u1-tutorial p.9] D. Reports should comply with the
+[u1-tutorial p.9] E. The information should correspond with the
+[u1-tutorial p.9] and is capable of independent verification
+[u1-tutorial p.9] and is free from bias. The reports can be
+[u2-lecture p.2] At the end of this lecture, you should be able to:
+[u2-lecture p.3] information that is assumed by all accountants including
+[u2-lecture p.6] Assets are valued at the original purchase price and recorded
+[u2-lecture p.7] • The owner’s personal financial dealings are separate from
+[u2-lecture p.7] • All business transactions are recorded from the point of
+[u2-lecture p.7] • Any business, small or large, is an accounting entity.
+[u2-lecture p.9] • Assumes a business is set up to continue indefinitely
+[u2-lecture p.9] • Also known as the Continuity Convention
+[u2-lecture p.10] • The indefinite life of the business is split into regular intervals.
+[u2-lecture p.11] A basic accounting equation is used to implicitly express that Assets (A) equals
+[u2-lecture p.12] The basic accounting equation can also be expanded to include Revenue (R) and Expenses
+[u2-lecture p.13] Also known as the Dual Aspect Convention
+[u2-lecture p.14] period is an important part of profit/loss measurement and the subsequent
+[u2-lecture p.14] • Expenses are recognized when they are incurred, not when
+[u2-lecture p.14] cash is paid.
+[u2-lecture p.14] • Revenues are recognized when they are earned, not when
+[u2-lecture p.14] cash is received
+[u2-lecture p.15] Accrual Accounting is the method of recording
+[u2-lecture p.15] • This means that in an accounting period
+[u2-lecture p.15] Cash Accounting is the method of recording
+[u2-lecture p.15] transactions only when cash is received, and
+[u2-lecture p.15] cash is paid.
+[u2-lecture p.16] should consistently apply it in future periods unless a change is warranted
+[u2-lecture p.16] financial statements are comparable across different periods,
+[u2-lecture p.17] Revenue Recognition Principle: Revenues and profits should only be
+[u2-lecture p.17] recognized when they are realized and there is a high level of certainty,
+[u2-lecture p.17] Expense and Loss Recognition: Expenses and losses should be
+[u2-lecture p.17] recognized as soon as they are probable or foreseeable, even if they have
+[u2-reading p.1] happened?' (collecting, recording and summarising) to 'what should we do?'
+[u2-reading p.1] is now the key focus.
+[u2-reading p.1] have increased. Today the accounting system must cope with complicated and
+[u2-reading p.1] changing tax laws and high-pressure business activity. It must assist in decision
+[u2-reading p.2] Historically, the accounting system is based on a number of conventions and
+[u2-reading p.2] Conventions are practices or rules and accepted customs that have developed over
+[u2-reading p.2] time in the accounting profession. They are practices concerned with preparing
+[u2-reading p.2] and presenting financial information that is assumed by all accountants including
+[u2-reading p.2] students. Some of these are listed below.
+[u2-reading p.2] Monetary measurement means that all information must be described in dollar terms.
+[u2-reading p.2] changes from year to year. The changing value of the dollar means, for example, that
+[u2-reading p.2] personal financial affairs of the owner of a business are kept separate from the affairs
+[u2-reading p.2] of the business itself. All business transactions are recorded from the point of view of
+[u2-reading p.2] For example, John is the owner of the business Lighting Warehouse. The business has
+[u2-reading p.2] total $56,000. John’s wedding ring worth $2,000 is not an asset of the business. It
+[u2-reading p.2] is not included in the calculation of the business assets.
+[u2-reading p.2] This convention assumes that a business is set up to continue indefinitely. Therefore
+[u2-reading p.2] the assets other than stock for sale are assumed to be used in the operation rather
+[u2-reading p.2] Assets are valued at the original purchase price and recorded at the actual amount.
+[u2-reading p.2] Therefore, it is acceptable to use historical costs in the Statement of Financial
+[u2-reading p.2] The life of a business is split into regular and equal intervals or periods, usually one
+[u2-reading p.2] Eg the accounting period could be from 1 July 2020 to 30 June 2021 (also known as
+[u2-reading p.2] reports are prepared for the specific period to enable an assessment of the results from
+[u2-reading p.3] a minimum of two accounts are affected. For example the introduction of cash as
+[u2-reading p.3] This is a principle that the same accounting principles should be used for
+[u2-reading p.3] different accounting procedures and processes are used for preparing financial
+[u2-reading p.3] 1. Cash accounting – cash accounting is concerned with recording accounting
+[u2-reading p.3] transactions at the time only when cash is received and cash is paid. As an
+[u2-reading p.3] example this means recording revenue only when cash is received and
+[u2-reading p.3] expenses when cash is paid. Most small businesses use this method.
+[u2-reading p.3] 2. Accrual accounting – accrual accounting is concerned with recording accounting
+[u2-reading p.3] means that in an accounting period recording revenues as earned and expenses as
+[u2-reading p.3] For most merchandising businesses, using the accrual basis of accounting means
+[u2-reading p.3] recording revenues when goods are sold rather than when the cash is received.
+[u2-reading p.3] accounting is typically applied by recording revenue when the service is performed
+[u2-reading p.3] rather than when the customer or client pays for the service. If services are part
+[u2-reading p.3] The matching of Revenues and Expenses for the defined accounting period is an important
+[u2-reading p.3] Conservatism, or prudence, is a principle that dictates accountants should recognize potential
+[u2-reading p.3] losses when they are possible, but only record potential gains when they are certain. This
+[u2-reading p.3] practice ensures that financial statements are not misleading by overstating assets or income.
+[u2-reading p.4] The revenue recognition principle is an accounting concept under accrual
+[u2-reading p.4] accounting that states revenue should be recorded only when it has been earned and
+[u2-reading p.4] is realized or realizable, regardless of when payment is received.
+[u2-reading p.4] A basic accounting equation is used to implicitly express that Assets (A) equals Liabilities
+[u2-reading p.4] A – L = OE (this is also known as Net Assets)
+[u2-reading p.4] The basic accounting equation can also be expanded to include Revenues (R) and
+[u2-reading p.4] The owner, John, starts a business called Lighting Warehouse. The owner introduces
+[u2-reading p.4] The effects on the equation are:
+[u2-reading p.4] Asset (which is cash) has increased by $30,000; at the same time, the owner’s
+[u2-reading p.4] equity (which is the capital contributed by the owner) has increased by $30,000. The
+[u2-reading p.4] The effects on the equation are:
+[u2-reading p.4] The asset (which is the car) has increased by $20,000; at the same time the asset
+[u2-reading p.4] (which is the cash in the business) has decreased by $20,000.
+[u2-reading p.5] The effects on the equation are:
+[u2-reading p.5] The asset (which is cash) has decreased by $2000; at the same time, the owner’s
+[u2-reading p.5] on the equation are:
+[u2-reading p.5] The asset (which is cash) has increased by $40,000; at the same time, the liability of
+[u2-tutorial p.1] At the end of this tutorial, you should be able to
+[u2-tutorial p.1] Before this tutorial, you should have
+[u2-tutorial p.1] After this tutorial, you should
+[u2-tutorial p.2] The following terms and concepts must be understood in the context of the tutorial.
+[u2-tutorial p.3] 2. According to the cash basis of accounting, state the date as to when revenue must be
+[u2-tutorial p.3] recognised when goods are sold on 30 April and paid for on 31 May.
+[u2-tutorial p.3] revenue must be recognized when goods are sold on 30 April and paid for on
+[u2-tutorial p.4] that a business is set up
+[u2-tutorial p.4] B. The life of a business is
+[u2-tutorial p.4] records are separate
+[u2-tutorial p.4] rules are applied every
+[u2-tutorial p.4] F. Assets are recorded in
+[u2-tutorial p.4] G. All information must be
+[u2-tutorial p.4] must be maintained at all
+[u2-tutorial p.4] I. Transactions are
+[u2-tutorial p.5] 5. Jay is the owner of the business Jay’s Supplies and wants to buy a motor vehicle. He
+[u2-tutorial p.5] a) At what price must Jay record the motor vehicle for and why?
+[u2-tutorial p.5] c) How many accounts are affected in this transaction? Why and what are they?
+[u2-tutorial p.5] d) Prove that equality of the accounting equation is maintained.
+[u2-tutorial p.6] 6. Stef’s new business is called ‘Stylish Flares’ and trades in the fashion and clothes
+[u2-tutorial p.6] (RMB) since that is the currency her business actually paid.
+[u2-tutorial p.6] cash at bank account only.
+[u3-lecture p.2] At the end of this lecture, you should be able to
+[u3-lecture p.4] Examples include cash, furniture and motor vehicles.
+[u3-lecture p.5] Current vs Non-Current Assets
+[u3-lecture p.6] Examples include loans and accounts payable/creditors
+[u3-lecture p.6] non-current liabilities.
+[u3-lecture p.7] Current v Non-Current Liabilities
+[u3-lecture p.8] Why classify into Current and Non-Current?
+[u3-lecture p.9] Element/current or non-current
+[u3-lecture p.9] Current Asset
+[u3-lecture p.9] Asset is used up/converted to
+[u3-lecture p.9] Liability is paid within the year.
+[u3-lecture p.9] Current Asset
+[u3-lecture p.9] The goods are usually used
+[u3-lecture p.10] Examples include sales revenue, interest received, and
+[u3-lecture p.11] Buying an asset is not an expense!
+[u3-lecture p.12] • Also known as Net Assets or Net Worth of a business
+[u3-lecture p.14] Capital is the amount the owner has put into or
+[u3-lecture p.14] Drawings is a withdrawal of cash or stock from
+[u3-lecture p.15] It is a detailed version of the accounting equation
+[u3-lecture p.17] • also known as creditors and
+[u3-lecture p.17] are an example of current
+[u3-lecture p.17] • accounts payable are
+[u3-lecture p.17] • also known as debtors and
+[u3-lecture p.17] are an example of current
+[u3-lecture p.17] • accounts receivable are
+[u3-lecture p.17] on credit and thus are owed
+[u3-lecture p.18] Accounts receivable (A/R) is the term used to describe money owed to a
+[u3-lecture p.18] Also known as trade receivables.
+[u3-lecture p.18] It is listed as a current asset on the balance sheet, because of the short-
+[u3-lecture p.18] Only purchases made by customers on credit terms are accounts receivable,
+[u3-lecture p.18] as cash payments are received immediately.
+[u3-lecture p.18] Suppliers extending credit to their buyers is a common feature of supply
+[u3-lecture p.19] Accounts payable (AP) represents the amount that a company owes to its
+[u3-lecture p.19] Also known as trade payables
+[u3-lecture p.19] It is a current liability in the balance sheet due to its short duration till
+[u3-lecture p.19] payment is due.
+[u3-lecture p.19] payment isn’t made straight away, but is due typically within 30 days or 60
+[u3-lecture p.20] or production. This includes all products, raw materials, work-in-progress, and
+[u3-lecture p.20] finished goods that are part of the company’s operations.
+[u3-lecture p.20] Current asset on the balance sheet
+[u3-lecture p.20] profitability, as inventory costs are accounted for in financial statements.
+[u3-lecture p.21] A system where inventory records are updated at
+[u3-lecture p.21] Inventory account are not updated continuously
+[u3-lecture p.21] but rather are determined by physical counts and
+[u3-lecture p.21] Purchase of inventory is recorded as:
+[u3-lecture p.21] A system where inventory records are updated
+[u3-lecture p.21] continuously rather are determined by physical
+[u3-lecture p.21] Purchase of inventory is recorded as:
+[u3-lecture p.22] The basic accounting equation can also be expanded to include Revenue (R) and Expenses
+[u3-lecture p.23] • R - E represents the calculation
+[u3-lecture p.23] profit. Profit is a reward for
+[u3-lecture p.23] risk taking and is added to
+[u3-lecture p.24] What is an Account?
+[u3-lecture p.24] Each transaction is recorded into accounts
+[u3-lecture p.24] Accounts are the items that are affected by the transaction.
+[u3-lecture p.24] Example: Cash at Bank (account) is an Asset (element)
+[u3-lecture p.24] Bank Loan (account) is a Liabilities (element)
+[u3-lecture p.24] Drawings (account) is a Owner’s Equity (element)
+[u3-lecture p.24] Sales/revenue(account) is a Revenue (element)
+[u3-lecture p.24] Wages Expense (account) is an Expense (element)
+[u3-lecture p.27] A chart of accounts is tailored to each individual business.
+[u3-lecture p.28] Non-Current Assets ---2
+[u3-lecture p.28] Non-Current liabilities –--4
+[u3-lecture p.30] Total debits must equal total credits for each transaction.
+[u3-lecture p.31] Both sides of the equation must be equal
+[u3-lecture p.34] which account(s) are debited or credited.
+[u3-lecture p.35] 3. Identify movements and amounts: is the
+[u3-reading p.1] elements or groupings are required.
+[u3-reading p.1] The 5 elements (or groupings) are:
+[u3-reading p.1] motor vehicle. The Assets can be subdivided into current assets and non-current assets.
+[u3-reading p.1] Current assets are assets expected to be consumed or used up within one
+[u3-reading p.1] of current assets are cash, stock and accounts receivable (debtors).
+[u3-reading p.1] Non-current assets are assets that will remain with the business for
+[u3-reading p.1] Examples are equipment, furniture, motor vehicle, goodwill and investments.
+[u3-reading p.1] and non-current liabilities.
+[u3-reading p.1] Current liabilities are amounts owed to persons or businesses that have to
+[u3-reading p.1] Non-current liabilities are commitments which do not need to be met
+[u3-reading p.1] Revenues (R) are the income of the business. Revenue can be from different
+[u3-reading p.1] revenue items are found in the general ledger of a business. They include sales,
+[u3-reading p.1] Expenses (E) are outgoings or costs to pay for items that enable the business to
+[u3-reading p.1] operate to continue earning income. Some examples of expenses are cost of goods
+[u3-reading p.2] Capital is the amount the owner has put into or contributed to the business.
+[u3-reading p.2] Drawings is a withdrawal of cash or stock from the business by the owner.
+[u3-reading p.2] Required for good business planning. For example the business should be aware
+[u3-reading p.2] An income statement (or a profit and loss statement) is another important financial
+[u3-reading p.2] report of a business. It is a statement of the financial performance of a business over
+[u3-reading p.2] expenses, the accounts associated with these two groups are referred to as the
+[u3-reading p.2] In general, the difference between the revenue (R) and expenses (E) is shown as
+[u3-reading p.2] either a profit or a loss and usually the report is presented in the vertical format.
+[u3-reading p.2] Revenues are the income of the business. Revenue can be from different sources
+[u3-reading p.2] items are found in the general ledger of a business. They include sales, rent
+[u3-reading p.2] Expenses are outgoings or costs to pay for items that enable the business to operate
+[u3-reading p.2] to continue earning income. Some examples of expenses are cost of goods sold,
+[u3-reading p.3] The balance sheet is an important financial report. It is a report or statement about
+[u3-reading p.3] the financial position of a business as at a particular date. It is a detailed version of
+[u3-reading p.3] the accounting equation. In report format, it is a listing of the assets owned by a
+[u3-reading p.3] Some examples of accounts in the asset element or group are cash at bank,
+[u3-reading p.3] Some examples of accounts in the liability element or group are accounts
+[u3-reading p.3] Some examples of accounts in the owner’s equity element or group are capital
+[u3-reading p.3] (R - E) represents the calculation of profit or loss.
+[u3-reading p.3] If R > E, the business makes a profit. Profit is a reward for risk taking and is added to
+[u3-reading p.3] A = L+OE is also presented by the balance sheet whilst (R-E) is presented by the income
+[u3-reading p.3] equation. Equality of the accounting equation must be maintained at all times.
+[u3-reading p.3] What is an account?
+[u3-reading p.3] The basic recording unit. Each transaction is recorded into accounts. Accounts are the items
+[u3-reading p.3] that are affected by the transaction. Accounts are the items that are affected by the
+[u3-reading p.3] transaction and where transactions are subsequently recorded.
+[u3-reading p.3] Accounts are found in the General Ledger. Accounts can be presented in either the T
+[u3-reading p.3] Accounts in T format are similar to the capital letter T with the name of an account
+[u3-reading p.3] shown at the top. The left hand side of the T account is called the debit side and includes
+[u3-reading p.3] T account is called the credit side and also includes column headings of the date,
+[u3-reading p.3] particulars and credit amount. The particulars can also be called the description column
+[u3-reading p.3] and is used to record the name of the corresponding account affected.
+[u3-reading p.4] Accounts in the columnar format show the name of the account at the top and include the
+[u3-reading p.4] particulars can also be called the description column and is used to record the name of the
+[u3-reading p.4] The main differences between the T and columnar formats are the one date and particular
+[u3-reading p.4] columns, the debit and credit columns are side by side and the additional balance column in
+[u3-reading p.4] the columnar format. T format similarities are the date, particulars, debit is on the left
+[u3-reading p.4] hand side and credit is on the right hand side.
+[u3-reading p.5] As there can be a large number of accounts in a business, a chart of accounts is
+[u3-reading p.5] groups/elements. Each account listed in the chart of accounts is allocated an account
+[u3-reading p.5] code. This is necessary for easy identification and sorting of accounts. The account
+[u3-reading p.5] code may be in a numeric or alpha-numeric sequence. The chart of accounts is
+[u3-reading p.5] different chart of accounts. A chart of accounts is tailored to each individual business.
+[u3-reading p.5] The table below is an example of a chart of account
+[u3-reading p.5] Non-current assets ---2
+[u3-reading p.5] Non-current liabilities –-4
+[u3-reading p.6] transaction is recorded in appropriate accounts. This system provides a logical method for
+[u3-reading p.6] recording transactions. The double-entry system also offers a means of ensuring the accuracy
+[u3-reading p.6] of the recorded amounts. If every transaction is recorded with equal debits and credits, then
+[u3-reading p.6] the sum of all the debits to the accounts must equal the sum of all the credits. The double-
+[u3-reading p.6] entry system for determining the equality of the accounting equation is much more efficient
+[u3-reading p.6] each transaction has to be analysed. A table is drawn up to help analyse the transactions.
+[u3-reading p.6] It is called an analysis chart.
+[u3-reading p.6] Using the accounting equation as a guide Debits (Dr) and Credits (Cr) are used in
+[u3-reading p.6] Rules that should be followed are:
+[u3-reading p.6] 2. Determine the 2 accounts affected as a minimum (ie is it the cash at
+[u3-reading p.6] 5. Apply the double entry rule to decide if each account should be
+[u3-reading p.7] 1. The key words are ‘cash’ and ‘capital’.
+[u3-reading p.7] 2. Thus, the two accounts affected are the Cash at Bank Account and the
+[u3-reading p.7] 4. The effects of the transactions are: Assets increase and Owner’s
+[u3-reading p.7] In short, this is written and read as:
+[u3-reading p.7] analysis chart. The transactions are given in the first column. You may practice to analyse
+[u3-reading p.8] Accounts payable is also known as creditors and is an example of current liabilities.
+[u3-reading p.8] Accounts payable are businesses or persons from whom the business purchases trading
+[u3-reading p.8] Queen Limited is an Accounts payable for Kingsford Trading as they owe Queen
+[u3-reading p.8] Accounts receivable is also known as debtors and is an example of current assets.
+[u3-reading p.8] Accounts receivable are businesses or persons that the business sells goods to on
+[u3-reading p.8] Princess Limited is an Accounts Receivable for Kingsford Trading as they will
+[u3-reading p.9] and purchases of inventory are recorded in the Inventory account. Once a sale of
+[u3-reading p.9] goods occurs the original cost is transferred out of the inventory account and into
+[u3-reading p.9] usually suits businesses where the tracking of individual inventory items is feasible
+[u3-reading p.9] no transaction is required to the Inventory account at that point in time. However,
+[u3-reading p.9] at the end of the accounting period a stocktake is undertaken (a physical counting
+[u3-reading p.9] of Inventory on hand/not sold) and this is used together with the Inventory at the
+[u3-reading p.9] tracking of individual inventory items is not feasible and too costly. This course
+[u3-reading p.9] will use this method only.
+[u3-tutorial p.1] At the end of this tutorial, you should be able to
+[u3-tutorial p.1] Before this tutorial, you should have
+[u3-tutorial p.1] After this tutorial, you should
+[u3-tutorial p.2] The following terms and concepts must be understood in the context of the tutorial.
+[u3-tutorial p.4] 2. Rosaline owns a café shop called Wind & Willows. The table below provides
+[u3-tutorial p.4] Current Asset(CA)
+[u3-tutorial p.4] Non-current asset (NCA)
+[u3-tutorial p.4] Non-Current liability (NCL)
+[u3-tutorial p.4] D. Snow Traders is a supplier who sells Rosaline
+[u3-tutorial p.5] presented below that is applicable for Blue’s Toys.
+[u3-tutorial p.6] Increases in assets are recorded as:
+[u3-tutorial p.6] Increases in liabilities are recorded as:
+[u3-tutorial p.6] Increases in Owner’s Equity are recorded as:
+[u3-tutorial p.6] Decreases in assets are recorded as:
+[u3-tutorial p.6] Decreases in liabilities are recorded as:
+[u3-tutorial p.6] Decreases in Owner’s Equity are recorded as
+[u3-tutorial p.6] 7. Revenue and Expenses are used to calculate profit and this results in an increase or
+[u3-tutorial p.7] 8. Equality in the accounting equation must be maintained at all times. Fill in the missing
+[u3-tutorial p.8] 9. Given below is a list of transactions. Record each amount under the related
+[u3-tutorial p.10] 11. The perpetual inventory method records the purchases of inventory as a current asset
+[u3-tutorial p.10] account named purchases. This is also used in the end of period calculation to
+[u3-tutorial p.10] determine the actual cost of goods sold. This course will focus on and only use the
+[u3-tutorial p.10] When inventory purchased for resale is recorded as an
+[u3-tutorial p.10] An inventory system where cost of goods sold is
+[u4-lecture p.2] At the end of this lecture, you should be able to:
+[u4-lecture p.4] • Definition: The General Journal is a chronological
+[u4-lecture p.4] transactions are first recorded before they are posted to
+[u4-lecture p.7] It is necessary since the General Journal records a variety
+[u4-lecture p.8] 1. Debit account must be written first
+[u4-lecture p.8] 2. Credit account must be indented
+[u4-lecture p.9] given if payment is made by a
+[u4-lecture p.9] payment must
+[u4-lecture p.9] must be made.
+[u4-lecture p.11] It has an immediate effect as the business is giving/receiving a discount at
+[u4-lecture p.11] The trade discount is included in the invoice.
+[u4-lecture p.11] This trade discount is not recorded in the accounting books or records.
+[u4-lecture p.11] This is also known as a Price Discount.
+[u4-lecture p.13] Discounts are usually received/allowed to encourage early payment/receipt of
+[u4-lecture p.13] This is also known as a prompt payment discount.
+[u4-lecture p.13] This discount is recognised as Revenue
+[u4-lecture p.13] Less cash is paid to settle the
+[u4-lecture p.13] This discount is recognised as an
+[u4-lecture p.13] Expense as it is a cost to the
+[u4-lecture p.13] Less cash is received to settle the
+[u4-lecture p.14] Queen Limited. Queen’s terms of sale is 1%/7 days, net 21 days.
+[u4-lecture p.16] Princess Limited. Kingsford’s terms of sale is 2%/10 days, net 30 days.
+[u4-lecture p.19] account is required.
+[u4-lecture p.21] returns account is required
+[u4-lecture p.22] Kingsford Trading is a small business that sells children’s toys. During the first week of
+[u4-lecture p.26] amount due. A debt owed that is not recoverable.
+[u4-lecture p.26] • It is a cost to the business and therefore an Expense
+[u4-reading p.1] Transactions are initially recorded in chronological order in a journal before they are transferred
+[u4-reading p.1] accounts. Businesses may use various kinds of journals to record transactions; these are
+[u4-reading p.1] Entering transaction data in the journal is known as journalising.
+[u4-reading p.1] Separate journal entries are made for each transaction. A complete entry consists of:
+[u4-reading p.1] The date of the transaction is entered in the Date column.
+[u4-reading p.1] The account to be debited is always entered first at the left.
+[u4-reading p.1] The account to be credited is then entered on the next line, indented under the line above.
+[u4-reading p.1] The amounts for the debits are recorded in the debit (left) column, and the amounts for
+[u4-reading p.1] the credits are recorded in the credit (right) column.
+[u4-reading p.1] A brief explanation of the transaction is given (narration). The narration is found directly
+[u4-reading p.1] It is important to use correct and specific account names and numbers in journal entries. Since
+[u4-reading p.1] all accounts are used in preparation of the financial statements, erroneous account names lead
+[u4-reading p.2] trucks: delivery vehicles, delivery trucks or trucks. The main criterion is that each name must
+[u4-reading p.2] The credit terms specify the amount of the cash discount and time period during which it is
+[u4-reading p.2] offered. They also indicate the time within which the purchaser is expected to pay the full invoice
+[u4-reading p.2] price. In the sales invoice above, credit terms are 2.5% 7 days, n/30, meaning that a 2.5% cash
+[u4-reading p.2] discount may be taken on the invoice price, less (‘net of’) any returns, if payment is made within
+[u4-reading p.2] 7 days of the invoice date (the discount period); otherwise, the invoice price, less any returns, is
+[u4-reading p.2] incentive offers advantages to both parties — the purchaser saves money, and the seller is able
+[u4-reading p.2] The credit terms specify the amount of the cash discount and time period during which it is
+[u4-reading p.2] offered. They also indicate the time within which the purchaser is expected to pay the full invoice
+[u4-reading p.2] specify only the maximum time period for paying the balance due. For example, the time period
+[u4-reading p.2] may be stated as n/30, meaning that the net amount must be paid in 30 days from the invoice
+[u4-reading p.2] When an invoice is paid within the discount period, the amount of the discount is credited to
+[u4-reading p.2] discount received. Discounts are recorded by the buyer as revenue, as a discount represents a
+[u4-reading p.2] settlement discount is $70 ($3500 × 2%), and the amount of cash paid by Sauk Stereo is $3430
+[u4-reading p.2] ($3500 − $70). The entry to record the 12 May payment by Sauk Stereo is shown below.
+[u4-reading p.3] of the amount due and are not recorded in the records of either the buyer or the seller. Trade
+[u4-reading p.3] discounts are disclosed on the sales invoice as a percentage reduction in the list price of the
+[u4-reading p.3] are considered a large purchase). If the buyer purchases 10 items of inventory on 19 May, taking
+[u4-reading p.3] payment of the balance due. Like a purchase discount, a sales discount is based on the invoice
+[u4-reading p.3] they are willing to forgo while ensuring that the discount provides enough incentive for the
+[u4-reading p.3] customer to pay within the discount period. The discount allowed account is increased (debited)
+[u4-reading p.3] for discounts that are taken by customers.
+[u4-reading p.3] the discount period is shown next.
+[u4-reading p.4] payment is received.
+[u4-reading p.4] Discount allowed is reported as an expense in the statement of profit or loss and provides
+[u4-reading p.4] Although each customer must satisfy the credit requirements of the seller before the credit sale
+[u4-reading p.4] is approved, inevitably some accounts receivable become uncollectable, i.e. the customer
+[u4-reading p.4] receivables are known as bad debts expense. Such losses are considered a normal and
+[u4-tutorial p.1] At the end of this tutorial, you should be able to
+[u4-tutorial p.1] Before this tutorial, you should have
+[u4-tutorial p.1] After this tutorial, you should
+[u4-tutorial p.2] The following terms and concepts must be understood in the context of the
+[u4-tutorial p.5] Explain what the terms 2%/7 days and net 30 days represents when included in a sales invoice (refer to
+[u4-tutorial p.5] terms are 1%, 8 days, n=21 days. RedRhombus paid Greenheart on 11 March. Record the journal
+[u4-tutorial p.6] Dural’s terms of payment is 2%/5 days, net 14 days
+[u4-tutorial p.6] account. Roger’s terms of payment is 1%/7 days, net 21 days.
+[u4-tutorial p.9] prospective client (Hint: is this a transaction?)
+[u4-tutorial p.13] customers is 2%/7 days, net 21 days. The following sales transactions occurred for Thor Painting in May.
+[u5-lecture p.2] At the end of the lecture this week, you should be able to:
+[u5-lecture p.4] Only arises when accrual-based accounting is adopted
+[u5-lecture p.4] Accrual-based, in some cases the period in which cash is paid or received
+[u5-lecture p.4] does not coincide with the period in which expense and income are
+[u5-lecture p.4] Therefore, some accounts must be adjusted on the last day of the
+[u5-lecture p.5] Accurate Profit – includes all
+[u5-lecture p.7] before they are
+[u5-lecture p.7] Revenues that are
+[u5-lecture p.8] Cash paid before benefits are consumed/expired (future benefit)
+[u5-lecture p.8] Initially recorded as a current asset at time of payment
+[u5-lecture p.8] Over time, the future benefits are consumed/expired. This
+[u5-lecture p.10] Cash received in advance for services that are to be performed in the future
+[u5-lecture p.10] Recognised as revenue when earned (after the service is performed)
+[u5-lecture p.11] Sue is told that the goods will be ready for pick up on 5 May. On 5 May Sue
+[u5-lecture p.11] Entry on May 5 –Bicycle is provided to Sue
+[u5-lecture p.13] Depreciation is the reduction in value of a non-current asset over time, normally
+[u5-lecture p.13] This includes wear or obsolescence over the life.
+[u5-lecture p.13] Depreciation is an Expense and calculated for each accounting period.
+[u5-lecture p.13] Cr – Accumulated Depreciation         this account is used to reduce the value
+[u5-lecture p.15] Depreciation entry at the end of the reporting period is the same
+[u5-lecture p.16] • Accumulated depreciation—office equipment is a contra asset account, which
+[u5-lecture p.16] means that it is offset against the asset on the Balance Sheet
+[u5-lecture p.16] • Its normal balance is a credit.
+[u5-lecture p.16] • This account is used instead of decreasing (crediting) the asset directly
+[u5-lecture p.17] Revenue must be recognised along with a receivable account (for a future
+[u5-lecture p.18] The adjusting entry on the monthly reporting day 30 June, is:
+[u5-lecture p.19] When interest is paid on 30 June 2025
+[u5-lecture p.20] been made, thus are unrecorded expenses
+[u5-lecture p.20] Cr – Expense payable (Liability)             do not use Accounts Payable as it is an account
+[u5-lecture p.20] only  meant for our suppliers
+[u5-lecture p.22] day was Friday June 25 and the next pay day is Friday 2 July. However, Kingsford closes its
+[u5-lecture p.22] accounts on 30 June 2024 which is a Wednesday.
+[u5-lecture p.22] When salary is paid on 2 July 2024
+[u5-reading p.1] entries are made to revenue and expense accounts at the end of the accounting period. In short,
+[u5-reading p.1] adjusting entries are needed to ensure that the recognition criteria are followed for assets,
+[u5-reading p.1] shows the appropriate profit (or loss) for the period. Adjusting entries are necessary because
+[u5-reading p.1] Some events are not journalised daily because it would not be useful or efficient to do so.
+[u5-reading p.1] Examples are depreciation and the earning of wages by employees.
+[u5-reading p.1] Some costs are not journalised during the accounting period because the economic benefits
+[u5-reading p.1] include building and equipment deterioration, rent and insurance.
+[u5-reading p.1] Some items may be unrecorded. An example is an electricity or telephone bill that will not be
+[u5-reading p.1] Adjusting entries are required every time financial statements are prepared. An essential
+[u5-reading p.1] starting point is an analysis of each account in the trial balance to determine whether it is
+[u5-reading p.1] Adjusting entries can be classified as either prepayments or accruals. Each of these classes
+[u5-reading p.1] are used or consumed.
+[u5-reading p.1] recorded as liabilities until the services are performed or the goods are provided and revenue is
+[u5-reading p.2] period are called prepaid expenses or prepayments. When such a cost is incurred, an asset
+[u5-reading p.2] account is increased (debited) to show the service or benefit that will be received in the future.
+[u5-reading p.2] Examples of common prepayments are insurance, supplies, advertising and rent.
+[u5-reading p.2] Prepaid expenses expire as the service is provided with the passage of time (e.g. rent and
+[u5-reading p.2] of the expiry of prepaid expenses until financial statements are prepared. At the end of each
+[u5-reading p.2] reporting period, adjusting entries are made to record the expenses applicable to the current
+[u5-reading p.2] adjustment, assets are overstated and expenses are understated. Therefore, an adjusting entry
+[u5-reading p.2] unforeseen events. Insurance must be paid in advance, usually for a period of 1 year. Insurance
+[u5-reading p.2] payments (premiums) made in advance are normally recorded in the asset account prepaid
+[u5-reading p.2] insurance. At the end of the reporting period it is necessary to increase (debit) insurance
+[u5-reading p.2] Cash received before the revenue recognition criteria have been met is recorded by increasing
+[u5-reading p.2] (crediting) a liability account called revenues received in advance. Items such as rent and
+[u5-reading p.2] is provided. Health clubs treat membership revenue as deferred income until the service has
+[u5-reading p.2] been provided in accordance with the membership contract. Unearned revenue is the opposite
+[u5-reading p.2] When payment is received for services to be provided in a future accounting period, an unearned
+[u5-reading p.2] revenue (a liability) account should be credited to recognise the obligation that exists. Unearned
+[u5-reading p.2] revenues are subsequently recognised as revenue when the service is provided to a customer.
+[u5-reading p.3] During the accounting period, it is not always practical to make daily entries to the unearned
+[u5-reading p.3] revenue accounts as the services are provided. Instead, we delay recognition of revenue until
+[u5-reading p.3] the adjustment process. Then an adjusting entry is made to record the revenue during the period
+[u5-reading p.3] and motor vehicles. These assets are called non-current assets as they provide future economic
+[u5-reading p.3] refers to the estimated total service potential or estimated period of time over which the future
+[u5-reading p.3] economic benefits are expected to be consumed by the entity. Because a building is expected
+[u5-reading p.3] to provide service for many years, it is recorded as an asset, rather than an expense, on the date
+[u5-reading p.3] it is acquired. As explained in chapter 1, such assets are recorded at cost, as required by the
+[u5-reading p.3] historical cost principle. According to expense recognition criteria, a portion of this cost should
+[u5-reading p.3] then be reported as an expense during each period of the asset’s useful life. Depreciation is the
+[u5-reading p.3] Need for adjustment:  From an accounting standpoint, the acquisition of long-lived assets is
+[u5-reading p.3] adjusting entries for depreciation is therefore the same as described before for other prepaid
+[u5-reading p.3] expenses — that is, to recognise the cost of economic benefits that have been consumed during
+[u5-reading p.3] period as assets. One point is very important to understand: depreciation is an allocation
+[u5-reading p.3] concept, not a valuation concept. That is, we depreciate an asset to allocate its cost to the
+[u5-reading p.3] periods in which we use the asset. We are not attempting to reflect the actual change in the
+[u5-reading p.3] For Wong Pty Ltd, assume that depreciation on the office equipment is estimated to be $480 a
+[u5-reading p.3] Statement presentation: Accumulated depreciation—office equipment is a contra asset
+[u5-reading p.3] account, which means that it is offset against office equipment on the statement of financial
+[u5-reading p.3] position, and its normal balance is a credit. This account is used instead of decreasing
+[u5-reading p.3] depreciation—office equipment is deducted from the related asset account as shown below:
+[u5-reading p.4] depreciation is referred to as its carrying amount (also referred to as book value). The carrying
+[u5-reading p.4] amount of the equipment at the end of the reporting period is $4960.
+[u5-reading p.4] Accrued revenues are revenues that are recorded as adjusting entries because they have not
+[u5-reading p.4] commissions and fees. The former are unrecorded because the receipt of rent and interest
+[u5-reading p.4] unrecorded because only a portion of the total service has been provided and the clients won’t
+[u5-reading p.4] An adjusting entry is required to show the receivable that exists at the end of the reporting period
+[u5-reading p.4] and to record the revenue for the period. Before adjustment, both assets and revenues are
+[u5-reading p.4] Although the client has not yet paid, Wong has been advised that the amount for October is
+[u5-reading p.4] $200. As this revenue has not yet been recorded, revenue and assets are understated.
+[u5-reading p.4] Expenses not yet paid or recorded at the end of the reporting period are called accrued
+[u5-reading p.4] expenses. Interest, rent, taxes and salaries are common examples of accrued expenses.
+[u5-reading p.4] expense in the records of one business is likely to be an accrued revenue to another business.
+[u5-reading p.4] For example, the $200 accrual of service revenue by Wong Pty Ltd is an accrued expense to the
+[u5-reading p.4] Adjustments for accrued expenses are necessary to record the obligations that exist at the end
+[u5-reading p.4] period. Before adjustment, both liabilities and expenses are understated. Therefore, an adjusting
+[u5-reading p.4] Some types of expenses, such as employee salaries and commissions, are paid for after the
+[u5-reading p.5] Wong Pty Ltd pays salaries every 2 weeks. Consequently, the next payday is 9 November, when
+[u5-reading p.5] total salaries of $4000 will again be paid. The payment consists of $1200 of salaries payable at
+[u5-reading p.5] entry is made on 9 November:
+[u5-reading p.5] interest accumulation is determined by three factors: (1) the principal borrowed, (2) the interest
+[u5-reading p.5] rate, which is always expressed as an annual rate, and (3) the length of time the loan is
+[u5-reading p.5] outstanding. In this instance, the interest for October has not been paid because interest is not
+[u5-tutorial p.1] At the end of this tutorial, you should be able to
+[u5-tutorial p.1] Before this tutorial, you should have
+[u5-tutorial p.1] After this tutorial, you should
+[u5-tutorial p.2] The following terms and concepts must be understood in the context of the tutorial.
+[u5-tutorial p.3] Initial Journal Entry: When the cash is received:
+[u5-tutorial p.4] interest on the loan are due in 3 months. The bank is charging interest at a rate of 6%
+[u5-tutorial p.5] annual interest rate of 6% per annum  . The interest is payable every six months. Willy
+[u5-tutorial p.5] b. Prepare the journal entry on November 30 when the interest is paid.
+[u5-tutorial p.6] The following transactions have not been included in the books of Willow Wind:
+[u5-tutorial p.6] b. The insurance policy of $9600 is for 1 year commencing 1 May 2024.
+[u5-tutorial p.8] were not included in the books of Lois Lane:
+[u5-tutorial p.8] The mortgage for the building is 12% and was purchased with a loan of $100,000 on
+[u5-practice p.1] Given below are the transactions of Barry’s Doctor Clinic.
+[u5-practice p.1] Hint: “on credit” means Vicky will pay cash later.
+[u5-practice p.1] 21 February - Paid 3 months rent in advance (ie rent is for March, April and May) for $3,000 cash.
+[u6-lecture p.2] At the end of this lecture, you should be able to:
+[u6-lecture p.5] • Definition: A General Ledger (GL) is a comprehensive record of all
+[u6-lecture p.5] financial transactions within a company. It is the accounting record from
+[u6-lecture p.5] which financial statements are prepared.
+[u6-lecture p.5] • All the accounts are in the General Ledger
+[u6-lecture p.6] Transactions are initially recorded in the journal (Journal Entries).
+[u6-lecture p.6] Entries are then posted to the respective accounts in the General Ledger.
+[u6-lecture p.6] While posting in the General Ledger, Debit posts must equal to the Credit
+[u6-lecture p.8] 2. Look at which side you are going to record in (Dr or Cr)
+[u6-lecture p.25] 1. Periodic balancing is required (usually monthly/at the end of the
+[u6-lecture p.26] 4. Calculate the balance on the smaller side at the end of the period, called Balance c/d. This is
+[u6-lecture p.26] also the Closing Balance of the account, as this is what you are closing your business with at
+[u6-lecture p.26] 5. Record Balance b/d on the opposite side, showing the balance that you are beginning your
+[u6-lecture p.26] business with. Hence, also known as the Opening Balance (start of next month). b/d = brought
+[u6-lecture p.26] 6. Opening balances/Balance b/d  for Assets, Expenses Drawings – Debit. That is why they are
+[u6-lecture p.26] called Debit Accounts
+[u6-lecture p.26] 7. Opening balances/balance b/d for Liabilities, OE, Revenue – Credit. That is why they are
+[u6-lecture p.26] called Credit Accounts
+[u6-lecture p.27] side total, the balance is called
+[u6-lecture p.27] • A debit balance must be
+[u6-lecture p.27] balance is called a credit
+[u6-lecture p.27] • A credit balance must be
+[u6-lecture p.29] The debit side total is 30,000 + 10,000 = 40,000
+[u6-lecture p.29] The credit side total is 2,000 + 6,000 = 8,000
+[u6-lecture p.30] This is called the balance c/d for the end of the current month.
+[u6-lecture p.31] This balance is then recorded in the
+[u6-lecture p.32] Debit total must equal to
+[u6-reading p.1] chronological list on its own, however, is of limited use. Classifying and summarising data
+[u6-reading p.1] The entire group of accounts maintained by a business is referred to collectively as the general
+[u6-reading p.2] Accounts are found in the General Ledger. Accounts can be presented in the T format or the
+[u6-reading p.2] columnar format. Once a transaction is analysed, entries can be made to the related accounts and
+[u6-reading p.2] Accounts in T format are similar to the capital letter T with the name of an account shown at the top of
+[u6-reading p.2] the T. The left hand side of the T account is called the debit side and includes column headings of the
+[u6-reading p.2] date, particulars and debit amount. The right hand side of the T account is called the credit side and
+[u6-reading p.2] also includes column headings of the date, particulars and credit amount. The particulars can also be
+[u6-reading p.2] called the description column and is used to record the name of the corresponding account affected.
+[u6-reading p.2] Accounts in the columnar format show the name of the account at the top and include the column headings of
+[u6-reading p.2] the date, particulars, debit amount, credit amount and balance. The particulars can also be called the
+[u6-reading p.2] description column and is used to record the name of the corresponding account affected.
+[u6-reading p.2] The main differences between the T and columnar formats are the one date and particular columns, the debit
+[u6-reading p.2] and credit columns are side by side and the additional balance column in the columnar format. T format
+[u6-reading p.2] similarities are the date, particulars, debit is on the left hand side and credit is on the right hand side.
+[u6-reading p.2] The procedure of transferring journal entries to ledger accounts is called posting. This phase of the recording
+[u6-reading p.2] the same date is recorded in both accounts because they refer to the same transaction
+[u6-reading p.2] accounts cross refer to one another. The amount is written in the debit and credit column
+[u6-reading p.2] In the Cash at Bank Account below, the date is Jan 1, the corresponding account name is Capital,
+[u6-reading p.2] and the amount is 10,000 on the debit side.
+[u6-reading p.2] In the Capital Account below, the date is Jan 1, the corresponding account name is Cash at Bank,
+[u6-reading p.2] and the amount is 10,000 on the credit side.
+[u6-reading p.3] Once recording is complete, a trial balance is prepared. To facilitate this process, the balance of each account
+[u6-reading p.3] in the general ledger must be calculated. The process of balancing a T account is illustrated using the cash
+[u6-reading p.3] step are recorded on the lesser side (generally the side opposite to the normal balance side).
+[u6-reading p.3] calculated in step 3 are written below the ruled-off lines on the greater account balance side (usually the
+[u6-reading p.3] Once these four steps have been completed, the account has been balanced. It is very important to remember
+[u6-reading p.3] that the closing balance is only a balancing item, i.e. the amount needed to make the debit side equal the credit
+[u6-reading p.3] side and have the totals in balance. It is not the correct account balance because it is on the wrong side. The
+[u6-reading p.3] In the Cash account above, the debit side of the cash account is the greater side and the normal account balance
+[u6-reading p.3] of the cash account. Adding the debit side reveals a total of $55000. This amount is written between the ruled
+[u6-reading p.3] lines on both the debit and credit side of the account. All the amounts listed on the credit side of the account are
+[u6-reading p.3] then subtracted from the total to reveal a closing balance/balance c/d of $39000. This means that the debit side
+[u6-reading p.3] of the account is $39000 greater than the credit side. This amount is recorded on the debit side of the cash
+[u6-reading p.4] The balance of an account is essentially the difference between the debit side and the credit side of
+[u6-reading p.4] the account. If the debit side adds up to be greater than the credit side, the balance is called a debit
+[u6-reading p.4] is a credit balance. The T format account requires periodic balancing. This is a disadvantage.
+[u6-reading p.4] To balance an account, the following steps should be followed. A Cash at Bank Account is used
+[u6-reading p.4] Find the total of the debit side. The debit total is $16,000 (15,000 + 1,000 = 16,000).
+[u6-reading p.4] Find the total of the credit side. The credit total is $3,120 (500 + 2,000 + 60
+[u6-reading p.4] Find the difference by subtracting the smaller total from the bigger total. The difference is
+[u6-reading p.4] $12,880 is placed under the credit side. This difference is noted as Balance to be
+[u6-reading p.4] At the start of the next period, the balance is brought down to the opposite side and is
+[u6-reading p.4] In this example, $12,880 is called a debit balance because the debit amount is greater than the credit
+[u6-reading p.4] amount by $12,880. A debit balance is brought down to the debit side at the start of the next month
+[u6-reading p.4] The balance at the start of a month is also known as the opening balance/balance b/d of an
+[u6-reading p.4] account. In this example, $12, 880 is the opening balance for the month of April.
+[u6-reading p.4] The balance at the end of a month is also known as the closing balance/balance b/d of an
+[u6-reading p.4] account. In this example, the closing balance of the account for March is $12, 880.
+[u6-reading p.5] Given below are the transactions of J. Jay Trading in March 20XX.
+[u6-reading p.5] the balance is a debit or a credit balance. Show clearly the Balance c/d and the
+[u6-tutorial p.1] At the end of this tutorial, you should be able to
+[u6-tutorial p.1] Before this tutorial, you should have
+[u6-tutorial p.1] After this tutorial, you should
+[u6-tutorial p.2] The following terms and concepts must be understood in the context of the tutorial. Provide
+[u6-tutorial p.5] terms of payment is 2%/5 days, net 14 days
+[u6-tutorial p.5] account. Roger’s terms of payment is 1%/7 days, net 21 days.
+[u6-tutorial p.12] Opening balances for the following accounts on January 1 are as follows:
+[u6-tutorial p.13] Other than the columnar format, the other format of the ledger/accounts is the _____1________. The
+[u6-tutorial p.13] accounts in the ledger presented in T format are usually balanced at the ___2_ of the month or on a
+[u6-tutorial p.13] needs basis. The total of the __3_ and Cr sides are determined and the larger amount written on both
+[u6-tutorial p.13] sides. The amounts on the smaller total side are subtracted from the larger total to determine the
+[u6-tutorial p.14] 1. Given below are the transactions of Ben’s Pharmacy for the month of January 2025.
+[u6-tutorial p.20] Thor’s customers is 2%/7 days, net 21 days. The following sales transactions occurred for Thor
+[u6-tutorial p.22] Post the transactions into the T-accounts below. Opening balances for Cash & A/P are given.
+[u6-tutorial p.24] 4. Transactions for the month of May are provided below. Post the entries to the relevant accounts

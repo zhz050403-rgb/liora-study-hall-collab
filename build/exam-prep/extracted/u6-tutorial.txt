@@ -1,0 +1,2575 @@
+# week5/unit6 tutorial guide t-format.pdf
+# sha256=f3bb2d1eb62e06c98093af3d8ad5ddbcbbaf060f9d374854e5d5128a1a9b0ae8
+
+=== PAGE 1 ===
+Accounting
+
+
+UNSW College Foundation Studies
+Accounting
+
+
+Ledger Accounts: T-Format
+
+
+
+
+Learning objectives
+At the end of this tutorial, you should be able to
+•
+Record information in the T format of accounts in the general ledger.
+•
+Balance T-accounts
+•
+Apply the basics of a trial balance
+
+
+Before this tutorial, you should have
+•
+Attended the Unit 6 lecture
+•
+Read the Unit 64 Readings
+•
+Completed the  Tutorial Questions
+•
+Read t
+
+During this tutorial, you will complete the:
+•
+In-Class Activities
+
+
+After this tutorial, you should
+•
+Consider attending one of the scheduled consultations and attempt to resolve any
+questions that you have as soon as possible.
+
+Unit
+6
+
+=== PAGE 2 ===
+Accounting – Unit 5: Ledger Accounts: T-Format
+Accounting | Page 1
+
+
+
+Tutorial Questions
+
+Terms and Concepts
+The following terms and concepts must be understood in the context of the tutorial. Provide
+written explanations of these terms and concepts in the space provided.
+
+
+Ledger
+
+The T format
+
+Balance c/d or
+closing balance
+
+Balance b/d or
+opening balance
+
+=== PAGE 3 ===
+Accounting – Unit 5: Ledger Accounts: T-Format
+Accounting | Page 2
+
+
+
+
+1. Complete the accounts in the ledger from the General Journal below and balance the cash
+account.
+
+Date
+Particulars
+Dr
+Cr
+1/6
+Cash
+      Capital
+10000
+
+10000
+2/6
+Office Furniture
+      Cash
+2000
+
+2000
+3/6
+Cash
+      Loan
+30000
+
+
+30000
+
+General Ledger of T. Trader
+
+Accounts in the ledger
+Cash at Bank Account
+Date
+Particulars
+Debit $
+Date
+Particulars
+Credit $
+
+
+
+
+
+
+
+
+
+
+Office Furniture
+Date
+Particulars
+Debit $
+Date
+Particulars
+Credit $
+
+=== PAGE 4 ===
+Accounting – Unit 5: Ledger Accounts: T-Format
+Accounting | Page 3
+
+
+
+Loan
+Date
+Particulars
+Debit $
+Date
+Particulars
+Credit $
+
+
+
+
+
+
+
+
+
+Capital
+Date
+Particulars
+Debit $
+Date
+Particulars
+Credit $
+
+=== PAGE 5 ===
+Accounting – Unit 5: Ledger Accounts: T-Format
+Accounting | Page 4
+
+
+
+
+2. Question 6 from the last tutorial on Journal Entries
+
+Alex Roger started his own flower shop & delivery service. The following transactions occurred during
+the month of July.
+
+2  July
+Owner invested $30,000 in the business.
+3
+Purchased a used van for deliveries for $20,000 from Packham Autos.
+Rogers paid $4000 in cash and remaining was on account.
+5
+Performed delivery services of $2000 on account for Spruce Limited.
+6
+Withdrew cash for personal use $400
+7
+Purchased flowers worth $3000 from Dural Nursery on Account. Dural’s
+terms of payment is 2%/5 days, net 14 days
+7
+Received partial payment of $1500 from Spruce Limited. Spruce
+received a 2% discount for prompt payment.
+9
+Made cash payment of $3000 on amount owing for the delivery van
+purchased on 2 July
+11
+Paid Dural Nursery the entire outstanding amount. (Hint: look for
+discounts)
+12
+Delivered flowers for a wedding to Lily Event Management $7200 on
+account. Roger’s terms of payment is 1%/7 days, net 21 days.
+13
+Lily Event Management returned flowers worth $200 due to damage in
+transit.
+15
+Roger purchased accessories worth $2100 from Winter limited on
+account.
+17
+Lily Event Management paid its outstanding amount.
+18
+Rogers returned accessories worth $100 to Winter Limited due to
+damage.
+23
+Purchased orchids for resale $1500 for cash
+29
+Sold flowers worth $ 4000 for cash
+
+
+      Required: Post the entries below to the relevant T-Accounts and prepare a Trial Balance.
+
+=== PAGE 6 ===
+Accounting – Unit 5: Ledger Accounts: T-Format
+Accounting | Page 5
+
+
+
+
+
+
+
+DATE
+
+
+
+PARTICULARS
+
+DEBIT
+$
+
+CREDIT
+$
+2 July
+Cash
+30000
+
+
+   Capital
+
+30000
+
+Owner invested cash in the business.
+
+
+
+
+
+3
+Delivery Van
+20000
+
+
+   Cash
+
+4000
+
+   A/P
+
+16000
+
+Purchased a used van for deliveries for $20,000
+from Packham Autos. Rogers paid $4000 in cash
+and remaining was on account.
+
+
+
+
+
+5
+A/R - Spruce
+2000
+
+
+   Sales
+
+2000
+
+Performed delivery services on account.
+
+
+
+
+
+6
+Drawings
+400
+
+
+    Cash
+
+400
+
+Withdrew cash for personal use
+
+
+
+
+
+7
+Cash
+1470
+
+
+Discount Allowed (1500*2%)
+30
+
+
+    A/R - Spruce
+
+1500
+
+Received partial payment for services provided on
+5th July
+
+
+
+
+
+7
+Purchase
+3000
+
+
+    A/P – Dural Nursery
+
+3000
+
+Purchased flowers from Dural Nursery on account.
+
+
+
+
+
+9
+A/P
+3000
+
+
+  Cash
+
+3000
+
+Made cash payment of $3000 on amount owing
+for the delivery van purchased on 2 July
+
+
+
+
+
+11
+A/P - Dural
+3000
+
+
+   Discount Received (3000*2%)
+
+60
+
+  Cash
+
+2940
+
+Paid Dural Nursery the entire outstanding amount.
+
+=== PAGE 7 ===
+Accounting – Unit 5: Ledger Accounts: T-Format
+Accounting | Page 6
+
+
+
+Date
+20XX
+Particulars
+Debit
+$
+Credit
+$
+12
+A/R - Lily
+7200
+
+   Sales
+
+7200
+12
+Delivered flowers for a wedding to Lily Event
+Management on account.
+
+
+
+
+12
+Salaries Expense
+1500
+
+   Cash
+
+1500
+Paid salaries
+
+
+
+
+13
+Sales Returns
+200
+
+  A/R -Lily
+
+200
+Lily Event returned flowers due to damage in transit.
+
+
+
+
+15
+Purchase
+2100
+
+   A/P - Winter
+
+2100
+Roger purchased accessories from Winter Ltd on
+account
+
+
+
+
+17
+Cash
+6930
+
+Discount Allowed (7200-200)*1%
+70
+
+    A/R – Lily
+
+7000
+Lily Event Management paid its outstanding amount.
+
+
+
+
+18
+A/P – Winter
+100
+
+   Purchase returns
+
+100
+Rogers returned accessories worth $100 to Winter
+Limited
+
+
+
+
+Purchase
+1500
+
+   Cash
+
+1500
+23
+Purchased orchids for resale for cash
+
+
+
+
+29
+Cash
+4000
+
+  Sales
+
+4000
+Sold flowers for cash
+
+=== PAGE 8 ===
+Accounting – Unit 5: Ledger Accounts: T-Format
+Accounting | Page 7
+
+
+
+
+
+Cash at Bank
+Date
+Particular
+DR
+Date
+Particular
+Cr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Account Receivable
+Date
+Particular
+DR
+Date
+Particular
+Cr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Account Payable
+Date
+Particular
+DR
+Date
+Particular
+Cr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Capital
+Date
+Particular
+DR
+Date
+Particular
+Cr
+
+=== PAGE 9 ===
+Accounting – Unit 5: Ledger Accounts: T-Format
+Accounting | Page 8
+
+
+Discount Allowed
+Date
+Particular
+DR
+Date
+Particular
+Cr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Discount Received
+Date
+Particular
+DR
+Date
+Particular
+Cr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Drawings
+Date
+Particular
+DR
+Date
+Particular
+Cr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purchase
+Date
+Particular
+DR
+Date
+Particular
+Cr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Sales
+Date
+Particular
+DR
+Date
+Particular
+Cr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Delivery van
+Date
+Particular
+DR
+Date
+Particular
+Cr
+
+=== PAGE 10 ===
+Accounting – Unit 5: Ledger Accounts: T-Format
+Accounting | Page 9
+
+
+
+Sales returns
+Date
+Particular
+DR
+Date
+Particular
+Cr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purchase Returns
+Date
+Particular
+DR
+Date
+Particular
+Cr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Alex Roger
+Trial Balance
+July 31 2025
+Accnt
+Particulars
+Dr
+Cr
+
+Cash
+
+
+
+A/R
+
+
+
+A/P
+
+
+
+Capital
+
+
+
+Disc All
+
+
+
+Disc Received
+
+
+
+Drawings
+
+
+
+Purchase
+
+
+
+Sales
+
+
+
+Delivery Van
+
+
+
+Salaries Expense
+
+
+
+Purchase Returns
+
+
+
+Sales returns
+
+
+
+
+
+
+Total
+
+=== PAGE 11 ===
+Accounting – Unit 5: Ledger Accounts: T-Format
+Accounting | Page 10
+
+
+
+IN-CLASS ACTIVITIES
+
+
+Christie’s Toys Shoppe had the following transactions in the month of January:
+1. Jan 1: Christie invested additional $50,000 cash into the business.
+2. Jan 2: Christie purchased toys from Mira Ltd for reselling them to
+customers on credit $5000. (trading goods)
+3. Jan 5: Mr Blacksend purchased $1000 worth of teddy bears on credit from Christie’s
+Toy Shoppe to distribute in the orphanage.
+4. January 15: Christie partially paid back Mira Ltd $3000.
+5. January 19: Mr Blacksend paid the whole amount due for the purchase of teddy
+bears on 5th Jan.
+A: Enter the above transactions in the General Journal below:
+
+Date
+Account Name
+Dr $
+Cr $
+
+Jan 1
+
+
+
+
+2
+
+
+
+
+
+5
+
+
+
+
+
+15
+
+
+
+
+
+19
+
+=== PAGE 12 ===
+Accounting – Unit 5: Ledger Accounts: T-Format
+Accounting | Page 11
+
+
+
+B. Post the Transaction Analysis to the ledger accounts and balance the T-accounts
+
+Opening balances for the following accounts on January 1 are as follows:
+•
+Cash at bank $50000
+•
+Accounts receivable $8000
+•
+Accounts Payable $5000
+•
+Capital $53000
+
+
+Cash Account
+Date
+Particulars
+Debit $
+Date
+Particulars
+Credit $
+Jan 1
+Balance b/d
+50000
+
+
+
+
+
+
+
+
+
+
+
+
+31 Jan
+Balance c/d
+
+
+
+
+
+
+
+1 Feb
+Balance b/d
+
+
+
+
+
+
+
+
+
+
+
+Accounts Receivable Account
+Date
+Particulars
+Debit $
+Date
+Particulars
+Credit $
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Accounts Payable Account
+Date
+Particulars
+Debit $
+Date
+Particulars
+Credit $
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+`
+
+=== PAGE 13 ===
+Accounting – Unit 5: Ledger Accounts: T-Format
+Accounting | Page 12
+
+
+
+Capital Account
+Date
+Particulars
+Debit $
+Date
+Particulars
+Credit $
+
+
+
+
+
+
+
+
+
+Sales Account
+Date
+Particulars
+Debit $
+
+
+
+
+
+
+
+Purchase Account
+Date
+Particulars
+Debit $
+Date
+Particulars
+Credit $
+
+
+
+
+3. Complete the missing words in the paragraph below:
+
+Other than the columnar format, the other format of the ledger/accounts is the _____1________. The
+accounts in the ledger presented in T format are usually balanced at the ___2_ of the month or on a
+needs basis. The total of the __3_ and Cr sides are determined and the larger amount written on both
+sides. The amounts on the smaller total side are subtracted from the larger total to determine the
+balance ___4_____ ____5___ (c/d). The balance c/d uses the date at the __6__ of the current month. This
+amount in then ____7___ down (b/d) for the beginning of the next month
+
+Answer:
+
+1
+
+2
+
+3
+
+4 & 5
+
+6
+
+7
+
+=== PAGE 14 ===
+Accounting – Unit 5: Ledger Accounts: T-Format
+Accounting | Page 13
+
+
+
+ADDITIONAL SELF STUDY PRACTICE PROBLEMS:
+
+1. Given below are the transactions of Ben’s Pharmacy for the month of January 2025.
+
+Date
+Transaction Description
+1 Jan Ben invested $111,900 cash into the business.
+2
+The business paid $840 cash for rent. Payment was made using a
+cheque.
+3
+The business received $1380 cash from sales to customers that
+day. Receipts were issued to the customers.
+ 4
+The business purchased goods on credit from Randwick Trading.
+Received an invoice from Randwick Trading for the amount of $300.
+8
+The business paid $18 for a non-refundable telephone account set- up
+fee with a cheque.
+9
+The business sold $680 worth of goods on credit to a client, Vicky. An
+invoice was issued to Vicky.
+12
+The business received $500 from Grace for goods. A receipt was
+issued to Grace.
+18
+Vicky paid $360 as partial payment of outstanding account and amounts
+owing. A receipt was issued for the amount.
+27
+The business made a partial payment of $180 for goods purchased on
+4 January 20XX from Randwick Trading. The payment was made
+with a cheque.
+31
+The business paid wages of $2660 to a staff member for the current
+work period ended. A cheque was made out to the staff member.
+
+
+Required:
+a.  Prepare the Transaction Analysis Table  for the above transactions.
+
+b.  Prepare the journal entries
+
+c. Post the entries into the t-accounts
+
+d.  Prepare the trial balance
+
+=== PAGE 15 ===
+Accounting – Unit 5: Ledger Accounts: T-Format
+Accounting | Page 14
+
+
+
+
+a. Transaction Analysis of Ben’s Pharmacy
+
+Date
+Account Name
+A, L, OE, E,
+R
+Increase/
+Decrease
+Dr/Cr
+Amount
+($)
+1 Jan
+
+
+
+
+2
+
+
+
+
+
+3
+
+
+
+
+
+4
+
+
+
+
+8
+
+
+
+
+9
+
+
+
+
+12
+
+
+
+
+18
+
+
+
+
+27
+
+
+
+
+31
+
+=== PAGE 16 ===
+Accounting – Unit 5: Ledger Accounts: T-Format
+Accounting | Page 15
+
+
+
+b. Journal Entries Ben’s Pharmacy
+
+Date
+Account Name
+Dr/Cr
+Amount
+($)
+1 Jan
+
+
+3
+
+
+
+4
+
+
+
+8
+
+
+
+9
+
+
+
+18
+
+
+
+27
+
+
+
+31
+
+=== PAGE 17 ===
+Accounting – Unit 5: Ledger Accounts: T-Format
+Accounting | Page 16
+
+
+
+4. Using the General Journal from Ben’s Pharmacy in the question above, post the
+relevant information to the accounts in the ledger accounts.
+
+Ledger of Ben’s Pharmacy
+
+Cash at Bank Account
+Date
+Particulars
+Debit $
+Date
+Particulars
+Credit $
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Accounts Receivable Account
+Date
+Particulars
+Debit $
+Date
+Particulars
+Credit $
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Accounts Payable Account
+Date
+Particulars
+Debit $
+Date
+Particulars
+Credit $
+
+=== PAGE 18 ===
+Accounting – Unit 5: Ledger Accounts: T-Format
+Accounting | Page 17
+
+
+
+Capital Account
+Date
+Particulars
+Debit $
+Date
+Particulars
+Credit $
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Sales Account
+Date
+Particulars
+Debit $
+Date
+Particulars
+Credit $
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purchases Account
+Date
+Particulars
+Debit $
+Date
+Particulars
+Credit $
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Wages Expense Account
+Date
+Particulars
+Debit $
+Date
+Particulars
+Credit $
+
+=== PAGE 19 ===
+Accounting – Unit 5: Ledger Accounts: T-Format
+Accounting | Page 18
+
+
+
+Telephone Expense Account
+Date
+Particulars
+Debit $
+Date
+Particulars
+Credit $
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ben’s Pharmacy
+Trial Balance
+Jan 31 2025
+Account #
+Particulars
+Dr
+Cr
+
+Cash
+
+
+
+ Accounts Receivable
+
+
+
+Accounts Payable
+
+
+
+Capital
+
+
+
+ Sales
+
+
+
+ Purchase
+
+
+
+Wages Expense
+
+
+
+Telephone expenses
+
+=== PAGE 20 ===
+Accounting – Unit 5: Ledger Accounts: T-Format
+Accounting | Page 19
+
+
+
+
+2. Thor Painting provides painting supplies for construction purposes. The terms of payment for
+Thor’s customers is 2%/7 days, net 21 days. The following sales transactions occurred for Thor
+Painting in May.
+
+May 1
+Thor Painting sold paint worth $7000 to Willow Limited for cash
+2
+Thor Painting sold paint worth $12400 to Acacia Limited on account.
+4
+Thor Painting sold painting accessories worth $3500 on account to Aloe Limited
+3
+Acacia Limited returned paint worth $400 due to incorrect colour.
+5
+Acacia Limited paid the amount due for the transaction on 2nd May. (Hint:
+discounts)
+9
+Aloe Limited returned painting accessories worth $500 due to damage in transit.
+10
+Violet Trading, a customer, paid an outstanding amount from April $4000 and did
+not receive any discounts.
+
+
+DATE
+PARTICULARS
+DEBIT
+CREDIT
+May 1
+Cash
+7000
+
+
+   Sales
+
+7000
+
+Thor Painting sold paint to Willow Limited for cash
+
+
+
+
+
+
+2
+A/R – Acacia
+
+
+
+   Sales
+12400
+
+
+Thor Painting sold paint to Acacia Limited on a/c.
+
+12400
+
+
+
+
+3
+Sales Returns
+
+
+
+   A/R - Acacia
+400
+
+
+Acacia Ltd returned paint due to incorrect colour.
+
+400
+
+
+
+
+4
+A/R – Aloe
+
+
+
+   Sales
+3500
+
+
+Thor Painting sold painting accessories on account to
+Aloe Limited
+
+3500
+
+
+
+
+5
+Cash (12400-400-240)
+11760
+
+
+Discount Allowed ((12400-400)*2%)
+240
+
+
+   A/R - Acacia
+
+12000
+
+Acacia Limited paid the amount due for the transaction
+on 2nd May.
+
+
+
+
+
+
+9
+Sales Returns
+500
+
+
+    A/R - Aloe
+
+500
+
+Aloe Ltd returned products
+
+
+
+
+
+
+
+Required: Post the entries into the following T-accounts
+
+=== PAGE 21 ===
+Accounting – Unit 5: Ledger Accounts: T-Format
+Accounting | Page 20
+
+
+
+Answer:
+
+Cash at Bank
+Date
+Particular
+DR
+Date
+Particular
+Cr
+
+
+
+May 31
+Balance c/d
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1 June
+Balance b/d
+
+
+
+Account Receivable
+Date
+Particular
+DR
+Date
+Particular
+Cr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+May 31
+Balance c/d
+
+
+
+
+
+
+
+1 June
+Balance b/d
+
+
+
+
+
+Sales
+Date
+Particular
+DR
+Date
+Particular
+Cr
+May 31
+Balance c/d
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1 June
+Balance b/d
+22900
+
+Discount Allowed
+Date
+Particular
+DR
+Date
+Particular
+Cr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Sales Returns
+Date
+Particular
+DR
+Date
+Particular
+Cr
+
+
+
+May 31
+Balance c/d
+ 900
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1 June
+Balance b/d
+ 900
+
+=== PAGE 22 ===
+Accounting – Unit 5: Ledger Accounts: T-Format
+Accounting | Page 21
+
+
+3. Lois Lane Bookshop had the following transactions related to the purchase of new books for the
+shop in June.
+
+June 1
+Lois bought books from Oak Limited worth $7300. Oak Limited had payment
+terms of 5%/5 days, net 14days
+June 2
+Lois returned the Jane Austen Collection worth $1200 to Richmond Limited as the
+bindings had been damaged.
+June 3
+Lois returned books worth $300 to Oak Limited
+June 4
+Lois paid Oak Limited (Hint: Look for discounts!).
+June 7
+Lois Lane paid Richmond Limited the outstanding amount of $2400. Lois did not
+receive any discounts.
+
+
+DATE
+PARTICULARS
+DEBIT
+CREDIT
+June 1
+Purchase
+7000
+
+
+  A/P – Oak Ltd
+
+7000
+
+Lois bought books from Oak Limited on credit
+
+
+
+
+
+
+2
+A/P – Richmond
+1200
+
+
+   Purchase returns
+
+1200
+
+Lois returned books to Richmond Limited.
+
+
+
+
+
+
+3
+A/P – Oak Limited
+300
+
+
+   Purchase returns
+
+
+
+Lois returned books to Oak Limited.
+
+300
+
+
+
+
+4
+A/P- Oak Ltd
+7000
+
+
+   Cash (7300-300-350)
+
+6650
+
+   Discount Received ((7300-300)*5%)
+
+350
+
+Lois paid Oak limited the outstanding amount
+net of returns
+
+
+
+
+
+
+7
+A/P - Richmond
+2400
+
+
+   Cash
+
+2400
+
+Lois paid Richmond Ltd the outstanding amount
+
+
+
+Post the transactions into the T-accounts below. Opening balances for Cash & A/P are given.
+
+Cash at Bank
+Date
+Particular
+DR
+Date
+Particular
+Cr
+June 1
+Balance b/d
+15000
+
+=== PAGE 23 ===
+Accounting – Unit 5: Ledger Accounts: T-Format
+Accounting | Page 22
+
+
+Account Payable
+Date
+Particular
+DR
+Date
+Particular
+Cr
+
+
+
+June 1
+Balance b/d
+5000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purchase Returns
+Date
+Particular
+DR
+Date
+Particular
+Cr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Discount Received
+Date
+Particular
+DR
+Date
+Particular
+Cr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Purchase
+Date
+Particular
+DR
+Date
+Particular
+Cr
+
+=== PAGE 24 ===
+Accounting – Unit 5: Ledger Accounts: T-Format
+Accounting | Page 23
+
+
+
+4. Transactions for the month of May are provided below. Post the entries to the relevant accounts
+in the general ledger.
+
+Transaction
+Account Titles
+Debit
+Credit
+
+May
+
+$
+$
+
+1
+Cash
+10,000
+
+
+
+Capital
+
+10,000
+
+(Grunweld invested cash into the business
+
+
+
+
+
+
+
+2
+Motor vehicle
+5,000
+
+
+
+Accounts payable – BMX Auto
+
+5,000
+
+(Purchased car for business on credit)
+
+
+
+
+
+
+
+3
+Accounts receivable – Mira Ltd
+1,800
+
+
+
+Service revenue/Sales
+
+1,800
+
+(Provided services on credit)
+
+
+
+
+
+
+
+4
+Cash
+700
+
+
+
+Accounts receivable
+
+700
+
+(Mira Ltd partially paid for the transaction #3)
+
+
+
+
+
+
+5
+Accounts payable – BMX Auto
+3000
+
+
+             Cash
+
+3000
+
+(Partially paid BMX Auto for transaction #2)
+
+
+
+Answer:
+
+
+
+Cash at Bank
+
+
+Date
+Particulars
+Dr
+Date
+Particulars
+Cr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Accounts receivable
+
+
+Date
+Particulars
+Dr
+Date
+Particulars
+Cr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Motor Vehicle
+
+
+Date
+Particulars
+Dr
+Date
+Particulars
+Cr
+
+=== PAGE 25 ===
+Accounting – Unit 5: Ledger Accounts: T-Format
+Accounting | Page 24
+
+
+
+
+Accounts payable
+
+
+Date
+Particulars
+Dr
+Date
+Particulars
+Cr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Capital – L Grunweld
+
+Date
+Particulars
+Dr
+Date
+Particulars
+Cr
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Service Fees Revenue

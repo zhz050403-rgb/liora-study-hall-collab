@@ -1,0 +1,592 @@
+# week2/unit3 lecture slides double entry and transaction analysis.pdf
+# sha256=40558236b64503cb673641f540518ad84db16f3cb6d538a947e83f99df7e22e2
+
+=== PAGE 1 ===
+Unit 3:
+Double Entry &
+Transaction Analysis
+
+=== PAGE 2 ===
+2
+Learning objectives
+At the end of this lecture, you should be able to
+•
+Understand the five (5) elements of Accounting
+•
+Define accounts and apply associated debit and credit rules.
+•
+Summarise accounting transactions using a transaction analysis table.
+•
+Identify the difference between the periodic and perpetual inventory systems.
+•
+Investigate and classify key accounts.
+
+=== PAGE 3 ===
+ELEMENTS OF ACCOUNTING
+
+=== PAGE 4 ===
+1. Elements of Accounting - Assets (A)
+•
+Items of value a business owns or owed to a business.
+•
+Assets provide a future economic benefit to the business
+•
+Examples include cash, furniture and motor vehicles.
+•
+The Assets can be further subdivided into current assets and non-
+current assets.
+
+=== PAGE 5 ===
+Current vs Non-Current Assets
+Current
+•
+Assets expected to be consumed or
+used up within one accounting
+period.
+•
+Usually < 12 months.
+•
+Easily converted to cas E.g. Cash,
+Stock, Accounts Receivable/Debtors.
+Non-Current
+• Assets used by the business for more
+than one accounting period.
+• Usually > 12 months.
+• Not easily converted into cash. E.g.
+Motor Vehicle, Equipment, Furniture
+
+=== PAGE 6 ===
+2. Elements of Accounting: Liabilities (L)
+•
+What the business owes to persons or other businesses
+other than the owners.
+•
+Examples include loans and accounts payable/creditors
+•
+Liabilities can be subdivided into current liabilities and
+non-current liabilities.
+
+=== PAGE 7 ===
+Current v Non-Current Liabilities
+Current
+• Short term financial obligation
+• Usually < 12 months
+• E.g. Accounts Payable/Creditors
+Non-Current
+•
+Long term financial obligations
+•
+Usually > 12 months
+•
+E.g. Loan (30 years)
+
+=== PAGE 8 ===
+Why classify into Current and Non-Current?
+•
+Required by regulations/accounting standards
+•
+For business planning;
+➢awareness of the amount of liquid (cash) assets available
+to meet debts as they fall due
+➢ to finance investments and purchases
+•
+For clear presentation and ease of reading
+
+=== PAGE 9 ===
+9
+Summary: Accounting terms
+Account
+Element/current or non-current
+Explanation
+Accounts Receivable (A/R)
+Current Asset
+Asset is used up/converted to
+cash within 12 months, i.e.
+customers usually pay back the
+due amount within the year
+Accounts Payable (A/P)
+Current Liability
+Liability is paid within the year.
+i.e. the business needs to pay
+back the suppliers for the goods
+purchased on credit within the
+year.
+Inventory
+Current Asset
+The goods are usually used
+up/sold and converted to cash
+within the year
+
+=== PAGE 10 ===
+3. Elements of Accounting: Revenue (R)
+•
+Incomes of the business
+•
+Examples include sales revenue, interest received, and
+discount received.
+                                                                                                  Apple Quarterly Revenue by category
+
+=== PAGE 11 ===
+4. Elements of Accounting: Expenses (E)
+•
+costs or resources consumed/used up in the process of
+operating and generating revenue for the business
+•
+e.g. rent expense, insurance expense and electricity
+expense.
+Buying an asset is not an expense!
+
+=== PAGE 12 ===
+12
+• What the business owes its owner(s) or what belongs to
+the owners; Capital or Drawings
+• Also known as Net Assets or Net Worth of a business
+
+I`m the Owner!
+Capital
+Drawings
+5. Elements of Accounting: Owner’s equity (OE)
+
+=== PAGE 13 ===
+13
+Owner`s
+Equity
+Capital
+Net
+Profit
+Drawings
+Revenue - Expenses
+
+=== PAGE 14 ===
+Capital is the amount the owner has put into or
+contributed to the business eg cash
+Capital:
+Any profit made by the business will increase
+the owner’s equity in the business. Any loss
+incurred by the business will reduce the owner’s
+equity in the business.
+Net
+Profit/Loss:
+Drawings is a withdrawal of cash or stock from
+the business by the owner
+Drawings:
+
+=== PAGE 15 ===
+Elements in the Financial Statements
+a)
+Profit and Loss Statement/Income Statement
+–
+Measures the financial performance of the business
+–
+Used to determine the profit or loss –> Revenue - Expenses
+•
+If Revenues (R) > Expenses (E) = Profit
+•
+If Revenues (R) < Expenses (E) = Loss
+b) Balance Sheet
+–
+Measures the financial position of the business – A,L,OE
+–
+What the business owns, owes and its worth.
+–
+It is a detailed version of the accounting equation
+
+=== PAGE 16 ===
+IMPORTANT TERMS
+
+=== PAGE 17 ===
+17
+2. Accounts payable
+• also known as creditors and
+are an example of current
+liabilities.
+• accounts payable are
+businesses or persons from
+whom the business purchases
+goods on credit and thus owes
+amounts to be paid in the
+future.
+1. Accounts receivable
+• also known as debtors and
+are an example of current
+assets.
+• accounts receivable are
+businesses or persons that
+the business sells goods to
+on credit and thus are owed
+amounts to be paid in the
+future.
+Accounting terms : Two Important accounts to facilitate sales and
+purchases of goods on credit
+
+=== PAGE 18 ===
+Accounting terms : Account Receivable (Debtors - Customers)
+•
+Accounts receivable (A/R) is the term used to describe money owed to a
+business by its customers for purchases made on credit.
+•
+Also known as trade receivables.
+•
+It is listed as a current asset on the balance sheet, because of the short-
+term nature of standard payment terms.
+•
+Only purchases made by customers on credit terms are accounts receivable,
+as cash payments are received immediately.
+•
+Suppliers extending credit to their buyers is a common feature of supply
+chains, with 30-day and 60-day terms, both typical.
+
+=== PAGE 19 ===
+Accounting terms: Accounts Payable (Creditors - Suppliers)
+•
+Accounts payable (AP) represents the amount that a company owes to its
+creditors and suppliers for purchases made on credit.
+•
+Also known as trade payables
+•
+It is a current liability in the balance sheet due to its short duration till
+payment is due.
+•
+When a business purchases goods or services from a supplier on credit,
+payment isn’t made straight away, but is due typically within 30 days or 60
+days.
+•
+.
+
+=== PAGE 20 ===
+20
+•
+Definition: The goods and materials a business holds for the purpose of resale
+or production. This includes all products, raw materials, work-in-progress, and
+finished goods that are part of the company’s operations.
+•
+Current asset on the balance sheet
+•
+Financial Impact: It directly affects the cost of goods sold (COGS) and overall
+profitability, as inventory costs are accounted for in financial statements.
+•
+Two ways to account for inventory
+•
+Perpetual
+•
+Periodic
+Accounting terms: Inventory/ Stock
+
+=== PAGE 21 ===
+21
+Inventory recording methods: Periodic Vs Perpetual
+Periodic:
+•
+A system where inventory records are updated at
+specific intervals, such as monthly or annually.
+Inventory account are not updated continuously
+but rather are determined by physical counts and
+periodic adjustments.
+•
+This method involves the business recording the
+purchase of Inventory into the expense account
+named Purchases.
+•
+Purchase of inventory is recorded as:
+Purchase (Expense) – Dr
+       A/P or Cash ---------------Cr
+Perpetual:
+•
+A system where inventory records are updated
+continuously rather are determined by physical
+counts and periodic adjustments.
+•
+This method involves the business recording the
+purchase of Inventory into the expense account
+named Purchases.
+•
+Purchase of inventory is recorded as:
+Inventory / Stock (Asset reduces) – Dr
+       A/P or Cash ---------------Cr
+Cost of goods sold (Expense) ----Dr
+      Inventory ---------Cr
+
+=== PAGE 22 ===
+The Expanded Accounting Equation
+The basic accounting equation can also be expanded to include Revenue (R) and Expenses
+(E). The expanded equation can be represented as:
+or
+
+=== PAGE 23 ===
+• R - E represents the calculation
+of profit or loss.
+• If R > E, the business makes a
+profit. Profit is a reward for
+risk taking and is added to
+the owner’s equity as it
+belongs to the owners.
+• If R < E, the business makes a
+loss. Losses reduce the
+owner’s equity as it also
+belongs to the owners.
+The Expanded Accounting Equation
+
+=== PAGE 24 ===
+What is an Account?
+24
+•
+The basic recording unit.
+•
+Each transaction is recorded into accounts
+•
+Accounts are the items that are affected by the transaction.
+•
+Record details of any increase and/or decrease of assets, liabilities,
+revenue, expenses and owner’s equity
+•
+Example: Cash at Bank (account) is an Asset (element)
+
+
+Bank Loan (account) is a Liabilities (element)
+
+
+Drawings (account) is a Owner’s Equity (element)
+
+
+Sales/revenue(account) is a Revenue (element)
+
+
+Wages Expense (account) is an Expense (element)
+
+=== PAGE 25 ===
+Account type: T Format (Week 4)
+Date
+Particulars
+Debit
+Date
+Particulars
+Credit
+Debit side
+Credit side
+Account Name
+
+=== PAGE 26 ===
+Account type: Columnar Format (Week 5)
+Account Name
+Date
+Particulars
+Dr
+Cr
+Balance
+
+=== PAGE 27 ===
+A Chart of Accounts
+•
+A chart of accounts lists all the accounts in the general ledger
+under the elements.
+•
+The account code may be in a numeric or alpha-numeric sequence.
+•
+Businesses in different industries will tend to have different
+accounts and therefore a different chart of accounts.
+•
+A chart of accounts is tailored to each individual business.
+
+=== PAGE 28 ===
+Example : Chart of Accounts
+Current Assets ---1
+1.1 Cash at bank
+1.2 Accounts receivable
+1.3 Stock (Inventory)
+Non-Current Assets ---2
+2.1 Machinery
+2.2 Office furniture
+2.3 Land and building
+Current Liabilities ---3
+3.1 Accounts payable
+Non-Current liabilities –--4
+4.1
+Mortgage loans
+Owner’s Equity ---5
+5.1    Capital
+5.2    Drawings
+Revenue ---6
+6.1 Sales
+6.2 Discount received
+6.3 Commissions received
+6.4 Interest received
+Expenses ---7
+7.1 Purchases
+7.2 Wages
+7.3 Discount allowed
+7.4 Rent
+7.5 Bad debts
+7.6 Advertising
+7.7 Commissions paid
+7.8 Interest paid
+
+=== PAGE 29 ===
+Remember the Double Entry Convention?
+•
+Each transaction affects two or more accounts, one on the debit
+side and the other on the credit side.
+•
+Any of the five elements could be affected.
+•
+ A minimum of one Debit and one Credit entry per transaction
+•
+ Also, Debits (Dr) = Credits (Cr)
+
+=== PAGE 30 ===
+•
+Every transaction involves both a debit and a credit.
+•
+Each transaction impacts two or more accounts.
+•
+Total debits must equal total credits for each transaction.
+Rules of Double Entry
+
+=== PAGE 31 ===
+Double entry summary table
+A
++
+E
+=
+L
++
+OE
++
+R
+↑
+Dr
+Dr
+=
+Cr
+Cr
+Cr
+↓
+Cr
+Cr
+=
+Dr
+Dr
+Dr
+Both sides of the equation must be equal
+
+=== PAGE 32 ===
+Alternatively:
+•
+Record on the debit side if assets and expenses increase.
+•
+Record on the credit side if assets and expenses decrease.
+•
+Record on the credit side if liabilities, revenues and owner’s equity
+increase.
+•
+Record on the debit side if liabilities, revenues and owner’s equity
+decrease.
+
+=== PAGE 33 ===
+Rules of Double Entry
+33
+Debit (Dr) increases
+assets and expenses.
+Credit (Cr) increases
+liabilities, equity, and
+revenue.
+Source: https://greensonlasway.wordpress.com/2021/10/02/debt-and-credit/
+
+=== PAGE 34 ===
+Transaction Analysis Table
+•
+Used to summarise the effects of transactions.
+•
+Helpful in identifying which elements/groups of the
+accounting equation have been affected and decide
+which account(s) are debited or credited.
+Analysis Table
+Date
+Accounts Affected
+Element
+(Group)
+Increase/
+Decrease
+Dr/
+Cr
+Amount
+$
+March
+1
+3
+
+=== PAGE 35 ===
+Rules for Analysis
+35
+1. Identify the accounts affected
+2. Classify the accounts as either A, L, OE, R, E
+3. Identify movements and amounts: is the
+account increasing or decreasing?
+4. Apply Dr and Cr rules
+
+=== PAGE 36 ===
+Example 1: Transaction Analysis Table
+On 14 March 20XX, the business sold trading goods on credit (receive
+later) for $5,000 to Twinkle Star. Twinkle Star and Kingsford Trading
+have a trade (account) relationship.
+Transaction Analysis Table of Kingsford Trading
+Date
+Accounts Affected
+Element
+Increase/
+Decrease
+Dr/
+Cr
+Amount
+$
+March
+14
+Account Receivable
+–Twinkle Star
+    Sales
+A
+R
+Inc
+Inc
+Dr
+Cr
+5,000
+5,000
+
+=== PAGE 37 ===
+Example 2: Transaction Analysis Table
+Analysis Table of Kingsford Trading
+Date
+Accounts Affected
+Element
+Increase/
+Decrease
+Dr/
+Cr
+Amount
+$
+March
+25
+Purchases
+    Accounts Payable:
+Miss Muffet
+E
+L
+Inc
+Inc
+Dr
+Cr
+4,000
+4,000
+On 25 March 20XX, the business purchased trading goods (stock)
+on credit from Miss Muffet (pay later) for $4000. Miss Muffet and
+Kingsford Trading have a trade (account) relationship
+
+=== PAGE 38 ===
+Next Week:
+38
+• Tutorial: Please do the assigned homework in the Tutorial guide for Unit 3
+– Double Entry & Transaction Analysis before attending class
+• Lecture in Week 3 – Journal Entries. Tutorial on Journal Entries will be in
+Week 4.
+• Attend consultation hours to clarify any questions that you may have!
+THANK YOU!

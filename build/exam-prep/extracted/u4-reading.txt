@@ -1,0 +1,172 @@
+# week3/unit4 reading materials journal entries.pdf
+# sha256=0cef0d7fcba82943fec60bbf67b47a9efd8066d3e0195afe6ae94320e5785af3
+
+=== PAGE 1 ===
+UNSW College Foundation Studies
+Accounting
+Journal Entries
+Unit
+4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Readings
+
+
+Journal Entries
+
+Transactions are initially recorded in chronological order in a journal before they are transferred
+to the accounts. For each transaction the journal shows the debit and credit effects on specific
+accounts. Businesses may use various kinds of journals to record transactions; these are
+explored in detail in chapter 6. Every business has at least the most basic form of journal, a
+general journal. The general journal makes two significant contributions to the recording
+process.
+
+•
+It provides a chronological record of all transactions.
+•
+It discloses in one place the complete effect of a transaction. This helps to prevent
+or locate errors.
+
+Entering transaction data in the journal is known as journalising.
+
+
+Separate journal entries are made for each transaction. A complete entry consists of:
+(1) the date of the transaction,
+(2) the accounts and amounts to be debited and credited, and
+(3) a brief explanation of the transaction, referred to as a narration.
+
+Note the following features of the journal entries.
+
+•
+The date of the transaction is entered in the Date column.
+
+•
+The account to be debited is always entered first at the left.
+
+•
+The account to be credited is then entered on the next line, indented under the line above.
+The indentation differentiates debits from credits and decreases the possibility of
+switching the debit and credit amounts.
+
+•
+The amounts for the debits are recorded in the debit (left) column, and the amounts for
+the credits are recorded in the credit (right) column.
+
+•
+A brief explanation of the transaction is given (narration). The narration is found directly
+below the transaction.
+
+It is important to use correct and specific account names and numbers in journal entries. Since
+all accounts are used in preparation of the financial statements, erroneous account names lead
+
+=== PAGE 2 ===
+to incorrect financial statements. Some flexibility exists initially in selecting account names. For
+example, a business could use any of these account names for recording the cost of delivery
+trucks: delivery vehicles, delivery trucks or trucks. The main criterion is that each name must
+appropriately describe the type of asset, liability, revenue, expense or equity represented in the
+account.
+
+Terms of payment
+
+
+
+The credit terms specify the amount of the cash discount and time period during which it is
+offered. They also indicate the time within which the purchaser is expected to pay the full invoice
+price. In the sales invoice above, credit terms are 2.5% 7 days, n/30, meaning that a 2.5% cash
+discount may be taken on the invoice price, less (‘net of’) any returns, if payment is made within
+7 days of the invoice date (the discount period); otherwise, the invoice price, less any returns, is
+due 30 days from the invoice date.
+
+Discounts
+
+Discount received: The credit terms of a purchase on account may permit the buyer to claim a
+discount for prompt payment. The buyer calls this settlement discount - discount received. This
+incentive offers advantages to both parties — the purchaser saves money, and the seller is able
+to shorten the operating cycle by converting the accounts receivable into cash earlier.
+
+The credit terms specify the amount of the cash discount and time period during which it is
+offered. They also indicate the time within which the purchaser is expected to pay the full invoice
+price.
+
+When the seller elects not to offer a settlement discount for prompt payment, credit terms will
+specify only the maximum time period for paying the balance due. For example, the time period
+may be stated as n/30, meaning that the net amount must be paid in 30 days from the invoice
+date.
+
+When an invoice is paid within the discount period, the amount of the discount is credited to
+discount received. Discounts are recorded by the buyer as revenue, as a discount represents a
+saving in outflows and a consequential reduction in liabilities and an increase in equity.
+
+Example: To illustrate, assume Sauk Stereo pays the balance due of $3500 (gross invoice price
+of $3800 less purchase returns of $300) on 12 May, the last day of the discount period. The
+settlement discount is $70 ($3500 × 2%), and the amount of cash paid by Sauk Stereo is $3430
+($3500 − $70). The entry to record the 12 May payment by Sauk Stereo is shown below.
+
+=== PAGE 3 ===
+Trade discounts: Trade discounts, unlike settlement discounts, do not depend on early payment
+of the amount due and are not recorded in the records of either the buyer or the seller. Trade
+discounts are disclosed on the sales invoice as a percentage reduction in the list price of the
+inventories sold.
+
+For example, assume that a seller quotes a list price of $500 per item and allows a trade discount
+of 10% for buyers who purchase in large quantities (in this example, assume that 8 items or more
+are considered a large purchase). If the buyer purchases 10 items of inventory on 19 May, taking
+a trade discount of 10%, the invoice price would be $4500 (10 × $500 × 90%). The purchase would
+be recorded in the buyer’s records as:
+
+
+Discount Allowed: The seller may offer the customer a settlement discount for the prompt
+payment of the balance due. Like a purchase discount, a sales discount is based on the invoice
+price less returns, if any. Businesses decide on the percentage of discount to be offered to
+customers based on many factors, including rewarding valuable customers and encouraging
+speedy payment. Businesses decide on the amount of discount to offer based on how much cash
+they are willing to forgo while ensuring that the discount provides enough incentive for the
+customer to pay within the discount period. The discount allowed account is increased (debited)
+for discounts that are taken by customers.
+
+The entry by PW Audio Supply Ltd to record the cash receipt on 12 May from Sauk Stereo within
+the discount period is shown next.
+
+
+
+
+Purchase
+
+=== PAGE 4 ===
+If Sauk Stereo pays the amount owing outside the discount period, PW Audio Supply Ltd
+increases cash for $3500 and decreases accounts receivable for the same amount on the day
+payment is received.
+
+
+Discount allowed is reported as an expense in the statement of profit or loss and provides
+information to management on the amount of discount taken by customers. Sellers offer
+customers settlement discounts to encourage early payment of the account and have the cash
+available for use by the business before the end of the credit period.
+
+Bad debt Expense:
+Although each customer must satisfy the credit requirements of the seller before the credit sale
+is approved, inevitably some accounts receivable become uncollectable, i.e. the customer
+defaults and never pays the account. For example, one of your customers may not be able to pay
+because it experienced a decline in sales due to a downturn in the economy. Similarly, individuals
+may be laid off from their jobs or be faced with unexpected hospital bills. Unrecoverable
+receivables are known as bad debts expense. Such losses are considered a normal and
+necessary risk of doing business on a credit basis.
+
+Assume, for example, that Warden Pty Ltd writes off M.E. Doran’s $200 balance as uncollectable
+on 12 December.

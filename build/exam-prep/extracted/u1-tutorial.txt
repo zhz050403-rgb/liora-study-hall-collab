@@ -1,0 +1,338 @@
+# week1/unit1 tutorial guide introduction to accounting.pdf
+# sha256=0ed72464ebd7830f03f5eb347c1139cdb4be16f83c2159165a27268f41d5f6bc
+
+=== PAGE 1 ===
+UNSW College Foundation Studies
+Accounting
+
+
+
+Accounting
+  l
+Unit
+1
+
+
+Introduction to Accounting
+
+Week 1
+
+
+Learning objectives
+At the end of this tutorial, you should be able to
+•
+Define the accounting cycle and its stages and identify common business
+transactions.
+•
+Describe accounting and identify the main users of accounting information.
+•
+Outline the key concepts in recording and reporting accounting information.
+Before this tutorial, you should have
+•
+Attended the Unit 1 lecture
+•
+Read the Unit 1 Readings
+•
+Completed the Unit 1 Tutorial Questions
+•
+Read the In-Class Activities question
+
+During this tutorial, you will
+•
+Complete the In-Class Activities
+
+After this tutorial, you should
+•
+Consider attending one of the scheduled consultations and attempt to resolve any
+questions that you have as soon as possible.
+
+=== PAGE 2 ===
+Accounting – Unit 1: What is Accounting?
+
+Accounting | Page 1
+
+Tutorial Questions
+
+Terms and Concepts
+
+The following terms and concepts must be understood in the context of the tutorial.
+Provide written explanations of these terms and concepts in the space provided.
+
+Terms/Concepts Explanation
+Accounting
+
+Merchandising
+Business
+
+Service Business
+
+Book-keeping
+
+Transactions
+
+Source
+documents
+
+Invoice
+
+Credit note
+
+Receipt
+
+Journals
+
+=== PAGE 3 ===
+Accounting – Unit 1: What is Accounting?
+
+Accounting | Page 2
+
+Terms/Concepts Explanation
+Ledger
+
+Trial Balance
+
+Reports
+
+
+
+1. In your own words, using definitions from other sources, define what is Accounting.
+
+
+
+2. Distinguish between Bookkeeping and Accounting.
+
+
+
+3. Bookkeeping is only one area of accounting; the profession of accounting has many
+different and specialised areas. Note and define any 3 additional areas of accounting.
+
+=== PAGE 4 ===
+Accounting – Unit 1: What is Accounting?
+
+Accounting | Page 3
+
+
+
+4. The owners of the business are the main users of relevant accounting information
+and reports. List 2 other internal users of Accounting information and reports.
+
+
+
+5. Match the user with the kind of information they require to make decisions.
+
+User
+Information
+Answer
+Owner A
+•
+Financial Statements
+•
+What is the current position?
+To gain an insight into the enterprise and
+make a decision as to whether or not to
+invest in the business. Also, to use past
+financial results as an indicator of the
+future functioning of the business
+
+New Investor B
+•
+Financial Statements
+•
+Job security
+•
+Potential for pay rises in the future
+
+Bank/Lender
+(existing loan) C
+•
+Financial Statements
+•
+Assess tax liability
+•
+How much tax was paid
+
+Managers D
+•
+Financial Statements
+•
+Do you get a bonus or increase in salary in
+future
+
+Employees E
+•
+Is the business making a profit?
+•
+How can it be made more profitable?
+
+Australian Taxation
+Office (ATO) F
+•
+How much to lend/loan?
+•
+Repayment capacity
+
+=== PAGE 5 ===
+Accounting – Unit 1: What is Accounting?
+
+Accounting | Page 4
+
+The Accounting Cycle Overview
+
+“The accounting cycle refers to the regular repetition of a standardised set of stages
+commencing once transactions occur and capturing the financial information in source
+documents to the preparation of financial reports.”
+
+a) Complete the accounting cycle below as it is missing 3 stage names and the
+point where the accounting cycle begins again. Place the correct stage name
+next to the corresponding missing number and also show where the
+accounting cycle begins again.
+
+
+
+
+1.
+Transactions
+2. _______
+__________
+3. Journals
+4. _______
+5. Trial
+Balance
+6. ________
+
+=== PAGE 6 ===
+Accounting – Unit 1: What is Accounting?
+
+Accounting | Page 5
+
+b) Complete the accounting cycle below from stage 1 through to stage 6 by
+putting the stage name next to each number.
+
+
+
+1
+2
+3
+4
+5
+6
+The cycle begins
+again for the
+next accounting
+i d
+
+=== PAGE 7 ===
+Accounting – Unit 1: What is Accounting?
+
+Accounting | Page 6
+
+c) The accounting cycle below is in incorrect order and the stage number is not
+included. Place the correct number next to each accounting cycle step name.
+
+
+
+Source
+Documents
+Ledgers
+Transactions
+Reports
+Trial Balance
+Journals
+The cycle begins
+again for the
+next accounting
+i d
+
+=== PAGE 8 ===
+Accounting – Unit 1: What is Accounting?
+
+Accounting | Page 7
+
+
+In-Class Activities
+
+Think pair share: You have $50,000 cash to invest or buy part of another business and
+need to make an informed decision as an Investor. Answer the questions below.
+
+ Questions
+Answers
+1.
+Before you invest what
+accounting information
+or reports would you
+require?
+
+2.
+Why would you require
+the accounting
+information and/or
+reports?
+
+3.
+How could you use the
+information and/or reports?
+
+=== PAGE 9 ===
+Accounting – Unit 1: What is Accounting?
+
+Accounting | Page 8
+
+2. The 5 essential requirements of accounting reports to aid usefulness are noted
+below. Match the term and meaning.
+
+Term
+Answer
+Definition
+Clarity
+(understandability):
+
+A.  Users must be able to identify similarities
+and differences between the current
+information and information from previous
+years' reports or reports of different
+entities.
+
+
+
+Accuracy
+(reliability):
+
+B. To be useful, the information prepared by
+accountants must also be timely i.e. reports
+should be prepared in plenty of time for the
+people requiring the information to make
+decisions. If information is not available
+when it is needed, it is of no use.
+
+
+
+Consistency
+(comparability):
+
+C. The reports are presented in such a way
+that reasonably-informed users can
+comprehend their meaning, e.g. the use of
+headings and sub-headings may help to
+highlight important information in a Profit
+and Loss Statement.
+
+
+
+Timely
+
+D. Reports should comply with the
+requirements of accounting regulations and
+accounting standards.
+
+
+
+Compliance
+
+E. The information should correspond with the
+actual underlying transactions and events,
+and is capable of independent verification
+and is free from bias. The reports can be
+used to confirm or correct expectations
+about past events and assist in forming,
+revising or confirming expectations about
+the future.

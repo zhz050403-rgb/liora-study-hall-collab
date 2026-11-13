@@ -1,0 +1,813 @@
+# week2/unit3 tutorial guide double entry & transaction analysis.pdf
+# sha256=019d41eef728d3d275242dfd07caf8fec0295715d36a430fef1887008f567e66
+
+=== PAGE 1 ===
+UNSW College Foundation Studies
+Accounting
+
+
+
+Accounting
+
+Unit
+3
+
+
+Double Entry & Transaction
+Analysis
+
+Week 3
+
+
+Learning objectives
+At the end of this tutorial, you should be able to
+•
+ Define accounts and apply associated debit and credit rules
+•
+Summarise accounting transactions using a transaction analysis table.
+•
+ Identify the difference between the periodic and perpetual inventory systems.
+•
+Investigate and classify key accounts
+
+Before this tutorial, you should have
+•
+Attended the Unit 3 lecture
+•
+Read the Unit 3 Readings
+•
+Completed the Unit 3 Tutorial Questions
+•
+Read the In-Class Activities question
+
+During this tutorial, you will
+•
+Complete the In-Class Activities
+
+After this tutorial, you should
+•
+Consider attending one of the scheduled consultations and attempt to resolve any
+questions that you have as soon as possible.
+
+=== PAGE 2 ===
+Accounting – Unit 3: Accounts
+
+Accounting | Page 1
+
+Tutorial Questions
+
+Terms and Concepts
+
+The following terms and concepts must be understood in the context of the tutorial.
+Provide written explanations of these terms and concepts in the space provided.
+
+Terms/Concepts
+Explanation
+Account
+
+Chart of accounts
+
+Revenue
+
+Expenses
+
+Profit
+
+Loss
+
+Perpetual
+Inventory System
+
+Periodic Inventory
+System
+
+Debit
+
+Credit
+
+Account
+Receivable
+
+Account Payable
+
+=== PAGE 3 ===
+Accounting – Unit 3: Accounts
+
+Accounting | Page 2
+
+
+1. Classify each listed account in the table below into the appropriate
+element/group: Current Assets (CA),
+Non current assets (NCA), Current
+liabilities (CL), Non current liabilities (NCL), Owner’s equity (SE), Revenue (R),
+Expenses (E)
+
+Accounts
+CA
+NCA
+CL
+NCL
+OE
+R
+E
+Cash
+
+
+
+
+
+
+
+Accounts
+Receivable
+
+
+
+
+
+
+
+Inventory
+
+
+
+
+
+
+
+Equipment
+
+
+
+
+
+
+
+Property
+
+
+
+
+
+
+
+Accounts payable
+
+
+
+
+
+
+
+Overdraft (short
+term loan)
+
+
+
+
+
+
+
+Wages payable
+
+
+
+
+
+
+
+Bank Loan
+(Payable >1
+year)
+
+
+
+
+
+
+
+Drawings
+
+
+
+
+
+
+
+Sales
+
+
+
+
+
+
+
+Service
+revenue
+
+
+
+
+
+
+
+Cost of goods
+sold (COGS)
+
+
+
+
+
+
+
+Wages expense
+
+
+
+
+
+
+
+Motor vehicle
+
+=== PAGE 4 ===
+Accounting – Unit 3: Accounts
+
+Accounting | Page 3
+
+
+2. Rosaline owns a café shop called Wind & Willows. The table below provides
+details about the business. Match the elements in Column A to the appropriate
+response in column B. Repeat Answers if necessary.
+
+ELEMENT
+ANSWER
+
+Current Asset(CA)
+
+A. Electricity bill for the month
+Non-current asset (NCA)
+
+B. Sold 100 cups of coffee today
+Current Liability (CL)
+
+C. Took a 5 year loan from the bank
+Non-Current liability (NCL)
+
+D. Snow Traders is a supplier who sells Rosaline
+coffee beans on credit
+Revenue (R)
+
+E. Coffee machine
+Expenses (E)
+
+F. Cash in the till
+
+
+G. Coffee beans to make coffee
+
+
+H. Refrigerator
+
+3. Construct a diagram (hierarchy) that summarises the Income Statement
+and Balance Sheet and the relevant elements/groupings associated with
+each.
+
+
+
+Income
+Statement
+
+
+
+
+Balance
+ Sheet
+
+=== PAGE 5 ===
+Accounting – Unit 3: Accounts
+
+Accounting | Page 4
+
+4. Jack and Jill own a toy shop, “Blue’s Toys” that’s sells toys for small kids as well as
+board games for adults and older children. List 2 items for each of the elements
+presented below that is applicable for Blue’s Toys.
+
+ REVENUE
+1.
+2.
+EXPENSE
+1.
+2.
+ASSET
+1.
+2.
+LIABILITY
+1.
+2.
+OWNER’S EQUITY
+1.
+2.
+
+5. Complete the table below by placing a Dr or Cr under each element of the
+accounting equation.
+
+
+
+
+
+
+
+A
+=
+L
++
+OE
+Increase
+
+
+
+
+
+Decrease
+
+=== PAGE 6 ===
+Accounting – Unit 3: Accounts
+
+Accounting | Page 5
+
+6. Complete the summary below by placing a Dr or Cr next to each sentence;
+
+Dr or Cr
+Increases in assets are recorded as:
+
+Increases in liabilities are recorded as:
+
+Increases in Owner’s Equity are recorded as:
+
+Decreases in assets are recorded as:
+
+Decreases in liabilities are recorded as:
+
+Decreases in Owner’s Equity are recorded as
+
+
+7. Revenue and Expenses are used to calculate profit and this results in an increase or
+decrease in Owner’s Equity. Complete the table below to show how the movement of
+revenue and expenses affects owner’s equity and determine whether this will be recorded
+on the debit or credit side of the owner’s equity account.
+
+Element
+
+Effects on Owner’s
+Equity
+Dr/Cr
+
+Revenues (     )
+
+inc
+Cr
+
+Revenues (    )
+
+
+Dr
+
+Expenses (     )
+
+Decrease
+
+Expense (    )
+
+Cr
+
+=== PAGE 7 ===
+Accounting – Unit 3: Accounts
+
+Accounting | Page 6
+
+8. Equality in the accounting equation must be maintained at all times. Fill in the missing
+accounting equation elements in the table below
+
+
+
+
+
+
+
+
+
+
+
+
+9. Calculate the Owner’s Equity amount and profit or loss amount.
+
+Owner's
+Equity
+A
+Assets
+Assets
+Liabilities
+B
+Liabilities
+Owner's
+Equity
+C
+Assets
+E
+F
+Owner's
+Equity
+Revenue
+
+=== PAGE 8 ===
+Accounting – Unit 3: Accounts
+
+Accounting | Page 7
+
+
+
+
+Answer:
+
+A
+
+B
+
+C
+
+E
+
+F
+
+G
+
+Profit /Loss
+
+
+9. Given below is a list of transactions. Record each amount under the related
+elements of the accounting equation. Total each element to show that the
+accounting equation will maintain its equality.
+
+Date
+Transaction
+1 June 20XX
+The owner contributed $10,000 cash as capital to start a business
+2
+The business bought office furniture with cash for $2000
+3
+The business obtained a bank loan for $30,000 cash
+
+Answer:
+
+
+Assets
+Liabilities
+Owner’s Equity
+1
+Cash
+Capital
+
+
+
+2
+Office furniture
+Cash
+
+
+
+3
+Cash
+Bank loan
+
+
+
+
+
+TOTAL:
+
+
+
+
+A
+$80,000
+E
+$30,000
+L
+$50,000
+OE   ?? ( G)
+R
+$10,000
+
+=== PAGE 9 ===
+Accounting – Unit 3: Accounts
+
+Accounting | Page 8
+
+10. The transaction analysis table below has been partially completed for you,
+complete the missing items given the transactions below.
+•
+13/1 A customer purchased goods worth $100 for cash.
+•
+26/1 The business bought a mobile phone for business use for $500
+cash.
+•
+28/1 The business paid rent $3,000.
+
+Date
+Accounts Affected
+Element
+Increase/
+Decrease
+Dr/Cr
+Amount
+($)
+13/1
+Cash
+1
+A
+2
+3
+Increase
+4
+Cr
+100
+100
+26/1
+Mobile Phones
+5
+6
+A
+7
+Decrease
+Dr
+8
+9
+500
+28/1
+10
+Cash
+E
+A
+Increase
+11
+12
+13
+3000
+14
+
+Answer:
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+10
+
+11
+
+12
+
+13
+
+14
+
+=== PAGE 10 ===
+Accounting – Unit 3: Accounts
+
+Accounting | Page 9
+
+11. The perpetual inventory method records the purchases of inventory as a current asset
+and once sold then transfers to the expense account named cost of goods sold.
+
+The periodic inventory method records the purchases of inventory as an expense
+account named purchases. This is also used in the end of period calculation to
+determine the actual cost of goods sold. This course will focus on and only use the
+periodic inventory system. Identify the two accounts affected by the following
+transactions :
+
+
+Transaction
+Account #1
+Account #2
+Cash purchase of goods
+
+
+Credit purchase of goods
+
+
+
+12. Write the correct term for each description:
+
+Description
+Concept/term
+Customers who will pay later
+
+When inventory in calculated periodically at given
+intervals
+
+When inventory purchased for resale is recorded as an
+expense
+
+Trade payables
+
+Suppliers from whom the business has bought
+products for resale but have not paid yet
+
+An inventory system that continually updates the
+inventory
+
+An inventory system where cost of goods sold is
+calculated
+
+Trade receivables
+
+=== PAGE 11 ===
+Accounting – Unit 3: Accounts
+
+Accounting | Page 10
+
+
+ IN-CLASS ACTIVITIES
+
+13. The double entry convention states that every transaction affects a minimum of two
+accounts. For each of the transactions below for a business selling kids toys, list the
+two accounts affected.
+a) The owner contributed cash to the business.
+b) The business bought a vehicle with cash.
+c) The business bought a computer on credit.
+d) The business sold toys for cash.
+e) The business sold toys on credit.
+f) The business borrowed money from the bank.
+
+
+
+Account #1
+Element/Increase (I) or
+Decrease (D)
+Account #2
+Element
+/Increase (I) or
+Decrease (D)
+a.
+
+
+
+
+b.
+
+
+
+
+c.
+
+
+
+
+d.
+
+
+
+
+e.
+
+
+
+
+f.
+
+=== PAGE 12 ===
+Accounting – Unit 3: Accounts
+
+Accounting | Page 11
+
+14.
+The following transactions relate to Willow Convenience Store. Complete the
+transaction Analysis Table given below:
+•
+1 February - Mary (the owner) opened the business with a contribution of $30,000 in
+cash.
+•
+6 February – The business purchased Furniture on cash from Filli Ltd worth $10,
+000.
+•
+8 February – The business bought $12000 worth of goods to sell in the convenience
+store on credit from Mira Ltd
+•
+13 February – The school headmistress next door, Ms Whitmore, bought $ 300
+worth of chocolates on credit.
+•
+22 February – A customer purchased groceries worth $120 for cash.
+•
+25 February – The business paid back Mira Ltd in full.
+
+Complete the Analysis Table below:
+
+Date
+Accounts Affected
+Element
+(A, L, OE,
+R, E)
+Increase/
+Decrease
+Dr or Cr
+Amount
+Feb 1
+
+
+
+
+
+6
+
+
+
+
+
+8
+
+
+
+
+
+13
+
+
+
+
+
+22
+
+
+
+
+
+25
+
+=== PAGE 13 ===
+Accounting – Unit 3: Accounts
+
+Accounting | Page 12
+
+ADDITIONAL SELF-STUDY PROBLEM:
+
+The following transactions relate to Christine’s Hairdressing Supplies;
+• 1 February - Christine (the owner) contributed $10,000 cash to the business
+• 6 February – The business purchased Office Furniture on credit from Fantastic Chairs
+Pty Ltd worth $5000.
+• 13 February - The business sold goods for $100 to Barry on credit.
+• 22 February - Barry paid their outstanding account in full (HINT: Transaction relates to
+13 February above).
+• 25 February – The business paid $1000 Cash to Fantastic Chairs Pty Ltd for part
+payment of account (HINT: Transaction relates to 6 February above).
+
+
+Complete the Analysis Chart below:
+
+Date
+Accounts Affected
+Element
+(A, L, OE,
+R, E)
+Increase/
+Decrease
+Dr or Cr
+Amount
+Feb 1
+
+
+
+
+
+6
+
+
+
+
+
+13
+
+
+
+
+
+22
+
+
+
+
+
+25

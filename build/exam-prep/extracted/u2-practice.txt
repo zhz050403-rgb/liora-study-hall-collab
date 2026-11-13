@@ -1,0 +1,83 @@
+# week2/unit2 practice transaction analysis.pdf
+# sha256=693945c63b703433b3cb61a605d885f25bd3ddb67498a6afebfff45685c1b2ae
+
+=== PAGE 1 ===
+Page 1 of 1
+
+Unit 2 exercise
+Transaction Analysis:
+Transaction 1:
+Purchased a motor vehicle for $20,000 cash on 1 August 20XX.
+1. First Account
+
+
+Second Account
+
+
+2. Element?
+
+
+Element?
+
+
+3. Increase/
+Decrease?
+
+Increase/
+Decrease?
+
+Amount?
+
+
+Amount?
+
+
+
+Transaction 2:
+Obtained a loan (business related) for $60,000 on 1 August 20XX
+4. First Account
+
+
+Second Account
+
+
+5. Element?
+
+
+Element?
+
+
+6. Increase/
+Decrease?
+
+Increase/
+Decrease?
+
+Amount?
+
+
+Amount?
+
+
+
+                    Assets                          =                    Liabilities                      +              Owner’s Equity
+
+Motor Vehicle
+
+Cash
+
+
+
+
+
+
+Cash
+
+Loan
+
+
+
+
+
+
+Total:
