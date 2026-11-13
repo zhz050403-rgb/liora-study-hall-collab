@@ -1,0 +1,721 @@
+{
+ "course": "economics",
+ "term": "term1",
+ "week": 2,
+ "title": "Week 2 · Unit 1 Tutorial + Unit 2 Production and Technology 生产与技术",
+ "answersTitle": "Tutorial 1 Introduction to Economics",
+ "files": [
+  "unit1 PPT introduction to economics.pdf",
+  "unit1 TG introduction to economics.pdf",
+  "unit1 TG答案 introduction to economics.pdf",
+  "unit2 PPT production and technology.pdf",
+  "unit2 TG production and technology.pdf",
+  "unit2 TG答案 production and technology.pdf"
+ ],
+ "inventory": [
+  {
+   "ref": "Tutorial 1 Terms",
+   "deliverables": [
+    {
+     "type": "terms",
+     "terms": [
+      "Economics",
+      "Economic problem",
+      "Scarcity",
+      "Microeconomics",
+      "Macroeconomics",
+      "Production",
+      "Factors of production",
+      "Land",
+      "Labour",
+      "Capital",
+      "Enterprise",
+      "Entrepreneur"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial 1 Q1",
+   "parts": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ]
+  },
+  {
+   "ref": "Tutorial 1 Q2",
+   "parts": [
+    "Problem 1",
+    "Problem 2",
+    "Problem 4"
+   ]
+  },
+  {
+   "ref": "Tutorial 1 Q3",
+   "parts": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "j"
+   ]
+  },
+  "Tutorial 1 Q4",
+  "Tutorial 1 Q5",
+  "Tutorial 1 In-class Q1",
+  "Lecture 2.1 Three Questions",
+  {
+   "ref": "Lecture 2.1 Example 1",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "Lecture 2.1 Bondi",
+  {
+   "ref": "Lecture 2.1 Shifts",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Lecture 2.2 Example 2",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Lecture 2.2 Real World",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "Lecture 2.2 Example 3"
+ ],
+ "intro": [
+  "本周前半是 <strong>Unit 1 Tutorial</strong>（稀缺性、生产要素），每题都有完整答案，参考了 Tutorial 答案课件；后半是 <strong>Unit 2 讲座</strong>：三个基本经济问题、机会成本、生产可能性曲线（PPC）以及如何提高未来生产力。PPC 的图按讲义给出的数据点画出。Unit 2 的 Tutorial 在第 3 周，答案放在第 3 周。"
+ ],
+ "sections": [
+  {
+   "title": "Unit 1 Tutorial：稀缺性与生产要素",
+   "sources": [
+    {
+     "file": "unit1 TG introduction to economics.pdf",
+     "pages": "p2–4"
+    },
+    {
+     "file": "unit1 TG答案 introduction to economics.pdf",
+     "pages": "p8–27"
+    },
+    {
+     "file": "unit1 PPT introduction to economics.pdf",
+     "pages": "p10–25"
+    }
+   ],
+   "concept": "复习 Unit 1：经济学研究如何用<strong>稀缺</strong>资源满足<strong>无限</strong>欲望；<strong>经济问题</strong>就是欲望无限而资源有限，因此必须选择。<strong>生产</strong>是把资源变成商品和服务的过程。四种<strong>生产要素</strong>：土地（自然）、劳动（人的体力脑力）、资本（人造的生产工具，本身不直接满足欲望）、企业家才能（组合资源、承担风险创业的能力，具备它的人叫<strong>企业家</strong> entrepreneur）。",
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "Tutorial 1 Terms",
+     "question": "Define: Economics, Economic problem, Scarcity, Microeconomics, Macroeconomics, Production, Factors of production, Land, Labour, Capital, Enterprise, Entrepreneur (with examples).",
+     "solution": "<strong>Economics</strong>：研究社会如何组织稀缺资源生产商品和服务以满足无限欲望。\n<strong>Economic problem</strong>：欲望无限、资源有限，必须做选择。\n<strong>Scarcity</strong>：人的欲望永远大于可用资源的状态。\n<strong>Microeconomics</strong>：研究个体决策单位，如一个市场、一家厂商、一个消费者（例：咖啡的需求）。\n<strong>Macroeconomics</strong>：研究整体经济，如通货膨胀、失业、经济增长、国际贸易。\n<strong>Production</strong>：用资源生产产出（商品和服务）的过程。\n<strong>Factors of production</strong>：生产中投入的稀缺资源：土地、劳动、资本、企业家才能。\n<strong>Land</strong>：自然提供的资源，如森林、矿产、海洋，报酬是租金。\n<strong>Labour</strong>：工人的体力和脑力，如厨师、网球运动员，报酬是工资。\n<strong>Capital</strong>：人造的生产工具，如工厂、工具、设备、软件。\n<strong>Enterprise</strong>：主动组合资源、承担风险创办企业的能力，报酬是利润。\n<strong>Entrepreneur</strong>：具备企业家才能、组合资源并承担风险创业的人。",
+     "numeric": false
+    },
+    {
+     "label": "例 2",
+     "ref": "Tutorial 1 Q1",
+     "question": "Match: A Capital, B Entrepreneur, C Economics, D Economic method, E Land with the definitions — (1) a study of the way in which a society uses its scarce resources to satisfy unlimited wants; (2) someone who combines resources and takes risks to start a business; (3) materials provided by nature, which may be used in production; (4) manufactured means of production; (5) a rational way of thinking about economic problems.",
+     "solution": "按定义的关键词配对：\n(1) C Economics（研究稀缺资源）\n(2) B Entrepreneur（组合资源、承担风险）\n(3) E Land（自然提供）\n(4) A Capital（人造的生产工具）\n(5) D Economic method（理性思考经济问题的方法）",
+     "parts": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+     ],
+     "sourceNote": "答案课件里的版本多了一项 F economic system（经济制度：做出经济选择的组织和制度安排），学生用的 Tutorial Guide 没有这一项。",
+     "numeric": false
+    },
+    {
+     "label": "例 3",
+     "ref": "Tutorial 1 Q2",
+     "question": "Textbook Problems 1, 2 and 4: (1) Does scarcity affect all individuals and nations? Would monks, or Graeme Wood (founder of Wotif, who gives large amounts to environmental groups), be free from scarcity? (2) Are computer software programs land, labour or capital? Explain. (4) Explain the difference between macroeconomics and microeconomics, with examples.",
+     "solution": "(1) 稀缺影响所有个人和国家，因为欲望无限、资源有限，这无法避免；各人欲望不同，但总是大于可用资源，时间、商品、服务都是如此。即使生活简朴的僧侣，欲望也无限而资源有限。Graeme Wood 极为富有，但财富仍然有限，他不能把想捐的钱捐给所有想支持的环保团体，仍然要按某种标准选择分配——同样面对稀缺。\n(2) 软件是人造的，所以不是土地（自然提供）也不是劳动（人的体力脑力）。它是<strong>资本</strong>：人造的、用于生产其他商品的工具，本身不直接满足欲望。\n(4) 宏观经济学从整体看经济，研究通货膨胀、失业、经济增长等全经济变量；微观经济学研究单个行业、厂商或个人的问题。例：宏观——税收高低、福利发放（政府应该怎样做的规范性问题）；微观——租金管制对房东和租客的影响、某种商品的生产销售是否符合社会需要。",
+     "parts": [
+      "Problem 1",
+      "Problem 2",
+      "Problem 4"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 4",
+     "ref": "Tutorial 1 Q3",
+     "question": "Indicate the main resource used — land (T), capital (K), labour (L) or enterprise (E): (a) fishing grounds in the Southern Ocean; (b) a cash register in a retail store; (c) uranium deposits in Kakadu; (d) lectures by a university lecturer; (e) Taylor Swift; (f) the IBM factory in Victoria; (g) a construction worker at a sports stadium; (h) a professional tennis player; (i) a robot in a car factory; (j) computer software.",
+     "solution": "(a) T　(b) K　(c) T　(d) L　(e) L　(f) K　(g) L　(h) L　(i) K　(j) K\n判断：自然提供的是土地；人造的生产工具是资本；人提供的体力脑力服务是劳动。Taylor Swift 的演唱是劳动；如果讨论她经营自己的唱片和巡演生意，也可以说涉及企业家才能。",
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "i",
+      "j"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 5",
+     "ref": "Tutorial 1 Q4",
+     "question": "Complete the textbook multiple-choice questions 1 to 5 in Chapter 1.",
+     "solution": "这 5 道选择题在教材第 1 章，本周上传的资料里没有题目原文，无法给出答案。做题时对照本页的概念：稀缺性、微观与宏观、四种生产要素及其报酬。",
+     "sourceNote": "教材选择题不在本周资料中。",
+     "numeric": false
+    },
+    {
+     "label": "例 6",
+     "ref": "Tutorial 1 Q5",
+     "question": "Explain why some people earn more than others. (At least 30 words.)",
+     "solution": "收入是提供生产要素的报酬，而资源是稀缺的、价格随稀缺程度上升。所以收入高的人通常是：① 提供消费者最想要的商品和服务；② 拥有最肥沃的土地或最稀缺的资源（例如少见的技能，如制作 Birkin 包的缝纫技艺）；③ 对生产贡献更大，工作时间更长或更努力。反过来，技能容易找到替代、需求小的人收入较低。",
+     "numeric": false
+    },
+    {
+     "label": "例 7",
+     "ref": "Tutorial 1 In-class Q1",
+     "question": "Writing task: Explain if economics promotes greed. (At least 50 words, with examples.)",
+     "solution": "经济模型假设决策者追求自身利益（self-interest），所以批评者说经济学鼓励「贪婪」。但主流经济学并不提倡贪婪：它关心的是在一套伦理和道德原则约束下，让自由市场有效运转。现代经济学的奠基人亚当·斯密早在两百多年前就指出，靠违背这些原则获得的经济利益并不会增进社会的经济福利。例如，商家追求利润会努力降低成本、提供顾客想要的商品，这对社会有益；但欺诈、垄断抬价则损害他人，不符合经济学所说的效率。所以经济学描述人的自利行为，却并不主张贪婪。",
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "把钱或软件当作劳动：软件是人造的生产工具，属于资本。",
+    "以为富人或简朴的人没有稀缺问题：稀缺是普遍的。",
+    "答 explain 题只写结论。"
+   ],
+   "faqs": [
+    {
+     "q": "Entrepreneur 和 Enterprise 有什么区别？",
+     "a": "Enterprise 是一种生产要素（企业家才能），Entrepreneur 是拥有这种才能、组合资源并承担风险的人。"
+    }
+   ]
+  },
+  {
+   "title": "三个基本经济问题与机会成本（Lecture 2.1）",
+   "sources": [
+    {
+     "file": "unit2 PPT production and technology.pdf",
+     "pages": "p4–12"
+    }
+   ],
+   "concept": "任何经济制度都要回答三个问题：①<strong>生产什么</strong>（资源稀缺，多生产一样就要少生产另一样，按人们的偏好决定）；②<strong>怎么生产</strong>（取决于资源是否可得和相对成本：工人比机器便宜就更多用劳动；教育提高工人能力和产品质量）；③<strong>为谁生产</strong>（取决于人们的收入；经济增长提高生活水平；政府要考虑是否干预市场以使结果更公平）。\n<strong>机会成本</strong>（opportunity cost）：为满足一个欲望而放弃的<strong>次优选择</strong>，是一种取舍，不用金钱衡量。",
+   "examples": [
+    {
+     "label": "例 8",
+     "ref": "Lecture 2.1 Three Questions",
+     "question": "For each fundamental economic question, explain what determines the answer in an economy.",
+     "solution": "生产什么：资源稀缺，不能什么都生产，多生产一种就要少生产另一种；由个人（或群体）的偏好决定。\n怎么生产：由资源的可得性和相对成本决定，例如工人比机器便宜，生产者就用更多劳动；教育能提高工人的能力和产品质量。\n为谁生产：由社会中人们的收入决定；经济增长提高生活水平；政府要决定是否干预市场，使分配结果更均衡。",
+     "numeric": false
+    },
+    {
+     "label": "例 9",
+     "ref": "Lecture 2.1 Bondi",
+     "question": "You have a free afternoon and choose to go to Bondi Beach instead of studying or working a shift. What is the opportunity cost of the beach trip?",
+     "solution": "机会成本是你放弃的<strong>次优</strong>选择，而不是所有放弃的选择。如果不去海滩你最可能做的是打工，那么机会成本就是那一下午的打工（以及它能挣到的收入）；如果次优选择是学习，机会成本就是那几小时的学习。门票、车费这些金钱支出不是机会成本的全部，经济学更强调放弃的东西。",
+     "sourceNote": "讲义这一页是一张 Bondi Beach 的图片，用来引出机会成本，没有文字题目；这里按讲义定义写成一个练习。",
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "把放弃的所有选择都算进机会成本：只算次优的那一个。",
+    "把机会成本等同于花了多少钱。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么机会成本「不用金钱衡量」？",
+     "a": "它衡量的是放弃的另一样东西（时间、另一种商品），钱只是其中可能的一种表达方式。"
+    }
+   ]
+  },
+  {
+   "title": "生产可能性曲线（PPC）与机会成本递增（Lecture 2.1–2.2）",
+   "sources": [
+    {
+     "file": "unit2 PPT production and technology.pdf",
+     "pages": "p13–45"
+    }
+   ],
+   "concept": "<strong>经济模型</strong>是对现实的简化。<strong>生产可能性曲线</strong>（PPC / PPF）表示在资源和技术给定时，两种商品最大产量的各种组合。\n<strong>假设</strong>：只有两种产出；资源和技术不变；资源充分就业；资源可以在两种产出间转移；其他一切不变（<strong>ceteris paribus</strong>）。\n曲线上的点：有效率；曲线内的点：资源闲置，没有达到最大产量；曲线外的点：目前无法达到。沿曲线移动意味着取舍（机会成本）。\n曲线<strong>向外凸</strong>，因为资源并不同样适合生产两种商品，<strong>机会成本递增</strong>。\n<strong>移动</strong>：资源增加、技术进步、对人力和物质资本投资 → 整体外移（经济增长的潜力）；只有一种商品的技术进步 → 只有那一端外移；资源被破坏 → 内移。投资大于折旧时资本积累，现在多生产资本品，将来 PPC 外移更多。增长也可能破坏环境，需要干预使结果对社会最优（Lecture 4）。\n<strong>边际分析</strong>：比较「多一单位」的额外收益和额外成本。",
+   "examples": [
+    {
+     "label": "例 10",
+     "ref": "Lecture 2.1 Example 1",
+     "question": "Production possibilities schedule: E (C 120, K 0), I (90, 30), N (40, 55), A (0, 60). The economy is at I and decides to increase capital goods to 55 units (point N). Graph the PPC and find the impact on consumer goods.",
+     "solution": "从 I 到 N：资本品从 30 增加到 55，多 25 单位；消费品从 90 减少到 40，少 50 单位。所以多生产 25 单位资本品的机会成本是 50 单位消费品，平均每单位资本品 2 单位消费品。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        70
+       ],
+       "yr": [
+        0,
+        135
+       ],
+       "width": 340,
+       "height": 250,
+       "xLabel": "Capital goods (K)",
+       "yLabel": "Consumer goods (C)",
+       "xticks": [
+        30,
+        55,
+        60
+       ],
+       "yticks": [
+        40,
+        90,
+        120
+       ],
+       "lines": [
+        {
+         "pts": [
+          [
+           0,
+           120
+          ],
+          [
+           30,
+           90
+          ],
+          [
+           55,
+           40
+          ],
+          [
+           60,
+           0
+          ]
+         ],
+         "color": "navy",
+         "label": [
+          40,
+          105,
+          "PPC"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 0,
+         "y": 120,
+         "label": "E"
+        },
+        {
+         "x": 30,
+         "y": 90,
+         "label": "I"
+        },
+        {
+         "x": 55,
+         "y": 40,
+         "label": "N"
+        },
+        {
+         "x": 60,
+         "y": 0,
+         "label": "A",
+         "dy": -8
+        },
+        {
+         "x": 20,
+         "y": 50,
+         "label": "inside: idle resources",
+         "open": true
+        },
+        {
+         "x": 50,
+         "y": 110,
+         "label": "outside: unattainable",
+         "open": true,
+         "dx": -60
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          30,
+          90
+         ],
+         "to": [
+          55,
+          40
+         ],
+         "arrow": true,
+         "label": "−50 C for +25 K",
+         "dx": -80,
+         "dy": 30
+        }
+       ],
+       "caption": "Example 1：生产可能性曲线（按讲义的生产可能性表连线）。从 I 移到 N，多生产 25 单位资本品，代价是少生产 50 单位消费品。"
+      }
+     ],
+     "checks": [
+      {
+       "expr": "40-90",
+       "equals": "-50"
+      },
+      {
+       "expr": "55-30",
+       "equals": "25"
+      },
+      {
+       "expr": "50/25",
+       "equals": "2"
+      }
+     ]
+    },
+    {
+     "label": "例 11",
+     "ref": "Lecture 2.1 Shifts",
+     "question": "Show how the PPC moves when (a) resources or technology increase for both goods, (b) for one good only, (c) resources are destroyed.",
+     "solution": "(a) 整条曲线向外移动；(b) 只有那种商品的一端向外移动，另一端不变，曲线变得不对称；(c) 整条曲线向内移动。下图示意 (a)。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        12
+       ],
+       "yr": [
+        0,
+        12
+       ],
+       "width": 320,
+       "height": 230,
+       "xLabel": "Good X",
+       "yLabel": "Good Y",
+       "curves": [
+        {
+         "expr": "sqrt(64-x^2*64/49)",
+         "dom": [
+          0,
+          7
+         ],
+         "color": "navy",
+         "label": [
+          3.5,
+          8.2,
+          "PPC1"
+         ]
+        },
+        {
+         "expr": "sqrt(100-x^2*100/81)",
+         "dom": [
+          0,
+          9
+         ],
+         "color": "green",
+         "dash": true,
+         "label": [
+          6.5,
+          8.6,
+          "PPC2"
+         ]
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          4.5,
+          5.5
+         ],
+         "to": [
+          5.6,
+          6.9
+         ],
+         "arrow": true
+        }
+       ],
+       "caption": "资源增加或技术进步（两种商品都受益）：PPC 整体向外移动。只有一种商品的技术进步时，只有那一端向外移动；资源被破坏时向内移动。"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 12",
+     "ref": "Lecture 2.2 Example 2",
+     "question": "Picking apples vs studying economics: A (0 baskets, 15 hours), B (1, 14), C (2, 12), D (3, 9), E (4, 5), F (5, 0). Find the opportunity cost of each basket and explain the curve's shape.",
+     "solution": "每多一篮放弃的学习时间：第 1 篮 15 − 14 = 1 小时，第 2 篮 2 小时，第 3 篮 3 小时，第 4 篮 4 小时，第 5 篮 5 小时。机会成本递增，所以曲线向外凸。原因：先摘最容易摘的苹果（最低的树枝），越往后越难摘、要花更多时间，即资源（时间、技能）并不同样适合两种活动。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        6
+       ],
+       "yr": [
+        0,
+        17
+       ],
+       "width": 320,
+       "height": 230,
+       "xLabel": "Apples (baskets)",
+       "yLabel": "Study (hours)",
+       "xticks": [
+        1,
+        2,
+        3,
+        4,
+        5
+       ],
+       "yticks": [
+        5,
+        9,
+        12,
+        14,
+        15
+       ],
+       "lines": [
+        {
+         "pts": [
+          [
+           0,
+           15
+          ],
+          [
+           1,
+           14
+          ],
+          [
+           2,
+           12
+          ],
+          [
+           3,
+           9
+          ],
+          [
+           4,
+           5
+          ],
+          [
+           5,
+           0
+          ]
+         ],
+         "color": "green"
+        }
+       ],
+       "points": [
+        {
+         "x": 0,
+         "y": 15,
+         "label": "a"
+        },
+        {
+         "x": 1,
+         "y": 14,
+         "label": "b"
+        },
+        {
+         "x": 2,
+         "y": 12,
+         "label": "c"
+        },
+        {
+         "x": 3,
+         "y": 9,
+         "label": "d"
+        },
+        {
+         "x": 4,
+         "y": 5,
+         "label": "e"
+        },
+        {
+         "x": 5,
+         "y": 0,
+         "label": "f",
+         "dy": -8
+        }
+       ],
+       "caption": "Example 2：摘苹果与学习时间。每多一篮苹果要放弃的学习时间是 1、2、3、4、5 小时，越来越多，所以曲线向外凸。"
+      }
+     ],
+     "checks": [
+      {
+       "expr": "15-14",
+       "equals": "1"
+      },
+      {
+       "expr": "14-12",
+       "equals": "2"
+      },
+      {
+       "expr": "12-9",
+       "equals": "3"
+      },
+      {
+       "expr": "9-5",
+       "equals": "4"
+      },
+      {
+       "expr": "5-0",
+       "equals": "5"
+      }
+     ]
+    },
+    {
+     "label": "例 13",
+     "ref": "Lecture 2.2 Real World",
+     "question": "Over 30 years the US share of output from motor vehicle manufacturing declined while software output rose sharply; unemployment stayed high in car-making regions, and those workers are unlikely to find software jobs. Plot these changes using a PPF.",
+     "solution": "把两种产出放在坐标轴上：汽车和软件。产出组合从多汽车（A）转向多软件。如果资源能自由转移，经济会沿着 PPF 移到 B；但汽车工人的技能适合造车、完全不适合软件开发（资源不同样适合两种生产，这也是曲线外凸的原因），他们失业了，于是经济实际处在 PPF 内部的 C 点，有闲置资源。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        12
+       ],
+       "yr": [
+        0,
+        12
+       ],
+       "width": 320,
+       "height": 230,
+       "xLabel": "Motor vehicles",
+       "yLabel": "Software",
+       "curves": [
+        {
+         "expr": "sqrt(100-x^2)",
+         "dom": [
+          0,
+          10
+         ],
+         "color": "navy",
+         "label": [
+          6.8,
+          8.2,
+          "PPF"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 7,
+         "y": 7.14,
+         "label": "A (30 years ago)"
+        },
+        {
+         "x": 3,
+         "y": 9.54,
+         "label": "B (efficient)",
+         "dx": -10,
+         "dy": -8
+        },
+        {
+         "x": 2,
+         "y": 7,
+         "label": "C (today: unemployed car workers)",
+         "open": true,
+         "dx": -4,
+         "dy": 16
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          7,
+          7.14
+         ],
+         "to": [
+          2.3,
+          7.0
+         ],
+         "arrow": true
+        }
+       ],
+       "caption": "Real world application：产出从汽车转向软件。如果汽车工人都能转去做软件，经济会沿着 PPF 从 A 移到 B；但他们的技能不适合软件业而失业，经济实际落在曲线内部的 C 点。"
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 14",
+     "ref": "Lecture 2.2 Example 3",
+     "question": "An economy chooses between capital goods and consumer goods. Explain how this choice affects its future PPC.",
+     "solution": "如果对物质资本的投资大于现有资本的磨损（折旧），就发生资本积累。现在把更多资源用于生产资本品（少生产消费品、牺牲当前消费），将来生产力更高，PPC 外移得更多；反之，偏重消费品，将来的增长较慢。所以经济增长不是唯一考虑：还要权衡现在的消费和将来的产出。",
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "说曲线内的点「无法达到」：那是资源闲置；无法达到的是曲线外。",
+    "PPC 画成直线：机会成本递增，应向外凸（除非资源同样适合两种生产）。",
+    "把沿曲线移动和整条曲线移动弄混：前者是选择不同组合，后者是资源或技术变化。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么机会成本会递增？",
+     "a": "资源并不同样适合生产两种商品；先转移最适合的资源，越往后转移的资源越不适合，放弃得越多。"
+    },
+    {
+     "q": "ceteris paribus 是什么意思？",
+     "a": "拉丁语「其他条件不变」，模型只让我们关心的变量变化。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "步骤",
+   "做什么",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "1 生产要素",
+    "自然 → 土地；人 → 劳动；人造工具 → 资本；冒险组合 → 企业家才能",
+    "例 4"
+   ],
+   [
+    "2 机会成本",
+    "只算次优选择；PPC 上算「得到多少、放弃多少」",
+    "例 9、10、12"
+   ],
+   [
+    "3 画 PPC",
+    "标题、轴、曲线、点；说明在线上、线内、线外",
+    "例 10–13"
+   ],
+   [
+    "4 移动",
+    "资源、技术、投资 → 外移；破坏 → 内移",
+    "例 11、14"
+   ]
+  ]
+ },
+ "practice": "本周任务：完成 Unit 1 Tutorial（含教材第 1 章选择题）和 Assessable Quiz；读 Unit 2 讲义，准备第 3 周的 Unit 2 Tutorial。"
+}

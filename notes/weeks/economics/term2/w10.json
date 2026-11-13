@@ -1,0 +1,1184 @@
+{
+ "course": "economics",
+ "term": "term2",
+ "week": 10,
+ "title": "Week 10 · Unit 8 Tutorial + Unit 9 The Government Budget and Fiscal Policy 政府预算与财政政策",
+ "answersTitle": "Tutorial 8 Monetary Policy",
+ "files": [
+  "unit8 PPT monetary policy.pdf",
+  "unit8 TG monetary policy.pdf",
+  "unit9 PPT the government budget and fiscal policy.pdf",
+  "unit9 TG the government budget and fiscal policy.pdf"
+ ],
+ "inventory": [
+  {
+   "ref": "Tutorial 8 Terms",
+   "deliverables": [
+    {
+     "type": "terms",
+     "terms": [
+      "Nominal interest rate",
+      "Real Interest rate",
+      "Monetary Policy",
+      "Easing of monetary policy",
+      "Tightening of monetary policy",
+      "Transmission mechanism"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial 8 Q1",
+   "parts": [
+    "i",
+    "ii"
+   ]
+  },
+  {
+   "ref": "Tutorial 8 Q2",
+   "parts": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "ref": "Tutorial 8 Q3",
+   "parts": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "ref": "Tutorial 8 Q4",
+   "parts": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ],
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  "Tutorial 8 Q5",
+  "Tutorial 8 Q6",
+  "Tutorial 8 Q7",
+  {
+   "ref": "Tutorial 8 Q8",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial 8 Q9",
+   "parts": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "ref": "Tutorial 8 Q10",
+   "parts": [
+    "a",
+    "b"
+   ]
+  },
+  "Tutorial 8 Summary",
+  "Tutorial 8 Essay",
+  "Lecture 9 Fiscal Policy",
+  "Lecture 9 Functions",
+  {
+   "ref": "Lecture 9 Structural and Cyclical",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "Lecture 9 Financing",
+  {
+   "ref": "Lecture 9 Deficit",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "Lecture 9 Surplus",
+  "Lecture 9 Strengths"
+ ],
+ "intro": [
+  "本周前半是 <strong>Unit 8 Tutorial</strong>（名义与实际利率计算、现金利率与风险溢价、加息的影响、货币政策的目标和局限）；后半是 <strong>Unit 9 讲座</strong>：财政政策与预算、稳定经济的作用、结构性与周期性预算、自动稳定器、赤字的融资方式、赤字和盈余的利弊、财政政策的优缺点。Unit 9 Tutorial 的答案在第 11 周。",
+  "Term 2 的 Tutorial 没有官方答案文件，以下答案依据讲义和 Tutorial 阅读材料写出，计算题都用公式核对。"
+ ],
+ "sections": [
+  {
+   "title": "Unit 8 Tutorial：货币政策",
+   "sources": [
+    {
+     "file": "unit8 TG monetary policy.pdf",
+     "pages": "p1–11"
+    },
+    {
+     "file": "unit8 PPT monetary policy.pdf",
+     "pages": "p1–32"
+    }
+   ],
+   "concept": "实际利率 = 名义利率 − 通胀率；放贷人想要的名义利率 = 想要的实际利率 + 预期通胀。RBA 控制现金利率，银行在其上加风险溢价设定其他利率。加息（紧缩）使 C、I 下降，AD 左移；降息（宽松）使 AD 右移。货币政策有 6–18 个月的时滞，在衰退中效果有限。",
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "Tutorial 8 Terms",
+     "question": "Explain: Nominal interest rate; Real interest rate; Monetary Policy; Easing of monetary policy; Tightening of monetary policy; Transmission mechanism.",
+     "solution": "<strong>Nominal interest rate</strong>：贷款或存款上标明的利率，没有扣除通胀。\n<strong>Real Interest rate</strong>：扣除通胀后的利率，= 名义利率 − 通胀率，反映真实的购买力回报。\n<strong>Monetary Policy</strong>：中央银行（RBA）影响利率和货币供应、进而影响总支出、通胀和增长的行动。\n<strong>Easing of monetary policy</strong>：降低现金利率（买入政府证券），刺激借贷和支出。\n<strong>Tightening of monetary policy</strong>：提高现金利率（卖出政府证券），抑制借贷和支出。\n<strong>Transmission mechanism</strong>：利率变化影响经济的路径：现金利率 → 其他利率 → C、I、汇率和净出口 → 总需求 → 产出、就业和通胀。",
+     "numeric": false
+    },
+    {
+     "label": "例 2",
+     "ref": "Tutorial 8 Q1",
+     "question": "What is interest? How is interest regarded differently by (i) savers (ii) borrowers?",
+     "solution": "利率是使用货币的价格。\n(i) 对<strong>储蓄者</strong>：是放弃当前消费和流动性的<strong>报酬</strong>；利率越高越愿意储蓄。\n(ii) 对<strong>借款人</strong>：是借钱的<strong>成本</strong>；利率越高，借款和还款负担越重，越少借。",
+     "parts": [
+      "i",
+      "ii"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 3",
+     "ref": "Tutorial 8 Q2",
+     "question": "(a) Explain the difference between the nominal and the real interest rate. (b) If the nominal rate is 8% and expected inflation is 6%, what is the real rate for a depositor? (c) You lend $10 000 for a year and want a real return of 5%. What nominal rate do you need if you expect inflation of (i) 5% (ii) 1%?",
+     "solution": "(a) 名义利率是标明的利率；实际利率扣除了通胀：实际 = 名义 − 通胀。\n(b) 8% − 6% = <strong>2%</strong>。\n(c) 名义 = 实际 + 预期通胀。(i) 5% + 5% = <strong>10%</strong>（利息 $1 000）；(ii) 5% + 1% = <strong>6%</strong>（利息 $600）。",
+     "answer": "(b) 2% (c)(i) 10% (ii) 6%",
+     "checks": [
+      {
+       "expr": "8-6",
+       "equals": "2"
+      },
+      {
+       "expr": "5+5",
+       "equals": "10"
+      },
+      {
+       "expr": "5+1",
+       "equals": "6"
+      },
+      {
+       "expr": "10000*0.10",
+       "equals": "1000"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    {
+     "label": "例 4",
+     "ref": "Tutorial 8 Q3",
+     "question": "Inflation is stable at 3% and the official interest rate rises from 5% to 7%. (a) What is the effect on the real interest rate? (b) Is this a monetary tightening or easing? (c) Will investment rise or fall?",
+     "solution": "(a) 实际利率从 5% − 3% = 2% 升到 7% − 3% = <strong>4%</strong>。\n(b) <strong>紧缩</strong>。\n(c) 投资<strong>下降</strong>：借款成本上升，更少项目的收益率能超过利率。",
+     "checks": [
+      {
+       "expr": "5-3",
+       "equals": "2"
+      },
+      {
+       "expr": "7-3",
+       "equals": "4"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    {
+     "label": "例 5",
+     "ref": "Tutorial 8 Q4",
+     "question": "A bank charges a 3% premium on home loans and a further 2% on business loans over the cash rate. (a) Complete the table for cash rates of 2%, 4% and 6%. (b) Which loan is regarded as highest risk? (c) How does a rise in the cash rate change the general level of interest rates? (d) Who sets the official cash rate?",
+     "solution": "(a) 房贷 = 现金利率 + 3%；企业贷款 = 房贷 + 2%（见表）。\n(b) <strong>企业贷款</strong>（风险溢价最高）。\n(c) 现金利率上升，银行的资金成本上升，房贷、企业贷款等所有利率<strong>同幅上升</strong>，风险溢价保持不变。\n(d) <strong>澳大利亚储备银行（RBA）</strong>。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "Cash rate of interest",
+        "Home loan rate (+3%)",
+        "Business loan rate (+2% more)"
+       ],
+       "rows": [
+        [
+         "2%",
+         "5%",
+         "7%"
+        ],
+        [
+         "4%",
+         "7%",
+         "9%"
+        ],
+        [
+         "6%",
+         "9%",
+         "11%"
+        ]
+       ],
+       "title": "Question 4(a)"
+      }
+     ],
+     "checks": [
+      {
+       "expr": "4+3",
+       "equals": "7"
+      },
+      {
+       "expr": "6+3+2",
+       "equals": "11"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ]
+    },
+    {
+     "label": "例 6",
+     "ref": "Tutorial 8 Q5",
+     "question": "What are the likely effects of a substantial rise in interest rates on savings, consumption, investment, employment and economic growth, and inflation?",
+     "solution": "<strong>储蓄</strong>：回报提高，储蓄增加。\n<strong>消费</strong>：房贷、信用卡还款增加，可支配收入减少，消费下降（尤其是靠借款购买的耐用品）。\n<strong>投资</strong>：借款成本上升，更多项目不符合投资规则，投资下降。\n<strong>就业和增长</strong>：C、I 下降，总需求减少，企业减产，增长放缓，失业上升；澳元升值也使出口减少。\n<strong>通胀</strong>：需求压力减弱，进口变便宜，通胀下降。",
+     "numeric": false
+    },
+    {
+     "label": "例 7",
+     "ref": "Tutorial 8 Q6",
+     "question": "Define monetary policy. What are some possible goals of monetary policy? What is meant by inflation targeting?",
+     "solution": "<strong>货币政策</strong>：RBA 代表政府影响利率和货币供应、从而影响经济活动的行动。\n<strong>目标</strong>（《储备银行法》）：澳元币值稳定、充分就业、人民的经济繁荣与福利；近年首要目标是维持低通胀下的持续增长。\n<strong>通胀目标制</strong>：央行公开一个通胀目标（澳大利亚为平均每年 2–3%），通过调整现金利率把通胀维持在目标内：通胀高于目标时加息，低于目标或经济疲弱时降息。",
+     "numeric": false
+    },
+    {
+     "label": "例 8",
+     "ref": "Tutorial 8 Q7",
+     "question": "Why might the Reserve Bank decide to ease interest rates?",
+     "solution": "当经济增长放缓、失业上升、通胀低于目标时，RBA 会降息：降低借款成本，鼓励消费和投资，使澳元贬值、增加净出口，提高总需求，减少周期性失业。",
+     "numeric": false
+    },
+    {
+     "label": "例 9",
+     "ref": "Tutorial 8 Q8",
+     "question": "Use an aggregate demand and supply diagram to illustrate the effect of a fall in interest rates.",
+     "solution": "降息使消费和投资增加（以及澳元贬值使净出口增加），AD 从 AD₁ 右移到 AD₂：实际 GDP 从 Y₁ 增加到 Y₂，就业增加，物价从 P₁ 升到 P₂。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        11.5
+       ],
+       "yr": [
+        0,
+        11
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Real GDP",
+       "yLabel": "Price level",
+       "curves": [
+        {
+         "expr": "1.5+4/(10-x)",
+         "dom": [
+          0,
+          9.556
+         ],
+         "color": "red",
+         "label": [
+          8.36,
+          10.1,
+          "AS"
+         ]
+        },
+        {
+         "expr": "6-0.6*x",
+         "dom": [
+          0,
+          10.0
+         ],
+         "color": "navy",
+         "label": [
+          8.8,
+          1.17,
+          "AD₁"
+         ]
+        },
+        {
+         "expr": "7.6-0.6*x",
+         "dom": [
+          0,
+          11.5
+         ],
+         "color": "navy",
+         "label": [
+          9.68,
+          2.24,
+          "AD₂"
+         ],
+         "dash": true
+        }
+       ],
+       "points": [
+        {
+         "x": 5.881,
+         "y": 2.471,
+         "label": ""
+        },
+        {
+         "x": 7.5,
+         "y": 3.1,
+         "label": ""
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          2.471
+         ],
+         "to": [
+          5.881,
+          2.471
+         ]
+        },
+        {
+         "from": [
+          5.881,
+          0
+         ],
+         "to": [
+          5.881,
+          2.471
+         ]
+        },
+        {
+         "from": [
+          0,
+          3.1
+         ],
+         "to": [
+          7.5,
+          3.1
+         ]
+        },
+        {
+         "from": [
+          7.5,
+          0
+         ],
+         "to": [
+          7.5,
+          3.1
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": -0.15,
+         "y": 2.351,
+         "text": "P₁",
+         "anchor": "end",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 5.881,
+         "y": -0.55,
+         "text": "Y₁",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": -0.15,
+         "y": 2.98,
+         "text": "P₂",
+         "anchor": "end",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 7.5,
+         "y": -0.55,
+         "text": "Y₂",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 10,
+         "y": -0.55,
+         "text": "Y_FE",
+         "anchor": "middle",
+         "size": 9,
+         "color": "red"
+        }
+       ],
+       "caption": "Q8: lower interest rates → C and I rise → AD shifts right; real GDP and employment rise, price level rises",
+       "padLeft": 34,
+       "vlines": [
+        {
+         "x": 10,
+         "color": "grey"
+        }
+       ]
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 10",
+     "ref": "Tutorial 8 Q9",
+     "question": "What monetary policy action might a central bank take if: (a) economic growth declines and unemployment rises sharply; (b) credit growth is very high and consumers are getting into heavy debt to invest in property?",
+     "solution": "(a) <strong>宽松</strong>：降低现金利率，刺激借贷、消费和投资，提高总需求和就业。\n(b) <strong>紧缩</strong>：提高现金利率，使借款更贵，抑制信贷增长和房地产投机，降低通胀和资产价格压力。",
+     "parts": [
+      "a",
+      "b"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 11",
+     "ref": "Tutorial 8 Q10",
+     "question": "(a) Explain the time lag associated with monetary policy. (b) Why may monetary policy be of limited use in stimulating an economy out of recession?",
+     "solution": "(a) 利率调整可以立即决定、无需立法，但家庭和企业要过一段时间才改变借贷和支出计划，效果传到增长、就业和通胀通常需要 <strong>6–18 个月</strong>。在这段时间里经济情况可能变化，使原来的政策不再合适。\n(b) 衰退时企业对未来销售和利润悲观，即使利率很低，预期收益率也低，企业不愿借钱投资；家庭担心失业，也不愿借钱消费，而是增加储蓄。投资还需要信心、需求前景、技术等条件，降息只能降低成本，不能创造需求（常说「推绳子」）。利率接近零时也没有再降的空间。",
+     "parts": [
+      "a",
+      "b"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 12",
+     "ref": "Tutorial 8 Summary",
+     "question": "After the tutorial: complete the summary (choose the correct words).",
+     "solution": "通胀是决定利率的主要因素。通胀上升（其他不变）会<strong>提高</strong>利率；放贷人会<strong>提高</strong>名义利率以维持<strong>实际</strong>利率。RBA 负责设定<strong>官方现金利率</strong>。短期内通胀不变而官方现金利率上升，意味着实际利率<strong>上升</strong>，是<strong>货币</strong>政策的<strong>紧缩</strong>。利率上升使借钱购买资本设备的企业还款<strong>增加</strong>，投资<strong>减少</strong>；使消费者房贷还款<strong>增加</strong>，可用于消费的可支配收入<strong>减少</strong>。因此 AD 曲线<strong>左移</strong>，均衡 GDP <strong>降低</strong>，就业<strong>下降</strong>，通胀压力<strong>减小</strong>。",
+     "numeric": false
+    },
+    {
+     "label": "例 13",
+     "ref": "Tutorial 8 Essay",
+     "question": "Practice essay: Under what economic conditions would the central bank tighten monetary policy? Using an AD/AS diagram describe the effect of a rise in interest rates on growth, employment and inflation.",
+     "solution": "中央银行在经济<strong>过热</strong>时收紧货币政策：总需求增长快于生产能力，经济接近充分就业，通胀高于目标（澳大利亚为 2–3%），或信贷和资产价格（如房价）快速上涨、家庭负债过高时。\nRBA 通过卖出政府证券使银行现金减少，现金利率上升，房贷、企业贷款、信用卡利率随之上升。家庭还款增加、储蓄回报提高，消费下降；企业借款成本上升，投资下降；高利率吸引外资使澳元升值，净出口减少。\n在 AD–AS 图中，C、I、(X − M) 下降使 AD 左移（见图）。<strong>增长</strong>放缓：均衡实际 GDP 减少。<strong>就业</strong>下降：企业减产少雇人，周期性失业上升。<strong>通胀</strong>下降：需求压力减弱，进口品变便宜，物价水平上升放缓。\n由于政策有 6–18 个月的时滞，央行通常在通胀明显上升之前就开始加息；加息过度则可能导致衰退。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        11.5
+       ],
+       "yr": [
+        0,
+        11
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Real GDP",
+       "yLabel": "Price level",
+       "curves": [
+        {
+         "expr": "1.5+4/(10-x)",
+         "dom": [
+          0,
+          9.556
+         ],
+         "color": "red",
+         "label": [
+          8.36,
+          10.1,
+          "AS"
+         ]
+        },
+        {
+         "expr": "10.5-0.6*x",
+         "dom": [
+          0,
+          11.5
+         ],
+         "color": "navy",
+         "label": [
+          9.68,
+          5.14,
+          "AD₁"
+         ]
+        },
+        {
+         "expr": "9-0.6*x",
+         "dom": [
+          0,
+          11.5
+         ],
+         "color": "navy",
+         "label": [
+          9.68,
+          3.64,
+          "AD₂"
+         ],
+         "dash": true
+        }
+       ],
+       "points": [
+        {
+         "x": 8.906,
+         "y": 5.156,
+         "label": ""
+        },
+        {
+         "x": 8.381,
+         "y": 3.971,
+         "label": ""
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          5.156
+         ],
+         "to": [
+          8.906,
+          5.156
+         ]
+        },
+        {
+         "from": [
+          8.906,
+          0
+         ],
+         "to": [
+          8.906,
+          5.156
+         ]
+        },
+        {
+         "from": [
+          0,
+          3.971
+         ],
+         "to": [
+          8.381,
+          3.971
+         ]
+        },
+        {
+         "from": [
+          8.381,
+          0
+         ],
+         "to": [
+          8.381,
+          3.971
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": -0.15,
+         "y": 5.036,
+         "text": "P₁",
+         "anchor": "end",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 8.906,
+         "y": -0.55,
+         "text": "Y₁",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": -0.15,
+         "y": 3.851,
+         "text": "P₂",
+         "anchor": "end",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 8.381,
+         "y": -0.55,
+         "text": "Y₂",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 10,
+         "y": -0.55,
+         "text": "Y_FE",
+         "anchor": "middle",
+         "size": 9,
+         "color": "red"
+        }
+       ],
+       "caption": "Higher interest rates: AD shifts left; growth slows, employment falls, inflation pressure eases",
+       "padLeft": 34,
+       "vlines": [
+        {
+         "x": 10,
+         "color": "grey"
+        }
+       ]
+      }
+     ],
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "实际利率算成名义 + 通胀。",
+    "(c) 中想要的名义利率用实际 − 通胀。",
+    "把货币政策的时滞说成「需要议会通过」：货币政策可以立即调整，时滞在于效果。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么第 4 题企业贷款比房贷风险高？",
+     "a": "房贷有房产作抵押，违约时银行可以收回房屋；企业贷款更依赖企业的经营状况，违约风险更高，所以多加 2% 的风险溢价。"
+    }
+   ]
+  },
+  {
+   "title": "Unit 9 讲座：政府预算与财政政策",
+   "sources": [
+    {
+     "file": "unit9 PPT the government budget and fiscal policy.pdf",
+     "pages": "p1–28"
+    },
+    {
+     "file": "unit9 TG the government budget and fiscal policy.pdf",
+     "pages": "p2"
+    }
+   ],
+   "concept": "<strong>财政政策</strong>：用政府支出（G）和税收（T）影响经济活动的水平和性质，在每年 5 月的联邦预算中实施。<strong>预算</strong>说明下一财年预计的 G 和 T，包括近期经济表现、政策立场、具体措施和预期效果。\n<strong>稳定经济</strong>：AD = C + I + G + (X − M)。繁荣（通胀）时用<strong>盈余</strong>（T > G）压低产出、支出和收入；衰退（失业）时用<strong>赤字</strong>（G > T）提高它们。\n<strong>结构性（相机、计划）部分</strong>：政府对 T 和 G 的主动决定。<strong>周期性（非计划）部分</strong>：经济活动变化自动改变 T 和 G，即<strong>自动稳定器</strong>（累进所得税、社会保障）：下行时福利支出 ↑、税收 ↓；增长时税收 ↑、福利支出 ↓，减小经济周期的波动。\n<strong>赤字的融资</strong>（公共部门借款需求 PSBR，增加公共债务）：①向国内借款：如果完全由储蓄融资不引起通胀，但会<strong>挤出</strong>私人借款、推高利率；②向海外借款：增加外债，可能使澳元升值；③向 RBA 借款（印钞）：钱多货少，<strong>最具通胀性</strong>。\n赤字的好处：凯恩斯主义的需求注入加乘数效应，应在低于充分就业时使用。坏处：可能引起通胀、挤出私人部门、推高利率、增加进口恶化贸易差额、为将来积累债务。<strong>盈余</strong>在繁荣时使用，可增加国民储蓄：冻结盈余（不让资金流通）、偿还公共债务（回购证券）、偿还外债。长期目标是在整个周期内盈亏相抵。\n<strong>优点</strong>：可针对特定地区、行业、群体，影响较快。<strong>缺点</strong>：受政治影响、调整机会少（一年一次预算）导致反应滞后、效果难以预测。",
+   "figures": [
+    {
+     "type": "plot",
+     "xr": [
+      0,
+      13
+     ],
+     "yr": [
+      -1,
+      5
+     ],
+     "width": 300,
+     "height": 240,
+     "xLabel": "Time",
+     "yLabel": "GDP growth (%)",
+     "curves": [
+      {
+       "expr": "2+2.2*sin(x)",
+       "color": "red",
+       "dom": [
+        0,
+        12.5
+       ],
+       "label": [
+        9.6,
+        4.6,
+        "without stabilisers"
+       ],
+       "dash": true
+      },
+      {
+       "expr": "2+1.1*sin(x)",
+       "color": "navy",
+       "dom": [
+        0,
+        12.5
+       ],
+       "label": [
+        9.5,
+        0.4,
+        "with stabilisers"
+       ]
+      }
+     ],
+     "caption": "Automatic stabilisers reduce the swings in GDP growth"
+    }
+   ],
+   "examples": [
+    {
+     "label": "例 14",
+     "ref": "Lecture 9 Fiscal Policy",
+     "question": "What is fiscal policy and what does the Budget contain?",
+     "solution": "财政政策是用政府支出（G）和税收收入（T）影响经济活动水平和性质的政策，澳大利亚在每年 5 月的联邦预算中公布实施。预算列出下一财年预计的 G 和 T，并说明近期经济表现和问题、政策的总体立场、具体措施和预期效果。",
+     "numeric": false
+    },
+    {
+     "label": "例 15",
+     "ref": "Lecture 9 Functions",
+     "question": "How is fiscal policy used to stabilise the economy?",
+     "solution": "财政政策通过改变 AD = C + I + G + (X − M) 中的 G（以及通过 T 影响 C、I）来熨平总需求的波动。繁荣时的问题是通胀，用<strong>预算盈余</strong>（减支出、加税）降低产出、支出和收入；衰退时的问题是失业，用<strong>预算赤字</strong>（增支出、减税）提高它们。",
+     "numeric": false
+    },
+    {
+     "label": "例 16",
+     "ref": "Lecture 9 Structural and Cyclical",
+     "question": "Distinguish the structural and cyclical components of the budget. How do automatic stabilisers work?",
+     "solution": "<strong>结构性部分</strong>：政府有意做出的税收和支出决定，用来影响经济、实现目标，在年度预算中宣布。<strong>周期性部分</strong>：经济活动变化自动带来的 T 和 G 变化。\n<strong>自动稳定器</strong>（累进所得税、社会保障）已内置在现有制度中：经济下行时失业增加，福利支出自动上升，收入和利润减少使税收自动下降，预算趋向赤字，支撑了需求；经济增长时税收自动上升、福利支出下降，预算趋向盈余，抑制了需求。这样经济周期的波动变小（见图）。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        13
+       ],
+       "yr": [
+        -1,
+        5
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "Time",
+       "yLabel": "GDP growth (%)",
+       "curves": [
+        {
+         "expr": "2+2.2*sin(x)",
+         "color": "red",
+         "dom": [
+          0,
+          12.5
+         ],
+         "label": [
+          9.6,
+          4.6,
+          "without stabilisers"
+         ],
+         "dash": true
+        },
+        {
+         "expr": "2+1.1*sin(x)",
+         "color": "navy",
+         "dom": [
+          0,
+          12.5
+         ],
+         "label": [
+          9.5,
+          0.4,
+          "with stabilisers"
+         ]
+        }
+       ],
+       "caption": "Automatic stabilisers reduce the swings in GDP growth"
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 17",
+     "ref": "Lecture 9 Financing",
+     "question": "How can a budget deficit be financed, and what are the consequences of each method?",
+     "solution": "赤字（G > T）的差额要靠借款弥补，这就是<strong>公共部门借款需求</strong>（PSBR，包括联邦、州、地方政府和政府企业），会增加公共债务。三种方式：\n①<strong>向国内借款</strong>（卖国债）：完全由国内储蓄融资时不引起通胀，但政府占用了一部分国内储蓄，企业可借的资金减少，争夺资金推高利率，<strong>挤出</strong>私人投资。\n②<strong>向海外借款</strong>：增加外债，外资流入可能使澳元升值，损害出口。\n③<strong>向 RBA 借款</strong>（印钞）：钱多货少，<strong>通胀性最强</strong>。",
+     "numeric": false
+    },
+    {
+     "label": "例 18",
+     "ref": "Lecture 9 Deficit",
+     "question": "What are the positive and negative aspects of a budget deficit? Illustrate with AD/AS diagrams.",
+     "solution": "<strong>好处</strong>（凯恩斯）：赤字是需求注入，加上乘数效应，能刺激经济活动；应在经济低于充分就业时使用。在 AS 的平坦段，AD 右移主要提高产出和就业，通胀很小（左图）。\n<strong>坏处</strong>：AD 增加过多（或用印钞融资）会引起通胀，经济接近充分就业时尤其如此（右图）；政府部门扩大挤出私人部门；借款增加推高利率；需求增加使进口增加，贸易差额恶化；为将来积累债务。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        11.5
+       ],
+       "yr": [
+        0,
+        11
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Real GDP",
+       "yLabel": "Price level",
+       "curves": [
+        {
+         "expr": "1.5+4/(10-x)",
+         "dom": [
+          0,
+          9.556
+         ],
+         "color": "red",
+         "label": [
+          8.36,
+          10.1,
+          "AS"
+         ]
+        },
+        {
+         "expr": "5-0.6*x",
+         "dom": [
+          0,
+          8.333
+         ],
+         "color": "navy",
+         "label": [
+          7.33,
+          1.05,
+          "AD₁"
+         ]
+        },
+        {
+         "expr": "7.2-0.6*x",
+         "dom": [
+          0,
+          11.5
+         ],
+         "color": "navy",
+         "label": [
+          9.68,
+          1.84,
+          "AD₂"
+         ],
+         "dash": true
+        }
+       ],
+       "points": [
+        {
+         "x": 4.599,
+         "y": 2.241,
+         "label": ""
+        },
+        {
+         "x": 7.156,
+         "y": 2.906,
+         "label": ""
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          2.241
+         ],
+         "to": [
+          4.599,
+          2.241
+         ]
+        },
+        {
+         "from": [
+          4.599,
+          0
+         ],
+         "to": [
+          4.599,
+          2.241
+         ]
+        },
+        {
+         "from": [
+          0,
+          2.906
+         ],
+         "to": [
+          7.156,
+          2.906
+         ]
+        },
+        {
+         "from": [
+          7.156,
+          0
+         ],
+         "to": [
+          7.156,
+          2.906
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": -0.15,
+         "y": 2.121,
+         "text": "P₁",
+         "anchor": "end",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 4.599,
+         "y": -0.55,
+         "text": "Y₁",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": -0.15,
+         "y": 2.786,
+         "text": "P₂",
+         "anchor": "end",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 7.156,
+         "y": -0.55,
+         "text": "Y₂",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 10,
+         "y": -0.55,
+         "text": "Y_FE",
+         "anchor": "middle",
+         "size": 9,
+         "color": "red"
+        }
+       ],
+       "caption": "Deficit in the Keynesian range: output and employment rise a lot, little inflation",
+       "padLeft": 34,
+       "vlines": [
+        {
+         "x": 10,
+         "color": "grey"
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        11.5
+       ],
+       "yr": [
+        0,
+        11
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Real GDP",
+       "yLabel": "Price level",
+       "curves": [
+        {
+         "expr": "1.5+4/(10-x)",
+         "dom": [
+          0,
+          9.556
+         ],
+         "color": "red",
+         "label": [
+          8.36,
+          10.1,
+          "AS"
+         ]
+        },
+        {
+         "expr": "10-0.6*x",
+         "dom": [
+          0,
+          11.5
+         ],
+         "color": "navy",
+         "label": [
+          9.68,
+          4.64,
+          "AD₁"
+         ]
+        },
+        {
+         "expr": "12.2-0.6*x",
+         "dom": [
+          0,
+          11.5
+         ],
+         "color": "navy",
+         "label": [
+          9.68,
+          6.84,
+          "AD₂"
+         ],
+         "dash": true
+        }
+       ],
+       "points": [
+        {
+         "x": 8.766,
+         "y": 4.741,
+         "label": ""
+        },
+        {
+         "x": 9.226,
+         "y": 6.665,
+         "label": ""
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          4.741
+         ],
+         "to": [
+          8.766,
+          4.741
+         ]
+        },
+        {
+         "from": [
+          8.766,
+          0
+         ],
+         "to": [
+          8.766,
+          4.741
+         ]
+        },
+        {
+         "from": [
+          0,
+          6.665
+         ],
+         "to": [
+          9.226,
+          6.665
+         ]
+        },
+        {
+         "from": [
+          9.226,
+          0
+         ],
+         "to": [
+          9.226,
+          6.665
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": -0.15,
+         "y": 4.6209999999999996,
+         "text": "P₁",
+         "anchor": "end",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 8.766,
+         "y": -0.55,
+         "text": "Y₁",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": -0.15,
+         "y": 6.545,
+         "text": "P₂",
+         "anchor": "end",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 10,
+         "y": -0.55,
+         "text": "Y_FE",
+         "anchor": "middle",
+         "size": 9,
+         "color": "red"
+        }
+       ],
+       "caption": "Deficit near full employment: mainly higher prices (inflation)",
+       "padLeft": 34,
+       "vlines": [
+        {
+         "x": 10,
+         "color": "grey"
+        }
+       ]
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 19",
+     "ref": "Lecture 9 Surplus",
+     "question": "When is a budget surplus used and what can be done with it? What is a budget-neutral trade cycle?",
+     "solution": "经济活动高于期望水平（繁荣、通胀压力大）时用盈余，也可以用来增加国民储蓄。盈余可以：①<strong>冻结</strong>，让多余资金不在经济中流通；②<strong>偿还国内公共债务</strong>（从私人部门回购证券）；③<strong>偿还外债</strong>。\n<strong>周期内预算中性</strong>：长期目标是需要时用盈余、需要时用赤字，在整个经济周期内盈亏相互抵消。",
+     "numeric": false
+    },
+    {
+     "label": "例 20",
+     "ref": "Lecture 9 Strengths",
+     "question": "What are the strengths and weaknesses of fiscal policy?",
+     "solution": "<strong>优点</strong>：是一种「锋利」的工具，可以针对特定地区、行业或群体；影响能较快感受到。\n<strong>缺点</strong>：受政治影响（反对党可能阻挠，执政党可能为争取选票而错配资金）；调整机会少（一年一次预算），对经济下行的反应可能滞后；经济复杂、存在时滞、人们的预期和反应难以预测，确切效果难以估计。",
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "把周期性赤字和结构性赤字混为一谈：前者是经济变化自动造成的，后者是政府主动决定的。",
+    "说赤字一定引起通胀：取决于经济是否接近充分就业和融资方式。",
+    "说自动稳定器需要政府每次决定：它们是自动起作用的。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么政府计划了盈余，结果却出现赤字？",
+     "a": "经济意外放缓时，自动稳定器使税收减少、福利支出增加（周期性部分），即使结构性部分没变，预算也会转为赤字。这正是第 11 周 Unit 9 Tutorial 第 4 题的内容。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "题型",
+   "做法",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "实际 / 名义利率",
+    "实际 = 名义 − 通胀；想要的名义 = 实际 + 通胀",
+    "例 3、4"
+   ],
+   [
+    "风险溢价表",
+    "房贷 = 现金 + 3%，企业 = 房贷 + 2%",
+    "例 5"
+   ],
+   [
+    "加息 / 降息影响",
+    "储蓄、C、I、就业、增长、通胀逐项写",
+    "例 6、13"
+   ],
+   [
+    "财政政策方向",
+    "繁荣用盈余，衰退用赤字",
+    "例 15"
+   ],
+   [
+    "结构性 vs 周期性",
+    "主动决定 vs 自动稳定器",
+    "例 16"
+   ],
+   [
+    "赤字融资",
+    "国内（挤出）、海外（外债）、RBA（通胀）",
+    "例 17"
+   ]
+  ]
+ },
+ "practice": "讲座结尾：完成本周 Learning Guide 题目、小测和写作练习。Unit 9 Tutorial 的答案见第 11 周。"
+}

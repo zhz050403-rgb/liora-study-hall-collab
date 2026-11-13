@@ -1,0 +1,1022 @@
+{
+ "course": "mathematics",
+ "term": "term1",
+ "week": 1,
+ "title": "Basic Algebra, Surds & Equations · 基础代数、根式与方程",
+ "files": [
+  "L01_Basic_Algebra.pdf",
+  "L02_Surds_and_Indices.pdf",
+  "L03_Equations.pdf"
+ ],
+ "inventory": [
+  "L1 Ex 1",
+  "L1 Ex 2",
+  "L1 Ex 3",
+  "L1 Ex 4",
+  "L1 Ex 5",
+  "L1 Ex 6",
+  "L2 Ex 1",
+  "L2 Ex 2",
+  "L2 Ex 3",
+  "L2 Ex 4",
+  "L2 Ex 5",
+  "L2 Ex 6",
+  "L2 Ex 7",
+  "L2 Ex 8",
+  "L3 Ex 1",
+  "L3 Ex 2",
+  "L3 Ex 3",
+  "L3 Ex 4",
+  "L3 Ex 5",
+  "L3 Ex 6",
+  "L3 Ex 7",
+  "L3 Ex 8",
+  "L3 Ex 9",
+  "L3 Ex 10"
+ ],
+ "intro": [
+  "第 1 周复习代数基本功：代入求值、去括号、四种因式分解、代数分式（L1）；根式化简和分母有理化、指数律、指数方程（L2）；一次方程和不等式、二次方程的四种解法、联立方程、绝对值方程和不等式（L3）。讲义 24 组例题逐题讲解，每个化简结果都用代入数值的方法由程序核对。"
+ ],
+ "sections": [
+  {
+   "title": "代入、合并同类项、展开（L1 Simplifying & Expanding）",
+   "sources": [
+    {
+     "file": "L01_Basic_Algebra.pdf",
+     "pages": "p1"
+    }
+   ],
+   "concept": "<strong>代入求值</strong>：负数代入时加括号，先算乘方再算乘除。<strong>合并同类项</strong>：字母和指数完全相同的项才能合并（3y² 和 y² 是同类项，x 和 y² 不是）。<strong>展开</strong>：括号前是负号时，括号内每一项都变号。",
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "L1 Ex 1",
+     "question": "If x = 8, y = −4, z = −3, evaluate: (a) −3z²  (b) {{frac xy + 2|2z}}",
+     "solution": "(a) z² = (−3)² = 9，所以 −3z² = −27（先平方再乘 −3，不是 (−3z)²）。\n(b) xy + 2 = 8 × (−4) + 2 = −30，2z = −6，结果 (−30) ÷ (−6) = 5。",
+     "answer": "(a) −27  (b) 5",
+     "checks": [
+      {
+       "expr": "-3*(-3)^2",
+       "equals": "-27"
+      },
+      {
+       "expr": "(8*(-4)+2)/(2*(-3))",
+       "equals": "5"
+      }
+     ]
+    },
+    {
+     "label": "例 2",
+     "ref": "L1 Ex 2",
+     "question": "Simplify: (a) 3a + 5a − a + 4a  (b) 2x + 3y² − 5x + y²",
+     "solution": "(a) 3 + 5 − 1 + 4 = 11，结果 11a。\n(b) x 项：2x − 5x = −3x；y² 项：3y² + y² = 4y²。结果 −3x + 4y²。",
+     "answer": "(a) 11a  (b) 4y² − 3x",
+     "checks": [
+      {
+       "expr": "3*2+5*2-2+4*2",
+       "equals": "11*2"
+      },
+      {
+       "expr": "2*3+3*4^2-5*3+4^2",
+       "equals": "-3*3+4*4^2"
+      }
+     ]
+    },
+    {
+     "label": "例 3",
+     "ref": "L1 Ex 3",
+     "question": "Expand and simplify: (a) 2(2x + 3) − (x − 5)  (b) (a + 3b)(2a − 3b)",
+     "solution": "(a) 4x + 6 − x + 5 = 3x + 11（−(x − 5) = −x + 5）。\n(b) 逐项相乘：2a² − 3ab + 6ab − 9b² = 2a² + 3ab − 9b²。",
+     "answer": "(a) 3x + 11  (b) 2a² + 3ab − 9b²",
+     "checks": [
+      {
+       "expr": "2*(2*7+3)-(7-5)",
+       "equals": "3*7+11"
+      },
+      {
+       "expr": "(2+3*5)*(2*2-3*5)",
+       "equals": "2*2^2+3*2*5-9*5^2"
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "−3z² 算成 (−3z)²。",
+    "−(x − 5) 写成 −x − 5。"
+   ],
+   "faqs": [
+    {
+     "q": "怎么检查化简对不对？",
+     "a": "随便代一个数进原式和结果，两边相等就基本没错（本页的核对就是这样做的）。"
+    }
+   ]
+  },
+  {
+   "title": "因式分解与代数分式（L1 Factorisation & Algebraic Fractions）",
+   "sources": [
+    {
+     "file": "L01_Basic_Algebra.pdf",
+     "pages": "p2–5"
+    }
+   ],
+   "concept": "四种因式分解：①<strong>提公因式</strong> ab + ac = a(b + c)；②<strong>平方差</strong> a² − b² = (a − b)(a + b)；③<strong>分组</strong> ax + ay + bx + by = (a + b)(x + y)；④<strong>二次三项式</strong> x² + (m + n)x + mn = (x + m)(x + n)，首项系数不是 1 时用十字相乘。\n<strong>检查顺序</strong>：①先找公因式；②两项看平方差；③三项看二次三项式；④四项及以上用分组。常要连用两种以上。\n<strong>代数分式</strong>：化简时先把分子分母分解，再约去公因式；加减时先通分（公分母）。",
+   "formulas": [
+    "a² − b² = (a − b)(a + b)　　x² + (m + n)x + mn = (x + m)(x + n)"
+   ],
+   "examples": [
+    {
+     "label": "例 4",
+     "ref": "L1 Ex 4",
+     "question": "Factorise: (a) 2x² + 6x  (b) 8b − 80c − b² + 10bc  (c) 9y² − 16  (d) x² − 4x − 12  (e) 2x² − 5x − 12  (f) x² + 2x + 1 − y²",
+     "solution": "(a) 公因式 2x：2x(x + 3)。\n(b) 四项用分组：(8b − b²) + (10bc − 80c) = b(8 − b) − 10c(8 − b) = (8 − b)(b − 10c)。\n(c) 平方差：(3y)² − 4² = (3y − 4)(3y + 4)。\n(d) 找积为 −12、和为 −4 的两数：−6 和 2，(x − 6)(x + 2)。\n(e) 十字相乘：2x² − 5x − 12 = (2x + 3)(x − 4)，检查 2x·(−4) + 3·x = −5x。\n(f) 前三项是完全平方：(x + 1)² − y² = (x + 1 − y)(x + 1 + y)。",
+     "answer": "(a) 2x(x+3) (b) (8−b)(b−10c) (c) (3y−4)(3y+4) (d) (x−6)(x+2) (e) (2x+3)(x−4) (f) (x+1−y)(x+1+y)",
+     "checks": [
+      {
+       "expr": "8*3-80*2-3^2+10*3*2",
+       "equals": "(8-3)*(3-10*2)"
+      },
+      {
+       "expr": "9*5^2-16",
+       "equals": "(3*5-4)*(3*5+4)"
+      },
+      {
+       "expr": "2*7^2-5*7-12",
+       "equals": "(2*7+3)*(7-4)"
+      },
+      {
+       "expr": "4^2+2*4+1-3^2",
+       "equals": "(4+1-3)*(4+1+3)"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+     ]
+    },
+    {
+     "label": "例 5",
+     "ref": "L1 Ex 5",
+     "question": "Simplify: (a) {{frac 5a²|15ab}}  (b) {{frac 5a − 15|a² − 9}}  (c) {{frac x² + 3x + 2|x² + 5x + 6}}  (d) {{frac 3m − 6|4}} × {{frac 8m|2m − m²}}  (e) {{frac 5|3y²}} ÷ {{frac 2|3y}}",
+     "solution": "(a) 约去 5a：{{frac a|3b}}。\n(b) 5(a − 3) ÷ [(a − 3)(a + 3)] = {{frac 5|a + 3}}。\n(c) (x + 1)(x + 2) ÷ [(x + 2)(x + 3)] = {{frac x + 1|x + 3}}。\n(d) 3(m − 2)/4 × 8m/[m(2 − m)]：m − 2 = −(2 − m)，约分得 3 × 8 × (−1)/4 = −6。\n(e) 除以分式等于乘倒数：{{frac 5|3y²}} × {{frac 3y|2}} = {{frac 5|2y}}。",
+     "answer": "(a) a/(3b) (b) 5/(a+3) (c) (x+1)/(x+3) (d) −6 (e) 5/(2y)",
+     "checks": [
+      {
+       "expr": "5*2^2/(15*2*3)",
+       "equals": "2/(3*3)"
+      },
+      {
+       "expr": "(5*4-15)/(4^2-9)",
+       "equals": "5/(4+3)"
+      },
+      {
+       "expr": "(3^2+3*3+2)/(3^2+5*3+6)",
+       "equals": "(3+1)/(3+3)"
+      },
+      {
+       "expr": "(3*5-6)/4*(8*5)/(2*5-5^2)",
+       "equals": "-6"
+      },
+      {
+       "expr": "5/(3*2^2)/(2/(3*2))",
+       "equals": "5/(2*2)"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+     ]
+    },
+    {
+     "label": "例 6",
+     "ref": "L1 Ex 6",
+     "question": "Simplify: (a) {{frac x + 3|4}} − {{frac x − 1|7}}  (b) {{frac 5y|18}} − {{frac y|28}} + {{frac y|52}}  (c) {{frac 2x²|3x + 3y}} − {{frac 2x³|x² + xy}}  (d) {{frac 2|x² − 1}} − {{frac 1|x² − x}} + {{frac x − 1|x² + x}}",
+     "solution": "(a) 公分母 28：[7(x + 3) − 4(x − 1)]/28 = {{frac 3x + 25|28}}。\n(b) 18 = 2·3²，28 = 2²·7，52 = 2²·13，最小公分母 2²·3²·7·13 = 3 276：(910y − 117y + 63y)/3 276 = 856y/3 276 = {{frac 214y|819}}。\n(c) 第二项约分：2x³/[x(x + y)] = 2x²/(x + y)；通分：[2x² − 6x²]/[3(x + y)] = {{frac −4x²|3(x + y)}}。\n(d) 分母分解为 (x − 1)(x + 1)、x(x − 1)、x(x + 1)，公分母 x(x − 1)(x + 1)：分子 2x − (x + 1) + (x − 1)² = x² − x = x(x − 1)，约分得 {{frac 1|x + 1}}。",
+     "answer": "(a) (3x+25)/28 (b) 214y/819 (c) −4x²/(3(x+y)) (d) 1/(x+1)",
+     "checks": [
+      {
+       "expr": "(5+3)/4-(5-1)/7",
+       "equals": "(3*5+25)/28"
+      },
+      {
+       "expr": "5*7/18-7/28+7/52",
+       "equals": "214*7/819",
+       "tol": 1e-09
+      },
+      {
+       "expr": "2*2^2/(3*2+3*5)-2*2^3/(2^2+2*5)",
+       "equals": "-4*2^2/(3*(2+5))"
+      },
+      {
+       "expr": "2/(3^2-1)-1/(3^2-3)+(3-1)/(3^2+3)",
+       "equals": "1/(3+1)"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ]
+    }
+   ],
+   "mistakes": [
+    "分式化简时约去「项」而不是「因式」：(x + 2)/(x + 3) 不能约。",
+    "2m − m² 分解成 m(2 − m) 后忘了与 (m − 2) 差一个负号。",
+    "通分时只乘分母不乘分子。"
+   ],
+   "faqs": [
+    {
+     "q": "十字相乘找不到怎么办？",
+     "a": "用二次公式求出两根 r₁、r₂，ax² + bx + c = a(x − r₁)(x − r₂)。"
+    }
+   ]
+  },
+  {
+   "title": "根式与分母有理化（L2 Surds）",
+   "sources": [
+    {
+     "file": "L02_Surds_and_Indices.pdf",
+     "pages": "p1–2"
+    }
+   ],
+   "concept": "a ≥ 0、b ≥ 0 时：(√a)² = √(a²) = a；√a × √b = √(ab)；√a ÷ √b = √(a/b)；√(a²b) = a√b。\n化简根式：把被开方数里最大的完全平方因数开出来（√20 = 2√5）。只有同类根式才能加减。\n<strong>分母有理化</strong>：分母是 √b 时上下乘 √b；分母是 a + √b 时上下乘共轭 a − √b，利用 (a + √b)(a − √b) = a² − b。",
+   "examples": [
+    {
+     "label": "例 7",
+     "ref": "L2 Ex 1",
+     "question": "Simplify: (a) √8 − √2  (b) √20 − 2√45  (c) 3√242  (d) √3 − √9 − √27 + √81  (e) (√3 − √2)²  (f) (√5 + 2√2)(√5 − 3√2)",
+     "solution": "先把每个根式化成最简（开出平方因数），再合并同类根式。\n(a) 2√2 − √2 = √2。\n(b) 2√5 − 2 × 3√5 = −4√5。\n(c) 242 = 121 × 2，3 × 11√2 = 33√2。\n(d) √3 − 3 − 3√3 + 9 = 6 − 2√3。\n(e) 3 − 2√6 + 2 = 5 − 2√6。\n(f) 5 − 3√10 + 2√10 − 6 × 2 = −7 − √10。",
+     "answer": "(a) √2 (b) −4√5 (c) 33√2 (d) 6 − 2√3 (e) 5 − 2√6 (f) −7 − √10",
+     "checks": [
+      {
+       "expr": "sqrt(8)-sqrt(2)",
+       "equals": "sqrt(2)",
+       "tol": 1e-09
+      },
+      {
+       "expr": "sqrt(20)-2*sqrt(45)",
+       "equals": "-4*sqrt(5)",
+       "tol": 1e-09
+      },
+      {
+       "expr": "3*sqrt(242)",
+       "equals": "33*sqrt(2)",
+       "tol": 1e-09
+      },
+      {
+       "expr": "sqrt(3)-sqrt(9)-sqrt(27)+sqrt(81)",
+       "equals": "6-2*sqrt(3)",
+       "tol": 1e-09
+      },
+      {
+       "expr": "(sqrt(3)-sqrt(2))^2",
+       "equals": "5-2*sqrt(6)",
+       "tol": 1e-09
+      },
+      {
+       "expr": "(sqrt(5)+2*sqrt(2))*(sqrt(5)-3*sqrt(2))",
+       "equals": "-7-sqrt(10)",
+       "tol": 1e-09
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+     ]
+    },
+    {
+     "label": "例 8",
+     "ref": "L2 Ex 2",
+     "question": "Rationalise the denominator: (a) {{frac 5|2√3}}  (b) {{frac 1|√3 + 5}}  (c) {{frac √2 + 1|√2 − 1}}",
+     "solution": "(a) 上下乘 √3：{{frac 5√3|6}}。\n(b) 上下乘 5 − √3：(5 − √3)/(25 − 3) = {{frac 5 − √3|22}}。\n(c) 上下乘 √2 + 1：(√2 + 1)²/(2 − 1) = 3 + 2√2。",
+     "answer": "(a) 5√3/6 (b) (5 − √3)/22 (c) 3 + 2√2",
+     "checks": [
+      {
+       "expr": "5/(2*sqrt(3))",
+       "equals": "5*sqrt(3)/6",
+       "tol": 1e-09
+      },
+      {
+       "expr": "1/(sqrt(3)+5)",
+       "equals": "(5-sqrt(3))/22",
+       "tol": 1e-09
+      },
+      {
+       "expr": "(sqrt(2)+1)/(sqrt(2)-1)",
+       "equals": "3+2*sqrt(2)",
+       "tol": 1e-09
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    {
+     "label": "例 9",
+     "ref": "L2 Ex 3",
+     "question": "Find integers p and q if p − √q = (5√2 − 4√3)(3√2 − 2√3).",
+     "solution": "展开：5√2 × 3√2 = 30；5√2 × (−2√3) = −10√6；−4√3 × 3√2 = −12√6；−4√3 × (−2√3) = 24。合计 54 − 22√6 = 54 − √(484 × 6) = 54 − √2 904。所以 p = 54，q = 2 904。",
+     "answer": "p = 54, q = 2904",
+     "checks": [
+      {
+       "expr": "(5*sqrt(2)-4*sqrt(3))*(3*sqrt(2)-2*sqrt(3))",
+       "equals": "54-sqrt(2904)",
+       "tol": 1e-09
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "√a + √b 写成 √(a + b)。",
+    "有理化时只乘分母。",
+    "(√3 − √2)² 漏掉中间项 −2√6。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么要把 22√6 写成 √2 904？",
+     "a": "题目要求 p − √q 的形式，q 必须是根号里的整数：22√6 = √(22² × 6)。"
+    }
+   ]
+  },
+  {
+   "title": "指数律与指数方程（L2 Indices）",
+   "sources": [
+    {
+     "file": "L02_Surds_and_Indices.pdf",
+     "pages": "p3–5"
+    }
+   ],
+   "concept": "aⁿ 中 a 是<strong>底数</strong>，n 是<strong>指数</strong>。指数律：aᵐ × aⁿ = aᵐ⁺ⁿ；aᵐ ÷ aⁿ = aᵐ⁻ⁿ；(aᵐ)ⁿ = aᵐⁿ；(ab)ᵐ = aᵐbᵐ；(a/b)ᵐ = aᵐ/bᵐ；a⁰ = 1；a<sup>−m</sup> = 1/aᵐ；a<sup>1/n</sup> = ⁿ√a；a<sup>m/n</sup> = (ⁿ√a)ᵐ = ⁿ√(aᵐ)。\n<strong>指数方程</strong>：如果 aᵐ = aⁿ（a > 0，a ≠ 1），那么 m = n——先把两边化成同一个底数。",
+   "examples": [
+    {
+     "label": "例 10",
+     "ref": "L2 Ex 4",
+     "question": "Simplify: (a) x⁶ × x⁷ ÷ x³  (b) (x⁸)³  (c) {{frac 8y × (2y²)³|16y³ × y⁵}}  (d) {{frac 12<sup>m+1</sup> × 2<sup>2m</sup>|18<sup>m</sup>}}",
+     "solution": "(a) x<sup>6+7−3</sup> = x¹⁰。\n(b) x²⁴。\n(c) 分子 8y × 8y⁶ = 64y⁷，分母 16y⁸，结果 4/y。\n(d) 化成质数底：12 = 2²·3，18 = 2·3²。分子 2<sup>2m+2</sup>·3<sup>m+1</sup>·2<sup>2m</sup> = 2<sup>4m+2</sup>·3<sup>m+1</sup>，分母 2<sup>m</sup>·3<sup>2m</sup>，结果 2<sup>3m+2</sup>·3<sup>1−m</sup>。",
+     "answer": "(a) x¹⁰ (b) x²⁴ (c) 4/y (d) 2^(3m+2)·3^(1−m)",
+     "checks": [
+      {
+       "expr": "2^6*2^7/2^3",
+       "equals": "2^10"
+      },
+      {
+       "expr": "8*3*(2*3^2)^3/(16*3^3*3^5)",
+       "equals": "4/3",
+       "tol": 1e-09
+      },
+      {
+       "expr": "12^(2+1)*2^(2*2)/18^2",
+       "equals": "2^(3*2+2)*3^(1-2)",
+       "tol": 1e-06
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ]
+    },
+    {
+     "label": "例 11",
+     "ref": "L2 Ex 5",
+     "question": "Write without negative indices: (a) 2x⁻³  (b) (2x)⁻³  (c) ({{frac x + y|x − y}})⁻¹",
+     "solution": "(a) 只有 x 带负指数：{{frac 2|x³}}。\n(b) 整个 2x 带负指数：{{frac 1|8x³}}。\n(c) 倒数：{{frac x − y|x + y}}。",
+     "answer": "(a) 2/x³ (b) 1/(8x³) (c) (x − y)/(x + y)",
+     "checks": [
+      {
+       "expr": "2*3^(-3)",
+       "equals": "2/27",
+       "tol": 1e-12
+      },
+      {
+       "expr": "(2*3)^(-3)",
+       "equals": "1/(8*27)",
+       "tol": 1e-12
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    {
+     "label": "例 12",
+     "ref": "L2 Ex 6",
+     "question": "Simplify: (a) √(9x⁸y²)  (b) {{frac ⁴√((9x¹⁰)²) × 5x⁴|√(49x¹⁶)}}",
+     "solution": "(a) 3x⁴y（取 y ≥ 0；一般写 3x⁴|y|）。\n(b) (9x¹⁰)² = 81x²⁰，四次方根是 3x⁵；乘 5x⁴ 得 15x⁹；√(49x¹⁶) = 7x⁸；结果 {{frac 15x|7}}。",
+     "answer": "(a) 3x⁴y (b) 15x/7",
+     "checks": [
+      {
+       "expr": "sqrt(9*2^8*3^2)",
+       "equals": "3*2^4*3"
+      },
+      {
+       "expr": "(81*2^20)^(1/4)*5*2^4/sqrt(49*2^16)",
+       "equals": "15*2/7",
+       "tol": 1e-09
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 13",
+     "ref": "L2 Ex 7",
+     "question": "Solve: (a) 7<sup>x−3</sup> = 49  (b) 27<sup>x</sup> = {{frac 1|3√3}}",
+     "solution": "(a) 49 = 7²，所以 x − 3 = 2，x = 5。\n(b) 27ˣ = 3<sup>3x</sup>；3√3 = 3<sup>1.5</sup>，所以右边 = 3<sup>−3/2</sup>。3x = −3/2，x = −{{frac 1|2}}。",
+     "answer": "(a) x = 5 (b) x = −1/2",
+     "checks": [
+      {
+       "expr": "7^(5-3)",
+       "equals": "49"
+      },
+      {
+       "expr": "27^(-0.5)",
+       "equals": "1/(3*sqrt(3))",
+       "tol": 1e-12
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 14",
+     "ref": "L2 Ex 8",
+     "question": "Solve: (a) x⁴ = 81  (b) x<sup>1/3</sup> = 2  (c) x<sup>−2/3</sup> = 16",
+     "solution": "(a) x = ±3（偶次方有正负两根）。\n(b) 两边立方：x = 8。\n(c) x<sup>2/3</sup> = 1/16，所以 (x<sup>1/3</sup>)² = 1/16，x<sup>1/3</sup> = ±1/4，x = ±{{frac 1|64}}。",
+     "answer": "(a) ±3 (b) 8 (c) ±1/64",
+     "checks": [
+      {
+       "expr": "3^4",
+       "equals": "81"
+      },
+      {
+       "expr": "8^(1/3)",
+       "equals": "2",
+       "tol": 1e-12
+      },
+      {
+       "expr": "(1/64)^(-2/3)",
+       "equals": "16",
+       "tol": 1e-09
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ]
+    }
+   ],
+   "mistakes": [
+    "(2x)⁻³ 写成 2/x³。",
+    "x⁴ = 81 只写 x = 3。",
+    "27ˣ 没有化成以 3 为底。"
+   ],
+   "faqs": [
+    {
+     "q": "负数的分数指数怎么处理？",
+     "a": "本课程一般限定底数为正；像 x<sup>−2/3</sup> = 16 这类偶数次根，要考虑 ± 两种情况。"
+    }
+   ]
+  },
+  {
+   "title": "一次方程与不等式；变换主项（L3 Linear）",
+   "sources": [
+    {
+     "file": "L03_Equations.pdf",
+     "pages": "p1"
+    }
+   ],
+   "concept": "解一次方程：去括号、去分母（两边乘最小公分母）、移项、合并、系数化为 1。<strong>不等式</strong>的运算与方程相同，只有一点不同：<strong>两边乘或除以负数时不等号反向</strong>。解集画在数轴上：含等号用实心点，不含用空心点。",
+   "examples": [
+    {
+     "label": "例 15",
+     "ref": "L3 Ex 1",
+     "question": "Solve: (a) 4x − 3(2x + 5) = 3(x − 2)  (b) {{frac x + 1|3}} + {{frac 2x|7}} = 9",
+     "solution": "(a) 4x − 6x − 15 = 3x − 6 → −2x − 15 = 3x − 6 → −5x = 9 → x = −{{frac 9|5}}。\n(b) 两边乘 21：7(x + 1) + 6x = 189 → 13x = 182 → x = 14。",
+     "answer": "(a) x = −9/5 (b) x = 14",
+     "checks": [
+      {
+       "expr": "4*(-1.8)-3*(2*(-1.8)+5)",
+       "equals": "3*(-1.8-2)",
+       "tol": 1e-09
+      },
+      {
+       "expr": "(14+1)/3+2*14/7",
+       "equals": "9"
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 16",
+     "ref": "L3 Ex 2",
+     "question": "Change the subject: (a) y = 7 − 3x  (x)  (b) T = 2π√(l/g)  (g)",
+     "solution": "(a) 3x = 7 − y，x = {{frac 7 − y|3}}。\n(b) T/(2π) = √(l/g)，两边平方：T²/(4π²) = l/g，所以 g = {{frac 4π²l|T²}}。",
+     "answer": "(a) x = (7 − y)/3 (b) g = 4π²l/T²",
+     "checks": [
+      {
+       "expr": "2*pi*sqrt(2/(4*pi^2*2/3^2))",
+       "equals": "3",
+       "tol": 1e-09
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 17",
+     "ref": "L3 Ex 3",
+     "question": "Solve and graph on a number line: (a) 2x + 1 > 2 + x  (b) {{frac x − 1|3}} ≤ {{frac 1 + 2x|4}}",
+     "solution": "(a) x > 1（空心点）。\n(b) 两边乘 12：4x − 4 ≤ 3 + 6x → −2x ≤ 7 → 除以 −2 时不等号反向：x ≥ −{{frac 7|2}}（实心点）。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -1,
+        4
+       ],
+       "yr": [
+        -1,
+        1
+       ],
+       "width": 340,
+       "height": 90,
+       "xLabel": "x",
+       "yLabel": "",
+       "shade": [
+        [
+         1,
+         4,
+         "green"
+        ]
+       ],
+       "points": [
+        {
+         "x": 1,
+         "y": 0,
+         "open": true,
+         "label": "1",
+         "dy": -8
+        }
+       ],
+       "caption": "(a) x > 1",
+       "xticks": [
+        0,
+        1,
+        2,
+        3
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -6,
+        2
+       ],
+       "yr": [
+        -1,
+        1
+       ],
+       "width": 340,
+       "height": 90,
+       "xLabel": "x",
+       "yLabel": "",
+       "shade": [
+        [
+         -3.5,
+         2,
+         "green"
+        ]
+       ],
+       "points": [
+        {
+         "x": -3.5,
+         "y": 0,
+         "open": false,
+         "label": "−3.5",
+         "dy": -8
+        }
+       ],
+       "caption": "(b) x ≥ −7/2",
+       "xticks": [
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        0,
+        1
+       ]
+      }
+     ],
+     "answer": "(a) x > 1 (b) x ≥ −7/2",
+     "checks": [
+      {
+       "expr": "(-3.5-1)/3",
+       "equals": "(1+2*(-3.5))/4"
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    }
+   ],
+   "mistakes": [
+    "除以负数忘了变号。",
+    "去分母时漏乘不带分母的项。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么乘负数要变号？",
+     "a": "例如 2 < 3，乘 −1 后 −2 > −3，大小关系反过来了。"
+    }
+   ]
+  },
+  {
+   "title": "二次方程、联立方程、绝对值（L3）",
+   "sources": [
+    {
+     "file": "L03_Equations.pdf",
+     "pages": "p2–6"
+    }
+   ],
+   "concept": "二次方程的四种解法：①<strong>开平方</strong>（形如 (ax + b)² = c）；②<strong>因式分解</strong>；③<strong>配方</strong>（x² + bx = c → (x + b/2)² = c + (b/2)²，首项系数先化为 1）；④<strong>公式</strong> x = {{frac −b ± √(b² − 4ac)|2a}}。\n<strong>联立方程</strong>：代入法或消元法；一线一曲时用代入。\n<strong>绝对值</strong>：|x| = x（x ≥ 0），= −x（x < 0）。方程 |ax + b| = c → ax + b = ±c；|ax + b| = |cx + d| 或 = cx + d → ax + b = cx + d 或 ax + b = −(cx + d)，第二种情况要检验（右边不能为负）。不等式：|ax + b| < c → −c < ax + b < c；|ax + b| > c → ax + b > c 或 ax + b < −c。",
+   "formulas": [
+    "x = {{frac −b ± √(b² − 4ac)|2a}}"
+   ],
+   "examples": [
+    {
+     "label": "例 18",
+     "ref": "L3 Ex 4",
+     "question": "Solve by the square root method: (a) x² − 16 = 0  (b) (2x − 1)² = 25",
+     "solution": "(a) x² = 16，x = ±4。\n(b) 2x − 1 = ±5，x = 3 或 x = −2。",
+     "answer": "(a) ±4 (b) 3, −2",
+     "checks": [
+      {
+       "expr": "(2*3-1)^2",
+       "equals": "25"
+      },
+      {
+       "expr": "(2*(-2)-1)^2",
+       "equals": "25"
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 19",
+     "ref": "L3 Ex 5",
+     "question": "Solve by factorising: (a) x² + 8x − 9 = 0  (b) 2x² + 5x − 12 = 0",
+     "solution": "(a) (x + 9)(x − 1) = 0，x = −9 或 1。\n(b) (2x − 3)(x + 4) = 0，x = {{frac 3|2}} 或 −4。",
+     "answer": "(a) −9, 1 (b) 3/2, −4",
+     "checks": [
+      {
+       "expr": "(-9)^2+8*(-9)-9",
+       "equals": "0"
+      },
+      {
+       "expr": "2*1.5^2+5*1.5-12",
+       "equals": "0"
+      },
+      {
+       "expr": "2*16-20-12",
+       "equals": "0"
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 20",
+     "ref": "L3 Ex 6",
+     "question": "Solve by completing the square: (a) x² + 4x − 12 = 0  (b) 2x² − 4x + 1 = 0",
+     "solution": "(a) x² + 4x = 12 → x² + 4x + 4 = 16 → (x + 2)² = 16 → x + 2 = ±4 → x = 2 或 −6。\n(b) 先除以 2：x² − 2x = −1/2 → (x − 1)² = 1/2 → x = 1 ± {{frac 1|√2}} = {{frac 2 ± √2|2}}。",
+     "answer": "(a) 2, −6 (b) (2 ± √2)/2",
+     "checks": [
+      {
+       "expr": "2^2+4*2-12",
+       "equals": "0"
+      },
+      {
+       "expr": "2*((2+sqrt(2))/2)^2-4*(2+sqrt(2))/2+1",
+       "equals": "0",
+       "tol": 1e-09
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 21",
+     "ref": "L3 Ex 7",
+     "question": "Use the quadratic formula: (a) 2x² − 2x − 3 = 0, in simplest surd form  (b) x² + x = 5, correct to 3 significant figures.",
+     "solution": "(a) a = 2，b = −2，c = −3：x = [2 ± √(4 + 24)]/4 = (2 ± 2√7)/4 = {{frac 1 ± √7|2}}。\n(b) 先移项 x² + x − 5 = 0：x = (−1 ± √21)/2，√21 ≈ 4.583，x ≈ 1.79 或 −2.79。",
+     "answer": "(a) (1 ± √7)/2 (b) 1.79, −2.79",
+     "checks": [
+      {
+       "expr": "2*((1+sqrt(7))/2)^2-2*(1+sqrt(7))/2-3",
+       "equals": "0",
+       "tol": 1e-09
+      },
+      {
+       "expr": "(-1+sqrt(21))/2",
+       "equals": "1.79",
+       "tol": 0.005
+      },
+      {
+       "expr": "(-1-sqrt(21))/2",
+       "equals": "-2.79",
+       "tol": 0.005
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 22",
+     "ref": "L3 Ex 8",
+     "question": "Solve simultaneously: (a) x − 2y = −3, 2x − 3y = 2  (b) x² + y² = 10, y = −3x",
+     "solution": "(a) 由第一式 x = 2y − 3，代入：2(2y − 3) − 3y = 2 → y = 8，x = 13。\n(b) 代入：x² + 9x² = 10 → x² = 1 → x = ±1；y = −3x。解为 (1, −3) 和 (−1, 3)。",
+     "answer": "(a) x = 13, y = 8 (b) (1, −3), (−1, 3)",
+     "checks": [
+      {
+       "expr": "13-2*8",
+       "equals": "-3"
+      },
+      {
+       "expr": "2*13-3*8",
+       "equals": "2"
+      },
+      {
+       "expr": "1^2+(-3)^2",
+       "equals": "10"
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 23",
+     "ref": "L3 Ex 9",
+     "question": "Solve: (a) |x + 3| = 8  (b) |5 − 3x| = |x + 3|  (c) |x + 7| = 2x − 1",
+     "solution": "(a) x + 3 = 8 或 −8：x = 5 或 −11。\n(b) 5 − 3x = x + 3 → x = 1/2；5 − 3x = −(x + 3) → x = 4。两个都成立。\n(c) 右边必须 ≥ 0，即 x ≥ 1/2。x + 7 = 2x − 1 → x = 8 ✓；x + 7 = −(2x − 1) → x = −2，此时右边 2x − 1 = −5 < 0，舍去。只有 x = 8。",
+     "answer": "(a) 5, −11 (b) 1/2, 4 (c) 8",
+     "checks": [
+      {
+       "expr": "abs(5-3*0.5)",
+       "equals": "abs(0.5+3)"
+      },
+      {
+       "expr": "abs(5-3*4)",
+       "equals": "abs(4+3)"
+      },
+      {
+       "expr": "abs(8+7)",
+       "equals": "2*8-1"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    {
+     "label": "例 24",
+     "ref": "L3 Ex 10",
+     "question": "Solve: (a) |3 − x| ≤ 7  (b) |3x| ≥ 12  (c) |7 − 2x| > 8",
+     "solution": "(a) −7 ≤ 3 − x ≤ 7 → −10 ≤ −x ≤ 4 → −4 ≤ x ≤ 10。\n(b) 3x ≥ 12 或 3x ≤ −12：x ≥ 4 或 x ≤ −4。\n(c) 7 − 2x > 8 → x < −1/2；或 7 − 2x < −8 → x > 15/2。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -6,
+        12
+       ],
+       "yr": [
+        -1,
+        1
+       ],
+       "width": 340,
+       "height": 90,
+       "xLabel": "x",
+       "yLabel": "",
+       "shade": [
+        [
+         -4,
+         10,
+         "green"
+        ]
+       ],
+       "points": [
+        {
+         "x": -4,
+         "y": 0,
+         "open": false,
+         "label": "−4",
+         "dy": -8
+        },
+        {
+         "x": 10,
+         "y": 0,
+         "open": false,
+         "label": "10",
+         "dy": -8
+        }
+       ],
+       "caption": "(a) −4 ≤ x ≤ 10"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -8,
+        8
+       ],
+       "yr": [
+        -1,
+        1
+       ],
+       "width": 340,
+       "height": 90,
+       "xLabel": "x",
+       "yLabel": "",
+       "shade": [
+        [
+         -8,
+         -4,
+         "green"
+        ],
+        [
+         4,
+         8,
+         "green"
+        ]
+       ],
+       "points": [
+        {
+         "x": -4,
+         "y": 0,
+         "open": false,
+         "label": "−4",
+         "dy": -8
+        },
+        {
+         "x": 4,
+         "y": 0,
+         "open": false,
+         "label": "4",
+         "dy": -8
+        }
+       ],
+       "caption": "(b) x ≤ −4 or x ≥ 4"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -4,
+        11
+       ],
+       "yr": [
+        -1,
+        1
+       ],
+       "width": 340,
+       "height": 90,
+       "xLabel": "x",
+       "yLabel": "",
+       "shade": [
+        [
+         -4,
+         -0.5,
+         "green"
+        ],
+        [
+         7.5,
+         11,
+         "green"
+        ]
+       ],
+       "points": [
+        {
+         "x": -0.5,
+         "y": 0,
+         "open": true,
+         "label": "−1/2",
+         "dy": -8
+        },
+        {
+         "x": 7.5,
+         "y": 0,
+         "open": true,
+         "label": "15/2",
+         "dy": -8
+        }
+       ],
+       "caption": "(c) x < −1/2 or x > 15/2"
+      }
+     ],
+     "answer": "(a) −4 ≤ x ≤ 10 (b) x ≤ −4 or x ≥ 4 (c) x < −1/2 or x > 15/2",
+     "checks": [
+      {
+       "expr": "abs(3-(-4))",
+       "equals": "7"
+      },
+      {
+       "expr": "abs(7-2*(-0.5))",
+       "equals": "8"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ]
+    }
+   ],
+   "mistakes": [
+    "配方前没有把首项系数化为 1。",
+    "绝对值方程第二种情况不检验。",
+    "|x| > c 的解写成 −c < x < c：大于号是「两边分开」。"
+   ],
+   "faqs": [
+    {
+     "q": "什么时候用公式法？",
+     "a": "分解不出来、或题目要求精确的根式答案或小数近似时。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "步骤",
+   "做什么",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "1 因式分解",
+    "公因式 → 两项平方差 → 三项十字 → 四项分组",
+    "例 4"
+   ],
+   [
+    "2 分式",
+    "先分解再约分；加减先通分",
+    "例 5、6"
+   ],
+   [
+    "3 根式",
+    "开出平方因数；有理化乘共轭",
+    "例 7–9"
+   ],
+   [
+    "4 指数",
+    "化同底；负指数取倒数；分数指数是根",
+    "例 10–14"
+   ],
+   [
+    "5 方程",
+    "一次、二次（四法）、联立、绝对值（检验）",
+    "例 15–24"
+   ]
+  ]
+ },
+ "practice": "讲义建议练习：Tutorial Guide 0-1、0-2、0-3。"
+}

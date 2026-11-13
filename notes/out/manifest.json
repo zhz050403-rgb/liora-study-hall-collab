@@ -1,0 +1,990 @@
+[
+ {
+  "board": "notes-accounting",
+  "key": "term1/1",
+  "course": "accounting",
+  "term": "term1",
+  "week": 1,
+  "title": "Week 1 · Unit 1 会计导论 与 Unit 2 会计惯例",
+  "fields": {
+   "graphicHtml": "out/accounting/term1/w01.graphic.html",
+   "tutorialAnswers": "out/accounting/term1/w01.answers.html"
+  },
+  "examples": 26,
+  "checks": 4,
+  "deliverables": 36,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-accounting",
+  "key": "term1/2",
+  "course": "accounting",
+  "term": "term1",
+  "week": 2,
+  "title": "Week 2 · Unit 3 复式记账与交易分析",
+  "fields": {
+   "graphicHtml": "out/accounting/term1/w02.graphic.html",
+   "tutorialAnswers": "out/accounting/term1/w02.answers.html"
+  },
+  "examples": 23,
+  "checks": 4,
+  "deliverables": 51,
+  "requirementsChecked": true
+ },
+ {
+  "board": "notes-accounting",
+  "key": "term1/3",
+  "course": "accounting",
+  "term": "term1",
+  "week": 3,
+  "title": "Week 3 · Unit 4 日记账分录",
+  "fields": {
+   "graphicHtml": "out/accounting/term1/w03.graphic.html",
+   "tutorialAnswers": "out/accounting/term1/w03.answers.html"
+  },
+  "examples": 20,
+  "checks": 12,
+  "deliverables": 20,
+  "requirementsChecked": true
+ },
+ {
+  "board": "notes-accounting",
+  "key": "term1/4",
+  "course": "accounting",
+  "term": "term1",
+  "week": 4,
+  "title": "Week 4 · Unit 5 调整分录",
+  "fields": {
+   "graphicHtml": "out/accounting/term1/w04.graphic.html",
+   "tutorialAnswers": "out/accounting/term1/w04.answers.html"
+  },
+  "examples": 24,
+  "checks": 28,
+  "deliverables": 28,
+  "requirementsChecked": true
+ },
+ {
+  "board": "notes-accounting",
+  "key": "term1/5",
+  "course": "accounting",
+  "term": "term1",
+  "week": 5,
+  "title": "Week 5 · Unit 6 分类账 T 型账户",
+  "fields": {
+   "graphicHtml": "out/accounting/term1/w05.graphic.html",
+   "tutorialAnswers": "out/accounting/term1/w05.answers.html"
+  },
+  "examples": 17,
+  "checks": 36,
+  "deliverables": 38,
+  "requirementsChecked": true
+ },
+ {
+  "board": "notes-accounting",
+  "key": "term1/6",
+  "course": "accounting",
+  "term": "term1",
+  "week": 6,
+  "title": "Week 6 · Unit 7 多栏式账户与试算平衡表",
+  "fields": {
+   "graphicHtml": "out/accounting/term1/w06.graphic.html",
+   "tutorialAnswers": "out/accounting/term1/w06.answers.html"
+  },
+  "examples": 15,
+  "checks": 24,
+  "deliverables": 25,
+  "requirementsChecked": true
+ },
+ {
+  "board": "notes-accounting",
+  "key": "term1/7",
+  "course": "accounting",
+  "term": "term1",
+  "week": 7,
+  "title": "Week 7 · 期中复习与巩固",
+  "fields": {
+   "graphicHtml": "out/accounting/term1/w07.graphic.html"
+  },
+  "examples": 2,
+  "checks": 0,
+  "deliverables": 0,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-accounting",
+  "key": "term1/8",
+  "course": "accounting",
+  "term": "term1",
+  "week": 8,
+  "title": "Week 8 · Unit 8 利润表与 Excel 入门",
+  "fields": {
+   "graphicHtml": "out/accounting/term1/w08.graphic.html",
+   "tutorialAnswers": "out/accounting/term1/w08.answers.html"
+  },
+  "examples": 13,
+  "checks": 51,
+  "deliverables": 22,
+  "requirementsChecked": true
+ },
+ {
+  "board": "notes-accounting",
+  "key": "term1/9",
+  "course": "accounting",
+  "term": "term1",
+  "week": 9,
+  "title": "Week 9 · Unit 9 资产负债表",
+  "fields": {
+   "graphicHtml": "out/accounting/term1/w09.graphic.html",
+   "tutorialAnswers": "out/accounting/term1/w09.answers.html"
+  },
+  "examples": 9,
+  "checks": 60,
+  "deliverables": 18,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-accounting",
+  "key": "term1/10",
+  "course": "accounting",
+  "term": "term1",
+  "week": 10,
+  "title": "Week 10 · Unit 10 财务报表分析",
+  "fields": {
+   "graphicHtml": "out/accounting/term1/w10.graphic.html",
+   "tutorialAnswers": "out/accounting/term1/w10.answers.html"
+  },
+  "examples": 20,
+  "checks": 19,
+  "deliverables": 14,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-accounting",
+  "key": "term1/11",
+  "course": "accounting",
+  "term": "term1",
+  "week": 11,
+  "title": "Week 11 · Unit 10 现金流量表",
+  "fields": {
+   "graphicHtml": "out/accounting/term1/w11.graphic.html",
+   "tutorialAnswers": "out/accounting/term1/w11.answers.html"
+  },
+  "examples": 11,
+  "checks": 23,
+  "deliverables": 23,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-accounting",
+  "key": "term1/12",
+  "course": "accounting",
+  "term": "term1",
+  "week": 12,
+  "title": "Week 12 · Revision 总复习与考试结构",
+  "fields": {
+   "graphicHtml": "out/accounting/term1/w12.graphic.html"
+  },
+  "examples": 2,
+  "checks": 0,
+  "deliverables": 0,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-accounting",
+  "key": "term1/13",
+  "course": "accounting",
+  "term": "term1",
+  "week": 13,
+  "title": "Week 13 · Sample Exam 模拟考试",
+  "fields": {
+   "graphicHtml": "out/accounting/term1/w13.graphic.html",
+   "tutorialAnswers": "out/accounting/term1/w13.answers.html"
+  },
+  "examples": 9,
+  "checks": 18,
+  "deliverables": 39,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term1/1",
+  "course": "economics",
+  "term": "term1",
+  "week": 1,
+  "title": "Week 1 · Unit 0 经济学导航 + Unit 1 Introduction to Economics 经济学导论",
+  "fields": {
+   "graphicHtml": "out/economics/term1/w01.graphic.html",
+   "tutorialAnswers": "out/economics/term1/w01.answers.html"
+  },
+  "examples": 7,
+  "checks": 0,
+  "deliverables": 0,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term1/2",
+  "course": "economics",
+  "term": "term1",
+  "week": 2,
+  "title": "Week 2 · Unit 1 Tutorial + Unit 2 Production and Technology 生产与技术",
+  "fields": {
+   "graphicHtml": "out/economics/term1/w02.graphic.html",
+   "tutorialAnswers": "out/economics/term1/w02.answers.html"
+  },
+  "examples": 14,
+  "checks": 8,
+  "deliverables": 23,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term1/3",
+  "course": "economics",
+  "term": "term1",
+  "week": 3,
+  "title": "Week 3 · Unit 2 Tutorial + Unit 3 Demand & Supply 需求与供给",
+  "fields": {
+   "graphicHtml": "out/economics/term1/w03.graphic.html",
+   "tutorialAnswers": "out/economics/term1/w03.answers.html"
+  },
+  "examples": 15,
+  "checks": 11,
+  "deliverables": 28,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term1/4",
+  "course": "economics",
+  "term": "term1",
+  "week": 4,
+  "title": "Week 4 · Unit 4 Market Successes and Failures（市场成功与失灵）",
+  "fields": {
+   "graphicHtml": "out/economics/term1/w04.graphic.html",
+   "tutorialAnswers": "out/economics/term1/w04.answers.html"
+  },
+  "examples": 20,
+  "checks": 5,
+  "deliverables": 35,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term1/5",
+  "course": "economics",
+  "term": "term1",
+  "week": 5,
+  "title": "Week 5 · Unit 5 Pricing and income of the firm and its customers",
+  "fields": {
+   "graphicHtml": "out/economics/term1/w05.graphic.html",
+   "tutorialAnswers": "out/economics/term1/w05.answers.html"
+  },
+  "examples": 21,
+  "checks": 25,
+  "deliverables": 50,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term1/6",
+  "course": "economics",
+  "term": "term1",
+  "week": 6,
+  "title": "Unit 6 · Economics of the Firm 1 Short run 厂商短期生产与成本",
+  "fields": {
+   "graphicHtml": "out/economics/term1/w06.graphic.html",
+   "tutorialAnswers": "out/economics/term1/w06.answers.html"
+  },
+  "examples": 13,
+  "checks": 19,
+  "deliverables": 27,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term1/7",
+  "course": "economics",
+  "term": "term1",
+  "week": 7,
+  "title": "Challenge Week · Global Warming 小组展示（15%）",
+  "fields": {
+   "graphicHtml": "out/economics/term1/w07.graphic.html"
+  },
+  "examples": 2,
+  "checks": 0,
+  "deliverables": 4,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term1/8",
+  "course": "economics",
+  "term": "term1",
+  "week": 8,
+  "title": "Unit 7 · Economics of the Firm 2 Long run 厂商长期规模与成本",
+  "fields": {
+   "graphicHtml": "out/economics/term1/w08.graphic.html",
+   "tutorialAnswers": "out/economics/term1/w08.answers.html"
+  },
+  "examples": 16,
+  "checks": 1,
+  "deliverables": 12,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term1/9",
+  "course": "economics",
+  "term": "term1",
+  "week": 9,
+  "title": "Unit 8 · Perfect Competition 完全竞争",
+  "fields": {
+   "graphicHtml": "out/economics/term1/w09.graphic.html",
+   "tutorialAnswers": "out/economics/term1/w09.answers.html"
+  },
+  "examples": 17,
+  "checks": 11,
+  "deliverables": 23,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term1/10",
+  "course": "economics",
+  "term": "term1",
+  "week": 10,
+  "title": "Unit 9 · Monopoly 垄断",
+  "fields": {
+   "graphicHtml": "out/economics/term1/w10.graphic.html",
+   "tutorialAnswers": "out/economics/term1/w10.answers.html"
+  },
+  "examples": 18,
+  "checks": 17,
+  "deliverables": 18,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term1/11",
+  "course": "economics",
+  "term": "term1",
+  "week": 11,
+  "title": "Unit 10 · Monopolistic Competition & Oligopoly 垄断竞争与寡头",
+  "fields": {
+   "graphicHtml": "out/economics/term1/w11.graphic.html",
+   "tutorialAnswers": "out/economics/term1/w11.answers.html"
+  },
+  "examples": 20,
+  "checks": 9,
+  "deliverables": 13,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term1/12",
+  "course": "economics",
+  "term": "term1",
+  "week": 12,
+  "title": "Unit 11 · Revision & Sample Final 复习与样题",
+  "fields": {
+   "graphicHtml": "out/economics/term1/w12.graphic.html",
+   "tutorialAnswers": "out/economics/term1/w12.answers.html"
+  },
+  "examples": 14,
+  "checks": 13,
+  "deliverables": 58,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term2/1",
+  "course": "economics",
+  "term": "term2",
+  "week": 1,
+  "title": "Week 1 · Unit 0 The Circular Flow Model 循环流量模型 + Unit 1 Economic Growth and GDP 经济增长与GDP",
+  "fields": {
+   "graphicHtml": "out/economics/term2/w01.graphic.html",
+   "tutorialAnswers": "out/economics/term2/w01.answers.html"
+  },
+  "examples": 16,
+  "checks": 10,
+  "deliverables": 22,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term2/2",
+  "course": "economics",
+  "term": "term2",
+  "week": 2,
+  "title": "Week 2 · Unit 1 Tutorial + Unit 2 Inflation 通货膨胀",
+  "fields": {
+   "graphicHtml": "out/economics/term2/w02.graphic.html",
+   "tutorialAnswers": "out/economics/term2/w02.answers.html"
+  },
+  "examples": 18,
+  "checks": 10,
+  "deliverables": 22,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term2/3",
+  "course": "economics",
+  "term": "term2",
+  "week": 3,
+  "title": "Week 3 · Unit 2 Tutorial + Unit 3 Unemployment 失业",
+  "fields": {
+   "graphicHtml": "out/economics/term2/w03.graphic.html",
+   "tutorialAnswers": "out/economics/term2/w03.answers.html"
+  },
+  "examples": 13,
+  "checks": 7,
+  "deliverables": 10,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term2/4",
+  "course": "economics",
+  "term": "term2",
+  "week": 4,
+  "title": "Week 4 · Unit 3 Tutorial + Unit 4 Aggregate Demand & Supply 总需求与总供给",
+  "fields": {
+   "graphicHtml": "out/economics/term2/w04.graphic.html",
+   "tutorialAnswers": "out/economics/term2/w04.answers.html"
+  },
+  "examples": 16,
+  "checks": 6,
+  "deliverables": 12,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term2/5",
+  "course": "economics",
+  "term": "term2",
+  "week": 5,
+  "title": "Week 5 · Unit 4 Tutorial + Unit 5 International Economics: Trade and Protection 国际贸易与保护",
+  "fields": {
+   "graphicHtml": "out/economics/term2/w05.graphic.html",
+   "tutorialAnswers": "out/economics/term2/w05.answers.html"
+  },
+  "examples": 17,
+  "checks": 14,
+  "deliverables": 18,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term2/6",
+  "course": "economics",
+  "term": "term2",
+  "week": 6,
+  "title": "Week 6 · Unit 5 Tutorial + Unit 6 International Economics: Exchange Rates 汇率",
+  "fields": {
+   "graphicHtml": "out/economics/term2/w06.graphic.html",
+   "tutorialAnswers": "out/economics/term2/w06.answers.html"
+  },
+  "examples": 18,
+  "checks": 5,
+  "deliverables": 15,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term2/7",
+  "course": "economics",
+  "term": "term2",
+  "week": 7,
+  "title": "Week 7 · 复习与巩固",
+  "fields": {
+   "graphicHtml": "out/economics/term2/w07.graphic.html"
+  },
+  "examples": 0,
+  "checks": 0,
+  "deliverables": 0,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term2/8",
+  "course": "economics",
+  "term": "term2",
+  "week": 8,
+  "title": "Week 8 · Unit 6 Tutorial + Unit 7 The Financial Sector 金融部门",
+  "fields": {
+   "graphicHtml": "out/economics/term2/w08.graphic.html",
+   "tutorialAnswers": "out/economics/term2/w08.answers.html"
+  },
+  "examples": 15,
+  "checks": 10,
+  "deliverables": 23,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term2/9",
+  "course": "economics",
+  "term": "term2",
+  "week": 9,
+  "title": "Week 9 · Unit 7 Tutorial + Unit 8 Monetary Policy 货币政策",
+  "fields": {
+   "graphicHtml": "out/economics/term2/w09.graphic.html",
+   "tutorialAnswers": "out/economics/term2/w09.answers.html"
+  },
+  "examples": 19,
+  "checks": 12,
+  "deliverables": 21,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term2/10",
+  "course": "economics",
+  "term": "term2",
+  "week": 10,
+  "title": "Week 10 · Unit 8 Tutorial + Unit 9 The Government Budget and Fiscal Policy 政府预算与财政政策",
+  "fields": {
+   "graphicHtml": "out/economics/term2/w10.graphic.html",
+   "tutorialAnswers": "out/economics/term2/w10.answers.html"
+  },
+  "examples": 20,
+  "checks": 8,
+  "deliverables": 21,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term2/11",
+  "course": "economics",
+  "term": "term2",
+  "week": 11,
+  "title": "Week 11 · Unit 9 Tutorial + Unit 10 Interpretation of Economic Statistics 经济统计解读",
+  "fields": {
+   "graphicHtml": "out/economics/term2/w11.graphic.html",
+   "tutorialAnswers": "out/economics/term2/w11.answers.html"
+  },
+  "examples": 20,
+  "checks": 0,
+  "deliverables": 13,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term2/12",
+  "course": "economics",
+  "term": "term2",
+  "week": 12,
+  "title": "Week 12 · Unit 10 Tutorial + Unit 11 Using Economic Policy to Influence the Economy 运用经济政策",
+  "fields": {
+   "graphicHtml": "out/economics/term2/w12.graphic.html",
+   "tutorialAnswers": "out/economics/term2/w12.answers.html"
+  },
+  "examples": 14,
+  "checks": 8,
+  "deliverables": 25,
+  "requirementsChecked": false
+ },
+ {
+  "board": "notes-economics",
+  "key": "term2/13",
+  "course": "economics",
+  "term": "term2",
+  "week": 13,
+  "title": "Week 13 · Unit 11 Tutorial + 考试复习",
+  "fields": {
+   "graphicHtml": "out/economics/term2/w13.graphic.html",
+   "tutorialAnswers": "out/economics/term2/w13.answers.html"
+  },
+  "examples": 8,
+  "checks": 11,
+  "deliverables": 23,
+  "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
+  "key": "term1/1",
+  "course": "mathematics",
+  "term": "term1",
+  "week": 1,
+  "title": "Basic Algebra, Surds & Equations · 基础代数、根式与方程",
+  "fields": {
+   "graphicHtml": "out/mathematics/term1/w01.graphic.html"
+  },
+  "examples": 24,
+  "checks": 63,
+  "deliverables": 0,
+  "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
+  "key": "term1/2",
+  "course": "mathematics",
+  "term": "term1",
+  "week": 2,
+  "title": "Coordinate Geometry & Functions · 坐标几何与函数",
+  "fields": {
+   "graphicHtml": "out/mathematics/term1/w02.graphic.html"
+  },
+  "examples": 23,
+  "checks": 21,
+  "deliverables": 5,
+  "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
+  "key": "term1/3",
+  "course": "mathematics",
+  "term": "term1",
+  "week": 3,
+  "title": "Parabolas, Hyperbolas & Absolute Value Graphs · 抛物线、双曲线与绝对值图像",
+  "fields": {
+   "graphicHtml": "out/mathematics/term1/w03.graphic.html"
+  },
+  "examples": 16,
+  "checks": 44,
+  "deliverables": 12,
+  "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
+  "key": "term1/4",
+  "course": "mathematics",
+  "term": "term1",
+  "week": 4,
+  "title": "Inverse Functions, Logarithms & Exponentials · 反函数、对数与指数",
+  "fields": {
+   "graphicHtml": "out/mathematics/term1/w04.graphic.html"
+  },
+  "examples": 20,
+  "checks": 49,
+  "deliverables": 8,
+  "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
+  "key": "term1/5",
+  "course": "mathematics",
+  "term": "term1",
+  "week": 5,
+  "title": null,
+  "fields": {
+   "graphicHtml": "math/term1/w05.html"
+  },
+  "legacy": true
+ },
+ {
+  "board": "math-notes",
+  "key": "term1/6",
+  "course": "mathematics",
+  "term": "term1",
+  "week": 6,
+  "title": null,
+  "fields": {
+   "graphicHtml": "math/term1/w06.html"
+  },
+  "legacy": true
+ },
+ {
+  "board": "math-notes",
+  "key": "term1/7",
+  "course": "mathematics",
+  "term": "term1",
+  "week": 7,
+  "title": "Introduction to Calculus & Differentiation · 微积分入门与求导",
+  "fields": {
+   "graphicHtml": "out/mathematics/term1/w07.graphic.html"
+  },
+  "examples": 14,
+  "checks": 37,
+  "deliverables": 3,
+  "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
+  "key": "term1/8",
+  "course": "mathematics",
+  "term": "term1",
+  "week": 8,
+  "title": "Tangents, Normals & Derivative Signs · 切线、法线与导数符号",
+  "fields": {
+   "graphicHtml": "out/mathematics/term1/w08.graphic.html"
+  },
+  "examples": 17,
+  "checks": 46,
+  "deliverables": 2,
+  "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
+  "key": "term1/9",
+  "course": "mathematics",
+  "term": "term1",
+  "week": 9,
+  "title": "Curve Sketching, Optimisation & Indefinite Integrals · 曲线作图、最优化与不定积分",
+  "fields": {
+   "graphicHtml": "out/mathematics/term1/w09.graphic.html"
+  },
+  "examples": 13,
+  "checks": 36,
+  "deliverables": 2,
+  "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
+  "key": "term1/10",
+  "course": "mathematics",
+  "term": "term1",
+  "week": 10,
+  "title": "Definite Integrals & Areas · 定积分与面积",
+  "fields": {
+   "graphicHtml": "out/mathematics/term1/w10.graphic.html"
+  },
+  "examples": 14,
+  "checks": 34,
+  "deliverables": 9,
+  "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
+  "key": "term1/11",
+  "course": "mathematics",
+  "term": "term1",
+  "week": 11,
+  "title": "Calculus of Exponential & Logarithmic Functions · 指数对数函数微积分",
+  "fields": {
+   "graphicHtml": "out/mathematics/term1/w11.graphic.html"
+  },
+  "examples": 18,
+  "checks": 54,
+  "deliverables": 3,
+  "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
+  "key": "term1/12",
+  "course": "mathematics",
+  "term": "term1",
+  "week": 12,
+  "title": "Logarithmic Integration & Exam Revision · 对数积分与考试复习",
+  "fields": {
+   "graphicHtml": "out/mathematics/term1/w12.graphic.html"
+  },
+  "examples": 21,
+  "checks": 57,
+  "deliverables": 7,
+  "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
+  "key": "term1/13",
+  "course": "mathematics",
+  "term": "term1",
+  "week": 13,
+  "title": "Week 13 · 考前综合复习",
+  "fields": {
+   "graphicHtml": "out/mathematics/term1/w13.graphic.html"
+  },
+  "examples": 0,
+  "checks": 0,
+  "deliverables": 0,
+  "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
+  "key": "term2/1",
+  "course": "mathematics",
+  "term": "term2",
+  "week": 1,
+  "title": "Sequences, Series & Progressions · 数列、级数与等差/等比数列",
+  "fields": {
+   "graphicHtml": "out/mathematics/term2/w01.graphic.html"
+  },
+  "examples": 26,
+  "checks": 46,
+  "deliverables": 2,
+  "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
+  "key": "term2/2",
+  "course": "mathematics",
+  "term": "term2",
+  "week": 2,
+  "title": "Infinite Series & Interest · 无穷等比级数与利息",
+  "fields": {
+   "graphicHtml": "out/mathematics/term2/w02.graphic.html"
+  },
+  "examples": 19,
+  "checks": 28,
+  "deliverables": 2,
+  "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
+  "key": "term2/3",
+  "course": "mathematics",
+  "term": "term2",
+  "week": 3,
+  "title": "Present Value & Mixed Finance · 现值与综合金融数学",
+  "fields": {
+   "graphicHtml": "out/mathematics/term2/w03.graphic.html"
+  },
+  "examples": 15,
+  "checks": 18,
+  "deliverables": 2,
+  "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
+  "key": "term2/4",
+  "course": "mathematics",
+  "term": "term2",
+  "week": 4,
+  "title": "Counting & Arrangements · 计数原理与排列组合",
+  "fields": {
+   "graphicHtml": "out/mathematics/term2/w04.graphic.html"
+  },
+  "examples": 29,
+  "checks": 47,
+  "deliverables": 35,
+  "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
+  "key": "term2/5",
+  "course": "mathematics",
+  "term": "term2",
+  "week": 5,
+  "title": "Probability Basics · 概率基础",
+  "fields": {
+   "graphicHtml": "out/mathematics/term2/w05.graphic.html"
+  },
+  "examples": 22,
+  "checks": 36,
+  "deliverables": 0,
+  "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
+  "key": "term2/6",
+  "course": "mathematics",
+  "term": "term2",
+  "week": 6,
+  "title": "Conditional Probability & Review · 条件概率与单元复习",
+  "fields": {
+   "graphicHtml": "out/mathematics/term2/w06.graphic.html"
+  },
+  "examples": 31,
+  "checks": 49,
+  "deliverables": 44,
+  "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
+  "key": "term2/7",
+  "course": "mathematics",
+  "term": "term2",
+  "week": 7,
+  "title": "Descriptive Statistics I · 描述统计（数据类型与集中趋势）",
+  "fields": {
+   "graphicHtml": "out/mathematics/term2/w07.graphic.html"
+  },
+  "examples": 17,
+  "checks": 20,
+  "deliverables": 32,
+  "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
+  "key": "term2/8",
+  "course": "mathematics",
+  "term": "term2",
+  "week": 8,
+  "title": "Descriptive Statistics II · 描述统计（离散程度与应用）",
+  "fields": {
+   "graphicHtml": "out/mathematics/term2/w08.graphic.html"
+  },
+  "examples": 16,
+  "checks": 31,
+  "deliverables": 20,
+  "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
+  "key": "term2/9",
+  "course": "mathematics",
+  "term": "term2",
+  "week": 9,
+  "title": "Bivariate Data & Regression · 双变量数据与回归",
+  "fields": {
+   "graphicHtml": "out/mathematics/term2/w09.graphic.html"
+  },
+  "examples": 11,
+  "checks": 11,
+  "deliverables": 21,
+  "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
+  "key": "term2/10",
+  "course": "mathematics",
+  "term": "term2",
+  "week": 10,
+  "title": "Discrete Random Variables · 离散型随机变量",
+  "fields": {
+   "graphicHtml": "out/mathematics/term2/w10.graphic.html"
+  },
+  "examples": 12,
+  "checks": 23,
+  "deliverables": 25,
+  "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
+  "key": "term2/11",
+  "course": "mathematics",
+  "term": "term2",
+  "week": 11,
+  "title": "Binomial Distribution · 二项分布",
+  "fields": {
+   "graphicHtml": "out/mathematics/term2/w11.graphic.html"
+  },
+  "examples": 10,
+  "checks": 22,
+  "deliverables": 18,
+  "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
+  "key": "term2/12",
+  "course": "mathematics",
+  "term": "term2",
+  "week": 12,
+  "title": "Continuous Random Variables · 连续型随机变量",
+  "fields": {
+   "graphicHtml": "out/mathematics/term2/w12.graphic.html"
+  },
+  "examples": 10,
+  "checks": 17,
+  "deliverables": 11,
+  "requirementsChecked": false
+ },
+ {
+  "board": "math-notes",
+  "key": "term2/13",
+  "course": "mathematics",
+  "term": "term2",
+  "week": 13,
+  "title": "Normal Distribution · 正态分布",
+  "fields": {
+   "graphicHtml": "out/mathematics/term2/w13.graphic.html"
+  },
+  "examples": 9,
+  "checks": 20,
+  "deliverables": 17,
+  "requirementsChecked": false
+ }
+]

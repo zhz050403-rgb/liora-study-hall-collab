@@ -1,0 +1,1174 @@
+{
+ "course": "mathematics",
+ "term": "term1",
+ "week": 7,
+ "title": "Introduction to Calculus & Differentiation · 微积分入门与求导",
+ "files": [
+  "L19_Intro_Calculus.pdf",
+  "L20_Basic_Differentiation.pdf",
+  "L21_Further_Differentiation.pdf"
+ ],
+ "inventory": [
+  "L19 Rate of Change",
+  {
+   "ref": "L19 Ex 1",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "L19 Ex 2",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "L19 Ex 3",
+  {
+   "ref": "L19 Ex 4",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "L20 Ex 1",
+  "L20 Ex 2",
+  "L20 Ex 3",
+  "L20 Ex 4",
+  "L20 Ex 5",
+  "L21 Ex 1",
+  "L21 Ex 2",
+  "L21 Ex 3",
+  "L21 Ex 4"
+ ],
+ "intro": [
+  "第 7 周进入微积分：变化率与切线斜率、导函数的图像（L19）；基本求导法则和链式法则（L20）；乘积法则与商法则（L21）。讲义每道例题逐题讲解；每个导数都用数值差分独立核对。"
+ ],
+ "sections": [
+  {
+   "title": "变化率、切线与导函数（L19）",
+   "sources": [
+    {
+     "file": "L19_Intro_Calculus.pdf",
+     "pages": "p1–4"
+    }
+   ],
+   "concept": "微积分分为<strong>微分</strong>和积分。微分研究量变化得多快：<strong>变化率</strong>。\n两点连线的斜率是<strong>平均变化率</strong>，只看起点和终点，看不出中间是越来越快还是越来越慢。要描述每一点的情况，需要<strong>瞬时变化率</strong>：曲线在某点的斜率，定义为该点<strong>切线的斜率</strong>。\n斜率随点而变，所以斜率本身是 x 的函数，叫<strong>导函数</strong>（derivative），记作 f′(x)、{{frac dy|dx}} 或 y′；求导数叫<strong>求导</strong>（differentiation）。\n由 f 的图像画 f′ 的草图：①f 的转折点（切线水平）处 f′ = 0；②f 上升处 f′ > 0，下降处 f′ < 0；③看 f 的陡峭程度判断 f′ 在增大还是减小。",
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "L19 Rate of Change",
+     "question": "Subscribers N (1000s) to a streaming service were 100 at t = 0 and 220 after 6 months. At what rate are people signing up?",
+     "solution": "平均变化率 = 两点连线的斜率：m = {{frac 220 − 100|6 − 0}} = 20，即平均每月新增 20 000 名用户。\n但两条都经过这两点的曲线可以完全不同：一条斜率先小后大，一条先大后小。平均变化率看不出这种差别，所以需要每一点的瞬时变化率。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        6.5
+       ],
+       "yr": [
+        0,
+        240
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "t",
+       "yLabel": "N",
+       "curves": [
+        {
+         "expr": "100+120*(x/6)^2",
+         "color": "navy",
+         "dom": [
+          0,
+          6
+         ],
+         "label": [
+          3.6,
+          150,
+          "gradient increasing"
+         ]
+        },
+        {
+         "expr": "100+120*(1-(1-x/6)^2)",
+         "color": "red",
+         "dom": [
+          0,
+          6
+         ],
+         "label": [
+          0.4,
+          205,
+          "gradient decreasing"
+         ]
+        },
+        {
+         "expr": "100+20*x",
+         "color": "grey",
+         "dom": [
+          0,
+          6
+         ],
+         "label": [
+          4.2,
+          215,
+          "average: m = 20"
+         ],
+         "dash": true
+        }
+       ],
+       "caption": "Both curves fit (0, 100) and (6, 220); the average rate is the chord gradient 20",
+       "points": [
+        {
+         "x": 0,
+         "y": 100,
+         "label": "(0, 100)",
+         "dx": 6,
+         "dy": 14
+        },
+        {
+         "x": 6,
+         "y": 220,
+         "label": "(6, 220)",
+         "dx": -50,
+         "dy": -6
+        }
+       ]
+      }
+     ],
+     "answer": "平均 20（千人/月）",
+     "checks": [
+      {
+       "expr": "(220-100)/(6-0)",
+       "equals": "20"
+      }
+     ]
+    },
+    {
+     "label": "例 2",
+     "ref": "L19 Ex 1",
+     "question": "Consider the graph shown (a curve through (2, 4) with its tangent drawn). Find the gradient of the curve at the marked point.",
+     "solution": "曲线在 (2, 4) 的斜率就是那条切线的斜率。在切线上读两个点：大约 (0, 2) 和 (8, 10)，m = (10 − 2)/(8 − 0) = 1。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        9
+       ],
+       "yr": [
+        0,
+        11
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "sqrt(8*x)",
+         "color": "navy",
+         "dom": [
+          0,
+          8.5
+         ],
+         "label": [
+          6.2,
+          6.3,
+          "y = f(x)"
+         ]
+        },
+        {
+         "expr": "x+2",
+         "color": "red",
+         "dom": [
+          0,
+          8.5
+         ],
+         "label": [
+          5.6,
+          8.8,
+          "tangent"
+         ]
+        }
+       ],
+       "caption": "Tangent at (2, 4) rises 1 for every 1 across: gradient 1",
+       "points": [
+        {
+         "x": 2,
+         "y": 4,
+         "label": "(2, 4)",
+         "dx": 6,
+         "dy": 14
+        }
+       ],
+       "xticks": [
+        2,
+        4,
+        6,
+        8
+       ],
+       "yticks": [
+        2,
+        4,
+        6,
+        8,
+        10
+       ]
+      }
+     ],
+     "answer": "gradient ≈ 1",
+     "checks": [
+      {
+       "expr": "(10-2)/(8-0)",
+       "equals": "1"
+      },
+      {
+       "expr": "((sqrt(8*(2.000001)))-(sqrt(8*(1.999999))))/2e-06",
+       "equals": "4/sqrt(8*(2))",
+       "tol": 0.0001
+      }
+     ],
+     "sourceNote": "讲义图没有给方程；按图上的点 (2, 4)、(8, 8) 用 y = √(8x) 重画，切线 y = x + 2 与讲义的红线一致。"
+    },
+    {
+     "label": "例 3",
+     "ref": "L19 Ex 2",
+     "question": "Sketch a tangent line and estimate the gradient of the curve at each of the points A, B and C (A(−1, 4), B the lowest point (1.5, −2.25), C(3, 0)).",
+     "solution": "在每点画一条只「擦过」曲线的直线，读出斜率。\nA(−1, 4)：切线很陡、向下，约 −5。\nB（最低点）：切线水平，斜率 0。\nC(3, 0)：切线向上，约 3。\n（曲线正是 y = x² − 3x，下周学的公式给出 f′(x) = 2x − 3，恰好得到 −5、0、3。）",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -2,
+        5
+       ],
+       "yr": [
+        -4,
+        7
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "x^2-3*x",
+         "color": "navy",
+         "dom": [
+          -1.6,
+          4.6
+         ],
+         "label": [
+          3.9,
+          5.3,
+          "y = x² − 3x"
+         ]
+        },
+        {
+         "expr": "-5*x-1",
+         "color": "red",
+         "dom": [
+          -1.8,
+          -0.2
+         ],
+         "label": [
+          -1.8,
+          5.6,
+          "m = −5"
+         ]
+        },
+        {
+         "expr": "-2.25+0*x",
+         "color": "red",
+         "dom": [
+          0.5,
+          2.5
+         ]
+        },
+        {
+         "expr": "3*x-9",
+         "color": "red",
+         "dom": [
+          2.3,
+          3.8
+         ],
+         "label": [
+          3.5,
+          2.6,
+          "m = 3"
+         ]
+        }
+       ],
+       "caption": "Tangents at A(−1, 4), B(1.5, −2.25), C(3, 0)",
+       "points": [
+        {
+         "x": -1,
+         "y": 4,
+         "label": "A",
+         "dx": -14
+        },
+        {
+         "x": 1.5,
+         "y": -2.25,
+         "label": "B (m = 0)",
+         "dy": 16
+        },
+        {
+         "x": 3,
+         "y": 0,
+         "label": "C",
+         "dx": -14,
+         "dy": -6
+        }
+       ],
+       "xticks": [
+        -1,
+        1,
+        2,
+        3,
+        4
+       ],
+       "yticks": [
+        -2,
+        2,
+        4,
+        6
+       ]
+      }
+     ],
+     "answer": "A ≈ −5, B = 0, C ≈ 3",
+     "checks": [
+      {
+       "expr": "(((-0.999999)^2-3*(-0.999999))-((-1.000001)^2-3*(-1.000001)))/2e-06",
+       "equals": "-5",
+       "tol": 0.0001
+      },
+      {
+       "expr": "(((1.500001)^2-3*(1.500001))-((1.499999)^2-3*(1.499999)))/2e-06",
+       "equals": "0",
+       "tol": 0.0001
+      },
+      {
+       "expr": "(((3.000001)^2-3*(3.000001))-((2.999999)^2-3*(2.999999)))/2e-06",
+       "equals": "3",
+       "tol": 0.0001
+      }
+     ]
+    },
+    {
+     "label": "例 4",
+     "ref": "L19 Ex 3",
+     "question": "The graph shows y = f(x) and the tangent at (−1, 5); the tangent cuts the y-axis at −4. Find (a) f(−1) (b) f′(−1) (c) f(2) (d) f′(2).",
+     "solution": "(a) 点在曲线上：f(−1) = 5。\n(b) 切线过 (−1, 5) 和 (0, −4)：f′(−1) = (−4 − 5)/(0 − (−1)) = −9。\n(c) 从图上读 x = 2 处是局部最高点，f(2) = 5。\n(d) 最高点切线水平：f′(2) = 0。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -2,
+        4
+       ],
+       "yr": [
+        -6,
+        8
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "-x^3+3*x^2+1",
+         "color": "navy",
+         "dom": [
+          -1.6,
+          3.4
+         ],
+         "label": [
+          2.2,
+          6.0,
+          "y = f(x)"
+         ]
+        },
+        {
+         "expr": "-9*x-4",
+         "color": "red",
+         "dom": [
+          -1.6,
+          0.6
+         ],
+         "label": [
+          0.2,
+          -5.5,
+          "tangent at (−1, 5)"
+         ]
+        },
+        {
+         "expr": "5+0*x",
+         "color": "red",
+         "dom": [
+          1.2,
+          2.8
+         ],
+         "label": [
+          2.6,
+          5.5,
+          ""
+         ]
+        }
+       ],
+       "caption": "f(−1) = 5, f′(−1) = −9; f(2) = 5, f′(2) = 0",
+       "points": [
+        {
+         "x": -1,
+         "y": 5,
+         "label": "(−1, 5)",
+         "dx": 6
+        },
+        {
+         "x": 2,
+         "y": 5,
+         "label": "(2, 5)",
+         "dx": -16,
+         "dy": -8
+        },
+        {
+         "x": 0,
+         "y": -4,
+         "label": "−4",
+         "dx": 6
+        }
+       ]
+      }
+     ],
+     "answer": "(a) 5 (b) −9 (c) 5 (d) 0",
+     "checks": [
+      {
+       "expr": "(-4-5)/(0+1)",
+       "equals": "-9"
+      },
+      {
+       "expr": "((-(-0.999999)^3+3*(-0.999999)^2+1)-(-(-1.000001)^3+3*(-1.000001)^2+1))/2e-06",
+       "equals": "-9",
+       "tol": 0.0001
+      },
+      {
+       "expr": "((-(2.000001)^3+3*(2.000001)^2+1)-(-(1.999999)^3+3*(1.999999)^2+1))/2e-06",
+       "equals": "0",
+       "tol": 0.0001
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ],
+     "sourceNote": "讲义图只标了 (−1, 5) 和 −4；这里用经过这些点、在 x = 2 处取最高点的 f(x) = −x³ + 3x² + 1 重画，f(2) = 5 是按这条曲线读出的，讲义原图的最高点也在同一高度。"
+    },
+    {
+     "label": "例 5",
+     "ref": "L19 Ex 4",
+     "question": "Sketch the graph of y = f′(x) for each given graph of y = f(x): (a) an upward parabola with its minimum on the y-axis; (b) a curve rising from the left down to a minimum, up through the origin to a maximum, then falling.",
+     "solution": "(a) 左边下降（f′ < 0），x = 0 处最低（f′ = 0），右边上升（f′ > 0），而且越来越陡：f′ 是一条过原点、向上的直线。\n(b) 两个转折点（x ≈ ±1）处 f′ = 0；两点之间曲线上升，f′ > 0；两侧下降，f′ < 0；中间原点附近最陡：f′ 是开口向下的抛物线，顶点在 x = 0。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -3,
+        3
+       ],
+       "yr": [
+        -4,
+        4
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "x^2-1",
+         "color": "navy",
+         "dom": [
+          -2.2,
+          2.2
+         ],
+         "label": [
+          1.2,
+          3.4,
+          "f(x)"
+         ]
+        },
+        {
+         "expr": "2*x",
+         "color": "red",
+         "dom": [
+          -1.8,
+          1.8
+         ],
+         "label": [
+          1.0,
+          -2.6,
+          "f′(x)"
+         ],
+         "dash": true
+        }
+       ],
+       "caption": "(a) f has a minimum at x = 0 → f′ is a line crossing zero there",
+       "points": [
+        {
+         "x": 0,
+         "y": 0,
+         "label": "f′ = 0",
+         "dx": 6,
+         "dy": 14
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -3,
+        3
+       ],
+       "yr": [
+        -4,
+        4.5
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "3*x-x^3",
+         "color": "navy",
+         "dom": [
+          -2.2,
+          2.2
+         ],
+         "label": [
+          -2.6,
+          3.6,
+          "f(x)"
+         ]
+        },
+        {
+         "expr": "3-3*x^2",
+         "color": "red",
+         "dom": [
+          -1.8,
+          1.8
+         ],
+         "label": [
+          0.3,
+          3.5,
+          "f′(x)"
+         ],
+         "dash": true
+        }
+       ],
+       "caption": "(b) turning points at x = ±1 → f′ = 0 there; f′ > 0 between them",
+       "points": [
+        {
+         "x": -1,
+         "y": 0,
+         "label": "−1",
+         "dy": 14
+        },
+        {
+         "x": 1,
+         "y": 0,
+         "label": "1",
+         "dy": 14
+        }
+       ]
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ],
+     "sourceNote": "讲义图只有形状；这里用 y = x² − 1 和 y = 3x − x³ 示意，红色虚线是对应的 f′。",
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "把平均变化率（弦的斜率）当成某一点的斜率。",
+    "读切线斜率时用了曲线上的点而不是切线上的点。",
+    "画 f′ 时照抄 f 的形状：f′ 的零点在 f 的转折点，不在 f 的零点。"
+   ],
+   "faqs": [
+    {
+     "q": "切线只能碰曲线一个点吗？",
+     "a": "切线在切点附近只「擦过」曲线，但离开切点后可以再和曲线相交（例 4 的切线在右边又和曲线相交），这不影响它是切线。"
+    }
+   ]
+  },
+  {
+   "title": "基本求导法则（L20）",
+   "sources": [
+    {
+     "file": "L20_Basic_Differentiation.pdf",
+     "pages": "p1–3"
+    }
+   ],
+   "concept": "c 是常数：\n• y = c（水平线）：{{frac dy|dx}} = 0。\n• y = cx（直线）：{{frac dy|dx}} = c。\n• 常数倍：y = c × f(x) ⇒ y′ = c × f′(x)。\n• 和差：y = f(x) ± g(x) ⇒ y′ = f′(x) ± g′(x)。\n• <strong>幂法则</strong>：f(x) = xⁿ ⇒ f′(x) = nxⁿ⁻¹（乘以指数，指数减 1）。对负指数、分数指数同样成立：先把 {{frac 1|x³}} 写成 x⁻³，√x 写成 x<sup>½</sup>。\n乘积要先展开（如 (x + 2)(2x − 1)），本周后面还有乘积法则。",
+   "formulas": [
+    "{{frac d|dx}} xⁿ = nxⁿ⁻¹　　{{frac d|dx}} c = 0　　{{frac d|dx}} [cf(x)] = cf′(x)"
+   ],
+   "examples": [
+    {
+     "label": "例 6",
+     "ref": "L20 Ex 1",
+     "question": "Differentiate: (a) f(x) = x⁷ (b) f(x) = 8 (c) f(x) = 3x (d) f(x) = 4x⁶ (e) y = {{frac 1|x³}} (f) y = √x (g) y = 2x³ + 7x + 9 (h) y = (x + 2)(2x − 1)",
+     "solution": "(a) 7x⁶。(b) 常数：0。(c) 3。(d) 4 × 6x⁵ = 24x⁵。\n(e) y = x⁻³，y′ = −3x⁻⁴ = −{{frac 3|x⁴}}。\n(f) y = x<sup>½</sup>，y′ = ½x<sup>−½</sup> = {{frac 1|2√x}}。\n(g) 6x² + 7（常数 9 的导数是 0）。\n(h) 先展开：y = 2x² + 3x − 2，y′ = 4x + 3。",
+     "answer": "(a) 7x⁶ (b) 0 (c) 3 (d) 24x⁵ (e) −3/x⁴ (f) 1/(2√x) (g) 6x² + 7 (h) 4x + 3",
+     "checks": [
+      {
+       "expr": "(((1.300001)^7)-((1.2999990000000001)^7))/2e-06",
+       "equals": "7*(1.3)^6",
+       "tol": 0.0001
+      },
+      {
+       "expr": "((4*(1.100001)^6)-(4*(1.0999990000000002)^6))/2e-06",
+       "equals": "24*(1.1)^5",
+       "tol": 0.0001
+      },
+      {
+       "expr": "((1/(1.500001)^3)-(1/(1.499999)^3))/2e-06",
+       "equals": "-3/(1.5)^4",
+       "tol": 0.0001
+      },
+      {
+       "expr": "((sqrt((2.000001)))-(sqrt((1.999999))))/2e-06",
+       "equals": "1/(2*sqrt((2)))",
+       "tol": 0.0001
+      },
+      {
+       "expr": "((2*(1.2000009999999999)^3+7*(1.2000009999999999)+9)-(2*(1.199999)^3+7*(1.199999)+9))/2e-06",
+       "equals": "6*(1.2)^2+7",
+       "tol": 0.0001
+      },
+      {
+       "expr": "((((0.700001)+2)*(2*(0.700001)-1))-(((0.6999989999999999)+2)*(2*(0.6999989999999999)-1)))/2e-06",
+       "equals": "4*(0.7)+3",
+       "tol": 0.0001
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h"
+     ]
+    },
+    {
+     "label": "例 7",
+     "ref": "L20 Ex 2",
+     "question": "Find: (a) {{frac d|dt}}(7t² − 11) (b) {{frac d|dM}}({{frac 1|3M²}}) (c) {{frac d|dy}}({{frac 1|∛y}}) (d) {{frac d|dr}}(4πr²)",
+     "solution": "变量换了字母，法则不变。\n(a) 14t。\n(b) {{frac 1|3}}M⁻² 的导数：{{frac 1|3}} × (−2)M⁻³ = −{{frac 2|3M³}}。\n(c) y<sup>−⅓</sup> 的导数：−⅓y<sup>−4/3</sup> = −{{frac 1|3y∛y}}。\n(d) 4π 是常数：8πr。",
+     "answer": "(a) 14t (b) −2/(3M³) (c) −⅓y^(−4/3) (d) 8πr",
+     "checks": [
+      {
+       "expr": "((7*(2.000001)^2-11)-(7*(1.999999)^2-11))/2e-06",
+       "equals": "14*(2)",
+       "tol": 0.0001
+      },
+      {
+       "expr": "((1/(3*(1.500001)^2))-(1/(3*(1.499999)^2)))/2e-06",
+       "equals": "-2/(3*(1.5)^3)",
+       "tol": 0.0001
+      },
+      {
+       "expr": "(((2.000001)^(-1/3))-((1.999999)^(-1/3)))/2e-06",
+       "equals": "-(1/3)*(2)^(-4/3)",
+       "tol": 0.0001
+      },
+      {
+       "expr": "((4*pi*(1.2000009999999999)^2)-(4*pi*(1.199999)^2))/2e-06",
+       "equals": "8*pi*(1.2)",
+       "tol": 0.0001
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ]
+    },
+    {
+     "label": "例 8",
+     "ref": "L20 Ex 3",
+     "question": "(a) Find the gradient of the tangent to y = 2√x at x = 4. (b) Find the points on y = 2x² − x³ where the tangent is horizontal.",
+     "solution": "(a) y = 2x<sup>½</sup>，y′ = x<sup>−½</sup> = {{frac 1|√x}}；x = 4 时斜率 = ½。\n(b) 水平切线 ⇔ y′ = 0：y′ = 4x − 3x² = x(4 − 3x) = 0，x = 0 或 {{frac 4|3}}。代回：x = 0 时 y = 0；x = 4/3 时 y = 2 × 16/9 − 64/27 = 96/27 − 64/27 = {{frac 32|27}}。点 (0, 0) 和 (4/3, 32/27)。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -1.2,
+        2.6
+       ],
+       "yr": [
+        -1.5,
+        3
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "2*x^2-x^3",
+         "color": "navy",
+         "dom": [
+          -1,
+          2.4
+         ],
+         "label": [
+          1.6,
+          2.2,
+          "y = 2x² − x³"
+         ]
+        },
+        {
+         "expr": "0+0*x",
+         "color": "red",
+         "dom": [
+          -0.6,
+          0.6
+         ]
+        },
+        {
+         "expr": "32/27+0*x",
+         "color": "red",
+         "dom": [
+          0.8,
+          1.9
+         ]
+        }
+       ],
+       "caption": "Horizontal tangents at (0, 0) and (4/3, 32/27)",
+       "points": [
+        {
+         "x": 0,
+         "y": 0,
+         "label": "(0, 0)",
+         "dx": -36,
+         "dy": 14
+        },
+        {
+         "x": 1.3333333333333333,
+         "y": 1.1851851851851851,
+         "label": "(4/3, 32/27)",
+         "dx": 6,
+         "dy": -8
+        }
+       ]
+      }
+     ],
+     "answer": "(a) ½ (b) (0, 0) and (4/3, 32/27)",
+     "checks": [
+      {
+       "expr": "((2*sqrt((4.000001)))-(2*sqrt((3.999999))))/2e-06",
+       "equals": "0.5",
+       "tol": 0.0001
+      },
+      {
+       "expr": "((2*(1.3333343333333332)^2-(1.3333343333333332)^3)-(2*(1.3333323333333333)^2-(1.3333323333333333)^3))/2e-06",
+       "equals": "0",
+       "tol": 0.0001
+      },
+      {
+       "expr": "2*(4/3)^2-(4/3)^3",
+       "equals": "32/27",
+       "tol": 1e-12
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    }
+   ],
+   "mistakes": [
+    "√x 求导写成 ½√x：先写成 x^½，指数减 1 得 x^(−½)。",
+    "1/x³ 求导写成 1/(3x²)：要先化成 x⁻³。",
+    "(x + 2)(2x − 1) 分别求导再相乘：乘积不能这样做。",
+    "求出 x 后忘了代回求 y（例 8(b) 问的是点）。"
+   ],
+   "faqs": [
+    {
+     "q": "dy/dx 是分数吗？",
+     "a": "它是一个整体记号，表示「y 对 x 的导数」，不能随便约分；但很多性质（如链式法则）看起来像分数相乘，方便记忆。"
+    }
+   ]
+  },
+  {
+   "title": "链式法则（L20）",
+   "sources": [
+    {
+     "file": "L20_Basic_Differentiation.pdf",
+     "pages": "p4"
+    }
+   ],
+   "concept": "一个函数套在另一个函数里，例如 y = √(3 − 4x²) 是 3 − 4x² 套在 √ 里面。\n<strong>链式法则</strong>：y = f(g(x)) ⇒ {{frac dy|dx}} = f′(g(x)) × g′(x)。即<strong>先对外层求导（里面原样不动），再乘以里层的导数</strong>。\n常用形式：{{frac d|dx}}[g(x)]ⁿ = n[g(x)]ⁿ⁻¹ × g′(x)。",
+   "formulas": [
+    "{{frac d|dx}} f(g(x)) = f′(g(x)) × g′(x)"
+   ],
+   "examples": [
+    {
+     "label": "例 9",
+     "ref": "L20 Ex 4",
+     "question": "Differentiate: (a) f(x) = (5x − 1)⁷ (b) f(x) = √(2x + 7) (c) y = (x² + 2x + 5)³ (d) y = {{frac 1|√(3 − 4x²)}}",
+     "solution": "每题先认出里层，外层求导后乘以里层的导数。\n(a) 里层 5x − 1，导数 5：7(5x − 1)⁶ × 5 = 35(5x − 1)⁶。\n(b) (2x + 7)<sup>½</sup>：½(2x + 7)<sup>−½</sup> × 2 = {{frac 1|√(2x + 7)}}。\n(c) 3(x² + 2x + 5)² × (2x + 2) = 6(x + 1)(x² + 2x + 5)²。\n(d) (3 − 4x²)<sup>−½</sup>：−½(3 − 4x²)<sup>−3/2</sup> × (−8x) = {{frac 4x|(3 − 4x²)<sup>3/2</sup>}}。",
+     "answer": "(a) 35(5x − 1)⁶ (b) 1/√(2x + 7) (c) 6(x + 1)(x² + 2x + 5)² (d) 4x/(3 − 4x²)^(3/2)",
+     "checks": [
+      {
+       "expr": "(((5*(0.30000099999999996)-1)^7)-((5*(0.299999)-1)^7))/2e-06",
+       "equals": "35*(5*(0.3)-1)^6",
+       "tol": 0.0001
+      },
+      {
+       "expr": "((sqrt(2*(1.000001)+7))-(sqrt(2*(0.999999)+7)))/2e-06",
+       "equals": "1/sqrt(2*(1)+7)",
+       "tol": 0.0001
+      },
+      {
+       "expr": "((((0.500001)^2+2*(0.500001)+5)^3)-(((0.499999)^2+2*(0.499999)+5)^3))/2e-06",
+       "equals": "6*((0.5)+1)*((0.5)^2+2*(0.5)+5)^2",
+       "tol": 0.0001
+      },
+      {
+       "expr": "((1/sqrt(3-4*(0.400001)^2))-(1/sqrt(3-4*(0.39999900000000005)^2)))/2e-06",
+       "equals": "4*(0.4)/(3-4*(0.4)^2)^1.5",
+       "tol": 0.0001
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ]
+    },
+    {
+     "label": "例 10",
+     "ref": "L20 Ex 5",
+     "question": "Find the point on the curve y = √(x − 3) where the gradient of the tangent is 1.",
+     "solution": "y′ = ½(x − 3)<sup>−½</sup> = {{frac 1|2√(x − 3)}}。令其等于 1：√(x − 3) = ½，x − 3 = ¼，x = 3¼；y = ½。点 (3¼, ½)。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        2.5,
+        8
+       ],
+       "yr": [
+        -0.3,
+        2.5
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "sqrt(x-3)",
+         "color": "navy",
+         "dom": [
+          3,
+          8
+         ],
+         "label": [
+          6.2,
+          1.9,
+          "y = √(x − 3)"
+         ]
+        },
+        {
+         "expr": "x-2.75",
+         "color": "red",
+         "dom": [
+          3,
+          4.2
+         ],
+         "label": [
+          3.9,
+          1.6,
+          "m = 1"
+         ]
+        }
+       ],
+       "caption": "Gradient 1 at (3¼, ½)",
+       "points": [
+        {
+         "x": 3.25,
+         "y": 0.5,
+         "label": "(3¼, ½)",
+         "dx": 6,
+         "dy": 12
+        }
+       ],
+       "xticks": [
+        3,
+        4,
+        5,
+        6,
+        7
+       ]
+      }
+     ],
+     "answer": "(13/4, 1/2)",
+     "checks": [
+      {
+       "expr": "((sqrt((3.250001)-3))-(sqrt((3.249999)-3)))/2e-06",
+       "equals": "1",
+       "tol": 0.0001
+      },
+      {
+       "expr": "sqrt(3.25-3)",
+       "equals": "0.5"
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "只对外层求导，忘了乘里层的导数。",
+    "对外层求导时把里层也改了：外层求导时里面原样保留。"
+   ],
+   "faqs": [
+    {
+     "q": "怎么判断要不要用链式法则？",
+     "a": "看括号或根号里面是不是只有单独一个 x。里面是 5x − 1、x² + 2x + 5 这样的式子，就要乘里层导数。"
+    }
+   ]
+  },
+  {
+   "title": "乘积法则与商法则（L21）",
+   "sources": [
+    {
+     "file": "L21_Further_Differentiation.pdf",
+     "pages": "p1–4"
+    }
+   ],
+   "concept": "和差可以分别求导，但<strong>乘积、商不行</strong>：{{frac d|dx}}(f × g) ≠ f′ × g′，{{frac d|dx}}(f/g) ≠ f′/g′。\n<strong>乘积法则</strong>：{{frac d|dx}}(uV) = u′V + uV′。\n<strong>商法则</strong>：{{frac d|dx}}({{frac u|V}}) = {{frac u′V − uV′|V²}}（分子里是减号，顺序不能反）。讲义由 y = uV⁻¹ 用乘积法则和链式法则推出。\n结果尽量提公因式、化简。求水平切线：令导数 = 0，商的导数为 0 只需分子为 0。",
+   "formulas": [
+    "(uV)′ = u′V + uV′　　(u/V)′ = {{frac u′V − uV′|V²}}"
+   ],
+   "examples": [
+    {
+     "label": "例 11",
+     "ref": "L21 Ex 1",
+     "question": "(a) Use the product rule to differentiate y = (x² + 7)(2x − 3). (b) By expanding and then using basic differentiation, find the derivative of the same function.",
+     "solution": "(a) u = x² + 7，u′ = 2x；V = 2x − 3，V′ = 2。y′ = 2x(2x − 3) + 2(x² + 7) = 4x² − 6x + 2x² + 14 = 6x² − 6x + 14。\n(b) 展开：y = 2x³ − 3x² + 14x − 21，y′ = 6x² − 6x + 14。两种方法结果相同。",
+     "answer": "6x² − 6x + 14",
+     "checks": [
+      {
+       "expr": "((((1.4000009999999998)^2+7)*(2*(1.4000009999999998)-3))-(((1.399999)^2+7)*(2*(1.399999)-3)))/2e-06",
+       "equals": "6*(1.4)^2-6*(1.4)+14",
+       "tol": 0.0001
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 12",
+     "ref": "L21 Ex 2",
+     "question": "Differentiate: (a) y = (3x − 4)³(4x + 1)⁵ (b) f(x) = (x² + 7)√(3 − 4x)",
+     "solution": "(a) u = (3x − 4)³，u′ = 9(3x − 4)²；V = (4x + 1)⁵，V′ = 20(4x + 1)⁴（都用了链式法则）。\ny′ = 9(3x − 4)²(4x + 1)⁵ + 20(3x − 4)³(4x + 1)⁴，提公因式 (3x − 4)²(4x + 1)⁴：\ny′ = (3x − 4)²(4x + 1)⁴[9(4x + 1) + 20(3x − 4)] = (3x − 4)²(4x + 1)⁴(96x − 71)。\n(b) u = x² + 7，u′ = 2x；V = (3 − 4x)<sup>½</sup>，V′ = ½(3 − 4x)<sup>−½</sup> × (−4) = −{{frac 2|√(3 − 4x)}}。\nf′ = 2x√(3 − 4x) − {{frac 2(x² + 7)|√(3 − 4x)}}，通分：{{frac 2x(3 − 4x) − 2(x² + 7)|√(3 − 4x)}} = {{frac −10x² + 6x − 14|√(3 − 4x)}} = −{{frac 2(5x² − 3x + 7)|√(3 − 4x)}}。",
+     "answer": "(a) (3x − 4)²(4x + 1)⁴(96x − 71) (b) −2(5x² − 3x + 7)/√(3 − 4x)",
+     "checks": [
+      {
+       "expr": "(((3*(0.500001)-4)^3*(4*(0.500001)+1)^5)-((3*(0.499999)-4)^3*(4*(0.499999)+1)^5))/2e-06",
+       "equals": "(3*(0.5)-4)^2*(4*(0.5)+1)^4*(96*(0.5)-71)",
+       "tol": 0.001
+      },
+      {
+       "expr": "((((0.200001)^2+7)*sqrt(3-4*(0.200001)))-(((0.199999)^2+7)*sqrt(3-4*(0.199999))))/2e-06",
+       "equals": "-2*(5*(0.2)^2-3*(0.2)+7)/sqrt(3-4*(0.2))",
+       "tol": 0.0001
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 13",
+     "ref": "L21 Ex 3",
+     "question": "Differentiate: (a) y = {{frac 3x − 2|x + 1}} (b) y = {{frac x² + 3|x² − 5}}",
+     "solution": "分子、分母分别求导，代入商法则，分子展开合并。\n(a) u = 3x − 2，u′ = 3；V = x + 1，V′ = 1。y′ = {{frac 3(x + 1) − (3x − 2)|(x + 1)²}} = {{frac 5|(x + 1)²}}。\n(b) u = x² + 3，u′ = 2x；V = x² − 5，V′ = 2x。y′ = {{frac 2x(x² − 5) − 2x(x² + 3)|(x² − 5)²}} = {{frac −16x|(x² − 5)²}}。",
+     "answer": "(a) 5/(x + 1)² (b) −16x/(x² − 5)²",
+     "checks": [
+      {
+       "expr": "(((3*(0.500001)-2)/((0.500001)+1))-((3*(0.499999)-2)/((0.499999)+1)))/2e-06",
+       "equals": "5/((0.5)+1)^2",
+       "tol": 0.0001
+      },
+      {
+       "expr": "((((1.000001)^2+3)/((1.000001)^2-5))-(((0.999999)^2+3)/((0.999999)^2-5)))/2e-06",
+       "equals": "-16*(1)/((1)^2-5)^2",
+       "tol": 0.0001
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 14",
+     "ref": "L21 Ex 4",
+     "question": "For f(x) = {{frac x²|x + 1}}, find the points on y = f(x) where the tangent is horizontal.",
+     "solution": "商法则：f′(x) = {{frac 2x(x + 1) − x² × 1|(x + 1)²}} = {{frac x² + 2x|(x + 1)²}} = {{frac x(x + 2)|(x + 1)²}}。\n令分子为 0：x = 0 或 x = −2。f(0) = 0，f(−2) = 4/(−1) = −4。点 (0, 0) 和 (−2, −4)。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -4,
+        3
+       ],
+       "yr": [
+        -9,
+        5
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "x^2/(x+1)",
+         "color": "navy",
+         "dom": [
+          -4,
+          -1.12
+         ]
+        },
+        {
+         "expr": "x^2/(x+1)",
+         "color": "navy",
+         "dom": [
+          -0.88,
+          3
+         ],
+         "label": [
+          1.6,
+          2.0,
+          "y = x²/(x + 1)"
+         ]
+        }
+       ],
+       "caption": "Horizontal tangents at (0, 0) and (−2, −4); vertical asymptote x = −1",
+       "points": [
+        {
+         "x": 0,
+         "y": 0,
+         "label": "(0, 0)",
+         "dx": 6,
+         "dy": 14
+        },
+        {
+         "x": -2,
+         "y": -4,
+         "label": "(−2, −4)",
+         "dx": 6,
+         "dy": -8
+        }
+       ],
+       "vlines": [
+        {
+         "x": -1,
+         "label": "x = −1"
+        }
+       ]
+      }
+     ],
+     "answer": "(0, 0) and (−2, −4)",
+     "checks": [
+      {
+       "expr": "(((1e-06)^2/((1e-06)+1))-((-1e-06)^2/((-1e-06)+1)))/2e-06",
+       "equals": "0",
+       "tol": 0.0001
+      },
+      {
+       "expr": "(((-1.999999)^2/((-1.999999)+1))-((-2.000001)^2/((-2.000001)+1)))/2e-06",
+       "equals": "0",
+       "tol": 0.0001
+      },
+      {
+       "expr": "(((1.500001)^2/((1.500001)+1))-((1.499999)^2/((1.499999)+1)))/2e-06",
+       "equals": "((1.5)^2+2*(1.5))/((1.5)+1)^2",
+       "tol": 0.0001
+      },
+      {
+       "expr": "(-2)^2/(-2+1)",
+       "equals": "-4"
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "商法则分子写成 uV′ − u′V：符号反了。",
+    "乘积法则中 (3x − 4)³ 的导数忘了乘 3（链式法则）。",
+    "化简时提公因式出错：先找两项共同的最低次幂。"
+   ],
+   "faqs": [
+    {
+     "q": "能展开时还要用乘积法则吗？",
+     "a": "都可以，结果一样（例 11）。式子简单时展开更快；有高次幂或根号时用乘积法则更方便。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "函数形式",
+   "法则",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "xⁿ、常数、和差",
+    "幂法则：乘指数，指数减 1",
+    "例 6–8"
+   ],
+   [
+    "(里层)ⁿ、√(里层)",
+    "链式法则：外层导数 × 里层导数",
+    "例 9、10"
+   ],
+   [
+    "u × V",
+    "u′V + uV′",
+    "例 11、12"
+   ],
+   [
+    "u ÷ V",
+    "(u′V − uV′)/V²",
+    "例 13、14"
+   ],
+   [
+    "求水平切线的点",
+    "令导数 = 0，求 x 再代回求 y",
+    "例 8、14"
+   ]
+  ]
+ },
+ "practice": "讲义建议练习：Tutorial Guide 3-1、3-2、3-3。"
+}

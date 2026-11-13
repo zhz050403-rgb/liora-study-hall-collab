@@ -1,0 +1,920 @@
+{
+ "course": "economics",
+ "term": "term2",
+ "week": 12,
+ "title": "Week 12 · Unit 10 Tutorial + Unit 11 Using Economic Policy to Influence the Economy 运用经济政策",
+ "answersTitle": "Tutorial 10 Interpretation of Economic Statistics",
+ "files": [
+  "unit10 PPT interpretation of economic statistics.pdf",
+  "unit10 TG interpretation of economic statistics.pdf",
+  "unit11 PPT using economic policy to influence the economy.pdf"
+ ],
+ "inventory": [
+  {
+   "ref": "Tutorial 10 Terms",
+   "deliverables": [
+    {
+     "type": "terms",
+     "terms": [
+      "Economic Cycle",
+      "Recession",
+      "Economic Boom",
+      "Internal balance",
+      "External balance"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial 10 Q1",
+   "parts": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h"
+   ]
+  },
+  {
+   "ref": "Tutorial 10 Q2",
+   "parts": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "ref": "Tutorial 10 Q3",
+   "parts": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "ref": "Tutorial 10 Q4",
+   "parts": [
+    "a",
+    "b"
+   ],
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "Tutorial 10 Essay",
+  "Tutorial 10 Summary",
+  "Lecture 11 Management",
+  {
+   "ref": "Lecture 11 Supply Side",
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  "Lecture 11 Compatible",
+  {
+   "ref": "Lecture 11 Example 1",
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  {
+   "ref": "Lecture 11 Example 2",
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  {
+   "ref": "Lecture 11 Example 3",
+   "parts": [
+    "A",
+    "B",
+    "C"
+   ],
+   "deliverables": [
+    {
+     "type": "table"
+    },
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "Lecture 11 Exam"
+ ],
+ "intro": [
+  "本周前半是 <strong>Unit 10 Tutorial</strong>：用澳储行图表分析 2008–09 年全球金融危机（GFC）中澳大利亚的增长、失业、通胀、出口，以及货币政策和财政政策的反应；后半是 <strong>Unit 11 讲座</strong>（复习性质）：需求方与供给方政策、目标能否兼容、通胀目标制，以及三道考试 Part C 风格的数据分析例题和期末考试结构。Unit 11 没有 Tutorial 文件；第 13 周是 Unit 11 Tutorial 和考试样卷。",
+  "Term 2 的 Tutorial 没有官方答案文件，以下答案依据讲义写出；GFC 题目中的数字是从 Tutorial 所附澳储行图表读出的近似值。"
+ ],
+ "sections": [
+  {
+   "title": "Unit 10 Tutorial：解读经济统计（全球金融危机）",
+   "sources": [
+    {
+     "file": "unit10 TG interpretation of economic statistics.pdf",
+     "pages": "p1–13"
+    },
+    {
+     "file": "unit10 PPT interpretation of economic statistics.pdf",
+     "pages": "p18–27"
+    }
+   ],
+   "concept": "经济下行：总需求下降 → 增长放缓 → 企业少雇人，失业和就业不足上升 → 需求压力减弱，通胀下降。一国衰退时进口减少，就是贸易伙伴的出口减少，所以衰退会通过贸易传到其他国家。应对：央行降息（货币宽松）；政府增加支出、预算转向赤字（相机财政政策加上自动稳定器）。",
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "Tutorial 10 Terms",
+     "question": "Explain: Economic Cycle; Recession; Economic Boom; Internal balance; External balance.",
+     "solution": "<strong>Economic Cycle</strong>：实际 GDP 增长率围绕长期趋势的扩张和收缩交替。\n<strong>Recession</strong>：经济活动显著下降的阶段，增长很低或为负（常用定义：连续两个季度负增长），失业上升。\n<strong>Economic Boom</strong>：增长快、失业低、开工率高的阶段，常伴随通胀压力。\n<strong>Internal balance</strong>：国内经济目标同时实现：持续增长、低通胀（2–3%）、充分就业。\n<strong>External balance</strong>：对外经济目标：可持续的经常账户、可偿还的外债、稳定的汇率。",
+     "numeric": false
+    },
+    {
+     "label": "例 2",
+     "ref": "Tutorial 10 Q1",
+     "question": "Describe the characteristics of a downturn. Using the RBA charts of the GFC (2008–09): (a) change in Australia's GDP growth; (b) unemployment and underemployment; (c) how are GDP growth and unemployment related? (d) change in inflation; (e) how are GDP growth and inflation related? (f) change in world GDP growth; (g) were Australia's exports likely to rise or fall after 2008? (h) how would that affect Australia's GDP growth?",
+     "solution": "<strong>下行的特征</strong>：总需求下降，实际 GDP 增长放缓甚至为负，企业减产裁员，失业和就业不足上升，通胀压力减弱，企业和消费者信心下降。\n(a) GDP 年增长率从约 3–4% 降到约 1%，其中一个季度为负增长。\n(b) 失业率从约 4% 升到接近 6%，就业不足率也上升。\n(c) 总需求下降使企业生产减少、需要的工人减少，所以 <strong>GDP 增长下降、失业上升</strong>，二者反向变化。\n(d) CPI 通胀从 2008 年约 5% 的高点降到 2009 年 2% 以下。\n(e) 总需求下降使需求拉动的通胀压力减弱，所以 <strong>GDP 增长和通胀同向下降</strong>。\n(f) 世界（主要贸易伙伴）GDP 增长从约 4–5% 急剧下降到 2009 年的零附近（世界整体为负）。\n(g) 出口很可能<strong>下降</strong>：贸易伙伴收入下降，对澳大利亚商品和服务的需求减少。\n(h) 出口是总需求的组成部分（X − M），出口下降使 AD 减少，进一步拉低澳大利亚的 GDP 增长。",
+     "sourceNote": "Tutorial 第 2–5 页只有澳储行图表，没有数字说明；(a)(b)(d)(f) 的数字是读图的近似值。",
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 3",
+     "ref": "Tutorial 10 Q2",
+     "question": "(a) Would you expect the RBA to tighten or ease monetary policy in a downturn? (b) Describe the monetary policy actions of central banks in the USA, the Euro Zone and Australia in 2008–09. (c) What were they hoping to achieve?",
+     "solution": "(a) <strong>宽松</strong>（降息）。\n(b) 三地央行都大幅降息：澳储行把现金利率从 7.25% 降到 3%；美联储把联邦基金利率降到接近零（0–0.25%）；欧洲央行把政策利率从约 4% 降到 1%。\n(c) 降低借款成本，刺激消费和投资，恢复信心，提高总需求，减缓增长下滑和失业上升；（本币贬值还能帮助出口。）",
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 4",
+     "ref": "Tutorial 10 Q3",
+     "question": "(a) Outline the change in the Australian government budget balance after 2007–08. (b) How may cyclical factors associated with the GFC have contributed to this change?",
+     "solution": "(a) 预算从 2007–08 年约占 GDP 2% 的<strong>盈余</strong>，转为此后几年的<strong>赤字</strong>（最大约占 GDP 4%），持续多年。\n(b) <strong>周期性因素</strong>（自动稳定器）：增长放缓使收入和企业利润下降，所得税、公司税和消费税收入减少；失业上升使失业救济等福利支出增加。即使没有新的政策，预算也会自动趋向赤字。",
+     "parts": [
+      "a",
+      "b"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 5",
+     "ref": "Tutorial 10 Q4",
+     "question": "(a) What discretionary fiscal policy does Keynesian theory suggest when growth falls and unemployment rises, such as in the GFC? (b) What happened to public construction work after 2008? (i) What was the government trying to achieve? (ii) Illustrate with an AD–AS diagram.",
+     "solution": "(a) 扩张性（相机）财政政策：增加政府支出（尤其是基础设施和公共工程）、增加转移支付、减税，预算有意出现<strong>赤字</strong>。\n(b) 公共建设工程占 GDP 的比重从约 2.5% 明显上升到约 4%（2009–10 年左右）。\n(i) 政府想直接增加总需求（G 增加，加上乘数效应），创造就业，抵消私人需求和出口的下降。\n(ii) AD 右移，产出和就业增加；经济有闲置资源（AS 平坦段），通胀压力小。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        11.5
+       ],
+       "yr": [
+        0,
+        11
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Real GDP",
+       "yLabel": "Price level",
+       "curves": [
+        {
+         "expr": "1.5+4/(10-x)",
+         "dom": [
+          0,
+          9.556
+         ],
+         "color": "red",
+         "label": [
+          8.36,
+          10.1,
+          "AS"
+         ]
+        },
+        {
+         "expr": "5-0.6*x",
+         "dom": [
+          0,
+          8.333
+         ],
+         "color": "navy",
+         "label": [
+          7.33,
+          1.05,
+          "AD₁"
+         ]
+        },
+        {
+         "expr": "7.2-0.6*x",
+         "dom": [
+          0,
+          11.5
+         ],
+         "color": "navy",
+         "label": [
+          9.68,
+          1.84,
+          "AD₂"
+         ],
+         "dash": true
+        }
+       ],
+       "points": [
+        {
+         "x": 4.599,
+         "y": 2.241,
+         "label": ""
+        },
+        {
+         "x": 7.156,
+         "y": 2.906,
+         "label": ""
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          2.241
+         ],
+         "to": [
+          4.599,
+          2.241
+         ]
+        },
+        {
+         "from": [
+          4.599,
+          0
+         ],
+         "to": [
+          4.599,
+          2.241
+         ]
+        },
+        {
+         "from": [
+          0,
+          2.906
+         ],
+         "to": [
+          7.156,
+          2.906
+         ]
+        },
+        {
+         "from": [
+          7.156,
+          0
+         ],
+         "to": [
+          7.156,
+          2.906
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": -0.15,
+         "y": 2.121,
+         "text": "P₁",
+         "anchor": "end",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 4.599,
+         "y": -0.55,
+         "text": "Y₁",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": -0.15,
+         "y": 2.786,
+         "text": "P₂",
+         "anchor": "end",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 7.156,
+         "y": -0.55,
+         "text": "Y₂",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 10,
+         "y": -0.55,
+         "text": "Y_FE",
+         "anchor": "middle",
+         "size": 9,
+         "color": "red"
+        }
+       ],
+       "caption": "Q4(b)(ii): more public construction raises G, AD shifts right, output and employment rise",
+       "padLeft": 34,
+       "vlines": [
+        {
+         "x": 10,
+         "color": "grey"
+        }
+       ]
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 6",
+     "ref": "Tutorial 10 Essay",
+     "question": "Practice essay: Describe the Keynesian monetary and fiscal policy responses to a downturn in economic growth and a rise in unemployment.",
+     "solution": "凯恩斯认为，衰退的根源是总需求不足：消费、投资和出口下降，企业减产裁员，周期性失业上升。政府应主动管理需求，把总需求推回到接近充分就业的水平。\n<strong>货币政策</strong>：央行放松货币政策，在公开市场买入政府证券，银行体系现金增加，现金利率下降，房贷、企业贷款利率随之下降。借款成本降低使企业更多项目符合投资规则，投资增加；家庭还款减少、可支配收入增加，消费增加；利率下降使本币贬值，出口增加。C、I、(X − M) 增加使 AD 右移。\n<strong>财政政策</strong>：政府实行扩张性财政政策，增加基础设施和公共工程支出、增加转移支付或减税，预算有意出现赤字。政府支出直接增加总需求，并通过乘数效应放大；减税增加可支配收入和消费。自动稳定器（税收下降、福利增加）也会同时起作用。\n在 AD–AS 图中，经济处在 AS 的平坦段，AD 右移使实际 GDP 和就业大幅增加，通胀压力较小。2008–09 年全球金融危机中，澳大利亚同时降息（7.25% → 3%）并大幅增加公共建设支出，就是这种组合。需要注意：货币政策在信心低迷时效果有限，财政刺激则会增加公共债务。",
+     "numeric": false
+    },
+    {
+     "label": "例 7",
+     "ref": "Tutorial 10 Summary",
+     "question": "After the tutorial: complete the summary (choose the correct words).",
+     "solution": "GDP 增长上升时，就业预计<strong>增加</strong>；如果增长发生在接近充分就业时，通胀可能<strong>上升</strong>。由于资源有限，随着 GDP 增加，总供给变得<strong>缺乏弹性</strong>。与内部平衡关系最密切的三个总需求组成部分是 <strong>C、I、G</strong>；与外部平衡关系最密切的两个是 <strong>X、M</strong>。全球金融危机始于 2007 年底，随后蔓延到许多国家。衰退能从一国传到另一国，原因之一是出口往往<strong>下降</strong>：一国 GDP 增长下降时，就业和收入减少，从其他国家的<strong>进口</strong>减少。这样，一国的内部平衡会传导到另一国的<strong>内部和外部平衡</strong>（选项 iii）。",
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "说 GDP 增长和通胀反向变化：在需求下降时二者同向下降。",
+    "把衰退时的赤字只归因于刺激政策：自动稳定器也起作用。",
+    "Q2(b) 只写澳大利亚：题目要求美国、欧元区和澳大利亚三地。"
+   ],
+   "faqs": [
+    {
+     "q": "考试会要求读多精确的数字？",
+     "a": "Part C 通常给出数据表（如 Unit 11 讲座的三个例子），要求描述变化、指出冲突并提出政策；引用数字时写出「从 … 到 …」即可。"
+    }
+   ]
+  },
+  {
+   "title": "Unit 11 讲座：运用经济政策（复习）",
+   "sources": [
+    {
+     "file": "unit11 PPT using economic policy to influence the economy.pdf",
+     "pages": "p1–31"
+    }
+   ],
+   "concept": "宏观经济管理：相容的目标（增长与就业）、冲突的目标（增长 / 充分就业与低通胀；再分配与增长；内部与外部平衡），手段有需求管理（财政、货币政策）和<strong>供给方政策</strong>。\n<strong>供给方政策</strong>认为企业生产是繁荣的关键：用激励鼓励人们供给商品和服务，减少管制提高经济灵活性，增加资源的数量和质量（见表）。\n<strong>所有目标能否兼容</strong>：有经济学家认为，如果长期保持低通胀，利率就能保持低位，带动投资、增长和就业，产品也更有竞争力、出口增加，内外平衡可以兼顾。因此低通胀成为政府的优先目标，澳大利亚 1993 年开始实行通胀目标制。\n<strong>数据分析题的写法</strong>（考试 Part C）：①描述每个指标「从 … 到 …」的变化；②指出哪些目标冲突、内部变化怎样影响外部平衡；③提出相应的货币和财政政策，并用 AD–AS 图解释。",
+   "figures": [
+    {
+     "type": "table",
+     "headers": [
+      "Supply-side policy",
+      "How it raises productive capacity"
+     ],
+     "rows": [
+      [
+       "Lower business and income taxes",
+       "Stronger incentives to work, save and invest"
+      ],
+      [
+       "Less government spending",
+       "More resources available to private industry"
+      ],
+      [
+       "Deregulation",
+       "Firms spend more time on production"
+      ],
+      [
+       "Less trade-union power",
+       "Greater wage flexibility, lower production costs"
+      ],
+      [
+       "Lower welfare payments",
+       "In theory pushes more people into the workforce"
+      ],
+      [
+       "Education and training",
+       "Higher labour productivity"
+      ],
+      [
+       "R&D tax concessions and subsidies",
+       "New technology"
+      ],
+      [
+       "Transport and infrastructure",
+       "Lower costs of moving goods and people"
+      ],
+      [
+       "Privatisation",
+       "Competition and efficiency in former government businesses"
+      ]
+     ],
+     "title": "Supply-side policies"
+    }
+   ],
+   "examples": [
+    {
+     "label": "例 8",
+     "ref": "Lecture 11 Management",
+     "question": "Summarise macroeconomic management: compatible and conflicting goals, and why policies must work together.",
+     "solution": "相容：经济增长与就业增加。冲突：增长、充分就业与低通胀；收入再分配与增长；内部与外部平衡（强劲需求带来更多进口和海外借款）。不同目标需要不同政策：低通胀可能要求加息、削减政府支出；增长和就业可能要求降息、增加政府支出。所以政策必须协调配合。",
+     "numeric": false
+    },
+    {
+     "label": "例 9",
+     "ref": "Lecture 11 Supply Side",
+     "question": "What are supply-side policies for growth?",
+     "solution": "供给方政策针对生产能力而不是需求：消除生产障碍、提高激励和灵活性、增加资源的数量和质量，包括减税、减少政府支出、放松管制、削弱工会力量增加工资弹性、减少福利、加强教育培训、研发税收优惠和补贴、建设交通和基础设施、私有化（见表）。它们使 AS 右移，可以在不推高通胀的情况下提高产出。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "Supply-side policy",
+        "How it raises productive capacity"
+       ],
+       "rows": [
+        [
+         "Lower business and income taxes",
+         "Stronger incentives to work, save and invest"
+        ],
+        [
+         "Less government spending",
+         "More resources available to private industry"
+        ],
+        [
+         "Deregulation",
+         "Firms spend more time on production"
+        ],
+        [
+         "Less trade-union power",
+         "Greater wage flexibility, lower production costs"
+        ],
+        [
+         "Lower welfare payments",
+         "In theory pushes more people into the workforce"
+        ],
+        [
+         "Education and training",
+         "Higher labour productivity"
+        ],
+        [
+         "R&D tax concessions and subsidies",
+         "New technology"
+        ],
+        [
+         "Transport and infrastructure",
+         "Lower costs of moving goods and people"
+        ],
+        [
+         "Privatisation",
+         "Competition and efficiency in former government businesses"
+        ]
+       ],
+       "title": "Supply-side policies"
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 10",
+     "ref": "Lecture 11 Compatible",
+     "question": "Could all economic goals be compatible?",
+     "solution": "一些经济学家认为可以：如果长期保持低通胀，利率就能保持低位，鼓励投资，带来增长和就业；低通胀还使本国产品有竞争力，出口增加，改善外部平衡。正因如此，低通胀成为政府的优先目标，澳大利亚 1993 年确立了通胀目标制（2–3%）。",
+     "numeric": false
+    },
+    {
+     "label": "例 11",
+     "ref": "Lecture 11 Example 1",
+     "question": "Example 1 data (Year 1 → Year 2): unemployment 5.9% → 9.1%; inflation 3.2% → 1.5%; growth 3.0% → 1.8%; official interest rate 5% → 2.5%; fiscal balance structural surplus $2b → structural deficit $3b. Describe the changes in internal balance; which internal goals appear incompatible; what policies has the government used?",
+     "solution": "<strong>内部平衡的变化</strong>：失业率从 5.9% 升到 9.1%，增长率从 3.0% 降到 1.8%，通胀率从 3.2% 降到 1.5%。\n<strong>冲突的目标</strong>：低通胀与增长、就业冲突：通胀和增长同时下降，而失业上升。\n<strong>政策</strong>：利率从 5% 降到 2.5%（宽松货币政策），第 2 年预算从结构性盈余 $2b 转为结构性赤字 $3b（扩张性财政政策），都是为了提高总需求、减少失业。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "",
+        "Year 1",
+        "Year 2"
+       ],
+       "rows": [
+        [
+         "Unemployment rate",
+         "5.9%",
+         "9.1%"
+        ],
+        [
+         "Inflation rate",
+         "3.2%",
+         "1.5%"
+        ],
+        [
+         "Growth rate",
+         "3.0%",
+         "1.8%"
+        ],
+        [
+         "Official interest rate",
+         "5%",
+         "2.5%"
+        ],
+        [
+         "Fiscal balance",
+         "Structural surplus $2b",
+         "Structural deficit $3b"
+        ]
+       ],
+       "title": "Example 1"
+      }
+     ],
+     "checks": [
+      {
+       "expr": "9.1-5.9",
+       "equals": "3.2",
+       "tol": 1e-09
+      },
+      {
+       "expr": "5-2.5",
+       "equals": "2.5"
+      }
+     ]
+    },
+    {
+     "label": "例 12",
+     "ref": "Lecture 11 Example 2",
+     "question": "Example 2 data: growth 2.5% → 6.8%; inflation 2.8% → 6.5%; unemployment 8.5% → 5%; exports $50b → $48b; imports $46b → $53b. What are the conflicts in internal balance? How may internal changes have influenced the external imbalance? What policies would improve internal and external balance?",
+     "solution": "<strong>内部冲突</strong>：增长加快（2.5% → 6.8%）、失业下降（8.5% → 5%），却与低通胀冲突（通胀 2.8% → 6.5%）。\n<strong>对外部平衡的影响</strong>：强劲增长使就业和收入增加，进口需求上升（$46b → $53b）；通胀上升削弱国际竞争力，出口下降（$50b → $48b）。贸易差额从顺差 $4b 变为逆差 $5b。\n<strong>政策</strong>：紧缩货币政策（加息）减少消费和投资、降低总需求和通胀压力；收缩性财政政策（加税、减支出、预算盈余）。总需求下降也会减少进口；通胀下降有助于恢复出口竞争力。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "",
+        "Year 1",
+        "Year 2"
+       ],
+       "rows": [
+        [
+         "Economic growth",
+         "2.5%",
+         "6.8%"
+        ],
+        [
+         "Inflation rate",
+         "2.8%",
+         "6.5%"
+        ],
+        [
+         "Unemployment rate",
+         "8.5%",
+         "5%"
+        ],
+        [
+         "Exports of goods & services",
+         "$50b",
+         "$48b"
+        ],
+        [
+         "Imports of goods & services",
+         "$46b",
+         "$53b"
+        ]
+       ],
+       "title": "Example 2"
+      }
+     ],
+     "checks": [
+      {
+       "expr": "50-46",
+       "equals": "4"
+      },
+      {
+       "expr": "48-53",
+       "equals": "-5"
+      }
+     ]
+    },
+    {
+     "label": "例 13",
+     "ref": "Lecture 11 Example 3",
+     "question": "Example 3 data (Year 1 → Year 2): exports $150b → $170b; imports $180b → $155b; exchange rate US$0.80 → 0.89; inflation 6% → 2%; fiscal balance deficit $5b → surplus $3b; official interest rate 2% → 5%; unemployment 4.5% → 7%; growth 4% → 2%. (A) Describe the changes in internal balance (5 marks). (B) What internal and external factors may have contributed to the decrease in imports? (5 marks) (C) Explain how monetary and fiscal policy may have caused the changes, using an AD–AS diagram (10 marks).",
+     "solution": "(A) 增长从 4% 降到 2%，失业率从 4.5% 升到 7%，通胀率从 6% 降到 2%：增长和就业恶化，但通胀明显改善。\n(B) <strong>内部因素</strong>：失业上升、增长下降，收入减少，家庭消费减少（AD 下降）；紧缩的财政和货币政策降低了 AD；通胀下降使本国产品相对便宜，人们转向国产品。<strong>外部因素</strong>：讲义写的是货币升值使进口变贵，但升值（US$0.80 → 0.89）实际上使进口<strong>更便宜</strong>，会增加而不是减少进口；所以进口下降主要来自国内需求的下降，升值是反方向的因素（它更多是加息吸引外资的结果）。\n(C) <strong>紧缩货币政策</strong>：RBA 卖出政府证券，现金利率从 2% 升到 5%，其他利率跟随上升，C 和 I 减少。<strong>收缩性财政政策</strong>：预算从赤字 $5b 转为盈余 $3b（减少政府支出和/或加税），G 减少、可支配收入下降使 C 减少。两者使 AD 左移（Y₁ → Y₂）：产出增长下降、失业上升、通胀下降。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "",
+        "Year 1",
+        "Year 2"
+       ],
+       "rows": [
+        [
+         "Exports ($b)",
+         "150",
+         "170"
+        ],
+        [
+         "Imports ($b)",
+         "180",
+         "155"
+        ],
+        [
+         "Exchange rate (US$ per unit)",
+         "0.80",
+         "0.89"
+        ],
+        [
+         "Inflation rate",
+         "6%",
+         "2%"
+        ],
+        [
+         "Fiscal balance ($b)",
+         "Deficit 5",
+         "Surplus 3"
+        ],
+        [
+         "Official interest rate",
+         "2%",
+         "5%"
+        ],
+        [
+         "Unemployment rate",
+         "4.5%",
+         "7%"
+        ],
+        [
+         "Economic growth",
+         "4%",
+         "2%"
+        ]
+       ],
+       "title": "Example 3"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        11.5
+       ],
+       "yr": [
+        0,
+        11
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Real GDP",
+       "yLabel": "Price level",
+       "curves": [
+        {
+         "expr": "1.5+4/(10-x)",
+         "dom": [
+          0,
+          9.556
+         ],
+         "color": "red",
+         "label": [
+          8.36,
+          10.1,
+          "AS"
+         ]
+        },
+        {
+         "expr": "10-0.6*x",
+         "dom": [
+          0,
+          11.5
+         ],
+         "color": "navy",
+         "label": [
+          9.68,
+          4.64,
+          "AD₁"
+         ]
+        },
+        {
+         "expr": "8-0.6*x",
+         "dom": [
+          0,
+          11.5
+         ],
+         "color": "navy",
+         "label": [
+          9.68,
+          2.64,
+          "AD₂"
+         ],
+         "dash": true
+        }
+       ],
+       "points": [
+        {
+         "x": 8.766,
+         "y": 4.741,
+         "label": ""
+        },
+        {
+         "x": 7.801,
+         "y": 3.319,
+         "label": ""
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          4.741
+         ],
+         "to": [
+          8.766,
+          4.741
+         ]
+        },
+        {
+         "from": [
+          8.766,
+          0
+         ],
+         "to": [
+          8.766,
+          4.741
+         ]
+        },
+        {
+         "from": [
+          0,
+          3.319
+         ],
+         "to": [
+          7.801,
+          3.319
+         ]
+        },
+        {
+         "from": [
+          7.801,
+          0
+         ],
+         "to": [
+          7.801,
+          3.319
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": -0.15,
+         "y": 4.6209999999999996,
+         "text": "P₁",
+         "anchor": "end",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 8.766,
+         "y": -0.55,
+         "text": "Y₁",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": -0.15,
+         "y": 3.199,
+         "text": "P₂",
+         "anchor": "end",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 7.801,
+         "y": -0.55,
+         "text": "Y₂",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 10,
+         "y": -0.55,
+         "text": "Y_FE",
+         "anchor": "middle",
+         "size": 9,
+         "color": "red"
+        }
+       ],
+       "caption": "Example 3: tight monetary and contractionary fiscal policy shift AD left (Y₁ → Y₂); growth falls, unemployment rises, inflation falls",
+       "padLeft": 34,
+       "vlines": [
+        {
+         "x": 10,
+         "color": "grey"
+        }
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "180-155",
+       "equals": "25"
+      },
+      {
+       "expr": "0.89-0.80",
+       "equals": "0.09",
+       "tol": 1e-09
+      }
+     ],
+     "parts": [
+      "A",
+      "B",
+      "C"
+     ],
+     "sourceNote": "讲义第 20 页 B 小题的参考答案写「an appreciated currency (making imports more expensive)」，方向错了：本币升值使进口更便宜，会增加进口。笔记保留讲义的其他要点，并改正这一条。"
+    },
+    {
+     "label": "例 14",
+     "ref": "Lecture 11 Exam",
+     "question": "What is the structure of the Term 2 examination and how should written answers be approached?",
+     "solution": "考试 2 小时 30 分钟：<strong>Section A</strong> 选择题 20 题，每题 1 分（铅笔填答题卡）；<strong>Section B</strong> 手写 2 题（第 21、22 题各 10 分，各分两小题，每小题 5 分）；<strong>Section C</strong> 打字 1 题（第 23 题，20 分），分析一个虚拟经济的数据：找趋势、说明可能原因、提出政策。\n答题方法：找出关键词并定义；使用经济学术语；写完整的句子和段落（不要只写要点）；按分值决定篇幅和时间（5 分约 15 分钟）；题目没说明时至少写 3 点；切题、举例、充分解释；需要时引用图（图会在题目中给出）。样卷 A、B 的答案在第 13 周周五发布在 Moodle。",
+     "checks": [
+      {
+       "expr": "20+20+20",
+       "equals": "60"
+      },
+      {
+       "expr": "10+10",
+       "equals": "20"
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "描述数据时只说「上升 / 下降」，不写从多少到多少。",
+    "Part C 只写政策名称，不说明传导过程和 AD–AS 图。",
+    "把升值说成使进口变贵。"
+   ],
+   "faqs": [
+    {
+     "q": "Part C 的标准写法是什么？",
+     "a": "按讲义三个例子：先逐项描述变化（从 … 到 …），再指出目标冲突和内外平衡的联系，最后提出货币政策和财政政策并说明它们怎样移动 AD、影响增长、就业和通胀。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "题型",
+   "做法",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "读图描述",
+    "指标从多少到多少，方向和幅度",
+    "例 2、11"
+   ],
+   [
+    "下行的联系",
+    "AD ↓ → 增长 ↓、失业 ↑、通胀 ↓",
+    "例 2"
+   ],
+   [
+    "政策反应",
+    "降息 + 财政刺激；赤字有周期性和结构性两部分",
+    "例 3–6"
+   ],
+   [
+    "数据分析题",
+    "描述 → 冲突 → 政策 + AD–AS 图",
+    "例 11–13"
+   ],
+   [
+    "供给方政策",
+    "提高产能使 AS 右移",
+    "例 9"
+   ]
+  ]
+ },
+ "practice": "讲座结尾：开始复习所有单元，做本周 Learning Guide、小测和写作练习，完成样卷 A 和 B（第 13 周）。"
+}

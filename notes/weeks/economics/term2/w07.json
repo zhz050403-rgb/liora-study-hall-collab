@@ -1,0 +1,210 @@
+{
+ "course": "economics",
+ "term": "term2",
+ "week": 7,
+ "title": "Week 7 · 复习与巩固",
+ "files": [
+  "unit0 PPT the circular flow model.pdf",
+  "unit1 PPT economic growth and gdp.pdf",
+  "unit2 PPT inflation.pdf",
+  "unit3 PPT unemployment.pdf",
+  "unit4 PPT aggregate demand supply.pdf",
+  "unit5 PPT international economics trade and protection.pdf",
+  "unit6 PPT international economics exchange rates.pdf"
+ ],
+ "inventory": [],
+ "intro": [
+  "第 7 周网站上没有新的课程文件，是复习与巩固周。这一页把 Unit 0–6 的核心问题、必会计算和图、单元之间的因果关系放在一起，方便回看；具体讲解和例题见第 1–6 周的笔记（Unit 6 Tutorial 的答案在第 8 周）。"
+ ],
+ "sections": [
+  {
+   "title": "Unit 0–6 一览",
+   "sources": [
+    {
+     "file": "unit0 PPT the circular flow model.pdf",
+     "pages": "全部"
+    },
+    {
+     "file": "unit1 PPT economic growth and gdp.pdf",
+     "pages": "全部"
+    },
+    {
+     "file": "unit2 PPT inflation.pdf",
+     "pages": "全部"
+    },
+    {
+     "file": "unit3 PPT unemployment.pdf",
+     "pages": "全部"
+    },
+    {
+     "file": "unit4 PPT aggregate demand supply.pdf",
+     "pages": "全部"
+    },
+    {
+     "file": "unit5 PPT international economics trade and protection.pdf",
+     "pages": "全部"
+    },
+    {
+     "file": "unit6 PPT international economics exchange rates.pdf",
+     "pages": "全部"
+    }
+   ],
+   "concept": "复习顺序建议：先把每个单元的定义和公式写一遍，再重画每周的图（循环流量、经济周期、AD–AS、关税补贴、外汇供求），最后做「单元之间怎样联系」的题，这类题最常出现在写作题里。",
+   "figures": [
+    {
+     "type": "table",
+     "headers": [
+      "Unit",
+      "核心问题",
+      "必会计算 / 图",
+      "笔记所在周"
+     ],
+     "rows": [
+      [
+       "0 循环流量",
+       "漏出与注入是否相等",
+       "五部门图；S + T + M 与 I + G + X 比较",
+       "W1"
+      ],
+      [
+       "1 GDP 与增长",
+       "增长怎么衡量、GDP 的局限",
+       "实际 GDP = 名义 × 100 ÷ CPI；人均；增长率；经济周期图",
+       "W1、W2"
+      ],
+      [
+       "2 通胀",
+       "CPI、通胀的原因与影响",
+       "CPI = 当期篮子 ÷ 基期篮子 × 100；通胀率",
+       "W2、W3"
+      ],
+      [
+       "3 失业",
+       "失业率、参与率、失业类型",
+       "失业 ÷ 劳动力；劳动力 ÷ 工作年龄人口",
+       "W3、W4"
+      ],
+      [
+       "4 AD–AS",
+       "需求拉动、成本推动、刺激政策的效果",
+       "AS 三段；AD 右移、AS 左移的图",
+       "W4、W5"
+      ],
+      [
+       "5 贸易与保护",
+       "比较优势、关税与补贴、贸易条件",
+       "机会成本 = 放弃 ÷ 得到；关税图 ABCD；ToT = X 价格 ÷ M 价格 × 100",
+       "W5、W6"
+      ],
+      [
+       "6 汇率",
+       "澳元的供求、升值贬值的原因与影响",
+       "外汇市场供求图",
+       "W6、W8"
+      ]
+     ],
+     "title": "Units 0–6 at a glance"
+    }
+   ],
+   "noExamples": true,
+   "mistakes": [
+    "只背定义不会画图：写作题大多要求「with the aid of a diagram」。",
+    "计算题分母弄错：通胀率除以上一期 CPI，失业率除以劳动力，参与率除以工作年龄人口。"
+   ],
+   "faqs": [
+    {
+     "q": "这一周有没有新内容要学？",
+     "a": "没有新课件。用这一周把前六个单元的 Tutorial 题重新做一遍，尤其是计算题和作图题。"
+    }
+   ]
+  },
+  {
+   "title": "单元之间的因果链",
+   "sources": [
+    {
+     "file": "unit4 PPT aggregate demand supply.pdf",
+     "pages": "p1–27"
+    },
+    {
+     "file": "unit6 PPT international economics exchange rates.pdf",
+     "pages": "p1–23"
+    }
+   ],
+   "concept": "宏观经济的各个指标互相影响：总需求同时影响产出、就业和物价；汇率通过出口、进口影响贸易差额和通胀；利率同时影响国内支出和汇率。写作题回答「影响」时，按「哪条曲线 / 哪个流量变 → 怎么移动 → 产出、就业、物价、贸易差额各怎样」的顺序写。",
+   "figures": [
+    {
+     "type": "table",
+     "headers": [
+      "如果……",
+      "那么……",
+      "涉及单元"
+     ],
+     "rows": [
+      [
+       "总需求（AD）增加",
+       "产出和就业上升；接近充分就业时通胀上升",
+       "1、2、3、4"
+      ],
+      [
+       "AS 左移（成本上升）",
+       "物价上升、产出下降、失业上升（滞胀）",
+       "2、3、4"
+      ],
+      [
+       "澳元贬值",
+       "出口 ↑、进口 ↓、贸易差额改善、CPI 上升（输入型通胀）",
+       "2、5、6"
+      ],
+      [
+       "澳大利亚利率上升",
+       "外资流入，澳元需求 ↑，澳元升值；国内借贷和支出下降",
+       "4、6"
+      ],
+      [
+       "漏出 > 注入",
+       "循环收缩，失业上升（周期性失业）",
+       "0、3"
+      ],
+      [
+       "取消关税",
+       "价格和通胀下降，受保护行业就业下降，效率提高，进口增加",
+       "2、3、5"
+      ]
+     ],
+     "title": "How the units connect"
+    }
+   ],
+   "noExamples": true,
+   "mistakes": [
+    "回答影响时只写一个指标：题目常要求增长、就业、通胀、贸易差额都要讨论。"
+   ],
+   "faqs": [
+    {
+     "q": "写作题怎么组织？",
+     "a": "定义 → 画图并说明哪条曲线怎样移动 → 逐个指标说明结果 → 一句结论（何时有效、代价是什么）。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "自测",
+   "能否做到"
+  ],
+  "rows": [
+   [
+    "六张图",
+    "循环流量、经济周期、AD–AS（两种通胀）、关税、补贴、外汇供求都能默画"
+   ],
+   [
+    "七个公式",
+    "实际 GDP、CPI、通胀率、失业率、参与率、机会成本、贸易条件"
+   ],
+   [
+    "因果链",
+    "上表每一行都能写出完整解释"
+   ]
+  ]
+ },
+ "practice": "重做第 1–6 周的 Tutorial 题（答案在第 1–6 周和第 8 周笔记里），先自己写，再对照。"
+}

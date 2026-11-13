@@ -866,6 +866,24 @@ table.kp-tbl th,table.kp-tbl td{padding:5px 8px;text-align:left}
 .notes table.kp-tbl th.kp-num,.notes table.kp-tbl td.kp-num,
 table.kp-tbl th.kp-num,table.kp-tbl td.kp-num{text-align:left}
 @media print{.gx table.kp-tbl,.notes table.kp-tbl,table.kp-tbl{font-size:9pt}}
+/* 生成笔记的账页。T 形账户与多栏式账户的金额列不同。 */
+.gx .ledger-set{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));
+  gap:12px;
+  margin:12px 0;
+}
+.gx .ledger-set > .kp-tbl{min-width:0;margin:0}
+.gx .kp-tbl.ledger caption{font-weight:700;color:var(--navy-700);padding:4px 0}
+.gx .kp-tbl.ledger:not(.columnar) :is(th,td):nth-child(3){border-right:2px solid var(--navy-700)}
+.gx .kp-tbl.ledger:not(.columnar) td:is(:nth-child(3),:nth-child(6)),
+.gx .kp-tbl.ledger.columnar td:nth-child(n+3){
+  text-align:right;
+  white-space:nowrap;
+  font-variant-numeric:tabular-nums;
+}
+.gx .kp-tbl.ledger .tot td{border-top:1px solid var(--navy-700);border-bottom:3px double var(--navy-700);font-weight:700}
+.gx .kp-tbl.ledger .bd td,.gx .kp-tbl.ledger td.cd{color:#8a6d1f}
 /* ===== 资料下载里的「其他资料」二级分组 ===== */
 .fg-sub{margin-top:16px;padding:12px 12px 4px;border:1px solid var(--line-2);border-radius:10px;background:#fbfdff}
 .fg-sub-t{display:flex;align-items:center;gap:7px;font-size:13px;font-weight:700;color:var(--navy-800);margin-bottom:10px;font-family:var(--sans)}

@@ -1,0 +1,231 @@
+<h4 class="kp-h">本周导览 · 怎么自学这一周</h4>
+<p>本周三讲都在回答同一个问题：<strong>一件事发生的可能性有多大</strong>。L13 给出概率的定义，L14 用排列组合去数「有多少种情况」，L15 处理「或、且、不」这类组合条件。三讲共 22 道课件例题，下面全部按原题讲解。</p>
+<div class="callout blue"><strong>建议顺序</strong>：①读「概念」，并把公式抄一遍；②看图；③做例题时先遮住解答，自己算完再点「看解答」核对；④读「易错」和「常见疑惑」；⑤最后用本周末尾的「解题流程」自测。</div>
+
+<h4 class="kp-h">概率的定义（Theoretical Probability）</h4>
+<p class="kp-src">L13_Basic_Probability.pdf · PDF p1</p>
+<div class="callout blue"><strong>概念</strong><br>
+<strong>试验</strong>（probability experiment）：结果不确定、可以重复做的过程，例如掷骰子。<br>
+<strong>结果</strong>（outcome）：试验的一次结果，例如掷出 4。<br>
+<strong>样本空间</strong>（sample space，记作 S）：所有可能结果组成的集合。除非题目另有说明，默认每个结果<strong>等可能</strong>（equally likely）。<br>
+<strong>事件</strong>（event，记作 E）：S 的一个子集，也就是「满足某个描述的那些结果」。<br>
+<strong>随机</strong>（random）：没有偏向，每个结果被选中的机会相同。</div>
+<div class="formula">P(E) = <span class="frac"><span class="n">n(E)</span><span class="d">n(S)</span></span> = <span class="frac"><span class="n">事件包含的结果数</span><span class="d">样本空间的结果总数</span></span></div>
+<p>由定义直接得到：0 ≤ P(E) ≤ 1。P(E) = 0 表示<strong>不可能事件</strong>（impossible），P(E) = 1 表示<strong>必然事件</strong>（certain）。</p>
+
+<p class="c-blue"><strong>例 1（L13 Ex 1）</strong> A standard coin is tossed. Find the probability that the result is a head.</p>
+<details><summary>看解答</summary><p>S = {正面, 反面}，n(S) = 2；E = {正面}，n(E) = 1。P = <span class="frac"><span class="n">1</span><span class="d">2</span></span>。<br>Answer: 1/2</p></details>
+
+<p class="c-blue"><strong>例 2（L13 Ex 2）</strong> A standard six-sided die is rolled. Calculate the probability that the number on the uppermost face is less than 5.</p>
+<details><summary>看解答</summary><p>S = {1,2,3,4,5,6}，「小于 5」= {1,2,3,4}，共 4 个。P = <span class="frac"><span class="n">4</span><span class="d">6</span></span> = <span class="frac"><span class="n">2</span><span class="d">3</span></span>。注意「less than 5」不包括 5。<br>Answer: 2/3</p></details>
+
+<p class="c-blue"><strong>例 3（L13 Ex 3）</strong> A letter is chosen at random from the letters of the word FOUNDATIONS. Find the probability that the chosen letter is: (a) D (b) N (c) a vowel (d) C</p>
+<details><summary>看解答</summary><p>FOUNDATIONS 共 11 个字母：F, O, U, N, D, A, T, I, O, N, S。重复的字母要按出现次数分别计入：O 出现 2 次，N 出现 2 次。<br>
+(a) D 出现 1 次：<span class="frac"><span class="n">1</span><span class="d">11</span></span><br>
+(b) N 出现 2 次：<span class="frac"><span class="n">2</span><span class="d">11</span></span><br>
+(c) 元音 O, U, A, I, O 共 5 个：<span class="frac"><span class="n">5</span><span class="d">11</span></span><br>
+(d) 单词里没有 C，是不可能事件：0<br>Answer: 1/11, 2/11, 5/11, 0</p></details>
+
+<p class="c-blue"><strong>例 4（L13 Ex 4）</strong> A number is chosen at random from the set of positive integers less than 30. Find the probability that the number is a perfect square.</p>
+<details><summary>看解答</summary><p>小于 30 的正整数是 1 到 29，n(S) = 29（不是 30）。完全平方数：1, 4, 9, 16, 25，共 5 个。P = <span class="frac"><span class="n">5</span><span class="d">29</span></span>。<br>Answer: 5/29</p></details>
+
+<p class="c-blue"><strong>例 5（L13 Ex 5）</strong> Two six-sided dice are tossed and the sum of the numbers on the uppermost faces is recorded as X. Find P(X ≥ 9).</p>
+<div class="diagram"><svg viewBox="0 0 300 300" width="300" role="img" aria-label="两颗骰子的 36 种结果，和至少为 9 的 10 格被标出">
+<g font-family="sans-serif" font-size="12" text-anchor="middle">
+<text x="165" y="16" fill="#173860" font-weight="700">第二颗骰子</text>
+<text x="14" y="165" fill="#173860" font-weight="700" transform="rotate(-90 14 165)">第一颗骰子</text>
+<g fill="#4a5d75"><text x="75" y="40">1</text><text x="115" y="40">2</text><text x="155" y="40">3</text><text x="195" y="40">4</text><text x="235" y="40">5</text><text x="275" y="40">6</text>
+<text x="40" y="74">1</text><text x="40" y="114">2</text><text x="40" y="154">3</text><text x="40" y="194">4</text><text x="40" y="234">5</text><text x="40" y="274">6</text></g>
+</g>
+<g font-family="sans-serif" font-size="13" text-anchor="middle">
+<rect x="55" y="50" width="40" height="40" fill="#fff" stroke="#c9d7ea"/><text x="75" y="75">2</text><rect x="95" y="50" width="40" height="40" fill="#fff" stroke="#c9d7ea"/><text x="115" y="75">3</text><rect x="135" y="50" width="40" height="40" fill="#fff" stroke="#c9d7ea"/><text x="155" y="75">4</text><rect x="175" y="50" width="40" height="40" fill="#fff" stroke="#c9d7ea"/><text x="195" y="75">5</text><rect x="215" y="50" width="40" height="40" fill="#fff" stroke="#c9d7ea"/><text x="235" y="75">6</text><rect x="255" y="50" width="40" height="40" fill="#fff" stroke="#c9d7ea"/><text x="275" y="75">7</text>
+<rect x="55" y="90" width="40" height="40" fill="#fff" stroke="#c9d7ea"/><text x="75" y="115">3</text><rect x="95" y="90" width="40" height="40" fill="#fff" stroke="#c9d7ea"/><text x="115" y="115">4</text><rect x="135" y="90" width="40" height="40" fill="#fff" stroke="#c9d7ea"/><text x="155" y="115">5</text><rect x="175" y="90" width="40" height="40" fill="#fff" stroke="#c9d7ea"/><text x="195" y="115">6</text><rect x="215" y="90" width="40" height="40" fill="#fff" stroke="#c9d7ea"/><text x="235" y="115">7</text><rect x="255" y="90" width="40" height="40" fill="#fff" stroke="#c9d7ea"/><text x="275" y="115">8</text>
+<rect x="55" y="130" width="40" height="40" fill="#fff" stroke="#c9d7ea"/><text x="75" y="155">4</text><rect x="95" y="130" width="40" height="40" fill="#fff" stroke="#c9d7ea"/><text x="115" y="155">5</text><rect x="135" y="130" width="40" height="40" fill="#fff" stroke="#c9d7ea"/><text x="155" y="155">6</text><rect x="175" y="130" width="40" height="40" fill="#fff" stroke="#c9d7ea"/><text x="195" y="155">7</text><rect x="215" y="130" width="40" height="40" fill="#fff" stroke="#c9d7ea"/><text x="235" y="155">8</text><rect x="255" y="130" width="40" height="40" fill="#f6e3b4" stroke="#c9a55c"/><text x="275" y="155" font-weight="700">9</text>
+<rect x="55" y="170" width="40" height="40" fill="#fff" stroke="#c9d7ea"/><text x="75" y="195">5</text><rect x="95" y="170" width="40" height="40" fill="#fff" stroke="#c9d7ea"/><text x="115" y="195">6</text><rect x="135" y="170" width="40" height="40" fill="#fff" stroke="#c9d7ea"/><text x="155" y="195">7</text><rect x="175" y="170" width="40" height="40" fill="#fff" stroke="#c9d7ea"/><text x="195" y="195">8</text><rect x="215" y="170" width="40" height="40" fill="#f6e3b4" stroke="#c9a55c"/><text x="235" y="195" font-weight="700">9</text><rect x="255" y="170" width="40" height="40" fill="#f6e3b4" stroke="#c9a55c"/><text x="275" y="195" font-weight="700">10</text>
+<rect x="55" y="210" width="40" height="40" fill="#fff" stroke="#c9d7ea"/><text x="75" y="235">6</text><rect x="95" y="210" width="40" height="40" fill="#fff" stroke="#c9d7ea"/><text x="115" y="235">7</text><rect x="135" y="210" width="40" height="40" fill="#fff" stroke="#c9d7ea"/><text x="155" y="235">8</text><rect x="175" y="210" width="40" height="40" fill="#f6e3b4" stroke="#c9a55c"/><text x="195" y="235" font-weight="700">9</text><rect x="215" y="210" width="40" height="40" fill="#f6e3b4" stroke="#c9a55c"/><text x="235" y="235" font-weight="700">10</text><rect x="255" y="210" width="40" height="40" fill="#f6e3b4" stroke="#c9a55c"/><text x="275" y="235" font-weight="700">11</text>
+<rect x="55" y="250" width="40" height="40" fill="#fff" stroke="#c9d7ea"/><text x="75" y="275">7</text><rect x="95" y="250" width="40" height="40" fill="#fff" stroke="#c9d7ea"/><text x="115" y="275">8</text><rect x="135" y="250" width="40" height="40" fill="#f6e3b4" stroke="#c9a55c"/><text x="155" y="275" font-weight="700">9</text><rect x="175" y="250" width="40" height="40" fill="#f6e3b4" stroke="#c9a55c"/><text x="195" y="275" font-weight="700">10</text><rect x="215" y="250" width="40" height="40" fill="#f6e3b4" stroke="#c9a55c"/><text x="235" y="275" font-weight="700">11</text><rect x="255" y="250" width="40" height="40" fill="#f6e3b4" stroke="#c9a55c"/><text x="275" y="275" font-weight="700">12</text>
+</g></svg><p class="cap">两颗骰子共 6 × 6 = 36 种等可能结果，格子里是两数之和；和 ≥ 9 的 10 格已标出。</p></div>
+<details><summary>看解答</summary><p>样本空间是 36 个有序对（第一颗, 第二颗），不是 2 到 12 这 11 个和——各个和出现的机会不相等。数图中标出的格子：和为 9 有 4 格，10 有 3 格，11 有 2 格，12 有 1 格，共 10 格。P(X ≥ 9) = <span class="frac"><span class="n">10</span><span class="d">36</span></span> = <span class="frac"><span class="n">5</span><span class="d">18</span></span>。<br>注：课件原文写的是 “tossed twice”，按「两颗骰子掷一次」理解才与「记录两数之和 X」一致。<br>Answer: 5/18</p></details>
+
+<div class="callout red"><strong>易错</strong><br>
+① 把「小于 30 的正整数」算成 30 个，正确是 29 个；「less than」不含端点，「at most / no more than」才含。<br>
+② 用 2 到 12 这 11 个「和」当样本空间：它们不是等可能的，必须回到 36 个有序结果。<br>
+③ 重复字母（FOUNDATIONS 里的两个 O、两个 N）只算一次：选字母时每个位置都是一个独立结果。</div>
+<div class="callout blue"><strong>常见疑惑</strong><br>
+<strong>问：为什么一定要「等可能」？</strong> 公式 n(E)/n(S) 本质是「每个结果分到同样多的概率」。如果结果不等可能（比如作弊骰子），就不能直接数个数。<br>
+<strong>问：(3,6) 和 (6,3) 算一种还是两种？</strong> 两种。两颗骰子是两个不同的物体，先给它们编号（第一颗、第二颗），样本空间才是等可能的 36 种。</div>
+
+<h4 class="kp-h">用韦恩图和计数原理数结果</h4>
+<p class="kp-src">L13_Basic_Probability.pdf · PDF p3</p>
+<div class="callout blue"><strong>概念</strong><br>条件一多（「两门都学」「是红心或人头牌」），先画<strong>韦恩图</strong>（Venn diagram）把各部分的人数填出来，再套概率公式。组成数字、排座位这类题，用上周的<strong>乘法原理</strong>（fundamental counting principle）分别数出总数和符合条件的个数。</div>
+
+<p class="c-blue"><strong>例 6（L13 Ex 6）</strong> In a class of 30 students there are 20 students who study History, 17 who study Geography and 4 who study neither of these subjects. If a student is chosen at random find the probability that the student studies both History and Geography.</p>
+<div class="diagram"><svg viewBox="0 0 320 200" width="320" role="img" aria-label="韦恩图：只学历史 9 人，两门都学 11 人，只学地理 6 人，两门都不学 4 人">
+<rect x="4" y="4" width="312" height="192" rx="10" fill="#f7f9fc" stroke="#9fb3cc"/>
+<text x="16" y="24" font-family="sans-serif" font-size="12" fill="#4a5d75">S：全班 30 人</text>
+<circle cx="125" cy="105" r="70" fill="#d9e8f8" fill-opacity="0.8" stroke="#16569c"/>
+<circle cx="200" cy="105" r="70" fill="#f6e3b4" fill-opacity="0.75" stroke="#b08a3c"/>
+<g font-family="sans-serif" text-anchor="middle">
+<text x="95" y="62" font-size="12" fill="#16569c" font-weight="700">History 20</text>
+<text x="232" y="62" font-size="12" fill="#8a6d1f" font-weight="700">Geography 17</text>
+<text x="92" y="112" font-size="18" fill="#173860">9</text>
+<text x="162" y="112" font-size="18" fill="#173860" font-weight="700">11</text>
+<text x="235" y="112" font-size="18" fill="#173860">6</text>
+<text x="290" y="182" font-size="14" fill="#4a5d75">4</text>
+</g></svg><p class="cap">先填「两门都不学」的 4，再算两圆合计 26，最后求中间重叠部分。</p></div>
+<details><summary>看解答</summary><p>至少学一门的人数 = 30 − 4 = 26。<br>两圆合计时，重叠部分被数了两次：20 + 17 = 37 比 26 多出 11，这 11 人就是两门都学的。<br>P(两门都学) = <span class="frac"><span class="n">11</span><span class="d">30</span></span>。<br>Answer: 11/30</p></details>
+
+<p class="c-blue"><strong>例 7（L13 Ex 7）</strong> A three-digit number is made using 3 of the digits 1, 3, 4, 5, 6 without repetition of digits. Find the probability that the number is: (a) even. (b) greater than 400.</p>
+<details><summary>看解答</summary><p>总数：百位 5 种 × 十位 4 种 × 个位 3 种 = 60。<br>
+(a) 偶数由个位决定，个位只能是 4 或 6（2 种）；<strong>先排有限制的位置</strong>，再排百位（剩 4 种）和十位（剩 3 种）：2 × 4 × 3 = 24。P = <span class="frac"><span class="n">24</span><span class="d">60</span></span> = <span class="frac"><span class="n">2</span><span class="d">5</span></span>。<br>
+(b) 大于 400 由百位决定，百位是 4、5 或 6（3 种），再排十位 4 种、个位 3 种：3 × 4 × 3 = 36。P = <span class="frac"><span class="n">36</span><span class="d">60</span></span> = <span class="frac"><span class="n">3</span><span class="d">5</span></span>。<br>Answer: (a) 2/5 (b) 3/5</p></details>
+
+<p class="c-blue"><strong>例 8（L13 Ex 8）</strong> A card is chosen from a regular deck of 52 cards. Find the probability that the card is: (a) a heart. (b) a face card. (c) a heart and a face card. (d) a heart or a face card.</p>
+<details><summary>看解答</summary><p>一副牌 4 种花色，每种 13 张；人头牌（face card）是 J、Q、K，每种花色 3 张，共 12 张。<br>
+(a) <span class="frac"><span class="n">13</span><span class="d">52</span></span> = <span class="frac"><span class="n">1</span><span class="d">4</span></span><br>
+(b) <span class="frac"><span class="n">12</span><span class="d">52</span></span> = <span class="frac"><span class="n">3</span><span class="d">13</span></span><br>
+(c) 红心 J、Q、K：<span class="frac"><span class="n">3</span><span class="d">52</span></span><br>
+(d) 13 + 12 − 3 = 22（红心人头牌在两类里各数了一次，要减掉一次）：<span class="frac"><span class="n">22</span><span class="d">52</span></span> = <span class="frac"><span class="n">11</span><span class="d">26</span></span><br>Answer: 1/4, 3/13, 3/52, 11/26</p></details>
+
+<div class="callout red"><strong>易错</strong><br>
+① 例 6 直接用 20 + 17 当人数：两门都学的人被数了两次。<br>
+② 例 7 先排百位再排个位：个位有限制，应该<strong>先排有限制的位置</strong>，否则会出现「前面用掉了 4 和 6，个位没得选」的情况。<br>
+③ 例 8 (d) 的 or 是「或者都是」（inclusive or），不是「只能二选一」。</div>
+<div class="callout blue"><strong>常见疑惑</strong><br>
+<strong>问：人头牌包括 A 吗？</strong> 不包括。face card 只有 J、Q、K。<br>
+<strong>问：例 8 (d) 有没有更快的方法？</strong> 有，就是 L15 的加法公式 P(A ∪ B) = P(A) + P(B) − P(A ∩ B)，见下面「并集、交集、补集」一节。</div>
+
+<h4 class="kp-h">用排列组合算概率（Permutations &amp; Combinations）</h4>
+<p class="kp-src">L14_Probability_Permutations_Combinations.pdf · PDF p1–4</p>
+<div class="callout blue"><strong>概念</strong><br>当结果太多、没法一个个列出来时，用排列组合<strong>分别数出</strong> n(E) 和 n(S)。<br>
+<strong>组合</strong> C(n, r)（也写作 ⁿCᵣ）：从 n 个里选 r 个，<strong>不管顺序</strong>。<br>
+<strong>排列</strong> P(n, r)（也写作 ⁿPᵣ）：从 n 个里选 r 个并<strong>排出顺序</strong>。<br>
+关键原则：分子和分母必须用<strong>同一种数法</strong>，要么都计顺序，要么都不计。</div>
+<div class="formula">C(n, r) = <span class="frac"><span class="n">n!</span><span class="d">r!(n − r)!</span></span>　　P(n, r) = <span class="frac"><span class="n">n!</span><span class="d">(n − r)!</span></span>　　有重复元素的全排列 = <span class="frac"><span class="n">n!</span><span class="d">a!b!c!…</span></span></div>
+
+<p class="c-blue"><strong>例 1（L14 Ex 1）</strong> A box contains 7 red and 5 yellow balls. Two balls are selected at random from the box. Find the probability that they are both red.</p>
+<details><summary>看解答</summary><p>一次拿 2 个，不计顺序。n(S) = C(12, 2) = 66；两个都是红球 n(E) = C(7, 2) = 21。P = <span class="frac"><span class="n">21</span><span class="d">66</span></span> = <span class="frac"><span class="n">7</span><span class="d">22</span></span>。<br>验算（按先后抽）：<span class="frac"><span class="n">7</span><span class="d">12</span></span> × <span class="frac"><span class="n">6</span><span class="d">11</span></span> = <span class="frac"><span class="n">42</span><span class="d">132</span></span> = <span class="frac"><span class="n">7</span><span class="d">22</span></span>，结果一致。<br>Answer: 7/22</p></details>
+
+<p class="c-blue"><strong>例 2（L14 Ex 2）</strong> Five cards are selected from a regular pack of 52 cards. Find the probability that they are 2 hearts and 3 diamonds.</p>
+<details><summary>看解答</summary><p>n(S) = C(52, 5) = 2 598 960。<br>从 13 张红心里选 2 张，再从 13 张方块里选 3 张，两步相乘：n(E) = C(13, 2) × C(13, 3) = 78 × 286 = 22 308。<br>P = <span class="frac"><span class="n">22 308</span><span class="d">2 598 960</span></span> = <span class="frac"><span class="n">143</span><span class="d">16 660</span></span> ≈ 0.0086。<br>Answer: 143/16660 ≈ 0.0086</p></details>
+
+<p class="c-blue"><strong>例 3（L14 Ex 3）</strong> Four girls and four boys arrange themselves randomly in a row. (a) Find how many different arrangements are possible. (b) Cindy Chan would like to be next to Patrick Wong. Calculate the probability that her wish is fulfilled. (c) Find the probability that the girls and boys are in alternating positions.</p>
+<details><summary>看解答</summary><p>
+(a) 8 个人排成一排：8! = 40 320。<br>
+(b) <strong>捆绑法</strong>：把 Cindy 和 Patrick 看成一个整体，与其余 6 人共 7 个单位排列，有 7! 种；两人内部还能互换，× 2。n(E) = 2 × 7! = 10 080。P = <span class="frac"><span class="n">10 080</span><span class="d">40 320</span></span> = <span class="frac"><span class="n">1</span><span class="d">4</span></span>。<br>
+(c) 交替排列只有「女男女男…」和「男女男女…」两种模式；每种模式下 4 个女生排 4!，4 个男生排 4!。n(E) = 2 × 4! × 4! = 1 152。P = <span class="frac"><span class="n">1 152</span><span class="d">40 320</span></span> = <span class="frac"><span class="n">1</span><span class="d">35</span></span>。<br>Answer: (a) 40 320 (b) 1/4 (c) 1/35</p></details>
+
+<p class="c-blue"><strong>例 4（L14 Ex 4）</strong> In a tutorial class there are 8 students: 5 girls and 3 boys. 4 students are selected at random. (a) How many different selections are possible? (b) Probability of 2 girls and 2 boys. (c) Two of the students are Cindy and Patrick. Probability that both are chosen. (d) Probability that Cindy is chosen but Patrick is not.</p>
+<details><summary>看解答</summary><p>
+(a) 选 4 人，不计顺序：C(8, 4) = 70。<br>
+(b) C(5, 2) × C(3, 2) = 10 × 3 = 30，P = <span class="frac"><span class="n">30</span><span class="d">70</span></span> = <span class="frac"><span class="n">3</span><span class="d">7</span></span>。<br>
+(c) 先把两人定下，剩下 2 个名额从其余 6 人里选：C(6, 2) = 15，P = <span class="frac"><span class="n">15</span><span class="d">70</span></span> = <span class="frac"><span class="n">3</span><span class="d">14</span></span>。<br>
+(d) Cindy 定下，Patrick 排除，剩下 3 个名额从其余 6 人里选：C(6, 3) = 20，P = <span class="frac"><span class="n">20</span><span class="d">70</span></span> = <span class="frac"><span class="n">2</span><span class="d">7</span></span>。<br>Answer: (a) 70 (b) 3/7 (c) 3/14 (d) 2/7</p></details>
+
+<p class="c-blue"><strong>例 5（L14 Ex 5）</strong> A computer store owner has 20 computers including 5 loaded with Excel. He chooses 3 computers to put on display. Find the probability that none of the 3 are loaded with Excel.</p>
+<details><summary>看解答</summary><p>「都没有 Excel」就是 3 台全部来自另外 15 台：C(15, 3) = 455；n(S) = C(20, 3) = 1 140。P = <span class="frac"><span class="n">455</span><span class="d">1 140</span></span> = <span class="frac"><span class="n">91</span><span class="d">228</span></span> ≈ 0.399。<br>Answer: 91/228 ≈ 0.399</p></details>
+
+<p class="c-blue"><strong>例 6（L14 Ex 6）</strong> A software department consists of 6 men and 4 women. (a) How many ways can a chief programmer, a backup programmer and a programming librarian be chosen? (b) If chosen randomly, probability that all are women. (c) Probability of 2 women and 1 man. (d) How many ways can 3 programmers be selected to form a team? (e) If the team is selected randomly, probability that the majority are women.</p>
+<details><summary>看解答</summary><p>(a)–(c) 是三个<strong>不同职位</strong>，计顺序，用排列；(d)–(e) 是组队，不计顺序，用组合。<br>
+(a) P(10, 3) = 10 × 9 × 8 = 720。<br>
+(b) 三个职位都给女生：P(4, 3) = 24，P = <span class="frac"><span class="n">24</span><span class="d">720</span></span> = <span class="frac"><span class="n">1</span><span class="d">30</span></span>。<br>
+(c) 男生占哪个职位有 3 种选法，该职位从 6 个男生里选，另外两个职位按顺序从 4 个女生里选（4 × 3）：3 × 6 × 12 = 216，P = <span class="frac"><span class="n">216</span><span class="d">720</span></span> = <span class="frac"><span class="n">3</span><span class="d">10</span></span>。<br>用组合验算：<span class="frac"><span class="n">C(4,2) × C(6,1)</span><span class="d">C(10,3)</span></span> = <span class="frac"><span class="n">36</span><span class="d">120</span></span> = <span class="frac"><span class="n">3</span><span class="d">10</span></span>，一致。<br>
+(d) C(10, 3) = 120。<br>
+(e) 「多数是女生」= 2 女 1 男 或 3 女：C(4,2) × C(6,1) + C(4,3) = 36 + 4 = 40，P = <span class="frac"><span class="n">40</span><span class="d">120</span></span> = <span class="frac"><span class="n">1</span><span class="d">3</span></span>。<br>Answer: (a) 720 (b) 1/30 (c) 3/10 (d) 120 (e) 1/3</p></details>
+
+<p class="c-blue"><strong>例 7（L14 Ex 7）</strong> The letters of the word ENGINEERING are arranged randomly in a straight line. (a) How many different arrangements are possible? (b) Probability that the 3 E's are together. (c) Probability that there are at least 7 letters between the 2 G's.</p>
+<div class="diagram"><svg viewBox="0 0 340 80" width="340" role="img" aria-label="11 个位置中，两个 G 之间至少隔 7 个字母的一种放法：G 在第 1 位和第 9 位">
+<g font-family="sans-serif" text-anchor="middle">
+<rect x="5" y="20" width="28" height="30" fill="#f6e3b4" stroke="#b08a3c"/><text x="19" y="41" font-size="15" font-weight="700" fill="#173860">G</text>
+<rect x="35" y="20" width="28" height="30" fill="#fff" stroke="#9fb3cc"/><rect x="65" y="20" width="28" height="30" fill="#fff" stroke="#9fb3cc"/><rect x="95" y="20" width="28" height="30" fill="#fff" stroke="#9fb3cc"/><rect x="125" y="20" width="28" height="30" fill="#fff" stroke="#9fb3cc"/><rect x="155" y="20" width="28" height="30" fill="#fff" stroke="#9fb3cc"/><rect x="185" y="20" width="28" height="30" fill="#fff" stroke="#9fb3cc"/><rect x="215" y="20" width="28" height="30" fill="#fff" stroke="#9fb3cc"/>
+<rect x="245" y="20" width="28" height="30" fill="#f6e3b4" stroke="#b08a3c"/><text x="259" y="41" font-size="15" font-weight="700" fill="#173860">G</text>
+<rect x="275" y="20" width="28" height="30" fill="#fff" stroke="#9fb3cc"/><rect x="305" y="20" width="28" height="30" fill="#fff" stroke="#9fb3cc"/>
+<text x="139" y="70" font-size="12" fill="#4a5d75">中间隔 7 个位置</text>
+<g font-size="10" fill="#7a8ba3"><text x="19" y="14">1</text><text x="259" y="14">9</text><text x="319" y="14">11</text></g>
+</g></svg><p class="cap">两个 G 的位置相差至少 8：(1,9)(2,10)(3,11)(1,10)(2,11)(1,11)，共 6 对。</p></div>
+<details><summary>看解答</summary><p>ENGINEERING 共 11 个字母：E×3、N×3、G×2、I×2、R×1。<br>
+(a) 有重复字母的全排列：<span class="frac"><span class="n">11!</span><span class="d">3! 3! 2! 2!</span></span> = <span class="frac"><span class="n">39 916 800</span><span class="d">144</span></span> = 277 200。<br>
+(b) 3 个 E 捆成一块，剩下 9 个单位（块 + N×3、G×2、I×2、R）：<span class="frac"><span class="n">9!</span><span class="d">3! 2! 2!</span></span> = 15 120。P = <span class="frac"><span class="n">15 120</span><span class="d">277 200</span></span> = <span class="frac"><span class="n">3</span><span class="d">55</span></span>。<br>
+(c) 只看两个 G 落在哪两个位置：随机排列时，11 个位置中任意两个被 G 占据的机会相同，共 C(11, 2) = 55 种。「中间至少 7 个字母」要求位置差 ≥ 8，只有图中 6 对。P = <span class="frac"><span class="n">6</span><span class="d">55</span></span>。<br>Answer: (a) 277 200 (b) 3/55 (c) 6/55</p></details>
+
+<div class="callout red"><strong>易错</strong><br>
+① 分子用组合、分母用排列（或反过来），结果会差 r! 倍。<br>
+② 例 6 把「三个不同职位」当成组队：职位不同就要计顺序。<br>
+③ 捆绑后忘记乘内部排列数（例 3 (b) 的 × 2）。<br>
+④ 有重复字母时忘记除以 3!、2! 等重复次数的阶乘。</div>
+<div class="callout blue"><strong>常见疑惑</strong><br>
+<strong>问：怎么判断用排列还是组合？</strong> 问自己「换一下顺序，算不算另一种结果」。选委员会、拿球、抓牌，换顺序还是同一组，用组合；排座位、选不同职位、组成数字，换顺序就不同，用排列。<br>
+<strong>问：例 1 能不能按「先拿一个，再拿一个」算？</strong> 可以，结果相同（解答里有验算）。只要分子分母同一种数法，计顺序和不计顺序都对。<br>
+<strong>问：例 7 (c) 为什么不用算全部排列？</strong> 其他字母怎么排，与两个 G 的位置无关，在分子分母里会约掉，所以只看 G 的位置即可。</div>
+
+<h4 class="kp-h">并集、交集、补集（Union, Intersection &amp; Complement）</h4>
+<p class="kp-src">L15_Union_Intersection_Complement.pdf · PDF p1–4</p>
+<div class="callout blue"><strong>概念</strong><br>
+<strong>并集</strong> A ∪ B：A 发生<strong>或</strong> B 发生（至少一个发生，包括都发生）。<br>
+<strong>交集</strong> A ∩ B：A <strong>和</strong> B 同时发生。<br>
+<strong>补集</strong> A′：A <strong>不</strong>发生。<br>
+<strong>互斥</strong>（disjoint / mutually exclusive）：A、B 不可能同时发生，A ∩ B = ∅。<br>
+上周对「个数」用的加法原理，这里直接对「概率」使用。</div>
+<div class="formula">P(A ∪ B) = P(A) + P(B) − P(A ∩ B)<br>互斥时：P(A ∪ B) = P(A) + P(B)<br>P(A) + P(A′) = 1，即 P(A′) = 1 − P(A)</div>
+<div class="diagram"><svg viewBox="0 0 320 170" width="320" role="img" aria-label="韦恩图：A 和 B 重叠的部分在 P(A)+P(B) 中被算了两次">
+<rect x="4" y="4" width="312" height="162" rx="10" fill="#f7f9fc" stroke="#9fb3cc"/>
+<circle cx="125" cy="88" r="62" fill="#d9e8f8" fill-opacity="0.8" stroke="#16569c"/>
+<circle cx="195" cy="88" r="62" fill="#f6e3b4" fill-opacity="0.75" stroke="#b08a3c"/>
+<g font-family="sans-serif" text-anchor="middle">
+<text x="95" y="92" font-size="16" fill="#16569c" font-weight="700">A</text>
+<text x="226" y="92" font-size="16" fill="#8a6d1f" font-weight="700">B</text>
+<text x="160" y="84" font-size="11" fill="#173860" font-weight="700">A ∩ B</text>
+<text x="160" y="99" font-size="10" fill="#173860">算了两次</text>
+<text x="290" y="156" font-size="12" fill="#4a5d75">(A ∪ B)′</text>
+</g></svg><p class="cap">P(A) + P(B) 把中间的 A ∩ B 加了两次，所以要减掉一次；两圆之外的部分就是补集 (A ∪ B)′。</p></div>
+
+<p class="c-blue"><strong>例 1（L15 Ex 1）</strong> A normal six sided die is rolled. (a) P(odd) (b) P(multiple of 3) (c) P(odd and a multiple of 3) (d) P(odd or a multiple of 3)</p>
+<details><summary>看解答</summary><p>
+(a) 奇数 {1,3,5}：<span class="frac"><span class="n">3</span><span class="d">6</span></span> = <span class="frac"><span class="n">1</span><span class="d">2</span></span><br>
+(b) 3 的倍数 {3,6}：<span class="frac"><span class="n">2</span><span class="d">6</span></span> = <span class="frac"><span class="n">1</span><span class="d">3</span></span><br>
+(c) 同时满足只有 {3}：<span class="frac"><span class="n">1</span><span class="d">6</span></span><br>
+(d) <span class="frac"><span class="n">1</span><span class="d">2</span></span> + <span class="frac"><span class="n">1</span><span class="d">3</span></span> − <span class="frac"><span class="n">1</span><span class="d">6</span></span> = <span class="frac"><span class="n">2</span><span class="d">3</span></span>；直接数 {1,3,5,6} 也是 4 个，验证一致。<br>Answer: 1/2, 1/3, 1/6, 2/3</p></details>
+
+<p class="c-blue"><strong>例 2（L15 Ex 2）</strong> A number is chosen at random from the first 500 positive integers. Find the probability that the number is a multiple of 3 or 10.</p>
+<details><summary>看解答</summary><p>3 的倍数：500 ÷ 3 取整 = 166 个；10 的倍数：50 个；同时是 3 和 10 的倍数，就是 30 的倍数：500 ÷ 30 取整 = 16 个。<br>166 + 50 − 16 = 200，P = <span class="frac"><span class="n">200</span><span class="d">500</span></span> = <span class="frac"><span class="n">2</span><span class="d">5</span></span>。<br>Answer: 2/5</p></details>
+
+<p class="c-blue"><strong>例 3（L15 Ex 3）</strong> Arvin and Sophia are members of a 15-person ski club. The President and Treasurer are selected at random and a person cannot hold both offices. Find the probability that: (a) Arvin is president (b) Sophia is treasurer (c) Arvin is president and Sophia is treasurer (d) Arvin is president or Sophia is treasurer (e) Arvin or Sophia is treasurer.</p>
+<details><summary>看解答</summary><p>两个不同职位，有序选择：n(S) = 15 × 14 = 210。<br>
+(a) <span class="frac"><span class="n">1</span><span class="d">15</span></span>　(b) <span class="frac"><span class="n">1</span><span class="d">15</span></span><br>
+(c) 两个职位都定了，只有 1 种：<span class="frac"><span class="n">1</span><span class="d">210</span></span><br>
+(d) <span class="frac"><span class="n">1</span><span class="d">15</span></span> + <span class="frac"><span class="n">1</span><span class="d">15</span></span> − <span class="frac"><span class="n">1</span><span class="d">210</span></span> = <span class="frac"><span class="n">27</span><span class="d">210</span></span> = <span class="frac"><span class="n">9</span><span class="d">70</span></span><br>
+(e) 司库只有一个人，「Arvin 当司库」和「Sophia 当司库」不可能同时发生，是互斥事件，直接相加：<span class="frac"><span class="n">2</span><span class="d">15</span></span><br>Answer: 1/15, 1/15, 1/210, 9/70, 2/15</p></details>
+
+<p class="c-blue"><strong>例 4（L15 Ex 4）</strong> Every student speaks at least Chinese or English. 84% speak Chinese, 71% speak English. Find the probability that a randomly chosen student speaks both.</p>
+<details><summary>看解答</summary><p>「每人至少会一种」就是 P(C ∪ E) = 1。代入加法公式：1 = 0.84 + 0.71 − P(C ∩ E)，所以 P(C ∩ E) = 0.55。<br>Answer: 0.55</p></details>
+
+<p class="c-blue"><strong>例 5（L15 Ex 5）</strong> The probability that a plant will produce a red flower is 1/3. Write down the probability that it will not.</p>
+<details><summary>看解答</summary><p>补集：1 − <span class="frac"><span class="n">1</span><span class="d">3</span></span> = <span class="frac"><span class="n">2</span><span class="d">3</span></span>。<br>Answer: 2/3</p></details>
+
+<p class="c-blue"><strong>例 6（L15 Ex 6）</strong> A number is chosen at random from the first 100 positive integers. Find the probability that (a) it is divisible by both 6 and 10 (b) it is not divisible by either 6 or 10.</p>
+<details><summary>看解答</summary><p>
+(a) 同时被 6 和 10 整除 ⇔ 被它们的最小公倍数 30 整除（不是 60）：30、60、90，共 3 个，P = <span class="frac"><span class="n">3</span><span class="d">100</span></span>。<br>
+(b) 被 6 整除 16 个，被 10 整除 10 个，两者都 3 个：至少被一个整除 16 + 10 − 3 = 23 个。「都不能整除」是它的补集：P = 1 − <span class="frac"><span class="n">23</span><span class="d">100</span></span> = <span class="frac"><span class="n">77</span><span class="d">100</span></span>。<br>Answer: (a) 3/100 (b) 77/100</p></details>
+
+<p class="c-blue"><strong>例 7（L15 Ex 7）</strong> A batch of 20 parts includes 3 faulty parts. The manager selects 4 at random and returns the batch if at least one of the 4 is faulty. Find the probability that the batch is returned.</p>
+<details><summary>看解答</summary><p>「至少一个」直接算要分 1、2、3 个次品三种情况；用<strong>补集</strong>只需算「一个次品都没有」：4 个全部来自 17 个好零件，C(17, 4) = 2 380；n(S) = C(20, 4) = 4 845。<br>P(退回) = 1 − <span class="frac"><span class="n">2 380</span><span class="d">4 845</span></span> = <span class="frac"><span class="n">2 465</span><span class="d">4 845</span></span> = <span class="frac"><span class="n">29</span><span class="d">57</span></span> ≈ 0.509。<br>Answer: 29/57 ≈ 0.509</p></details>
+
+<div class="callout red"><strong>易错</strong><br>
+① 求 P(A ∪ B) 时忘记减 P(A ∩ B)：只有互斥时才能直接相加。<br>
+② 例 6 (a) 用 6 × 10 = 60 代替最小公倍数 30。<br>
+③ 「not divisible by either 6 or 10」是「两个都不能整除」，等于 (A ∪ B)′，不是 A′ ∪ B′。<br>
+④ 看到「at least one」还逐个分情况相加，又慢又容易漏；用 1 − P(一个都没有)。</div>
+<div class="callout blue"><strong>常见疑惑</strong><br>
+<strong>问：「互斥」和「独立」是一回事吗？</strong> 不是。互斥是「不能同时发生」，独立是「一个发生不影响另一个的概率」，后面讲条件概率时会学到。例 3 (e) 里两件事互斥，但并不独立。<br>
+<strong>问：英文里的 or 到底包不包括「两者都」？</strong> 数学题里默认包括（inclusive or），所以用加法公式要减去交集。<br>
+<strong>问：什么时候想到用补集？</strong> 题目出现 at least one、not、neither、none，或者直接算要分很多种情况时。</div>
+
+<h4 class="kp-h">本周解题流程（自测清单）</h4>
+<table class="kp-tbl"><thead><tr><th>步骤</th><th>问自己</th><th>对应本周例题</th></tr></thead><tbody>
+<tr><td>1</td><td>样本空间是什么？每个结果等可能吗？（两颗骰子要按有序对）</td><td>L13 例 2–5</td></tr>
+<tr><td>2</td><td>条件多吗？先画韦恩图填数</td><td>L13 例 6、L15 例 4</td></tr>
+<tr><td>3</td><td>结果太多列不完？用排列或组合，分子分母同一种数法</td><td>L14 例 1–7</td></tr>
+<tr><td>4</td><td>题目里有「或」？用 P(A) + P(B) − P(A ∩ B)；互斥才能直接相加</td><td>L15 例 1–3</td></tr>
+<tr><td>5</td><td>有 at least / not / neither？先算补集</td><td>L15 例 5–7</td></tr>
+</tbody></table>
+<p>课件指定练习：Tutorial Guide 8-5（L13）、8-6（L14）、8-8（L15）。做完对照习题册答案，错题记进复习计划。</p>

@@ -1,0 +1,1079 @@
+{
+ "course": "economics",
+ "term": "term2",
+ "week": 13,
+ "title": "Week 13 · Unit 11 Tutorial + 考试复习",
+ "answersTitle": "Term 2 Sample Examinations A and B",
+ "files": [
+  "unit11 PPT using economic policy to influence the economy.pdf",
+  "term2 EXAM sample A.pdf",
+  "term2 EXAM sample B.pdf"
+ ],
+ "inventory": [
+  {
+   "ref": "Sample Exam A Section A",
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  {
+   "ref": "Sample Exam A Q21",
+   "parts": [
+    "a",
+    "b"
+   ],
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Sample Exam A Q22",
+   "parts": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "ref": "Sample Exam A Q23",
+   "parts": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ],
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  {
+   "ref": "Sample Exam B Section A",
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  {
+   "ref": "Sample Exam B Q21",
+   "parts": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "ref": "Sample Exam B Q22",
+   "parts": [
+    "a",
+    "b"
+   ],
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Sample Exam B Q23",
+   "parts": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ],
+   "deliverables": [
+    {
+     "type": "table"
+    },
+    {
+     "type": "figure"
+    }
+   ]
+  }
+ ],
+ "intro": [
+  "第 13 周是最后一周：Unit 11 没有单独的 Tutorial 文件，本周的练习是两套期末样卷（Sample A、Sample B）。样卷附有选择题答案，笔记逐题给出理由；Section B、C 没有官方答案（讲义说会在第 13 周周五发布在 Moodle），以下按讲义的答题方法写出参考答案。",
+  "考试结构（Unit 11 讲座）：Section A 选择题 20 分；Section B 两题各 10 分；Section C 数据分析 20 分。样卷 A 印的考试时间是 2 小时，讲座说今年是 2 小时 30 分钟，以讲座和学校通知为准。"
+ ],
+ "sections": [
+  {
+   "title": "样卷 A",
+   "sources": [
+    {
+     "file": "term2 EXAM sample A.pdf",
+     "pages": "p1–12"
+    }
+   ],
+   "concept": "Section A 的答案来自样卷末页的答案表；Section B、C 的答案按「定义 → 机制 → 图 → 结论」组织，分值决定篇幅（5 分约 15 分钟）。",
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "Sample Exam A Section A",
+     "question": "Sample Exam A multiple choice questions 1–20.",
+     "solution": "答案与样卷答案表一致，每题的理由见表。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "Q",
+        "Answer",
+        "Reason"
+       ],
+       "rows": [
+        [
+         "1",
+         "D",
+         "结构性（相机）部分由政府决定；开征新税使结构性赤字减少。A、B、C 都是周期性变化"
+        ],
+        [
+         "2",
+         "B",
+         "预算赤字（G > T）是注入；所得税提高、预算盈余是漏出，外资减少也减少注入"
+        ],
+        [
+         "3",
+         "A",
+         "A：1 电脑 = 2 手表；B：1 电脑 = 3.5 手表。B 生产手表的机会成本更低（0.29 < 0.5 电脑），出口手表"
+        ],
+        [
+         "4",
+         "C",
+         "货币的主要作用是交换媒介"
+        ],
+        [
+         "5",
+         "C",
+         "RBA 卖出政府证券，从银行体系收回现金，货币供应增长放慢"
+        ],
+        [
+         "6",
+         "C",
+         "实际 GDP：600、750、593.75；人均：600、600、475，先不变后下降"
+        ],
+        [
+         "7",
+         "D",
+         "S > I 时漏出大于注入，商品卖不出去，企业存货增加"
+        ],
+        [
+         "8",
+         "C",
+         "ToT = 110 ÷ 105 × 100 = 104.8，改善：换同样的进口需要的出口更少（不能保证经常账户顺差）"
+        ],
+        [
+         "9",
+         "C",
+         "油价大跌降低成本，AS 右移，通胀下降、就业增加"
+        ],
+        [
+         "10",
+         "B",
+         "凯恩斯段 AS 平坦，AD 增加主要提高实际 GDP"
+        ],
+        [
+         "11",
+         "A",
+         "公共债务是某一时点澳大利亚各级政府欠下的资金总额"
+        ],
+        [
+         "12",
+         "D",
+         "劳动力增加时，就业人数和失业率可以同时上升"
+        ],
+        [
+         "13",
+         "B",
+         "流动性是资产转换成现金的难易"
+        ],
+        [
+         "14",
+         "C",
+         "宽松：降低官方现金利率（RBA 不能直接规定所有贷款利率）"
+        ],
+        [
+         "15",
+         "C",
+         "财政政策是联邦政府支出和收入的变化"
+        ],
+        [
+         "16",
+         "C",
+         "收缩性财政政策：削减政府支出（A、B 是扩张性）"
+        ],
+        [
+         "17",
+         "A",
+         "失业上升使福利增加、税收减少，形成周期性赤字"
+        ],
+        [
+         "18",
+         "B",
+         "自动稳定器熨平周期，不需要相机决定，经济上行和下行时都起作用"
+        ],
+        [
+         "19",
+         "B",
+         "名义 200 ÷ 4000 = 5%；实际 = 5% − 12% = −7%"
+        ],
+        [
+         "20",
+         "B",
+         "需求过度时紧缩货币政策：卖出政府证券（C、D 是财政政策）"
+        ]
+       ],
+       "title": "Sample Exam A Section A"
+      }
+     ],
+     "checks": [
+      {
+       "expr": "900*100/120/1.25",
+       "equals": "600"
+      },
+      {
+       "expr": "950*100/160/1.25",
+       "equals": "475"
+      },
+      {
+       "expr": "200/4000*100-12",
+       "equals": "-7"
+      },
+      {
+       "expr": "110/105*100",
+       "equals": "104.76",
+       "tol": 0.005
+      }
+     ]
+    },
+    {
+     "label": "例 2",
+     "ref": "Sample Exam A Q21",
+     "question": "(a) Explain some of the effects of a substantial depreciation of the Australian dollar on different sectors of the economy. (5 marks) (b) Use an AD/AS diagram to illustrate the effect of a reduction in interest rates when the economy is at full employment. (5 marks)",
+     "solution": "(a) 澳元大幅贬值意味着 1 澳元能换的外币减少。<strong>出口行业</strong>（矿业、农业、教育、旅游）：以外币计价的价格下降，竞争力提高，销量和收入增加，就业增加。<strong>与进口竞争的行业</strong>（制造业）：进口品以澳元计价变贵，本国产品更有吸引力，产出和就业增加。<strong>依赖进口投入的企业</strong>：进口设备、原料、燃料变贵，成本上升。<strong>消费者</strong>：进口商品和出国旅游变贵，购买力下降；进口品涨价直接推高 CPI，投入成本上升间接推高物价，通胀上升。<strong>对外部门</strong>：出口增、进口减，贸易差额改善，但贸易条件恶化，以外币计的外债在澳元计价下加重。\n(b) 降息使消费和投资增加，AD 右移。经济已处于充分就业，AS 在古典段接近竖直，产出几乎不能增加，物价水平从 P₁ 大幅升到 P₂：降息在充分就业时主要造成需求拉动型通胀。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        11.5
+       ],
+       "yr": [
+        0,
+        11
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Real GDP",
+       "yLabel": "Price level",
+       "curves": [
+        {
+         "expr": "1.5+4/(10-x)",
+         "dom": [
+          0,
+          9.556
+         ],
+         "color": "red",
+         "label": [
+          8.36,
+          10.1,
+          "AS"
+         ]
+        },
+        {
+         "expr": "10-0.6*x",
+         "dom": [
+          0,
+          11.5
+         ],
+         "color": "navy",
+         "label": [
+          9.68,
+          4.64,
+          "AD₁"
+         ]
+        },
+        {
+         "expr": "12.2-0.6*x",
+         "dom": [
+          0,
+          11.5
+         ],
+         "color": "navy",
+         "label": [
+          9.68,
+          6.84,
+          "AD₂"
+         ],
+         "dash": true
+        }
+       ],
+       "points": [
+        {
+         "x": 8.766,
+         "y": 4.741,
+         "label": ""
+        },
+        {
+         "x": 9.226,
+         "y": 6.665,
+         "label": ""
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          4.741
+         ],
+         "to": [
+          8.766,
+          4.741
+         ]
+        },
+        {
+         "from": [
+          8.766,
+          0
+         ],
+         "to": [
+          8.766,
+          4.741
+         ]
+        },
+        {
+         "from": [
+          0,
+          6.665
+         ],
+         "to": [
+          9.226,
+          6.665
+         ]
+        },
+        {
+         "from": [
+          9.226,
+          0
+         ],
+         "to": [
+          9.226,
+          6.665
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": -0.15,
+         "y": 4.6209999999999996,
+         "text": "P₁",
+         "anchor": "end",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 8.766,
+         "y": -0.55,
+         "text": "Y₁",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": -0.15,
+         "y": 6.545,
+         "text": "P₂",
+         "anchor": "end",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 10,
+         "y": -0.55,
+         "text": "Y_FE",
+         "anchor": "middle",
+         "size": 9,
+         "color": "red"
+        }
+       ],
+       "caption": "Sample Exam A Q21(b): lower interest rates at full employment shift AD right; mainly the price level rises",
+       "padLeft": 34,
+       "vlines": [
+        {
+         "x": 10,
+         "color": "grey"
+        }
+       ]
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 3",
+     "ref": "Sample Exam A Q22",
+     "question": "(a) Explain the difference between the cyclical and structural aspects of the federal government budget. (5 marks) (b) Why do GDP figures give an incomplete indication of a country's standard of living? (5 marks)",
+     "solution": "(a) <strong>结构性部分</strong>是政府主动决定的税收和支出（如新开税种、增加基础设施支出），在年度预算中宣布，用来实现增长、就业、通胀目标。<strong>周期性部分</strong>是经济周期自动带来的变化：经济下行时税收自动减少、失业救济自动增加，预算趋向赤字；经济上行时相反。周期性部分由自动稳定器（累进税、社会保障）造成，能熨平经济波动；结构性部分反映政府的政策立场。\n(b) GDP（以及人均实际 GDP）只衡量市场产出的价值：①人均数是平均值，不反映收入分配；②不计无偿劳动和地下经济；③不区分产出的种类和质量（武器与药品同样计入）；④不计闲暇和工作时间；⑤不扣除污染和资源消耗；⑥不反映健康、教育、犯罪、政治自由等。所以还要参考人类发展指数等更广的福利指标。",
+     "parts": [
+      "a",
+      "b"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 4",
+     "ref": "Sample Exam A Q23",
+     "question": "Data for years A and B (see table). (a) Describe the changes to the country's external balance. (4 marks) (b) Describe the changes to internal balance. (4 marks) (c) What factors might account for the change in the exchange rate? (4 marks) (d) If the government reduces government spending to address rising inflation, how might this affect (i) internal balance goals (4 marks) (ii) imports and exports (4 marks)?",
+     "solution": "(a) 出口从 $20.5b 降到 $17.2b，进口从 $27.9b 升到 $30.3b，贸易逆差从 $7.4b 扩大到 $13.1b；汇率从 US$0.95 贬到 US$0.76。外部平衡明显恶化。\n(b) 增长从 5% 升到 8%，失业率从 8% 降到 4.3%，但通胀从 4% 升到 9%：增长和就业改善，低通胀目标恶化，二者冲突。\n(c) 进口增加，本国居民需要更多外币，本币供给增加；出口减少，外国对本币的需求减少；高通胀削弱竞争力，也降低外国投资者对本币资产的信心；如果实际利率下降，外资流出。这些都使本币贬值。\n(d)(i) 削减政府支出（收缩性财政政策）使 AD 左移：通胀压力下降，但增长放缓、失业可能上升，要在通胀和就业之间权衡。\n(ii) 总需求和收入下降，家庭和企业对进口的需求减少，进口下降；通胀降低使本国产品更有竞争力，出口可能回升，贸易差额改善。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "",
+        "Year A",
+        "Year B"
+       ],
+       "rows": [
+        [
+         "Inflation",
+         "4%",
+         "9%"
+        ],
+        [
+         "Economic growth",
+         "5%",
+         "8%"
+        ],
+        [
+         "Unemployment",
+         "8%",
+         "4.3%"
+        ],
+        [
+         "Exports ($b)",
+         "20.5",
+         "17.2"
+        ],
+        [
+         "Imports ($b)",
+         "27.9",
+         "30.3"
+        ],
+        [
+         "Exchange rate",
+         "1 unit = US$0.95",
+         "1 unit = US$0.76"
+        ]
+       ],
+       "title": "Sample Exam A Q23 data"
+      }
+     ],
+     "checks": [
+      {
+       "expr": "27.9-20.5",
+       "equals": "7.4",
+       "tol": 1e-09
+      },
+      {
+       "expr": "30.3-17.2",
+       "equals": "13.1",
+       "tol": 1e-09
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ]
+    }
+   ],
+   "mistakes": [
+    "Q21(b) 画成在平坦段：题目说经济处于充分就业。",
+    "Q23 只写「上升 / 下降」，不写具体数字。",
+    "汇率贬值的原因只写一条：4 分题至少写 3 点。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么 Q8 不选 A？",
+     "a": "贸易条件改善只说明价格对比变好，经常账户是否顺差还取决于数量和收入项目，不能「保证」。"
+    }
+   ]
+  },
+  {
+   "title": "样卷 B",
+   "sources": [
+    {
+     "file": "term2 EXAM sample B.pdf",
+     "pages": "p1–11"
+    }
+   ],
+   "concept": "同样的结构。注意样卷 B 答案表第 1 题有误（见表）。",
+   "examples": [
+    {
+     "label": "例 5",
+     "ref": "Sample Exam B Section A",
+     "question": "Sample Exam B multiple choice questions 1–20.",
+     "solution": "除第 1 题外与样卷答案表一致：第 1 题按劳动力计算失业率是 10%（选 B），答案表给的 A（5%）是用总人口作分母的结果。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "Q",
+        "Key",
+        "Reason"
+       ],
+       "rows": [
+        [
+         "1",
+         "A（应为 B）",
+         "劳动力 = 6 + 3 + 1 = 10 百万，失业率 = 1 ÷ 10 = 10%。答案 A（5%）是用总人口 20 百万作分母，算错了"
+        ],
+        [
+         "2",
+         "A",
+         "失业减少使福利支出下降、税收上升，形成周期性盈余（D 快速增长也会造成周期性盈余，答案键给 A）"
+        ],
+        [
+         "3",
+         "C",
+         "GDP 是最终商品和服务的市场价值"
+        ],
+        [
+         "4",
+         "D",
+         "通胀使债务的实际价值下降，长期借款人受益"
+        ],
+        [
+         "5",
+         "B",
+         "出口价格下降、进口价格上升，贸易条件恶化"
+        ],
+        [
+         "6",
+         "C",
+         "GDP = C + I + G + (X − M)"
+        ],
+        [
+         "7",
+         "D",
+         "(215 − 200) ÷ 200 × 100 = 7.5%"
+        ],
+        [
+         "8",
+         "B",
+         "需求价格弹性大的进口品征关税后进口量减少得多，对本国生产者保护最强"
+        ],
+        [
+         "9",
+         "C",
+         "名义收入上升 5%，但通胀 10%：实际收入 42 000 ÷ 1.1 = 38 182 < 40 000，下降"
+        ],
+        [
+         "10",
+         "A",
+         "关税提高进口品的售价，减少进口"
+        ],
+        [
+         "11",
+         "D",
+         "充分就业时没有周期性失业"
+        ],
+        [
+         "12",
+         "A",
+         "劳动力的教育和技能提高，生产能力增加，AS 右移"
+        ],
+        [
+         "13",
+         "A",
+         "储蓄增加、消费减少，AD 左移；在中间段实际 GDP 和物价都下降"
+        ],
+        [
+         "14",
+         "D",
+         "自由贸易使资源按比较优势更有效地配置"
+        ],
+        [
+         "15",
+         "C",
+         "升值使出口价格（以外币计）相对进口价格上升，贸易条件改善"
+        ],
+        [
+         "16",
+         "C",
+         "充分就业和经济增长最不冲突"
+        ],
+        [
+         "17",
+         "C",
+         "失业时用减税加增加支出使 AD 右移"
+        ],
+        [
+         "18",
+         "D",
+         "下行时失业救济增加，可支配收入和支出下降得比实际 GDP 慢"
+        ],
+        [
+         "19",
+         "C",
+         "政府借款需求推高利率，挤出部分私人借款"
+        ],
+        [
+         "20",
+         "A",
+         "投资大幅下降时 RBA 会降低现金利率刺激需求"
+        ]
+       ],
+       "title": "Sample Exam B Section A"
+      }
+     ],
+     "checks": [
+      {
+       "expr": "1/(6+3+1)*100",
+       "equals": "10"
+      },
+      {
+       "expr": "(215-200)/200*100",
+       "equals": "7.5"
+      },
+      {
+       "expr": "42000/1.1",
+       "equals": "38181.82",
+       "tol": 0.01
+      }
+     ],
+     "sourceNote": "样卷 B 答案表第 1 题为 A（5%），按失业率的定义（失业 ÷ 劳动力）应为 B（10%）。"
+    },
+    {
+     "label": "例 6",
+     "ref": "Sample Exam B Q21",
+     "question": "(a) Explain the difference between cyclical and structural unemployment. (5 marks) (b) Use the circular flow model to explain the impact of higher interest rates on the level of economic activity. (5 marks)",
+     "solution": "(a) <strong>周期性失业</strong>由经济周期的下行引起：总需求下降，企业减产裁员；经济复苏后减少，可以用扩张性的货币和财政政策解决。<strong>结构性失业</strong>由技能或地点的不匹配引起：技术进步、消费需求变化或生产外移使某些行业衰退，失业者的技能不适合新岗位；即使经济繁荣也存在，持续时间长，需要再培训、教育和迁移等供给方政策。\n(b) 在循环流量模型中，储蓄（S）是漏出，投资（I）是注入。利率上升使储蓄回报提高，家庭多储蓄、少消费（漏出增加）；借款成本上升，企业投资减少（注入减少）；房贷还款增加也减少消费。漏出大于注入，流回企业的支出减少，企业减产、少雇人，收入、产出和就业下降，循环收缩，经济活动水平下降。",
+     "parts": [
+      "a",
+      "b"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 7",
+     "ref": "Sample Exam B Q22",
+     "question": "(a) With the aid of a diagram, describe the revenue and protective effects of a subsidy. (5 marks) (b) Describe the positive and negative effects on an economy of a currency appreciation. (5 marks)",
+     "solution": "(a) 补贴是政府付给本国生产者的现金，降低其成本，本国供给从 S 右移到 S1。<strong>保护效应</strong>：在世界价格 PW 下，本国产量从 Q1 增加到 Q2，进口从 Q1Q3 减少到 Q2Q3，本国生产者占有更大的市场份额。<strong>收入效应</strong>：与关税不同，政府没有收入，反而要用税收支付补贴（政府支出增加）；本国生产者的收入增加（销量增加且得到补贴）；消费者价格不变。\n(b) <strong>正面</strong>：进口商品和出国旅游更便宜，购买力上升；进口品和进口投入品变便宜，通胀下降；贸易条件改善；以外币计价的外债负担减轻。<strong>负面</strong>：出口以外币计价变贵，出口和旅游收入下降；与进口竞争的行业受损，产出和就业下降；贸易差额恶化；增长可能放缓。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        12
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 340,
+       "height": 240,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "Price (P)",
+       "curves": [
+        {
+         "expr": "10+(-0.8)*x",
+         "dom": [
+          0,
+          12
+         ],
+         "color": "navy",
+         "label": [
+          1.3,
+          8.2,
+          "D"
+         ]
+        },
+        {
+         "expr": "1+(0.7)*x",
+         "dom": [
+          0,
+          11
+         ],
+         "color": "red",
+         "label": [
+          10.2,
+          8.4,
+          "S"
+         ]
+        },
+        {
+         "expr": "-0.4+(0.7)*x",
+         "dom": [
+          0.6,
+          11.5
+         ],
+         "color": "red",
+         "dash": true,
+         "label": [
+          11.2,
+          7.0,
+          "S1"
+         ]
+        },
+        {
+         "expr": "2.5+0*x",
+         "dom": [
+          0,
+          12
+         ],
+         "color": "grey",
+         "label": [
+          11.2,
+          2.75,
+          "PW"
+         ]
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          2.142857142857143,
+          0
+         ],
+         "to": [
+          2.142857142857143,
+          2.5
+         ]
+        },
+        {
+         "from": [
+          4.142857142857143,
+          0
+         ],
+         "to": [
+          4.142857142857143,
+          2.5
+         ]
+        },
+        {
+         "from": [
+          9.375,
+          0
+         ],
+         "to": [
+          9.375,
+          2.5
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": 2.142857142857143,
+         "y": -0.6,
+         "text": "Q1",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 4.142857142857143,
+         "y": -0.6,
+         "text": "Q2",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 9.375,
+         "y": -0.6,
+         "text": "Q3",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        }
+       ],
+       "caption": "Subsidy: local supply S → S1; local output Q1 → Q2 at the same world price; imports fall to Q2Q3"
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 8",
+     "ref": "Sample Exam B Q23",
+     "question": "Data for years 1 and 2 (see table). (a) Describe the changes to internal balance. (5 marks) (b) How are these changes likely to have affected tax revenue and welfare expenditure? (5 marks) (c) How have they likely influenced imports and exports? (5 marks) (d) Use an AD/AS diagram to illustrate the likely effect of an increase in government infrastructure spending. (5 marks)",
+     "solution": "(a) 经济增长从 3.5% 降到 −1.0%（负增长，衰退），失业率从 4.5% 升到 6.7%，通胀从 4% 降到 0.5%。投资从 $25.6b 降到 $21.0b，消费从 $59.2b 降到 $55.9b：总需求下降，增长和就业恶化，通胀压力消失。\n(b) 收入、利润和支出减少，所得税、公司税和消费税<strong>收入下降</strong>；失业增加，失业救济等<strong>福利支出上升</strong>。自动稳定器使预算趋向赤字（周期性赤字），同时支撑了需求。\n(c) 收入和消费下降，进口从 $18.3b 降到 $16.8b；国内需求疲弱、通胀很低，本国企业转向海外市场，产品价格更有竞争力（若本币贬值也有帮助），出口从 $16.5b 增加到 $19.2b。贸易差额从逆差 $1.8b 变为顺差 $2.4b。\n(d) 基础设施支出增加 G，AD 右移；经济处在衰退、有大量闲置资源，均衡在 AS 的平坦段，实际 GDP 和就业明显增加，物价只略有上升。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "",
+        "Year 1",
+        "Year 2"
+       ],
+       "rows": [
+        [
+         "Economic growth",
+         "3.5%",
+         "−1.0%"
+        ],
+        [
+         "Unemployment",
+         "4.5%",
+         "6.7%"
+        ],
+        [
+         "Inflation",
+         "4%",
+         "0.5%"
+        ],
+        [
+         "Investment ($b)",
+         "25.6",
+         "21.0"
+        ],
+        [
+         "Consumption ($b)",
+         "59.2",
+         "55.9"
+        ],
+        [
+         "Exports ($b)",
+         "16.5",
+         "19.2"
+        ],
+        [
+         "Imports ($b)",
+         "18.3",
+         "16.8"
+        ]
+       ],
+       "title": "Sample Exam B Q23 data"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        11.5
+       ],
+       "yr": [
+        0,
+        11
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Real GDP",
+       "yLabel": "Price level",
+       "curves": [
+        {
+         "expr": "1.5+4/(10-x)",
+         "dom": [
+          0,
+          9.556
+         ],
+         "color": "red",
+         "label": [
+          8.36,
+          10.1,
+          "AS"
+         ]
+        },
+        {
+         "expr": "4.5-0.6*x",
+         "dom": [
+          0,
+          7.5
+         ],
+         "color": "navy",
+         "label": [
+          6.6,
+          0.99,
+          "AD₁"
+         ]
+        },
+        {
+         "expr": "6.8-0.6*x",
+         "dom": [
+          0,
+          11.333
+         ],
+         "color": "navy",
+         "label": [
+          9.68,
+          1.44,
+          "AD₂"
+         ],
+         "dash": true
+        }
+       ],
+       "points": [
+        {
+         "x": 3.906,
+         "y": 2.156,
+         "label": ""
+        },
+        {
+         "x": 6.77,
+         "y": 2.738,
+         "label": ""
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          2.156
+         ],
+         "to": [
+          3.906,
+          2.156
+         ]
+        },
+        {
+         "from": [
+          3.906,
+          0
+         ],
+         "to": [
+          3.906,
+          2.156
+         ]
+        },
+        {
+         "from": [
+          0,
+          2.738
+         ],
+         "to": [
+          6.77,
+          2.738
+         ]
+        },
+        {
+         "from": [
+          6.77,
+          0
+         ],
+         "to": [
+          6.77,
+          2.738
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": -0.15,
+         "y": 2.036,
+         "text": "P₁",
+         "anchor": "end",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 3.906,
+         "y": -0.55,
+         "text": "Y₁",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": -0.15,
+         "y": 2.618,
+         "text": "P₂",
+         "anchor": "end",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 6.77,
+         "y": -0.55,
+         "text": "Y₂",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 10,
+         "y": -0.55,
+         "text": "Y_FE",
+         "anchor": "middle",
+         "size": 9,
+         "color": "red"
+        }
+       ],
+       "caption": "Sample Exam B Q23(d): infrastructure spending in a recession raises output and employment with little inflation",
+       "padLeft": 34,
+       "vlines": [
+        {
+         "x": 10,
+         "color": "grey"
+        }
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "18.3-16.5",
+       "equals": "1.8",
+       "tol": 1e-09
+      },
+      {
+       "expr": "19.2-16.8",
+       "equals": "2.4",
+       "tol": 1e-09
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ]
+    }
+   ],
+   "mistakes": [
+    "失业率用总人口或工作年龄人口作分母（第 1 题）。",
+    "Q21(b) 不用循环流量模型的漏出、注入来解释。",
+    "Q22(a) 说补贴给政府带来收入：那是关税。"
+   ],
+   "faqs": [
+    {
+     "q": "考前怎么用这两套样卷？",
+     "a": "按考试时间完整做一遍，再对照这里的答案检查：选择题看理由是否对得上，Section B、C 检查是否写了定义、机制、图和结论。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "考前检查",
+   "要点"
+  ],
+  "rows": [
+   [
+    "Section A",
+    "20 题，每题用一句话说出理由"
+   ],
+   [
+    "Section B",
+    "每小题 5 分：定义 + 至少 3 点 + 需要时画图"
+   ],
+   [
+    "Section C",
+    "描述数据（从…到…）→ 冲突 → 原因 → 政策和 AD–AS 图"
+   ],
+   [
+    "常错计算",
+    "失业率分母是劳动力；通胀率除以上一期；实际利率 = 名义 − 通胀"
+   ]
+  ]
+ },
+ "practice": "讲座结尾：复习所有单元、完成样卷 A 和 B，并参加答疑。样卷官方答案在第 13 周周五发布在 Moodle 的「Term 2 - Sample final examinations」。"
+}

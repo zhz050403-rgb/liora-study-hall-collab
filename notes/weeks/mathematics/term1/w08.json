@@ -1,0 +1,1428 @@
+{
+ "course": "mathematics",
+ "term": "term1",
+ "week": 8,
+ "title": "Tangents, Normals & Derivative Signs · 切线、法线与导数符号",
+ "files": [
+  "L22_Tangents_Normals.pdf",
+  "L23_Sign_of_First_Derivative.pdf",
+  "L24_Sign_of_Second_Derivative.pdf"
+ ],
+ "inventory": [
+  "L22 Ex 1",
+  {
+   "ref": "L22 Ex 2",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "L22 Ex 3",
+  "L22 Ex 4",
+  {
+   "ref": "L22 Ex 5",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "L23 Intro",
+  "L23 Ex 1",
+  "L23 Ex 2",
+  "L23 Ex 3",
+  "L23 Ex 4",
+  "L23 Ex 5",
+  "L23 Ex 6",
+  "L24 Ex 1",
+  "L24 Ex 2",
+  "L24 Ex 3",
+  "L24 Ex 4",
+  "L24 Ex 5"
+ ],
+ "intro": [
+  "第 8 周：用导数求切线、法线方程（L22）；一阶导数的符号判断增减、求驻点并判断类型（L23）；二阶导数、凹凸性、用二阶导数判断驻点、拐点（L24）。讲义每道例题逐题讲解；导数用数值差分核对，驻点和拐点代回检验。"
+ ],
+ "sections": [
+  {
+   "title": "切线与法线方程（L22）",
+   "sources": [
+    {
+     "file": "L22_Tangents_Normals.pdf",
+     "pages": "p1–4"
+    }
+   ],
+   "concept": "切线是直线，有斜率和一个点就能用点斜式 y − y₁ = m(x − x₁) 写方程。曲线在某点的斜率就是切线的斜率，所以：\n①如果没给 y，把 x = a 代入曲线求 y；②求导得 f′(x)；③代 x = a 得切线斜率 m<sub>T</sub> = f′(a)；④代入点斜式。\n<strong>法线</strong>：过该点、与切线<strong>垂直</strong>的直线。m₁ × m₂ = −1，所以 m<sub>N</sub> = −{{frac 1|m<sub>T</sub>}}。切线水平（m<sub>T</sub> = 0）时，法线是竖直线 x = a。",
+   "formulas": [
+    "m<sub>T</sub> = f′(a)　　m<sub>N</sub> = −{{frac 1|m<sub>T</sub>}}　　y − y₁ = m(x − x₁)"
+   ],
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "L22 Ex 1",
+     "question": "Find the equation of the tangent to the curve y = 2x² + 7 at the point (1, 9).",
+     "solution": "y′ = 4x，x = 1 时 m<sub>T</sub> = 4。y − 9 = 4(x − 1)，y = 4x + 5。",
+     "answer": "y = 4x + 5",
+     "checks": [
+      {
+       "expr": "((2*(1.000001)^2+7)-(2*(0.999999)^2+7))/2e-06",
+       "equals": "4",
+       "tol": 0.0001
+      },
+      {
+       "expr": "4*1+5",
+       "equals": "9"
+      }
+     ]
+    },
+    {
+     "label": "例 2",
+     "ref": "L22 Ex 2",
+     "question": "Find the equations of the tangents to the curve y = x² + 4x − 12 at the points where the curve crosses the x-axis.",
+     "solution": "先求与 x 轴的交点：x² + 4x − 12 = (x + 6)(x − 2) = 0，x = −6 或 2。\ny′ = 2x + 4。\nx = 2：m = 8，y − 0 = 8(x − 2)，y = 8x − 16。\nx = −6：m = −8，y = −8(x + 6)，y = −8x − 48。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -8.5,
+        4.5
+       ],
+       "yr": [
+        -18,
+        18
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "x^2+4*x-12",
+         "color": "navy",
+         "dom": [
+          -8,
+          4
+         ],
+         "label": [
+          2.6,
+          12,
+          "y = x² + 4x − 12"
+         ]
+        },
+        {
+         "expr": "8*x-16",
+         "color": "red",
+         "dom": [
+          0.5,
+          3.5
+         ],
+         "label": [
+          2.6,
+          1.5,
+          "y = 8x − 16"
+         ]
+        },
+        {
+         "expr": "-8*x-48",
+         "color": "red",
+         "dom": [
+          -7.5,
+          -4.5
+         ],
+         "label": [
+          -7.6,
+          15,
+          "y = −8x − 48"
+         ]
+        }
+       ],
+       "caption": "Tangents where the curve crosses the x-axis",
+       "points": [
+        {
+         "x": 2,
+         "y": 0,
+         "label": "2",
+         "dx": 4,
+         "dy": -6
+        },
+        {
+         "x": -6,
+         "y": 0,
+         "label": "−6",
+         "dx": -18,
+         "dy": -6
+        }
+       ]
+      }
+     ],
+     "answer": "y = 8x − 16 and y = −8x − 48",
+     "checks": [
+      {
+       "expr": "(((2.000001)^2+4*(2.000001)-12)-((1.999999)^2+4*(1.999999)-12))/2e-06",
+       "equals": "8",
+       "tol": 0.0001
+      },
+      {
+       "expr": "(((-5.999999)^2+4*(-5.999999)-12)-((-6.000001)^2+4*(-6.000001)-12))/2e-06",
+       "equals": "-8",
+       "tol": 0.0001
+      },
+      {
+       "expr": "2^2+4*2-12",
+       "equals": "0"
+      }
+     ]
+    },
+    {
+     "label": "例 3",
+     "ref": "L22 Ex 3",
+     "question": "Find the equation of the normal to the curve y = 2x² + 7 at the point (1, 9).",
+     "solution": "例 1 中切线斜率 4，法线斜率 −¼。y − 9 = −¼(x − 1)，两边乘 4：4y − 36 = −x + 1，即 x + 4y − 37 = 0（或 y = −¼x + 37/4）。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -2.5,
+        3
+       ],
+       "yr": [
+        0,
+        18
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "2*x^2+7",
+         "color": "navy",
+         "dom": [
+          -2,
+          2.4
+         ],
+         "label": [
+          1.3,
+          16,
+          "y = 2x² + 7"
+         ]
+        },
+        {
+         "expr": "4*x+5",
+         "color": "red",
+         "dom": [
+          -1,
+          3
+         ],
+         "label": [
+          2.1,
+          11.5,
+          "tangent y = 4x + 5"
+         ]
+        },
+        {
+         "expr": "-(x-1)/4+9",
+         "color": "green",
+         "dom": [
+          -2.5,
+          3
+         ],
+         "label": [
+          -2.4,
+          10.4,
+          "normal"
+         ]
+        }
+       ],
+       "caption": "Tangent and normal at (1, 9)",
+       "points": [
+        {
+         "x": 1,
+         "y": 9,
+         "label": "(1, 9)",
+         "dx": -38,
+         "dy": -6
+        }
+       ]
+      }
+     ],
+     "answer": "x + 4y − 37 = 0",
+     "checks": [
+      {
+       "expr": "1+4*9-37",
+       "equals": "0"
+      },
+      {
+       "expr": "4*(-1/4)",
+       "equals": "-1"
+      }
+     ]
+    },
+    {
+     "label": "例 4",
+     "ref": "L22 Ex 4",
+     "question": "Find the equations of the tangent and normal to the curve y = {{frac x|x² + 9}} at the point where x = 3.",
+     "solution": "y = 3/18 = 1/6。商法则：y′ = {{frac (x² + 9) − x × 2x|(x² + 9)²}} = {{frac 9 − x²|(x² + 9)²}}；x = 3 时 y′ = 0。\n切线水平：y = {{frac 1|6}}；法线竖直：x = 3。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -8,
+        8
+       ],
+       "yr": [
+        -0.25,
+        0.25
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "x/(x^2+9)",
+         "color": "navy",
+         "dom": [
+          -8,
+          8
+         ],
+         "label": [
+          -7.5,
+          -0.12,
+          "y = x/(x² + 9)"
+         ]
+        },
+        {
+         "expr": "1/6+0*x",
+         "color": "red",
+         "dom": [
+          1,
+          5
+         ],
+         "label": [
+          4,
+          0.2,
+          "y = 1/6"
+         ]
+        }
+       ],
+       "caption": "At x = 3 the tangent is horizontal, so the normal is the vertical line x = 3",
+       "points": [
+        {
+         "x": 3,
+         "y": 0.16666666666666666,
+         "label": "(3, 1/6)",
+         "dx": -24,
+         "dy": -8
+        }
+       ],
+       "vlines": [
+        {
+         "x": 3,
+         "label": "normal x = 3",
+         "color": "green"
+        }
+       ]
+      }
+     ],
+     "answer": "tangent y = 1/6, normal x = 3",
+     "checks": [
+      {
+       "expr": "(((3.000001)/((3.000001)^2+9))-((2.999999)/((2.999999)^2+9)))/2e-06",
+       "equals": "0",
+       "tol": 0.0001
+      },
+      {
+       "expr": "(((1.000001)/((1.000001)^2+9))-((0.999999)/((0.999999)^2+9)))/2e-06",
+       "equals": "(9-(1)^2)/((1)^2+9)^2",
+       "tol": 0.0001
+      },
+      {
+       "expr": "3/(9+9)",
+       "equals": "1/6"
+      }
+     ]
+    },
+    {
+     "label": "例 5",
+     "ref": "L22 Ex 5",
+     "question": "(a) Sketch y = √x and mark P(4, 2); sketch the tangent and normal at P. (b) Find the equations of the tangent and normal at P. (c) The tangent and normal meet the x-axis at A and B respectively. Find the area of triangle APB.",
+     "solution": "(a) 见图。\n(b) y′ = {{frac 1|2√x}}，x = 4 时 m<sub>T</sub> = ¼。切线：y − 2 = ¼(x − 4)，y = ¼x + 1（x − 4y + 4 = 0）。法线斜率 −4：y − 2 = −4(x − 4)，y = −4x + 18。\n(c) 切线令 y = 0：x = −4，A(−4, 0)；法线令 y = 0：x = 4.5，B(4.5, 0)。底 AB = 8.5，高是 P 的 y 坐标 2：面积 = ½ × 8.5 × 2 = 8.5 平方单位。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -5,
+        8
+       ],
+       "yr": [
+        -0.5,
+        3.5
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "sqrt(x)",
+         "color": "navy",
+         "dom": [
+          0,
+          8
+         ],
+         "label": [
+          6.3,
+          2.9,
+          "y = √x"
+         ]
+        },
+        {
+         "expr": "x/4+1",
+         "color": "red",
+         "dom": [
+          -4.5,
+          8
+         ],
+         "label": [
+          -3,
+          1.3,
+          "tangent"
+         ]
+        },
+        {
+         "expr": "-4*x+18",
+         "color": "green",
+         "dom": [
+          3.9,
+          4.6
+         ],
+         "label": [
+          4.6,
+          0.8,
+          "normal"
+         ]
+        }
+       ],
+       "caption": "Triangle APB: A(−4, 0), P(4, 2), B(4½, 0); area 8½",
+       "points": [
+        {
+         "x": 4,
+         "y": 2,
+         "label": "P(4, 2)",
+         "dx": -50,
+         "dy": -6
+        },
+        {
+         "x": -4,
+         "y": 0,
+         "label": "A",
+         "dy": 14
+        },
+        {
+         "x": 4.5,
+         "y": 0,
+         "label": "B",
+         "dx": 4,
+         "dy": 14
+        }
+       ],
+       "polygons": [
+        {
+         "pts": [
+          [
+           -4,
+           0
+          ],
+          [
+           4,
+           2
+          ],
+          [
+           4.5,
+           0
+          ]
+         ],
+         "color": "gold"
+        }
+       ]
+      }
+     ],
+     "answer": "tangent y = x/4 + 1, normal y = −4x + 18, area 8.5",
+     "checks": [
+      {
+       "expr": "((sqrt((4.000001)))-(sqrt((3.999999))))/2e-06",
+       "equals": "0.25",
+       "tol": 0.0001
+      },
+      {
+       "expr": "-4/4+1",
+       "equals": "0"
+      },
+      {
+       "expr": "-4*4.5+18",
+       "equals": "0"
+      },
+      {
+       "expr": "0.5*(4.5+4)*2",
+       "equals": "8.5"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ]
+    }
+   ],
+   "mistakes": [
+    "用 f(a) 当斜率：斜率是 f′(a)。",
+    "法线斜率只取倒数不变号。",
+    "三角形面积的底用了两点的 x 坐标之和：底是 A、B 之间的距离。"
+   ],
+   "faqs": [
+    {
+     "q": "切线水平时法线怎么写？",
+     "a": "切线斜率 0 时 −1/0 无意义，法线是竖直线 x = a（例 4）。"
+    }
+   ]
+  },
+  {
+   "title": "一阶导数的符号：增减与驻点（L23）",
+   "sources": [
+    {
+     "file": "L23_Sign_of_First_Derivative.pdf",
+     "pages": "p1–4"
+    }
+   ],
+   "concept": "曲线上升处斜率为正，函数<strong>递增</strong>；下降处斜率为负，函数<strong>递减</strong>：f′(x) > 0 ⇒ 递增，f′(x) < 0 ⇒ 递减。\n<strong>驻点</strong>（stationary point）：f′(x) = 0 的点，切线水平。三种类型：<strong>极小值点</strong>（MIN，导数符号 − 0 +）、<strong>极大值点</strong>（MAX，+ 0 −）、<strong>水平拐点</strong>（HPI，+ 0 + 或 − 0 −）。\n判断类型：在驻点左右各取一个 x 代入 f′，看符号，画「斜线示意图」（stick diagram）。",
+   "figures": [
+    {
+     "type": "plot",
+     "xr": [
+      -2,
+      2
+     ],
+     "yr": [
+      -0.5,
+      2.5
+     ],
+     "width": 300,
+     "height": 240,
+     "xLabel": "x",
+     "yLabel": "y",
+     "curves": [
+      {
+       "expr": "x^2",
+       "color": "navy",
+       "dom": [
+        -1.5,
+        1.5
+       ]
+      }
+     ],
+     "caption": "MIN: − 0 +",
+     "points": [
+      {
+       "x": 0,
+       "y": 0,
+       "label": "f′ = 0",
+       "dy": 14
+      }
+     ]
+    },
+    {
+     "type": "plot",
+     "xr": [
+      -2,
+      2
+     ],
+     "yr": [
+      -2.5,
+      0.5
+     ],
+     "width": 300,
+     "height": 240,
+     "xLabel": "x",
+     "yLabel": "y",
+     "curves": [
+      {
+       "expr": "-x^2",
+       "color": "navy",
+       "dom": [
+        -1.5,
+        1.5
+       ]
+      }
+     ],
+     "caption": "MAX: + 0 −",
+     "points": [
+      {
+       "x": 0,
+       "y": 0,
+       "label": "f′ = 0",
+       "dy": -8
+      }
+     ]
+    },
+    {
+     "type": "plot",
+     "xr": [
+      -2,
+      2
+     ],
+     "yr": [
+      -2.2,
+      2.2
+     ],
+     "width": 300,
+     "height": 240,
+     "xLabel": "x",
+     "yLabel": "y",
+     "curves": [
+      {
+       "expr": "x^3",
+       "color": "navy",
+       "dom": [
+        -1.3,
+        1.3
+       ]
+      }
+     ],
+     "caption": "HPI: + 0 + (or − 0 −)",
+     "points": [
+      {
+       "x": 0,
+       "y": 0,
+       "label": "f′ = 0",
+       "dx": 6,
+       "dy": 14
+      }
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "label": "例 6",
+     "ref": "L23 Intro",
+     "question": "For the graph shown (A and C on rising parts, B on a falling part), describe the gradient and the function at A, B and C.",
+     "solution": "A、C 处斜率为正，函数递增；B 处斜率为负，函数递减。所以导数的符号告诉我们函数在增还是在减。",
+     "answer": "A, C: positive, increasing; B: negative, decreasing",
+     "numeric": false
+    },
+    {
+     "label": "例 7",
+     "ref": "L23 Ex 1",
+     "question": "Find the values of x for which y = x² − 4x + 7 is increasing.",
+     "solution": "递增就是导数大于 0：y′ = 2x − 4 > 0，解得 x > 2。顶点 (2, 3) 左边递减、右边递增。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -1.5,
+        5.5
+       ],
+       "yr": [
+        0,
+        13
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "x^2-4*x+7",
+         "color": "navy",
+         "dom": [
+          -1,
+          5
+         ],
+         "label": [
+          3.5,
+          7.8,
+          "y = x² − 4x + 7"
+         ]
+        }
+       ],
+       "caption": "Decreasing for x < 2, increasing for x > 2",
+       "points": [
+        {
+         "x": 2,
+         "y": 3,
+         "label": "(2, 3)",
+         "dy": 16
+        }
+       ]
+      }
+     ],
+     "answer": "x > 2",
+     "checks": [
+      {
+       "expr": "(((3.000001)^2-4*(3.000001)+7)-((2.999999)^2-4*(2.999999)+7))/2e-06",
+       "equals": "2",
+       "tol": 0.0001
+      },
+      {
+       "expr": "(((2.000001)^2-4*(2.000001)+7)-((1.999999)^2-4*(1.999999)+7))/2e-06",
+       "equals": "0",
+       "tol": 0.0001
+      }
+     ]
+    },
+    {
+     "label": "例 8",
+     "ref": "L23 Ex 2",
+     "question": "Find the values of x for which y = x³ − 9x² − 24x + 7 is decreasing.",
+     "solution": "y′ = 3x² − 18x − 24 = 3(x² − 6x − 8) < 0。x² − 6x − 8 = 0 的根 x = 3 ± √17（约 −1.12 和 7.12）。开口向上的抛物线在两根之间为负：3 − √17 < x < 3 + √17。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -3.5,
+        10
+       ],
+       "yr": [
+        -330,
+        60
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "x^3-9*x^2-24*x+7",
+         "color": "navy",
+         "dom": [
+          -3,
+          9.5
+         ],
+         "label": [
+          7.6,
+          -210,
+          "y = x³ − 9x² − 24x + 7"
+         ]
+        }
+       ],
+       "caption": "Decreasing between the stationary points x = 3 ± √17",
+       "points": [
+        {
+         "x": -1.1231056256176606,
+         "y": 21.18559127100046,
+         "label": "x ≈ −1.12",
+         "dx": 10,
+         "dy": 18
+        },
+        {
+         "x": 7.123105625617661,
+         "y": -259.1855912710005,
+         "label": "x ≈ 7.12",
+         "dx": -30,
+         "dy": 16
+        }
+       ]
+      }
+     ],
+     "answer": "3 − √17 < x < 3 + √17",
+     "checks": [
+      {
+       "expr": "(((7.123106625617661)^3-9*(7.123106625617661)^2-24*(7.123106625617661)+7)-((7.1231046256176604)^3-9*(7.1231046256176604)^2-24*(7.1231046256176604)+7))/2e-06",
+       "equals": "0",
+       "tol": 0.001
+      },
+      {
+       "expr": "(((-1.1231046256176607)^3-9*(-1.1231046256176607)^2-24*(-1.1231046256176607)+7)-((-1.1231066256176605)^3-9*(-1.1231066256176605)^2-24*(-1.1231066256176605)+7))/2e-06",
+       "equals": "0",
+       "tol": 0.001
+      },
+      {
+       "expr": "(((1e-06)^3-9*(1e-06)^2-24*(1e-06)+7)-((-1e-06)^3-9*(-1e-06)^2-24*(-1e-06)+7))/2e-06",
+       "equals": "-24",
+       "tol": 0.0001
+      }
+     ],
+     "sourceNote": "讲义印的是 −24x，根不是整数；如果原意是 y = x³ − 9x² + 24x + 7，导数 3(x − 2)(x − 4)，答案会是 2 < x < 4。笔记按讲义印的式子解。"
+    },
+    {
+     "label": "例 9",
+     "ref": "L23 Ex 3",
+     "question": "Find the stationary points on the curve y = x³ − 3x² + 2.",
+     "solution": "y′ = 3x² − 6x = 3x(x − 2) = 0，x = 0 或 2。x = 0 时 y = 2；x = 2 时 y = 8 − 12 + 2 = −2。驻点 (0, 2)、(2, −2)。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -1.6,
+        3.6
+       ],
+       "yr": [
+        -3.5,
+        5
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "x^3-3*x^2+2",
+         "color": "navy",
+         "dom": [
+          -1.3,
+          3.2
+         ],
+         "label": [
+          2.4,
+          4,
+          "y = x³ − 3x² + 2"
+         ]
+        }
+       ],
+       "caption": "Stationary points (0, 2) and (2, −2)",
+       "points": [
+        {
+         "x": 0,
+         "y": 2,
+         "label": "(0, 2)",
+         "dx": 6,
+         "dy": -8
+        },
+        {
+         "x": 2,
+         "y": -2,
+         "label": "(2, −2)",
+         "dy": 16
+        }
+       ]
+      }
+     ],
+     "answer": "(0, 2) and (2, −2)",
+     "checks": [
+      {
+       "expr": "(((1e-06)^3-3*(1e-06)^2+2)-((-1e-06)^3-3*(-1e-06)^2+2))/2e-06",
+       "equals": "0",
+       "tol": 0.0001
+      },
+      {
+       "expr": "(((2.000001)^3-3*(2.000001)^2+2)-((1.999999)^3-3*(1.999999)^2+2))/2e-06",
+       "equals": "0",
+       "tol": 0.0001
+      },
+      {
+       "expr": "2^3-3*2^2+2",
+       "equals": "-2"
+      }
+     ]
+    },
+    {
+     "label": "例 10",
+     "ref": "L23 Ex 4",
+     "question": "Show that the curve y = {{frac x − 1|x + 1}} has no stationary points.",
+     "solution": "商法则：y′ = {{frac (x + 1) − (x − 1)|(x + 1)²}} = {{frac 2|(x + 1)²}}。分子是 2，永远不等于 0，所以 y′ ≠ 0，没有驻点（而且 y′ > 0，函数在每一段上都递增）。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -5,
+        5
+       ],
+       "yr": [
+        -6,
+        8
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "(x-1)/(x+1)",
+         "color": "navy",
+         "dom": [
+          -5,
+          -1.15
+         ]
+        },
+        {
+         "expr": "(x-1)/(x+1)",
+         "color": "navy",
+         "dom": [
+          -0.88,
+          5
+         ],
+         "label": [
+          0.6,
+          4.5,
+          "y = (x − 1)/(x + 1)"
+         ]
+        }
+       ],
+       "caption": "Always increasing: y′ = 2/(x + 1)² > 0, never 0",
+       "hlines": [
+        {
+         "y": 1,
+         "label": "y = 1"
+        }
+       ],
+       "vlines": [
+        {
+         "x": -1,
+         "label": "x = −1"
+        }
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "((((1.000001)-1)/((1.000001)+1))-(((0.999999)-1)/((0.999999)+1)))/2e-06",
+       "equals": "2/((1)+1)^2",
+       "tol": 0.0001
+      },
+      {
+       "expr": "((((-2.999999)-1)/((-2.999999)+1))-(((-3.000001)-1)/((-3.000001)+1)))/2e-06",
+       "equals": "2/((-3)+1)^2",
+       "tol": 0.0001
+      }
+     ]
+    },
+    {
+     "label": "例 11",
+     "ref": "L23 Ex 5",
+     "question": "Show that the curve y = x⁴ − 3x³ has a horizontal point of inflection at the origin.",
+     "solution": "y′ = 4x³ − 9x² = x²(4x − 9)。x = 0 时 y′ = 0，y = 0，原点是驻点。\n左边 x = −1：y′ = −4 − 9 = −13 < 0；右边 x = 1：y′ = 4 − 9 = −5 < 0。符号 − 0 −，两边都在下降，所以是<strong>水平拐点</strong>。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "x",
+        "−1",
+        "0",
+        "1"
+       ],
+       "rows": [
+        [
+         "y′",
+         "−13",
+         "0",
+         "−5"
+        ],
+        [
+         "shape",
+         "╲",
+         "—",
+         "╲"
+        ]
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -1.5,
+        3.2
+       ],
+       "yr": [
+        -10,
+        6
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "x^4-3*x^3",
+         "color": "navy",
+         "dom": [
+          -1.2,
+          2.9
+         ],
+         "label": [
+          1.3,
+          4,
+          "y = x⁴ − 3x³"
+         ]
+        }
+       ],
+       "caption": "HPI at the origin (− 0 −); minimum at x = 9/4",
+       "points": [
+        {
+         "x": 0,
+         "y": 0,
+         "label": "(0, 0)",
+         "dx": 6,
+         "dy": -8
+        },
+        {
+         "x": 2.25,
+         "y": -8.54296875,
+         "label": "(9/4, −2187/256)",
+         "dx": -40,
+         "dy": 16
+        }
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "(((1e-06)^4-3*(1e-06)^3)-((-1e-06)^4-3*(-1e-06)^3))/2e-06",
+       "equals": "0",
+       "tol": 0.0001
+      },
+      {
+       "expr": "(((-0.999999)^4-3*(-0.999999)^3)-((-1.000001)^4-3*(-1.000001)^3))/2e-06",
+       "equals": "-13",
+       "tol": 0.0001
+      },
+      {
+       "expr": "(((1.000001)^4-3*(1.000001)^3)-((0.999999)^4-3*(0.999999)^3))/2e-06",
+       "equals": "-5",
+       "tol": 0.0001
+      }
+     ]
+    },
+    {
+     "label": "例 12",
+     "ref": "L23 Ex 6",
+     "question": "Find the stationary points on the curve y = 2x³ − 9x² + 12x + 8 and determine their nature.",
+     "solution": "y′ = 6x² − 18x + 12 = 6(x − 1)(x − 2) = 0，x = 1 或 2。y(1) = 2 − 9 + 12 + 8 = 13；y(2) = 16 − 36 + 24 + 8 = 12。\n用符号表判断：x = 0 时 y′ = 12 > 0；x = 1.5 时 y′ = −1.5 < 0；x = 3 时 y′ = 12 > 0。\n(1, 13)：+ 0 −，<strong>极大值点</strong>；(2, 12)：− 0 +，<strong>极小值点</strong>。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "x",
+        "0",
+        "1",
+        "1.5",
+        "2",
+        "3"
+       ],
+       "rows": [
+        [
+         "y′",
+         "12",
+         "0",
+         "−1.5",
+         "0",
+         "12"
+        ],
+        [
+         "shape",
+         "╱",
+         "—",
+         "╲",
+         "—",
+         "╱"
+        ]
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -0.6,
+        3.4
+       ],
+       "yr": [
+        0,
+        18
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "2*x^3-9*x^2+12*x+8",
+         "color": "navy",
+         "dom": [
+          -0.4,
+          3.1
+         ],
+         "label": [
+          2.6,
+          16,
+          "y = 2x³ − 9x² + 12x + 8"
+         ]
+        }
+       ],
+       "caption": "MAX (1, 13), MIN (2, 12)",
+       "points": [
+        {
+         "x": 1,
+         "y": 13,
+         "label": "MAX (1, 13)",
+         "dx": -30,
+         "dy": -8
+        },
+        {
+         "x": 2,
+         "y": 12,
+         "label": "MIN (2, 12)",
+         "dy": 16
+        }
+       ]
+      }
+     ],
+     "answer": "MAX (1, 13), MIN (2, 12)",
+     "checks": [
+      {
+       "expr": "((2*(1.000001)^3-9*(1.000001)^2+12*(1.000001)+8)-(2*(0.999999)^3-9*(0.999999)^2+12*(0.999999)+8))/2e-06",
+       "equals": "0",
+       "tol": 0.0001
+      },
+      {
+       "expr": "((2*(2.000001)^3-9*(2.000001)^2+12*(2.000001)+8)-(2*(1.999999)^3-9*(1.999999)^2+12*(1.999999)+8))/2e-06",
+       "equals": "0",
+       "tol": 0.0001
+      },
+      {
+       "expr": "((2*(1.500001)^3-9*(1.500001)^2+12*(1.500001)+8)-(2*(1.499999)^3-9*(1.499999)^2+12*(1.499999)+8))/2e-06",
+       "equals": "-1.5",
+       "tol": 0.0001
+      },
+      {
+       "expr": "2-9+12+8",
+       "equals": "13"
+      },
+      {
+       "expr": "16-36+24+8",
+       "equals": "12"
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "驻点只求 x 不求 y。",
+    "判断类型时代入的是 f 而不是 f′。",
+    "把 HPI 当成极值点：导数两边同号就不是极值。"
+   ],
+   "faqs": [
+    {
+     "q": "符号表里的 x 怎么选？",
+     "a": "选驻点之间、容易算的数，比如整数或中点；不能选到另一个驻点的另一侧。"
+    }
+   ]
+  },
+  {
+   "title": "二阶导数、凹凸性与拐点（L24）",
+   "sources": [
+    {
+     "file": "L24_Sign_of_Second_Derivative.pdf",
+     "pages": "p1–5"
+    }
+   ],
+   "concept": "再求一次导就是<strong>二阶导数</strong>：{{frac d²y|dx²}}、f″(x) 或 y″。\nf′ 说明 f 在增还是在减，f″ 说明 f′（斜率）在增还是在减：\nf″(x) > 0：斜率越来越大，曲线<strong>下凸（concave up）</strong>，开口朝上；f″(x) < 0：斜率越来越小，曲线<strong>上凸（concave down）</strong>。\n<strong>二阶导数判别法</strong>：驻点处 f″ > 0 是极小值，f″ < 0 是极大值，f″ = 0 则看不出，回到一阶导数符号表。\n<strong>拐点</strong>：凹凸性改变的点。两个条件同时成立：①f″(x) = 0；②f″(x) 在该点两侧<strong>变号</strong>。水平拐点是同时满足 f′ = 0 的特例。",
+   "formulas": [
+    "f″ > 0：下凸（开口向上）　f″ < 0：上凸（开口向下）",
+    "拐点：f″ = 0 且 f″ 变号"
+   ],
+   "examples": [
+    {
+     "label": "例 13",
+     "ref": "L24 Ex 1",
+     "question": "Find the second derivative of: (a) y = x³ + 7x − 7 (b) y = (x³ − 3)⁴",
+     "solution": "(a) y′ = 3x² + 7，y″ = 6x。\n(b) 链式法则：y′ = 4(x³ − 3)³ × 3x² = 12x²(x³ − 3)³。\n再用乘积法则：y″ = 24x(x³ − 3)³ + 12x² × 3(x³ − 3)² × 3x² = 24x(x³ − 3)³ + 108x⁴(x³ − 3)²。\n提公因式 12x(x³ − 3)²：y″ = 12x(x³ − 3)²[2(x³ − 3) + 9x³] = 12x(x³ − 3)²(11x³ − 6)。",
+     "answer": "(a) 6x (b) 12x(x³ − 3)²(11x³ − 6)",
+     "checks": [
+      {
+       "expr": "((3*(1.300001)^2+7)-(3*(1.2999990000000001)^2+7))/2e-06",
+       "equals": "6*(1.3)",
+       "tol": 0.0001
+      },
+      {
+       "expr": "((((1.2000009999999999)^3-3)^4)-(((1.199999)^3-3)^4))/2e-06",
+       "equals": "12*(1.2)^2*((1.2)^3-3)^3",
+       "tol": 0.0001
+      },
+      {
+       "expr": "((12*(1.2000009999999999)^2*((1.2000009999999999)^3-3)^3)-(12*(1.199999)^2*((1.199999)^3-3)^3))/2e-06",
+       "equals": "12*(1.2)*((1.2)^3-3)^2*(11*(1.2)^3-6)",
+       "tol": 0.001
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 14",
+     "ref": "L24 Ex 2",
+     "question": "Find the values of x for which the curve y = x³ − 3x² + 5x − 1 is concave down.",
+     "solution": "上凸（concave down）就是二阶导数小于 0：y′ = 3x² − 6x + 5，y″ = 6x − 6 < 0，解得 x < 1。",
+     "answer": "x < 1",
+     "checks": [
+      {
+       "expr": "((3*(1e-06)^2-6*(1e-06)+5)-(3*(-1e-06)^2-6*(-1e-06)+5))/2e-06",
+       "equals": "-6",
+       "tol": 0.0001
+      },
+      {
+       "expr": "((3*(1.000001)^2-6*(1.000001)+5)-(3*(0.999999)^2-6*(0.999999)+5))/2e-06",
+       "equals": "0",
+       "tol": 0.0001
+      }
+     ]
+    },
+    {
+     "label": "例 15",
+     "ref": "L24 Ex 3",
+     "question": "Find the stationary points on the curve y = x³ − 3x² − 9x − 1 and determine their nature.",
+     "solution": "y′ = 3x² − 6x − 9 = 3(x − 3)(x + 1) = 0，x = 3 或 −1。y(3) = 27 − 27 − 27 − 1 = −28；y(−1) = −1 − 3 + 9 − 1 = 4。\ny″ = 6x − 6：x = 3 时 y″ = 12 > 0，(3, −28) 是<strong>极小值点</strong>；x = −1 时 y″ = −12 < 0，(−1, 4) 是<strong>极大值点</strong>。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -3,
+        5.5
+       ],
+       "yr": [
+        -32,
+        20
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "x^3-3*x^2-9*x-1",
+         "color": "navy",
+         "dom": [
+          -2.6,
+          5
+         ],
+         "label": [
+          3.2,
+          12,
+          "y = x³ − 3x² − 9x − 1"
+         ]
+        }
+       ],
+       "caption": "y″ < 0 at x = −1 (MAX), y″ > 0 at x = 3 (MIN); inflection at x = 1",
+       "points": [
+        {
+         "x": -1,
+         "y": 4,
+         "label": "MAX (−1, 4)",
+         "dx": 6,
+         "dy": -8
+        },
+        {
+         "x": 3,
+         "y": -28,
+         "label": "MIN (3, −28)",
+         "dx": 6,
+         "dy": 4
+        },
+        {
+         "x": 1,
+         "y": -12,
+         "label": "(1, −12)",
+         "dx": 6
+        }
+       ]
+      }
+     ],
+     "answer": "MIN (3, −28), MAX (−1, 4)",
+     "checks": [
+      {
+       "expr": "(((3.000001)^3-3*(3.000001)^2-9*(3.000001)-1)-((2.999999)^3-3*(2.999999)^2-9*(2.999999)-1))/2e-06",
+       "equals": "0",
+       "tol": 0.0001
+      },
+      {
+       "expr": "(((-0.999999)^3-3*(-0.999999)^2-9*(-0.999999)-1)-((-1.000001)^3-3*(-1.000001)^2-9*(-1.000001)-1))/2e-06",
+       "equals": "0",
+       "tol": 0.0001
+      },
+      {
+       "expr": "27-27-27-1",
+       "equals": "-28"
+      },
+      {
+       "expr": "-1-3+9-1",
+       "equals": "4"
+      }
+     ]
+    },
+    {
+     "label": "例 16",
+     "ref": "L24 Ex 4",
+     "question": "Find the point of inflection for the curve y = x³ − 3x² − 9x − 18.",
+     "solution": "y″ = 6x − 6 = 0，x = 1。检查变号：x = 0 时 y″ = −6 < 0，x = 2 时 y″ = 6 > 0，变号成立。y(1) = 1 − 3 − 9 − 18 = −29。拐点 (1, −29)。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -3,
+        5.5
+       ],
+       "yr": [
+        -48,
+        4
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "x^3-3*x^2-9*x-18",
+         "color": "navy",
+         "dom": [
+          -2.6,
+          5
+         ],
+         "label": [
+          3.2,
+          -4,
+          "y = x³ − 3x² − 9x − 18"
+         ]
+        }
+       ],
+       "caption": "Point of inflection (1, −29): concave down to the left, up to the right",
+       "points": [
+        {
+         "x": 1,
+         "y": -29,
+         "label": "(1, −29)",
+         "dx": 6
+        }
+       ]
+      }
+     ],
+     "answer": "(1, −29)",
+     "checks": [
+      {
+       "expr": "((3*(1.000001)^2-6*(1.000001)-9)-(3*(0.999999)^2-6*(0.999999)-9))/2e-06",
+       "equals": "0",
+       "tol": 0.0001
+      },
+      {
+       "expr": "1-3-9-18",
+       "equals": "-29"
+      }
+     ]
+    },
+    {
+     "label": "例 17",
+     "ref": "L24 Ex 5",
+     "question": "Show that the curve y = x⁴ + 4x has no point of inflection.",
+     "solution": "y′ = 4x³ + 4，y″ = 12x²。y″ = 0 只在 x = 0，但两侧 y″ = 12x² 都 > 0，<strong>不变号</strong>，所以 x = 0 不是拐点；曲线处处下凸，没有拐点。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -2.5,
+        1.8
+       ],
+       "yr": [
+        -4,
+        9
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "x^4+4*x",
+         "color": "navy",
+         "dom": [
+          -2.2,
+          1.4
+         ],
+         "label": [
+          0.5,
+          6,
+          "y = x⁴ + 4x"
+         ]
+        }
+       ],
+       "caption": "y″ = 12x² ≥ 0: concave up everywhere, no point of inflection",
+       "points": [
+        {
+         "x": -1,
+         "y": -3,
+         "label": "MIN (−1, −3)",
+         "dx": 6,
+         "dy": 12
+        }
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "((4*(1e-06)^3+4)-(4*(-1e-06)^3+4))/2e-06",
+       "equals": "0",
+       "tol": 0.0001
+      },
+      {
+       "expr": "((4*(-0.499999)^3+4)-(4*(-0.500001)^3+4))/2e-06",
+       "equals": "3",
+       "tol": 0.0001
+      },
+      {
+       "expr": "((4*(0.500001)^3+4)-(4*(0.499999)^3+4))/2e-06",
+       "equals": "3",
+       "tol": 0.0001
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "只要 f″ = 0 就说是拐点：必须检查变号（例 17）。",
+    "二阶导数判别法遇到 f″ = 0 就下结论：这时要回到一阶导数符号表。",
+    "把「concave down」和「递减」混为一谈：凹凸说的是斜率的变化，不是函数本身。"
+   ],
+   "faqs": [
+    {
+     "q": "一阶导数法和二阶导数法哪个好？",
+     "a": "二阶导数好求时用二阶导数法更快；f″ = 0 或二阶导数很难求时用一阶导数符号表。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "问题",
+   "做法",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "切线",
+    "f′(a) 作斜率，点斜式",
+    "例 1、2、4、5"
+   ],
+   [
+    "法线",
+    "斜率 −1/f′(a)；水平切线 → 竖直法线",
+    "例 3–5"
+   ],
+   [
+    "增/减",
+    "解 f′ > 0 或 f′ < 0",
+    "例 7、8"
+   ],
+   [
+    "驻点及类型",
+    "f′ = 0 → 符号表或 f″",
+    "例 9–12、15"
+   ],
+   [
+    "凹凸",
+    "解 f″ > 0 或 f″ < 0",
+    "例 14"
+   ],
+   [
+    "拐点",
+    "f″ = 0 且变号",
+    "例 16、17"
+   ]
+  ]
+ },
+ "practice": "讲义建议练习：Tutorial Guide 3-4、3-5、3-6。"
+}

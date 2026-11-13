@@ -1,0 +1,1002 @@
+{
+ "course": "mathematics",
+ "term": "term2",
+ "week": 1,
+ "title": "Sequences, Series & Progressions · 数列、级数与等差/等比数列",
+ "files": [
+  "L01_Seq_and_Series.pdf",
+  "L02_Arithmetic_Progressions.pdf",
+  "L03_Geometric_Progressions.pdf"
+ ],
+ "inventory": [
+  "L1 Ex 1",
+  "L1 Ex 2",
+  "L1 Ex 3",
+  "L1 Ex 4",
+  "L1 Ex 5",
+  "L1 Ex 6",
+  "L1 Ex 7",
+  "L1 Ex 8",
+  "L2 Ex 1",
+  "L2 Ex 2",
+  "L2 Ex 3",
+  "L2 Ex 4",
+  "L2 Ex 5",
+  "L2 Gauss",
+  "L2 Ex 6",
+  "L2 Ex 7",
+  "L2 Ex 8",
+  {
+   "ref": "L2 Ex 9",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "L3 Ex 1",
+  "L3 Ex 2",
+  "L3 Ex 3",
+  "L3 Ex 4",
+  "L3 Ex 5",
+  "L3 Ex 6",
+  {
+   "ref": "L3 Ex 7",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "L3 Ex 8"
+ ],
+ "intro": [
+  "Term 2 第 1 周：数列与级数的记号、Sₙ 与 Tₙ 的关系、Σ 记号（L1）；等差数列的通项和求和公式（L2）；等比数列的通项和求和公式（L3）。讲义每道例题逐题讲解，计算都有核对式。"
+ ],
+ "sections": [
+  {
+   "title": "数列、级数与 Σ 记号（L1）",
+   "sources": [
+    {
+     "file": "L01_Seq_and_Series.pdf",
+     "pages": "p1–5"
+    }
+   ],
+   "concept": "<strong>数列</strong>：按某种规律排列的一列数，每个数叫<strong>项</strong>。第 n 项（通项）记作 <strong>Tₙ</strong>，n 只能取正整数 1, 2, 3, …；数列常用 Tₙ 关于 n 的式子表示。\n<strong>级数</strong>：数列各项的和。前 n 项和记作 Sₙ = T₁ + T₂ + … + Tₙ（progression 一词既可指数列也可指级数）。\n<strong>重要结论</strong>：S₁ = T₁；n ≥ 2 时 <strong>Tₙ = Sₙ − Sₙ₋₁</strong>。\n<strong>Σ 记号</strong>：Sₙ = {{sum k=1|n}} T<sub>k</sub>。下标不必从 1 开始；Σ 从 k = a 到 k = b 共有 <strong>b − a + 1</strong> 项。",
+   "formulas": [
+    "Tₙ = Sₙ − Sₙ₋₁（n ≥ 2），S₁ = T₁",
+    "Σ 从 k = a 到 b 共 b − a + 1 项"
+   ],
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "L1 Ex 1",
+     "question": "Generate the next three terms: (a) 2, 4, 6, 8, 10, … (b) 2, 4, 8, 16, 32, … (c) 3, 1½, 0, −1½, … (d) 1, 4, 9, 16, 25, … (e) ½, ¾, ⅚, … (f) 1, 1, 2, 3, 5, 8, …",
+     "solution": "先找规律。\n(a) 每次加 2：12, 14, 16。\n(b) 每次乘 2：64, 128, 256。\n(c) 每次减 1½：−3, −4½, −6。\n(d) 平方数：36, 49, 64。\n(e) 分子是奇数、分母比分子大 1：{{frac 7|8}}, {{frac 9|10}}, {{frac 11|12}}。\n(f) 每项是前两项之和（斐波那契数列）：13, 21, 34。",
+     "checks": [
+      {
+       "expr": "-1.5-1.5",
+       "equals": "-3"
+      },
+      {
+       "expr": "8+5",
+       "equals": "13"
+      },
+      {
+       "expr": "13+21",
+       "equals": "34"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+     ]
+    },
+    {
+     "label": "例 2",
+     "ref": "L1 Ex 2",
+     "question": "Write down T₁ and T₂₀: (a) Tₙ = 3n + 7 (b) Tₙ = (−1)ⁿ × 3n",
+     "solution": "把 n 代入。\n(a) T₁ = 10，T₂₀ = 67。\n(b) T₁ = (−1) × 3 = −3，T₂₀ = (+1) × 60 = 60（n 为偶数时为正）。",
+     "answer": "(a) 10, 67 (b) −3, 60",
+     "checks": [
+      {
+       "expr": "3*20+7",
+       "equals": "67"
+      },
+      {
+       "expr": "(-1)^20*3*20",
+       "equals": "60"
+      },
+      {
+       "expr": "(-1)^1*3",
+       "equals": "-3"
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 3",
+     "ref": "L1 Ex 3",
+     "question": "Write Tₙ as a function of n: (a) 1, 4, 9, 16, … (b) ½, ⅓, ¼, …",
+     "solution": "(a) 第 n 项是 n 的平方：Tₙ = n²。\n(b) 分母比项数大 1：Tₙ = {{frac 1|n + 1}}。",
+     "answer": "(a) n² (b) 1/(n + 1)",
+     "checks": [
+      {
+       "expr": "1/(3+1)",
+       "equals": "0.25"
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 4",
+     "ref": "L1 Ex 4",
+     "question": "Tₙ = 5n − 23. (a) Which term is 477? (b) Is 333 a term?",
+     "solution": "(a) 5n − 23 = 477，5n = 500，n = 100：第 100 项。\n(b) 5n − 23 = 333，5n = 356，n = 71.2，不是正整数，所以 333 <strong>不是</strong>这个数列的项。",
+     "answer": "(a) T₁₀₀ (b) No",
+     "checks": [
+      {
+       "expr": "5*100-23",
+       "equals": "477"
+      },
+      {
+       "expr": "(333+23)/5",
+       "equals": "71.2"
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 5",
+     "ref": "L1 Ex 5",
+     "question": "For the series 1 + 3 + 5 + …: (a) Find T₄, T₅ and T₆. (b) Find S₆ − S₅.",
+     "solution": "(a) 奇数：T₄ = 7，T₅ = 9，T₆ = 11。\n(b) S₆ − S₅ 就是第 6 项：11（S₆ = 36，S₅ = 25）。",
+     "answer": "(a) 7, 9, 11 (b) 11",
+     "checks": [
+      {
+       "expr": "1+3+5+7+9+11-(1+3+5+7+9)",
+       "equals": "11"
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 6",
+     "ref": "L1 Ex 6",
+     "question": "Sₙ = 2n + 3n². (a) Find S₄ and S₅. (b) Hence calculate T₅. (c) Find a formula for Tₙ and verify it with (b).",
+     "solution": "(a) S₄ = 8 + 48 = 56；S₅ = 10 + 75 = 85。\n(b) T₅ = S₅ − S₄ = 29。\n(c) Tₙ = Sₙ − Sₙ₋₁ = [2n + 3n²] − [2(n − 1) + 3(n − 1)²] = 2 + 3(2n − 1) = 6n − 1。验证：T₅ = 30 − 1 = 29 ✓。（n = 1 时 6 − 1 = 5 = S₁，也成立。）",
+     "answer": "(a) 56, 85 (b) 29 (c) Tₙ = 6n − 1",
+     "checks": [
+      {
+       "expr": "2*4+3*16",
+       "equals": "56"
+      },
+      {
+       "expr": "2*5+3*25",
+       "equals": "85"
+      },
+      {
+       "expr": "(2*7+3*49)-(2*6+3*36)",
+       "equals": "6*7-1"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    {
+     "label": "例 7",
+     "ref": "L1 Ex 7",
+     "question": "Expand and evaluate {{sum k=1|5}} (5k − 2).",
+     "solution": "k = 1, 2, 3, 4, 5 依次代入：3 + 8 + 13 + 18 + 23 = 65。",
+     "answer": "65",
+     "checks": [
+      {
+       "expr": "3+8+13+18+23",
+       "equals": "65"
+      }
+     ]
+    },
+    {
+     "label": "例 8",
+     "ref": "L1 Ex 8",
+     "question": "Complete: 2³ + 2⁴ + 2⁵ + 2⁶ + 2⁷ = {{sum k=1|?}} 2<sup>?</sup> = {{sum k=3|?}} 2<sup>?</sup>. How many terms does each series have?",
+     "solution": "从 k = 1 开始：{{sum k=1|5}} 2<sup>k + 2</sup>；从 k = 3 开始：{{sum k=3|7}} 2<sup>k</sup>。两种写法都是 5 项（7 − 3 + 1 = 5），和为 8 + 16 + 32 + 64 + 128 = 248。",
+     "answer": "Σ(k=1..5) 2^(k+2) = Σ(k=3..7) 2^k, 5 terms, sum 248",
+     "checks": [
+      {
+       "expr": "2^3+2^4+2^5+2^6+2^7",
+       "equals": "248"
+      },
+      {
+       "expr": "7-3+1",
+       "equals": "5"
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "把 Sₙ 当成 Tₙ（例 6）。",
+    "Tₙ = Sₙ − Sₙ₋₁ 展开 (n − 1)² 出错。",
+    "Σ 的项数写成 b − a（漏了 +1）。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么 n 必须是正整数？",
+     "a": "n 表示「第几项」，只能是第 1、2、3…项；所以例 4(b) 解出 71.2 说明 333 不在数列中。"
+    }
+   ]
+  },
+  {
+   "title": "等差数列 AP（L2）",
+   "sources": [
+    {
+     "file": "L02_Arithmetic_Progressions.pdf",
+     "pages": "p1–5"
+    }
+   ],
+   "concept": "相邻两项的差为常数（<strong>公差 d</strong>，可正可负）的数列叫<strong>等差数列</strong>（AP）。首项 a：a, a + d, a + 2d, …\n<strong>通项</strong>：Tₙ = a + (n − 1)d。\n<strong>求和</strong>（高斯配对法：首尾相加都相等）：Sₙ = {{frac n|2}}[2a + (n − 1)d] = {{frac n|2}}(a + l)，l 是最后一项。\n判断 AP：检查 T₂ − T₁ = T₃ − T₂ = …；三个数 x、y、z 成 AP 当且仅当 y − x = z − y。",
+   "formulas": [
+    "Tₙ = a + (n − 1)d",
+    "Sₙ = {{frac n|2}}[2a + (n − 1)d] = {{frac n|2}}(a + l)"
+   ],
+   "examples": [
+    {
+     "label": "例 9",
+     "ref": "L2 Ex 1",
+     "question": "Test whether these form an AP: (a) −5, −1, −4, … (b) √3, √12, √27, …",
+     "solution": "(a) 差：−1 − (−5) = 4，−4 − (−1) = −3，不相等，<strong>不是</strong> AP。\n(b) √12 = 2√3，√27 = 3√3，数列是 √3, 2√3, 3√3，公差都是 √3，<strong>是</strong> AP。",
+     "checks": [
+      {
+       "expr": "sqrt(12)-sqrt(3)",
+       "equals": "sqrt(27)-sqrt(12)",
+       "tol": 1e-12
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 10",
+     "ref": "L2 Ex 2",
+     "question": "Find the 20th term of 5, 8, 11, 14, …",
+     "solution": "这是等差数列，首项 a = 5，公差 d = 3，代入通项公式：T₂₀ = 5 + 19 × 3 = 62。",
+     "answer": "62",
+     "checks": [
+      {
+       "expr": "5+19*3",
+       "equals": "62"
+      }
+     ]
+    },
+    {
+     "label": "例 11",
+     "ref": "L2 Ex 3",
+     "question": "Which term of the AP 15, 11, 7, … is −33?",
+     "solution": "首项 a = 15，公差 d = −4。令通项等于 −33：15 − 4(n − 1) = −33，4(n − 1) = 48，n = 13，是第 13 项。",
+     "answer": "T₁₃",
+     "checks": [
+      {
+       "expr": "15-4*12",
+       "equals": "-33"
+      }
+     ]
+    },
+    {
+     "label": "例 12",
+     "ref": "L2 Ex 4",
+     "question": "The fifth term of an AP is 31 and the twelfth term is 73. Find a and d.",
+     "solution": "a + 4d = 31，a + 11d = 73。相减：7d = 42，d = 6；a = 31 − 24 = 7。",
+     "answer": "a = 7, d = 6",
+     "checks": [
+      {
+       "expr": "7+4*6",
+       "equals": "31"
+      },
+      {
+       "expr": "7+11*6",
+       "equals": "73"
+      }
+     ]
+    },
+    {
+     "label": "例 13",
+     "ref": "L2 Ex 5",
+     "question": "2x − 1, 5x − 4 and 7x − 2 form an AP. Find x.",
+     "solution": "公差相等：(5x − 4) − (2x − 1) = (7x − 2) − (5x − 4)，3x − 3 = 2x + 2，x = 5。三项为 9、21、33，公差 12。",
+     "answer": "x = 5",
+     "checks": [
+      {
+       "expr": "(5*5-4)-(2*5-1)",
+       "equals": "(7*5-2)-(5*5-4)"
+      }
+     ]
+    },
+    {
+     "label": "例 14",
+     "ref": "L2 Gauss",
+     "question": "Find 1 + 2 + 3 + … + 100 by pairing terms, and derive the formula for the sum of an AP.",
+     "solution": "把和正着写一遍、倒着写一遍再相加：每一对都是 101，共 100 对，所以 2S₁₀₀ = 100 × 101，S₁₀₀ = 5050。\n一般地，Sₙ = a + (a + d) + … + l，倒写后相加，每对都是 a + l，共 n 对：2Sₙ = n(a + l)，Sₙ = {{frac n|2}}(a + l)；代入 l = a + (n − 1)d 得 Sₙ = {{frac n|2}}[2a + (n − 1)d]。",
+     "answer": "5050",
+     "checks": [
+      {
+       "expr": "100*101/2",
+       "equals": "5050"
+      }
+     ]
+    },
+    {
+     "label": "例 15",
+     "ref": "L2 Ex 6",
+     "question": "Find the sum of the first 20 terms of 5 + 8 + 11 + 14 + …",
+     "solution": "首项 5、公差 3，用求和公式：S₂₀ = {{frac 20|2}}[2 × 5 + 19 × 3] = 10 × 67 = 670。",
+     "answer": "670",
+     "checks": [
+      {
+       "expr": "10*(2*5+19*3)",
+       "equals": "670"
+      }
+     ]
+    },
+    {
+     "label": "例 16",
+     "ref": "L2 Ex 7",
+     "question": "Find the value of −15 − 8 − 1 + 6 + … + 188.",
+     "solution": "a = −15，d = 7，最后一项 l = 188。先求项数：−15 + 7(n − 1) = 188，7(n − 1) = 203，n = 30。\nS₃₀ = {{frac 30|2}}(−15 + 188) = 15 × 173 = 2595。",
+     "answer": "2595",
+     "checks": [
+      {
+       "expr": "-15+7*29",
+       "equals": "188"
+      },
+      {
+       "expr": "15*(-15+188)",
+       "equals": "2595"
+      }
+     ]
+    },
+    {
+     "label": "例 17",
+     "ref": "L2 Ex 8",
+     "question": "How many terms of 40 + 35 + 30 + … are needed to give a sum of 150?",
+     "solution": "a = 40，d = −5：{{frac n|2}}[80 − 5(n − 1)] = 150，n(85 − 5n) = 300，5n² − 85n + 300 = 0，n² − 17n + 60 = 0，(n − 5)(n − 12) = 0。\nn = 5 或 12。两个都对：前 5 项 40 + 35 + 30 + 25 + 20 = 150；第 6 到第 12 项是 15, 10, 5, 0, −5, −10, −15，和为 0，所以 S₁₂ 也是 150。",
+     "answer": "5 or 12 terms",
+     "checks": [
+      {
+       "expr": "5/2*(80-5*4)",
+       "equals": "150"
+      },
+      {
+       "expr": "12/2*(80-5*11)",
+       "equals": "150"
+      }
+     ]
+    },
+    {
+     "label": "例 18",
+     "ref": "L2 Ex 9",
+     "question": "Rows of cabbages: 35 in the first row, 39 in the second, each row 4 more than the previous. (a) How many cabbages in row 12? (b) Which is the first row with more than 200 cabbages? (c) Exactly 945 cabbages are planted. How many rows?",
+     "solution": "AP：a = 35，d = 4。\n(a) T₁₂ = 35 + 11 × 4 = 79。\n(b) 35 + 4(n − 1) > 200，n − 1 > 41.25，n > 42.25：第 43 行（T₄₂ = 199，T₄₃ = 203）。\n(c) {{frac n|2}}[70 + 4(n − 1)] = 945，n(33 + 2n) = 945，2n² + 33n − 945 = 0，n = {{frac −33 + √(1089 + 7560)|4}} = {{frac −33 + 93|4}} = 15（负根舍去）：15 行。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        13
+       ],
+       "yr": [
+        0,
+        90
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "n",
+       "yLabel": "cabbages",
+       "curves": [],
+       "caption": "Cabbages per row: 35, 39, 43, …, row 12 has 79",
+       "xticks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+       ],
+       "lines": [
+        {
+         "pts": [
+          [
+           1,
+           0
+          ],
+          [
+           1,
+           35
+          ]
+         ],
+         "color": "navy",
+         "width": 6
+        },
+        {
+         "pts": [
+          [
+           2,
+           0
+          ],
+          [
+           2,
+           39
+          ]
+         ],
+         "color": "navy",
+         "width": 6
+        },
+        {
+         "pts": [
+          [
+           3,
+           0
+          ],
+          [
+           3,
+           43
+          ]
+         ],
+         "color": "navy",
+         "width": 6
+        },
+        {
+         "pts": [
+          [
+           4,
+           0
+          ],
+          [
+           4,
+           47
+          ]
+         ],
+         "color": "navy",
+         "width": 6
+        },
+        {
+         "pts": [
+          [
+           5,
+           0
+          ],
+          [
+           5,
+           51
+          ]
+         ],
+         "color": "navy",
+         "width": 6
+        },
+        {
+         "pts": [
+          [
+           6,
+           0
+          ],
+          [
+           6,
+           55
+          ]
+         ],
+         "color": "navy",
+         "width": 6
+        },
+        {
+         "pts": [
+          [
+           7,
+           0
+          ],
+          [
+           7,
+           59
+          ]
+         ],
+         "color": "navy",
+         "width": 6
+        },
+        {
+         "pts": [
+          [
+           8,
+           0
+          ],
+          [
+           8,
+           63
+          ]
+         ],
+         "color": "navy",
+         "width": 6
+        },
+        {
+         "pts": [
+          [
+           9,
+           0
+          ],
+          [
+           9,
+           67
+          ]
+         ],
+         "color": "navy",
+         "width": 6
+        },
+        {
+         "pts": [
+          [
+           10,
+           0
+          ],
+          [
+           10,
+           71
+          ]
+         ],
+         "color": "navy",
+         "width": 6
+        },
+        {
+         "pts": [
+          [
+           11,
+           0
+          ],
+          [
+           11,
+           75
+          ]
+         ],
+         "color": "navy",
+         "width": 6
+        },
+        {
+         "pts": [
+          [
+           12,
+           0
+          ],
+          [
+           12,
+           79
+          ]
+         ],
+         "color": "navy",
+         "width": 6
+        }
+       ],
+       "points": [
+        {
+         "x": 12,
+         "y": 79,
+         "label": "79",
+         "dy": -8
+        }
+       ]
+      }
+     ],
+     "answer": "(a) 79 (b) row 43 (c) 15 rows",
+     "checks": [
+      {
+       "expr": "35+11*4",
+       "equals": "79"
+      },
+      {
+       "expr": "35+42*4",
+       "equals": "203"
+      },
+      {
+       "expr": "35+41*4",
+       "equals": "199"
+      },
+      {
+       "expr": "15/2*(70+14*4)",
+       "equals": "945"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ]
+    }
+   ],
+   "mistakes": [
+    "Tₙ = a + nd（应为 n − 1）。",
+    "求和前没先算出项数（例 16）。",
+    "二次方程两个正根只取一个（例 17）。"
+   ],
+   "faqs": [
+    {
+     "q": "什么时候用 n/2(a + l)？",
+     "a": "知道最后一项 l 时最方便（例 16）；不知道最后一项时用 n/2[2a + (n − 1)d]。"
+    }
+   ]
+  },
+  {
+   "title": "等比数列 GP（L3）",
+   "sources": [
+    {
+     "file": "L03_Geometric_Progressions.pdf",
+     "pages": "p1–4"
+    }
+   ],
+   "concept": "相邻两项的比为常数（<strong>公比 r</strong>，可正可负、可大于或小于 1）的数列叫<strong>等比数列</strong>（GP）：a, ar, ar², …\n<strong>通项</strong>：Tₙ = arⁿ⁻¹。\n<strong>求和</strong>（乘 r 再相减）：Sₙ = {{frac a(rⁿ − 1)|r − 1}}，或 Sₙ = {{frac a(1 − rⁿ)|1 − r}}（r < 1 时用后者更方便）。\n三个数 x、y、z 成 GP 当且仅当 y/x = z/y，即 y² = xz。",
+   "formulas": [
+    "Tₙ = arⁿ⁻¹",
+    "Sₙ = {{frac a(rⁿ − 1)|r − 1}} = {{frac a(1 − rⁿ)|1 − r}}"
+   ],
+   "examples": [
+    {
+     "label": "例 19",
+     "ref": "L3 Ex 1",
+     "question": "Test whether these form a GP: (a) 2, 4, 8, 16, … (b) ¼, −½, 1, −2, … (c) √3, √12, √27, …",
+     "solution": "(a) 比都是 2：<strong>是</strong> GP。\n(b) (−½) ÷ ¼ = −2，1 ÷ (−½) = −2，−2 ÷ 1 = −2：<strong>是</strong> GP，r = −2。\n(c) 2√3 ÷ √3 = 2，3√3 ÷ 2√3 = 1.5：<strong>不是</strong> GP（它是 AP）。",
+     "checks": [
+      {
+       "expr": "sqrt(12)/sqrt(3)",
+       "equals": "2",
+       "tol": 1e-12
+      },
+      {
+       "expr": "sqrt(27)/sqrt(12)",
+       "equals": "1.5",
+       "tol": 1e-12
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    {
+     "label": "例 20",
+     "ref": "L3 Ex 2",
+     "question": "Find T₇ of 5, 5/2, 5/4, …",
+     "solution": "后一项是前一项的一半，所以首项 a = 5，公比 r = ½：T₇ = 5 × (½)⁶ = {{frac 5|64}}。",
+     "answer": "5/64",
+     "checks": [
+      {
+       "expr": "5*0.5^6",
+       "equals": "5/64"
+      }
+     ]
+    },
+    {
+     "label": "例 21",
+     "ref": "L3 Ex 3",
+     "question": "Which term of 24, 12, 6, … equals {{frac 3|32}}?",
+     "solution": "首项 24、公比 ½，令通项等于 3/32：24 × (½)ⁿ⁻¹ = 3/32，(½)ⁿ⁻¹ = {{frac 3|32 × 24}} = {{frac 1|256}} = (½)⁸，n − 1 = 8，n = 9。",
+     "answer": "T₉",
+     "checks": [
+      {
+       "expr": "24*0.5^8",
+       "equals": "3/32"
+      }
+     ]
+    },
+    {
+     "label": "例 22",
+     "ref": "L3 Ex 4",
+     "question": "(k − 2), (k − 6) and (2k + 3) are consecutive terms of a GP. Find the possible values of k.",
+     "solution": "中间项的平方等于两边之积：(k − 6)² = (k − 2)(2k + 3)，k² − 12k + 36 = 2k² − k − 6，k² + 11k − 42 = 0，(k + 14)(k − 3) = 0。\nk = 3：1, −3, 9（r = −3）；k = −14：−16, −20, −25（r = 1.25）。两个都成立。",
+     "answer": "k = 3 or −14",
+     "checks": [
+      {
+       "expr": "(3-6)^2",
+       "equals": "(3-2)*(2*3+3)"
+      },
+      {
+       "expr": "(-14-6)^2",
+       "equals": "(-14-2)*(2*(-14)+3)"
+      }
+     ]
+    },
+    {
+     "label": "例 23",
+     "ref": "L3 Ex 5",
+     "question": "T₅ = −{{frac 8|729}} and T₈ = {{frac 8|27}}. Find the common ratio.",
+     "solution": "两项相除可以消去首项 a：T₈ ÷ T₅ = ar⁷ ÷ ar⁴ = r³ = {{frac 8|27}} ÷ (−{{frac 8|729}}) = −27，r = −3。",
+     "answer": "r = −3",
+     "checks": [
+      {
+       "expr": "(8/27)/(-8/729)",
+       "equals": "-27",
+       "tol": 1e-12
+      }
+     ]
+    },
+    {
+     "label": "例 24",
+     "ref": "L3 Ex 6",
+     "question": "Find the sum of the first 10 terms of 3 + 6 + 12 + …",
+     "solution": "首项 a = 3，公比 r = 2（大于 1，用第一种形式）：S₁₀ = {{frac 3(2¹⁰ − 1)|2 − 1}} = 3 × 1023 = 3069。",
+     "answer": "3069",
+     "checks": [
+      {
+       "expr": "3*(2^10-1)",
+       "equals": "3069"
+      }
+     ]
+    },
+    {
+     "label": "例 25",
+     "ref": "L3 Ex 7",
+     "question": "For 4 + 2 + 1 + …, find the least number of terms needed for a sum greater than 7.99.",
+     "solution": "a = 4，r = ½：Sₙ = {{frac 4(1 − 0.5ⁿ)|1 − 0.5}} = 8(1 − 0.5ⁿ) > 7.99，0.5ⁿ < 0.00125。两边取对数，log 0.5 < 0，除以它要变号：n > {{frac log 0.00125|log 0.5}} ≈ 9.64，所以至少 <strong>10 项</strong>（S₉ = 7.984，S₁₀ = 7.992）。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        11
+       ],
+       "yr": [
+        0,
+        8.6
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "n",
+       "yLabel": "Sₙ",
+       "curves": [],
+       "caption": "Partial sums of 4 + 2 + 1 + … approach 8; Sₙ > 7.99 first at n = 10",
+       "xticks": [
+        2,
+        4,
+        6,
+        8,
+        10
+       ],
+       "yticks": [
+        2,
+        4,
+        6,
+        8
+       ],
+       "lines": [
+        {
+         "pts": [
+          [
+           1,
+           4.0
+          ],
+          [
+           2,
+           6.0
+          ],
+          [
+           3,
+           7.0
+          ],
+          [
+           4,
+           7.5
+          ],
+          [
+           5,
+           7.75
+          ],
+          [
+           6,
+           7.875
+          ],
+          [
+           7,
+           7.9375
+          ],
+          [
+           8,
+           7.96875
+          ],
+          [
+           9,
+           7.984375
+          ],
+          [
+           10,
+           7.9921875
+          ]
+         ],
+         "color": "navy"
+        },
+        {
+         "pts": [
+          [
+           0,
+           7.99
+          ],
+          [
+           11,
+           7.99
+          ]
+         ],
+         "color": "red",
+         "dash": true
+        }
+       ],
+       "points": [
+        {
+         "x": 1,
+         "y": 4.0
+        },
+        {
+         "x": 2,
+         "y": 6.0
+        },
+        {
+         "x": 3,
+         "y": 7.0
+        },
+        {
+         "x": 4,
+         "y": 7.5
+        },
+        {
+         "x": 5,
+         "y": 7.75
+        },
+        {
+         "x": 6,
+         "y": 7.875
+        },
+        {
+         "x": 7,
+         "y": 7.9375
+        },
+        {
+         "x": 8,
+         "y": 7.96875
+        },
+        {
+         "x": 9,
+         "y": 7.984375
+        },
+        {
+         "x": 10,
+         "y": 7.9921875
+        },
+        {
+         "x": 10,
+         "y": 7.9921875,
+         "label": "S₁₀ = 7.992",
+         "dx": -60,
+         "dy": 16
+        }
+       ]
+      }
+     ],
+     "answer": "10 terms",
+     "checks": [
+      {
+       "expr": "log(0.00125)/log(0.5)",
+       "equals": "9.644",
+       "tol": 0.0005
+      },
+      {
+       "expr": "8*(1-0.5^10)",
+       "equals": "7.9921875"
+      },
+      {
+       "expr": "8*(1-0.5^9)",
+       "equals": "7.984375"
+      }
+     ]
+    },
+    {
+     "label": "例 26",
+     "ref": "L3 Ex 8",
+     "question": "20 opal rings: the weights form an AP and the values a GP. The first and third weigh 200 mg and 300 mg and are valued at $300 and $432. Find (a) which opal weighs 900 mg (b) the value of the 8th ring (c) the total value of the display.",
+     "solution": "<strong>重量</strong>（AP）：a = 200，a + 2d = 300，d = 50。<strong>价值</strong>（GP）：a = 300，ar² = 432，r² = 1.44，r = 1.2（价值为正）。\n(a) 200 + 50(n − 1) = 900，n − 1 = 14，<strong>第 15 颗</strong>。\n(b) T₈ = 300 × 1.2⁷ ≈ <strong>$1074.95</strong>。\n(c) S₂₀ = {{frac 300(1.2²⁰ − 1)|1.2 − 1}} ≈ <strong>$56 006.40</strong>。",
+     "answer": "(a) 15th (b) $1074.95 (c) $56 006.40",
+     "checks": [
+      {
+       "expr": "200+50*14",
+       "equals": "900"
+      },
+      {
+       "expr": "300*1.2^7",
+       "equals": "1074.95",
+       "tol": 0.005
+      },
+      {
+       "expr": "300*(1.2^20-1)/0.2",
+       "equals": "56006.4",
+       "tol": 0.05
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ]
+    }
+   ],
+   "mistakes": [
+    "Tₙ = arⁿ（指数应为 n − 1）。",
+    "r < 1 时用 a(rⁿ − 1)/(r − 1) 也对，但正负号容易出错，用 a(1 − rⁿ)/(1 − r)。",
+    "取对数解不等式时除以负数忘了变号（例 25）。"
+   ],
+   "faqs": [
+    {
+     "q": "例 22 为什么用「中间项平方 = 两边之积」？",
+     "a": "成 GP 意味着 (k − 6)/(k − 2) = (2k + 3)/(k − 6)，交叉相乘就得到 (k − 6)² = (k − 2)(2k + 3)。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "题型",
+   "公式",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "由 Sₙ 求 Tₙ",
+    "Tₙ = Sₙ − Sₙ₋₁",
+    "例 6"
+   ],
+   [
+    "AP 通项",
+    "a + (n − 1)d",
+    "例 10–13"
+   ],
+   [
+    "AP 求和",
+    "n/2[2a + (n − 1)d] 或 n/2(a + l)",
+    "例 15–18"
+   ],
+   [
+    "GP 通项",
+    "arⁿ⁻¹",
+    "例 20–23"
+   ],
+   [
+    "GP 求和",
+    "a(rⁿ − 1)/(r − 1)",
+    "例 24–26"
+   ],
+   [
+    "「至少几项」",
+    "列不等式，取对数，注意变号",
+    "例 18、25"
+   ]
+  ]
+ },
+ "practice": "讲义建议练习：Tutorial Guide 6-1、6-2、6-3。"
+}

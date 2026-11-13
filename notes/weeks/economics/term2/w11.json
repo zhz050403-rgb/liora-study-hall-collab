@@ -1,0 +1,946 @@
+{
+ "course": "economics",
+ "term": "term2",
+ "week": 11,
+ "title": "Week 11 · Unit 9 Tutorial + Unit 10 Interpretation of Economic Statistics 经济统计解读",
+ "answersTitle": "Tutorial 9 The Government Budget and Fiscal Policy",
+ "files": [
+  "unit9 PPT the government budget and fiscal policy.pdf",
+  "unit9 TG the government budget and fiscal policy.pdf",
+  "unit10 PPT interpretation of economic statistics.pdf",
+  "unit10 TG interpretation of economic statistics.pdf"
+ ],
+ "inventory": [
+  {
+   "ref": "Tutorial 9 Terms",
+   "deliverables": [
+    {
+     "type": "terms",
+     "terms": [
+      "Government budget",
+      "Fiscal Policy",
+      "Cyclical budget",
+      "Transfer payment",
+      "Discretionary budget",
+      "Automatic stabiliser",
+      "Deficit budget",
+      "Crowding out",
+      "Surplus budget"
+     ]
+    }
+   ]
+  },
+  "Tutorial 9 Q1",
+  "Tutorial 9 Q2",
+  "Tutorial 9 Q3",
+  "Tutorial 9 Q4",
+  {
+   "ref": "Tutorial 9 Q5",
+   "parts": [
+    "a",
+    "b"
+   ]
+  },
+  "Tutorial 9 Q6",
+  "Tutorial 9 Q7",
+  {
+   "ref": "Tutorial 9 Q8",
+   "parts": [
+    "a",
+    "b"
+   ],
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial 9 Q9",
+   "parts": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  "Tutorial 9 Q10",
+  "Tutorial 9 Q11",
+  "Tutorial 9 Essay 1",
+  "Tutorial 9 Essay 2",
+  "Tutorial 9 Summary",
+  {
+   "ref": "Lecture 10 Goals",
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  {
+   "ref": "Lecture 10 Balance of Payments",
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  {
+   "ref": "Lecture 10 Conflicts",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "Lecture 10 Policies",
+  {
+   "ref": "Lecture 10 GFC",
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  }
+ ],
+ "intro": [
+  "本周前半是 <strong>Unit 9 Tutorial</strong>（预算的作用、周期性与结构性预算、自动稳定器、赤字融资、凯恩斯主义赤字、AD–AS 图、财政政策与货币政策比较）；后半是 <strong>Unit 10 讲座</strong>：宏观经济管理的内部平衡与外部平衡、国际收支、相容与冲突的经济目标、需求方政策，以及讲义用澳储行图表展示的全球金融危机（GFC）。Unit 10 Tutorial 的答案在第 12 周。",
+  "Term 2 的 Tutorial 没有官方答案文件，以下答案依据讲义和 Tutorial 阅读材料写出。讲义第 19–27 页是澳储行 / ABS 的图表，笔记里的数字是读图得到的近似值。"
+ ],
+ "sections": [
+  {
+   "title": "Unit 9 Tutorial：政府预算与财政政策",
+   "sources": [
+    {
+     "file": "unit9 TG the government budget and fiscal policy.pdf",
+     "pages": "p1–10"
+    },
+    {
+     "file": "unit9 PPT the government budget and fiscal policy.pdf",
+     "pages": "p1–28"
+    }
+   ],
+   "concept": "财政政策用 G 和 T 影响经济：衰退用赤字（G > T）增加总需求，繁荣用盈余（T > G）抑制总需求。预算由<strong>结构性</strong>（政府主动决定）和<strong>周期性</strong>（自动稳定器随经济周期自动变化）两部分组成。赤字可向国内借款（挤出私人投资、推高利率）、向海外借款（外债、澳元升值）或向 RBA 借款（印钞，最具通胀性）。<strong>公共部门借款需求</strong>（PSBR）是各级政府及政府企业每年的借款总额，增加公共债务。",
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "Tutorial 9 Terms",
+     "question": "Explain: Government budget; Fiscal Policy; Cyclical budget; Transfer payment; Discretionary budget; Automatic stabiliser; Deficit budget; Crowding out; Surplus budget.",
+     "solution": "<strong>Government budget</strong>：政府对下一财年支出（G）和税收（T）的计划说明。\n<strong>Fiscal Policy</strong>：用政府支出和税收影响经济活动水平和结构的政策。\n<strong>Cyclical budget</strong>：预算中因经济周期自动变化的部分（经济好转时税收 ↑、福利 ↓）。\n<strong>Transfer payment</strong>：政府单方面支付、没有对应产出的款项，如失业救济、养老金、家庭补贴。\n<strong>Discretionary budget</strong>（结构性预算）：政府主动决定的税收和支出变化，用来实现经济目标。\n<strong>Automatic stabiliser</strong>：无需新决定、随经济周期自动起作用并减小波动的税收和支出项目，如累进所得税和失业救济。\n<strong>Deficit budget</strong>：政府支出大于税收（G > T），是扩张性的。\n<strong>Crowding out</strong>：政府活动（税收、支出、借款推高利率）取代或减少私人部门活动。\n<strong>Surplus budget</strong>：税收大于政府支出（T > G），是收缩性的。",
+     "numeric": false
+    },
+    {
+     "label": "例 2",
+     "ref": "Tutorial 9 Q1",
+     "question": "What is a Government Budget? Give examples of how a Budget may redistribute income and reallocate resources.",
+     "solution": "预算是政府对下一财年支出和收入的计划，说明经济状况、政策立场、具体措施和预期效果。\n<strong>收入再分配</strong>：累进所得税向高收入者多征税；失业救济、养老金、家庭补贴等转移支付给低收入者；公共医疗和教育让低收入家庭也能获得服务。\n<strong>资源再配置</strong>：政府把资源投向道路、医院、学校等基础设施和公共产品；对某些行业补贴（如可再生能源、制造业）或征税（烟酒），引导资源在行业之间流动。",
+     "numeric": false
+    },
+    {
+     "label": "例 3",
+     "ref": "Tutorial 9 Q2",
+     "question": "Explain the difference between the cyclical and structural (discretionary) components of a Budget.",
+     "solution": "<strong>结构性（相机）部分</strong>是政府有意做出的税收和支出决定，在年度预算中宣布，目的是影响经济活动、实现增长、就业和通胀目标（如修基础设施、改税率）。<strong>周期性部分</strong>是经济活动变化自动带来的预算变化：经济下行时税收自动减少、福利支出自动增加，经济增长时相反。前者是「预算影响经济」，后者是「经济影响预算」。",
+     "numeric": false
+    },
+    {
+     "label": "例 4",
+     "ref": "Tutorial 9 Q3",
+     "question": "How would unemployment benefits and a progressive tax system work during a downturn to reduce its severity?",
+     "solution": "经济下行时失业增加，<strong>失业救济</strong>支出自动增加，失业者仍有收入维持消费，需求不会下降那么多。收入下降时，<strong>累进税</strong>使人们落入更低的税率档，交的税减少得比收入更快，可支配收入下降较少，消费得以维持。两者都向经济注入支出，使预算自动趋向赤字，减轻衰退的程度。",
+     "numeric": false
+    },
+    {
+     "label": "例 5",
+     "ref": "Tutorial 9 Q4",
+     "question": "How could a sudden unexpected fall in GDP and employment force the budget into deficit, even though the government planned a small surplus?",
+     "solution": "预算是按预计的经济增长编制的。GDP 意外下降、失业上升时，自动稳定器起作用：个人所得税、公司税和消费税收入下降，失业救济等福利支出上升。周期性部分恶化幅度超过计划中的小额盈余，整个预算就变成赤字，尽管政府的结构性决定没有改变。",
+     "numeric": false
+    },
+    {
+     "label": "例 6",
+     "ref": "Tutorial 9 Q5",
+     "question": "What discretionary fiscal changes would a government use to have (a) an expansionary effect; (b) a contractionary effect?",
+     "solution": "(a) <strong>扩张</strong>：增加政府支出（基础设施、公共工程）、增加转移支付、减税（个人或企业），使预算趋向赤字，提高总需求。\n(b) <strong>收缩</strong>：减少政府支出、提高税率或开征新税、减少补贴，使预算趋向盈余，降低总需求。",
+     "parts": [
+      "a",
+      "b"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 7",
+     "ref": "Tutorial 9 Q6",
+     "question": "Describe three main methods of financing a budget deficit. Which is most inflationary?",
+     "solution": "①<strong>向国内私人部门借款</strong>（发行国库券、债券）：占用国内储蓄，推高利率，挤出私人投资，但不直接增加货币供应。②<strong>向海外借款</strong>：增加外债，外资流入可能使澳元升值。③<strong>向 RBA 借款</strong>（印钞）：直接增加货币供应，「太多的钱追逐太少的商品」。<strong>向 RBA 借款的通胀性最强</strong>。",
+     "numeric": false
+    },
+    {
+     "label": "例 8",
+     "ref": "Tutorial 9 Q7",
+     "question": "According to Keynesian theory, what are the positive effects of a budget deficit?",
+     "solution": "凯恩斯认为，经济低于充分就业时私人需求不足，政府赤字是一种<strong>需求注入</strong>：政府支出直接增加总需求，减税增加家庭可支配收入和消费；再通过<strong>乘数效应</strong>（收到支出的人又把钱花掉），总需求增加的幅度大于最初的支出。结果是产出增加、就业增加、失业下降，经济走出衰退；在有闲置资源时通胀压力小。",
+     "numeric": false
+    },
+    {
+     "label": "例 9",
+     "ref": "Tutorial 9 Q8",
+     "question": "Use an AD–AS diagram to show the effect of a large increase in government infrastructure spending when (a) growth is slow and unemployment high; (b) the economy is growing strongly and unemployment is at the natural rate.",
+     "solution": "(a) 均衡在 AS 的平坦段：基础设施支出增加 G，AD 右移，实际 GDP 和就业大幅增加，物价几乎不变。\n(b) 均衡接近 Y_FE、AS 很陡：同样的 AD 右移几乎不能增加产出，资源争夺推高工资和物价，主要结果是<strong>通胀</strong>，还可能挤出私人投资。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        11.5
+       ],
+       "yr": [
+        0,
+        11
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Real GDP",
+       "yLabel": "Price level",
+       "curves": [
+        {
+         "expr": "1.5+4/(10-x)",
+         "dom": [
+          0,
+          9.556
+         ],
+         "color": "red",
+         "label": [
+          8.36,
+          10.1,
+          "AS"
+         ]
+        },
+        {
+         "expr": "5-0.6*x",
+         "dom": [
+          0,
+          8.333
+         ],
+         "color": "navy",
+         "label": [
+          7.33,
+          1.05,
+          "AD₁"
+         ]
+        },
+        {
+         "expr": "7.2-0.6*x",
+         "dom": [
+          0,
+          11.5
+         ],
+         "color": "navy",
+         "label": [
+          9.68,
+          1.84,
+          "AD₂"
+         ],
+         "dash": true
+        }
+       ],
+       "points": [
+        {
+         "x": 4.599,
+         "y": 2.241,
+         "label": ""
+        },
+        {
+         "x": 7.156,
+         "y": 2.906,
+         "label": ""
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          2.241
+         ],
+         "to": [
+          4.599,
+          2.241
+         ]
+        },
+        {
+         "from": [
+          4.599,
+          0
+         ],
+         "to": [
+          4.599,
+          2.241
+         ]
+        },
+        {
+         "from": [
+          0,
+          2.906
+         ],
+         "to": [
+          7.156,
+          2.906
+         ]
+        },
+        {
+         "from": [
+          7.156,
+          0
+         ],
+         "to": [
+          7.156,
+          2.906
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": -0.15,
+         "y": 2.121,
+         "text": "P₁",
+         "anchor": "end",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 4.599,
+         "y": -0.55,
+         "text": "Y₁",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": -0.15,
+         "y": 2.786,
+         "text": "P₂",
+         "anchor": "end",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 7.156,
+         "y": -0.55,
+         "text": "Y₂",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 10,
+         "y": -0.55,
+         "text": "Y_FE",
+         "anchor": "middle",
+         "size": 9,
+         "color": "red"
+        }
+       ],
+       "caption": "Q8(a) slow growth, high unemployment: infrastructure spending raises output and jobs with little inflation",
+       "padLeft": 34,
+       "vlines": [
+        {
+         "x": 10,
+         "color": "grey"
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        11.5
+       ],
+       "yr": [
+        0,
+        11
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Real GDP",
+       "yLabel": "Price level",
+       "curves": [
+        {
+         "expr": "1.5+4/(10-x)",
+         "dom": [
+          0,
+          9.556
+         ],
+         "color": "red",
+         "label": [
+          8.36,
+          10.1,
+          "AS"
+         ]
+        },
+        {
+         "expr": "10-0.6*x",
+         "dom": [
+          0,
+          11.5
+         ],
+         "color": "navy",
+         "label": [
+          9.68,
+          4.64,
+          "AD₁"
+         ]
+        },
+        {
+         "expr": "12.2-0.6*x",
+         "dom": [
+          0,
+          11.5
+         ],
+         "color": "navy",
+         "label": [
+          9.68,
+          6.84,
+          "AD₂"
+         ],
+         "dash": true
+        }
+       ],
+       "points": [
+        {
+         "x": 8.766,
+         "y": 4.741,
+         "label": ""
+        },
+        {
+         "x": 9.226,
+         "y": 6.665,
+         "label": ""
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          4.741
+         ],
+         "to": [
+          8.766,
+          4.741
+         ]
+        },
+        {
+         "from": [
+          8.766,
+          0
+         ],
+         "to": [
+          8.766,
+          4.741
+         ]
+        },
+        {
+         "from": [
+          0,
+          6.665
+         ],
+         "to": [
+          9.226,
+          6.665
+         ]
+        },
+        {
+         "from": [
+          9.226,
+          0
+         ],
+         "to": [
+          9.226,
+          6.665
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": -0.15,
+         "y": 4.6209999999999996,
+         "text": "P₁",
+         "anchor": "end",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 8.766,
+         "y": -0.55,
+         "text": "Y₁",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": -0.15,
+         "y": 6.545,
+         "text": "P₂",
+         "anchor": "end",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 10,
+         "y": -0.55,
+         "text": "Y_FE",
+         "anchor": "middle",
+         "size": 9,
+         "color": "red"
+        }
+       ],
+       "caption": "Q8(b) at the natural rate: the same spending mainly raises prices",
+       "padLeft": 34,
+       "vlines": [
+        {
+         "x": 10,
+         "color": "grey"
+        }
+       ]
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 10",
+     "ref": "Tutorial 9 Q9",
+     "question": "Discuss some negative effects of budget deficits, referring to (a) the public sector borrowing requirement; (b) the public debt; (c) crowding out.",
+     "solution": "(a) <strong>PSBR</strong>：赤字要靠发行国债借款弥补，各级政府加政府企业的借款总额就是 PSBR。大量借款推高利率；高利率吸引外资使澳元升值，出口变贵、进口变便宜，贸易差额恶化；从海外借的部分增加外债；还可能有通胀效应、打击企业信心。\n(b) <strong>公共债务</strong>：每年的借款累积成公共债务，将来要用税收支付利息和本金，加重未来纳税人的负担，挤占其他支出。\n(c) <strong>挤出</strong>：政府税收减少私人消费；政府支出占用商品、服务和资源，私人部门无法使用；政府借款吸收储蓄、推高利率，减少私人投资。",
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 11",
+     "ref": "Tutorial 9 Q10",
+     "question": "For what purposes can the government use funds from budget surpluses?",
+     "solution": "①<strong>冻结</strong>盈余，使资金退出流通，抑制需求和通胀；②<strong>偿还国内公共债务</strong>（向私人部门回购政府证券）；③<strong>偿还外债</strong>；（另可建立主权基金或为将来储蓄，如澳大利亚未来基金。）",
+     "numeric": false
+    },
+    {
+     "label": "例 12",
+     "ref": "Tutorial 9 Q11",
+     "question": "Why is fiscal policy more likely to stimulate an economy from recession than monetary policy?",
+     "solution": "衰退时企业和家庭信心低，即使降息，企业预期收益率也低，家庭担心失业，不愿借钱，货币政策像「推绳子」。财政政策则<strong>直接</strong>创造需求：政府自己花钱修基础设施、雇人，或直接给家庭转移支付，不依赖私人借贷意愿；还能针对受影响最严重的地区和行业，并通过乘数效应放大。",
+     "numeric": false
+    },
+    {
+     "label": "例 13",
+     "ref": "Tutorial 9 Essay 1",
+     "question": "Practice essay: What is the likely effect of an unexpected large increase in economic growth on a planned Budget outcome?",
+     "solution": "政府的预算是按预计的经济增长编制的。如果经济增长意外大幅加快，预算中的<strong>周期性部分</strong>会自动改善。\n<strong>收入方面</strong>：就业和收入增加，个人所得税收入上升；在累进税制下，收入增加使更多人进入更高税档，税收增加得比收入更快；企业利润增加，公司税上升；支出增加使消费税（GST）收入上升。\n<strong>支出方面</strong>：失业减少，失业救济等福利支出下降。\n因此，原计划的赤字会变小，原计划的小额盈余会变成更大的盈余。这些变化是自动稳定器在起作用：它们从过热的经济中抽走需求，减缓通胀压力。政府还可以在此基础上主动收紧（结构性盈余），或用意外收入偿还债务。",
+     "numeric": false
+    },
+    {
+     "label": "例 14",
+     "ref": "Tutorial 9 Essay 2",
+     "question": "Practice essay: Discuss some of the positive and negative effects of a large budget surplus on an economy.",
+     "solution": "预算盈余指政府税收大于支出（T > G），是收缩性的财政政策。\n<strong>正面影响</strong>：①在经济过热时减少总需求，降低需求拉动的通胀；②增加国民储蓄，政府可用盈余偿还国内和海外债务，减少将来的利息负担；③政府借款减少，利率下行压力，减少对私人投资的挤出；④为下一次衰退留出政策空间（可以在需要时转为赤字）。\n<strong>负面影响</strong>：①在经济并不过热时实行大额盈余，会使总需求不足、增长放缓、失业上升；②通过高税收或削减公共服务和基础设施实现的盈余，可能损害长期生产能力和社会福利；③自动稳定器的作用可能被削弱。\n因此，盈余是否合适取决于经济处在周期的哪个阶段：繁荣时有利，衰退时有害。",
+     "numeric": false
+    },
+    {
+     "label": "例 15",
+     "ref": "Tutorial 9 Summary",
+     "question": "After the tutorial: complete the summary (choose the correct words).",
+     "solution": "财政政策有两个关键方面：周期性预算和结构性预算。<strong>周期性</strong>预算指 GDP 增长对政府预算的影响；<strong>结构性</strong>预算指政府预算对 GDP 增长的有意影响。经济增长放缓可能导致失业<strong>上升</strong>，政府必须支付的福利<strong>增加</strong>；同时税收收入可能<strong>下降</strong>（讲义这里印的是「rise」，应为下降）。这些福利支出和税收的变化叫自动稳定器，在经济放缓时使预算趋向<strong>赤字</strong>，并使经济周期的波动<strong>变小</strong>。凯恩斯认为政府<strong>应该</strong>用<strong>相机（主动）</strong>的支出和税收变化影响 GDP 增长。经济放缓时，政府可以用相机财政政策<strong>增加</strong>总需求。增加基础设施支出使总需求<strong>右移</strong>。经济<strong>低于</strong>充分就业时，增加相机支出最合适；在充分就业时增加，可能导致<strong>更高的通胀</strong>。衰退时预算往往因周期性和结构性因素同时趋向赤字：周期性注入的增加来自<strong>转移支付</strong>，结构性注入的增加来自<strong>基础设施</strong>支出。",
+     "sourceNote": "Tutorial 第 9 页的总结里「tax revenue is likely to rise」是印刷错误：经济放缓时税收下降，后文也说预算因此趋向赤字。",
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "把自动稳定器说成政府的主动决定。",
+    "说「所有赤字都会引起通胀」：要看融资方式和经济是否接近充分就业。",
+    "PSBR 只算联邦政府：它包括三级政府和政府企业。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么衰退时预算一定会变差？",
+     "a": "即使政府什么也不做，税收自动下降、福利支出自动上升（周期性部分）；如果政府再主动增加支出（结构性部分），赤字会更大。"
+    }
+   ]
+  },
+  {
+   "title": "Unit 10 讲座：经济统计解读与宏观经济管理",
+   "sources": [
+    {
+     "file": "unit10 PPT interpretation of economic statistics.pdf",
+     "pages": "p1–28"
+    }
+   ],
+   "concept": "<strong>宏观经济管理</strong>：联邦政府用宏观政策稳定经济（减小繁荣和衰退的波动）并实现其他目标，分为<strong>内部平衡</strong>（经济增长、低通胀 2–3%、充分就业即自然失业率）和<strong>外部平衡</strong>（经常账户可持续、外债可偿还、币值稳定）。\n<strong>国际收支</strong>：一国与世界其他国家经济交易的系统记录（收支流量）。经常账户包括商品差额、服务差额、初次收入（利息、利润、租金）和二次收入（单向转移）。它影响汇率、国民储蓄与投资和整体经济稳定。\n<strong>相容的目标</strong>：经济增长与充分就业（GDP 增加提高劳动需求），但技术变化也可能带来结构性失业。<strong>冲突的目标</strong>：①充分就业与低通胀（接近充分产能时需求拉动和成本推动通胀）；②收入再分配与增长（高税率和高福利可能削弱工作、储蓄、投资的激励）；③内部与外部平衡（强劲需求增加进口和海外借款）。\n<strong>政策</strong>：各目标可能需要不同的政策，必须协调。<strong>需求方增长政策</strong>：扩张性财政政策（政府支出加乘数效应）和宽松货币政策（降息）。<strong>衰退</strong>的特征：总需求下降、增长下降、失业上升、通胀压力下降；RBA 降息，政府增加公共工程和基础设施支出。",
+   "examples": [
+    {
+     "label": "例 16",
+     "ref": "Lecture 10 Goals",
+     "question": "What are the goals of macroeconomic management?",
+     "solution": "政府用宏观政策稳定经济、减小繁荣与衰退的波动，并实现两类目标：<strong>内部平衡</strong>（经济增长、低通胀、充分就业）和<strong>外部平衡</strong>（经常账户可持续、外债可偿还、币值稳定）。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "Goal",
+        "Internal or external",
+        "What it means"
+       ],
+       "rows": [
+        [
+         "Economic growth",
+         "Internal",
+         "Rising real GDP: more jobs, income, living standards"
+        ],
+        [
+         "Low inflation",
+         "Internal",
+         "Price stability, RBA target 2–3%"
+        ],
+        [
+         "Full employment",
+         "Internal",
+         "Unemployment at the natural rate (no cyclical unemployment)"
+        ],
+        [
+         "Current account balance",
+         "External",
+         "Sustainable relationship between exports and imports"
+        ],
+        [
+         "Acceptable foreign debt",
+         "External",
+         "Debt that can be serviced (repaid)"
+        ],
+        [
+         "Stable currency",
+         "External",
+         "No large swings in the exchange rate"
+        ]
+       ],
+       "title": "Macroeconomic goals"
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 17",
+     "ref": "Lecture 10 Balance of Payments",
+     "question": "What is the balance of payments and what is in the current account? Why does it matter?",
+     "solution": "国际收支是一国与世界其他国家所有经济交易的系统记录，记录国际收入和支付（货币流量）。经常账户包括商品差额、服务差额、初次收入差额和二次收入（转移）差额（见表）。它反映一国的对外经济关系：顺差或逆差会影响汇率、国民储蓄与投资以及经济稳定；政府据此评估本国产业竞争力、贸易政策的影响并管理国际储备。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "Current account item",
+        "Examples"
+       ],
+       "rows": [
+        [
+         "Goods balance",
+         "Exports and imports of physical goods, e.g. wheat, cars"
+        ],
+        [
+         "Services balance",
+         "Transport, education, tourism"
+        ],
+        [
+         "Primary income balance",
+         "Interest, profits (dividends), rent paid or received"
+        ],
+        [
+         "Secondary income (current transfers)",
+         "One-way payments, e.g. overseas pensions, gifts to relatives"
+        ]
+       ],
+       "title": "Balance of payments: current account"
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 18",
+     "ref": "Lecture 10 Conflicts",
+     "question": "Which macroeconomic goals are compatible and which conflict? Explain.",
+     "solution": "<strong>相容</strong>：经济增长与充分就业：GDP 增加提高劳动需求，创造就业、提高生活水平（但快速技术变化、需求变化和生产外移可能造成结构性失业）。\n<strong>冲突</strong>：①充分就业与低通胀：经济接近充分产能时，需求增加主要推高物价（需求拉动），资源和劳动短缺推高成本（成本推动）。②收入再分配与增长：再分配需要更高的税率来支付社会服务和转移支付，可能削弱工作、储蓄、投资和找工作的激励，使产出低于潜力。③内部与外部平衡：高增长和充分就业需要强劲需求，消费品和资本设备进口增加，要靠更多海外借款弥补贸易逆差。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        11.5
+       ],
+       "yr": [
+        0,
+        11
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Real GDP",
+       "yLabel": "Price level",
+       "curves": [
+        {
+         "expr": "1.5+4/(10-x)",
+         "dom": [
+          0,
+          9.556
+         ],
+         "color": "red",
+         "label": [
+          8.36,
+          10.1,
+          "AS"
+         ]
+        },
+        {
+         "expr": "9.6-0.6*x",
+         "dom": [
+          0,
+          11.5
+         ],
+         "color": "navy",
+         "label": [
+          9.68,
+          4.24,
+          "AD₁"
+         ]
+        },
+        {
+         "expr": "11.8-0.6*x",
+         "dom": [
+          0,
+          11.5
+         ],
+         "color": "navy",
+         "label": [
+          9.68,
+          6.44,
+          "AD₂"
+         ],
+         "dash": true
+        }
+       ],
+       "points": [
+        {
+         "x": 8.631,
+         "y": 4.421,
+         "label": ""
+        },
+        {
+         "x": 9.167,
+         "y": 6.3,
+         "label": ""
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          4.421
+         ],
+         "to": [
+          8.631,
+          4.421
+         ]
+        },
+        {
+         "from": [
+          8.631,
+          0
+         ],
+         "to": [
+          8.631,
+          4.421
+         ]
+        },
+        {
+         "from": [
+          0,
+          6.3
+         ],
+         "to": [
+          9.167,
+          6.3
+         ]
+        },
+        {
+         "from": [
+          9.167,
+          0
+         ],
+         "to": [
+          9.167,
+          6.3
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": -0.15,
+         "y": 4.301,
+         "text": "P₁",
+         "anchor": "end",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 8.631,
+         "y": -0.55,
+         "text": "Ye₁",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": -0.15,
+         "y": 6.18,
+         "text": "P₂",
+         "anchor": "end",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 10,
+         "y": -0.55,
+         "text": "Y_FE",
+         "anchor": "middle",
+         "size": 9,
+         "color": "red"
+        }
+       ],
+       "caption": "Near full capacity, rising AD mainly raises prices: growth/employment conflict with low inflation",
+       "padLeft": 34,
+       "vlines": [
+        {
+         "x": 10,
+         "color": "grey"
+        }
+       ]
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 19",
+     "ref": "Lecture 10 Policies",
+     "question": "Why must economic policies work together? What demand-side policies promote growth, and how do they respond to a recession?",
+     "solution": "不同目标需要不同的政策：压低通胀可能需要加息和削减政府支出，而促进增长和就业需要降息和增加政府支出，所以政策必须协调。\n<strong>需求方增长政策</strong>：扩张性财政政策（增加政府支出，加上乘数效应刺激需求、就业和收入）；宽松货币政策（降息刺激需求）。\n<strong>衰退</strong>时总需求下降、增长下降、失业上升、通胀压力减弱：RBA 可能降息，政府可能增加公共工程和基础设施支出。",
+     "numeric": false
+    },
+    {
+     "label": "例 20",
+     "ref": "Lecture 10 GFC",
+     "question": "Using the lecture's charts, describe how the Global Financial Crisis (2008–09) affected Australia and how policy responded.",
+     "solution": "讲义用澳储行和 ABS 的图表展示了 GFC：主要贸易伙伴的 GDP 增长急剧下降，澳大利亚的 GDP 增长放缓到约 1%，失业率和就业不足率上升，通胀从 2008 年的高点回落，出口量下降。\n政策反应：RBA 把现金利率从 7.25% 大幅降到 3%（货币宽松）；政府预算从盈余转为赤字，一方面是自动稳定器（税收下降、福利增加），另一方面是主动刺激，公共建设工程（基础设施）占 GDP 的比重明显上升（财政扩张）；澳元大幅贬值，也帮助了出口行业。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "Indicator (RBA / ABS charts)",
+        "Before the GFC (2007–08)",
+        "During the GFC (2008–09)"
+       ],
+       "rows": [
+        [
+         "Australian GDP growth",
+         "About 3–4% a year",
+         "Fell to about 1% (one negative quarter)"
+        ],
+        [
+         "Trading-partner (world) GDP growth",
+         "About 4–5%",
+         "Fell sharply, to around zero in 2009"
+        ],
+        [
+         "Unemployment rate",
+         "About 4%",
+         "Rose to almost 6%; underemployment also rose"
+        ],
+        [
+         "CPI inflation",
+         "Peaked about 5% in 2008",
+         "Fell to under 2% in 2009"
+        ],
+        [
+         "Cash rate",
+         "7.25%",
+         "Cut to 3% by April 2009"
+        ],
+        [
+         "Budget balance",
+         "Surplus about 2% of GDP",
+         "Deficit about 4% of GDP"
+        ],
+        [
+         "Public construction work",
+         "About 2.5% of GDP",
+         "Rose to about 4% of GDP"
+        ],
+        [
+         "$A",
+         "Above US$0.90",
+         "Fell towards US$0.65"
+        ]
+       ],
+       "title": "The Global Financial Crisis in the lecture's charts (approximate readings)"
+      }
+     ],
+     "sourceNote": "讲义第 19–27 页是图表截图，没有文字说明；表中数字是读图的近似值。",
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "把外部平衡只理解为贸易差额：还包括外债和币值稳定。",
+    "说「增长和低通胀总是相容」：接近充分就业时二者冲突。",
+    "把衰退时的预算赤字全部归因于政府刺激：有一部分是自动稳定器。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么内部平衡会影响外部平衡？",
+     "a": "国内需求强劲时，家庭和企业买更多进口品和进口设备，经常账户逆差扩大，需要更多海外借款，外债增加。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "题型",
+   "做法",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "结构性 vs 周期性",
+    "主动决定 vs 自动随周期变化",
+    "例 3–5"
+   ],
+   [
+    "赤字融资",
+    "国内、海外、RBA，比较通胀性",
+    "例 7"
+   ],
+   [
+    "财政刺激作图",
+    "看处在 AS 的哪一段",
+    "例 9"
+   ],
+   [
+    "内部 / 外部平衡",
+    "增长、通胀、就业 vs 经常账户、外债、汇率",
+    "例 16"
+   ],
+   [
+    "目标冲突",
+    "就业 vs 通胀；再分配 vs 增长；内部 vs 外部",
+    "例 18"
+   ]
+  ]
+ },
+ "practice": "讲座结尾：完成本周 Learning Guide 题目、小测和写作练习。Unit 10 Tutorial 的答案见第 12 周。"
+}

@@ -1,0 +1,522 @@
+{
+ "course": "mathematics",
+ "term": "term2",
+ "week": 3,
+ "title": "Present Value & Mixed Finance · 现值与综合金融数学",
+ "files": [
+  "L07_Present_Value.pdf",
+  "L08_Mixed_Financial.pdf",
+  "L09_Sets.pdf"
+ ],
+ "inventory": [
+  "L7 Carlos",
+  "L7 Ex 1",
+  "L7 Ex 2",
+  "L7 Ex 3",
+  "L8 Ex 1",
+  "L8 Ex 2",
+  "L8 Ex 3",
+  "L9 Ex 1",
+  "L9 Ex 2",
+  "L9 Ex 3",
+  "L9 Ex 4",
+  "L9 Ex 5",
+  {
+   "ref": "L9 Ex 6",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "L9 Ex 7",
+  {
+   "ref": "L9 Ex 8",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  }
+ ],
+ "intro": [
+  "Term 2 第 3 周：年金现值与贷款（L7）；综合金融题的判断步骤（L8）；集合、韦恩图和计数法则（L9）。所有金额由公式计算并核对；韦恩图的阴影由程序按集合关系精确画出。"
+ ],
+ "sections": [
+  {
+   "title": "年金现值与贷款（L7）",
+   "sources": [
+    {
+     "file": "L07_Present_Value.pdf",
+     "pages": "p1–5"
+    }
+   ],
+   "concept": "现在存入一笔钱 PV，此后每期<strong>期末</strong>取出 PMT，最后一次取款后余额为 0。各期取款的现值组成等比数列，求和得<strong>年金现值</strong>：\n<strong>PV = PMT × {{frac 1 − (1 + i)⁻ⁿ|i}}</strong>，i 是每期利率，n 是取款次数。\n要算某时刻的余额：用<strong>剩余的</strong>期数 n 代入 PV 公式。要算某段时间的利息：<strong>期初余额 + 利息 − 支付 = 期末余额</strong>。\n<strong>贷款</strong>就是年金：借款额是现值，每期等额还款就是 PMT（贷款被「摊销」）。",
+   "formulas": [
+    "PV = PMT × {{frac 1 − (1 + i)⁻ⁿ|i}}"
+   ],
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "L7 Carlos",
+     "question": "Carlos wants to withdraw $5000 a month for 30 years from an account earning 6% p.a. compounded monthly, leaving nothing at the end. How much does he need at retirement?",
+     "solution": "i = 0.005，n = 360。由 A₃₆₀ = 0 推出 A₀ × 1.005³⁶⁰ = 5000(1 + 1.005 + … + 1.005³⁵⁹)，括号是等比数列之和 {{frac 1.005³⁶⁰ − 1|0.005}}，整理得\nA₀ = 5000 × {{frac 1 − 1.005⁻³⁶⁰|0.005}} = <strong>$833,958.07</strong>。",
+     "answer": "$833,958.07",
+     "checks": [
+      {
+       "expr": "5000*(1-1.005^(-360))/0.005",
+       "equals": "833958.07",
+       "tol": 0.01
+      }
+     ]
+    },
+    {
+     "label": "例 2",
+     "ref": "L7 Ex 1",
+     "question": "An annuity pays $12 000 per quarter for 4 years at 5.6% p.a. compounded quarterly. (a) How much must be deposited? (b) Interest earned over the 4 years? (c) Balance at the end of year 3? (d) Hence interest earned in year 4.",
+     "solution": "i = 0.056 ÷ 4 = 0.014，n = 16。\n(a) PV = 12 000 × {{frac 1 − 1.014⁻¹⁶|0.014}} = <strong>$170,950.41</strong>。\n(b) 0（期末余额）= PV + 利息 − 16 × 12 000，利息 = 192 000 − 170,950.41 = <strong>$21,049.59</strong>。\n(c) 第 3 年末还剩 4 次取款：余额 = 12 000 × {{frac 1 − 1.014⁻⁴|0.014}} = <strong>$46,365.91</strong>。\n(d) 第 4 年：46,365.91 + 利息 − 48 000 = 0，利息 = <strong>$1,634.09</strong>。",
+     "answer": "(a) $170,950.41 (b) $21,049.59 (c) $46,365.91 (d) $1,634.09",
+     "checks": [
+      {
+       "expr": "12000*(1-1.014^(-16))/0.014",
+       "equals": "170950.41",
+       "tol": 0.005
+      },
+      {
+       "expr": "12000*(1-1.014^(-4))/0.014",
+       "equals": "46365.91",
+       "tol": 0.005
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ]
+    },
+    {
+     "label": "例 3",
+     "ref": "L7 Ex 2",
+     "question": "Jun has $450 000 in super earning 7.2% p.a. compounded monthly and withdraws $4000 a month. How many withdrawals can he make?",
+     "solution": "i = 0.006：450 000 = 4000 × {{frac 1 − 1.006⁻ⁿ|0.006}}，1 − 1.006⁻ⁿ = 0.675，1.006⁻ⁿ = 0.325，n = {{frac ln(1/0.325)|ln 1.006}} = 187.88。\n可以完整取 <strong>187 次</strong> $4000，第 188 次只能取一笔较小的余额。",
+     "answer": "187 full withdrawals (plus a smaller final one)",
+     "checks": [
+      {
+       "expr": "ln(1/0.325)/ln(1.006)",
+       "equals": "187.88",
+       "tol": 0.005
+      },
+      {
+       "expr": "4000*(1-1.006^(-187))/0.006",
+       "equals": "448852.39",
+       "tol": 0.005
+      }
+     ]
+    },
+    {
+     "label": "例 4",
+     "ref": "L7 Ex 3",
+     "question": "Cheryl borrows $900 000 over 30 years at 6.3% p.a. compounded monthly. (a) Find the monthly instalment. (b) Find the interest charged over the 30 years.",
+     "solution": "贷款额就是现值：i = 0.00525，n = 360。\n(a) 900 000 = PMT × {{frac 1 − 1.00525⁻³⁶⁰|0.00525}}，PMT = <strong>$5,570.76</strong>。\n(b) 总还款 360 × 5,570.76 = $2,005,471.84，利息 = <strong>$1,105,471.84</strong>。",
+     "answer": "(a) $5,570.76 (b) $1,105,471.84",
+     "checks": [
+      {
+       "expr": "5570.7551051659*(1-1.00525^(-360))/0.00525",
+       "equals": "900000",
+       "tol": 0.01
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    }
+   ],
+   "mistakes": [
+    "算中途余额时用了已经付过的期数：要用剩余期数。",
+    "贷款题用了 FV 公式：贷款额是现值。",
+    "求利息时把期初余额漏掉。"
+   ],
+   "faqs": [
+    {
+     "q": "PV 和 FV 怎么区分？",
+     "a": "账户余额在减少（取钱、还贷）用现值 PV；余额在增加（存钱）用终值 FV（L8 的判断步骤）。"
+    }
+   ]
+  },
+  {
+   "title": "综合金融题（L8）",
+   "sources": [
+    {
+     "file": "L08_Mixed_Financial.pdf",
+     "pages": "p1–3"
+    }
+   ],
+   "concept": "<strong>判断步骤</strong>：①题目明说 simple / flat 就是单利；写明复利周期就是复利。②复利题里，一次性存取是普通复利 A = P(1 + i)ⁿ；定期付款是年金。③年金里余额在<strong>增加</strong>用终值 FV，余额在<strong>减少</strong>用现值 PV。",
+   "examples": [
+    {
+     "label": "例 5",
+     "ref": "L8 Ex 1",
+     "question": "Tina wants $24 000 in 4 years. How much must she deposit at the end of each quarter at 5.4% p.a. compounded quarterly?",
+     "solution": "定期存款、余额增加：年金终值。i = 0.0135，n = 16：24 000 = PMT × {{frac 1.0135¹⁶ − 1|0.0135}}，PMT = <strong>$1,353.89</strong>。",
+     "answer": "$1,353.89",
+     "checks": [
+      {
+       "expr": "1353.8909162761313*(1.0135^16-1)/0.0135",
+       "equals": "24000",
+       "tol": 0.01
+      }
+     ]
+    },
+    {
+     "label": "例 6",
+     "ref": "L8 Ex 2",
+     "question": "Jim has $900 000 in super earning 6.3% p.a. compounded monthly and withdraws $6000 a month. How many withdrawals before the account is empty?",
+     "solution": "定期取款、余额减少：年金现值。i = 0.00525：900 000 = 6000 × {{frac 1 − 1.00525⁻ⁿ|0.00525}}，1.00525⁻ⁿ = 0.2125，n = 295.79。\n可以完整取 <strong>295 次</strong>，第 296 次只有较小的余额。",
+     "answer": "295 full withdrawals",
+     "checks": [
+      {
+       "expr": "ln(1/0.2125)/ln(1.00525)",
+       "equals": "295.79",
+       "tol": 0.005
+      }
+     ]
+    },
+    {
+     "label": "例 7",
+     "ref": "L8 Ex 3",
+     "question": "Anita opens a super account on her 20th birthday at 6% p.a. compounded monthly, deposits $200 a month for 30 years (last deposit on her 50th birthday), leaves it for 10 years, then makes equal monthly withdrawals for 30 years from her 60th birthday. (a) Balance on her 50th birthday? (b) On her 60th? (c) Size of each withdrawal? (d) Total interest earned?",
+     "solution": "i = 0.005。\n(a) 存款阶段（年金终值）：n = 360，FV = 200 × {{frac 1.005³⁶⁰ − 1|0.005}} = <strong>$200,903.01</strong>。\n(b) 普通复利 10 年：200,903.01 × 1.005¹²⁰ = <strong>$365,522.28</strong>。\n(c) 取款阶段（年金现值）：365,522.28 = W × {{frac 1 − 1.005⁻³⁶⁰|0.005}}，W = <strong>$2,191.49</strong> 每月。\n(d) 存入 360 × 200 = $72 000，取出 360 × 2,191.49 = $788,936.66，利息 = <strong>$716,936.66</strong>。",
+     "answer": "(a) $200,903.01 (b) $365,522.28 (c) $2,191.49 (d) $716,936.66",
+     "checks": [
+      {
+       "expr": "200*(1.005^360-1)/0.005",
+       "equals": "200903.01",
+       "tol": 0.005
+      },
+      {
+       "expr": "365522.2775049125*0.005/(1-1.005^(-360))",
+       "equals": "2191.49",
+       "tol": 0.005
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ]
+    }
+   ],
+   "mistakes": [
+    "一个题里混用了每月利率和每年利率。",
+    "Anita 的第 (b) 问又用了年金公式：这 10 年没有存取，是普通复利。"
+   ],
+   "faqs": [
+    {
+     "q": "Anita 20 岁开户、50 岁最后一次存款，为什么是 360 次？",
+     "a": "按讲义的约定，存款在每月月末；开户后第一个月末是第 1 次，50 岁生日那次正好是第 360 次。"
+    }
+   ]
+  },
+  {
+   "title": "集合与韦恩图（L9）",
+   "sources": [
+    {
+     "file": "L09_Sets.pdf",
+     "pages": "p1–5"
+    }
+   ],
+   "concept": "<strong>集合</strong>：一组互不相同、能明确判断是否属于它的对象，用大写字母表示；其中的对象叫<strong>元素</strong>，每个元素只出现一次，列在花括号中。集合可以有限或无限。<strong>相等的集合</strong>元素完全相同；<strong>等价的集合</strong>元素个数相同。\n记号：a ∈ A（属于），a ∉ A（不属于），n(A) 元素个数，∅ 空集，A ⊂ B（子集），A ∪ B（并集），A ∩ B（交集），U（全集），A′（补集：U 中不在 A 的元素）。A ∩ B = ∅ 时 A、B <strong>不相交</strong>。\n<strong>计数法则</strong>：n(A ∪ B) = n(A) + n(B) − n(A ∩ B)（交集被数了两次，要减一次）；不相交时直接相加；n(A′) = n(U) − n(A)。",
+   "formulas": [
+    "n(A ∪ B) = n(A) + n(B) − n(A ∩ B)",
+    "n(A′) = n(U) − n(A)"
+   ],
+   "examples": [
+    {
+     "label": "例 8",
+     "ref": "L9 Ex 1",
+     "question": "W is the set of days of the week starting with T or S. List W.",
+     "solution": "逐个检查一周七天的首字母，以 T 或 S 开头的有四天：W = {Tuesday, Thursday, Saturday, Sunday}，n(W) = 4。",
+     "numeric": false
+    },
+    {
+     "label": "例 9",
+     "ref": "L9 Ex 2",
+     "question": "P is the set of multiples of 4. List P.",
+     "solution": "P = {4, 8, 12, 16, …}，是无限集合（若包括 0 和负数，题目会另外说明）。",
+     "numeric": false
+    },
+    {
+     "label": "例 10",
+     "ref": "L9 Ex 3",
+     "question": "A = {1, 2, 3, 4, 5, 9}. True or false: (a) 7 ∉ A (b) {3, 4, 6} ⊂ A",
+     "solution": "(a) <strong>正确</strong>：7 不在 A 里。\n(b) <strong>错误</strong>：6 不在 A 里，所以 {3, 4, 6} 不是 A 的子集。",
+     "parts": [
+      "a",
+      "b"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 11",
+     "ref": "L9 Ex 4",
+     "question": "A = {1, 3, 5, 7, 9}, B = {2, 4, 6, 9}. Find (a) A ∪ B (b) n(A ∩ B).",
+     "solution": "(a) A ∪ B = {1, 2, 3, 4, 5, 6, 7, 9}（9 只写一次）。\n(b) A ∩ B = {9}，n(A ∩ B) = 1。检验：n(A ∪ B) = 5 + 4 − 1 = 8 ✓。",
+     "checks": [
+      {
+       "expr": "5+4-1",
+       "equals": "8"
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 12",
+     "ref": "L9 Ex 5",
+     "question": "U is the set of positive integers less than 10, Q is the set of factors of 10. Find Q′.",
+     "solution": "U = {1, 2, …, 9}；10 的因数在 U 中的是 Q = {1, 2, 5}（10 本身不在 U 中）。Q′ = {3, 4, 6, 7, 8, 9}。",
+     "checks": [
+      {
+       "expr": "9-3",
+       "equals": "6"
+      }
+     ]
+    },
+    {
+     "label": "例 13",
+     "ref": "L9 Ex 6",
+     "question": "Shade on Venn diagrams: (a) A ∪ B (b) A ∩ B (c) A′ (d) A ∩ B′ (e) A ∪ B ∪ C (f) A ∩ B ∩ C′ (g) (A ∩ B)′",
+     "solution": "按「在 / 不在」逐个区域判断（见图）：\n(a) 至少在一个圆里。(b) 两圆重叠部分。(c) A 圆以外（包括只在 B 和两圆之外）。(d) 只在 A、不在 B 的月牙形。(e) 三个圆覆盖的全部区域。(f) A 与 B 重叠、但不在 C 的部分。(g) 除了 A ∩ B 以外的全部区域。",
+     "figures": [
+      {
+       "type": "venn",
+       "sets": [
+        "A",
+        "B"
+       ],
+       "shade": [
+        "10",
+        "01",
+        "11"
+       ],
+       "caption": "(a) A ∪ B",
+       "universe": "U"
+      },
+      {
+       "type": "venn",
+       "sets": [
+        "A",
+        "B"
+       ],
+       "shade": [
+        "11"
+       ],
+       "caption": "(b) A ∩ B",
+       "universe": "U"
+      },
+      {
+       "type": "venn",
+       "sets": [
+        "A",
+        "B"
+       ],
+       "shade": [
+        "00",
+        "01"
+       ],
+       "caption": "(c) A′",
+       "universe": "U"
+      },
+      {
+       "type": "venn",
+       "sets": [
+        "A",
+        "B"
+       ],
+       "shade": [
+        "10"
+       ],
+       "caption": "(d) A ∩ B′",
+       "universe": "U"
+      },
+      {
+       "type": "venn",
+       "sets": [
+        "A",
+        "B",
+        "C"
+       ],
+       "shade": [
+        "100",
+        "010",
+        "001",
+        "110",
+        "101",
+        "011",
+        "111"
+       ],
+       "caption": "(e) A ∪ B ∪ C",
+       "universe": "U"
+      },
+      {
+       "type": "venn",
+       "sets": [
+        "A",
+        "B",
+        "C"
+       ],
+       "shade": [
+        "110"
+       ],
+       "caption": "(f) A ∩ B ∩ C′",
+       "universe": "U"
+      },
+      {
+       "type": "venn",
+       "sets": [
+        "A",
+        "B"
+       ],
+       "shade": [
+        "00",
+        "10",
+        "01"
+       ],
+       "caption": "(g) (A ∩ B)′",
+       "universe": "U"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 14",
+     "ref": "L9 Ex 7",
+     "question": "(a) n(A) = 23, n(C) = 34, n(A ∩ C) = 13: find n(A ∪ C). (b) n(X) = 16, n(Y) = 25, n(X ∪ Y) = 40: find n(X ∩ Y). (c) n(A) = 23, n(U) = 41: find n(A′).",
+     "solution": "三问都用计数法则 n(A ∪ B) = n(A) + n(B) − n(A ∩ B) 或补集公式。\n(a) 23 + 34 − 13 = <strong>44</strong>。\n(b) 40 = 16 + 25 − n(X ∩ Y)，n(X ∩ Y) = <strong>1</strong>。\n(c) 41 − 23 = <strong>18</strong>。",
+     "checks": [
+      {
+       "expr": "23+34-13",
+       "equals": "44"
+      },
+      {
+       "expr": "16+25-40",
+       "equals": "1"
+      },
+      {
+       "expr": "41-23",
+       "equals": "18"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    {
+     "label": "例 15",
+     "ref": "L9 Ex 8",
+     "question": "In a survey of 100 students, 75 owned a TV, 45 a car and 35 both. (a) Show this on a Venn diagram. (b) How many owned (i) a car or a TV (ii) neither?",
+     "solution": "先填交集 35，再填只有 TV：75 − 35 = 40，只有车：45 − 35 = 10，都没有：100 − (40 + 35 + 10) = 15。\n(b)(i) n(TV ∪ Car) = 75 + 45 − 35 = <strong>85</strong>。(ii) 100 − 85 = <strong>15</strong>。",
+     "figures": [
+      {
+       "type": "venn",
+       "sets": [
+        "TV 75",
+        "Car 45"
+       ],
+       "shade": [],
+       "caption": "Survey of 100 students",
+       "universe": "U = 100",
+       "regionCounts": {
+        "10": "40",
+        "11": "35",
+        "01": "10",
+        "00": "15"
+       }
+      }
+     ],
+     "answer": "(i) 85 (ii) 15",
+     "checks": [
+      {
+       "expr": "75+45-35",
+       "equals": "85"
+      },
+      {
+       "expr": "100-85",
+       "equals": "15"
+      },
+      {
+       "expr": "40+35+10+15",
+       "equals": "100"
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    }
+   ],
+   "mistakes": [
+    "并集里重复写共有元素。",
+    "n(A ∪ B) 直接相加，忘了减去交集。",
+    "韦恩图先填总数而不是先填交集。"
+   ],
+   "faqs": [
+    {
+     "q": "⊂ 和 ∈ 有什么区别？",
+     "a": "∈ 连接元素和集合（3 ∈ A）；⊂ 连接两个集合（{3, 4} ⊂ A）。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "题型",
+   "做法",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "年金现值 / 贷款",
+    "PV = PMT[1 − (1 + i)⁻ⁿ]/i",
+    "例 1–4"
+   ],
+   [
+    "中途余额",
+    "用剩余期数代 PV",
+    "例 2"
+   ],
+   [
+    "判断公式",
+    "单利 / 复利 / FV / PV",
+    "例 5–7"
+   ],
+   [
+    "集合运算",
+    "∪、∩、′ 逐个元素判断",
+    "例 10–12"
+   ],
+   [
+    "韦恩图计数",
+    "先填交集，再填各自，最后填都不在",
+    "例 14、15"
+   ]
+  ]
+ },
+ "practice": "讲义建议练习：Tutorial Guide 7-3、7-4、8-1。"
+}

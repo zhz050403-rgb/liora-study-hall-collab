@@ -1,0 +1,1158 @@
+{
+ "course": "economics",
+ "term": "term2",
+ "week": 8,
+ "title": "Week 8 · Unit 6 Tutorial + Unit 7 The Financial Sector 金融部门",
+ "answersTitle": "Tutorial 6 International Economics 2",
+ "files": [
+  "unit6 PPT international economics exchange rates.pdf",
+  "unit6 TG international economics exchange rates.pdf",
+  "unit7 PPT the financial sector.pdf",
+  "unit7 TG the financial sector.pdf"
+ ],
+ "inventory": [
+  {
+   "ref": "Tutorial 6 Terms",
+   "deliverables": [
+    {
+     "type": "terms",
+     "terms": [
+      "Exchange rate",
+      "Floating Exchange rate",
+      "Appreciation",
+      "Depreciation"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial 6 Q1",
+   "parts": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "ref": "Tutorial 6 Q2",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial 6 Q3",
+   "parts": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e"
+   ],
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial 6 Q4",
+   "parts": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ]
+  },
+  {
+   "ref": "Tutorial 6 Q5",
+   "parts": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f"
+   ]
+  },
+  "Tutorial 6 Writing",
+  "Lecture 7 Money",
+  "Lecture 7 Intermediaries",
+  {
+   "ref": "Lecture 7 Balance Sheet",
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  "Lecture 7 Interest",
+  {
+   "ref": "Lecture 7 Yield",
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  "Lecture 7 Investment",
+  {
+   "ref": "Lecture 7 Consumption",
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  "Lecture 7 Cash Rate"
+ ],
+ "intro": [
+  "本周前半是 <strong>Unit 6 Tutorial</strong>（澳元的供求、用图分析各种事件对汇率的影响、贬值和升值的经济影响）；后半是 <strong>Unit 7 讲座</strong>：货币的职能与流动性、金融中介、银行资产负债表与准备金、利率与风险溢价、收益率计算、利率如何影响投资和消费、隔夜现金利率。Unit 7 Tutorial 的答案在第 9 周。",
+  "Term 2 的 Tutorial 没有官方答案文件，以下答案依据讲义写出，计算题都用公式核对。"
+ ],
+ "sections": [
+  {
+   "title": "Unit 6 Tutorial：汇率",
+   "sources": [
+    {
+     "file": "unit6 TG international economics exchange rates.pdf",
+     "pages": "p1–7"
+    },
+    {
+     "file": "unit6 PPT international economics exchange rates.pdf",
+     "pages": "p1–23"
+    }
+   ],
+   "concept": "澳元的价格（用美元表示）由外汇市场上澳元的供求决定。<strong>澳元需求</strong>来自想买澳大利亚商品服务（出口）、资产、旅游的外国人；<strong>澳元供给</strong>来自想买外国商品服务（进口）、资产、出国旅游的澳大利亚人。需求增加或供给减少使澳元<strong>升值</strong>；需求减少或供给增加使澳元<strong>贬值</strong>。",
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "Tutorial 6 Terms",
+     "question": "Explain: Exchange rate; Floating exchange rate; Appreciation; Depreciation.",
+     "solution": "<strong>Exchange rate</strong>：一国货币用另一国货币表示的价格，如 AUD 1 = USD 0.67。\n<strong>Floating exchange rate</strong>：汇率由外汇市场上货币的供求自由决定，政府不固定比价（澳大利亚采用）。\n<strong>Appreciation</strong>：本币的外币价格上升，1 澳元能换更多外币。\n<strong>Depreciation</strong>：本币的外币价格下降，1 澳元能换的外币减少。",
+     "numeric": false
+    },
+    {
+     "label": "例 2",
+     "ref": "Tutorial 6 Q1",
+     "question": "(a) List some factors that influence the demand for $A. (b) List some factors that influence the supply of $A.",
+     "solution": "(a) <strong>澳元需求</strong>：外国人购买澳大利亚商品和服务（出口）；外资投资澳大利亚（受澳大利亚利率、回报率影响）；外国游客和留学生来澳；海外向澳大利亚偿还贷款和汇回利润；投机者预期澳元升值。澳大利亚相对物价低、海外收入增长、偏好澳洲产品也会增加需求。\n(b) <strong>澳元供给</strong>：澳大利亚人购买外国商品和服务（进口）；澳大利亚对外投资；澳大利亚人出国旅游、留学；澳大利亚向海外偿还贷款和支付利润；投机者预期澳元贬值而抛售。",
+     "parts": [
+      "a",
+      "b"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 3",
+     "ref": "Tutorial 6 Q2",
+     "question": "Draw a demand and supply diagram for $A in terms of $US and show the effect of an increase in demand for $A.",
+     "solution": "纵轴为 1 澳元的美元价格，横轴为澳元数量。需求从 D 右移到 D1，均衡价格从 P1 升到 P2：澳元升值，成交的澳元数量也增加。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Quantity of AUD",
+       "yLabel": "Price of AUD in USD",
+       "curves": [
+        {
+         "expr": "8+(-0.8)*x",
+         "dom": [
+          0,
+          10.0
+         ],
+         "color": "navy",
+         "label": [
+          8.2,
+          1.8400000000000003,
+          "D"
+         ]
+        },
+        {
+         "expr": "1+(0.7)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "red",
+         "label": [
+          8.55,
+          7.484999999999999,
+          "S"
+         ]
+        },
+        {
+         "expr": "9.6+(-0.8)*x",
+         "dom": [
+          0,
+          9.6
+         ],
+         "color": "navy",
+         "label": [
+          7.871999999999999,
+          3.7024000000000004,
+          "D1"
+         ],
+         "dash": true
+        }
+       ],
+       "points": [
+        {
+         "x": 4.667,
+         "y": 4.267,
+         "label": "P1"
+        },
+        {
+         "x": 5.733,
+         "y": 5.013,
+         "label": "P2"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          4.267
+         ],
+         "to": [
+          4.667,
+          4.267
+         ]
+        },
+        {
+         "from": [
+          4.667,
+          0
+         ],
+         "to": [
+          4.667,
+          4.267
+         ]
+        },
+        {
+         "from": [
+          0,
+          5.013
+         ],
+         "to": [
+          5.733,
+          5.013
+         ]
+        },
+        {
+         "from": [
+          5.733,
+          0
+         ],
+         "to": [
+          5.733,
+          5.013
+         ]
+        }
+       ],
+       "caption": "Increase in demand for $A: the $A appreciates from P1 to P2"
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 4",
+     "ref": "Tutorial 6 Q3",
+     "question": "Using demand and supply diagrams, show the likely effect on the value of the $A (in $US) of: (a) an increase in Australian interest rates; (b) Australian inflation falling below US inflation; (c) removal of tariffs on US goods; (d) Australian farmers selling more beef to the US; (e) fewer American tourists to Australia.",
+     "solution": "(a) 澳大利亚利率上升，外国投资者买入澳元投资澳大利亚资产，澳元<strong>需求增加</strong>（D 右移）：<strong>升值</strong>。\n(b) 澳大利亚通胀低于美国，澳大利亚出口更有竞争力，外国对澳元的需求增加（D 右移）；同时澳大利亚人少买美国货，澳元供给减少：<strong>升值</strong>。\n(c) 取消对美国商品的关税，澳大利亚人买更多美国进口品，澳元<strong>供给增加</strong>（S 右移）：<strong>贬值</strong>。\n(d) 卖更多牛肉给美国，美国买家需要澳元，<strong>需求增加</strong>：<strong>升值</strong>。\n(e) 美国游客减少，<strong>需求减少</strong>（D 左移）：<strong>贬值</strong>。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Quantity of AUD",
+       "yLabel": "Price of AUD in USD",
+       "curves": [
+        {
+         "expr": "8+(-0.8)*x",
+         "dom": [
+          0,
+          10.0
+         ],
+         "color": "navy",
+         "label": [
+          8.2,
+          1.8400000000000003,
+          "D"
+         ]
+        },
+        {
+         "expr": "1+(0.7)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "red",
+         "label": [
+          8.55,
+          7.484999999999999,
+          "S"
+         ]
+        },
+        {
+         "expr": "9.6+(-0.8)*x",
+         "dom": [
+          0,
+          9.6
+         ],
+         "color": "navy",
+         "label": [
+          7.871999999999999,
+          3.7024000000000004,
+          "D1"
+         ],
+         "dash": true
+        }
+       ],
+       "points": [
+        {
+         "x": 4.667,
+         "y": 4.267,
+         "label": "P1"
+        },
+        {
+         "x": 5.733,
+         "y": 5.013,
+         "label": "P2"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          4.267
+         ],
+         "to": [
+          4.667,
+          4.267
+         ]
+        },
+        {
+         "from": [
+          4.667,
+          0
+         ],
+         "to": [
+          4.667,
+          4.267
+         ]
+        },
+        {
+         "from": [
+          0,
+          5.013
+         ],
+         "to": [
+          5.733,
+          5.013
+         ]
+        },
+        {
+         "from": [
+          5.733,
+          0
+         ],
+         "to": [
+          5.733,
+          5.013
+         ]
+        }
+       ],
+       "caption": "(a) Higher Australian interest rates → foreign investors demand $A → appreciation"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Quantity of AUD",
+       "yLabel": "Price of AUD in USD",
+       "curves": [
+        {
+         "expr": "8+(-0.8)*x",
+         "dom": [
+          0,
+          10.0
+         ],
+         "color": "navy",
+         "label": [
+          8.2,
+          1.8400000000000003,
+          "D"
+         ]
+        },
+        {
+         "expr": "1+(0.7)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "red",
+         "label": [
+          8.55,
+          7.484999999999999,
+          "S"
+         ]
+        },
+        {
+         "expr": "9.6+(-0.8)*x",
+         "dom": [
+          0,
+          9.6
+         ],
+         "color": "navy",
+         "label": [
+          7.871999999999999,
+          3.7024000000000004,
+          "D1"
+         ],
+         "dash": true
+        }
+       ],
+       "points": [
+        {
+         "x": 4.667,
+         "y": 4.267,
+         "label": "P1"
+        },
+        {
+         "x": 5.733,
+         "y": 5.013,
+         "label": "P2"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          4.267
+         ],
+         "to": [
+          4.667,
+          4.267
+         ]
+        },
+        {
+         "from": [
+          4.667,
+          0
+         ],
+         "to": [
+          4.667,
+          4.267
+         ]
+        },
+        {
+         "from": [
+          0,
+          5.013
+         ],
+         "to": [
+          5.733,
+          5.013
+         ]
+        },
+        {
+         "from": [
+          5.733,
+          0
+         ],
+         "to": [
+          5.733,
+          5.013
+         ]
+        }
+       ],
+       "caption": "(b) Lower Australian inflation → exports more competitive → demand for $A rises → appreciation"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Quantity of AUD",
+       "yLabel": "Price of AUD in USD",
+       "curves": [
+        {
+         "expr": "8+(-0.8)*x",
+         "dom": [
+          0,
+          10.0
+         ],
+         "color": "navy",
+         "label": [
+          8.2,
+          1.8400000000000003,
+          "D"
+         ]
+        },
+        {
+         "expr": "1+(0.7)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "red",
+         "label": [
+          8.55,
+          7.484999999999999,
+          "S"
+         ]
+        },
+        {
+         "expr": "-0.6000000000000001+(0.7)*x",
+         "dom": [
+          0,
+          9.6
+         ],
+         "color": "red",
+         "label": [
+          8.64,
+          5.948,
+          "S1"
+         ],
+         "dash": true
+        }
+       ],
+       "points": [
+        {
+         "x": 4.667,
+         "y": 4.267,
+         "label": "P1"
+        },
+        {
+         "x": 5.733,
+         "y": 3.413,
+         "label": "P2"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          4.267
+         ],
+         "to": [
+          4.667,
+          4.267
+         ]
+        },
+        {
+         "from": [
+          4.667,
+          0
+         ],
+         "to": [
+          4.667,
+          4.267
+         ]
+        },
+        {
+         "from": [
+          0,
+          3.413
+         ],
+         "to": [
+          5.733,
+          3.413
+         ]
+        },
+        {
+         "from": [
+          5.733,
+          0
+         ],
+         "to": [
+          5.733,
+          3.413
+         ]
+        }
+       ],
+       "caption": "(c) Tariffs on US goods removed → more imports → supply of $A rises → depreciation"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Quantity of AUD",
+       "yLabel": "Price of AUD in USD",
+       "curves": [
+        {
+         "expr": "8+(-0.8)*x",
+         "dom": [
+          0,
+          10.0
+         ],
+         "color": "navy",
+         "label": [
+          8.2,
+          1.8400000000000003,
+          "D"
+         ]
+        },
+        {
+         "expr": "1+(0.7)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "red",
+         "label": [
+          8.55,
+          7.484999999999999,
+          "S"
+         ]
+        },
+        {
+         "expr": "9.6+(-0.8)*x",
+         "dom": [
+          0,
+          9.6
+         ],
+         "color": "navy",
+         "label": [
+          7.871999999999999,
+          3.7024000000000004,
+          "D1"
+         ],
+         "dash": true
+        }
+       ],
+       "points": [
+        {
+         "x": 4.667,
+         "y": 4.267,
+         "label": "P1"
+        },
+        {
+         "x": 5.733,
+         "y": 5.013,
+         "label": "P2"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          4.267
+         ],
+         "to": [
+          4.667,
+          4.267
+         ]
+        },
+        {
+         "from": [
+          4.667,
+          0
+         ],
+         "to": [
+          4.667,
+          4.267
+         ]
+        },
+        {
+         "from": [
+          0,
+          5.013
+         ],
+         "to": [
+          5.733,
+          5.013
+         ]
+        },
+        {
+         "from": [
+          5.733,
+          0
+         ],
+         "to": [
+          5.733,
+          5.013
+         ]
+        }
+       ],
+       "caption": "(d) More beef exports to the US → demand for $A rises → appreciation"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Quantity of AUD",
+       "yLabel": "Price of AUD in USD",
+       "curves": [
+        {
+         "expr": "8+(-0.8)*x",
+         "dom": [
+          0,
+          10.0
+         ],
+         "color": "navy",
+         "label": [
+          8.2,
+          1.8400000000000003,
+          "D"
+         ]
+        },
+        {
+         "expr": "1+(0.7)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "red",
+         "label": [
+          8.55,
+          7.484999999999999,
+          "S"
+         ]
+        },
+        {
+         "expr": "6.4+(-0.8)*x",
+         "dom": [
+          0,
+          8.0
+         ],
+         "color": "navy",
+         "label": [
+          6.56,
+          1.552,
+          "D1"
+         ],
+         "dash": true
+        }
+       ],
+       "points": [
+        {
+         "x": 4.667,
+         "y": 4.267,
+         "label": "P1"
+        },
+        {
+         "x": 3.6,
+         "y": 3.52,
+         "label": "P2"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          4.267
+         ],
+         "to": [
+          4.667,
+          4.267
+         ]
+        },
+        {
+         "from": [
+          4.667,
+          0
+         ],
+         "to": [
+          4.667,
+          4.267
+         ]
+        },
+        {
+         "from": [
+          0,
+          3.52
+         ],
+         "to": [
+          3.6,
+          3.52
+         ]
+        },
+        {
+         "from": [
+          3.6,
+          0
+         ],
+         "to": [
+          3.6,
+          3.52
+         ]
+        }
+       ],
+       "caption": "(e) Fewer American tourists → demand for $A falls → depreciation"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 5",
+     "ref": "Tutorial 6 Q4",
+     "question": "Will each event cause an appreciation or depreciation of the $A? Give a reason. (a) Australian consumers prefer more foreign goods; (b) the Asian region experiences a boom; (c) a recession in Australia; (d) European speculators are concerned that Australia's foreign debt is too high.",
+     "solution": "(a) <strong>贬值</strong>：澳大利亚人买更多进口品，要卖澳元换外币，澳元供给增加。\n(b) <strong>升值</strong>：亚洲收入上升，对澳大利亚出口（资源、教育、旅游）的需求增加，澳元需求增加。\n(c) 通常<strong>贬值</strong>：衰退时澳大利亚利率往往下调、投资回报和信心下降，外资对澳元的需求减少。（另一方面，收入下降使进口减少、澳元供给减少，这一项有升值作用；答题时说明主要影响来自利率和投资。）\n(d) <strong>贬值</strong>：投机者担心澳大利亚偿债能力，抛售澳元或不再买入，澳元供给增加、需求减少。",
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 6",
+     "ref": "Tutorial 6 Q5",
+     "question": "Outline the positive and negative effects of a substantial depreciation of the $A on: (a) exports; (b) imports; (c) tourism; (d) Balance of Trade; (e) employment; (f) inflation.",
+     "solution": "(a) <strong>出口</strong>：用外币计价更便宜，出口增加（正面）；但出口商品的外币收入下降、贸易条件恶化（负面）。\n(b) <strong>进口</strong>：用澳元计价更贵，进口减少，消费者和使用进口投入品的企业成本上升（负面）；与进口竞争的本国产品更有竞争力（正面）。\n(c) <strong>旅游</strong>：来澳旅游更便宜，入境游客增加（正面）；澳大利亚人出国更贵（负面）。\n(d) <strong>贸易差额</strong>：出口增、进口减，X − M 改善（正面）；但短期内进口价格上升，改善可能要等一段时间。\n(e) <strong>就业</strong>：出口行业和与进口竞争的行业产出增加，就业增加（正面）。\n(f) <strong>通胀</strong>：进口消费品涨价直接推高 CPI，进口投入品涨价间接推高成本，通胀上升（负面）。",
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 7",
+     "ref": "Tutorial 6 Writing",
+     "question": "Possible writing task: What may be some effects of a large appreciation of a nation's currency?",
+     "solution": "本币大幅升值指本币的外币价格大幅上升，例如澳元从 USD 0.75 升到 USD 0.95。\n<strong>对外贸易</strong>：出口用外币计价变贵，出口减少；进口用本币计价变便宜，进口增加，贸易差额（X − M）恶化。贸易条件（出口价格 ÷ 进口价格）改善，同样的出口能换更多进口。\n<strong>本国生产与就业</strong>：出口行业和与进口竞争的行业（如制造业）竞争力下降，产出减少、裁员，失业上升；旅游业也受影响，因为来访更贵，本国居民出国更便宜。\n<strong>通胀</strong>：进口消费品变便宜直接降低 CPI，进口投入品变便宜降低生产成本，通胀下降。\n<strong>消费者</strong>：进口商品和出国旅游更便宜，购买力上升。\n总的来说，大幅升值对消费者和压低通胀有利，但会损害出口和与进口竞争的行业，可能减缓增长、增加失业。",
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "进口增加说成澳元需求增加：进口时是卖出澳元，澳元供给增加。",
+    "升值后说「出口更便宜」：升值使出口用外币计价更贵。",
+    "贬值只写好处不写通胀代价。"
+   ],
+   "faqs": [
+    {
+     "q": "利率上升为什么会使澳元升值？",
+     "a": "利率高意味着在澳大利亚存钱或买债券的回报更高，外国投资者要先把外币换成澳元，澳元需求增加，价格上升。"
+    }
+   ]
+  },
+  {
+   "title": "Unit 7 讲座：金融部门",
+   "sources": [
+    {
+     "file": "unit7 PPT the financial sector.pdf",
+     "pages": "p1–28"
+    }
+   ],
+   "concept": "<strong>货币的职能</strong>：交换媒介、计价单位、价值储藏。<strong>流动性</strong>：资产迅速变成可支付形式（现金）的能力：现金、政府证券、黄金流动性高，房地产、艺术品流动性低。持有现金的机会成本是放弃的利息，利率越高，人们愿意持有的现金越少。\n<strong>金融中介</strong>（银行、信用社、财务公司）连接储蓄者和借款人：向存款人付利息，向借款人收更高的利息，利差就是利润。存款利率随期限、类型、最低金额和风险不同。企业融资可以用<strong>股权</strong>（卖股份）或<strong>债务</strong>（借款）。\n<strong>准备金</strong>：银行不贷出的那部分存款，以现金、政府证券、黄金等流动形式持有；其余可以贷出，贷款花出去又存回银行，反复创造信用，促进经济增长。\n<strong>利率</strong>是使用货币的价格：借款的成本、放贷的报酬，也是牺牲流动性的回报、风险的费用和对通胀的补偿。风险越高的借款人（信用卡 > 房贷 > 银行间现金）利率越高（<strong>风险溢价</strong>）。\n<strong>收益率</strong> = {{frac 年回报|资产价格}} × 100%。<strong>投资规则</strong>：只有收益率高于借款利率时，企业才借钱投资；利率上升使投资减少。利率上升也使信用卡、房贷还款增加、储蓄回报提高，消费下降。\n<strong>现金利率</strong>：银行间隔夜拆借的利率，由澳储行（RBA）控制，间接影响所有利率。RBA 提高政府证券收益率时，银行把现金换成证券，现金变少，现金利率上升，其他贷款利率随之上升，C 和 I 下降。",
+   "formulas": [
+    "% yield = {{frac Return|Asset price}} × 100",
+    "Reserve ratio = {{frac Reserves|Deposits}} × 100"
+   ],
+   "examples": [
+    {
+     "label": "例 8",
+     "ref": "Lecture 7 Money",
+     "question": "What are the functions of money and what is liquidity?",
+     "solution": "货币的职能：①<strong>交换媒介</strong>（买卖商品服务）；②<strong>计价单位</strong>（衡量各种商品服务的相对价值，即价格）；③<strong>价值储藏</strong>（因为流动性好、方便，用来储存财富）。\n<strong>流动性</strong>是资产迅速变成现金的能力：现金、政府证券、黄金流动性高；房地产、艺术品流动性低。持有现金的机会成本是本可以赚到的利息，所以利率高时人们少持有现金。",
+     "numeric": false
+    },
+    {
+     "label": "例 9",
+     "ref": "Lecture 7 Intermediaries",
+     "question": "What do financial intermediaries do and how do they make a profit?",
+     "solution": "金融中介（银行、信用社、财务公司）连接储蓄者和借款人：吸收储蓄者的存款并支付利息，把钱贷给借款人并收取更高的利息，<strong>利差</strong>就是利润。存款利率随存款期限（活期、长期）、账户类型、最低存款额和借款人的风险而不同。企业融资可以卖股份（股权融资）或向银行借款（债务融资）。",
+     "numeric": false
+    },
+    {
+     "label": "例 10",
+     "ref": "Lecture 7 Balance Sheet",
+     "question": "A bank has deposits of $1000 and a required reserve ratio of 10% set by the RBA. Draw up its balance sheet. Why do bank loans contribute to economic growth?",
+     "solution": "准备金 = 1000 × 10% = $100，可贷出 $900。资产 = 准备金 100 + 贷款 900 = 1000，等于负债（存款 1000）。\n贷款被用来购买商品和服务，创造产出和收入；收入又以新存款回到银行，银行再贷出一部分，如此反复，货币被一次次使用（信用创造），这是长期经济增长的重要因素。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "Assets of bank",
+        "$",
+        "Liabilities of bank",
+        "$"
+       ],
+       "rows": [
+        [
+         "Reserves (10% of deposits)",
+         "100",
+         "Deposits",
+         "1 000"
+        ],
+        [
+         "Loans (advances)",
+         "900",
+         "",
+         ""
+        ],
+        [
+         "Total",
+         "1 000",
+         "Total",
+         "1 000"
+        ]
+       ],
+       "title": "Bank balance sheet"
+      }
+     ],
+     "checks": [
+      {
+       "expr": "1000*0.1",
+       "equals": "100"
+      },
+      {
+       "expr": "100+900",
+       "equals": "1000"
+      }
+     ]
+    },
+    {
+     "label": "例 11",
+     "ref": "Lecture 7 Interest",
+     "question": "What is interest and why do different borrowers pay different rates?",
+     "solution": "利率是使用货币的价格：对借款人是成本，对放贷人是报酬；也可以看作牺牲流动性的回报、承担风险的费用和对通胀的补偿。贷款可能收不回，风险越高利率越高：银行间现金贷款风险很低，房贷中等，信用卡风险高。高于低风险利率的那部分就是<strong>风险溢价</strong>。",
+     "numeric": false
+    },
+    {
+     "label": "例 12",
+     "ref": "Lecture 7 Yield",
+     "question": "Calculate the % yield: (a) a share bought for $20 paying a $1.20 dividend; (b) an apartment bought for $500 000 earning $11 000 rent a year; (c) a $100 government bond repaying $107 after one year.",
+     "solution": "收益率 = 回报 ÷ 资产价格 × 100。\n(a) 1.20 ÷ 20 × 100 = <strong>6%</strong>。\n(b) 11 000 ÷ 500 000 × 100 = <strong>2.2%</strong>（讲义写 5.5%，算错了，见注）。\n(c) 回报 107 − 100 = $7，7 ÷ 100 × 100 = <strong>7%</strong>。三者中债券收益率最高，公寓最低。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "Asset",
+        "Price",
+        "Annual return",
+        "% yield"
+       ],
+       "rows": [
+        [
+         "Share",
+         "$20",
+         "$1.20 dividend",
+         "1.20 ÷ 20 × 100 = 6%"
+        ],
+        [
+         "Apartment",
+         "$500 000",
+         "$11 000 rent",
+         "11 000 ÷ 500 000 × 100 = 2.2%"
+        ],
+        [
+         "Government bond",
+         "$100",
+         "$107 at maturity → $7",
+         "7 ÷ 100 × 100 = 7%"
+        ]
+       ],
+       "title": "Yield examples"
+      }
+     ],
+     "sourceNote": "讲义第 18 页答案写 5.5%，但 11 000 ÷ 500 000 × 100 = 2.2%。5.5% 对应的是年租金 $27 500 或房价 $200 000；笔记按题目给出的数字计算。",
+     "checks": [
+      {
+       "expr": "1.2/20*100",
+       "equals": "6"
+      },
+      {
+       "expr": "11000/500000*100",
+       "equals": "2.2",
+       "tol": 1e-09
+      },
+      {
+       "expr": "(107-100)/100*100",
+       "equals": "7"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    {
+     "label": "例 13",
+     "ref": "Lecture 7 Investment",
+     "question": "A $1 million investment will raise income by $50 000. What is the rate of return? If the firm can borrow at 4%, what is the interest cost and should it borrow? What if the interest rate rises to 6%?",
+     "solution": "收益率 = 50 000 ÷ 1 000 000 × 100 = 5%。\n利率 4%：利息 = 1 000 000 × 4% = $40 000，收入 $50 000 > 成本 $40 000，<strong>应该借钱投资</strong>（收益率 5% > 利率 4%）。\n利率 6%：利息 $60 000 > 收入 $50 000，<strong>不应投资</strong>。所以利率上升会使投资项目减少。",
+     "checks": [
+      {
+       "expr": "50000/1000000*100",
+       "equals": "5"
+      },
+      {
+       "expr": "1000000*0.04",
+       "equals": "40000"
+      },
+      {
+       "expr": "1000000*0.06",
+       "equals": "60000"
+      }
+     ]
+    },
+    {
+     "label": "例 14",
+     "ref": "Lecture 7 Consumption",
+     "question": "A household earns $100 000, pays 15% tax and has a $400 000 mortgage. Find disposable income for consumption at 6% and at 8% interest. How do higher interest rates affect consumption?",
+     "solution": "税 = 100 000 × 15% = $15 000。利率 6%：利息 = 400 000 × 6% = $24 000，可支配收入 = 100 000 − 15 000 − 24 000 = <strong>$61 000</strong>。利率 8%：利息 $32 000，可支配收入 <strong>$53 000</strong>。\n利率上升使房贷和信用卡还款增加、可支配收入减少，同时储蓄的回报提高，所以消费下降。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "",
+        "Interest 6%",
+        "Interest 8%"
+       ],
+       "rows": [
+        [
+         "Household income",
+         "$100 000",
+         "$100 000"
+        ],
+        [
+         "Tax (15%)",
+         "$15 000",
+         "$15 000"
+        ],
+        [
+         "Mortgage interest on $400 000",
+         "$24 000",
+         "$32 000"
+        ],
+        [
+         "Disposable income for consumption",
+         "$61 000",
+         "$53 000"
+        ]
+       ],
+       "title": "Consumption and interest"
+      }
+     ],
+     "checks": [
+      {
+       "expr": "100000-15000-400000*0.06",
+       "equals": "61000"
+      },
+      {
+       "expr": "100000-15000-400000*0.08",
+       "equals": "53000"
+      }
+     ]
+    },
+    {
+     "label": "例 15",
+     "ref": "Lecture 7 Cash Rate",
+     "question": "What is the cash rate and how does the RBA influence interest rates and spending?",
+     "solution": "现金利率是银行之间隔夜拆借现金的利率（用来弥补短期现金不足），由 RBA 控制，并间接影响经济中所有利率；风险更高的贷款在此基础上加风险溢价。\n传导：RBA 提高政府证券的收益率 → 银行把现金换成证券 → 现金变少，借现金更难 → 现金利率上升 → 银行提高其他贷款利率 → 企业投资的还款增加，I 下降；家庭房贷还款增加，可支配收入减少，C 下降。所以央行可以通过改变利率影响总支出。",
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "收益率用资产价格除以回报。",
+    "以为准备金必须全部是现金：政府证券、黄金也算流动准备金。",
+    "投资规则说反：收益率要高于利率才投资。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么现金利率会影响房贷利率？",
+     "a": "现金利率是银行最便宜的资金成本，房贷、企业贷款、信用卡利率都在它的基础上加风险溢价；现金利率上升，银行的资金成本上升，就会提高其他贷款利率。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "题型",
+   "做法",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "汇率事件分析",
+    "先判断影响澳元需求还是供给，再判断方向",
+    "例 4、5"
+   ],
+   [
+    "贬值 / 升值影响",
+    "出口、进口、旅游、贸易差额、就业、通胀逐项写",
+    "例 6、7"
+   ],
+   [
+    "收益率",
+    "回报 ÷ 价格 × 100",
+    "例 12"
+   ],
+   [
+    "是否投资",
+    "收益率 > 利率才投资",
+    "例 13"
+   ],
+   [
+    "利率与消费",
+    "还款 ↑ → 可支配收入 ↓ → C ↓",
+    "例 14"
+   ]
+  ]
+ },
+ "practice": "讲座结尾：完成本周 Learning Guide 题目、小测和写作练习。Unit 7 Tutorial 的答案见第 9 周。"
+}

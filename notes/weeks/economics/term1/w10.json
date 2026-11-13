@@ -1,0 +1,1816 @@
+{
+ "course": "economics",
+ "term": "term1",
+ "week": 10,
+ "title": "Unit 9 · Monopoly 垄断",
+ "answersTitle": "Unit 9 Learning Guide: Monopoly",
+ "files": [
+  "Lecture 9.1 Monopoly.pdf",
+  "Lecture 9.2 Monopoly Updated.pdf",
+  "Unit 09_课件01_Monopoly.pdf",
+  "Unit 09_课件02_Monopoly.pdf",
+  "Unit 09_课后练习_Learning Guide_Monopoly.pdf",
+  "Unit 9 LG Microeconomics Monopoly.pdf"
+ ],
+ "inventory": [
+  "Lecture 9.1 Characteristics",
+  {
+   "ref": "Lecture 9.1 Short Run",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "Lecture 9.1 Price Discrimination",
+  {
+   "ref": "Lecture 9.2 Comparison",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Lecture 9.2 Regulation",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "Lecture 9.2 Privatisation",
+  {
+   "ref": "Learning Guide Terms",
+   "deliverables": [
+    {
+     "type": "terms",
+     "terms": [
+      "Monopoly",
+      "Natural Monopoly",
+      "Price Discrimination",
+      "Marginal Cost Pricing",
+      "Fair Return Pricing"
+     ]
+    }
+   ]
+  },
+  "Learning Guide Q1",
+  {
+   "ref": "Learning Guide Q2",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Learning Guide Q3",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "Learning Guide Q4",
+  "Learning Guide Q5",
+  "Learning Guide Q6",
+  {
+   "ref": "Learning Guide In-class Q1",
+   "parts": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ],
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  {
+   "ref": "Learning Guide In-class Q2",
+   "parts": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ],
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "Learning Guide In-class Q3",
+  {
+   "ref": "Learning Guide In-class Q4",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Learning Guide Writing",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  }
+ ],
+ "intro": [
+  "Unit 9 讲另一个极端：<strong>垄断</strong>。一家厂商、没有相近替代品、进入壁垒很高，所以它是价格制定者，面对向下倾斜的需求曲线，MR 在 AR 下方。垄断者在 MR = MC 处生产，长期也能保持超额利润；与完全竞争相比产量更少、价格更高、资源配置无效率。政府可以用边际成本定价、公平回报定价、竞争法和私有化等方式管理。图中均衡点都由程序解出。"
+ ],
+ "sections": [
+  {
+   "title": "垄断的特征、需求与短期均衡（Lecture 9.1）",
+   "sources": [
+    {
+     "file": "Unit 09_课件01_Monopoly.pdf",
+     "pages": "p3–24"
+    }
+   ],
+   "concept": "<strong>垄断</strong>：一个行业只有一个供应者，产品没有相近替代品，进入壁垒阻挡了新厂商。厂商的需求曲线就是行业需求曲线。替代品越接近，垄断势力越弱（例：Australia Post 是唯一的信件投递者）。\n<strong>进入壁垒</strong>：①规模经济（澳洲市场小，可能只容得下一家达到规模经济的厂商，进入需要巨额资金）；②拥有关键原料；③专利和版权；④不公平竞争（激进降价）；⑤政府许可（赌场）；⑥技术壁垒。\n<strong>自然垄断</strong>：LRATC 在整个产量范围内都下降，一家厂商供应全部市场的成本低于多家；固定成本极高，多家厂商是浪费性重复（供水、燃气、电力、铁路）。\n<strong>垄断者的需求曲线</strong>向下倾斜，MR 在 AR 下方，需求比其他市场结构更缺乏弹性（没有相近替代品）。垄断者是<strong>价格制定者</strong>，但只能定价格或定产量之一。它会在需求<strong>富有弹性</strong>的区段生产（在缺乏弹性区段降价会减少 TR 和利润）。\n<strong>短期</strong>：在 MR = MC 处生产，可以有超额利润；不会定最高价（更高的价格 MR > MC，利润更少，还可能招来管制、替代品或进口）。需求弱或成本高时可能亏损，在 MR = MC 处使亏损最小。<strong>长期</strong>：高进入壁垒使超额利润能保持；不能长期亏损，除非有政府补贴。垄断常受政府管制（如邮票价格）。",
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "Lecture 9.1 Characteristics",
+     "question": "State the two key features of a monopoly and list six barriers to entry, with examples where given.",
+     "solution": "两个特征：没有相近替代品；进入壁垒高到足以阻挡所有潜在竞争。进入壁垒：①规模经济（需要巨额资金和大规模生产）；②拥有关键原料；③专利和版权（法定独占权）；④不公平竞争（激进降价挤走对手）；⑤政府许可（赌场）；⑥技术壁垒。自然垄断例子：供水、燃气、电力、铁路。",
+     "numeric": false
+    },
+    {
+     "label": "例 2",
+     "ref": "Lecture 9.1 Short Run",
+     "question": "Draw a monopolist (a) earning supernormal profit and (b) making a short-run loss, and explain whether it continues to produce.",
+     "solution": "(a) 在 MR = MC 处定产量 Q*（约 7.55），从需求曲线读出价格（约 8.23），高于 ATC（约 7.02），阴影是超额利润。\n(b) 需求较弱（AR = 8 − 0.5Q）时，MR = MC 处 Q ≈ 5.44，价格约 5.28，低于 ATC 约 8.47，有亏损；但价格高于 AVC 约 4.80，短期继续生产使亏损最小。长期如果一直亏损（又没有政府补贴），会退出行业。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        16
+       ],
+       "yr": [
+        0,
+        14
+       ],
+       "width": 340,
+       "height": 260,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "$",
+       "curves": [
+        {
+         "expr": "10-3*x+0.3*x^2",
+         "dom": [
+          0.4,
+          11
+         ],
+         "color": "red",
+         "label": [
+          10.2,
+          12.2,
+          "MC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2+20/x",
+         "dom": [
+          1.6,
+          14
+         ],
+         "color": "navy",
+         "label": [
+          13.2,
+          10.2,
+          "ATC"
+         ]
+        },
+        {
+         "expr": "12-0.5*x",
+         "dom": [
+          0,
+          16
+         ],
+         "color": "green",
+         "label": [
+          14.2,
+          5.6,
+          "AR = D"
+         ]
+        },
+        {
+         "expr": "12-x",
+         "dom": [
+          0,
+          12
+         ],
+         "color": "gold",
+         "dash": true,
+         "label": [
+          10.8,
+          0.9,
+          "MR"
+         ]
+        }
+       ],
+       "polygons": [
+        {
+         "pts": [
+          [
+           0,
+           8.225
+          ],
+          [
+           7.55,
+           8.225
+          ],
+          [
+           7.55,
+           7.024
+          ],
+          [
+           0,
+           7.024
+          ]
+         ],
+         "color": "green",
+         "opacity": 0.25,
+         "label": [
+          3.77,
+          7.62,
+          "supernormal profit"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 7.55,
+         "y": 4.45,
+         "label": "MR = MC"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          7.55,
+          0
+         ],
+         "to": [
+          7.55,
+          8.225
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": 7.35,
+         "y": -0.9,
+         "text": "Q*"
+        }
+       ],
+       "caption": "Monopoly earning supernormal profit: Q* where MR = MC, price read from the demand curve"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        16
+       ],
+       "yr": [
+        0,
+        14
+       ],
+       "width": 340,
+       "height": 260,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "$",
+       "curves": [
+        {
+         "expr": "10-3*x+0.3*x^2",
+         "dom": [
+          0.4,
+          11
+         ],
+         "color": "red",
+         "label": [
+          10.2,
+          12.2,
+          "MC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2+20/x",
+         "dom": [
+          1.6,
+          14
+         ],
+         "color": "navy",
+         "label": [
+          13.2,
+          10.2,
+          "ATC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2",
+         "dom": [
+          0.4,
+          14
+         ],
+         "color": "gold",
+         "dash": true,
+         "label": [
+          13.3,
+          6.6,
+          "AVC"
+         ]
+        },
+        {
+         "expr": "8-0.5*x",
+         "dom": [
+          0,
+          16
+         ],
+         "color": "green",
+         "label": [
+          13.2,
+          2.2,
+          "AR = D"
+         ]
+        },
+        {
+         "expr": "8-x",
+         "dom": [
+          0,
+          8
+         ],
+         "color": "green",
+         "dash": true,
+         "label": [
+          6.6,
+          0.6,
+          "MR"
+         ]
+        }
+       ],
+       "polygons": [
+        {
+         "pts": [
+          [
+           0,
+           5.279
+          ],
+          [
+           5.442,
+           5.279
+          ],
+          [
+           5.442,
+           8.474
+          ],
+          [
+           0,
+           8.474
+          ]
+         ],
+         "color": "red",
+         "opacity": 0.25,
+         "label": [
+          2.6,
+          6.88,
+          "loss"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 5.442,
+         "y": 2.558,
+         "label": "MR = MC",
+         "dy": 14
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          5.442,
+          0
+         ],
+         "to": [
+          5.442,
+          8.474
+         ]
+        }
+       ],
+       "caption": "Short-run loss: weak demand (AR below ATC); P is still above AVC, so the monopolist keeps producing at MR = MC"
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ],
+     "checks": [
+      {
+       "expr": "8-(2+sqrt(1.6))/0.6",
+       "equals": "10-3*((2+sqrt(1.6))/0.6)+0.3*((2+sqrt(1.6))/0.6)^2",
+       "tol": 1e-06
+      }
+     ]
+    },
+    {
+     "label": "例 3",
+     "ref": "Lecture 9.1 Price Discrimination",
+     "question": "Define price discrimination, state the conditions needed, give examples and discuss whether it is unfair.",
+     "solution": "价格歧视：同一产品向不同顾客收取不同价格，而这种差别不是由成本差异造成的；垄断者用它来维持经济利润。条件：①厂商有市场势力（需求曲线向下倾斜）；②能把顾客分成需求弹性不同的群体；③能防止低价买的人转卖给高价群体。例子：按年龄或身份的不同票价（学生、老人优惠）、体育赛事不同位置的票价、餐厅给老人的折扣。是否不公平：卖方按买方愿意支付的价格收费，但许多买方因此能买到原本买不起的产品（例如学生票），所以并非全然不公平。",
+     "sourceNote": "讲义 p26 的条件表是图片，这里按价格歧视的标准条件整理。",
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "说垄断者一定定最高价：它在 MR = MC 处定价，再高利润反而减少。",
+    "垄断者在需求缺乏弹性的区段生产：那里 MR < 0，不可能等于正的 MC。"
+   ],
+   "faqs": [
+    {
+     "q": "垄断者能同时定价格和产量吗？",
+     "a": "不能。需求曲线给定，定了价格，能卖出的数量就由需求决定，反之亦然。"
+    }
+   ]
+  },
+  {
+   "title": "垄断与完全竞争的比较、管制与私有化（Lecture 9.2）",
+   "sources": [
+    {
+     "file": "Unit 09_课件02_Monopoly.pdf",
+     "pages": "p3–21"
+    }
+   ],
+   "concept": "与完全竞争相比，垄断者产量更少、价格更高、资源配置无效率（利润最大时 P > MC），形成福利损失。\n<strong>优点</strong>：规模经济（大型垄断的 ATC 可能低于许多小厂商）；专利保护使创新的利润能维持更久；超额利润可用于研发，保持领先（Microsoft）；控制市场减少不确定性，便于规划。\n<strong>缺点</strong>：资源配置不当、限制产量抬价；没有降低成本的动力；价格高（「宰客」）；选择少；缺乏提高质量和创新的动力；管理低效。\n<strong>政府管制</strong>：①价格和利润控制——<strong>边际成本定价</strong>（P = MC，社会最优的价格和产量；自然垄断时会亏损）、<strong>平均成本定价 / 公平回报</strong>（P = ATC，只有正常利润，部分改善配置不足，价格仍可能高于社会最优）；例：政府规定 Telstra 向竞争对手出租网络的价格。②用立法恢复或维持竞争：《2010 年竞争与消费者法》禁止滥用市场势力，ACCC 负责判断。③国有化或成立公共企业与私人垄断竞争。④降低进入壁垒，允许新厂商进入。\n<strong>私有化</strong>：把政府企业卖给私人（联邦银行、澳航、悉尼机场、Telstra、Medibank、GIO）。优点：面对竞争压力、要盈利、更有效率、鼓励研发；增加政府收入、减少赤字和借款；民众可以成为股东。缺点：公共资产不应卖给出价最高者；可能被低价出售；追求利润未必符合社会利益；价格上升、服务减少；政府收入只是一次性的。",
+   "examples": [
+    {
+     "label": "例 4",
+     "ref": "Lecture 9.2 Comparison",
+     "question": "With D: P = 10 − 0.5Q, MR = 10 − Q and constant MC = 4, compare output and price under monopoly and perfect competition, and show the resource misallocation.",
+     "solution": "垄断：MR = MC → 10 − Q = 4 → Qm = 6，价格从需求曲线读出 Pm = 10 − 3 = 7。完全竞争：P = MC → 10 − 0.5Q = 4 → Qc = 12，Pc = 4。垄断产量少一半、价格更高；阴影三角形是没有被生产出来、但消费者愿意付出高于成本价格的那部分产量造成的福利损失，面积 = ½ × (12 − 6) × (7 − 4) = 9。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        21
+       ],
+       "yr": [
+        0,
+        11
+       ],
+       "width": 340,
+       "height": 250,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "P",
+       "curves": [
+        {
+         "expr": "10-0.5*x",
+         "dom": [
+          0,
+          20
+         ],
+         "color": "navy",
+         "label": [
+          16,
+          2.6,
+          "D = AR"
+         ]
+        },
+        {
+         "expr": "10-x",
+         "dom": [
+          0,
+          10
+         ],
+         "color": "green",
+         "dash": true,
+         "label": [
+          8.6,
+          0.8,
+          "MR"
+         ]
+        },
+        {
+         "expr": "4+0*x",
+         "dom": [
+          0,
+          20
+         ],
+         "color": "red",
+         "label": [
+          17.5,
+          4.4,
+          "MC = S (competitive)"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 6,
+         "y": 7,
+         "label": "Monopoly (Qm = 6, Pm = 7)"
+        },
+        {
+         "x": 12,
+         "y": 4,
+         "label": "Competition (Qc = 12, Pc = 4)",
+         "dy": 16
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          7
+         ],
+         "to": [
+          6,
+          7
+         ]
+        },
+        {
+         "from": [
+          6,
+          0
+         ],
+         "to": [
+          6,
+          7
+         ]
+        },
+        {
+         "from": [
+          12,
+          0
+         ],
+         "to": [
+          12,
+          4
+         ]
+        }
+       ],
+       "polygons": [
+        {
+         "pts": [
+          [
+           6,
+           7
+          ],
+          [
+           12,
+           4
+          ],
+          [
+           6,
+           4
+          ]
+         ],
+         "color": "red",
+         "opacity": 0.3,
+         "label": [
+          7.6,
+          4.9,
+          "DWL"
+         ]
+        }
+       ],
+       "caption": "Monopoly vs perfect competition: the monopolist restricts output to where MR = MC and charges a higher price; the shaded triangle is the welfare (deadweight) loss"
+      }
+     ],
+     "checks": [
+      {
+       "expr": "10-6",
+       "equals": "4"
+      },
+      {
+       "expr": "10-0.5*6",
+       "equals": "7"
+      },
+      {
+       "expr": "(10-4)/0.5",
+       "equals": "12"
+      },
+      {
+       "expr": "0.5*(12-6)*(7-4)",
+       "equals": "9"
+      }
+     ]
+    },
+    {
+     "label": "例 5",
+     "ref": "Lecture 9.2 Regulation",
+     "question": "A natural monopoly has MC = 2 and ATC = 2 + 20/Q, facing D: P = 10 − 0.5Q. Compare the unregulated outcome, marginal cost pricing and fair-return (average cost) pricing.",
+     "solution": "不受管制：MR = MC → 10 − Q = 2 → Q = 8，P = 6，超额利润。\n边际成本定价：P = MC = 2 → Q = 16，社会最优产量；但此时 ATC = 2 + 20/16 = 3.25 > 2，厂商亏损，需要补贴，否则会退出。\n公平回报定价：P = ATC → 10 − 0.5Q = 2 + 20/Q → 0.5Q² − 8Q + 20 = 0 → Q ≈ 12.9，P ≈ 3.55，只有正常利润；产量比不受管制时多，但仍少于社会最优，价格仍高于 MC。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        21
+       ],
+       "yr": [
+        0,
+        11
+       ],
+       "width": 340,
+       "height": 250,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "P",
+       "curves": [
+        {
+         "expr": "10-0.5*x",
+         "dom": [
+          0,
+          20
+         ],
+         "color": "navy",
+         "label": [
+          17,
+          1.9,
+          "D"
+         ]
+        },
+        {
+         "expr": "10-x",
+         "dom": [
+          0,
+          10
+         ],
+         "color": "green",
+         "dash": true,
+         "label": [
+          8.8,
+          0.6,
+          "MR"
+         ]
+        },
+        {
+         "expr": "2+20/x",
+         "dom": [
+          2.3,
+          20.5
+         ],
+         "color": "gold",
+         "label": [
+          18.5,
+          3.6,
+          "ATC"
+         ]
+        },
+        {
+         "expr": "2+0*x",
+         "dom": [
+          0,
+          21
+         ],
+         "color": "red",
+         "label": [
+          19.6,
+          2.5,
+          "MC"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 8,
+         "y": 6,
+         "label": "unregulated (Q 8, P 6)"
+        },
+        {
+         "x": 12.9,
+         "y": 3.55,
+         "label": "fair return P = ATC",
+         "dy": -8
+        },
+        {
+         "x": 16,
+         "y": 2,
+         "label": "MC pricing P = MC",
+         "dx": -118,
+         "dy": 16
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          16,
+          2
+         ],
+         "to": [
+          16,
+          3.25
+         ]
+        }
+       ],
+       "caption": "Natural monopoly (ATC falling over the whole range): marginal cost pricing gives the social optimum but a loss (ATC above P at Q = 16); fair-return pricing P = ATC gives normal profit"
+      }
+     ],
+     "checks": [
+      {
+       "expr": "2+20/16",
+       "equals": "3.25"
+      },
+      {
+       "expr": "8+sqrt(24)",
+       "equals": "12.9",
+       "tol": 0.01
+      },
+      {
+       "expr": "10-0.5*(8+sqrt(24))",
+       "equals": "3.55",
+       "tol": 0.01
+      }
+     ]
+    },
+    {
+     "label": "例 6",
+     "ref": "Lecture 9.2 Privatisation",
+     "question": "Give Australian examples of privatisation and its main advantages and disadvantages.",
+     "solution": "例子：联邦银行、澳航、悉尼机场、Telstra、Medibank Private、GIO Insurance。优点：企业面对竞争压力、必须盈利，效率更高、鼓励研发创新；政府获得出售收入，减少赤字和借款；民众可以成为股东。缺点：有人认为公共资产不该卖给出价最高者；可能被低估出售；追求利润的企业未必按社区利益行事；消费者可能面对更高价格和更少服务；政府的收入只是一次性的。",
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "边际成本定价时忘了自然垄断会亏损。",
+    "福利损失三角形画在垄断价格以上：它在需求曲线和 MC 之间、Qm 与 Qc 之间。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么公平回报定价只能部分解决问题？",
+     "a": "P = ATC 时产量比垄断多，但 ATC 高于 MC，价格仍高于社会最优的 P = MC。"
+    }
+   ]
+  },
+  {
+   "title": "Learning Guide：问答与应用题",
+   "sources": [
+    {
+     "file": "Unit 9 LG Microeconomics Monopoly.pdf",
+     "pages": "p2–5"
+    }
+   ],
+   "concept": "表格题：利润 = TR − TC；MR、MC 按每单位产量计算（ΔTR ÷ ΔQ、ΔTC ÷ ΔQ）；找 MR = MC；正常利润是 P = ATC；需求缺乏弹性的区间是降价时 TR 下降（MR < 0）的区间。",
+   "examples": [
+    {
+     "label": "例 7",
+     "ref": "Learning Guide Terms",
+     "question": "Define: Monopoly; Natural monopoly; Price discrimination; Marginal cost pricing; Fair return pricing.",
+     "solution": "<strong>Monopoly</strong>：只有一个供应者、产品没有相近替代品、进入壁垒阻挡新厂商的行业。\n<strong>Natural Monopoly</strong>：LRATC 在整个产量范围内下降，一家厂商供应全部市场成本最低的行业，如供水、电力。\n<strong>Price Discrimination</strong>：同一产品向不同顾客收取不同价格，且不是因为成本不同。\n<strong>Marginal Cost Pricing</strong>：政府规定价格等于边际成本，得到社会最优的价格和产量。\n<strong>Fair Return Pricing</strong>：政府规定价格等于平均总成本，厂商只得到正常利润。",
+     "numeric": false
+    },
+    {
+     "label": "例 8",
+     "ref": "Learning Guide Q1",
+     "question": "Discuss why barriers to entry are important to a monopolist and the forms they take. (At least 25 words.)",
+     "solution": "进入壁垒是垄断能存在、并在长期保持超额利润的原因：没有壁垒，超额利润会吸引新厂商进入，垄断就会消失（像完全竞争那样只剩正常利润）。壁垒的形式：规模经济（需要巨额投资）、拥有关键原料、专利和版权、不公平竞争（低价挤走对手）、政府许可（如赌场牌照）、技术壁垒。",
+     "numeric": false
+    },
+    {
+     "label": "例 9",
+     "ref": "Learning Guide Q2",
+     "question": "Using cost and revenue curves, draw and explain the price and output of a monopolist earning supernormal profit. (At least 25 words.)",
+     "solution": "垄断者在 MR = MC 处决定产量 Q*，从 Q* 向上读到需求（AR）曲线定出价格 P；此时 P > ATC，每单位赚 P − ATC，超额利润是阴影长方形 (P − ATC) × Q*。由于进入壁垒，这种超额利润长期也能保持。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        16
+       ],
+       "yr": [
+        0,
+        14
+       ],
+       "width": 340,
+       "height": 260,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "$",
+       "curves": [
+        {
+         "expr": "10-3*x+0.3*x^2",
+         "dom": [
+          0.4,
+          11
+         ],
+         "color": "red",
+         "label": [
+          10.2,
+          12.2,
+          "MC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2+20/x",
+         "dom": [
+          1.6,
+          14
+         ],
+         "color": "navy",
+         "label": [
+          13.2,
+          10.2,
+          "ATC"
+         ]
+        },
+        {
+         "expr": "12-0.5*x",
+         "dom": [
+          0,
+          16
+         ],
+         "color": "green",
+         "label": [
+          14.2,
+          5.6,
+          "AR = D"
+         ]
+        },
+        {
+         "expr": "12-x",
+         "dom": [
+          0,
+          12
+         ],
+         "color": "gold",
+         "dash": true,
+         "label": [
+          10.8,
+          0.9,
+          "MR"
+         ]
+        }
+       ],
+       "polygons": [
+        {
+         "pts": [
+          [
+           0,
+           8.225
+          ],
+          [
+           7.55,
+           8.225
+          ],
+          [
+           7.55,
+           7.024
+          ],
+          [
+           0,
+           7.024
+          ]
+         ],
+         "color": "green",
+         "opacity": 0.25,
+         "label": [
+          3.77,
+          7.62,
+          "supernormal profit"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 7.55,
+         "y": 4.45,
+         "label": "MR = MC"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          7.55,
+          0
+         ],
+         "to": [
+          7.55,
+          8.225
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": 7.35,
+         "y": -0.9,
+         "text": "Q*"
+        }
+       ],
+       "caption": "Monopoly earning supernormal profit: Q* where MR = MC, price read from the demand curve"
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 10",
+     "ref": "Learning Guide Q3",
+     "question": "Discuss when a monopolist may earn a loss, whether it continues to produce in the short run or shuts down, and illustrate the short-run loss position. (At least 25 words.)",
+     "solution": "需求太弱（AR 太低）或成本太高（ATC 太高）时，垄断者也会亏损。短期它在 MR = MC 处生产使亏损最小：只要价格高于 AVC，生产就能付清可变成本并分担一部分固定成本，比停产好；价格低于 AVC 就停产。长期亏损不能持续，除非有政府补贴，否则会退出。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        16
+       ],
+       "yr": [
+        0,
+        14
+       ],
+       "width": 340,
+       "height": 260,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "$",
+       "curves": [
+        {
+         "expr": "10-3*x+0.3*x^2",
+         "dom": [
+          0.4,
+          11
+         ],
+         "color": "red",
+         "label": [
+          10.2,
+          12.2,
+          "MC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2+20/x",
+         "dom": [
+          1.6,
+          14
+         ],
+         "color": "navy",
+         "label": [
+          13.2,
+          10.2,
+          "ATC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2",
+         "dom": [
+          0.4,
+          14
+         ],
+         "color": "gold",
+         "dash": true,
+         "label": [
+          13.3,
+          6.6,
+          "AVC"
+         ]
+        },
+        {
+         "expr": "8-0.5*x",
+         "dom": [
+          0,
+          16
+         ],
+         "color": "green",
+         "label": [
+          13.2,
+          2.2,
+          "AR = D"
+         ]
+        },
+        {
+         "expr": "8-x",
+         "dom": [
+          0,
+          8
+         ],
+         "color": "green",
+         "dash": true,
+         "label": [
+          6.6,
+          0.6,
+          "MR"
+         ]
+        }
+       ],
+       "polygons": [
+        {
+         "pts": [
+          [
+           0,
+           5.279
+          ],
+          [
+           5.442,
+           5.279
+          ],
+          [
+           5.442,
+           8.474
+          ],
+          [
+           0,
+           8.474
+          ]
+         ],
+         "color": "red",
+         "opacity": 0.25,
+         "label": [
+          2.6,
+          6.88,
+          "loss"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 5.442,
+         "y": 2.558,
+         "label": "MR = MC",
+         "dy": 14
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          5.442,
+          0
+         ],
+         "to": [
+          5.442,
+          8.474
+         ]
+        }
+       ],
+       "caption": "Short-run loss: weak demand (AR below ATC); P is still above AVC, so the monopolist keeps producing at MR = MC"
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 11",
+     "ref": "Learning Guide Q4",
+     "question": "Explain price discrimination and the conditions necessary for it to exist. (At least 25 words.)",
+     "solution": "价格歧视是对同一产品向不同顾客收取不同价格，而价差不是由成本差异引起的，例如电影院的学生票和成人票。必要条件：①卖方有市场势力，可以定价；②能把顾客分成需求弹性不同的群体（如学生对价格更敏感）；③能防止转卖，使低价买的人不能卖给高价群体（如核对学生证）。",
+     "numeric": false
+    },
+    {
+     "label": "例 12",
+     "ref": "Learning Guide Q5",
+     "question": "Discuss the main arguments for and against monopolies, and why a monopolist may choose to be highly innovative. (At least 25 words.)",
+     "solution": "赞成：规模经济使成本可能低于许多小厂商；专利保护让创新有回报；超额利润可以投资研发；市场稳定便于长期规划。反对：限制产量、价格高于 MC，资源配置无效率；消费者选择少、价格高；缺乏降低成本和提高质量的竞争压力；管理可能低效。垄断者选择积极创新，是为了用超额利润投资研发、保持技术领先，从而维持进入壁垒（例如 Microsoft），并防止替代品或新技术打破它的垄断地位。",
+     "numeric": false
+    },
+    {
+     "label": "例 13",
+     "ref": "Learning Guide Q6",
+     "question": "Textbook REVISE Chapter 8 multiple-choice questions 1–9 (p204).",
+     "solution": "教材选择题原文不在本周资料中，无法逐题作答。复习要点：垄断特征和壁垒、MR 在 AR 下方、MR = MC、在弹性区段生产、价格歧视条件、两种管制定价。",
+     "sourceNote": "教材题目不在资料中。",
+     "numeric": false
+    },
+    {
+     "label": "例 14",
+     "ref": "Learning Guide In-class Q1",
+     "question": "Monopolist's schedule: P $60, 50, 40, 30, 20, 10; Qd 10, 20, 30, 45, 80, 120; TR 600, 1,000, 1,200, 1,350, 1,600, 1,200; MR –, 40, 20, 10, 7, (10); TC 500, 800, 960, 1,110, 1,600, 3,600; ATC 50, 40, 32, 24.7, 20, 30; MC –, 30, 16, 10, 14, 50. (a) Profit-maximising price, output and profit. (b) Output, price and ATC at which only normal profit is made. (c) Over which price range is demand inelastic? (d) Explain why.",
+     "solution": "先算利润 = TR − TC（表中最后一列）。\n(a) MR = MC 在 45 单位（都是 10）：定价 <strong>$30</strong>，卖 <strong>45</strong> 单位，利润 <strong>$240</strong>。（$40、30 单位的利润也是 240，按 MR = MC 规则选 45 单位。）\n(b) 正常利润在产量 <strong>80</strong> 单位：价格 $20，ATC $20，TR = TC = 1 600。\n(c) 价格在 <strong>$20 到 $10</strong> 之间需求缺乏弹性。\n(d) 价格从 20 降到 10，总收益从 1 600 降到 1 200，价格和总收益同方向变动，MR 为负（−10）；用中点公式，需求量变化 40 ÷ 100 = 40%，价格变化 10 ÷ 15 = 66.7%，Ed = 0.6 < 1。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "Price ($)",
+        "Qd",
+        "TR ($)",
+        "MR ($)",
+        "Qs",
+        "TC ($)",
+        "ATC ($)",
+        "MC ($)",
+        "Profit ($)"
+       ],
+       "rows": [
+        [
+         "60",
+         "10",
+         "600",
+         "–",
+         "10",
+         "500",
+         "50",
+         "–",
+         "100"
+        ],
+        [
+         "50",
+         "20",
+         "1,000",
+         "40",
+         "20",
+         "800",
+         "40",
+         "30",
+         "200"
+        ],
+        [
+         "40",
+         "30",
+         "1,200",
+         "20",
+         "30",
+         "960",
+         "32",
+         "16",
+         "240"
+        ],
+        [
+         "30",
+         "45",
+         "1,350",
+         "10",
+         "45",
+         "1,110",
+         "24.7",
+         "10",
+         "240"
+        ],
+        [
+         "20",
+         "80",
+         "1,600",
+         "7",
+         "80",
+         "1,600",
+         "20",
+         "14",
+         "0"
+        ],
+        [
+         "10",
+         "120",
+         "1,200",
+         "(10)",
+         "120",
+         "3,600",
+         "30",
+         "50",
+         "(2,400)"
+        ]
+       ],
+       "title": "Q1 schedule with profit added (MR and MC per unit of output)"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ],
+     "checks": [
+      {
+       "expr": "1350-1110",
+       "equals": "240"
+      },
+      {
+       "expr": "1200-960",
+       "equals": "240"
+      },
+      {
+       "expr": "1600-1600",
+       "equals": "0"
+      },
+      {
+       "expr": "(1350-1200)/15",
+       "equals": "10"
+      },
+      {
+       "expr": "(1110-960)/15",
+       "equals": "10"
+      },
+      {
+       "expr": "(40/100)/(10/15)",
+       "equals": "0.6"
+      }
+     ]
+    },
+    {
+     "label": "例 15",
+     "ref": "Learning Guide In-class Q2",
+     "question": "From the graph of AR, MR, MC and ATC (output 100–500): (a) profit-maximising price, output and profit; (b) price and profit if output is restricted to 200; (c) price and profit/loss at 500 units; (d) at approximately what output does demand become inelastic?",
+     "solution": "从图上读数（近似）：AR 在 100、200、300、400、500 单位分别是 5、4、3、2、1；MC 是 2.5、1.5、1、2、2.5；ATC（从 200 起）是 1.3、1.25、1.25、1.75；MR 在 300 单位约为 1。\n(a) MR = MC 在 <strong>300</strong> 单位（都约为 1）：价格 <strong>$3</strong>，利润 ≈ (3 − 1.25) × 300 = <strong>$525</strong>。\n(b) 200 单位：价格 <strong>$4</strong>，ATC ≈ 1.3，利润 ≈ (4 − 1.3) × 200 = <strong>$540</strong>。\n(c) 500 单位：价格 <strong>$1</strong>，ATC ≈ 1.75，亏损 ≈ (1 − 1.75) × 500 = <strong>−$375</strong>。\n(d) MR 变成负数的地方需求开始缺乏弹性：图上 MR 在约 <strong>350</strong> 单位穿过零（按 AR 直线 P = 6 − Q/100 计算，单位弹性点在 300 单位）。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        550
+       ],
+       "yr": [
+        -2.7,
+        5.4
+       ],
+       "width": 340,
+       "height": 260,
+       "xLabel": "Output",
+       "yLabel": "Revenue, costs",
+       "xticks": [
+        100,
+        200,
+        300,
+        400,
+        500
+       ],
+       "yticks": [
+        1,
+        2,
+        3,
+        4,
+        5
+       ],
+       "lines": [
+        {
+         "pts": [
+          [
+           100,
+           5
+          ],
+          [
+           200,
+           4
+          ],
+          [
+           300,
+           3
+          ],
+          [
+           400,
+           2
+          ],
+          [
+           500,
+           1
+          ]
+         ],
+         "color": "navy",
+         "label": [
+          505,
+          0.7,
+          "AR"
+         ]
+        },
+        {
+         "pts": [
+          [
+           100,
+           4.25
+          ],
+          [
+           200,
+           2.75
+          ],
+          [
+           300,
+           1
+          ],
+          [
+           400,
+           -0.75
+          ],
+          [
+           500,
+           -2.5
+          ]
+         ],
+         "color": "green",
+         "label": [
+          505,
+          -2.4,
+          "MR"
+         ]
+        },
+        {
+         "pts": [
+          [
+           100,
+           2.5
+          ],
+          [
+           200,
+           1.5
+          ],
+          [
+           300,
+           1
+          ],
+          [
+           400,
+           2
+          ],
+          [
+           500,
+           2.5
+          ]
+         ],
+         "color": "red",
+         "label": [
+          505,
+          2.6,
+          "MC"
+         ]
+        },
+        {
+         "pts": [
+          [
+           200,
+           1.3
+          ],
+          [
+           300,
+           1.25
+          ],
+          [
+           400,
+           1.25
+          ],
+          [
+           500,
+           1.75
+          ]
+         ],
+         "color": "gold",
+         "label": [
+          505,
+          1.8,
+          "ATC"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 300,
+         "y": 1,
+         "label": "MR = MC",
+         "dy": 14
+        }
+       ],
+       "caption": "Values read from the Learning Guide graph (approximate)"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ],
+     "checks": [
+      {
+       "expr": "(3-1.25)*300",
+       "equals": "525"
+      },
+      {
+       "expr": "(4-1.3)*200",
+       "equals": "540"
+      },
+      {
+       "expr": "(1-1.75)*500",
+       "equals": "-375"
+      }
+     ],
+     "sourceNote": "这幅图本身不完全一致：按图上读到的 ATC，200 单位的利润（约 540）反而略高于 MR = MC 的 300 单位（约 525），因为图中 MR 线并不是 AR 线对应的真正边际收益（按 P = 6 − Q/100，MR 应在 300 单位为 0、在 200 单位为 2）。考试按题意答 (a) 300 单位、$3、约 $525，并可以指出读图误差。"
+    },
+    {
+     "label": "例 16",
+     "ref": "Learning Guide In-class Q3",
+     "question": "Will a monopolist always charge the highest possible price? Why or why not?",
+     "solution": "不会。垄断者要的是利润最大，而不是价格最高：在 MR = MC 的产量上定价利润最大。价格定得更高，卖出的数量减少，那些 MR > MC 的产量被放弃，利润反而下降。此外，价格过高可能引来政府价格管制、消费者转向替代品或进口商品。",
+     "numeric": false
+    },
+    {
+     "label": "例 17",
+     "ref": "Learning Guide In-class Q4",
+     "question": "Explain how monopolies may be regulated and the purpose of each method, referring to marginal cost and 'fair return' pricing.",
+     "solution": "①价格和利润控制：<strong>边际成本定价</strong>（P = MC）使产量达到社会最优、消除配置无效率，但自然垄断在此价格下会亏损，需要补贴；<strong>公平回报定价</strong>（P = ATC）让厂商只得到正常利润、产量增加，但价格仍高于 MC，只部分解决配置不足。例：政府规定 Telstra 网络的接入价格。②竞争法：《2010 年竞争与消费者法》禁止滥用市场势力，由 ACCC 执行，目的是维护竞争。③国有化或成立公共企业与之竞争，使经营符合社区利益。④降低进入壁垒，让新厂商进入竞争。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        21
+       ],
+       "yr": [
+        0,
+        11
+       ],
+       "width": 340,
+       "height": 250,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "P",
+       "curves": [
+        {
+         "expr": "10-0.5*x",
+         "dom": [
+          0,
+          20
+         ],
+         "color": "navy",
+         "label": [
+          17,
+          1.9,
+          "D"
+         ]
+        },
+        {
+         "expr": "10-x",
+         "dom": [
+          0,
+          10
+         ],
+         "color": "green",
+         "dash": true,
+         "label": [
+          8.8,
+          0.6,
+          "MR"
+         ]
+        },
+        {
+         "expr": "2+20/x",
+         "dom": [
+          2.3,
+          20.5
+         ],
+         "color": "gold",
+         "label": [
+          18.5,
+          3.6,
+          "ATC"
+         ]
+        },
+        {
+         "expr": "2+0*x",
+         "dom": [
+          0,
+          21
+         ],
+         "color": "red",
+         "label": [
+          19.6,
+          2.5,
+          "MC"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 8,
+         "y": 6,
+         "label": "unregulated (Q 8, P 6)"
+        },
+        {
+         "x": 12.9,
+         "y": 3.55,
+         "label": "fair return P = ATC",
+         "dy": -8
+        },
+        {
+         "x": 16,
+         "y": 2,
+         "label": "MC pricing P = MC",
+         "dx": -118,
+         "dy": 16
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          16,
+          2
+         ],
+         "to": [
+          16,
+          3.25
+         ]
+        }
+       ],
+       "caption": "Natural monopoly (ATC falling over the whole range): marginal cost pricing gives the social optimum but a loss (ATC above P at Q = 16); fair-return pricing P = ATC gives normal profit"
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 18",
+     "ref": "Learning Guide Writing",
+     "question": "Distinguish perfect competition and monopoly. Use diagrams to explain how the long-run position of a perfectly competitive firm differs from that of a monopolist.",
+     "solution": "特征区别：完全竞争有很多厂商、同质产品、没有进入壁垒、厂商是价格接受者（水平需求线，P = MR）；垄断只有一家厂商、没有相近替代品、进入壁垒高、厂商是价格制定者（向下倾斜的需求线，MR < AR）。\n长期：完全竞争中超额利润吸引新厂商进入，价格降到最低 ATC，厂商只得到正常利润，P = MC = 最低 ATC，资源配置有效率（第 9 周例 5 的图）。垄断因进入壁垒仍可保持超额利润，在 MR = MC 处生产，P > MC，产量少于竞争水平、价格更高，有福利损失（下图）。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        16
+       ],
+       "yr": [
+        0,
+        14
+       ],
+       "width": 340,
+       "height": 260,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "$",
+       "curves": [
+        {
+         "expr": "10-3*x+0.3*x^2",
+         "dom": [
+          0.4,
+          11
+         ],
+         "color": "red",
+         "label": [
+          10.2,
+          12.2,
+          "MC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2+20/x",
+         "dom": [
+          1.6,
+          14
+         ],
+         "color": "navy",
+         "label": [
+          13.2,
+          10.2,
+          "ATC"
+         ]
+        },
+        {
+         "expr": "12-0.5*x",
+         "dom": [
+          0,
+          16
+         ],
+         "color": "green",
+         "label": [
+          14.2,
+          5.6,
+          "AR = D"
+         ]
+        },
+        {
+         "expr": "12-x",
+         "dom": [
+          0,
+          12
+         ],
+         "color": "gold",
+         "dash": true,
+         "label": [
+          10.8,
+          0.9,
+          "MR"
+         ]
+        }
+       ],
+       "polygons": [
+        {
+         "pts": [
+          [
+           0,
+           8.225
+          ],
+          [
+           7.55,
+           8.225
+          ],
+          [
+           7.55,
+           7.024
+          ],
+          [
+           0,
+           7.024
+          ]
+         ],
+         "color": "green",
+         "opacity": 0.25,
+         "label": [
+          3.77,
+          7.62,
+          "supernormal profit"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 7.55,
+         "y": 4.45,
+         "label": "MR = MC"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          7.55,
+          0
+         ],
+         "to": [
+          7.55,
+          8.225
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": 7.35,
+         "y": -0.9,
+         "text": "Q*"
+        }
+       ],
+       "caption": "Monopoly earning supernormal profit: Q* where MR = MC, price read from the demand curve"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        21
+       ],
+       "yr": [
+        0,
+        11
+       ],
+       "width": 340,
+       "height": 250,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "P",
+       "curves": [
+        {
+         "expr": "10-0.5*x",
+         "dom": [
+          0,
+          20
+         ],
+         "color": "navy",
+         "label": [
+          16,
+          2.6,
+          "D = AR"
+         ]
+        },
+        {
+         "expr": "10-x",
+         "dom": [
+          0,
+          10
+         ],
+         "color": "green",
+         "dash": true,
+         "label": [
+          8.6,
+          0.8,
+          "MR"
+         ]
+        },
+        {
+         "expr": "4+0*x",
+         "dom": [
+          0,
+          20
+         ],
+         "color": "red",
+         "label": [
+          17.5,
+          4.4,
+          "MC = S (competitive)"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 6,
+         "y": 7,
+         "label": "Monopoly (Qm = 6, Pm = 7)"
+        },
+        {
+         "x": 12,
+         "y": 4,
+         "label": "Competition (Qc = 12, Pc = 4)",
+         "dy": 16
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          7
+         ],
+         "to": [
+          6,
+          7
+         ]
+        },
+        {
+         "from": [
+          6,
+          0
+         ],
+         "to": [
+          6,
+          7
+         ]
+        },
+        {
+         "from": [
+          12,
+          0
+         ],
+         "to": [
+          12,
+          4
+         ]
+        }
+       ],
+       "polygons": [
+        {
+         "pts": [
+          [
+           6,
+           7
+          ],
+          [
+           12,
+           4
+          ],
+          [
+           6,
+           4
+          ]
+         ],
+         "color": "red",
+         "opacity": 0.3,
+         "label": [
+          7.6,
+          4.9,
+          "DWL"
+         ]
+        }
+       ],
+       "caption": "Monopoly vs perfect competition: the monopolist restricts output to where MR = MC and charges a higher price; the shaded triangle is the welfare (deadweight) loss"
+      }
+     ],
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "表格题用总收益最大代替利润最大：要看 TR − TC 或 MR = MC。",
+    "把正常利润产量写成利润最大产量。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么表格题两个产量利润一样？",
+     "a": "表格是离散的，30 单位和 45 单位利润都是 240；按 MR = MC 规则取 45 单位。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "步骤",
+   "做什么",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "1 特征",
+    "一家厂商、无相近替代品、高壁垒；自然垄断",
+    "例 1、7、8"
+   ],
+   [
+    "2 定价定产",
+    "MR = MC 定 Q，需求曲线定 P；利润 (P − ATC) × Q",
+    "例 2、9、14"
+   ],
+   [
+    "3 亏损",
+    "P > AVC 继续生产，否则停产",
+    "例 2、10"
+   ],
+   [
+    "4 比较",
+    "垄断 Q 少、P 高、P > MC、福利损失",
+    "例 4、18"
+   ],
+   [
+    "5 管制",
+    "MC 定价、公平回报、竞争法、私有化",
+    "例 5、6、17"
+   ]
+  ]
+ },
+ "practice": "本周任务：读教材第 8 章；完成 Learning Guide 问答、两道应用题和写作计划；做 Moodle Review Quiz。"
+}

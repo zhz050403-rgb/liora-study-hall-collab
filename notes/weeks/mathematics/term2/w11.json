@@ -1,0 +1,1670 @@
+{
+ "course": "mathematics",
+ "term": "term2",
+ "week": 11,
+ "title": "Binomial Distribution · 二项分布",
+ "files": [
+  "L29_Binomial_Distribution.pdf",
+  "L30_Binomial_Distribution_Applications.pdf"
+ ],
+ "inventory": [
+  {
+   "ref": "L29 Die",
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  "L29 Two Fours",
+  {
+   "ref": "L29 Ex 1",
+   "parts": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "ref": "L29 Ex 2",
+   "parts": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "ref": "L29 Ex 3",
+   "parts": [
+    "a",
+    "b",
+    "c"
+   ],
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "L30 Expected Value",
+  {
+   "ref": "L30 Ex 1",
+   "parts": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "ref": "L30 Ex 2",
+   "parts": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  {
+   "ref": "L30 Ex 3",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "L30 Ex 4",
+   "parts": [
+    "a",
+    "b"
+   ]
+  }
+ ],
+ "intro": [
+  "Term 2 第 11 周：二项分布的来历、条件与公式 P(X = k) = ⁿCₖ qⁿ⁻ᵏ pᵏ（L29）；二项分布的期望 np、方差 npq 及应用（L30）。所有概率都用组合函数核对。"
+ ],
+ "sections": [
+  {
+   "title": "二项分布（L29）",
+   "sources": [
+    {
+     "file": "L29_Binomial_Distribution.pdf",
+     "pages": "p1–4"
+    }
+   ],
+   "concept": "掷骰子 n 次，X 为掷出 4 的次数。例如掷 4 次恰好两个 4：P = 6 × ({{frac 1|6}})² × ({{frac 5|6}})²，其中 ({{frac 1|6}})² 来自两次掷出 4，({{frac 5|6}})² 来自两次不是 4，6 = ⁴C₂ 是两次 4 出现在哪两次的组合数。\n<strong>二项分布的三个条件</strong>：①有固定次数 n 的试验；②每次只有两种结果：「成功」（概率 p）和「失败」（q = 1 − p）；③各次试验<strong>独立</strong>，每次成功概率相同。\n<strong>P(X = k) = ⁿCₖ qⁿ⁻ᵏ pᵏ</strong>，记作 X ~ B(n, p)。\n「至多 k 次」= P(X ≤ k)，把 0 到 k 的概率相加；「至少 k 次」常用 1 − P(X ≤ k − 1)。",
+   "formulas": [
+    "X ~ B(n, p)：P(X = k) = ⁿCₖ pᵏ qⁿ⁻ᵏ，q = 1 − p"
+   ],
+   "figures": [
+    {
+     "type": "table",
+     "headers": [
+      "Rolls",
+      "X = 0",
+      "X = 1",
+      "X = 2",
+      "X = 3",
+      "X = 4",
+      "X = 5",
+      "E(X) = n/6"
+     ],
+     "rows": [
+      [
+       "n = 1",
+       "5/6",
+       "1/6",
+       "",
+       "",
+       "",
+       "",
+       "1/6"
+      ],
+      [
+       "n = 2",
+       "25/36",
+       "5/18",
+       "1/36",
+       "",
+       "",
+       "",
+       "1/3"
+      ],
+      [
+       "n = 3",
+       "125/216",
+       "25/72",
+       "5/72",
+       "1/216",
+       "",
+       "",
+       "1/2"
+      ],
+      [
+       "n = 4",
+       "625/1296",
+       "125/324",
+       "25/216",
+       "5/324",
+       "1/1296",
+       "",
+       "2/3"
+      ],
+      [
+       "n = 5",
+       "3125/7776",
+       "3125/7776",
+       "625/3888",
+       "125/3888",
+       "25/7776",
+       "1/7776",
+       "5/6"
+      ]
+     ],
+     "title": "Number of 4's in n rolls of a die"
+    }
+   ],
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "L29 Die",
+     "question": "Write the probability distribution of the number of 4's when a die is rolled n = 1, 2, 3, 4, 5 times.",
+     "solution": "每一行都是 ⁿCₖ ({{frac 1|6}})ᵏ ({{frac 5|6}})ⁿ⁻ᵏ（见表）。例如 n = 2：P(0) = {{frac 25|36}}，P(1) = 2 × {{frac 1|6}} × {{frac 5|6}} = {{frac 10|36}}，P(2) = {{frac 1|36}}。每行概率之和都是 1。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "Rolls",
+        "X = 0",
+        "X = 1",
+        "X = 2",
+        "X = 3",
+        "X = 4",
+        "X = 5",
+        "E(X) = n/6"
+       ],
+       "rows": [
+        [
+         "n = 1",
+         "5/6",
+         "1/6",
+         "",
+         "",
+         "",
+         "",
+         "1/6"
+        ],
+        [
+         "n = 2",
+         "25/36",
+         "5/18",
+         "1/36",
+         "",
+         "",
+         "",
+         "1/3"
+        ],
+        [
+         "n = 3",
+         "125/216",
+         "25/72",
+         "5/72",
+         "1/216",
+         "",
+         "",
+         "1/2"
+        ],
+        [
+         "n = 4",
+         "625/1296",
+         "125/324",
+         "25/216",
+         "5/324",
+         "1/1296",
+         "",
+         "2/3"
+        ],
+        [
+         "n = 5",
+         "3125/7776",
+         "3125/7776",
+         "625/3888",
+         "125/3888",
+         "25/7776",
+         "1/7776",
+         "5/6"
+        ]
+       ],
+       "title": "Number of 4's in n rolls of a die"
+      }
+     ],
+     "checks": [
+      {
+       "expr": "comb(2,1)*(1/6)*(5/6)",
+       "equals": "10/36",
+       "tol": 1e-12
+      },
+      {
+       "expr": "comb(5,3)*(1/6)^3*(5/6)^2",
+       "equals": "250/7776",
+       "tol": 1e-12
+      }
+     ]
+    },
+    {
+     "label": "例 2",
+     "ref": "L29 Two Fours",
+     "question": "Find the probability of exactly two 4's in four rolls.",
+     "solution": "掷 4 次，恰好 2 次是 4：组合数乘两次成功、两次失败的概率。⁴C₂ × ({{frac 1|6}})² × ({{frac 5|6}})² = 6 × {{frac 1|36}} × {{frac 25|36}} = {{frac 150|1296}} = {{frac 25|216}} ≈ 0.116。",
+     "answer": "25/216",
+     "checks": [
+      {
+       "expr": "comb(4,2)*(1/6)^2*(5/6)^2",
+       "equals": "25/216",
+       "tol": 1e-12
+      }
+     ]
+    },
+    {
+     "label": "例 3",
+     "ref": "L29 Ex 1",
+     "question": "X ~ B(6, 0.2). Find (a) P(X = 3) (b) P(X = 6) (c) P(X = 10).",
+     "solution": "(a) ⁶C₃ × 0.2³ × 0.8³ = 20 × 0.008 × 0.512 = <strong>0.08192</strong>。\n(b) 0.2⁶ = <strong>0.000064</strong>。\n(c) 只有 6 次试验，不可能成功 10 次：<strong>0</strong>。",
+     "answer": "(a) 0.08192 (b) 0.000064 (c) 0",
+     "checks": [
+      {
+       "expr": "comb(6,3)*0.2^3*0.8^3",
+       "equals": "0.08192",
+       "tol": 1e-12
+      },
+      {
+       "expr": "0.2^6",
+       "equals": "0.000064",
+       "tol": 1e-15
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    {
+     "label": "例 4",
+     "ref": "L29 Ex 2",
+     "question": "A biased coin shows a head with probability ⅓. Find the probability of exactly 2 heads in (a) 3 tosses (b) 10 tosses.",
+     "solution": "成功是正面，p = ⅓，q = ⅔，代入二项分布公式。\n(a) ³C₂ × ({{frac 1|3}})² × {{frac 2|3}} = 3 × {{frac 1|9}} × {{frac 2|3}} = <strong>{{frac 2|9}}</strong> ≈ 0.222。\n(b) ¹⁰C₂ × ({{frac 1|3}})² × ({{frac 2|3}})⁸ = 45 × {{frac 1|9}} × {{frac 256|6561}} = {{frac 1280|6561}} ≈ <strong>0.195</strong>。",
+     "answer": "(a) 2/9 (b) ≈ 0.195",
+     "checks": [
+      {
+       "expr": "comb(3,2)*(1/3)^2*(2/3)",
+       "equals": "2/9",
+       "tol": 1e-12
+      },
+      {
+       "expr": "comb(10,2)*(1/3)^2*(2/3)^8",
+       "equals": "1280/6561",
+       "tol": 1e-12
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 5",
+     "ref": "L29 Ex 3",
+     "question": "A 10-question multiple choice test, 4 choices each; a student guesses every question. Find the probability of (a) exactly 2 correct (b) at most 2 correct (c) at least 2 correct.",
+     "solution": "每题猜对的概率 0.25，十题独立，所以答对题数 X ~ B(10, 0.25)。P(0) = 0.75¹⁰ ≈ 0.0563，P(1) = 10 × 0.25 × 0.75⁹ ≈ 0.1877，P(2) = 45 × 0.25² × 0.75⁸ ≈ 0.2816。\n(a) <strong>0.2816</strong>。\n(b) P(X ≤ 2) = 0.0563 + 0.1877 + 0.2816 ≈ <strong>0.5256</strong>。\n(c) P(X ≥ 2) = 1 − P(0) − P(1) ≈ <strong>0.7560</strong>。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -1,
+        11
+       ],
+       "yr": [
+        0,
+        0.3519594669342041
+       ],
+       "width": 330,
+       "height": 240,
+       "xLabel": "k",
+       "yLabel": "P(X = k)",
+       "curves": [],
+       "caption": "B(10, 0.25): guessing 10 four-option questions",
+       "xticks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+       ],
+       "hideYAxis": true,
+       "lines": [
+        {
+         "pts": [
+          [
+           0,
+           0
+          ],
+          [
+           0,
+           0.056313514709472656
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        },
+        {
+         "pts": [
+          [
+           1,
+           0
+          ],
+          [
+           1,
+           0.1877117156982422
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        },
+        {
+         "pts": [
+          [
+           2,
+           0
+          ],
+          [
+           2,
+           0.2815675735473633
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        },
+        {
+         "pts": [
+          [
+           3,
+           0
+          ],
+          [
+           3,
+           0.25028228759765625
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        },
+        {
+         "pts": [
+          [
+           4,
+           0
+          ],
+          [
+           4,
+           0.1459980010986328
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        },
+        {
+         "pts": [
+          [
+           5,
+           0
+          ],
+          [
+           5,
+           0.058399200439453125
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        },
+        {
+         "pts": [
+          [
+           6,
+           0
+          ],
+          [
+           6,
+           0.016222000122070312
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        },
+        {
+         "pts": [
+          [
+           7,
+           0
+          ],
+          [
+           7,
+           0.00308990478515625
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        },
+        {
+         "pts": [
+          [
+           8,
+           0
+          ],
+          [
+           8,
+           0.00038623809814453125
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        },
+        {
+         "pts": [
+          [
+           9,
+           0
+          ],
+          [
+           9,
+           2.86102294921875e-05
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        },
+        {
+         "pts": [
+          [
+           10,
+           0
+          ],
+          [
+           10,
+           9.5367431640625e-07
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        }
+       ],
+       "texts": [
+        {
+         "x": 0,
+         "y": 0.06687229871749878,
+         "text": "0.056",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 1,
+         "y": 0.1982704997062683,
+         "text": "0.188",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 2,
+         "y": 0.2921263575553894,
+         "text": "0.282",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 3,
+         "y": 0.2608410716056824,
+         "text": "0.250",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 4,
+         "y": 0.15655678510665894,
+         "text": "0.146",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 5,
+         "y": 0.06895798444747925,
+         "text": "0.058",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 6,
+         "y": 0.026780784130096436,
+         "text": "0.016",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 7,
+         "y": 0.013648688793182373,
+         "text": "0.003",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 8,
+         "y": 0.010945022106170654,
+         "text": "0.000",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 9,
+         "y": 0.01058739423751831,
+         "text": "0.000",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 10,
+         "y": 0.01055973768234253,
+         "text": "0.000",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        }
+       ],
+       "polygons": [
+        {
+         "pts": [
+          [
+           -0.45,
+           0
+          ],
+          [
+           2.45,
+           0
+          ],
+          [
+           2.45,
+           0.3
+          ],
+          [
+           -0.45,
+           0.3
+          ]
+         ],
+         "color": "gold",
+         "opacity": 0.25
+        }
+       ]
+      }
+     ],
+     "answer": "(a) 0.2816 (b) 0.5256 (c) 0.7560",
+     "checks": [
+      {
+       "expr": "comb(10,2)*0.25^2*0.75^8",
+       "equals": "0.2816",
+       "tol": 5e-05
+      },
+      {
+       "expr": "0.75^10+10*0.25*0.75^9+comb(10,2)*0.25^2*0.75^8",
+       "equals": "0.5256",
+       "tol": 5e-05
+      },
+      {
+       "expr": "1-0.75^10-10*0.25*0.75^9",
+       "equals": "0.7560",
+       "tol": 5e-05
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ],
+     "sourceNote": "讲义这一题的第三小问也印成 (b)，应为 (c)。"
+    }
+   ],
+   "mistakes": [
+    "指数配错：pᵏ 配成功次数，qⁿ⁻ᵏ 配失败次数。",
+    "「至少 2 个」只算 P(X = 2)。",
+    "忘了乘组合数 ⁿCₖ。"
+   ],
+   "faqs": [
+    {
+     "q": "怎么判断能不能用二项分布？",
+     "a": "三条都要满足：次数固定、每次只有成功 / 失败两种结果、各次独立且成功概率相同。不放回地抽样（概率会变）就不满足。"
+    }
+   ]
+  },
+  {
+   "title": "二项分布的期望与方差及应用（L30）",
+   "sources": [
+    {
+     "file": "L30_Binomial_Distribution_Applications.pdf",
+     "pages": "p1–4"
+    }
+   ],
+   "concept": "掷骰子 n 次，4 的个数的期望分别是 {{frac 1|6}}、{{frac 2|6}}、{{frac 3|6}}、{{frac 4|6}}……即 n × {{frac 1|6}}。一般地 X ~ B(n, p)：\n<strong>E(X) = np</strong>（把 p 看成比例，n 次中约有 np 次成功）；<strong>Var(X) = npq</strong>。n 越大，期望和方差都越大。\n比较稳定性：方差越小越稳定；n 相同时 p 越接近 0.5 方差越大，p = 0.2 与 p = 0.8 的方差相同。",
+   "formulas": [
+    "E(X) = np　　Var(X) = npq"
+   ],
+   "examples": [
+    {
+     "label": "例 6",
+     "ref": "L30 Expected Value",
+     "question": "For the number of 4's in n rolls, verify that E(X) = n/6, and find Var(X) for n = 3 and n = 6.",
+     "solution": "n = 1：E = 0 × {{frac 5|6}} + 1 × {{frac 1|6}} = {{frac 1|6}}；n = 2：E = 0 + 1 × {{frac 10|36}} + 2 × {{frac 1|36}} = {{frac 1|3}}；n = 3 得 {{frac 1|2}}，n = 4 得 {{frac 2|3}}：都等于 {{frac n|6}}。\nVar = npq：n = 3 时 3 × {{frac 1|6}} × {{frac 5|6}} = {{frac 5|12}}；n = 6 时 {{frac 5|6}}。",
+     "checks": [
+      {
+       "expr": "10/36+2/36",
+       "equals": "1/3",
+       "tol": 1e-12
+      },
+      {
+       "expr": "3*(1/6)*(5/6)",
+       "equals": "5/12",
+       "tol": 1e-12
+      },
+      {
+       "expr": "6*(1/6)*(5/6)",
+       "equals": "5/6",
+       "tol": 1e-12
+      }
+     ]
+    },
+    {
+     "label": "例 7",
+     "ref": "L30 Ex 1",
+     "question": "Find E and Var for (a) X ~ B(15, 0.3) (b) Y ~ B(25, 0.8).",
+     "solution": "直接用公式 E = np、Var = npq。\n(a) E(X) = 15 × 0.3 = <strong>4.5</strong>，Var(X) = 15 × 0.3 × 0.7 = <strong>3.15</strong>。\n(b) E(Y) = 25 × 0.8 = <strong>20</strong>，Var(Y) = 25 × 0.8 × 0.2 = <strong>4</strong>。",
+     "answer": "(a) 4.5, 3.15 (b) 20, 4",
+     "checks": [
+      {
+       "expr": "15*0.3*0.7",
+       "equals": "3.15",
+       "tol": 1e-12
+      },
+      {
+       "expr": "25*0.8*0.2",
+       "equals": "4",
+       "tol": 1e-12
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 8",
+     "ref": "L30 Ex 2",
+     "question": "Eugene does a 20-question test with 5 choices each. (a) Expected correct answers if he guesses every question? (b) If he can eliminate one option each time? (c) Variance in each case?",
+     "solution": "(a) p = 0.2：E = 20 × 0.2 = <strong>4</strong>。\n(b) 剩 4 个选项，p = 0.25：E = 20 × 0.25 = <strong>5</strong>。\n(c) Var = 20 × 0.2 × 0.8 = <strong>3.2</strong>；Var = 20 × 0.25 × 0.75 = <strong>3.75</strong>。",
+     "answer": "(a) 4 (b) 5 (c) 3.2, 3.75",
+     "checks": [
+      {
+       "expr": "20*0.2*0.8",
+       "equals": "3.2",
+       "tol": 1e-12
+      },
+      {
+       "expr": "20*0.25*0.75",
+       "equals": "3.75",
+       "tol": 1e-12
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    {
+     "label": "例 9",
+     "ref": "L30 Ex 3",
+     "question": "Find the variances of X ~ B(10, 0.2), Y ~ B(10, 0.5), Z ~ B(10, 0.8). Which is most consistent?",
+     "solution": "Var(X) = 10 × 0.2 × 0.8 = <strong>1.6</strong>；Var(Y) = 10 × 0.5 × 0.5 = <strong>2.5</strong>；Var(Z) = 10 × 0.8 × 0.2 = <strong>1.6</strong>。X 和 Z 方差相同且最小，<strong>同样最稳定</strong>；Y（p = 0.5）最分散。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -1,
+        11
+       ],
+       "yr": [
+        0,
+        0.37748736000000027
+       ],
+       "width": 330,
+       "height": 240,
+       "xLabel": "k",
+       "yLabel": "P(X = k)",
+       "curves": [],
+       "caption": "B(10, 0.2): Var = 1.6",
+       "xticks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+       ],
+       "hideYAxis": true,
+       "lines": [
+        {
+         "pts": [
+          [
+           0,
+           0
+          ],
+          [
+           0,
+           0.10737418240000006
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        },
+        {
+         "pts": [
+          [
+           1,
+           0
+          ],
+          [
+           1,
+           0.2684354560000001
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        },
+        {
+         "pts": [
+          [
+           2,
+           0
+          ],
+          [
+           2,
+           0.3019898880000002
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        },
+        {
+         "pts": [
+          [
+           3,
+           0
+          ],
+          [
+           3,
+           0.2013265920000001
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        },
+        {
+         "pts": [
+          [
+           4,
+           0
+          ],
+          [
+           4,
+           0.08808038400000005
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        },
+        {
+         "pts": [
+          [
+           5,
+           0
+          ],
+          [
+           5,
+           0.02642411520000001
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        },
+        {
+         "pts": [
+          [
+           6,
+           0
+          ],
+          [
+           6,
+           0.005505024000000003
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        },
+        {
+         "pts": [
+          [
+           7,
+           0
+          ],
+          [
+           7,
+           0.0007864320000000004
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        },
+        {
+         "pts": [
+          [
+           8,
+           0
+          ],
+          [
+           8,
+           7.372800000000005e-05
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        },
+        {
+         "pts": [
+          [
+           9,
+           0
+          ],
+          [
+           9,
+           4.096000000000002e-06
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        },
+        {
+         "pts": [
+          [
+           10,
+           0
+          ],
+          [
+           10,
+           1.0240000000000006e-07
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        }
+       ],
+       "texts": [
+        {
+         "x": 0,
+         "y": 0.11869880320000006,
+         "text": "0.107",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 1,
+         "y": 0.27976007680000015,
+         "text": "0.268",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 2,
+         "y": 0.3133145088000002,
+         "text": "0.302",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 3,
+         "y": 0.21265121280000013,
+         "text": "0.201",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 4,
+         "y": 0.09940500480000006,
+         "text": "0.088",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 5,
+         "y": 0.03774873600000002,
+         "text": "0.026",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 6,
+         "y": 0.016829644800000012,
+         "text": "0.006",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 7,
+         "y": 0.012111052800000008,
+         "text": "0.001",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 8,
+         "y": 0.011398348800000008,
+         "text": "0.000",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 9,
+         "y": 0.011328716800000008,
+         "text": "0.000",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 10,
+         "y": 0.011324723200000008,
+         "text": "0.000",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -1,
+        11
+       ],
+       "yr": [
+        0,
+        0.3076171875
+       ],
+       "width": 330,
+       "height": 240,
+       "xLabel": "k",
+       "yLabel": "P(X = k)",
+       "curves": [],
+       "caption": "B(10, 0.5): Var = 2.5",
+       "xticks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+       ],
+       "hideYAxis": true,
+       "lines": [
+        {
+         "pts": [
+          [
+           0,
+           0
+          ],
+          [
+           0,
+           0.0009765625
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        },
+        {
+         "pts": [
+          [
+           1,
+           0
+          ],
+          [
+           1,
+           0.009765625
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        },
+        {
+         "pts": [
+          [
+           2,
+           0
+          ],
+          [
+           2,
+           0.0439453125
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        },
+        {
+         "pts": [
+          [
+           3,
+           0
+          ],
+          [
+           3,
+           0.1171875
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        },
+        {
+         "pts": [
+          [
+           4,
+           0
+          ],
+          [
+           4,
+           0.205078125
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        },
+        {
+         "pts": [
+          [
+           5,
+           0
+          ],
+          [
+           5,
+           0.24609375
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        },
+        {
+         "pts": [
+          [
+           6,
+           0
+          ],
+          [
+           6,
+           0.205078125
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        },
+        {
+         "pts": [
+          [
+           7,
+           0
+          ],
+          [
+           7,
+           0.1171875
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        },
+        {
+         "pts": [
+          [
+           8,
+           0
+          ],
+          [
+           8,
+           0.0439453125
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        },
+        {
+         "pts": [
+          [
+           9,
+           0
+          ],
+          [
+           9,
+           0.009765625
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        },
+        {
+         "pts": [
+          [
+           10,
+           0
+          ],
+          [
+           10,
+           0.0009765625
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        }
+       ],
+       "texts": [
+        {
+         "x": 0,
+         "y": 0.010205078125,
+         "text": "0.001",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 1,
+         "y": 0.018994140625,
+         "text": "0.010",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 2,
+         "y": 0.053173828125,
+         "text": "0.044",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 3,
+         "y": 0.126416015625,
+         "text": "0.117",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 4,
+         "y": 0.214306640625,
+         "text": "0.205",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 5,
+         "y": 0.255322265625,
+         "text": "0.246",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 6,
+         "y": 0.214306640625,
+         "text": "0.205",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 7,
+         "y": 0.126416015625,
+         "text": "0.117",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 8,
+         "y": 0.053173828125,
+         "text": "0.044",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 9,
+         "y": 0.018994140625,
+         "text": "0.010",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 10,
+         "y": 0.010205078125,
+         "text": "0.001",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -1,
+        11
+       ],
+       "yr": [
+        0,
+        0.37748736000000005
+       ],
+       "width": 330,
+       "height": 240,
+       "xLabel": "k",
+       "yLabel": "P(X = k)",
+       "curves": [],
+       "caption": "B(10, 0.8): Var = 1.6",
+       "xticks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+       ],
+       "hideYAxis": true,
+       "lines": [
+        {
+         "pts": [
+          [
+           0,
+           0
+          ],
+          [
+           0,
+           1.0239999999999978e-07
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        },
+        {
+         "pts": [
+          [
+           1,
+           0
+          ],
+          [
+           1,
+           4.095999999999992e-06
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        },
+        {
+         "pts": [
+          [
+           2,
+           0
+          ],
+          [
+           2,
+           7.372799999999987e-05
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        },
+        {
+         "pts": [
+          [
+           3,
+           0
+          ],
+          [
+           3,
+           0.000786431999999999
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        },
+        {
+         "pts": [
+          [
+           4,
+           0
+          ],
+          [
+           4,
+           0.005505023999999994
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        },
+        {
+         "pts": [
+          [
+           5,
+           0
+          ],
+          [
+           5,
+           0.026424115199999976
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        },
+        {
+         "pts": [
+          [
+           6,
+           0
+          ],
+          [
+           6,
+           0.08808038399999996
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        },
+        {
+         "pts": [
+          [
+           7,
+           0
+          ],
+          [
+           7,
+           0.20132659199999994
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        },
+        {
+         "pts": [
+          [
+           8,
+           0
+          ],
+          [
+           8,
+           0.30198988800000004
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        },
+        {
+         "pts": [
+          [
+           9,
+           0
+          ],
+          [
+           9,
+           0.26843545600000007
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        },
+        {
+         "pts": [
+          [
+           10,
+           0
+          ],
+          [
+           10,
+           0.10737418240000006
+          ]
+         ],
+         "color": "blue",
+         "width": 8
+        }
+       ],
+       "texts": [
+        {
+         "x": 0,
+         "y": 0.011324723200000001,
+         "text": "0.000",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 1,
+         "y": 0.011328716800000001,
+         "text": "0.000",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 2,
+         "y": 0.011398348800000001,
+         "text": "0.000",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 3,
+         "y": 0.0121110528,
+         "text": "0.001",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 4,
+         "y": 0.016829644799999995,
+         "text": "0.006",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 5,
+         "y": 0.03774873599999998,
+         "text": "0.026",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 6,
+         "y": 0.09940500479999996,
+         "text": "0.088",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 7,
+         "y": 0.21265121279999993,
+         "text": "0.201",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 8,
+         "y": 0.31331450880000006,
+         "text": "0.302",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 9,
+         "y": 0.2797600768000001,
+         "text": "0.268",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        },
+        {
+         "x": 10,
+         "y": 0.11869880320000006,
+         "text": "0.107",
+         "anchor": "middle",
+         "size": 8,
+         "color": "navy"
+        }
+       ]
+      }
+     ],
+     "answer": "X and Z (Var 1.6)",
+     "checks": [
+      {
+       "expr": "10*0.2*0.8",
+       "equals": "1.6",
+       "tol": 1e-12
+      },
+      {
+       "expr": "10*0.5*0.5",
+       "equals": "2.5",
+       "tol": 1e-12
+      }
+     ]
+    },
+    {
+     "label": "例 10",
+     "ref": "L30 Ex 4",
+     "question": "About 3% of widgets are faulty. (a) Find the probability that a sample of 10 contains at least one faulty widget. (b) Find the smallest sample size for a 90% probability of at least one faulty widget.",
+     "solution": "X ~ B(n, 0.03)，「至少一个」= 1 − P(X = 0) = 1 − 0.97ⁿ。\n(a) 1 − 0.97¹⁰ ≈ <strong>0.2626</strong>。\n(b) 1 − 0.97ⁿ ≥ 0.9，0.97ⁿ ≤ 0.1，n ≥ {{frac ln 0.1|ln 0.97}} ≈ 75.6（除以负数变号），至少 <strong>76</strong> 个。",
+     "answer": "(a) 0.2626 (b) 76",
+     "checks": [
+      {
+       "expr": "1-0.97^10",
+       "equals": "0.2626",
+       "tol": 5e-05
+      },
+      {
+       "expr": "ln(0.1)/ln(0.97)",
+       "equals": "75.6",
+       "tol": 0.05
+      },
+      {
+       "expr": "1-0.97^76",
+       "equals": "0.9010",
+       "tol": 0.0005
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    }
+   ],
+   "mistakes": [
+    "方差写成 np 或 npq²。",
+    "「最少样本量」四舍五入成 75：要向上取整。",
+    "以为 p 越大方差越大：p = 0.5 时方差最大。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么 B(10, 0.2) 和 B(10, 0.8) 方差一样？",
+     "a": "npq 中 p 和 q 交换不改变乘积；两个分布互为镜像（成功数和失败数互换）。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "题型",
+   "做法",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "判断二项",
+    "次数固定、两种结果、独立同概率",
+    "例 1、5"
+   ],
+   [
+    "P(X = k)",
+    "ⁿCₖ pᵏ qⁿ⁻ᵏ",
+    "例 2–5"
+   ],
+   [
+    "至多 / 至少",
+    "相加；或 1 − 补集",
+    "例 5、10"
+   ],
+   [
+    "期望 / 方差",
+    "np / npq",
+    "例 6–9"
+   ],
+   [
+    "最少次数",
+    "1 − qⁿ ≥ 目标，取对数后向上取整",
+    "例 10"
+   ]
+  ]
+ },
+ "practice": "讲义建议练习：Tutorial Guide 10-3、10-4。"
+}

@@ -1,0 +1,1160 @@
+{
+ "course": "accounting",
+ "term": "term1",
+ "week": 11,
+ "title": "Week 11 · Unit 10 现金流量表",
+ "answersTitle": "Unit 10 Financial Statement 3 – Cash Flow Statement",
+ "files": [
+  "unit10 lecture exercise cf statement.xlsx",
+  "unit10 lecture slides cash flow statement.pdf",
+  "unit10 reading materials cash flow statement.pdf",
+  "unit10 tutorial guide cash flow.pdf"
+ ],
+ "inventory": [
+  {
+   "ref": "Lecture Relationship",
+   "deliverables": [
+    {
+     "type": "statement",
+     "kind": "cashflow"
+    }
+   ]
+  },
+  "Lecture Timing",
+  "Reading Example 1",
+  "Reading Example 2",
+  {
+   "ref": "Tutorial Terms",
+   "deliverables": [
+    {
+     "type": "terms",
+     "terms": [
+      "Cash Flow Statement",
+      "Operating Activities",
+      "Financing Activities",
+      "Investing Activities",
+      "Net Change in Cash"
+     ]
+    }
+   ]
+  },
+  "Tutorial Q1",
+  {
+   "ref": "Tutorial Q2",
+   "parts": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6"
+   ]
+  },
+  {
+   "ref": "Tutorial Q3",
+   "parts": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10"
+   ]
+  },
+  {
+   "ref": "Tutorial Q4",
+   "deliverables": [
+    {
+     "type": "statement",
+     "kind": "cashflow"
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial Q5",
+   "parts": [
+    "1",
+    "2",
+    "3"
+   ]
+  },
+  {
+   "ref": "Tutorial Q6",
+   "deliverables": [
+    {
+     "type": "statement",
+     "kind": "cashflow"
+    }
+   ]
+  }
+ ],
+ "intro": [
+  "第三张报表：<strong>现金流量表</strong>（Cash Flow Statement）。它按<strong>现金制</strong>记录一段期间现金从哪里来、用到哪里去，分经营、投资、筹资三类，最后把期初现金余额调节到期末余额，与资产负债表上的现金一致。下面的每张现金流量表都由程序按三类加总，并核对期末现金。"
+ ],
+ "sections": [
+  {
+   "title": "现金流量表的作用与三类活动",
+   "sources": [
+    {
+     "file": "unit10 lecture slides cash flow statement.pdf",
+     "pages": "p2–13"
+    },
+    {
+     "file": "unit10 reading materials cash flow statement.pdf",
+     "pages": "p1–6"
+    },
+    {
+     "file": "unit10 tutorial guide cash flow.pdf",
+     "pages": "p2–5"
+    }
+   ],
+   "concept": "三张报表的关系：利润表的净利润进入所有者权益（资产负债表）；现金流量表解释资产负债表上现金从期初到期末为什么变化。\n利润表用<strong>权责发生制</strong>（交易发生时确认），现金流量表用<strong>现金制</strong>（收付现金时确认）。\n<strong>经营活动</strong>：主要的创收活动——收客户款、付供应商和员工、付利息、交所得税。<strong>投资活动</strong>：购买或出售长期资产和投资、借出或收回贷款、收到股利。<strong>筹资活动</strong>：借款和还款、发行或回购股份、支付股利。\n不涉及现金的交易（以资产换资产、用长期票据买机器、折旧）不进现金流量表。\n作用：评估产生现金的能力、偿债能力（流动性、偿付能力）、利润和经营现金流差异的原因、投资和筹资情况。局限：不反映盈利能力；收付时点可被安排；是历史数据。\n<strong>经营现金流</strong>的两种列法：直接法（列出实际收付）和间接法（从净利润调整非现金项目和营运资本变化）。",
+   "figures": [
+    {
+     "type": "table",
+     "headers": [
+      "",
+      "Cash inflows",
+      "Cash outflows"
+     ],
+     "rows": [
+      [
+       "<strong>Operating</strong>（与收入、费用有关）",
+       "销售商品或服务收到的现金",
+       "付给供应商、员工、其他费用；付利息；交所得税、GST"
+      ],
+      [
+       "<strong>Investing</strong>（非流动资产的变动）",
+       "出售固定资产；出售其他企业的股票、债券；收回借给别人的款；收到利息、股利（也可列经营）",
+       "购买固定资产；购买股票、债券；借钱给其他企业"
+      ],
+      [
+       "<strong>Financing</strong>（非流动负债和权益的变动）",
+       "发行股票、债券；借款；政府补助",
+       "回购股票；支付股利（也可列经营）或现金提款；偿还借款"
+      ]
+     ],
+     "title": "现金流分类（讲义 p12）"
+    }
+   ],
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "Tutorial Terms",
+     "question": "Explain: Cash Flow Statement; Cash Flow from Operating Activities; Cash Flow from Financing Activities; Cash Flow from Investing Activities; Net Change in Cash.",
+     "solution": "<strong>Cash Flow Statement</strong>：现金流量表，按现金制报告一段期间的现金流入和流出，分经营、投资、筹资三类，调节期初和期末现金。\n<strong>Operating Activities</strong>：主要创收活动的现金流，如收客户款、付供应商和员工、付利息和税。\n<strong>Financing Activities</strong>：改变权益和借款规模的现金流，如借款、还款、发行股份、支付股利。\n<strong>Investing Activities</strong>：取得和处置长期资产与投资的现金流，如买卖设备、买卖股票、收到股利。\n<strong>Net Change in Cash</strong>：三类现金流合计，等于期末现金减期初现金。",
+     "numeric": false
+    },
+    {
+     "label": "例 2",
+     "ref": "Lecture Relationship",
+     "question": "Lecture example: cash on the balance sheet was 1,400 (20X1) and 2,000 (20X2); cash flows were operating 2,500, investing (2,300), financing 400. Capital: opening 24,000 + net profit 6,000 − drawings 3,000. Show how the statements link.",
+     "solution": "现金流量表：2 500 − 2 300 + 400 = 600，期初 1 400 + 600 = 期末 2 000，正好是 20X2 资产负债表上的现金。\n资本：24 000 + 净利润 6 000 − 提款 3 000 = 27 000，就是 20X2 资产负债表上的资本。净利润来自利润表。",
+     "figures": [
+      {
+       "type": "statement",
+       "title": "Lecture example: Cash Flow Statement 20X2",
+       "columns": 2,
+       "lines": [
+        {
+         "label": "Cash flows from operating activities",
+         "head": true
+        },
+        {
+         "label": "From operating activities",
+         "id": "o0",
+         "amount": 2500,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Net cash provided by (used in) operating activities",
+         "id": "cfo",
+         "sum": [
+          "o0"
+         ],
+         "col": 2,
+         "total": true
+        },
+        {
+         "label": "Cash flows from investing activities",
+         "head": true
+        },
+        {
+         "label": "From investing activities",
+         "id": "i0",
+         "amount": -2300,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Net cash provided by (used in) investing activities",
+         "id": "cfi",
+         "sum": [
+          "i0"
+         ],
+         "col": 2,
+         "total": true
+        },
+        {
+         "label": "Cash flows from financing activities",
+         "head": true
+        },
+        {
+         "label": "From financing activities",
+         "id": "f0",
+         "amount": 400,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Net cash provided by (used in) financing activities",
+         "id": "cff",
+         "sum": [
+          "f0"
+         ],
+         "col": 2,
+         "total": true
+        },
+        {
+         "label": "Net increase (decrease) in cash",
+         "id": "net",
+         "sum": [
+          "cfo",
+          "cfi",
+          "cff"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Cash at the beginning of the period",
+         "id": "open",
+         "amount": 1400,
+         "col": 2
+        },
+        {
+         "label": "Cash at the end of the period",
+         "id": "close",
+         "sum": [
+          "net",
+          "open"
+         ],
+         "col": 2,
+         "total": true,
+         "double": true
+        }
+       ],
+       "expect": {
+        "net": 600,
+        "close": 2000
+       },
+       "kind": "cashflow"
+      }
+     ],
+     "checks": [
+      {
+       "expr": "24000+6000-3000",
+       "equals": "27000"
+      }
+     ]
+    },
+    {
+     "label": "例 3",
+     "ref": "Lecture Timing",
+     "question": "IriginDo issues you a telephone bill dated 20 June 20X1 for $120; you pay it on 15 July 20X1. The financial year ends 30 June. In which year does IriginDo record the cash receipt in its cash flow statement?",
+     "solution": "现金流量表看收到现金的日期：7 月 15 日收到，属于截至 20X2 年 6 月 30 日的财年。（利润表按权责发生制，收入在 20X1 年 6 月就确认了。）",
+     "numeric": false
+    },
+    {
+     "label": "例 4",
+     "ref": "Reading Example 1",
+     "question": "A retailer records sales of $200,000 in a month; $60,000 is on credit. From the $140,000 collected it pays suppliers $70,000, employees $30,000, utilities $10,000, interest $5,000 and taxes $8,000. Calculate net operating cash flow.",
+     "solution": "现金流入只算收到的 140 000（赊销 60 000 还没收到）。流出 70 000 + 30 000 + 10 000 + 5 000 + 8 000 = 123 000。经营现金净流量 17 000。",
+     "checks": [
+      {
+       "expr": "140000-(70000+30000+10000+5000+8000)",
+       "equals": "17000"
+      }
+     ]
+    },
+    {
+     "label": "例 5",
+     "ref": "Reading Example 2",
+     "question": "A manufacturer invests $50,000 in new machinery and sells an old machine for $15,000. Calculate net investing cash flow.",
+     "solution": "15 000 − 50 000 = −35 000，投资活动现金净流出 35 000。",
+     "checks": [
+      {
+       "expr": "15000-50000",
+       "equals": "-35000"
+      }
+     ]
+    },
+    {
+     "label": "例 6",
+     "ref": "Tutorial Q1",
+     "question": "Fancy Fashion Pty Ltd made a loss of $800,000 last year, yet its cash increased by $300,000. Explain how this could occur.",
+     "solution": "利润按权责发生制，现金按收付，两者可以方向相反：\n① 亏损里有很多不用付现金的费用，如折旧、坏账；\n② 收回了大量以前的应收账款，或推迟付给供应商的款项；\n③ 投资活动带来现金：出售了设备、房产或投资；\n④ 筹资活动带来现金：借了款或发行了股份。\n所以要看现金流量表三类活动分别是多少，才知道现金从哪里来。",
+     "numeric": false
+    },
+    {
+     "label": "例 7",
+     "ref": "Tutorial Q2",
+     "question": "Wilderness Equipment Ltd (2018): 1 purchased a machine for $37,500 giving a long-term note; 2 issued ordinary shares for $62,500 cash; 3 collected $20,000 of accounts receivable; 4 declared and paid a cash dividend of $31,250; 5 sold a long-term investment (cost $18,750) for $18,750 cash; 6 paid $22,500 on accounts payable. Classify each as operating, investing or financing, inflow or outflow.",
+     "solution": "1 不涉及现金（用长期票据换机器），不进现金流量表，只在附注披露。\n2 筹资活动，流入 62 500。\n3 经营活动，流入 20 000。\n4 筹资活动，流出 31 250。\n5 投资活动，流入 18 750。\n6 经营活动，流出 22 500。",
+     "parts": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 8",
+     "ref": "Tutorial Q3",
+     "question": "Simpson Ltd: classify 1 purchase of plant and equipment; 2 payment of dividends; 3 sale of building; 4 exchange of land for patent; 5 depreciation; 6 receipt of interest on a bank deposit; 7 issue of ordinary shares; 8 payment of interest on overdraft; 9 sale of land; 10 receipt of dividends on Telstra shares.",
+     "solution": "1 投资，流出\n2 筹资，流出\n3 投资，流入\n4 不涉及现金，不列示（附注披露）\n5 不涉及现金，不列示（间接法中加回）\n6 投资，流入（讲义注明也可列为经营）\n7 筹资，流入\n8 经营，流出\n9 投资，流入\n10 投资，流入（也可列为经营）",
+     "parts": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+     ],
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "把赊销金额算进经营现金流入：只算收到的现金。",
+    "把折旧算作现金流出：折旧不付现金。",
+    "支付股利放进投资活动：本课程放筹资活动。",
+    "以资产换资产（土地换专利）也列进去：不涉及现金就不列示。"
+   ],
+   "faqs": [
+    {
+     "q": "亏损的公司现金也会增加吗？",
+     "a": "会。借款、卖资产、收回欠款都会带来现金，所以不能只看利润。"
+    },
+    {
+     "q": "利息收入和股利收入放哪一类？",
+     "a": "讲义的分类表把它们放投资活动，并注明也可放经营活动；考试按讲义答，并写明分类。"
+    }
+   ]
+  },
+  {
+   "title": "编制和解读现金流量表",
+   "sources": [
+    {
+     "file": "unit10 lecture slides cash flow statement.pdf",
+     "pages": "p7"
+    },
+    {
+     "file": "unit10 tutorial guide cash flow.pdf",
+     "pages": "p5–8"
+    },
+    {
+     "file": "unit10 lecture exercise cf statement.xlsx",
+     "pages": "Sheet1"
+    }
+   ],
+   "concept": "编制步骤：①把每笔现金收付归入经营、投资、筹资；②各类加总，流出用括号；③三类合计 = 现金净增减；④期初现金 + 净增减 = 期末现金，核对资产负债表。\n解读：经营现金流为正且稳定，说明主营业务能自己产生现金；投资活动大额流出通常表示在扩张，流入（卖资产）可能表示在收缩；筹资流入表示在借钱或增资，流出表示在还债或分红。",
+   "examples": [
+    {
+     "label": "例 9",
+     "ref": "Tutorial Q6",
+     "question": "King Fisheries Pty Ltd, cash account summary 2018: Balance 1 Jan 8,000; Receipts from customers 264,000; Dividends received 6,000; Proceeds from sale of equipment 36,000; Proceeds from issue of shares 200,000; Payments for goods; Payments for operating expenses 140,000; Interest paid 30,000; Taxes paid 8,000; Dividends paid 40,000; Balance 31 Dec 116,000; totals 514,000. What amount of net cash provided (used) by financing activities should be reported?",
+     "solution": "筹资活动只有发行股份和支付股利：200 000 − 40 000 = <strong>160 000</strong>（流入）。下面用 Excel 模板的格式把整张现金流量表编出来：经营 −94 000、投资 42 000、筹资 160 000，期初 8 000，期末 116 000，与账户一致。",
+     "figures": [
+      {
+       "type": "statement",
+       "title": "King Fisheries Pty Ltd Statement of Cash Flows for the year ended 31 December 2018",
+       "columns": 2,
+       "lines": [
+        {
+         "label": "Cash flows from operating activities",
+         "head": true
+        },
+        {
+         "label": "Receipts from customers",
+         "id": "o0",
+         "amount": 264000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Payments for goods",
+         "id": "o1",
+         "amount": -180000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Payments for operating expenses",
+         "id": "o2",
+         "amount": -140000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Interest paid",
+         "id": "o3",
+         "amount": -30000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Taxes paid",
+         "id": "o4",
+         "amount": -8000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Net cash provided by (used in) operating activities",
+         "id": "cfo",
+         "sum": [
+          "o0",
+          "o1",
+          "o2",
+          "o3",
+          "o4"
+         ],
+         "col": 2,
+         "total": true
+        },
+        {
+         "label": "Cash flows from investing activities",
+         "head": true
+        },
+        {
+         "label": "Proceeds from sale of equipment",
+         "id": "i0",
+         "amount": 36000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Dividends received",
+         "id": "i1",
+         "amount": 6000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Net cash provided by (used in) investing activities",
+         "id": "cfi",
+         "sum": [
+          "i0",
+          "i1"
+         ],
+         "col": 2,
+         "total": true
+        },
+        {
+         "label": "Cash flows from financing activities",
+         "head": true
+        },
+        {
+         "label": "Proceeds from issue of shares",
+         "id": "f0",
+         "amount": 200000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Dividends paid",
+         "id": "f1",
+         "amount": -40000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Net cash provided by (used in) financing activities",
+         "id": "cff",
+         "sum": [
+          "f0",
+          "f1"
+         ],
+         "col": 2,
+         "total": true
+        },
+        {
+         "label": "Net increase (decrease) in cash",
+         "id": "net",
+         "sum": [
+          "cfo",
+          "cfi",
+          "cff"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Cash at the beginning of the period",
+         "id": "open",
+         "amount": 8000,
+         "col": 2
+        },
+        {
+         "label": "Cash at the end of the period",
+         "id": "close",
+         "sum": [
+          "net",
+          "open"
+         ],
+         "col": 2,
+         "total": true,
+         "double": true
+        }
+       ],
+       "expect": {
+        "cff": 160000,
+        "cfo": -94000,
+        "cfi": 42000,
+        "close": 116000
+       },
+       "kind": "cashflow"
+      }
+     ],
+     "answer": "Net cash provided by financing activities = $160,000",
+     "sourceNote": "图片里「Payments for goods」的数字不清楚，按账户两边合计 514 000 倒推应为 180 000（8 000 + 264 000 + 6 000 + 36 000 + 200 000 = 514 000；514 000 − 116 000 − 140 000 − 30 000 − 8 000 − 40 000 = 180 000）。这个数字不影响筹资活动的答案。",
+     "checks": [
+      {
+       "expr": "200000-40000",
+       "equals": "160000"
+      },
+      {
+       "expr": "514000-116000-140000-30000-8000-40000",
+       "equals": "180000"
+      }
+     ]
+    },
+    {
+     "label": "例 10",
+     "ref": "Tutorial Q4",
+     "question": "Woolworths Group consolidated statement of cash flows, 2024 (53 weeks) vs 2023 (52 weeks), $M. Describe the changes in the cash flow statement from year to year.",
+     "solution": "经营：净流入从 4 754 降到 4 359，少了 395。客户收款增加 3 880，但付给供应商和员工的增加 4 033，所得税也从 587 增加到 774。\n投资：净流出从 1 844 增加到 2 277。购买业务从 373 增加到 487，出售子公司和投资的收入从 659 降到 466，继续大额投资固定资产（约 2 500）。\n筹资：净流出从 2 809 降到 1 919。新借款从 351 增加到 1 215，还款从 952 降到 764；股利从 1 026 增加到 1 172。\n合计：现金净增加从 101 增加到 163，期末现金从 1 135 增加到 1 298。\n结论：经营现金流仍然充足，足以支付投资；现金增加主要靠多借款，经营现金流有所下降，值得关注。",
+     "figures": [
+      {
+       "type": "statement",
+       "title": "Woolworths Group Statement of Cash Flows — 2024 (53 weeks, $M)",
+       "columns": 2,
+       "lines": [
+        {
+         "label": "Cash flows from operating activities",
+         "head": true
+        },
+        {
+         "label": "Receipts from customers",
+         "id": "o0",
+         "amount": 72155,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Payments to suppliers and employees",
+         "id": "o1",
+         "amount": -66292,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Payments for the interest component of lease liabilities",
+         "id": "o2",
+         "amount": -570,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Net finance costs paid on borrowings",
+         "id": "o3",
+         "amount": -160,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Income tax paid",
+         "id": "o4",
+         "amount": -774,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Net cash provided by (used in) operating activities",
+         "id": "cfo",
+         "sum": [
+          "o0",
+          "o1",
+          "o2",
+          "o3",
+          "o4"
+         ],
+         "col": 2,
+         "total": true
+        },
+        {
+         "label": "Cash flows from investing activities",
+         "head": true
+        },
+        {
+         "label": "Proceeds from the sale of property, plant and equipment",
+         "id": "i0",
+         "amount": 342,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Payments for property, plant and equipment and intangible assets",
+         "id": "i1",
+         "amount": -2548,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Proceeds from the sale of subsidiaries and investments",
+         "id": "i2",
+         "amount": 466,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Payments for the purchase of businesses",
+         "id": "i3",
+         "amount": -487,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Payments for the purchase of investments",
+         "id": "i4",
+         "amount": -86,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Dividends received",
+         "id": "i5",
+         "amount": 36,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Net cash provided by (used in) investing activities",
+         "id": "cfi",
+         "sum": [
+          "i0",
+          "i1",
+          "i2",
+          "i3",
+          "i4",
+          "i5"
+         ],
+         "col": 2,
+         "total": true
+        },
+        {
+         "label": "Cash flows from financing activities",
+         "head": true
+        },
+        {
+         "label": "Repayment of principal component of lease liabilities",
+         "id": "f0",
+         "amount": -1138,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Proceeds from borrowings",
+         "id": "f1",
+         "amount": 1215,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Repayment of borrowings",
+         "id": "f2",
+         "amount": -764,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Dividends paid",
+         "id": "f3",
+         "amount": -1172,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Dividends paid to non-controlling interests",
+         "id": "f4",
+         "amount": -16,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Payments for shares held in trust",
+         "id": "f5",
+         "amount": -44,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Net cash provided by (used in) financing activities",
+         "id": "cff",
+         "sum": [
+          "f0",
+          "f1",
+          "f2",
+          "f3",
+          "f4",
+          "f5"
+         ],
+         "col": 2,
+         "total": true
+        },
+        {
+         "label": "Net increase (decrease) in cash",
+         "id": "net",
+         "sum": [
+          "cfo",
+          "cfi",
+          "cff"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Effects of exchange rate changes",
+         "id": "fx",
+         "amount": 0,
+         "col": 2
+        },
+        {
+         "label": "Cash at the beginning of the period",
+         "id": "open",
+         "amount": 1135,
+         "col": 2
+        },
+        {
+         "label": "Cash at the end of the period",
+         "id": "close",
+         "sum": [
+          "net",
+          "fx",
+          "open"
+         ],
+         "col": 2,
+         "total": true,
+         "double": true
+        }
+       ],
+       "expect": {
+        "cfo": 4359,
+        "cfi": -2277,
+        "cff": -1919,
+        "net": 163,
+        "close": 1298
+       },
+       "kind": "cashflow"
+      },
+      {
+       "type": "statement",
+       "title": "Woolworths Group Statement of Cash Flows — 2023 (52 weeks, $M)",
+       "columns": 2,
+       "lines": [
+        {
+         "label": "Cash flows from operating activities",
+         "head": true
+        },
+        {
+         "label": "Receipts from customers",
+         "id": "o0",
+         "amount": 68275,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Payments to suppliers and employees",
+         "id": "o1",
+         "amount": -62259,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Payments for the interest component of lease liabilities",
+         "id": "o2",
+         "amount": -542,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Net finance costs paid on borrowings",
+         "id": "o3",
+         "amount": -133,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Income tax paid",
+         "id": "o4",
+         "amount": -587,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Net cash provided by (used in) operating activities",
+         "id": "cfo",
+         "sum": [
+          "o0",
+          "o1",
+          "o2",
+          "o3",
+          "o4"
+         ],
+         "col": 2,
+         "total": true
+        },
+        {
+         "label": "Cash flows from investing activities",
+         "head": true
+        },
+        {
+         "label": "Proceeds from the sale of property, plant and equipment",
+         "id": "i0",
+         "amount": 361,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Payments for property, plant and equipment and intangible assets",
+         "id": "i1",
+         "amount": -2519,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Proceeds from the sale of subsidiaries and investments",
+         "id": "i2",
+         "amount": 659,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Payments for the purchase of businesses",
+         "id": "i3",
+         "amount": -373,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Payments for the purchase of investments",
+         "id": "i4",
+         "amount": -30,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Net proceeds from related parties",
+         "id": "i5",
+         "amount": 15,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Dividends received",
+         "id": "i6",
+         "amount": 43,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Net cash provided by (used in) investing activities",
+         "id": "cfi",
+         "sum": [
+          "i0",
+          "i1",
+          "i2",
+          "i3",
+          "i4",
+          "i5",
+          "i6"
+         ],
+         "col": 2,
+         "total": true
+        },
+        {
+         "label": "Cash flows from financing activities",
+         "head": true
+        },
+        {
+         "label": "Repayment of principal component of lease liabilities",
+         "id": "f0",
+         "amount": -1067,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Proceeds from borrowings",
+         "id": "f1",
+         "amount": 351,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Repayment of borrowings",
+         "id": "f2",
+         "amount": -952,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Dividends paid",
+         "id": "f3",
+         "amount": -1026,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Dividends paid to non-controlling interests",
+         "id": "f4",
+         "amount": -5,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Payments for shares held in trust",
+         "id": "f5",
+         "amount": -110,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Net cash provided by (used in) financing activities",
+         "id": "cff",
+         "sum": [
+          "f0",
+          "f1",
+          "f2",
+          "f3",
+          "f4",
+          "f5"
+         ],
+         "col": 2,
+         "total": true
+        },
+        {
+         "label": "Net increase (decrease) in cash",
+         "id": "net",
+         "sum": [
+          "cfo",
+          "cfi",
+          "cff"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Effects of exchange rate changes",
+         "id": "fx",
+         "amount": 2,
+         "col": 2
+        },
+        {
+         "label": "Cash at the beginning of the period",
+         "id": "open",
+         "amount": 1032,
+         "col": 2
+        },
+        {
+         "label": "Cash at the end of the period",
+         "id": "close",
+         "sum": [
+          "net",
+          "fx",
+          "open"
+         ],
+         "col": 2,
+         "total": true,
+         "double": true
+        }
+       ],
+       "expect": {
+        "cfo": 4754,
+        "cfi": -1844,
+        "cff": -2809,
+        "net": 101,
+        "close": 1135
+       },
+       "kind": "cashflow"
+      }
+     ]
+    },
+    {
+     "label": "例 11",
+     "ref": "Tutorial Q5",
+     "question": "Marlot Limited (2019): cash flows from operations (800,000); investing 200,000; financing 601,000; net 1,000; opening 260,000; closing 261,000. 1 Is Marlot expanding or contracting? 2 What activities could explain the financing inflow? 3 Using only this information, is Marlot growing, mature/stable or declining?",
+     "solution": "1 在收缩：投资活动是净流入 200 000，说明在出售长期资产，而不是购买。\n2 借入新的贷款、发行股票（或所有者追加投资）。\n3 看起来在衰退：主营业务一年烧掉 800 000 现金，只能靠卖资产和借钱、增资来维持，期末现金几乎没有增加。假设：只有一年的数据，且没有特殊的一次性因素；如果是新企业刚起步，经营现金流为负也可能是成长期，但成长期一般会大量购买资产（投资流出），这里正好相反。",
+     "figures": [
+      {
+       "type": "statement",
+       "title": "Marlot Limited cash flow summary for 2019",
+       "columns": 2,
+       "lines": [
+        {
+         "label": "Cash flows from operating activities",
+         "head": true
+        },
+        {
+         "label": "Cash flows from operations",
+         "id": "o0",
+         "amount": -800000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Net cash provided by (used in) operating activities",
+         "id": "cfo",
+         "sum": [
+          "o0"
+         ],
+         "col": 2,
+         "total": true
+        },
+        {
+         "label": "Cash flows from investing activities",
+         "head": true
+        },
+        {
+         "label": "Cash flows from investing activities",
+         "id": "i0",
+         "amount": 200000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Net cash provided by (used in) investing activities",
+         "id": "cfi",
+         "sum": [
+          "i0"
+         ],
+         "col": 2,
+         "total": true
+        },
+        {
+         "label": "Cash flows from financing activities",
+         "head": true
+        },
+        {
+         "label": "Cash flows from financing activities",
+         "id": "f0",
+         "amount": 601000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Net cash provided by (used in) financing activities",
+         "id": "cff",
+         "sum": [
+          "f0"
+         ],
+         "col": 2,
+         "total": true
+        },
+        {
+         "label": "Net increase (decrease) in cash",
+         "id": "net",
+         "sum": [
+          "cfo",
+          "cfi",
+          "cff"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Cash at the beginning of the period",
+         "id": "open",
+         "amount": 260000,
+         "col": 2
+        },
+        {
+         "label": "Cash at the end of the period",
+         "id": "close",
+         "sum": [
+          "net",
+          "open"
+         ],
+         "col": 2,
+         "total": true,
+         "double": true
+        }
+       ],
+       "expect": {
+        "net": 1000,
+        "close": 261000
+       },
+       "kind": "cashflow"
+      }
+     ],
+     "parts": [
+      "1",
+      "2",
+      "3"
+     ]
+    }
+   ],
+   "mistakes": [
+    "期末现金对不上资产负债表：先检查有没有漏列项目。",
+    "把净流出写成正数：流出要用括号或负号。",
+    "解读只描述数字不说原因：要说明哪一项变化最大、意味着什么。"
+   ],
+   "faqs": [
+    {
+     "q": "经营现金流比净利润更可靠吗？",
+     "a": "现金较难被会计估计左右，但收付时点可以被安排；两者要一起看。"
+    },
+    {
+     "q": "投资活动现金流为负是坏事吗？",
+     "a": "不一定，买设备、买业务是在为将来扩张；要结合经营现金流是否足以支持。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "步骤",
+   "做什么",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "1 判断有没有现金",
+    "没有现金收付（折旧、换资产、票据）不列示",
+    "例 7、8"
+   ],
+   [
+    "2 分类",
+    "经营 / 投资 / 筹资，流入或流出",
+    "例 7、8"
+   ],
+   [
+    "3 加总和调节",
+    "三类合计 + 期初 = 期末",
+    "例 2、9、10"
+   ],
+   [
+    "4 解读",
+    "哪类变化最大，扩张还是收缩，靠什么维持",
+    "例 6、10、11"
+   ]
+  ]
+ },
+ "practice": "本周任务：阅读 Unit 10 Cash Flow Readings；完成 Tutorial Questions 1–4 和课堂 5–6 题；用 Excel 模板（unit10 lecture exercise cf statement）练习编表。"
+}

@@ -1,0 +1,1996 @@
+{
+ "course": "accounting",
+ "term": "term1",
+ "week": 3,
+ "title": "Week 3 · Unit 4 日记账分录",
+ "answersTitle": "Unit 4 Journal Entries",
+ "files": [
+  "unit4 lecture slides journal entries.pdf",
+  "unit4 reading materials journal entries.pdf",
+  "unit4 tutorial guide journal entries.pdf",
+  "worksheet 3 - journal entries.pdf"
+ ],
+ "inventory": [
+  "Lecture p6",
+  "Lecture Trade Discount",
+  {
+   "ref": "Lecture Discount Received",
+   "deliverables": [
+    {
+     "type": "journal"
+    }
+   ]
+  },
+  {
+   "ref": "Lecture Discount Allowed",
+   "deliverables": [
+    {
+     "type": "journal"
+    }
+   ]
+  },
+  {
+   "ref": "Lecture Returns",
+   "deliverables": [
+    {
+     "type": "journal"
+    }
+   ]
+  },
+  {
+   "ref": "Lecture Worked Example",
+   "parts": [
+    "a",
+    "b"
+   ],
+   "deliverables": [
+    {
+     "type": "analysis"
+    },
+    {
+     "type": "journal"
+    }
+   ]
+  },
+  {
+   "ref": "Lecture Bad Debt",
+   "deliverables": [
+    {
+     "type": "journal"
+    }
+   ]
+  },
+  {
+   "ref": "Reading Sauk Stereo",
+   "deliverables": [
+    {
+     "type": "journal"
+    }
+   ]
+  },
+  "Reading Trade Discount",
+  {
+   "ref": "Reading Bad Debt",
+   "deliverables": [
+    {
+     "type": "journal"
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial Terms",
+   "deliverables": [
+    {
+     "type": "terms",
+     "terms": [
+      "Journal Entries",
+      "Trade Discount",
+      "Discount Allowed",
+      "Discount Received",
+      "Purchase Returns",
+      "Sales returns",
+      "Bad debts",
+      "Drawings"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial Q1",
+   "deliverables": [
+    {
+     "type": "journal"
+    }
+   ]
+  },
+  "Tutorial Q2",
+  {
+   "ref": "Tutorial Q3",
+   "parts": [
+    "a",
+    "b"
+   ],
+   "deliverables": [
+    {
+     "type": "journal"
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial Q4",
+   "deliverables": [
+    {
+     "type": "journal"
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial Self-study 1",
+   "deliverables": [
+    {
+     "type": "journal"
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial Self-study 2",
+   "deliverables": [
+    {
+     "type": "journal"
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial Lois Lane",
+   "deliverables": [
+    {
+     "type": "journal"
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial Thor Painting",
+   "deliverables": [
+    {
+     "type": "journal"
+    }
+   ]
+  },
+  "Worksheet 3"
+ ],
+ "intro": [
+  "本周是会计循环第 3 步：把交易写成<strong>普通日记账</strong>（General Journal）分录。重点有三类特殊交易：<strong>现金折扣</strong>（收到的折扣是收入，给出的折扣是费用；商业折扣不入账）、<strong>退货</strong>（用 Purchase Returns、Sales Returns 账户，不直接冲减 Purchases、Sales）、<strong>坏账</strong>（Bad Debts 费用，冲减应收账款）。讲义、阅读材料和 Tutorial Guide 的每道题都有完整的分录表，借贷合计由程序核对。"
+ ],
+ "sections": [
+  {
+   "title": "普通日记账的格式（General Journal Format）",
+   "sources": [
+    {
+     "file": "unit4 lecture slides journal entries.pdf",
+     "pages": "p3–8, p22–25"
+    },
+    {
+     "file": "unit4 reading materials journal entries.pdf",
+     "pages": "p1–2"
+    },
+    {
+     "file": "unit4 tutorial guide journal entries.pdf",
+     "pages": "p2–4, p9–11"
+    }
+   ],
+   "concept": "<strong>普通日记账</strong>按时间顺序记录全部交易，是第一手记录（book of first entry），之后再过账到分类账。\n一笔完整分录包括：①日期；②借方账户和金额、贷方账户和金额；③摘要（narration），简短说明交易。\n<strong>格式规则</strong>：①借方账户先写，靠左；②贷方账户写在下一行并<strong>缩进</strong>；③摘要写在分录下方；④每笔分录之后空一行。账户名要准确、具体，因为报表就从这些账户编出来。",
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "Lecture p6",
+     "question": "Construct the journal entry from the analysis: on 4 Feb, sold toys to Elise on account.",
+     "solution": "赊销：应收账款（资产）增加记借方，收入增加记贷方，下面写摘要。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "4-Feb",
+         "dr": [
+          [
+           "Accounts Receivable – Elise",
+           "asset",
+           4500
+          ]
+         ],
+         "cr": [
+          [
+           "Revenue",
+           "revenue",
+           4500
+          ]
+         ],
+         "narration": "Sold toys to Elise on account"
+        }
+       ]
+      }
+     ],
+     "sourceNote": "讲义这一页分录金额是 $4,500，摘要却写「worth $5000」，两处不一致；这里按分录栏的 4 500。"
+    },
+    {
+     "label": "例 2",
+     "ref": "Lecture Worked Example",
+     "question": "Kingsford Trading, August 2024 (periodic, accrual): 1 owner invested $50,000 cash; 2 purchased inventory $15,000 on credit from Willow Suppliers; 3 sold inventory for $12,000 on credit to Oak Limited; 4 paid $5,000 of the amount owed to Willow; 5 paid $2,000 for advertising; 6 received $10,000 from Oak Limited. a) Complete the transaction analysis table. b) Prepare General Journal entries.",
+     "solution": "先分析再写分录：分析表的 Dr 行就是分录的借方，Cr 行就是缩进的贷方。(a) 分析表、(b) 分录表如下，与讲义 p24–25 一致。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "analysis",
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "1-Aug",
+         "dr": [
+          [
+           "Cash",
+           "asset",
+           50000
+          ]
+         ],
+         "cr": [
+          [
+           "Capital",
+           "equity",
+           50000
+          ]
+         ],
+         "narration": "Owner invested capital in the business"
+        },
+        {
+         "date": "2-Aug",
+         "dr": [
+          [
+           "Purchases",
+           "expense",
+           15000
+          ]
+         ],
+         "cr": [
+          [
+           "A/P – Willow Suppliers",
+           "liability",
+           15000
+          ]
+         ],
+         "narration": "Purchased inventory from Willow Suppliers"
+        },
+        {
+         "date": "3-Aug",
+         "dr": [
+          [
+           "A/R – Oak Limited",
+           "asset",
+           12000
+          ]
+         ],
+         "cr": [
+          [
+           "Sales",
+           "revenue",
+           12000
+          ]
+         ],
+         "narration": "Sold toys on credit to Oak Limited"
+        },
+        {
+         "date": "4-Aug",
+         "dr": [
+          [
+           "A/P – Willow Suppliers",
+           "liability",
+           5000
+          ]
+         ],
+         "cr": [
+          [
+           "Cash",
+           "asset",
+           5000
+          ]
+         ],
+         "narration": "Partial payment to Willow Suppliers"
+        },
+        {
+         "date": "5-Aug",
+         "dr": [
+          [
+           "Advertising Expense",
+           "expense",
+           2000
+          ]
+         ],
+         "cr": [
+          [
+           "Cash",
+           "asset",
+           2000
+          ]
+         ],
+         "narration": "Paid for advertising"
+        },
+        {
+         "date": "6-Aug",
+         "dr": [
+          [
+           "Cash",
+           "asset",
+           10000
+          ]
+         ],
+         "cr": [
+          [
+           "A/R – Oak Limited",
+           "asset",
+           10000
+          ]
+         ],
+         "narration": "Received cash from Oak Limited for amount due"
+        }
+       ]
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 3",
+     "ref": "Tutorial Terms",
+     "question": "Explain: Journal Entries, Trade Discount, Discount Allowed, Discount Received, Purchase Returns, Sales returns, Bad debts, Drawings (revision).",
+     "solution": "<strong>Journal Entries</strong>：按时间顺序在普通日记账里记录交易的借贷分录，含日期、账户、金额和摘要。\n<strong>Trade Discount</strong>：商业折扣，买卖时直接在发票上减价（大量购买、老客户），<strong>不入账</strong>，按折后价记录。\n<strong>Discount Allowed</strong>：给客户的现金折扣（提前付款），是费用，Dr Discount Allowed、Cr Accounts Receivable。\n<strong>Discount Received</strong>：从供应商得到的现金折扣，是收入，Dr Accounts Payable、Cr Discount Received。\n<strong>Purchase Returns</strong>：退回供应商的货，Dr Accounts Payable（或 Cash）、Cr Purchase Returns。\n<strong>Sales returns</strong>：客户退回的货，Dr Sales Returns、Cr Accounts Receivable（或 Cash）。\n<strong>Bad debts</strong>：收不回的应收账款，是费用，Dr Bad Debts、Cr Accounts Receivable。\n<strong>Drawings</strong>：所有者从企业拿走现金或存货自用，减少所有者权益，Dr Drawings、Cr Cash。",
+     "numeric": false
+    },
+    {
+     "label": "例 4",
+     "ref": "Tutorial Q1",
+     "question": "Jack Hammer's hardware store, April: 1 invested $40,000 cash; 7 purchased equipment $5,000 cash; 11 paid advertising $600; 15 paid $1,200 for office supplies; 19 sold goods $16,000 on account to Fern Limited; 23 sold goods $2,000 for cash; 27 purchased hardware inventory for resale $4,200 on account; 28 paid April salaries $2,500; 30 Fern Limited paid the amount due; 30 withdrew $400 cash for personal use. Record the journal entries.",
+     "solution": "要点：Apr 15 办公用品按资产（Office Supplies）入账；Apr 27 买待售商品记 Purchases；Apr 30 Fern 付款是收回应收账款，不是新销售；提款记 Drawings。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "Apr 1",
+         "dr": [
+          [
+           "Cash",
+           "asset",
+           40000
+          ]
+         ],
+         "cr": [
+          [
+           "Capital",
+           "equity",
+           40000
+          ]
+         ],
+         "narration": "Owner invested cash"
+        },
+        {
+         "date": "7",
+         "dr": [
+          [
+           "Equipment",
+           "asset",
+           5000
+          ]
+         ],
+         "cr": [
+          [
+           "Cash",
+           "asset",
+           5000
+          ]
+         ],
+         "narration": "Purchased equipment for cash"
+        },
+        {
+         "date": "11",
+         "dr": [
+          [
+           "Advertising Expense",
+           "expense",
+           600
+          ]
+         ],
+         "cr": [
+          [
+           "Cash",
+           "asset",
+           600
+          ]
+         ],
+         "narration": "Paid advertising"
+        },
+        {
+         "date": "15",
+         "dr": [
+          [
+           "Office Supplies",
+           "asset",
+           1200
+          ]
+         ],
+         "cr": [
+          [
+           "Cash",
+           "asset",
+           1200
+          ]
+         ],
+         "narration": "Paid for office supplies"
+        },
+        {
+         "date": "19",
+         "dr": [
+          [
+           "A/R – Fern Limited",
+           "asset",
+           16000
+          ]
+         ],
+         "cr": [
+          [
+           "Sales",
+           "revenue",
+           16000
+          ]
+         ],
+         "narration": "Sold goods on account to Fern Limited"
+        },
+        {
+         "date": "23",
+         "dr": [
+          [
+           "Cash",
+           "asset",
+           2000
+          ]
+         ],
+         "cr": [
+          [
+           "Sales",
+           "revenue",
+           2000
+          ]
+         ],
+         "narration": "Cash sales"
+        },
+        {
+         "date": "27",
+         "dr": [
+          [
+           "Purchases",
+           "expense",
+           4200
+          ]
+         ],
+         "cr": [
+          [
+           "Accounts Payable",
+           "liability",
+           4200
+          ]
+         ],
+         "narration": "Purchased hardware inventory for resale on account"
+        },
+        {
+         "date": "28",
+         "dr": [
+          [
+           "Salaries Expense",
+           "expense",
+           2500
+          ]
+         ],
+         "cr": [
+          [
+           "Cash",
+           "asset",
+           2500
+          ]
+         ],
+         "narration": "Paid April salaries"
+        },
+        {
+         "date": "30",
+         "dr": [
+          [
+           "Cash",
+           "asset",
+           16000
+          ]
+         ],
+         "cr": [
+          [
+           "A/R – Fern Limited",
+           "asset",
+           16000
+          ]
+         ],
+         "narration": "Fern Limited paid amount due (19 April)"
+        },
+        {
+         "date": "30",
+         "dr": [
+          [
+           "Drawings",
+           "drawings",
+           400
+          ]
+         ],
+         "cr": [
+          [
+           "Cash",
+           "asset",
+           400
+          ]
+         ],
+         "narration": "Owner withdrew cash for personal use"
+        }
+       ]
+      }
+     ],
+     "sourceNote": "办公用品也有教材直接记为费用（Office Supplies Expense），两种都可以，但同一企业要一致。"
+    },
+    {
+     "label": "例 5",
+     "ref": "Tutorial Self-study 1",
+     "question": "AB Civil Engineers, June 2024: 1 Anthony contributed $20,000 cash; 4 office furniture $3,500 cash from Furniture'R'Us; 13 stationery supplies $320 on credit from Omega; 20 provided a $3,000 quote to a prospective client; 28 engineering services $5,000 on credit; 30 paid Omega for the 13 June purchase. Complete the General Journal.",
+     "solution": "June 20 只是报价，没有改变企业的财务状况，<strong>不是交易</strong>，不做分录。其余五笔如下。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "June 1",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           20000
+          ]
+         ],
+         "cr": [
+          [
+           "Capital",
+           "equity",
+           20000
+          ]
+         ],
+         "narration": "Anthony contributed cash"
+        },
+        {
+         "date": "4",
+         "dr": [
+          [
+           "Office Furniture",
+           "asset",
+           3500
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           3500
+          ]
+         ],
+         "narration": "Office furniture from Furniture'R'Us"
+        },
+        {
+         "date": "13",
+         "dr": [
+          [
+           "Stationery Supplies",
+           "asset",
+           320
+          ]
+         ],
+         "cr": [
+          [
+           "A/P – Omega Stationery",
+           "liability",
+           320
+          ]
+         ],
+         "narration": "Stationery on credit"
+        },
+        {
+         "date": "28",
+         "dr": [
+          [
+           "Accounts Receivable",
+           "asset",
+           5000
+          ]
+         ],
+         "cr": [
+          [
+           "Service Revenue",
+           "revenue",
+           5000
+          ]
+         ],
+         "narration": "Engineering services on credit"
+        },
+        {
+         "date": "30",
+         "dr": [
+          [
+           "A/P – Omega Stationery",
+           "liability",
+           320
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           320
+          ]
+         ],
+         "narration": "Paid Omega for 13 June purchase"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "label": "例 6",
+     "ref": "Tutorial Self-study 2",
+     "question": "Christie's Toys Shoppe, January: Jan 1 invested $50,000 cash; Jan 2 toys from Mira Ltd on credit $5,000 for resale; Jan 5 Mr Blacksend bought $1,000 of teddy bears on credit; Jan 15 paid Mira Ltd $3,000; Jan 19 Mr Blacksend paid in full. Enter in the General Journal.",
+     "solution": "Jan 15 是部分还款（3 000 of 5 000）；Jan 19 收回全部 1 000 应收账款。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "Jan 1",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           50000
+          ]
+         ],
+         "cr": [
+          [
+           "Capital",
+           "equity",
+           50000
+          ]
+         ],
+         "narration": "Christie invested cash"
+        },
+        {
+         "date": "Jan 2",
+         "dr": [
+          [
+           "Purchases",
+           "expense",
+           5000
+          ]
+         ],
+         "cr": [
+          [
+           "A/P – Mira Ltd",
+           "liability",
+           5000
+          ]
+         ],
+         "narration": "Toys for resale on credit"
+        },
+        {
+         "date": "Jan 5",
+         "dr": [
+          [
+           "A/R – Mr Blacksend",
+           "asset",
+           1000
+          ]
+         ],
+         "cr": [
+          [
+           "Sales",
+           "revenue",
+           1000
+          ]
+         ],
+         "narration": "Teddy bears sold on credit"
+        },
+        {
+         "date": "Jan 15",
+         "dr": [
+          [
+           "A/P – Mira Ltd",
+           "liability",
+           3000
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           3000
+          ]
+         ],
+         "narration": "Partial payment to Mira Ltd"
+        },
+        {
+         "date": "Jan 19",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           1000
+          ]
+         ],
+         "cr": [
+          [
+           "A/R – Mr Blacksend",
+           "asset",
+           1000
+          ]
+         ],
+         "narration": "Mr Blacksend paid in full"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "label": "例 7",
+     "ref": "Worksheet 3",
+     "question": "Worksheet 3: write the General Journal entries (dated 29 Sep) for the 10 transactions from Worksheet Transaction Analysis 2.",
+     "solution": "把第 2 周工作纸分析表的每一笔改写成分录：分析表里 Dr 的账户写在第一行、金额进借方栏；Cr 的账户缩进写在第二行、金额进贷方栏；下面写摘要。交易本身来自课堂房产游戏，每人不同，所以没有统一答案。",
+     "sourceNote": "资料只有空白模板，交易来自 Worksheet Transaction Analysis 2 的课堂记录。",
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "贷方账户没有缩进：考试格式要求贷方缩进。",
+    "漏写摘要。",
+    "把报价、订单当交易入账：财务状况没变就不是交易。",
+    "一笔分录借贷金额不等。"
+   ],
+   "faqs": [
+    {
+     "q": "日记账和分析表有什么关系？",
+     "a": "分析表帮你决定借谁贷谁；分录表是正式的记录格式。考试可能两个都要。"
+    },
+    {
+     "q": "账户名可以自己起吗？",
+     "a": "可以有一定弹性（如 Delivery Trucks 或 Delivery Vehicles），但要准确描述，而且前后一致。"
+    }
+   ]
+  },
+  {
+   "title": "现金折扣与商业折扣（Settlement vs Trade Discounts）",
+   "sources": [
+    {
+     "file": "unit4 lecture slides journal entries.pdf",
+     "pages": "p9–17"
+    },
+    {
+     "file": "unit4 reading materials journal entries.pdf",
+     "pages": "p2–4"
+    },
+    {
+     "file": "unit4 tutorial guide journal entries.pdf",
+     "pages": "p5"
+    }
+   ],
+   "concept": "<strong>付款条件</strong>如「2%/7 days, net 30 days」（也写作 2/7, n/30）：7 天内付款可享发票价（扣除退货后）2% 的折扣，最迟 30 天付清全款。\n<strong>商业折扣</strong>（trade discount）在买卖时直接减价，<strong>不入账</strong>，按折后价记录。\n<strong>现金折扣</strong>（settlement / prompt payment discount）鼓励提前付款：买方得到的叫 <strong>Discount Received</strong>（收入），卖方给出的叫 <strong>Discount Allowed</strong>（费用）。\n买方提前付款：Dr A/P 全额，Cr Cash 实付，Cr Discount Received 折扣。卖方提前收款：Dr Cash 实收，Dr Discount Allowed 折扣，Cr A/R 全额。超过折扣期则按全额收付。",
+   "formulas": [
+    "折扣 = (发票价 − 退货) × 折扣率　　实付 = (发票价 − 退货) − 折扣"
+   ],
+   "examples": [
+    {
+     "label": "例 8",
+     "ref": "Tutorial Q2",
+     "question": "Explain what the terms 2%/7 days and net 30 days represent when included in a sales invoice.",
+     "solution": "2%/7 days：买方在发票日后 7 天内付款，可以从发票金额（扣除退货后）中减去 2% 的现金折扣。\nnet 30 days：不享受折扣时，最迟在发票日后 30 天付清全部金额。",
+     "numeric": false
+    },
+    {
+     "label": "例 9",
+     "ref": "Lecture Trade Discount",
+     "question": "A software box was $100; a 10% discount is given for a high volume. How is it recorded by the buyer?",
+     "solution": "商业折扣不入账，按折后价记录：100 × (1 − 10%) = 90，记为现金购买软件 $90。",
+     "checks": [
+      {
+       "expr": "100*0.9",
+       "equals": "90"
+      }
+     ]
+    },
+    {
+     "label": "例 10",
+     "ref": "Reading Trade Discount",
+     "question": "A seller quotes $500 per item with a 10% trade discount for 8 or more items. The buyer purchases 10 items on 19 May. What is the invoice price recorded?",
+     "solution": "10 × 500 × 90% = 4 500，买方按 4 500 记 Purchases，折扣本身不入账。",
+     "checks": [
+      {
+       "expr": "10*500*0.9",
+       "equals": "4500"
+      }
+     ],
+     "sourceNote": "阅读材料的分录是图片，没有抽出文字；金额按正文计算。"
+    },
+    {
+     "label": "例 11",
+     "ref": "Lecture Discount Received",
+     "question": "Kingsford Trading bought baby cribs worth $10,000 from Queen Limited on credit; terms 1%/7 days, net 21 days. Kingsford pays within 7 days. Record the entries.",
+     "solution": "先记赊购，再记 7 天内付款：折扣 10 000 × 1% = 100，实付 9 900。如果超过 7 天付款，则 Dr A/P 10 000、Cr Cash 10 000。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "Purchase",
+         "dr": [
+          [
+           "Purchases",
+           "expense",
+           10000
+          ]
+         ],
+         "cr": [
+          [
+           "A/P – Queen Limited",
+           "liability",
+           10000
+          ]
+         ],
+         "narration": "Purchased goods on credit"
+        },
+        {
+         "date": "Paid ≤7 days",
+         "dr": [
+          [
+           "A/P – Queen Limited",
+           "liability",
+           10000
+          ]
+         ],
+         "cr": [
+          [
+           "Cash",
+           "asset",
+           9900
+          ],
+          [
+           "Discount Received",
+           "revenue",
+           100
+          ]
+         ],
+         "narration": "Paid within discount period"
+        }
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "10000*0.01",
+       "equals": "100"
+      }
+     ]
+    },
+    {
+     "label": "例 12",
+     "ref": "Lecture Discount Allowed",
+     "question": "Kingsford sold baby cribs worth $20,000 to Princess Limited; terms 2%/10 days, net 30 days. Princess pays within 10 days. Record the entries.",
+     "solution": "折扣 20 000 × 2% = 400，实收 19 600。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "Sale",
+         "dr": [
+          [
+           "A/R – Princess Limited",
+           "asset",
+           20000
+          ]
+         ],
+         "cr": [
+          [
+           "Sales",
+           "revenue",
+           20000
+          ]
+         ],
+         "narration": "Sold goods on credit"
+        },
+        {
+         "date": "Paid ≤10 days",
+         "dr": [
+          [
+           "Cash",
+           "asset",
+           19600
+          ],
+          [
+           "Discount Allowed",
+           "expense",
+           400
+          ]
+         ],
+         "cr": [
+          [
+           "A/R – Princess Limited",
+           "asset",
+           20000
+          ]
+         ],
+         "narration": "Received within discount period"
+        }
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "20000*0.02",
+       "equals": "400"
+      }
+     ]
+    },
+    {
+     "label": "例 13",
+     "ref": "Reading Sauk Stereo",
+     "question": "Sauk Stereo pays the balance due of $3,500 (gross invoice $3,800 less purchase returns $300) on 12 May, the last day of the 2% discount period. Record the entry for Sauk Stereo (buyer) and for PW Audio Supply Ltd (seller).",
+     "solution": "折扣按扣除退货后的金额计算：3 500 × 2% = 70，实付 3 430。买方记 Discount Received，卖方记 Discount Allowed。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "12 May (Sauk)",
+         "dr": [
+          [
+           "Accounts Payable",
+           "liability",
+           3500
+          ]
+         ],
+         "cr": [
+          [
+           "Cash",
+           "asset",
+           3430
+          ],
+          [
+           "Discount Received",
+           "revenue",
+           70
+          ]
+         ],
+         "narration": "Sauk Stereo: paid within discount period"
+        }
+       ]
+      },
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "12 May (PW Audio)",
+         "dr": [
+          [
+           "Cash",
+           "asset",
+           3430
+          ],
+          [
+           "Discount Allowed",
+           "expense",
+           70
+          ]
+         ],
+         "cr": [
+          [
+           "Accounts Receivable",
+           "asset",
+           3500
+          ]
+         ],
+         "narration": "PW Audio: received within discount period"
+        }
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "(3800-300)*0.02",
+       "equals": "70"
+      }
+     ]
+    },
+    {
+     "label": "例 14",
+     "ref": "Tutorial Q3",
+     "question": "a) On 5 January Greenheart Co purchased goods from BlueGem Co worth $5,000; terms 2%, 7 days, n=14. Greenheart paid on 10 January. Record Greenheart's entry on 10 January. b) On 7 March Greenheart sold $7,000 of goods to Red Rhombus Co; terms 1%, 8 days, n=21. Red Rhombus paid on 11 March. Record Greenheart's entry on 11 March.",
+     "solution": "a) 1 月 10 日距 5 日 5 天，在 7 天内，折扣 5 000 × 2% = 100。\nb) 3 月 11 日距 7 日 4 天，在 8 天内，折扣 7 000 × 1% = 70。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "10 Jan",
+         "dr": [
+          [
+           "A/P – BlueGem Co",
+           "liability",
+           5000
+          ]
+         ],
+         "cr": [
+          [
+           "Cash",
+           "asset",
+           4900
+          ],
+          [
+           "Discount Received",
+           "revenue",
+           100
+          ]
+         ],
+         "narration": "Paid BlueGem within 7 days, 2% discount"
+        }
+       ]
+      },
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "11 Mar",
+         "dr": [
+          [
+           "Cash",
+           "asset",
+           6930
+          ],
+          [
+           "Discount Allowed",
+           "expense",
+           70
+          ]
+         ],
+         "cr": [
+          [
+           "A/R – Red Rhombus Co",
+           "asset",
+           7000
+          ]
+         ],
+         "narration": "Red Rhombus paid within 8 days, 1% discount"
+        }
+       ]
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ],
+     "checks": [
+      {
+       "expr": "5000*0.02",
+       "equals": "100"
+      },
+      {
+       "expr": "7000*0.01",
+       "equals": "70"
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "把商业折扣入账：商业折扣只体现在发票价里。",
+    "Discount Received 当费用：买方得到折扣是收入。",
+    "折扣按含退货的金额算：要先扣除退货。",
+    "超过折扣期仍给折扣：先数天数。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么现金折扣要单独记账，而商业折扣不用？",
+     "a": "商业折扣在成交时就确定了价格；现金折扣取决于对方是否提前付款，成交时不知道，所以付款时再记。"
+    },
+    {
+     "q": "A/P 为什么借记全额？",
+     "a": "欠款全部了结，所以应付账款按全额冲减；少付的部分是得到的折扣。"
+    }
+   ]
+  },
+  {
+   "title": "退货与坏账（Returns and Bad Debts）",
+   "sources": [
+    {
+     "file": "unit4 lecture slides journal entries.pdf",
+     "pages": "p18–21, p26–27"
+    },
+    {
+     "file": "unit4 reading materials journal entries.pdf",
+     "pages": "p4"
+    },
+    {
+     "file": "unit4 tutorial guide journal entries.pdf",
+     "pages": "p6–8, p11–12"
+    }
+   ],
+   "concept": "<strong>购货退回</strong>：Purchases 不能直接冲减，用 <strong>Purchase Returns</strong> 账户：Dr A/P（或 Cash），Cr Purchase Returns。\n<strong>销货退回</strong>：Sales 不能直接冲减，用 <strong>Sales Returns</strong> 账户：Dr Sales Returns，Cr A/R（或 Cash）。\n<strong>坏账</strong>：确定收不回的应收账款（如客户破产），是费用：Dr Bad Debts，Cr A/R，同时从应收账款中注销。\n退货发生在付款之前时，现金折扣按「发票价 − 退货」计算。",
+   "examples": [
+    {
+     "label": "例 15",
+     "ref": "Lecture Returns",
+     "question": "Kingsford purchases toys from Queen Limited worth $5,000 on account, then returns toys worth $400 due to incorrect colour. Kingsford also sells toys to Princess Limited worth $7,500 on account, and Princess returns toys worth $600 damaged in transit. Record the four entries.",
+     "solution": "购货和退货、销货和退货各一笔。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "4-Feb",
+         "dr": [
+          [
+           "Purchases",
+           "expense",
+           5000
+          ]
+         ],
+         "cr": [
+          [
+           "A/P – Queen Ltd",
+           "liability",
+           5000
+          ]
+         ],
+         "narration": "Purchased toys from Queen on account"
+        },
+        {
+         "date": "4-Feb",
+         "dr": [
+          [
+           "A/P – Queen Ltd",
+           "liability",
+           400
+          ]
+         ],
+         "cr": [
+          [
+           "Purchase Returns",
+           "contra-expense",
+           400
+          ]
+         ],
+         "narration": "Returned toys to Queen, incorrect colour"
+        },
+        {
+         "date": "4-Feb",
+         "dr": [
+          [
+           "A/R – Princess Limited",
+           "asset",
+           7500
+          ]
+         ],
+         "cr": [
+          [
+           "Sales",
+           "revenue",
+           7500
+          ]
+         ],
+         "narration": "Sold toys on account to Princess"
+        },
+        {
+         "date": "4-Feb",
+         "dr": [
+          [
+           "Sales Returns",
+           "contra-revenue",
+           600
+          ]
+         ],
+         "cr": [
+          [
+           "A/R – Princess Limited",
+           "asset",
+           600
+          ]
+         ],
+         "narration": "Princess returned toys damaged in transit"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "label": "例 16",
+     "ref": "Lecture Bad Debt",
+     "question": "On 1/1, J. Hammer has declared bankruptcy and owes $160. Record the bad debt.",
+     "solution": "客户破产，160 元收不回：坏账费用增加，应收账款减少。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "1/1",
+         "dr": [
+          [
+           "Bad Debts Expense",
+           "expense",
+           160
+          ]
+         ],
+         "cr": [
+          [
+           "A/R – J. Hammer",
+           "asset",
+           160
+          ]
+         ],
+         "narration": "Bad debt written off, J. Hammer declared bankruptcy"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "label": "例 17",
+     "ref": "Reading Bad Debt",
+     "question": "Warden Pty Ltd writes off M.E. Doran's $200 balance as uncollectable on 12 December.",
+     "solution": "同样是 Dr Bad Debts、Cr A/R。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "12 Dec",
+         "dr": [
+          [
+           "Bad Debts Expense",
+           "expense",
+           200
+          ]
+         ],
+         "cr": [
+          [
+           "A/R – M.E. Doran",
+           "asset",
+           200
+          ]
+         ],
+         "narration": "Write-off of uncollectable account"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "label": "例 18",
+     "ref": "Tutorial Q4",
+     "question": "Alex Roger's flower shop & delivery, July: 2 invested $30,000; 3 used van $20,000 from Packham Autos, $4,000 cash and the rest on account; 5 delivery services $2,000 on account; 6 withdrew $400; 7 flowers $3,000 from Dural Nursery on account (2%/5 days, net 14); 7 received partial payment $1,500 for services of 5 July; 9 paid $3,000 on the van; 11 paid Dural the entire outstanding amount; 12 flowers to Lily Event Management $7,200 on account (1%/7 days, net 21); 13 Lily returned $200 damaged; 15 Lily paid its outstanding amount; 15 accessories $2,100 from Winter Limited on account (2%/7 days, net 18); 18 returned $100 damaged to Winter; 20 paid Winter the outstanding amount; 23 orchids for resale $1,500 cash; 29 sold flowers $4,000 cash. Record the journal entries.",
+     "solution": "逐笔判断有没有折扣：\nJul 3 一笔分录三个账户（复合分录）。\nJul 11：7 日到 11 日 4 天，在 5 天内，折扣 3 000 × 2% = 60。\nJul 15 Lily：12 日到 15 日 3 天，在 7 天内，折扣 (7 200 − 200) × 1% = 70，实收 6 930。\nJul 20 Winter：15 日到 20 日 5 天，在 7 天内，折扣 (2 100 − 100) × 2% = 40，实付 1 960。\nJul 7 收 Jul 5 的 1 500：题目没有给这笔服务的付款条件，按全额收款。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "2 Jul",
+         "dr": [
+          [
+           "Cash",
+           "asset",
+           30000
+          ]
+         ],
+         "cr": [
+          [
+           "Capital",
+           "equity",
+           30000
+          ]
+         ],
+         "narration": "Owner invested cash"
+        },
+        {
+         "date": "3",
+         "dr": [
+          [
+           "Delivery Van",
+           "asset",
+           20000
+          ]
+         ],
+         "cr": [
+          [
+           "Cash",
+           "asset",
+           4000
+          ],
+          [
+           "A/P – Packham Autos",
+           "liability",
+           16000
+          ]
+         ],
+         "narration": "Purchased used van, $4,000 cash and balance on account"
+        },
+        {
+         "date": "5",
+         "dr": [
+          [
+           "A/R",
+           "asset",
+           2000
+          ]
+         ],
+         "cr": [
+          [
+           "Sales",
+           "revenue",
+           2000
+          ]
+         ],
+         "narration": "Delivery services on account"
+        },
+        {
+         "date": "6",
+         "dr": [
+          [
+           "Drawings",
+           "drawings",
+           400
+          ]
+         ],
+         "cr": [
+          [
+           "Cash",
+           "asset",
+           400
+          ]
+         ],
+         "narration": "Owner withdrew cash"
+        },
+        {
+         "date": "7",
+         "dr": [
+          [
+           "Purchases",
+           "expense",
+           3000
+          ]
+         ],
+         "cr": [
+          [
+           "A/P – Dural Nursery",
+           "liability",
+           3000
+          ]
+         ],
+         "narration": "Flowers on account, 2%/5, n/14"
+        },
+        {
+         "date": "7",
+         "dr": [
+          [
+           "Cash",
+           "asset",
+           1500
+          ]
+         ],
+         "cr": [
+          [
+           "A/R",
+           "asset",
+           1500
+          ]
+         ],
+         "narration": "Partial payment for services of 5 July"
+        },
+        {
+         "date": "9",
+         "dr": [
+          [
+           "A/P – Packham Autos",
+           "liability",
+           3000
+          ]
+         ],
+         "cr": [
+          [
+           "Cash",
+           "asset",
+           3000
+          ]
+         ],
+         "narration": "Part payment for delivery van"
+        },
+        {
+         "date": "11",
+         "dr": [
+          [
+           "A/P – Dural Nursery",
+           "liability",
+           3000
+          ]
+         ],
+         "cr": [
+          [
+           "Cash",
+           "asset",
+           2940
+          ],
+          [
+           "Discount Received",
+           "revenue",
+           60
+          ]
+         ],
+         "narration": "Paid Dural within 5 days, 2% discount"
+        },
+        {
+         "date": "12",
+         "dr": [
+          [
+           "A/R – Lily Event Management",
+           "asset",
+           7200
+          ]
+         ],
+         "cr": [
+          [
+           "Sales",
+           "revenue",
+           7200
+          ]
+         ],
+         "narration": "Wedding flowers on account, 1%/7, n/21"
+        },
+        {
+         "date": "13",
+         "dr": [
+          [
+           "Sales Returns",
+           "contra-revenue",
+           200
+          ]
+         ],
+         "cr": [
+          [
+           "A/R – Lily Event Management",
+           "asset",
+           200
+          ]
+         ],
+         "narration": "Flowers returned, damaged in transit"
+        },
+        {
+         "date": "15",
+         "dr": [
+          [
+           "Cash",
+           "asset",
+           6930
+          ],
+          [
+           "Discount Allowed",
+           "expense",
+           70
+          ]
+         ],
+         "cr": [
+          [
+           "A/R – Lily Event Management",
+           "asset",
+           7000
+          ]
+         ],
+         "narration": "Lily paid within 7 days, 1% discount"
+        },
+        {
+         "date": "15",
+         "dr": [
+          [
+           "Purchases",
+           "expense",
+           2100
+          ]
+         ],
+         "cr": [
+          [
+           "A/P – Winter Limited",
+           "liability",
+           2100
+          ]
+         ],
+         "narration": "Accessories on account, 2%/7, n/18"
+        },
+        {
+         "date": "18",
+         "dr": [
+          [
+           "A/P – Winter Limited",
+           "liability",
+           100
+          ]
+         ],
+         "cr": [
+          [
+           "Purchase Returns",
+           "contra-expense",
+           100
+          ]
+         ],
+         "narration": "Returned damaged accessories"
+        },
+        {
+         "date": "20",
+         "dr": [
+          [
+           "A/P – Winter Limited",
+           "liability",
+           2000
+          ]
+         ],
+         "cr": [
+          [
+           "Cash",
+           "asset",
+           1960
+          ],
+          [
+           "Discount Received",
+           "revenue",
+           40
+          ]
+         ],
+         "narration": "Paid Winter within 7 days, 2% discount"
+        },
+        {
+         "date": "23",
+         "dr": [
+          [
+           "Purchases",
+           "expense",
+           1500
+          ]
+         ],
+         "cr": [
+          [
+           "Cash",
+           "asset",
+           1500
+          ]
+         ],
+         "narration": "Orchids for resale, cash"
+        },
+        {
+         "date": "29",
+         "dr": [
+          [
+           "Cash",
+           "asset",
+           4000
+          ]
+         ],
+         "cr": [
+          [
+           "Sales",
+           "revenue",
+           4000
+          ]
+         ],
+         "narration": "Cash sales"
+        }
+       ]
+      }
+     ],
+     "sourceNote": "第 5 周 Tutorial Guide 给出的这家店的分录里，Jul 7 收款写成 Cash 1 470 + Discount Allowed 30，还多了一笔 Jul 12 工资 1 500；本周题目没有这两项依据，这里按本周题目作答。",
+     "checks": [
+      {
+       "expr": "3000*0.02",
+       "equals": "60"
+      },
+      {
+       "expr": "(7200-200)*0.01",
+       "equals": "70"
+      },
+      {
+       "expr": "(2100-100)*0.02",
+       "equals": "40"
+      }
+     ]
+    },
+    {
+     "label": "例 19",
+     "ref": "Tutorial Lois Lane",
+     "question": "Lois Lane Bookshop, June: 1 books from Oak Limited $7,300, terms 5%/5 days, net 14; 2 returned the Jane Austen Collection $1,200 to Richmond Limited (damaged bindings); 3 returned books $300 to Oak; 4 paid Oak; 7 paid Richmond the outstanding $2,400, no discount. Record the transactions.",
+     "solution": "June 4：3 日内付款，在 5 天内，折扣 (7 300 − 300) × 5% = 350，实付 6 650。Richmond 的欠款是之前的赊购，这里只记退货和付款。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "June 1",
+         "dr": [
+          [
+           "Purchases",
+           "expense",
+           7300
+          ]
+         ],
+         "cr": [
+          [
+           "A/P – Oak Limited",
+           "liability",
+           7300
+          ]
+         ],
+         "narration": "Books from Oak, 5%/5, n/14"
+        },
+        {
+         "date": "2",
+         "dr": [
+          [
+           "A/P – Richmond Limited",
+           "liability",
+           1200
+          ]
+         ],
+         "cr": [
+          [
+           "Purchase Returns",
+           "contra-expense",
+           1200
+          ]
+         ],
+         "narration": "Returned damaged Jane Austen Collection"
+        },
+        {
+         "date": "3",
+         "dr": [
+          [
+           "A/P – Oak Limited",
+           "liability",
+           300
+          ]
+         ],
+         "cr": [
+          [
+           "Purchase Returns",
+           "contra-expense",
+           300
+          ]
+         ],
+         "narration": "Returned books to Oak"
+        },
+        {
+         "date": "4",
+         "dr": [
+          [
+           "A/P – Oak Limited",
+           "liability",
+           7000
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           6650
+          ],
+          [
+           "Discount Received",
+           "revenue",
+           350
+          ]
+         ],
+         "narration": "Paid Oak within 5 days, 5% discount"
+        },
+        {
+         "date": "7",
+         "dr": [
+          [
+           "A/P – Richmond Limited",
+           "liability",
+           2400
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           2400
+          ]
+         ],
+         "narration": "Paid Richmond, no discount"
+        }
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "(7300-300)*0.05",
+       "equals": "350"
+      }
+     ]
+    },
+    {
+     "label": "例 20",
+     "ref": "Tutorial Thor Painting",
+     "question": "Thor Painting, terms 2%/7 days, net 21 days. May: 1 sold paint $7,000 to Willow for cash; 2 sold paint $12,400 to Acacia on account; 3 sold accessories $3,500 on account to Aloe; 4 Acacia returned $400 (incorrect colour); 5 Acacia paid the amount due for 2 May; 9 Aloe returned $500 (damaged); 10 Violet Trading paid an April balance of $4,000, no discount; 12 debtor T. Evans declared bankrupt, owing $450. Record the transactions.",
+     "solution": "May 5：2 日到 5 日 3 天，在 7 天内，折扣 (12 400 − 400) × 2% = 240，实收 11 760。May 12 坏账 450。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "May 1",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           7000
+          ]
+         ],
+         "cr": [
+          [
+           "Sales",
+           "revenue",
+           7000
+          ]
+         ],
+         "narration": "Cash sale to Willow Limited"
+        },
+        {
+         "date": "2",
+         "dr": [
+          [
+           "A/R – Acacia Limited",
+           "asset",
+           12400
+          ]
+         ],
+         "cr": [
+          [
+           "Sales",
+           "revenue",
+           12400
+          ]
+         ],
+         "narration": "Paint on account"
+        },
+        {
+         "date": "3",
+         "dr": [
+          [
+           "A/R – Aloe Limited",
+           "asset",
+           3500
+          ]
+         ],
+         "cr": [
+          [
+           "Sales",
+           "revenue",
+           3500
+          ]
+         ],
+         "narration": "Accessories on account"
+        },
+        {
+         "date": "4",
+         "dr": [
+          [
+           "Sales Returns",
+           "contra-revenue",
+           400
+          ]
+         ],
+         "cr": [
+          [
+           "A/R – Acacia Limited",
+           "asset",
+           400
+          ]
+         ],
+         "narration": "Returned, incorrect colour"
+        },
+        {
+         "date": "5",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           11760
+          ],
+          [
+           "Discount Allowed",
+           "expense",
+           240
+          ]
+         ],
+         "cr": [
+          [
+           "A/R – Acacia Limited",
+           "asset",
+           12000
+          ]
+         ],
+         "narration": "Acacia paid within 7 days, 2% discount"
+        },
+        {
+         "date": "9",
+         "dr": [
+          [
+           "Sales Returns",
+           "contra-revenue",
+           500
+          ]
+         ],
+         "cr": [
+          [
+           "A/R – Aloe Limited",
+           "asset",
+           500
+          ]
+         ],
+         "narration": "Returned, damaged in transit"
+        },
+        {
+         "date": "10",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           4000
+          ]
+         ],
+         "cr": [
+          [
+           "A/R – Violet Trading",
+           "asset",
+           4000
+          ]
+         ],
+         "narration": "Violet paid April balance, no discount"
+        },
+        {
+         "date": "12",
+         "dr": [
+          [
+           "Bad Debts",
+           "expense",
+           450
+          ]
+         ],
+         "cr": [
+          [
+           "A/R – T. Evans",
+           "asset",
+           450
+          ]
+         ],
+         "narration": "T. Evans declared bankrupt, debt written off"
+        }
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "(12400-400)*0.02",
+       "equals": "240"
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "退货直接冲减 Sales 或 Purchases：要用 Returns 账户。",
+    "坏账记为 Sales Returns：坏账是费用，不是退货。",
+    "有退货时按原发票额算折扣。",
+    "复合分录（如 Jul 3）只写两行：现金和应付各一行。"
+   ],
+   "faqs": [
+    {
+     "q": "Sales Returns 是什么类型？",
+     "a": "它是收入的抵减账户（contra-revenue），余额在借方，报表上从 Sales 中扣除。"
+    },
+    {
+     "q": "坏账是不是就不用再追讨了？",
+     "a": "会计上注销，表示不再作为资产列示；法律上的追讨是另一回事。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "步骤",
+   "做什么",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "1 判断是不是交易",
+    "财务状况变了才记",
+    "例 5"
+   ],
+   [
+    "2 写分录",
+    "借方在前、贷方缩进、写摘要、借贷相等",
+    "例 2、4"
+   ],
+   [
+    "3 折扣",
+    "数天数 → (发票 − 退货) × 率 → 买方收入、卖方费用",
+    "例 11–14、18"
+   ],
+   [
+    "4 退货、坏账",
+    "Returns 账户；Bad Debts 冲 A/R",
+    "例 15–20"
+   ]
+  ]
+ },
+ "practice": "本周任务：阅读 Unit 4 Readings；完成 Tutorial Questions（术语、Q1–Q3）和课堂 Q4；自学题；Worksheet 3。"
+}

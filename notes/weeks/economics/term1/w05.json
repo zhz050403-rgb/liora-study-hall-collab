@@ -1,0 +1,1229 @@
+{
+ "course": "economics",
+ "term": "term1",
+ "week": 5,
+ "title": "Week 5 · Unit 5 Pricing and income of the firm and its customers",
+ "answersTitle": "Tutorial 4 Market Successes and Failures + Tutorial 5 Elasticity",
+ "files": [
+  "unit5 lecture pricing and income of the firm and its customers.pdf.pdf",
+  "unit5 tutorial guide tg pricing and income of the firm and its customers.pdf",
+  "unit4 TG market successes and failures.pdf",
+  "unit4 PPT market successes and failures.pdf"
+ ],
+ "inventory": [
+  {
+   "ref": "Tutorial 4 Terms",
+   "deliverables": [
+    {
+     "type": "terms",
+     "terms": [
+      "Social surplus",
+      "Shortage",
+      "Efficiency",
+      "Price system",
+      "Market failure",
+      "Public goods",
+      "Rival goods",
+      "Excludable goods",
+      "Externalities"
+     ]
+    }
+   ]
+  },
+  "Tutorial 4 Q1",
+  {
+   "ref": "Tutorial 4 Q2",
+   "parts": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G"
+   ]
+  },
+  "Tutorial 4 Q3",
+  {
+   "ref": "Tutorial 4 Q4",
+   "parts": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ],
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial 4 Q5",
+   "parts": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f"
+   ],
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "Tutorial 4 Q6–Q9",
+  {
+   "ref": "Tutorial 4 Q10",
+   "parts": [
+    "1",
+    "2"
+   ]
+  },
+  "Lecture 5.1 Example 3",
+  {
+   "ref": "Lecture 5.1 Income Elasticity",
+   "parts": [
+    "Ex 4",
+    "Ex 5",
+    "Ex 6",
+    "Ex 7"
+   ]
+  },
+  {
+   "ref": "Lecture 5.1 Cross Elasticity",
+   "parts": [
+    "Coke/Pepsi",
+    "Nail polish",
+    "Ex 8",
+    "Cars/petrol"
+   ]
+  },
+  "Lecture 5.1 Revenue",
+  "Lecture 5.2 Supply",
+  {
+   "ref": "Tutorial 5 Terms",
+   "deliverables": [
+    {
+     "type": "terms",
+     "terms": [
+      "Price elasticity of demand",
+      "Income elasticity of demand",
+      "Cross-elasticity of demand",
+      "Price elasticity of supply",
+      "Elastic",
+      "Inelastic",
+      "Unitary elasticity",
+      "Perfectly elastic"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial 5 Q1",
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial 5 Q2",
+   "parts": [
+    "1",
+    "2"
+   ]
+  },
+  "Tutorial 5 Q3",
+  "Tutorial 5 Q4",
+  {
+   "ref": "Tutorial 5 Q5",
+   "parts": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f"
+   ]
+  },
+  {
+   "ref": "Tutorial 5 Q6",
+   "parts": [
+    "6.1",
+    "6.2",
+    "6.3",
+    "6.4"
+   ],
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial 5 Presentations",
+   "parts": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ]
+  }
+ ],
+ "intro": [
+  "本周 Tutorial 做 <strong>Unit 4</strong>（市场失灵、公共物品、外部性），讲座和 Tutorial Guide 是 <strong>Unit 5 弹性</strong>：需求价格弹性、收入弹性、交叉弹性和供给弹性。所有弹性计算都由核对式复算；讲义里一处四舍五入造成的出入在对应例题下说明。"
+ ],
+ "sections": [
+  {
+   "title": "Unit 4 Tutorial：市场失灵、公共物品与外部性",
+   "sources": [
+    {
+     "file": "unit4 TG market successes and failures.pdf",
+     "pages": "p2–5"
+    },
+    {
+     "file": "unit4 PPT market successes and failures.pdf",
+     "pages": "p31–57"
+    }
+   ],
+   "concept": "复习 Unit 4：价格机制在没有外部性、有充分竞争时是有效的；市场失灵包括不提供公共物品、缺乏竞争、外部性。<strong>社会（经济）剩余</strong>是消费者剩余与生产者剩余之和，有效率时最大。外部成本加在供给曲线上（社会成本高于私人成本），外部收益加在需求曲线上（社会收益高于私人收益）；<strong>最优产量</strong>是社会边际收益等于社会边际成本的产量。",
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "Tutorial 4 Terms",
+     "question": "Define: Social (economic) surplus; Shortage; Efficiency; Price system; Market failure; Public goods; Rival goods; Excludable goods; Externalities (spillovers).",
+     "solution": "<strong>Social surplus</strong>：消费者剩余加生产者剩余，市场有效率时最大。\n<strong>Shortage</strong>：价格低于均衡价格时需求量大于供给量。\n<strong>Efficiency</strong>：资源配置使社会从中得到最大利益（社会剩余最大），没有浪费。\n<strong>Price system</strong>：由价格信号协调买卖双方、分配资源的机制。\n<strong>Market failure</strong>：价格机制不能有效运转、造成社会问题的情况。\n<strong>Public goods</strong>：非竞争、非排他的物品，如国防、路灯。\n<strong>Rival goods</strong>：一人消费后别人就不能消费的物品，如一个苹果。\n<strong>Excludable goods</strong>：不付钱就可以被排除使用的物品，如衣服。\n<strong>Externalities</strong>：强加给交易之外第三方的成本（负外部性）或收益（正外部性）。",
+     "numeric": false
+    },
+    {
+     "label": "例 2",
+     "ref": "Tutorial 4 Q1",
+     "question": "Outline the main disadvantages of the market system and give three examples of market failure. (At least 30 words.)",
+     "solution": "市场体系只有在充分竞争、没有外部性时才有效率。它的缺点是：不会提供人人都能免费享用的公共物品（国防、路灯），因为有搭便车问题；没有竞争时厂商会勾结限产抬价（如 Visy 和 Amcor 价格操纵）；价格不包括外部成本和外部收益，使污染类商品生产过多、教育和疫苗这类商品生产不足。三个市场失灵的例子：公共物品不提供、缺乏竞争、外部性。",
+     "numeric": false
+    },
+    {
+     "label": "例 3",
+     "ref": "Tutorial 4 Q2",
+     "question": "Indicate YES/NO for rival and exclusive: A Australian defence forces; B unemployment benefits; C a can of soft drink; D a seat on a public bus; E a commercial radio broadcast; F the sight of flowers in a public park; G a cable TV broadcast.",
+     "solution": "A 国防：非竞争、非排他 → NO / NO（公共物品）\nB 失业救济金：发给一个人的钱不能再给别人，且只有符合条件的人能领 → YES / YES\nC 一罐汽水 → YES / YES（私人物品）\nD 公交车座位：座位有限，没票不能坐 → YES / YES\nE 商业电台广播：多一个人收听不影响别人，也无法阻止 → NO / NO\nF 公园里的花：→ NO / NO\nG 有线电视：多一个观众不影响别人（非竞争），但不订阅就看不到 → NO / YES",
+     "parts": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G"
+     ],
+     "sourceNote": "B 的归类有讨论空间：失业救济金是政府的转移支付，不是一般意义上的商品；按「给了一个人就少一份」「只发给合格者」判断为 YES / YES。",
+     "numeric": false
+    },
+    {
+     "label": "例 4",
+     "ref": "Tutorial 4 Q3",
+     "question": "Describe public goods and explain why they are not produced in sufficient quantities in private markets. (At least 30 words.)",
+     "solution": "公共物品同时具有非竞争性（一个人享用不减少别人的享用）和非排他性（无法阻止不付钱的人享用），例如国防、路灯、灯塔。因为不能排除不付钱的人，人人都想搭便车，私人厂商收不到足够的钱弥补成本，无利可图，所以市场提供得太少甚至不提供。因此公共物品通常由政府用税收提供。",
+     "numeric": false
+    },
+    {
+     "label": "例 5",
+     "ref": "Tutorial 4 Q4",
+     "question": "(a) Graph demand and supply for a product. (b) Add a curve that includes spillover costs (negative externalities) and outline what the government may do to cause this. (c) Identify the optimum output and explain it. (d) Explain how including spillover costs affects price, output and resource allocation. (At least 30 words.)",
+     "solution": "(a)(b) 私人供给曲线只包含厂商自己的成本；加入外部成本后，供给曲线上移到 MSC。政府可以征税或收费（如碳税、排污费）、规定排放标准，或要求厂商赔偿受害者，让厂商承担外部成本。\n(c) 最优产量 Q* 是需求曲线与包含外部成本的供给曲线 MSC 相交时的产量：此时社会边际收益等于社会边际成本，社会福利最大。\n(d) 计入外部成本后，价格上升、产量从 Qm 减少到 Q*；原来市场生产过多、资源被过度配置到这种商品，现在资源转移到其他用途，配置更有效率。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "Price (P)",
+       "curves": [
+        {
+         "expr": "9+(-0.8)*x",
+         "dom": [
+          0,
+          11.25
+         ],
+         "color": "navy",
+         "label": [
+          9.225,
+          2.02,
+          "D"
+         ]
+        },
+        {
+         "expr": "1+(0.6)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "red",
+         "label": [
+          8.55,
+          6.63,
+          "MPC (private)"
+         ]
+        },
+        {
+         "expr": "3+(0.6)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "gold",
+         "label": [
+          8.55,
+          8.629999999999999,
+          "MSC"
+         ],
+         "dash": true
+        }
+       ],
+       "points": [
+        {
+         "x": 5.71,
+         "y": 4.43,
+         "label": "Qm"
+        },
+        {
+         "x": 4.29,
+         "y": 5.57,
+         "label": "Q* optimum"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          5.71,
+          0
+         ],
+         "to": [
+          5.71,
+          4.43
+         ]
+        },
+        {
+         "from": [
+          4.29,
+          0
+         ],
+         "to": [
+          4.29,
+          5.57
+         ]
+        }
+       ],
+       "caption": "Spillover costs included: S shifts up, P rises, Q falls to the optimum Q*"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 6",
+     "ref": "Tutorial 4 Q5",
+     "question": "(a) Graph demand and supply. (b) Add a curve including spillover benefits. (c) Outline the effect on price, output and resource allocation. (d) Identify and explain the optimum output. (e) Explain how overseas students who pay fees to study in Australia are examples of spillover benefits for their home country. (f) Explain the actions a home country can take to achieve the optimum quantity of overseas education.",
+     "solution": "(a)(b) 私人需求曲线只反映学生自己得到的收益；加上外部收益后需求曲线右移到 D social。\n(c) 计入外部收益后，价格和产量都上升，产量从 Qm 增加到 Q*；原来资源配置不足，现在更多资源用于这种商品。\n(d) 最优产量 Q*：包含外部收益的需求曲线与供给曲线的交点，社会边际收益等于社会边际成本。\n(e) 留学生自己付学费，得到更高的收入（私人收益）；回国后带回的知识和技能提高本国的生产力，传授给同事、创办企业、促进技术进步——这些好处由国内其他人享有，是外部收益。\n(f) 因为学生只按私人收益做决定，留学人数会少于社会最优。本国政府可以提供奖学金或学费补贴、低息助学贷款、税收优惠，或资助与外国大学的合作项目，把需求推到 Q*；也可以通过回国就业的优惠政策确保外部收益留在本国。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "Price (P)",
+       "curves": [
+        {
+         "expr": "8+(-0.8)*x",
+         "dom": [
+          0,
+          10.0
+         ],
+         "color": "navy",
+         "label": [
+          8.2,
+          1.8400000000000003,
+          "D private"
+         ]
+        },
+        {
+         "expr": "10+(-0.8)*x",
+         "dom": [
+          0,
+          12.5
+         ],
+         "color": "green",
+         "label": [
+          10.25,
+          2.2000000000000006,
+          "D social"
+         ],
+         "dash": true
+        },
+        {
+         "expr": "1+(0.6)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "red",
+         "label": [
+          8.55,
+          6.63,
+          "S"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 5,
+         "y": 4,
+         "label": "Qm"
+        },
+        {
+         "x": 6.43,
+         "y": 4.86,
+         "label": "Q* optimum"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          5,
+          0
+         ],
+         "to": [
+          5,
+          4
+         ]
+        },
+        {
+         "from": [
+          6.43,
+          0
+         ],
+         "to": [
+          6.43,
+          4.86
+         ]
+        }
+       ],
+       "caption": "Spillover benefits included: D shifts right, P and Q rise to the optimum Q*"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 7",
+     "ref": "Tutorial 4 Q6–Q9",
+     "question": "Q6 textbook Chapter 4 multiple-choice questions 1–9; Q7 the 'globetrotting anti-vaccination advocates' reading (pp. 94–95); Q8 and Q9 Chapter 4 study questions 1 and 4.",
+     "solution": "这几题都来自教材，本周资料里没有题目原文，无法作答。可以用本周的框架准备：疫苗有正外部性，个人不接种会让别人承担风险（负外部性），政府可以通过强制、补贴或限制入境来处理。",
+     "sourceNote": "教材内容不在资料中。",
+     "numeric": false
+    },
+    {
+     "label": "例 8",
+     "ref": "Tutorial 4 Q10",
+     "question": "Using the NSW Government Market failure guide: 1. Explain what market failure is, with examples in the NSW economy (50 words). 2. Outline the tools the government uses to resolve it (50 words).",
+     "solution": "1. 市场失灵是市场自行运转时不能有效配置资源、给社会带来问题的情况。例子：公共物品（道路照明、防洪设施）私人不会提供；外部性（交通拥堵、工厂和工地的污染是负外部性，疫苗和教育是正外部性）；缺乏竞争（某些地区只有一家供应商）；以及买卖双方信息不对称（如房屋建筑质量）。\n2. 政府的工具：直接提供公共物品；对负外部性征税、收费或设定管制标准（排放限额）；对正外部性给予补贴；用竞争法和价格监管处理垄断；要求信息披露、制定行业标准来解决信息问题。",
+     "parts": [
+      "1",
+      "2"
+     ],
+     "sourceNote": "NSW Government Market failure guide 不在本周资料里，这里按讲义的市场失灵类型和政府对策作答，例子是一般性的。",
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "把有线电视当私人物品：它非竞争，但可以排他。",
+    "正外部性加在供给曲线上：讲义的画法是需求曲线（社会收益）右移。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么最优产量不是市场产量？",
+     "a": "市场只看私人成本和收益；有外部性时，社会成本或收益与私人的不同，最优产量要用社会的那条曲线。"
+    }
+   ]
+  },
+  {
+   "title": "需求价格弹性与总收益（Lecture 5.1）",
+   "sources": [
+    {
+     "file": "unit5 lecture pricing and income of the firm and its customers.pdf.pdf",
+     "pages": "p4–40"
+    }
+   ],
+   "concept": "<strong>需求价格弹性</strong>（Ed）：需求量变化百分比 ÷ 价格变化百分比，衡量需求量对价格的反应。系数本为负，习惯上省略负号。\nEd > 1 富有弹性；Ed < 1 缺乏弹性；Ed = 1 单位弹性；Ed = 0 完全无弹性（竖直需求线）；Ed = ∞ 完全弹性（水平需求线）。\n<strong>总收益检验</strong>：TR = P × Q。富有弹性：P 与 TR 反向变动；缺乏弹性：同向变动；单位弹性：TR 不变。\n<strong>AR</strong> = TR ÷ Q = P，就是厂商的需求曲线；<strong>MR</strong>（多卖一单位带来的总收益变化）在 AR 下方，直线需求时斜率是 AR 的两倍。富有弹性的区段 TR 上升、MR > 0；缺乏弹性的区段 TR 下降、MR < 0。直线需求曲线上弹性不是常数：价格越低越缺乏弹性。\n<strong>决定因素</strong>：①替代品多少（定义越窄越有弹性：Hyundai 汽车比「汽车」有弹性）；②支出占预算的比重（比重大更有弹性）；③调整时间（时间越长越有弹性）。\n计算：<strong>中点公式</strong>（两点之间的平均弹性）：Ed = {{frac (Q2 − Q1)|(Q1 + Q2)/2}} ÷ {{frac (P2 − P1)|(P1 + P2)/2}}；<strong>点公式</strong>：Ed = {{frac (Q2 − Q1)|Q1}} ÷ {{frac (P2 − P1)|P1}}，结果随起点不同而不同。",
+   "formulas": [
+    "中点公式 E = {{frac Q2 − Q1|(Q1 + Q2)/2}} ÷ {{frac P2 − P1|(P1 + P2)/2}}　　点公式 E = {{frac Q2 − Q1|Q1}} ÷ {{frac P2 − P1|P1}}"
+   ],
+   "examples": [
+    {
+     "label": "例 9",
+     "ref": "Lecture 5.1 Example 3",
+     "question": "A cinema raises ticket prices from $25 to $30 and seats sold fall from 20,000 to 10,000. Find Ed with the slope-point formula; then for a fall from $30 to $25 with seats rising from 10,000 to 20,000; then with the midpoint formula.",
+     "solution": "涨价：%ΔQ = (10 000 − 20 000) ÷ 20 000 = −50%，%ΔP = 5 ÷ 25 = 20%，Ed = 2.5（价格涨 1%，需求量降 2.5%）。\n降价：%ΔQ = 10 000 ÷ 10 000 = 100%，%ΔP = −5 ÷ 30 = −16.7%，Ed = 6.0。\n同一段曲线两个方向算出不同结果，这就是点公式的问题；用中点公式：(10 000 ÷ 15 000) ÷ (5 ÷ 27.5) = 3.67，不论方向都一样。三种算法都大于 1，需求富有弹性。",
+     "checks": [
+      {
+       "expr": "(10000/20000)/(5/25)",
+       "equals": "2.5"
+      },
+      {
+       "expr": "(10000/10000)/(5/30)",
+       "equals": "6"
+      },
+      {
+       "expr": "abs((10000-20000)/((20000+10000)/2))/abs((30-25)/((25+30)/2))",
+       "equals": "3.667",
+       "tol": 0.001
+      }
+     ],
+     "sourceNote": "讲义写降价情形是 5.9，是把 %ΔP 取成 17% 的结果；精确值是 100% ÷ 16.67% = 6.0。"
+    },
+    {
+     "label": "例 10",
+     "ref": "Lecture 5.1 Revenue",
+     "question": "Explain the total revenue test and the relationship between TR, AR and MR along a straight-line demand curve.",
+     "solution": "总收益检验：降价时如果总收益上升，需求富有弹性；总收益下降，缺乏弹性；不变，单位弹性。沿直线需求曲线从高价往低价走：上半段富有弹性，降价使 TR 上升，MR 为正；中点单位弹性，TR 最大，MR = 0；下半段缺乏弹性，降价使 TR 下降，MR 为负。AR 就是价格（需求曲线），MR 在 AR 下方、下降速度是 AR 的两倍。下图以 P = 10 − Q 为例。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        11
+       ],
+       "yr": [
+        -10,
+        26
+       ],
+       "width": 330,
+       "height": 260,
+       "xLabel": "Q",
+       "yLabel": "$",
+       "curves": [
+        {
+         "expr": "10-x",
+         "dom": [
+          0,
+          10
+         ],
+         "color": "navy",
+         "label": [
+          7.5,
+          3.5,
+          "AR = D"
+         ]
+        },
+        {
+         "expr": "10-2*x",
+         "dom": [
+          0,
+          10
+         ],
+         "color": "red",
+         "dash": true,
+         "label": [
+          7.2,
+          -6.5,
+          "MR"
+         ]
+        },
+        {
+         "expr": "x*(10-x)",
+         "dom": [
+          0,
+          10
+         ],
+         "color": "green",
+         "label": [
+          2.2,
+          19.5,
+          "TR"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 5,
+         "y": 25,
+         "label": "TR max (unit elastic)"
+        }
+       ],
+       "vlines": [
+        {
+         "x": 5,
+         "label": "Ed = 1"
+        }
+       ],
+       "texts": [
+        {
+         "x": 1,
+         "y": -4,
+         "text": "elastic: MR > 0"
+        },
+        {
+         "x": 6.2,
+         "y": 12,
+         "text": "inelastic: MR < 0"
+        }
+       ],
+       "caption": "P = 10 − Q：TR = P × Q 在 Q = 5 时最大，此处 MR = 0、单位弹性"
+      }
+     ],
+     "checks": [
+      {
+       "expr": "5*(10-5)",
+       "equals": "25"
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "弹性写成负数：习惯省略负号。",
+    "用点公式时不说明起点：涨价和降价算出的结果不同。",
+    "以为直线需求曲线弹性处处相同：斜率相同，弹性不同。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么政府对香烟、汽油征税能收到很多钱？",
+     "a": "这些商品需求缺乏弹性，涨价后需求量下降不多，税收收入较稳定。"
+    }
+   ]
+  },
+  {
+   "title": "收入弹性、交叉弹性与供给弹性（Lecture 5.1–5.2）",
+   "sources": [
+    {
+     "file": "unit5 lecture pricing and income of the firm and its customers.pdf.pdf",
+     "pages": "p41–75"
+    }
+   ],
+   "concept": "<strong>收入弹性</strong> Ey = %ΔQ ÷ %ΔY：为正是正常品（> 1 收入富有弹性，如奢侈品），为负是劣等品，接近 0 是必需品。\n<strong>交叉弹性</strong> Ec = A 的 %ΔQ ÷ B 的 %ΔP：为正是替代品，为负是互补品。\n<strong>供给价格弹性</strong> Es = %ΔQs ÷ %ΔP（中点或点公式都可以）：Es > 1 富有弹性；= 1 单位；< 1 缺乏；= 0 完全无弹性；= ∞ 完全弹性。\n供给弹性的决定因素：①<strong>时间</strong>：市场期（只能卖已有的货，非常缺乏弹性）、短期（部分要素可变，缺乏弹性）、长期（全部要素可变，非常富有弹性）；②<strong>闲置产能</strong>（有闲置 → 富有弹性；满负荷 → 缺乏弹性，例如 250 座的讲堂坐了 100 人和 250 人）；③<strong>能否储存</strong>（罐头富有弹性，鲜鱼缺乏弹性）；④<strong>生产者预期</strong>（认为涨价持久才投资扩产）；⑤<strong>资源流动性</strong>。",
+   "formulas": [
+    "Ey = {{frac %ΔQ|%ΔY}}　　Ec = {{frac %ΔQ<sub>A</sub>|%ΔP<sub>B</sub>}}　　Es = {{frac %ΔQs|%ΔP}}"
+   ],
+   "examples": [
+    {
+     "label": "例 11",
+     "ref": "Lecture 5.1 Income Elasticity",
+     "question": "Ex 4: income rises from $1,000 to $1,250 a month and cinema tickets demanded rise from 10,000 to 15,000. Ex 5: income $5,000 → $5,500, cakes 250 → 350. Ex 6: same income change, 2-minute noodles 250 → 150. Ex 7: bread stays at 3. Find Ey and classify.",
+     "solution": "Ex 4：%ΔQ = 50%，%ΔY = 25%，Ey = 2，正常品且收入富有弹性。\nEx 5：+40% ÷ +10% = +4，正常品（讲义称 superior）。\nEx 6：−40% ÷ +10% = −4，劣等品。\nEx 7：0% ÷ 10% = 0，必需品，需求与收入无关。",
+     "checks": [
+      {
+       "expr": "(5000/10000)/(250/1000)",
+       "equals": "2"
+      },
+      {
+       "expr": "(100/250)/(500/5000)",
+       "equals": "4"
+      },
+      {
+       "expr": "(-100/250)/(500/5000)",
+       "equals": "-4"
+      }
+     ],
+     "parts": [
+      "Ex 4",
+      "Ex 5",
+      "Ex 6",
+      "Ex 7"
+     ]
+    },
+    {
+     "label": "例 12",
+     "ref": "Lecture 5.1 Cross Elasticity",
+     "question": "(a) The price of Coke rises 10% and Pepsi purchases rise 5%. (b) Nail polish price rises 50% and nail polish remover purchases fall 10%. (c) Ex 8: Pepsi price 50c → 60c, Coke demand 100 → 140. (d) Car price $20,000 → $30,000, petrol demand 1,500 L → 1,000 L. Find Ec and classify.",
+     "solution": "(a) +5% ÷ +10% = +0.5，替代品。\n(b) −10% ÷ +50% = −0.2，互补品。\n(c) +40% ÷ +20% = +2，替代品。\n(d) −33.3% ÷ +50% = −0.67，互补品。",
+     "checks": [
+      {
+       "expr": "5/10",
+       "equals": "0.5"
+      },
+      {
+       "expr": "-10/50",
+       "equals": "-0.2"
+      },
+      {
+       "expr": "(40/100)/(10/50)",
+       "equals": "2"
+      },
+      {
+       "expr": "(-500/1500)/(10000/20000)",
+       "equals": "-0.667",
+       "tol": 0.001
+      }
+     ],
+     "parts": [
+      "Coke/Pepsi",
+      "Nail polish",
+      "Ex 8",
+      "Cars/petrol"
+     ]
+    },
+    {
+     "label": "例 13",
+     "ref": "Lecture 5.2 Supply",
+     "question": "Show supply curves for the market period, the short run and the long run, and explain why their elasticities differ.",
+     "solution": "市场期：没有时间增产，只能卖已有的货，供给几乎是竖直线，非常缺乏弹性。短期：有些要素可以调整（加班、多雇人），但厂房设备固定，供给缺乏弹性。长期：所有要素都可以调整（建新厂、新厂商进入），供给非常富有弹性，曲线平坦。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "Price (P)",
+       "curves": [
+        {
+         "expr": "5+12*(x-5)",
+         "dom": [
+          4.6,
+          5.4
+         ],
+         "color": "red",
+         "label": [
+          5.5,
+          9.2,
+          "S market period"
+         ]
+        },
+        {
+         "expr": "5+0.9*(x-5)",
+         "dom": [
+          0.5,
+          9.5
+         ],
+         "color": "gold",
+         "label": [
+          8.3,
+          8.4,
+          "S short run"
+         ]
+        },
+        {
+         "expr": "5+0.15*(x-5)",
+         "dom": [
+          0.3,
+          9.7
+         ],
+         "color": "green",
+         "label": [
+          8.6,
+          6.3,
+          "S long run"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 5,
+         "y": 5,
+         "label": "current P, Q",
+         "dx": -70,
+         "dy": 14
+        }
+       ],
+       "caption": "Supply becomes more elastic as time passes"
+      }
+     ],
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "收入弹性为正就说是奢侈品：0 到 1 之间是正常的必需品，大于 1 才是收入富有弹性。",
+    "交叉弹性分子分母放反：分子是受影响商品的需求量。"
+   ],
+   "faqs": [
+    {
+     "q": "必需品的收入弹性一定是 0 吗？",
+     "a": "讲义的面包例子是 0；一般必需品在 0 到 1 之间，收入增加需求增加得较少。"
+    }
+   ]
+  },
+  {
+   "title": "Unit 5 Tutorial：弹性计算与应用",
+   "sources": [
+    {
+     "file": "unit5 tutorial guide tg pricing and income of the firm and its customers.pdf",
+     "pages": "p2–5"
+    },
+    {
+     "file": "unit5 lecture pricing and income of the firm and its customers.pdf.pdf",
+     "pages": "p13–75"
+    }
+   ],
+   "concept": "做题前先确定用哪条公式：题目给两点又没指定，用<strong>中点公式</strong>；选择题的选项往往按点公式（以原价为基数）算，要两种都会。比率要转成百分比再相除；结论要写富有弹性 / 缺乏弹性，并联系总收益。",
+   "examples": [
+    {
+     "label": "例 14",
+     "ref": "Tutorial 5 Terms",
+     "question": "Define: Price elasticity of demand; Income elasticity of demand; Cross-elasticity of demand; Price elasticity of supply; Elastic; Inelastic; Unitary elasticity; Perfectly elastic.",
+     "solution": "<strong>Price elasticity of demand</strong>：需求量变化百分比 ÷ 价格变化百分比。\n<strong>Income elasticity of demand</strong>：需求量变化百分比 ÷ 收入变化百分比；正为正常品，负为劣等品。\n<strong>Cross-elasticity of demand</strong>：一种商品需求量变化百分比 ÷ 另一种商品价格变化百分比；正为替代品，负为互补品。\n<strong>Price elasticity of supply</strong>：供给量变化百分比 ÷ 价格变化百分比。\n<strong>Elastic</strong>：弹性系数大于 1，数量变化比例大于价格变化比例。\n<strong>Inelastic</strong>：弹性系数小于 1。\n<strong>Unitary elasticity</strong>：弹性系数等于 1，总收益不随价格变化。\n<strong>Perfectly elastic</strong>：弹性无穷大，价格稍有变化需求量就降为零，需求曲线水平。",
+     "numeric": false
+    },
+    {
+     "label": "例 15",
+     "ref": "Tutorial 5 Q1",
+     "question": "Complete the table (price, quantity, elasticity coefficient, total revenue, E/I/UE) for P $7 (Q 25), $6 (35), $5 (45), $4 (55), $3 (65), $2 (80), $1 (100).",
+     "solution": "用中点公式逐段计算，并用总收益检验：价格从 7 降到 5 时 TR 从 175 升到 225，富有弹性；从 5 往下降 TR 下降，缺乏弹性，与系数一致。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "Price ($)",
+        "Quantity",
+        "Elasticity coefficient",
+        "Total Revenue ($)",
+        "E / I / UE"
+       ],
+       "rows": [
+        [
+         "7",
+         "25",
+         "–",
+         "175",
+         "–"
+        ],
+        [
+         "6",
+         "35",
+         "2.17",
+         "210",
+         "E"
+        ],
+        [
+         "5",
+         "45",
+         "1.38",
+         "225",
+         "E"
+        ],
+        [
+         "4",
+         "55",
+         "0.90",
+         "220",
+         "I"
+        ],
+        [
+         "3",
+         "65",
+         "0.58",
+         "195",
+         "I"
+        ],
+        [
+         "2",
+         "80",
+         "0.52",
+         "160",
+         "I"
+        ],
+        [
+         "1",
+         "100",
+         "0.33",
+         "100",
+         "I"
+        ]
+       ],
+       "title": "Midpoint elasticity for each price range"
+      }
+     ],
+     "checks": [
+      {
+       "expr": "abs((35-25)/((25+35)/2))/abs((6-7)/((7+6)/2))",
+       "equals": "2.17",
+       "tol": 0.01
+      },
+      {
+       "expr": "abs((45-35)/((35+45)/2))/abs((5-6)/((6+5)/2))",
+       "equals": "1.38",
+       "tol": 0.01
+      },
+      {
+       "expr": "abs((55-45)/((45+55)/2))/abs((4-5)/((5+4)/2))",
+       "equals": "0.9",
+       "tol": 0.01
+      },
+      {
+       "expr": "abs((65-55)/((55+65)/2))/abs((3-4)/((4+3)/2))",
+       "equals": "0.58",
+       "tol": 0.01
+      },
+      {
+       "expr": "abs((80-65)/((65+80)/2))/abs((2-3)/((3+2)/2))",
+       "equals": "0.52",
+       "tol": 0.01
+      },
+      {
+       "expr": "abs((100-80)/((80+100)/2))/abs((1-2)/((2+1)/2))",
+       "equals": "0.33",
+       "tol": 0.01
+      },
+      {
+       "expr": "5*45",
+       "equals": "225"
+      }
+     ]
+    },
+    {
+     "label": "例 16",
+     "ref": "Tutorial 5 Q2",
+     "question": "At $70 a garment sells 7,000 a month; at $50, 7,800. 1. The price elasticity of demand is approximately (a) 2.5 (b) 0.4 (c) 0.28 (d) 4.0. 2. The change in monthly sales receipts is (a) $490,000 (b) $390,000 (c) $100,000 (d) $40,000.",
+     "solution": "1. <strong>(b) 0.4</strong>：以原价为基数，%ΔQ = 800 ÷ 7 000 = 11.4%，%ΔP = 20 ÷ 70 = 28.6%，0.114 ÷ 0.286 = 0.4。（用中点公式是 0.32，最接近的也是 0.4 或 0.28，题目按点公式出题。）缺乏弹性。\n2. <strong>(c) $100,000</strong>：原收入 70 × 7 000 = 490 000，新收入 50 × 7 800 = 390 000，减少 100 000。缺乏弹性时降价使总收益减少，与第 1 问一致。",
+     "parts": [
+      "1",
+      "2"
+     ],
+     "checks": [
+      {
+       "expr": "(800/7000)/(20/70)",
+       "equals": "0.4"
+      },
+      {
+       "expr": "70*7000-50*7800",
+       "equals": "100000"
+      },
+      {
+       "expr": "abs((7800-7000)/((7000+7800)/2))/abs((50-70)/((70+50)/2))",
+       "equals": "0.324",
+       "tol": 0.001
+      }
+     ]
+    },
+    {
+     "label": "例 17",
+     "ref": "Tutorial 5 Q3",
+     "question": "Explain how knowledge of price elasticity of demand could help the Government Bus Authority decide whether to raise fares to increase revenue. (At least 50 words.)",
+     "solution": "总收益 = 票价 × 乘客人数。如果公交需求缺乏弹性（Ed < 1，乘客没有好的替代方式，或车费只占收入很小一部分），提价后乘客减少的比例小于票价上涨的比例，总收益增加，提价是对的。如果需求富有弹性（Ed > 1，乘客可以改为开车、坐火车、骑车），提价会使乘客流失的比例更大，总收益反而下降，此时应该降价或维持票价。所以管理局要先估计弹性：短期需求通常较缺乏弹性，但长期乘客有时间找替代方式，弹性会变大。",
+     "numeric": false
+    },
+    {
+     "label": "例 18",
+     "ref": "Tutorial 5 Q4",
+     "question": "Explain the impact of time on the elasticity of supply, distinguishing the market period, short run and long run, and describe other factors that influence elasticity of supply. (At least 50 words.)",
+     "solution": "时间越长，生产者越能调整，供给越有弹性。市场期：几乎没有时间调整，只能卖已有的存货，供给非常缺乏弹性；短期：可以改变部分投入（加班、多用原料），但厂房设备固定，供给缺乏弹性；长期：所有要素都能改变，可以建新厂、新厂商可以进入，供给富有弹性。其他因素：闲置产能（有闲置就容易增产，富有弹性）、能否储存商品（耐储存的更有弹性，易腐的缺乏弹性）、生产者预期（认为涨价是长期的才扩产）、资源流动性（资源容易转移则更有弹性）。",
+     "numeric": false
+    },
+    {
+     "label": "例 19",
+     "ref": "Tutorial 5 Q5",
+     "question": "Highly elastic or highly inelastic supply? (a) televisions in an industry with under-utilised plant; (b) tomatoes in the market period; (c) steel in an industry at full capacity; (d) land in Sydney; (e) accountants in the short run; (f) washing machines in the long run. (At least 25 words each.)",
+     "solution": "(a) 富有弹性：有闲置的厂房设备，价格上升时可以马上更充分地使用现有设施增产。\n(b) 非常缺乏弹性：市场期内只能卖已经采摘的番茄，番茄易腐不能储存，也来不及种。\n(c) 缺乏弹性：已经满负荷生产，要增产必须建新厂，需要很长时间。\n(d) 几乎完全无弹性：悉尼的土地总量固定，价格再高也造不出更多土地。\n(e) 缺乏弹性：培养会计师需要几年的学习和资格认证，短期内人数难以增加。\n(f) 富有弹性：长期所有要素都能调整，厂商可以扩建工厂、新厂商进入，资源容易转入。",
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 20",
+     "ref": "Tutorial 5 Q6",
+     "question": "6.1 Cigarettes: Ed = 0.3, Ey = 0.5. If incomes rise 8%, demand will (a) remain unchanged (b) decrease 2.4% (c) increase 4% (d) increase 2.4%. 6.2 A tax raises the price from $4.00 to $8.00; demand will (a) fall 30% (b) fall 60% (c) fall 100% (d) fall 200%. 6.3 After a $20 increase in monthly income, ice cream demand rises from 50 to 54 litres; Ey = 0.4. Calculate the initial monthly income. 6.4 The price of Good A rises from $4 to $5 after a decrease in supply, and demand for Good B rises from 20 to 40 units. a) Graph both markets. b) Calculate the cross elasticity for Good B. c) Substitutes or complements?",
+     "solution": "6.1 <strong>(c)</strong>：%ΔQ = Ey × %ΔY = 0.5 × 8% = 4%，增加 4%。\n6.2 <strong>(a)</strong>：价格从 4 到 8 上涨 100%，%ΔQ = 0.3 × 100% = 30%，下降 30%。\n6.3 %ΔQ = 4 ÷ 50 = 8%；%ΔY = 8% ÷ 0.4 = 20%；20 元是收入的 20%，所以初始收入是 <strong>$100</strong>。\n6.4 a) A 市场：供给左移，价格从 4 升到 5；B 市场：需求右移，数量从 20 增加到 40（下图）。\nb) Ec = (40 − 20) ÷ 20 ÷ [(5 − 4) ÷ 4] = 100% ÷ 25% = <strong>+4</strong>。\nc) 交叉弹性为正：A 变贵后人们转买 B，所以 A 和 B 是<strong>替代品</strong>，而且替代性很强（Ec 远大于 1）。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Quantity of A",
+       "yLabel": "Price of A",
+       "curves": [
+        {
+         "expr": "9+(-0.8)*x",
+         "dom": [
+          0,
+          11.25
+         ],
+         "color": "navy",
+         "label": [
+          9.225,
+          2.02,
+          "D"
+         ]
+        },
+        {
+         "expr": "2.125+(0.3)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "red",
+         "label": [
+          8.55,
+          5.1899999999999995,
+          "S1"
+         ]
+        },
+        {
+         "expr": "3.5+(0.3)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "red",
+         "label": [
+          8.55,
+          6.5649999999999995,
+          "S2"
+         ],
+         "dash": true
+        }
+       ],
+       "points": [
+        {
+         "x": 6.25,
+         "y": 4,
+         "label": "E1"
+        },
+        {
+         "x": 5,
+         "y": 5,
+         "label": "E2"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          4
+         ],
+         "to": [
+          6.25,
+          4
+         ],
+         "label": "$4",
+         "dx": -150,
+         "dy": -3
+        },
+        {
+         "from": [
+          0,
+          5
+         ],
+         "to": [
+          5,
+          5
+         ],
+         "label": "$5",
+         "dx": -120,
+         "dy": -3
+        }
+       ],
+       "caption": "Good A: supply decreases, price rises from $4 to $5"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        50
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Quantity of B",
+       "yLabel": "Price of B",
+       "curves": [
+        {
+         "expr": "6+(-0.2)*x",
+         "dom": [
+          0,
+          30
+         ],
+         "color": "navy",
+         "label": [
+          24.599999999999998,
+          1.48,
+          "D1"
+         ]
+        },
+        {
+         "expr": "10+(-0.2)*x",
+         "dom": [
+          0,
+          50
+         ],
+         "color": "green",
+         "label": [
+          41.0,
+          2.2000000000000006,
+          "D2"
+         ],
+         "dash": true
+        },
+        {
+         "expr": "0+(0.15)*x",
+         "dom": [
+          0,
+          48
+         ],
+         "color": "red",
+         "label": [
+          43.2,
+          6.9799999999999995,
+          "S"
+         ]
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          14,
+          3
+         ],
+         "to": [
+          24,
+          3
+         ],
+         "arrow": true
+        }
+       ],
+       "caption": "Good B: demand increases (20 → 40 units)"
+      }
+     ],
+     "parts": [
+      "6.1",
+      "6.2",
+      "6.3",
+      "6.4"
+     ],
+     "checks": [
+      {
+       "expr": "0.5*8",
+       "equals": "4"
+      },
+      {
+       "expr": "0.3*100",
+       "equals": "30"
+      },
+      {
+       "expr": "20/((4/50)/0.4)",
+       "equals": "100"
+      },
+      {
+       "expr": "(20/20)/(1/4)",
+       "equals": "4"
+      }
+     ]
+    },
+    {
+     "label": "例 21",
+     "ref": "Tutorial 5 Presentations",
+     "question": "In-class presentations: 1 price elasticity of demand with diagrams and examples; 2 price elasticity of supply with diagrams and examples; 3 income elasticity of demand with examples; 4 cross-elasticity of demand with examples; 5 textbook Chapter 5 Problem 3.",
+     "solution": "1 用例 9、例 10（电影票、总收益与 MR 图）；2 用例 13、例 19（时间与供给曲线、六种情形）；3 用例 11（蛋糕 +4、方便面 −4、面包 0）；4 用例 12（可乐与百事 +0.5，汽车与汽油 −0.67）。第 5 题是教材习题，资料里没有原文。",
+     "parts": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+     ],
+     "sourceNote": "Presentation 5 的教材题目不在本周资料中。",
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "6.2 用中点公式：选项按以原价为基数的点公式设计。",
+    "6.3 把 %ΔY 当成 20%÷0.4：先求 %ΔQ = 8%，再除以 0.4 得 20%。",
+    "交叉弹性正负判断反了。"
+   ],
+   "faqs": [
+    {
+     "q": "考试用中点公式还是点公式？",
+     "a": "题目没说明时写出你用的公式；讲义推荐中点公式，选择题常按点公式。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "步骤",
+   "做什么",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "1 选公式",
+    "中点公式（两点平均）或点公式（以原值为基数）",
+    "例 9、15、16"
+   ],
+   [
+    "2 判断弹性",
+    "> 1 富有、< 1 缺乏、= 1 单位",
+    "例 15"
+   ],
+   [
+    "3 总收益检验",
+    "P 与 TR 反向 → 富有弹性；同向 → 缺乏弹性",
+    "例 10、16、17"
+   ],
+   [
+    "4 收入、交叉弹性",
+    "符号判断商品类型",
+    "例 11、12、20"
+   ],
+   [
+    "5 供给弹性",
+    "时间、产能、储存、预期、资源流动",
+    "例 13、18、19"
+   ]
+  ]
+ },
+ "practice": "本周任务：完成 Unit 4 和 Unit 5 Tutorial 及 Assessable Quiz；准备课堂展示。"
+}

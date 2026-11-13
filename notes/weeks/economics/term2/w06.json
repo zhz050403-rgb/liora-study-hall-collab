@@ -1,0 +1,1180 @@
+{
+ "course": "economics",
+ "term": "term2",
+ "week": 6,
+ "title": "Week 6 · Unit 5 Tutorial + Unit 6 International Economics: Exchange Rates 汇率",
+ "answersTitle": "Tutorial 5 International Economics 1",
+ "files": [
+  "unit5 PPT international economics trade and protection.pdf",
+  "unit5 TG international economics trade and protection.pdf",
+  "unit6 PPT international economics exchange rates.pdf",
+  "unit6 TG international economics exchange rates.pdf"
+ ],
+ "inventory": [
+  {
+   "ref": "Tutorial 5 Terms",
+   "deliverables": [
+    {
+     "type": "terms",
+     "terms": [
+      "Absolute advantage",
+      "Comparative advantage",
+      "Free trade",
+      "Specialisation",
+      "Protection",
+      "Tariff",
+      "Subsidy",
+      "Quota",
+      "Embargo",
+      "Terms of Trade"
+     ]
+    }
+   ]
+  },
+  "Tutorial 5 Q1",
+  "Tutorial 5 Q2",
+  {
+   "ref": "Tutorial 5 Q3",
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  "Tutorial 5 Q4",
+  "Tutorial 5 Q5",
+  "Tutorial 5 Q6",
+  {
+   "ref": "Tutorial 5 Q7",
+   "parts": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "ref": "Tutorial 5 Tariff diagram",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial 5 Q8",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial 5 Q9",
+   "parts": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g"
+   ]
+  },
+  "Tutorial 5 Writing",
+  "Lecture 6 Exchange Rate",
+  "Lecture 6 Floating and Fixed",
+  "Lecture 6 Demand and Supply",
+  {
+   "ref": "Lecture 6 Appreciation",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Lecture 6 Depreciation",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "Lecture 6 Effects"
+ ],
+ "intro": [
+  "本周前半是 <strong>Unit 5 Tutorial</strong>（绝对优势与比较优势的计算、贸易条件、关税与补贴的图和影响、降低关税保护的利弊）；后半是 <strong>Unit 6 讲座</strong>：汇率的定义、浮动与固定汇率、澳元的需求和供给、升值和贬值的原因与经济影响。Unit 6 Tutorial 的答案在第 8 周（第 7 周没有课程文件）。",
+  "Term 2 的 Tutorial 没有官方答案文件，以下答案依据讲义和 Tutorial 阅读材料写出，计算题都用公式核对。"
+ ],
+ "sections": [
+  {
+   "title": "Unit 5 Tutorial：国际贸易与保护",
+   "sources": [
+    {
+     "file": "unit5 TG international economics trade and protection.pdf",
+     "pages": "p1–12"
+    },
+    {
+     "file": "unit5 PPT international economics trade and protection.pdf",
+     "pages": "p1–37"
+    }
+   ],
+   "concept": "比较优势看<strong>机会成本</strong>：机会成本 = 放弃的数量 ÷ 得到的数量，机会成本低的国家专门生产该商品。贸易条件 = 出口价格指数 ÷ 进口价格指数 × 100。\n关税抬高国内价格（PW → PT），本国产量增加、进口减少、政府得到税收；补贴使本国供给右移，价格不变而进口减少，政府付钱。",
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "Tutorial 5 Terms",
+     "question": "Explain: Absolute advantage; Comparative advantage; Free trade; Specialisation; Protection; Tariff; Subsidy; Quota; Embargo; Terms of Trade.",
+     "solution": "<strong>Absolute advantage</strong>：用同样的资源比另一国生产更多某商品（或用更少资源、更低成本生产同样数量）。\n<strong>Comparative advantage</strong>：以比另一国更低的机会成本生产某商品。\n<strong>Free trade</strong>：政府对商品和服务的跨国流动不设人为障碍。\n<strong>Specialisation</strong>：一国集中资源生产自己有比较优势的商品，再通过贸易换取其他商品。\n<strong>Protection</strong>：用人为障碍限制进口，保护本国生产者免受外国竞争。\n<strong>Tariff</strong>：对进口商品征收的税。\n<strong>Subsidy</strong>：政府给本国生产者的现金补助，降低其成本。\n<strong>Quota</strong>：对进口数量设定的上限。\n<strong>Embargo</strong>：完全禁止与某国或某商品的贸易。\n<strong>Terms of Trade</strong>：出口价格指数与进口价格指数之比 × 100，表示一定出口能换多少进口。",
+     "numeric": false
+    },
+    {
+     "label": "例 2",
+     "ref": "Tutorial 5 Q1",
+     "question": "Explain the difference between absolute and comparative advantage.",
+     "solution": "<strong>绝对优势</strong>比较的是<strong>效率</strong>：用同样资源谁生产得更多。<strong>比较优势</strong>比较的是<strong>机会成本</strong>：生产一单位某商品要放弃多少另一种商品，谁放弃得少。一国可能两种商品都有绝对优势，但不可能两种都有比较优势；决定专业化和贸易方向的是比较优势。",
+     "numeric": false
+    },
+    {
+     "label": "例 3",
+     "ref": "Tutorial 5 Q2",
+     "question": "If the USA can produce both corn and sugar more efficiently than Cuba, why might it import Cuban sugar?",
+     "solution": "美国两种都有绝对优势，但它在玉米上的优势更大。生产糖要占用本可以生产大量玉米的资源，所以美国生产糖的机会成本高于古巴；古巴生产糖的机会成本更低，有比较优势。美国专门生产玉米、从古巴进口糖，两国总产出都会增加，美国用更少的玉米就能换到糖。",
+     "numeric": false
+    },
+    {
+     "label": "例 4",
+     "ref": "Tutorial 5 Q3",
+     "question": "Australia can produce 150 wool or 100 wheat; New Zealand 200 wool or 60 wheat, with the same resources. Which country has an absolute advantage in each commodity?",
+     "solution": "羊毛：新西兰 200 > 澳大利亚 150，<strong>新西兰</strong>有绝对优势。小麦：澳大利亚 100 > 新西兰 60，<strong>澳大利亚</strong>有绝对优势。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "",
+        "Wool (units)",
+        "or Wheat (units)",
+        "Opportunity cost of 1 wool",
+        "Opportunity cost of 1 wheat"
+       ],
+       "rows": [
+        [
+         "Australia",
+         "150",
+         "100",
+         "100 ÷ 150 = 0.67 wheat",
+         "150 ÷ 100 = 1.5 wool"
+        ],
+        [
+         "New Zealand",
+         "200",
+         "60",
+         "60 ÷ 200 = 0.3 wheat",
+         "200 ÷ 60 = 3.33 wool"
+        ]
+       ],
+       "title": "Questions 3–6"
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 5",
+     "ref": "Tutorial 5 Q4",
+     "question": "For Australia, what is the opportunity cost of producing 1 unit of wool; 1 unit of wheat?",
+     "solution": "机会成本 = 放弃 ÷ 得到。澳大利亚 150 羊毛 = 100 小麦：1 羊毛 = 100 ÷ 150 = <strong>0.67 小麦</strong>；1 小麦 = 150 ÷ 100 = <strong>1.5 羊毛</strong>。",
+     "checks": [
+      {
+       "expr": "100/150",
+       "equals": "0.667",
+       "tol": 0.0005
+      },
+      {
+       "expr": "150/100",
+       "equals": "1.5"
+      }
+     ]
+    },
+    {
+     "label": "例 6",
+     "ref": "Tutorial 5 Q5",
+     "question": "For New Zealand, what is the opportunity cost of producing 1 unit of wool; 1 unit of wheat?",
+     "solution": "新西兰 200 羊毛 = 60 小麦：1 羊毛 = 60 ÷ 200 = <strong>0.3 小麦</strong>；1 小麦 = 200 ÷ 60 = <strong>3.33 羊毛</strong>。",
+     "checks": [
+      {
+       "expr": "60/200",
+       "equals": "0.3"
+      },
+      {
+       "expr": "200/60",
+       "equals": "3.333",
+       "tol": 0.0005
+      }
+     ]
+    },
+    {
+     "label": "例 7",
+     "ref": "Tutorial 5 Q6",
+     "question": "Which country should specialise in wool production? Why? Which country should specialise in wheat? Why?",
+     "solution": "<strong>新西兰专门生产羊毛</strong>：它生产 1 单位羊毛只放弃 0.3 小麦，低于澳大利亚的 0.67。<strong>澳大利亚专门生产小麦</strong>：它生产 1 单位小麦只放弃 1.5 羊毛，低于新西兰的 3.33。各自按比较优势专业化后交换，两国都能得到更多。",
+     "numeric": false
+    },
+    {
+     "label": "例 8",
+     "ref": "Tutorial 5 Q7",
+     "question": "Will these events cause Australia's terms of trade to improve or deteriorate? (a) a rise in the price of Australian exported coal; (b) a fall in the price of Japanese imported cars.",
+     "solution": "ToT = 出口价格指数 ÷ 进口价格指数 × 100。\n(a) 出口价格上升，分子变大：<strong>改善</strong>。\n(b) 进口价格下降，分母变小：<strong>改善</strong>。两种情况下，同样数量的出口都能换到更多进口。",
+     "parts": [
+      "a",
+      "b"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 9",
+     "ref": "Tutorial 5 Tariff diagram",
+     "question": "Use a demand and supply diagram to show the economic effects of a tariff: the effect on the price of the domestic product, the protective effect, government revenue and the protected firm's revenue.",
+     "solution": "<strong>价格</strong>：开放贸易时价格为世界价格 PW；征收关税后进口品价格升到 PT，本国同类产品也能按 PT 销售。\n<strong>保护效应</strong>：本国产量从 Q1 增加到 Q3，进口从 Q1Q2 减少到 Q3Q4（需求从 Q2 减少到 Q4）。\n<strong>政府收入</strong>：每单位税额 (PT − PW) × 进口量 Q3Q4，即矩形 ABCD。\n<strong>受保护企业的收入</strong>：从 PW × Q1 增加到 PT × Q3，因为价格和销量都上升。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        12
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 340,
+       "height": 240,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "Price (P)",
+       "curves": [
+        {
+         "expr": "10+(-0.8)*x",
+         "dom": [
+          0,
+          12
+         ],
+         "color": "navy",
+         "label": [
+          1.3,
+          8.2,
+          "D"
+         ]
+        },
+        {
+         "expr": "1+(0.7)*x",
+         "dom": [
+          0,
+          11
+         ],
+         "color": "red",
+         "label": [
+          10.2,
+          8.4,
+          "S (local)"
+         ]
+        },
+        {
+         "expr": "2.5+0*x",
+         "dom": [
+          0,
+          12
+         ],
+         "color": "grey",
+         "label": [
+          11.2,
+          2.75,
+          "PW"
+         ]
+        },
+        {
+         "expr": "4.2+0*x",
+         "dom": [
+          0,
+          12
+         ],
+         "color": "gold",
+         "dash": true,
+         "label": [
+          11.2,
+          4.45,
+          "PT"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 4.571428571428572,
+         "y": 4.2,
+         "label": "A",
+         "dx": -12,
+         "dy": -6
+        },
+        {
+         "x": 7.249999999999999,
+         "y": 4.2,
+         "label": "B",
+         "dx": 4,
+         "dy": -6
+        },
+        {
+         "x": 7.249999999999999,
+         "y": 2.5,
+         "label": "C",
+         "dx": 4,
+         "dy": 12
+        },
+        {
+         "x": 4.571428571428572,
+         "y": 2.5,
+         "label": "D",
+         "dx": -12,
+         "dy": 12
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          2.142857142857143,
+          0
+         ],
+         "to": [
+          2.142857142857143,
+          2.5
+         ]
+        },
+        {
+         "from": [
+          9.375,
+          0
+         ],
+         "to": [
+          9.375,
+          2.5
+         ]
+        },
+        {
+         "from": [
+          4.571428571428572,
+          0
+         ],
+         "to": [
+          4.571428571428572,
+          4.2
+         ]
+        },
+        {
+         "from": [
+          7.249999999999999,
+          0
+         ],
+         "to": [
+          7.249999999999999,
+          4.2
+         ]
+        }
+       ],
+       "polygons": [
+        {
+         "pts": [
+          [
+           4.571428571428572,
+           2.5
+          ],
+          [
+           7.249999999999999,
+           2.5
+          ],
+          [
+           7.249999999999999,
+           4.2
+          ],
+          [
+           4.571428571428572,
+           4.2
+          ]
+         ],
+         "color": "gold",
+         "label": [
+          5.910714285714286,
+          3.15,
+          "tax"
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": 2.142857142857143,
+         "y": -0.6,
+         "text": "Q1",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 9.375,
+         "y": -0.6,
+         "text": "Q2",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 4.571428571428572,
+         "y": -0.6,
+         "text": "Q3",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 7.249999999999999,
+         "y": -0.6,
+         "text": "Q4",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        }
+       ],
+       "caption": "Tariff: price rises from PW to PT; local output Q1 → Q3; imports fall from Q1Q2 to Q3Q4; tax revenue ABCD"
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 10",
+     "ref": "Tutorial 5 Q8",
+     "question": "Draw and describe a diagram showing the economic effects of a subsidy.",
+     "solution": "补贴降低本国生产者的成本，本国供给从 S 右移到 S1。世界价格 PW 不变，总需求 Q3 不变；本国产量从 Q1 增加到 Q2，进口从 Q1Q3 减少到 Q2Q3。消费者价格和购买量不变，但补贴由税收支付，收入从纳税人转移到本国生产者；资源被吸引到受补贴的行业，离开更有效率的行业。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        12
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 340,
+       "height": 240,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "Price (P)",
+       "curves": [
+        {
+         "expr": "10+(-0.8)*x",
+         "dom": [
+          0,
+          12
+         ],
+         "color": "navy",
+         "label": [
+          1.3,
+          8.2,
+          "D"
+         ]
+        },
+        {
+         "expr": "1+(0.7)*x",
+         "dom": [
+          0,
+          11
+         ],
+         "color": "red",
+         "label": [
+          10.2,
+          8.4,
+          "S"
+         ]
+        },
+        {
+         "expr": "-0.4+(0.7)*x",
+         "dom": [
+          0.6,
+          11.5
+         ],
+         "color": "red",
+         "dash": true,
+         "label": [
+          11.2,
+          7.0,
+          "S1"
+         ]
+        },
+        {
+         "expr": "2.5+0*x",
+         "dom": [
+          0,
+          12
+         ],
+         "color": "grey",
+         "label": [
+          11.2,
+          2.75,
+          "PW"
+         ]
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          2.142857142857143,
+          0
+         ],
+         "to": [
+          2.142857142857143,
+          2.5
+         ]
+        },
+        {
+         "from": [
+          4.142857142857143,
+          0
+         ],
+         "to": [
+          4.142857142857143,
+          2.5
+         ]
+        },
+        {
+         "from": [
+          9.375,
+          0
+         ],
+         "to": [
+          9.375,
+          2.5
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": 2.142857142857143,
+         "y": -0.6,
+         "text": "Q1",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 4.142857142857143,
+         "y": -0.6,
+         "text": "Q2",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        },
+        {
+         "x": 9.375,
+         "y": -0.6,
+         "text": "Q3",
+         "anchor": "middle",
+         "size": 9,
+         "color": "grey"
+        }
+       ],
+       "caption": "Subsidy: local supply S → S1; local output Q1 → Q2 at the same world price; imports fall to Q2Q3"
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 11",
+     "ref": "Tutorial 5 Q9",
+     "question": "If tariff protection is removed for the motor vehicle industry, explain the possible effects on: (a) price of cars; (b) domestic inflation; (c) employment in the car and component industries; (d) efficiency and innovation; (e) employment in non-protected industries; (f) imports of cars; (g) the Balance of Trade in the short run.",
+     "solution": "(a) 汽车价格<strong>下降</strong>：进口车不再被征税，本国车也必须降价竞争。\n(b) 通胀<strong>下降</strong>：汽车价格进入 CPI；其他行业的运输投入也更便宜。\n(c) 汽车和零部件行业的就业<strong>减少</strong>，可能有工厂关闭，丢失部分技术技能。\n(d) 效率和创新<strong>提高</strong>：本国车企要在竞争中生存，必须投资、创新、合并以获得规模经济，甚至转向出口。\n(e) 非保护行业的就业<strong>可能增加</strong>：消费者买车省下的钱花在其他行业；农业、采矿业等出口行业投入成本下降、竞争力上升。\n(f) 汽车进口<strong>增加</strong>，还可能出现外国廉价车倾销。\n(g) 短期内贸易差额<strong>恶化</strong>（进口大增）；长期如果本国企业更有效率、出口增加，可能改善。",
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 12",
+     "ref": "Tutorial 5 Writing",
+     "question": "Possible writing task: Distinguish between the economic effects of a tariff and a subsidy as forms of protection. What would be the main benefits of a general reduction in tariffs for the Australian economy?",
+     "solution": "关税和补贴都用来保护本国生产者，但作用方式不同。<strong>关税</strong>是对进口品征税，使国内价格从世界价格升到含税价格：本国生产者按更高价格多卖，进口减少，政府得到税收，而消费者付出更高价格、买得更少，相当于一种隐蔽的累退税；使用进口投入品的其他行业成本也上升。<strong>补贴</strong>是政府付钱给本国生产者，降低其成本，使本国供给增加：价格仍是世界价格，消费者不受直接影响，但补贴来自税收，由纳税人承担；补贴还能帮助本国企业在海外市场竞争。关税一旦成为财政收入来源往往难以取消，补贴作为支出项目更容易被审查和调整。\n普遍降低关税对澳大利亚的主要好处：①消费者价格下降，生活成本和通胀降低；②其他行业的投入品更便宜，农业、采矿等出口行业更有国际竞争力；③受保护行业被迫提高效率、创新，资源从低效行业转向有比较优势的行业；④消费者节省的支出在其他行业创造需求和就业。代价是受保护行业短期内失业增加、进口增加，需要配套的再培训和调整援助。",
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "用绝对优势判断专业化方向。",
+    "机会成本算反（得到 ÷ 放弃）。",
+    "关税图里把政府收入画成价格差乘全部需求量。"
+   ],
+   "faqs": [
+    {
+     "q": "Q9 的题号在讲义里是怎样的？",
+     "a": "讲义在第 7 题和第 8 题之间有一道没有编号的关税作图题，笔记把它单独列出（例 9）；补贴图是第 8 题。"
+    }
+   ]
+  },
+  {
+   "title": "Unit 6 讲座：汇率",
+   "sources": [
+    {
+     "file": "unit6 PPT international economics exchange rates.pdf",
+     "pages": "p1–23"
+    }
+   ],
+   "concept": "<strong>汇率</strong>：一国货币用另一国货币表示的价格，如 AUD 1 = USD 0.67（2024 年 9 月）。由外汇市场上该货币的供求决定。\n<strong>浮动汇率</strong>（澳大利亚）：由外汇市场供求决定，汇率是市场均衡。<strong>固定（钉住）汇率</strong>：货币当局把汇率钉在另一种货币上，如 1 USD = 3.75 沙特里亚尔。\n<strong>澳元的需求</strong>（持有外币、想换澳元的人）：购买澳大利亚商品和服务（出口）、在澳投资、来澳旅游、向澳偿还贷款和利润、投机。<strong>澳元的供给</strong>：澳大利亚购买外国商品服务（进口）、对外投资、出国旅游、向海外偿还贷款和利润。\n移动的原因：偏好、相对收入、相对物价（通胀）、相对利率的变化。\n<strong>升值</strong>：本币的外币价格上升（需求增加或供给减少）；<strong>贬值</strong>：下降（需求减少或供给增加）。",
+   "examples": [
+    {
+     "label": "例 13",
+     "ref": "Lecture 6 Exchange Rate",
+     "question": "What is an exchange rate? If AUD 1 = USD 0.67, how many AUD does USD 1 buy?",
+     "solution": "汇率是一国货币用另一国货币表示的价格。AUD 1 = USD 0.67，则 USD 1 = 1 ÷ 0.67 ≈ AUD 1.49。",
+     "checks": [
+      {
+       "expr": "1/0.67",
+       "equals": "1.4925",
+       "tol": 0.0005
+      }
+     ]
+    },
+    {
+     "label": "例 14",
+     "ref": "Lecture 6 Floating and Fixed",
+     "question": "Distinguish between floating and fixed exchange rates.",
+     "solution": "<strong>浮动汇率</strong>由外汇市场上货币的供求自由决定（澳大利亚采用），汇率就是外汇市场的均衡价格。<strong>固定（钉住）汇率</strong>由货币当局把本币和另一种货币的比价固定下来，以保持稳定，例如沙特里亚尔钉住美元：1 USD = 3.75 SAR。",
+     "numeric": false
+    },
+    {
+     "label": "例 15",
+     "ref": "Lecture 6 Demand and Supply",
+     "question": "Who demands and who supplies AUD? What causes these curves to shift?",
+     "solution": "<strong>需求方</strong>（持有外币的人）：进口澳大利亚商品服务（澳大利亚的出口）、投资澳大利亚、来澳旅游、向澳大利亚偿还贷款和汇回利润、投机澳元升值。\n<strong>供给方</strong>（持有澳元的人）：购买外国商品服务（进口）、对外投资、出国旅游、向海外偿还贷款和利润。\n曲线移动的原因：①偏好（更多人买澳洲产品、来澳旅游）；②相对收入（海外收入上升，澳大利亚出口增加）；③相对物价（澳大利亚通胀低，出口竞争力上升）；④相对利率（澳大利亚利率高，吸引投资）。",
+     "numeric": false
+    },
+    {
+     "label": "例 16",
+     "ref": "Lecture 6 Appreciation",
+     "question": "Show how an increase in demand for AUD and a decrease in supply of AUD cause appreciation. Give an example.",
+     "solution": "需求增加（D 右移）或供给减少（S 左移）都使澳元的美元价格从 P1 升到 P2，即<strong>升值</strong>。例：AUD 从 USD 0.75 升到 USD 0.85。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Quantity of AUD",
+       "yLabel": "Price of AUD in USD",
+       "curves": [
+        {
+         "expr": "8+(-0.8)*x",
+         "dom": [
+          0,
+          10.0
+         ],
+         "color": "navy",
+         "label": [
+          8.2,
+          1.8400000000000003,
+          "D"
+         ]
+        },
+        {
+         "expr": "1+(0.7)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "red",
+         "label": [
+          8.55,
+          7.484999999999999,
+          "S"
+         ]
+        },
+        {
+         "expr": "9.6+(-0.8)*x",
+         "dom": [
+          0,
+          9.6
+         ],
+         "color": "navy",
+         "label": [
+          7.871999999999999,
+          3.7024000000000004,
+          "D1"
+         ],
+         "dash": true
+        }
+       ],
+       "points": [
+        {
+         "x": 4.667,
+         "y": 4.267,
+         "label": "P1"
+        },
+        {
+         "x": 5.733,
+         "y": 5.013,
+         "label": "P2"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          4.267
+         ],
+         "to": [
+          4.667,
+          4.267
+         ]
+        },
+        {
+         "from": [
+          4.667,
+          0
+         ],
+         "to": [
+          4.667,
+          4.267
+         ]
+        },
+        {
+         "from": [
+          0,
+          5.013
+         ],
+         "to": [
+          5.733,
+          5.013
+         ]
+        },
+        {
+         "from": [
+          5.733,
+          0
+         ],
+         "to": [
+          5.733,
+          5.013
+         ]
+        }
+       ],
+       "caption": "Increase in demand for AUD: AUD appreciates (P1 → P2)"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Quantity of AUD",
+       "yLabel": "Price of AUD in USD",
+       "curves": [
+        {
+         "expr": "8+(-0.8)*x",
+         "dom": [
+          0,
+          10.0
+         ],
+         "color": "navy",
+         "label": [
+          8.2,
+          1.8400000000000003,
+          "D"
+         ]
+        },
+        {
+         "expr": "1+(0.7)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "red",
+         "label": [
+          8.55,
+          7.484999999999999,
+          "S"
+         ]
+        },
+        {
+         "expr": "2.6+(0.7)*x",
+         "dom": [
+          0,
+          9
+         ],
+         "color": "red",
+         "label": [
+          8.1,
+          8.77,
+          "S1"
+         ],
+         "dash": true
+        }
+       ],
+       "points": [
+        {
+         "x": 4.667,
+         "y": 4.267,
+         "label": "P1"
+        },
+        {
+         "x": 3.6,
+         "y": 5.12,
+         "label": "P2"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          4.267
+         ],
+         "to": [
+          4.667,
+          4.267
+         ]
+        },
+        {
+         "from": [
+          4.667,
+          0
+         ],
+         "to": [
+          4.667,
+          4.267
+         ]
+        },
+        {
+         "from": [
+          0,
+          5.12
+         ],
+         "to": [
+          3.6,
+          5.12
+         ]
+        },
+        {
+         "from": [
+          3.6,
+          0
+         ],
+         "to": [
+          3.6,
+          5.12
+         ]
+        }
+       ],
+       "caption": "Decrease in supply of AUD: AUD appreciates"
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 17",
+     "ref": "Lecture 6 Depreciation",
+     "question": "Show how a decrease in demand for AUD and an increase in supply of AUD cause depreciation. Give an example.",
+     "solution": "需求减少（D 左移）或供给增加（S 右移）都使澳元的美元价格从 P1 降到 P2，即<strong>贬值</strong>。例：AUD 从 USD 0.95 降到 USD 0.85。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Quantity of AUD",
+       "yLabel": "Price of AUD in USD",
+       "curves": [
+        {
+         "expr": "8+(-0.8)*x",
+         "dom": [
+          0,
+          10.0
+         ],
+         "color": "navy",
+         "label": [
+          8.2,
+          1.8400000000000003,
+          "D"
+         ]
+        },
+        {
+         "expr": "1+(0.7)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "red",
+         "label": [
+          8.55,
+          7.484999999999999,
+          "S"
+         ]
+        },
+        {
+         "expr": "6.4+(-0.8)*x",
+         "dom": [
+          0,
+          8.0
+         ],
+         "color": "navy",
+         "label": [
+          6.56,
+          1.552,
+          "D1"
+         ],
+         "dash": true
+        }
+       ],
+       "points": [
+        {
+         "x": 4.667,
+         "y": 4.267,
+         "label": "P1"
+        },
+        {
+         "x": 3.6,
+         "y": 3.52,
+         "label": "P2"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          4.267
+         ],
+         "to": [
+          4.667,
+          4.267
+         ]
+        },
+        {
+         "from": [
+          4.667,
+          0
+         ],
+         "to": [
+          4.667,
+          4.267
+         ]
+        },
+        {
+         "from": [
+          0,
+          3.52
+         ],
+         "to": [
+          3.6,
+          3.52
+         ]
+        },
+        {
+         "from": [
+          3.6,
+          0
+         ],
+         "to": [
+          3.6,
+          3.52
+         ]
+        }
+       ],
+       "caption": "Decrease in demand for AUD: AUD depreciates"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Quantity of AUD",
+       "yLabel": "Price of AUD in USD",
+       "curves": [
+        {
+         "expr": "8+(-0.8)*x",
+         "dom": [
+          0,
+          10.0
+         ],
+         "color": "navy",
+         "label": [
+          8.2,
+          1.8400000000000003,
+          "D"
+         ]
+        },
+        {
+         "expr": "1+(0.7)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "red",
+         "label": [
+          8.55,
+          7.484999999999999,
+          "S"
+         ]
+        },
+        {
+         "expr": "-0.6000000000000001+(0.7)*x",
+         "dom": [
+          0,
+          9.6
+         ],
+         "color": "red",
+         "label": [
+          8.64,
+          5.948,
+          "S1"
+         ],
+         "dash": true
+        }
+       ],
+       "points": [
+        {
+         "x": 4.667,
+         "y": 4.267,
+         "label": "P1"
+        },
+        {
+         "x": 5.733,
+         "y": 3.413,
+         "label": "P2"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          4.267
+         ],
+         "to": [
+          4.667,
+          4.267
+         ]
+        },
+        {
+         "from": [
+          4.667,
+          0
+         ],
+         "to": [
+          4.667,
+          4.267
+         ]
+        },
+        {
+         "from": [
+          0,
+          3.413
+         ],
+         "to": [
+          5.733,
+          3.413
+         ]
+        },
+        {
+         "from": [
+          5.733,
+          0
+         ],
+         "to": [
+          5.733,
+          3.413
+         ]
+        }
+       ],
+       "caption": "Increase in supply of AUD: AUD depreciates"
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 18",
+     "ref": "Lecture 6 Effects",
+     "question": "What are the economic effects of a large depreciation (AUD USD 0.75 → 0.55) and a large appreciation (USD 0.75 → 0.95) of the AUD?",
+     "solution": "<strong>大幅贬值</strong>：①出口用外币计价更便宜，出口增加；②进口更贵，进口减少；③贸易条件（出口价格 ÷ 进口价格）恶化；④与进口竞争的本国生产者受益，产出和就业增加；⑤来澳旅游增加；⑥贸易差额（X − M）改善；⑦CPI 上升：进口商品服务涨价直接计入 CPI，进口投入品涨价间接推高本国产品价格。\n<strong>大幅升值</strong>：效果相反：出口减少、进口增加、贸易条件改善、与进口竞争的本国生产者受损（产出下降、<strong>失业增加</strong>）、来澳旅游减少、贸易差额恶化、通胀下降（进口品和进口投入品变便宜）。",
+     "sourceNote": "讲义第 21 页写升值时本国生产者「↓ O and ↓ unemployment」，失业应为上升（产出下降、就业减少），笔记按「失业增加」处理。",
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "把澳大利亚的进口算成澳元需求：进口时澳大利亚人卖出澳元，是澳元供给。",
+    "升值、贬值的图画反：升值是澳元的外币价格上升。",
+    "以为贬值总是好事：它也推高通胀。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么纵轴是「Price of AUD in USD」？",
+     "a": "汇率就是澳元的价格，用另一种货币（美元）表示；纵轴越高，1 澳元能换的美元越多，澳元越强。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "题型",
+   "做法",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "比较优势",
+    "机会成本 = 放弃 ÷ 得到，选低的",
+    "例 4–7"
+   ],
+   [
+    "贸易条件",
+    "出口价格 ↑ 或进口价格 ↓ → 改善",
+    "例 8"
+   ],
+   [
+    "关税 / 补贴图",
+    "关税抬价到 PT；补贴 S 右移",
+    "例 9、10"
+   ],
+   [
+    "汇率供求",
+    "出口、外资、来澳旅游 → 澳元需求；进口、对外投资 → 澳元供给",
+    "例 15"
+   ],
+   [
+    "升值 / 贬值",
+    "D↑ 或 S↓ 升值；D↓ 或 S↑ 贬值",
+    "例 16、17"
+   ]
+  ]
+ },
+ "practice": "讲座结尾：完成本周 Learning Guide 题目、小测和写作练习。Unit 6 Tutorial 的答案见第 8 周。"
+}

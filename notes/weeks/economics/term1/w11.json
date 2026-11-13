@@ -1,0 +1,2058 @@
+{
+ "course": "economics",
+ "term": "term1",
+ "week": 11,
+ "title": "Unit 10 · Monopolistic Competition & Oligopoly 垄断竞争与寡头",
+ "answersTitle": "Unit 10 Learning Guide: Monopolistic Competition and Oligopoly",
+ "files": [
+  "Lecture 10.1 Monopolistic Competition.pdf",
+  "Lecture 10.2 Oligopoly .pdf",
+  "Unit 10 LG Microeconomics Monopolistic Competition and Oligopoly.pdf",
+  "Unit 10_课件01_Monopolistic Competition and Oligopoly.pdf",
+  "Unit 10_课件02_Monopolistic Competition and Oligopoly.pdf",
+  "Unit 10_课后练习_Learning Guide_Monopolistic Competition and Oligopoly.pdf"
+ ],
+ "inventory": [
+  "Lecture 10.1 Characteristics",
+  {
+   "ref": "Lecture 10.1 Short and Long Run",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "Lecture 10.2 Characteristics",
+  {
+   "ref": "Lecture 10.2 Kinked Demand",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Lecture 10.2 Game Theory",
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  {
+   "ref": "Lecture 10.2 Collusion",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "Lecture 10.2 Cost Plus",
+  {
+   "ref": "Learning Guide Terms",
+   "deliverables": [
+    {
+     "type": "terms",
+     "terms": [
+      "Monopolistic Competition",
+      "Product Differentiation",
+      "Non-price competition",
+      "Oligopoly",
+      "Non-Collusive Oligopoly",
+      "Mutual Interdependence",
+      "Kinked Demand Curve",
+      "Collusive Oligopoly",
+      "Collusion",
+      "Cartel",
+      "Price Leadership",
+      "Cost Plus Pricing",
+      "Game Theory"
+     ]
+    }
+   ]
+  },
+  "Learning Guide Q1",
+  {
+   "ref": "Learning Guide Q2",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "Learning Guide Q3",
+  {
+   "ref": "Learning Guide Q4",
+   "parts": [
+    "a",
+    "b"
+   ]
+  },
+  "Learning Guide Q5",
+  "Learning Guide Q6",
+  "Learning Guide Q7",
+  {
+   "ref": "Learning Guide In-class Q1",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "Learning Guide In-class Q2",
+  "Learning Guide In-class Q3",
+  {
+   "ref": "Learning Guide In-class Q4",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Learning Guide Writing",
+   "parts": [
+    "a",
+    "b"
+   ],
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  }
+ ],
+ "intro": [
+  "最后两种市场结构。<strong>垄断竞争</strong>：很多小厂商出售有差别的产品、进出容易——短期可以有超额利润，长期新厂商进入使需求曲线下移，只剩正常利润（切点解）。<strong>寡头</strong>：少数厂商主导、进入壁垒高、相互依赖——价格倾向僵化（折弯需求曲线）、用博弈论分析策略、可能勾结（卡特尔、君子协定、价格领导）。图中切点、折弯和 MR 缺口都由程序按给定曲线计算。"
+ ],
+ "sections": [
+  {
+   "title": "垄断竞争（Lecture 10.1）",
+   "sources": [
+    {
+     "file": "Unit 10_课件01_Monopolistic Competition and Oligopoly.pdf",
+     "pages": "p3–32"
+    }
+   ],
+   "concept": "<strong>垄断竞争</strong>：大量小厂商出售相似但不相同的产品（餐馆、理发店、服装店、汽修）。「垄断」指每家厂商通过产品差别化使自己的产品有点独特，「竞争」指有很多厂商争夺顾客。\n<strong>特征</strong>：产品有差别（真实或想象的，通过广告、包装、服务、品牌等非价格竞争实现）；厂商数量较多、规模小，各占很小的市场份额，没有勾结；进出容易（壁垒低）。\n与完全竞争比较：厂商都很多（完全竞争是「非常多」、价格接受者；垄断竞争对价格有有限的控制）；产品同质 vs 有差别；没有壁垒 vs 壁垒很低。\n需求（AR）向下倾斜但<strong>富有弹性</strong>（对手越多、差别越小越有弹性），MR 在 AR 下方，AR ≠ MR。厂商是价格制定者，但要多卖就要降价。\n<strong>短期</strong>：MR = MC 定产量，从需求曲线定价，可以有超额利润、正常利润或亏损。<strong>长期</strong>：超额利润吸引新厂商进入，每家厂商的需求曲线下移，直到与 ATC <strong>相切</strong>，只剩正常利润；亏损则有厂商退出，剩下的厂商需求上升，亏损消失。由于品牌忠诚，个别厂商长期也可能保留少量超额利润。",
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "Lecture 10.1 Characteristics",
+     "question": "List the characteristics of monopolistic competition and compare them with perfect competition.",
+     "solution": "垄断竞争：产品有差别；厂商数量较多、规模小，各自对价格有有限的控制；没有勾结；进出壁垒很低。完全竞争：产品同质；厂商非常多，都是价格接受者；完全没有壁垒。相同点：厂商都很多，长期都只有正常利润。不同点：垄断竞争的需求曲线向下倾斜（MR < AR），有非价格竞争（广告、品牌）。",
+     "numeric": false
+    },
+    {
+     "label": "例 2",
+     "ref": "Lecture 10.1 Short and Long Run",
+     "question": "Show the short-run supernormal profit and the long-run equilibrium of a monopolistically competitive firm.",
+     "solution": "短期：MR = MC 处生产，价格高于 ATC，有超额利润（左图）。长期：超额利润吸引新厂商进入（壁垒低），每家厂商分到的需求减少，AR 下移，直到与 ATC 相切：在 MR = MC 的产量上 P1 = C1 = ATC，只有正常利润（右图，切点在 Q = 6，P ≈ 7.93）。注意切点在 ATC 最低点的左边：厂商没有在最低平均成本生产，有过剩产能。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        16
+       ],
+       "yr": [
+        0,
+        14
+       ],
+       "width": 340,
+       "height": 260,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "$",
+       "curves": [
+        {
+         "expr": "10-3*x+0.3*x^2",
+         "dom": [
+          0.4,
+          11
+         ],
+         "color": "red",
+         "label": [
+          10.2,
+          12.2,
+          "MC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2+20/x",
+         "dom": [
+          1.6,
+          14
+         ],
+         "color": "navy",
+         "label": [
+          13.2,
+          10.2,
+          "ATC"
+         ]
+        },
+        {
+         "expr": "12-0.5*x",
+         "dom": [
+          0,
+          16
+         ],
+         "color": "green",
+         "label": [
+          14.2,
+          5.6,
+          "AR = D"
+         ]
+        },
+        {
+         "expr": "12-x",
+         "dom": [
+          0,
+          12
+         ],
+         "color": "gold",
+         "dash": true,
+         "label": [
+          10.8,
+          0.9,
+          "MR"
+         ]
+        }
+       ],
+       "polygons": [
+        {
+         "pts": [
+          [
+           0,
+           8.225
+          ],
+          [
+           7.55,
+           8.225
+          ],
+          [
+           7.55,
+           7.024
+          ],
+          [
+           0,
+           7.024
+          ]
+         ],
+         "color": "green",
+         "opacity": 0.25,
+         "label": [
+          3.77,
+          7.62,
+          "supernormal profit"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 7.55,
+         "y": 4.45,
+         "label": "MR = MC"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          7.55,
+          0
+         ],
+         "to": [
+          7.55,
+          8.225
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": 7.35,
+         "y": -0.9,
+         "text": "Q*"
+        }
+       ],
+       "caption": "Monopolistic competition, short run: supernormal profit at MR = MC (demand is downward sloping but fairly elastic)"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        16
+       ],
+       "yr": [
+        0,
+        15
+       ],
+       "width": 340,
+       "height": 260,
+       "xLabel": "Quantity",
+       "yLabel": "C/R ($)",
+       "curves": [
+        {
+         "expr": "10-3*x+0.3*x^2",
+         "dom": [
+          0.4,
+          11
+         ],
+         "color": "red",
+         "label": [
+          10.2,
+          12.3,
+          "MC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2+20/x",
+         "dom": [
+          1.5,
+          14
+         ],
+         "color": "navy",
+         "label": [
+          13.2,
+          10.4,
+          "ATC"
+         ]
+        },
+        {
+         "expr": "13.0667+(-0.8556)*x",
+         "dom": [
+          0,
+          15
+         ],
+         "color": "green",
+         "label": [
+          12.5,
+          2.8,
+          "AR (long run)"
+         ]
+        },
+        {
+         "expr": "13.0667+(-1.7111)*x",
+         "dom": [
+          0,
+          7.6
+         ],
+         "color": "gold",
+         "dash": true,
+         "label": [
+          6.6,
+          1.0,
+          "MR"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 6,
+         "y": 7.933,
+         "label": "P1 = C1 (tangency)"
+        },
+        {
+         "x": 6,
+         "y": 2.8,
+         "label": "MR = MC",
+         "dy": 14
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          6,
+          0
+         ],
+         "to": [
+          6,
+          7.933
+         ]
+        }
+       ],
+       "caption": "Long run: entry shifts each firm's AR down until it is tangent to ATC at the MR = MC output — normal profit only"
+      }
+     ],
+     "checks": [
+      {
+       "expr": "10-3*6+0.3*36",
+       "equals": "13.0667+2*(-0.8556)*6",
+       "tol": 0.001
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "长期均衡画在 ATC 最低点：垄断竞争的切点在最低点左边。",
+    "把垄断竞争厂商当价格接受者：它面对向下倾斜的需求曲线。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么长期还可能有一点超额利润？",
+     "a": "产品差别和顾客忠诚使部分厂商的需求不易被新进入者抢走，讲义也提到这一点。"
+    }
+   ]
+  },
+  {
+   "title": "寡头：特征、折弯需求曲线、博弈论与勾结（Lecture 10.2）",
+   "sources": [
+    {
+     "file": "Unit 10_课件02_Monopolistic Competition and Oligopoly.pdf",
+     "pages": "p3–41"
+    }
+   ],
+   "concept": "<strong>寡头</strong>：少数厂商主导行业（超市、手机运营商）；进出壁垒高；厂商<strong>相互依赖</strong>——一家的决定会引起其他厂商的反应（如银行收费）。产品可以有差别（汽车、航空）或同质（铜、石油、钢铁）。成因：规模经济、其他进入壁垒、合并和收购。需求向下倾斜，短期和长期都可以有超额利润。特点：价格不常变动、很少价格战；变价时各厂商一起变。\n<strong>折弯需求曲线</strong>（无勾结）：假设对手会跟随降价、不跟随涨价。所以在现行价格 P1 以上需求很有弹性（涨价会失去顾客），以下缺乏弹性（降价对手跟着降，抢不到份额），需求曲线在 P1 处折弯，MR 曲线在折点出现<strong>垂直缺口</strong>；MC 在缺口内变动时，价格和产量都不变——价格刚性。批评：不能解释最初的价格怎么来；现实价格没有那么僵化；寡头之间往往会合作。\n<strong>博弈论</strong>：用收益矩阵分析策略决策，每家的结果取决于对手。<strong>占优策略</strong>：无论对手怎么做都是最好的策略。囚徒困境：各自选占优策略，结果却都比合作差，而且合作也有作弊的诱惑。\n<strong>勾结</strong>：通常违法、秘密的协议，划分市场、定价或限产；勾结后厂商如同一家垄断者，折弯消失。<strong>卡特尔</strong>：正式书面协议，定价、分配产量或限产（OPEC、IATA），在澳洲违法，成员有作弊动机。<strong>君子协定</strong>：非正式协议，也违法但难以察觉。<strong>默契勾结</strong>（没有协议）：<strong>价格领导</strong>（一家先调价、其他跟随，如银行业，领导者通常份额最大或效率最高）；<strong>成本加成定价</strong>（单位成本加一定百分比作为价格，隐含目标利润）。\n勾结的障碍：各厂商成本和需求不同，难以达成一致；厂商越多越难；作弊；经济衰退；法律障碍。",
+   "examples": [
+    {
+     "label": "例 3",
+     "ref": "Lecture 10.2 Characteristics",
+     "question": "List the characteristics and causes of oligopoly, with Australian examples.",
+     "solution": "特征：少数厂商主导；进出壁垒高；相互依赖（一家的决定会引起对手的反应，如银行调整收费）；产品同质（铜、石油、钢铁）或有差别（汽车、航空）；有价格战也有非价格竞争。例子：超市行业（Coles 和 Woolworths）、手机运营商。成因：大规模生产的规模经济、其他进入壁垒、合并和收购的趋势。",
+     "numeric": false
+    },
+    {
+     "label": "例 4",
+     "ref": "Lecture 10.2 Kinked Demand",
+     "question": "Draw the kinked demand curve with its MR curve and MC, and explain price rigidity.",
+     "solution": "在现行价格 P1（Q = 8）以上，对手不跟随涨价，需求很有弹性（D = 8 − 0.25Q）；以下对手跟随降价，需求缺乏弹性（D = 10 − 0.5Q）。上段的 MR 在 Q = 8 时是 8 − 0.5 × 8 = 4，下段的 MR 是 10 − 8 = 2，MR 在折点从 4 跳到 2，形成缺口。MC 从 MC1 上升到 MC2，只要仍在 2 到 4 之间，利润最大的产量和价格都不变，所以价格很少变动。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        20
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 340,
+       "height": 260,
+       "xLabel": "Quantity",
+       "yLabel": "$",
+       "curves": [
+        {
+         "expr": "8-0.25*x",
+         "dom": [
+          0,
+          8
+         ],
+         "color": "navy",
+         "label": [
+          2.2,
+          8.1,
+          "D elastic above P1"
+         ]
+        },
+        {
+         "expr": "10-0.5*x",
+         "dom": [
+          8,
+          20
+         ],
+         "color": "navy",
+         "label": [
+          13.6,
+          4.1,
+          "D inelastic below P1"
+         ]
+        },
+        {
+         "expr": "8-0.5*x",
+         "dom": [
+          0,
+          8
+         ],
+         "color": "gold",
+         "dash": true,
+         "label": [
+          1.5,
+          6.2,
+          "MR"
+         ]
+        },
+        {
+         "expr": "10-x",
+         "dom": [
+          8,
+          10
+         ],
+         "color": "gold",
+         "dash": true
+        },
+        {
+         "expr": "0.8+0.25*x",
+         "dom": [
+          0,
+          14
+         ],
+         "color": "red",
+         "label": [
+          13,
+          4.6,
+          "MC1"
+         ]
+        },
+        {
+         "expr": "1.3+0.25*x",
+         "dom": [
+          0,
+          14
+         ],
+         "color": "red",
+         "dash": true,
+         "label": [
+          13.4,
+          5.5,
+          "MC2"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 8,
+         "y": 6,
+         "label": "kink at P1"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          8,
+          4
+         ],
+         "to": [
+          8,
+          2
+         ],
+         "color": "gold",
+         "dash": false,
+         "label": "gap in MR",
+         "dx": 6,
+         "dy": 12
+        },
+        {
+         "from": [
+          0,
+          6
+         ],
+         "to": [
+          8,
+          6
+         ]
+        },
+        {
+         "from": [
+          8,
+          0
+         ],
+         "to": [
+          8,
+          2
+         ]
+        }
+       ],
+       "caption": "Kinked demand: MR has a vertical gap at the kink; MC can move from MC1 to MC2 within the gap without changing P1 or Q1 (price rigidity)"
+      }
+     ],
+     "checks": [
+      {
+       "expr": "8-0.5*8",
+       "equals": "4"
+      },
+      {
+       "expr": "10-8",
+       "equals": "2"
+      },
+      {
+       "expr": "8-0.25*8",
+       "equals": "10-0.5*8"
+      },
+      {
+       "expr": "0.8+0.25*8",
+       "equals": "2.8"
+      },
+      {
+       "expr": "1.3+0.25*8",
+       "equals": "3.3"
+      }
+     ]
+    },
+    {
+     "label": "例 5",
+     "ref": "Lecture 10.2 Game Theory",
+     "question": "Coles and Woolworths each choose $2.00 or $1.80. Payoffs (Woolworths, Coles): both $2.00 → ($10m, $10m); Woolworths $2.00, Coles $1.80 → ($5m, $12m); Woolworths $1.80, Coles $2.00 → ($12m, $5m); both $1.80 → ($8m, $8m). Find each firm's dominant strategy and the outcome.",
+     "solution": "站在 Woolworths 角度：Coles 定 $2 时，自己定 $2 得 10，定 $1.80 得 12，选 $1.80；Coles 定 $1.80 时，自己定 $2 得 5，定 $1.80 得 8，还是选 $1.80。所以 $1.80 是 Woolworths 的<strong>占优策略</strong>；对称地也是 Coles 的占优策略。结果两家都定 $1.80，各得 $8m，比都定 $2 时的 $10m 少——这就是囚徒困境：各自追求自身利益，结果都更差。想合作定 $2 是违法的勾结，而且即使合作，也有降价作弊的诱惑。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "",
+        "Coles $2.00",
+        "Coles $1.80"
+       ],
+       "rows": [
+        [
+         "Woolworths $2.00",
+         "($10m, $10m)",
+         "($5m, $12m)"
+        ],
+        [
+         "Woolworths $1.80",
+         "($12m, $5m)",
+         "($8m, $8m)"
+        ]
+       ],
+       "title": "Payoff matrix (Woolworths' profit, Coles' profit)"
+      }
+     ],
+     "checks": [
+      {
+       "expr": "12-10",
+       "equals": "2"
+      },
+      {
+       "expr": "8-5",
+       "equals": "3"
+      }
+     ]
+    },
+    {
+     "label": "例 6",
+     "ref": "Lecture 10.2 Collusion",
+     "question": "Explain collusion, cartels, gentlemen's agreements and tacit collusion, with examples, and show the collusive oligopoly diagram.",
+     "solution": "勾结是两家或以上厂商限制公开竞争的协议（通常违法、秘密），可以划分市场、定价或限产；勾结后厂商像一家垄断者一样行动，在行业 MR = MC 处定产量，获得超额利润（下图），折弯需求消失。卡特尔是正式的书面协议（OPEC、IATA），在澳洲违法，成员都有作弊多卖的动机。君子协定是非正式的口头约定（例如「下个月都涨 10%」），也违法但难以察觉。默契勾结没有协议：价格领导（银行业由最大的银行先调利率，其他跟随）、成本加成定价。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        16
+       ],
+       "yr": [
+        0,
+        14
+       ],
+       "width": 340,
+       "height": 260,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "$",
+       "curves": [
+        {
+         "expr": "10-3*x+0.3*x^2",
+         "dom": [
+          0.4,
+          11
+         ],
+         "color": "red",
+         "label": [
+          10.2,
+          12.2,
+          "MC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2+20/x",
+         "dom": [
+          1.6,
+          14
+         ],
+         "color": "navy",
+         "label": [
+          13.2,
+          10.2,
+          "ATC"
+         ]
+        },
+        {
+         "expr": "12-0.5*x",
+         "dom": [
+          0,
+          16
+         ],
+         "color": "green",
+         "label": [
+          14.2,
+          5.6,
+          "AR = D"
+         ]
+        },
+        {
+         "expr": "12-x",
+         "dom": [
+          0,
+          12
+         ],
+         "color": "gold",
+         "dash": true,
+         "label": [
+          10.8,
+          0.9,
+          "MR"
+         ]
+        }
+       ],
+       "polygons": [
+        {
+         "pts": [
+          [
+           0,
+           8.225
+          ],
+          [
+           7.55,
+           8.225
+          ],
+          [
+           7.55,
+           7.024
+          ],
+          [
+           0,
+           7.024
+          ]
+         ],
+         "color": "green",
+         "opacity": 0.25,
+         "label": [
+          3.77,
+          7.62,
+          "supernormal profit"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 7.55,
+         "y": 4.45,
+         "label": "MR = MC"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          7.55,
+          0
+         ],
+         "to": [
+          7.55,
+          8.225
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": 7.35,
+         "y": -0.9,
+         "text": "Q*"
+        }
+       ],
+       "caption": "Collusive oligopoly: the firms act as one monopolist — output where industry MR = MC, price from the demand curve, supernormal profit shared"
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 7",
+     "ref": "Lecture 10.2 Cost Plus",
+     "question": "Production cost is $1.00 per unit and the target mark-up is 10%. Find the price under cost-plus pricing.",
+     "solution": "目标利润 = 10% × $1.00 = 10 分；价格 = 成本 + 利润 = $1.10。",
+     "checks": [
+      {
+       "expr": "1+0.1*1",
+       "equals": "1.1"
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "折弯需求曲线的两段弹性写反：涨价对手不跟 → 上段富有弹性。",
+    "占优策略理解成「对双方都最好的结果」：占优策略是不管对手怎么做都最好的策略，结果可能对双方都不好。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么寡头倾向非价格竞争？",
+     "a": "降价会被对手跟随，抢不到份额还降低利润；广告、品牌、服务等非价格竞争不容易被马上模仿。"
+    }
+   ]
+  },
+  {
+   "title": "Learning Guide：问答与写作",
+   "sources": [
+    {
+     "file": "Unit 10 LG Microeconomics Monopolistic Competition and Oligopoly.pdf",
+     "pages": "p2–4"
+    }
+   ],
+   "concept": "答题结构：特征 → 图（MR = MC、需求曲线形状）→ 短期与长期的区别 → 结论。寡头题要说明相互依赖、折弯需求的假设、勾结的形式与违法性。",
+   "examples": [
+    {
+     "label": "例 8",
+     "ref": "Learning Guide Terms",
+     "question": "Define: Monopolistic competition; Product differentiation; Non-price competition; Oligopoly; Non-collusive oligopoly; Mutual interdependence; Kinked demand curve; Collusive oligopoly; Collusion; Cartel; Price leadership; Cost plus pricing; Game theory.",
+     "solution": "<strong>Monopolistic Competition</strong>：大量小厂商出售相似但有差别的产品、进出容易的市场。\n<strong>Product Differentiation</strong>：使自己的产品在消费者眼中与对手不同（真实或想象的差别）。\n<strong>Non-price competition</strong>：用广告、包装、服务、品牌等非价格手段竞争。\n<strong>Oligopoly</strong>：少数厂商主导、进入壁垒高、相互依赖的市场。\n<strong>Non-Collusive Oligopoly</strong>：寡头厂商各自独立定价，但考虑对手的反应。\n<strong>Mutual Interdependence</strong>：一家厂商的决定会引起对手的反应，因此决策要考虑对手。\n<strong>Kinked Demand Curve</strong>：假设对手跟随降价、不跟随涨价，需求曲线在现行价格处折弯，用来解释价格刚性。\n<strong>Collusive Oligopoly</strong>：寡头厂商通过协议一致行动，如同一家垄断者。\n<strong>Collusion</strong>：厂商之间限制公开竞争的协议，通常违法、秘密。\n<strong>Cartel</strong>：正式的书面协议，定价、分配或限制产量，如 OPEC。\n<strong>Price Leadership</strong>：一家厂商（通常最大或最有效率）先调价，其他厂商跟随。\n<strong>Cost Plus Pricing</strong>：在单位成本上加一定百分比作为售价。\n<strong>Game Theory</strong>：分析参与者策略决策的方法，每人的结果取决于其他人的行为，用收益矩阵表示。",
+     "numeric": false
+    },
+    {
+     "label": "例 9",
+     "ref": "Learning Guide Q1",
+     "question": "Discuss the main differences between monopolistic competition and perfect competition, highlighting similarities.",
+     "solution": "相同：厂商数量多；进出容易；长期只有正常利润；没有勾结。不同：①产品——完全竞争同质，垄断竞争有差别；②价格——完全竞争厂商是价格接受者，需求水平（P = MR）；垄断竞争厂商对价格有有限控制，需求向下倾斜但富有弹性（MR < AR）；③非价格竞争——完全竞争没有，垄断竞争大量使用广告和品牌；④长期——完全竞争在 ATC 最低点生产，垄断竞争在切点、最低点左边生产，有过剩产能，价格略高。",
+     "numeric": false
+    },
+    {
+     "label": "例 10",
+     "ref": "Learning Guide Q2",
+     "question": "Distinguish short-run and long-run equilibrium for firms under monopolistic competition, with diagrams.",
+     "solution": "短期：固定要素不变、来不及进出；厂商在 MR = MC 处生产，可能有超额利润（左图）、正常利润或亏损。长期：壁垒低，超额利润吸引新厂商进入，每家需求减少、AR 下移；亏损则有厂商退出，剩下厂商的需求上升；最终 AR 与 ATC 相切（右图），P = ATC，只有正常利润。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        16
+       ],
+       "yr": [
+        0,
+        14
+       ],
+       "width": 340,
+       "height": 260,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "$",
+       "curves": [
+        {
+         "expr": "10-3*x+0.3*x^2",
+         "dom": [
+          0.4,
+          11
+         ],
+         "color": "red",
+         "label": [
+          10.2,
+          12.2,
+          "MC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2+20/x",
+         "dom": [
+          1.6,
+          14
+         ],
+         "color": "navy",
+         "label": [
+          13.2,
+          10.2,
+          "ATC"
+         ]
+        },
+        {
+         "expr": "12-0.5*x",
+         "dom": [
+          0,
+          16
+         ],
+         "color": "green",
+         "label": [
+          14.2,
+          5.6,
+          "AR = D"
+         ]
+        },
+        {
+         "expr": "12-x",
+         "dom": [
+          0,
+          12
+         ],
+         "color": "gold",
+         "dash": true,
+         "label": [
+          10.8,
+          0.9,
+          "MR"
+         ]
+        }
+       ],
+       "polygons": [
+        {
+         "pts": [
+          [
+           0,
+           8.225
+          ],
+          [
+           7.55,
+           8.225
+          ],
+          [
+           7.55,
+           7.024
+          ],
+          [
+           0,
+           7.024
+          ]
+         ],
+         "color": "green",
+         "opacity": 0.25,
+         "label": [
+          3.77,
+          7.62,
+          "supernormal profit"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 7.55,
+         "y": 4.45,
+         "label": "MR = MC"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          7.55,
+          0
+         ],
+         "to": [
+          7.55,
+          8.225
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": 7.35,
+         "y": -0.9,
+         "text": "Q*"
+        }
+       ],
+       "caption": "Monopolistic competition, short run: supernormal profit at MR = MC (demand is downward sloping but fairly elastic)"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        16
+       ],
+       "yr": [
+        0,
+        15
+       ],
+       "width": 340,
+       "height": 260,
+       "xLabel": "Quantity",
+       "yLabel": "C/R ($)",
+       "curves": [
+        {
+         "expr": "10-3*x+0.3*x^2",
+         "dom": [
+          0.4,
+          11
+         ],
+         "color": "red",
+         "label": [
+          10.2,
+          12.3,
+          "MC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2+20/x",
+         "dom": [
+          1.5,
+          14
+         ],
+         "color": "navy",
+         "label": [
+          13.2,
+          10.4,
+          "ATC"
+         ]
+        },
+        {
+         "expr": "13.0667+(-0.8556)*x",
+         "dom": [
+          0,
+          15
+         ],
+         "color": "green",
+         "label": [
+          12.5,
+          2.8,
+          "AR (long run)"
+         ]
+        },
+        {
+         "expr": "13.0667+(-1.7111)*x",
+         "dom": [
+          0,
+          7.6
+         ],
+         "color": "gold",
+         "dash": true,
+         "label": [
+          6.6,
+          1.0,
+          "MR"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 6,
+         "y": 7.933,
+         "label": "P1 = C1 (tangency)"
+        },
+        {
+         "x": 6,
+         "y": 2.8,
+         "label": "MR = MC",
+         "dy": 14
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          6,
+          0
+         ],
+         "to": [
+          6,
+          7.933
+         ]
+        }
+       ],
+       "caption": "Long run: entry shifts each firm's AR down until it is tangent to ATC at the MR = MC output — normal profit only"
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 11",
+     "ref": "Learning Guide Q3",
+     "question": "What is an oligopoly? Why do oligopolies emerge?",
+     "solution": "寡头是少数厂商主导一个行业的市场结构，进入壁垒高，厂商相互依赖，产品可以同质或有差别。出现的原因：①大规模生产的规模经济——只有几家大厂商能以低成本生产；②其他进入壁垒（巨额资本、品牌、政府许可、关键资源）；③合并和收购使行业集中到少数厂商手中。",
+     "numeric": false
+    },
+    {
+     "label": "例 12",
+     "ref": "Learning Guide Q4",
+     "question": "How does the kinked demand curve explain (a) price stability and (b) non-price competition in oligopoly?",
+     "solution": "(a) 对手跟随降价、不跟随涨价，需求在现行价格折弯，MR 在折点有缺口；成本在一定范围内变化（MC 在缺口内移动）不会改变利润最大的价格和产量，所以价格稳定。\n(b) 降价会被对手立即跟随，抢不到份额、只会降低大家的利润；涨价又会失去顾客。所以厂商不愿用价格竞争，而改用广告、品牌、促销、服务等非价格竞争来争夺市场份额。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        20
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 340,
+       "height": 260,
+       "xLabel": "Quantity",
+       "yLabel": "$",
+       "curves": [
+        {
+         "expr": "8-0.25*x",
+         "dom": [
+          0,
+          8
+         ],
+         "color": "navy",
+         "label": [
+          2.2,
+          8.1,
+          "D elastic above P1"
+         ]
+        },
+        {
+         "expr": "10-0.5*x",
+         "dom": [
+          8,
+          20
+         ],
+         "color": "navy",
+         "label": [
+          13.6,
+          4.1,
+          "D inelastic below P1"
+         ]
+        },
+        {
+         "expr": "8-0.5*x",
+         "dom": [
+          0,
+          8
+         ],
+         "color": "gold",
+         "dash": true,
+         "label": [
+          1.5,
+          6.2,
+          "MR"
+         ]
+        },
+        {
+         "expr": "10-x",
+         "dom": [
+          8,
+          10
+         ],
+         "color": "gold",
+         "dash": true
+        },
+        {
+         "expr": "0.8+0.25*x",
+         "dom": [
+          0,
+          14
+         ],
+         "color": "red",
+         "label": [
+          13,
+          4.6,
+          "MC1"
+         ]
+        },
+        {
+         "expr": "1.3+0.25*x",
+         "dom": [
+          0,
+          14
+         ],
+         "color": "red",
+         "dash": true,
+         "label": [
+          13.4,
+          5.5,
+          "MC2"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 8,
+         "y": 6,
+         "label": "kink at P1"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          8,
+          4
+         ],
+         "to": [
+          8,
+          2
+         ],
+         "color": "gold",
+         "dash": false,
+         "label": "gap in MR",
+         "dx": 6,
+         "dy": 12
+        },
+        {
+         "from": [
+          0,
+          6
+         ],
+         "to": [
+          8,
+          6
+         ]
+        },
+        {
+         "from": [
+          8,
+          0
+         ],
+         "to": [
+          8,
+          2
+         ]
+        }
+       ],
+       "caption": "Kinked demand: MR has a vertical gap at the kink; MC can move from MC1 to MC2 within the gap without changing P1 or Q1 (price rigidity)"
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 13",
+     "ref": "Learning Guide Q5",
+     "question": "Are there limitations on the usefulness of the kinked demand curve theory?",
+     "solution": "有：①它不能解释最初的现行价格是怎样决定的；②现实中价格并没有理论说的那么僵化；③寡头厂商相处久了往往会合作（价格领导、默契勾结），这时对手可能也跟随涨价，折弯就不存在了。",
+     "numeric": false
+    },
+    {
+     "label": "例 14",
+     "ref": "Learning Guide Q6",
+     "question": "What is collusion? Why does an oligopoly market encourage collusion rather than price competition? Why is collusion illegal in Australia?",
+     "solution": "勾结是厂商之间限制公开竞争的协议，划分市场、统一定价或限制产量。寡头只有少数几家厂商，相互依赖，价格战会让大家利润都减少（如收益矩阵中都选低价的结果），而一致行动可以像垄断者一样获得超额利润，厂商少也容易达成协议，所以寡头倾向勾结。勾结在澳洲违法（《2010 年竞争与消费者法》，由 ACCC 执行），因为它像垄断一样限制产量、抬高价格，损害消费者，造成资源配置无效率。",
+     "numeric": false
+    },
+    {
+     "label": "例 15",
+     "ref": "Learning Guide Q7",
+     "question": "Textbook REVISE Chapter 9 multiple-choice questions 1–9 (p226).",
+     "solution": "教材选择题原文不在本周资料中，无法逐题作答。复习要点：垄断竞争的长期切点、折弯需求的假设和 MR 缺口、占优策略、卡特尔与君子协定、价格领导和成本加成。",
+     "sourceNote": "教材题目不在资料中。",
+     "numeric": false
+    },
+    {
+     "label": "例 16",
+     "ref": "Learning Guide In-class Q1",
+     "question": "Use diagrams to compare the short-run position of a firm earning supernormal profit in monopolistic competition with one in perfect competition.",
+     "solution": "两者都在 MR = MC 处生产，价格高于 ATC，有超额利润。区别：完全竞争厂商的需求是水平线 P = MR = AR（第 9 周例 3 的图），价格由市场决定；垄断竞争厂商的需求向下倾斜，MR 在 AR 下方，价格高于 MC（左图）。两种结构长期超额利润都会因新厂商进入而消失。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        16
+       ],
+       "yr": [
+        0,
+        14
+       ],
+       "width": 340,
+       "height": 260,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "$",
+       "curves": [
+        {
+         "expr": "10-3*x+0.3*x^2",
+         "dom": [
+          0.4,
+          11
+         ],
+         "color": "red",
+         "label": [
+          10.2,
+          12.2,
+          "MC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2+20/x",
+         "dom": [
+          1.6,
+          14
+         ],
+         "color": "navy",
+         "label": [
+          13.2,
+          10.2,
+          "ATC"
+         ]
+        },
+        {
+         "expr": "12-0.5*x",
+         "dom": [
+          0,
+          16
+         ],
+         "color": "green",
+         "label": [
+          14.2,
+          5.6,
+          "AR = D"
+         ]
+        },
+        {
+         "expr": "12-x",
+         "dom": [
+          0,
+          12
+         ],
+         "color": "gold",
+         "dash": true,
+         "label": [
+          10.8,
+          0.9,
+          "MR"
+         ]
+        }
+       ],
+       "polygons": [
+        {
+         "pts": [
+          [
+           0,
+           8.225
+          ],
+          [
+           7.55,
+           8.225
+          ],
+          [
+           7.55,
+           7.024
+          ],
+          [
+           0,
+           7.024
+          ]
+         ],
+         "color": "green",
+         "opacity": 0.25,
+         "label": [
+          3.77,
+          7.62,
+          "supernormal profit"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 7.55,
+         "y": 4.45,
+         "label": "MR = MC"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          7.55,
+          0
+         ],
+         "to": [
+          7.55,
+          8.225
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": 7.35,
+         "y": -0.9,
+         "text": "Q*"
+        }
+       ],
+       "caption": "Monopolistic competition, short run: supernormal profit at MR = MC (demand is downward sloping but fairly elastic)"
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 17",
+     "ref": "Learning Guide In-class Q2",
+     "question": "Textbook 'You're the Economist: Which model fits the breakfast cereal market?' (p215).",
+     "solution": "教材原文不在本周资料中。分析思路：早餐麦片市场由少数几家大公司（及其众多品牌）主导，进入需要大规模生产和巨额广告（高壁垒），产品通过品牌和广告高度差别化，厂商互相关注对方的定价和推新品——更接近<strong>寡头</strong>（有差别产品的寡头），尽管货架上品牌很多，看起来像垄断竞争。",
+     "sourceNote": "教材内容不在资料中，这里只给分析框架。",
+     "numeric": false
+    },
+    {
+     "label": "例 18",
+     "ref": "Learning Guide In-class Q3",
+     "question": "Give two examples of cartels operating today and explain how each controls its market. How are cartels different from gentlemen's agreements?",
+     "solution": "讲义给出的两个例子：①<strong>OPEC</strong>（石油输出国组织）：成员国约定各自的石油产量配额，通过限制供给来影响国际油价；②<strong>IATA</strong>（国际航空运输协会）：航空公司在协会框架内协调运价和规则。卡特尔是正式的、通常书面的协议，明确规定价格或产量分配；君子协定是非正式的口头默契（「下个月都涨价」），没有书面记录，同样违法但更难被发现。两者都有成员作弊的动机。",
+     "sourceNote": "IATA 是否属于卡特尔有争议，这里按讲义的举例。",
+     "numeric": false
+    },
+    {
+     "label": "例 19",
+     "ref": "Learning Guide In-class Q4",
+     "question": "How is the profit-maximising diagram for a collusive oligopolist different from that of a non-collusive oligopolist?",
+     "solution": "非勾结寡头：面对折弯的需求曲线，MR 在折点有缺口，MC 在缺口内变动价格不变，价格停在折点 P1。勾结寡头：厂商一致行动，像一家垄断者，面对整个行业向下倾斜（不折弯）的需求曲线和连续的 MR，在 MR = MC 处定产量，从需求曲线定价，获得超额利润并在成员间分配。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        20
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 340,
+       "height": 260,
+       "xLabel": "Quantity",
+       "yLabel": "$",
+       "curves": [
+        {
+         "expr": "8-0.25*x",
+         "dom": [
+          0,
+          8
+         ],
+         "color": "navy",
+         "label": [
+          2.2,
+          8.1,
+          "D elastic above P1"
+         ]
+        },
+        {
+         "expr": "10-0.5*x",
+         "dom": [
+          8,
+          20
+         ],
+         "color": "navy",
+         "label": [
+          13.6,
+          4.1,
+          "D inelastic below P1"
+         ]
+        },
+        {
+         "expr": "8-0.5*x",
+         "dom": [
+          0,
+          8
+         ],
+         "color": "gold",
+         "dash": true,
+         "label": [
+          1.5,
+          6.2,
+          "MR"
+         ]
+        },
+        {
+         "expr": "10-x",
+         "dom": [
+          8,
+          10
+         ],
+         "color": "gold",
+         "dash": true
+        },
+        {
+         "expr": "0.8+0.25*x",
+         "dom": [
+          0,
+          14
+         ],
+         "color": "red",
+         "label": [
+          13,
+          4.6,
+          "MC1"
+         ]
+        },
+        {
+         "expr": "1.3+0.25*x",
+         "dom": [
+          0,
+          14
+         ],
+         "color": "red",
+         "dash": true,
+         "label": [
+          13.4,
+          5.5,
+          "MC2"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 8,
+         "y": 6,
+         "label": "kink at P1"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          8,
+          4
+         ],
+         "to": [
+          8,
+          2
+         ],
+         "color": "gold",
+         "dash": false,
+         "label": "gap in MR",
+         "dx": 6,
+         "dy": 12
+        },
+        {
+         "from": [
+          0,
+          6
+         ],
+         "to": [
+          8,
+          6
+         ]
+        },
+        {
+         "from": [
+          8,
+          0
+         ],
+         "to": [
+          8,
+          2
+         ]
+        }
+       ],
+       "caption": "Kinked demand: MR has a vertical gap at the kink; MC can move from MC1 to MC2 within the gap without changing P1 or Q1 (price rigidity)"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        16
+       ],
+       "yr": [
+        0,
+        14
+       ],
+       "width": 340,
+       "height": 260,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "$",
+       "curves": [
+        {
+         "expr": "10-3*x+0.3*x^2",
+         "dom": [
+          0.4,
+          11
+         ],
+         "color": "red",
+         "label": [
+          10.2,
+          12.2,
+          "MC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2+20/x",
+         "dom": [
+          1.6,
+          14
+         ],
+         "color": "navy",
+         "label": [
+          13.2,
+          10.2,
+          "ATC"
+         ]
+        },
+        {
+         "expr": "12-0.5*x",
+         "dom": [
+          0,
+          16
+         ],
+         "color": "green",
+         "label": [
+          14.2,
+          5.6,
+          "AR = D"
+         ]
+        },
+        {
+         "expr": "12-x",
+         "dom": [
+          0,
+          12
+         ],
+         "color": "gold",
+         "dash": true,
+         "label": [
+          10.8,
+          0.9,
+          "MR"
+         ]
+        }
+       ],
+       "polygons": [
+        {
+         "pts": [
+          [
+           0,
+           8.225
+          ],
+          [
+           7.55,
+           8.225
+          ],
+          [
+           7.55,
+           7.024
+          ],
+          [
+           0,
+           7.024
+          ]
+         ],
+         "color": "green",
+         "opacity": 0.25,
+         "label": [
+          3.77,
+          7.62,
+          "supernormal profit"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 7.55,
+         "y": 4.45,
+         "label": "MR = MC"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          7.55,
+          0
+         ],
+         "to": [
+          7.55,
+          8.225
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": 7.35,
+         "y": -0.9,
+         "text": "Q*"
+        }
+       ],
+       "caption": "Collusive oligopoly: the firms act as one monopolist — output where industry MR = MC, price from the demand curve, supernormal profit shared"
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 20",
+     "ref": "Learning Guide Writing",
+     "question": "(a) What are the main characteristics of a firm under monopolistic competition? Using diagrams, compare its short-run supernormal-profit position with its long-run equilibrium. (b) Using a diagram, explain why a non-collusive oligopoly firm may not compete by changing its price.",
+     "solution": "(a) 特征：大量小厂商；产品有差别（真实或想象），依靠广告、品牌等非价格竞争；对价格有有限控制，需求向下倾斜且富有弹性；进出壁垒低。短期在 MR = MC 处生产，P > ATC，有超额利润；长期新厂商进入使需求下移，直到 AR 与 ATC 相切，P = ATC，只有正常利润，且在 ATC 最低点左边生产（过剩产能）。\n(b) 非勾结寡头假设对手跟随降价、不跟随涨价：涨价会失去大量顾客（需求富有弹性），降价被跟随而只增加很少的销量（需求缺乏弹性），两种变动都使利润下降。需求曲线在现行价格折弯，MR 有缺口，MC 在缺口内变化时最优价格不变。所以厂商宁愿保持价格、用非价格手段竞争。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        16
+       ],
+       "yr": [
+        0,
+        14
+       ],
+       "width": 340,
+       "height": 260,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "$",
+       "curves": [
+        {
+         "expr": "10-3*x+0.3*x^2",
+         "dom": [
+          0.4,
+          11
+         ],
+         "color": "red",
+         "label": [
+          10.2,
+          12.2,
+          "MC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2+20/x",
+         "dom": [
+          1.6,
+          14
+         ],
+         "color": "navy",
+         "label": [
+          13.2,
+          10.2,
+          "ATC"
+         ]
+        },
+        {
+         "expr": "12-0.5*x",
+         "dom": [
+          0,
+          16
+         ],
+         "color": "green",
+         "label": [
+          14.2,
+          5.6,
+          "AR = D"
+         ]
+        },
+        {
+         "expr": "12-x",
+         "dom": [
+          0,
+          12
+         ],
+         "color": "gold",
+         "dash": true,
+         "label": [
+          10.8,
+          0.9,
+          "MR"
+         ]
+        }
+       ],
+       "polygons": [
+        {
+         "pts": [
+          [
+           0,
+           8.225
+          ],
+          [
+           7.55,
+           8.225
+          ],
+          [
+           7.55,
+           7.024
+          ],
+          [
+           0,
+           7.024
+          ]
+         ],
+         "color": "green",
+         "opacity": 0.25,
+         "label": [
+          3.77,
+          7.62,
+          "supernormal profit"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 7.55,
+         "y": 4.45,
+         "label": "MR = MC"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          7.55,
+          0
+         ],
+         "to": [
+          7.55,
+          8.225
+         ]
+        }
+       ],
+       "texts": [
+        {
+         "x": 7.35,
+         "y": -0.9,
+         "text": "Q*"
+        }
+       ],
+       "caption": "Monopolistic competition, short run: supernormal profit at MR = MC (demand is downward sloping but fairly elastic)"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        16
+       ],
+       "yr": [
+        0,
+        15
+       ],
+       "width": 340,
+       "height": 260,
+       "xLabel": "Quantity",
+       "yLabel": "C/R ($)",
+       "curves": [
+        {
+         "expr": "10-3*x+0.3*x^2",
+         "dom": [
+          0.4,
+          11
+         ],
+         "color": "red",
+         "label": [
+          10.2,
+          12.3,
+          "MC"
+         ]
+        },
+        {
+         "expr": "10-1.5*x+0.1*x^2+20/x",
+         "dom": [
+          1.5,
+          14
+         ],
+         "color": "navy",
+         "label": [
+          13.2,
+          10.4,
+          "ATC"
+         ]
+        },
+        {
+         "expr": "13.0667+(-0.8556)*x",
+         "dom": [
+          0,
+          15
+         ],
+         "color": "green",
+         "label": [
+          12.5,
+          2.8,
+          "AR (long run)"
+         ]
+        },
+        {
+         "expr": "13.0667+(-1.7111)*x",
+         "dom": [
+          0,
+          7.6
+         ],
+         "color": "gold",
+         "dash": true,
+         "label": [
+          6.6,
+          1.0,
+          "MR"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 6,
+         "y": 7.933,
+         "label": "P1 = C1 (tangency)"
+        },
+        {
+         "x": 6,
+         "y": 2.8,
+         "label": "MR = MC",
+         "dy": 14
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          6,
+          0
+         ],
+         "to": [
+          6,
+          7.933
+         ]
+        }
+       ],
+       "caption": "Long run: entry shifts each firm's AR down until it is tangent to ATC at the MR = MC output — normal profit only"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        20
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 340,
+       "height": 260,
+       "xLabel": "Quantity",
+       "yLabel": "$",
+       "curves": [
+        {
+         "expr": "8-0.25*x",
+         "dom": [
+          0,
+          8
+         ],
+         "color": "navy",
+         "label": [
+          2.2,
+          8.1,
+          "D elastic above P1"
+         ]
+        },
+        {
+         "expr": "10-0.5*x",
+         "dom": [
+          8,
+          20
+         ],
+         "color": "navy",
+         "label": [
+          13.6,
+          4.1,
+          "D inelastic below P1"
+         ]
+        },
+        {
+         "expr": "8-0.5*x",
+         "dom": [
+          0,
+          8
+         ],
+         "color": "gold",
+         "dash": true,
+         "label": [
+          1.5,
+          6.2,
+          "MR"
+         ]
+        },
+        {
+         "expr": "10-x",
+         "dom": [
+          8,
+          10
+         ],
+         "color": "gold",
+         "dash": true
+        },
+        {
+         "expr": "0.8+0.25*x",
+         "dom": [
+          0,
+          14
+         ],
+         "color": "red",
+         "label": [
+          13,
+          4.6,
+          "MC1"
+         ]
+        },
+        {
+         "expr": "1.3+0.25*x",
+         "dom": [
+          0,
+          14
+         ],
+         "color": "red",
+         "dash": true,
+         "label": [
+          13.4,
+          5.5,
+          "MC2"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 8,
+         "y": 6,
+         "label": "kink at P1"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          8,
+          4
+         ],
+         "to": [
+          8,
+          2
+         ],
+         "color": "gold",
+         "dash": false,
+         "label": "gap in MR",
+         "dx": 6,
+         "dy": 12
+        },
+        {
+         "from": [
+          0,
+          6
+         ],
+         "to": [
+          8,
+          6
+         ]
+        },
+        {
+         "from": [
+          8,
+          0
+         ],
+         "to": [
+          8,
+          2
+         ]
+        }
+       ],
+       "caption": "Kinked demand: MR has a vertical gap at the kink; MC can move from MC1 to MC2 within the gap without changing P1 or Q1 (price rigidity)"
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ],
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "勾结寡头仍画折弯需求曲线：勾结后折弯消失。",
+    "忘了说明勾结在澳洲违法及原因。"
+   ],
+   "faqs": [
+    {
+     "q": "卡特尔为什么不稳定？",
+     "a": "每个成员都想偷偷多卖（在高价下多生产能赚更多），一旦有人作弊，价格就会下跌。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "步骤",
+   "做什么",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "1 垄断竞争",
+    "短期 MR = MC；长期 AR 与 ATC 相切",
+    "例 2、10、20a"
+   ],
+   [
+    "2 寡头特征",
+    "少数厂商、高壁垒、相互依赖",
+    "例 3、11"
+   ],
+   [
+    "3 折弯需求",
+    "对手跟降不跟涨 → MR 缺口 → 价格刚性",
+    "例 4、12、13"
+   ],
+   [
+    "4 博弈论",
+    "逐一检查对手的两种选择，找占优策略",
+    "例 5"
+   ],
+   [
+    "5 勾结",
+    "卡特尔、君子协定、价格领导、成本加成；违法",
+    "例 6、7、14、18"
+   ]
+  ]
+ },
+ "practice": "本周任务：读教材第 9 章；完成 Learning Guide 问答、课堂活动和写作练习；做教材在线 Revision Quizzes。"
+}

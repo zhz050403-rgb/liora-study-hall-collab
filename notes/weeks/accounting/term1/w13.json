@@ -1,0 +1,1166 @@
+{
+ "course": "accounting",
+ "term": "term1",
+ "week": 13,
+ "title": "Week 13 · Sample Exam 模拟考试",
+ "answersTitle": "Sample Final Examination 1",
+ "files": [
+  "sample exam paper.pdf",
+  "section a - mcq bubble sheet.pdf"
+ ],
+ "inventory": [
+  {
+   "ref": "Sample Exam MCQ",
+   "parts": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10"
+   ]
+  },
+  {
+   "ref": "Sample Exam Q11",
+   "parts": [
+    "a",
+    "b",
+    "c",
+    "e",
+    "g",
+    "h",
+    "i",
+    "j"
+   ]
+  },
+  "Sample Exam Q12",
+  "Sample Exam Q13",
+  {
+   "ref": "Sample Exam Q14",
+   "parts": [
+    "1",
+    "2",
+    "3"
+   ]
+  },
+  {
+   "ref": "Sample Exam Q15",
+   "parts": [
+    "a",
+    "b",
+    "c"
+   ],
+   "deliverables": [
+    {
+     "type": "analysis"
+    },
+    {
+     "type": "journal"
+    },
+    {
+     "type": "taccounts",
+     "accounts": [
+      "Cash at Bank"
+     ]
+    },
+    {
+     "type": "balanced",
+     "accounts": [
+      "Cash at Bank"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "Sample Exam Q16",
+   "parts": [
+    "1",
+    "2"
+   ],
+   "deliverables": [
+    {
+     "type": "statement",
+     "kind": "income"
+    },
+    {
+     "type": "statement",
+     "kind": "balance"
+    }
+   ]
+  },
+  {
+   "ref": "Sample Exam Q17",
+   "deliverables": [
+    {
+     "type": "journal"
+    }
+   ]
+  },
+  {
+   "ref": "Sample Exam Q18",
+   "parts": [
+    "A",
+    "1a",
+    "1b",
+    "1c",
+    "2",
+    "3"
+   ]
+  }
+ ],
+ "intro": [
+  "完整的样卷解答（Sample Final Examination 1）。建议先在 2 小时 10 分钟内自己做完，再逐题对照。Section C 每一问要求的表都完整给出：分析表、带摘要的分录、现金账户、利润表、资产负债表、调整分录，全部由程序生成并核对。样卷里有两处被涂黑的题目内容，在对应题下说明。"
+ ],
+ "sections": [
+  {
+   "title": "Section A 选择题 与 Section B 简答",
+   "sources": [
+    {
+     "file": "sample exam paper.pdf",
+     "pages": "p3–7"
+    },
+    {
+     "file": "section a - mcq bubble sheet.pdf",
+     "pages": "p1"
+    }
+   ],
+   "concept": "选择题答在答题卡上，只用 A–D。简答题每题 5 分，回答要用术语并结合题目情境，数字题写出计算过程。",
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "Sample Exam MCQ",
+     "question": "1 Owner's equity from the accounting equation; 2 why Discount Allowed is debited; 3 receipt of cash from a debtor; 4 bad debts written off are debited to; 5 not an equivalent of inventory; 6 COGS with opening inventory $20,000, purchases $105,000, purchase returns $2,000, freight $3,000, closing inventory $28,000; 7 incorrect statement about the statement of cash flows; 8 convention that ensures equality of the accounting equation; 9 adjustments to accrue revenues; 10 a trial balance will not balance if.",
+     "solution": "1 <strong>A</strong>：A = L + OE + (R − E)，所以 OE = A − L − (R − E)。\n2 <strong>D</strong>：Discount Allowed 是费用，费用增加记借方。\n3 <strong>D</strong>：现金（资产）增加记借方，应收账款（资产）减少记贷方。\n4 <strong>D</strong>：Bad debts 账户。\n5 <strong>D</strong>：drawings 是提款，不是存货。\n6 <strong>D</strong>：20 000 + 105 000 − 2 000 + 3 000 − 28 000 = 98 000。\n7 <strong>C</strong>：现金流量表调节的是期初和期末现金余额，不是与银行对账单核对。\n8 <strong>D</strong>：复式记账惯例。\n9 <strong>B</strong>：应计收入使资产（应收）和收入都增加。\n10 <strong>C</strong>：借 2 000、贷 200，借贷不等。A、B、D 两边金额都相等，试算表仍平衡。",
+     "parts": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+     ],
+     "checks": [
+      {
+       "expr": "20000+105000-2000+3000-28000",
+       "equals": "98000"
+      }
+     ]
+    },
+    {
+     "label": "例 2",
+     "ref": "Sample Exam Q11",
+     "question": "For each transaction state where it is reported on the statement of cash flows and whether it is a cash inflow, outflow or no effect: (a) recorded depreciation expense on plant assets; (b) recorded and paid interest expense; (c) recorded cash proceeds from a sale of equipment; (e) paid a cash dividend to shareholders; (g) recorded cash sales; (h) recorded sales on account; (i) purchased inventory for cash; (j) purchased inventory on account.",
+     "solution": "(a) 不列示，没有现金影响（折旧不付现金）\n(b) 经营活动，流出\n(c) 投资活动，流入\n(e) 筹资活动，流出\n(g) 经营活动，流入\n(h) 不列示，没有现金影响（赊销还没收到钱）\n(i) 经营活动，流出\n(j) 不列示，没有现金影响（赊购还没付钱）",
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "e",
+      "g",
+      "h",
+      "i",
+      "j"
+     ],
+     "sourceNote": "样卷的 (d)、(f) 两行被涂黑，看不到内容，没有作答。",
+     "numeric": false
+    },
+    {
+     "label": "例 3",
+     "ref": "Sample Exam Q12",
+     "question": "WillyNilly Limited purchased a refrigerator for its new bakery outlet for $25,000 through a bank loan. Demonstrate the Double Entry Convention and the Accounting Equation convention for the transaction. (2.5 + 2.5 marks)",
+     "solution": "复式记账：一笔交易影响两个账户，借贷相等——借记 Refrigerator（或 Bakery Equipment，资产增加）25 000，贷记 Bank Loan（负债增加）25 000。\n会计等式：资产 +25 000 = 负债 +25 000 + 所有者权益 0，等式两边同时增加 25 000，仍然相等。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "",
+         "dr": [
+          [
+           "Refrigerator (Equipment)",
+           "asset",
+           25000
+          ]
+         ],
+         "cr": [
+          [
+           "Bank Loan",
+           "liability",
+           25000
+          ]
+         ],
+         "narration": "Purchased refrigerator for bakery through bank loan"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "label": "例 4",
+     "ref": "Sample Exam Q13",
+     "question": "Wilson Trading paid Bailey Holdings $3,500 for goods purchased in the previous month. As Bailey Holdings' accountant (accrual method), explain and identify the 5 stages of the accounting cycle for this transaction, including the trial balance.",
+     "solution": "1 交易：收到客户 Wilson Trading 偿还的欠款 3 500（上月赊销时已确认收入，这次不是新收入）。\n2 原始凭证：Bailey 开给 Wilson 的收据（receipt）副本，以及银行存款记录。\n3 日记账：Dr Cash at Bank 3 500；Cr Accounts Receivable – Wilson Trading 3 500；摘要「Received payment from Wilson Trading for last month's credit sale」。\n4 分类账：过账到 Cash at Bank 账户借方（摘要写 Accounts Receivable）和 Accounts Receivable 账户贷方（摘要写 Cash at Bank），月末结账。\n5 试算平衡表：现金余额增加、应收账款余额减少，借贷两栏同时变化，合计仍相等。",
+     "numeric": false
+    },
+    {
+     "label": "例 5",
+     "ref": "Sample Exam Q14",
+     "question": "Jim's Bookshop Ltd ($m): Cash 205 → 208; Accounts Receivable 12.5 → 102.8; Inventory 4.8 → 5.0; Buildings 6.2 → 6.2; Total assets 228.5 → 322 (2021 → 2022). 1 Describe the trend in total assets. 2 Suggest two major reasons. 3 Is the change a positive or negative indicator of financial health?",
+     "solution": "1 总资产从 228.5 增加到 322，增加 93.5（约 40.9%）。\n2 几乎全部来自应收账款：从 12.5 增加到 102.8（+90.3）。原因可能是 ① 赊销大幅增加（卖得更多，但大多是赊账）；② 客户付款变慢，或放宽了信用条件。\n3 喜忧参半。如果是销售增长带来的，是好事；但新增资产几乎都是还没收到的钱，现金只增加了 3，存在坏账和现金短缺的风险，要检查收账期是否变长。总体应视为需要警惕的信号。",
+     "parts": [
+      "1",
+      "2",
+      "3"
+     ],
+     "checks": [
+      {
+       "expr": "322-228.5",
+       "equals": "93.5"
+      },
+      {
+       "expr": "93.5/228.5*100",
+       "equals": "40.92",
+       "tol": 0.01
+      },
+      {
+       "expr": "102.8-12.5",
+       "equals": "90.3",
+       "tol": 0.001
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "选择题第 10 题选 D：75 对 75 仍平衡。",
+    "把收回欠款写成销售收入。",
+    "只描述趋势不给原因。"
+   ],
+   "faqs": [
+    {
+     "q": "简答题要写多少？",
+     "a": "5 分题一般 4–6 句：结论、依据（术语和数字）、和情境结合。"
+    }
+   ]
+  },
+  {
+   "title": "Section C 实务题",
+   "sources": [
+    {
+     "file": "sample exam paper.pdf",
+     "pages": "p8–18"
+    }
+   ],
+   "concept": "Section C 每题写明要交几样东西，逐项交齐：分析表、带摘要的分录、账户、报表。先列出所有账户，再动笔。",
+   "examples": [
+    {
+     "label": "例 6",
+     "ref": "Sample Exam Q15",
+     "question": "Pellham Poster Printers, July: 1 Keith Pellham invested an additional $10,000; 5 purchased printing equipment $5,000, paid $500 deposit, balance due end of August; 9 paid $510 cash for newspaper advertising; 14 paid $320 to a creditor for office supplies bought on account last month; 18 provided printing services to J. Brown and invoiced her $4,000; 22 received $500 from Jay Z for June services; 30 withdrew $900 cash. (a) Transaction analysis table. (b) General journal entries with narrations. (c) Cash account (also practise the column format).",
+     "solution": "(a)(b) 如下。Jul 5 是复合分录（现金 500 + 应付 4 500）。Jul 14 和 Jul 22 都是了结上月的应付、应收，不产生新的费用或收入。\n(c) 题目没有给现金期初余额，按本月交易过账：借方 10 500，贷方 2 230，期末余额 8 270（借方）。T 形和多栏式都给出。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "analysis",
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "Jul 1",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           10000
+          ]
+         ],
+         "cr": [
+          [
+           "Capital – K. Pellham",
+           "equity",
+           10000
+          ]
+         ],
+         "narration": "Owner invested additional capital"
+        },
+        {
+         "date": "5",
+         "dr": [
+          [
+           "Printing Equipment",
+           "asset",
+           5000
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           500
+          ],
+          [
+           "Accounts Payable",
+           "liability",
+           4500
+          ]
+         ],
+         "narration": "Purchased printing equipment, $500 deposit, balance due end of August"
+        },
+        {
+         "date": "9",
+         "dr": [
+          [
+           "Advertising Expense",
+           "expense",
+           510
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           510
+          ]
+         ],
+         "narration": "Advertised in local newspaper"
+        },
+        {
+         "date": "14",
+         "dr": [
+          [
+           "Accounts Payable",
+           "liability",
+           320
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           320
+          ]
+         ],
+         "narration": "Paid creditor for office supplies bought last month"
+        },
+        {
+         "date": "18",
+         "dr": [
+          [
+           "A/R – J. Brown",
+           "asset",
+           4000
+          ]
+         ],
+         "cr": [
+          [
+           "Printing Services Revenue",
+           "revenue",
+           4000
+          ]
+         ],
+         "narration": "Invoiced J. Brown for printing services"
+        },
+        {
+         "date": "22",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           500
+          ]
+         ],
+         "cr": [
+          [
+           "A/R – Jay Z",
+           "asset",
+           500
+          ]
+         ],
+         "narration": "Received from Jay Z for June services"
+        },
+        {
+         "date": "30",
+         "dr": [
+          [
+           "Drawings",
+           "drawings",
+           900
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           900
+          ]
+         ],
+         "narration": "Owner withdrew cash for personal use"
+        }
+       ]
+      },
+      {
+       "type": "ledger",
+       "views": [
+        "taccounts",
+        "columnar"
+       ],
+       "journal": [
+        {
+         "date": "Jul 1",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           10000
+          ]
+         ],
+         "cr": [
+          [
+           "Capital – K. Pellham",
+           "equity",
+           10000
+          ]
+         ],
+         "narration": "Owner invested additional capital"
+        },
+        {
+         "date": "5",
+         "dr": [
+          [
+           "Printing Equipment",
+           "asset",
+           5000
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           500
+          ],
+          [
+           "Accounts Payable",
+           "liability",
+           4500
+          ]
+         ],
+         "narration": "Purchased printing equipment, $500 deposit, balance due end of August"
+        },
+        {
+         "date": "9",
+         "dr": [
+          [
+           "Advertising Expense",
+           "expense",
+           510
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           510
+          ]
+         ],
+         "narration": "Advertised in local newspaper"
+        },
+        {
+         "date": "14",
+         "dr": [
+          [
+           "Accounts Payable",
+           "liability",
+           320
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           320
+          ]
+         ],
+         "narration": "Paid creditor for office supplies bought last month"
+        },
+        {
+         "date": "18",
+         "dr": [
+          [
+           "A/R – J. Brown",
+           "asset",
+           4000
+          ]
+         ],
+         "cr": [
+          [
+           "Printing Services Revenue",
+           "revenue",
+           4000
+          ]
+         ],
+         "narration": "Invoiced J. Brown for printing services"
+        },
+        {
+         "date": "22",
+         "dr": [
+          [
+           "Cash at Bank",
+           "asset",
+           500
+          ]
+         ],
+         "cr": [
+          [
+           "A/R – Jay Z",
+           "asset",
+           500
+          ]
+         ],
+         "narration": "Received from Jay Z for June services"
+        },
+        {
+         "date": "30",
+         "dr": [
+          [
+           "Drawings",
+           "drawings",
+           900
+          ]
+         ],
+         "cr": [
+          [
+           "Cash at Bank",
+           "asset",
+           900
+          ]
+         ],
+         "narration": "Owner withdrew cash for personal use"
+        }
+       ],
+       "show": [
+        "Cash at Bank"
+       ],
+       "balance": [
+        "Cash at Bank"
+       ],
+       "endDate": "Jul 31",
+       "nextDate": "Aug 1",
+       "expect": {
+        "Cash at Bank": 8270
+       }
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    {
+     "label": "例 7",
+     "ref": "Sample Exam Q16",
+     "question": "Willy Wonka Pty Ltd trial balance, year ended 31 December 2021 (Cash 5,200; A/R 2,700; Inventory 31 Dec 700; Prepaid insurance 1,250; Office equipment 6,500; Accumulated depreciation 2,400; A/P 2,900; Salaries payable 500; Electricity payable 600; Capital 8,300; Sales 17,600; Sales returns 300; Interest revenue 5,900; Salaries 9,050; Rent 7,500; Insurance 750; Depreciation 600; Purchases 3,000; Purchase returns 600; Freight in 250; Drawings 1,000; totals 38,800). Opening inventory $700. 1 Prepare the Profit and Loss statement. 2 Prepare the Balance Sheet.",
+     "solution": "先核对试算表两栏都是 38 800。期初、期末存货都是 700。利息收入是其他收入。净利润 2 650 进资产负债表的权益：8 300 + 2 650 − 1 000 = 9 950 = 资产 13 950 − 负债 4 000。",
+     "figures": [
+      {
+       "type": "statement",
+       "title": "Willy Wonka Pty Ltd Profit and Loss Statement for the year ended 31 December 2021",
+       "columns": 2,
+       "lines": [
+        {
+         "label": "Sales Revenue",
+         "id": "s",
+         "amount": 17600,
+         "col": 1
+        },
+        {
+         "label": "Less Sales Returns",
+         "id": "sr",
+         "amount": -300,
+         "col": 1
+        },
+        {
+         "label": "Net Sales",
+         "id": "ns",
+         "sum": [
+          "s",
+          "sr"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Less: Cost of goods sold",
+         "head": true
+        },
+        {
+         "label": "Opening inventory",
+         "id": "oi",
+         "amount": 700,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Purchases",
+         "id": "p",
+         "amount": 3000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Less Purchase returns",
+         "id": "pr",
+         "amount": -600,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Freight in",
+         "id": "fi",
+         "amount": 250,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Less Closing inventory",
+         "id": "ci",
+         "amount": -700,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Cost of goods sold",
+         "id": "cogs",
+         "sum": [
+          "oi",
+          "p",
+          "pr",
+          "fi",
+          "ci"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Gross Profit",
+         "id": "gp",
+         "sum": [
+          "ns",
+          "-cogs"
+         ],
+         "col": 2,
+         "total": true
+        },
+        {
+         "label": "Add Interest Revenue",
+         "id": "ir",
+         "amount": 5900,
+         "col": 2
+        },
+        {
+         "label": "",
+         "id": "ti",
+         "sum": [
+          "gp",
+          "ir"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Less: Operating Expenses",
+         "head": true
+        },
+        {
+         "label": "Salaries expense",
+         "id": "e1",
+         "amount": 9050,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Rent expense",
+         "id": "e2",
+         "amount": 7500,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Insurance expense",
+         "id": "e3",
+         "amount": 750,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Depreciation expense",
+         "id": "e4",
+         "amount": 600,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Operating Expense",
+         "id": "tox",
+         "sum": [
+          "e1",
+          "e2",
+          "e3",
+          "e4"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Net Profit",
+         "id": "np",
+         "sum": [
+          "ti",
+          "-tox"
+         ],
+         "col": 2,
+         "total": true,
+         "double": true
+        }
+       ],
+       "expect": {
+        "cogs": 2650,
+        "gp": 14650,
+        "tox": 17900,
+        "np": 2650
+       },
+       "kind": "income"
+      },
+      {
+       "type": "statement",
+       "title": "Willy Wonka Pty Ltd Balance Sheet as at 31 December 2021",
+       "columns": 2,
+       "lines": [
+        {
+         "label": "Current Assets",
+         "head": true
+        },
+        {
+         "label": "Cash at Bank",
+         "id": "ca0",
+         "amount": 5200,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Accounts Receivable",
+         "id": "ca1",
+         "amount": 2700,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Inventory",
+         "id": "ca2",
+         "amount": 700,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Prepaid insurance",
+         "id": "ca3",
+         "amount": 1250,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Current Assets",
+         "id": "tca",
+         "sum": [
+          "ca0",
+          "ca1",
+          "ca2",
+          "ca3"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Non-current Assets",
+         "head": true
+        },
+        {
+         "label": "Office equipment",
+         "id": "nc0",
+         "amount": 6500,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Less Accumulated depreciation",
+         "id": "nd0",
+         "amount": -2400,
+         "col": 1,
+         "indent": 2
+        },
+        {
+         "label": "Carrying amount",
+         "id": "n0",
+         "sum": [
+          "nc0",
+          "nd0"
+         ],
+         "col": 1,
+         "indent": 2
+        },
+        {
+         "label": "Total Non-current Assets",
+         "id": "tnca",
+         "sum": [
+          "n0"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Total Assets",
+         "id": "ta",
+         "sum": [
+          "tca",
+          "tnca"
+         ],
+         "col": 2,
+         "total": true
+        },
+        {
+         "label": "Current Liabilities",
+         "head": true
+        },
+        {
+         "label": "Accounts Payable",
+         "id": "cl0",
+         "amount": 2900,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Salaries Payable",
+         "id": "cl1",
+         "amount": 500,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Electricity bill payable",
+         "id": "cl2",
+         "amount": 600,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Current Liabilities",
+         "id": "tcl",
+         "sum": [
+          "cl0",
+          "cl1",
+          "cl2"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Non-current Liabilities",
+         "head": true
+        },
+        {
+         "label": "Total Non-current Liabilities",
+         "id": "tncl",
+         "sum": [],
+         "col": 2
+        },
+        {
+         "label": "Total Liabilities",
+         "id": "tl",
+         "sum": [
+          "tcl",
+          "tncl"
+         ],
+         "col": 2,
+         "total": true
+        },
+        {
+         "label": "Owner's Equity",
+         "head": true
+        },
+        {
+         "label": "Capital",
+         "id": "e0",
+         "amount": 8300,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Add Net Profit",
+         "id": "e1",
+         "amount": 2650,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Less Drawings",
+         "id": "e2",
+         "amount": -1000,
+         "col": 1,
+         "indent": 1
+        },
+        {
+         "label": "Total Owner's Equity",
+         "id": "toe",
+         "sum": [
+          "e0",
+          "e1",
+          "e2"
+         ],
+         "col": 2
+        },
+        {
+         "label": "Total Liabilities & Owner's Equity",
+         "id": "tle",
+         "sum": [
+          "tl",
+          "toe"
+         ],
+         "col": 2,
+         "total": true,
+         "double": true
+        }
+       ],
+       "kind": "balance",
+       "expect": {
+        "ta": 13950,
+        "tl": 4000,
+        "toe": 9950,
+        "tle": 13950
+       }
+      }
+     ],
+     "parts": [
+      "1",
+      "2"
+     ],
+     "checks": [
+      {
+       "expr": "5200+2700+700+1250+6500+300+9050+7500+750+600+3000+250+1000",
+       "equals": "38800"
+      },
+      {
+       "expr": "2400+2900+500+600+8300+17600+5900+600",
+       "equals": "38800"
+      }
+     ]
+    },
+    {
+     "label": "例 8",
+     "ref": "Sample Exam Q17",
+     "question": "Prepare the adjusting entries: 2 prepaid insurance of $100 has expired; 3 depreciation for the month $60; 4 services performed in relation to cash received in advance $300; 5 services performed but not invoiced at 31 October $700; 6 interest accrued at 31 October $80; 7 accrued salaries at 31 October $1,300.",
+     "solution": "逐项归类：2 预付、3 折旧、4 预收、5 应计收入、6 应计费用（利息）、7 应计费用（工资）。都不涉及现金。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "2",
+         "dr": [
+          [
+           "Insurance Expense",
+           "expense",
+           100
+          ]
+         ],
+         "cr": [
+          [
+           "Prepaid Insurance",
+           "asset",
+           100
+          ]
+         ],
+         "narration": "Prepaid insurance expired"
+        },
+        {
+         "date": "3",
+         "dr": [
+          [
+           "Depreciation Expense",
+           "expense",
+           60
+          ]
+         ],
+         "cr": [
+          [
+           "Accumulated Depreciation",
+           "contra-asset",
+           60
+          ]
+         ],
+         "narration": "Depreciation for the month"
+        },
+        {
+         "date": "4",
+         "dr": [
+          [
+           "Unearned Revenue",
+           "liability",
+           300
+          ]
+         ],
+         "cr": [
+          [
+           "Service Revenue",
+           "revenue",
+           300
+          ]
+         ],
+         "narration": "Services performed from cash received in advance"
+        },
+        {
+         "date": "5",
+         "dr": [
+          [
+           "Accounts Receivable",
+           "asset",
+           700
+          ]
+         ],
+         "cr": [
+          [
+           "Service Revenue",
+           "revenue",
+           700
+          ]
+         ],
+         "narration": "Services performed, not invoiced"
+        },
+        {
+         "date": "6",
+         "dr": [
+          [
+           "Interest Expense",
+           "expense",
+           80
+          ]
+         ],
+         "cr": [
+          [
+           "Interest Payable",
+           "liability",
+           80
+          ]
+         ],
+         "narration": "Interest accrued at 31 October"
+        },
+        {
+         "date": "7",
+         "dr": [
+          [
+           "Salaries Expense",
+           "expense",
+           1300
+          ]
+         ],
+         "cr": [
+          [
+           "Salaries Payable",
+           "liability",
+           1300
+          ]
+         ],
+         "narration": "Salaries accrued at 31 October"
+        }
+       ]
+      }
+     ],
+     "sourceNote": "第 1 项被涂黑，看不到内容，没有作答。第 6 项按应计利息费用处理（企业欠利息）；如果题意是应收利息，则为 Dr Interest Receivable / Cr Interest Revenue。"
+    },
+    {
+     "label": "例 9",
+     "ref": "Sample Exam Q18",
+     "question": "Part A: Tsobo Limited cash transactions (year ending June 2021): payment of interest 15,000; cash sales 60,000; receipt of dividend revenue 14,000; payment of income tax 16,000; profit 38,000; payment of accounts payable for inventory 100,000; payment for land 74,000; collection of accounts receivable 190,000; payment of salaries and wages 68,000; depreciation expense 16,000; proceeds from sale of aircraft 812,000; purchase of equipment for cash 22,000; loss on sale of aircraft 3,000; payment of dividends 14,000; payment of operating expenses 20,000. Calculate net cash from investing activities. Part B: Tsobo Jeans ratios — current ratio 2:1 (2020), 1:1 (2021), industry 2.5:1; quick ratio 1.5:1, 1.5:1, industry 1:1. 1a discuss the current ratio trend; 1b explain the quick ratio trend; 1c two reasons for the current ratio trend given the quick ratio; 2 from the current assets and liabilities (Cash 45,000/44,800; A/R 41,000/40,000; Inventory 60,000/30,000; Prepaid rent 12,000/12,000; Bank loan 50,000/50,000; A/P 120,000/20,000 for 2021/2020) identify two reasons; 3 should JoJo's sell to Tsobo on credit?",
+     "solution": "Part A：投资活动 = 出售飞机 812 000 − 买设备 22 000 − 买土地 74 000 + 收到股利 14 000 = <strong>730 000</strong>（净流入）。利润、折旧、出售损失都不是现金流；利息、税、工资、供应商、营业费用属于经营活动；支付股利属于筹资活动。\n1a 流动比率从 2:1 降到 1:1，减半，且远低于行业平均 2.5:1：流动资产刚好够还流动负债，短期偿债能力明显变差。\n1b 速动比率保持 1.5:1，高于行业平均 1:1：扣除存货和预付后的资产对短期负债的覆盖没有变差。\n1c 速动比率不变而流动比率下降，说明变化发生在存货和流动负债上：① 赊购了大量存货，存货和应付账款都增加；② 流动负债（应付账款）大幅增加。\n2 应付账款从 20 000 增加到 120 000（+100 000）；存货从 30 000 增加到 60 000（翻倍）。用这些数字算，流动比率从 126 800 ÷ 70 000 = 1.81 降到 158 000 ÷ 170 000 = 0.93。\n3 不建议赊销，或只给很短的信用期和较低额度：流动比率已低于 1，应付账款一年增加了 5 倍，现金几乎没增加，Tsobo 可能付不起新的欠款；可以要求现金交易或预付款。",
+     "parts": [
+      "A",
+      "1a",
+      "1b",
+      "1c",
+      "2",
+      "3"
+     ],
+     "checks": [
+      {
+       "expr": "812000-22000-74000+14000",
+       "equals": "730000"
+      },
+      {
+       "expr": "(44800+40000+30000+12000)/(50000+20000)",
+       "equals": "1.811",
+       "tol": 0.001
+      },
+      {
+       "expr": "(45000+41000+60000+12000)/(50000+120000)",
+       "equals": "0.929",
+       "tol": 0.001
+      }
+     ],
+     "sourceNote": "讲义的现金流分类表把收到的股利列为投资活动（也可列为经营），这里按投资活动；若列为经营，投资活动净额为 716 000。第 2 问给出的明细算出的比率（1.81 和 0.93，速动比率 1.21 和 0.51）与表中的 2:1、1:1、1.5:1 不完全一致，答题时以各问给出的数据为准。"
+    }
+   ],
+   "mistakes": [
+    "Q15 的现金账户漏掉 Jul 5 的 500 定金。",
+    "Q16 把利息收入放进销售额或漏掉。",
+    "Q18 把出售损失、折旧算进投资活动现金。"
+   ],
+   "faqs": [
+    {
+     "q": "Q15 没给期初现金怎么办？",
+     "a": "只过本月的交易，并写一句说明；有期初余额时第一行写 Balance b/d。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "题型",
+   "关键",
+   "对应"
+  ],
+  "rows": [
+   [
+    "选择题",
+    "会计等式、借贷规则、COGS、试算表局限",
+    "例 1"
+   ],
+   [
+    "简答",
+    "术语 + 情境 + 数字",
+    "例 2–5"
+   ],
+   [
+    "会计循环",
+    "分析表 → 分录（摘要）→ 账户",
+    "例 6"
+   ],
+   [
+    "报表",
+    "利润表 → 资产负债表，两表靠净利润相连",
+    "例 7"
+   ],
+   [
+    "调整与分析",
+    "调整分录不动现金；比率要比较",
+    "例 8、9"
+   ]
+  ]
+ },
+ "practice": "在 2 小时 10 分钟内独立完成样卷，再对照本页答案。"
+}

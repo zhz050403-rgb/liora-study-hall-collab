@@ -1,0 +1,215 @@
+{
+ "course": "economics",
+ "term": "term1",
+ "week": 1,
+ "title": "Week 1 · Unit 0 经济学导航 + Unit 1 Introduction to Economics 经济学导论",
+ "answersTitle": "Tutorial 0 Writing and Presenting in Economics",
+ "files": [
+  "unit1 PPT introduction to economics.pdf",
+  "unit1 TG introduction to economics.pdf",
+  "unit1 TG答案 introduction to economics.pdf",
+  "unit0 TG答案 writing and presenting in economics.pdf"
+ ],
+ "inventory": [
+  "Tutorial 0 Task Words",
+  "Tutorial 0 Diagrams",
+  "Tutorial 0 Essay Plan",
+  "Tutorial 0 Presentation",
+  "Lecture 1.1 Scarcity",
+  "Lecture 1.1 Micro vs Macro",
+  "Lecture 1.2 Factors"
+ ],
+ "intro": [
+  "第 1 周两部分：Tutorial 0 讲课程安排和经济学的写作、展示方法（题目里的「任务词」、怎么画图、怎么列提纲）；Lecture 1 讲经济学是什么——稀缺性、微观与宏观、四种生产要素。Unit 1 的 Tutorial 在第 2 周上，完整答案放在第 2 周。"
+ ],
+ "sections": [
+  {
+   "title": "Tutorial 0：课程安排与经济学写作、展示",
+   "sources": [
+    {
+     "file": "unit0 TG答案 writing and presenting in economics.pdf",
+     "pages": "p4–32"
+    }
+   ],
+   "concept": "<strong>考核</strong>：Tutorial 表现 20%（第 2–12 周）、简答书面作业 15%（第 4 周）、小组口头展示 15%（第 7 周）、期末考试 50%。每周建议至少 4 小时：课前半小时浏览讲义，上课做笔记，Tutorial 前花一小时做题，课后半小时按学习目标整理笔记。\n<strong>学术诚信</strong>：遵守 UNSW College 的诚信政策和 AI 使用的「3Cs」规定（第 1 类不能用 AI，第 2 类可辅助使用，第 3 类可整合使用）。\n<strong>写作</strong>：先读懂任务词；本课程<strong>不需要</strong>引言和结论；分段写，不用列表和小标题；能画图就画，图要大、标题和坐标轴标清楚、并在文中解释；缩写第一次要写全称再加括号。\n<strong>展示</strong>：反复练习，说而不是念，用路标语（先预告要讲什么）、举例、提问，注意眼神和语速、音调、停顿。",
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "Tutorial 0 Task Words",
+     "question": "What do these task words require: account, analyse, contrast, define, describe, differentiate, discuss, distinguish, examine, explain, identify, illustrate, outline, sketch, summarise?",
+     "solution": "account 说明理由、报告；analyse 找出组成部分及其关系；contrast 说明不同或相反之处；define 给出含义和本质特征；describe 写出特征；differentiate / distinguish 指出区别；discuss 找出问题并给出正反两方面的论点；examine 深入探究；<strong>explain</strong> 说清楚事物之间的关系，回答为什么、怎么样；identify 认出关键特征并说出名称；<strong>illustrate</strong> 举具体例子或画图；outline 概括主要特征；sketch 画出（或写出）关键细节；summarise 简明地写出相关要点。\n考试最常见的是 define、explain、discuss、illustrate：explain 一定要写因果，discuss 一定要有正反，illustrate 通常要画图。",
+     "numeric": false
+    },
+    {
+     "label": "例 2",
+     "ref": "Tutorial 0 Diagrams",
+     "question": "What makes a good diagram in an economics answer?",
+     "solution": "与题目相关；清楚、用尺画；放在页面中间，两边不写字（标签除外）；大而易读；有标题，坐标轴和曲线都标注；可以用不同颜色突出变化；多张图按 Figure 1、Figure 2 编号；放在相关文字附近，并在文中引用和解释。",
+     "numeric": false
+    },
+    {
+     "label": "例 3",
+     "ref": "Tutorial 0 Essay Plan",
+     "question": "Describe the RAP approach to planning an extended response.",
+     "solution": "R（Read the question）：仔细读题，弄清任务词、术语和概念。\nA（Analyse the content）：头脑风暴，想清楚相关概念之间的关系。\nP（Plan your response）：列出每一段写什么，包括定义和例子。\n本课程答题不写引言和结论，直接分段作答，相关时配图并解释。",
+     "numeric": false
+    },
+    {
+     "label": "例 4",
+     "ref": "Tutorial 0 Presentation",
+     "question": "List tips for speaking to an audience.",
+     "solution": "① 反复练习，也能控制时间；② 说而不是念，口语比书面语简洁；③ 做自己；④ 保持积极、自信；⑤ 用路标语预告内容；⑥ 用例子、图示和幽默制造兴趣；⑦ 提问、邀请参与（录视频时可用设问）；⑧ 注意眼神和肢体语言；⑨ 向优秀演讲者学习；⑩ 注意语速、音高、语气、音量和停顿。",
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "答题写引言、结论或用小标题、列表：本课程要求直接分段作答。",
+    "画图不标坐标轴、不在文字里解释。",
+    "explain 只写结论不写原因。"
+   ],
+   "faqs": [
+    {
+     "q": "缩写可以用吗？",
+     "a": "可以，第一次写全称并在括号里注明缩写，例如 Quantity demanded (Qd)，之后再用缩写。"
+    }
+   ]
+  },
+  {
+   "title": "经济学与稀缺性；微观与宏观（Unit 1 Lecture 1.1）",
+   "sources": [
+    {
+     "file": "unit1 PPT introduction to economics.pdf",
+     "pages": "p6–16"
+    }
+   ],
+   "concept": "<strong>经济学</strong>研究社会如何组织<strong>稀缺</strong>资源来生产商品和服务，以满足<strong>无限</strong>的欲望；核心是选择。\n<strong>稀缺性</strong>（scarcity）：人的欲望永远大于可用资源，没有哪个社会能满足全部欲望，所以必须选择。\n<strong>经济体</strong>（economy）：决定稀缺资源如何用来生产和使用商品与服务的体系，存在于某个地理范围（地方、国家、世界）。<strong>商品</strong>（goods）是有形的东西（食物），<strong>服务</strong>（services）是无形的（送货）。\n<strong>微观经济学</strong>（Term 1）研究个体决策单位：市场、个人需求、厂商与供给。<strong>宏观经济学</strong>（Term 2）研究整体经济：通货膨胀、失业、经济增长率、国际贸易。",
+   "examples": [
+    {
+     "label": "例 5",
+     "ref": "Lecture 1.1 Scarcity",
+     "question": "Explain the economic problem and why it makes choices necessary.",
+     "solution": "经济问题是：人的欲望无限，而资源（土地、人、机器、想法）有限。资源不够满足所有欲望，所以每个个人、企业和社会都必须选择——用资源生产什么、生产多少、为谁生产。稀缺不是「很少」，而是「相对于欲望不够」，所以即使富国也面临稀缺。",
+     "numeric": false
+    },
+    {
+     "label": "例 6",
+     "ref": "Lecture 1.1 Micro vs Macro",
+     "question": "Classify as microeconomics or macroeconomics: (a) how a household decides how much coffee to buy; (b) the national unemployment rate; (c) how a firm decides how many cars to supply; (d) inflation; (e) the growth rate of the economy; (f) the market for hospital services.",
+     "solution": "微观看个体单位，宏观看整体经济：\n(a) 微观（个人需求）\n(b) 宏观（失业）\n(c) 微观（厂商与供给）\n(d) 宏观（通货膨胀）\n(e) 宏观（经济增长）\n(f) 微观（一个市场）",
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+     ],
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "把「稀缺」理解成「数量少」：稀缺是相对于无限欲望而言。",
+    "把一个行业的问题当宏观：单个市场属于微观。"
+   ],
+   "faqs": [
+    {
+     "q": "服务也是经济学研究的对象吗？",
+     "a": "是。经济学研究商品和服务两者的生产与使用。"
+    }
+   ]
+  },
+  {
+   "title": "资源与四种生产要素（Unit 1 Lecture 1.2）",
+   "sources": [
+    {
+     "file": "unit1 PPT introduction to economics.pdf",
+     "pages": "p18–25"
+    }
+   ],
+   "concept": "<strong>资源</strong>（又叫生产要素、投入）是稀缺的，数量有限；越稀缺价格越高（例如制作 Birkin 包的缝纫技艺）；同一资源可以有不同用途。\n四种要素及其报酬：<strong>土地</strong>（来自自然：动物、森林、矿产、海洋）→ 租金 rent；<strong>劳动</strong>（人的体力和脑力：网红、网球运动员、厨师）→ 工资 wages；<strong>资本</strong>（人造的东西：工厂、工具、设备）→ 讲义写作 investment（报酬）；<strong>企业家才能</strong>（主动创办企业、组合资源、承担风险、推出新产品或想法）→ 利润 profit。\n生产过程：资源投入 → 生产 → 产出（商品和服务）。",
+   "figures": [
+    {
+     "type": "table",
+     "headers": [
+      "Factor",
+      "来源",
+      "例子",
+      "Income (reward)"
+     ],
+     "rows": [
+      [
+       "Land 土地",
+       "自然",
+       "animals, forests, minerals, oceans",
+       "Rent"
+      ],
+      [
+       "Labour 劳动",
+       "人",
+       "influencers, tennis players, chefs",
+       "Wages"
+      ],
+      [
+       "Capital 资本",
+       "人造",
+       "factories, tools, equipment",
+       "Investment（讲义用词；教科书多称 interest）"
+      ],
+      [
+       "Enterprise 企业家才能",
+       "想法和冒险",
+       "new goods, services, ideas; high-risk strategies",
+       "Profit"
+      ]
+     ],
+     "title": "Four factors of production"
+    }
+   ],
+   "examples": [
+    {
+     "label": "例 7",
+     "ref": "Lecture 1.2 Factors",
+     "question": "For a café, identify one example of each factor of production and the income it earns: the land the café sits on, the barista, the espresso machine, and the owner who opened the café.",
+     "solution": "café 所在土地 → 土地，报酬是租金；咖啡师 → 劳动，报酬是工资；咖啡机 → 资本（人造的生产工具），讲义写的报酬是 investment；创办并承担风险的老板 → 企业家才能，报酬是利润。注意：咖啡豆是生产中用掉的原料，不是这里说的资本。",
+     "sourceNote": "讲义把资本的报酬写成「investment」，一般教科书称为利息（interest）；考试按讲义写法或写 interest 都应说明是资本的回报。",
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "把钱当作资本：经济学里的资本是工厂、工具、设备等人造生产工具。",
+    "企业家才能的报酬写成工资：是利润。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么越稀缺的资源越贵？",
+     "a": "讲义：资源的稀缺程度与价格正相关，供给越有限，人们愿意出的价越高。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "步骤",
+   "做什么",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "1 读题",
+    "找任务词：explain 要因果，discuss 要正反，illustrate 要图",
+    "例 1"
+   ],
+   [
+    "2 画图",
+    "标题、坐标轴、标签、文中解释",
+    "例 2"
+   ],
+   [
+    "3 概念",
+    "稀缺性 → 选择；微观 vs 宏观；四要素及报酬",
+    "例 5–7"
+   ]
+  ]
+ },
+ "practice": "本周任务：熟悉 Moodle（课程大纲、教材、术语表、课前活动、论坛）；读 Unit 1 讲义，为第 2 周的 Unit 1 Tutorial 做准备。"
+}

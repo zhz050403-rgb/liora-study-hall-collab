@@ -1,0 +1,1069 @@
+{
+ "course": "economics",
+ "term": "term2",
+ "week": 2,
+ "title": "Week 2 · Unit 1 Tutorial + Unit 2 Inflation 通货膨胀",
+ "answersTitle": "Tutorial 1 GDP",
+ "files": [
+  "unit1 PPT economic growth and gdp.pdf",
+  "unit1 TG economic growth and gdp.pdf",
+  "unit2 PPT inflation.pdf",
+  "unit2 TG inflation.pdf"
+ ],
+ "inventory": [
+  {
+   "ref": "Tutorial 1 A6 Video",
+   "parts": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14"
+   ]
+  },
+  {
+   "ref": "Tutorial 1 Terms",
+   "deliverables": [
+    {
+     "type": "terms",
+     "terms": [
+      "Boom",
+      "Trough",
+      "Upturn",
+      "Downturn",
+      "Business cycle",
+      "Economic growth",
+      "GDP",
+      "Nominal GDP",
+      "Real GDP per capita"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial 1 Q1",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "Tutorial 1 Q2",
+  "Tutorial 1 Q3",
+  "Tutorial 1 Q4",
+  "Tutorial 1 Q5",
+  {
+   "ref": "Tutorial 1 Q6",
+   "parts": [
+    "a",
+    "b"
+   ],
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial 1 Q7",
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  "Tutorial 1 Q8",
+  "Tutorial 1 Q9",
+  "Tutorial 1 Q10",
+  "Tutorial 1 Writing",
+  "Lecture 2 Inflation",
+  {
+   "ref": "Lecture 2 CPI",
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  {
+   "ref": "Lecture 2 Causes",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "Lecture 2 Effects",
+  "Lecture 2 Targets"
+ ],
+ "intro": [
+  "本周前半是 <strong>Unit 1 Tutorial</strong>（经济周期作图、GDP 的算法、实际 GDP 与人均实际 GDP、GDP 衡量生活水平的局限、促进增长的政策）；后半是 <strong>Unit 2 讲座</strong>：通货膨胀的定义、CPI 的计算、需求拉动 / 成本推动 / 输入型通胀、通胀的影响、通胀目标、通胀预期和通缩。Unit 2 Tutorial 的答案在第 3 周。",
+  "Term 2 的 Tutorial 没有官方答案文件，以下答案依据讲义和 Tutorial 阅读材料写出，计算题都用公式核对。"
+ ],
+ "sections": [
+  {
+   "title": "Unit 1 Tutorial：经济周期与 GDP",
+   "sources": [
+    {
+     "file": "unit1 TG economic growth and gdp.pdf",
+     "pages": "p1–13"
+    },
+    {
+     "file": "unit1 PPT economic growth and gdp.pdf",
+     "pages": "p1–41"
+    }
+   ],
+   "concept": "<strong>经济周期</strong>：实际 GDP 增长率的起伏，依次是上行（upturn / recovery）、繁荣（boom / peak）、下行（downturn / contraction）、谷底（trough / recession），再进入上行。\n增长的<strong>需求因素</strong>：人口增长（自然增长和移民）、贸易带来的海外需求；<strong>供给因素</strong>：资源的数量和质量（生产率）——劳动（参与率、健康、教育培训）、资本（净投资 = 总投资 − 折旧）、技术进步、政府政策。\n增长的可能<strong>坏处</strong>：结构性失业、通胀（成本推动和需求拉动）、国际收支问题（进口增加、外债）。",
+   "figures": [
+    {
+     "type": "plot",
+     "xr": [
+      0,
+      9
+     ],
+     "yr": [
+      -1.5,
+      5.5
+     ],
+     "width": 300,
+     "height": 240,
+     "xLabel": "Year",
+     "yLabel": "% change in GDP",
+     "curves": [],
+     "caption": "Trade cycle from the % growth figures",
+     "xticks": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+     ],
+     "yticks": [
+      -1,
+      1,
+      2,
+      3,
+      4,
+      5
+     ],
+     "lines": [
+      {
+       "pts": [
+        [
+         1,
+         1.2
+        ],
+        [
+         2,
+         2.3
+        ],
+        [
+         3,
+         3.7
+        ],
+        [
+         4,
+         4.4
+        ],
+        [
+         5,
+         2.7
+        ],
+        [
+         6,
+         1.1
+        ],
+        [
+         7,
+         -0.6
+        ],
+        [
+         8,
+         0.7
+        ]
+       ],
+       "color": "navy"
+      }
+     ],
+     "points": [
+      {
+       "x": 1,
+       "y": 1.2
+      },
+      {
+       "x": 2,
+       "y": 2.3
+      },
+      {
+       "x": 3,
+       "y": 3.7
+      },
+      {
+       "x": 4,
+       "y": 4.4
+      },
+      {
+       "x": 5,
+       "y": 2.7
+      },
+      {
+       "x": 6,
+       "y": 1.1
+      },
+      {
+       "x": 7,
+       "y": -0.6
+      },
+      {
+       "x": 8,
+       "y": 0.7
+      }
+     ],
+     "texts": [
+      {
+       "x": 2.3,
+       "y": 3.6,
+       "text": "upturn",
+       "anchor": "middle",
+       "size": 10,
+       "color": "green"
+      },
+      {
+       "x": 4,
+       "y": 5,
+       "text": "boom (peak)",
+       "anchor": "middle",
+       "size": 10,
+       "color": "gold",
+       "bold": true
+      },
+      {
+       "x": 5.9,
+       "y": 3.1,
+       "text": "downturn",
+       "anchor": "middle",
+       "size": 10,
+       "color": "red"
+      },
+      {
+       "x": 7,
+       "y": -1.3,
+       "text": "recession (trough)",
+       "anchor": "middle",
+       "size": 10,
+       "color": "red",
+       "bold": true
+      },
+      {
+       "x": 8.3,
+       "y": 1.6,
+       "text": "upturn",
+       "anchor": "middle",
+       "size": 10,
+       "color": "green"
+      }
+     ]
+    }
+   ],
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "Tutorial 1 A6 Video",
+     "question": "Watch the A6 sample presentation video (Circular Flow News Article) and answer questions 1–14 about how the presenters start, the six elements of the introduction, referencing the article and lecture, delivery, conclusion, what happens afterwards, and the marks you would give.",
+     "solution": "这 14 题要看 Moodle「A6 – Pair work Presentation」标签下的示例视频才能回答，讲义里没有视频内容，笔记不编造答案。看视频时按题号记录：开场方式、引言里提到的 6 个要素、正文第一句和第二个要点怎么开始、引用文章和讲座时说明了哪些信息、为什么要高亮文章段落、是否照读、用手机还是提示卡（讲义第 6 页说明：示例中两人都用 palm cards，正式展示也必须使用并上交）、肢体语言和语速、是否看着听众、结论包含什么、结束后会发生什么（通常是 Q&A），最后按评分表给两位讲者打分。",
+     "sourceNote": "答案依赖 Moodle 视频；讲义 p6 明确说明示例中使用了 palm cards，正式提交要上传提示卡和高亮的新闻文章。",
+     "parts": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 2",
+     "ref": "Tutorial 1 Terms",
+     "question": "Explain: Boom; Trough; Upturn; Downturn; Business cycle; Economic growth; GDP; Nominal GDP; Real GDP per capita.",
+     "solution": "<strong>Boom</strong>（繁荣 / 顶峰）：增长率最高的阶段，支出、产出、就业都高，常伴随通胀压力。\n<strong>Trough</strong>（谷底）：增长率最低（可能为负）的阶段，即衰退的底部，失业率高。\n<strong>Upturn</strong>（上行 / 复苏）：从谷底回升，增长率上升。\n<strong>Downturn</strong>（下行 / 收缩）：从顶峰回落，增长率下降。\n<strong>Business cycle</strong>（经济周期）：经济活动水平（以实际 GDP 衡量）随时间的扩张和收缩交替。\n<strong>Economic growth</strong>（经济增长）：一国满足人民物质需求的能力随时间提高，表现为实际产出增加。\n<strong>GDP</strong>：一段时间内一国生产的所有最终商品和服务的市场价值。\n<strong>Nominal GDP</strong>（名义 GDP）：按当期价格计算的 GDP，包含价格变化。\n<strong>Real GDP per capita</strong>（人均实际 GDP）：去掉价格变化后的 GDP 除以人口，衡量平均每人可得的商品和服务。",
+     "numeric": false
+    },
+    {
+     "label": "例 3",
+     "ref": "Tutorial 1 Q1",
+     "question": "Use the figures (Year 1–8 % growth of GDP: +1.2, +2.3, +3.7, +4.4, +2.7, +1.1, −0.6, +0.7) to draw the trade cycle, with % change in GDP on the vertical axis and time on the horizontal axis. Label recession, boom, upturn and downturn.",
+     "solution": "按数据描点连线（见图）：第 1–4 年增长率上升，是<strong>上行</strong>；第 4 年 4.4% 最高，是<strong>繁荣（顶峰）</strong>；第 4–7 年回落，是<strong>下行</strong>；第 7 年 −0.6% 为负增长，是<strong>衰退（谷底）</strong>；第 8 年回到 0.7%，重新进入<strong>上行</strong>。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        9
+       ],
+       "yr": [
+        -1.5,
+        5.5
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "Year",
+       "yLabel": "% change in GDP",
+       "curves": [],
+       "caption": "Trade cycle from the % growth figures",
+       "xticks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+       ],
+       "yticks": [
+        -1,
+        1,
+        2,
+        3,
+        4,
+        5
+       ],
+       "lines": [
+        {
+         "pts": [
+          [
+           1,
+           1.2
+          ],
+          [
+           2,
+           2.3
+          ],
+          [
+           3,
+           3.7
+          ],
+          [
+           4,
+           4.4
+          ],
+          [
+           5,
+           2.7
+          ],
+          [
+           6,
+           1.1
+          ],
+          [
+           7,
+           -0.6
+          ],
+          [
+           8,
+           0.7
+          ]
+         ],
+         "color": "navy"
+        }
+       ],
+       "points": [
+        {
+         "x": 1,
+         "y": 1.2
+        },
+        {
+         "x": 2,
+         "y": 2.3
+        },
+        {
+         "x": 3,
+         "y": 3.7
+        },
+        {
+         "x": 4,
+         "y": 4.4
+        },
+        {
+         "x": 5,
+         "y": 2.7
+        },
+        {
+         "x": 6,
+         "y": 1.1
+        },
+        {
+         "x": 7,
+         "y": -0.6
+        },
+        {
+         "x": 8,
+         "y": 0.7
+        }
+       ],
+       "texts": [
+        {
+         "x": 2.3,
+         "y": 3.6,
+         "text": "upturn",
+         "anchor": "middle",
+         "size": 10,
+         "color": "green"
+        },
+        {
+         "x": 4,
+         "y": 5,
+         "text": "boom (peak)",
+         "anchor": "middle",
+         "size": 10,
+         "color": "gold",
+         "bold": true
+        },
+        {
+         "x": 5.9,
+         "y": 3.1,
+         "text": "downturn",
+         "anchor": "middle",
+         "size": 10,
+         "color": "red"
+        },
+        {
+         "x": 7,
+         "y": -1.3,
+         "text": "recession (trough)",
+         "anchor": "middle",
+         "size": 10,
+         "color": "red",
+         "bold": true
+        },
+        {
+         "x": 8.3,
+         "y": 1.6,
+         "text": "upturn",
+         "anchor": "middle",
+         "size": 10,
+         "color": "green"
+        }
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "4.4-(-0.6)",
+       "equals": "5.0",
+       "tol": 1e-09
+      }
+     ]
+    },
+    {
+     "label": "例 4",
+     "ref": "Tutorial 1 Q2",
+     "question": "What are some of the key features of an economy experiencing a boom?",
+     "solution": "实际 GDP 增长快；总支出（消费、投资）高；企业满负荷生产、利润高；失业率低，劳动力短缺，工资上涨；资源紧张使成本和物价上涨，通胀压力大；进口增加，可能出现贸易逆差；资产价格上涨，企业和消费者信心强。",
+     "numeric": false
+    },
+    {
+     "label": "例 5",
+     "ref": "Tutorial 1 Q3",
+     "question": "What are some features of an economy in recession or trough?",
+     "solution": "实际 GDP 增长很低或为负（常用定义：连续两个季度负增长）；总支出低；企业减产、利润下降，部分倒闭；失业率高；通胀低，甚至通缩；投资减少；企业和消费者信心弱；政府税收减少、福利支出增加，预算可能出现赤字。",
+     "numeric": false
+    },
+    {
+     "label": "例 6",
+     "ref": "Tutorial 1 Q4",
+     "question": "Outline the main methods of measuring GDP.",
+     "solution": "因为产出 = 收入 = 支出，有三种方法：①<strong>支出法</strong>：GDP = C + I + G + (X − M)，加总所有对最终产品的支出；②<strong>收入法</strong>：GDP = 工资 + 租金 + 利息 + 利润，加总生产要素的收入；③<strong>产出法</strong>：加总各行业新生产的最终产品价值（或各环节的增加值），避免重复计算中间产品。",
+     "numeric": false
+    },
+    {
+     "label": "例 7",
+     "ref": "Tutorial 1 Q5",
+     "question": "Distinguish between nominal GDP, real GDP and real GDP per capita.",
+     "solution": "<strong>名义 GDP</strong>按当期价格计算，物价上涨也会使它增加，所以不能可靠衡量增长。<strong>实际 GDP</strong>按基期价格计算（名义 GDP × 基期 CPI ÷ 当期 CPI），只反映产量变化。<strong>人均实际 GDP</strong>再除以人口，衡量平均每人的产出，用于比较生活水平；人口增长快于实际产出时它会下降。",
+     "numeric": false
+    },
+    {
+     "label": "例 8",
+     "ref": "Tutorial 1 Q6",
+     "question": "Complete the table (Money GDP, price index, population). (a) Which year is the base year? (b) In which year is real GDP per capita highest?",
+     "solution": "实际 GDP = 名义 GDP × 100 ÷ 当年价格指数；人均实际 GDP = 实际 GDP ÷ 人口。\n(a) 价格指数为 100 的<strong>第 3 年</strong>是基期。\n(b) <strong>第 3 年</strong>最高（$61 000）。第 4、5 年人口增长 20%、25%，超过实际 GDP 的增长，人均值下降。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "Year",
+        "Money GDP ($M)",
+        "Price index",
+        "Real GDP ($M)",
+        "Population (m)",
+        "Real GDP per capita ($)"
+       ],
+       "rows": [
+        [
+         "1",
+         "22,000",
+         "53",
+         "41,509.43",
+         "1",
+         "41,509.43"
+        ],
+        [
+         "2",
+         "33,000",
+         "63",
+         "52,380.95",
+         "1",
+         "52,380.95"
+        ],
+        [
+         "3",
+         "61,000",
+         "100",
+         "61,000.00",
+         "1",
+         "61,000.00"
+        ],
+        [
+         "4",
+         "83,000",
+         "127",
+         "65,354.33",
+         "1.2",
+         "54,461.94"
+        ],
+        [
+         "5",
+         "114,000",
+         "163",
+         "69,938.65",
+         "1.25",
+         "55,950.92"
+        ]
+       ]
+      }
+     ],
+     "answer": "(a) Year 3 (b) Year 3",
+     "checks": [
+      {
+       "expr": "22000*100/53",
+       "equals": "41509.43",
+       "tol": 0.01
+      },
+      {
+       "expr": "83000*100/127/1.2",
+       "equals": "54461.94",
+       "tol": 0.01
+      },
+      {
+       "expr": "114000*100/163/1.25",
+       "equals": "55950.92",
+       "tol": 0.01
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 9",
+     "ref": "Tutorial 1 Q7",
+     "question": "Complete the table (Money GDP A 2500, B 2860, C 3300; price index 100, 110, 121): real GDP and growth rate.",
+     "solution": "实际 GDP：2500、2860 × 100 ÷ 110 = 2600、3300 × 100 ÷ 121 = 2727.27。增长率 = (本期 − 上期) ÷ 上期 × 100：B 为 4.00%，C 为 4.90%。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "Year",
+        "Money GDP ($M)",
+        "Price index",
+        "Real GDP ($M)",
+        "Growth rate"
+       ],
+       "rows": [
+        [
+         "A",
+         "2500",
+         "100",
+         "2500.00",
+         "—"
+        ],
+        [
+         "B",
+         "2860",
+         "110",
+         "2600.00",
+         "4.00%"
+        ],
+        [
+         "C",
+         "3300",
+         "121",
+         "2727.27",
+         "4.90%"
+        ]
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "2860*100/110",
+       "equals": "2600"
+      },
+      {
+       "expr": "(3300*100/121-2600)/2600*100",
+       "equals": "4.895",
+       "tol": 0.001
+      }
+     ]
+    },
+    {
+     "label": "例 10",
+     "ref": "Tutorial 1 Q8",
+     "question": "Briefly outline the problems of using real per capita GDP as an accurate indicator of living standards.",
+     "solution": "①人均数是平均值，看不出<strong>收入分配</strong>，少数人收入很高时平均数会高估多数人的生活水平；②不反映产出的<strong>种类和质量</strong>（武器与药品同样计入）；③不计<strong>闲暇</strong>和工作时间；④不计<strong>无偿劳动</strong>和<strong>地下经济</strong>；⑤不扣除<strong>环境破坏</strong>和资源消耗；⑥不反映健康、教育、犯罪、政治自由等社会状况。",
+     "numeric": false
+    },
+    {
+     "label": "例 11",
+     "ref": "Tutorial 1 Q9",
+     "question": "Name some alternative indicators that could be used to compare standards of living.",
+     "solution": "联合国<strong>人类发展指数</strong>（HDI，综合预期寿命、教育和人均收入）、<strong>真实进步指标</strong>（GPI）、<strong>净经济福利指数</strong>（NEW）、<strong>国民幸福总值</strong>（GNH）、SMH 幸福指数；也可以看单项指标：识字率、升学率、预期寿命、婴儿死亡率、清洁用水、犯罪率、污染水平、工作时间。",
+     "numeric": false
+    },
+    {
+     "label": "例 12",
+     "ref": "Tutorial 1 Q10",
+     "question": "Identify 4 specific policies governments could use to increase economic growth.",
+     "solution": "①<strong>教育与培训</strong>支出（学徒、职业培训、研究），提高劳动质量；②<strong>基础设施</strong>投资（道路、医院、供水供电），为私人生产打基础；③鼓励资本积累：新设备投资抵扣、降低公司税；④促进竞争和研发，推动技术进步和创新；（另可：用货币和财政政策维持低通胀和充分就业、增加移民扩大需求和劳动力。）",
+     "numeric": false
+    },
+    {
+     "label": "例 13",
+     "ref": "Tutorial 1 Writing",
+     "question": "Possible writing task: What is meant by economic growth? What are some problems of using real per capita GDP figures as an accurate indicator of living standards?",
+     "solution": "<strong>经济增长</strong>指一国满足人民物质需求的能力随时间提高，通常用实际 GDP 的增长率衡量：去掉价格变化后，一段时间内生产的最终商品和服务增加了多少。人均实际 GDP 再除以人口，表示平均每人可得的产出，常被用来比较生活水平。\n但人均实际 GDP 作为生活水平指标有几个问题。第一，它是平均数，不反映收入分配；收入差距扩大时，多数人的生活可能并没有改善。第二，它只计入市场交易，不包括家务、义工等无偿劳动和地下经济。第三，它不考虑产出的种类和质量，也不扣除污染、资源消耗等环境代价。第四，它不反映闲暇、健康、教育、犯罪和政治自由等影响生活质量的因素。\n因此，比较生活水平时，人均实际 GDP 应与人类发展指数等更广的福利指标一起使用。",
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "把增长率下降（但仍为正）说成衰退：衰退是增长率为负或很低的谷底阶段。",
+    "作图时把纵轴画成 GDP 水平而不是增长率（题目要求 % change）。",
+    "名义 GDP 和实际 GDP 混用。"
+   ],
+   "faqs": [
+    {
+     "q": "第 6 题算出的人均实际 GDP 单位是什么？",
+     "a": "实际 GDP 单位是百万美元，人口单位是百万人，两者相除得到「每人多少美元」。"
+    }
+   ]
+  },
+  {
+   "title": "Unit 2 讲座：通货膨胀",
+   "sources": [
+    {
+     "file": "unit2 PPT inflation.pdf",
+     "pages": "p1–27"
+    }
+   ],
+   "concept": "<strong>通货膨胀</strong>：一般物价水平随时间持续上升。<strong>通胀率</strong>：物价水平逐年的百分比变化。\n<strong>CPI</strong>（消费者价格指数）衡量典型消费者所购「一篮子」商品和服务的平均价格，也叫生活成本指数。澳大利亚由 ABS 每季度统计（87 类支出、约 10 万个价格、8 个首府城市，篮子每 6 年调整）。CPI = {{frac 当期篮子支出|基期篮子支出}} × 100；通胀率 = {{frac CPI 本期 − CPI 上期|CPI 上期}} × 100%。\n<strong>原因</strong>：①<strong>需求拉动</strong>（总需求超过供给：消费旺盛、利率低信贷宽松、政府印钱弥补赤字）；②<strong>成本推动</strong>（生产成本上升：油价原料、天灾等供给冲击、工资、销售税）；③<strong>输入型</strong>（进口投入品和进口消费品涨价）。\n<strong>影响</strong>：生活成本上升、购买力下降；财富再分配（固定收入者和放贷人受损，借款人和资产持有人得益）；利率可能上升；出口竞争力下降；企业计划不确定；资源转向投机；投资、就业和增长可能下降。\n<strong>通胀目标</strong>：澳储行把通胀控制在平均每年 2–3%（零通胀几乎不可能）。<strong>通胀预期</strong>会自我实现：人们提前消费、要求加薪。<strong>通缩</strong>：物价普遍下降，消费推迟、经济收缩、资产贬值、工资可能下降、债务人受损。",
+   "formulas": [
+    "CPI = {{frac Current basket cost|Base basket cost}} × 100",
+    "Inflation rate = {{frac CPI_x − CPI_(x−1)|CPI_(x−1)}} × 100"
+   ],
+   "examples": [
+    {
+     "label": "例 14",
+     "ref": "Lecture 2 Inflation",
+     "question": "Define inflation and the inflation rate. How is it measured in Australia?",
+     "solution": "通货膨胀是一般物价水平的持续上升；通胀率是物价水平逐年的百分比变化。澳大利亚用 CPI 衡量：ABS 每季度在 8 个首府城市收集约 10 万个价格，覆盖 87 类支出；年通胀率是 CPI 一年的百分比变化，篮子每 6 年调整一次以反映购买习惯。",
+     "numeric": false
+    },
+    {
+     "label": "例 15",
+     "ref": "Lecture 2 CPI",
+     "question": "A simplified basket: 5 kg oranges ($0.80/kg → $1.20/kg), 6 haircuts ($11.00 → $12.50), 100 bus rides ($1.40 → $1.50). Calculate the CPI and the inflation rate.",
+     "solution": "基期支出：4 + 66 + 140 = $210；当期支出：6 + 75 + 150 = $231。\n基期 CPI = 210 ÷ 210 × 100 = 100；当期 CPI = 231 ÷ 210 × 100 = 110。\n通胀率 = (110 − 100) ÷ 100 × 100 = 10%。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "Item",
+        "Base price",
+        "Base expenditure",
+        "Current price",
+        "Current expenditure"
+       ],
+       "rows": [
+        [
+         "5 kg oranges",
+         "$0.80/kg",
+         "$4",
+         "$1.20/kg",
+         "$6"
+        ],
+        [
+         "6 haircuts",
+         "$11.00",
+         "$66",
+         "$12.50",
+         "$75"
+        ],
+        [
+         "100 bus rides",
+         "$1.40",
+         "$140",
+         "$1.50",
+         "$150"
+        ],
+        [
+         "Total",
+         "",
+         "$210",
+         "",
+         "$231"
+        ]
+       ],
+       "title": "CPI = 231 ÷ 210 × 100 = 110"
+      }
+     ],
+     "answer": "CPI 110, inflation 10%",
+     "checks": [
+      {
+       "expr": "5*0.8+6*11+100*1.4",
+       "equals": "210"
+      },
+      {
+       "expr": "5*1.2+6*12.5+100*1.5",
+       "equals": "231"
+      },
+      {
+       "expr": "231/210*100",
+       "equals": "110",
+       "tol": 1e-09
+      },
+      {
+       "expr": "(110-100)/100*100",
+       "equals": "10"
+      }
+     ]
+    },
+    {
+     "label": "例 16",
+     "ref": "Lecture 2 Causes",
+     "question": "Explain demand-pull, cost-push and imported inflation.",
+     "solution": "<strong>需求拉动</strong>：总需求超过经济的生产能力，出现短缺，物价上升。原因：消费支出高；货币供应增加、利率低导致过度借贷和支出；政府印钞弥补预算赤字。图中 AD 右移，物价水平从 A 升到 B。\n<strong>成本推动</strong>：生产成本上升，企业提价转嫁成本。原因：油价、原材料涨价；洪水、飓风等供给冲击推高食品价格；工资上涨；销售税提高。图中 AS 左移，物价上升而产出下降。\n<strong>输入型</strong>：进口投入品（如石油）涨价推高成本；进口消费品涨价直接计入 CPI 篮子。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Real GDP",
+       "yLabel": "Price level",
+       "curves": [
+        {
+         "expr": "8+(-0.8)*x",
+         "dom": [
+          0,
+          10.0
+         ],
+         "color": "navy",
+         "label": [
+          8.2,
+          1.8400000000000003,
+          "AD₁"
+         ]
+        },
+        {
+         "expr": "10+(-0.8)*x",
+         "dom": [
+          0,
+          9.2
+         ],
+         "color": "navy",
+         "label": [
+          7.543999999999999,
+          4.364800000000002,
+          "AD₂"
+         ],
+         "dash": true
+        },
+        {
+         "expr": "1+(0.7)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "red",
+         "label": [
+          8.55,
+          7.484999999999999,
+          "AS"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 4.667,
+         "y": 4.267,
+         "label": "A"
+        },
+        {
+         "x": 6.0,
+         "y": 5.2,
+         "label": "B"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          4.267
+         ],
+         "to": [
+          4.667,
+          4.267
+         ]
+        },
+        {
+         "from": [
+          4.667,
+          0
+         ],
+         "to": [
+          4.667,
+          4.267
+         ]
+        },
+        {
+         "from": [
+          0,
+          5.2
+         ],
+         "to": [
+          6.0,
+          5.2
+         ]
+        },
+        {
+         "from": [
+          6.0,
+          0
+         ],
+         "to": [
+          6.0,
+          5.2
+         ]
+        }
+       ],
+       "caption": "Demand-pull: AD shifts right, price level rises from A to B"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Real GDP",
+       "yLabel": "Price level",
+       "curves": [
+        {
+         "expr": "8+(-0.8)*x",
+         "dom": [
+          0,
+          10.0
+         ],
+         "color": "navy",
+         "label": [
+          8.2,
+          1.8400000000000003,
+          "AD"
+         ]
+        },
+        {
+         "expr": "1+(0.7)*x",
+         "dom": [
+          0,
+          9
+         ],
+         "color": "red",
+         "label": [
+          8.1,
+          7.17,
+          "AS₁"
+         ]
+        },
+        {
+         "expr": "3+(0.7)*x",
+         "dom": [
+          0,
+          6.5
+         ],
+         "color": "red",
+         "label": [
+          5.8500000000000005,
+          7.595,
+          "AS₂"
+         ],
+         "dash": true
+        }
+       ],
+       "points": [
+        {
+         "x": 4.667,
+         "y": 4.267,
+         "label": "A"
+        },
+        {
+         "x": 3.333,
+         "y": 5.333,
+         "label": "B"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          4.267
+         ],
+         "to": [
+          4.667,
+          4.267
+         ]
+        },
+        {
+         "from": [
+          4.667,
+          0
+         ],
+         "to": [
+          4.667,
+          4.267
+         ]
+        },
+        {
+         "from": [
+          0,
+          5.333
+         ],
+         "to": [
+          3.333,
+          5.333
+         ]
+        },
+        {
+         "from": [
+          3.333,
+          0
+         ],
+         "to": [
+          3.333,
+          5.333
+         ]
+        }
+       ],
+       "caption": "Cost-push: AS shifts left, higher prices with lower output"
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 17",
+     "ref": "Lecture 2 Effects",
+     "question": "What are the effects of inflation?",
+     "solution": "①生活成本上升，消费者购买力下降；②财富再分配：固定收入者和放贷人受损（钱贬值），借款人和资产持有人得益；③利率可能上升，补偿放贷人；④出口价格上升，国际竞争力下降；⑤企业难以计划；⑥资源从生产转向资产投机；⑦投资、就业和增长可能下降。",
+     "numeric": false
+    },
+    {
+     "label": "例 18",
+     "ref": "Lecture 2 Targets",
+     "question": "What is Australia's inflation target, why do inflationary expectations matter, and what is wrong with deflation?",
+     "solution": "澳储行（RBA）的目标是把通胀控制在<strong>平均每年 2–3%</strong>，零通胀几乎不可能。\n<strong>通胀预期</strong>：如果家庭和企业预期通胀持续，会提前消费（加大需求压力），工人要求加薪（推高成本），预期本身就会推高物价。\n<strong>通缩</strong>的问题：消费者推迟购买使需求下降；可能说明经济在收缩、失业增加；资产贬值；工资可能下降；债务的实际负担加重，债务人受损。",
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "CPI 用价格直接相加而不乘数量：要算整个篮子的支出。",
+    "通胀率除以本期 CPI：应除以上一期。",
+    "把通缩当成好事：普遍降价会推迟消费、加重债务负担。"
+   ],
+   "faqs": [
+    {
+     "q": "CPI 为 110 是说通胀 110% 吗？",
+     "a": "不是。CPI 是相对基期的指数，110 表示篮子比基期贵 10%；通胀率要用两期 CPI 的百分比变化计算。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "题型",
+   "做法",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "经济周期作图",
+    "纵轴增长率，标上行、繁荣、下行、衰退",
+    "例 3"
+   ],
+   [
+    "实际 / 人均 GDP",
+    "× 100 ÷ CPI，再 ÷ 人口",
+    "例 8、9"
+   ],
+   [
+    "GDP 的局限",
+    "分配、质量、闲暇、无偿劳动、环境",
+    "例 10、13"
+   ],
+   [
+    "CPI",
+    "当期篮子支出 ÷ 基期篮子支出 × 100",
+    "例 15"
+   ],
+   [
+    "通胀原因",
+    "需求拉动 / 成本推动 / 输入型",
+    "例 16"
+   ]
+  ]
+ },
+ "practice": "讲座结尾要求：完成 Moodle 第一次计分小测（GDP 与通胀），预习 Unit 3，并在 Tutorial 前做完 Unit 2 Learning Guide（答案见第 3 周）。"
+}

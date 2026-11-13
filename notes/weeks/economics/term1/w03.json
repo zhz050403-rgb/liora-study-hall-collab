@@ -1,0 +1,1313 @@
+{
+ "course": "economics",
+ "term": "term1",
+ "week": 3,
+ "title": "Week 3 · Unit 2 Tutorial + Unit 3 Demand & Supply 需求与供给",
+ "answersTitle": "Tutorial 2 Production and Technology",
+ "files": [
+  "unit2 PPT production and technology.pdf",
+  "unit2 TG production and technology.pdf",
+  "unit2 TG答案 production and technology.pdf",
+  "unit3 PPT demand and supply.pdf",
+  "unit3 TG demand and supply.pdf",
+  "unit3 TG答案 demand and supply.pdf"
+ ],
+ "inventory": [
+  {
+   "ref": "Tutorial 2 Terms",
+   "deliverables": [
+    {
+     "type": "terms",
+     "terms": [
+      "Opportunity cost",
+      "Law of increasing opportunity costs",
+      "PPC",
+      "Marginal analysis",
+      "Technology",
+      "Economic growth",
+      "Investment"
+     ]
+    }
+   ]
+  },
+  "Tutorial 2 Q1",
+  {
+   "ref": "Tutorial 2 Q2",
+   "parts": [
+    "a",
+    "b"
+   ]
+  },
+  {
+   "ref": "Tutorial 2 Q3",
+   "parts": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ],
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial 2 Q4",
+   "parts": [
+    "a(i)",
+    "a(ii)",
+    "b",
+    "c"
+   ]
+  },
+  "Tutorial 2 Q5",
+  "Tutorial 2 Q6",
+  {
+   "ref": "Tutorial 2 In-class Q1",
+   "parts": [
+    "b",
+    "c",
+    "d",
+    "e",
+    "f"
+   ]
+  },
+  {
+   "ref": "Tutorial 2 In-class Q2",
+   "parts": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ],
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial 2 Writing",
+   "parts": [
+    "a",
+    "b",
+    "c"
+   ]
+  },
+  "Lecture 3.1 Example 1",
+  {
+   "ref": "Lecture 3.1 Demand",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "Lecture 3.1 Shifters",
+  {
+   "ref": "Lecture 3.2 Supply",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "Lecture 3.2 Equilibrium",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  }
+ ],
+ "intro": [
+  "本周前半是 <strong>Unit 2 Tutorial</strong>（机会成本、PPC 的计算、移动与作图），参考 Tutorial 答案课件逐题作答，PPC 按题目数据画出；后半是 <strong>Unit 3 讲座</strong>：需求定律、供给定律、需求量变化与需求变化的区别、非价格因素，以及供求变化如何改变均衡。Unit 3 Tutorial 的答案在第 4 周。"
+ ],
+ "sections": [
+  {
+   "title": "Unit 2 Tutorial：机会成本与生产可能性曲线",
+   "sources": [
+    {
+     "file": "unit2 TG production and technology.pdf",
+     "pages": "p2–4"
+    },
+    {
+     "file": "unit2 TG答案 production and technology.pdf",
+     "pages": "p8–27"
+    },
+    {
+     "file": "unit2 PPT production and technology.pdf",
+     "pages": "p9–45"
+    }
+   ],
+   "concept": "<strong>机会成本</strong>：为了得到某样东西而放弃的次优选择。<strong>机会成本递增定律</strong>：资源并不同样适合两种生产，越多地生产一种商品，每多一单位要放弃的另一种商品越多，所以 PPC 向外凸。<strong>PPC/PPF</strong>：资源和技术给定、充分利用时两种商品的最大产量组合。<strong>边际分析</strong>：比较「多一单位」的额外收益和额外成本。<strong>技术</strong>：关于如何生产商品和服务的知识。<strong>经济增长</strong>：生产能力提高，PPC 外移。<strong>投资</strong>：增加资本存量；净投资为零只够弥补折旧，净投资为正才使资本积累。",
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "Tutorial 2 Terms",
+     "question": "Define: Opportunity cost; Law of increasing opportunity costs; PPC/PPF; Marginal analysis; Technology; Economic growth; Investment.",
+     "solution": "<strong>Opportunity cost</strong>：做一个选择时放弃的次优选择的价值。\n<strong>Law of increasing opportunity costs</strong>：越多地生产一种商品，每多一单位的机会成本越大，因为资源不同样适合两种生产。\n<strong>PPC / PPF</strong>：在资源和技术给定、充分就业时，两种商品最大产量组合的曲线。\n<strong>Marginal analysis</strong>：比较某个改变的额外收益和额外成本，即「多一单位」会怎样。\n<strong>Technology</strong>：关于如何生产商品和服务的知识和方法；技术进步让同样的资源生产更多，PPC 外移。\n<strong>Economic growth</strong>：经济生产能力的增长，表现为 PPC 向外移动。\n<strong>Investment</strong>：用于增加资本存量（厂房、设备）的支出；超过折旧的净投资使资本积累、将来产能提高。",
+     "numeric": false
+    },
+    {
+     "label": "例 2",
+     "ref": "Tutorial 2 Q1",
+     "question": "\"There is no such thing as a free lunch\" means every choice involves a trade-off. Provide an example. (At least 50 words.)",
+     "solution": "这句话的意思是：即使某样东西看起来不用花钱，也有成本——总有放弃的次优选择，而且用掉了稀缺资源。例如，周五晚上为了考试复习而不去看电影，机会成本就是电影票钱和看电影的乐趣；在冰淇淋店选了 rocky road，机会成本是放弃的草莓味；球员去训练而不去度假，机会成本就是那次假期。所谓「免费午餐」，请客的人付了钱，你也付出了时间，社会用掉了食材和劳动。",
+     "numeric": false
+    },
+    {
+     "label": "例 3",
+     "ref": "Tutorial 2 Q2",
+     "question": "a. Define a production possibility curve and explain efficient, inefficient, attainable and unattainable points. (50 words) b. Outline the assumptions made when constructing these curves. (30 words)",
+     "solution": "a. PPC 表示一个经济在资源和技术给定时能生产的两种商品的最大产量组合。曲线上的点是<strong>有效率</strong>的：资源全部用上，要多生产一种只能少生产另一种（机会成本递增）。曲线内的点<strong>无效率</strong>：有闲置或失业的资源，但可以达到。曲线上和曲线内的点都<strong>可以达到</strong>；曲线外的点在现有资源和技术下<strong>无法达到</strong>，只有资源增加或技术进步使 PPC 外移后才可能。\nb. 假设：① 只生产两种产出；② 资源数量和技术不变（看的是某一时点）；③ 所有资源充分就业，资源配置有效率；④ 资源可以在两种产出间转移；⑤ 其他一切不变（ceteris paribus）。",
+     "parts": [
+      "a",
+      "b"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 4",
+     "ref": "Tutorial 2 Q3",
+     "question": "Production possibilities: A (chocolate 100, machines 0), B (90, 2.5), C (70, 5.0), D (0, 7.5), in '000s. a. Graph the PPC with chocolate on the horizontal axis. b. Opportunity cost of increasing machines from 2,500 to 5,000. c. Opportunity cost of increasing chocolate from 90,000 to 100,000. d. Why is the curve concave rather than straight?",
+     "solution": "b. 从 B 到 C：机器多 2 500 台，巧克力从 90 000 降到 70 000，机会成本是 <strong>20 000 条巧克力</strong>。\nc. 从 B 到 A：巧克力多 10 000 条，机器从 2 500 降到 0，机会成本是 <strong>2 500 台机器</strong>。\nd. 机器的机会成本不是常数：第一批 2 500 台只放弃 10 000 条巧克力（A→B），第二批 2 500 台放弃 20 000 条（B→C），第三批放弃 70 000 条（C→D）。资源并不能完美替代：越多地把资源从最适合的巧克力生产转去造机器，用上的资源越不适合造机器，机会成本越来越高，所以曲线向外凸。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        120
+       ],
+       "yr": [
+        0,
+        8.5
+       ],
+       "width": 340,
+       "height": 240,
+       "xLabel": "Chocolate bars ('000)",
+       "yLabel": "Machines ('000)",
+       "xticks": [
+        70,
+        90,
+        100
+       ],
+       "yticks": [
+        2.5,
+        5,
+        7.5
+       ],
+       "lines": [
+        {
+         "pts": [
+          [
+           100,
+           0
+          ],
+          [
+           90,
+           2.5
+          ],
+          [
+           70,
+           5
+          ],
+          [
+           0,
+           7.5
+          ]
+         ],
+         "color": "navy",
+         "label": [
+          30,
+          7.2,
+          "PPC"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 100,
+         "y": 0,
+         "label": "A",
+         "dy": -8
+        },
+        {
+         "x": 90,
+         "y": 2.5,
+         "label": "B"
+        },
+        {
+         "x": 70,
+         "y": 5,
+         "label": "C"
+        },
+        {
+         "x": 0,
+         "y": 7.5,
+         "label": "D",
+         "dx": 6
+        }
+       ],
+       "caption": "Machines and chocolate bars（按题目的生产可能性表连线）"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ],
+     "checks": [
+      {
+       "expr": "90-70",
+       "equals": "20"
+      },
+      {
+       "expr": "2.5-0",
+       "equals": "2.5"
+      },
+      {
+       "expr": "100-90",
+       "equals": "10"
+      },
+      {
+       "expr": "70-0",
+       "equals": "70"
+      }
+     ]
+    },
+    {
+     "label": "例 5",
+     "ref": "Tutorial 2 Q4",
+     "question": "For the PPC diagram (capital goods and consumer goods; curve 1 blue, curve 2 green; points A, B on curve 1, C inside, D outside): a. Explain what might cause (i) a movement from A to B on curve 1; (ii) a shift from curve 1 to curve 2. b. Outline resource and technology use at C and D and whether they are efficient. c. To maximise future living standards, should the country produce at A or B? Why?",
+     "solution": "a. (i) 沿曲线从 A 到 B：选择多生产消费品、少生产资本品（资源从资本品转向消费品）。\n(ii) 从曲线 1 移到曲线 2：两种商品的生产技术都进步，或发现了更多可用于两种生产的资源（劳动、资本增加）。\nb. C 点在曲线内：有失业或闲置的资源（产能过剩），无效率。D 点在曲线外：在现有技术和资源下无法达到。\nc. 关键词是「将来」。应选 <strong>A</strong>：更多地生产资本品，增加将来的生产能力。短期要牺牲一些消费品，但资本积累使曲线将来外移，到时两种商品都能生产更多，生活水平更高。",
+     "parts": [
+      "a(i)",
+      "a(ii)",
+      "b",
+      "c"
+     ],
+     "sourceNote": "题目的图只在原文里，答案课件确认 A 点资本品较多、B 点消费品较多。",
+     "numeric": false
+    },
+    {
+     "label": "例 6",
+     "ref": "Tutorial 2 Q5",
+     "question": "Define opportunity cost. (At least 15 words.)",
+     "solution": "机会成本是做出一个选择时所放弃的次优选择（next best alternative）的价值；它衡量的是取舍，而不仅仅是花了多少钱。",
+     "numeric": false
+    },
+    {
+     "label": "例 7",
+     "ref": "Tutorial 2 Q6",
+     "question": "Complete the Chapter 2 multiple-choice questions 1–9 in the textbook.",
+     "solution": "教材第 2 章的选择题原文不在本周资料里，无法逐题给出答案。复习要点：机会成本只算次优选择；PPC 上、内、外三类点；机会成本递增使曲线外凸；资源和技术增加使曲线外移。",
+     "sourceNote": "教材选择题不在本周资料中。",
+     "numeric": false
+    },
+    {
+     "label": "例 8",
+     "ref": "Tutorial 2 In-class Q1",
+     "question": "CIA World Factbook: b. note the land area and population of Australia; c. compute land area per person; d. repeat for Japan; e. how does the scarcity of land influence land-use choices? f. Would you find as many golf courses per capita in Japan as in Australia?",
+     "solution": "按 World Factbook 的数据（取整，以网站当前数据为准）：\nb–c. 澳大利亚陆地面积约 7 682 300 平方公里，人口约 2 680 万，人均约 0.29 平方公里。\nd. 日本陆地面积约 364 500 平方公里，人口约 1.23 亿，人均约 0.003 平方公里，约为澳大利亚的百分之一。\ne. 土地越稀缺，每一块地的机会成本越高：用来建高尔夫球场，就要放弃住房、农田、工厂等用途。所以土地稀缺的国家会把土地优先用在机会成本最高（最有价值）的用途上，土地价格和租金也更高。\nf. 不会。日本人均土地少得多，高尔夫球场占地大、机会成本高，人均高尔夫球场会比澳大利亚少，打球也贵得多。",
+     "parts": [
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+     ],
+     "checks": [
+      {
+       "expr": "7682300/26800000",
+       "equals": "0.287",
+       "tol": 0.001
+      },
+      {
+       "expr": "364500/123000000",
+       "equals": "0.00296",
+       "tol": 1e-05
+      }
+     ],
+     "sourceNote": "面积和人口是 World Factbook 的近似值（各年版本略有不同），做题时请以打开网站当天的数据为准。"
+    },
+    {
+     "label": "例 9",
+     "ref": "Tutorial 2 In-class Q2",
+     "question": "Agricultural goods (horizontal) vs manufacturing goods (vertical), typical bowed-out PPC. Draw a new curve with arrows for: a. a prolonged drought; b. a robotics revolution making all manufacturing capital more productive; c. large-scale immigration; d. a war leaving many dead and much industry destroyed.",
+     "solution": "a. 干旱只影响农业：横轴截距向内移动，纵轴截距不变（曲线向内旋转）。\nb. 机器人技术只提高制造业生产力：纵轴截距向上移动，横轴截距不变（曲线向外旋转）。\nc. 大规模移民增加劳动力，两种生产都受益：整条曲线向外移动。\nd. 战争造成人员死亡、工业被毁：资源减少，整条曲线向内移动。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        12
+       ],
+       "yr": [
+        0,
+        12
+       ],
+       "width": 220,
+       "height": 180,
+       "xLabel": "Agricultural",
+       "yLabel": "Manufacturing",
+       "curves": [
+        {
+         "expr": "8*sqrt(max(0,1-(x/8)^2))",
+         "dom": [
+          0,
+          8
+         ],
+         "color": "navy",
+         "label": [
+          3,
+          8.3,
+          "PPC1"
+         ]
+        },
+        {
+         "expr": "8*sqrt(max(0,1-(x/5.5)^2))",
+         "dom": [
+          0,
+          5.5
+         ],
+         "color": "red",
+         "dash": true,
+         "label": [
+          3.3,
+          7.3,
+          "PPC2"
+         ]
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          5.2,
+          6.08
+         ],
+         "to": [
+          3.575,
+          6.08
+         ],
+         "arrow": true
+        }
+       ],
+       "caption": "a. Drought"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        12
+       ],
+       "yr": [
+        0,
+        12
+       ],
+       "width": 220,
+       "height": 180,
+       "xLabel": "Agricultural",
+       "yLabel": "Manufacturing",
+       "curves": [
+        {
+         "expr": "8*sqrt(max(0,1-(x/8)^2))",
+         "dom": [
+          0,
+          8
+         ],
+         "color": "navy",
+         "label": [
+          3,
+          8.3,
+          "PPC1"
+         ]
+        },
+        {
+         "expr": "11*sqrt(max(0,1-(x/8)^2))",
+         "dom": [
+          0,
+          8
+         ],
+         "color": "red",
+         "dash": true,
+         "label": [
+          4.8,
+          9.85,
+          "PPC2"
+         ]
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          5.2,
+          6.08
+         ],
+         "to": [
+          5.2,
+          8.36
+         ],
+         "arrow": true
+        }
+       ],
+       "caption": "b. Robotics in manufacturing"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        12
+       ],
+       "yr": [
+        0,
+        12
+       ],
+       "width": 220,
+       "height": 180,
+       "xLabel": "Agricultural",
+       "yLabel": "Manufacturing",
+       "curves": [
+        {
+         "expr": "8*sqrt(max(0,1-(x/8)^2))",
+         "dom": [
+          0,
+          8
+         ],
+         "color": "navy",
+         "label": [
+          3,
+          8.3,
+          "PPC1"
+         ]
+        },
+        {
+         "expr": "10*sqrt(max(0,1-(x/10)^2))",
+         "dom": [
+          0,
+          10
+         ],
+         "color": "red",
+         "dash": true,
+         "label": [
+          6.0,
+          9.0,
+          "PPC2"
+         ]
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          5.2,
+          6.08
+         ],
+         "to": [
+          6.5,
+          7.6
+         ],
+         "arrow": true
+        }
+       ],
+       "caption": "c. Large-scale immigration"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        12
+       ],
+       "yr": [
+        0,
+        12
+       ],
+       "width": 220,
+       "height": 180,
+       "xLabel": "Agricultural",
+       "yLabel": "Manufacturing",
+       "curves": [
+        {
+         "expr": "8*sqrt(max(0,1-(x/8)^2))",
+         "dom": [
+          0,
+          8
+         ],
+         "color": "navy",
+         "label": [
+          3,
+          8.3,
+          "PPC1"
+         ]
+        },
+        {
+         "expr": "5.5*sqrt(max(0,1-(x/5.5)^2))",
+         "dom": [
+          0,
+          5.5
+         ],
+         "color": "red",
+         "dash": true,
+         "label": [
+          3.3,
+          5.175,
+          "PPC2"
+         ]
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          5.2,
+          6.08
+         ],
+         "to": [
+          3.575,
+          4.18
+         ],
+         "arrow": true
+        }
+       ],
+       "caption": "d. War"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 10",
+     "ref": "Tutorial 2 Writing",
+     "question": "Explain how the Production Possibility Curve can be used to demonstrate (a) opportunity cost, (b) unemployment and (c) the effects of technological change. [5 marks]",
+     "solution": "(a) PPC 上每一点都是有效率的组合，沿曲线从一点移到另一点，多生产一种商品就必须少生产另一种，放弃的数量就是机会成本；曲线外凸说明机会成本递增，因为资源并不同样适合两种生产。\n(b) 曲线内部的点表示有资源闲置，包括失业的劳动：经济没有达到最大产量，不用放弃任何一种商品就能增加产出。\n(c) 技术进步让同样的资源生产更多，PPC 向外移动；只影响一种商品的技术进步，只有那一端外移。曲线外原来达不到的点，技术进步后变得可以达到。",
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ],
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "机会成本写成「得到的东西」：是放弃的东西。",
+    "算机会成本时用了错误的两点：看清从哪一点到哪一点。",
+    "只影响一种商品的变化画成整条曲线平移。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么选 A 点（多资本品）将来更好？",
+     "a": "资本品是生产工具，现在多积累资本，将来生产能力更大，PPC 外移更多。"
+    }
+   ]
+  },
+  {
+   "title": "需求：需求定律与需求的变化（Lecture 3.1）",
+   "sources": [
+    {
+     "file": "unit3 PPT demand and supply.pdf",
+     "pages": "p4–28"
+    }
+   ],
+   "concept": "<strong>需求</strong>反映消费者的选择行为，来自<strong>边际效用</strong>。<strong>边际效用递减定律</strong>：多消费一单位带来的额外满足越来越少，所以只有价格下降，消费者才愿意买更多（其他不变）。\n<strong>需求定律</strong>：价格与需求量反向变动（P↑ → Qd↓）。需求表列出各价格下愿意且能够购买的数量，需求曲线画出这种关系。市场需求是个人需求的水平加总。\n<strong>需求量的变化</strong>：商品<strong>本身价格</strong>变化 → 沿需求曲线移动。\n<strong>需求的变化</strong>：<strong>非价格因素</strong>变化 → 整条需求曲线移动。非价格因素：相关商品价格（替代品、互补品）、收入（正常品收入增加需求右移，劣等品左移）、预期（预期涨价 → 现在需求右移）、人口、偏好和口味；讲义还列了税收、信贷难易。",
+   "examples": [
+    {
+     "label": "例 11",
+     "ref": "Lecture 3.1 Example 1",
+     "question": "Marginal utility per week: 1st unit $6, 2nd $5, 3rd $4, 4th $3, 5th $2. Explain how this supports the law of demand.",
+     "solution": "每多消费一单位，边际效用下降（6 → 5 → 4 → 3 → 2）。消费者只会在价格不高于边际效用时多买一单位：价格 6 时只买 1 个，价格降到 4 才愿意买 3 个，降到 2 才买 5 个。价格越低，需求量越大——这就是需求定律。",
+     "checks": [
+      {
+       "expr": "6-5",
+       "equals": "1"
+      }
+     ]
+    },
+    {
+     "label": "例 12",
+     "ref": "Lecture 3.1 Demand",
+     "question": "Contrast a change in quantity demanded with a change in demand, using graphs.",
+     "solution": "商品本身价格下降：沿着同一条需求曲线从 a 移到 b，需求量增加（左图）。非价格因素（如收入增加、替代品涨价）：整条需求曲线从 D1 右移到 D2，同一价格下需求量更大（右图）。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "Price (P)",
+       "curves": [
+        {
+         "expr": "9+(-0.9)*x",
+         "dom": [
+          0,
+          10.0
+         ],
+         "color": "navy",
+         "label": [
+          8.2,
+          2.02,
+          "D"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 3.33,
+         "y": 6,
+         "label": "a"
+        },
+        {
+         "x": 6.67,
+         "y": 3,
+         "label": "b"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          3.6,
+          5.75
+         ],
+         "to": [
+          6.3,
+          3.3
+         ],
+         "arrow": true
+        }
+       ],
+       "caption": "Change in quantity demanded：P 从 6 降到 3，沿 D 从 a 到 b"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "Price (P)",
+       "curves": [
+        {
+         "expr": "8+(-1)*x",
+         "dom": [
+          0,
+          8.0
+         ],
+         "color": "navy",
+         "label": [
+          6.56,
+          1.8400000000000003,
+          "D1"
+         ]
+        },
+        {
+         "expr": "10+(-1)*x",
+         "dom": [
+          0,
+          10.0
+         ],
+         "color": "green",
+         "label": [
+          8.2,
+          2.2000000000000006,
+          "D2"
+         ],
+         "dash": true
+        }
+       ],
+       "points": [
+        {
+         "x": 3,
+         "y": 5,
+         "label": "a"
+        },
+        {
+         "x": 5,
+         "y": 5,
+         "label": "b"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          3.3,
+          5
+         ],
+         "to": [
+          4.7,
+          5
+         ],
+         "arrow": true
+        }
+       ],
+       "caption": "Change in demand：价格不变，D1 右移到 D2"
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 13",
+     "ref": "Lecture 3.1 Shifters",
+     "question": "State whether demand shifts right or left: (a) income rises (normal good); (b) income rises (inferior good); (c) the price of a substitute rises; (d) the price of a complement rises; (e) consumers expect the price to rise next month; (f) taxation increases; (g) credit becomes easier.",
+     "solution": "(a) 右移　(b) 左移　(c) 右移（替代品贵了，转买这种）　(d) 左移（一起用的东西贵了）　(e) 右移（提前买）　(f) 左移（可支配收入减少）　(g) 右移\n注意：商品本身的价格变化不在其中，它只引起沿曲线移动。",
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g"
+     ],
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "说「价格下降使需求增加」：价格下降使<strong>需求量</strong>增加，需求曲线不动。",
+    "把劣等品当正常品：收入增加时劣等品需求减少。"
+   ],
+   "faqs": [
+    {
+     "q": "替代品和互补品怎么区分？",
+     "a": "替代品互相竞争（咖啡和茶），互补品一起消费（咖啡机和咖啡胶囊）。"
+    }
+   ]
+  },
+  {
+   "title": "供给与市场均衡（Lecture 3.2）",
+   "sources": [
+    {
+     "file": "unit3 PPT demand and supply.pdf",
+     "pages": "p29–55"
+    }
+   ],
+   "concept": "<strong>供给定律</strong>：价格与供给量同向变动（P↑ → Qs↑）。市场供给是各厂商供给的水平加总。\n<strong>供给量的变化</strong>：本身价格变化 → 沿供给曲线移动。<strong>供给的变化</strong>：非价格因素 → 曲线移动。非价格因素：卖者数量、技术、投入品价格、税收和补贴、生产者预期、厂商可生产的其他商品价格。\n供给增加（右移）的原因：成本下降、技术进步、生产者偏好、乐观预期、厂商增加、好年景、政府补助。供给减少（左移）：其他商品涨价、成本上升、技术退步、悲观预期、厂商减少、坏年景、对企业征税。\n<strong>均衡</strong>：需求等于供给的价格和数量。供给增加 → 均衡价格下降、均衡数量增加；需求增加 → 价格和数量都上升。",
+   "examples": [
+    {
+     "label": "例 14",
+     "ref": "Lecture 3.2 Supply",
+     "question": "Show (a) an increase in price causing an increase in quantity supplied and (b) an increase in supply, and give three causes of an increase in supply.",
+     "solution": "(a) 价格从 3 升到 6，沿供给曲线从 a 移到 b，供给量增加。(b) 非价格因素使 S1 右移到 S2：同一价格下愿意卖得更多。供给增加的原因例如：技术进步、生产成本下降、市场里的厂商增加（也包括好年景、政府补助、乐观预期）。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "Price (P)",
+       "curves": [
+        {
+         "expr": "1+(0.8)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "red",
+         "label": [
+          8.55,
+          8.34,
+          "S"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 2.5,
+         "y": 3,
+         "label": "a"
+        },
+        {
+         "x": 6.25,
+         "y": 6,
+         "label": "b"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          2.8,
+          3.25
+         ],
+         "to": [
+          5.9,
+          5.7
+         ],
+         "arrow": true
+        }
+       ],
+       "caption": "Change in quantity supplied"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "Price (P)",
+       "curves": [
+        {
+         "expr": "2+(0.8)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "red",
+         "label": [
+          8.55,
+          9.34,
+          "S1"
+         ]
+        },
+        {
+         "expr": "0+(0.8)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "green",
+         "label": [
+          8.55,
+          7.340000000000001,
+          "S2"
+         ],
+         "dash": true
+        }
+       ],
+       "points": [
+        {
+         "x": 3.75,
+         "y": 5,
+         "label": "a"
+        },
+        {
+         "x": 6.25,
+         "y": 5,
+         "label": "b"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          4.1,
+          5
+         ],
+         "to": [
+          5.9,
+          5
+         ],
+         "arrow": true
+        }
+       ],
+       "caption": "Increase in supply: S1 → S2"
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 15",
+     "ref": "Lecture 3.2 Equilibrium",
+     "question": "Use demand and supply diagrams to show: (a) an increase in income raises the demand for holidays to New Zealand; (b) greater use of electric cars decreases the demand for high-fuel-consumption vehicles; (c) an increase in supply.",
+     "solution": "(a) 收入增加 → 去新西兰度假的需求右移，均衡价格和数量都上升（E1 → E2），沿供给曲线供给量增加。\n(b) 电动车流行 → 高油耗车的需求左移，均衡价格和数量都下降。\n(c) 供给右移 → 均衡价格下降、数量增加，沿需求曲线需求量增加。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "Price (P)",
+       "curves": [
+        {
+         "expr": "8+(-0.8)*x",
+         "dom": [
+          0,
+          10.0
+         ],
+         "color": "navy",
+         "label": [
+          8.2,
+          1.8400000000000003,
+          "D1"
+         ]
+        },
+        {
+         "expr": "10+(-0.8)*x",
+         "dom": [
+          0,
+          12.5
+         ],
+         "color": "green",
+         "label": [
+          10.25,
+          2.2000000000000006,
+          "D2"
+         ],
+         "dash": true
+        },
+        {
+         "expr": "1+(0.6)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "red",
+         "label": [
+          8.55,
+          6.63,
+          "S"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 5,
+         "y": 4,
+         "label": "E1"
+        },
+        {
+         "x": 6.43,
+         "y": 4.86,
+         "label": "E2"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          4
+         ],
+         "to": [
+          5,
+          4
+         ]
+        },
+        {
+         "from": [
+          0,
+          4.86
+         ],
+         "to": [
+          6.43,
+          4.86
+         ]
+        },
+        {
+         "from": [
+          5,
+          0
+         ],
+         "to": [
+          5,
+          4
+         ]
+        },
+        {
+         "from": [
+          6.43,
+          0
+         ],
+         "to": [
+          6.43,
+          4.86
+         ]
+        }
+       ],
+       "caption": "(a) Demand for NZ holidays increases"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "Price (P)",
+       "curves": [
+        {
+         "expr": "10+(-0.8)*x",
+         "dom": [
+          0,
+          12.5
+         ],
+         "color": "navy",
+         "label": [
+          10.25,
+          2.2000000000000006,
+          "D1"
+         ]
+        },
+        {
+         "expr": "8+(-0.8)*x",
+         "dom": [
+          0,
+          10.0
+         ],
+         "color": "green",
+         "label": [
+          8.2,
+          1.8400000000000003,
+          "D2"
+         ],
+         "dash": true
+        },
+        {
+         "expr": "1+(0.6)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "red",
+         "label": [
+          8.55,
+          6.63,
+          "S"
+         ]
+        }
+       ],
+       "points": [
+        {
+         "x": 6.43,
+         "y": 4.86,
+         "label": "E1"
+        },
+        {
+         "x": 5,
+         "y": 4,
+         "label": "E2"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          4
+         ],
+         "to": [
+          5,
+          4
+         ]
+        },
+        {
+         "from": [
+          0,
+          4.86
+         ],
+         "to": [
+          6.43,
+          4.86
+         ]
+        }
+       ],
+       "caption": "(b) Demand for high-fuel vehicles decreases"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        0,
+        10
+       ],
+       "yr": [
+        0,
+        10
+       ],
+       "width": 320,
+       "height": 240,
+       "xLabel": "Quantity (Q)",
+       "yLabel": "Price (P)",
+       "curves": [
+        {
+         "expr": "9+(-0.8)*x",
+         "dom": [
+          0,
+          11.25
+         ],
+         "color": "navy",
+         "label": [
+          9.225,
+          2.02,
+          "D"
+         ]
+        },
+        {
+         "expr": "2+(0.7)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "red",
+         "label": [
+          8.55,
+          8.485,
+          "S1"
+         ]
+        },
+        {
+         "expr": "0.5+(0.7)*x",
+         "dom": [
+          0,
+          9.5
+         ],
+         "color": "green",
+         "label": [
+          8.55,
+          6.984999999999999,
+          "S2"
+         ],
+         "dash": true
+        }
+       ],
+       "points": [
+        {
+         "x": 4.67,
+         "y": 5.27,
+         "label": "E1"
+        },
+        {
+         "x": 5.67,
+         "y": 4.47,
+         "label": "E2"
+        }
+       ],
+       "segments": [
+        {
+         "from": [
+          0,
+          5.27
+         ],
+         "to": [
+          4.67,
+          5.27
+         ]
+        },
+        {
+         "from": [
+          0,
+          4.47
+         ],
+         "to": [
+          5.67,
+          4.47
+         ]
+        }
+       ],
+       "caption": "(c) Supply increases: P falls, Q rises"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ],
+     "checks": [
+      {
+       "expr": "(8-1)/(0.6+0.8)",
+       "equals": "5"
+      },
+      {
+       "expr": "(10-1)/(0.6+0.8)",
+       "equals": "6.43",
+       "tol": 0.01
+      },
+      {
+       "expr": "(9-2)/(0.7+0.8)",
+       "equals": "4.67",
+       "tol": 0.01
+      },
+      {
+       "expr": "(9-0.5)/(0.7+0.8)",
+       "equals": "5.67",
+       "tol": 0.01
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "需求曲线移动时说「供给增加」：需求右移引起的是沿供给曲线的供给量增加。",
+    "讲义 p51「增加一个非价格因素」的表述容易误解：应说「使供给增加的非价格因素变化」。",
+    "均衡图不标 P*、Q* 和移动方向。"
+   ],
+   "faqs": [
+    {
+     "q": "图上的数字有什么意义？",
+     "a": "讲义的图没有具体数字；这里用直线画示意图，均衡点由程序解出，只为显示方向，考试画图时不需要写数字。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "步骤",
+   "做什么",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "1 PPC 计算",
+    "从哪点到哪点：得到多少、放弃多少",
+    "例 4"
+   ],
+   [
+    "2 PPC 移动",
+    "只影响一种商品 → 一端旋转；资源总量变化 → 整体平移",
+    "例 9"
+   ],
+   [
+    "3 价格 vs 非价格",
+    "本身价格 → 沿曲线；其他因素 → 曲线移动",
+    "例 12–14"
+   ],
+   [
+    "4 均衡变化",
+    "先判断哪条曲线、向哪移动，再读出新的 P*、Q*",
+    "例 15"
+   ]
+  ]
+ },
+ "practice": "本周任务：完成 Unit 2 Tutorial 和 Assessable Quiz；读 Unit 3 讲义，准备第 4 周的 Unit 3 Tutorial。"
+}

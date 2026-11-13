@@ -1,0 +1,8 @@
+[
+  { "ref": "Q 1", "page": "p3", "deliverables": [{ "type": "journal" }] },
+  { "ref": "Q 3", "page": "p5", "deliverables": [{ "type": "journal" }] },
+  { "ref": "Q 4", "page": "p6", "deliverables": [{ "type": "journal" }] },
+  { "ref": "Self-study 1", "page": "p9", "deliverables": [{ "type": "journal" }] },
+  { "ref": "Self-study 2", "page": "p11", "deliverables": [{ "type": "journal" }] },
+  { "ref": "Lois Lane / Thor", "page": "p12", "deliverables": [{ "type": "journal" }] }
+]

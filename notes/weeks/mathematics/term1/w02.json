@@ -1,0 +1,1659 @@
+{
+ "course": "mathematics",
+ "term": "term1",
+ "week": 2,
+ "title": "Coordinate Geometry & Functions · 坐标几何与函数",
+ "files": [
+  "L04_Coordinate_Geometry.pdf",
+  "L05_Relations_and_Functions.pdf",
+  "L06_Basic_Graphs_and_Transformations.pdf"
+ ],
+ "inventory": [
+  "L4 Ex 1",
+  "L4 Ex 2",
+  "L4 Ex 3",
+  "L4 Ex 4",
+  "L4 Ex 5",
+  "L4 Ex 6",
+  "L4 Ex 7",
+  "L4 Ex 8",
+  "L4 Ex 9",
+  "L5 Relation",
+  {
+   "ref": "L5 Ex 1",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "L5 Ex 2",
+  "L5 Ex 3",
+  "L5 Ex 4",
+  "L5 Ex 5",
+  "L5 Ex 6",
+  "L5 Ex 7",
+  {
+   "ref": "L5 Ex 8",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "L5 Ex 9",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "L6 Basic Graphs",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "L6 Sketches",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  "L6 Ex 1",
+  "L6 Ex 2"
+ ],
+ "intro": [
+  "第 2 周：坐标几何（距离、中点、斜率、直线方程、平行与垂直、共线、垂直平分线，L4）；关系与函数（竖线检验、定义域与值域、函数记号、复合、奇偶函数，L5）；七个基本图像和六种图像变换（L6）。讲义每道例题逐题讲解，所有计算有核对式；图由程序按函数画出。"
+ ],
+ "sections": [
+  {
+   "title": "坐标几何：距离、中点、斜率、直线方程（L4）",
+   "sources": [
+    {
+     "file": "L04_Coordinate_Geometry.pdf",
+     "pages": "p1–5"
+    }
+   ],
+   "concept": "A(x₁, y₁)、B(x₂, y₂)：<strong>距离</strong> d = √[(x₂ − x₁)² + (y₂ − y₁)²]；<strong>中点</strong> M = ({{frac x₁ + x₂|2}}, {{frac y₁ + y₂|2}})；<strong>斜率</strong> m = {{frac y₂ − y₁|x₂ − x₁}}（RISE/RUN）。斜率可正、可负、为零（水平线）或不存在（竖直线）。\n<strong>平行</strong>：m₁ = m₂；<strong>垂直</strong>：m₁ × m₂ = −1，即 m₂ = −1/m₁；<strong>共线</strong>：m<sub>AB</sub> = m<sub>BC</sub>。\n直线方程：水平线 y = c；竖直线 x = c；斜截式 y = mx + b；一般式 ax + by + c = 0；点斜式 y − y₁ = m(x − x₁)。点在直线上 ⇔ 坐标满足方程；两直线交点用联立方程求。<strong>垂直平分线</strong>：过 AB 中点且垂直于 AB 的直线。",
+   "formulas": [
+    "d = √[(x₂ − x₁)² + (y₂ − y₁)²]　　M = ({{frac x₁ + x₂|2}}, {{frac y₁ + y₂|2}})　　m = {{frac y₂ − y₁|x₂ − x₁}}",
+    "y − y₁ = m(x − x₁)　　m₁m₂ = −1（垂直）"
+   ],
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "L4 Ex 1",
+     "question": "A line passes through P(2, −1) and Q(−3, 5). Find (a) the gradient of PQ; (b) the gradient of a line parallel to PQ; (c) the gradient of a line perpendicular to PQ.",
+     "solution": "(a) m = (5 − (−1)) ÷ (−3 − 2) = 6 ÷ (−5) = −{{frac 6|5}}。\n(b) 平行线斜率相同：−6/5。\n(c) 垂直：取负倒数，{{frac 5|6}}。",
+     "answer": "(a) −6/5 (b) −6/5 (c) 5/6",
+     "checks": [
+      {
+       "expr": "(5+1)/(-3-2)",
+       "equals": "-6/5"
+      },
+      {
+       "expr": "(-6/5)*(5/6)",
+       "equals": "-1"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    {
+     "label": "例 2",
+     "ref": "L4 Ex 2",
+     "question": "For A(3, 4) and B(9, −6) find (a) the distance AB; (b) the midpoint of AB.",
+     "solution": "用距离公式和中点公式。\n(a) d = √[(9 − 3)² + (−6 − 4)²] = √(36 + 100) = √136 = 2√34 ≈ 11.66。\n(b) M = ((3 + 9)/2, (4 − 6)/2) = (6, −1)。",
+     "answer": "(a) 2√34 (b) (6, −1)",
+     "checks": [
+      {
+       "expr": "sqrt(36+100)",
+       "equals": "2*sqrt(34)",
+       "tol": 1e-09
+      },
+      {
+       "expr": "(3+9)/2",
+       "equals": "6"
+      },
+      {
+       "expr": "(4-6)/2",
+       "equals": "-1"
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 3",
+     "ref": "L4 Ex 3",
+     "question": "Find the equation of a line with gradient −3 and y-intercept 2.",
+     "solution": "斜截式：y = −3x + 2。",
+     "answer": "y = −3x + 2",
+     "numeric": false
+    },
+    {
+     "label": "例 4",
+     "ref": "L4 Ex 4",
+     "question": "Find the gradient of the line 2x − 3y = 7.",
+     "solution": "化成 y = mx + b：3y = 2x − 7，y = {{frac 2|3}}x − {{frac 7|3}}，斜率 2/3。",
+     "answer": "m = 2/3",
+     "checks": [
+      {
+       "expr": "(2*3-7)/3-(2*0-7)/3",
+       "equals": "2"
+      }
+     ]
+    },
+    {
+     "label": "例 5",
+     "ref": "L4 Ex 5",
+     "question": "Find the equation of a line through (−6, 2) with gradient 3.",
+     "solution": "点斜式：y − 2 = 3(x + 6)，y = 3x + 20。",
+     "answer": "y = 3x + 20",
+     "checks": [
+      {
+       "expr": "3*(-6)+20",
+       "equals": "2"
+      }
+     ]
+    },
+    {
+     "label": "例 6",
+     "ref": "L4 Ex 6",
+     "question": "Find the equation of a line through (−2, 5) perpendicular to 3x − 2y + 8 = 0, in general form.",
+     "solution": "已知直线 y = {{frac 3|2}}x + 4，斜率 3/2；垂线斜率 −{{frac 2|3}}。y − 5 = −{{frac 2|3}}(x + 2)，两边乘 3：3y − 15 = −2x − 4，一般式 2x + 3y − 11 = 0。",
+     "answer": "2x + 3y − 11 = 0",
+     "checks": [
+      {
+       "expr": "2*(-2)+3*5-11",
+       "equals": "0"
+      },
+      {
+       "expr": "(3/2)*(-2/3)",
+       "equals": "-1"
+      }
+     ]
+    },
+    {
+     "label": "例 7",
+     "ref": "L4 Ex 7",
+     "question": "Find the equation of a line through (−1, 6) parallel to the x-axis.",
+     "solution": "平行于 x 轴的直线是水平线，y 坐标处处相同：y = 6。",
+     "answer": "y = 6",
+     "numeric": false
+    },
+    {
+     "label": "例 8",
+     "ref": "L4 Ex 8",
+     "question": "If M(−1, 2), N(2, 5) and P(2 + 3k, 3 − 4k) are collinear, find k.",
+     "solution": "共线 ⇒ m<sub>MN</sub> = m<sub>NP</sub>。m<sub>MN</sub> = (5 − 2)/(2 + 1) = 1。m<sub>NP</sub> = (3 − 4k − 5)/(2 + 3k − 2) = (−2 − 4k)/(3k)。令其等于 1：−2 − 4k = 3k，k = −{{frac 2|7}}。",
+     "answer": "k = −2/7",
+     "checks": [
+      {
+       "expr": "(3-4*(-2/7)-5)/(3*(-2/7))",
+       "equals": "1",
+       "tol": 1e-12
+      }
+     ]
+    },
+    {
+     "label": "例 9",
+     "ref": "L4 Ex 9",
+     "question": "Given A = (2, 7) and B = (−1, 3), find the equation of the perpendicular bisector of AB.",
+     "solution": "中点 M = (0.5, 5)；m<sub>AB</sub> = (3 − 7)/(−1 − 2) = 4/3；垂直平分线斜率 −3/4。y − 5 = −{{frac 3|4}}(x − 0.5)，两边乘 8：8y − 40 = −6x + 3，即 6x + 8y − 43 = 0。",
+     "answer": "6x + 8y − 43 = 0",
+     "checks": [
+      {
+       "expr": "6*0.5+8*5-43",
+       "equals": "0"
+      },
+      {
+       "expr": "(4/3)*(-3/4)",
+       "equals": "-1"
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "斜率分子分母顺序不一致（一个用 y₂ − y₁，一个用 x₁ − x₂）。",
+    "垂直斜率只取倒数忘了变号。",
+    "一般式写成 2x + 3y = 11 而题目要求 ax + by + c = 0。"
+   ],
+   "faqs": [
+    {
+     "q": "竖直线的斜率是多少？",
+     "a": "不存在（分母为 0），方程写成 x = c。"
+    }
+   ]
+  },
+  {
+   "title": "关系、函数、定义域与值域（L5）",
+   "sources": [
+    {
+     "file": "L05_Relations_and_Functions.pdf",
+     "pages": "p1–4"
+    }
+   ],
+   "concept": "<strong>关系</strong>：有序数对的集合。<strong>函数</strong>：没有两个点的 x 坐标相同的关系（每个 x 只对应一个 y）。<strong>竖线检验</strong>：任一竖直线与图像最多交一点，图像才是函数。\n<strong>定义域</strong>：所有 x 坐标的集合；<strong>值域</strong>：所有 y 坐标的集合。由方程求定义域：找出所有能代入的 x（分母不为 0、偶次根号下 ≥ 0），叫最大可能定义域或自然定义域。\n<strong>函数记号</strong> f(x)（读作「f of x」）：x 是自变量，y 是因变量。<strong>复合</strong> f(g(x))：先算 g，再把结果代入 f。",
+   "examples": [
+    {
+     "label": "例 10",
+     "ref": "L5 Relation",
+     "question": "Is {(1, 2), (3, 4), (3, 5), (−1, 5)} a relation or a function? What about {(1, 2), (3, 4), (4, 5), (−1, 5)}?",
+     "solution": "第一个集合中 x = 3 对应 4 和 5 两个 y，只是关系，不是函数。第二个集合每个 x 只对应一个 y（不同的 x 可以对应同一个 y，如 5），是函数。",
+     "numeric": false
+    },
+    {
+     "label": "例 11",
+     "ref": "L5 Ex 1",
+     "question": "Use the vertical line test to decide which graphs are functions: (a) an upward parabola; (b) a sideways parabola opening right; (c) a horizontal line; (e) a circle; (f) two horizontal rays — y > 0 for x < 0 ending in an open circle on the y-axis, y < 0 for x ≥ 0 starting with a closed circle; (g) two vertical lines.",
+     "solution": "(a) 是函数。(b) 不是：竖线与它交两点。(c) 是函数（常数函数）。(e) 不是：圆。(f) 是函数：在 x = 0 处空心点不算，只有实心点那一个值。(g) 不是：竖线本身就与图像有无数交点。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -2,
+        2
+       ],
+       "yr": [
+        -1,
+        3.5
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "x^2",
+         "color": "navy",
+         "dom": [
+          -1.8,
+          1.8
+         ]
+        }
+       ],
+       "caption": "(a) function"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -1,
+        4
+       ],
+       "yr": [
+        -2.5,
+        2.5
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "sqrt(x)",
+         "color": "navy",
+         "dom": [
+          0,
+          4
+         ]
+        },
+        {
+         "expr": "-sqrt(x)",
+         "color": "navy",
+         "dom": [
+          0,
+          4
+         ]
+        }
+       ],
+       "caption": "(b) x = y²: not a function"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -2.5,
+        2.5
+       ],
+       "yr": [
+        -2,
+        2
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "1.5+0*x",
+         "color": "navy",
+         "dom": [
+          -2,
+          2
+         ]
+        },
+        {
+         "expr": "-1+0*x",
+         "color": "navy",
+         "dom": [
+          0,
+          2.5
+         ]
+        }
+       ],
+       "caption": "(f) function (open/closed ends at x = 0)",
+       "points": [
+        {
+         "x": 0,
+         "y": 1.5,
+         "open": true
+        },
+        {
+         "x": 0,
+         "y": -1
+        }
+       ]
+      }
+     ],
+     "sourceNote": "讲义这一组图的标签是 (a)(b)(c)(e)(f) 和一个没有标签的第六幅（缺 (d)），这里把第六幅记作 (g)。",
+     "numeric": false
+    },
+    {
+     "label": "例 12",
+     "ref": "L5 Ex 2",
+     "question": "Find the domain and range: (a) {(1, 2), (3, 1), (4, 2), (5, 6), (7, −3)}; (b) an upward parabola through the origin; (c) a semicircle to the right of the y-axis from (0, 3) to (0, −3); (d) a straight line through (−1, 0) and (0, 1); (e) the hyperbola y = 1/x; (f) a circle with centre (3, 2) touching the x-axis; (g) y = −1 for −2 ≤ x < 0 and y = 2 for 0 < x < 3 (open circles at x = 0 and x = 3).",
+     "solution": "(a) 定义域 {1, 3, 4, 5, 7}，值域 {−3, 1, 2, 6}。\n(b) 定义域全体实数，值域 y ≥ 0。\n(c) 半径 3 的右半圆：定义域 0 ≤ x ≤ 3，值域 −3 ≤ y ≤ 3。\n(d) 直线：定义域、值域都是全体实数。\n(e) 定义域 x ≠ 0，值域 y ≠ 0。\n(f) 圆心 (3, 2) 且与 x 轴相切，半径 2：定义域 1 ≤ x ≤ 5，值域 0 ≤ y ≤ 4。\n(g) 定义域 −2 ≤ x < 0 或 0 < x < 3（x = 0 处两端都是空心）；值域 {−1, 2}。",
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g"
+     ],
+     "sourceNote": "(g) 右段的终点按图读在 x = 3（空心）。",
+     "numeric": false
+    },
+    {
+     "label": "例 13",
+     "ref": "L5 Ex 3",
+     "question": "Find the largest possible domain: (a) y = 2x + 4 (b) y = {{frac 2|x}} (c) y = √x",
+     "solution": "(a) 任何 x 都可以代入：全体实数。\n(b) 分母不能为 0：x ≠ 0。\n(c) 根号下不能为负：x ≥ 0。",
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 14",
+     "ref": "L5 Ex 4",
+     "question": "Given f(x) = 2x² − 7x: (i) find (a) f(−3) (b) f(t) (c) f(x²); (ii) solve f(x) = 4.",
+     "solution": "(i)(a) 2 × 9 + 21 = 39。(b) 2t² − 7t。(c) 2x⁴ − 7x²。\n(ii) 2x² − 7x − 4 = 0 → (2x + 1)(x − 4) = 0 → x = 4 或 −{{frac 1|2}}。",
+     "answer": "(a) 39 (b) 2t² − 7t (c) 2x⁴ − 7x²; x = 4 or −1/2",
+     "checks": [
+      {
+       "expr": "2*(-3)^2-7*(-3)",
+       "equals": "39"
+      },
+      {
+       "expr": "2*4^2-7*4",
+       "equals": "4"
+      },
+      {
+       "expr": "2*0.25+3.5",
+       "equals": "4"
+      }
+     ]
+    },
+    {
+     "label": "例 15",
+     "ref": "L5 Ex 5",
+     "question": "If f(x) = 2x − 3 and g(x) = {{frac 3x|x − 1}}, find (a) f(g(3)) (b) g(f(3)).",
+     "solution": "(a) g(3) = 9/2，f(9/2) = 9 − 3 = 6。\n(b) f(3) = 3，g(3) = 9/2。先算里面的函数。",
+     "answer": "(a) 6 (b) 9/2",
+     "checks": [
+      {
+       "expr": "2*(3*3/(3-1))-3",
+       "equals": "6"
+      },
+      {
+       "expr": "3*(2*3-3)/((2*3-3)-1)",
+       "equals": "4.5"
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 16",
+     "ref": "L5 Ex 6",
+     "question": "From the graph of y = f(x) (zeros at x = −3, 0, 4, 8; maximum (2, 2); minimum (6, −3)): (a) f(6); (b) f(−3); (c) the x values with f(x) = 2; (d) the range for −3 < x < 6.",
+     "solution": "(a) f(6) = −3（最低点）。\n(b) f(−3) = 0（与 x 轴的交点）。\n(c) y = 2 的水平线与图像相交：最高点 x = 2；另外在左右两端外侧的上升段上也各有一点，读图约为 x ≈ −3.3 和 x ≈ 8.8。\n(d) −3 < x < 6 上，最高值 2（x = 2），最低值趋近 −3 但 x = 6 不包括在内：值域 −3 < y ≤ 2。",
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ],
+     "sourceNote": "(c) 两端的交点只能读图估计；如果题目只考虑图中「中间部分」，答案是 x = 2。",
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "把定义域、值域写反。",
+    "看到 (b) 侧放的抛物线只说「是曲线」：要用竖线检验说明。",
+    "复合函数先算外面。"
+   ],
+   "faqs": [
+    {
+     "q": "不同的 x 对应同一个 y 是函数吗？",
+     "a": "是。函数只要求每个 x 只有一个 y。"
+    }
+   ]
+  },
+  {
+   "title": "奇函数与偶函数（L5）",
+   "sources": [
+    {
+     "file": "L05_Relations_and_Functions.pdf",
+     "pages": "p5–6"
+    }
+   ],
+   "concept": "<strong>偶函数</strong>：关于 y 轴对称，f(−x) = f(x)。<strong>奇函数</strong>：关于原点对称（旋转 180° 不变），f(−x) = −f(x)。很多函数既不是奇函数也不是偶函数。判断方法：把 −x 代入，化简后与 f(x)、−f(x) 比较。奇函数如果在 x = 0 有定义，必然 f(0) = 0。",
+   "examples": [
+    {
+     "label": "例 17",
+     "ref": "L5 Ex 7",
+     "question": "Even, odd or neither: (a) h(x) = 2x³ + x (b) g(x) = (2 − x)² (c) f(x) = {{frac 1|1 + x²}} (d) F(x) = x(4 − x²)",
+     "solution": "(a) h(−x) = −2x³ − x = −h(x)：奇函数。\n(b) g(−x) = (2 + x)²，既不等于 g(x) 也不等于 −g(x)：既不奇也不偶（例如 g(1) = 1，g(−1) = 9）。\n(c) f(−x) = 1/(1 + x²) = f(x)：偶函数。\n(d) F(−x) = −x(4 − x²) = −F(x)：奇函数。",
+     "checks": [
+      {
+       "expr": "2*(-1.5)^3+(-1.5)",
+       "equals": "-(2*1.5^3+1.5)"
+      },
+      {
+       "expr": "(2-1)^2",
+       "equals": "1"
+      },
+      {
+       "expr": "(2+1)^2",
+       "equals": "9"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ]
+    },
+    {
+     "label": "例 18",
+     "ref": "L5 Ex 8",
+     "question": "Complete each graph so that f(x) is even: (a) an arc from (0, 0) rising and returning to the x-axis on the right; (b) an increasing curve for x ≥ 0 starting from a positive y-intercept; (c) a curve from the origin dipping below the axis then rising.",
+     "solution": "偶函数：把右半部分沿 y 轴翻折到左边（虚线是补出的部分）。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -4.5,
+        4.5
+       ],
+       "yr": [
+        -1,
+        3
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "sqrt(abs(4-(x-2)^2))",
+         "color": "navy",
+         "dom": [
+          0,
+          4
+         ]
+        },
+        {
+         "expr": "sqrt(abs(4-(x+2)^2))",
+         "color": "red",
+         "dom": [
+          -4,
+          0
+         ],
+         "dash": true
+        }
+       ],
+       "caption": "(a) even"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -3.5,
+        3.5
+       ],
+       "yr": [
+        -0.5,
+        3.5
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "1+0.25*x^2",
+         "color": "navy",
+         "dom": [
+          0,
+          3
+         ]
+        },
+        {
+         "expr": "1+0.25*x^2",
+         "color": "red",
+         "dom": [
+          -3,
+          0
+         ],
+         "dash": true
+        }
+       ],
+       "caption": "(b) even"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -3.5,
+        3.5
+       ],
+       "yr": [
+        -1.5,
+        3.5
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "x^2-2*x",
+         "color": "navy",
+         "dom": [
+          0,
+          3
+         ]
+        },
+        {
+         "expr": "x^2+2*x",
+         "color": "red",
+         "dom": [
+          -3,
+          0
+         ],
+         "dash": true
+        }
+       ],
+       "caption": "(c) even"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 19",
+     "ref": "L5 Ex 9",
+     "question": "Complete each of the same three graphs so that f(x) is odd.",
+     "solution": "奇函数：把右半部分绕原点旋转 180°（先沿 y 轴翻折，再沿 x 轴翻折）。(a)、(c) 可以完成。(b) 的曲线在 y 轴上的截距是正数，而奇函数必须满足 f(0) = 0，所以 (b) <strong>不能</strong>补成奇函数（除非去掉 x = 0 这一点，左边补 −f(−x) 后在 x = 0 处断开）。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -4.5,
+        4.5
+       ],
+       "yr": [
+        -2.5,
+        2.5
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "sqrt(abs(4-(x-2)^2))",
+         "color": "navy",
+         "dom": [
+          0,
+          4
+         ]
+        },
+        {
+         "expr": "-sqrt(abs(4-(x+2)^2))",
+         "color": "red",
+         "dom": [
+          -4,
+          0
+         ],
+         "dash": true
+        }
+       ],
+       "caption": "(a) odd"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -3.5,
+        3.5
+       ],
+       "yr": [
+        -3.5,
+        3.5
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "x^2-2*x",
+         "color": "navy",
+         "dom": [
+          0,
+          3
+         ]
+        },
+        {
+         "expr": "-(x^2+2*x)",
+         "color": "red",
+         "dom": [
+          -3,
+          0
+         ],
+         "dash": true
+        }
+       ],
+       "caption": "(c) odd"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ],
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "f(−x) 代入时只改了部分 x。",
+    "以为「有对称就是奇或偶」：只有关于 y 轴或原点对称才算。"
+   ],
+   "faqs": [
+    {
+     "q": "f(x) = 0 是奇函数还是偶函数？",
+     "a": "两者都是，它是唯一既奇又偶的函数。"
+    }
+   ]
+  },
+  {
+   "title": "七个基本图像与图像变换（L6）",
+   "sources": [
+    {
+     "file": "L06_Basic_Graphs_and_Transformations.pdf",
+     "pages": "p1–5"
+    }
+   ],
+   "concept": "要熟记的七个基本图像：y = x，y = x²，y = x³，y = √x，y = |x|，y = ∛x，y = 1/x。\n<strong>变换</strong>（c > 0）：①y = f(x) + c 向上平移 c，y = f(x) − c 向下；②y = f(x − c) 向<strong>右</strong>平移 c，y = f(x + c) 向<strong>左</strong>；③y = −f(x) 关于 x 轴翻折；④y = f(−x) 关于 y 轴翻折；⑤y = |f(x)|：x 轴下方的部分翻到上方；⑥y = cf(x)：每个 y 值乘 c，c > 1 拉伸（变陡），0 < c < 1 压缩（变平）。",
+   "examples": [
+    {
+     "label": "例 20",
+     "ref": "L6 Basic Graphs",
+     "question": "Sketch the seven basic graphs that should be memorised.",
+     "solution": "见下面七幅图：直线、抛物线、立方曲线、根号曲线（只有 x ≥ 0）、V 形绝对值、立方根曲线（定义在全体实数，奇函数）、双曲线（两支，x ≠ 0）。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -3,
+        3
+       ],
+       "yr": [
+        -3,
+        3
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "x",
+         "color": "navy",
+         "label": [
+          2,
+          2.6,
+          "y = x"
+         ]
+        }
+       ],
+       "caption": "1. y = x"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -3,
+        3
+       ],
+       "yr": [
+        -1,
+        4
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "x^2",
+         "color": "navy",
+         "dom": [
+          -1.8,
+          1.8
+         ],
+         "label": [
+          1.2,
+          3,
+          "y = x²"
+         ]
+        }
+       ],
+       "caption": "2. y = x²"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -3,
+        3
+       ],
+       "yr": [
+        -3,
+        3
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "x^3",
+         "color": "navy",
+         "dom": [
+          -1.5,
+          1.5
+         ],
+         "label": [
+          1.1,
+          2.5,
+          "y = x³"
+         ]
+        }
+       ],
+       "caption": "3. y = x³"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -1,
+        4
+       ],
+       "yr": [
+        -1,
+        2.5
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "sqrt(x)",
+         "color": "navy",
+         "dom": [
+          0,
+          4
+         ],
+         "label": [
+          2.2,
+          1.9,
+          "y = √x"
+         ]
+        }
+       ],
+       "caption": "4. y = √x"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -3,
+        3
+       ],
+       "yr": [
+        -1,
+        3
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "abs(x)",
+         "color": "navy",
+         "label": [
+          1.5,
+          2.4,
+          "y = |x|"
+         ]
+        }
+       ],
+       "caption": "5. y = |x|"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -4,
+        4
+       ],
+       "yr": [
+        -2,
+        2
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "x^(1/3)",
+         "color": "navy",
+         "dom": [
+          0,
+          4
+         ],
+         "label": [
+          2,
+          1.9,
+          "y = ∛x"
+         ]
+        },
+        {
+         "expr": "-((-x)^(1/3))",
+         "color": "navy",
+         "dom": [
+          -4,
+          -0.0001
+         ]
+        }
+       ],
+       "caption": "6. y = ∛x"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -4,
+        4
+       ],
+       "yr": [
+        -4,
+        4
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "1/x",
+         "color": "navy",
+         "dom": [
+          0.25,
+          4
+         ],
+         "label": [
+          1,
+          2.8,
+          "y = 1/x"
+         ]
+        },
+        {
+         "expr": "1/x",
+         "color": "navy",
+         "dom": [
+          -4,
+          -0.25
+         ]
+        }
+       ],
+       "caption": "7. y = 1/x"
+      }
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 21",
+     "ref": "L6 Sketches",
+     "question": "Using the given y = f(x) (passing through (−2, 0), (−1, 1), (1, −1), (2, 0)) sketch y = f(x) + 1, y = f(x − 1), y = −f(x), y = |f(x)|; and sketch y = x³ − 1, y = |x + 3|, y = 4 − x², y = 2<sup>−x</sup> from y = 2<sup>x</sup>, y = √(−x), y = |x² − 4|; compare y = x², 2x², ½x² at P(2, ·); sketch y = 3|x| and y = ½x³.",
+     "solution": "f(x) + 1：整体上移 1，点 (−1, 1) → (−1, 2)。f(x − 1)：右移 1，零点 −2、2 变成 −1、3。−f(x)：关于 x 轴翻折，(−1, 1) → (−1, −1)。|f(x)|：x 轴下方部分翻上去，(1, −1) → (1, 1)。\ny = x³ − 1：x³ 下移 1；y = |x + 3|：V 形左移 3，顶点 (−3, 0)；y = 4 − x²：x² 翻折后上移 4，与 x 轴交于 ±2；y = 2<sup>−x</sup>：2ˣ 关于 y 轴翻折，仍过 (0, 1)；y = √(−x)：√x 关于 y 轴翻折，只在 x ≤ 0；y = |x² − 4|：把 −2 < x < 2 之间 x 轴下方的部分翻上去，顶点 (0, 4)。\nP(2, ·)：y = x² 时 P(2, 4)，y = 2x² 时 P(2, 8)（拉伸），y = ½x² 时 P(2, 2)（压缩）。y = 3|x|：V 形变陡；y = ½x³：立方曲线变平。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -4,
+        4
+       ],
+       "yr": [
+        -3.5,
+        3.5
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "(x^3-4*x)/3",
+         "color": "grey",
+         "dom": [
+          -2.6,
+          2.6
+         ],
+         "label": [
+          1.7,
+          2.6,
+          "y = f(x)"
+         ],
+         "dash": true
+        },
+        {
+         "expr": "(x^3-4*x)/3+1",
+         "color": "navy",
+         "label": [
+          2.4,
+          3.1,
+          "f(x) + 1"
+         ]
+        }
+       ],
+       "caption": "y = f(x) + 1 (shift up 1)",
+       "points": [
+        {
+         "x": -1,
+         "y": 2,
+         "label": "(−1, 2)"
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -4,
+        4
+       ],
+       "yr": [
+        -3.5,
+        3.5
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "(x^3-4*x)/3",
+         "color": "grey",
+         "dom": [
+          -2.6,
+          2.6
+         ],
+         "label": [
+          1.7,
+          2.6,
+          "y = f(x)"
+         ],
+         "dash": true
+        },
+        {
+         "expr": "((x-1)^3-4*(x-1))/3",
+         "color": "navy",
+         "label": [
+          2.6,
+          1.4,
+          "f(x − 1)"
+         ]
+        }
+       ],
+       "caption": "y = f(x − 1) (shift right 1)",
+       "points": [
+        {
+         "x": 0,
+         "y": 1,
+         "label": "(0, 1)"
+        },
+        {
+         "x": 2,
+         "y": -1,
+         "label": "(2, −1)"
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -4,
+        4
+       ],
+       "yr": [
+        -3.5,
+        3.5
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "(x^3-4*x)/3",
+         "color": "grey",
+         "dom": [
+          -2.6,
+          2.6
+         ],
+         "label": [
+          1.7,
+          2.6,
+          "y = f(x)"
+         ],
+         "dash": true
+        },
+        {
+         "expr": "-((x^3-4*x)/3)",
+         "color": "navy",
+         "label": [
+          2.3,
+          -3,
+          "−f(x)"
+         ]
+        }
+       ],
+       "caption": "y = −f(x) (reflect in x-axis)"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -4,
+        4
+       ],
+       "yr": [
+        -3.5,
+        3.5
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "(x^3-4*x)/3",
+         "color": "grey",
+         "dom": [
+          -2.6,
+          2.6
+         ],
+         "label": [
+          1.7,
+          2.6,
+          "y = f(x)"
+         ],
+         "dash": true
+        },
+        {
+         "expr": "abs((x^3-4*x)/3)",
+         "color": "navy",
+         "label": [
+          2.3,
+          3,
+          "|f(x)|"
+         ]
+        }
+       ],
+       "caption": "y = |f(x)|",
+       "points": [
+        {
+         "x": 1,
+         "y": 1,
+         "label": "(1, 1)"
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -3,
+        3
+       ],
+       "yr": [
+        -4,
+        4
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "x^3-1",
+         "color": "navy",
+         "dom": [
+          -1.8,
+          1.8
+         ],
+         "label": [
+          1.2,
+          2.8,
+          "y = x³ − 1"
+         ]
+        }
+       ],
+       "caption": "y = x³ − 1",
+       "points": [
+        {
+         "x": 0,
+         "y": -1,
+         "label": "(0, −1)"
+        },
+        {
+         "x": 1,
+         "y": 0,
+         "label": "(1, 0)"
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -7,
+        2
+       ],
+       "yr": [
+        -1,
+        5
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "abs(x+3)",
+         "color": "navy",
+         "dom": [
+          -7,
+          1
+         ],
+         "label": [
+          -1,
+          3.4,
+          "y = |x + 3|"
+         ]
+        }
+       ],
+       "caption": "y = |x + 3|",
+       "points": [
+        {
+         "x": -3,
+         "y": 0,
+         "label": "(−3, 0)"
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -3,
+        3
+       ],
+       "yr": [
+        -4,
+        5
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "4-x^2",
+         "color": "navy",
+         "dom": [
+          -2.8,
+          2.8
+         ],
+         "label": [
+          0.6,
+          4.3,
+          "y = 4 − x²"
+         ]
+        }
+       ],
+       "caption": "y = 4 − x²",
+       "points": [
+        {
+         "x": -2,
+         "y": 0,
+         "label": "−2"
+        },
+        {
+         "x": 2,
+         "y": 0,
+         "label": "2"
+        },
+        {
+         "x": 0,
+         "y": 4,
+         "label": "4"
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -3,
+        3
+       ],
+       "yr": [
+        -0.5,
+        5
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "2^x",
+         "color": "grey",
+         "dom": [
+          -3,
+          2.2
+         ],
+         "label": [
+          1.3,
+          4.5,
+          "y = 2ˣ"
+         ],
+         "dash": true
+        },
+        {
+         "expr": "2^(-x)",
+         "color": "navy",
+         "dom": [
+          -2.2,
+          3
+         ],
+         "label": [
+          -2.6,
+          4.5,
+          "y = 2⁻ˣ"
+         ]
+        }
+       ],
+       "caption": "y = 2⁻ˣ is y = 2ˣ reflected in the y-axis",
+       "points": [
+        {
+         "x": 0,
+         "y": 1,
+         "label": "1"
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -4.5,
+        1
+       ],
+       "yr": [
+        -0.5,
+        2.5
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "sqrt(-x)",
+         "color": "navy",
+         "dom": [
+          -4,
+          0
+         ],
+         "label": [
+          -3.5,
+          2.2,
+          "y = √(−x)"
+         ]
+        }
+       ],
+       "caption": "y = √(−x)"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -3.5,
+        3.5
+       ],
+       "yr": [
+        -1,
+        6
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "abs(x^2-4)",
+         "color": "navy",
+         "dom": [
+          -3,
+          3
+         ],
+         "label": [
+          1.6,
+          5,
+          "y = |x² − 4|"
+         ]
+        }
+       ],
+       "caption": "y = |x² − 4|",
+       "points": [
+        {
+         "x": -2,
+         "y": 0,
+         "label": "−2"
+        },
+        {
+         "x": 2,
+         "y": 0,
+         "label": "2"
+        },
+        {
+         "x": 0,
+         "y": 4,
+         "label": "(0, 4)"
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -3.5,
+        3.5
+       ],
+       "yr": [
+        -0.5,
+        8.5
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "x^2",
+         "color": "grey",
+         "dom": [
+          -2.5,
+          2.5
+         ],
+         "label": [
+          2.1,
+          3.5,
+          "x²"
+         ]
+        },
+        {
+         "expr": "2*x^2",
+         "color": "red",
+         "dom": [
+          -1.8,
+          1.8
+         ],
+         "label": [
+          0.9,
+          6,
+          "2x²"
+         ]
+        },
+        {
+         "expr": "0.5*x^2",
+         "color": "green",
+         "dom": [
+          -3.2,
+          3.2
+         ],
+         "label": [
+          2.6,
+          2.5,
+          "½x²"
+         ]
+        }
+       ],
+       "caption": "Stretch and compress: P(2, 4), P(2, 8), P(2, 2)",
+       "points": [
+        {
+         "x": 2,
+         "y": 4,
+         "label": "(2, 4)"
+        },
+        {
+         "x": 2,
+         "y": 8,
+         "label": "(2, 8)",
+         "dx": -50
+        },
+        {
+         "x": 2,
+         "y": 2,
+         "label": "(2, 2)"
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -2.5,
+        2.5
+       ],
+       "yr": [
+        -0.5,
+        6.5
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "3*abs(x)",
+         "color": "navy",
+         "dom": [
+          -2,
+          2
+         ],
+         "label": [
+          0.9,
+          5,
+          "y = 3|x|"
+         ]
+        },
+        {
+         "expr": "abs(x)",
+         "color": "grey",
+         "dom": [
+          -2,
+          2
+         ],
+         "dash": true
+        }
+       ],
+       "caption": "y = 3|x| (steeper)"
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -3,
+        3
+       ],
+       "yr": [
+        -4,
+        4
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "0.5*x^3",
+         "color": "navy",
+         "dom": [
+          -2.2,
+          2.2
+         ],
+         "label": [
+          1.4,
+          3.6,
+          "y = ½x³"
+         ]
+        },
+        {
+         "expr": "x^3",
+         "color": "grey",
+         "dom": [
+          -1.6,
+          1.6
+         ],
+         "dash": true
+        }
+       ],
+       "caption": "y = ½x³ (flatter)"
+      }
+     ],
+     "sourceNote": "讲义的 f(x) 只画了曲线并标出 (−2, 0)、(−1, 1)、(1, −1)、(2, 0)；这里用 f(x) = (x³ − 4x)/3 作示意（真正的转折点在 x ≈ ±1.15），只为显示变换的方向。",
+     "numeric": false
+    },
+    {
+     "label": "例 22",
+     "ref": "L6 Ex 1",
+     "question": "Find the equation of the function formed by: (a) shifting y = x² three units to the right; (b) reflecting y = |x| in the x-axis and shifting it 3 units up; (c) reflecting y = f(x) over the y-axis and then doubling all y values.",
+     "solution": "(a) 向右是 x − 3：y = (x − 3)²。\n(b) 翻折得 y = −|x|，再上移 3：y = 3 − |x|。\n(c) 关于 y 轴翻折得 f(−x)，再把 y 值翻倍：y = 2f(−x)。",
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 23",
+     "ref": "L6 Ex 2",
+     "question": "The point (2, 3) is on y = f(x). Find a point on: (a) y = −f(x) (b) y = f(x − 2) (c) y = 3 − f(x + 1).",
+     "solution": "(a) y 值变号：(2, −3)。\n(b) 向右平移 2：(4, 3)。验证：x = 4 时 f(4 − 2) = f(2) = 3。\n(c) f(x + 1) 左移 1 得 (1, 3)；−f 翻折得 (1, −3)；再加 3 得 (1, 0)。验证：x = 1 时 3 − f(2) = 0。",
+     "answer": "(a) (2, −3) (b) (4, 3) (c) (1, 0)",
+     "checks": [
+      {
+       "expr": "3-3",
+       "equals": "0"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ]
+    }
+   ],
+   "mistakes": [
+    "f(x − c) 以为向左移：减号向右。",
+    "y = 3 − f(x + 1) 的步骤顺序乱：先水平平移，再翻折，最后上下平移。",
+    "y = √(−x) 画在 x ≥ 0。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么 f(x − 2) 是向右移？",
+     "a": "要得到原来 x = 2 处的值，现在需要 x − 2 = 2，即 x = 4，所以图像整体右移 2。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "步骤",
+   "做什么",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "1 直线",
+    "斜率 → 点斜式 → 化成要求的形式",
+    "例 1–9"
+   ],
+   [
+    "2 函数",
+    "竖线检验；定义域看分母和根号",
+    "例 11–13"
+   ],
+   [
+    "3 记号与复合",
+    "先算里面再算外面",
+    "例 14、15"
+   ],
+   [
+    "4 奇偶",
+    "代 −x 比较",
+    "例 17–19"
+   ],
+   [
+    "5 变换",
+    "上下 ± c，左右反着来，翻折看负号的位置",
+    "例 21–23"
+   ]
+  ]
+ },
+ "practice": "讲义建议练习：Tutorial Guide 0-4、1-1、1-2。"
+}

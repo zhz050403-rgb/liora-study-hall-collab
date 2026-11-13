@@ -1,0 +1,8 @@
+[
+  { "ref": "Q 2", "page": "p3", "deliverables": [{ "type": "columnar", "accounts": ["Cash at Bank", "Office Furniture", "Loan", "Capital"] }] },
+  { "ref": "Q 3", "page": "p4", "deliverables": [{ "type": "columnar", "accounts": ["Cash at Bank", "Mobile Phone", "Wages Expense", "Sales"] }] },
+  { "ref": "Q 4", "page": "p5", "deliverables": [{ "type": "trialBalance" }] },
+  { "ref": "Q 5", "page": "p6", "deliverables": [{ "type": "columnar", "accounts": ["Cash at Bank", "Accounts Receivable", "Accounts Payable", "Capital", "Sales", "Purchases", "Wages", "Telephone"] }] },
+  { "ref": "Additional 1", "page": "p9", "note": "模板还列了 Salaries Expense，但本周给出的分录里没有工资，所以不要求这个账户（见例 13 的说明）。提取器在本题和 Q6 误识别出的 journal 要求已去掉：两题都没有要求写分录。", "deliverables": [{ "type": "columnar", "accounts": ["Cash at bank", "Account Receivable", "Account Payable", "Purchase", "Sales", "Discount Allowed", "Discount received", "Sales returns", "Purchase returns", "Capital", "Drawings", "Delivery Van"] }, { "type": "trialBalance" }] },
+  { "ref": "Additional 2", "page": "p14", "deliverables": [{ "type": "columnar", "accounts": ["Cash at bank", "Account Receivable", "Account Payable", "Purchase", "Sales", "Telephone Expense", "Wages Expense", "Capital"] }, { "type": "trialBalance" }] }
+]

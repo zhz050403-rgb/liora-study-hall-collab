@@ -1,0 +1,1924 @@
+{
+ "course": "accounting",
+ "term": "term1",
+ "week": 4,
+ "title": "Week 4 · Unit 5 调整分录",
+ "answersTitle": "Unit 5 Adjusting Journal Entries",
+ "files": [
+  "unit5 lecture slides adjusting journal entries.pdf",
+  "unit5 reading materials adjusting journal entries.pdf",
+  "unit5 tutorial guide adjusting entries.pdf"
+ ],
+ "inventory": [
+  "Lecture Prepaid Rent",
+  "Lecture Unearned Ex 1",
+  "Lecture Unearned Ex 2",
+  "Lecture Depreciation",
+  "Lecture Accrued Revenue Ex 1",
+  "Lecture Accrued Revenue Ex 2",
+  "Lecture Accrued Expense Ex 1",
+  "Lecture Accrued Expense Ex 2",
+  "Reading Wong Insurance",
+  "Reading Wong Unearned",
+  "Reading Wong Depreciation",
+  "Reading Wong Commission",
+  "Reading Wong Salaries",
+  "Reading Wong Interest",
+  {
+   "ref": "Tutorial Terms",
+   "deliverables": [
+    {
+     "type": "terms",
+     "terms": [
+      "Adjusting Entry",
+      "Depreciation Expense",
+      "Accumulated Depreciation",
+      "Unearned Revenue",
+      "Prepaid Expense",
+      "Accrued Expenses",
+      "Accrued Revenue"
+     ]
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial Q1",
+   "deliverables": [
+    {
+     "type": "journal"
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial Q2",
+   "deliverables": [
+    {
+     "type": "journal"
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial Q3",
+   "deliverables": [
+    {
+     "type": "journal"
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial Q4",
+   "deliverables": [
+    {
+     "type": "journal"
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial Q5",
+   "deliverables": [
+    {
+     "type": "journal"
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial Q6",
+   "deliverables": [
+    {
+     "type": "journal"
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial Q7",
+   "parts": [
+    "a",
+    "b"
+   ],
+   "deliverables": [
+    {
+     "type": "journal"
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial Q8",
+   "parts": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "Required b"
+   ],
+   "deliverables": [
+    {
+     "type": "journal"
+    }
+   ]
+  },
+  {
+   "ref": "Tutorial Q9",
+   "parts": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "Required b"
+   ],
+   "deliverables": [
+    {
+     "type": "journal"
+    },
+    {
+     "type": "statement"
+    }
+   ]
+  }
+ ],
+ "intro": [
+  "本周学<strong>调整分录</strong>（adjusting entries）：在权责发生制下，期末要把「钱的收付」和「收入、费用该属于哪个期间」对齐。四类调整：预付费用、预收收入（合称 prepayments），应计收入、应计费用（合称 accruals），再加上折旧。记住一条：<strong>调整分录从不动现金账户</strong>。讲义、阅读材料（Wong Pty Ltd）和 Tutorial Guide 第 1–9 题的每一笔都有完整分录，金额由核对式复算。"
+ ],
+ "sections": [
+  {
+   "title": "为什么要调整、四类调整（Why Adjust）",
+   "sources": [
+    {
+     "file": "unit5 lecture slides adjusting journal entries.pdf",
+     "pages": "p4–7"
+    },
+    {
+     "file": "unit5 reading materials adjusting journal entries.pdf",
+     "pages": "p1–2"
+    },
+    {
+     "file": "unit5 tutorial guide adjusting entries.pdf",
+     "pages": "p2"
+    }
+   ],
+   "concept": "只有采用<strong>权责发生制</strong>才需要调整：现金收付的期间和收入、费用应确认的期间不一致时，期末最后一天要调整，使利润准确、报表符合准则。\n<strong>预付费用</strong>（prepaid expense）：先付钱、后受益，付款时记流动资产，用掉的部分期末转为费用。\n<strong>预收收入</strong>（unearned revenue）：先收钱、后提供商品或服务，收款时记流动负债，提供后转为收入。\n<strong>应计收入</strong>（accrued revenue）：已赚到、未收款，期末记应收和收入。\n<strong>应计费用</strong>（accrued expense）：已发生、未付款，期末记费用和应付（如 Wages Payable，<strong>不用 Accounts Payable</strong>，那是给供应商的）。\n<strong>调整分录从不涉及现金账户</strong>。",
+   "figures": [
+    {
+     "type": "table",
+     "headers": [
+      "类别",
+      "发生时",
+      "期末调整分录"
+     ],
+     "rows": [
+      [
+       "Prepaid expense 预付费用",
+       "Dr Prepaid X（资产）/ Cr Cash",
+       "Dr X Expense / Cr Prepaid X"
+      ],
+      [
+       "Unearned revenue 预收收入",
+       "Dr Cash / Cr Unearned Revenue（负债）",
+       "Dr Unearned Revenue / Cr Revenue"
+      ],
+      [
+       "Depreciation 折旧",
+       "（买资产时 Dr Asset / Cr Cash）",
+       "Dr Depreciation Expense / Cr Accumulated Depreciation"
+      ],
+      [
+       "Accrued revenue 应计收入",
+       "尚未入账",
+       "Dr X Receivable / Cr Revenue"
+      ],
+      [
+       "Accrued expense 应计费用",
+       "尚未入账",
+       "Dr X Expense / Cr X Payable"
+      ]
+     ],
+     "title": "调整分录一览"
+    }
+   ],
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "Tutorial Terms",
+     "question": "Explain: Adjusting Entry, Depreciation Expense, Accumulated Depreciation, Unearned Revenue, Prepaid Expense, Accrued Expenses, Accrued Revenue.",
+     "solution": "<strong>Adjusting Entry</strong>：期末为使收入、费用记入正确期间而做的分录，不涉及现金。\n<strong>Depreciation Expense</strong>：本期分摊的非流动资产成本，是费用。\n<strong>Accumulated Depreciation</strong>：累计折旧，资产的抵减账户（contra asset），贷方余额，在资产负债表上从资产原值中扣除。\n<strong>Unearned Revenue</strong>：预收收入，已收款、尚未提供商品或服务，是流动负债。\n<strong>Prepaid Expense</strong>：预付费用，已付款、尚未受益，是流动资产。\n<strong>Accrued Expenses</strong>：应计费用，已发生、未付款也未入账，期末记费用和应付。\n<strong>Accrued Revenue</strong>：应计收入，已赚到、未收款也未入账，期末记应收和收入。",
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "调整分录里出现 Cash：调整只是重新分配，不涉及收付现金。",
+    "应计费用贷记 Accounts Payable：要用具体的 payable（Wages Payable、Interest Payable…）。"
+   ],
+   "faqs": [
+    {
+     "q": "现金制要不要做调整分录？",
+     "a": "不用。只有权责发生制才需要。"
+    },
+    {
+     "q": "不调整会怎样？",
+     "a": "利润会被高估或低估，资产、负债也不准确，使用者会据此做错决定。"
+    }
+   ]
+  },
+  {
+   "title": "预付费用与预收收入（Prepayments）",
+   "sources": [
+    {
+     "file": "unit5 lecture slides adjusting journal entries.pdf",
+     "pages": "p8–12"
+    },
+    {
+     "file": "unit5 reading materials adjusting journal entries.pdf",
+     "pages": "p2–3"
+    },
+    {
+     "file": "unit5 tutorial guide adjusting entries.pdf",
+     "pages": "p3–4"
+    }
+   ],
+   "concept": "<strong>预付费用</strong>：付款时 Dr Prepaid（资产）/ Cr Cash；期末按已用月份 Dr Expense / Cr Prepaid。已用金额 = 总额 ÷ 总月数 × 已用月数。\n<strong>预收收入</strong>：收款时 Dr Cash / Cr Unearned Revenue（负债）；提供商品或服务后 Dr Unearned Revenue / Cr Revenue。",
+   "formulas": [
+    "本期费用（收入）= 总额 × 本期月数 ÷ 总月数"
+   ],
+   "examples": [
+    {
+     "label": "例 2",
+     "ref": "Lecture Prepaid Rent",
+     "question": "On 1 May 2025 Kingsford Trading paid rent for 8 months (1 May – 31 December 2025) in advance, $80,000. Record the entry on 1 May, the adjustment on 30 June (2 months used) and on 30 November (7 months used).",
+     "solution": "每月 80 000 ÷ 8 = 10 000。6 月 30 日已用 2 个月 = 20 000；讲义另举 11 月 30 日已用 7 个月 = 70 000 的情形（两种时点分别说明，不是两笔都做）。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "1 May",
+         "dr": [
+          [
+           "Prepaid Rent",
+           "asset",
+           80000
+          ]
+         ],
+         "cr": [
+          [
+           "Cash",
+           "asset",
+           80000
+          ]
+         ],
+         "narration": "Paid 8 months rent in advance"
+        },
+        {
+         "date": "30 June",
+         "dr": [
+          [
+           "Rent Expense",
+           "expense",
+           20000
+          ]
+         ],
+         "cr": [
+          [
+           "Prepaid Rent",
+           "asset",
+           20000
+          ]
+         ],
+         "narration": "Adjusted two months of rent"
+        }
+       ]
+      },
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "30 Nov",
+         "dr": [
+          [
+           "Rent Expense",
+           "expense",
+           70000
+          ]
+         ],
+         "cr": [
+          [
+           "Prepaid Rent",
+           "asset",
+           70000
+          ]
+         ],
+         "narration": "Adjusted seven months of rent"
+        }
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "80000/8*2",
+       "equals": "20000"
+      },
+      {
+       "expr": "80000/8*7",
+       "equals": "70000"
+      }
+     ]
+    },
+    {
+     "label": "例 3",
+     "ref": "Lecture Unearned Ex 1",
+     "question": "On 1 May 2025 Sue pays Kingsford $100 in advance for a blue bicycle not in stock; she picks it up on 5 May. Record both entries.",
+     "solution": "收款时是负债（欠 Sue 一辆车）；交货时负债转为收入。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "1 May",
+         "dr": [
+          [
+           "Cash",
+           "asset",
+           100
+          ]
+         ],
+         "cr": [
+          [
+           "Unearned Revenue",
+           "liability",
+           100
+          ]
+         ],
+         "narration": "Customer paid in advance for a bicycle"
+        },
+        {
+         "date": "5 May",
+         "dr": [
+          [
+           "Unearned Revenue",
+           "liability",
+           100
+          ]
+         ],
+         "cr": [
+          [
+           "Sales",
+           "revenue",
+           100
+          ]
+         ],
+         "narration": "Delivered product to customer who paid in advance"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "label": "例 4",
+     "ref": "Lecture Unearned Ex 2",
+     "question": "On 1 May, 24-Hour Fitness received $1,200 for 6 months' gym membership from Mr J. Rhodes. Prepare the entry on 1 May and adjusting entries on 31 May and 30 November.",
+     "solution": "每月 1 200 ÷ 6 = 200。5 月 31 日提供了 1 个月：200。讲义写 11 月 30 日「6 个月已提供」记 1 200，这是假设中间没有逐月调整；如果 5 月已调整 200，11 月只剩 1 000。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "1 May",
+         "dr": [
+          [
+           "Cash",
+           "asset",
+           1200
+          ]
+         ],
+         "cr": [
+          [
+           "Unearned Revenue",
+           "liability",
+           1200
+          ]
+         ],
+         "narration": "Received 6-month subscription from J. Rhodes"
+        },
+        {
+         "date": "31 May",
+         "dr": [
+          [
+           "Unearned Revenue",
+           "liability",
+           200
+          ]
+         ],
+         "cr": [
+          [
+           "Revenue",
+           "revenue",
+           200
+          ]
+         ],
+         "narration": "1 month of membership provided"
+        }
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "1200/6*1",
+       "equals": "200"
+      }
+     ],
+     "sourceNote": "讲义同时列出 5 月 31 日（200）和 11 月 30 日（1 200）两笔，两笔都做会多记 200 收入；它们是两种不同的调整时点示例。"
+    },
+    {
+     "label": "例 5",
+     "ref": "Reading Wong Insurance",
+     "question": "On 4 October Wong Pty Ltd paid $600 for a 1-year insurance policy beginning 1 October, recorded as prepaid insurance. Prepare the October adjusting entry.",
+     "solution": "每月 600 ÷ 12 = 50。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "31 Oct",
+         "dr": [
+          [
+           "Insurance Expense",
+           "expense",
+           50
+          ]
+         ],
+         "cr": [
+          [
+           "Prepaid Insurance",
+           "asset",
+           50
+          ]
+         ],
+         "narration": "Insurance expired for October"
+        }
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "600/12",
+       "equals": "50"
+      }
+     ]
+    },
+    {
+     "label": "例 6",
+     "ref": "Reading Wong Unearned",
+     "question": "Wong received $1,200 on 2 October from R. Knox for advertising services to be completed by 31 December (credited to service revenue received in advance). Services worth $400 were performed in October. Prepare the adjusting entry.",
+     "solution": "已提供 400，负债减少 400、收入增加 400；剩下 800 仍是负债。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "31 Oct",
+         "dr": [
+          [
+           "Service Revenue Received in Advance",
+           "liability",
+           400
+          ]
+         ],
+         "cr": [
+          [
+           "Service Revenue",
+           "revenue",
+           400
+          ]
+         ],
+         "narration": "Services performed for Knox in October"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "label": "例 7",
+     "ref": "Tutorial Q2",
+     "question": "Shell Company paid $12,000 on 1 January for a one-year insurance policy. Prepare the adjusting entry at year end 30 June.",
+     "solution": "1 月 1 日到 6 月 30 日已过 6 个月：12 000 × 6/12 = 6 000 转为费用，另 6 000 仍是预付保险（资产）。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "June 30",
+         "dr": [
+          [
+           "Insurance Expense",
+           "expense",
+           6000
+          ]
+         ],
+         "cr": [
+          [
+           "Prepaid Insurance",
+           "asset",
+           6000
+          ]
+         ],
+         "narration": "Insurance expired 1 January – 30 June"
+        }
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "12000*6/12",
+       "equals": "6000"
+      }
+     ]
+    },
+    {
+     "label": "例 8",
+     "ref": "Tutorial Q3",
+     "question": "Jade Corporation received $10,000 in advance for IT services over the next five months, charged equally each month. Record the receipt and the adjusting entry at the end of the first month (Jan 31).",
+     "solution": "每月 10 000 ÷ 5 = 2 000。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "Jan 1",
+         "dr": [
+          [
+           "Cash",
+           "asset",
+           10000
+          ]
+         ],
+         "cr": [
+          [
+           "Unearned Revenue",
+           "liability",
+           10000
+          ]
+         ],
+         "narration": "Received in advance for 5 months of IT services"
+        },
+        {
+         "date": "Jan 31",
+         "dr": [
+          [
+           "Unearned Revenue",
+           "liability",
+           2000
+          ]
+         ],
+         "cr": [
+          [
+           "Service Revenue",
+           "revenue",
+           2000
+          ]
+         ],
+         "narration": "IT services provided in January"
+        }
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "10000/5",
+       "equals": "2000"
+      }
+     ],
+     "sourceNote": "题目没写收款日期，按 1 月 1 日处理。"
+    },
+    {
+     "label": "例 9",
+     "ref": "Tutorial Q4",
+     "question": "On 1 June 20X1, ABC Enterprises purchased a one-year insurance policy for $9,000. At the end of June $750 had expired. Prepare the original entry on 1 June and the adjusting entry on 30 June.",
+     "solution": "9 000 ÷ 12 = 750，与题目一致。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "1 June",
+         "dr": [
+          [
+           "Prepaid Insurance",
+           "asset",
+           9000
+          ]
+         ],
+         "cr": [
+          [
+           "Cash",
+           "asset",
+           9000
+          ]
+         ],
+         "narration": "Purchased one-year insurance policy"
+        },
+        {
+         "date": "30 June",
+         "dr": [
+          [
+           "Insurance Expense",
+           "expense",
+           750
+          ]
+         ],
+         "cr": [
+          [
+           "Prepaid Insurance",
+           "asset",
+           750
+          ]
+         ],
+         "narration": "Insurance expired in June"
+        }
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "9000/12",
+       "equals": "750"
+      }
+     ]
+    },
+    {
+     "label": "例 10",
+     "ref": "Tutorial Q6",
+     "question": "On 1 May, MNO Services received $6,000 for services to be rendered on 31 May. Prepare the initial entry and the adjusting entry on 31 May.",
+     "solution": "服务在 5 月 31 日完成，全部 6 000 转为收入。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "1 May",
+         "dr": [
+          [
+           "Cash",
+           "asset",
+           6000
+          ]
+         ],
+         "cr": [
+          [
+           "Unearned Revenue",
+           "liability",
+           6000
+          ]
+         ],
+         "narration": "Received payment in advance"
+        },
+        {
+         "date": "31 May",
+         "dr": [
+          [
+           "Unearned Revenue",
+           "liability",
+           6000
+          ]
+         ],
+         "cr": [
+          [
+           "Service Revenue",
+           "revenue",
+           6000
+          ]
+         ],
+         "narration": "Services rendered"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "期末把预付总额全部记费用：只转已用的月份。",
+    "预收款记为收入：收款时还没赚到，是负债。",
+    "月份数错：数清从开始日到期末日有几个月。"
+   ],
+   "faqs": [
+    {
+     "q": "预付费用和预收收入有什么关系？",
+     "a": "是同一件事的两面：付款方是预付费用（资产），收款方是预收收入（负债）。"
+    },
+    {
+     "q": "期末没用完的预付部分在哪里？",
+     "a": "仍是资产，留在 Prepaid 账户，列在资产负债表的流动资产里。"
+    }
+   ]
+  },
+  {
+   "title": "折旧（Depreciation）",
+   "sources": [
+    {
+     "file": "unit5 lecture slides adjusting journal entries.pdf",
+     "pages": "p13–16"
+    },
+    {
+     "file": "unit5 reading materials adjusting journal entries.pdf",
+     "pages": "p3–4"
+    },
+    {
+     "file": "unit5 tutorial guide adjusting entries.pdf",
+     "pages": "p3, p7"
+    }
+   ],
+   "concept": "<strong>折旧</strong>是把非流动资产的成本分摊到使用年限的各期，是费用。它是<strong>分摊</strong>概念，不是估值。\n直线法：年折旧 = (购买价 − 残值) ÷ 使用年限。\n调整分录：Dr Depreciation Expense，Cr <strong>Accumulated Depreciation</strong>（累计折旧，资产的抵减账户，贷方余额）。不直接贷记资产，这样资产仍按历史成本列示。\n<strong>账面价值</strong>（book value / carrying amount）= 成本 − 累计折旧。",
+   "formulas": [
+    "年折旧 = {{frac 成本 − 残值|使用年限}}　　账面价值 = 成本 − 累计折旧"
+   ],
+   "examples": [
+    {
+     "label": "例 11",
+     "ref": "Lecture Depreciation",
+     "question": "Kingsford Trading purchases a car for $50,000, useful life 5 years, no residual value. Prepare the depreciation schedule, the adjusting entry on 30 June 2025 and the balance sheet presentation.",
+     "solution": "年折旧 (50 000 − 0) ÷ 5 = 10 000，每年分录相同；累计折旧逐年增加，账面价值逐年减少到 0。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "Year",
+        "Depreciation Expense",
+        "Accumulated Depreciation",
+        "Book Value"
+       ],
+       "rows": [
+        [
+         "30 June 2025",
+         "10,000",
+         "10,000",
+         "40,000"
+        ],
+        [
+         "30 June 2026",
+         "10,000",
+         "20,000",
+         "30,000"
+        ],
+        [
+         "30 June 2027",
+         "10,000",
+         "30,000",
+         "20,000"
+        ],
+        [
+         "30 June 2028",
+         "10,000",
+         "40,000",
+         "10,000"
+        ],
+        [
+         "30 June 2029",
+         "10,000",
+         "50,000",
+         "0"
+        ]
+       ],
+       "title": "Depreciation schedule"
+      },
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "30 June 2025",
+         "dr": [
+          [
+           "Depreciation Expense",
+           "expense",
+           10000
+          ]
+         ],
+         "cr": [
+          [
+           "Accumulated Depreciation – Motor Vehicle",
+           "contra-asset",
+           10000
+          ]
+         ],
+         "narration": "Depreciation expense for the year"
+        }
+       ]
+      },
+      {
+       "type": "statement",
+       "title": "Balance Sheet extract as at 30 June 2025",
+       "columns": 1,
+       "lines": [
+        {
+         "id": "mv",
+         "label": "Motor Vehicle",
+         "amount": 50000
+        },
+        {
+         "id": "ad",
+         "label": "Less Accumulated Depreciation",
+         "amount": -10000
+        },
+        {
+         "id": "bv",
+         "label": "Book Value",
+         "sum": [
+          "mv",
+          "ad"
+         ],
+         "total": true
+        }
+       ],
+       "expect": {
+        "bv": 40000
+       }
+      }
+     ],
+     "checks": [
+      {
+       "expr": "50000/5",
+       "equals": "10000"
+      }
+     ]
+    },
+    {
+     "label": "例 12",
+     "ref": "Reading Wong Depreciation",
+     "question": "Depreciation on Wong's office equipment is $480 a year. Prepare the monthly adjusting entry; the carrying amount at the end of the period is $4,960.",
+     "solution": "每月 480 ÷ 12 = 40。账面价值 4 960 = 成本 − 累计折旧 40，所以设备成本是 5 000。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "31 Oct",
+         "dr": [
+          [
+           "Depreciation Expense",
+           "expense",
+           40
+          ]
+         ],
+         "cr": [
+          [
+           "Accumulated Depreciation – Office Equipment",
+           "contra-asset",
+           40
+          ]
+         ],
+         "narration": "Depreciation for October"
+        }
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "480/12",
+       "equals": "40"
+      },
+      {
+       "expr": "4960+40",
+       "equals": "5000"
+      }
+     ]
+    },
+    {
+     "label": "例 13",
+     "ref": "Tutorial Q1",
+     "question": "Kingsford Trading purchased equipment for $30,000 on 1 January, useful life 5 years, no salvage value. Calculate the annual depreciation and make the adjusting entry on 31 December.",
+     "solution": "(30 000 − 0) ÷ 5 = 6 000，1 月 1 日到 12 月 31 日正好一年。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "31 Dec",
+         "dr": [
+          [
+           "Depreciation Expense",
+           "expense",
+           6000
+          ]
+         ],
+         "cr": [
+          [
+           "Accumulated Depreciation – Equipment",
+           "contra-asset",
+           6000
+          ]
+         ],
+         "narration": "Depreciation for the year"
+        }
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "30000/5",
+       "equals": "6000"
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "贷记资产账户本身：要贷记累计折旧。",
+    "把累计折旧当负债：它是资产的抵减账户。",
+    "第一年只用了几个月却按全年计提：要按月份比例。"
+   ],
+   "faqs": [
+    {
+     "q": "折旧为什么算是一种「预付」？",
+     "a": "买长期资产等于预先支付了多年的使用价值，每年用掉一部分，就转一部分为费用。"
+    },
+    {
+     "q": "折旧会让现金减少吗？",
+     "a": "不会，现金在买资产时就付了；折旧只是把成本分摊到各年。"
+    }
+   ]
+  },
+  {
+   "title": "应计收入与应计费用（Accruals）",
+   "sources": [
+    {
+     "file": "unit5 lecture slides adjusting journal entries.pdf",
+     "pages": "p17–22"
+    },
+    {
+     "file": "unit5 reading materials adjusting journal entries.pdf",
+     "pages": "p4–5"
+    },
+    {
+     "file": "unit5 tutorial guide adjusting entries.pdf",
+     "pages": "p4–8"
+    }
+   ],
+   "concept": "<strong>应计收入</strong>：已提供、未收款也未入账。期末 Dr X Receivable（资产），Cr Revenue。以后收款时冲减应收，不再记收入。\n<strong>应计费用</strong>：已发生、未付款也未入账。期末 Dr Expense，Cr X Payable（负债）。以后付款时先冲减 Payable，只把新一期的部分记为费用。\n<strong>利息</strong> = 本金 × 年利率 × 月数 ÷ 12（利率一律按年）。",
+   "formulas": [
+    "利息 = 本金 × 年利率 × {{frac 月数|12}}"
+   ],
+   "examples": [
+    {
+     "label": "例 14",
+     "ref": "Lecture Accrued Revenue Ex 1",
+     "question": "On 1 June an agreement was signed to provide cleaning services for a monthly fee of $800. On 30 June services for the month were performed but cash was not received. Prepare the adjusting entry.",
+     "solution": "已赚到 800，未收款：记应收和收入。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "June 30",
+         "dr": [
+          [
+           "Fees Receivable",
+           "asset",
+           800
+          ]
+         ],
+         "cr": [
+          [
+           "Cleaning Services Revenue",
+           "revenue",
+           800
+          ]
+         ],
+         "narration": "Cleaning services fee receivable for June"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "label": "例 15",
+     "ref": "Lecture Accrued Revenue Ex 2",
+     "question": "On 1 July 2024 Kingsford deposited $50,000 in a one-year saving certificate at 10% p.a.; the bank pays deposit and interest on 30 June 2025. Kingsford closes its accounts on 31 December. Prepare the adjusting entry on 31 December 2024 and the entry when interest is paid on 30 June 2025.",
+     "solution": "7 月到 12 月 6 个月：50 000 × 10% × 6/12 = 2 500 是 2024 年的收入。2025 年 6 月 30 日收到全年利息 5 000：其中 2 500 冲减应收利息，另 2 500 是 2025 年的收入。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "31 Dec 2024",
+         "dr": [
+          [
+           "Interest Receivable",
+           "asset",
+           2500
+          ]
+         ],
+         "cr": [
+          [
+           "Interest Revenue",
+           "revenue",
+           2500
+          ]
+         ],
+         "narration": "Interest receivable for 6 months"
+        },
+        {
+         "date": "30 June 2025",
+         "dr": [
+          [
+           "Cash",
+           "asset",
+           5000
+          ]
+         ],
+         "cr": [
+          [
+           "Interest Receivable",
+           "asset",
+           2500
+          ],
+          [
+           "Interest Revenue",
+           "revenue",
+           2500
+          ]
+         ],
+         "narration": "Interest received for the year"
+        }
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "50000*0.1*6/12",
+       "equals": "2500"
+      }
+     ],
+     "sourceNote": "讲义写 30 June 收到 Cash $5 000；到期时银行还会归还本金 50 000，这一页只记利息部分。"
+    },
+    {
+     "label": "例 16",
+     "ref": "Reading Wong Commission",
+     "question": "Wong earns commission of 1% of sales revenue from an advertising client; the amount for October is $200, not yet received or recorded. Prepare the adjusting entry.",
+     "solution": "收入和资产都被少记，应计 200。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "31 Oct",
+         "dr": [
+          [
+           "Commission Receivable",
+           "asset",
+           200
+          ]
+         ],
+         "cr": [
+          [
+           "Commission Revenue",
+           "revenue",
+           200
+          ]
+         ],
+         "narration": "Commission earned in October"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "label": "例 17",
+     "ref": "Lecture Accrued Expense Ex 1",
+     "question": "Kingsford received the June 2025 electricity bill of $1,500, to be paid in July. Accounts close on 30 June. Prepare the adjusting entry.",
+     "solution": "6 月的电费属于本期，未付款：费用和应付都增加。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "June 30",
+         "dr": [
+          [
+           "Electricity Expense",
+           "expense",
+           1500
+          ]
+         ],
+         "cr": [
+          [
+           "Electricity Payable",
+           "liability",
+           1500
+          ]
+         ],
+         "narration": "Received electricity bill for June"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "label": "例 18",
+     "ref": "Lecture Accrued Expense Ex 2",
+     "question": "Kingsford pays salaries of $1,500 every Friday for a Monday–Friday week. Last payday Friday 25 June, next payday Friday 2 July; accounts close Wednesday 30 June 2024. Prepare the adjusting entry and the entry on 2 July.",
+     "solution": "日薪 1 500 ÷ 5 = 300。6 月 28–30 日（周一到周三）3 天 = 900 是本期费用。7 月 2 日付 1 500：900 冲减应付工资，600（周四、周五）是新一期费用。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "June 30",
+         "dr": [
+          [
+           "Salaries Expense",
+           "expense",
+           900
+          ]
+         ],
+         "cr": [
+          [
+           "Salaries Payable",
+           "liability",
+           900
+          ]
+         ],
+         "narration": "Accrued salaries 28–30 June"
+        },
+        {
+         "date": "July 2",
+         "dr": [
+          [
+           "Salaries Payable",
+           "liability",
+           900
+          ],
+          [
+           "Salaries Expense",
+           "expense",
+           600
+          ]
+         ],
+         "cr": [
+          [
+           "Cash",
+           "asset",
+           1500
+          ]
+         ],
+         "narration": "Paid weekly salaries"
+        }
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "1500/5*3",
+       "equals": "900"
+      }
+     ]
+    },
+    {
+     "label": "例 19",
+     "ref": "Reading Wong Salaries",
+     "question": "Wong pays salaries of $4,000 every 2 weeks ($400 a day); last paid 26 October, next 9 November; 3 working days remain in October (29–31). Prepare the 31 October adjustment and the 9 November payment.",
+     "solution": "3 × 400 = 1 200 应计；11 月 9 日付 4 000 = 应付 1 200 + 11 月 7 天 × 400 = 2 800。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "31 Oct",
+         "dr": [
+          [
+           "Salaries Expense",
+           "expense",
+           1200
+          ]
+         ],
+         "cr": [
+          [
+           "Salaries Payable",
+           "liability",
+           1200
+          ]
+         ],
+         "narration": "Accrued salaries 29–31 October"
+        },
+        {
+         "date": "9 Nov",
+         "dr": [
+          [
+           "Salaries Payable",
+           "liability",
+           1200
+          ],
+          [
+           "Salaries Expense",
+           "expense",
+           2800
+          ]
+         ],
+         "cr": [
+          [
+           "Cash",
+           "asset",
+           4000
+          ]
+         ],
+         "narration": "Paid salaries"
+        }
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "3*400",
+       "equals": "1200"
+      },
+      {
+       "expr": "7*400",
+       "equals": "2800"
+      }
+     ]
+    },
+    {
+     "label": "例 20",
+     "ref": "Reading Wong Interest",
+     "question": "On 1 October Wong borrowed $5,000 at 12% p.a.; interest is due quarterly on 1 January. Prepare the October adjusting entry.",
+     "solution": "10 月份 1 个月的利息：5 000 × 12% × 1/12 = 50，利息 1 月 1 日才付，所以记应付利息。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "31 Oct",
+         "dr": [
+          [
+           "Interest Expense",
+           "expense",
+           50
+          ]
+         ],
+         "cr": [
+          [
+           "Interest Payable",
+           "liability",
+           50
+          ]
+         ],
+         "narration": "Accrued interest for October"
+        }
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "5000*0.12/12",
+       "equals": "50"
+      }
+     ]
+    },
+    {
+     "label": "例 21",
+     "ref": "Tutorial Q5",
+     "question": "Sunny Day Designs borrowed $50,000 on 1 June; loan and all interest due in 3 months; 6% p.a. Prepare the 1 June entry and the 30 June adjustment.",
+     "solution": "6 月份利息 50 000 × 6% × 1/12 = 250。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "1 June",
+         "dr": [
+          [
+           "Cash",
+           "asset",
+           50000
+          ]
+         ],
+         "cr": [
+          [
+           "Bank Loan",
+           "liability",
+           50000
+          ]
+         ],
+         "narration": "Borrowed from bank for 3 months"
+        },
+        {
+         "date": "30 June",
+         "dr": [
+          [
+           "Interest Expense",
+           "expense",
+           250
+          ]
+         ],
+         "cr": [
+          [
+           "Interest Payable",
+           "liability",
+           250
+          ]
+         ],
+         "narration": "Accrued interest for June"
+        }
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "50000*0.06/12",
+       "equals": "250"
+      }
+     ]
+    },
+    {
+     "label": "例 22",
+     "ref": "Tutorial Q7",
+     "question": "Willy Wonka borrowed $100,000 on 1 June 2024 for 6 years at 6% p.a., interest payable every six months; accounts close 30 June. a) Prepare the 30 June adjustment. b) Prepare the entry on 30 November when interest is paid.",
+     "solution": "a) 6 月 1 个月：100 000 × 6% × 1/12 = 500。\nb) 11 月 30 日付 6 个月利息 100 000 × 6% × 6/12 = 3 000：500 冲减应付利息，2 500（7–11 月）是新一年的费用。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "30 June",
+         "dr": [
+          [
+           "Interest Expense",
+           "expense",
+           500
+          ]
+         ],
+         "cr": [
+          [
+           "Interest Payable",
+           "liability",
+           500
+          ]
+         ],
+         "narration": "Accrued interest for June"
+        }
+       ]
+      },
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "30 Nov",
+         "dr": [
+          [
+           "Interest Payable",
+           "liability",
+           500
+          ],
+          [
+           "Interest Expense",
+           "expense",
+           2500
+          ]
+         ],
+         "cr": [
+          [
+           "Cash",
+           "asset",
+           3000
+          ]
+         ],
+         "narration": "Paid six months interest"
+        }
+       ]
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ],
+     "checks": [
+      {
+       "expr": "100000*0.06/12",
+       "equals": "500"
+      },
+      {
+       "expr": "100000*0.06*6/12",
+       "equals": "3000"
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "收款、付款时把整笔记为收入或费用：要先冲掉期末记过的 receivable / payable。",
+    "利率直接乘本金不按月份：利率是年利率。",
+    "把应计收入贷记 Unearned Revenue：未收款的是应收，已收款未赚到的才是预收。"
+   ],
+   "faqs": [
+    {
+     "q": "一家公司的应计费用和另一家公司的应计收入有关系吗？",
+     "a": "有。Wong 的应计收入 200 就是客户那边的应计费用。"
+    },
+    {
+     "q": "为什么不用 Accounts Payable 记应付工资？",
+     "a": "Accounts Payable 只用于赊购商品的供应商；工资、利息、水电用各自的 Payable 账户。"
+    }
+   ]
+  },
+  {
+   "title": "综合练习：期末一次做全部调整",
+   "sources": [
+    {
+     "file": "unit5 tutorial guide adjusting entries.pdf",
+     "pages": "p6–8"
+    }
+   ],
+   "concept": "综合题的做法：逐项判断属于哪一类（预付、预收、折旧、应计收入、应计费用），算出<strong>本期</strong>金额，写出不含现金的调整分录。月份从开始日数到结账日。",
+   "examples": [
+    {
+     "label": "例 23",
+     "ref": "Tutorial Q8",
+     "question": "Willow Wind closes its accounts on 31 October 2024. Not yet in the books: a. electricity bill $1,200 unrecorded, payable next month; b. insurance policy $9,600 for 1 year from 1 May 2024; c. services performed for $3,000 of revenue received in advance; d. salaries of $6,400 owed at 31 October; e. office equipment $86,400, life 5 years, no resale value; f. invoices for $8,000 of services performed not recorded; g. bank loan $50,000 at 10% p.a. from 1 June 2024. Required a) adjusting entries. Required b) Salaries of $10,000 were paid on 5 November for the last two weeks — record it.",
+     "solution": "a. 应计费用 1 200。\nb. 5 月 1 日到 10 月 31 日 6 个月：9 600 × 6/12 = 4 800 已过期。\nc. 预收转收入 3 000。\nd. 应计工资 6 400。\ne. 年折旧 86 400 ÷ 5 = 17 280。\nf. 应计收入 8 000。\ng. 6 月 1 日到 10 月 31 日 5 个月：50 000 × 10% × 5/12 = 2 083.33。\nRequired b) 付 10 000：6 400 冲减应付工资，3 600 是 11 月的费用。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "a",
+         "dr": [
+          [
+           "Electricity Expense",
+           "expense",
+           1200
+          ]
+         ],
+         "cr": [
+          [
+           "Electricity Payable",
+           "liability",
+           1200
+          ]
+         ],
+         "narration": "Electricity bill unpaid"
+        },
+        {
+         "date": "b",
+         "dr": [
+          [
+           "Insurance Expense",
+           "expense",
+           4800
+          ]
+         ],
+         "cr": [
+          [
+           "Prepaid Insurance",
+           "asset",
+           4800
+          ]
+         ],
+         "narration": "Insurance expired May–October"
+        },
+        {
+         "date": "c",
+         "dr": [
+          [
+           "Unearned Revenue",
+           "liability",
+           3000
+          ]
+         ],
+         "cr": [
+          [
+           "Service Revenue",
+           "revenue",
+           3000
+          ]
+         ],
+         "narration": "Services performed from revenue received in advance"
+        },
+        {
+         "date": "d",
+         "dr": [
+          [
+           "Salaries Expense",
+           "expense",
+           6400
+          ]
+         ],
+         "cr": [
+          [
+           "Salaries Payable",
+           "liability",
+           6400
+          ]
+         ],
+         "narration": "Salaries owed at 31 October"
+        },
+        {
+         "date": "e",
+         "dr": [
+          [
+           "Depreciation Expense",
+           "expense",
+           17280
+          ]
+         ],
+         "cr": [
+          [
+           "Accumulated Depreciation – Office Equipment",
+           "contra-asset",
+           17280
+          ]
+         ],
+         "narration": "Depreciation for the year"
+        },
+        {
+         "date": "f",
+         "dr": [
+          [
+           "Accounts Receivable",
+           "asset",
+           8000
+          ]
+         ],
+         "cr": [
+          [
+           "Service Revenue",
+           "revenue",
+           8000
+          ]
+         ],
+         "narration": "Services performed, not yet invoiced"
+        },
+        {
+         "date": "g",
+         "dr": [
+          [
+           "Interest Expense",
+           "expense",
+           2083.33
+          ]
+         ],
+         "cr": [
+          [
+           "Interest Payable",
+           "liability",
+           2083.33
+          ]
+         ],
+         "narration": "Interest accrued June–October"
+        }
+       ]
+      },
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "5 Nov",
+         "dr": [
+          [
+           "Salaries Payable",
+           "liability",
+           6400
+          ],
+          [
+           "Salaries Expense",
+           "expense",
+           3600
+          ]
+         ],
+         "cr": [
+          [
+           "Cash",
+           "asset",
+           10000
+          ]
+         ],
+         "narration": "Paid salaries for two weeks"
+        }
+       ]
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "Required b"
+     ],
+     "checks": [
+      {
+       "expr": "9600*6/12",
+       "equals": "4800"
+      },
+      {
+       "expr": "86400/5",
+       "equals": "17280"
+      },
+      {
+       "expr": "50000*0.1*5/12",
+       "equals": "2083.33",
+       "tol": 0.01
+      },
+      {
+       "expr": "10000-6400",
+       "equals": "3600"
+      }
+     ],
+     "sourceNote": "b 题没说保险费付款时如何入账，按常规（付款时记 Prepaid Insurance）处理；e 题按满一年计提。"
+    },
+    {
+     "label": "例 24",
+     "ref": "Tutorial Q9",
+     "question": "Lois Lane Books closes on 31 December 2024. Not included: A insurance expires at $210 per month; B building cost $150,000, no salvage, life 30 years; C mortgage at 12% on a $100,000 loan from 1 May 2024; D a customer paid $5,000 in advance for a George Eliot collection, $3,000 provided by 31 December; E salaries of $500 unpaid; F a customer bought the Jane Austen collection on 30 December 2024 for $750, paying in 2 weeks. Required a) adjusting entries. Required b) The building was purchased on 1 January 2015; show the depreciation presentation in the balance sheet at 31 December 2024.",
+     "solution": "A 全年 12 × 210 = 2 520。\nB 150 000 ÷ 30 = 5 000。\nC 5 月 1 日到 12 月 31 日 8 个月：100 000 × 12% × 8/12 = 8 000。\nD 预收转收入 3 000，余 2 000 仍是负债。\nE 应计工资 500。\nF 赊销 750（已卖出，收入属于 2024 年）。\nRequired b) 2015 年 1 月 1 日到 2024 年 12 月 31 日共 10 年，累计折旧 10 × 5 000 = 50 000，账面价值 100 000。",
+     "figures": [
+      {
+       "type": "ledger",
+       "views": [
+        "journal"
+       ],
+       "journal": [
+        {
+         "date": "A",
+         "dr": [
+          [
+           "Insurance Expense",
+           "expense",
+           2520
+          ]
+         ],
+         "cr": [
+          [
+           "Prepaid Insurance",
+           "asset",
+           2520
+          ]
+         ],
+         "narration": "Insurance expired for the year"
+        },
+        {
+         "date": "B",
+         "dr": [
+          [
+           "Depreciation Expense",
+           "expense",
+           5000
+          ]
+         ],
+         "cr": [
+          [
+           "Accumulated Depreciation – Building",
+           "contra-asset",
+           5000
+          ]
+         ],
+         "narration": "Depreciation of building"
+        },
+        {
+         "date": "C",
+         "dr": [
+          [
+           "Interest Expense",
+           "expense",
+           8000
+          ]
+         ],
+         "cr": [
+          [
+           "Interest Payable",
+           "liability",
+           8000
+          ]
+         ],
+         "narration": "Mortgage interest May–December"
+        },
+        {
+         "date": "D",
+         "dr": [
+          [
+           "Unearned Revenue",
+           "liability",
+           3000
+          ]
+         ],
+         "cr": [
+          [
+           "Sales",
+           "revenue",
+           3000
+          ]
+         ],
+         "narration": "Part of George Eliot collection provided"
+        },
+        {
+         "date": "E",
+         "dr": [
+          [
+           "Salaries Expense",
+           "expense",
+           500
+          ]
+         ],
+         "cr": [
+          [
+           "Salaries Payable",
+           "liability",
+           500
+          ]
+         ],
+         "narration": "Salaries unpaid"
+        },
+        {
+         "date": "F",
+         "dr": [
+          [
+           "Accounts Receivable",
+           "asset",
+           750
+          ]
+         ],
+         "cr": [
+          [
+           "Sales",
+           "revenue",
+           750
+          ]
+         ],
+         "narration": "Jane Austen collection sold on credit"
+        }
+       ]
+      },
+      {
+       "type": "statement",
+       "title": "Balance Sheet extract as at 31 December 2024",
+       "columns": 1,
+       "lines": [
+        {
+         "id": "b",
+         "label": "Building",
+         "amount": 150000
+        },
+        {
+         "id": "ad",
+         "label": "Less Accumulated Depreciation (10 × $5,000)",
+         "amount": -50000
+        },
+        {
+         "id": "bv",
+         "label": "Carrying amount",
+         "sum": [
+          "b",
+          "ad"
+         ],
+         "total": true
+        }
+       ],
+       "expect": {
+        "bv": 100000
+       }
+      }
+     ],
+     "parts": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "Required b"
+     ],
+     "checks": [
+      {
+       "expr": "12*210",
+       "equals": "2520"
+      },
+      {
+       "expr": "150000/30",
+       "equals": "5000"
+      },
+      {
+       "expr": "100000*0.12*8/12",
+       "equals": "8000"
+      }
+     ],
+     "sourceNote": "A 只给了每月金额，按全年（12 个月）计算；如果老师只要求某一个月，就是 210。"
+    }
+   ],
+   "mistakes": [
+    "保险按 12 个月全额转费用：只转本期已过的月份。",
+    "利息漏算月份：从借款日数到结账日。",
+    "折旧列示只写净额：要写原值、减累计折旧、账面价值三行。"
+   ],
+   "faqs": [
+    {
+     "q": "F 为什么也要调整？",
+     "a": "严格说它是一笔漏记的赊销交易；为了让 2024 年的收入完整，期末要补记。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "步骤",
+   "做什么",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "1 分类",
+    "预付 / 预收 / 折旧 / 应计收入 / 应计费用",
+    "例 1"
+   ],
+   [
+    "2 算本期金额",
+    "总额 × 本期月数 ÷ 总月数；利息按年利率 × 月数/12",
+    "例 2–22"
+   ],
+   [
+    "3 写分录",
+    "不出现 Cash；用具体的 Payable / Receivable",
+    "例 23–24"
+   ],
+   [
+    "4 后续收付",
+    "先冲期末的 payable/receivable，余下才是新一期",
+    "例 15、18、19、22"
+   ]
+  ]
+ },
+ "practice": "本周任务：阅读 Unit 5 Readings；完成 Tutorial Questions 1–7，课堂第 8 题，自学第 9 题。"
+}

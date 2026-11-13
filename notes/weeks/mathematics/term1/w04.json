@@ -1,0 +1,2160 @@
+{
+ "course": "mathematics",
+ "term": "term1",
+ "week": 4,
+ "title": "Inverse Functions, Logarithms & Exponentials · 反函数、对数与指数",
+ "files": [
+  "L10_Inverse_Functions.pdf",
+  "L11_Logarithms.pdf",
+  "L12 Graphs of Exponential Functions.pdf"
+ ],
+ "inventory": [
+  "L10 Ex 1",
+  "L10 Ex 2",
+  "L10 Ex 3",
+  {
+   "ref": "L10 Ex 4",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "L10 Ex 5",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "L10 Ex 6",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "L10 Restrict",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "L11 Ex 1",
+   "deliverables": [
+    {
+     "type": "table"
+    }
+   ]
+  },
+  "L11 Ex 2",
+  "L11 Ex 3",
+  "L11 Calculator",
+  "L11 Ex 4",
+  "L11 Ex 5",
+  "L11 Ex 6",
+  "L11 Ex 7",
+  "L11 Ex 8",
+  "L11 Ex 9",
+  {
+   "ref": "L12 Investigation",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "L12 Ex 1",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  },
+  {
+   "ref": "L12 Ex 2",
+   "deliverables": [
+    {
+     "type": "figure"
+    }
+   ]
+  }
+ ],
+ "intro": [
+  "第 4 周：反函数（交换 x、y，图像关于 y = x 对称，一一函数和限制定义域，L10）；对数的定义、e 与自然对数、对数运算法则、对数方程与指数方程（L11）；指数函数图像及其变换（L12）。讲义每道例题逐题讲解，计算都有核对式；图由程序画出。"
+ ],
+ "sections": [
+  {
+   "title": "反函数：交换 x 和 y（L10）",
+   "sources": [
+    {
+     "file": "L10_Inverse_Functions.pdf",
+     "pages": "p1–3"
+    }
+   ],
+   "concept": "复习：<strong>函数</strong>是每个 x 只对应一个 y 的关系，能通过竖线检验。\n<strong>反函数（逆关系）</strong>：把函数每个点的 x、y 坐标<strong>交换</strong>。所以逆关系的<strong>定义域</strong>是原函数的<strong>值域</strong>，逆关系的<strong>值域</strong>是原函数的<strong>定义域</strong>。\n函数给成方程时，交换 x 和 y 再解出 y，就是逆关系的方程。\n图像：原函数过 (a, b)，逆关系就过 (b, a)；两者关于直线 <strong>y = x 对称</strong>。原函数与 y = x 的交点，逆关系也经过。",
+   "examples": [
+    {
+     "label": "例 1",
+     "ref": "L10 Ex 1",
+     "question": "Given the function f: {(−3, −1), (−1, 2), (2, 5), (3, 9)} write down the inverse relation g.",
+     "solution": "每个点交换坐标：g: {(−1, −3), (2, −1), (5, 2), (9, 3)}。",
+     "answer": "g: {(−1, −3), (2, −1), (5, 2), (9, 3)}",
+     "numeric": false
+    },
+    {
+     "label": "例 2",
+     "ref": "L10 Ex 2",
+     "question": "Given the function F: {(1, 5), (2, 5), (3, 7), (−1, 3)}: (a) write down the inverse relation G; (b) is the inverse a function? (c) state the domain and range of F and G.",
+     "solution": "(a) G: {(5, 1), (5, 2), (7, 3), (3, −1)}。\n(b) 不是函数：x = 5 对应 1 和 2 两个 y。原因是 F 里 1 和 2 都对应 5，F 不是一一函数。\n(c) 见下表：G 的定义域就是 F 的值域，G 的值域就是 F 的定义域。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "",
+        "Domain",
+        "Range"
+       ],
+       "rows": [
+        [
+         "F",
+         "{−1, 1, 2, 3}",
+         "{3, 5, 7}"
+        ],
+        [
+         "G",
+         "{3, 5, 7}",
+         "{−1, 1, 2, 3}"
+        ]
+       ]
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ],
+     "numeric": false
+    },
+    {
+     "label": "例 3",
+     "ref": "L10 Ex 3",
+     "question": "Find the inverse relations of: (a) y = 2x + 6 (b) f(x) = {{frac −1|2x + 3}}",
+     "solution": "(a) 交换：x = 2y + 6，解出 y = {{frac x − 6|2}}。\n(b) 交换：x = {{frac −1|2y + 3}}，2y + 3 = −{{frac 1|x}}，2y = −{{frac 1|x}} − 3，y = −{{frac 1 + 3x|2x}}。\n验证 (b)：f(1) = −1/5；代入逆关系 x = −1/5：−(1 − 3/5)/(−2/5) = 1，回到原来的 1。",
+     "answer": "(a) y = (x − 6)/2 (b) y = −(1 + 3x)/(2x)",
+     "checks": [
+      {
+       "expr": "(2*5+6-6)/2",
+       "equals": "5"
+      },
+      {
+       "expr": "-(1+3*(-1/5))/(2*(-1/5))",
+       "equals": "1",
+       "tol": 1e-12
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 4",
+     "ref": "L10 Ex 4",
+     "question": "On the same axes, graph the relation from example 3(a) and its inverse.",
+     "solution": "y = 2x + 6 过 (0, 6)、(−3, 0)；逆关系 y = (x − 6)/2 过 (6, 0)、(0, −3)，正是交换后的点。两线关于 y = x 对称，交于 y = x 上：2x + 6 = x，x = −6，交点 (−6, −6)。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -8,
+        8
+       ],
+       "yr": [
+        -8,
+        8
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "2*x+6",
+         "color": "navy",
+         "dom": [
+          -7,
+          1
+         ],
+         "label": [
+          0.3,
+          7,
+          "y = 2x + 6"
+         ]
+        },
+        {
+         "expr": "(x-6)/2",
+         "color": "red",
+         "dom": [
+          -8,
+          8
+         ],
+         "label": [
+          1,
+          -5.5,
+          "y = (x − 6)/2"
+         ]
+        },
+        {
+         "expr": "x",
+         "color": "grey",
+         "dom": [
+          -8,
+          8
+         ],
+         "dash": true
+        }
+       ],
+       "caption": "y = 2x + 6 and y = (x − 6)/2 meet on y = x at (−6, −6)",
+       "points": [
+        {
+         "x": -6,
+         "y": -6,
+         "label": "(−6, −6)",
+         "dx": 6,
+         "dy": 10
+        },
+        {
+         "x": 0,
+         "y": 6,
+         "label": "6",
+         "dx": -12
+        },
+        {
+         "x": -3,
+         "y": 0,
+         "label": "−3",
+         "dy": -6
+        },
+        {
+         "x": 6,
+         "y": 0,
+         "label": "6",
+         "dy": -6
+        },
+        {
+         "x": 0,
+         "y": -3,
+         "label": "−3",
+         "dx": 4
+        }
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "2*(-6)+6",
+       "equals": "-6"
+      },
+      {
+       "expr": "(-6-6)/2",
+       "equals": "-6"
+      }
+     ]
+    },
+    {
+     "label": "例 5",
+     "ref": "L10 Ex 5",
+     "question": "Sketch the graphs of the inverse relations for each function shown: (a) a line with y-intercept 2 and x-intercept 8; (b) a curve through (1, 0) rising slowly, with the negative y-axis as asymptote; (c) the horizontal line y = 3; (d) a parabola with x-intercepts 0 and 4 and vertex (2, −2); (e) a quarter arc from the negative x-axis to (0, 2) followed by a line from (0, 2) to (2, 0); (f) a curve dipping below the x-axis on the left, passing through the origin and meeting y = x again in the first quadrant.",
+     "solution": "方法：把关键点 (a, b) 换成 (b, a)，再沿 y = x 翻折整条曲线（红线是逆关系）。\n(a) 截距 (0, 2)、(8, 0) 变成 (2, 0)、(0, 8)：y = 8 − 4x。\n(b) (1, 0) 变成 (0, 1)；竖直渐近线（负 y 轴）变成水平渐近线（负 x 轴）：形状像 y = eˣ。\n(c) 水平线 y = 3 变成竖直线 x = 3，逆关系不是函数。\n(d) (2, −2) 变成 (−2, 2)，截距 (4, 0) 变成 (0, 4)：开口向右的抛物线 x = ½y² − 2y，不是函数。\n(e) 线段 y = 2 − x 关于 y = x 对称，翻折后不变；弧从 (−1.25, 0)…(0, 2) 变成 (0, −1.25)…(2, 0)。\n(f) 原图左边先降后升，同一个 y 有两个 x，所以逆关系在左下方「侧着」打弯，不是函数；原图与 y = x 的两个交点（原点和第一象限那一点）逆关系也经过。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -3,
+        9
+       ],
+       "yr": [
+        -3,
+        9
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "2-x/4",
+         "color": "navy",
+         "dom": [
+          -2,
+          9
+         ],
+         "label": [
+          5,
+          1.5,
+          "f"
+         ]
+        },
+        {
+         "expr": "8-4*x",
+         "color": "red",
+         "dom": [
+          0.3,
+          2.7
+         ],
+         "label": [
+          2.2,
+          1.6,
+          "f⁻¹"
+         ]
+        },
+        {
+         "expr": "x",
+         "color": "grey",
+         "dom": [
+          -3,
+          9
+         ],
+         "dash": true
+        }
+       ],
+       "caption": "(a) f: y = 2 − x/4 → inverse y = 8 − 4x",
+       "points": [
+        {
+         "x": 0,
+         "y": 2,
+         "label": "2",
+         "dx": -12
+        },
+        {
+         "x": 8,
+         "y": 0,
+         "label": "8",
+         "dy": 14
+        },
+        {
+         "x": 2,
+         "y": 0,
+         "label": "2",
+         "dy": 14
+        },
+        {
+         "x": 0,
+         "y": 8,
+         "label": "8",
+         "dx": -12
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -3,
+        5
+       ],
+       "yr": [
+        -3,
+        5
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "ln(x)",
+         "color": "navy",
+         "dom": [
+          0.05,
+          5
+         ],
+         "label": [
+          3.3,
+          0.6,
+          "f"
+         ]
+        },
+        {
+         "expr": "exp(x)",
+         "color": "red",
+         "dom": [
+          -3,
+          1.6
+         ],
+         "label": [
+          0.7,
+          3.8,
+          "f⁻¹"
+         ]
+        },
+        {
+         "expr": "x",
+         "color": "grey",
+         "dom": [
+          -3,
+          5
+         ],
+         "dash": true
+        }
+       ],
+       "caption": "(b) f like y = ln x → inverse like y = eˣ (sketch)",
+       "points": [
+        {
+         "x": 1,
+         "y": 0,
+         "label": "1",
+         "dy": 14
+        },
+        {
+         "x": 0,
+         "y": 1,
+         "label": "1",
+         "dx": -12
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -2,
+        5
+       ],
+       "yr": [
+        -2,
+        5
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "3+0*x",
+         "color": "navy",
+         "dom": [
+          -2,
+          5
+         ],
+         "label": [
+          -1.8,
+          3.3,
+          "f"
+         ]
+        },
+        {
+         "expr": "x",
+         "color": "grey",
+         "dom": [
+          -2,
+          5
+         ],
+         "dash": true
+        }
+       ],
+       "caption": "(c) y = 3 → inverse x = 3 (not a function)",
+       "points": [
+        {
+         "x": 0,
+         "y": 3,
+         "label": "3",
+         "dx": -12
+        },
+        {
+         "x": 3,
+         "y": 0,
+         "label": "3",
+         "dx": 4,
+         "dy": 14
+        }
+       ],
+       "lines": [
+        {
+         "pts": [
+          [
+           3,
+           -2
+          ],
+          [
+           3,
+           5
+          ]
+         ],
+         "color": "red"
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -3,
+        7
+       ],
+       "yr": [
+        -3,
+        7
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "0.5*x^2-2*x",
+         "color": "navy",
+         "dom": [
+          -1.4,
+          5.4
+         ],
+         "label": [
+          4.6,
+          2.6,
+          "f"
+         ]
+        },
+        {
+         "expr": "2+sqrt(4+2*x)",
+         "color": "red",
+         "dom": [
+          -2,
+          7
+         ],
+         "label": [
+          3.6,
+          6.4,
+          "f⁻¹"
+         ]
+        },
+        {
+         "expr": "2-sqrt(4+2*x)",
+         "color": "red",
+         "dom": [
+          -2,
+          7
+         ]
+        },
+        {
+         "expr": "x",
+         "color": "grey",
+         "dom": [
+          -3,
+          7
+         ],
+         "dash": true
+        }
+       ],
+       "caption": "(d) f = ½x² − 2x → inverse x = ½y² − 2y",
+       "points": [
+        {
+         "x": 2,
+         "y": -2,
+         "label": "(2, −2)",
+         "dy": 14
+        },
+        {
+         "x": -2,
+         "y": 2,
+         "label": "(−2, 2)",
+         "dx": 4,
+         "dy": -8
+        },
+        {
+         "x": 4,
+         "y": 0,
+         "label": "4",
+         "dy": -6
+        },
+        {
+         "x": 0,
+         "y": 4,
+         "label": "4",
+         "dx": -12
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -2,
+        3
+       ],
+       "yr": [
+        -2,
+        3
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "x",
+         "color": "grey",
+         "dom": [
+          -2,
+          3
+         ],
+         "dash": true
+        }
+       ],
+       "caption": "(e) the line y = 2 − x is its own inverse",
+       "points": [
+        {
+         "x": 0,
+         "y": 2,
+         "label": "2",
+         "dx": -12
+        },
+        {
+         "x": 2,
+         "y": 0,
+         "label": "2",
+         "dy": 14
+        },
+        {
+         "x": -1.25,
+         "y": 0,
+         "label": "−1.25",
+         "dy": 14
+        },
+        {
+         "x": 0,
+         "y": -1.25,
+         "label": "−1.25",
+         "dx": 4
+        }
+       ],
+       "lines": [
+        {
+         "pts": [
+          [
+           -1.25,
+           0.0
+          ],
+          [
+           -1.246,
+           0.157
+          ],
+          [
+           -1.235,
+           0.313
+          ],
+          [
+           -1.215,
+           0.467
+          ],
+          [
+           -1.189,
+           0.618
+          ],
+          [
+           -1.155,
+           0.765
+          ],
+          [
+           -1.114,
+           0.908
+          ],
+          [
+           -1.066,
+           1.045
+          ],
+          [
+           -1.011,
+           1.176
+          ],
+          [
+           -0.951,
+           1.299
+          ],
+          [
+           -0.884,
+           1.414
+          ],
+          [
+           -0.812,
+           1.521
+          ],
+          [
+           -0.735,
+           1.618
+          ],
+          [
+           -0.653,
+           1.705
+          ],
+          [
+           -0.567,
+           1.782
+          ],
+          [
+           -0.478,
+           1.848
+          ],
+          [
+           -0.386,
+           1.902
+          ],
+          [
+           -0.292,
+           1.945
+          ],
+          [
+           -0.196,
+           1.975
+          ],
+          [
+           -0.098,
+           1.994
+          ],
+          [
+           -0.0,
+           2.0
+          ],
+          [
+           2,
+           0
+          ]
+         ],
+         "color": "navy"
+        },
+        {
+         "pts": [
+          [
+           0.0,
+           -1.25
+          ],
+          [
+           0.157,
+           -1.246
+          ],
+          [
+           0.313,
+           -1.235
+          ],
+          [
+           0.467,
+           -1.215
+          ],
+          [
+           0.618,
+           -1.189
+          ],
+          [
+           0.765,
+           -1.155
+          ],
+          [
+           0.908,
+           -1.114
+          ],
+          [
+           1.045,
+           -1.066
+          ],
+          [
+           1.176,
+           -1.011
+          ],
+          [
+           1.299,
+           -0.951
+          ],
+          [
+           1.414,
+           -0.884
+          ],
+          [
+           1.521,
+           -0.812
+          ],
+          [
+           1.618,
+           -0.735
+          ],
+          [
+           1.705,
+           -0.653
+          ],
+          [
+           1.782,
+           -0.567
+          ],
+          [
+           1.848,
+           -0.478
+          ],
+          [
+           1.902,
+           -0.386
+          ],
+          [
+           1.945,
+           -0.292
+          ],
+          [
+           1.975,
+           -0.196
+          ],
+          [
+           1.994,
+           -0.098
+          ],
+          [
+           2.0,
+           -0.0
+          ],
+          [
+           0,
+           2
+          ]
+         ],
+         "color": "red",
+         "dash": true
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -3,
+        4
+       ],
+       "yr": [
+        -3,
+        4
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "x",
+         "color": "grey",
+         "dom": [
+          -3,
+          4
+         ],
+         "dash": true
+        }
+       ],
+       "caption": "(f) inverse is not a function (sketch)",
+       "lines": [
+        {
+         "pts": [
+          [
+           -2.4,
+           2.8
+          ],
+          [
+           -2.0,
+           1.2
+          ],
+          [
+           -1.65,
+           0.08
+          ],
+          [
+           -1.15,
+           -0.35
+          ],
+          [
+           -0.5,
+           -0.3
+          ],
+          [
+           0,
+           0
+          ],
+          [
+           0.35,
+           0.83
+          ],
+          [
+           0.98,
+           1.7
+          ],
+          [
+           1.98,
+           2.45
+          ],
+          [
+           3.18,
+           3.15
+          ]
+         ],
+         "color": "navy"
+        },
+        {
+         "pts": [
+          [
+           2.8,
+           -2.4
+          ],
+          [
+           1.2,
+           -2.0
+          ],
+          [
+           0.08,
+           -1.65
+          ],
+          [
+           -0.35,
+           -1.15
+          ],
+          [
+           -0.3,
+           -0.5
+          ],
+          [
+           0,
+           0
+          ],
+          [
+           0.83,
+           0.35
+          ],
+          [
+           1.7,
+           0.98
+          ],
+          [
+           2.45,
+           1.98
+          ],
+          [
+           3.15,
+           3.18
+          ]
+         ],
+         "color": "red",
+         "dash": true
+        }
+       ]
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+     ],
+     "sourceNote": "讲义 (b)、(e)、(f) 只画了曲线、没有方程：(b) 用 y = ln x 示意；(e) 的弧左端按图读在 x ≈ −1.25；(f) 按图读点连线。这些图只表示逆关系的位置和形状。",
+     "numeric": false
+    }
+   ],
+   "mistakes": [
+    "逆关系的定义域、值域没有对调。",
+    "求逆时只交换不解出 y，或解 y 时符号出错（例 3(b)）。",
+    "画逆关系时关于 x 轴或 y 轴翻折：应该关于 y = x。"
+   ],
+   "faqs": [
+    {
+     "q": "逆关系一定是函数吗？",
+     "a": "不一定。只有原函数是一一函数（下一节）时，逆关系才是函数，例如例 2、例 5(c)(d) 都不是。"
+    }
+   ]
+  },
+  {
+   "title": "一一函数、f⁻¹ 记号与限制定义域（L10）",
+   "sources": [
+    {
+     "file": "L10_Inverse_Functions.pdf",
+     "pages": "p4–7"
+    }
+   ],
+   "concept": "<strong>一一函数</strong>：每个 y 只对应一个 x，没有两个点的 y 坐标相同；能通过<strong>水平线检验</strong>。只有原函数是一一函数，它的逆才也是函数。\n<strong>记号</strong>：一一函数 f(x) 的反函数记作 f⁻¹(x)。f⁻¹(x) <strong>不是</strong> {{frac 1|f(x)}}。f(f⁻¹(x)) = f⁻¹(f(x)) = x。\n<strong>限制定义域</strong>：f(x) = x² − 1 不是一一函数，逆不是函数；只取 x ≥ 0（或只取 x ≤ 0）这一半，就变成一一函数，反函数存在。任何使函数变成一一函数的限制都可以。",
+   "formulas": [
+    "f(f⁻¹(x)) = f⁻¹(f(x)) = x　　f⁻¹(x) ≠ 1/f(x)"
+   ],
+   "examples": [
+    {
+     "label": "例 6",
+     "ref": "L10 Ex 6",
+     "question": "Given the function f(x) = √(x − 3): (a) state the domain and range and sketch the function; (b) sketch the inverse function f⁻¹(x) on the same axes and state the domain and range; (c) write down the equation of the inverse function; (d) show that f(f⁻¹(x)) = f⁻¹(f(x)) = x.",
+     "solution": "(a) 根号下 x − 3 ≥ 0：定义域 x ≥ 3；值域 y ≥ 0。图像是 √x 右移 3，起点 (3, 0)。\n(b) 关于 y = x 翻折，起点变成 (0, 3)：f⁻¹ 的定义域 x ≥ 0，值域 y ≥ 3（与 f 对调）。\n(c) 交换：x = √(y − 3)，平方得 y = x² + 3，<strong>并注明 x ≥ 0</strong>（否则会多出左半支，不是 f 的反函数）。\n(d) f(f⁻¹(x)) = √(x² + 3 − 3) = √(x²) = x（因为 x ≥ 0）；f⁻¹(f(x)) = (√(x − 3))² + 3 = x − 3 + 3 = x。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -1,
+        9
+       ],
+       "yr": [
+        -1,
+        9
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "sqrt(x-3)",
+         "color": "navy",
+         "dom": [
+          3,
+          9
+         ],
+         "label": [
+          6.5,
+          1.4,
+          "f"
+         ]
+        },
+        {
+         "expr": "x^2+3",
+         "color": "red",
+         "dom": [
+          0,
+          2.45
+         ],
+         "label": [
+          1.2,
+          7.8,
+          "f⁻¹"
+         ]
+        },
+        {
+         "expr": "x",
+         "color": "grey",
+         "dom": [
+          -1,
+          9
+         ],
+         "dash": true
+        }
+       ],
+       "caption": "f(x) = √(x − 3) and f⁻¹(x) = x² + 3 (x ≥ 0)",
+       "points": [
+        {
+         "x": 3,
+         "y": 0,
+         "label": "(3, 0)",
+         "dy": 14
+        },
+        {
+         "x": 0,
+         "y": 3,
+         "label": "(0, 3)",
+         "dx": 6
+        }
+       ]
+      }
+     ],
+     "answer": "f⁻¹(x) = x² + 3, x ≥ 0",
+     "checks": [
+      {
+       "expr": "sqrt((2^2+3)-3)",
+       "equals": "2"
+      },
+      {
+       "expr": "sqrt(7-3)^2+3",
+       "equals": "7",
+       "tol": 1e-12
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ]
+    },
+    {
+     "label": "例 7",
+     "ref": "L10 Restrict",
+     "question": "Consider f(x) = x² − 1. State its domain and range and explain why its inverse is not a function. Restrict the domain to x ≥ 0, then to x ≤ 0; in each case give the range, the domain and range of the inverse function and its equation.",
+     "solution": "f(x) = x² − 1：定义域全体实数，值域 y ≥ −1。它不是一一函数（如 f(2) = f(−2) = 3），逆关系 x = y² − 1 即 y = ±√(x + 1)，一个 x 对应两个 y，不是函数。\n<strong>取 x ≥ 0</strong>：值域 y ≥ −1；反函数定义域 x ≥ −1，值域 y ≥ 0，方程 f⁻¹(x) = √(x + 1)。\n<strong>取 x ≤ 0</strong>：值域 y ≥ −1；反函数定义域 x ≥ −1，值域 y ≤ 0，方程 f⁻¹(x) = −√(x + 1)。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -3,
+        5
+       ],
+       "yr": [
+        -3,
+        5
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "x^2-1",
+         "color": "navy",
+         "dom": [
+          0,
+          2.4
+         ],
+         "label": [
+          2.2,
+          3,
+          "f"
+         ]
+        },
+        {
+         "expr": "sqrt(x+1)",
+         "color": "red",
+         "dom": [
+          -1,
+          5
+         ],
+         "label": [
+          3.4,
+          2.6,
+          "f⁻¹"
+         ]
+        },
+        {
+         "expr": "x",
+         "color": "grey",
+         "dom": [
+          -3,
+          5
+         ],
+         "dash": true
+        }
+       ],
+       "caption": "x ≥ 0: f⁻¹(x) = √(x + 1)",
+       "points": [
+        {
+         "x": 0,
+         "y": -1,
+         "label": "(0, −1)",
+         "dx": 6
+        },
+        {
+         "x": -1,
+         "y": 0,
+         "label": "(−1, 0)",
+         "dy": -8
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -3,
+        5
+       ],
+       "yr": [
+        -3,
+        5
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "x^2-1",
+         "color": "navy",
+         "dom": [
+          -2.4,
+          0
+         ],
+         "label": [
+          -2.6,
+          3.6,
+          "f"
+         ]
+        },
+        {
+         "expr": "-sqrt(x+1)",
+         "color": "red",
+         "dom": [
+          -1,
+          5
+         ],
+         "label": [
+          3.2,
+          -2.5,
+          "f⁻¹"
+         ]
+        },
+        {
+         "expr": "x",
+         "color": "grey",
+         "dom": [
+          -3,
+          5
+         ],
+         "dash": true
+        }
+       ],
+       "caption": "x ≤ 0: f⁻¹(x) = −√(x + 1)",
+       "points": [
+        {
+         "x": 0,
+         "y": -1,
+         "label": "(0, −1)",
+         "dx": 6
+        },
+        {
+         "x": -1,
+         "y": 0,
+         "label": "(−1, 0)",
+         "dy": -8
+        }
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "2^2-1",
+       "equals": "(-2)^2-1"
+      },
+      {
+       "expr": "sqrt(3+1)",
+       "equals": "2"
+      },
+      {
+       "expr": "-sqrt(3+1)",
+       "equals": "-2"
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "把 f⁻¹(x) 写成 1/f(x)。",
+    "反函数方程不写定义域限制（例 6(c) 的 x ≥ 0）。",
+    "限制定义域后值域照抄原来的：要重新看保留的那一半。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么例 6 的反函数要写 x ≥ 0？",
+     "a": "f 的值域是 y ≥ 0，所以 f⁻¹ 的定义域只能是 x ≥ 0；y = x² + 3 若不限制，左半支不是 f 的反函数。"
+    }
+   ]
+  },
+  {
+   "title": "对数的定义与 e（L11）",
+   "sources": [
+    {
+     "file": "L11_Logarithms.pdf",
+     "pages": "p1–4"
+    }
+   ],
+   "concept": "若 b<sup>k</sup> = N，则 k 叫做以 b 为底 N 的<strong>对数</strong>，记作 log<sub>b</sub> N = k。<strong>对数就是指数</strong>。要求 b > 0、b ≠ 1、N > 0（负数和 0 没有对数）。\n由定义直接得到：log<sub>b</sub> 1 = 0（b⁰ = 1），log<sub>b</sub> b = 1，log<sub>b</sub> bˣ = x。\n<strong>e</strong> 是无理数（欧拉数），e ≈ 2.718281828，计算器用 SHIFT ln 1 求。以 e 为底的对数叫<strong>自然对数</strong>，写作 logₑ 或 ln；以 10 为底的叫<strong>常用对数</strong>，计算器 log 键。",
+   "formulas": [
+    "bᵏ = N ⇔ log<sub>b</sub> N = k　（b > 0，b ≠ 1，N > 0）"
+   ],
+   "examples": [
+    {
+     "label": "例 8",
+     "ref": "L11 Ex 1",
+     "question": "Complete the table showing equivalent statements in exponential and logarithmic form: 14² = 196; log₅ 125 = 3; c² = 5; log_p r = q; 7ᵗ = N.",
+     "solution": "底数不变，指数就是对数的值：bᵏ = N ⇔ log<sub>b</sub> N = k。",
+     "figures": [
+      {
+       "type": "table",
+       "headers": [
+        "Exponential Form",
+        "Logarithmic Form"
+       ],
+       "rows": [
+        [
+         "14² = 196",
+         "log₁₄ 196 = 2"
+        ],
+        [
+         "5³ = 125",
+         "log₅ 125 = 3"
+        ],
+        [
+         "c² = 5",
+         "log<sub>c</sub> 5 = 2"
+        ],
+        [
+         "pᵠ = r",
+         "log<sub>p</sub> r = q"
+        ],
+        [
+         "7ᵗ = N",
+         "log₇ N = t"
+        ]
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "logb(14,196)",
+       "equals": "2",
+       "tol": 1e-12
+      },
+      {
+       "expr": "5^3",
+       "equals": "125"
+      }
+     ]
+    },
+    {
+     "label": "例 9",
+     "ref": "L11 Ex 2",
+     "question": "Find each logarithm without using a calculator: (a) log₁₀ 100 (b) log₂ 8 (c) log₃ {{frac 1|9}} (d) log₁₆ 1 (e) log₃(−3) (f) log<sub>√3</sub> 3√3",
+     "solution": "问自己「底数的几次方等于真数」。\n(a) 10² = 100：2。(b) 2³ = 8：3。(c) 3⁻² = 1/9：−2。(d) 16⁰ = 1：0。\n(e) 3 的任何次方都是正数，log₃(−3) <strong>无定义</strong>。\n(f) √3 = 3<sup>½</sup>，3√3 = 3<sup>3/2</sup> = (3<sup>½</sup>)³：3。",
+     "answer": "(a) 2 (b) 3 (c) −2 (d) 0 (e) undefined (f) 3",
+     "checks": [
+      {
+       "expr": "log(100)",
+       "equals": "2",
+       "tol": 1e-12
+      },
+      {
+       "expr": "log2(8)",
+       "equals": "3",
+       "tol": 1e-12
+      },
+      {
+       "expr": "logb(3,1/9)",
+       "equals": "-2",
+       "tol": 1e-12
+      },
+      {
+       "expr": "logb(sqrt(3),3*sqrt(3))",
+       "equals": "3",
+       "tol": 1e-12
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+     ]
+    },
+    {
+     "label": "例 10",
+     "ref": "L11 Ex 3",
+     "question": "Evaluate without a calculator: (a) logₑ e = ln e (b) ln e² (c) logₑ {{frac 1|e}}",
+     "solution": "ln 就是以 e 为底：(a) e¹ = e：1。(b) 2。(c) 1/e = e⁻¹：−1。",
+     "answer": "(a) 1 (b) 2 (c) −1",
+     "checks": [
+      {
+       "expr": "ln(exp(2))",
+       "equals": "2",
+       "tol": 1e-12
+      },
+      {
+       "expr": "ln(1/exp(1))",
+       "equals": "-1",
+       "tol": 1e-12
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    {
+     "label": "例 11",
+     "ref": "L11 Calculator",
+     "question": "Use the calculator: e = e¹, log₁₀ 3 and ln 3.",
+     "solution": "e ≈ 2.718281828（SHIFT ln 1 =）；log₁₀ 3 用 log 键 ≈ 0.4771；ln 3 用 ln 键 ≈ 1.0986。",
+     "checks": [
+      {
+       "expr": "exp(1)",
+       "equals": "2.718281828",
+       "tol": 1e-09
+      },
+      {
+       "expr": "log(3)",
+       "equals": "0.4771",
+       "tol": 0.0001
+      },
+      {
+       "expr": "ln(3)",
+       "equals": "1.0986",
+       "tol": 0.0001
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    "log₃(−3) 算成 −1：负数没有对数。",
+    "log<sub>b</sub> 1 写成 1：应为 0。",
+    "把 log 键当成 ln 键。"
+   ],
+   "faqs": [
+    {
+     "q": "为什么底数不能是 1？",
+     "a": "1 的任何次方都等于 1，log₁ 5 找不到指数，log₁ 1 又有无数个答案，所以规定 b ≠ 1。"
+    }
+   ]
+  },
+  {
+   "title": "对数运算法则与方程（L11）",
+   "sources": [
+    {
+     "file": "L11_Logarithms.pdf",
+     "pages": "p5–7"
+    }
+   ],
+   "concept": "由指数法则得到（M > 0，N > 0，b > 0 且 b ≠ 1）：\nlog<sub>b</sub> MN = log<sub>b</sub> M + log<sub>b</sub> N；log<sub>b</sub> {{frac M|N}} = log<sub>b</sub> M − log<sub>b</sub> N；log<sub>b</sub> Mᵖ = p log<sub>b</sub> M；b<sup>log<sub>b</sub> x</sup> = x。\n<strong>对数方程</strong>：先用法则合并成一个对数，再改写成指数形式；最后检查真数 > 0、底数 > 0 且 ≠ 1。\n<strong>指数方程</strong>（未知数在指数上）：两边取对数（常用对数或 ln），把指数拉下来。\n<strong>不等式</strong>两边除以负数（如 log 0.3 < 0）要变号。",
+   "formulas": [
+    "log MN = log M + log N　log(M/N) = log M − log N　log Mᵖ = p log M"
+   ],
+   "examples": [
+    {
+     "label": "例 12",
+     "ref": "L11 Ex 4",
+     "question": "Using the properties, simplify and then evaluate: (a) log₈ 4 + log₈ 2 (b) log₃ 54 − log₃ 2 (c) log₅ 20 + log₅ 10 − 3log₅ 2 (d) log_x √x + log_x x³ − (log_x x)²",
+     "solution": "先用法则把几个对数合并成一个，再求值。\n(a) 同底相加变成真数相乘：log₈(4 × 2) = log₈ 8 = 1。\n(b) log₃(54 ÷ 2) = log₃ 27 = 3。\n(c) 3log₅ 2 = log₅ 8；log₅(20 × 10 ÷ 8) = log₅ 25 = 2。\n(d) log_x x<sup>½</sup> = ½，log_x x³ = 3，(log_x x)² = 1²：½ + 3 − 1 = {{frac 5|2}}。",
+     "answer": "(a) 1 (b) 3 (c) 2 (d) 5/2",
+     "checks": [
+      {
+       "expr": "logb(8,4)+logb(8,2)",
+       "equals": "1",
+       "tol": 1e-12
+      },
+      {
+       "expr": "logb(3,54)-logb(3,2)",
+       "equals": "3",
+       "tol": 1e-12
+      },
+      {
+       "expr": "logb(5,20)+logb(5,10)-3*logb(5,2)",
+       "equals": "2",
+       "tol": 1e-12
+      },
+      {
+       "expr": "logb(7,sqrt(7))+logb(7,7^3)-1",
+       "equals": "2.5",
+       "tol": 1e-12
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ]
+    },
+    {
+     "label": "例 13",
+     "ref": "L11 Ex 5",
+     "question": "Solve: (a) log₇(5x − 1) = 2 (b) log_x 3 = {{frac 1|4}} (c) log<sub>x−1</sub>(4x − 4) = 2 (d) log₅(x + 8) − log₅(x − 4) = 2",
+     "solution": "(a) 5x − 1 = 7² = 49，x = 10。\n(b) x<sup>¼</sup> = 3，x = 3⁴ = 81。\n(c) (x − 1)² = 4x − 4 = 4(x − 1)。底数 x − 1 > 0 且 ≠ 1，可以两边除以 x − 1：x − 1 = 4，x = 5。（x = 1 会使底数为 0，舍去。）\n(d) log₅ {{frac x + 8|x − 4}} = 2，(x + 8)/(x − 4) = 25，x + 8 = 25x − 100，24x = 108，x = 4.5。检查：x − 4 = 0.5 > 0，成立。",
+     "answer": "(a) 10 (b) 81 (c) 5 (d) 4.5",
+     "checks": [
+      {
+       "expr": "logb(7,5*10-1)",
+       "equals": "2",
+       "tol": 1e-12
+      },
+      {
+       "expr": "logb(81,3)",
+       "equals": "0.25",
+       "tol": 1e-12
+      },
+      {
+       "expr": "logb(5-1,4*5-4)",
+       "equals": "2",
+       "tol": 1e-12
+      },
+      {
+       "expr": "logb(5,4.5+8)-logb(5,4.5-4)",
+       "equals": "2",
+       "tol": 1e-12
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ]
+    },
+    {
+     "label": "例 14",
+     "ref": "L11 Ex 6",
+     "question": "Solve for x, correct to 4 decimal places: (a) 10ˣ = 85 (b) 4e<sup>−3x</sup> = 5",
+     "solution": "(a) x = log₁₀ 85 ≈ 1.9294。\n(b) e<sup>−3x</sup> = 5/4，两边取 ln：−3x = ln 1.25，x = −{{frac ln 1.25|3}} ≈ −0.0744。",
+     "answer": "(a) x ≈ 1.9294 (b) x ≈ −0.0744",
+     "checks": [
+      {
+       "expr": "log(85)",
+       "equals": "1.9294",
+       "tol": 5e-05
+      },
+      {
+       "expr": "-ln(1.25)/3",
+       "equals": "-0.0744",
+       "tol": 5e-05
+      },
+      {
+       "expr": "4*exp(-3*(-ln(1.25)/3))",
+       "equals": "5",
+       "tol": 1e-12
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    },
+    {
+     "label": "例 15",
+     "ref": "L11 Ex 7",
+     "question": "Solve log₂(log₅ x) = 1.",
+     "solution": "由外向内：log₅ x = 2¹ = 2，x = 5² = 25。",
+     "answer": "x = 25",
+     "checks": [
+      {
+       "expr": "log2(logb(5,25))",
+       "equals": "1",
+       "tol": 1e-12
+      }
+     ]
+    },
+    {
+     "label": "例 16",
+     "ref": "L11 Ex 8",
+     "question": "If log₁₀ 2 = a and log₁₀ 3 = b, express in terms of a and b: (a) log₁₀ 24 (b) log₁₀ 5 (c) log₁₀ √(2/3)",
+     "solution": "把真数拆成 2、3、10 的乘除和乘方，再用法则展开。\n(a) 24 = 2³ × 3：3a + b。\n(b) 5 = 10 ÷ 2：log 10 − log 2 = 1 − a。\n(c) √(2/3) = (2/3)<sup>½</sup>：½(a − b)。",
+     "answer": "(a) 3a + b (b) 1 − a (c) ½(a − b)",
+     "checks": [
+      {
+       "expr": "log(24)",
+       "equals": "3*log(2)+log(3)",
+       "tol": 1e-12
+      },
+      {
+       "expr": "log(5)",
+       "equals": "1-log(2)",
+       "tol": 1e-12
+      },
+      {
+       "expr": "log(sqrt(2/3))",
+       "equals": "(log(2)-log(3))/2",
+       "tol": 1e-12
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ]
+    },
+    {
+     "label": "例 17",
+     "ref": "L11 Ex 9",
+     "question": "Find the smallest positive integer x such that: (a) 2ˣ > 7 (b) 10(0.3)ˣ < 0.1",
+     "solution": "(a) x log 2 > log 7，x > {{frac log 7|log 2}} ≈ 2.807，最小整数 x = 3（2³ = 8 > 7，2² = 4 不够）。\n(b) 0.3ˣ < 0.01，x log 0.3 < log 0.01 = −2。log 0.3 ≈ −0.5229 是<strong>负数</strong>，两边除以它要<strong>变号</strong>：x > {{frac −2|log 0.3}} ≈ 3.825，最小整数 x = 4。",
+     "answer": "(a) 3 (b) 4",
+     "checks": [
+      {
+       "expr": "log(7)/log(2)",
+       "equals": "2.807",
+       "tol": 0.0005
+      },
+      {
+       "expr": "-2/log(0.3)",
+       "equals": "3.825",
+       "tol": 0.0005
+      },
+      {
+       "expr": "10*0.3^4",
+       "equals": "0.081",
+       "tol": 1e-12
+      },
+      {
+       "expr": "10*0.3^3",
+       "equals": "0.27",
+       "tol": 1e-12
+      }
+     ],
+     "parts": [
+      "a",
+      "b"
+     ]
+    }
+   ],
+   "mistakes": [
+    "log(M + N) 拆成 log M + log N：法则只对乘积成立。",
+    "例 13(c) 两边除以 x − 1 前没说明 x − 1 ≠ 0。",
+    "例 17(b) 除以负的 log 0.3 没变号。",
+    "解出对数方程不检查真数是否为正。"
+   ],
+   "faqs": [
+    {
+     "q": "指数方程用 log 还是 ln？",
+     "a": "都可以，结果相同；底数是 e 时用 ln 最省事。"
+    }
+   ]
+  },
+  {
+   "title": "指数函数图像（L12）",
+   "sources": [
+    {
+     "file": "L12 Graphs of Exponential Functions.pdf",
+     "pages": "p1–4"
+    }
+   ],
+   "concept": "列表画 y = 2ˣ：x = −2, −1, 0, 1, 2, 3 时 y = ¼, ½, 1, 2, 4, 8。特征：x → ∞ 时 y → ∞；x → −∞ 时 y → 0（负 x 轴是渐近线）；y 永远 > 0。\ny = k<sup>ax</sup>（k > 1）：处处连续；<strong>定义域</strong>全体实数；<strong>值域</strong> y > 0；<strong>水平渐近线</strong> y = 0；<strong>y 截距</strong> 1。a > 0 处处递增，a < 0 处处递减。\n一般形式 y = y₀k<sup>ax</sup> + b：定义域全体实数；水平渐近线 <strong>y = b</strong>；y 截距 <strong>y₀ + b</strong>。画图：先画渐近线和 y 截距，再按增减画曲线；需要时求 x 截距（令 y = 0，取对数）。",
+   "formulas": [
+    "y = y₀k<sup>ax</sup> + b：渐近线 y = b，y 截距 y₀ + b"
+   ],
+   "examples": [
+    {
+     "label": "例 18",
+     "ref": "L12 Investigation",
+     "question": "Use a table of values to plot y = 2ˣ for x = −2, −1, 0, 1, 2, 3, and complete the features of y = k^(ax).",
+     "solution": "表中 y 依次是 ¼、½、1、2、4、8。y = k<sup>ax</sup> 的特征：定义域全体实数；值域 y > 0；水平渐近线 y = 0；y 截距 1；a > 0 递增，a < 0 递减。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -3,
+        3.3
+       ],
+       "yr": [
+        -0.5,
+        9
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "2^x",
+         "color": "navy",
+         "dom": [
+          -3,
+          3.05
+         ],
+         "label": [
+          1.6,
+          6.5,
+          "y = 2ˣ"
+         ]
+        }
+       ],
+       "caption": "y = 2ˣ: (−2, ¼), (−1, ½), (0, 1), (1, 2), (2, 4), (3, 8)",
+       "points": [
+        {
+         "x": -2,
+         "y": 0.25
+        },
+        {
+         "x": -1,
+         "y": 0.5
+        },
+        {
+         "x": 0,
+         "y": 1,
+         "label": "1",
+         "dx": -12
+        },
+        {
+         "x": 1,
+         "y": 2
+        },
+        {
+         "x": 2,
+         "y": 4
+        },
+        {
+         "x": 3,
+         "y": 8,
+         "label": "(3, 8)",
+         "dx": -44
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -3,
+        3
+       ],
+       "yr": [
+        -0.5,
+        5.5
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "2^x",
+         "color": "navy",
+         "dom": [
+          -3,
+          2.4
+         ],
+         "label": [
+          0.9,
+          4.6,
+          "y = kᵃˣ, a > 0"
+         ]
+        },
+        {
+         "expr": "2^(-x)",
+         "color": "red",
+         "dom": [
+          -2.4,
+          3
+         ],
+         "label": [
+          -2.9,
+          4.6,
+          "a < 0"
+         ]
+        }
+       ],
+       "caption": "y = kᵃˣ (k > 1): increasing when a > 0, decreasing when a < 0",
+       "points": [
+        {
+         "x": 0,
+         "y": 1,
+         "label": "1",
+         "dx": 6,
+         "dy": 12
+        }
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "2^(-2)",
+       "equals": "0.25"
+      },
+      {
+       "expr": "2^3",
+       "equals": "8"
+      }
+     ]
+    },
+    {
+     "label": "例 19",
+     "ref": "L12 Ex 1",
+     "question": "Use transformation methods to sketch: (a) y = 2ˣ + 1 (b) y = 2ˣ − 3 (c) y = 3 × 2ˣ (d) y = {{frac 1|3}} × 2ˣ",
+     "solution": "(a) 上移 1：渐近线 y = 1，y 截距 2。\n(b) 下移 3：渐近线 y = −3，y 截距 −2；x 截距 2ˣ = 3，x = log₂ 3 ≈ 1.585。\n(c) 纵向拉伸 3 倍：渐近线仍是 y = 0，y 截距 3。\n(d) 纵向压缩成 ⅓：渐近线 y = 0，y 截距 ⅓。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -3,
+        3
+       ],
+       "yr": [
+        -1,
+        9
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "2^x+1",
+         "color": "navy",
+         "dom": [
+          -3,
+          3
+         ]
+        }
+       ],
+       "caption": "(a) y = 2ˣ + 1",
+       "points": [
+        {
+         "x": 0,
+         "y": 2,
+         "label": "(0, 2)",
+         "dx": 6
+        }
+       ],
+       "hlines": [
+        {
+         "y": 1,
+         "label": "y = 1"
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -3,
+        3.3
+       ],
+       "yr": [
+        -4,
+        6
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "2^x-3",
+         "color": "navy",
+         "dom": [
+          -3,
+          3.3
+         ]
+        }
+       ],
+       "caption": "(b) y = 2ˣ − 3",
+       "points": [
+        {
+         "x": 0,
+         "y": -2,
+         "label": "(0, −2)",
+         "dx": 6
+        },
+        {
+         "x": 1.584962500721156,
+         "y": 0,
+         "label": "log₂3",
+         "dx": 4,
+         "dy": 14
+        }
+       ],
+       "hlines": [
+        {
+         "y": -3,
+         "label": "y = −3"
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -3,
+        3.3
+       ],
+       "yr": [
+        -0.5,
+        9
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "3*2^x",
+         "color": "navy",
+         "dom": [
+          -3,
+          1.6
+         ],
+         "label": [
+          1.0,
+          7,
+          "3 × 2ˣ"
+         ]
+        },
+        {
+         "expr": "2^x",
+         "color": "grey",
+         "dom": [
+          -3,
+          2.9
+         ],
+         "label": [
+          2.0,
+          4.3,
+          "2ˣ"
+         ],
+         "dash": true
+        },
+        {
+         "expr": "2^x/3",
+         "color": "red",
+         "dom": [
+          -3,
+          3.3
+         ],
+         "label": [
+          2.2,
+          2.0,
+          "⅓ × 2ˣ"
+         ]
+        }
+       ],
+       "caption": "(c) y = 3 × 2ˣ and (d) y = ⅓ × 2ˣ",
+       "points": [
+        {
+         "x": 0,
+         "y": 3,
+         "label": "3",
+         "dx": -12
+        },
+        {
+         "x": 0,
+         "y": 1,
+         "label": "1",
+         "dx": -12
+        },
+        {
+         "x": 0,
+         "y": 0.3333333333333333,
+         "label": "⅓",
+         "dx": 6,
+         "dy": 10
+        }
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "2^0+1",
+       "equals": "2"
+      },
+      {
+       "expr": "2^0-3",
+       "equals": "-2"
+      },
+      {
+       "expr": "log2(3)",
+       "equals": "1.585",
+       "tol": 0.0005
+      },
+      {
+       "expr": "3*2^0",
+       "equals": "3"
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ]
+    },
+    {
+     "label": "例 20",
+     "ref": "L12 Ex 2",
+     "question": "Sketch the graphs of: (a) y = 1 − 2ˣ (b) y = 3 + 2e⁻ˣ (c) y = 2e⁻³ˣ − 4",
+     "solution": "(a) y = −2ˣ + 1：2ˣ 关于 x 轴翻折后上移 1。渐近线 y = 1（从下方靠近），y 截距 0（过原点），处处递减。\n(b) y₀ = 2、a = −1、b = 3：渐近线 y = 3（x → ∞ 时从上方靠近），y 截距 2 + 3 = 5，递减。\n(c) 渐近线 y = −4，y 截距 2 − 4 = −2，递减；x 截距：e⁻³ˣ = 2，x = −{{frac ln 2|3}} ≈ −0.231。",
+     "figures": [
+      {
+       "type": "plot",
+       "xr": [
+        -3,
+        3
+       ],
+       "yr": [
+        -6,
+        2.5
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "1-2^x",
+         "color": "navy",
+         "dom": [
+          -3,
+          2.7
+         ]
+        }
+       ],
+       "caption": "(a) y = 1 − 2ˣ",
+       "points": [
+        {
+         "x": 0,
+         "y": 0,
+         "label": "(0, 0)",
+         "dx": 6,
+         "dy": 12
+        }
+       ],
+       "hlines": [
+        {
+         "y": 1,
+         "label": "y = 1"
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -3,
+        3
+       ],
+       "yr": [
+        -0.5,
+        10
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "3+2*exp(-x)",
+         "color": "navy",
+         "dom": [
+          -1.25,
+          3
+         ]
+        }
+       ],
+       "caption": "(b) y = 3 + 2e⁻ˣ",
+       "points": [
+        {
+         "x": 0,
+         "y": 5,
+         "label": "(0, 5)",
+         "dx": 6
+        }
+       ],
+       "hlines": [
+        {
+         "y": 3,
+         "label": "y = 3"
+        }
+       ]
+      },
+      {
+       "type": "plot",
+       "xr": [
+        -1.5,
+        2
+       ],
+       "yr": [
+        -5,
+        6
+       ],
+       "width": 300,
+       "height": 240,
+       "xLabel": "x",
+       "yLabel": "y",
+       "curves": [
+        {
+         "expr": "2*exp(-3*x)-4",
+         "color": "navy",
+         "dom": [
+          -0.6,
+          2
+         ]
+        }
+       ],
+       "caption": "(c) y = 2e⁻³ˣ − 4",
+       "points": [
+        {
+         "x": 0,
+         "y": -2,
+         "label": "(0, −2)",
+         "dx": 6
+        },
+        {
+         "x": -0.23104906018664842,
+         "y": 0,
+         "label": "−(ln 2)/3",
+         "dx": -60,
+         "dy": -6
+        }
+       ],
+       "hlines": [
+        {
+         "y": -4,
+         "label": "y = −4"
+        }
+       ]
+      }
+     ],
+     "checks": [
+      {
+       "expr": "1-2^0",
+       "equals": "0"
+      },
+      {
+       "expr": "3+2*exp(0)",
+       "equals": "5"
+      },
+      {
+       "expr": "2*exp(0)-4",
+       "equals": "-2"
+      },
+      {
+       "expr": "2*exp(-3*(-ln(2)/3))-4",
+       "equals": "0",
+       "tol": 1e-12
+      }
+     ],
+     "parts": [
+      "a",
+      "b",
+      "c"
+     ]
+    }
+   ],
+   "mistakes": [
+    "渐近线写成 y = 0 而忘了加上的常数 b。",
+    "y 截距只写 y₀，忘了加 b。",
+    "y = 1 − 2ˣ 画成递增。"
+   ],
+   "faqs": [
+    {
+     "q": "指数函数的图像会碰到渐近线吗？",
+     "a": "不会。k<sup>ax</sup> 永远大于 0，所以 y₀k<sup>ax</sup> + b 永远不等于 b。"
+    }
+   ]
+  }
+ ],
+ "checklist": {
+  "headers": [
+   "题型",
+   "做法",
+   "对应例题"
+  ],
+  "rows": [
+   [
+    "求逆",
+    "交换 x、y → 解出 y → 注明定义域",
+    "例 1–7"
+   ],
+   [
+    "对数求值",
+    "底数的几次方等于真数",
+    "例 8–11"
+   ],
+   [
+    "化简",
+    "乘变加、除变减、幂拉下来",
+    "例 12、16"
+   ],
+   [
+    "对数方程",
+    "合并成一个 log → 改成指数 → 检查",
+    "例 13、15"
+   ],
+   [
+    "指数方程/不等式",
+    "取对数；除以负数变号",
+    "例 14、17"
+   ],
+   [
+    "指数图像",
+    "渐近线 y = b，y 截距 y₀ + b",
+    "例 18–20"
+   ]
+  ]
+ },
+ "practice": "讲义建议练习：Tutorial Guide 2-1、2-2、2-3。"
+}
