@@ -26,16 +26,22 @@
 ```bash
 npm run notes -- notes/weeks/mathematics/term2/w05.json /tmp/out.html --files L13_Basic_Probability.pdf,L14_Probability_Permutations_Combinations.pdf,L15_Union_Intersection_Complement.pdf
 npm run notes -- notes/weeks/accounting/term1/w05.json /tmp/acct.html --requirements notes/weeks/accounting/term1/w05.requirements.json
-npm test   # 包含 checks/notes-pipeline.cjs：错答案、漏题、不平的账、缺账户、缺表、漏小问都必须被拦下
+node checks/server-regression.cjs
+node checks/notes-pipeline.cjs
+node notes/pipeline/build.js --check
 ```
+
+完整的 `npm test` 需要正式目录的 `public/data.js` 和对应资料。在正式目录运行，并把站点数据留在原环境内。
+
+## 导入正式网站
+
+1. 在正式电脑读取项目规则，检查 `网站/线上版` 的当前版本与本地改动。合入评审通过的课程入口改动，保留正式目录的其他修复和数据。生成账页的样式在 `public/index.html` 的笔记表格样式区。
+2. 校验 `notes/out/manifest.json`。每条记录用 `board` 和 `key` 定位一周，用 `fields` 指定要导入的字段。路径相对于 `notes/`，两个 `legacy` 条目也按清单读取。对照正式站点逐项检查课程、周次和现有字段，列出差异，再备份受影响的内容与 `data/board-<board>.json`。清单缺省的字段保留现值。
+3. 用维护者现有的登录环境调用 `/__api/boards/<board>`。先 `GET` 读取 `entries` 和 `revision`，对存在且字段合法的条目以 `POST` 发送 `{ revision, changes: { "term1/5": { graphicHtml: "…" } } }`，设置 `Content-Type: application/json` 和 `X-Liora-Board: 1`。按请求的 UTF-8 字节数分批，单批小于 2 MiB。经济学须拆批。每批读取新 `revision` 并核对写入结果。遇到 409 要重新读回、检查同一字段有无并发修改再合并。遇到不存在的周次先核对路由。周次已核准但基线缺字段时，由维护者在正式数据源合入对应字段并检查既有覆盖值的优先级。
+4. 先在维护者的预览环境抽查会计 T1 W5、经济学 T1 W4、数学 T2 W13。检查图文笔记、折叠答案、独立作业答案、填空复习、知识点归纳和手机表格。完整回归通过后，走正式站原有发布流程。用实际访问入口打开这些页面，再核对站上读取的字段与发布清单一致。若出错，按备份恢复受影响的内容和覆盖文件。
 
 ## 目前的状态
 
-- 已完成：数据格式、渲染器、校验器、命令行、回归测试、生成规范、账页样式（`public/notes-quality.css`）；标准样例两份：数学 T2 第 5 周、会计 T1 第 5 周（17 道题，分析表、分录表、全部 T 形账户、试算表都由程序生成）。
-- 原文要求提取（`extract.js`）：在会计第 5、6 周的 Tutorial Guide 上试过，账户清单准确；题号和小问编号还有误识别，多栏式模板的识别在第 6 周失败，需要继续改进。目前提取结果人工核对后存成 `weeks/<课程>/<学期>/wNN.requirements.json`。
-- 会计第 8–11 周（财务报表）还需要一个「报表」交付物类型（利润表、资产负债表、现金流量表），尚未实现。
-- 手工写好的周笔记（`notes/math`、`notes/accounting`）还是旧的 HTML 形式，之后转成 JSON，作为各科的标准样例。
-- **还没接上的部分（需要在原电脑上做）**：
-  1. 第 1、2、3 步的自动调用：服务器里加一个仅主人可用的「生成本周笔记」接口，读取 `ai_config.json` 调用模型。
-  2. 选用哪个模型：现在 `ai_config.json` 配的是 tokenmao 的 DeepSeek。数学讲义需要看图，要确认所选模型支持图片输入；不支持时只能依赖文字抽取，公式题的准确率会下降。
-  3. 每周调用的额度上限，以及「校验通过就自动发布」还是「先进待审区、人工点发布」。
+- 发布清单包含 62 周流水线产物和 2 周已核算的手工稿。会计渲染支持 T 形账户、多栏式账户、试算平衡表和财务报表。
+- 六周会计笔记带有 `weeks/<课程>/<学期>/wNN.requirements.json`，可校验原文要求。其余生成校验的覆盖范围以各周的题目清单和核对式为准。
+- 已有产物的导入不依赖模型。站点内的自动生成入口、模型和审核机制仍待维护者决定。
