@@ -3,6 +3,8 @@
 # 红线：账号、密钥、用户进度绝不进入版本库 / 快照 / 回退
 线上版/auth.json
 线上版/ai_config.json
+线上版/ai_acl.json
+线上版/ai_provider.json
 线上版/data/
 线上版/public/data/
 线上版/checks/backups/
