@@ -4,6 +4,11 @@
   "snapshotDir": "归档/板块版本",
   "protected": [
     "auth.json",
+    "ai_config.json",
+    "ai_acl.json",
+    "ai_provider.json",
+    "data/ai-usage.json",
+    "data/ai-security.log",
     "data/state.json",
     "data/u_*.json",
     "data/board-*.json"
@@ -188,6 +193,15 @@
         "public/sources/accounting-2026"
       ],
       "desc": "以 2026 UNSW 官方课件为依据的英文细节题库。构建脚本 build/exam-prep/{extract_sources.py,bank_source.py,build_exam_bank.py} 会逐页抽取真实 PDF 并强制校验每条官方引文，校验失败即拒绝生成；数据文件为生成物，禁止手改。独立页 exam-prep.html 提供闭卷测试、严格批改、知识点索引、覆盖率、1/3/7 天变式错题库与逐页原文查看；主站只在页脚「学习」列与会计课程周页 .wp-head 注入入口胶囊，顶部导航仍只有两个入口，不注入 .note-tab、不接管 active 切换。改 css/js/数据必须同步升 exam-prep.html 的 ?v= 与 index.html 的 exam-prep-link.js ?v=。视频仅单元级辅助链接，官方资料决定考试范围。P1/P2（U7-U11 及其他科目）未纳入本包，覆盖率页面如实标为未覆盖。"
+    },
+    "ai-owner": {
+      "label": "AI 主人授权与安全调用",
+      "owner": "WorkBuddy",
+      "files": [
+        "public/ai-console.html",
+        "public/blocks/ai-visibility.js"
+      ],
+      "desc": "服务端 aiAuthorize() 用签名 Cookie 查 auth.json 的不可变 uid，再比 ai_acl.json 白名单；密钥由主人账号在 ai-console.html 写入 ROOT 下 ai_provider.json（不进 Git、不在 public/）。付费调用全部服务端代调，含长度/输出/超时/频率/并发/日用量/月预算硬阻断与安全日志。index.html 只加一行 script 引用；非主人账号用 !important 隐藏 AI 面板（仅界面层，权限判定全在服务端）。红线：旧 ai_config.json 原样保留但不再读取，仅作应急备份。"
     },
     "skeleton": {
       "label": "共享骨架（谨慎回退）",

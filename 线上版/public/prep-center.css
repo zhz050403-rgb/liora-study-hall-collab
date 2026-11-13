@@ -648,4 +648,32 @@
   .pp-dr-actions .pp-href{margin-left:0}
   .pp-dr-min{margin-left:0}
 }
+
+/* ---- 选择题 / 填空题（2026-11-13 quiz2）：客观得分点本地判分 ---- */
+.pp-dr-filter-b select{font-family:inherit;font-size:13px;padding:8px 10px;border:1.5px solid var(--line-2);border-radius:8px;color:var(--navy-800);background:#fff;max-width:100%}
+.pp-dr-type-msg{font-size:11.5px;line-height:1.6;color:#8a5a12;margin-top:6px}
+.pp-dr-count-note{font-size:11.5px;color:var(--muted)}
+.pp-dr-type-tag{background:#e8f2ff;color:#1d5fa8;font-weight:800}
+.pp-dr-obj{border:1.5px solid var(--line-2);border-radius:10px;background:#fbfcfe;padding:11px 13px;margin-bottom:10px}
+.pp-dr-obj-h{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap;font-size:13px;color:var(--navy-800);margin-bottom:4px}
+.pp-dr-obj-h b{font-size:13.5px}
+.pp-dr-obj-h span{font-size:11.5px;color:var(--muted)}
+.pp-dr-obj-row{display:flex;align-items:center;gap:9px;flex-wrap:wrap;padding:9px 0;border-top:1px dashed var(--line-2)}
+.pp-dr-obj-row:first-of-type{border-top:0}
+.pp-dr-obj-no{font-size:11px;font-weight:800;color:#1d5fa8;background:#e8f2ff;border-radius:6px;padding:3px 8px;white-space:nowrap}
+.pp-dr-obj-label{font-size:13.5px;font-weight:700;color:var(--navy-900);min-width:88px}
+.pp-dr-blank{font-family:inherit;font-size:14px;font-weight:700;color:var(--navy-900);background:#fff;border:1.5px solid var(--line-2);border-radius:8px;padding:7px 11px;width:150px}
+.pp-dr-blank:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(45,107,175,.12)}
+.pp-dr-opts{display:flex;gap:7px;flex-wrap:wrap;flex:1;min-width:0}
+.pp-dr-opt{display:inline-flex;align-items:center;gap:6px;border:1.5px solid var(--line-2);background:#fff;border-radius:8px;padding:6px 11px;font-size:13px;color:var(--navy-800);cursor:pointer;user-select:none;transition:border-color .15s,background .15s}
+.pp-dr-opt:hover{border-color:var(--blue);background:#f5f9ff}
+.pp-dr-opt input{accent-color:var(--blue);margin:0;cursor:pointer}
+.pp-dr-opt input:checked+span{font-weight:800;color:#1d5fa8}
+@media(max-width:600px){
+  .pp-dr-obj-label{min-width:0}
+  .pp-dr-opts{width:100%;flex:1 0 100%}
+  .pp-dr-opt{flex:1 0 42%;justify-content:flex-start}
+  .pp-dr-blank{flex:1;min-width:110px}
+}
+@media print{.pp-dr-obj{background:#fff}}
 @media print{.pp-sidenav,.pp-dr-filter,.pp-dr-actions,.pp-dr-save{display:none!important}}

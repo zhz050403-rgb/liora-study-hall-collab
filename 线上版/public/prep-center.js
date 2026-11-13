@@ -1081,20 +1081,185 @@ function ppQBankFromCard(href){
 }
 
 /* ============================================================
- * 自主刷题 · AI 自动判分（2026-11-13）
- * 题库为开放题（题干 + 参考答案，无选项），故判分由 AI 对照参考答案完成：
- *   学生写作答 → AI 返回 {verdict,score,missing,reason} → 自动记对错 / 得分 / 错因
- *   → 错题写进错题本(liora-drill-log-v1) → 存档写回复习档案(liora-review-archive-v1)
- * 通道：优先 window.cloudLLM.stream（站点已封装的云端大模型）；
- *       不可用时回退 /api/chat 并自行聚合 SSE；两者都不可用则明确提示，绝不假装判分。
- * 判分结果解析不出来时返回 null，走「对照参考答案手动判定」，不伪造对错。
+ * 自主刷题 · 自动判分（2026-11-13 第二版：新增选择题 / 填空题）
+ * 题库 1270 道原题全是开放题（题干 + 参考答案，无选项）。为避免 AI 主观题误判，
+ * 新增两种客观题型，题目一律从【参考答案里真实存在的数值】派生，不编造任何学科内容：
+ *   · 选择题 / 填空题：抽「标签 + 数值」得分点 → 本地精确比对 → 秒判、不经过 AI、结果确定。
+ *     干扰项优先取同科其他题答案里的真实数值，不足时只做纯数学扰动，不伪造结论。
+ *   · 完整作答：保留原 AI 对照参考答案判分（可能误判，参考答案可展开复核 + 手动改判）。
+ * 派生不出客观得分点的题只出现在「完整作答」模式，不假装能出选择题。
+ * 三种题型共用错题本(liora-drill-log-v1)、本次进度、复习档案(liora-review-archive-v1)。
+ * AI 通道：优先 window.cloudLLM.stream，备用 /api/chat 聚合 SSE；都不可用则明确提示，绝不假装判分。
  * ============================================================ */
 var PP_DRILL_LOG = "liora-drill-log-v1";
+var PP_DRILL_TYPE_KEY = "liora-drill-type-v1";
 function ppDrLogAll(){
   try { var j = JSON.parse(localStorage.getItem(PP_DRILL_LOG) || "{}"); return (j && typeof j === "object") ? j : {}; }
   catch (e) { return {}; }
 }
 function ppDrLogSave(j){ try { localStorage.setItem(PP_DRILL_LOG, JSON.stringify(j)); } catch (e) {} }
+function ppDrTypeGet(){
+  try { var t = localStorage.getItem(PP_DRILL_TYPE_KEY);
+    return (t === "choice" || t === "blank" || t === "open") ? t : "choice"; }
+  catch (e) { return "choice"; }
+}
+function ppDrTypeSet(t){ try { localStorage.setItem(PP_DRILL_TYPE_KEY, t); } catch (e) {} }
+function ppDrCurType(){
+  var el = document.getElementById("ppDrType");
+  return el ? el.value : ppDrTypeGet();
+}
+
+/* ---- 客观题：从参考答案抽取得分点（只挖真实数值） ---- */
+var PP_DR_BLANKS = {}, PP_DR_POOL = null, PP_DR_OPTS = {}, PP_DR_USABLE = {};
+function ppDrNorm(s){
+  var t = String(s == null ? "" : s).trim().toLowerCase();
+  t = t.replace(/[\uFF01-\uFF5E]/g, function(c){ return String.fromCharCode(c.charCodeAt(0) - 0xFEE0); })
+       .replace(/\u3000/g, " ").replace(/[$¥£€,\s]/g, "");
+  return t;
+}
+/* 数值等价：1,000 = 1000；50% = 0.5 = 50（百分号省略也认）；非纯数值只做字面比对 */
+function ppDrEq(a, b){
+  var na = ppDrNorm(a), nb = ppDrNorm(b);
+  if (!na && !nb) return true;
+  if (na === nb) return true;
+  if (/[^0-9.\-%eE]/.test(na) || /[^0-9.\-%eE]/.test(nb)) return false;
+  var va = parseFloat(na.replace(/%$/, "")), vb = parseFloat(nb.replace(/%$/, ""));
+  if (!isFinite(va) || !isFinite(vb)) return false;
+  var pa = /%$/.test(na), pb = /%$/.test(nb);
+  if (Math.abs(va - vb) < 1e-6) return true;                       /* 1000 与 1000% 写法互通 */
+  if (Math.abs((pa ? va / 100 : va) - (pb ? vb / 100 : vb)) < 1e-6) return true;
+  if (Math.abs((pa ? va / 100 : va) - vb) < 1e-6) return true;     /* 0.5 与 50% */
+  if (Math.abs(va - (pb ? vb / 100 : vb)) < 1e-6) return true;
+  return false;
+}
+function ppDrNumPoints(ans){
+  var s = String(ans == null ? "" : ans), out = [], seen = {}, re = /-?\d+(?:,\d{3})*(?:\.\d+)?%?/g, m;
+  while ((m = re.exec(s)) !== null && out.length < 8) {
+    var val = m[0];
+    if (val.replace(/[-.,%]/g, "").length > 9) continue;
+    var before = s.slice(0, m.index)
+      .replace(/[$¥£€(（\[{：:=\s]+$/, "")
+      .replace(/\s+(is|are|was|were|the|a|an|of|to|and|or|in|at|by|for|equals?)\s*$/i, " ");
+    var lm = before.match(/([\u4e00-\u9fa5]{1,8}|[A-Za-z][A-Za-z/_-]{0,15})$/);
+    if (!lm) continue;                       /* 没有可读标签的点不出题，避免出现「第 n 空」 */
+    var label = lm[1].replace(/[\/_-]+$/, "").trim();
+    if (!label) continue;
+    var key = label + "|" + val;
+    if (seen[key]) continue;
+    seen[key] = 1;
+    out.push({ label: label, value: val, idx: out.length });
+  }
+  return out;
+}
+function ppDrPointScore(p){
+  var s = 0;
+  if (/%/.test(p.value)) s += 3;
+  if (p.label.length >= 2) s += 3; else s -= 2;
+  if (String(p.value).replace(/[^\d]/g, "").length >= 3) s += 1;
+  if (/[\u4e00-\u9fa5]/.test(p.label)) s += 1;
+  return s - p.idx * 0.01;
+}
+/* 每题最多 3 个空：挑信息量最高的得分点，保持答案中的原有顺序 */
+function ppDrBlanks(q){
+  var key = q.id + "|" + String(q.answer).length;
+  if (PP_DR_BLANKS[key]) return PP_DR_BLANKS[key];
+  var pts = ppDrNumPoints(q.answer);
+  var picked = pts.slice().sort(function(a, b){ return ppDrPointScore(b) - ppDrPointScore(a); })
+    .slice(0, 3).sort(function(a, b){ return a.idx - b.idx; });
+  /* 同一答案里出现多次的同名标签加序号，避免三个空都显示「from =」分不清 */
+  var seenL = {};
+  picked = picked.map(function(p){
+    var sc = ppDrPointScore(p);
+    seenL[p.label] = (seenL[p.label] || 0) + 1;
+    return { label: seenL[p.label] > 1 ? p.label + "（第 " + seenL[p.label] + " 处）" : p.label,
+      value: p.value, idx: p.idx, score: sc };
+  });
+  PP_DR_BLANKS[key] = picked;
+  return picked;
+}
+function ppDrHash(s){
+  var h = 2166136261;
+  for (var i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = (h * 16777619) >>> 0; }
+  return h >>> 0;
+}
+/* 同科真实数值池：干扰项只从这里取，或做纯数学扰动，不编造结论 */
+function ppDrPool(){
+  if (PP_DR_POOL) return PP_DR_POOL;
+  var pool = {}, B = ppQBank();
+  (B && B.questions ? B.questions : []).forEach(function(q){
+    if (!pool[q.cid]) pool[q.cid] = { num: [], pct: [] };
+    ppDrNumPoints(q.answer).forEach(function(p){
+      (/%$/.test(p.value) ? pool[q.cid].pct : pool[q.cid].num).push(p.value);
+    });
+  });
+  Object.keys(pool).forEach(function(cid){
+    ["num", "pct"].forEach(function(k){
+      var seen = {}, out = [];
+      pool[cid][k].forEach(function(v){ var n = ppDrNorm(v); if (!seen[n]) { seen[n] = 1; out.push(v); } });
+      pool[cid][k] = out;
+    });
+  });
+  PP_DR_POOL = pool;
+  return pool;
+}
+/* 每个空 4 个选项（含正确项），同一题每次生成完全一致 */
+function ppDrOptions(q, p, i){
+  var okey = q.id + "|" + i;
+  if (PP_DR_OPTS[okey]) return PP_DR_OPTS[okey];
+  var pool = ppDrPool()[q.cid] || { num: [], pct: [] };
+  var mine = ppDrNumPoints(q.answer).map(function(x){ return ppDrNorm(x.value); });
+  var right = ppDrNorm(p.value), wantPct = /%$/.test(p.value);
+  /* 优先挑与正确值同一量级的真实数值，避免正确项一眼就能靠大小猜出来 */
+  var rv = parseFloat(String(p.value).replace(/[,%]/g, ""));
+  var arr = wantPct ? pool.pct : pool.num;
+  if (isFinite(rv)) {
+    var near = arr.filter(function(v){
+      var x = parseFloat(String(v).replace(/[,%]/g, ""));
+      return isFinite(x) && Math.abs(Math.log10(Math.abs(x) + 1) - Math.log10(Math.abs(rv) + 1)) <= 0.6;
+    });
+    if (near.length >= 6) arr = near;
+  }
+  var best = [], used = {};
+  used[right] = 1;
+  arr.forEach(function(v){
+    var n = ppDrNorm(v);
+    if (used[n] || mine.indexOf(n) >= 0) return;   /* 干扰项不能是本题其它空的正确答案 */
+    var h = ppDrHash(okey + "|pick|" + n);
+    if (best.length < 6) { best.push({ v: v, h: h, n: n }); best.sort(function(a, b){ return a.h - b.h; }); }
+    else if (h < best[5].h) { best[5] = { v: v, h: h, n: n }; best.sort(function(a, b){ return a.h - b.h; }); }
+  });
+  var picked = [];
+  best.forEach(function(o){ if (picked.length < 3 && !used[o.n]) { used[o.n] = 1; picked.push(o.v); } });
+  /* 池里不够 3 个时，只用纯数学扰动补数值干扰项 */
+  var base = parseFloat(String(p.value).replace(/[,%]/g, ""));
+  if (isFinite(base)) {
+    var factors = [2, 0.5, 1.1, 0.9, 3, 1.25];
+    for (var j = 0; picked.length < 3 && j < factors.length; j++) {
+      var v = base * factors[j];
+      v = Math.round(v * 100) / 100;
+      if (wantPct) v = String(v) + "%"; else v = String(v);
+      var n = ppDrNorm(v);
+      if (!used[n] && !ppDrEq(v, p.value)) { used[n] = 1; picked.push(v); }
+    }
+  }
+  var opts = picked.concat([p.value]);
+  opts.sort(function(a, b){ return ppDrHash(okey + "|opt|" + ppDrNorm(a)) - ppDrHash(okey + "|opt|" + ppDrNorm(b)); });
+  PP_DR_OPTS[okey] = opts;
+  return opts;
+}
+function ppDrUsable(q, type){
+  if (type === "open") return true;
+  var key = type + "|" + q.id;
+  if (PP_DR_USABLE[key] != null) return PP_DR_USABLE[key];
+  var pts = ppDrBlanks(q), ok = pts.length > 0;
+  /* 只有 1 个空且信息量很低（如「represent = 1」）的题不出客观题，避免刷到凑数题 */
+  if (ok && pts.length === 1 && (pts[0].score || 0) < 4) ok = false;
+  if (ok && type === "choice") {
+    ok = pts.every(function(p, i){ return ppDrOptions(q, p, i).length >= 4; });
+  }
+  PP_DR_USABLE[key] = ok;
+  return ok;
+}
 
 /* ---- AI 通道：主 cloudLLM / 备 /api/chat（SSE 聚合） ---- */
 function ppSseText(t){
@@ -1204,10 +1369,12 @@ function ppDrFiltered(){
   var kw = String((kwEl && kwEl.value) || "").trim().toLowerCase();
   var modeEl = document.getElementById("ppDrMode"), mode = modeEl ? modeEl.value : "all";
   var ordEl = document.getElementById("ppDrOrder"), order = ordEl ? ordEl.value : "week";
+  var type = ppDrCurType();
   var log = ppDrLogAll();
   var list = B.questions.filter(function(q){
     if (subs.length && subs.indexOf(q.cid) < 0) return false;
     if (weeks.length && weeks.indexOf(q.cid + "|" + q.term + "|" + q.week) < 0) return false;
+    if (!ppDrUsable(q, type)) return false;   /* 客观题型只出能派生真实得分点的题 */
     if (kw && (String(q.q) + " " + String(q.topic) + " " + String(q.kind) + " " + String(q.answer)).toLowerCase().indexOf(kw) < 0) return false;
     var rec = log[q.id];
     if (mode === "wrong" && !(rec && rec.ok === false)) return false;
@@ -1237,9 +1404,11 @@ function ppDrSyncCount(){
   var cur = document.getElementById("ppDrFilterCur");
   var wcur = document.getElementById("ppDrWeeksCur");
   if (wcur) wcur.textContent = weeks.length ? ("已选 " + weeks.length + " 周") : "全部周次";
-  var n = ppDrFiltered().length;
-  if (cnt) cnt.innerHTML = '符合当前范围的题目：<b>' + n + '</b> 道'
-    + (B ? '（题库共 ' + B.questions.length + ' 道）' : '');
+  var n = ppDrFiltered().length, type = ppDrCurType();
+  var typeName = { choice: "选择题", blank: "填空题", open: "完整作答" }[type] || type;
+  if (cnt) cnt.innerHTML = '当前题型「' + typeName + '」符合范围的题目：<b>' + n + '</b> 道'
+    + (B ? '（题库共 ' + B.questions.length + ' 道）' : '')
+    + (type !== "open" ? '<br><span class="pp-dr-count-note">客观题只从参考答案里真实数值出题；需要练完整演算请切到「完整作答」。</span>' : '');
   if (cur) cur.textContent = '（当前 ' + n + ' 道可选）';
 }
 function ppDrWeekPickHtml(){
@@ -1270,18 +1439,29 @@ function ppDrHtml(){
   var chips = B.courses.map(function(c){
     return '<button type="button" class="pp-chip on" data-dr="sub" data-sub="' + ppEsc(c.id) + '">' + ppEsc(c.cn) + '</button>';
   }).join("");
+  var type = ppDrTypeGet();
+  var typeOpts = [
+    ["choice", "选择题（推荐 · 秒判不误判）"],
+    ["blank", "填空题（自己写答案）"],
+    ["open", "完整作答（AI 判分）"]
+  ].map(function(o){
+    return '<option value="' + o[0] + '"' + (o[0] === type ? " selected" : "") + '>' + o[1] + '</option>';
+  }).join("");
   return '<div class="pp-dr-h"><h2>🎯 自主刷题 · 自动判分</h2>'
-    + '<p>从题库自由选题 → 写出你的作答 → <b>AI 对照参考答案自动判对错、给得分和错因</b> → 错题自动进错题本，'
-    + '点「存入复习档案」后写回当天档案。题库共 <b>' + B.questions.length + '</b> 道主观题（无选项）；'
-    + '⚠️ 判分由 AI 完成，参考答案始终可展开复核，若判得不准可手动改判。</p></div>'
+    + '<p>从题库自由选题 → 按题型作答 → <b>自动判分</b> → 错题自动进错题本，点「存入复习档案」后写回当天档案。'
+    + '题库共 <b>' + B.questions.length + '</b> 道原题。<br>'
+    + '<b>选择题 / 填空题</b>：从参考答案里的真实数值自动出题，<b>本地精确比对，不经过 AI、秒出结果、不会误判</b>（没网 / 没 AI 也能用）；'
+    + '<b>完整作答</b>：仍由 AI 对照参考答案判分，⚠️ 主观题可能误判，可展开答案复核并手动改判。参考答案始终可展开。</p></div>'
     + '<details class="pp-dr-filter" id="ppDrFilter" open><summary>🔎 选题范围 <span class="pp-dr-filter-cur" id="ppDrFilterCur"></span></summary><div class="pp-dr-filter-b">'
     + '<div class="pp-fld"><label>① 科目（可多选）</label><div class="pp-chips" id="ppDrSubjects">' + chips + '</div></div>'
     + '<div class="pp-fld"><label>② 周次（可多选，不选＝全部）</label>' + ppDrWeekPickHtml() + '</div>'
     + '<div class="pp-fld"><label>③ 关键词（题干 / 主题 / 答案）</label><input id="ppDrKw" type="text" placeholder="如 adjusting、弹性、XLOOKUP"></div>'
     + '<div class="pp-fld"><label>④ 只刷哪些</label><select id="ppDrMode">'
-    + '<option value="all">全部题目</option><option value="wrong">只看错题（AI 判错的）</option><option value="new">只看没做过的</option></select></div>'
+    + '<option value="all">全部题目</option><option value="wrong">只看错题（判错的）</option><option value="new">只看没做过的</option></select></div>'
     + '<div class="pp-fld"><label>⑤ 出题顺序</label><select id="ppDrOrder">'
     + '<option value="week">按周次顺序</option><option value="random">随机打乱</option><option value="wrongfirst">错题优先</option></select></div>'
+    + '<div class="pp-fld"><label>⑥ 题型</label><select id="ppDrType">' + typeOpts + '</select>'
+    + '<div class="pp-dr-type-msg" id="ppDrTypeMsg"></div></div>'
     + '<div class="pp-fld pp-fld-btn"><button type="button" class="pp-btn pp-btn-navy" data-dr="start">▶ 开始刷题</button>'
     + '<button type="button" class="pp-btn" data-dr="shuffle">🔀 换一批（随机）</button></div>'
     + '<div class="pp-dr-count" id="ppDrCount"></div></div></details>'
@@ -1305,7 +1485,9 @@ function ppDrVerdictHtml(r){
     + (r.score != null ? '<span>得分 ' + r.score + ' / 100</span>' : '') + '</div>';
   if (r.reason) h += '<p>' + ppEsc(r.reason) + '</p>';
   if (r.missing && r.missing.length) h += '<p><b>缺失的得分点：</b>' + ppEsc(r.missing.join("；")) + '</p>';
-  h += '<p class="pp-dr-vnote">判分由 AI 对照参考答案给出，下面参考答案可展开复核。'
+  h += '<p class="pp-dr-vnote">' + (r.type && r.type !== "open"
+      ? '本题按参考答案里的客观得分点本地精确判分，不经过 AI，结果确定。'
+      : '判分由 AI 对照参考答案给出，下面参考答案可展开复核。')
     + '<button type="button" class="pp-mini-btn" data-dr="override">判错了？点此改判</button></p></div>';
   return h;
 }
@@ -1323,29 +1505,61 @@ function ppDrProgressHtml(){
 function ppDrWrongHtml(){
   var log = ppDrLogAll(), ids = Object.keys(log);
   var wrong = ids.filter(function(k){ return log[k].ok === false; });
-  if (!ids.length) return '<div class="pp-dr-wb-empty">📕 错题本：还没判过题。AI 判为「部分正确 / 需复习」的题会自动收进这里。</div>';
+  if (!ids.length) return '<div class="pp-dr-wb-empty">📕 错题本：还没判过题。判为「部分正确 / 需复习」的题会自动收进这里。</div>';
   return '<div class="pp-dr-wb"><b>📕 错题本</b><span>累计判过 ' + ids.length + ' 题 · 其中需复习 <b>'
     + wrong.length + '</b> 题</span><button type="button" class="pp-mini-btn" data-dr="onlywrong">只刷这些错题 →</button>'
     + '<button type="button" class="pp-mini-btn" data-dr="clearlog">清空错题本</button></div>';
 }
+function ppDrAttr(s){ return ppEsc(s).replace(/"/g, "&quot;").replace(/'/g, "&#39;"); }
 function ppDrCardHtml(q, pos, total){
-  var D = PP.drill, r = D.results[q.id];
-  var std = (q.kind === "口语 / 写作")
-    ? "合上答案独立完成这段说 / 写，把完整内容写进作答框再提交判分。"
-    : (q.kind === "分步计算"
-      ? "独立写出完整演算步骤（不能只写结论）再提交判分，步骤缺失会被判为部分正确。"
-      : "独立写出完整分录 / 计算 / 论证（含借贷方向、金额、理由）再提交判分。");
+  var D = PP.drill, r = D.results[q.id], type = D.type || "open";
+  var std = type !== "open"
+    ? (type === "choice"
+      ? "每个空都选对才算过关；判分不经过 AI，选完立即出结果，不会误判。"
+      : "每个空都填对（等价写法也算对）；判分不经过 AI，填完立即出结果，不会误判。")
+    : ((q.kind === "口语 / 写作")
+      ? "合上答案独立完成这段说 / 写，把完整内容写进作答框再提交判分。"
+      : (q.kind === "分步计算"
+        ? "独立写出完整演算步骤（不能只写结论）再提交判分，步骤缺失会被判为部分正确。"
+        : "独立写出完整分录 / 计算 / 论证（含借贷方向、金额、理由）再提交判分。"));
+  var body;
+  if (type === "open") {
+    body = '<textarea class="pp-dr-input" id="ppDrAnswer" placeholder="在这里写下你的完整作答（计算写步骤、分录写借贷方向和金额、简答写清理由）…">'
+      + ppEsc(r ? (r.answerText || "") : "") + '</textarea>';
+  } else {
+    var pts = ppDrBlanks(q), prev = (r && r.inputs) || [];
+    var rows = pts.map(function(p, i){
+      var field;
+      if (type === "blank") {
+        field = '<input class="pp-dr-blank" type="text" data-blank="' + i + '" autocomplete="off"'
+          + ' placeholder="填数值" value="' + ppDrAttr(prev[i] || "") + '">';
+      } else {
+        var opts = ppDrOptions(q, p, i);
+        field = '<div class="pp-dr-opts">' + opts.map(function(o, k){
+          return '<label class="pp-dr-opt"><input type="radio" name="ppDrOpt' + i + '" value="' + k + '"'
+            + (prev[i] && ppDrEq(prev[i], o) ? " checked" : "") + '><span>' + ppEsc(o) + '</span></label>';
+        }).join("") + '</div>';
+      }
+      return '<div class="pp-dr-obj-row"><b class="pp-dr-obj-no">空 ' + (i + 1) + '</b>'
+        + '<span class="pp-dr-obj-label">' + ppEsc(p.label) + ' =</span>' + field + '</div>';
+    }).join("");
+    body = '<div class="pp-dr-obj"><div class="pp-dr-obj-h"><b>'
+      + (type === "choice" ? "☑ 选出每个空的正确数值" : "✎ 填出每个空的数值")
+      + '</b><span>共 ' + pts.length + ' 个得分点 · 依据上面的题目独立算出</span></div>'
+      + rows + '</div>';
+  }
   return '<div class="pp-dr-card" data-id="' + ppEsc(q.id) + '">'
     + '<div class="pp-dr-card-h"><span class="pp-dr-no">第 ' + (pos + 1) + ' / ' + total + ' 题</span>'
     + '<span class="pp-dr-tag">' + ppEsc(ppQWeekLabel(q)) + '</span>'
     + '<span class="pp-dr-kind">' + ppEsc(q.kind || "") + '</span>'
+    + '<span class="pp-dr-kind pp-dr-type-tag">' + (type === "choice" ? "选择题" : (type === "blank" ? "填空题" : "完整作答")) + '</span>'
     + '<span class="pp-dr-min">约 ' + q.minutes + ' 分钟</span></div>'
     + '<div class="pp-dr-q">' + ppEsc(q.q) + '</div>'
     + '<div class="pp-dr-std"><b>完成标准：</b>' + std + '</div>'
-    + '<textarea class="pp-dr-input" id="ppDrAnswer" placeholder="在这里写下你的完整作答（计算写步骤、分录写借贷方向和金额、简答写清理由）…">'
-    + ppEsc(r ? (r.answerText || "") : "") + '</textarea>'
+    + body
     + '<div class="pp-dr-actions">'
-    + '<button type="button" class="pp-btn pp-btn-navy" data-dr="grade">✓ 提交作答 · 自动判分</button>'
+    + '<button type="button" class="pp-btn pp-btn-navy" data-dr="grade">'
+    + (type === "open" ? "✓ 提交作答 · 自动判分" : "✓ 提交答案 · 立即判分") + '</button>'
     + '<button type="button" class="pp-btn" data-dr="skip">不会，直接看答案（记错题）</button>'
     + '<button type="button" class="pp-btn" data-dr="prev">← 上一题</button>'
     + '<button type="button" class="pp-btn" data-dr="next">下一题 →</button>'
@@ -1382,7 +1596,8 @@ function ppDrStart(shuffle){
   if (shuffle) { var o = document.getElementById("ppDrOrder"); if (o) o.value = "random"; }
   var list = ppDrFiltered();
   var seq = (PP.drill && PP.drill.seq ? PP.drill.seq : 0) + 1;
-  PP.drill = { list: list, idx: 0, results: {}, grading: false, seq: seq, confirmClear: false };
+  PP.drill = { list: list, idx: 0, results: {}, grading: false, seq: seq,
+    confirmClear: false, type: ppDrCurType() };
   ppDrRender();
   if (!list.length) {
     var st = document.getElementById("ppDrStage");
@@ -1405,9 +1620,48 @@ function ppDrGo(delta){
   }
   D.idx = n; D.grading = false; ppDrRender();
 }
+/* 客观题判分：逐空与参考答案里的真实数值精确比对，同步完成、完全不依赖 AI */
+function ppDrGradeObjective(){
+  var D = PP.drill, q = D.list[D.idx], type = D.type, pts = ppDrBlanks(q);
+  var got = [], miss = [], okN = 0, answered = 0;
+  pts.forEach(function(p, i){
+    var v = "";
+    if (type === "blank") {
+      var el = document.querySelector('#ppDrStage [data-blank="' + i + '"]');
+      v = el ? String(el.value || "").trim() : "";
+    } else {
+      var sel = document.querySelector('#ppDrStage input[name="ppDrOpt' + i + '"]:checked');
+      if (sel) { var opts = ppDrOptions(q, p, i); v = opts[Number(sel.value)] || ""; }
+    }
+    got.push(v);
+    if (v) answered++;
+    if (ppDrEq(v, p.value)) okN++;
+    else miss.push(p.label + "：正确答案 " + p.value + (v ? "，你答 " + v : "，未作答"));
+  });
+  if (!answered) {
+    var vb0 = document.getElementById("ppDrVerdict");
+    if (vb0) vb0.innerHTML = '<div class="pp-q-warn">⚠️ 请先'
+      + (type === "choice" ? "选出每个空的答案" : "填好每个空")
+      + '再提交；确实不会就点「不会，直接看答案」。</div>';
+    return;
+  }
+  var full = okN === pts.length;
+  var v = {
+    failed: false, ok: full, verdict: full ? "correct" : (okN > 0 ? "partial" : "wrong"),
+    score: Math.round(okN / pts.length * 100), missing: miss,
+    reason: full ? ("本题 " + pts.length + " 个得分点全对（本地精确比对，不经过 AI）。")
+      : ("答对 " + okN + " / " + pts.length + " 个得分点，请对照下方参考答案订正。"),
+    type: type, inputs: got, answerText: got.join(" / "), at: new Date().toISOString()
+  };
+  ppDrRecord(q, v);
+  D.results[q.id] = v;
+  D.grading = false;
+  ppDrRender();
+}
 function ppDrGrade(){
   var D = PP.drill;
   if (!D || !D.list.length || D.grading) return;
+  if (D.type && D.type !== "open") { ppDrGradeObjective(); return; }
   var q = D.list[D.idx], inp = document.getElementById("ppDrAnswer");
   var ans = inp ? String(inp.value || "").trim() : "";
   if (!ans) {
@@ -1452,10 +1706,12 @@ function ppDrGrade(){
 function ppDrManual(ok){
   var D = PP.drill;
   if (!D || !D.list.length) return;
-  var q = D.list[D.idx], inp = document.getElementById("ppDrAnswer");
+  var q = D.list[D.idx], inp = document.getElementById("ppDrAnswer"), prev = D.results[q.id] || {};
   var v = { failed: false, ok: !!ok, verdict: ok ? "correct" : "wrong", score: ok ? 100 : 0,
     missing: [], reason: ok ? "你对照参考答案后判为做对。" : "你对照参考答案后判为需复习。",
-    answerText: inp ? String(inp.value || "").trim() : "", at: new Date().toISOString(), manual: true };
+    type: D.type, inputs: prev.inputs,
+    answerText: inp ? String(inp.value || "").trim() : (prev.answerText || ""),
+    at: new Date().toISOString(), manual: true };
   ppDrRecord(q, v);
   D.results[q.id] = v;
   ppDrRender();
@@ -1561,10 +1817,18 @@ function ppDrBind(){
   root.addEventListener("change", function(ev){
     var id = ev.target && ev.target.id;
     if (id === "ppDrMode" || id === "ppDrOrder") ppDrSyncCount();
+    else if (id === "ppDrType") {
+      ppDrTypeSet(ev.target.value);
+      ppDrSyncCount();
+      var msg = document.getElementById("ppDrTypeMsg");
+      if (msg) msg.textContent = (PP.drill && PP.drill.list.length && PP.drill.type !== ev.target.value)
+        ? "题型已切换，点「▶ 开始刷题」用新题型重新开始（已判结果仍在错题本）。" : "";
+    }
   });
   root.addEventListener("input", function(ev){
     if (ev.target && ev.target.id === "ppDrKw") ppDrSyncCount();
   });
-  PP.drill = { list: [], idx: 0, results: {}, grading: false, seq: 0, confirmClear: false };
+  PP.drill = { list: [], idx: 0, results: {}, grading: false, seq: 0,
+    confirmClear: false, type: ppDrTypeGet() };
   ppDrRender();
 }
