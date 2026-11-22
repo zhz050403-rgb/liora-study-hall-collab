@@ -20,20 +20,20 @@ window.STUDY_PLAN = {
   },
   /* 考试排期（周次来自大纲，date 为按锚点换算的绝对日期 YYYY-MM-DD，用于倒计时） */
   exams: [
-    { subj: "经济学", name: "A2 简答书面考 (U1–2)", weight: "15%", week: 4, range: "11/02–11/08", date: "2026-11-02", urgent: false, done: true, note: "✅ 已考完（W4 周五 11/06 确认），成绩待出" },
-    { subj: "商业数学",   name: "A1 线上测验 (W4/6/10/13)", weight: "5%",  week: 4, range: "11/02 起", date: "2026-11-02", urgent: true,  note: "本周首场 W4" },
-    { subj: "会计学",   name: "Diagnostic 测验", weight: "5%",  week: 5, range: "11/09–11/15", date: "2026-11-09", urgent: false, note: "U1–5 综合" },
-    { subj: "经济学", name: "A3 小组展示", weight: "15%", week: 7, range: "11/23–11/29", date: "2026-11-23", urgent: false, note: "Challenge Week" },
-    { subj: "会计学",   name: "Challenge Week", weight: "15%", week: 7, range: "11/23–11/29", date: "2026-11-23", urgent: false, note: "U1–6 综合实战" },
-    { subj: "会计学",   name: "Business Report 报告", weight: "—",  week: 11, range: "12/21–12/27", date: "2026-12-21", urgent: false, note: "圣诞周" },
-    { subj: "会计学",   name: "Viva 答辩", weight: "20%（须过答辩才记分）", week: 12, range: "12/28–01/03", date: "2026-12-28", urgent: false, note: "元旦周" },
-    { subj: "学术英语",   name: "A1 口语 / A2 简答 / A3 阅读 / A4 听力", weight: "30%", week: 99, range: "T1 Exam Period", date: "2027-01-11", urgent: false, note: "口语 10%·简答 10%·阅读 5%·听力 5%" },
-    { subj: "商业数学",   name: "A2 期末考", weight: "45%", week: 99, range: "Exam Period ≈01/11–01/24", date: "2027-01-11", urgent: false, note: "权重最大" },
-    { subj: "会计学",   name: "Final Exam 期末考", weight: "50%", week: 99, range: "Exam Period ≈01/11–01/24", date: "2027-01-11", urgent: false, note: "" },
-    { subj: "经济学", name: "A4 期末考", weight: "50%", week: 99, range: "Exam Period ≈01/11–01/24", date: "2027-01-11", urgent: false, note: "全单元" },
-    { subj: "计算机应用", name: "A1 每周在线测验", weight: "20%", week: 4, range: "W1–6 每周", date: "2026-11-02", urgent: false, note: "仅一次机会，W7 末截止" },
-    { subj: "计算机应用", name: "A2 Tutorial Performance", weight: "20%", week: 13, range: "W1–13 每周", date: "2027-01-10", urgent: false, note: "评分 0/1/2" },
-    { subj: "计算机应用", name: "A3 期末：Excel MCQ + Word 实操", weight: "60%", week: 99, range: "Exam Block ≈01/11–01/24", date: "2027-01-11", urgent: false, note: "闭卷·权重最大" }
+    { cid: "economics",   subj: "经济学", name: "A2 简答书面考 (U1–2)", weight: "15%", week: 4, range: "11/02–11/08", date: "2026-11-02", urgent: false, done: true, note: "✅ 已考完（W4 周五 11/06 确认），成绩待出" },
+    { cid: "mathematics", subj: "商业数学",   name: "A1 线上测验 (W4/6/10/13)", weight: "5%",  week: 4, range: "11/02 起", date: "2026-11-02", urgent: true,  note: "按周完成 W4/W6/W10/W13" },
+    { cid: "accounting",  subj: "会计学",   name: "Diagnostic 测验", weight: "5%",  week: 5, range: "11/09–11/15", date: "2026-11-09", urgent: false, note: "U1–5 综合" },
+    { cid: "economics",   subj: "经济学", name: "A3 小组展示", weight: "15%", week: 7, range: "11/23–11/29", date: "2026-11-23", urgent: false, note: "Challenge Week" },
+    { cid: "accounting",  subj: "会计学",   name: "Challenge Week", weight: "15%", week: 7, range: "11/23–11/29", date: "2026-11-23", urgent: false, note: "U1–6 综合实战" },
+    { cid: "accounting",  subj: "会计学",   name: "Business Report 报告", weight: "—",  week: 11, range: "12/21–12/27", date: "2026-12-21", urgent: false, note: "圣诞周 · 须自写防 Turnitin" },
+    { cid: "accounting",  subj: "会计学",   name: "Viva 答辩", weight: "20%（须过答辩才记分）", week: 12, range: "12/28–01/03", date: "2026-12-28", urgent: false, note: "元旦周 · Hurdle" },
+    { cid: "english",     subj: "学术英语",   name: "A1 口语 / A2 简答 / A3 阅读 / A4 听力", weight: "30%", week: 99, range: "T1 Exam Period", date: "2027-01-11", urgent: false, note: "口语 10%·简答 10%·阅读 5%·听力 5%" },
+    { cid: "mathematics", subj: "商业数学",   name: "A2 期末考", weight: "45%", week: 99, range: "Exam Period ≈01/11–01/24", date: "2027-01-11", urgent: false, note: "2 小时闭卷 · 权重最大" },
+    { cid: "accounting",  subj: "会计学",   name: "Final Exam 期末考", weight: "50%", week: 99, range: "Exam Period ≈01/11–01/24", date: "2027-01-11", urgent: false, note: "闭卷全单元" },
+    { cid: "economics",   subj: "经济学", name: "A4 期末考", weight: "50%", week: 99, range: "Exam Period ≈01/11–01/24", date: "2027-01-11", urgent: false, note: "闭卷全单元" },
+    { cid: "computing",   subj: "计算机应用", name: "A1 每周在线测验", weight: "20%", week: 4, range: "W1–6 每周", date: "2026-11-02", urgent: false, note: "仅一次机会，W7 末截止" },
+    { cid: "computing",   subj: "计算机应用", name: "A2 Tutorial Performance", weight: "20%", week: 13, range: "W1–13 每周", date: "2027-01-10", urgent: false, note: "评分 0/1/2" },
+    { cid: "computing",   subj: "计算机应用", name: "A3 期末：Excel MCQ + Word 实操", weight: "60%", week: 99, range: "Exam Block ≈01/11–01/24", date: "2027-01-11", urgent: false, note: "65 分钟闭卷·权重最大" }
   ],
   /* 周计划：每天 2h，5 科齐头并进、向先考的倾斜。split 为各科目分钟数（合计 120）。 */
   weeks: [

@@ -1,0 +1,391 @@
+{
+  "version": "20261122-v1",
+  "note": "以下题目为基于 UNSW 2026 五科课程范围与个人高频薄弱点编写的巩固练习题（sourceType: practice_pack），与会计 U1–U6 官方 PDF 引文题库严格区分。",
+  "packs": [
+    {
+      "id": "acc-u7-11",
+      "course": "accounting",
+      "title": "会计 U7–U11 核心巩固（试算表 / 报表 / 比率 / 现金流）",
+      "questions": [
+        {
+          "id": "ep-acc-1",
+          "topic": "Unit 7 Trial Balance",
+          "prompt": "Which of the following errors WILL still allow a Trial Balance to balance (Dr = Cr)?",
+          "options": [
+            "Posting only the debit side of a $500 cash sale",
+            "Recording a $300 purchase of office supplies as Debit Purchases $300, Credit Cash $300",
+            "Entering $450 on the debit side and $540 on the credit side",
+            "Adding the credit column incorrectly by $100"
+          ],
+          "answer": 1,
+          "explanation": "记错科目但借贷金额相等（Error of Principle / Commission）不会破坏试算表借贷平衡；单边过账、金额不等或加总错才会导致不平。",
+          "errorTag": "试算表局限"
+        },
+        {
+          "id": "ep-acc-2",
+          "topic": "Unit 4 Discounts & Returns",
+          "prompt": "A business sells goods on credit for $7,200. The customer returns $200 of goods and pays within the 1% settlement discount period. What is the Discount Allowed and Cash Received?",
+          "options": [
+            "Discount Allowed $72; Cash $6,928",
+            "Discount Allowed $70; Cash $6,930",
+            "Discount Allowed $72; Cash $7,128",
+            "Discount Allowed $20; Cash $6,980"
+          ],
+          "answer": 1,
+          "explanation": "必须先扣退货：$7,200 − $200 = $7,000，再算 1% 现金折扣 = $70，实际收到现金 = $7,000 − $70 = $6,930。",
+          "errorTag": "折扣基数"
+        },
+        {
+          "id": "ep-acc-3",
+          "topic": "Unit 5 Adjusting Entries",
+          "prompt": "On 1 May, a business paid $8,000 for 8 months of rent in advance (recorded as Prepaid Rent). What is the adjusting entry on 30 June?",
+          "options": [
+            "Dr Prepaid Rent $2,000 / Cr Cash $2,000",
+            "Dr Rent Expense $2,000 / Cr Prepaid Rent $2,000",
+            "Dr Rent Expense $6,000 / Cr Prepaid Rent $6,000",
+            "Dr Prepaid Rent $6,000 / Cr Rent Expense $6,000"
+          ],
+          "answer": 1,
+          "explanation": "5 月 1 日到 6 月 30 日共耗用 2 个月：$8,000 × (2/8) = $2,000 转为当期 Rent Expense，同时冲减资产 Prepaid Rent。",
+          "errorTag": "跨期调整"
+        },
+        {
+          "id": "ep-acc-4",
+          "topic": "Unit 9 Balance Sheet",
+          "prompt": "Where does Accumulated Depreciation appear in a Classified Balance Sheet?",
+          "options": [
+            "Under Current Liabilities",
+            "Under Non-Current Liabilities",
+            "As a deduction from the related Non-Current Asset",
+            "Under Owner’s Equity"
+          ],
+          "answer": 2,
+          "explanation": "Accumulated Depreciation 是资产备抵账户（Contra-Asset），列在对应非流动资产原值下方作扣减以得出 Carrying Amount（账面净值）。",
+          "errorTag": "报表分类"
+        },
+        {
+          "id": "ep-acc-5",
+          "topic": "Unit 10 Financial Ratios",
+          "prompt": "Current Assets = $50,000 (including Inventory $15,000 and Prepayments $5,000). Current Liabilities = $20,000. What is the Quick (Acid-Test) Ratio?",
+          "options": [
+            "2.50 : 1",
+            "1.75 : 1",
+            "1.50 : 1",
+            "1.25 : 1"
+          ],
+          "answer": 2,
+          "explanation": "Quick Assets = $50,000 − $15,000 − $5,000 = $30,000；Quick Ratio = $30,000 ÷ $20,000 = 1.50 : 1。",
+          "errorTag": "财务比率"
+        },
+        {
+          "id": "ep-acc-6",
+          "topic": "Unit 11 Cash Flow Statement",
+          "prompt": "Cash paid to purchase new delivery equipment is classified under which section of the Statement of Cash Flows?",
+          "options": [
+            "Operating Activities",
+            "Investing Activities",
+            "Financing Activities",
+            "Non-cash Disclosure"
+          ],
+          "answer": 1,
+          "explanation": "购置或处置长期资产（如设备、房产）属于 Investing Activities（投资活动现金流）。",
+          "errorTag": "现金流分类"
+        }
+      ]
+    },
+    {
+      "id": "econ-core",
+      "course": "economics",
+      "title": "经济学高频核心（PPC / 弹性 / 外部性 / AD-AS / 宏观政策）",
+      "questions": [
+        {
+          "id": "ep-eco-1",
+          "topic": "Unit 2 PPC",
+          "prompt": "Why is a typical Production Possibility Curve (PPC) bowed outward (concave to the origin)?",
+          "options": [
+            "Resources are unlimited in the long run",
+            "Resources are not equally suited to producing all goods, leading to increasing opportunity cost",
+            "Technology improves at a constant rate",
+            "All goods have identical opportunity costs"
+          ],
+          "answer": 1,
+          "explanation": "核心因果链：resources are not equally suited to producing both goods → increasing opportunity cost → bowed-out PPC。",
+          "errorTag": "PPC因果链"
+        },
+        {
+          "id": "ep-eco-2",
+          "topic": "Unit 5 PED & Revenue",
+          "prompt": "If the Price Elasticity of Demand (|PED|) for a product is 0.4, what happens to Total Revenue when the firm raises its price?",
+          "options": [
+            "Total Revenue increases",
+            "Total Revenue decreases",
+            "Total Revenue remains unchanged",
+            "Quantity demanded falls to zero"
+          ],
+          "answer": 0,
+          "explanation": "|PED| = 0.4 < 1 属于缺乏弹性（inelastic），涨价带来价格上升比例大于销量下降比例，因此总收益 TR 上升。",
+          "errorTag": "弹性与收益"
+        },
+        {
+          "id": "ep-eco-3",
+          "topic": "Unit 4 Market Failure",
+          "prompt": "A factory emits air pollution that harms nearby residents without paying for the damage. Which relationship holds at the free-market equilibrium?",
+          "options": [
+            "MSC > MPC, causing overproduction relative to the social optimum",
+            "MSB > MPB, causing underproduction",
+            "MSC < MPC, causing underproduction",
+            "MSC = MSB, achieving allocative efficiency"
+          ],
+          "answer": 0,
+          "explanation": "负生产外部性使社会边际成本高于私人边际成本（MSC > MPC），市场产量高于社会最优产量，产生无谓损失 DWL。",
+          "errorTag": "外部性"
+        },
+        {
+          "id": "ep-eco-4",
+          "topic": "Macro T2 Unemployment",
+          "prompt": "Employed = 950, Unemployed = 50. If 10 unemployed workers become discouraged and stop looking for work, what happens to the official unemployment rate?",
+          "options": [
+            "Increases from 5.0% to 6.0%",
+            "Remains at 5.0%",
+            "Decreases from 5.0% to about 4.04%",
+            "Falls to 0%"
+          ],
+          "answer": 2,
+          "explanation": "退出后劳动力变为 990、失业变为 40，失业率 = 40/990 ≈ 4.04%。失业率下降是因为分子分母同减，不代表就业好转！",
+          "errorTag": "失业率口径"
+        },
+        {
+          "id": "ep-eco-5",
+          "topic": "Macro T2 AD-AS",
+          "prompt": "A sharp rise in global oil and energy prices shifts which curve in the short-run AD-AS model, and what is the result?",
+          "options": [
+            "AD shifts right; higher GDP and higher inflation",
+            "SRAS shifts left; lower real GDP and higher price level (cost-push inflation)",
+            "SRAS shifts right; higher GDP and lower price level",
+            "AD shifts left; lower GDP and lower price level"
+          ],
+          "answer": 1,
+          "explanation": "能源成本飙升推高企业生产成本，导致短期总供给 SRAS 左移，出现产出下降与物价上升（成本推动型通胀/滞胀风险）。",
+          "errorTag": "AD-AS模型"
+        }
+      ]
+    },
+    {
+      "id": "math-core",
+      "course": "mathematics",
+      "title": "商业数学高频防错（E01–E05 / 对数 / 微积分 / 金融 / 概率统计）",
+      "questions": [
+        {
+          "id": "ep-math-1",
+          "topic": "T1 W4 Logarithms (E03)",
+          "prompt": "Solve log₂(x − 1) + log₂(x + 1) = 3. What is the valid solution?",
+          "options": [
+            "x = 3 and x = −3",
+            "x = 3 only",
+            "x = √10 only",
+            "x = 4 only"
+          ],
+          "answer": 1,
+          "explanation": "合并得 (x−1)(x+1)=2³=8 → x²=9 → x=±3。检验定义域需 x−1>0 且 x+1>0 即 x>1，排除非法根 x=−3，仅 x=3（典型 E03 考点）。",
+          "errorTag": "E03定义域"
+        },
+        {
+          "id": "ep-math-2",
+          "topic": "T1 W10 Definite Integrals",
+          "prompt": "What is the total area bounded by y = x, the x-axis, x = −2, and x = 2?",
+          "options": [
+            "0",
+            "2",
+            "4",
+            "8"
+          ],
+          "answer": 2,
+          "explanation": "直接积分 ∫₋₂² x dx = 0 会正负抵消！必须按零点 x=0 分段：|∫₋₂⁰ x dx| + ∫₀² x dx = 2 + 2 = 4。",
+          "errorTag": "定积分面积"
+        },
+        {
+          "id": "ep-math-3",
+          "topic": "T2 W2 Infinite GP",
+          "prompt": "For which values of common ratio r does the infinite geometric series a + ar + ar² + ... (a ≠ 0) converge?",
+          "options": [
+            "r < 1",
+            "−1 < r < 1",
+            "−1 ≤ r ≤ 1",
+            "r > 0"
+          ],
+          "answer": 1,
+          "explanation": "无穷等比级数收敛充要条件是严格满足 |r| < 1（即 −1 < r < 1）；r = ±1 均发散。",
+          "errorTag": "级数收敛条件"
+        },
+        {
+          "id": "ep-math-4",
+          "topic": "T2 W11 Binomial Distribution",
+          "prompt": "If X ~ B(n = 100, p = 0.2), what are E(X) and the standard deviation SD(X)?",
+          "options": [
+            "E(X) = 20, SD = 16",
+            "E(X) = 20, SD = 4",
+            "E(X) = 80, SD = 4",
+            "E(X) = 20, SD = 2√5"
+          ],
+          "answer": 1,
+          "explanation": "E(X) = np = 20；Var(X) = np(1−p) = 100×0.2×0.8 = 16；SD(X) = √16 = 4（注意别漏开根号！）。",
+          "errorTag": "方差与标准差"
+        },
+        {
+          "id": "ep-math-5",
+          "topic": "T1 W3 Graphs (E02)",
+          "prompt": "Which description correctly matches the graph of y = ln(−x)?",
+          "options": [
+            "Defined for x > 0, reflected across the x-axis",
+            "Defined for x < 0, reflected across the y-axis, vertical asymptote x = 0",
+            "Defined for all real x, horizontal asymptote y = 0",
+            "Same graph as y = −ln(x)"
+          ],
+          "answer": 1,
+          "explanation": "真数 −x > 0 得定义域 x < 0，是 y = ln(x) 关于 y 轴对称的图像，x 截距为 (−1, 0)，渐近线 x = 0（典型 E02 错题）。",
+          "errorTag": "E02图像变换"
+        }
+      ]
+    },
+    {
+      "id": "comp-core",
+      "course": "computing",
+      "title": "计算机闭卷核心（Excel $ / IF / XLOOKUP / SUMIFS / Word 样式）",
+      "questions": [
+        {
+          "id": "ep-comp-1",
+          "topic": "Excel Absolute Ref ($)",
+          "prompt": "Cell B2 holds price and $E$1 holds the 10% GST rate. You write =B2*$E$1 in C2 and drag down to C10. What formula appears in C5?",
+          "options": [
+            "=B5*E4",
+            "=B5*$E$1",
+            "=$B$2*$E$1",
+            "=B2*$E$4"
+          ],
+          "answer": 1,
+          "explanation": "B2 为相对引用随行变为 B5，$E$1 锁定行列保持不变。",
+          "errorTag": "绝对引用"
+        },
+        {
+          "id": "ep-comp-2",
+          "topic": "Excel IF & AND",
+          "prompt": "A student passes only if BOTH Quiz (B2) ≥ 50 AND Exam (C2) ≥ 50. Which Excel formula is valid?",
+          "options": [
+            "=IF(AND(B2,C2>=50),\"Pass\",\"Fail\")",
+            "=IF(AND(B2>=50,C2>=50),\"Pass\",\"Fail\")",
+            "=IF(OR(B2>=50,C2>=50),\"Pass\",\"Fail\")",
+            "=IF(B2>=50 AND C2>=50,Pass,Fail)"
+          ],
+          "answer": 1,
+          "explanation": "AND 里每个参数必须是完整比较式，且返回文本 Pass/Fail 必须加英文双引号。",
+          "errorTag": "IF/AND语法"
+        },
+        {
+          "id": "ep-comp-3",
+          "topic": "Excel XLOOKUP",
+          "prompt": "In =XLOOKUP(A2, $F$2:$F$20, $G$2:$G$20, \"Missing\"), what does the 4th argument \"Missing\" do?",
+          "options": [
+            "Sorts the lookup array alphabetically",
+            "Returns \"Missing\" instead of #N/A if A2 is not found",
+            "Forces an approximate match",
+            "Searches from bottom to top"
+          ],
+          "answer": 1,
+          "explanation": "XLOOKUP 第 4 参数是 [if_not_found]，找不到时返回友好文案而非 #N/A 报错。",
+          "errorTag": "XLOOKUP参数"
+        },
+        {
+          "id": "ep-comp-4",
+          "topic": "SUMIF vs SUMIFS",
+          "prompt": "Which formula correctly sums Sales (C2:C50) where Region (A2:A50)=\"NSW\" AND Quarter (B2:B50)=\"Q1\"?",
+          "options": [
+            "=SUMIFS(A2:A50,\"NSW\",B2:B50,\"Q1\",C2:C50)",
+            "=SUMIFS(C2:C50,A2:A50,\"NSW\",B2:B50,\"Q1\")",
+            "=SUMIF(C2:C50,A2:A50,\"NSW\")",
+            "=COUNTIFS(C2:C50,A2:A50,\"NSW\")"
+          ],
+          "answer": 1,
+          "explanation": "SUMIFS 的第一个参数永远是 sum_range（求和区域 C2:C50），与单条件 SUMIF 正好相反！",
+          "errorTag": "SUMIFS顺序"
+        },
+        {
+          "id": "ep-comp-5",
+          "topic": "Word Section Breaks",
+          "prompt": "You want Page 2 of a Word document to have Landscape orientation and a different header from Page 1 without affecting Page 1. What must you do?",
+          "options": [
+            "Insert a Page Break and change orientation",
+            "Insert a Section Break (Next Page), switch Section 2 to Landscape, and turn off \"Link to Previous\" in the header",
+            "Press Enter until Page 2 starts",
+            "Change the Normal Style to Landscape"
+          ],
+          "answer": 1,
+          "explanation": "页面方向与独立页眉都按 Section（节）控制，必须插 Section Break 并取消 Link to Previous。",
+          "errorTag": "Word分节"
+        }
+      ]
+    },
+    {
+      "id": "eng-core",
+      "course": "english",
+      "title": "学术英语高频核心（推断防脑补 / Hedging / 转述动词 / 名词化）",
+      "questions": [
+        {
+          "id": "ep-eng-1",
+          "topic": "Reading Inference",
+          "prompt": "Passage: \"Extended screen time may contribute to reduced sleep quality among adolescents, though family routines also play a role.\" Which statement is validly supported?",
+          "options": [
+            "Screen time is the sole cause of poor adolescent sleep.",
+            "Reducing screen time will definitely cure all sleep disorders.",
+            "Screen time is possibly one factor linked to poorer sleep in teenagers.",
+            "Family routines have no impact on adolescent sleep."
+          ],
+          "answer": 2,
+          "explanation": "原文用 may（可能）和 also（因素之一），只有选项 C 保留了限定语气；A/B 犯了绝对化（sole/definitely）错误。",
+          "errorTag": "推断过度绝对"
+        },
+        {
+          "id": "ep-eng-2",
+          "topic": "Hedging Language",
+          "prompt": "Which sentence demonstrates appropriate academic hedging?",
+          "options": [
+            "AI tools will always ruin students’ critical thinking.",
+            "Frequent unguided reliance on AI tools may undermine independent reasoning.",
+            "Every student who uses AI fails to learn anything.",
+            "AI tools obviously destroy education completely."
+          ],
+          "answer": 1,
+          "explanation": "学术写作使用 may / tend to 等模糊限制语，并限定条件（frequent unguided reliance），避免 always / every / obviously。",
+          "errorTag": "模糊限制语"
+        },
+        {
+          "id": "ep-eng-3",
+          "topic": "Nominalisation",
+          "prompt": "Which option best nominalises the clause \"Because cities expanded rapidly, housing became less affordable\"?",
+          "options": [
+            "Cities expanded very fast so houses cost more.",
+            "The rapid expansion of cities reduced housing affordability.",
+            "People saw cities grow and paid more rent.",
+            "Rapidly expanding cities are always expensive."
+          ],
+          "answer": 1,
+          "explanation": "把动词短语 expanded rapidly 名词化为 the rapid expansion of cities，became less affordable 转为 reduced housing affordability。",
+          "errorTag": "名词化"
+        },
+        {
+          "id": "ep-eng-4",
+          "topic": "Reporting Verbs",
+          "prompt": "An author presents an argument that lacks strong empirical proof, and you want to report it cautiously. Which verb fits best?",
+          "options": [
+            "proves",
+            "confirms",
+            "contends / claims",
+            "demonstrates conclusively"
+          ],
+          "answer": 2,
+          "explanation": "contend / claim 表达「声称/主张」且保留审慎距离，适用于尚有争议或证据不足的观点。",
+          "errorTag": "转述动词"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,484 @@
+[
+  {
+    "id": "accounting",
+    "title": "会计学 · 通关方法与考前速查手册",
+    "en": "Accounting (UNSW FNDN) · Study Method & Cheat Sheet",
+    "color": "#1c4375",
+    "assessments": [
+      {
+        "name": "Diagnostic Quiz (U1–5)",
+        "weight": "5%",
+        "rule": "C1 考场禁用 AI",
+        "tip": "重点抓账户分类、基础分录与调整分录方向"
+      },
+      {
+        "name": "Challenge Week (U1–6)",
+        "weight": "15%",
+        "rule": "C1 考场禁用 AI",
+        "tip": "综合演练多步交易、退货折扣、T 型账结转与试算表"
+      },
+      {
+        "name": "Business Report & Viva Voce",
+        "weight": "20% (Viva 须通过否则 0 分)",
+        "rule": "C2 报告自写防 Turnitin",
+        "tip": "W9 发 Case、W12 个人答辩，务必亲自弄懂每笔分录与报表比率"
+      },
+      {
+        "name": "Final Exam 期末考",
+        "weight": "50%",
+        "rule": "C1 闭卷禁用 AI",
+        "tip": "全单元覆盖：分录、调整、T 型账、利润表、资产负债表、比率与现金流"
+      }
+    ],
+    "weeklyMethod": [
+      "第 1 步（先定主体与时间线）：读题先标出「谁向谁买/卖」和三个时点（原始交易日 / 期末调整日 / 实际收付款日）。",
+      "第 2 步（口诀判借贷）：牢记 DEAD（Debit 增：Drawings / Expenses / Assets）与 CLIC（Credit 增：Capital / Liabilities / Income）。",
+      "第 3 步（严格按指令格式作答）：看清题目要 Journal Entry、T-Account、Columnar Ledger 还是 Trial Balance，不要画错表。",
+      "第 4 步（借贷必验平）：每写完一笔分录立即核对 Dr 总额 = Cr 总额，退货折扣题必走「原额 − 退货 → 乘折扣率 → 实际现金」三步。"
+    ],
+    "cheatSheets": [
+      {
+        "title": "会计等式与借贷规则（DEAD / CLIC）",
+        "rows": [
+          [
+            "基本等式",
+            "Assets = Liabilities + Owner’s Equity（扩展：A + Expenses + Drawings = L + Capital + Revenue）"
+          ],
+          [
+            "借方增加 (Dr +)",
+            "Assets（资产）、Expenses（费用）、Drawings（提款）、Sales Returns（销货退回）"
+          ],
+          [
+            "贷方增加 (Cr +)",
+            "Liabilities（负债）、Owner’s Equity（权益）、Revenue（收入）、Accumulated Depreciation（累计折旧）"
+          ]
+        ]
+      },
+      {
+        "title": "五大期末调整分录速查（Unit 5）",
+        "rows": [
+          [
+            "Prepaid Expense（预付耗用）",
+            "Dr Expense / Cr Prepaid Expense（按已过月数分摊）"
+          ],
+          [
+            "Unearned Revenue（预收实现）",
+            "Dr Unearned Revenue / Cr Service/Sales Revenue"
+          ],
+          [
+            "Accrued Expense（应计未付费用）",
+            "Dr Expense / Cr Accrued Expense（如期末欠发工资）"
+          ],
+          [
+            "Accrued Revenue（应计未收收入）",
+            "Dr Accrued Revenue / Cr Revenue"
+          ],
+          [
+            "Depreciation（折旧）",
+            "Dr Depreciation Expense / Cr Accumulated Depreciation（备抵资产，绝不直接贷记原资产！）"
+          ]
+        ]
+      },
+      {
+        "title": "财务比率核心公式（Unit 10）",
+        "rows": [
+          [
+            "Current Ratio（流动比率）",
+            "Current Assets ÷ Current Liabilities（衡量短期偿债能力）"
+          ],
+          [
+            "Quick / Acid-Test Ratio（速动比率）",
+            "(Current Assets − Inventory − Prepayments) ÷ Current Liabilities"
+          ],
+          [
+            "Gross Profit Margin（毛利率）",
+            "(Gross Profit ÷ Net Sales) × 100%"
+          ],
+          [
+            "Net Profit Margin（净利率）",
+            "(Net Profit ÷ Net Sales) × 100%"
+          ],
+          [
+            "Return on Equity (ROE)",
+            "(Net Profit ÷ Average Owner’s Equity) × 100%"
+          ]
+        ]
+      }
+    ],
+    "pitfalls": [
+      "折扣基数错：赊销 $7,200、退货 $200、折扣 1% → 必须先减退货得 $7,000，再算 Discount Allowed = $70（不是 $72），实际收现金 $6,930。",
+      "购货文具误记 Purchases：只有买来转售的商品（Inventory/Merchandise）才记 Purchases；买办公用品记 Office Supplies，买设备记 Equipment。",
+      "服务收入误记 Sales：提供咨询/维修等服务记 Service Revenue，销售实物商品记 Sales。",
+      "部分付款算错：客户欠 $5,000 只付 $1,000，分录只按实际收到的 $1,000 记（除非明确触发折扣条款）。",
+      "T 型账 c/d 与 b/d 放反：Balance c/d 永远填在「较小一侧」用来凑平，Balance b/d 永远写在下期「正常余额一侧」。"
+    ]
+  },
+  {
+    "id": "economics",
+    "title": "经济学 · 通关方法与考前速查手册",
+    "en": "Economics (Micro & Macro) · Study Method & Cheat Sheet",
+    "color": "#276749",
+    "assessments": [
+      {
+        "name": "A2 简答书面考 (U1–2)",
+        "weight": "15%",
+        "rule": "C1 书面闭卷",
+        "tip": "英文因果链完整度决定 60 分简答上限"
+      },
+      {
+        "name": "A3 小组展示 (Challenge Week)",
+        "weight": "15%",
+        "rule": "小组协作",
+        "tip": "定义 + 经济图像 + 现实案例 + 权衡局限四件套"
+      },
+      {
+        "name": "A4 期末考",
+        "weight": "50%",
+        "rule": "C1 闭卷",
+        "tip": "微观全单元 / 宏观全模型（AD-AS、政策传导与画图）"
+      }
+    ],
+    "weeklyMethod": [
+      "答题结构铁律（D-E-E）：任何简答题按 Definition（精准英文定义）→ Explanation（原因 → 机制 → 结果完整因果链）→ Evaluation（前提条件、权衡、局限性）三段展开。",
+      "画图四必标：所有图（PPC / D&S / 外部性 / 市场结构 / AD-AS）必标「横纵坐标轴名 + 曲线名 + 原均衡与新均衡点（虚线到坐标轴）+ 移动箭头」。",
+      "计算题写全过程：Opportunity Cost 与 Elasticity 必须写「公式 → 代入带单位数值 → 经济含义解读」。",
+      "每日 5 分钟术语纠偏：用站内「术语闪卡」背准地道经济英文，避免中式直译扣分。"
+    ],
+    "cheatSheets": [
+      {
+        "title": "微观核心公式与判断（Term 1）",
+        "rows": [
+          [
+            "Opportunity Cost（机会成本）",
+            "放弃量 ÷ 获得量（必写单位 + next-best alternative）"
+          ],
+          [
+            "PED（需求价格弹性）",
+            "%ΔQd ÷ %ΔP（Midpoint 法：[(Q2−Q1)/((Q1+Q2)/2)] ÷ [(P2−P1)/((P1+P2)/2)]）"
+          ],
+          [
+            "总收益与弹性关系",
+            "|PED|>1（弹性大）降价增收；|PED|<1（弹性小）提价增收"
+          ],
+          [
+            "YED / XED",
+            "YED>0 正常品、<0 低档品；XED>0 替代品、<0 互补品"
+          ],
+          [
+            "利润最大化 & 停产点",
+            "MR = MC；短期 P < AVC 停产；完全竞争长期 P = min AC（经济利润 = 0）"
+          ]
+        ]
+      },
+      {
+        "title": "宏观核心公式与政策传导（Term 2）",
+        "rows": [
+          [
+            "Real GDP（实际 GDP）",
+            "(Nominal GDP ÷ Price Index) × 100"
+          ],
+          [
+            "Inflation Rate（通胀率）",
+            "[(CPI₂ − CPI₁) ÷ CPI₁] × 100%"
+          ],
+          [
+            "Unemployment Rate（失业率）",
+            "(Unemployed ÷ Labour Force) × 100%（Labour Force = Employed + Unemployed）"
+          ],
+          [
+            "AD 组成",
+            "AD = C + I + G + (X − M)"
+          ],
+          [
+            "紧缩货币政策传导",
+            "RBA 升息 → 借贷成本升 & 储蓄意愿升 → C、I 降 & 汇率升致净出口降 → AD 左移 → 通胀回落但增速放缓"
+          ]
+        ]
+      }
+    ],
+    "pitfalls": [
+      "PPC 向外凸（bowed-out）漏掉因果链：必须完整写出 resources are not equally suited to producing both goods → increasing opportunity cost → bowed-out PPC。",
+      "Movement vs Shift 混淆：沿 PPC 移动是现有资源重分配；整条曲线外移才是资源增多/技术进步带来的能力扩张（只影响一种商品时表现为绕一轴旋转 pivot）。",
+      "地道英文高频纠错：用 unlimited human wants（勿写 human’s unlimited want）；用 opportunity cost arises（勿写 is happened）；用 increasing opportunity cost（勿写 inefficiently capacity）。",
+      "失业率陷阱：气馁工人（discouraged workers）退出劳动力市场会使失业率数字下降，但并不代表就业增加！"
+    ]
+  },
+  {
+    "id": "mathematics",
+    "title": "商业数学 · 公式速查与 E01–E05 防扣分手册",
+    "en": "Mathematics for Commerce · Formula Sheet & Error Checklist",
+    "color": "#7d5a1c",
+    "assessments": [
+      {
+        "name": "A1 线上测验 (W4/6/10/13)",
+        "weight": "5%",
+        "rule": "C1 独立完成",
+        "tip": "4 次全过才拿 5%，用它检验当周计算盲区"
+      },
+      {
+        "name": "A2 期末考 (2小时闭卷)",
+        "weight": "45%",
+        "rule": "C1 闭卷",
+        "tip": "6 道递增难度多问大题，考前必限时刷完 3 套 Sample Papers"
+      }
+    ],
+    "weeklyMethod": [
+      "先做再看解答：每学完一讲，合上笔记独立手算 3 道讲义原题，再点开笔记里的「看解答」逐行对步骤。",
+      "每道错题贴 E01–E05 标签：绝不笼统归因为「粗心」，必须标清是符号、图像、定义域、审题还是应用建模错误。",
+      "草稿分区 + 反向代入验算：方程解出根后花 10 秒代回原式检验（尤其是对数真数 > 0 和分母 ≠ 0）。",
+      "考前公式盲默：对照本手册默写导数、积分、数列、年金与分布公式，保证考场零卡壳。"
+    ],
+    "cheatSheets": [
+      {
+        "title": "Term 1 核心公式（代数、函数、微积分）",
+        "rows": [
+          [
+            "二次函数顶点与求根",
+            "y = a(x−h)² + k，顶点 (h, k)；x = [−b ± √(b²−4ac)] / (2a)"
+          ],
+          [
+            "对数核心法则",
+            "log(ab)=log a + log b；log(a/b)=log a − log b；log(aⁿ)=n log a；真数严格 > 0"
+          ],
+          [
+            "基本求导",
+            "(xⁿ)′ = nxⁿ⁻¹；(eᵏˣ)′ = keᵏˣ；(ln|ax+b|)′ = a/(ax+b)；积商链式法则"
+          ],
+          [
+            "驻点与最值",
+            "f′(x)=0 求驻点；f″(x)>0 极小值，f″(x)<0 极大值；闭区间必比端点"
+          ],
+          [
+            "定积分与面积",
+            "∫(1/x)dx = ln|x| + C（区间不能跨 0）；求面积先找零点，x 轴下方加负号取绝对值"
+          ]
+        ]
+      },
+      {
+        "title": "Term 2 核心公式（金融、概率、统计分布）",
+        "rows": [
+          [
+            "AP / GP 数列",
+            "AP: Tn=a+(n−1)d, Sn=n/2[2a+(n−1)d]；GP: Tn=arⁿ⁻¹, S∞=a/(1−r) 仅当 |r|<1"
+          ],
+          [
+            "复利与年金",
+            "FV = P(1+i)ⁿ；普通年金终值 S = R[(1+i)ⁿ−1]/i；现值 A = R[1−(1+i)⁻ⁿ]/i"
+          ],
+          [
+            "排列组合与概率",
+            "nPr = n!/(n−r)!（有序）；nCr = n!/[r!(n−r)!]（无序）；P(A|B)=P(A∩B)/P(B)"
+          ],
+          [
+            "二项分布 B(n,p)",
+            "P(X=k)=C(n,k)pᵏ(1−p)ⁿ⁻ᵏ；E(X)=np；Var(X)=np(1−p)；SD=√(np(1−p))"
+          ],
+          [
+            "正态分布 N(μ,σ²)",
+            "Z = (X−μ)/σ；画钟形图确认阴影方向，注意题目给的是方差 σ² 还是标准差 σ"
+          ]
+        ]
+      }
+    ],
+    "pitfalls": [
+      "【E01 符号与括号】展开负号括号、配方常数项、平移/反射（f(-x) 关于 y 轴翻折，-f(x) 关于 x 轴翻折）最易丢负号。",
+      "【E02 图像完整性】画 y=ln(-x) 看清定义域在 x<0；|2x+y|=1 是两条平行线不是 V 形；必标渐近线方程与 x/y 截距。",
+      "【E03 定义域与端点】解对数方程必排除非法根；严格区分 >（空心圆）与 ≥（实心圆），盈亏区间是否含端点要看题意。",
+      "【E04 审题与精度】要 Equation 别只写表达式；问解的个数别只列 x；要 3 s.f. 别留 ln 形式；应用题求完 x 必须写一句实际文字结论（带单位）。",
+      "【E05 金融与统计舍入】中间步骤保留完整计算器精度，最后一步再按要求舍入；保证年限/次数题看清是向上取整还是保守向下取整。"
+    ]
+  },
+  {
+    "id": "computing",
+    "title": "计算机应用 · Excel 函数卡与 Word 闭卷实战手册",
+    "en": "Computing (Excel & Word) · Closed-Book Exam Cheat Sheet",
+    "color": "#6b46c1",
+    "assessments": [
+      {
+        "name": "A1 每周在线测验 (W1–6)",
+        "weight": "20%",
+        "rule": "C1 仅一次机会",
+        "tip": "W7 末截止，PPT/Word/硬件/网络/SDLC/Excel 概念逐周清空"
+      },
+      {
+        "name": "A2 Tutorial Performance (W1–13)",
+        "weight": "20%",
+        "rule": "0/1/2 评分",
+        "tip": "每周文件准时且完整提交就能稳拿 2 分"
+      },
+      {
+        "name": "A3 Term 1 期末闭卷考 (65 分钟)",
+        "weight": "60%",
+        "rule": "C1 闭卷禁 AI",
+        "tip": "30 道随机 Excel MCQ + Word 按指令排版回传，是最高权重冲 A+ 核心"
+      }
+    ],
+    "weeklyMethod": [
+      "必须用笔记本实操（手机/平板无法练手速）：每次做完公式按 Ctrl+`（Mac 按 Control+`）切换「公式视图」逐格复核。",
+      "函数三问自检法：写任何 Excel 公式前先问 ① 拖拉时哪些单元格要加 `$`？② 文本条件有没有加英文双引号？③ 参数顺序有没有反（SUMIF vs SUMIFS）？",
+      "Word 排版三铁律：改全篇格式永远改 Styles（Normal / Heading 1 / Heading 2）不手动刷；换页用 Page Break、换页眉/方向用 Section Break 并取消 Link to Previous。",
+      "考前 1 周做 2 次 65 分钟计时全真模拟：30 分钟 Excel MCQ + 35 分钟 Word 实操回传。"
+    ],
+    "cheatSheets": [
+      {
+        "title": "Excel 闭卷必考函数速查卡",
+        "rows": [
+          [
+            "绝对/混合引用 ($)",
+            "$A$1 锁行列；$A1 锁列不锁行；A$1 锁行不锁列（编辑栏按 F4 循环切换）"
+          ],
+          [
+            "IF 与嵌套 IF",
+            "=IF(C2>=85,\"HD\",IF(C2>=75,\"DN\",IF(C2>=50,\"PS\",\"FL\")))"
+          ],
+          [
+            "AND / OR 组合",
+            "=IF(AND(B2>=50,C2>=50),\"Pass\",\"Fail\")（每个条件必须写完整比较式！）"
+          ],
+          [
+            "XLOOKUP 查找",
+            "=XLOOKUP(查找值, 查找区$绝对引用, 返回区$绝对引用, \"Not Found\", [匹配模式])"
+          ],
+          [
+            "条件统计（防反序！）",
+            "COUNTIF(范围,条件) | SUMIF(条件区,条件,求和区) | SUMIFS(求和区,条件区1,条件1,...)"
+          ],
+          [
+            "财务与文本函数",
+            "=PMT(年利率/12, 年数*12, -本金) | LEFT / RIGHT / MID / LEN / TRIM / TEXTJOIN"
+          ]
+        ]
+      },
+      {
+        "title": "Excel 常见错误代码速诊",
+        "rows": [
+          [
+            "#DIV/0!",
+            "分母为 0 或引用了空白单元格"
+          ],
+          [
+            "#N/A",
+            "XLOOKUP 找不到匹配值（常因查找区忘加 $ 导致拖拉错位，或有多余空格）"
+          ],
+          [
+            "#NAME?",
+            "函数名拼错，或公式里的英文文本忘了加双引号 \"\""
+          ],
+          [
+            "#VALUE!",
+            "数据类型错误（如把文字拿去做加减乘除）"
+          ],
+          [
+            "#REF!",
+            "公式引用的行/列被删除导致引用失效"
+          ]
+        ]
+      },
+      {
+        "title": "Word 闭卷排版核对清单",
+        "rows": [
+          [
+            "Styles 样式集",
+            "右键 Modify Normal / Heading 1 / Heading 2 统一字体、字号、段前段后距"
+          ],
+          [
+            "分节与页眉页脚",
+            "Layout → Breaks → Section Break (Next Page) → 点掉 Link to Previous"
+          ],
+          [
+            "封面与目录",
+            "Cover Page / WordArt / Shapes 按指令设置；正文用 Heading 样式后可自动插目录"
+          ],
+          [
+            "出勤与交卷红线",
+            "确认出勤率 ≥ 80%；交卷前核对文件名与保存路径"
+          ]
+        ]
+      }
+    ],
+    "pitfalls": [
+      "拖拉公式忘锁 `$`：税率、折扣率、XLOOKUP 的查找表区域只要向下拖拉，必须加 `$`！",
+      "AND 写成简写：不能写 AND(B2,C2>=50)，必须写 AND(B2>=50,C2>=50)。",
+      "SUMIF 与 SUMIFS 参数顺序颠倒：SUMIF 求和区在最后，SUMIFS 求和区在最前！",
+      "多工作表操作忘取消分组（Ungroup Sheets）：选多张表统一改完格式后忘记取消，后续输入会覆盖所有表。"
+    ]
+  },
+  {
+    "id": "english",
+    "title": "学术英语 · 每日 45 分钟提分剧本与 Rubric 手册",
+    "en": "Academic English (2026 STD O2) · Daily Drill & Rubric Guide",
+    "color": "#b03030",
+    "assessments": [
+      {
+        "name": "A1 Speaking（口语与文本转述）",
+        "weight": "10%",
+        "rule": "Processing Text 20% + Transformation 20%",
+        "tip": "不是背模板，关键是听/读懂原文后用自己的话准确转述并互动"
+      },
+      {
+        "name": "A2 Short Answer（简答写作）",
+        "weight": "10%",
+        "rule": "学术写作规范",
+        "tip": "用准模糊限制语、转述动词、衔接词与名词化"
+      },
+      {
+        "name": "A3 Reading & A4 Listening Exam",
+        "weight": "10% (R5%+L5%)",
+        "rule": "C1 闭卷",
+        "tip": "核心提分点：同义替换定位 + 证据型推断，目标正确率稳步突破 60%+"
+      }
+    ],
+    "weeklyMethod": [
+      "每日 45 分钟固定剧本：Reading 20 分钟（只做主旨 + 定位 + 找原文证据）→ Listening 10 分钟（抓整句逻辑与同义替换）→ Speaking 10 分钟（90 秒即兴录音 → AI/自检纠错 → 重录一遍）→ Writing 5 分钟（1–2 句改写/名词化）。",
+      "阅读三步法：先读题干划定位词 → 扫读段落首尾句抓「段落目的（Main Idea）」→ 逐词核对同义替换证据句，绝不凭局部词猜答案。",
+      "推断题铁律：只选「原文逻辑必然推出」的选项，凡是把原文 may/could 偷换成 must/always、或把相关说成因果的选项一律排除。",
+      "每次练习必记录错因分类（词汇 / 句法 / 定位 / 推断 / 时间压力），避免笼统归因于词汇量不足。"
+    ],
+    "cheatSheets": [
+      {
+        "title": "学术表达四大提分工具（W4 / W6 / W9 / W11）",
+        "rows": [
+          [
+            "Hedging（模糊限制语）",
+            "may / might / could / tend to / appear to / arguably / to some extent（禁用无证据的 all / always / prove）"
+          ],
+          [
+            "Reporting Verbs（转述动词）",
+            "中立：state, observe, note；支持：demonstrate, confirm；谨慎/争议：claim, contend, suggest"
+          ],
+          [
+            "Cohesion（衔接手段）",
+            "递进：Furthermore / Moreover；转折：However / Conversely / Whereas；因果：Consequently / As a result"
+          ],
+          [
+            "Nominalisation（名词化）",
+            "cities expand rapidly → the rapid expansion of cities；people consume energy → energy consumption"
+          ]
+        ]
+      },
+      {
+        "title": "A1 Speaking 转述三步框架",
+        "rows": [
+          [
+            "1. 抓主旨 (Main Point)",
+            "According to the text, the primary argument is that..."
+          ],
+          [
+            "2. 转述机制 (Transform)",
+            "Rather than repeating words, paraphrase the cause-effect link using your own sentence structure."
+          ],
+          [
+            "3. 评价与互动 (Interact)",
+            "While this approach may address..., a potential limitation is that... What is your view on...?"
+          ]
+        ]
+      }
+    ],
+    "pitfalls": [
+      "阅读抓局部关键词忽略整段目的：选 Main Idea 前先用中文一句话总结「这一段作者到底想干嘛」。",
+      "推断题过度脑补：没有原文直接证据支撑的「常识正确」选项往往是干扰项。",
+      "转述只换近义词不换句式：既容易踩 Turnitin 相似率，也会在 A1 Transformation 项失分。",
+      "口语即兴遗漏主谓一致与单复数：每次录完 60–90 秒回听一遍，专门抓时态和三单错误后重说一遍效果最好。"
+    ]
+  }
+]
