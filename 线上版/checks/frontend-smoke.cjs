@@ -115,8 +115,10 @@ function req(method, pathname, cookie, body) {
 
     const paths = [
       '/', '/guide.html', '/bilingual-video.html', '/exam-prep.html', '/english/index.html',
-      '/styles/theme.css', '/styles/study-hub.css',
-      '/app/study-api.js', '/app/study-views.js', '/app/study-hub.js',
+      '/styles/theme.css', '/styles/editorial.css', '/styles/study-hub.css',
+      '/app/svg-covers.js', '/app/study-api.js', '/app/store.js',
+      '/app/views-home.js', '/app/views-course.js', '/app/views-reading.js',
+      '/app/views-prep.js', '/app/study-views.js', '/app/main.js',
       '/data-chunks/index.json', '/data-chunks/handbooks.json', '/data-chunks/glossary.json',
       '/data-chunks/exam-packs.json', '/data-chunks/videos-extra.json', '/data-chunks/courses/accounting.json'
     ];
@@ -124,10 +126,23 @@ function req(method, pathname, cookie, body) {
       const res = await req('GET', p, cookie);
       assert.equal(res.status, 200, `Expected 200 for ${p}, got ${res.status}`);
     }
+    // Verify ETag 304 on data-chunks/index.json
+    const firstIdx = await req('GET', '/data-chunks/index.json', cookie);
+    assert(firstIdx.headers.etag, 'Expected ETag header on data-chunks/index.json');
+    const cachedIdx = await new Promise((resolve, reject) => {
+      const r = http.request({
+        host: '127.0.0.1', port: PORT, method: 'GET', path: '/data-chunks/index.json',
+        headers: { Cookie: cookie, 'If-None-Match': firstIdx.headers.etag }
+      }, res => { res.resume(); res.on('end', () => resolve({ status: res.statusCode })); });
+      r.on('error', reject); r.end();
+    });
+    assert.equal(cachedIdx.status, 304, 'Expected 304 Not Modified on matching ETag');
+
     const home = await req('GET', '/', cookie);
     assert(home.body.includes('"personalMode":true'), 'Home bootScript should inject personalMode:true');
-    assert(home.body.includes('app/study-hub.js'), 'Home should load app/study-hub.js');
-    console.log(`PASS: Live HTTP smoke test passed for all ${paths.length} routes & assets.`);
+    assert(home.body.includes('app/main.js'), 'Home should load app/main.js');
+    assert(!home.body.includes('src="data.js'), 'Home should lazy-load data-chunks instead of blocking on 7MB data.js');
+    console.log(`PASS: Live HTTP smoke + ETag 304 test passed for all ${paths.length} routes & assets.`);
   } finally {
     child.kill();
     try { fs.rmSync(DATA_DIR, { recursive: true, force: true }); } catch (e) {}

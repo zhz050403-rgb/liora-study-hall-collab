@@ -1,3 +1,4 @@
+'use strict';
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -10,27 +11,13 @@ const html = read('public/index.html');
 const source = read('public/data.js');
 const context = { window: {} };
 vm.runInNewContext(source, context);
-for (const [, script] of html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g)) {
-  new vm.Script(script);
-}
-const hasContent = vm.runInNewContext('(' + html.match(/function weekHasContent\(w\)\{[^\n]+\}/)[0] + ')');
-assert(hasContent({ graphicHtml: '<p>Notes</p>' }));
-assert(!hasContent({}));
-assert.match(read('server/static.js'), /name === '\/data\.js'[\s\S]{0,120}\? 'no-cache'/);
-assert.match(html, /src="data\.js\?v=/);
 
-const searchContext = {
-  DATA: { courses: [{ id: 'sample', terms: [{ id: 'term1', weeks: [
-    { num: 1, title: 'Sample', graphicHtml: '<p>Profit &amp; loss</p>' },
-  ] }] }] },
-  document: { createElement(tag) {
-    assert.equal(tag, 'textarea');
-    return { set innerHTML(value) { this.value = value.replaceAll('&amp;', '&'); } };
-  } },
-};
-const buildSearchIndex = html.slice(html.indexOf('function buildSearchIndex(){'), html.indexOf('function doSearch(q){'));
-vm.runInNewContext(buildSearchIndex + '; buildSearchIndex();', searchContext);
-assert.equal(searchContext.searchIndex[1].text.trim(), 'Profit & loss');
+for (const [, script] of html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g)) {
+  if (script.trim()) new vm.Script(script);
+}
+
+assert.match(read('server/static.js'), /name === '\/data\.js'[\s\S]{0,160}\? 'no-cache'/);
+assert.match(html, /src="app\/main\.js\?v=/);
 
 const inventory = {};
 for (const id of ['accounting', 'economics', 'management', 'mathematics', 'english', 'computing']) {
@@ -46,8 +33,10 @@ for (const id of ['accounting', 'economics', 'management', 'mathematics', 'engli
         const resources = (unit[field] || '').matchAll(/(?:src|href)="(\/?sources\/math-reference\/[^"#]+)(?:#[^"]*)?"/g);
         for (const [, resource] of resources) {
           const relativePath = resource.replace(/^\//, '');
-          assert(fs.statSync(path.join(root, 'public', relativePath), { throwIfNoEntry: false })?.isFile(),
-            'Missing ' + field + ' resource on ' + route + ': ' + resource);
+          assert(
+            fs.statSync(path.join(root, 'public', relativePath), { throwIfNoEntry: false })?.isFile(),
+            'Missing ' + field + ' resource on ' + route + ': ' + resource
+          );
         }
       }
       const notes = unit.graphicHtml || unit.notesHtml;
@@ -55,7 +44,7 @@ for (const id of ['accounting', 'economics', 'management', 'mathematics', 'engli
         title: unit.title,
         field: unit.graphicHtml ? 'graphicHtml' : unit.notesHtml ? 'notesHtml' : null,
         sha256: notes ? crypto.createHash('sha256').update(notes).digest('hex') : null,
-        tutorialSha256: unit.tutorialAnswers ? crypto.createHash('sha256').update(JSON.stringify(unit.tutorialAnswers)).digest('hex') : null,
+        tutorialSha256: unit.tutorialAnswers ? crypto.createHash('sha256').update(JSON.stringify(unit.tutorialAnswers)).digest('hex') : null
       };
     }
   }

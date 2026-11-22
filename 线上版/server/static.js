@@ -57,25 +57,28 @@ function createStaticHandler(opts) {
     return '<script>window.__CLOUD_BOOT__=' + payload + ';</script>';
   }
 
-  function sendGz(res, ctype, cacheHeader, gz) {
-    res.writeHead(200, {
+  function sendGz(res, ctype, cacheHeader, gz, etag) {
+    const h = {
       'Content-Type': ctype,
       'Content-Encoding': 'gzip',
       'Vary': 'Accept-Encoding',
       'Cache-Control': cacheHeader,
       'Content-Length': gz.length,
       'X-Content-Type-Options': 'nosniff'
-    });
+    };
+    if (etag) h.ETag = etag;
+    res.writeHead(200, h);
     res.end(gz);
   }
 
-  function sendRaw(res, ctype, cacheHeader, file, st, req) {
+  function sendRaw(res, ctype, cacheHeader, file, st, req, etag) {
     const h = {
       'Content-Type': ctype,
       'Cache-Control': cacheHeader,
       'Accept-Ranges': 'bytes',
       'X-Content-Type-Options': 'nosniff'
     };
+    if (etag) h.ETag = etag;
     if (path.extname(file).toLowerCase() === '.zip' || path.basename(file) === 'LioraTodoSetup.exe') {
       h['Content-Disposition'] = 'attachment; filename="' + path.basename(file) + '"';
     }
@@ -168,22 +171,28 @@ function createStaticHandler(opts) {
         : (ext === '.html') ? 'no-cache'
         : 'public, max-age=86400';
 
+      const etag = `W/"${st.size.toString(16)}-${Math.floor(st.mtimeMs).toString(16)}"`;
+      if (!req.headers.range && req.headers['if-none-match'] === etag) {
+        res.writeHead(304, { ETag: etag, 'Cache-Control': cacheHeader, 'X-Content-Type-Options': 'nosniff' });
+        return res.end();
+      }
+
       if (acceptGz && config.compressible.has(ext) && !req.headers.range) {
         const key = `${file}:${st.size}:${st.mtimeMs}`;
         const cached = cache.getGz(key);
-        if (cached) return sendGz(res, config.mime[ext] || 'application/octet-stream', cacheHeader, cached);
+        if (cached) return sendGz(res, config.mime[ext] || 'application/octet-stream', cacheHeader, cached, etag);
         f.readFile(file, (e3, buf) => {
           if (e3) return send(res, 500, 'read error');
           cache.gzipBuf(buf)
             .then(gz => {
               cache.setGz(key, gz);
-              sendGz(res, config.mime[ext] || 'application/octet-stream', cacheHeader, gz);
+              sendGz(res, config.mime[ext] || 'application/octet-stream', cacheHeader, gz, etag);
             })
-            .catch(() => sendRaw(res, config.mime[ext] || 'application/octet-stream', cacheHeader, file, st, req));
+            .catch(() => sendRaw(res, config.mime[ext] || 'application/octet-stream', cacheHeader, file, st, req, etag));
         });
         return;
       }
-      sendRaw(res, config.mime[ext] || 'application/octet-stream', cacheHeader, file, st, req);
+      sendRaw(res, config.mime[ext] || 'application/octet-stream', cacheHeader, file, st, req, etag);
     });
   }
 

@@ -365,18 +365,22 @@ function main() {
   // Step 4: Separate 60+ stub wishlist books vs real courses & real books
   const coreCourses = [];
   const realBooks = [];
-  const wishlistBooks = [];
+  const wishlistBooks = Array.isArray(D.wishlistBooks) ? D.wishlistBooks.slice() : [];
   for (const c of D.courses) {
     if (CORE_COURSE_IDS.has(c.id)) {
       coreCourses.push(c);
     } else if (c.id.startsWith('to-read-') && c.id !== 'to-read-bc900c3f45a1') {
-      wishlistBooks.push({
-        id: c.id,
-        name: c.name || c.cn || c.title || c.id,
-        en: c.en || c.subtitle || '',
-        category: c.category || '想读书单',
-        note: (c.terms && c.terms[0] && c.terms[0].weeks && c.terms[0].weeks[0] && (c.terms[0].weeks[0].title || '')) || '待收录'
-      });
+      const wCover = `cabin-art/books/${c.id}.jpg`;
+      if (!wishlistBooks.some(x => x.id === c.id)) {
+        wishlistBooks.push({
+          id: c.id,
+          nameCn: c.nameCn || c.name || c.id,
+          name: c.name || '',
+          coverUrl: fs.existsSync(path.join(PUB, wCover)) ? wCover : null,
+          category: c.category || '想读书单',
+          note: (c.terms && c.terms[0] && c.terms[0].weeks && c.terms[0].weeks[0] && (c.terms[0].weeks[0].title || '')) || '待收录'
+        });
+      }
     } else {
       realBooks.push(c);
     }
@@ -387,14 +391,23 @@ function main() {
   fs.mkdirSync(path.join(CHUNKS_DIR, 'courses'), { recursive: true });
   fs.mkdirSync(path.join(CHUNKS_DIR, 'books'), { recursive: true });
 
+  const SHORT_CODES = {
+    accounting: 'FNDN Accounting',
+    economics: 'FNDN Economics',
+    mathematics: 'MATH1202',
+    computing: 'FNDN Computing',
+    english: 'Academic English',
+    extracurricular: '课外拓展'
+  };
+
   const indexPayload = {
-    version: '20261122-v2',
+    version: '20261122-v3',
     generatedAt: new Date().toISOString(),
     courses: coreCourses.map(c => ({
       id: c.id,
-      name: c.name || c.cn || c.title,
-      cn: c.cn || c.name || c.title,
-      en: c.en || c.nameEn || '',
+      nameCn: c.nameCn || c.name || c.id,
+      name: c.name || c.nameCn || c.id,
+      shortCode: SHORT_CODES[c.id] || c.code || c.id,
       color: c.color || '#1c4375',
       extra: !!c.extra,
       terms: (c.terms || []).map(t => ({
@@ -412,14 +425,18 @@ function main() {
         }))
       }))
     })),
-    books: realBooks.map(b => ({
-      id: b.id,
-      name: b.name || b.cn || b.title,
-      cn: b.cn || b.name || b.title,
-      en: b.en || b.nameEn || '',
-      chapters: (b.terms || []).reduce((acc, t) => acc + (t.weeks || []).length, 0),
-      hasReader: !!(RD.courses && RD.courses[b.id])
-    })),
+    books: realBooks.map(b => {
+      const bCover = `cabin-art/books/${b.id}.jpg`;
+      return {
+        id: b.id,
+        nameCn: b.nameCn || b.name || b.id,
+        name: b.name || '',
+        code: b.code || '',
+        coverUrl: fs.existsSync(path.join(PUB, bCover)) ? bCover : null,
+        chapters: (b.terms || []).reduce((acc, t) => acc + (t.weeks || []).length, 0),
+        hasReader: !!(RD.courses && RD.courses[b.id])
+      };
+    }),
     wishlistCount: wishlistBooks.length,
     glossaryCount: glossary.length
   };

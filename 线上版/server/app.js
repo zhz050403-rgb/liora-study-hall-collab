@@ -351,8 +351,12 @@ function createApp(opts) {
     }
 
     /* 付费 AI 统一服务端代理闸门 */
-    const AI_PATHS = ['/api/chat', '/api/ai-info', '/__api/ai/status', '/__api/ai/config', '/__api/ai/chat', '/__api/ai/logs'];
+    const AI_PATHS = ['/api/chat', '/api/ai-info', '/__api/ai/ping', '/__api/ai/status', '/__api/ai/config', '/__api/ai/chat', '/__api/ai/logs'];
     if (AI_PATHS.includes(name)) {
+      if (name === '/__api/ai/ping' && req.method === 'GET') {
+        const cfg = ai.loadAICfg();
+        return json(res, 200, { ok: true, owner: curAI, ready: !!(cfg && cfg.api_key), provider: cfg ? (cfg.provider || '') : '', model: cfg ? cfg.model : '' });
+      }
       const uid = ai.aiAuthorize(req, res, cu);
       if (!uid) return;
       if (name === '/api/ai-info' && req.method === 'GET') {
