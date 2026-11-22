@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>横线分数预览</title>
+<style>
+  body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;max-width:820px;margin:30px auto;padding:0 18px;color:#153b64}
+  h2{color:#173860}
+  .note{background:#eaf3fd;border:1px solid #cfe0f3;border-radius:10px;padding:12px 16px;margin:14px 0;font-size:13px;color:#31577c}
+  /* ↓↓↓ 以下为站点 index.html 中真实使用的样式（与线上一致） ↓↓↓ */
+  .formula{background:#fbfdff;border:1px solid #d8e7f7;border-radius:8px;padding:12px 16px;margin:10px 0;text-align:center;font-size:18px;font-family:"Cambria Math","Times New Roman",Georgia,serif;color:#0d2b54;overflow-x:auto}
+  .formula .frac{display:inline-flex;flex-direction:column;text-align:center;vertical-align:middle;margin:0 .18em;font-size:1em;line-height:1.12}
+  .formula .frac .n{border-bottom:1.4px solid currentColor;padding:0 .42em .04em;white-space:nowrap}
+  .formula .frac .d{padding:.04em .42em 0;white-space:nowrap}
+  /* ↑↑↑ */
+</style>
+</head>
+<body>
+<h2>公式「横线分数」预览（与线上一致）</h2>
+<div class="note">下面是站点里真实存在的公式，已按新规则转成「分子在上、分母在下、中间一条横杠」的形式。红框=弹性公式（主分数线来自方括号 <b>[…]÷[…]</b>）；绿框=斜杠分式 <b>(A)/(B)</b>；蓝框=应当保留原样的中文分隔斜杠 / 无括号比率（不会被误改）。</div>
+
+<div class="formula" style="border-color:#e26a6a">EY = %ΔQ ÷ %ΔY = <span class="frac"><span class="n">[(Q₂ − Q₁)<span class="frac"><span class="n">Q₂ − Q₁</span><span class="d">Q₁</span></span>]</span><span class="d">[(Y₂ − Y₁)<span class="frac"><span class="n">Y₂ − Y₁</span><span class="d">Y₁</span></span>]</span></span>。必须保留正负号。</div>
+
+<div class="formula" style="border-color:#e26a6a">EC = %ΔQA ÷ %ΔPB = <span class="frac"><span class="n">[(QA2 − QA1)<span class="frac"><span class="n">QA2 − QA1</span><span class="d">QA1</span></span>]</span><span class="d">[(PB2 − PB1)<span class="frac"><span class="n">PB2 − PB1</span><span class="d">PB1</span></span>]</span></span>。正值 → substitutes 替代品。</div>
+
+<div class="formula" style="border-color:#3a9e6a">中点法 midpoint：ED = <span class="frac"><span class="n">[(Q₂ − Q₁) ÷ <span class="frac"><span class="n">Q₁ + Q₂</span><span class="d">2</span></span>]</span><span class="d">[(P₂ − P₁) ÷ <span class="frac"><span class="n">P₁ + P₂</span><span class="d">2</span></span>]</span></span></div>
+
+<div class="formula" style="border-color:#3a9e6a">Inflation Rate = <span class="frac"><span class="n">(Current CPI − Previous CPI)</span><span class="d">Previous CPI</span></span> × 100.</div>
+
+<div class="formula" style="border-color:#3a7bd5">Binding floor：Pf &gt; Pe → Qs &gt; Qd → Surplus 过剩（劳动过剩 / 失业）　← 分隔斜杠保留</div>
+
+<div class="formula" style="border-color:#3a7bd5">Real GDP / Population 比率　← 无括号比率保留</div>
+
+<div class="note">要上线到网站，告诉我「发布」即可；这部分只是让你先看效果。</div>
+</body>
+</html>

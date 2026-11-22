@@ -42,8 +42,13 @@ for (const id of ['accounting', 'economics', 'management', 'mathematics', 'engli
       const route = '#/c/' + id + '/' + term.id + '/' + unit.num;
       assert(!routes.has(route), 'Duplicate route ' + route);
       routes.add(route);
-      for (const [, resource] of (unit.tutorialAnswers || '').matchAll(/(?:src|href)="(sources\/math-reference\/[^"#]+)(?:#[^"]*)?"/g)) {
-        assert(fs.existsSync(path.join(root, 'public', resource)), 'Missing answer resource on ' + route + ': ' + resource);
+      for (const field of ['graphicHtml', 'notesHtml', 'tutorialAnswers']) {
+        const resources = (unit[field] || '').matchAll(/(?:src|href)="(\/?sources\/math-reference\/[^"#]+)(?:#[^"]*)?"/g);
+        for (const [, resource] of resources) {
+          const relativePath = resource.replace(/^\//, '');
+          assert(fs.statSync(path.join(root, 'public', relativePath), { throwIfNoEntry: false })?.isFile(),
+            'Missing ' + field + ' resource on ' + route + ': ' + resource);
+        }
       }
       const notes = unit.graphicHtml || unit.notesHtml;
       inventory[id][route] = {

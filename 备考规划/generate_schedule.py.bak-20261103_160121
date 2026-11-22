@@ -1,0 +1,653 @@
+# -*- coding: utf-8 -*-
+"""
+Liora 备考排期生成器（艾宾浩斯间隔重复）
+只读读取 data.js 的周次清单，全部产出写入「备考规划」文件夹，不改动任何原有文件。
+
+如需改考试日期 / 每日时长：改下面 CONFIG 后重跑本脚本即可。
+"""
+import csv, json, os
+from datetime import date, timedelta
+
+OUT = os.path.dirname(os.path.abspath(__file__))
+TODAY = date(2026, 10, 30)      # 排期基准日（今天）
+EXAM = date(2027, 1, 25)        # 期末考试日 ⚠️ 由本人 2026-10-30 确认
+D1 = TODAY + timedelta(days=1)  # 正式开始：2026-10-31
+TOTAL_DAYS = (EXAM - TODAY).days  # 87
+
+WD = ["一", "二", "三", "四", "五", "六", "日"]  # Monday=0
+def d_of(day_n):            # day_n: 1..87  ->  date
+    return D1 + timedelta(days=day_n - 1)
+def dow(day_n):
+    return WD[d_of(day_n).weekday()]
+
+# ---------------- 单元清单（全部来自网站 data.js 真实周次） ----------------
+# (course, term, week, title, tier, mode)
+U = []
+def add(c, t, w, title, tier, mode):
+    U.append(dict(course=c, term=t, week=w, title=title, tier=tier, mode=mode))
+
+COURSE_CN = {
+    "accounting": "会计", "economics": "经济", "mathematics": "数学",
+    "computing": "计算机", "english": "学术英语",
+}
+TERM_CN = {"term1": "T1", "term2": "T2", "term1x": "T1补充(2025)"}
+MODE_CN = {
+    "drill": "实操型 · 动手做分录/编表",
+    "graph": "图文型 · 画图 + 口头解释",
+    "calc": "刷题型 · 限时做题",
+    "excel": "上机型 · Excel 实操",
+    "output": "输出型 · 说/写（技能科）",
+}
+
+# 会计 T1（13 周）：记账链条 + 三大报表 + 分析 = 必考核心
+for w, ti, tier in [(1, "Unit 1-2 会计导论与会计惯例", "A"), (2, "Unit 3 复式记账与交易分析", "A"),
+                    (3, "Unit 4 日记账分录", "A"), (4, "Unit 5 调整分录", "A"),
+                    (5, "Unit 6 分类账 T 型账户", "A"), (6, "Unit 7 多栏式账户与试算平衡表", "A"),
+                    (8, "Unit 8 利润表与 Excel 入门", "A"), (9, "Unit 9 资产负债表", "A"),
+                    (10, "Unit 10 财务报表分析", "A"), (11, "Unit 10 现金流量表", "A"),
+                    (12, "Week 12 总复习与考试结构", "B")]:
+    add("accounting", "term1", w, ti, tier, "drill")
+
+# 经济 T2 宏观（13 周）
+for w, ti, tier in [(1, "Unit 0 循环流量模型 + Unit 1 经济增长与 GDP", "A"),
+                    (2, "Unit 2 通货膨胀", "A"), (3, "Unit 3 失业", "A"),
+                    (4, "Unit 4 总需求与总供给 AD-AS", "A"),
+                    (5, "Unit 5 国际贸易与保护", "B"), (6, "Unit 6 汇率", "B"),
+                    (8, "Unit 7 金融部门", "B"), (9, "Unit 8 货币政策", "A"),
+                    (10, "Unit 9 政府预算与财政政策", "A"),
+                    (11, "Unit 10 经济统计解读", "A"),
+                    (12, "Unit 11 运用经济政策影响经济", "A"),
+                    (13, "Week 13 考试复习", "B")]:
+    add("economics", "term2", w, ti, tier, "graph")
+
+# 经济 T1（4 周）
+for w, ti, tier in [(1, "Unit 0 导航 + Unit 1 经济学导论", "B"),
+                    (2, "Unit 2 生产与技术", "B"),
+                    (3, "Unit 3 需求与供给", "A"),
+                    (4, "Unit 4 市场成功与失灵", "A")]:
+    add("economics", "term1", w, ti, tier, "graph")
+
+# 数学 T1（13 周）⚠️ 其中 3 周网站缺完整笔记，需回看课件原文
+for w, ti, tier in [(1, "基础代数、根式与方程", "B"), (2, "坐标几何与函数", "B"),
+                    (3, "抛物线、双曲线与绝对值图像", "B"),
+                    (4, "反函数、对数与指数", "A"), (5, "对数图像、定义域与分段函数", "B"),
+                    (6, "函数与图像应用", "B"), (7, "微积分入门与求导", "A"),
+                    (8, "切线、法线与导数符号", "A"), (9, "曲线作图、最优化与不定积分", "A"),
+                    (10, "定积分与面积", "A"), (11, "指数对数函数微积分", "A"),
+                    (12, "对数积分与考试复习", "B"), (13, "考前综合复习", "B")]:
+    add("mathematics", "term1", w, ti, tier, "calc")
+add("mathematics", "term2", 1, "Term 2 练习与复习", "B", "calc")
+
+# 计算机 T1（13 周）
+for w, ti, tier in [(1, "课程概览：PowerPoint 演示设计", "B"), (2, "Word 概述 / PPT 小组项目启动", "B"),
+                    (3, "计算机与互联网", "B"), (4, "网站评价与 Word 分节排版", "B"),
+                    (5, "系统开发生命周期 SDLC", "B"), (6, "Excel 概述与核心概念", "A"),
+                    (8, "Excel 入门：创建编辑格式化排序", "A"), (9, "Excel 图表", "A"),
+                    (10, "Excel 填充、常用函数与单元格引用", "A"), (11, "Excel IF 条件函数", "A"),
+                    (12, "Excel XLOOKUP 查找函数", "A"), (13, "期末考信息与 Word/Excel 复习", "B")]:
+    add("computing", "term1", w, ti, tier, "excel")
+# 计算机 T2（13 周）
+for w, ti, tier in [(1, "高级 Excel：嵌套 IF/AND、IF/OR", "A"),
+                    (2, "多工作表分组与 XLOOKUP 复习", "A"),
+                    (3, "DATE 日期函数与条件统计函数", "A"), (4, "财务函数与文本函数", "A"),
+                    (5, "高级图表制作", "A"), (6, "Advanced Excel 考试信息与综合复习", "B"),
+                    (8, "Media Presentation 策划：Planning Document", "B"),
+                    (9, "Media Presentation 策划与制作", "B"),
+                    (11, "演示提交与考前复习", "B"), (12, "考前综合准备", "B"),
+                    (13, "Advanced Excel 综合项目与练习考试", "A")]:
+    add("computing", "term2", w, ti, tier, "excel")
+
+# 学术英语（14 周）技能科：复习动作 = 输出练习
+for w, ti, tier in [(1, "Speaking：海外留学", "B"), (2, "Listening：因果表达", "B"),
+                    (3, "Speaking：小组合作", "B"), (4, "Listening & Writing：模糊限制语", "A"),
+                    (5, "Speaking：自然灾害 · 信息图总结", "B"),
+                    (6, "Listening & Writing：衔接手段", "A"),
+                    (8, "Speaking & Listening：AI 与教育", "B"),
+                    (9, "Writing：转述动词", "A"), (10, "Speaking：气候变化成因", "B"),
+                    (11, "Writing：名词化", "A"), (12, "Writing & Speaking：词性与词形", "A"),
+                    (13, "Listening & Writing：澳洲动物", "B"),
+                    (14, "Reading · SDG 11 核心文本逐句翻译", "A")]:
+    add("english", "term1", w, ti, tier, "output")
+
+# 2025 补充资料（默认 Tier C：考前扫描 1 次，⚠️ 需先确认是否适用于 2026 考试）
+C_UNITS = [(5, "Unit 5 弹性"), (6, "Unit 6 厂商短期生产与成本"), (8, "Unit 7 厂商长期规模与成本"),
+           (9, "Unit 8 完全竞争"), (10, "Unit 9 垄断"), (11, "Unit 10 垄断竞争与寡头"),
+           (12, "Unit 11 复习与样题")]
+
+# ---------------- 间隔与时长规则 ----------------
+# A 档：R1 激活 → +1 / +3 / +7 / +15 / +30 天（艾宾浩斯 + 现代间隔重复的常用节奏）
+A_STEPS = [(1, "R2", 12), (3, "R3", 12), (7, "R4", 16), (15, "R5", 18), (30, "R6", 20)]
+A_R1_MIN = 28
+# B 档：R1 激活 → +7 / +21 天（3 次接触，省出的时间给 A 档和模考）
+B_STEPS = [(7, "R2", 12), (21, "R3", 14)]
+B_R1_MIN = 22
+
+PHASES = [(1, 3, "阶段0 摸底诊断"), (4, 48, "阶段1 激活+首轮循环"),
+          (49, 68, "阶段2 间隔循环+专项"), (69, 86, "阶段3 总复习+模考冲刺"),
+          (87, 87, "考试日")]
+def phase_of(d):
+    for a, b, n in PHASES:
+        if a <= d <= b:
+            return n
+    return "—"
+
+CAP = {}  # day -> 分钟上限
+for d in range(1, TOTAL_DAYS + 1):
+    is_weekend = d_of(d).weekday() >= 5
+    if d <= 3:      CAP[d] = 90
+    elif d <= 48:   CAP[d] = 130 if is_weekend else 110
+    elif d <= 68:   CAP[d] = 120 if is_weekend else 100
+    elif d <= 86:   CAP[d] = 120 if is_weekend else 100
+    else:           CAP[d] = 30
+
+# ---------------- 模考（8 套，固定日期，90 分钟） ----------------
+MOCK_DATES = ["2026-12-19", "2026-12-26", "2027-01-02", "2027-01-07",
+              "2027-01-10", "2027-01-14", "2027-01-17", "2027-01-21"]
+def day_of_date(ds):
+    y, m, dd = map(int, ds.split("-"))
+    return (date(y, m, dd) - D1).days + 1
+
+mock_rows = []
+mock_no = 1
+MOCK_SRC = {
+    "2026-12-19": "会计 · 网站 Week 13 Sample Exam Paper（含 MCQ 答题纸）",
+    "2026-12-26": "经济 · 网站 Economics T2 Week 13 考试复习 + 2025 往年卷",
+    "2027-01-02": "数学 · 网站 Mathematics T2 练习与复习 + T1 W12-13 复习",
+    "2027-01-07": "计算机 · 网站 Computing T2 W13 Advanced Excel 练习考试",
+    "2027-01-10": "会计 · 第二次完整模考（换成网站 W12 考试结构说明里的题型配比）",
+    "2027-01-14": "经济 · 宏观综合模考（AD-AS + 政策 + 统计解读）",
+    "2027-01-17": "计算机 + 数学 合卷模考（上机 + 笔试各 45 分钟）",
+    "2027-01-21": "学术英语 · 写作 + 口语模考（用网站 W4/W6/W9/W11 的输出模板）",
+}
+for ds in MOCK_DATES:
+    d = day_of_date(ds)
+    mock_rows.append(dict(day=d, minutes=90, src=MOCK_SRC[ds], no=mock_no))
+    mock_no += 1
+MOCK_BY_DAY = {r["day"]: r for r in mock_rows}
+
+# 已用分钟
+used = {d: 0 for d in range(1, TOTAL_DAYS + 1)}
+blocks = {d: 0 for d in range(1, TOTAL_DAYS + 1)}
+for r in mock_rows:
+    used[r["day"]] += r["minutes"]
+    blocks[r["day"]] += 1
+
+# ---------------- 安排 R1（首次激活） ----------------
+# 顺序：A 档按科目轮转（会计→经济→英语→计算机→数学），再 B 档同序轮转
+SUBJ_ORDER = ["accounting", "economics", "english", "computing", "mathematics"]
+def round_robin(tier):
+    pools = {s: [u for u in U if u["tier"] == tier and u["course"] == s] for s in SUBJ_ORDER}
+    # 经济内部：T2 先于 T1
+    for s in pools:
+        pools[s].sort(key=lambda u: (0 if u["term"] == "term2" else 1, u["week"]))
+    out, i = [], 0
+    while any(pools.values()):
+        s = SUBJ_ORDER[i % len(SUBJ_ORDER)]
+        if pools[s]:
+            out.append(pools[s].pop(0))
+        i += 1
+    return out
+
+activation = round_robin("A") + round_robin("B")
+R1_START, R1_END = 4, 48
+
+rows = []   # 所有复习块
+def push(day, unit, rep, gap, minutes, crit):
+    # 容量检查：超出则顺延到最近的有空位的一天
+    d = day
+    while d <= TOTAL_DAYS:
+        if used[d] + minutes <= CAP[d] and blocks[d] < 7:
+            used[d] += minutes
+            blocks[d] += 1
+            rows.append(dict(day=d, unit=unit, rep=rep, gap=gap, minutes=minutes, crit=crit))
+            return d
+        d += 1
+    return None
+
+CRIT = {
+    "R1": "合上笔记，能默写出本单元 3 个核心英文定义 + 1 个公式/流程；术语卡已建好",
+    "R2": "不看笔记说出本单元 5 个术语的英文原文 + 中文含义",
+    "R3": "独立完成 1 道本单元题目，步骤写全（不只写答案）",
+    "R4": "2 道混合题正确率 ≥ 80%，并列出本单元 3 个易错点",
+    "R5": "错题重做全对 + 能口头讲一遍解题/分析过程",
+    "R6": "限时完成 1 道综合题（达到考试时限要求）",
+    "S":  "10 分钟内扫完，能说出本单元 3 个必考点",
+}
+
+# ===== 逐日模拟：到期复习优先，新激活让位（这才是间隔重复的正确排法）=====
+NEW_BUDGET = {}   # 每天「新激活 R1」的独占分钟数（复习不得占用）
+for d in range(1, TOTAL_DAYS + 1):
+    if d <= 3:      NEW_BUDGET[d] = 0
+    elif d <= 30:   NEW_BUDGET[d] = 60    # A 档激活期（约 2 个/天）
+    elif d <= 66:   NEW_BUDGET[d] = 30    # B 档激活期（约 1 个/天）
+    else:           NEW_BUDGET[d] = 0
+B_GATE = 27   # B 档单元从第 27 天起才开始激活（先保 A 档的完整 6 轮循环）
+
+pending = []      # [due_day, seq, unit, rep, gap, minutes, crit]
+seq = [0]
+act_queue = list(activation)
+spill = [0]
+
+def place(day, unit, rep, gap, minutes, crit):
+    used[day] += minutes
+    blocks[day] += 1
+    rows.append(dict(day=day, unit=unit, rep=rep, gap=gap, minutes=minutes, crit=crit))
+
+for d in range(1, TOTAL_DAYS + 1):
+    # 0) 先算出今天要给「新激活」预留多少额度（有单元可激活才预留）
+    reserve = 0
+    if NEW_BUDGET[d] > 0 and act_queue:
+        head = act_queue[0]
+        if not (head["tier"] == "B" and d < B_GATE):
+            reserve = NEW_BUDGET[d]
+    review_cap = max(0, CAP[d] - reserve)
+    # 1) 到期复习（含逾期）优先：A 档 > 逾期越久越优先
+    due = [p for p in pending if p[0] <= d]
+    pending = [p for p in pending if p[0] > d]
+    due.sort(key=lambda p: (p[0], p[4], p[1]))  # 到期日 → 间隔越短越优先（+1 天的复习最不能拖）
+    for p in due:
+        _, _, u, rep, gap, minutes, crit = p
+        if used[d] + minutes <= review_cap and blocks[d] < 8:
+            place(d, u, rep, gap, minutes, crit)
+            if rep == "R1":
+                steps = A_STEPS if u["tier"] == "A" else B_STEPS
+                for g, rp, mm in steps:
+                    seq[0] += 1
+                    pending.append([d + g, seq[0], u, rp, g, mm, CRIT[rp]])
+        else:
+            pending.append([d, p[1], u, rep, gap, minutes, crit])   # 顺延，明天仍优先
+            spill[0] += 1
+    # 2) 新激活：用完今天的到期复习后，若还有额度才开新单元
+    if NEW_BUDGET[d] > 0 and act_queue:
+        nb = NEW_BUDGET[d]
+        while act_queue and nb >= 20:
+            u = act_queue[0]
+            if u["tier"] == "B" and d < B_GATE:
+                break
+            m = A_R1_MIN if u["tier"] == "A" else B_R1_MIN
+            if m > nb or used[d] + m > CAP[d] or blocks[d] >= 7:
+                break
+            act_queue.pop(0)
+            place(d, u, "R1", 0, m, CRIT["R1"])
+            nb -= m
+            steps = A_STEPS if u["tier"] == "A" else B_STEPS
+            for g, rp, mm in steps:
+                seq[0] += 1
+                pending.append([d + g, seq[0], u, rp, g, mm, CRIT[rp]])
+
+# Tier C：2025 补充资料，阶段 3 扫描 1 次
+c_day = 69
+for w, ti in C_UNITS:
+    u = dict(course="economics", term="term1x", week=w, title=ti, tier="C", mode="graph")
+    while c_day <= 84:
+        if used[c_day] + 25 <= CAP[c_day] and blocks[c_day] < 7:
+            place(c_day, u, "S", 0, 25,
+                  "⚠️ 先确认该 2025 资料是否适用 2026 考试；适用则说出 3 个考点")
+            c_day += 1
+            break
+        c_day += 1
+
+# 阶段 3：A 档考前扫描轮（S）
+for u in [x for x in U if x["tier"] == "A"]:
+    sd = 69
+    while sd <= 85:
+        if used[sd] + 15 <= CAP[sd] and blocks[sd] < 8:
+            place(sd, u, "S", 0, 15, CRIT["S"])
+            break
+        sd += 1
+
+# 摸底诊断（阶段 0）——每项必须写明：做哪套题、题量多少、在哪做、怎么算完成
+# 结构：(第几天, 标题, 分钟, 完成标准, 课程, 网站链接, 具体步骤列表)
+DIAG = [
+    (1, "会计摸底卷 · Unit 1-4（T1 W1-W4）：做 W3 复式记账 4 题 + W4 日记账 3 题", 45,
+     "对照「课后作业答案」自批：每题标对错，错题知识点写进「学习档案」",
+     "会计", "#/c/accounting/term1/4",
+     ["打开网站「会计 → Term 1 → W3」和「W4」页面，找到课后作业题（Tutorial Questions）",
+      "限时 30 分钟：做 W3 复式记账 4 题 + W4 日记账 3 题，分录必须写全借方/贷方和金额",
+      "打开同页的「课后作业答案」标签逐题对照自批，错题用红笔标出",
+      "把每道错题的知识点（如：借贷方向、应计费用）填进备考中心「✍️ 作业批改」区记入档案"]),
+    (1, "经济摸底 · 宏观 4 模型默画（T2 W1-W4）：循环流量 / 通胀 / 失业 / AD-AS", 45,
+     "4 张图每张都能画全并口头解释 1 分钟；卡壳的模型记进「学习档案」",
+     "经济", "#/c/economics/term2/4",
+     ["拿一张白纸，限时 30 分钟默画 4 张图：① 循环流量模型（T2 W1）② 通货膨胀机制（T2 W2）③ 失业类型与原因（T2 W3）④ AD-AS 均衡（T2 W4）",
+      "每张图画完立刻口头解释 1 分钟：坐标轴是什么、每条曲线为什么移动、均衡点怎么变",
+      "画不出/讲不清的模型，去对应周的图文笔记重看一遍，并把模型名记进档案"]),
+    (2, "计算机上机摸底 · Excel 三大函数：IF / XLOOKUP / 条件统计（6 个任务）", 45,
+     "6 个任务全部做出正确结果；做不出的函数记进「学习档案」",
+     "计算机", "#/c/computing/term2/1",
+     ["新建空白工作簿，先造 5 行假数据（姓名/班级/分数/电话），限时 30 分钟完成 6 个任务",
+      "任务清单：① IF 判定等级（≥80 优 / ≥60 中 / 其他 差）② IF+AND 重写一次 ③ XLOOKUP 按姓名查电话 ④ 跨工作表 XLOOKUP 查价格 ⑤ SUMIF 求某班总分 ⑥ COUNTIF 数及格人数",
+      "逐个核对结果（用眼睛+手工数验证）；哪个任务卡住的，去对应周笔记重看（IF=T1 W11、XLOOKUP=T1 W12、条件统计=T2 W3）并记入档案"]),
+    (2, "数学摸底卷 · 对数指数 / 求导 / 定积分各 2 题（T1 W1 / W7 / W10 例题）", 45,
+     "6 题里至少 4 题全对（步骤完整）；错题知识点录入「学习档案」",
+     "数学", "#/c/mathematics/term1/10",
+     ["打开网站「数学 → Term 1」的 W1、W7、W10 笔记，从每页例题里各抄 2 道题目（先不看答案）",
+      "限时 35 分钟完成 6 题：W1 对数指数 2 题、W7 求导 2 题、W10 定积分求面积 2 题，步骤必须写全",
+      "对照笔记里的例题解答自批，错在哪一步用一句话写下来，知识点录入档案"]),
+    (3, "学术英语写作摸底 · 150 词段落：必须用转述动词 + 模糊限制语 + 衔接手段", 45,
+     "写出 150 词段落并提交 AI 批改；错误类型录入「学习档案」",
+     "学术英语", "#/c/english/term1/9",
+     ["题目：Should universities ban AI tools in assignments?（立场任选）",
+      "限时 30 分钟写一段约 150 词的段落，必须用上：3 个转述动词（claims / argues / suggests，W9）、2 个模糊限制语（may / tend to，W4）、3 个衔接手段（however / in addition，W6）",
+      "写完粘贴到备考中心「✍️ 作业批改」区（课程选学术英语）提交 AI 批改，把指出的问题录入档案"]),
+    (3, "摸底汇总 · 生成个人薄弱点清单，重排 A/B/C 档", 45,
+     "产出明确清单：哪 5 个单元升 A 档、哪 5 个降 C 档，并提交 AI 复核",
+     "诊断", "#/profile",
+     ["翻出前 5 份摸底的结果（会计/经济/计算机/数学/英语），把每个做错或卡壳的知识点列成一张清单",
+      "数一数每个单元的错点数：错 0-1 个 → 升 A 档；错 2-3 个 → 保持；错 4 个以上 → 降 C 档",
+      "写出最终清单（哪 5 个单元升 A、哪 5 个降 C），粘贴到「✍️ 作业批改」区让 AI 复核，必要时重排复习优先级"]),
+]
+
+rows.sort(key=lambda r: (r["day"], 0 if r["unit"]["tier"] == "A" else 1, r["unit"]["course"]))
+
+# ---------------- 写 CSV ----------------
+csv_path = os.path.join(OUT, "艾宾浩斯复习排期.csv")
+with open(csv_path, "w", newline="", encoding="utf-8-sig") as f:
+    w = csv.writer(f)
+    w.writerow(["日期", "星期", "第几天", "距考试(天)", "阶段", "课程", "单元", "轮次",
+                "距上次(天)", "时长(分钟)", "复习方式", "完成标准（达到才算做完）", "完成"])
+    for d in range(1, TOTAL_DAYS + 1):
+        dt = d_of(d)
+        left = (EXAM - dt).days
+        ph = phase_of(d)
+        if d == TOTAL_DAYS:
+            w.writerow([dt.isoformat(), "周" + dow(d), d, 0, "考试日", "全 5 门", "期末考试日", "—",
+                        0, 30, "轻量", "考前 30 分钟只扫术语卡，不碰新题", ""])
+            continue
+        dayrows = [r for r in rows if r["day"] == d]
+        for d5, n, minutes, note, subj, href5, steps5 in [x for x in DIAG if x[0] == d]:
+            w.writerow([dt.isoformat(), "周" + dow(d), d, left, ph, subj if subj != "诊断" else "诊断", n, "自测", 0, minutes,
+                        "限时自测", note + ("（步骤见网站备考中心）" if steps5 else ""), ""])
+        if d in MOCK_BY_DAY:
+            mr = MOCK_BY_DAY[d]
+            w.writerow([dt.isoformat(), "周" + dow(d), d, left, ph, "模考", "第 %d 套模考" % mr["no"],
+                        "MOCK", 0, 90, "全真模考（限时 · 闭卷 · 不查资料）",
+                        mr["src"] + " → 做完发给我批改，错题录入档案", ""])
+        for r in dayrows:
+            u = r["unit"]
+            label = "%s %s W%d · %s" % (COURSE_CN[u["course"]], TERM_CN[u["term"]], u["week"], u["title"])
+            w.writerow([dt.isoformat(), "周" + dow(d), d, left, ph, COURSE_CN[u["course"]], label,
+                        r["rep"] + ("档" if r["rep"] == "R1" else ""), r["gap"], r["minutes"],
+                        MODE_CN[u["mode"]], r["crit"], ""])
+
+# ---------------- 写 JSON（供 HTML 日历用） ----------------
+data = dict(today=TODAY.isoformat(), exam=EXAM.isoformat(), totalDays=TOTAL_DAYS,
+            courseCn=COURSE_CN, termCn=TERM_CN, modeCn=MODE_CN, crit=CRIT)
+items = []
+for d in range(1, TOTAL_DAYS + 1):
+    dt = d_of(d)
+    day = dict(d=d, date=dt.isoformat(), dow="周" + dow(d), left=(EXAM - dt).days,
+               phase=phase_of(d), items=[])
+    for d5, n, minutes, note, subj, href5, steps5 in [x for x in DIAG if x[0] == d]:
+        day["items"].append(dict(kind="diag", course=subj, label=n, rep="自测",
+                                 minutes=minutes, mode="限时自测", crit=note,
+                                 href=href5, steps=steps5))
+    if d in MOCK_BY_DAY:
+        mr = MOCK_BY_DAY[d]
+        day["items"].append(dict(kind="mock", course="模考", label="第 %d 套全真模考" % mr["no"],
+                                 rep="MOCK", minutes=90, mode="限时闭卷",
+                                 crit=mr["src"] + " → 做完发给我批改，错题录入档案"))
+    for r in [x for x in rows if x["day"] == d]:
+        u = r["unit"]
+        day["items"].append(dict(
+            kind="rev", course=COURSE_CN[u["course"]], tier=u["tier"],
+            label="%s %s W%d · %s" % (COURSE_CN[u["course"]], TERM_CN[u["term"]], u["week"], u["title"]),
+            rep=r["rep"], gap=r["gap"], minutes=r["minutes"], mode=MODE_CN[u["mode"]], crit=r["crit"],
+            href="#/c/%s/%s/%d" % (u["course"], u["term"], u["week"])))
+    day["mins"] = sum(i["minutes"] for i in day["items"])
+    items.append(day)
+data["days"] = items
+with open(os.path.join(OUT, "schedule.json"), "w", encoding="utf-8") as f:
+    json.dump(data, f, ensure_ascii=False)
+
+print("总天数 %d 天（%s → %s）" % (TOTAL_DAYS, D1.isoformat(), EXAM.isoformat()))
+print("复习块 %d 个，模考 %d 套，诊断自测 %d 项" % (len(rows), len(mock_rows), len(DIAG)))
+print("未激活单元 %d 个" % len(act_queue))
+# 间隔保真度检查：实际间隔 vs 目标间隔
+by_unit = {}
+for r in rows:
+    by_unit.setdefault(id(r["unit"]), []).append(r)
+worst, nlate = [], 0
+for uid, rs in by_unit.items():
+    rs.sort(key=lambda r: r["day"])
+    if rs[0]["rep"] != "R1":
+        continue
+    for i in range(len(rs) - 1):
+        if rs[i + 1]["rep"] in ("S",):
+            continue
+        target = rs[i + 1]["gap"]
+        actual = rs[i + 1]["day"] - rs[i]["day"]
+        if actual > target:
+            nlate += 1
+            worst.append((actual - target, rs[i]["unit"]["course"], rs[i]["unit"]["week"],
+                          rs[i + 1]["rep"], target, actual))
+worst.sort(reverse=True)
+print("延迟复习 %d 次；最严重的 5 条：" % nlate)
+for w_ in worst[:5]:
+    print("   +%d 天 · %s W%d %s（目标 %d 天，实际 %d 天）" % (w_[0], w_[1], w_[2], w_[3], w_[4], w_[5]))
+tot = sum(r["minutes"] for r in rows) + 90 * len(mock_rows) + sum(x[2] for x in DIAG)
+print("总时长 %.1f 小时，日均 %.0f 分钟" % (tot / 60, tot / TOTAL_DAYS))
+# ---------------- 写独立复习日历 HTML（数据内嵌，双击即可用） ----------------
+TPL = r"""<!doctype html>
+<html lang="zh"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>艾宾浩斯复习日历 · Liora</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Segoe UI","Microsoft YaHei",sans-serif;background:#f4f7fb;color:#1a2340;line-height:1.6}
+.wrap{max-width:1180px;margin:0 auto;padding:22px 18px 60px}
+header{background:#0d1b3e;color:#fff;border-radius:14px;padding:22px 24px;margin-bottom:16px}
+header h1{font-size:21px;font-weight:800}
+header h1 em{font-style:normal;color:#e5c46b}
+header p{font-size:13px;color:#b9c4dd;margin-top:6px}
+.kpis{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.kpi{background:rgba(255,255,255,.1);border-radius:10px;padding:10px 16px;min-width:120px}
+.kpi .n{font-size:22px;font-weight:800;color:#e5c46b}
+.kpi .n small{font-size:12px;color:#c9d3e8;font-weight:600}
+.kpi .l{font-size:11.5px;color:#b9c4dd;margin-top:2px}
+.bar{height:8px;background:#e3e9f3;border-radius:5px;overflow:hidden;margin-top:14px}
+.bar i{display:block;height:100%;background:#e5c46b;width:0}
+.bar-t{font-size:12px;color:#c9d3e8;margin-top:6px}
+.toolbar{background:#fff;border:1px solid #e1e8f2;border-radius:12px;padding:12px 16px;margin-bottom:16px;
+ display:flex;gap:12px;align-items:center;flex-wrap:wrap;position:sticky;top:0;z-index:20}
+select,button{font-family:inherit;font-size:13px;padding:7px 13px;border-radius:8px;border:1.5px solid #d7dce8;
+ background:#fff;color:#1a2340;cursor:pointer}
+button.primary{background:#0d1b3e;color:#fff;border-color:#0d1b3e}
+button.primary:hover{background:#16295e}
+label.chk{font-size:13px;color:#41506e;display:flex;align-items:center;gap:6px;cursor:pointer}
+.week-h{font-size:14px;font-weight:800;color:#0d1b3e;margin:20px 0 10px;padding-left:10px;border-left:4px solid #e5c46b}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px}
+.day{background:#fff;border:1px solid #e1e8f2;border-radius:12px;padding:13px 15px}
+.day.today{border-color:#e5c46b;box-shadow:0 0 0 3px rgba(229,196,107,.25)}
+.day.past{opacity:.62}
+.day.rest .d-head{color:#8a92a8}
+.d-head{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;border-bottom:1px dashed #e3e9f3;padding-bottom:8px;margin-bottom:8px}
+.d-date{font-size:15px;font-weight:800;color:#0d1b3e}
+.d-dow{font-size:12px;color:#5a6480}
+.d-left{font-size:11.5px;color:#8a92a8;margin-left:auto}
+.d-phase{font-size:11px;font-weight:700;color:#1a6fc4;background:#eaf3fc;padding:2px 8px;border-radius:9px}
+.d-mins{font-size:11.5px;color:#5a6480;margin-bottom:8px}
+.item{border:1px solid #eef2f8;border-radius:9px;padding:8px 10px;margin-bottom:7px;background:#fbfcfe}
+.item.done{background:#f2f8f3;border-color:#d6ecda}
+.item.done .i-label{text-decoration:line-through;color:#7a8a7a}
+.i-top{display:flex;gap:8px;align-items:flex-start}
+.i-top input{margin-top:3px;width:15px;height:15px;accent-color:#0d1b3e;flex-shrink:0}
+.i-label{font-size:13px;font-weight:600;color:#1a2340;line-height:1.45}
+.i-meta{font-size:11px;color:#6b7692;margin-top:3px}
+.tag{display:inline-block;font-size:10.5px;font-weight:700;padding:1px 7px;border-radius:8px;margin-right:5px}
+.t-rep{background:#eaf3fc;color:#1a6fc4}
+.t-A{background:#fdecec;color:#c0392b}
+.t-B{background:#eef2f8;color:#5a6480}
+.t-C{background:#f4f4f5;color:#8a92a8}
+.t-mock{background:#0d1b3e;color:#fff}
+.t-diag{background:#e5c46b;color:#4a3a10}
+.i-crit{font-size:11.5px;color:#41506e;margin-top:5px;padding-top:5px;border-top:1px dashed #e3e9f3}
+.i-crit b{color:#c0392b}
+.note{background:#fff;border:1px solid #e1e8f2;border-left:4px solid #1a6fc4;border-radius:10px;
+ padding:12px 16px;font-size:12.5px;color:#41506e;margin-bottom:16px}
+.note b{color:#0d1b3e}
+footer{text-align:center;font-size:12px;color:#8a92a8;margin-top:26px}
+@media print{.toolbar{display:none}body{background:#fff}.day{break-inside:avoid}}
+</style></head><body><div class="wrap">
+<header>
+<h1>艾宾浩斯复习日历 · <em>Liora</em></h1>
+<p>间隔节奏：首次激活后 <b>第 1 / 3 / 7 / 15 / 30 天</b> 各复习一次（A 档）｜第 7 / 21 天（B 档）｜考前 10 天扫描轮（S）</p>
+<div class="kpis">
+  <div class="kpi"><div class="n" id="kLeft">—<small> 天</small></div><div class="l">距期末考试</div></div>
+  <div class="kpi"><div class="n" id="kDay">—</div><div class="l">今天是第 N 天</div></div>
+  <div class="kpi"><div class="n" id="kDone">—</div><div class="l">已完成复习块</div></div>
+  <div class="kpi"><div class="n" id="kToday">—</div><div class="l">今天待办（分钟）</div></div>
+</div>
+<div class="bar"><i id="pbar"></i></div>
+<div class="bar-t" id="ptxt">完成率 0%</div>
+</header>
+
+<div class="toolbar">
+  <button class="primary" id="btnToday">跳到今天</button>
+  <select id="fCourse"><option value="">全部课程</option></select>
+  <select id="fPhase"><option value="">全部阶段</option></select>
+  <label class="chk"><input type="button" id="btnToggle" value="只看未完成"> </label>
+  <button id="btnExport">导出打卡</button>
+  <button id="btnImport">导入打卡</button>
+  <input type="file" id="fileIn" accept=".json" style="display:none">
+  <span style="font-size:12px;color:#8a92a8">勾选状态只存在本机浏览器，建议每周导出一次备份</span>
+</div>
+
+<div class="note">
+<b>怎么用：</b>每天打开这一页 → 看「今天」这张卡 → 从上往下做完，做完一格勾一格 →
+每格的「达到标准」写明了<b>做到什么程度才算完成</b>，达不到就别勾，第二天它会继续排进来（我每周按你的完成情况重排一次）。
+网站里的位置（如 <code>#/c/accounting/term1/4</code>）复制到浏览器地址栏，接在 <code>index.html</code> 后面就能直接打开那一周的笔记。
+</div>
+
+<div id="weeks"></div>
+<footer>本页由 备考规划/generate_schedule.py 自动生成 · 数据只取自网站 data.js 的真实周次 · 不修改任何原有文件</footer>
+</div>
+<script>
+const DATA = __DATA__;
+const KEY = "liora-review-calendar-v1";
+let done = {};
+try{ done = JSON.parse(localStorage.getItem(KEY) || "{}"); }catch(e){ done = {}; }
+let onlyUndone = false;
+
+function todayStr(){ const d=new Date(); return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0"); }
+function save(){ try{ localStorage.setItem(KEY, JSON.stringify(done)); }catch(e){} }
+function examLeft(){
+  const t=new Date(); t.setHours(0,0,0,0);
+  const e=new Date(DATA.exam+"T00:00:00");
+  return Math.round((e-t)/86400000);
+}
+function pad(n){ return String(n).padStart(2,"0"); }
+
+function build(){
+  const courses = new Set(), phases = new Set();
+  DATA.days.forEach(d=>{ phases.add(d.phase);
+    d.items.forEach(it=>{ if(it.course) courses.add(it.course); }); });
+  const fc=document.getElementById("fCourse");
+  [...courses].sort().forEach(c=>{ const o=document.createElement("option"); o.value=c; o.textContent=c; fc.appendChild(o); });
+  const fp=document.getElementById("fPhase");
+  [...phases].forEach(p=>{ const o=document.createElement("option"); o.value=p; o.textContent=p; fp.appendChild(o); });
+}
+
+function itemHtml(day, it, idx){
+  const k = day.date + "#" + idx;
+  const isDone = !!done[k];
+  let tags = '<span class="tag t-rep">' + (it.rep||"") + (it.gap?(" +"+it.gap+"天"):"") + "</span>";
+  if(it.tier) tags += '<span class="tag t-'+it.tier+'">'+it.tier+"档</span>";
+  if(it.kind==="mock") tags += '<span class="tag t-mock">模考</span>';
+  if(it.kind==="diag") tags += '<span class="tag t-diag">诊断</span>';
+  tags += '<span class="tag t-B">'+it.minutes+" 分钟</span>";
+  return '<div class="item'+(isDone?" done":"")+'" data-k="'+k+'">'
+    + '<div class="i-top"><input type="checkbox" data-k="'+k+'"'+(isDone?" checked":"")+'>'
+    + '<div><div class="i-label">'+esc(it.label)+'</div>'
+    + '<div class="i-meta">'+tags+'</div>'
+    + '<div class="i-meta">'+esc(it.mode||"")+(it.href?(" · 网站位置 <code>"+it.href+"</code>"):"")+'</div>'
+    + '<div class="i-crit"><b>达到标准：</b>'+esc(it.crit||"")+'</div>'
+    + '</div></div></div>';
+}
+
+function esc(s){ return String(s==null?"":s).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c])); }
+
+function render(){
+  const fc=document.getElementById("fCourse").value, fp=document.getElementById("fPhase").value;
+  const t=todayStr();
+  let html="", total=0, doneN=0, todayMins=0, todayDone=0;
+  let weekNo=0;
+  for(let i=0;i<DATA.days.length;i+=7){
+    const chunk=DATA.days.slice(i,i+7);
+    weekNo++;
+    const wkHtml = chunk.map(day=>{
+      let items = day.items.filter(it=> (!fc || it.course===fc));
+      const beforeLen = items.length;
+      items = items.filter(it=>{
+        const k = day.date + "#" + day.items.indexOf(it);
+        return !(onlyUndone && done[k]);
+      });
+      if(fp && day.phase!==fp) return "";
+      if(!day.items.length && day.mins===0 && day.phase!=="考试日") return "";
+      const isToday = day.date===t;
+      const past = day.date < t;
+      let m=0; day.items.forEach(it=>{ m+=it.minutes; });
+      if(isToday){ todayMins=m; todayDone=day.items.filter(it=>done[day.date+"#"+day.items.indexOf(it)]).length; }
+      return '<div class="day'+(isToday?" today":"")+(past?" past":"")+'" id="d-'+day.date+'">'
+        + '<div class="d-head"><span class="d-date">'+day.date+'</span><span class="d-dow">'+day.dow+'</span>'
+        + '<span class="d-phase">'+day.phase+'</span><span class="d-left">距考试 '+day.left+" 天 · 第 "+day.d+" 天</span></div>"
+        + '<div class="d-mins">当天 '+m+" 分钟 · "+day.items.length+" 块</div>"
+        + (day.items.length? day.items.map((it,idx)=>itemHtml(day,it,idx)).join("")
+            : '<div style="font-size:12.5px;color:#8a92a8">休息 / 机动日（用来补前几天没做完的块）</div>')
+        + '</div>';
+    }).join("");
+    if(!wkHtml.trim()) continue;
+    html += '<div class="week-h">第 '+weekNo+" 周 · "+chunk[0].date+" → "+chunk[chunk.length-1].date+"</div>"
+          + '<div class="grid">'+wkHtml+"</div>";
+  }
+  DATA.days.forEach(day=>{ day.items.forEach((it,idx)=>{ total++; if(done[day.date+"#"+idx]) doneN++; }); });
+  document.getElementById("weeks").innerHTML = html || '<div class="note">当前筛选下没有内容。</div>';
+  const L=examLeft();
+  document.getElementById("kLeft").innerHTML = (L>=0? L : "已过")+"<small> 天</small>";
+  const td = DATA.days.find(d=>d.date===t);
+  document.getElementById("kDay").textContent = td ? ("第 "+td.d+" 天") : "—";
+  document.getElementById("kDone").textContent = doneN+" / "+total;
+  document.getElementById("kToday").textContent = td ? (todayMins+" 分钟 · 已勾 "+todayDone+"/"+td.items.length) : "—";
+  const pct = total? Math.round(doneN/total*100):0;
+  document.getElementById("pbar").style.width = pct+"%";
+  document.getElementById("ptxt").textContent = "完成率 "+pct+"%（共 "+total+" 个复习块，已完成 "+doneN+" 个）";
+  document.querySelectorAll(".item input[type=checkbox]").forEach(cb=>{
+    cb.addEventListener("change",()=>{
+      const k=cb.getAttribute("data-k");
+      if(cb.checked) done[k]=1; else delete done[k];
+      save(); render();
+    });
+  });
+}
+
+build(); render();
+document.getElementById("btnToday").addEventListener("click",()=>{
+  const el=document.getElementById("d-"+todayStr());
+  if(el) el.scrollIntoView({behavior:"smooth",block:"center"});
+  else alert("今天不在排期范围内（排期 "+DATA.days[0].date+" → "+DATA.days[DATA.days.length-1].date+"）");
+});
+document.getElementById("fCourse").addEventListener("change",render);
+document.getElementById("fPhase").addEventListener("change",render);
+document.getElementById("btnToggle").addEventListener("click",()=>{ onlyUndone=!onlyUndone; render(); });
+document.getElementById("btnExport").addEventListener("click",()=>{
+  const blob=new Blob([JSON.stringify(done,null,1)],{type:"application/json"});
+  const a=document.createElement("a"); a.href=URL.createObjectURL(blob);
+  a.download="复习打卡-"+todayStr()+".json"; a.click();
+});
+document.getElementById("btnImport").addEventListener("click",()=>document.getElementById("fileIn").click());
+document.getElementById("fileIn").addEventListener("change",e=>{
+  const f=e.target.files[0]; if(!f) return;
+  const r=new FileReader();
+  r.onload=()=>{ try{ done=JSON.parse(r.result); save(); render(); alert("导入成功"); }catch(err){ alert("文件格式不对"); } };
+  r.readAsText(f);
+});
+window.addEventListener("load",()=>{ const el=document.getElementById("d-"+todayStr()); if(el) el.scrollIntoView({block:"center"}); });
+</script></body></html>"""
+
+html_path = os.path.join(OUT, "复习日历.html")
+with open(html_path, "w", encoding="utf-8") as f:
+    f.write(TPL.replace("__DATA__", json.dumps(data, ensure_ascii=False)))
+
+busy = max(items, key=lambda x: x["mins"])
+print("最重的一天：%s（第%d天）%d 分钟 / %d 块" % (busy["date"], busy["d"], busy["mins"], len(busy["items"])))
+print("产出：", csv_path)

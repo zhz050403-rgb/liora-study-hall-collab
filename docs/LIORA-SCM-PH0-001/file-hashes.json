@@ -1,0 +1,62 @@
+[
+  {
+    "path": "线上版/public/data.js",
+    "exists": true,
+    "size": 8634229,
+    "sha256": "c189bff38b7e605b45f537845435a1602f8159355b2e24b5192345beee46edc0"
+  },
+  {
+    "path": "线上版/public/index.html",
+    "exists": true,
+    "size": 321058,
+    "sha256": "55dcee64a3df7fff269bd6d02f45910a6cda0063a93187700bb90bb64fb74f44"
+  },
+  {
+    "path": "线上版/public/board-overrides.js",
+    "exists": false,
+    "size": null,
+    "sha256": null
+  },
+  {
+    "path": "线上版/public/board-overrides-client.js",
+    "exists": true,
+    "size": 607,
+    "sha256": "636eed9bcdacc0ff91a37dfd3a1b2dd4d41c5e983c9ab0029d7f9df28ff2e898"
+  },
+  {
+    "path": "线上版/server.js",
+    "exists": true,
+    "size": 69864,
+    "sha256": "4a817ea5c2f483893fa289939fcf290d9c788c3de1fcbdb73cb271a7ea3e065c"
+  },
+  {
+    "path": "build/build_data.py",
+    "exists": true,
+    "size": 10128,
+    "sha256": "20ae784d7988ba0a9937da027b8f04683fc77a79988951e090cbfe87fa12f114"
+  },
+  {
+    "path": "build/update_portal.py",
+    "exists": true,
+    "size": 4953,
+    "sha256": "4ebd69a02e937bb45c6e073e70e43b4eff216251772a779916a5970e4cd9a544"
+  },
+  {
+    "path": "build/auto_publish_watch.py",
+    "exists": true,
+    "size": 12801,
+    "sha256": "3de8eb458fadd15f9d1f1bc9b6291962450dc9502014d56bb0911a4e9e1d6781"
+  },
+  {
+    "path": "build/module-registry.json",
+    "exists": true,
+    "size": 11187,
+    "sha256": "895f21c7fd6b53f9dca788bfe87ec2071fc5a7bd9b0640ca86db17bb67ee2822"
+  },
+  {
+    "path": "docs/LIORA-ACC-T1W1-P2-001/R07-targeted/candidate-data.js",
+    "exists": true,
+    "size": 8674342,
+    "sha256": "f02dfd23248cc54a89293200bdcad55c2d144efd34cd1307feeaf5f8a4c9da9a"
+  }
+]

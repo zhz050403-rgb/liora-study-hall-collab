@@ -1,0 +1,847 @@
+[
+  {
+    "id": "H01",
+    "title": "Accounting W1 Golden Sample",
+    "status": "PARTIAL",
+    "evidence": [
+      {
+        "file": "线上版/public/index.html",
+        "exists": true,
+        "matchingLines": [
+          733,
+          1271,
+          1296,
+          1494,
+          1594
+        ]
+      }
+    ],
+    "runtime": "NOT TESTED THIS AUDIT; code matches are not functional acceptance",
+    "source": "Task ledger section68",
+    "gap": "Official scoped PRD/content source mapping and current end-to-end proof required",
+    "reuse": [
+      "线上版/public/index.html"
+    ],
+    "authorization": "L0/L1 only; no implementation approval",
+    "priority": "P1",
+    "effort": "Included in deduplicated report estimate, not separately additive",
+    "dependency": "Stable isolated baseline,source rights,auth/testing access",
+    "sourceQualification": "ledger index verified; original PRD not fully read"
+  },
+  {
+    "id": "H02",
+    "title": "全课程AMOS笔记",
+    "status": "PARTIAL",
+    "evidence": [
+      {
+        "file": "线上版/public/note-views.js",
+        "exists": true,
+        "matchingLines": [
+          84,
+          106,
+          139,
+          605,
+          719
+        ]
+      },
+      {
+        "file": "线上版/public/blocks/notes-layout.js",
+        "exists": true,
+        "matchingLines": [
+          83,
+          86,
+          89,
+          94,
+          249
+        ]
+      }
+    ],
+    "runtime": "NOT TESTED THIS AUDIT; code matches are not functional acceptance",
+    "source": "Task ledger section68",
+    "gap": "Official scoped PRD/content source mapping and current end-to-end proof required",
+    "reuse": [
+      "线上版/public/note-views.js",
+      "线上版/public/blocks/notes-layout.js"
+    ],
+    "authorization": "L0/L1 only; no implementation approval",
+    "priority": "P1",
+    "effort": "Included in deduplicated report estimate, not separately additive",
+    "dependency": "Stable isolated baseline,source rights,auth/testing access",
+    "sourceQualification": "ledger index verified; original PRD not fully read"
+  },
+  {
+    "id": "H03",
+    "title": "SDG11 Reading Adventure",
+    "status": "UNVERIFIED",
+    "evidence": [
+      {
+        "file": "线上版/public/english/js/modules.js",
+        "exists": true,
+        "matchingLines": [
+          58,
+          67
+        ]
+      },
+      {
+        "file": "线上版/public/english/js/app.js",
+        "exists": true,
+        "matchingLines": []
+      }
+    ],
+    "runtime": "NOT TESTED THIS AUDIT; code matches are not functional acceptance",
+    "source": "Task ledger section68",
+    "gap": "Official scoped PRD/content source mapping and current end-to-end proof required",
+    "reuse": [
+      "线上版/public/english/js/modules.js",
+      "线上版/public/english/js/app.js"
+    ],
+    "authorization": "L0/L1 only; no implementation approval",
+    "priority": "P1",
+    "effort": "Included in deduplicated report estimate, not separately additive",
+    "dependency": "Stable isolated baseline,source rights,auth/testing access",
+    "sourceQualification": "ledger index verified; original PRD not fully read"
+  },
+  {
+    "id": "H04",
+    "title": "SDG11 Speaking文字词汇",
+    "status": "UNVERIFIED",
+    "evidence": [
+      {
+        "file": "线上版/public/english/js/modules.js",
+        "exists": true,
+        "matchingLines": [
+          188,
+          375,
+          377,
+          393,
+          400
+        ]
+      }
+    ],
+    "runtime": "NOT TESTED THIS AUDIT; code matches are not functional acceptance",
+    "source": "Task ledger section68",
+    "gap": "Official scoped PRD/content source mapping and current end-to-end proof required",
+    "reuse": [
+      "线上版/public/english/js/modules.js"
+    ],
+    "authorization": "L0/L1 only; no implementation approval",
+    "priority": "P1",
+    "effort": "Included in deduplicated report estimate, not separately additive",
+    "dependency": "Stable isolated baseline,source rights,auth/testing access",
+    "sourceQualification": "ledger index verified; original PRD not fully read"
+  },
+  {
+    "id": "H05",
+    "title": "Speaking音频AI反馈",
+    "status": "UNVERIFIED",
+    "evidence": [
+      {
+        "file": "线上版/public/english/js/modules.js",
+        "exists": true,
+        "matchingLines": [
+          560,
+          586,
+          660,
+          677,
+          697
+        ]
+      },
+      {
+        "file": "线上版/public/english/js/api.js",
+        "exists": true,
+        "matchingLines": []
+      }
+    ],
+    "runtime": "NOT TESTED THIS AUDIT; code matches are not functional acceptance",
+    "source": "Task ledger section68",
+    "gap": "Official scoped PRD/content source mapping and current end-to-end proof required",
+    "reuse": [
+      "线上版/public/english/js/modules.js",
+      "线上版/public/english/js/api.js"
+    ],
+    "authorization": "L0/L1 only; no implementation approval",
+    "priority": "P1",
+    "effort": "Included in deduplicated report estimate, not separately additive",
+    "dependency": "Stable isolated baseline,source rights,auth/testing access",
+    "sourceQualification": "ledger index verified; original PRD not fully read"
+  },
+  {
+    "id": "H06",
+    "title": "IELTS Reading模拟考试",
+    "status": "UNVERIFIED",
+    "evidence": [
+      {
+        "file": "线上版/public/exam-prep.html",
+        "exists": true,
+        "matchingLines": []
+      },
+      {
+        "file": "线上版/public/blocks/exam-prep.js",
+        "exists": true,
+        "matchingLines": []
+      }
+    ],
+    "runtime": "NOT TESTED THIS AUDIT; code matches are not functional acceptance",
+    "source": "Task ledger section68",
+    "gap": "Official scoped PRD/content source mapping and current end-to-end proof required",
+    "reuse": [
+      "线上版/public/exam-prep.html",
+      "线上版/public/blocks/exam-prep.js"
+    ],
+    "authorization": "L0/L1 only; no implementation approval",
+    "priority": "P1",
+    "effort": "Included in deduplicated report estimate, not separately additive",
+    "dependency": "Stable isolated baseline,source rights,auth/testing access",
+    "sourceQualification": "ledger index verified; original PRD not fully read"
+  },
+  {
+    "id": "H07",
+    "title": "UNSW AE Reading模拟考试",
+    "status": "UNVERIFIED",
+    "evidence": [
+      {
+        "file": "线上版/public/exam-prep.html",
+        "exists": true,
+        "matchingLines": [
+          8
+        ]
+      },
+      {
+        "file": "线上版/public/blocks/exam-prep.js",
+        "exists": true,
+        "matchingLines": [
+          457,
+          470,
+          563,
+          680,
+          682
+        ]
+      }
+    ],
+    "runtime": "NOT TESTED THIS AUDIT; code matches are not functional acceptance",
+    "source": "Task ledger section68",
+    "gap": "Official scoped PRD/content source mapping and current end-to-end proof required",
+    "reuse": [
+      "线上版/public/exam-prep.html",
+      "线上版/public/blocks/exam-prep.js"
+    ],
+    "authorization": "L0/L1 only; no implementation approval",
+    "priority": "P1",
+    "effort": "Included in deduplicated report estimate, not separately additive",
+    "dependency": "Stable isolated baseline,source rights,auth/testing access",
+    "sourceQualification": "ledger index verified; original PRD not fully read"
+  },
+  {
+    "id": "H08",
+    "title": "私人知识库Docs同步",
+    "status": "UNVERIFIED",
+    "evidence": [
+      {
+        "file": "线上版/public/index.html",
+        "exists": true,
+        "matchingLines": [
+          2264,
+          2271,
+          2386,
+          2661
+        ]
+      },
+      {
+        "file": "线上版/public/learning-profile-data.js",
+        "exists": true,
+        "matchingLines": []
+      }
+    ],
+    "runtime": "NOT TESTED THIS AUDIT; code matches are not functional acceptance",
+    "source": "Task ledger section68",
+    "gap": "Official scoped PRD/content source mapping and current end-to-end proof required",
+    "reuse": [
+      "线上版/public/index.html",
+      "线上版/public/learning-profile-data.js"
+    ],
+    "authorization": "L0/L1 only; no implementation approval",
+    "priority": "P1",
+    "effort": "Included in deduplicated report estimate, not separately additive",
+    "dependency": "Stable isolated baseline,source rights,auth/testing access",
+    "sourceQualification": "ledger index verified; original PRD not fully read"
+  },
+  {
+    "id": "H09",
+    "title": "笔记统一布局",
+    "status": "PARTIAL",
+    "evidence": [
+      {
+        "file": "线上版/public/note-views.js",
+        "exists": true,
+        "matchingLines": [
+          2,
+          4,
+          12,
+          14,
+          15
+        ]
+      },
+      {
+        "file": "线上版/public/blocks/notes-layout.js",
+        "exists": true,
+        "matchingLines": [
+          2,
+          82,
+          88,
+          89,
+          228
+        ]
+      }
+    ],
+    "runtime": "NOT TESTED THIS AUDIT; code matches are not functional acceptance",
+    "source": "Task ledger section68",
+    "gap": "Official scoped PRD/content source mapping and current end-to-end proof required",
+    "reuse": [
+      "线上版/public/note-views.js",
+      "线上版/public/blocks/notes-layout.js"
+    ],
+    "authorization": "L0/L1 only; no implementation approval",
+    "priority": "P1",
+    "effort": "Included in deduplicated report estimate, not separately additive",
+    "dependency": "Stable isolated baseline,source rights,auth/testing access",
+    "sourceQualification": "ledger index verified; original PRD not fully read"
+  },
+  {
+    "id": "H10",
+    "title": "逐页课件阅读器",
+    "status": "PARTIAL",
+    "evidence": [
+      {
+        "file": "线上版/public/source-reader.js",
+        "exists": false
+      },
+      {
+        "file": "线上版/public/source-reader.css",
+        "exists": false
+      },
+      {
+        "file": "线上版/public/index.html",
+        "exists": true,
+        "matchingLines": [
+          318,
+          319,
+          320,
+          321,
+          322
+        ]
+      }
+    ],
+    "runtime": "NOT TESTED THIS AUDIT; code matches are not functional acceptance",
+    "source": "Task ledger section68",
+    "gap": "Official scoped PRD/content source mapping and current end-to-end proof required",
+    "reuse": [
+      "线上版/public/index.html"
+    ],
+    "authorization": "L0/L1 only; no implementation approval",
+    "priority": "P1",
+    "effort": "Included in deduplicated report estimate, not separately additive",
+    "dependency": "Stable isolated baseline,source rights,auth/testing access",
+    "sourceQualification": "ledger index verified; original PRD not fully read"
+  },
+  {
+    "id": "H11",
+    "title": "Word/PDF真实导出",
+    "status": "PARTIAL",
+    "evidence": [
+      {
+        "file": "线上版/public/index.html",
+        "exists": true,
+        "matchingLines": [
+          3009,
+          3050,
+          3080
+        ]
+      }
+    ],
+    "runtime": "NOT TESTED THIS AUDIT; code matches are not functional acceptance",
+    "source": "Task ledger section68",
+    "gap": "Official scoped PRD/content source mapping and current end-to-end proof required",
+    "reuse": [
+      "线上版/public/index.html"
+    ],
+    "authorization": "L0/L1 only; no implementation approval",
+    "priority": "P1",
+    "effort": "Included in deduplicated report estimate, not separately additive",
+    "dependency": "Stable isolated baseline,source rights,auth/testing access",
+    "sourceQualification": "ledger index verified; original PRD not fully read"
+  },
+  {
+    "id": "H12",
+    "title": "三色公式双语排版",
+    "status": "PARTIAL",
+    "evidence": [
+      {
+        "file": "线上版/public/notes-quality.css",
+        "exists": true,
+        "matchingLines": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      {
+        "file": "线上版/public/note-views.js",
+        "exists": true,
+        "matchingLines": [
+          193,
+          194,
+          197,
+          199,
+          361
+        ]
+      },
+      {
+        "file": "线上版/public/blocks/notes-layout.js",
+        "exists": true,
+        "matchingLines": [
+          11,
+          13,
+          17,
+          19,
+          24
+        ]
+      }
+    ],
+    "runtime": "NOT TESTED THIS AUDIT; code matches are not functional acceptance",
+    "source": "Task ledger section68",
+    "gap": "Official scoped PRD/content source mapping and current end-to-end proof required",
+    "reuse": [
+      "线上版/public/notes-quality.css",
+      "线上版/public/note-views.js",
+      "线上版/public/blocks/notes-layout.js"
+    ],
+    "authorization": "L0/L1 only; no implementation approval",
+    "priority": "P1",
+    "effort": "Included in deduplicated report estimate, not separately additive",
+    "dependency": "Stable isolated baseline,source rights,auth/testing access",
+    "sourceQualification": "ledger index verified; original PRD not fully read"
+  },
+  {
+    "id": "H13",
+    "title": "会计W12重点标记",
+    "status": "PARTIAL",
+    "evidence": [
+      {
+        "file": "线上版/public/blocks/notes-layout.js",
+        "exists": true,
+        "matchingLines": [
+          507,
+          510,
+          512,
+          513,
+          514
+        ]
+      }
+    ],
+    "runtime": "NOT TESTED THIS AUDIT; code matches are not functional acceptance",
+    "source": "Task ledger section68",
+    "gap": "Official scoped PRD/content source mapping and current end-to-end proof required",
+    "reuse": [
+      "线上版/public/blocks/notes-layout.js"
+    ],
+    "authorization": "L0/L1 only; no implementation approval",
+    "priority": "P1",
+    "effort": "Included in deduplicated report estimate, not separately additive",
+    "dependency": "Stable isolated baseline,source rights,auth/testing access",
+    "sourceQualification": "ledger index verified; original PRD not fully read"
+  },
+  {
+    "id": "H14",
+    "title": "AI课件逐页引用",
+    "status": "UNVERIFIED",
+    "evidence": [
+      {
+        "file": "线上版/public/ai-console.html",
+        "exists": true,
+        "matchingLines": [
+          50,
+          59
+        ]
+      },
+      {
+        "file": "线上版/public/english/js/api.js",
+        "exists": true,
+        "matchingLines": []
+      }
+    ],
+    "runtime": "NOT TESTED THIS AUDIT; code matches are not functional acceptance",
+    "source": "Task ledger section68",
+    "gap": "Official scoped PRD/content source mapping and current end-to-end proof required",
+    "reuse": [
+      "线上版/public/ai-console.html",
+      "线上版/public/english/js/api.js"
+    ],
+    "authorization": "L0/L1 only; no implementation approval",
+    "priority": "P1",
+    "effort": "Included in deduplicated report estimate, not separately additive",
+    "dependency": "Stable isolated baseline,source rights,auth/testing access",
+    "sourceQualification": "ledger index verified; original PRD not fully read"
+  },
+  {
+    "id": "H15",
+    "title": "AI Teacher真实学习数据",
+    "status": "UNVERIFIED",
+    "evidence": [
+      {
+        "file": "线上版/public/ai-console.html",
+        "exists": true,
+        "matchingLines": []
+      },
+      {
+        "file": "线上版/public/learning-profile-data.js",
+        "exists": true,
+        "matchingLines": [
+          42,
+          93,
+          156,
+          226,
+          279
+        ]
+      }
+    ],
+    "runtime": "NOT TESTED THIS AUDIT; code matches are not functional acceptance",
+    "source": "Task ledger section68",
+    "gap": "Official scoped PRD/content source mapping and current end-to-end proof required",
+    "reuse": [
+      "线上版/public/ai-console.html",
+      "线上版/public/learning-profile-data.js"
+    ],
+    "authorization": "L0/L1 only; no implementation approval",
+    "priority": "P1",
+    "effort": "Included in deduplicated report estimate, not separately additive",
+    "dependency": "Stable isolated baseline,source rights,auth/testing access",
+    "sourceQualification": "ledger index verified; original PRD not fully read"
+  },
+  {
+    "id": "H16",
+    "title": "知识点关联题库",
+    "status": "PARTIAL",
+    "evidence": [
+      {
+        "file": "线上版/public/question-bank.js",
+        "exists": true,
+        "matchingLines": [
+          1,
+          27,
+          1660,
+          1934,
+          3275
+        ]
+      },
+      {
+        "file": "线上版/public/exam-bank-data.js",
+        "exists": true,
+        "matchingLines": [
+          2
+        ]
+      }
+    ],
+    "runtime": "NOT TESTED THIS AUDIT; code matches are not functional acceptance",
+    "source": "Task ledger section68",
+    "gap": "Official scoped PRD/content source mapping and current end-to-end proof required",
+    "reuse": [
+      "线上版/public/question-bank.js",
+      "线上版/public/exam-bank-data.js"
+    ],
+    "authorization": "L0/L1 only; no implementation approval",
+    "priority": "P1",
+    "effort": "Included in deduplicated report estimate, not separately additive",
+    "dependency": "Stable isolated baseline,source rights,auth/testing access",
+    "sourceQualification": "ledger index verified; original PRD not fully read"
+  },
+  {
+    "id": "H17",
+    "title": "错题掌握度",
+    "status": "PARTIAL",
+    "evidence": [
+      {
+        "file": "线上版/public/question-bank.js",
+        "exists": true,
+        "matchingLines": [
+          2597,
+          2817,
+          2986,
+          4729,
+          5158
+        ]
+      },
+      {
+        "file": "线上版/public/learning-profile-data.js",
+        "exists": true,
+        "matchingLines": []
+      }
+    ],
+    "runtime": "NOT TESTED THIS AUDIT; code matches are not functional acceptance",
+    "source": "Task ledger section68",
+    "gap": "Official scoped PRD/content source mapping and current end-to-end proof required",
+    "reuse": [
+      "线上版/public/question-bank.js",
+      "线上版/public/learning-profile-data.js"
+    ],
+    "authorization": "L0/L1 only; no implementation approval",
+    "priority": "P1",
+    "effort": "Included in deduplicated report estimate, not separately additive",
+    "dependency": "Stable isolated baseline,source rights,auth/testing access",
+    "sourceQualification": "ledger index verified; original PRD not fully read"
+  },
+  {
+    "id": "H18",
+    "title": "经济B站精确匹配",
+    "status": "PARTIAL",
+    "evidence": [
+      {
+        "file": "线上版/public/blocks/bilingual-video.js",
+        "exists": true,
+        "matchingLines": [
+          10,
+          27,
+          40,
+          41,
+          110
+        ]
+      }
+    ],
+    "runtime": "NOT TESTED THIS AUDIT; code matches are not functional acceptance",
+    "source": "Task ledger section68",
+    "gap": "Official scoped PRD/content source mapping and current end-to-end proof required",
+    "reuse": [
+      "线上版/public/blocks/bilingual-video.js"
+    ],
+    "authorization": "L0/L1 only; no implementation approval",
+    "priority": "P1",
+    "effort": "Included in deduplicated report estimate, not separately additive",
+    "dependency": "Stable isolated baseline,source rights,auth/testing access",
+    "sourceQualification": "SOURCE_NOT_VERIFIED original chat/PRD"
+  },
+  {
+    "id": "H19",
+    "title": "双语视频",
+    "status": "PARTIAL",
+    "evidence": [
+      {
+        "file": "线上版/public/bilingual-video.html",
+        "exists": true,
+        "matchingLines": [
+          94
+        ]
+      },
+      {
+        "file": "线上版/public/blocks/bilingual-video.js",
+        "exists": true,
+        "matchingLines": [
+          5,
+          6,
+          10,
+          31,
+          32
+        ]
+      }
+    ],
+    "runtime": "NOT TESTED THIS AUDIT; code matches are not functional acceptance",
+    "source": "Task ledger section68",
+    "gap": "Official scoped PRD/content source mapping and current end-to-end proof required",
+    "reuse": [
+      "线上版/public/bilingual-video.html",
+      "线上版/public/blocks/bilingual-video.js"
+    ],
+    "authorization": "L0/L1 only; no implementation approval",
+    "priority": "P1",
+    "effort": "Included in deduplicated report estimate, not separately additive",
+    "dependency": "Stable isolated baseline,source rights,auth/testing access",
+    "sourceQualification": "SOURCE_NOT_VERIFIED original chat/PRD"
+  },
+  {
+    "id": "H20",
+    "title": "管理员AI权限成本",
+    "status": "PARTIAL",
+    "evidence": [
+      {
+        "file": "线上版/public/ai-console.html",
+        "exists": true,
+        "matchingLines": [
+          81,
+          93,
+          184,
+          185,
+          193
+        ]
+      }
+    ],
+    "runtime": "NOT TESTED THIS AUDIT; code matches are not functional acceptance",
+    "source": "Task ledger section68",
+    "gap": "Official scoped PRD/content source mapping and current end-to-end proof required",
+    "reuse": [
+      "线上版/public/ai-console.html"
+    ],
+    "authorization": "L0/L1 only; no implementation approval",
+    "priority": "P0",
+    "effort": "Included in deduplicated report estimate, not separately additive",
+    "dependency": "Stable isolated baseline,source rights,auth/testing access",
+    "sourceQualification": "ledger index verified; original PRD not fully read"
+  },
+  {
+    "id": "H21",
+    "title": "进度快照恢复",
+    "status": "PARTIAL",
+    "evidence": [
+      {
+        "file": "线上版/public/progress.js",
+        "exists": true,
+        "matchingLines": []
+      },
+      {
+        "file": "线上版/public/cloud-sync.js",
+        "exists": true,
+        "matchingLines": [
+          157
+        ]
+      },
+      {
+        "file": "线上版/public/prep-center.js",
+        "exists": true,
+        "matchingLines": [
+          84,
+          85,
+          87,
+          276,
+          281
+        ]
+      }
+    ],
+    "runtime": "NOT TESTED THIS AUDIT; code matches are not functional acceptance",
+    "source": "Task ledger section68",
+    "gap": "Official scoped PRD/content source mapping and current end-to-end proof required",
+    "reuse": [
+      "线上版/public/progress.js",
+      "线上版/public/cloud-sync.js",
+      "线上版/public/prep-center.js"
+    ],
+    "authorization": "L0/L1 only; no implementation approval",
+    "priority": "P1",
+    "effort": "Included in deduplicated report estimate, not separately additive",
+    "dependency": "Stable isolated baseline,source rights,auth/testing access",
+    "sourceQualification": "ledger index verified; original PRD not fully read"
+  },
+  {
+    "id": "H22",
+    "title": "每日简报",
+    "status": "PARTIAL",
+    "evidence": [
+      {
+        "file": "线上版/public/daily-brief.html",
+        "exists": true,
+        "matchingLines": [
+          6,
+          9,
+          29,
+          37,
+          47
+        ]
+      },
+      {
+        "file": "线上版/public/blocks/daily-brief.js",
+        "exists": true,
+        "matchingLines": [
+          2,
+          4,
+          7,
+          13,
+          15
+        ]
+      }
+    ],
+    "runtime": "NOT TESTED THIS AUDIT; code matches are not functional acceptance",
+    "source": "Task ledger section68",
+    "gap": "Official scoped PRD/content source mapping and current end-to-end proof required",
+    "reuse": [
+      "线上版/public/daily-brief.html",
+      "线上版/public/blocks/daily-brief.js"
+    ],
+    "authorization": "L0/L1 only; no implementation approval",
+    "priority": "P1",
+    "effort": "Included in deduplicated report estimate, not separately additive",
+    "dependency": "Stable isolated baseline,source rights,auth/testing access",
+    "sourceQualification": "SOURCE_NOT_VERIFIED original chat/PRD"
+  },
+  {
+    "id": "H23",
+    "title": "GitHub治理",
+    "status": "UNVERIFIED",
+    "evidence": [],
+    "runtime": "NOT TESTED THIS AUDIT; code matches are not functional acceptance",
+    "source": "Task ledger section68",
+    "gap": "Official scoped PRD/content source mapping and current end-to-end proof required",
+    "reuse": [],
+    "authorization": "L0/L1 only; no implementation approval",
+    "priority": "P0",
+    "effort": "Included in deduplicated report estimate, not separately additive",
+    "dependency": "Stable isolated baseline,source rights,auth/testing access",
+    "sourceQualification": "ledger index verified; original PRD not fully read"
+  },
+  {
+    "id": "H24",
+    "title": "发布门禁",
+    "status": "UNVERIFIED",
+    "evidence": [],
+    "runtime": "NOT TESTED THIS AUDIT; code matches are not functional acceptance",
+    "source": "Task ledger section68",
+    "gap": "Official scoped PRD/content source mapping and current end-to-end proof required",
+    "reuse": [],
+    "authorization": "L0/L1 only; no implementation approval",
+    "priority": "P0",
+    "effort": "Included in deduplicated report estimate, not separately additive",
+    "dependency": "Stable isolated baseline,source rights,auth/testing access",
+    "sourceQualification": "ledger index verified; original PRD not fully read"
+  },
+  {
+    "id": "H25",
+    "title": "源码线上映射",
+    "status": "UNVERIFIED",
+    "evidence": [],
+    "runtime": "NOT TESTED THIS AUDIT; code matches are not functional acceptance",
+    "source": "Task ledger section68",
+    "gap": "Official scoped PRD/content source mapping and current end-to-end proof required",
+    "reuse": [],
+    "authorization": "L0/L1 only; no implementation approval",
+    "priority": "P0",
+    "effort": "Included in deduplicated report estimate, not separately additive",
+    "dependency": "Stable isolated baseline,source rights,auth/testing access",
+    "sourceQualification": "ledger index verified; original PRD not fully read"
+  },
+  {
+    "id": "H26",
+    "title": "共享入口回归",
+    "status": "PARTIAL",
+    "evidence": [
+      {
+        "file": "线上版/public/index.html",
+        "exists": true,
+        "matchingLines": [
+          1020,
+          1021,
+          1022,
+          1023,
+          1025
+        ]
+      }
+    ],
+    "runtime": "NOT TESTED THIS AUDIT; code matches are not functional acceptance",
+    "source": "Task ledger section68",
+    "gap": "Official scoped PRD/content source mapping and current end-to-end proof required",
+    "reuse": [
+      "线上版/public/index.html"
+    ],
+    "authorization": "L0/L1 only; no implementation approval",
+    "priority": "P0",
+    "effort": "Included in deduplicated report estimate, not separately additive",
+    "dependency": "Stable isolated baseline,source rights,auth/testing access",
+    "sourceQualification": "ledger index verified; original PRD not fully read"
+  }
+]

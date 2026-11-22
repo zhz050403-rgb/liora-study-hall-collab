@@ -677,3 +677,4 @@
 }
 @media print{.pp-dr-obj{background:#fff}}
 @media print{.pp-sidenav,.pp-dr-filter,.pp-dr-actions,.pp-dr-save{display:none!important}}
+.pp-q-body, .pp-dr-q { white-space: pre-line; }

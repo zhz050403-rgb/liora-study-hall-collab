@@ -1,0 +1,37 @@
+[
+  {
+    "course": "accounting",
+    "term": "term1",
+    "week": 1,
+    "graphicHtmlSha256": "01ad2a0e38979c96e0bb51ea81c36ac7a1537f81b324c10a638ae687dcbaafb0",
+    "tasksSha256": "37d31dade3c2818b64aec2399ae98f807467635f6ea66ac9d3096cb525064fd3"
+  },
+  {
+    "course": "economics",
+    "term": "term1",
+    "week": 6,
+    "graphicHtmlSha256": "6be6b1b9f627a81190a8d1b017acadbbd29a7785537bec9d1754643c267028c0",
+    "tasksSha256": "0fe4e294e7f6d59d07ca4e4b947ff7316344e37e48b1b99ef43d0b425011e488"
+  },
+  {
+    "course": "economics",
+    "term": "term2",
+    "week": 6,
+    "graphicHtmlSha256": "2b4d917f6224e085fe13ccd63bc9a1946abeebfa8e0550e484a719b7e04255b5",
+    "tasksSha256": "76b3b0036cb606978045c3de2457898adb4876706700d4df885f266059149b8c"
+  },
+  {
+    "course": "economics",
+    "term": "term1x",
+    "week": 6,
+    "graphicHtmlSha256": "c27dee2a6eeaabb7756d00790299b7d1028b395e0f09258c87aeafdea2cd0a74",
+    "tasksSha256": "bb3d0f2d96724830c140d7054ca5fc9b8d316d4825bab6e0d0b8ce0c19f9daa6"
+  },
+  {
+    "course": "gupiao",
+    "term": "chapters",
+    "week": 25,
+    "graphicHtmlSha256": "ae51fe5a209e7e20f4dc2857c1778a05082e69f503fe0078c969172ead8d444b",
+    "tasksSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  }
+]

@@ -39,7 +39,8 @@
         "public/cabin-theme.css",
         "public/notes-quality.css",
         "public/mobile-fit.css",
-        "public/section-banners.css"
+        "public/section-banners.css",
+        "public/page-art.css"
       ],
       "desc": "主题配色、正文三档字号、响应式"
     },

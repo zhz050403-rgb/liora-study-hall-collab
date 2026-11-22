@@ -1,0 +1,2 @@
+@echo off
+start "" "https://liora-study-hall.app.workbuddy.host/?sharecode=L4NKT6REQ6"

@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>账号管理与授权 · Liora 的学习小屋</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#f3f7fc;color:#17365e;font:14px/1.7 system-ui,-apple-system,"Microsoft YaHei",sans-serif}
+.wrap{max-width:1080px;margin:0 auto;padding:28px 20px 60px}
+header{display:flex;flex-wrap:wrap;gap:10px;align-items:baseline;justify-content:space-between;margin-bottom:18px}
+h1{margin:0;font-size:22px;letter-spacing:.03em}
+.sub{color:#5a7392;font-size:12px}
+a{color:#1c4375}
+.topbar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:18px}
+.pill{display:inline-block;padding:5px 12px;border-radius:999px;background:#e4eefb;border:1px solid #c7dcf3;font-size:12px;color:#1c4375}
+.btn{border:1px solid #b9d0ea;background:#fff;color:#173860;border-radius:8px;padding:7px 13px;
+ font:600 13px system-ui,"Microsoft YaHei",sans-serif;cursor:pointer}
+.btn:hover{background:#eaf3fd}.btn:disabled{opacity:.5;cursor:wait}
+.btn.danger{color:#a33;border-color:#eababa;background:#fff}.btn.danger:hover{background:#fdeaea}
+.card{background:#fff;border:1px solid #d5e3f2;border-radius:14px;padding:18px 20px;margin-bottom:18px;
+ box-shadow:0 6px 20px rgba(23,56,96,.06)}
+.card h2{margin:0 0 12px;font-size:16px}
+.roles{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}
+.role{border:1px solid #dce8f5;border-radius:10px;padding:12px 14px;background:#fafcff}
+.role b{display:block;font-size:14px;margin-bottom:4px;color:#1c4375}
+.role span{font-size:12px;color:#5a7392}
+.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;min-width:820px}
+th,td{padding:10px 10px;text-align:left;border-bottom:1px solid #e8eff7;vertical-align:middle;font-size:13px}
+th{background:#f4f8fd;color:#46688e;font-weight:600;white-space:nowrap}
+tr:last-child td{border-bottom:0}
+.mono{font:12px ui-monospace,SFMono-Regular,Consolas,monospace;color:#46688e}
+select{border:1px solid #b9d0ea;background:#fff;color:#173860;border-radius:7px;padding:5px 8px;
+ font:13px system-ui,"Microsoft YaHei",sans-serif;cursor:pointer}
+select:disabled{background:#f2f5f9;color:#8aa0b8;cursor:default}
+.tag{display:inline-block;padding:2px 8px;border-radius:6px;font-size:11px;font-weight:600}
+.tag.on{background:#e3f5e9;color:#24744a}.tag.off{background:#fdeaea;color:#a33}
+.empty{padding:26px;text-align:center;color:#8aa0b8}
+#msg{position:fixed;left:50%;top:20px;transform:translateX(-50%);z-index:99;display:none;
+ background:#173860;color:#fff;padding:10px 20px;border-radius:9px;box-shadow:0 8px 24px rgba(0,0,0,.22);font-size:13px}
+.hint{font-size:12px;color:#7a90aa;margin-top:10px;line-height:1.8}
+@media (max-width:600px){.wrap{padding:18px 12px 40px}.card{padding:14px}h1{font-size:19px}}
+</style>
+<link rel="stylesheet" href="page-art.css?v=20261115-page-art2">
+</head>
+<body>
+<div class="wrap">
+  <img class="page-art-strip" src="cabin-art/extra-trust.webp" alt="" decoding="async">
+  <header>
+    <div><h1>⚙ 账号管理与授权</h1><div class="sub">只有管理员（主账号）能打开这一页</div></div>
+    <div><a href="/" class="btn">← 回到学习小屋</a></div>
+  </header>
+
+  <div class="topbar">
+    <span class="pill" id="who">正在确认身份…</span>
+    <button class="btn" id="reload" type="button">↻ 刷新列表</button>
+  </div>
+
+  <div class="card">
+    <h2>四种身份能做什么</h2>
+    <div class="roles">
+      <div class="role"><b>管理员</b><span>全部页面 + 全部功能 + 不限额度 AI。即主账号，不可停用、不可改身份。</span></div>
+      <div class="role"><b>高级会员</b><span>除「课外拓展」外全部页面；每天自动有 0.1 元 AI 额度，用完次日恢复。</span></div>
+      <div class="role"><b>会员</b><span>除「课外拓展」外全部页面；默认没有 AI 额度。每天背满 50 个单词可领 10 积分，10 积分兑换 0.01 元 AI 额度。</span></div>
+      <div class="role"><b>用户</b><span>只能使用「英语学习」，不能使用 AI。新注册账号默认就是这个身份。</span></div>
+    </div>
+    <div class="hint">积分与额度按北京时间自然日结算，每天 0 点重置、不累积。背词计数由英语台复习评分上报，属于学习打卡，不是加密防作弊机制。</div>
+  </div>
+
+  <div class="card">
+    <h2>所有账号 <span class="sub" id="count"></span></h2>
+    <div class="scroll">
+      <table>
+        <thead><tr>
+          <th>账号 / 昵称</th><th>手机号</th><th>身份</th><th>状态</th>
+          <th>今日背词</th><th>积分</th><th>今日已兑额度</th><th>最后登录</th>
+        </tr></thead>
+        <tbody id="rows"><tr><td colspan="8" class="empty">正在读取账号列表…</td></tr></tbody>
+      </table>
+    </div>
+    <div class="hint">改动「身份」会立即生效，对方刷新页面后就是新权限；可授权的身份只有「用户 / 会员 / 高级会员」，管理员是主账号固定身份，原有账号是旧账号的默认状态，都不能手动指定。停用后对方无法再登录，进度文件仍保留。删除只清掉账号台账（内置账号与主账号不可删），不可恢复，建议先停用观察。</div>
+  </div>
+</div>
+<div id="msg"></div>
+
+<script>
+(function () {
+  'use strict';
+  /* 只列服务端真正接受授权的三种身份。管理员是主账号固定身份、
+     legacy 是旧账号默认身份，两者都不能由下拉框指定（选了会被服务端拒绝）。 */
+  var ROLE_OPTIONS = [
+    { v: 'user', t: '用户' },
+    { v: 'member', t: '会员' },
+    { v: 'premium', t: '高级会员' }
+  ];
+  var LABEL = { admin: '管理员', premium: '高级会员', member: '会员', user: '用户', legacy: '原有账号' };
+  var msgTimer = null;
+  function toast(s) {
+    var m = document.getElementById('msg');
+    m.textContent = s; m.style.display = 'block';
+    if (msgTimer) clearTimeout(msgTimer);
+    msgTimer = setTimeout(function () { m.style.display = 'none'; }, 3200);
+  }
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]; }); }
+  function when(ts) {
+    if (!ts) return '—';
+    try { return new Date(ts).toLocaleString('zh-CN', { month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' }); }
+    catch (e) { return '—'; }
+  }
+  function cny(v) { return '¥ ' + (Math.round((Number(v) || 0) * 1000) / 1000).toFixed(3); }
+  function post(url, body, done) {
+    fetch(url, {
+      method: 'POST', credentials: 'same-origin',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(body || {})
+    }).then(function (r) { return r.json().then(function (j) { return { s: r.status, j: j }; }); })
+      .then(function (x) { done(x.j || {}); })
+      .catch(function () { toast('网络异常，请稍后再试'); });
+  }
+
+  function render(accounts, overview) {
+    var byKey = {};
+    (overview || []).forEach(function (o) { byKey[o.key] = o; });
+    var body = document.getElementById('rows');
+    document.getElementById('count').textContent = '共 ' + accounts.length + ' 个';
+    if (!accounts.length) { body.innerHTML = '<tr><td colspan="8" class="empty">还没有注册账号</td></tr>'; return; }
+    body.innerHTML = accounts.map(function (a) {
+      var o = byKey[a.key] || {};
+      var sel;
+      if (a.locked) {
+        sel = '<span class="tag on">管理员 · 固定</span>';
+      } else {
+        var opts = ROLE_OPTIONS.map(function (r) {
+          return '<option value="' + r.v + '"' + (r.v === a.role ? ' selected' : '') + '>' + r.t + '</option>';
+        }).join('');
+        if (a.role === 'legacy' || a.role === 'admin') {
+          opts = '<option value="' + esc(a.role) + '" selected>' + (LABEL[a.role] || '原有账号') + '（当前）</option>' + opts;
+        }
+        sel = '<select data-role-key="' + esc(a.key) + '">' + opts + '</select>';
+      }
+      var del = a.kind === 'builtin' ? '' :
+        '<button class="btn danger" type="button" data-del-key="' + esc(a.key) + '">删除</button> ';
+      var status = a.locked
+        ? '<span class="tag on">固定</span>'
+        : '<button class="btn" type="button" data-toggle-key="' + esc(a.key) + '" data-next="' +
+          (a.status === 'disabled' ? 'active' : 'disabled') + '">' +
+          (a.status === 'disabled' ? '启用' : '停用') + '</button> ' + del +
+          '<span class="tag ' + (a.status === 'disabled' ? 'off' : 'on') + '">' + (a.status === 'disabled' ? '已停用' : '正常') + '</span>';
+      return '<tr>' +
+        '<td><b>' + esc(a.label) + '</b>' + (a.kind === 'builtin' ? '<br><span class="mono">内置账号</span>' : '') + '</td>' +
+        '<td class="mono">' + esc(a.phoneMasked || '—') + '</td>' +
+        '<td>' + sel + '</td>' +
+        '<td>' + status + '</td>' +
+        '<td>' + (o.wordsToday || 0) + '</td>' +
+        '<td>' + (o.points || 0) + '</td>' +
+        '<td class="mono">' + cny(o.aiExtraCny) + '</td>' +
+        '<td class="mono">' + esc(when(a.lastLoginAt)) + '</td>' +
+        '</tr>';
+    }).join('');
+
+    Array.prototype.forEach.call(body.querySelectorAll('select[data-role-key]'), function (s) {
+      s.addEventListener('change', function () {
+        var key = s.getAttribute('data-role-key'), val = s.value;
+        if (val === 'legacy' || val === 'admin') {
+          toast('这个身份不能手动指定，请选择「用户 / 会员 / 高级会员」');
+          load();
+          return;
+        }
+        s.disabled = true;
+        post('/__api/admin/role', { key: key, role: val }, function (j) {
+          if (!j.ok) { toast(j.error || '修改失败'); s.disabled = false; return; }
+          toast('已把「' + key + '」设为 ' + (LABEL[val] || val) + '，对方刷新页面后生效');
+          load();
+        });
+      });
+    });
+    Array.prototype.forEach.call(body.querySelectorAll('button[data-toggle-key]'), function (b) {
+      b.addEventListener('click', function () {
+        var key = b.getAttribute('data-toggle-key'), next = b.getAttribute('data-next');
+        b.disabled = true;
+        post('/__api/admin/status', { key: key, status: next }, function (j) {
+          if (!j.ok) { toast(j.error || '操作失败'); b.disabled = false; return; }
+          toast(next === 'disabled' ? '已停用该账号' : '已启用该账号');
+          load();
+        });
+      });
+    });
+    Array.prototype.forEach.call(body.querySelectorAll('button[data-del-key]'), function (b) {
+      b.addEventListener('click', function () {
+        var key = b.getAttribute('data-del-key');
+        if (!window.confirm('确定删除账号「' + key + '」吗？\n删除后立刻无法登录，且不能恢复；学习进度文件会保留，建议先「停用」观察一段时间。')) return;
+        b.disabled = true;
+        post('/__api/admin/remove', { key: key }, function (j) {
+          if (!j.ok) { toast(j.error || '删除失败'); b.disabled = false; return; }
+          toast('已删除账号 ' + key);
+          load();
+        });
+      });
+    });
+  }
+
+  function load() {
+    fetch('/__api/admin/accounts', { credentials: 'same-origin', headers: { 'Accept': 'application/json' } })
+      .then(function (r) { return r.json(); })
+      .then(function (j) {
+        if (!j.ok) { toast(j.error || '读取失败'); return; }
+        render(j.accounts || [], j.overview || []);
+      })
+      .catch(function () { toast('网络异常，请稍后再试'); });
+  }
+
+  fetch('/__api/me', { credentials: 'same-origin', headers: { 'Accept': 'application/json' } })
+    .then(function (r) { return r.json(); })
+    .then(function (j) {
+      document.getElementById('who').textContent = j.ok
+        ? '当前：' + (j.user || '') + '（' + (j.roleLabel || '') + '）'
+        : '身份确认失败';
+      if (j.ok && !j.canAdmin) toast('你不是管理员，无法修改账号');
+      load();
+    })
+    .catch(function () { document.getElementById('who').textContent = '身份确认失败'; load(); });
+
+  document.getElementById('reload').addEventListener('click', function () { load(); toast('已刷新'); });
+})();
+</script>
+</body>
+</html>

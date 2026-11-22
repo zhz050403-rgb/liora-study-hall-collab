@@ -1537,3 +1537,13 @@ body.rf-large { --note-scale: 2.65; }
 .elasticity-term summary small { display: block; margin: .2rem 0 0 1.2rem; color: #4c6481; }
 .elasticity-term[open] summary { background: #edf5fd; border-radius: .65rem .65rem 0 0; }
 .elasticity-definition { padding: .5rem 1rem; color: #17395d; line-height: 1.75; }
+
+/* 跳转落点避开吸顶 header：点击侧栏「资料下载 / 去复习 / 术语表 / 本周任务」等时，
+   目标区块顶部不再被吸顶导航盖住（修复「跳过去却看不到内容 / 像跳回顶部」） */
+.wp-downloads, #wpReview, .act-nav, #wpTasks, .note-sec, .eng-answers,
+.week-glossary, .wp-head, .wp-sec, [data-kp], .act-target { scroll-margin-top: 96px; }
+/* 移动端吸顶 header 更高（约 120px），落点余量同步加大，避免标题仍被盖住 */
+@media (max-width: 960px) {
+  .wp-downloads, #wpReview, .act-nav, #wpTasks, .note-sec, .eng-answers,
+  .week-glossary, .wp-head, .wp-sec, [data-kp], .act-target { scroll-margin-top: 132px; }
+}

@@ -1,0 +1,84 @@
+/* 经济学 U1–U7 中英对照总整理 · 页面样式
+   配色红线：正文中英文一律黑色；重要部分红色；整页不出现蓝色字体。 */
+:root{
+  --eh-ink:#171717;          /* 黑：正文与英文定义 */
+  --eh-red:#b03030;          /* 红：重点 */
+  --eh-line:#d9d4c9;
+  --eh-soft:#faf8f3;
+  --eh-paper:#fffdf8;
+  --eh-sans:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--eh-paper);color:var(--eh-ink);
+  font-family:var(--eh-sans);font-size:16px;line-height:1.85;-webkit-font-smoothing:antialiased}
+.eh-wrap{max-width:960px;margin:0 auto;padding:0 22px}
+.eh-back{display:inline-block;margin:14px 0 0 22px;color:var(--eh-ink);font-size:14px;
+  font-weight:700;text-decoration:none;border-bottom:1px solid var(--eh-ink)}
+.eh-back:hover{color:var(--eh-red);border-color:var(--eh-red)}
+.eh-hero{background:#fffdf8;color:var(--eh-ink);padding:30px 0 34px;margin-top:12px;
+  border-top:1px solid var(--eh-line);border-bottom:4px solid var(--eh-red)}
+.eh-hero .eh-kicker{margin:0 0 2px;font-size:13px;letter-spacing:.22em;color:var(--eh-red);font-weight:800}
+.eh-hero h1{margin:0;font-size:clamp(25px,4.4vw,40px);line-height:1.3;color:var(--eh-ink);letter-spacing:.01em}
+.eh-hero .eh-sub{margin:12px 0 0;color:var(--eh-ink);font-size:14px}
+.eh-legend{margin:18px 0 0;padding:10px 14px;background:#faf8f3;border-left:4px solid var(--eh-red);
+  font-size:13.5px;color:var(--eh-ink);line-height:1.75;border-radius:0 6px 6px 0}
+.eh-legend .eh-red{color:var(--eh-red)}
+.eh-nav{display:flex;flex-wrap:wrap;gap:8px;padding-top:20px;padding-bottom:6px}
+.eh-nav a{display:inline-block;padding:6px 13px;border:1px solid var(--eh-line);border-radius:999px;
+  background:#fff;color:var(--eh-ink);font-size:13px;font-weight:700;text-decoration:none}
+.eh-nav a:hover{border-color:var(--eh-red);color:var(--eh-red)}
+.eh-main{padding-top:8px;padding-bottom:40px}
+.eh-section-note{font-size:14px;color:var(--eh-ink)}
+.eh-unit{margin-top:34px;padding-top:8px;scroll-margin-top:18px}
+.eh-unit-h{margin:0 0 18px;padding:10px 0 10px 14px;font-size:clamp(20px,3vw,26px);
+  line-height:1.45;color:var(--eh-ink);border-bottom:2px solid var(--eh-red);
+  border-left:5px solid var(--eh-red);background:var(--eh-soft)}
+.eh-sec-h{margin:26px 0 12px;font-size:18px;line-height:1.5;color:var(--eh-ink);
+  padding-left:12px;border-left:3px solid var(--eh-ink)}
+/* 英文定义 + 中文理解：两条同等地位的正文段落，不是小号补充框 */
+.eh-pair{margin:14px 0;padding:12px 16px;background:#fff;border:1px solid var(--eh-line);
+  border-left:4px solid var(--eh-ink);border-radius:0 8px 8px 0}
+.eh-def,.eh-cn{margin:0;color:var(--eh-ink);font-size:16px;line-height:1.85}
+.eh-def{font-weight:600}
+.eh-def .eh-term{font-weight:800;color:var(--eh-ink);letter-spacing:.005em;text-decoration:underline;text-decoration-color:var(--eh-red);text-underline-offset:3px}
+.eh-cn{margin-top:7px;padding-top:7px;border-top:1px dashed var(--eh-line)}
+.eh-p,.eh-small,.eh-q,.eh-a{margin:10px 0;color:var(--eh-ink)}
+.eh-p{font-size:15.5px}
+.eh-key{margin:12px 0;padding:10px 14px;background:#fff;border-left:4px solid var(--eh-red);
+  border-radius:0 6px 6px 0;color:var(--eh-ink);font-weight:800;font-size:15.5px;line-height:1.8}
+.eh-key::before{content:"重点公式 / 结论  ";color:var(--eh-red);font-weight:800;font-size:13px}
+.eh-small{font-size:14px;line-height:1.8;padding:9px 13px;background:var(--eh-soft);
+  border-left:3px solid var(--eh-line);border-radius:0 6px 6px 0}
+.eh-q{font-weight:800;font-size:15.5px;padding:9px 13px;border-left:4px solid var(--eh-ink);
+  background:#fff;border-radius:0 6px 6px 0}
+.eh-a{padding:9px 13px;background:var(--eh-soft);border-left:4px solid var(--eh-line);
+  border-radius:0 6px 6px 0;font-size:15.5px}
+.eh-red{color:var(--eh-red)!important;font-weight:800}
+.eh-ul{margin:10px 0;padding-left:24px}
+.eh-ul li{margin:5px 0;color:var(--eh-ink)}
+.eh-tbl-wrap{overflow-x:auto;margin:16px 0;-webkit-overflow-scrolling:touch;
+  border:1px solid var(--eh-line);border-radius:8px}
+.eh-tbl{width:100%;border-collapse:collapse;font-size:14px;color:var(--eh-ink);background:#fff}
+.eh-tbl th,.eh-tbl td{border:1px solid var(--eh-line);padding:8px 10px;text-align:left;
+  vertical-align:top;color:var(--eh-ink);line-height:1.7}
+.eh-tbl th{background:var(--eh-soft);font-weight:800;white-space:nowrap}
+.eh-tbl td{word-break:break-word}
+.eh-foot{padding:22px 22px 46px;border-top:1px solid var(--eh-line);font-size:13.5px}
+.eh-foot a{color:var(--eh-ink);font-weight:700}
+.eh-foot a:hover{color:var(--eh-red)}
+@media (max-width:600px){
+  body{font-size:15px}
+  .eh-wrap{padding:0 14px}
+  .eh-back{margin-left:14px}
+  .eh-def,.eh-cn,.eh-p,.eh-q,.eh-a{font-size:15px}
+  .eh-tbl{font-size:13px}
+  .eh-tbl th,.eh-tbl td{padding:6px 8px}
+}
+@media print{
+  .eh-back,.eh-nav,.eh-foot a{display:none}
+  .eh-hero{background:#fff;color:#000;border-bottom:2px solid #000}
+  .eh-hero h1,.eh-hero .eh-kicker,.eh-hero .eh-sub{color:#000}
+  .eh-legend{display:none}
+  .eh-pair,.eh-tbl-wrap{break-inside:avoid}
+}

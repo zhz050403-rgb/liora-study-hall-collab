@@ -1,0 +1,107 @@
+{
+  "TASK_ID": "LIORA-ACC-T1W1-P2-001",
+  "BASE_COMMIT": "667f77493d14b400e9e9fb09470c139d793d00c0",
+  "FILE_SHA256_BEFORE": "bf43b051181be32701df60fc65d2933afdb43b1cd96f6c8431c2c3528f64b656",
+  "FILE_SHA256_AFTER": "ee3caea6f915e59ae12c8515e9140a4f35e5bc2593a7f632d32e9570969c065b",
+  "CHANGED_KNOWLEDGE_IDS": [
+    "H02",
+    "H03",
+    "H04",
+    "H05"
+  ],
+  "CHANGED_FIELDS": [
+    "accounting/term1/1.graphicHtml"
+  ],
+  "PATCH_DIFF": "graphicHtml.diff",
+  "PATCH_FILE": "patch.json",
+  "SOURCE_REFERENCES": [
+    {
+      "file": "unit1 lecture slides introduction to accounting.pdf",
+      "version": "2026 Standard O2 local Week 1 copy; identified by SHA-256",
+      "sha256": "45e74f3e9bf43d5dffc3f68a1db0fcf5d6caf74847dab37a8d40f849200a333b",
+      "pdf_pages": {
+        "H02": "3–12",
+        "H03": "13–17"
+      }
+    },
+    {
+      "file": "unit1 reading materials introduction to accounting.pdf",
+      "version": "2026 Standard O2 local Week 1 copy; identified by SHA-256",
+      "sha256": "7c0a0c7672799ba30b80452b27f56ccb1d6fb3c0fb85a112dae603b56221dad8",
+      "pdf_pages": {
+        "H02": "1–3",
+        "H03": "4–6"
+      }
+    },
+    {
+      "file": "unit1 tutorial guide introduction to accounting.pdf",
+      "version": "2026 Standard O2 local Week 1 copy; identified by SHA-256",
+      "sha256": "0ed72464ebd7830f03f5eb347c1139cdb4be16f83c2159165a27268f41d5f6bc",
+      "pdf_pages": {
+        "H02": "2–4, 8–9",
+        "H03": "5–7"
+      }
+    },
+    {
+      "file": "unit2 lecture slides accounting conventions.pdf",
+      "version": "2026 Standard O2 local Week 1 copy; identified by SHA-256",
+      "sha256": "e55660cca4359996e303dc3778d58258291ead1a8e8b65ab6cb09412bb8009ad",
+      "pdf_pages": {
+        "H04": "3–17",
+        "H05": "11–15"
+      }
+    },
+    {
+      "file": "unit2 reading materials accounting conventions.pdf",
+      "version": "2026 Standard O2 local Week 1 copy; identified by SHA-256",
+      "sha256": "eed2bf23644bc263f688c5de312bf3ccadc56eaee9e161acb1811ef20b3a6c0c",
+      "pdf_pages": {
+        "H04": "1–4",
+        "H05": "3–5"
+      }
+    },
+    {
+      "file": "unit2 tutorial guide accounting conventions.pdf",
+      "version": "2026 Standard O2 local Week 1 copy; identified by SHA-256",
+      "sha256": "c13605564fa7b33fb5e847ea7f9a3ba13b656fb7e52d190c244bba217b2316a0",
+      "pdf_pages": {
+        "H04": "2–7",
+        "H05": "3, 8"
+      }
+    }
+  ],
+  "TEST_EVIDENCE": [
+    "Exact replacement of unique JSON literal; parsed output equals input after substituting original graphicHtml back.",
+    "Six original section headings, 26 original example prompts each followed by a details answer, four bilingual explanation groups. Accounting equation examples recomputed.",
+    "Historical stale-digest and forbidden tasks tests reused; current file and target field hashes match the prior input.",
+    "Isolated Edge rendered the four target headings and nine English paragraphs. DOM process exited 0; Python test harness emitted a shutdown error after evidence was saved."
+  ],
+  "UNCHANGED_TASKS_PROOF": {
+    "before": "37d31dade3c2818b64aec2399ae98f807467635f6ea66ac9d3096cb525064fd3",
+    "after": "37d31dade3c2818b64aec2399ae98f807467635f6ea66ac9d3096cb525064fd3"
+  },
+  "LOCAL_BROWSER_RESULT": {
+    "route": "#/c/accounting/term1/1",
+    "isolated": true,
+    "headings": {
+      "Accounting and Its Users": true,
+      "The Accounting Cycle": true,
+      "Accounting Conventions": true,
+      "The Accounting Equation and Cash vs Accrual Accounting": true
+    },
+    "english_blocks": 9,
+    "screenshot": "accounting-w1-browser.png",
+    "exit": 0
+  },
+  "QA_STATUS": "NOT TESTED by independent QA",
+  "RELEASE_STATUS": "RELEASE HOLD",
+  "BLOCKERS": [],
+  "NEXT_OWNER": "Liora Chief Systems Architect → independent QA → Release Manager risk review",
+  "QA_OPEN_ITEMS": [
+    "H02 and H03: independently confirm English and Chinese completeness and official exercise matching.",
+    "H04: check source ambiguities Tutorial Q4 duplicate historical cost definitions and Q6 first 12-month report against classroom answer.",
+    "H05: verify bilingual completeness, rendered equation table and Q12 timing.",
+    "Browser evidence confirms route and DOM at desktop width. Interactive expansion and narrow width not tested.",
+    "H02–H05 are Phase 1 audit locators; source heading elements have no persistent id attributes. No IDs were introduced or changed."
+  ]
+}

@@ -1,0 +1,29 @@
+.g-hero { --page-art: url("cabin-art/banner-guide.webp"); }
+.ep-hero { --page-art: url("cabin-art/banner-prep.webp"); }
+.v-hero { --page-art: url("cabin-art/chapter-east.webp"); }
+.assist-hero { --page-art: url("cabin-art/extra-creditor.webp"); }
+.prof-hero { --page-art: url("cabin-art/extra-stages.webp"); }
+:is(.g-hero, .ep-hero, .v-hero, .assist-hero, .prof-hero) {
+  background-image: linear-gradient(90deg, #10233df0, #10233d99 65%, #10233d55), var(--page-art) !important;
+  background-position: center;
+  background-size: cover;
+}
+:is(.g-hero, .ep-hero, .v-hero, .assist-hero, .prof-hero) p {
+  max-inline-size: 68ch;
+  line-height: 1.65;
+}
+.page-art-strip {
+  display: block;
+  /* android-install.html 内联的 .hero img{width:96px;height:96px} 选择器更具体，
+     会把图带压成 96x96 小方块。这里用 !important 锁定横条尺寸与圆角。 */
+  inline-size: 100% !important;
+  block-size: clamp(96px, 14vw, 165px) !important;
+  object-fit: cover;
+  border-radius: 8px !important;
+  margin-block-end: clamp(14px, 2vw, 24px);
+}
+@media (max-width: 600px) {
+  :is(.g-hero, .ep-hero, .v-hero, .assist-hero, .prof-hero) {
+    background-image: linear-gradient(#10233dbd, #10233dd9), var(--page-art) !important;
+  }
+}

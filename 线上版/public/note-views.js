@@ -169,14 +169,36 @@ function buildMindmap(){
       '<button type="button" class="mm-tog" data-mm-toggle="'+bi+'" title="展开 / 收起要点">▾</button></div>';
     var kids = [];
     b.subs.forEach(function(s){ kids.push({ t:s.label, id:s.id, sub:true }); });
-    (b.main.points || []).slice(0, 3).forEach(function(p){ kids.push({ t:cut(p, 78), id:"", sub:false }); });
+    /* 保留完整文字（2026-11-15）：以前 cut(p,78) 把要点截成「…」又渲染成纯 span，
+       用户点「例 1 / 例 2」毫无反应，反馈为「文字部分打不开」。现在短句显示摘要，
+       点一下展开全文，并可一键跳回文字版对应知识点。 */
+    (b.main.points || []).slice(0, 3).forEach(function(p){
+      kids.push({ t:p, short:cut(p, 78), id:"", sub:false });
+    });
     html += '<div class="mm-kids" data-mm-kids="'+bi+'">';
     if(!kids.length) html += '<div class="mm-leaf"><span>（本周该知识点以图表 / 公式为主，详见文字版）</span></div>';
     kids.slice(0, 6).forEach(function(k){
-      html += '<div class="mm-leaf'+(k.sub ? " is-sub" : "")+'">' +
-        (k.id
-          ? '<button type="button" class="mm-link" data-mm-jump="'+esc(k.id)+'">'+esc(k.t)+'</button>'
-          : '<span>'+esc(k.t)+'</span>') + '</div>';
+      if(k.id){
+        html += '<div class="mm-leaf'+(k.sub ? " is-sub" : "")+'">' +
+          '<button type="button" class="mm-link" data-mm-jump="'+esc(k.id)+'">'+esc(k.t)+'</button></div>';
+        return;
+      }
+      var full = String(k.t || "");
+      var brief = String(k.short == null ? full : k.short);
+      var base = (full !== brief) ? "展开全文 ⌄" : "看原文 ⌄";
+      html += '<div class="mm-leaf">' +
+        '<button type="button" data-mm-expand="1" data-mm-more-base="'+esc(base)+'" ' +
+          'title="点开看完整内容，并可跳到文字版" ' +
+          'style="display:block;width:100%;text-align:left;background:none;border:0;padding:0;margin:0;' +
+          'font:inherit;color:inherit;cursor:pointer;line-height:1.6">' + esc(brief) +
+          ' <span data-mm-more="1" style="color:#a8791c;font-weight:700;white-space:nowrap">'+esc(base)+'</span>' +
+        '</button>' +
+        '<div data-mm-full="1" style="display:none;margin-top:8px;padding:8px 10px;background:#fffdf5;' +
+          'border:1px solid #ead9ae;border-radius:7px;line-height:1.7;color:#243b57">' + esc(full) +
+          ' <button type="button" data-mm-jump="'+esc(b.main.id)+'" title="跳到文字版对应知识点" ' +
+          'style="display:inline-block;margin-top:6px;background:#1d3a5f;color:#fff;border:0;' +
+          'border-radius:6px;padding:4px 10px;font-size:12px;font-weight:700;cursor:pointer">→ 到文字版看这段</button>' +
+        '</div></div>';
     });
     html += '</div></div>';
   });
@@ -228,6 +250,111 @@ function maskRepeats(after, k){
   }
   return after.replace(new RegExp(quoted, "g"), "____");
 }
+/* ---------- 例题答案库（2026-11-15） ----------
+   用户反馈：填空复习点「看答案」只给出「例 1（Lecture U1 p5）」这类标签，
+   还要自己回文字版翻「看解答」。这里把笔记里现成的解答原文直接搬进卡片，
+   绝不新增 / 改写任何学科结论；找不到官方解答的标签题干脆不生成。 */
+var SOL_BANK_CACHE = { key:"", bank:null };
+function solNorm(s){ return norm(s).slice(0, 80); }
+function stemKey(s){ return solNorm(s).slice(0, 60); }
+function cleanAnswerHtml(html){
+  return String(html || "")
+    .replace(/<script[\s\S]*?<\/script>/gi,"")
+    .replace(/<style[\s\S]*?<\/style>/gi,"")
+    .replace(/<summary\b[\s\S]*?<\/summary>/gi,"")
+    .replace(/\son[a-z]+\s*=\s*(?:"[^"]*"|'[^']*'|[^\s>]+)/gi,"")
+    .replace(/\s(?:href|src)\s*=\s*(?:"|')\s*javascript:[^"']*(?:"|')/gi,"")
+    .trim();
+}
+function elementLabel(el){
+  var b = el.querySelector("strong,b,em,span");
+  return b ? txt(b.innerHTML) : "";
+}
+function buildSolBank(week){
+  var src = (week && (week.graphicHtml || week.notesHtml || "")) || "";
+  var key = String(src.length) + "|" + String(week && week.title || "") + "|" +
+            String((week && week.tutorialAnswers || "").length);
+  if(SOL_BANK_CACHE.bank && SOL_BANK_CACHE.key === key) return SOL_BANK_CACHE.bank;
+  var bank = { byLabel:{}, byStem:{}, concepts:[] };
+  function addPair(label, question, html){
+    var a = cleanAnswerHtml(html);
+    if(a.length < 30) return;                       /* 太短的「答案」不算 */
+    var rec = { label:label, question:question, html:a };
+    if(label) bank.byLabel[solNorm(label)] = rec;
+    if(question) bank.byStem[stemKey(question)] = rec;
+  }
+  function scan(html){
+    if(!html) return;
+    var d = document.createElement("div");
+    d.innerHTML = html;
+    /* ① 例题 <p> 后面紧跟的 <details>看解答</details> */
+    Array.prototype.forEach.call(d.querySelectorAll("details"), function(dt){
+      var prev = dt.previousElementSibling;
+      if(!prev) return;
+      var sm = dt.querySelector("summary");
+      if(sm && !/看解答|答案|answer|solution/i.test(txt(sm.innerHTML))) return;
+      addPair(elementLabel(prev), txt(prev.innerHTML), dt.innerHTML);
+    });
+    /* ② tutorialAnswers：题目 p.c-blue 后面连续的解答 <p> */
+    Array.prototype.forEach.call(d.querySelectorAll("p.c-blue"), function(p){
+      if(!/^例\s*\d+/.test(elementLabel(p))) return;
+      var parts = [], n = p.nextElementSibling;
+      while(n && n.tagName === "P" && !/\bc-blue\b/.test(n.className || "")){
+        parts.push(n.innerHTML); n = n.nextElementSibling;
+      }
+      if(parts.length) addPair(elementLabel(p), txt(p.innerHTML), parts.join("<br>"));
+    });
+    /* ③ 概念讲解块：给「会计循环」这类标题型答案提供笔记原文 */
+    Array.prototype.forEach.call(d.querySelectorAll("div.callout, div[class*='concept']"), function(box){
+      var t = txt(box.innerHTML);
+      if(t.length >= 60) bank.concepts.push({ text:t, html:cleanAnswerHtml(box.innerHTML) });
+    });
+  }
+  scan(src);
+  scan(week && week.tutorialAnswers);
+  SOL_BANK_CACHE = { key:key, bank:bank };
+  return bank;
+}
+/* 判断某题的「答案」是不是一个还要自己去找的标签 / 指针 */
+function isPointerAnswer(q){
+  var a = String(q.ans || "");
+  if(/^例\s*\d+/.test(a)) return true;                 /* 例 1（Lecture U1 p5） */
+  if(/[｜|]/.test(a)) return true;                     /* 双语表格拼接残留 */
+  if(String(q.before || "").trim()) return false;     /* 术语在句中 = 正常填空题 */
+  var lab = String(q.kp || "").split(/[（(]/)[0].trim();
+  var na = norm(a), nl = norm(lab);
+  return !!(nl && na && (na === nl || nl.indexOf(na) === 0 || na.indexOf(nl) === 0));
+}
+function conceptAnswer(bank, q){
+  var a = norm(q.ans);
+  if(a.length < 2) return null;
+  var best = null, bestScore = -1;
+  for(var i = 0; i < bank.concepts.length; i++){
+    var c = bank.concepts[i], pos = norm(c.text).indexOf(a);
+    if(pos < 0) continue;
+    /* 概念标题必须出现在段落前部，避免误抓「本周导学」这类提及多个概念的概览块 */
+    if(/^概念/.test(c.text)) pos -= 100;
+    var score = 100 - Math.max(0, pos);
+    if(score > bestScore){ bestScore = score; best = c; }
+  }
+  return bestScore >= 0 ? best : null;
+}
+function prepareClozeQuestions(secs){
+  var qs = makeQuestions(secs), bank = buildSolBank(NS.week);
+  qs.forEach(function(q){
+    q.full = q.full || (q.before + q.ans + q.after);
+    q.pointer = isPointerAnswer(q);
+    var rec = bank.byLabel[solNorm(q.ans)] || bank.byStem[stemKey(q.full)];
+    if(rec) q.sol = rec;
+    else if(q.pointer){
+      var c = conceptAnswer(bank, q);
+      if(c) q.sol = { label:q.ans, html:c.html, fromConcept:true };
+    }
+  });
+  /* 找不到任何官方解答的「标签答案」题，不再生成，避免又出现一个空指针 */
+  return qs.filter(function(q){ return !q.pointer || q.sol; });
+}
+
 function makeQuestions(secs){
   var qs = [], seen = {};
   function push(s, p, rawKey, tag){
@@ -248,7 +375,7 @@ function makeQuestions(secs){
     var sig = tag + "|" + k.toLowerCase() + "|" + p.slice(0, 26);
     if(seen[sig]) return false;
     seen[sig] = 1;
-    qs.push({ kp:s.label, id:s.id, before:p.slice(0, idx), after:maskRepeats(rest, k), ans:k });
+    qs.push({ kp:s.label, id:s.id, before:p.slice(0, idx), after:maskRepeats(rest, k), ans:k, full:p });
     return true;
   }
   /* 主策略：挖笔记里被加粗 / 标为 key 的术语 */
@@ -275,32 +402,59 @@ function makeQuestions(secs){
   }
   return qs;
 }
+function clozeMeta(q, i){
+  return '<div class="clz-meta"><button type="button" class="clz-kp" data-mm-jump="'+esc(q.id)+'">'+esc(cut(q.kp, 40))+'</button>' +
+    '<span>第 '+(i+1)+' 题</span></div>';
+}
+function clozeNormal(q, i){
+  var cjk = (q.ans.match(/[\u4e00-\u9fa5]/g) || []).length;
+  var lat = q.ans.length - cjk;
+  /* 用 ch 单位（跟随正文字号 --rf 自动缩放），避免框太窄裁掉末尾字母。 */
+  var chCount = Math.min(44, Math.max(8, cjk * 2.2 + lat * 1.2 + 2.5));
+  return '<div class="clz-stem">'+esc(q.before) +
+    '<input class="clz-input" style="width:'+chCount.toFixed(1)+'ch;box-sizing:border-box" data-clz-input="'+i+'" data-ans="'+esc(q.ans)+'" type="text" autocomplete="off" placeholder="填这里" aria-label="第 '+(i+1)+' 题答案">' +
+    esc(q.after)+'</div>' +
+    '<div class="clz-foot"><button type="button" class="nv-mini" data-clz-check="'+i+'">✓ 检查</button>' +
+    '<button type="button" class="nv-mini" data-clz-show="'+i+'">👁 看答案</button>' +
+    '<span class="clz-fb" data-clz-fb="'+i+'"></span></div>';
+}
+/* 例题型题目：不再挖空标签，题干完整给出，官方解答原文直接显示在卡片里 */
+function clozeWithAnswer(q, i){
+  var tip = q.sol.fromConcept ? '📖 笔记原文 · 直接给出' : '✅ 完整答案（笔记原文，已直接给出）';
+  return '<div class="clz-stem" style="line-height:1.85">'+esc(q.full)+'</div>' +
+    '<div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:10px">' +
+      '<span style="font-size:12px;font-weight:800;color:#0b63d6">'+tip+'</span>' +
+      '<button type="button" class="nv-mini" data-clz-toggle="'+i+'">🙈 收起答案（先自测）</button>' +
+    '</div>' +
+    '<div class="clz-sol-box" data-clz-sol="'+i+'" style="display:block;margin-top:8px;background:#f7f9fc;border:1px solid #dbe4ef;border-left:4px solid #0b63d6;border-radius:8px;padding:12px 14px;font-size:calc(7.5px * var(--rf));line-height:1.9;color:#243044;word-break:break-word">' +
+      q.sol.html + '</div>';
+}
+/* 手机档：grid 单列的 auto 轨道会被长题干撑宽，卡片右侧被外层 overflow 裁掉。
+   minmax(0,1fr) + min-width:0 强制卡片跟随容器宽度；答案正文允许任意处折行。 */
+var CLZ_SOL_CSS = '<style>' +
+  '.clz-list{grid-template-columns:minmax(0,1fr)}' +
+  '.clz-q{min-width:0;overflow-wrap:anywhere}' +
+  '.clz-stem,.clz-sol-box{overflow-wrap:anywhere;word-break:break-word}' +
+  '.clz-input{max-width:100%}' +
+  '.clz-sol-box p{margin:0 0 8px}.clz-sol-box p:last-child{margin-bottom:0}' +
+  '.clz-sol-box img,.clz-sol-box table{max-width:100%;height:auto}' +
+  '.clz-sol-box details{margin:6px 0}</style>';
 function buildCloze(){
   var secs = sectionsFor(NS.week, false);
-  var qs = makeQuestions(secs);
+  var qs = prepareClozeQuestions(secs);
   if(!qs.length) return hint("本周笔记以图表 / 公式为主，暂时没有可自动挖空的术语。建议用文字版配合目录复习。");
-  var html = '<div class="nv-bar"><span class="nv-t">✏️ 填空复习</span>' +
-    '<span>共 '+qs.length+' 题 · 填关键词，答对会自动变绿</span>' +
-    '<span class="clz-score" id="clzScore">已答对 0 / '+qs.length+'</span>' +
+  var fill = 0;
+  qs.forEach(function(q){ if(!q.sol) fill++; });
+  var direct = qs.length - fill;
+  var html = CLZ_SOL_CSS + '<div class="nv-bar"><span class="nv-t">✏️ 填空复习</span>' +
+    '<span>共 '+qs.length+' 题'+(direct ? ' · 其中 '+direct+' 题完整答案已直接给出' : ' · 填关键词，答对会自动变绿')+'</span>' +
+    '<span class="clz-score" id="clzScore">已答对 0 / '+fill+'</span>' +
     '<button type="button" class="nv-mini" data-clz-all="1">全部显示答案</button>' +
     '<button type="button" class="nv-mini" data-clz-reset="1">重做</button></div>';
   html += '<div class="clz-progress"><i id="clzBar" style="width:0%"></i></div><div class="clz-list">';
   qs.forEach(function(q, i){
-    var cjk = (q.ans.match(/[\u4e00-\u9fa5]/g) || []).length;
-    var lat = q.ans.length - cjk;
-    /* 用 ch 单位（跟随正文字号 --rf 自动缩放），避免框太窄裁掉末尾字母。
-       CJK 约占 2.2ch、拉丁字母约 1.2ch，再加 2.5ch 缓冲容纳左右内边距。 */
-    var chCount = cjk * 2.2 + lat * 1.2 + 2.5;
-    chCount = Math.min(44, Math.max(8, chCount));
-    html += '<div class="clz-q" data-clz-q="'+i+'">' +
-      '<div class="clz-meta"><button type="button" class="clz-kp" data-mm-jump="'+esc(q.id)+'">'+esc(cut(q.kp, 40))+'</button>' +
-      '<span>第 '+(i+1)+' 题</span></div>' +
-      '<div class="clz-stem">'+esc(q.before) +
-      '<input class="clz-input" style="width:'+chCount.toFixed(1)+'ch;box-sizing:border-box" data-clz-input="'+i+'" data-ans="'+esc(q.ans)+'" type="text" autocomplete="off" placeholder="填这里" aria-label="第 '+(i+1)+' 题答案">' +
-      esc(q.after)+'</div>' +
-      '<div class="clz-foot"><button type="button" class="nv-mini" data-clz-check="'+i+'">✓ 检查</button>' +
-      '<button type="button" class="nv-mini" data-clz-show="'+i+'">👁 看答案</button>' +
-      '<span class="clz-fb" data-clz-fb="'+i+'"></span></div></div>';
+    html += '<div class="clz-q" data-clz-q="'+i+'">' + clozeMeta(q, i) +
+      (q.sol ? clozeWithAnswer(q, i) : clozeNormal(q, i)) + '</div>';
   });
   html += '</div>';
   return html;
@@ -839,6 +993,16 @@ function onClick(ev){
     el.textContent = anyOpen ? "展开要点" : "收起要点";
     return;
   }
+  if((el = t.closest("[data-mm-expand]"))){
+    var box = el.parentNode ? el.parentNode.querySelector("[data-mm-full]") : null;
+    if(box){
+      var willOpen = box.style.display === "none";
+      box.style.display = willOpen ? "block" : "none";
+      var more = el.querySelector("[data-mm-more]");
+      if(more) more.textContent = willOpen ? "收起 ⌃" : (el.getAttribute("data-mm-more-base") || "展开 ⌄");
+    }
+    return;
+  }
   if((el = t.closest("[data-mm-jump]"))){
     var id = el.getAttribute("data-mm-jump");
     if(id && NS.jumpTo) NS.jumpTo(id);
@@ -846,9 +1010,29 @@ function onClick(ev){
   }
   if((el = t.closest("[data-clz-check]"))){ checkOne(parseInt(el.getAttribute("data-clz-check"),10), false); return; }
   if((el = t.closest("[data-clz-show]"))){ checkOne(parseInt(el.getAttribute("data-clz-show"),10), true); return; }
+  if((el = t.closest("[data-clz-toggle]"))){
+    var ti = el.getAttribute("data-clz-toggle");
+    var box = root().querySelector('[data-clz-sol="'+ti+'"]');
+    if(box){
+      var hide = box.style.display !== "none";
+      box.style.display = hide ? "none" : "block";
+      el.textContent = hide ? "👁 展开答案" : "🙈 收起答案（先自测）";
+    }
+    return;
+  }
   if((el = t.closest("[data-clz-all]"))){
     var ins = root().querySelectorAll(".view-pane[data-view-pane='cloze'] .clz-input");
-    Array.prototype.forEach.call(ins, function(inp, i){ checkOne(i, true); });
+    Array.prototype.forEach.call(ins, function(inp){
+      checkOne(parseInt(inp.getAttribute("data-clz-input"),10), true);
+    });
+    Array.prototype.forEach.call(
+      root().querySelectorAll(".view-pane[data-view-pane='cloze'] [data-clz-sol]"), function(b){
+        b.style.display = "block";
+      });
+    Array.prototype.forEach.call(
+      root().querySelectorAll(".view-pane[data-view-pane='cloze'] [data-clz-toggle]"), function(b){
+        b.textContent = "🙈 收起答案（先自测）";
+      });
     return;
   }
   if((el = t.closest("[data-clz-reset]"))){
@@ -901,7 +1085,7 @@ function onKeydown(ev){
    对外接口
    ============================================================ */
 window.NoteViews = {
-  version: "20261106-outline6",
+  version: "20261115-cloze-answers2",
   switchHtml: function(){
     var h = '<div class="nv-switch"><span class="nv-lead">笔记视图</span>';
     VIEWS.forEach(function(v, i){

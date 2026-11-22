@@ -10,6 +10,10 @@
      单期页 = 卡片 .rc-date[datetime] 最大值 →「本期收录 · 截至 …」；
      多期存档页（卡片带 data-edition）= 最大期号 →「收录至 …」；
      每次渲染/搜索都会重算，ChatGPT 注入新内容后也能自动对齐。
+   - 2026-11-16：所有卡片统一按「时间」排序（简报期号优先；早期没写
+     期号的文章用它自己的原文发表日），同一天再按原文日期排；工具栏可
+     一键切换「最新在前 / 最早在前」。卡片头部只留一个主日期（简报日），
+     原文日期降为次要信息，避免日期忽早忽晚看起来像乱序。
    改完请同步升 daily-brief.html 里的 ?v=（.js 是 immutable 长缓存）。
    ============================================================ */
 (function () {
@@ -21,6 +25,8 @@
   var foldBtn = document.getElementById('briefFoldAll');
   var emptyTip = document.getElementById('briefEmpty');
   var countTip = document.getElementById('briefCount');
+  var sortBtn = document.getElementById('briefSort');
+  var sortDesc = true;               /* true = 最新在前（默认） */
 
   function box(name) {
     var el = slots[name];
@@ -165,18 +171,55 @@
     return label ? label.textContent.split('·')[0].trim() : '';
   }
 
-  function dateOf(card) {
-    var time = card.querySelector('.rc-date');
-    return card.dataset.edition || (time && time.dateTime) || '';
+  /* ---------- 时间顺序（2026-11-16） ----------
+     主时间 = 简报期号 data-edition；早期文章没写期号，就退回用它自己
+     的原文发表日。这样整页只有一个时间轴，从上到下严格递减（或递增），
+     不会再出现「简报日期有序、原文日期乱跳」的错觉。
+     同一天再按原文日期排；完全相同则保留 HTML 里的原次序（sort 稳定）。 */
+  function isoDate(raw) {
+    var d = (raw || '').slice(0, 10);
+    return /^\d{4}-\d{2}-\d{2}$/.test(d) ? d : '';
+  }
+
+  function editionOf(card) { return isoDate(card.getAttribute('data-edition')); }
+
+  function publishedOf(card) {
+    var t = card.querySelector('.rc-date');
+    return t ? isoDate(t.getAttribute('datetime') || t.dateTime) : '';
+  }
+
+  function sortKeyOf(card) {
+    return editionOf(card) || publishedOf(card) || '0000-00-00';
+  }
+
+  function dateOf(card) { return sortKeyOf(card); }   /* 旧名保留，行为统一 */
+
+  function sortCards(cards) {
+    return cards.slice().sort(function (a, b) {
+      var ka = sortKeyOf(a), kb = sortKeyOf(b);
+      if (ka !== kb) return sortDesc ? kb.localeCompare(ka) : ka.localeCompare(kb);
+      var pa = publishedOf(a), pb = publishedOf(b);
+      if (pa !== pb) return sortDesc ? pb.localeCompare(pa) : pa.localeCompare(pb);
+      return 0;
+    });
+  }
+
+  function syncSortLabel() {
+    if (!sortBtn) return;
+    sortBtn.textContent = sortDesc ? '最新在前 ⇅' : '最早在前 ⇅';
+    sortBtn.setAttribute('aria-label', sortDesc
+      ? '当前按时间从新到旧排列，点击改为从早到晚'
+      : '当前按时间从早到晚排列，点击改为从新到旧');
+    sortBtn.setAttribute('aria-pressed', sortDesc ? 'true' : 'false');
   }
 
   function applySearch() {
     var q = ((searchInput && searchInput.value) || '').trim().toLowerCase();
     var shown = 0;
-    var cards = cardList();
+    var all = cardList();
     var selected = categorySelect ? categorySelect.value : '';
     if (categorySelect) {
-      var categories = Array.from(new Set(cards.map(categoryOf).filter(Boolean))).sort();
+      var categories = Array.from(new Set(all.map(categoryOf).filter(Boolean))).sort();
       categorySelect.options.length = 1;
       categories.forEach(function (category) {
         categorySelect.add(new Option(category, category));
@@ -184,19 +227,30 @@
       selected = categories.includes(selected) ? selected : '';
       categorySelect.value = selected;
     }
-    cards.sort(function (a, b) { return dateOf(b).localeCompare(dateOf(a)); });
+    var cards = sortCards(all);
     cards.forEach(function (card, index) {
       root.insertBefore(card, emptyTip);
+      /* 卡片头部的主日期：有期号写「简报 …」，没有期号的早期文章写
+         「原文 …」，明确用的是哪一天，绝不凭空编一个期号出来。 */
       var published = card.querySelector('.rc-date');
-      if (published && published.dateTime) {
-        published.textContent = '原文 ' + published.dateTime;
-        if (card.dataset.edition && !card.querySelector('.rc-edition')) {
+      if (published && published.getAttribute('datetime')) {
+        published.textContent = '原文 ' + published.getAttribute('datetime');
+      }
+      if (editionOf(card)) {
+        if (!card.querySelector('.rc-edition')) {
           var edition = document.createElement('time');
           edition.className = 'rc-edition';
-          edition.dateTime = card.dataset.edition;
+          edition.dateTime = editionOf(card);
           edition.textContent = '简报 ' + edition.dateTime;
-          published.before(edition, ' · ');
+          var meta = card.querySelector('.rc-meta');
+          if (meta) meta.insertBefore(edition, meta.firstChild);
+          else if (published && published.parentNode) {
+            published.parentNode.insertBefore(edition, published);
+          }
         }
+        card.classList.remove('no-edition');
+      } else {
+        card.classList.add('no-edition');
       }
       var number = card.querySelector('.rc-no');
       if (number) number.textContent = String(index + 1).padStart(2, '0');
@@ -207,12 +261,12 @@
     });
     if (emptyTip) emptyTip.hidden = shown !== 0;
     if (countTip) {
-      countTip.textContent = q || selected
-        ? '匹配 ' + shown + ' 篇 · 点击标题展开'
-        : '共 ' + shown + ' 篇 · 点击标题展开';
+      countTip.textContent = (q || selected ? '匹配 ' + shown + ' 篇' : '共 ' + shown + ' 篇') +
+        ' · ' + (sortDesc ? '按时间从新到旧' : '按时间从早到晚') + ' · 点击标题展开';
     }
     syncEditionDate();
     syncFoldLabel();
+    syncSortLabel();
   }
 
   function bindCards() {
@@ -281,6 +335,10 @@
   }
   if (searchInput) searchInput.addEventListener('input', applySearch);
   if (categorySelect) categorySelect.addEventListener('change', applySearch);
+  if (sortBtn) sortBtn.addEventListener('click', function () {
+    sortDesc = !sortDesc;
+    applySearch();
+  });
 
   normalize(root);
   bindCards();

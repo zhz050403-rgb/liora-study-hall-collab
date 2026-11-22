@@ -1,0 +1,17 @@
+{
+  "topLevelCourses": 67,
+  "mainCourseWeeks": {
+    "accounting": 13,
+    "economics": 27,
+    "mathematics": 27,
+    "computing": 26,
+    "english": 14
+  },
+  "mainTotal": 107,
+  "allRecordCount": 345,
+  "terms": 71,
+  "headingNodes": 1813,
+  "detailsNodes": 1112,
+  "emptyBothFields": 0,
+  "quality": "All current production records UNKNOWN_AMOS_QA unless independently hash-linked; R07 isolation35/37 concepts25/26 examples PASS REPORTED in ledger, not production acceptance. SDG33 materials PASS REPORTED not imported."
+}

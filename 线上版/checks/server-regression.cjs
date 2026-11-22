@@ -8,7 +8,16 @@ const fakeFs = {readFileSync(file) {
  if(file.endsWith('board-notes-extracurricular.json')) return '{"modules/7":{"notesHtml":"owner-only fixture"}}';
  throw Object.assign(new Error('not found'), {code:'ENOENT'});
 },readFile(file, encoding, callback){ callback(null, fs.readFileSync(file, encoding)); },existsSync(){return false},mkdirSync(){},writeFileSync(){writes++},renameSync(){}};
-const context = {require(name){ if(name==='fs')return fakeFs; if(name==='http')return {createServer(fn){handler=fn;return {listen(){},on(){}}}}; return require(name);}, __dirname:path.resolve(__dirname,'..'),process:{env:{}},console,Buffer,URL,setTimeout,clearTimeout};
+/* server.js 现在会 require('./accounts/service')。这个回归用 vm 直接跑源码，
+   相对 require 会基于 checks/ 解析而失败；这里把账号模块用同一套 fakeFs 在
+   沙箱里加载，既不改产品代码，也保证测试一个字节都不碰真实 data/。 */
+const serviceSource = fs.readFileSync(path.join(__dirname, '../accounts/service.js'), 'utf8');
+const serviceCtx = {require(name){ if(name==='fs')return fakeFs; return require(name); },
+ module:{exports:{}}, console,Buffer,URL,setTimeout,clearTimeout,process:{env:{}},
+ __dirname:path.resolve(__dirname,'..','accounts')};
+serviceCtx.exports = serviceCtx.module.exports;
+vm.createContext(serviceCtx); vm.runInContext(serviceSource, serviceCtx);
+const context = {require(name){ if(name==='fs')return fakeFs; if(name==='http')return {createServer(fn){handler=fn;return {listen(){},on(){}}}}; if(name==='./accounts/service')return serviceCtx.module.exports; return require(name);}, __dirname:path.resolve(__dirname,'..'),process:{env:{}},console,Buffer,URL,setTimeout,clearTimeout};
 vm.createContext(context);vm.runInContext(source,context);
 async function request(url,method='GET',user,body){
  const handlers={}; const req={url,method,headers:{},socket:{remoteAddress:'test'},on(event,fn){handlers[event]=fn;return this}};

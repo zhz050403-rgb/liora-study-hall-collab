@@ -47,7 +47,18 @@ function renderView() {
 
 function updateApiBanner() {
   const b = $('#apiBanner');
-  if (b) b.classList.toggle('hidden', hasApiKey());
+  if (!b) return;
+  /* 云端 AI 可用时横幅完全隐藏；只有真的被拦（身份 / 通道未加载）才显示，
+     并且显示的是真实原因，绝不再出现「尚未配置 API Key」这种过时说法。 */
+  const why = aiBlockReason();
+  b.classList.toggle('hidden', !why);
+  if (!why) return;
+  const msg = b.querySelector('[data-api-msg]');
+  if (msg) msg.textContent = why;
+  const goSettings = b.querySelector('[data-action="goto"]');
+  if (goSettings) goSettings.style.display = 'none';
+  const reload = b.querySelector('[data-action="reload-app"]');
+  if (reload) reload.style.display = /通道还没加载好/.test(why) ? '' : 'none';
 }
 
 function openArticle(id) {
@@ -108,7 +119,11 @@ function renderHome() {
       '<div class="card"><div class="sc-center"><div class="sc-num ok">' + mastered + '</div><div class="sc-label">已掌握生词</div></div></div>' +
     '</div>' +
     '<div class="card steps"><h3>🚀 新手三步</h3>' +
-      '<div class="step-item"><div class="sn-no"></div><div class="sn-body"><b>模型已就绪：</b>已预置 DeepSeek，打开就能用；想换其他服务才需要到「设置」修改。</div></div>' +
+      '<div class="step-item"><div class="sn-no"></div><div class="sn-body">' +
+        (aiBlockReason()
+          ? '<b>AI 需要开通：</b>你现在是「用户」，AI 暂时用不了。看页面顶部或点左下角「🔒 AI 与积分说明」，里面写了怎么拿额度、AI 在哪些地方用。'
+          : '<b>AI 已接好：</b>查词、批改、翻译、对话走小屋云端，打开就能用，不用填任何 Key。') +
+        '</div></div>' +
       '<div class="step-item"><div class="sn-no"></div><div class="sn-body"><b>选篇文章：</b>到「素材库」选一篇 B2 文章（或粘贴 / AI 生成自己的材料）。</div></div>' +
       '<div class="step-item"><div class="sn-no"></div><div class="sn-body"><b>完成闭环：</b>按 精读 → 精听 → 写作 → 口语 的顺序练习，生词自动进入间隔复习。</div></div>' +
     '</div>';
@@ -116,6 +131,7 @@ function renderHome() {
 
 /* ---------- 素材库 ---------- */
 let dailyBriefSources;
+let briefStudySources = new Map();
 
 async function renderDailyBriefSources(section) {
   try {
@@ -145,14 +161,53 @@ async function renderDailyBriefSources(section) {
         throw error;
       });
     const sources = await dailyBriefSources;
+    const preparedResponse = await fetch('data/daily-brief-articles.json', { cache: 'no-cache' });
+    if (preparedResponse.ok) {
+      const prepared = await preparedResponse.json();
+      for (const article of prepared.articles || []) {
+        if (!sources.some(([url]) => url === article.originalUrl)) {
+          sources.push([article.originalUrl, { title: article.title, category: article.topic, date: '' }]);
+        }
+      }
+    }
+    briefStudySources = new Map(sources);
     section.innerHTML = sources.map(([url, article]) =>
       '<div class="card"><h3>' + esc(article.title) + '</h3><p class="muted">' +
       esc([article.date, article.category].filter(Boolean).join(' · ')) +
-      '</p><a href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">阅读英文原文</a></div>'
+      '</p><div class="flex"><button class="btn btn-sm btn-primary" data-action="brief-study" data-url="' + esc(url) + '">打开学习</button>' +
+      '<a href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">阅读英文原文</a></div></div>'
     ).join('') || '<p class="muted">暂无简报原文。</p>';
   } catch {
     section.textContent = '暂时无法读取每日简报。重新打开素材库可重试。';
   }
+}
+
+async function openBriefStudy(url) {
+  if (!briefStudySources.has(url)) { toast('请重新打开素材库后重试', true); return; }
+  try {
+    const response = await fetch('data/daily-brief-articles.json', { cache: 'no-cache' });
+    if (!response.ok) throw new Error('原文素材暂时无法读取，请稍后重试');
+    const library = await response.json();
+    const article = library.articles?.find(a => a.originalUrl === url &&
+      a.id && Array.isArray(a.paragraphs) && a.paragraphs.length &&
+      a.paragraphs.every(p => typeof p === 'string' && p.trim()));
+    if (!article) {
+      const saved = (Store.data.articles || []).find(a => a.originalUrl === url && a.paragraphs?.length);
+      if (saved) { openArticle(saved.id); return; }
+      toast('这篇英文原文正在准备，完成后可直接学习', true);
+      return;
+    }
+    const saved = (Store.data.articles || []).find(a => a.originalUrl === url);
+    if (saved) {
+      Object.assign(saved, article, { id: saved.id });
+      Store.save();
+      openArticle(saved.id);
+    } else {
+      Store.data.articles.unshift(article);
+      Store.save();
+      openArticle(article.id);
+    }
+  } catch (error) { toast(error.message || '原文读取失败，请稍后重试', true); }
 }
 
 function renderLibrary() {
@@ -193,7 +248,9 @@ function renderLibrary() {
         '<button class="btn btn-primary" data-action="import-article">导入并开始学习</button>' +
       '</div>' +
       '<div class="card"><h3>✨ AI 生成文章</h3>' +
-        '<p class="muted">让 AI 按 B2 难度原创一篇短文（需要 API Key），生成后即可开始完整闭环。</p>' +
+        '<p class="muted">' + (aiBlockReason()
+          ? '让 AI 按 B2 难度原创一篇短文。生成文章需要 AI 身份，看页面顶部或左下角「🔒 AI 与积分说明」怎么开通。'
+          : '让 AI 按 B2 难度原创一篇短文（走小屋云端，无需填 Key），生成后即可开始完整闭环。') + '</p>' +
         '<label class="field"><span>主题（可留空，由 AI 任选）</span><input type="text" id="genTopic" placeholder="例如：the history of coffee"></label>' +
         '<button class="btn" id="genBtn" data-action="gen-article">生成文章</button>' +
       '</div>' +
@@ -222,7 +279,7 @@ function importArticle() {
 }
 
 async function genArticle() {
-  if (!requireApiKey()) return;
+  if (!requireAI()) return;
   const topic = $('#genTopic') ? $('#genTopic').value.trim() : '';
   const btn = $('#genBtn');
   btn.disabled = true;
@@ -431,32 +488,27 @@ function renderStats() {
 function renderSettings() {
   const view = $('#view-settings');
   const s = Store.data.settings;
-  view.innerHTML = '<h2 class="page-title">设置</h2>' +
-    '<div class="notice">✅ <b>AI 已接好，打开就能用</b>：本站的 AI 讲解、批改、翻译走小屋自己的云端通道（<code>/cloud/llm</code>），<b>不需要你填任何 Key</b>。下面这一栏是给「想用自己账号」的同学准备的可选项，不填完全不影响使用。</div>' +
-    '<div class="card" id="settingsForm"><h3>🤖 AI 模型配置</h3>' +
-      '<label class="field"><span>服务商</span><select id="setProvider">' +
-        '<option value="openai"' + (s.provider === 'openai' ? ' selected' : '') + '>OpenAI 兼容（OpenAI / 各类中转）</option>' +
-        '<option value="anthropic"' + (s.provider === 'anthropic' ? ' selected' : '') + '>Anthropic Claude</option>' +
-      '</select></label>' +
-      '<label class="field"><span>Base URL（接口地址）</span><input type="text" id="setBaseUrl" value="' + esc(s.baseUrl) + '" placeholder="https://api.openai.com/v1"></label>' +
-      '<label class="field"><span>API Key（可选，想用自己的 Key 才填）</span><div class="flex">' +
-        '<input type="password" id="setApiKey" value="' + esc(s.apiKeySource === 'user' ? s.apiKey : '') + '" placeholder="留空即用小屋云端 AI" style="flex:1">' +
-        '<button class="btn btn-sm" id="toggleKeyBtn" data-action="settings-toggle-key" type="button">显示</button>' +
-      '</div></label>' +
-      '<label class="field"><span>模型名称（以服务商官网模型列表为准）</span>' +
-        '<input type="text" id="setModel" list="modelSuggestions" value="' + esc(s.model) + '" placeholder="TM ·DeepSeek-V4">' +
-        '<datalist id="modelSuggestions">' +
-          '<option value="TM ·DeepSeek-V4"></option><option value="TM ·Fast"></option><option value="TM ·Auto"></option>' +
-          '<option value="TM ·DeepSeek-V4.1"></option><option value="TM ·GLM5.3"></option><option value="TM ·Kimi-K3"></option>' +
-          '<option value="gpt-4o-mini"></option><option value="gpt-4o"></option><option value="gpt-4.1-mini"></option>' +
-          '<option value="claude-sonnet-4-5"></option><option value="claude-haiku-4-5"></option>' +
-          '<option value="deepseek-chat"></option><option value="qwen-plus"></option><option value="glm-4.5"></option>' +
-        '</datalist></label>' +
+  /* 云端 keyless：设置页不再展示任何「自备 Key / 模型 / 接口地址」输入框。
+     这些字段在本地填 Key 时代就没有任何调用方读取（LLM.chat 固定走 cloudLLM），
+     留着只会让人误以为要配置。这里改成只读状态 + 真实可用的测试按钮。 */
+  const ready = aiAvailable();
+  const why = aiBlockReason();
+  const statusHtml = ready
+    ? '<span style="display:inline-block;background:#e8f6ec;color:#1b6b3a;border:1px solid #bfe3cb;border-radius:8px;padding:8px 12px;font-weight:700">✅ 已就绪 · 小屋云端通道（/cloud/llm）</span>'
+    : '<span style="display:inline-block;background:#fff3d6;color:#8a5b00;border:1px solid #f0d28a;border-radius:8px;padding:8px 12px;font-weight:700">⚠ ' + esc(why) + '</span>';
+  const guideNotice = why
+    ? '<div class="notice">🔒 <b>AI 需要管理员开通</b>：你现在是「用户」身份，AI 暂时用不了。' +
+        '看页面顶部或点左下角「🔒 AI 与积分说明」，里面写了怎么拿 AI 额度、开通后 AI 在哪些地方用，' +
+        '还有一段可以直接复制发给管理员的话。本站 AI 不需要你填任何 Key。</div>'
+    : '<div class="notice">✅ <b>AI 已接好，打开就能用</b>：查词、批改、翻译和对话都走小屋自己的云端通道（<code>/cloud/llm</code>），<b>不需要你填任何 Key，也不用配置模型</b>。下面这栏只是让你确认当前状态，不需要任何设置。</div>';
+  view.innerHTML = '<h2 class="page-title">设置</h2>' + guideNotice +
+    '<div class="card" id="settingsForm"><h3>🤖 云端 AI 状态</h3>' +
+      '<div class="field"><span>当前状态</span><div id="aiStatusText">' + statusHtml + '</div></div>' +
       '<div class="flex">' +
-        '<button class="btn btn-primary" data-action="settings-save">保存配置</button>' +
         '<button class="btn" id="testConnBtn" data-action="settings-test">🔌 测试连接</button>' +
+        '<button class="btn" data-action="reload-app">🔄 重新载入页面</button>' +
       '</div>' +
-      '<p class="muted mt">🔐 这里填的 Key 只保存在你自己浏览器的 localStorage 中。留空时全部 AI 能力走小屋云端，Key 不下发到浏览器。</p>' +
+      '<p class="muted mt">🔐 本站不会把任何密钥下发到浏览器，学习数据只保存在你自己的浏览器里。若测试失败，先「重新载入页面」，仍不行把提示发给我。</p>' +
     '</div>' +
     '<div class="card"><h3>📖 阅读显示</h3>' +
       '<div class="field"><span>正文中的生词标记</span>' +
@@ -472,6 +524,7 @@ function renderSettings() {
           '<span>鼠标指到单词上（约 0.3 秒）就弹出释义，像翻译软件一样；点击单词同样可以。不想被弹窗打扰就取消勾选。</span>' +
         '</label>' +
       '</div>' +
+      '<button class="btn" data-action="settings-save">保存显示设置</button>' +
     '</div>' +
     '<div class="card"><h3>🔊 语音设置</h3>' +
       '<label class="field"><span>朗读语速：<b id="rateLabel">' + (s.ttsRate || 1) + '</b>x</span>' +
@@ -490,27 +543,23 @@ function renderSettings() {
 }
 
 function saveSettingsFromForm(silent) {
-  const provider = $('#setProvider') ? $('#setProvider').value : 'openai';
-  let baseUrl = $('#setBaseUrl') ? $('#setBaseUrl').value.trim() : '';
-  if (!baseUrl) baseUrl = provider === 'anthropic' ? 'https://api.anthropic.com' : 'https://api.openai.com/v1';
-  Store.data.settings.provider = provider;
-  Store.data.settings.baseUrl = baseUrl;
-  Store.data.settings.apiKey = $('#setApiKey') ? $('#setApiKey').value.trim() : '';
-  Store.data.settings.apiKeySource = 'user';   // 标记为用户手动填写
-  const modelVal = $('#setModel') ? $('#setModel').value.trim() : '';
-  Store.data.settings.model = modelVal
-    ? modelVal
-    : (provider === 'anthropic' ? 'claude-sonnet-4-5' : 'deepseek-chat');
-  Store.data.settings.markSavedWords = !!($('#setMarkSaved') && $('#setMarkSaved').checked);
-  Store.data.settings.hoverLookup = !!($('#setHoverLookup') && $('#setHoverLookup').checked);
+  /* 只保存真正影响界面的显示设置；云端 AI 不需要任何本地配置，
+     旧的 provider / baseUrl / apiKey / model 一律不再写入、不再读取。 */
+  const s = Store.data.settings;
+  if ($('#setMarkSaved')) s.markSavedWords = $('#setMarkSaved').checked;
+  if ($('#setHoverLookup')) s.hoverLookup = $('#setHoverLookup').checked;
+  if ($('#setTtsRate')) {
+    s.ttsRate = parseFloat($('#setTtsRate').value) || 1;
+    App.listen.rate = s.ttsRate;
+  }
   Store.save();
   updateApiBanner();
-  if (!silent) toast('配置已保存');
+  if (!silent) toast('显示设置已保存');
 }
 
 async function testConnection() {
-  saveSettingsFromForm(true);
-  if (!hasApiKey()) { toast('请先在上方填写 / 确认 API Key，再进行连接测试', true); return; }
+  const why = aiBlockReason();
+  if (why) { toast(why, true); return; }
   const btn = $('#testConnBtn');
   btn.disabled = true;
   btn.innerHTML = '<span class="spinner dark"></span> 测试中…';
@@ -581,6 +630,7 @@ function handleAction(action, el) {
     case 'modal-close': closeModal(); break;
     case 'open-article': openArticle(el.getAttribute('data-id')); break;
     case 'import-article': importArticle(); break;
+    case 'brief-study': openBriefStudy(el.getAttribute('data-url')); break;
     case 'gen-article': genArticle(); break;
     case 'wp-speak': Speech.speak(el.getAttribute('data-word')); break;
     case 'wp-add': addVocabFromPopup(el.getAttribute('data-word'), el.getAttribute('data-sentence') || ''); break;
@@ -638,11 +688,6 @@ function handleAction(action, el) {
     case 'settings-test': testConnection(); break;
     case 'settings-export': exportData(); break;
     case 'settings-import': { const f = $('#importFile'); if (f) f.click(); break; }
-    case 'settings-toggle-key': {
-      const inp = $('#setApiKey');
-      if (inp) { inp.type = inp.type === 'password' ? 'text' : 'password'; el.textContent = inp.type === 'password' ? '显示' : '隐藏'; }
-      break;
-    }
     case 'settings-reset': confirmReset(); break;
     /* 强制重载：带上时间戳绕开浏览器缓存，解决“文件已更新但页面还是旧版”的情况 */
     case 'reload-app': {
@@ -770,15 +815,9 @@ function bindGlobalEvents() {
       audioSpeed(parseFloat(e.target.value) || 1);
       return;
     }
-    if (e.target.id === 'setProvider') {
-      const p = e.target.value;
-      const urlInput = $('#setBaseUrl');
-      const cur = urlInput ? urlInput.value.trim() : '';
-      if (urlInput && (!cur || cur === 'https://api.openai.com/v1' || cur === 'https://api.anthropic.com')) {
-        urlInput.value = p === 'anthropic' ? 'https://api.anthropic.com' : 'https://api.openai.com/v1';
-      }
-    }
-    if (e.target.closest('#settingsForm')) saveSettingsFromForm(true);
+    /* 显示设置变更后立即保存（旧的整表自动保存绑定在已废弃的 Key 表单上） */
+    if (e.target.id === 'setMarkSaved' || e.target.id === 'setHoverLookup' ||
+        e.target.id === 'setTtsRate') saveSettingsFromForm(true);
   });
 }
 

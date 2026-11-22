@@ -1,0 +1,190 @@
+{
+  "task": "LIORA-ACC-T1W1-P2-001",
+  "risk": "LIORA-DATA-DRIFT-001",
+  "auditTime": "2026-11-18T16:01:53.001283+08:00",
+  "status": "BASELINE_CONFLICT BLOCKED; ISOLATED_REBASE NOT AUTHORISED; PRODUCTION_WRITE DENIED; GOLDEN_SAMPLE NOT ACCEPTED/UNLOCKED; RELEASE HOLD",
+  "baselines": {
+    "A": {
+      "source": "网站\\归档\\板块版本\\_objects\\bf43b051181be32701df60fc65d2933afdb43b1cd96f6c8431c2c3528f64b656",
+      "sha256": "bf43b051181be32701df60fc65d2933afdb43b1cd96f6c8431c2c3528f64b656",
+      "verified": true,
+      "bytes": 8599260
+    },
+    "B": {
+      "source": "网站\\归档\\板块版本\\_objects\\00b5878346014d48fa62101eecda8dde7d85d0177808b6971b24e4e5d88cee97",
+      "sha256": "00b5878346014d48fa62101eecda8dde7d85d0177808b6971b24e4e5d88cee97",
+      "verified": true,
+      "bytes": 8627685
+    },
+    "C": {
+      "source": "网站\\归档\\板块版本\\_objects\\9dfb735056f6fefc2f06d721763591e7d86e958b639efde864728590ad367a13",
+      "sha256": "9dfb735056f6fefc2f06d721763591e7d86e958b639efde864728590ad367a13",
+      "verified": true,
+      "bytes": 8628362
+    }
+  },
+  "current": {
+    "path": "C:\\Users\\Liora\\Desktop\\新南2026\\网站\\线上版\\public\\data.js",
+    "sha256": "9dfb735056f6fefc2f06d721763591e7d86e958b639efde864728590ad367a13",
+    "bytes": 8628362,
+    "mtime": "2026-11-18T15:18:50.939404+08:00"
+  },
+  "B_to_C": {
+    "changes": [
+      {
+        "path": "/courses/8/terms/0/weeks/0/graphicHtml",
+        "kind": "CHANGED",
+        "course": "gupiao",
+        "term": "chapters",
+        "week": 25,
+        "beforeBytes": 926,
+        "afterBytes": 1264,
+        "beforeSha256": "fb9274173ac6fff0690e62278babe22ca534449888b7e72347316df3ce6aa463",
+        "afterSha256": "ae51fe5a209e7e20f4dc2857c1778a05082e69f503fe0078c969172ead8d444b",
+        "addedSnippet": "<h3 class=\"gx-h\">中文版</h3><p><a href=\"https://www.dedao.cn/ebook/detail?id=BpM1nLOerPa1XOp27zqQ8KGR56loVWrgDa3dLygv94jYmnENDxAMZJBkbNzEblgQ\" target=\"_blank\" rel=\"noopener noreferrer\">阅读中信出版集团《股票作手回忆录》中文版（得到）</a></p><p>中文电子书在得到平台阅读，权限以平台为准。</p>"
+      },
+      {
+        "path": "/courses/8/terms/0/weeks/0/notesHtml",
+        "kind": "CHANGED",
+        "course": "gupiao",
+        "term": "chapters",
+        "week": 25,
+        "beforeBytes": 175,
+        "afterBytes": 500,
+        "beforeSha256": "fb6ce80a6a77cf9e36efa1bc9164047ca445aff0968febae2e4e334ebafc9705",
+        "afterSha256": "f8d55d788fba07fe665ad1e0ab7faf9ee315135694b60393c5a17a20ffeb27b7",
+        "addedSnippet": "<h4>中文版</h4><p><a href=\"https://www.dedao.cn/ebook/detail?id=BpM1nLOerPa1XOp27zqQ8KGR56loVWrgDa3dLygv94jYmnENDxAMZJBkbNzEblgQ\" target=\"_blank\" rel=\"noopener noreferrer\">阅读中信出版集团《股票作手回忆录》中文版（得到）</a></p><p>中文电子书在得到平台阅读，权限以平台为准。</p>"
+      }
+    ],
+    "count": 2,
+    "addedPaths": [],
+    "deletedPaths": [],
+    "keyOrderChanges": [],
+    "structurePreserved": true,
+    "serializationProof": "Reverse only the two unique JSON string literals in C reproduces B byte-for-byte. Thus no other byte, whitespace, key order or serializer changes.",
+    "byteDelta": 677
+  },
+  "A_to_B": {
+    "known": "VERIFIED anew: only added economics/term1/week6; removal restores full parsed A.",
+    "writer": "WRITER_UNKNOWN",
+    "archiveNote": "Economics 2026 T1 W6 Unit 6 notes and tutorial plots",
+    "noteEvidence": "归档/板块版本/notes-content/20261117-093809/说明.txt"
+  },
+  "economicsWeek6Preserved": true,
+  "AccountingW1": {
+    "entireWeekEqualAcrossABC": true,
+    "graphicHtml": "01ad2a0e38979c96e0bb51ea81c36ac7a1537f81b324c10a638ae687dcbaafb0",
+    "tasks": "37d31dade3c2818b64aec2399ae98f807467635f6ea66ac9d3096cb525064fd3",
+    "tutorialAnswers": "4f768498ac5627f55b034496ff225d34187a45a6b311db7b66a6e75fe3801d84"
+  },
+  "git": {
+    "HEAD": "667f77493d14b400e9e9fb09470c139d793d00c0",
+    "trackedStatus": [
+      " M build/module-registry.json",
+      " M 线上版/checks/notes-regression.cjs",
+      " M 线上版/checks/server-regression.cjs",
+      " M 线上版/public/android-install.html",
+      " M 线上版/public/bilingual-video.html",
+      " M 线上版/public/blocks/daily-brief.css",
+      " M 线上版/public/blocks/daily-brief.js",
+      " D 线上版/public/blocks/file-pending.js",
+      " M 线上版/public/board-editor.html",
+      " M 线上版/public/cabin-theme.css",
+      " M 线上版/public/course-tree.js",
+      " M 线上版/public/daily-brief.html",
+      " M 线上版/public/data.js",
+      " M 线上版/public/english/index.html",
+      " M 线上版/public/english/js/app.js",
+      " M 线上版/public/english/js/core.js",
+      " M 线上版/public/english/js/modules.js",
+      " M 线上版/public/english/使用说明.md",
+      " M 线上版/public/exam-prep.html",
+      " M 线上版/public/guide.html",
+      " M 线上版/public/index.html",
+      " M 线上版/public/mindmap.html",
+      " M 线上版/public/note-views.js",
+      " M 线上版/public/notes-quality.css",
+      " M 线上版/public/notes-review.html",
+      " M 线上版/public/prep-center.css",
+      " M 线上版/public/question-bank.js",
+      " M 线上版/server.js"
+    ],
+    "logEvidence": "HEAD unchanged at 667f774, data.js unstaged diff 119 insertions / 1 deletion vs HEAD; this is NOT a B-to-C diff. Last committed data.js history 2026-11-13."
+  },
+  "writer": {
+    "evidenceLevel": "REPORTED attribution, VERIFIED manifest digest",
+    "manifest": "网站\\归档\\板块版本\\notes-content\\20261118-151851\\manifest.json",
+    "metadata": {
+      "by": "WorkBuddy",
+      "owner": "WorkBuddy",
+      "note": "股票作手回忆录补中文版正版来源",
+      "at": "2026-11-18T07:18:51.130Z"
+    },
+    "conclusion": "WRITER_UNKNOWN: manifest says WorkBuddy; default owner/by and self-reported note cannot identify an OS write process or prove user approval.",
+    "concurrent": "UNKNOWN: instantaneous node/WorkBuddy processes do not prove target writes; no OS write audit was available."
+  },
+  "entryRisks": [
+    {
+      "path": "build/build_data.py",
+      "fact": "Reads build/notes/*.json plus file index, replaces full public/data.js. Raw inputs diverge from current production.",
+      "risk": "Old builder can overwrite current notes and mappings."
+    },
+    {
+      "path": "build/update_portal.py:25",
+      "fact": "Invokes build_data.py.",
+      "risk": "One-click refresh includes full content rebuild."
+    },
+    {
+      "path": "build/module-hub.js:167",
+      "fact": "Rollback writes archived files into formal directory.",
+      "risk": "Restoring notes-content replaces whole static file and can trigger watcher."
+    },
+    {
+      "path": "build/auto_publish_watch.py:40,218,247",
+      "fact": "Scans only 线上版; --begin writes lock and bumps versions; 180-second quiet + changed baseline yields NEED_PUBLISH; no per-release approval check.",
+      "risk": "External automation may publish unapproved disk changes. Default check can delete expired lock; not executed."
+    },
+    {
+      "path": "线上版/server.js; public/board-overrides-client.js",
+      "fact": "Board API stores data/board-*.json; generated board-overrides response overwrites allowed fields in memory.",
+      "risk": "Separate immediate production write bypasses static release approval; it does not write public/data.js."
+    }
+  ],
+  "runtime": {
+    "httpData": 200,
+    "dataSha256": "bf43b051181be32701df60fc65d2933afdb43b1cd96f6c8431c2c3528f64b656",
+    "httpOverrides": 200,
+    "overrideSha256": "09b4f6f07c5db041796de7140d2f5f3db256772177419bb58bd73adcd23e51c5",
+    "targetOverrideFields": [],
+    "meaning": "GET only. No target overlay at sample time; live static differs from C if hash differs. Actual browser DOM not tested."
+  },
+  "R03": {
+    "zipSha256": "28729cb223fef2d3d0c439ceb771181a5249e93b5f638327b25cf484908743cf",
+    "preserved": true,
+    "qa": "Content QA may continue only after actual ZIP receipt",
+    "pending": "14 canonical FAIL mappings remain PENDING_QA_MAPPING; full-file integration and production browser acceptance not passed."
+  },
+  "minimalSingleWriter": [
+    "Name Codex as sole static data integrator; other AIs deliver course/term/week/field patches with expected old field and whole-file hashes.",
+    "Before approved writes compare current hashes and stable IDs; mismatch stops integration and records drift, rather than copying an old snapshot.",
+    "Use existing task docs area outside watcher for candidate verification; bind input hash, output hash, patch, actor and user approval.",
+    "Reuse a single exclusive lock for approved static integration, with atomic creation and ownership; comparison and atomic replacement must occur within that lock.",
+    "Make existing automation report candidates; deployment must check approved release hash and QA result. Board API content changes require their own approval audit.",
+    "Any shared workflow/watcher changes require separate authorization; this report implements none."
+  ],
+  "nextRebaseConditions": [
+    "Explicit approval naming C or its verified successor.",
+    "Recheck whole-file hash, accounting target fields, stable IDs, shared schema and actual override layer.",
+    "No target conflict; exclusive integrator coordination established.",
+    "Preserve C economic week6 and gupiao changes in a reversible single-field in-memory patch.",
+    "Independent QA and eventual publish approval remain separate."
+  ],
+  "blocked": [
+    "No authority for another isolated rebase.",
+    "Writer identity and authorization unknown.",
+    "14 canonical QA IDs missing.",
+    "No proof of concurrent writer exclusion.",
+    "No independent full-file integration or production browser acceptance.",
+    "Actual browser DOM not freshly tested."
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "counts": {
+    "tracked": 29,
+    "untracked": 35477
+  },
+  "trackedChanges": [
+    {
+      "status": " M",
+      "path": "build/module-registry.json",
+      "size": 11187
+    },
+    {
+      "status": " M",
+      "path": "线上版/checks/notes-regression.cjs",
+      "size": 3064
+    },
+    {
+      "status": " M",
+      "path": "线上版/checks/server-regression.cjs",
+      "size": 4608
+    },
+    {
+      "status": " M",
+      "path": "线上版/public/android-install.html",
+      "size": 4131
+    },
+    {
+      "status": " M",
+      "path": "线上版/public/bilingual-video.html",
+      "size": 6464
+    },
+    {
+      "status": " M",
+      "path": "线上版/public/blocks/daily-brief.css",
+      "size": 14095
+    },
+    {
+      "status": " M",
+      "path": "线上版/public/blocks/daily-brief.js",
+      "size": 14468
+    },
+    {
+      "status": " D",
+      "path": "线上版/public/blocks/file-pending.js",
+      "size": null
+    },
+    {
+      "status": " M",
+      "path": "线上版/public/board-editor.html",
+      "size": 4000
+    },
+    {
+      "status": " M",
+      "path": "线上版/public/cabin-theme.css",
+      "size": 75139
+    },
+    {
+      "status": " M",
+      "path": "线上版/public/course-tree.js",
+      "size": 21480
+    },
+    {
+      "status": " M",
+      "path": "线上版/public/daily-brief.html",
+      "size": 26287
+    },
+    {
+      "status": " M",
+      "path": "线上版/public/data.js",
+      "size": 8634229
+    },
+    {
+      "status": " M",
+      "path": "线上版/public/english/index.html",
+      "size": 4306
+    },
+    {
+      "status": " M",
+      "path": "线上版/public/english/js/app.js",
+      "size": 44152
+    },
+    {
+      "status": " M",
+      "path": "线上版/public/english/js/core.js",
+      "size": 13270
+    },
+    {
+      "status": " M",
+      "path": "线上版/public/english/js/modules.js",
+      "size": 50339
+    },
+    {
+      "status": " M",
+      "path": "线上版/public/english/使用说明.md",
+      "size": 17835
+    },
+    {
+      "status": " M",
+      "path": "线上版/public/exam-prep.html",
+      "size": 1106
+    },
+    {
+      "status": " M",
+      "path": "线上版/public/guide.html",
+      "size": 32101
+    },
+    {
+      "status": " M",
+      "path": "线上版/public/index.html",
+      "size": 321058
+    },
+    {
+      "status": " M",
+      "path": "线上版/public/mindmap.html",
+      "size": 12079
+    },
+    {
+      "status": " M",
+      "path": "线上版/public/note-views.js",
+      "size": 59425
+    },
+    {
+      "status": " M",
+      "path": "线上版/public/notes-quality.css",
+      "size": 3526
+    },
+    {
+      "status": " M",
+      "path": "线上版/public/notes-review.html",
+      "size": 1551
+    },
+    {
+      "status": " M",
+      "path": "线上版/public/prep-center.css",
+      "size": 43932
+    },
+    {
+      "status": " M",
+      "path": "线上版/public/question-bank.js",
+      "size": 906483
+    },
+    {
+      "status": " M",
+      "path": "线上版/public/reading-data.js",
+      "size": 13876207
+    },
+    {
+      "status": " M",
+      "path": "线上版/server.js",
+      "size": 69864
+    }
+  ],
+  "untrackedTopLevelCounts": {
+    ".workbuddy": 23,
+    "AGENTS.md": 1,
+    "README.md": 1,
+    "UI巡检队列.json": 1,
+    "UI评估-学习小屋-美观易用与ADHD友好-20261107.md": 1,
+    "build": 1,
+    "docs": 10527,
+    "\"docs": 23608,
+    "会计笔记验收报告.md": 1,
+    "发布快照-20261106T1143": 964,
+    "\"发布快照-20261106T1143": 238,
+    "启动学习小屋.cmd": 1,
+    "备考中心.html": 1,
+    "备考规划": 14,
+    "打开学习小屋.bat": 1,
+    "打开正式网站.url": 1,
+    "排查记录": 29,
+    "整理经济文件名.py": 1,
+    "文件整理记录": 7,
+    "\"文件整理记录": 7,
+    "文档": 5,
+    "\"文档": 1,
+    "板块与版本说明.md": 1,
+    "桌面小组件": 4,
+    "横线分数预览.html": 1,
+    "活得更好": 1,
+    "线上版": 19,
+    "网站架构思维导图.md": 1,
+    "股票作手回忆录": 1,
+    "计算机Activity图解优化总览.html": 1,
+    "课外": 12,
+    "项目交接摘要-20261115.md": 1,
+    "项目结构说明.md": 1
+  },
+  "note": "Full untracked inventory and raw git status kept local only; excludes report upload to avoid incidental profile/personal paths."
+}

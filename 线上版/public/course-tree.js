@@ -1,7 +1,8 @@
 /* ============================================================
    课程目录 · 分级树（2026-11-06）
-   左侧栏统一成 6 个大板块：资料下载 / 去复习 / 本周任务 /
-   学习目标 / 学习笔记 / 术语表（有才显示）。每个大板块、每个
+   2026-11-16：资料下载功能整体下线，左侧栏不再生成「资料下载」
+   直连条目与文件分组；其余板块（去复习 / 本周任务 / 学习笔记 /
+   术语表等）保持不变。每个大板块、每个
    二级分组都可单独折叠；原有周次跳转、知识点树、Activity 导航、
    搜索与四种视图全部保留（直接搬原 DOM 节点，事件不丢）。
    2026-11-07 第一轮：侧栏拆成两个平级折叠框——「周次导航」与
@@ -99,11 +100,6 @@
   function E(v){ return String(v == null ? '' : v).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
   function toList(v){ if(v == null) return []; if(Array.isArray(v)) return v;
     return String(v).split(/[；;]/).map(function(s){return s.trim();}).filter(Boolean); }
-  var ROLE = {lecture:'课堂讲义',reading:'阅读材料',tutorial:'练习指导',worksheet:'作业纸',
-    practice:'练习题',exam:'考试 · 复习',assessment:'考核说明',info:'课程信息',
-    reference:'公式 · 参考','lecture-notes':'讲义笔记',excel:'Excel 表格',doc:'Word 文档',
-    ppt:'PPT 演示',audio:'音频',video:'视频',image:'图片',zip:'压缩包',other:'其他文件'};
-  function cut(v, n){ v = String(v == null ? '' : v).replace(/\s+/g, ' ').trim(); return v.length > n ? v.slice(0, n - 1) + '…' : v; }
   /* 数字徽标补单位：原来是光秃秃的「17」，不知道是 17 条笔记还是 17 个知识点 */
   function num(n, u){ return '<span class="tcnt">' + n + (u ? ' ' + E(u) : '') + '</span>'; }
   function row(o){
@@ -143,17 +139,6 @@
     }
     return out;
   }
-  function fileGroups(files){
-    var g = {}, order = [];
-    (files || []).forEach(function(f){
-      var r = f.role || 'other';
-      if(!g[r]){ g[r] = 0; order.push(r); }
-      g[r]++;
-    });
-    return order.slice(0, 10).map(function(r){
-      return leaf(E(cut(ROLE[r] || r, 18)), 'downloads', '<span class="num">' + g[r] + '</span>');
-    }).join('');
-  }
   function sectionByText(txt){
     var secs = document.querySelectorAll('#app .wp-sec');
     for(var i = 0; i < secs.length; i++){
@@ -162,11 +147,41 @@
     }
     return null;
   }
+  /* 确定性滚动：把目标停在吸顶导航（.site-header）正下方，
+     不再依赖 CSS scroll-margin-top（线上缓存可能未更新，故用 JS 兜底）。
+     同时兼容「主内容随 window 滚动」与「内层容器滚动」两种情况。 */
+  function scrollParent(node){
+    var el = node.parentElement;
+    while(el && el !== document.body){
+      var oy = getComputedStyle(el).overflowY;
+      if((oy === 'auto' || oy === 'scroll') && el.scrollHeight > el.clientHeight + 1) return el;
+      el = el.parentElement;
+    }
+    return document.documentElement;
+  }
+  function scrollToEl(el){
+    if(!el) return;
+    var header = document.querySelector('.site-header');
+    var hh = header ? header.getBoundingClientRect().height : 0;
+    var pad = 14;
+    var sc = scrollParent(el);
+    if(sc === document.documentElement || sc === document.body){
+      var rect = el.getBoundingClientRect();
+      var targetY = rect.top + window.pageYOffset - hh - pad;
+      if(targetY < 0) targetY = 0;
+      window.scrollTo({ top: targetY, behavior: 'smooth' });
+    } else {
+      var r = el.getBoundingClientRect();
+      var sr = sc.getBoundingClientRect();
+      var t = r.top - sr.top - hh - pad;
+      if(t < 0) t = 0;
+      sc.scrollTo({ top: t, behavior: 'smooth' });
+    }
+  }
   function jumpTo(key){
     var el = null;
-    if(key === 'downloads') el = document.querySelector('#app .wp-downloads');
-    else if(key === 'other') el = document.querySelector('#app .wp-downloads .fg-sub');
-    else if(key === 'review') el = document.querySelector('#app #wpReview');
+    if(key === 'downloads' || key === 'other') return; /* 资料下载功能已下线 */
+    if(key === 'review') el = document.querySelector('#app #wpReview');
     else if(key === 'activities') el = document.querySelector('#app .act-nav');
     else if(key === 'punch') el = document.querySelector('#app #wpTasks') || sectionByText('任务');
     else if(key === 'goals') el = sectionByText('学习目标');
@@ -183,12 +198,7 @@
     if(d) d.open = true;
     if(el.tagName === 'DETAILS') el.open = true;
     if(el.classList && el.classList.contains('collapsible')) el.classList.add('open');
-    /* 若目标是「资料下载」里的二级分组，先把外层 details 展开 */
-    if(key === 'other'){
-      var box = document.querySelector('#app .wp-downloads');
-      if(box && box.tagName === 'DETAILS') box.open = true;
-    }
-    if(el.scrollIntoView) el.scrollIntoView({behavior:'smooth', block:'start'});
+    scrollToEl(el);
     el.classList.remove('ct-flash'); void el.offsetWidth; el.classList.add('ct-flash');
   }
 
@@ -223,10 +233,8 @@
     });
     var acts = document.querySelectorAll('#app .act-chip').length;
 
-    /* 1. 资料下载 */
-    var secDownloads = '<div class="tree-direct">' + leaf('📎 资料下载', 'downloads') + '</div>';
-    /* 2. 去复习：原「学习导航」其实只是跳到复习区的一个链接，与折叠框标题
-       重名又语义误导，改成动作名；三条直连条目统一为「图标 + 短动作」 */
+    /* 1. 去复习：原「学习导航」其实只是跳到复习区的一个链接，与折叠框标题
+       重名又语义误导，改成动作名；直连条目统一为「图标 + 短动作」 */
     var secNav = '<div class="tree-direct">' + leaf('🧭 去复习', 'review') + '</div>';
     /* 3/4. 「本周任务」「学习目标」原生成的折叠节点（secPunch / secGoals）在 11-06 导航精简后
        已改为侧栏直链（见下方 tree.innerHTML 里的 leaf 链接），不再插入 DOM，相关计算一并移除。 */
@@ -252,7 +260,7 @@
        滚动区最底部甚至视口外（用户两次反馈「还是没看见」）。目录是侧栏里
        最主要的导航，放最上面既符合「Unit 是上一级」的层级，也不用靠
        自动滚动补救。下面四个快捷链接仍然保留，只是下移。 */
-    tree.innerHTML = secNotes + secDownloads + secNav + secAnswers + '<div class="tree-direct">' + leaf('📋 本周任务', 'punch') + '</div>' + secTerms;
+    tree.innerHTML = secNotes + secNav + secAnswers + '<div class="tree-direct">' + leaf('📋 本周任务', 'punch') + '</div>' + secTerms;
 
     /* 用真实 DOM 节点替换占位符 */
     var phWeek = tree.querySelector('.ph-week');

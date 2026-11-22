@@ -1,0 +1,59 @@
+{
+  "visibility": "public",
+  "has_pages": false,
+  "branches": [
+    {
+      "name": "claude/floating-controls",
+      "commit": {
+        "sha": "ed5b3f4783e9b9fe6f80b6e3447f8d35b9ac5373",
+        "url": "https://api.github.com/repos/zhz050403-rgb/liora-study-hall-collab/commits/ed5b3f4783e9b9fe6f80b6e3447f8d35b9ac5373"
+      },
+      "protected": false
+    },
+    {
+      "name": "claude/mode-ctrl-alone",
+      "commit": {
+        "sha": "be9780ed735903fe8c583197717f2efcb319dff4",
+        "url": "https://api.github.com/repos/zhz050403-rgb/liora-study-hall-collab/commits/be9780ed735903fe8c583197717f2efcb319dff4"
+      },
+      "protected": false
+    },
+    {
+      "name": "claude/notes-rewrite",
+      "commit": {
+        "sha": "37bd6704ef7bc31e3d57d893eaabe1ad8b46e9aa",
+        "url": "https://api.github.com/repos/zhz050403-rgb/liora-study-hall-collab/commits/37bd6704ef7bc31e3d57d893eaabe1ad8b46e9aa"
+      },
+      "protected": false
+    },
+    {
+      "name": "claude/readability",
+      "commit": {
+        "sha": "cf5b05be2b7263a187062b7e3cf081d499ee3118",
+        "url": "https://api.github.com/repos/zhz050403-rgb/liora-study-hall-collab/commits/cf5b05be2b7263a187062b7e3cf081d499ee3118"
+      },
+      "protected": false
+    },
+    {
+      "name": "claude/site-fixes",
+      "commit": {
+        "sha": "b4eebbf608472d4738551b0246329d1d01c92f8e",
+        "url": "https://api.github.com/repos/zhz050403-rgb/liora-study-hall-collab/commits/b4eebbf608472d4738551b0246329d1d01c92f8e"
+      },
+      "protected": false
+    },
+    {
+      "name": "main",
+      "commit": {
+        "sha": "b2bd54c8e9655b6df133ae02d59037f6ea69975d",
+        "url": "https://api.github.com/repos/zhz050403-rgb/liora-study-hall-collab/commits/b2bd54c8e9655b6df133ae02d59037f6ea69975d"
+      },
+      "protected": false
+    }
+  ],
+  "treeCount": 272,
+  "truncated": false,
+  "notesPaths": 216,
+  "rulesets": [],
+  "actionsRuns": 0
+}

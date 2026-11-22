@@ -45,3 +45,18 @@ build/*
 !build/exam-prep/
 !build/exam-prep/**
 !build/module-registry.json
+
+
+# ---------------------------------------------------------------
+# 公开仓库安全边界（2026-11-22 交接前加固）
+# 账号、密钥、用户进度、本机工具数据、大型中间产物一律不入库
+.workbuddy/
+发布快照-*/
+**/auth.json
+**/state.json
+**/u_*.json
+**/board-*.json
+**/accounts.json
+# docs 下 QA 实验目录合计 9.6GB，只保留轻量文档
+docs/*/R0*/
+docs/*/index-fix-experiment/

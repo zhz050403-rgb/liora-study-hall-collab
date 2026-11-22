@@ -1,0 +1,6 @@
+{
+  "scope": "selected current frontend code only; excludes runtime data/config secrets; not a full scan",
+  "findings": [],
+  "githubDependencies": [],
+  "allPublicHistory": "NOT SCANNED"
+}

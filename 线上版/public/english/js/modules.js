@@ -361,7 +361,7 @@ async function showWordPopup(spanEl) {
     if (stillCurrent()) $('#wpMeaning').innerHTML = esc(localW);
     return;
   }
-  if (!hasApiKey()) { if (stillCurrent()) $('#wpMeaning').innerHTML = '<span class="muted">未配置 API Key，无法查词。请先到「设置」填写。</span>'; return; }
+  if (!aiAvailable()) { if (stillCurrent()) $('#wpMeaning').innerHTML = '<span class="muted">' + esc(aiBlockReason()) + '</span>'; return; }
   try {
     const r = await LLM.chat(PROMPTS.word(word, sentence), { maxTokens: 200, temperature: 0.3 });
     Store.data.wordCache[key] = r;
@@ -443,7 +443,7 @@ async function selTranslate() {
       return;
     }
   }
-  if (!requireApiKey()) return;
+  if (!requireAI()) return;
   setReadPanel('🌐 翻译', '翻译中…');
   try {
     const r = await LLM.chat(PROMPTS.translate(text), { maxTokens: 400, temperature: 0.3 });
@@ -461,7 +461,7 @@ async function selAnalyze() {
     setReadPanel('🧩 长难句解析', local + '\n\n—— 📦 本地预生成内容，未调用 API ——');
     return;
   }
-  if (!requireApiKey()) return;
+  if (!requireAI()) return;
   setReadPanel('🧩 长难句解析', '分析中…');
   try {
     const r = await LLM.chat(PROMPTS.analyze(text), { maxTokens: 700, temperature: 0.4 });
@@ -761,7 +761,7 @@ function renderWrite() {
 }
 
 async function submitEssay() {
-  if (!requireApiKey()) return;
+  if (!requireAI()) return;
   const input = $('#essayInput');
   const text = input ? input.value.trim() : '';
   const wc = wordCount(text);
@@ -907,7 +907,7 @@ function renderSpeak() {
 }
 
 async function speakStart() {
-  if (!requireApiKey()) return;
+  if (!requireAI()) return;
   App.speak.started = true;
   App.speak.messages = [];
   App.speak.sending = true;
@@ -929,7 +929,7 @@ async function speakSend() {
   const input = $('#speakInput');
   const text = input ? input.value.trim() : '';
   if (!text) return;
-  if (!requireApiKey()) return;
+  if (!requireAI()) return;
   App.speak.messages.push({ role: 'user', content: text });
   App.speak.sending = true;
   renderSpeak();
@@ -980,7 +980,7 @@ function speakMic() {
 async function speakFinish() {
   const userTexts = App.speak.messages.filter((m) => m.role === 'user');
   if (userTexts.length < 1) { toast('先说几句再获取反馈哦', true); return; }
-  if (!requireApiKey()) return;
+  if (!requireAI()) return;
   const article = getArticle(App.articleId);
   toast('正在生成反馈报告…');
   try {

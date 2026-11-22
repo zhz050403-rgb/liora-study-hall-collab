@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>注册 · Liora 的学习小屋</title>
+<!-- 本页免登录，站点静态资源受登录墙保护，因此样式与脚本全部内联，不引用任何站点文件。 -->
+<style>
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;
+ background:radial-gradient(1200px 620px at 50% -10%,#234772 0%,#122a49 45%,#0a1a30 100%);
+ font-family:system-ui,-apple-system,"Microsoft YaHei",sans-serif;color:#eaf1fb}
+.card{width:100%;max-width:420px;background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.03));
+ border:1px solid rgba(168,192,222,.24);border-radius:16px;padding:32px 30px 26px;
+ box-shadow:0 22px 60px rgba(0,0,0,.38);backdrop-filter:blur(4px)}
+.crest{width:64px;height:64px;margin:0 auto 14px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+ font-size:28px;color:#12233c;background:linear-gradient(180deg,#e5c887,#b8923f);box-shadow:0 6px 18px rgba(0,0,0,.3)}
+h1{margin:0;text-align:center;font-size:23px;letter-spacing:.06em;font-weight:700;color:#fff}
+.en{margin:5px 0 22px;text-align:center;font-size:11px;letter-spacing:.28em;color:#9fb6d4;text-transform:uppercase}
+label{display:block;text-align:left;font-size:13px;letter-spacing:.06em;color:#cbd8ea;margin:15px 0 7px}
+label span{color:#9fb6d4;font-weight:400;letter-spacing:0;font-size:12px}
+input{width:100%;height:46px;padding:0 14px;border-radius:9px;border:1px solid rgba(168,192,222,.32);
+ background:rgba(4,14,28,.6);color:#fff;font-size:16px;outline:none;font-family:inherit;transition:border-color .2s,box-shadow .2s}
+input::placeholder{color:#7890ad}
+input:focus{border-color:#c9a55c;box-shadow:0 0 0 3px rgba(201,165,92,.16)}
+button{width:100%;height:48px;margin-top:24px;border:0;border-radius:9px;
+ background:linear-gradient(180deg,#d9b96f,#b8923f);color:#12233c;font-size:15px;font-weight:700;
+ letter-spacing:.14em;cursor:pointer;font-family:inherit}
+button:hover{filter:brightness(1.08)}button:active{transform:translateY(1px)}button:disabled{opacity:.6;cursor:wait}
+.err{min-height:20px;margin-top:12px;font-size:13px;color:#f0a9a0;line-height:1.6}
+.ok{color:#a8e0b8}
+.note{margin-top:16px;padding:14px 15px;border-radius:10px;background:rgba(9,26,48,.5);
+ border:1px solid rgba(168,192,222,.16);font-size:12px;line-height:1.85;color:#a9bdd6}
+.note b{color:#e9cf8f;font-weight:600}
+.reg{margin-top:18px;padding-top:16px;border-top:1px solid rgba(168,192,222,.2);
+ text-align:center;font-size:13px;color:#a9bdd6}
+.reg a{color:#e9cf8f;text-decoration:none;font-weight:700}
+.reg a:hover{text-decoration:underline}
+@media (max-width:400px){body{padding:12px}.card{padding:24px 20px 20px}h1{font-size:20px}}
+</style>
+<link rel="stylesheet" href="page-art.css?v=20261115-page-art2">
+</head>
+<body>
+<form class="card" id="f" autocomplete="on" novalidate>
+  <img class="page-art-strip" src="cabin-art/library.webp" alt="" decoding="async">
+  <div class="crest" aria-hidden="true">✦</div>
+  <h1>注册学习账号</h1>
+  <p class="en">Create your account</p>
+
+  <label for="phone">手机号</label>
+  <input id="phone" name="phone" type="tel" inputmode="numeric" maxlength="11" required
+         autocomplete="tel" placeholder="11 位手机号，用于登录">
+
+  <label for="name">昵称 <span>（可不填）</span></label>
+  <input id="name" name="name" type="text" maxlength="24" autocomplete="nickname" placeholder="管理员看到的称呼">
+
+  <label for="p1">密码</label>
+  <input id="p1" name="p1" type="password" required autocomplete="new-password" placeholder="6–64 位">
+
+  <label for="p2">再输一次密码</label>
+  <input id="p2" name="p2" type="password" required autocomplete="new-password" placeholder="确认密码">
+
+  <button type="submit" id="go">注 册 并 进 入</button>
+  <div class="err" id="err" role="alert"></div>
+
+  <div class="note">
+    <b>注册后能看什么？</b><br>
+    新账号默认是「<b>用户</b>」，只开放「英语学习」，暂时不能使用 AI。<br>
+    想看课程中心、每日简报或用 AI，请联系管理员为你调整身份。<br>
+    <b>不用短信验证码</b>，手机号 + 密码即可，请记牢密码。
+  </div>
+
+  <div class="reg">已经有账号了？<a href="/__login">去登录 →</a></div>
+</form>
+
+<script>
+(function () {
+  var f = document.getElementById('f'), go = document.getElementById('go'), err = document.getElementById('err');
+  f.addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    err.className = 'err'; err.textContent = '';
+    var phone = document.getElementById('phone').value.trim();
+    var name = document.getElementById('name').value.trim();
+    var p1 = document.getElementById('p1').value;
+    var p2 = document.getElementById('p2').value;
+    if (!/^1[3-9]\d{9}$/.test(phone)) { err.textContent = '请输入正确的 11 位手机号'; return; }
+    if (p1.length < 6 || p1.length > 64) { err.textContent = '密码请设置 6–64 位'; return; }
+    if (p1 !== p2) { err.textContent = '两次输入的密码不一致'; return; }
+    go.disabled = true; err.className = 'err'; err.textContent = '正在创建账号…';
+    fetch('/__api/register', {
+      method: 'POST', credentials: 'same-origin',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({ phone: phone, name: name, password: p1 })
+    }).then(function (r) { return r.json().then(function (j) { return { s: r.status, j: j }; }); })
+      .then(function (x) {
+        if (!x.j.ok) { err.textContent = x.j.error || '注册失败，请稍后再试'; go.disabled = false; return; }
+        err.className = 'err ok'; err.textContent = '注册成功，正在进入英语学习…';
+        location.href = x.j.redirect || '/english/index.html';
+      })
+      .catch(function () { err.textContent = '网络异常，请稍后再试'; go.disabled = false; });
+  });
+})();
+</script>
+</body>
+</html>

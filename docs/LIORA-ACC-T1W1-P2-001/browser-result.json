@@ -1,0 +1,13 @@
+{
+  "route": "#/c/accounting/term1/1",
+  "isolated": true,
+  "headings": {
+    "Accounting and Its Users": true,
+    "The Accounting Cycle": true,
+    "Accounting Conventions": true,
+    "The Accounting Equation and Cash vs Accrual Accounting": true
+  },
+  "english_blocks": 9,
+  "screenshot": true,
+  "exit": 0
+}

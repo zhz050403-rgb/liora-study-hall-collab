@@ -253,3 +253,31 @@
   .header-inner > .cloud-acct{order:5;flex:0 0 100%;justify-content:flex-end;margin-left:0}
   .cloud-acct a{white-space:nowrap}
 }
+
+/* ============================================================
+   2026-11-16 · 时间顺序：主日期醒目、原文日期弱化、排序切换按钮
+   只服务 daily-brief.html；改本文件请同步升 daily-brief.html 的 ?v=。
+   ============================================================ */
+.brief-tools{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.brief-sort{
+  border:1px solid #bccde1;background:transparent;color:#173860;
+  border-radius:5px;padding:9px 14px;
+  font:600 14px/1.2 var(--hub-sans);cursor:pointer;white-space:nowrap;transition:.18s;
+}
+.brief-sort:hover{background:#eaf2fb}
+.brief-sort:focus-visible{outline:3px solid #c9a55c;outline-offset:2px}
+
+/* 卡片头部只跟着一个主日期走：有期号显示「简报 …」，早期没期号的
+   文章显示「原文 …」；另一个日期降成浅灰小字，不再抢视线。 */
+.rc-edition{color:#173860;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
+.reading-card .rc-date{
+  color:#8a9bb1;font-size:12px;font-weight:400;
+  font-variant-numeric:tabular-nums;white-space:nowrap;
+}
+.reading-card.no-edition .rc-date{color:#173860;font-size:13px;font-weight:700}
+
+@media(max-width:480px){
+  .brief-tools{width:100%}
+  .brief-tools button{flex:1 1 auto}
+  .rc-edition,.reading-card .rc-date{font-size:12px}
+}

@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI 设置 · 学习小屋（主人专用）</title>
+<style>
+  :root{--navy:#0d1b3e;--navy2:#17365e;--gold:#c9a55c;--ink:#1c2b45;--muted:#5a7392;--line:#dce5f0;--bg:#f5f8fc;--ok:#0f7b53;--bad:#b3261e}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
+  header{background:linear-gradient(135deg,#0d1b3e,#17365e);color:#f2e8d2;padding:22px 24px}
+  header .in{max-width:880px;margin:0 auto;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+  header h1{margin:0;font-size:21px;letter-spacing:.5px}
+  header .tag{font-size:12px;border:1px solid rgba(201,165,92,.6);color:#e9d6a7;border-radius:99px;padding:2px 10px}
+  header .links{margin-left:auto;display:flex;gap:16px;font-size:14px}
+  header a{color:#e9d6a7;text-decoration:none}
+  header a:hover{text-decoration:underline}
+  main{max-width:880px;margin:0 auto;padding:22px 18px 60px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-bottom:16px;box-shadow:0 2px 10px rgba(13,27,62,.04)}
+  .card h2{margin:0 0 4px;font-size:17px;color:var(--navy)}
+  .card .sub{margin:0 0 16px;color:var(--muted);font-size:13px}
+  .step{display:inline-block;background:var(--navy);color:#fff;font-size:12px;border-radius:6px;padding:1px 8px;margin-right:8px;vertical-align:2px}
+  .warn{background:#fff8e8;border:1px solid #e9cf94;border-left:4px solid var(--gold);border-radius:10px;padding:14px 18px;margin-bottom:16px;font-size:14px;color:#6b5322}
+  .warn strong{color:#8a5a00}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin:12px 0}
+  .kv{background:#f7fafd;border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+  .kv .k{font-size:12px;color:var(--muted)}
+  .kv .v{font-size:19px;font-weight:600;color:var(--navy);word-break:break-all}
+  label{display:block;font-size:13px;color:var(--muted);margin:12px 0 5px}
+  select,input[type=password],textarea{width:100%;border:1px solid var(--line);border-radius:9px;padding:10px 12px;font:inherit;font-size:15px;background:#fff;color:var(--ink)}
+  textarea{min-height:88px;resize:vertical}
+  select:focus,input:focus,textarea:focus{outline:2px solid rgba(23,54,94,.25);border-color:var(--navy2)}
+  .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:14px}
+  button{border:0;border-radius:9px;padding:10px 18px;font:inherit;font-size:14px;cursor:pointer;background:var(--navy2);color:#fff}
+  button.ghost{background:#eef3f9;color:var(--navy2);border:1px solid var(--line)}
+  button.danger{background:#fff;color:var(--bad);border:1px solid #e8b6b2}
+  button:disabled{opacity:.5;cursor:not-allowed}
+  button:hover:not(:disabled){filter:brightness(1.08)}
+  .pill{display:inline-block;font-size:12px;border-radius:99px;padding:2px 10px;background:#eef3f9;color:var(--navy2)}
+  .pill.ok{background:#e4f5ed;color:var(--ok)}
+  .pill.bad{background:#fdecea;color:var(--bad)}
+  .out{background:#0f1d33;color:#dce8f7;border-radius:10px;padding:14px;font-size:14px;white-space:pre-wrap;word-break:break-word;min-height:52px;max-height:320px;overflow:auto;margin-top:12px;font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
+  .out:empty{display:none}
+  .fine{font-size:12px;color:var(--muted);margin-top:10px;line-height:1.6}
+  table{width:100%;border-collapse:collapse;font-size:13px;margin-top:10px}
+  td,th{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--muted);font-weight:500}
+  .deny{color:var(--bad)}
+</style>
+<link rel="stylesheet" href="page-art.css?v=20261115-page-art2">
+</head>
+<body>
+<header><div class="in">
+  <h1>AI 设置与用量</h1><span class="tag">仅主人账号可见</span>
+  <div class="links"><a href="/?sharecode=L4NKT6REQ6">← 回到学习小屋</a><a href="/__logout">退出登录</a></div>
+</div></header>
+
+<main>
+  <img class="page-art-strip" src="cabin-art/extra-risk.webp" alt="" decoding="async">
+  <div class="warn">
+    <strong>关于密钥，请记住三件事：</strong>
+    ① 密钥只保存在网站服务器上，这个页面不会把完整密钥显示出来，也不会写进网页代码；
+    ② 请只在这里粘贴，<strong>不要在聊天窗口、微信或邮件里发送密钥</strong>；
+    ③ 如果某把密钥曾经发给别人、或出现在聊天记录里，请先去服务商控制台<strong>把它作废，重新生成一把新的</strong>，再粘贴到下面。
+  </div>
+
+  <section class="card">
+    <h2><span class="pill" id="readyPill">读取中…</span> 当前状态</h2>
+    <p class="sub">这一栏只是读取信息，不会产生任何 AI 调用，也不会花钱。</p>
+    <div class="grid" id="statGrid"></div>
+    <div class="fine" id="costNote"></div>
+  </section>
+
+  <section class="card">
+    <h2><span class="step">1</span>配置专用密钥</h2>
+    <p class="sub">先在服务商官网创建一把「只用于本项目」的密钥，然后粘贴到这里保存。保存后才会启用 AI 提问；不保存就永远不会调用付费接口。</p>
+    <label for="prov">服务商</label>
+    <select id="prov"></select>
+    <label for="model">模型</label>
+    <select id="model"></select>
+    <label for="key">API 密钥（粘贴后不会回显）</label>
+    <input type="password" id="key" autocomplete="off" spellcheck="false" placeholder="在这里粘贴新密钥">
+    <div class="row">
+      <button id="save">保存并启用</button>
+      <button class="danger" id="revoke">撤销 / 停用密钥</button>
+      <span id="cfgMsg" class="pill"></span>
+    </div>
+    <div class="fine">撤销后服务端立即停止所有付费调用，密钥文件会被标记为停用；以后想恢复，重新粘贴一把新密钥即可。更换密钥不需要改代码、不需要重新发布。</div>
+  </section>
+
+  <section class="card">
+    <h2><span class="step">2</span>无费用自检</h2>
+    <p class="sub">点一下，服务端会完整跑一遍「登录 → 身份 → 白名单 → 额度」的检查，但不会连接模型、不会产生任何费用。用它确认权限链路是否正常。</p>
+    <div class="row"><button class="ghost" id="selftest">运行无费用自检</button><span id="testMsg" class="pill"></span></div>
+    <div class="out" id="testOut"></div>
+  </section>
+
+  <section class="card">
+    <h2><span class="step">3</span>提问（这一步才会真正调用模型）</h2>
+    <p class="sub">只有第 1 步保存过密钥、且自检通过后，提问才会向模型服务发起请求。每次提问都受长度、频率、并发、每日用量与每月预算限制。</p>
+    <label for="q">你的问题</label>
+    <textarea id="q" placeholder="例如：用中文解释一下权责发生制，并给一个简单例子"></textarea>
+    <div class="row"><button id="ask">发送提问</button><button class="ghost" id="stop" disabled>停止</button><span id="askMsg" class="pill"></span></div>
+    <div class="out" id="answer"></div>
+  </section>
+
+  <section class="card">
+    <h2>用量与估算费用</h2>
+    <p class="sub">按服务端实际记录累计；费用是估算值，最终以服务商账单为准。结算可能延迟，所以预算是「估算阻断」，不是绝对不会多花一分钱。</p>
+    <div class="grid" id="usageGrid"></div>
+    <div class="row"><button class="ghost" id="refresh">刷新数据</button></div>
+  </section>
+
+  <section class="card">
+    <h2>安全日志（最近 30 条）</h2>
+    <p class="sub">只记录时间、账号、原因，不记录密钥，也不记录提问内容。</p>
+    <table><thead><tr><th>时间</th><th>类型</th><th>账号</th><th>说明</th></tr></thead><tbody id="logBody"></tbody></table>
+  </section>
+</main>
+
+<script>
+(function(){
+  'use strict';
+  var $ = function(id){ return document.getElementById(id); };
+  var providers = [];
+
+  function pill(el, text, cls){
+    el.textContent = text;
+    el.className = 'pill' + (cls ? ' ' + cls : '');
+  }
+  function jfetch(path, opts){
+    opts = opts || {};
+    opts.credentials = 'same-origin';
+    return fetch(path, opts).then(function(r){ return r.json().then(function(j){ return {status:r.status, body:j}; }); });
+  }
+  function kv(k, v){ return '<div class="kv"><div class="k">'+k+'</div><div class="v">'+v+'</div></div>'; }
+  function esc(s){ return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];}); }
+
+  function renderStatus(s){
+    pill($('readyPill'), s.ready ? '已启用 · ' + esc(s.model) : '未配置密钥（不会调用任何付费接口）', s.ready ? 'ok' : 'bad');
+    $('statGrid').innerHTML =
+      kv('身份', '主人账号 ✓') +
+      kv('服务商', esc(s.provider || '—')) +
+      kv('模型', esc(s.model || '—')) +
+      kv('密钥', esc(s.keyMasked || '—')) +
+      kv('每月预算', '¥ ' + Number(s.limits.monthlyBudgetCny).toFixed(2)) +
+      kv('单次最长输出', s.limits.maxOutputTokens + ' tokens');
+    $('costNote').textContent = s.costNote || '';
+    var u = s.usage || {};
+    $('usageGrid').innerHTML =
+      kv('今日调用', (u.dayCalls||0) + ' / ' + s.limits.perDay + ' 次') +
+      kv('今日输入', (u.dayChars||0) + ' 字') +
+      kv('本月调用', (u.monthCalls||0) + ' 次') +
+      kv('本月估算费用', '¥ ' + Number(u.monthCostCny||0).toFixed(4)) +
+      kv('累计调用', (u.totalCalls||0) + ' 次') +
+      kv('进行中', (u.inFlight||0) + ' / ' + s.limits.maxConcurrent);
+    providers = s.providers || [];
+    if(providers.length && !$('prov').options.length){
+      providers.forEach(function(p,i){
+        var o=document.createElement('option'); o.value=p.id; o.textContent=p.label; $('prov').appendChild(o);
+      });
+      $('prov').onchange = fillModels;
+      fillModels();
+    }
+  }
+  function fillModels(){
+    var p = providers.filter(function(x){ return x.id === $('prov').value; })[0] || {};
+    $('model').innerHTML = '';
+    (p.models && p.models.length ? p.models : [p.defaultModel]).forEach(function(m){
+      var o=document.createElement('option'); o.value=m; o.textContent=m; $('model').appendChild(o);
+    });
+  }
+  function renderLogs(j){
+    var rows = (j.lines||[]).slice().reverse().map(function(l){
+      var deny = /DENY|BLOCK|LIMIT|CSRF/.test(l.kind);
+      return '<tr><td>'+esc(String(l.t||'').replace('T',' ').slice(0,19))+'</td>'+
+             '<td class="'+(deny?'deny':'')+'">'+esc(l.kind)+'</td>'+
+             '<td>'+esc(l.user||'—')+'</td><td>'+esc(l.detail||'—')+'</td></tr>';
+    }).join('');
+    $('logBody').innerHTML = rows || '<tr><td colspan="4">暂无记录</td></tr>';
+  }
+  function refresh(){
+    return Promise.all([
+      jfetch('/__api/ai/status').then(function(r){ if(r.status===200) renderStatus(r.body); }),
+      jfetch('/__api/ai/logs').then(function(r){ if(r.status===200) renderLogs(r.body); })
+    ]);
+  }
+
+  $('save').onclick = function(){
+    var key = $('key').value.trim();
+    if(!key){ pill($('cfgMsg'),'请先粘贴密钥','bad'); return; }
+    var btn = this; btn.disabled = true;
+    jfetch('/__api/ai/config', {
+      method:'POST',
+      headers:{'Content-Type':'application/json','X-Liora-AI':'1'},
+      body: JSON.stringify({provider:$('prov').value, model:$('model').value, apiKey:key})
+    }).then(function(r){
+      $('key').value = '';
+      pill($('cfgMsg'), r.body.ok ? ('已保存 ' + esc(r.body.masked||'')) : (r.body.error||'保存失败'), r.body.ok?'ok':'bad');
+      return refresh();
+    }).catch(function(){ pill($('cfgMsg'),'网络错误，请重试','bad'); })
+      .then(function(){ btn.disabled = false; });
+  };
+  $('revoke').onclick = function(){
+    if(!window.confirm('确定撤销并停用当前密钥吗？停用后所有 AI 提问都会被服务端拒绝。')) return;
+    jfetch('/__api/ai/config', {
+      method:'POST',
+      headers:{'Content-Type':'application/json','X-Liora-AI':'1'},
+      body: JSON.stringify({action:'revoke'})
+    }).then(function(r){
+      $('key').value = '';
+      pill($('cfgMsg'), r.body.ok ? '已撤销，付费调用已停用' : (r.body.error||'操作失败'), r.body.ok?'ok':'bad');
+      return refresh();
+    });
+  };
+  $('selftest').onclick = function(){
+    var btn=this; btn.disabled=true;
+    pill($('testMsg'),'检查中…','');
+    jfetch('/__api/ai/chat', {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({question:'权限链路自检', dryRun:true})
+    }).then(function(r){
+      var b=r.body;
+      $('testOut').textContent = JSON.stringify(b,null,2);
+      if(r.status===200 && b.ok && b.dryRun && b.charged===false && b.owner===true){
+        pill($('testMsg'),'✓ 服务端校验通过 · 未产生任何费用','ok');
+      } else {
+        pill($('testMsg'),'✗ 未通过：'+(b.error||('HTTP '+r.status)),'bad');
+      }
+    }).catch(function(e){ pill($('testMsg'),'✗ 网络错误','bad'); $('testOut').textContent=String(e); })
+      .then(function(){ btn.disabled=false; });
+  };
+
+  var ctrl = null;
+  $('ask').onclick = function(){
+    var q = $('q').value.trim();
+    if(!q){ pill($('askMsg'),'请先写点什么','bad'); return; }
+    var btn=this; btn.disabled=true; $('stop').disabled=false;
+    $('answer').textContent=''; pill($('askMsg'),'生成中…','');
+    ctrl = new AbortController();
+    fetch('/__api/ai/chat', {
+      method:'POST', credentials:'same-origin', signal:ctrl.signal,
+      headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({question:q})
+    }).then(function(r){
+      var ct = r.headers.get('content-type')||'';
+      if(ct.indexOf('application/json')>=0){
+        return r.json().then(function(b){ pill($('askMsg'),'✗ '+(b.error||'调用失败'),'bad'); });
+      }
+      if(r.status!==200){ pill($('askMsg'),'✗ 服务端拒绝 HTTP '+r.status,'bad'); return; }
+      var reader=r.body.getReader(), dec=new TextDecoder('utf-8'), buf='';
+      function pump(){
+        return reader.read().then(function(o){
+          if(o.done){ pill($('askMsg'),'✓ 完成','ok'); return; }
+          buf += dec.decode(o.value,{stream:true});
+          var lines=buf.split('\n'); buf=lines.pop();
+          lines.forEach(function(line){
+            if(line.indexOf('data:')!==0) return;
+            var raw=line.slice(5).trim();
+            if(!raw||raw==='[DONE]') return;
+            try{
+              var j=JSON.parse(raw), d=j.choices&&j.choices[0]&&j.choices[0].delta;
+              if(d&&typeof d.content==='string') $('answer').textContent += d.content;
+            }catch(e){}
+          });
+          return pump();
+        });
+      }
+      return pump();
+    }).catch(function(e){
+      if(e && e.name==='AbortError'){ pill($('askMsg'),'已停止',''); }
+      else pill($('askMsg'),'✗ '+String(e),'bad');
+    }).then(function(){ btn.disabled=false; $('stop').disabled=true; ctrl=null; refresh(); });
+  };
+  $('stop').onclick = function(){ if(ctrl) ctrl.abort(); };
+  $('refresh').onclick = refresh;
+
+  refresh().catch(function(e){
+    pill($('readyPill'),'读取失败','bad');
+    $('statGrid').innerHTML = '<div class="kv"><div class="k">提示</div><div class="v" style="font-size:14px">请确认已用主人账号登录本站</div></div>';
+  });
+})();
+</script>
+</body>
+</html>

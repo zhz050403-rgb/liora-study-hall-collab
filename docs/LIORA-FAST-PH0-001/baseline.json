@@ -1,0 +1,49 @@
+{
+  "git": [
+    {
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit": 0,
+      "output": "667f77493d14b400e9e9fb09470c139d793d00c0\n"
+    },
+    {
+      "command": [
+        "git",
+        "branch",
+        "--show-current"
+      ],
+      "exit": 0,
+      "output": "feat/bilingual-video-config\n"
+    },
+    {
+      "command": [
+        "git",
+        "remote",
+        "-v"
+      ],
+      "exit": 0,
+      "output": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--name-only"
+      ],
+      "exit": 0,
+      "output": "build/module-registry.json\n线上版/checks/notes-regression.cjs\n线上版/checks/server-regression.cjs\n线上版/public/android-install.html\n线上版/public/bilingual-video.html\n线上版/public/blocks/daily-brief.css\n线上版/public/blocks/daily-brief.js\n线上版/public/blocks/file-pending.js\n线上版/public/board-editor.html\n线上版/public/cabin-theme.css\n线上版/public/course-tree.js\n线上版/public/daily-brief.html\n线上版/public/data.js\n线上版/public/english/index.html\n线上版/public/english/js/app.js\n线上版/public/english/js/core.js\n线上版/public/english/js/modules.js\n线上版/public/english/使用说明.md\n线上版/public/exam-prep.html\n线上版/public/guide.html\n线上版/public/index.html\n线上版/public/mindmap.html\n线上版/public/note-views.js\n线上版/public/notes-quality.css\n线上版/public/notes-review.html\n线上版/public/prep-center.css\n线上版/public/question-bank.js\n线上版/public/reading-data.js\n线上版/server.js\n"
+    }
+  ],
+  "hashes": {
+    "index.html": "39934650b4f96743b1bbcc0a863a6619aa9ced62aa6a67cf86895e11b3d5f059",
+    "data.js": "c189bff38b7e605b45f537845435a1602f8159355b2e24b5192345beee46edc0",
+    "question-bank.js": "53ea4755fbed0bd6d34ad996edb9ba7574c456a499730574309ee87006be1f6d",
+    "note-views.js": "14757fd1e2138ee4ea5d2b3b1736949f84b1742dfdac6bdf6ab73c8c0484bb43"
+  },
+  "sourceRoot": "C:\\Users\\Liora\\Desktop\\新南2026\\网站\\线上版\\public",
+  "courseCount": 67,
+  "courseTermWeeks": 345
+}

@@ -286,19 +286,32 @@ window.getPhonetic = (function () {
   };
 })();
 
-function hasApiKey() {
-  const s = Store.data.settings;
-  return !!(s && s.apiKey && String(s.apiKey).trim());
+/* ---------- AI 可用性（2026-11-15）----------
+   本站 AI 走小屋云端 keyless 通道（window.cloudLLM），不需要也不接受用户自备 API Key。
+   旧版 hasApiKey() / requireApiKey() 是「本地填 Key」时代的遗留：它会把已经接好的
+   查词 / 批改 / 对话全部拦成「请先填 Key」，还弹出与设置页「AI 已接好」自相矛盾的横幅。
+   现在统一由下面三个函数判定：身份未开放 / 云端通道未加载 / 可用。 */
+function aiBlockReason() {
+  const boot = window.__CLOUD_BOOT__ || {};
+  /* 「用户」身份由 server + blocks/member-access.js 双向禁用 AI；其余角色按原样放行，
+     额度由服务端 /__api/ai/ticket 硬判断，不在前端重复设卡。 */
+  /* 「用户」身份：不只说「被拦」，要明确告诉他去哪看开通方法与 AI 位置。
+     左下角常驻按钮与说明卡由 blocks/member-access.js 注入。 */
+  if (boot.ok && boot.role === 'user')
+    return 'AI 还没开通：点左下角「AI 与积分说明」看怎么拿额度、AI 在哪用；或让管理员改成「会员 / 高级会员」';
+  if (!window.cloudLLM || typeof window.cloudLLM.chat !== 'function')
+    return '云端 AI 通道还没加载好，请刷新页面后重试';
+  return '';
 }
-
-function requireApiKey() {
-  if (!hasApiKey()) {
-    toast('请先在「设置」中填写 API Key', true);
-    go('settings');
-    return false;
-  }
+function aiAvailable() { return !aiBlockReason(); }
+function requireAI() {
+  const why = aiBlockReason();
+  if (why) { toast(why, true); return false; }
   return true;
 }
+/* 兼容可能残留的旧调用：语义改为「AI 是否可用」，不再是「有没有填 Key」 */
+function hasApiKey() { return aiAvailable(); }
+function requireApiKey() { return requireAI(); }
 
 function markProgress(articleId, stage) {
   const d = Store.data;

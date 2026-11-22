@@ -814,10 +814,11 @@ body.rf-large{--rf:2.3}   /* 正文约 23px（大） */
 .exam-review-item .ws-info .s{color:rgba(255,255,255,.82)}
 .exam-review-item.active{box-shadow:0 0 0 2px rgba(255,255,255,.6) inset}
 </style>
-<link rel="stylesheet" href="notes-quality.css?v=20261111-notes-pipeline">
-<link rel="stylesheet" href="cabin-theme.css?v=20261111-readability-cf5b05b">
-<link rel="stylesheet" href="prep-center.css?v=20261113-quiz2">
+<link rel="stylesheet" href="notes-quality.css?v=20261113-github-ledger">
+<link rel="stylesheet" href="cabin-theme.css?v=20261113-glossary-jump">
+<link rel="stylesheet" href="prep-center.css?v=20261113-quiz2-hb0c99dc6">
 <link rel="stylesheet" href="section-banners.css?v=20261108-banner-repair">
+<link rel="stylesheet" href="page-art.css?v=20261115-page-art2">
 <link rel="stylesheet" href="katex/katex.min.css">
 <link rel="stylesheet" href="mobile-fit.css?v=20261106-nopunch1">
 <link rel="stylesheet" href="blocks/site-tokens.css?v=20261107-polish1">
@@ -1020,6 +1021,9 @@ table.kp-tbl th.kp-num,table.kp-tbl td.kp-num{text-align:left}
 <script src="/cloud-config.js?v=1"></script>
 <script src="/cloud-sync.js?v=20261107c"></script>
 <script src="/todo-bridge.js?v=1"></script>
+<link rel="stylesheet" href="blocks/extra-collections.css?v=20261118-1">
+<script src="blocks/extra-collections.js?v=20261118-1"></script>
+<script src="blocks/reading-language.js?v=20261118-epub-zh"></script>
 </head>
 <body>
 
@@ -1091,11 +1095,11 @@ table.kp-tbl th.kp-num,table.kp-tbl td.kp-num{text-align:left}
   <div class="footer-bottom">Liora 的学习小屋 · 本地私有学习助手 · 生成于 <span id="footDate"></span></div>
 </footer>
 
-<script src="data.js?v=20261113-gh-0333c9a"></script>
+<script src="data.js?v=20261118-epub-zh"></script>
 <script src="records.js"></script>
 <script src="progress.js"></script>
 <script src="prep-data.js?v=20261107-merge-review"></script>
-<script src="question-bank.js?v=20261108-unify1-h7ca794c6"></script>
+<script src="question-bank.js?v=20261122-accounting-53ea4755"></script>
 <script src="/board-overrides.js"></script>
 
 <script src="prep-center.js?v=20261113-quiz2"></script>
@@ -1105,11 +1109,11 @@ table.kp-tbl th.kp-num,table.kp-tbl td.kp-num{text-align:left}
 <script src="board-overrides-client.js?v=2"></script>
 <script src="katex/katex.min.js"></script>
 <script src="katex/auto-render.min.js"></script>
-<script src="note-views.js?v=20261113-cloze-width"></script>
+<script src="note-views.js?v=20261115-cloze-answers2"></script>
 <script src="blocks/notes-layout.js?v=20261109-width-ledger-hb29ba339"></script>
 <script src="blocks/extra-thumbs.js?v=20261107-extrathumbs"></script>
 <script src="blocks/reading-shelf.js?v=20261111-readability-cf5b05b"></script>
-<script src="blocks/file-pending.js?v=20261108-pending1"></script>
+<script src="blocks/downloads-off.js?v=20261116-downloads-off1"></script>
 <script src="blocks/search-enhance.js?v=20261113-search1"></script>
 
 <script>
@@ -1615,7 +1619,7 @@ function renderExtra(){
     ]}
   ];
   /* 每个模块按周编号归入一个细分领域 */
-  var WEEK_DOMAIN = { 1:'trust',2:'trust',3:'trust',4:'trust',5:'trust',6:'asset',7:'stock',8:'asset',9:'asset',10:'futures',11:'asset' };
+  var WEEK_DOMAIN = { 1:'trust',2:'trust',3:'trust',4:'trust',5:'trust',6:'asset',7:'stock',8:'asset',9:'asset',10:'futures',11:'asset',12:'fin' };
   var SUB_NAME = {}, SUB_TO_DOMAIN = {}, SUB_COUNT = {}, DOMAIN_IDS = {};
   DOMAINS.forEach(function(d){ DOMAIN_IDS[d.id]=true; d.subs.forEach(function(s){ SUB_NAME[s.id]=s.name; SUB_TO_DOMAIN[s.id]=d.id; SUB_COUNT[s.id]=0; }); });
   modules.forEach(function(m){ var sub = WEEK_DOMAIN[m.w.num]; if(SUB_COUNT[sub]!==undefined) SUB_COUNT[sub]++; });
@@ -4639,7 +4643,7 @@ function applyReadingData(){
 function ensureReadingData(){
   if(readingDataPromise) return readingDataPromise;
   readingDataPromise = Promise.all([
-    window.READING_DATA ? Promise.resolve() : loadOptionalScript('reading-data.js?v=20261108-pages1'),
+    window.READING_DATA ? Promise.resolve() : loadOptionalScript('reading-data.js?v=20261118-epub-zh'),
     window.GUOFULUN_TRANSLATION_VERSIONS ? Promise.resolve() : loadOptionalScript('guofulun-translations.js?v=chapter11-part3-sort3')
   ]).then(function(){ applyReadingData(); }).catch(function(error){ readingDataPromise=null; throw error; });
   return readingDataPromise;
@@ -4839,7 +4843,7 @@ function renderBookPage(courseId, termId, chapterNum, preferPdf){
       versions[lang] = version.text;
     }
   });
-  var originalLanguage = ["richdad","xiaodao","htlb"].indexOf(course.id) >= 0 ? "zh" : "en";
+  var originalLanguage = window.bookOriginalLanguage(course);
   var language = originalLanguage;
   try{ language = localStorage.getItem("cabin-reading-language/"+course.id) || language; }catch(e){}
   if(!versions[language]) language = originalLanguage;
@@ -5175,13 +5179,16 @@ sr.addEventListener("click", function(){ sr.className = "search-results"; si.val
 </script>
 <!-- prep-data.js / prep-center.js 已移至页首（progress.js 之后）：
      启动脚本会立即 route()，直接打开 index.html#/prep 时必须保证 renderPrepCenter 已定义 -->
-<script src="course-tree.js?v=20261110-outline-top1"></script>
+<script src="course-tree.js?v=20261116-downloads-off1"></script>
 <script src="blocks/site-polish.js?v=20261111-readability-cf5b05b"></script>
 <script src="blocks/guide-link.js?v=20261108-guide1"></script>
 <script src="blocks/unit-groups.js?v=20261110-unitgrp6"></script>
 <script src="blocks/content-update.js?v=20261112-hotupdate2"></script>
 <script src="blocks/bilingual-video.js?v=20261113-bv9-hafcb7eb1"></script>
 <script src="blocks/exam-prep-link.js?v=20261113-examprep2"></script>
-<script src="blocks/ai-visibility.js?v=20261113-aiowner1"></script>
+<script src="blocks/econ-handbook-link.js?v=20261115-econhb1"></script>
+<script src="blocks/ai-visibility.js?v=20261114-role1"></script>
+<script src="blocks/member-access.js?v=20261115-user-guide4"></script>
+<script src="blocks/review-nav-jump.js?v=20261115-review-jump1"></script>
 </body>
 </html>

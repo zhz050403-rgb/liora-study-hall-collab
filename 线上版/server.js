@@ -5,7 +5,9 @@ const http = require('http'), fs = require('fs'), path = require('path'), crypto
 
 const ROOT = __dirname;
 const PUB = path.join(ROOT, 'public');
-const DATA_DIR = path.join(ROOT, 'data');
+/* 本地回归测试可用 LIORA_DATA_DIR 指向临时目录，避免污染真实进度/账号数据；
+   线上不设此变量，行为与此前完全一致。 */
+const DATA_DIR = process.env.LIORA_DATA_DIR || path.join(ROOT, 'data');
 const PORT = Number(process.env.PORT || 3000);
 let auth;
 try {
@@ -32,6 +34,17 @@ const USERS = Array.isArray(auth.users) && auth.users.length
   ? auth.users
   : (auth.user ? [{ user: auth.user, salt: auth.salt, passHash: auth.passHash, ai: true }] : []);
 const SESSION_SECRET = auth.sessionSecret || crypto.randomBytes(32).toString('hex');
+
+/* 注册账号 / 角色 / 积分（2026-11-14）：auth.json 完全只读，注册数据落在
+   data/accounts.json（运行时目录，不进发布基线、发版不覆盖）。 */
+const ACCOUNTS = require('./accounts/service').createService({
+  dataDir: DATA_DIR,
+  builtinUsers: USERS
+});
+const ROLES = ACCOUNTS.ROLES;
+/* 一次 AI 调用的估算成本：与 aiSettle 的估算口径一致，用于「每天 0.1 元 /
+   10 积分 = 0.01 元」这类额度换算。真实扣减仍以服务端 aiSettle 为准。 */
+const CNY_PER_AI_CALL = 0.01;
 
 const MIME = {
   '.html': 'text/html; charset=utf-8', '.htm': 'text/html; charset=utf-8',
@@ -62,12 +75,48 @@ const safeEq = (a, b) => { try { return String(a).length === String(b).length &&
 function findUser(u) {
   const k = String(u == null ? '' : u).trim().toLowerCase();
   if (!k) return null;
-  return USERS.find(x => String(x.user).trim().toLowerCase() === k) || null;
+  const b = USERS.find(x => String(x.user).trim().toLowerCase() === k);
+  if (b) return b;
+  return ACCOUNTS.findUser(k);          // 注册账号与 checkPass 同构
 }
 function checkPass(usr, p) {
   if (!usr) return false;
   const h = crypto.createHash('sha256').update(usr.salt + '|' + usr.user + '|' + p).digest('hex');
   return safeEq(h, usr.passHash);
+}
+/* 角色完全由服务端判定，前端传任何值都不参与 */
+function roleOf(cu) { return ACCOUNTS.roleOf(cu); }
+/* 页面可见性：服务端硬闸门。返回 true 表示允许访问该路径。
+   - admin      全部
+   - premium    除「课外拓展」外全部
+   - member     除「课外拓展」外全部
+   - user       只有英语学习（含其静态资源、必要的 API）
+   - legacy     原有账号保持不变（除「课外拓展」外全部） */
+function pageAllowed(role, name) {
+  if (!role) return false;
+  if (role === ROLES.ADMIN) return true;
+  const extraAsset = OWNER_RE.test(name) || name.toLowerCase().indexOf('/assets/extracurricular_imgs/') === 0;
+  if (role === ROLES.USER) {
+    if (name === '/english' || name === '/english/' || name === '/english/index.html') return true;
+    if (name.indexOf('/english/') === 0) return true;          // 英语台自有 css/js/数据
+    if (name === '/__api/state' || name === '/__api/me' || name === '/__api/points/status' ||
+        name === '/__api/points/words' || name === '/__api/points/claim' || name === '/__api/points/redeem' ||
+        name === '/__logout' || name === '/__health' || name === '/__api/ai/ticket') return true;
+    if (name === '/cloud-config.js' || name === '/cloud-sync.js' || name === '/board-overrides.js') return true;
+    /* 主站课程内容数据不向「用户」下发；英语台自有资源都在 /english/ 下，不受影响。
+       英语台还会引用 /board-catalog.js、/board-overrides-client.js 等公共脚本，故只列内容数据文件。 */
+    if (/^\/(data|reading-data|question-bank|prep-data|learning-profile-data)\.js$/i.test(name)) return false;
+    if (/\.(css|js|json|png|jpe?g|svg|webp|gif|ico|woff2?|webmanifest|mp3|wav|m4a)$/i.test(name)) return true;
+    if (name === '/' || name === '/index.html') return true;    // 由前端 role-nav 立刻跳去英语台
+    return false;
+  }
+  if (extraAsset) return false;                                  // 课外拓展
+  if (name === '/ai-console.html' || name === '/board-editor.html' ||
+      name === '/notes-review.html' || name === '/admin.html' || name === '/register.html') {
+    // 这些是管理员/公开页，下面按各自规则单独处理；此处仅拦管理页
+    if (name === '/admin.html') return false;
+  }
+  return true;
 }
 
 function makeToken(u) {
@@ -600,6 +649,9 @@ button{width:100%;height:48px;margin-top:24px;border:0;border-radius:9px;backgro
 button:hover{filter:brightness(1.08)}button:active{transform:translateY(1px)}button:disabled{opacity:.6;cursor:wait}
 .err{min-height:20px;margin-top:14px;font-size:13px;color:#f0a9a0;font-family:system-ui,"Microsoft YaHei",sans-serif}
 .foot{margin-top:22px;font:400 11px/1.8 system-ui,"Microsoft YaHei",sans-serif;color:#7f96b2;letter-spacing:.04em}
+.reg{margin-top:18px;padding-top:16px;border-top:1px solid rgba(168,192,222,.2);font:400 13px/1.6 system-ui,"Microsoft YaHei",sans-serif;color:#a9bdd6}
+.reg a{color:#e9cf8f;text-decoration:none;font-weight:700;letter-spacing:.04em}
+.reg a:hover{text-decoration:underline}
 /* 桌面待办小卡片是 340px 无边框小窗，登录页也要能塞进去 */
 @media (max-width:400px){body{padding:10px}.card{padding:22px 18px 20px}.crest{width:56px;height:56px;font-size:26px}
  h1{font-size:20px}.en{margin-bottom:16px}button{margin-top:18px}}
@@ -612,7 +664,8 @@ function loginPage(err) {
 <label for="u">账号</label><input id="u" name="u" type="text" required autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="请输入账号">
 <label for="p">密码</label><input id="p" name="p" type="password" required placeholder="请输入密码">
 <button type="submit" id="go">进 入 学 习 小 屋</button><div class="err" id="err">${err || ''}</div>
-<div class="foot">仅限本人使用 · 登录后 90 天内不用重复输入<br>学习记录先存在这台设备的浏览器里；点首页下方「同步」可上传云端，换设备时用同一账号同步回来</div></form>
+<div class="foot">登录后 90 天内不用重复输入<br>学习记录先存在这台设备的浏览器里；点首页下方「同步」可上传云端，换设备时用同一账号同步回来</div>
+<div class="reg">还没有账号？<a href="/register.html">用手机号注册 →</a><br><span style="font-size:11px;color:#7f96b2">新注册默认只开放「英语学习」，更多内容由管理员授权</span></div></form>
 <script>
 document.getElementById('f').addEventListener('submit',function(ev){
  ev.preventDefault();var b=document.getElementById('go'),e=document.getElementById('err');
@@ -621,8 +674,10 @@ document.getElementById('f').addEventListener('submit',function(ev){
   body:JSON.stringify({u:document.getElementById('u').value,p:document.getElementById('p').value})})
  .then(function(r){return r.json().then(function(j){return {s:r.status,j:j}})})
  .then(function(x){if(x.j.ok){
-  var n='/';try{var q=new URLSearchParams(location.search).get('next');
-   if(q&&q.charAt(0)==='/'&&q.indexOf('//')!==0)n=q;}catch(err){}
+  var n=x.j.redirect||'/';try{var q=new URLSearchParams(location.search).get('next');
+   /* 「用户」身份固定落在英语台，不能被 next 覆盖；其余账号在默认回首页时
+      仍要尊重 next（桌面小卡片登录后要回到原本打开的页面）。 */
+   if(q&&q.charAt(0)==='/'&&q.indexOf('//')!==0&&n==='/')n=q;}catch(err){}
   location.href=n;
  }else{e.textContent=x.j.error||'登录失败';b.disabled=false;}})
  .catch(function(){e.textContent='网络异常，请重试';b.disabled=false;});
@@ -660,7 +715,20 @@ function sanitizeData(d) {
 function bootScript(u) {
   const s = readState(u);
   const usr = findUser(u) || {};
-  const payload = JSON.stringify({ ok: true, updatedAt: s.updatedAt || 0, data: s.data || {}, user: u || '', ai: !!usr.ai }).replace(/</g, '\\u003c');
+  const role = roleOf(u);
+  const isOwner = !!usr.ai;
+  const st = ACCOUNTS.status(u, role);
+  /* canAI：是否显示 AI 悬浮球。管理员/高级会员/会员显示入口，实际能否提问
+     由服务端 /__api/ai/ticket 按当日额度硬判断（会员没兑换会收到引导提示）。
+     legacy 账号保持原样（ai:false）→ 与改动前一致。 */
+  const canAI = isOwner || role === ROLES.PREMIUM || role === ROLES.MEMBER;
+  const payload = JSON.stringify({
+    ok: true, updatedAt: s.updatedAt || 0, data: s.data || {}, user: u || '',
+    ai: isOwner,                       // 兼容旧逻辑：仅主人账号为 true
+    role: role, canAI: canAI,
+    accountStatus: st,
+    roleLabel: ({ admin: '管理员', premium: '高级会员', member: '会员', user: '用户', legacy: '账号' })[role] || '账号'
+  }).replace(/</g, '\\u003c');
   return '<script>window.__CLOUD_BOOT__=' + payload + ';</script>';
 }
 /* 隐藏目录 / build 目录在发布时可能被过滤，构建脚本已把图片改放到 assets/ */
@@ -795,6 +863,139 @@ function missing(res, name, rawName) {
   send(res, 404, '<!doctype html><meta charset="utf-8"><body style="font-family:system-ui,sans-serif;padding:40px;color:#17365e"><h2>文件不存在</h2><p>请返回上一页重试。</p></body>');
 }
 
+/* ===================== 注册 / 角色 / 积分 / AI 额度 API（2026-11-14） =====================
+   全部只读签名 Cookie 判定身份，前端传来的 role/user/uid 一律不参与授权。 */
+/* 正式站经平台网关转发后，req.headers.host 会被改写成内部地址，而浏览器
+   同源请求带的 Origin 仍是对外域名。旧实现直接比对两者，导致线上所有写入
+   接口（注册 / 授权 / 积分 / 领票）一律 403「请求来源校验未通过」，
+   本地 localhost 却测不出来。这里改为：Origin/Referer 的 host 命中
+   「本机看到的 host」或「已知对外域名」即放行；Sec-Fetch-Site:cross-site
+   仍一律拒绝。Cookie 是 SameSite=Lax，跨站 POST 本来就不会带登录态。 */
+const PUBLIC_HOSTS = new Set(['liora-study-hall.app.workbuddy.host']);
+(function () {
+  const extra = String(process.env.LIORA_PUBLIC_HOST || '').split(',');
+  extra.forEach(function (x) { const v = x.trim().toLowerCase(); if (v) PUBLIC_HOSTS.add(v); });
+})();
+function sameSite(req) {
+  const h = req.headers || {};
+  if (h['sec-fetch-site'] === 'cross-site') return false;
+  const o = h.origin || h.referer || '';
+  if (!o) return true;
+  let host;
+  try { host = new url.URL(o).host.toLowerCase(); } catch (e) { return false; }
+  if (String(h.host || '').toLowerCase() === host) return true;
+  if (PUBLIC_HOSTS.has(host)) return true;
+  /* 有些网关会把对外域名放在 x-forwarded-host 里 */
+  const fwd = String(h['x-forwarded-host'] || '').split(',')[0].trim().toLowerCase();
+  return !!(fwd && (fwd === host || PUBLIC_HOSTS.has(fwd)));
+}
+async function apiBody(req, limit) {
+  let raw;
+  try { raw = await readBody(req, limit || 8192); } catch (e) { return null; }
+  try { return JSON.parse(raw || '{}'); } catch (e) { return null; }
+}
+function guardApi(req, res) {
+  if (!sameSite(req) || !/^application\/json(?:;|$)/i.test(req.headers['content-type'] || '')) {
+    json(res, 403, { ok: false, error: '请求来源校验未通过' });
+    return false;
+  }
+  return true;
+}
+
+/* 注册：公开，但做基础频率限制 + 手机号/密码校验 */
+async function handleRegister(req, res, ip) {
+  if (rateLimited(ip)) return json(res, 429, { ok: false, error: '操作太频繁，请稍等 1 分钟再试' });
+  if (!guardApi(req, res)) return;
+  const b = await apiBody(req, 4096);
+  if (!b) return json(res, 400, { ok: false, error: '请求内容无法解析' });
+  const r = ACCOUNTS.register(b);
+  if (!r.ok) { noteFail(ip); return json(res, 400, { ok: false, error: r.error }); }
+  failed.delete(ip);
+  const cookie = `${COOKIE}=${encodeURIComponent(makeToken(r.phone))}; Path=/; HttpOnly; SameSite=Lax; Max-Age=${SESSION_DAYS * 86400}`;
+  aiLog('REGISTER', req, r.phone, 'new user');
+  return json(res, 200, { ok: true, user: r.phone, redirect: '/english/index.html' }, { 'Set-Cookie': cookie });
+}
+
+/* 当前身份（前端渲染导航、额度面板用） */
+function handleMe(req, res, cu) {
+  const role = roleOf(cu);
+  return json(res, 200, {
+    ok: true, user: cu, role: role,
+    roleLabel: ({ admin: '管理员', premium: '高级会员', member: '会员', user: '用户', legacy: '账号' })[role] || '账号',
+    accountStatus: ACCOUNTS.status(cu, role),
+    canAdmin: role === ROLES.ADMIN
+  });
+}
+
+/* 管理后台：只有管理员 */
+async function handleAdmin(req, res, cu, name) {
+  if (roleOf(cu) !== ROLES.ADMIN) return json(res, 403, { ok: false, error: '仅管理员可使用' });
+  if (name === '/__api/admin/accounts' && req.method === 'GET') {
+    return json(res, 200, { ok: true, accounts: ACCOUNTS.list(), overview: ACCOUNTS.overview() });
+  }
+  if (req.method !== 'POST' || !guardApi(req, res)) return json(res, 405, { ok: false, error: '不支持的请求' });
+  const b = await apiBody(req);
+  if (!b) return json(res, 400, { ok: false, error: '请求内容无法解析' });
+  if (name === '/__api/admin/role') {
+    const r = ACCOUNTS.setRole(String(b.key || ''), String(b.role || ''));
+    aiLog('ADMIN_ROLE', req, cu, String(b.key || '') + ':' + String(b.role || ''));
+    return json(res, r.ok ? 200 : 400, r);
+  }
+  if (name === '/__api/admin/status') {
+    const r = ACCOUNTS.setStatus(String(b.key || ''), String(b.status || ''));
+    aiLog('ADMIN_STATUS', req, cu, String(b.key || '') + ':' + String(b.status || ''));
+    return json(res, r.ok ? 200 : 400, r);
+  }
+  if (name === '/__api/admin/remove') {
+    const r = ACCOUNTS.remove(String(b.key || ''));
+    aiLog('ADMIN_REMOVE', req, cu, String(b.key || '') + (r.ok ? ':ok' : ':fail'));
+    return json(res, r.ok ? 200 : 400, r);
+  }
+  return json(res, 404, { ok: false, error: 'unknown_action' });
+}
+
+/* 积分：背单词上报 / 领取 / 兑换 */
+async function handlePoints(req, res, cu, name) {
+  const role = roleOf(cu);
+  if (name === '/__api/points/status' && req.method === 'GET') {
+    return json(res, 200, Object.assign({ ok: true }, ACCOUNTS.status(cu, role)));
+  }
+  if (req.method !== 'POST' || !guardApi(req, res)) return json(res, 405, { ok: false, error: '不支持的请求' });
+  const b = await apiBody(req);
+  if (!b) return json(res, 400, { ok: false, error: '请求内容无法解析' });
+  let r;
+  if (name === '/__api/points/words') r = ACCOUNTS.addWords(cu, role, b.n);
+  else if (name === '/__api/points/claim') r = ACCOUNTS.claim(cu, role);
+  else if (name === '/__api/points/redeem') r = ACCOUNTS.redeem(cu, role);
+  else return json(res, 404, { ok: false, error: 'unknown_action' });
+  return json(res, r.ok ? 200 : 400, r);
+}
+
+/* AI 领票：主站 AI 助手走云端模型，前端提问前先向服务端领一张票。
+   服务端按角色与当日额度硬判断并预扣，前端拿不到票就不发模型请求。
+   管理员：不限；高级会员：每天 0.1 元；会员：只能是积分兑换来的额度；用户/旧账号：拒绝。 */
+function handleAITicket(req, res, cu) {
+  const role = roleOf(cu);
+  const st = ACCOUNTS.status(cu, role);
+  if (role === ROLES.ADMIN) return json(res, 200, { ok: true, unlimited: true, left: null });
+  if (role !== ROLES.PREMIUM && role !== ROLES.MEMBER) {
+    return json(res, 403, { ok: false, error: '当前身份暂不能使用 AI，请联系管理员调整' });
+  }
+  const left = typeof st.aiLeftCny === 'number' ? st.aiLeftCny : 0;
+  if (left < CNY_PER_AI_CALL) {
+    return json(res, 403, {
+      ok: false, code: 'NO_QUOTA',
+      error: role === ROLES.MEMBER
+        ? '今日 AI 额度不足，去「英语学习」背满 50 个单词领 10 积分，再兑换 0.01 元额度'
+        : '今天的 0.1 元 AI 额度已用完，明天会自动恢复'
+    });
+  }
+  ACCOUNTS.consume(cu, role, CNY_PER_AI_CALL);
+  const after = ACCOUNTS.status(cu, role);
+  aiLog('AI_TICKET', req, cu, role + ' left=' + (after.aiLeftCny));
+  return json(res, 200, { ok: true, left: after.aiLeftCny, cost: CNY_PER_AI_CALL });
+}
+
 const server = http.createServer(async (req, res) => {
   let name, rawName;
   try {
@@ -814,6 +1015,8 @@ const server = http.createServer(async (req, res) => {
   if (GONE_PATHS.test(name)) {
     return send(res, 404, '<!doctype html><meta charset="utf-8"><title>404</title><body style="font-family:system-ui,-apple-system,sans-serif;padding:40px;color:#17365e;background:#f7fafd"><h2>这个文件已停用</h2><p>它已经从站点里移除。请从首页或导航重新进入。</p><p><a href="/">← 回到学习小屋</a></p></body>');
   }
+  /* 注册接口公开（免登录），但自身带频率限制 */
+  if (name === '/__api/register' && req.method === 'POST') return handleRegister(req, res, ip);
   if (name === '/__login' && req.method === 'GET') return send(res, 200, loginPage(''));
   if (name === '/__login' && req.method === 'POST') {
     if (rateLimited(ip)) {
@@ -833,9 +1036,12 @@ const server = http.createServer(async (req, res) => {
     const usr = findUser(u);
     if (usr && checkPass(usr, p)) {
       failed.delete(ip);
+      ACCOUNTS.noteLogin(usr.user);
       const cookie = `${COOKIE}=${encodeURIComponent(makeToken(usr.user))}; Path=/; HttpOnly; SameSite=Lax; Max-Age=${SESSION_DAYS * 86400}`;
-      if ((req.headers.accept || '').includes('application/json')) return json(res, 200, { ok: true, user: usr.user, ai: !!usr.ai }, { 'Set-Cookie': cookie });
-      return send(res, 302, '', { Location: '/', 'Set-Cookie': cookie });
+      /* 「用户」身份登录后直接落到英语学习台（它唯一能看的页面） */
+      const dest = roleOf(usr.user) === ROLES.USER ? '/english/index.html' : '/';
+      if ((req.headers.accept || '').includes('application/json')) return json(res, 200, { ok: true, user: usr.user, ai: !!usr.ai, redirect: dest }, { 'Set-Cookie': cookie });
+      return send(res, 302, '', { Location: dest, 'Set-Cookie': cookie });
     }
     noteFail(ip);
     const msg = '账号或密码不正确，请再试一次';
@@ -859,7 +1065,9 @@ const server = http.createServer(async (req, res) => {
      它们是 manifest / apple-touch-icon 引用的公开图标，同样必须免登录。 */
   /* 安卓安装包与它的下载说明页同样免登录：APK 只是访问正式站的空壳，
      内含公钥证书、不含任何账号或课程数据，和上面的桌面下载包性质一致。 */
-  if (/^\/(android-install\.html|manifest\.webmanifest|sw\.js|favicon\.ico|todo-icon\.svg|todo-icon-(192|512|maskable)\.png|cabin-art\/crest-(icon-(192|512|maskable-512)|apple-touch-180)\.png|cabin-art\/crest\.webp|downloads\/(?:[A-Za-z0-9_.-]+\.zip|LioraTodoSetup\.exe|[A-Za-z0-9_.-]+\.apk))$/.test(name)) {
+  /* 注册页 / 安卓下载页都是免登录独立页，它们引用的配图与样式同样必须放行，
+     否则页面能开、图带和 CSS 却是 401。cabin-art 下都是纯装饰图，不含用户数据。 */
+  if (/^\/(?:android-install\.html|register\.html|page-art\.css|manifest\.webmanifest|sw\.js|favicon\.ico|todo-icon\.svg|todo-icon-(?:192|512|maskable)\.png|cabin-art\/[A-Za-z0-9_.-]+\.(?:webp|png|jpe?g|svg)|downloads\/(?:[A-Za-z0-9_.-]+\.zip|LioraTodoSetup\.exe|[A-Za-z0-9_.-]+\.apk))$/.test(name)) {
     return serveFile(req, res, name, rawName, cu);
   }
   if (!cu) {
@@ -871,6 +1079,40 @@ const server = http.createServer(async (req, res) => {
     /* 记住原本要打开的站内地址：桌面小卡片登录后要回到待办页，而不是首页 */
     const back = (req.url && req.url.charAt(0) === '/' && req.url.indexOf('//') !== 0) ? req.url : '/';
     return send(res, 302, '', { Location: '/__login?next=' + encodeURIComponent(back) });
+  }
+
+  /* ===== 注册账号 / 角色 API（先于页面闸门，需登录） ===== */
+  if (name === '/__api/me' && req.method === 'GET') return handleMe(req, res, cu);
+  if (name.indexOf('/__api/admin/') === 0) return handleAdmin(req, res, cu, name);
+  if (name.indexOf('/__api/points/') === 0) return handlePoints(req, res, cu, name);
+  if (name === '/__api/ai/ticket' && req.method === 'POST') {
+    if (!guardApi(req, res)) return;
+    return handleAITicket(req, res, cu);
+  }
+
+  /* ===== 角色硬闸门：服务端按身份决定能不能看到这个页面 ===== */
+  const curRole = roleOf(cu);
+  if (curRole === ROLES.USER && (name === '/' || name === '/index.html')) {
+    return send(res, 302, '', { Location: '/english/index.html' });
+  }
+  if (!pageAllowed(curRole, name)) {
+    const isExtra = OWNER_RE.test(name) || name.toLowerCase().indexOf('/assets/extracurricular_imgs/') === 0;
+    const title = isExtra ? '「课外拓展」暂未向你开放' : '这个页面暂未向你开放';
+    const hint = isExtra
+      ? '课外拓展仅管理员可见。'
+      : (curRole === ROLES.USER
+          ? '你当前的身份是「用户」，只能使用「英语学习」。需要更多内容请联系管理员为你授权。'
+          : '如需访问，请联系管理员。');
+    return send(res, 403, `<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>${title}</title><body style="font-family:system-ui,'Microsoft YaHei',sans-serif;background:#f3f7fc;color:#17365e;padding:40px;line-height:1.9">
+<div style="max-width:520px;margin:auto;background:#fff;border:1px solid #d5e3f2;border-radius:14px;padding:30px">
+<h2 style="margin-top:0">${title}</h2><p>${hint}</p>
+<p style="color:#5a7392">当前身份：${({ admin:'管理员', premium:'高级会员', member:'会员', user:'用户', legacy:'账号' })[curRole] || '账号'}</p>
+<p><a href="/english/index.html" style="color:#1c4375">去英语学习 →</a> · <a href="/__logout" style="color:#1c4375">切换账号</a></p></div></body></html>`);
+  }
+  /* 管理页只有管理员能打开（页面本身不含数据，数据全走 /__api/admin/*） */
+  if (name === '/admin.html' && curRole !== ROLES.ADMIN) {
+    return send(res, 403, '<!doctype html><meta charset="utf-8"><body style="font-family:system-ui,sans-serif;padding:40px;color:#17365e"><h2>仅管理员可进入</h2><p><a href="/">返回学习小屋</a></p></body>');
   }
 
   if (name === '/notes-review.html' || name === '/notes-review.js' || name === '/__api/notes-pipeline') {

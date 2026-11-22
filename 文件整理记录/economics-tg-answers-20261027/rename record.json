@@ -1,0 +1,27 @@
+[
+  {
+    "old": "term1/unit0/unit0 TUTORIAL PPT writing and presenting in economics.pdf",
+    "new": "term1/unit0/unit0 TG答案 writing and presenting in economics.pdf",
+    "sha256": "7dd21fc3cace3b7ea5d37ba3de6bce89236adc0a998379d6b0ac5e97f169b719"
+  },
+  {
+    "old": "term1/unit1/unit1 TUTORIAL PPT introduction to economics.pdf",
+    "new": "term1/unit1/unit1 TG答案 introduction to economics.pdf",
+    "sha256": "fb661e91ba0383de275eebbc7a8d52a3ea8dc9510e8d23c73938bd5ecd5d2bb2"
+  },
+  {
+    "old": "term1/unit2/unit2 TUTORIAL PPT production and technology - copy2.pdf",
+    "new": "term1/unit2/unit2 TG答案 production and technology - copy2.pdf",
+    "sha256": "f90e9cab715f00cd5a4e88ff8f0b71737e52a94cc134ee3ac28d69600e72454e"
+  },
+  {
+    "old": "term1/unit2/unit2 TUTORIAL PPT production and technology.pdf",
+    "new": "term1/unit2/unit2 TG答案 production and technology.pdf",
+    "sha256": "f90e9cab715f00cd5a4e88ff8f0b71737e52a94cc134ee3ac28d69600e72454e"
+  },
+  {
+    "old": "term1/unit3/unit3 TUTORIAL PPT demand and supply.pdf",
+    "new": "term1/unit3/unit3 TG答案 demand and supply.pdf",
+    "sha256": "a03ce8dd681e406abdc5f6ef912d81f245beb36d04512b4a9c25bdc462ff0a65"
+  }
+]
