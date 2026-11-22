@@ -652,7 +652,255 @@ img { max-width: 100%; display: block; }
 .ed-prose th { background: var(--navy-050); color: var(--navy-900); font-weight: 700; }
 .ed-prose table.t-account td:nth-child(even),
 .ed-prose table.ledger td:last-child { text-align: right; font-variant-numeric: tabular-nums; }
-.ed-prose svg, .ed-prose img { max-width: 100%; height: auto; border-radius: 8px; margin: 10px 0; }
+.ed-prose svg, .ed-prose img { max-width: 100%; height: auto; border-radius: 8px; margin: 6px 0; }
+
+/* 一条龙学习流：吸顶进度锚点条、图解速览卡、画框与灯箱 */
+.ed-step-bar {
+  position: sticky;
+  top: 56px;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 10px 12px;
+  margin: 0 -4px 16px;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(15, 39, 68, 0.06);
+}
+.ed-step-pill {
+  padding: 6px 13px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--surface-2);
+  color: var(--ink-2);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--sans);
+  transition: all 0.15s ease;
+}
+.ed-step-pill:hover { border-color: var(--navy-700); color: var(--navy-900); }
+.ed-step-pill.active {
+  background: var(--navy-900);
+  color: #fff;
+  border-color: var(--navy-900);
+}
+.ed-fig-strip {
+  padding: 12px 15px;
+  margin-bottom: 18px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #f5f9ff 0%, #fcfaf3 100%);
+  border: 1px solid #d4e2f1;
+}
+.ed-fig-strip-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 9px;
+  font-size: 13.5px;
+  color: var(--navy-900);
+}
+.ed-fig-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+.ed-fig-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 1px solid #cbd9ea;
+  background: #ffffff;
+  color: var(--navy-900);
+  font-size: 12.5px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: var(--sans);
+  transition: all 0.14s ease;
+}
+.ed-fig-chip:hover {
+  border-color: var(--gold);
+  background: var(--gold-soft);
+  transform: translateY(-1px);
+}
+.ed-stage-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 28px 0 14px;
+  padding: 12px 16px;
+  border-radius: 11px;
+  background: linear-gradient(90deg, var(--navy-900) 0%, #234772 100%);
+  color: #fff;
+}
+.ed-stage-head h2 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff;
+}
+.ed-stage-head .sub { font-size: 12.5px; color: #d3e2f5; }
+.ed-prose .diagram,
+.ed-prose figure.diagram {
+  position: relative;
+  margin: 18px 0;
+  padding: 14px 16px 12px;
+  border-radius: 12px;
+  background: #f9fbfe;
+  border: 1px solid #d5e2ef;
+  box-shadow: 0 2px 10px rgba(15, 39, 68, 0.04);
+  text-align: center;
+  cursor: zoom-in;
+  transition: border-color 0.16s ease, box-shadow 0.16s ease;
+}
+.ed-prose .diagram:hover,
+.ed-prose figure.diagram:hover {
+  border-color: var(--gold);
+  box-shadow: 0 6px 18px rgba(15, 39, 68, 0.1);
+}
+.ed-prose .diagram::after,
+.ed-prose figure.diagram::after {
+  content: "🔍 点击放大";
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--navy-800);
+  border: 1px solid #d5e2ef;
+  pointer-events: none;
+}
+.ed-prose .diagram svg,
+.ed-prose figure.diagram img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+.ed-prose .diagram .cap,
+.ed-prose figure.diagram figcaption {
+  margin: 9px 0 0;
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: var(--muted);
+  text-align: center;
+}
+.ed-prose .cfig-gal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+  margin-top: 10px;
+}
+.ed-prose figure.cfig {
+  margin: 0;
+  padding: 8px;
+  border-radius: 9px;
+  background: #fff;
+  border: 1px solid var(--line);
+  text-align: center;
+}
+.ed-prose figure.cfig figcaption {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 6px;
+}
+@keyframes edFigPulse {
+  0% { box-shadow: 0 0 0 0 rgba(201, 155, 59, 0.55); border-color: var(--gold); }
+  70% { box-shadow: 0 0 0 12px rgba(201, 155, 59, 0); border-color: var(--gold); }
+  100% { box-shadow: 0 2px 10px rgba(15, 39, 68, 0.04); }
+}
+.ed-fig-pulse { animation: edFigPulse 1.3s ease-out; }
+
+.ed-week-fig-tag {
+  margin-left: auto;
+  flex-shrink: 0;
+  font-size: 10.5px;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: var(--navy-050);
+  color: var(--navy-800);
+}
+.ed-week-btn.active .ed-week-fig-tag {
+  background: var(--navy-900);
+  color: #ffffff;
+}
+.ed-next-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+  padding: 18px 20px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #f4f8fd 0%, #fdf8ec 100%);
+  border: 1.5px solid var(--gold-border);
+}
+.ed-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(11, 25, 46, 0.82);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.ed-lightbox-card {
+  position: relative;
+  max-width: min(1080px, 95vw);
+  max-height: 92vh;
+  overflow: auto;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px 22px 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.42);
+  text-align: center;
+}
+.ed-lightbox-card svg {
+  width: min(960px, 88vw);
+  height: auto;
+  max-height: 76vh;
+  display: block;
+  margin: 0 auto;
+}
+.ed-lightbox-card img {
+  max-width: 100%;
+  max-height: 76vh;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+.ed-lightbox-close {
+  position: sticky;
+  top: 0;
+  float: right;
+  padding: 5px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--navy-900);
+  color: #fff;
+  font-size: 12.5px;
+  font-weight: 700;
+  cursor: pointer;
+}
 /* 隐藏旧数据里自带的重复大标题块 */
 .ed-prose .notes-hero-dup, .ed-prose .note-banner-dup { display: none; }
 

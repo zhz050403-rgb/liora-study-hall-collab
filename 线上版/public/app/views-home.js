@@ -20,10 +20,14 @@
     var firstTerm = (c.terms && c.terms[0]) ? c.terms[0] : null;
     var firstWeek = (firstTerm && firstTerm.weeks && firstTerm.weeks[0]) ? firstTerm.weeks[0].num : 1;
     var href = firstTerm ? ('#/c/' + c.id + '/' + firstTerm.id + '/' + firstWeek) : ('#/c/' + c.id);
+    var figCount = Number(c.diagramCount) || 0;
     return '<a class="ed-course-card" href="' + esc(href) + '">' +
       '<div class="ed-course-art">' + window.LioraCovers.svgFor(c.id) + '</div>' +
       '<div class="ed-course-body">' +
-        '<div class="ed-course-code">' + esc(c.shortCode || c.id) + '</div>' +
+        '<div style="display:flex;align-items:center;justify-content:space-between;gap:6px">' +
+          '<div class="ed-course-code">' + esc(c.shortCode || c.id) + '</div>' +
+          (figCount ? '<span class="ed-badge ed-badge-gold" style="font-size:11px;padding:1px 7px">📊 ' + figCount + ' 张图解</span>' : '') +
+        '</div>' +
         '<div class="ed-course-title">' + esc(c.nameCn) + '</div>' +
         '<div class="ed-course-en">' + esc(c.name) + '</div>' +
         '<div class="ed-prog-bar"><i style="width:' + p.pct + '%"></i></div>' +
@@ -110,7 +114,7 @@
           '</div>' +
         '</section>' +
 
-        '<div class="ed-section-head"><h2>我的 5 门核心课</h2><span class="sub">点任意课程直接进入「① 读笔记 → ② 练答案 → ③ 课件术语」三步学习台</span></div>' +
+        '<div class="ed-section-head"><h2>我的 5 门核心课</h2><span class="sub">点任意课程直接进入「图解速览 → 核心笔记 → 练习解析 → 课件术语」一条龙学习台</span></div>' +
         '<div class="ed-course-grid">' + mainCourses.map(renderCourseCard).join('') + '</div>' +
 
         '<div class="ed-section-head"><h2>提分工具与近期考期</h2><span class="sub">错题遗忘曲线 · 术语闪卡 · 多科刷题 · 个人批注</span></div>' +
@@ -165,7 +169,7 @@
     var idx = await window.LioraStore.loadIndex();
     var mainCourses = (idx.courses || []).filter(function (c) { return !c.extra; });
     app.innerHTML = '<div class="ed-container">' +
-      '<div class="ed-section-head" style="margin-top:4px"><h2>课程中心 · UNSW 2026 五门核心课</h2><span class="sub">按需加载 · 每课自带 3 步学习流</span></div>' +
+      '<div class="ed-section-head" style="margin-top:4px"><h2>课程中心 · UNSW 2026 五门核心课</h2><span class="sub">全科 107 周 100% 配图解 · 往下滑一条龙自然学完</span></div>' +
       '<div class="ed-course-grid">' + mainCourses.map(renderCourseCard).join('') + '</div>' +
     '</div>';
   }
@@ -180,9 +184,11 @@
     var term = extra.terms[0];
     var cards = (term && term.weeks || []).map(function (w) {
       var done = window.LioraStore.isWeekDone(extra.id, term.id, w.num);
+      var figs = Number(w.diagramCount) || 0;
       return '<a class="ed-card" style="text-decoration:none;border-left:3.5px solid ' + (done ? 'var(--green)' : 'var(--gold)') + '" href="#/c/' + extra.id + '/' + term.id + '/' + w.num + '">' +
-        '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">' +
+        '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;gap:6px">' +
           '<span class="ed-badge ed-badge-gold">Module ' + w.num + '</span>' +
+          (figs ? '<span class="ed-badge" style="background:var(--navy-050);color:var(--navy-800)">📊 ' + figs + ' 张图解</span>' : '') +
           (done ? '<span class="ed-badge ed-badge-green">已完成</span>' : '') +
         '</div>' +
         '<div style="font-family:var(--serif);font-size:15.5px;font-weight:700;color:var(--navy-900);margin-bottom:4px">' + esc(w.title) + '</div>' +

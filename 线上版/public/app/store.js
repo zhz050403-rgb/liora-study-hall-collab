@@ -110,7 +110,7 @@
   /* 轻索引按需加载（首屏仅 23 KB） */
   async function loadIndex() {
     if (chunks.index) return chunks.index;
-    var r = await fetch('/data-chunks/index.json?v=20261122-v3', { credentials: 'same-origin' });
+    var r = await fetch('/data-chunks/index.json?v=20261122-v7', { credentials: 'same-origin' });
     if (!r.ok) throw new Error('无法加载课程索引');
     chunks.index = await r.json();
     return chunks.index;
@@ -118,7 +118,7 @@
 
   async function loadCourse(courseId) {
     if (chunks.courses[courseId]) return chunks.courses[courseId];
-    var r = await fetch('/data-chunks/courses/' + encodeURIComponent(courseId) + '.json?v=20261122-v3', { credentials: 'same-origin' });
+    var r = await fetch('/data-chunks/courses/' + encodeURIComponent(courseId) + '.json?v=20261122-v7', { credentials: 'same-origin' });
     if (!r.ok) throw new Error('课程数据加载失败：' + courseId);
     chunks.courses[courseId] = await r.json();
     return chunks.courses[courseId];
@@ -126,7 +126,7 @@
 
   async function loadBook(bookId) {
     if (chunks.books[bookId]) return chunks.books[bookId];
-    var r = await fetch('/data-chunks/books/' + encodeURIComponent(bookId) + '.json?v=20261122-v3', { credentials: 'same-origin' });
+    var r = await fetch('/data-chunks/books/' + encodeURIComponent(bookId) + '.json?v=20261122-v7', { credentials: 'same-origin' });
     if (!r.ok) throw new Error('书籍数据加载失败：' + bookId);
     chunks.books[bookId] = await r.json();
     return chunks.books[bookId];
