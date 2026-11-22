@@ -50,6 +50,7 @@ a:hover{text-decoration:underline}
 }
 </style>
 <link rel="stylesheet" href="page-art.css?v=20261115-page-art2">
+<link rel="stylesheet" href="styles/theme.css?v=20261122-v2">
 </head>
 <body>
 
@@ -92,5 +93,37 @@ a:hover{text-decoration:underline}
 
 <script src="blocks/site-polish.js?v=20261111-readability-cf5b05b"></script>
 <script src="blocks/bilingual-video.js?v=20261113-bv9-hafcb7eb1"></script>
+
+<section id="lh-extra-videos" style="max-width:1120px;margin:28px auto 48px;padding:0 20px;font-family:var(--lh-sans)"></section>
+<script>
+(function(){
+  fetch('/data-chunks/videos-extra.json?v=20261122-v2',{credentials:'same-origin'})
+    .then(function(r){return r.ok?r.json():null;})
+    .then(function(data){
+      if(!data)return;
+      var el=document.getElementById('lh-extra-videos');
+      if(!el)return;
+      var html='<h2 style="font-family:var(--lh-serif);color:var(--lh-navy-900);border-bottom:2px solid var(--lh-navy-900);padding-bottom:8px;margin-bottom:16px">💻 计算机应用 & 🎓 学术英语 · 补充中英视频导航</h2>';
+      ['computing','english'].forEach(function(k){
+        var c=data[k]; if(!c)return;
+        html+='<div style="background:#fff;border:1px solid var(--lh-line);border-left:4px solid var(--lh-gold);border-radius:14px;padding:18px 20px;margin-bottom:16px">'
+          +'<h3 style="margin:0 0 6px;font-family:var(--lh-serif);color:var(--lh-navy-900)">'+c.cn+' <span style="font-size:13px;color:var(--lh-muted);font-weight:400">'+c.en+'</span></h3>'
+          +'<p style="margin:0 0 12px;font-size:13.5px;color:var(--lh-ink-2)">'+c.desc+'</p>'
+          +'<div style="display:flex;flex-direction:column;gap:8px">'
+          +c.units.map(function(u){
+            return '<div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px;padding:10px 12px;background:var(--lh-navy-050);border-radius:10px">'
+              +'<div><b>'+u.unit+'</b> · '+u.title+'</div>'
+              +'<div style="display:flex;gap:8px;flex-wrap:wrap">'
+              +'<a target="_blank" rel="noopener" href="'+u.zh.url+'" style="padding:5px 10px;border-radius:8px;background:#fff;border:1px solid var(--lh-line);color:var(--lh-navy-900);font-size:12.5px;font-weight:600;text-decoration:none">中文：'+u.zh.label+' ↗</a>'
+              +'<a target="_blank" rel="noopener" href="'+u.en.url+'" style="padding:5px 10px;border-radius:8px;background:var(--lh-gold-soft);border:1px solid var(--lh-gold-border);color:var(--lh-amber);font-size:12.5px;font-weight:600;text-decoration:none">英文：'+u.en.label+' ↗</a>'
+              +'</div></div>';
+          }).join('')
+          +'</div></div>';
+      });
+      el.innerHTML=html;
+    }).catch(function(){});
+})();
+</script>
+
 </body>
 </html>

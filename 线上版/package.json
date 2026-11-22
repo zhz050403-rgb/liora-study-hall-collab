@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "node scripts/dev-server.js",
-    "test": "node checks/server-regression.cjs && node checks/notes-regression.cjs > /dev/null && node checks/notes-pipeline.cjs && node checks/accounts-regression.cjs && node checks/study-api-regression.cjs",
+    "test": "node checks/server-regression.cjs && node checks/notes-regression.cjs > /dev/null && node checks/notes-pipeline.cjs && node checks/accounts-regression.cjs && node checks/study-api-regression.cjs && node checks/frontend-smoke.cjs",
     "notes": "node notes/pipeline/cli.js"
   },
   "engines": {
