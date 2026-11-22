@@ -16,7 +16,7 @@ for (const [, script] of html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>
 const hasContent = vm.runInNewContext('(' + html.match(/function weekHasContent\(w\)\{[^\n]+\}/)[0] + ')');
 assert(hasContent({ graphicHtml: '<p>Notes</p>' }));
 assert(!hasContent({}));
-assert.match(read('server.js'), /name === '\/data\.js'[^\n]+\? 'no-cache'/);
+assert.match(read('server/static.js'), /name === '\/data\.js'[\s\S]{0,120}\? 'no-cache'/);
 assert.match(html, /src="data\.js\?v=/);
 
 const searchContext = {

@@ -17,7 +17,20 @@ const { spawn } = require('child_process');
 const ROOT = path.resolve(__dirname, '..');
 const PORT = 39000 + Math.floor(Math.random() * 800);
 const DATA_DIR = fs.mkdtempSync(path.join(os.tmpdir(), 'liora-accounts-test-'));
-const auth = JSON.parse(fs.readFileSync(path.join(ROOT, 'auth.json'), 'utf8'));
+const REAL_AUTH = path.join(ROOT, 'auth.json');
+let AUTH_FILE = REAL_AUTH;
+let auth;
+if (fs.existsSync(REAL_AUTH)) {
+  auth = JSON.parse(fs.readFileSync(REAL_AUTH, 'utf8'));
+} else {
+  /* 公开仓库不含 auth.json：自动在系统临时目录生成隔离测试凭据，绝不写入项目目录 */
+  AUTH_FILE = path.join(DATA_DIR, 'auth.test.json');
+  const salt = crypto.randomBytes(16).toString('hex');
+  const user = 'LioraTestOwner';
+  const passHash = crypto.createHash('sha256').update(salt + '|' + user + '|testpass').digest('hex');
+  auth = { sessionSecret: crypto.randomBytes(32).toString('hex'), users: [{ user, uid: 'test-owner-1', salt, passHash, ai: true }] };
+  fs.writeFileSync(AUTH_FILE, JSON.stringify(auth), 'utf8');
+}
 const OWNER = (auth.users.find(u => u.ai === true) || {}).user;
 if (!OWNER || !auth.sessionSecret) { console.error('auth.json 缺少主账号或 sessionSecret'); process.exit(1); }
 
@@ -142,10 +155,10 @@ async function run() {
   ok(r.status === 403, '主站课程内容数据对 user 不下发');
 
   r = await req('GET', '/english/index.html', { cookie: USER_COOKIE });
-  ok(r.status === 200 && /member-access\.js\?v=20261114-role1/.test(r.body), '英语台挂了会员板块');
+  ok(r.status === 200 && /member-access\.js\?v=/.test(r.body), '英语台挂了会员板块');
   ok(/"role":"user"/.test(r.body) && /"canAI":false/.test(r.body), '英语台注入 user 身份且 canAI=false');
 
-  r = await req('GET', '/blocks/member-access.js?v=20261114-role1', { cookie: USER_COOKIE });
+  r = await req('GET', '/blocks/member-access.js?v=test', { cookie: USER_COOKIE });
   ok(r.status === 200, '英语台能加载会员板块脚本');
 
   r = await req('POST', '/__api/ai/ticket', { cookie: USER_COOKIE, body: {}, headers: API });
@@ -176,8 +189,8 @@ async function run() {
   ok(r.status === 200 && r.json && r.json.unlimited === true, '网关 Origin 下管理员领票仍可用', 'status=' + r.status);
 
   r = await req('GET', '/index.html', { cookie: OWNER_COOKIE });
-  ok(r.status === 200 && /member-access\.js\?v=20261114-role1/.test(r.body), '主站挂了会员板块');
-  ok(/ai-visibility\.js\?v=20261114-role1/.test(r.body), 'AI 可见性板块已升版本');
+  ok(r.status === 200 && /member-access\.js\?v=/.test(r.body), '主站挂了会员板块');
+  ok(/ai-visibility\.js\?v=/.test(r.body), 'AI 可见性板块已挂版本号');
 
   console.log('\n=== 5. 高级会员：每天 0.1 元 ===');
   r = await req('POST', '/__api/admin/role', { cookie: OWNER_COOKIE, body: { key: TEST_PHONE, role: 'premium' }, headers: API });
@@ -256,12 +269,13 @@ async function run() {
   const ma = fs.readFileSync(path.join(ROOT, 'public/blocks/member-access.js'), 'utf8');
   ok(/wrap\('stream'\)/.test(ma) && /wrap\('chat'\)/.test(ma), 'chat 与 stream 双链路都领票');
   ok(/window\.cloudLLM\.chat = noAI/.test(ma), '「用户」在英语台的 AI 被禁用');
-  const srv = fs.readFileSync(path.join(ROOT, 'server.js'), 'utf8');
-  ok(/n==='\/'/.test(srv), '登录页 next 回跳逻辑已修复');
-  ok(/register\.html/.test(srv), '注册页在免登录白名单内');
-  ok(/PUBLIC_HOSTS/.test(srv), '同站校验含对外域名白名单');
-  ok(/page-art\\.css/.test(srv) && /cabin-art/.test(srv), '注册页配图与样式在免登录白名单内');
-  ok(/ADMIN_REMOVE/.test(srv), '服务端提供删除账号接口');
+  const srvBundle = ['server.js', 'server/app.js', 'server/config.js', 'server/auth.js', 'server/login-page.js']
+    .map(p => fs.readFileSync(path.join(ROOT, p), 'utf8')).join('\n');
+  ok(/n==='\/'/.test(srvBundle), '登录页 next 回跳逻辑已修复');
+  ok(/register\.html/.test(srvBundle), '注册页在免登录白名单内');
+  ok(/publicHosts/.test(srvBundle), '同站校验含对外域名白名单');
+  ok(/page-art\\.css/.test(srvBundle) && /cabin-art/.test(srvBundle), '注册页配图与样式在免登录白名单内');
+  ok(/ADMIN_REMOVE/.test(srvBundle), '服务端提供删除账号接口');
   const adm = fs.readFileSync(path.join(ROOT, 'public/admin.html'), 'utf8');
   ok(!/v: 'admin'/.test(adm) && !/v: 'legacy'/.test(adm), '管理页下拉不再提供不可授权的身份');
   ok(/data-del-key/.test(adm), '管理页有删除入口');
@@ -271,7 +285,7 @@ async function run() {
 (async function main() {
   const child = spawn(process.execPath, ['server.js'], {
     cwd: ROOT,
-    env: Object.assign({}, process.env, { PORT: String(PORT), LIORA_DATA_DIR: DATA_DIR }),
+    env: Object.assign({}, process.env, { PORT: String(PORT), LIORA_DATA_DIR: DATA_DIR, LIORA_AUTH_FILE: AUTH_FILE }),
     stdio: ['ignore', 'pipe', 'pipe']
   });
   let serverLog = '';

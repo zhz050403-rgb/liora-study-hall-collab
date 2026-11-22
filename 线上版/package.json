@@ -1,10 +1,11 @@
 {
   "name": "liora-study-hall",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "scripts": {
     "start": "node server.js",
-    "test": "node checks/server-regression.cjs && node checks/notes-regression.cjs && node checks/notes-pipeline.cjs",
+    "dev": "node scripts/dev-server.js",
+    "test": "node checks/server-regression.cjs && node checks/notes-regression.cjs > /dev/null && node checks/notes-pipeline.cjs && node checks/accounts-regression.cjs && node checks/study-api-regression.cjs",
     "notes": "node notes/pipeline/cli.js"
   },
   "engines": {

@@ -43,23 +43,42 @@ function createService(opts) {
   const file = path.join(dataDir, 'accounts.json');
   const builtinUsers = opts.builtinUsers || [];
 
+  let _cacheMtime = -1;
+  let _cacheRaw = '';
+  let _tmpSeq = 0;
+
   function read() {
     try {
-      const o = JSON.parse(fs.readFileSync(file, 'utf8'));
+      let mtime = -1;
+      try { mtime = fs.statSync(file).mtimeMs; } catch (e) {
+        _cacheMtime = -1; _cacheRaw = '';
+        return emptyDb();
+      }
+      if (mtime === _cacheMtime && _cacheRaw) {
+        const cached = JSON.parse(_cacheRaw);
+        return cached;
+      }
+      const raw = fs.readFileSync(file, 'utf8');
+      const o = JSON.parse(raw);
       if (!o || typeof o !== 'object') return emptyDb();
       const d = emptyDb();
       if (Array.isArray(o.users)) d.users = o.users;
       if (o.overrides && typeof o.overrides === 'object' && !Array.isArray(o.overrides)) d.overrides = o.overrides;
       if (o.wallets && typeof o.wallets === 'object' && !Array.isArray(o.wallets)) d.wallets = o.wallets;
+      _cacheMtime = mtime;
+      _cacheRaw = JSON.stringify(d);
       return d;
     } catch (e) { return emptyDb(); }
   }
   function write(d) {
     try {
       fs.mkdirSync(dataDir, { recursive: true });
-      const tmp = file + '.' + process.pid + '.tmp';
-      fs.writeFileSync(tmp, JSON.stringify(d), 'utf8');
+      const raw = JSON.stringify(d);
+      const tmp = file + '.' + process.pid + '.' + (++_tmpSeq) + '.tmp';
+      fs.writeFileSync(tmp, raw, 'utf8');
       fs.renameSync(tmp, file);
+      try { _cacheMtime = fs.statSync(file).mtimeMs; _cacheRaw = raw; }
+      catch (e) { _cacheMtime = -1; _cacheRaw = ''; }
     } catch (e) {
       console.error('[accounts] 写入失败:', e && e.code);
       throw e;
