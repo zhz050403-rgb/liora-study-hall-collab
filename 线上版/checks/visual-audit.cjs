@@ -128,13 +128,13 @@ async function main() {
     { name: 'home', hash: '#/', shot: 'v4-home.png', hasTwoCol: false },
     { name: 'reading-shelf', hash: '#/reading', shot: 'v4-reading.png', hasTwoCol: false },
     { name: 'book-reader', hash: '#/book/guofulun/1', hasTwoCol: true },
-    { name: 'acc-w2', hash: '#/c/accounting/term1/2', shot: 'v4-acc-w2.png', hasTwoCol: true, expectVisuals: true },
-    { name: 'eco-w1', hash: '#/c/economics/term1/1', shot: 'v4-eco-w1.png', hasTwoCol: true, expectVisuals: true },
-    { name: 'math-w1', hash: '#/c/mathematics/term1/1', shot: 'v4-math-w1.png', hasTwoCol: true, expectVisuals: true },
-    { name: 'comp-w1', hash: '#/c/computing/term1/1', shot: 'v4-comp-w1.png', hasTwoCol: true, expectVisuals: true },
-    { name: 'comp-w10', hash: '#/c/computing/term1/10', shot: 'v4-comp-w10.png', hasTwoCol: true, expectVisuals: true },
-    { name: 'eng-w1', hash: '#/c/english/term1/1', shot: 'v4-eng-w1.png', hasTwoCol: true, expectVisuals: true },
-    { name: 'extra-m11', hash: '#/c/extracurricular/modules/11', shot: 'v4-extra-m11.png', hasTwoCol: true, expectVisuals: true },
+    { name: 'acc-w1', hash: '#/c/accounting/term1/1', shot: 'v5-acc-w1.png', hasTwoCol: true, expectVisuals: true, expectBiExam: true },
+    { name: 'eco-w1', hash: '#/c/economics/term1/1', shot: 'v5-eco-w1.png', hasTwoCol: true, expectVisuals: true, expectBiExam: true },
+    { name: 'math-w1', hash: '#/c/mathematics/term1/1', shot: 'v5-math-w1.png', hasTwoCol: true, expectVisuals: true, expectBiExam: true },
+    { name: 'comp-w1', hash: '#/c/computing/term1/1', hasTwoCol: true, expectVisuals: true, expectBiExam: true },
+    { name: 'comp-w10', hash: '#/c/computing/term1/10', shot: 'v5-comp-w10.png', hasTwoCol: true, expectVisuals: true, expectBiExam: true },
+    { name: 'eng-w1', hash: '#/c/english/term1/1', shot: 'v5-eng-w1.png', hasTwoCol: true, expectVisuals: true, expectBiExam: true },
+    { name: 'extra-m11', hash: '#/c/extracurricular/modules/11', hasTwoCol: true, expectVisuals: true },
     { name: 'handbooks', hash: '#/handbooks', hasTwoCol: false },
     { name: 'mistakes', hash: '#/mistakes', hasTwoCol: false },
     { name: 'flashcards', hash: '#/flashcards', hasTwoCol: false },
@@ -155,6 +155,8 @@ async function main() {
       var noteImgs = document.querySelectorAll('#edNoteBody img, #edTutBody img').length;
       var hasStrip = !!document.querySelector('.ed-fig-strip');
       var hasAllStages = !!document.getElementById('sec-notes') && !!document.getElementById('sec-practice') && !!document.getElementById('sec-resources');
+      var biConcepts = document.querySelectorAll('.bi-concept-card').length;
+      var examQAs = document.querySelectorAll('.ed-qa-card').length;
       var h1s = Array.from(document.querySelectorAll('#app h1'));
       var h1Size = h1s[0] ? parseFloat(getComputedStyle(h1s[0]).fontSize) : 0;
       var overflow = document.documentElement.scrollWidth - window.innerWidth;
@@ -167,7 +169,7 @@ async function main() {
         var r = el.getBoundingClientRect();
         return r.width > 10 && r.height > 10 && r.bottom > window.innerHeight - 120;
       }).map(function(el){ return el.id || el.className; });
-      return { imgCount: imgs.length, broken: broken, visuals: svgs + noteImgs, hasStrip: hasStrip, hasAllStages: hasAllStages, h1Count: h1s.length, h1Size: h1Size, overflow: overflow, gap: gap, fixedBottom: fixedBottom };
+      return { imgCount: imgs.length, broken: broken, visuals: svgs + noteImgs, hasStrip: hasStrip, hasAllStages: hasAllStages, biConcepts: biConcepts, examQAs: examQAs, h1Count: h1s.length, h1Size: h1Size, overflow: overflow, gap: gap, fixedBottom: fixedBottom };
     })()`);
 
     const okBroken = report.broken.length === 0;
@@ -176,9 +178,10 @@ async function main() {
     const okGap = !rt.hasTwoCol || (report.gap !== null && report.gap >= 16 && report.gap <= 40);
     const okFixed = report.fixedBottom.length === 1 && report.fixedBottom[0] === 'lh-dock';
     const okVis = !rt.expectVisuals || (report.visuals >= 1 && report.hasStrip && report.hasAllStages);
-    const pass = okBroken && okOverflow && okH1 && okGap && okFixed && okVis;
+    const okBiExam = !rt.expectBiExam || (report.biConcepts >= 1 && report.examQAs >= 1);
+    const pass = okBroken && okOverflow && okH1 && okGap && okFixed && okVis && okBiExam;
     if (!pass) fails++;
-    console.log(`[1280px] ${rt.name.padEnd(14)} pass=${pass} vis=${report.visuals} strip=${report.hasStrip} stages=${report.hasAllStages} imgs=${report.imgCount} broken=${report.broken.length} h1=${report.h1Size}px(${report.h1Count}) gap=${report.gap}px overflow=${report.overflow}px`);
+    console.log(`[1280px] ${rt.name.padEnd(14)} pass=${pass} vis=${report.visuals} bi=${report.biConcepts} qa=${report.examQAs} broken=${report.broken.length} h1=${report.h1Size}px(${report.h1Count}) gap=${report.gap}px overflow=${report.overflow}px`);
     if (SHOT_DIR && rt.shot) {
       fs.mkdirSync(SHOT_DIR, { recursive: true });
       const pic = await send('Page.captureScreenshot', { format: 'png' });

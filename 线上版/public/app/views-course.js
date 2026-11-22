@@ -1,4 +1,4 @@
-/* 紧凑双栏「一条龙」课程学习室（零隐藏、全图解速览、高清放大灯箱、划词批注、KaTeX 公式、顺滑切换下一周） */
+/* 紧凑双栏「一条龙」中英双语课程学习室（逐行中英概念、全单元必考大题、797张图解速览、高清灯箱、3档背诵切换） */
 (function () {
   'use strict';
 
@@ -182,7 +182,6 @@
         btn.addEventListener('click', function () {
           var target = document.getElementById(btn.getAttribute('data-fig-jump'));
           if (!target) return;
-          // Auto-open any parent <details> so hidden diagrams inside folded answers reveal instantly!
           var det = target.closest('details');
           while (det) {
             det.open = true;
@@ -198,6 +197,72 @@
 
     renderStrip();
     return visuals.length;
+  }
+
+  /* 渲染「核心概念中英逐行精讲」卡片块 */
+  function renderBilingualConcepts(concepts) {
+    if (!concepts || !concepts.length) return '';
+    return '<div class="bi-concept-wrap">' +
+      '<div class="bi-concept-banner">' +
+        '<h3>📌 核心概念中英逐行精讲 · Core Concepts（共 ' + concepts.length + ' 条）</h3>' +
+        '<span style="font-size:12px;color:var(--muted)">上行英文规范句（直接背考场定义） · 紧跟下行中文精解</span>' +
+      '</div>' +
+      '<div class="bi-concept-list">' +
+        concepts.map(function (c, i) {
+          var isOfficial = /课件原话|真题|官方核心文本/.test(c.src || '');
+          return '<div class="bi-concept-card">' +
+            '<div class="bi-concept-head">' +
+              '<span class="bi-concept-term">' + (i + 1) + '. ' + esc(c.term) + '</span>' +
+              (c.src ? '<span class="bi-src-badge' + (isOfficial ? ' official' : '') + '">' + (isOfficial ? '✓ ' : '') + esc(c.src) + '</span>' : '') +
+            '</div>' +
+            '<div class="bi-pair">' +
+              '<div class="bi-en">🇬🇧 ' + esc(c.en) + '</div>' +
+              '<div class="bi-zh">🇨🇳 ' + esc(c.zh) + '</div>' +
+            '</div>' +
+          '</div>';
+        }).join('') +
+      '</div>' +
+    '</div>';
+  }
+
+  /* 渲染「本单元必考大题与中英对照标准答案」专区 */
+  function renderExamQA(qaList) {
+    if (!qaList || !qaList.length) return '';
+    return '<div id="sec-exam-qa" class="ed-stage-head" style="background:linear-gradient(90deg,#1d4374 0%,#7a5818 100%)">' +
+      '<h2>🎯 本单元必考大题与标准答案（中英对照 · 共 ' + qaList.length + ' 题）</h2>' +
+      '<span class="sub">先看题自己想思路，再展开核对英文高分踩分句与中文解析</span>' +
+    '</div>' +
+    '<div class="ed-exam-qa">' +
+      qaList.map(function (q, idx) {
+        var ptsHtml = (q.points || []).map(function (p, pi) {
+          return '<div class="bi-pair">' +
+            '<div class="bi-en"><b>(' + (pi + 1) + ') 🇬🇧</b> ' + esc(p.en) + '</div>' +
+            '<div class="bi-zh">🇨🇳 ' + esc(p.zh) + '</div>' +
+          '</div>';
+        }).join('');
+        var kwHtml = (q.keywords && q.keywords.length)
+          ? '<div class="ed-qa-kws"><span>🔑 英文采分关键词：</span>' + q.keywords.map(function (k) {
+              return '<span class="ed-qa-kw">' + esc(k) + '</span>';
+            }).join('') + '</div>'
+          : '';
+        return '<div class="ed-qa-card">' +
+          '<div class="ed-qa-top">' +
+            '<span class="ed-qa-num">必考大题 Q' + (idx + 1) + '</span>' +
+            (q.tag ? '<span class="ed-qa-tag">' + esc(q.tag) + '</span>' : '') +
+          '</div>' +
+          '<div class="ed-qa-q-en">🇬🇧 ' + esc(q.qEn) + '</div>' +
+          '<div class="ed-qa-q-zh">🇨🇳 ' + esc(q.qZh) + '</div>' +
+          '<details class="ed-qa-details">' +
+            '<summary>▶ 点击展开中英对照高分标准答案与采分点</summary>' +
+            '<div class="ed-qa-points">' + ptsHtml + '</div>' +
+            kwHtml +
+            '<div class="ed-qa-foot">' +
+              '<button type="button" class="ed-btn ed-btn-sm ed-btn-gold" data-qa-save="' + idx + '">➕ 没答全，收入遗忘曲线错题本</button>' +
+            '</div>' +
+          '</details>' +
+        '</div>';
+      }).join('') +
+    '</div>';
   }
 
   /* 找相邻周（支持跨 Term 无缝衔接） */
@@ -235,7 +300,8 @@
     var route = '#/c/' + course.id + '/' + term.id + '/' + week.num;
     window.LioraStore.setLastVisit(route, (course.nameCn || course.id) + ' · ' + (week.title || 'Week ' + week.num));
 
-    var noteMode = 'full'; // full | cloze | outline
+    var noteMode = 'full';   // full | cloze | outline
+    var biMode = 'both';     // both | en | recall
     var api = window.LioraStudyApi;
     var st = await api.loadStudy();
     var adj = findAdjacentWeeks(course, term.id, week.num);
@@ -243,6 +309,8 @@
     function draw() {
       var weekDone = window.LioraStore.isWeekDone(course.id, term.id, week.num);
       var weekAnns = (st.annotations || []).filter(function (a) { return a.route === route; });
+      var biConcepts = week.bilingualConcepts || [];
+      var qaList = week.examQA || [];
 
       var termPills = terms.length > 1 ? (
         '<div class="ed-term-pills">' + terms.map(function (t) {
@@ -273,15 +341,17 @@
           '<input type="checkbox" data-task-key="' + esc(tKey) + '"' + (tDone ? ' checked' : '') + ' style="width:17px;height:17px;margin-top:2px;accent-color:var(--navy-800)">' +
           '<span style="flex:1;' + (tDone ? 'text-decoration:line-through;opacity:.6' : '') + '">' + esc(txt) + '</span>' +
         '</label>';
-      }).join('') : '<p style="color:var(--muted);font-size:13.5px;margin:0">本周暂无额外打卡任务，直接精读笔记与图解并核对下方解析即可。</p>';
+      }).join('') : '<p style="color:var(--muted);font-size:13.5px;margin:0">本周暂无额外打卡任务，直接精读双语概念、图解与必考大题即可。</p>';
 
       var tutHtml = week.tutorialAnswers
         ? (typeof week.tutorialAnswers === 'string' ? week.tutorialAnswers : JSON.stringify(week.tutorialAnswers))
-        : '<p style="color:var(--muted);margin:0">本周暂无独立课后答案，可点上方按钮去「多科闭卷刷题」或让右下角 AI 伴学讲解。</p>';
+        : '<p style="color:var(--muted);margin:0">本周暂无独立课后答案，可先刷上方「本单元必考大题」或前往「多科闭卷刷题」。</p>';
 
       var onlinePdfs = week.onlineSources || [];
       var gloss = week.glossary || [];
       var offlineFiles = week.files || [];
+
+      var biCls = biMode === 'en' ? ' ed-bi-en-only' : (biMode === 'recall' ? ' ed-bi-recall' : '');
 
       app.innerHTML = '<div class="ed-container">' +
         '<div class="ed-study-layout">' +
@@ -290,7 +360,7 @@
             termPills +
             '<div class="ed-week-list">' + weekListHtml + '</div>' +
           '</aside>' +
-          '<section class="ed-main-col">' +
+          '<section class="ed-main-col' + biCls + '">' +
             '<div class="ed-crumb"><a href="#/courses">课程中心</a> <span>›</span> <span>' + esc(course.nameCn) + '</span> <span>›</span> <span>' + esc(term.name || term.id) + '</span></div>' +
             '<div class="ed-page-head">' +
               '<h1>' + esc(week.title || ('Week ' + week.num)) + '</h1>' +
@@ -300,25 +370,30 @@
               '</div>' +
             '</div>' +
 
-            /* 吸顶「一条龙」顺滑导航条：无需切页隐藏，直接往下滑即可学完全部 3 站，点按钮可秒跳 */
+            /* 吸顶「一条龙」顺滑导航条 */
             '<div class="ed-step-bar">' +
               '<button type="button" class="ed-step-pill active" data-sec="sec-figs">📊 本周图解 <span id="edFigCountBadge">' + (Number(week.diagramCount) || 0) + '</span></button>' +
-              '<button type="button" class="ed-step-pill" data-sec="sec-notes">① 核心笔记与图解</button>' +
-              '<button type="button" class="ed-step-pill" data-sec="sec-practice">② 打卡练习与答案解析</button>' +
-              '<button type="button" class="ed-step-pill" data-sec="sec-resources">③ 课件、术语与视频</button>' +
-              '<span style="margin-left:auto;font-size:12px;color:var(--muted)">↓ 顺着往下滑即可一条龙学完</span>' +
+              '<button type="button" class="ed-step-pill" data-sec="sec-notes">① 双语概念与笔记</button>' +
+              (qaList.length ? '<button type="button" class="ed-step-pill" data-sec="sec-exam-qa">🎯 必考大题 ' + qaList.length + '</button>' : '') +
+              '<button type="button" class="ed-step-pill" data-sec="sec-practice">② 打卡与解析</button>' +
+              '<button type="button" class="ed-step-pill" data-sec="sec-resources">③ 课件与术语</button>' +
             '</div>' +
 
-            /* 本周图解速览（自动扫描所有 SVG/图） */
+            /* 本周图解速览 */
             '<div id="sec-figs"></div>' +
 
-            /* 第 1 站：核心笔记与图解精讲 */
+            /* 第 1 站：中英逐行核心概念 + 笔记与图解精讲 */
             '<div id="sec-notes" class="ed-stage-head" style="margin-top:6px">' +
-              '<h2>① 核心笔记与图解精讲</h2>' +
-              '<span class="sub">按「概念 → 图解 → 课件例题（折叠看解答）→ 易错」自然通读</span>' +
+              '<h2>① 核心概念（中英逐行）与图解笔记</h2>' +
+              '<span class="sub">英文规范句 → 中文精解 → 图解 → 课件例题，一条龙自然通读</span>' +
             '</div>' +
             '<div class="ed-guide-bar">' +
-              '<span>💡 <b>学习提示：</b>点击任意图解可高清放大；遇到例题先自己算再点「看解答」；鼠标<b>划选文字</b>即可高亮批注。</span>' +
+              '<div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center">' +
+                '<b style="font-size:12.5px">语言模式：</b>' +
+                '<button class="ed-btn ed-btn-sm' + (biMode === 'both' ? ' ed-btn-primary' : '') + '" data-bm="both">🌐 中英对照</button>' +
+                '<button class="ed-btn ed-btn-sm' + (biMode === 'en' ? ' ed-btn-primary' : '') + '" data-bm="en">🇬🇧 纯英文</button>' +
+                '<button class="ed-btn ed-btn-sm' + (biMode === 'recall' ? ' ed-btn-primary' : '') + '" data-bm="recall">🧠 看中文背英文</button>' +
+              '</div>' +
               '<div style="display:flex;gap:6px;flex-wrap:wrap">' +
                 '<button class="ed-btn ed-btn-sm' + (noteMode === 'full' ? ' ed-btn-primary' : '') + '" data-nm="full">精读全文</button>' +
                 '<button class="ed-btn ed-btn-sm' + (noteMode === 'cloze' ? ' ed-btn-primary' : '') + '" data-nm="cloze">填空自测</button>' +
@@ -326,6 +401,9 @@
                 '<button class="ed-btn ed-btn-sm" onclick="window.print()">🖨️ 打印</button>' +
               '</div>' +
             '</div>' +
+
+            renderBilingualConcepts(biConcepts) +
+
             (weekAnns.length ? (
               '<div style="margin-bottom:14px;padding:10px 14px;border-radius:10px;background:var(--navy-050);border:1px solid var(--line);font-size:13px">' +
                 '<b>🖍️ 我在本周记过的批注（' + weekAnns.length + ' 条）：</b>' +
@@ -335,6 +413,9 @@
               '</div>'
             ) : '') +
             '<div id="edNoteBody" class="ed-prose' + (noteMode === 'cloze' ? ' cloze-on' : '') + '">' + rawHtml + '</div>' +
+
+            /* 必考大题与中英对照标准答案 */
+            renderExamQA(qaList) +
 
             /* 第 2 站：本周打卡任务与课后作业参考解析 */
             '<div id="sec-practice" class="ed-stage-head">' +
@@ -358,7 +439,7 @@
                 ? '<div style="display:flex;flex-wrap:wrap;gap:8px">' + onlinePdfs.map(function (f) {
                     return '<a class="ed-btn ed-btn-sm ed-btn-primary" target="_blank" rel="noopener" href="' + esc(f.path) + '">📎 ' + esc(f.name) + ' ↗</a>';
                   }).join('') + '</div>'
-                : '<p style="font-size:13.5px;color:var(--muted);margin:0">本周核心知识点与例题已完整整理在上方「① 核心笔记与图解精讲」中。</p>') +
+                : '<p style="font-size:13.5px;color:var(--muted);margin:0">本周核心双语概念、必考大题与例题已完整整理在上方正文中。</p>') +
             '</div>' +
             '<div class="ed-card" style="margin-bottom:14px">' +
               '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;gap:8px;flex-wrap:wrap">' +
@@ -391,7 +472,7 @@
               }).join('') + '</ul></details>'
             ) : '') +
 
-            /* 底部「一条龙收尾栏」：打勾完成 + 一键进入下一周 */
+            /* 底部「一条龙收尾栏」 */
             '<div class="ed-next-bar">' +
               '<div>' +
                 (adj.prev
@@ -416,12 +497,50 @@
       app.querySelectorAll('[data-nm]').forEach(function (b) {
         b.addEventListener('click', function () { noteMode = b.getAttribute('data-nm'); draw(); });
       });
+      app.querySelectorAll('[data-bm]').forEach(function (b) {
+        b.addEventListener('click', function () { biMode = b.getAttribute('data-bm'); draw(); });
+      });
       app.querySelectorAll('[data-sec]').forEach(function (b) {
         b.addEventListener('click', function () {
           app.querySelectorAll('[data-sec]').forEach(function (x) { x.classList.remove('active'); });
           b.classList.add('active');
           var target = document.getElementById(b.getAttribute('data-sec'));
           if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+      });
+
+      /* 背诵模式：点击被遮住的英文原句逐句翻开核对 */
+      if (biMode === 'recall') {
+        app.querySelectorAll('.bi-en, .bi-add').forEach(function (el) {
+          el.title = '点击翻开/隐藏英文原句';
+          el.addEventListener('click', function () { el.classList.toggle('revealed'); });
+        });
+      }
+
+      /* 必考大题一键收入遗忘曲线错题本 */
+      app.querySelectorAll('[data-qa-save]').forEach(function (btn) {
+        btn.addEventListener('click', async function () {
+          var q = qaList[Number(btn.getAttribute('data-qa-save'))];
+          if (!q) return;
+          var ansText = (q.points || []).map(function (p, i) { return '(' + (i + 1) + ') ' + p.en + '\n' + p.zh; }).join('\n');
+          btn.disabled = true;
+          btn.textContent = '保存中…';
+          try {
+            await api.saveMistake({
+              course: course.id,
+              topic: week.title || ('Week ' + week.num),
+              question: q.qEn + '\n' + q.qZh,
+              answer: ansText,
+              myError: '本单元必考大题自测未完全答出，待按遗忘曲线重背',
+              tags: (q.keywords || []).slice(0, 4)
+            });
+            btn.textContent = '✓ 已收入错题本';
+            api.toast('已加入错题本（1/3/7/14天自动提醒复习）');
+          } catch (e) {
+            btn.disabled = false;
+            btn.textContent = '➕ 没答全，收入遗忘曲线错题本';
+            api.toast('保存失败，请重试');
+          }
         });
       });
 
