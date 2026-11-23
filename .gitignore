@@ -60,3 +60,10 @@ build/*
 # docs 下 QA 实验目录合计 9.6GB，只保留轻量文档
 docs/*/R0*/
 docs/*/index-fix-experiment/
+
+# Cloudflare 构建产物与本地密钥文件绝不入库
+.cloudflare/
+**/.cloudflare/
+.dev.vars
+**/.dev.vars
+*.secrets.json
