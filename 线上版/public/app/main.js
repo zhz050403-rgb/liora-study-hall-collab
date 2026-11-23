@@ -39,51 +39,63 @@
     pop.addEventListener('click', function () { pop.classList.remove('open'); inp.value = ''; });
   }
 
-  /* ---------- 2. 划词高亮 / 记批注 ---------- */
-  function initSelectionAnnotator() {
-    if (document.getElementById('lh-sel-bar')) return;
-    var bar = document.createElement('div');
-    bar.id = 'lh-sel-bar';
-    bar.innerHTML = '<button id="lhSelHl">🖍️ 标为高亮</button><button id="lhSelNote">📝 高亮+写批注</button>';
-    document.body.appendChild(bar);
+  /* ---------- 2. 按角色与权限动态渲染导航与账号身份 ---------- */
+  function initRoleAndNav() {
+    var nav = document.getElementById('edMainNav');
+    var isAdmin = boot.role === 'admin';
+    var perms = boot.perms || {};
 
-    var currentText = '';
-    document.addEventListener('mouseup', function () {
-      var h = location.hash || '';
-      if (!/^#\/(?:c|book)\//.test(h)) { bar.style.display = 'none'; return; }
-      var sel = window.getSelection();
-      var txt = sel ? sel.toString().trim() : '';
-      if (txt.length < 4 || txt.length > 600) { bar.style.display = 'none'; return; }
-      var range = sel.rangeCount ? sel.getRangeAt(0) : null;
-      if (!range) return;
-      var rect = range.getBoundingClientRect();
-      currentText = txt;
-      bar.style.left = Math.max(12, Math.min(window.innerWidth - 220, rect.left)) + 'px';
-      bar.style.top = Math.max(12, rect.top - 46) + 'px';
-      bar.style.display = 'flex';
-    });
+    if (nav) {
+      /* 非管理员默认隐藏未授权模块（课外拓展默认关闭） */
+      if (!isAdmin) {
+        if (perms.extra !== true) {
+          var extraLink = nav.querySelector('a[href="#/extra"]');
+          if (extraLink) extraLink.style.display = 'none';
+        }
+        if (perms.reading === false) {
+          var readLink = nav.querySelector('a[href="#/reading"]');
+          if (readLink) readLink.style.display = 'none';
+        }
+        if (perms.english === false) {
+          var engLink = nav.querySelector('a[href="english/index.html"]');
+          if (engLink) engLink.style.display = 'none';
+        }
+      }
 
-    async function saveSel(askNote) {
-      bar.style.display = 'none';
-      var h = location.hash || '';
-      if (!currentText) return;
-      var parts = h.replace(/^#\//, '').split('/');
-      var course = parts[1] || 'general';
-      var note = askNote ? (window.prompt('给这段高亮写一句批注：', '') || '') : '';
-      var h1 = document.querySelector('#app h1');
-      await window.LioraStudyApi.saveAnnotation({
-        route: h,
-        course: course,
-        title: (h1 && h1.textContent.trim().slice(0, 80)) || h,
-        kind: askNote ? 'note' : 'highlight',
-        quote: currentText,
-        note: note
-      });
-      window.LioraStudyApi.toast('已保存到「我的批注集」');
+      /* 全员可见：我的高光集入口 */
+      if (!nav.querySelector('a[href="#/annotations"]')) {
+        var hlA = document.createElement('a');
+        hlA.href = '#/annotations';
+        hlA.textContent = '🖍️ 高光集';
+        var mistakesA = nav.querySelector('a[href="#/mistakes"]');
+        if (mistakesA && mistakesA.nextSibling) nav.insertBefore(hlA, mistakesA.nextSibling);
+        else nav.appendChild(hlA);
+      }
+
+      /* 仅超级管理员可见：管理员后台窗口入口 */
+      if (isAdmin && !nav.querySelector('a[href="#/admin"]')) {
+        var admA = document.createElement('a');
+        admA.href = '#/admin';
+        admA.textContent = '🛡️ 管理员';
+        admA.style.cssText = 'color:#9f7820;font-weight:700';
+        nav.appendChild(admA);
+      }
     }
 
-    document.getElementById('lhSelHl').addEventListener('click', function () { saveSel(false); });
-    document.getElementById('lhSelNote').addEventListener('click', function () { saveSel(true); });
+    /* 顶栏右侧显示当前登录身份与一键退出（桌面可见，手机进右下角「账号」抽屉） */
+    if (boot.user) {
+      var syncEl = document.querySelector('.ed-sync-dot');
+      if (syncEl && !document.getElementById('edUserPill')) {
+        var pill = document.createElement('span');
+        pill.id = 'edUserPill';
+        pill.className = 'ed-sync-dot';
+        pill.style.cssText = 'gap:6px;background:var(--navy-050);border-color:var(--line);color:var(--navy-900);font-weight:600';
+        pill.innerHTML =
+          '<span>' + (isAdmin ? '🛡️ ' : '👤 ') + esc(boot.user) + '</span>' +
+          '<a href="/__logout" style="color:var(--muted);font-weight:500;text-decoration:none;border-left:1px solid var(--line);padding-left:6px">退出</a>';
+        syncEl.parentNode.insertBefore(pill, syncEl.nextSibling);
+      }
+    }
   }
 
   /* ---------- 3. 全站右下角唯一收纳悬浮工具条 ---------- */
@@ -142,23 +154,26 @@
       '</div>';
     document.body.appendChild(aiDrawer);
 
-    /* Drawer C: 一键备份与进阶入口 */
+    /* Drawer C: 一键备份与账号管理 */
+    var isAdmin = boot.role === 'admin';
     var bkDrawer = document.createElement('div');
     bkDrawer.className = 'lh-drawer';
     bkDrawer.innerHTML =
-      '<div class="lh-drawer-head"><h3>💾 个人数据备份与管理</h3><button class="lh-btn lh-btn-sm" data-close>关闭</button></div>' +
+      '<div class="lh-drawer-head"><h3>💾 账号与个人数据备份</h3><button class="lh-btn lh-btn-sm" data-close>关闭</button></div>' +
       '<div class="lh-drawer-body">' +
-        '<p style="font-size:13.5px;color:var(--ink-2);margin-top:0">一键导出你的<b>全部学习进度、错题本、笔记批注、成绩簿、术语掌握度与专注记录</b>，换设备随时无损恢复。</p>' +
+        (boot.user ? '<div style="padding:8px 10px;border-radius:8px;background:var(--navy-050);font-size:13px;margin-bottom:10px;display:flex;justify-content:space-between;align-items:center"><span>当前登录：<b>' + esc(boot.user) + '</b>（' + (isAdmin ? '超级管理员' : '普通学员 · 数据独立隔离') + '）</span><a href="/__logout" style="color:#a92a2a;font-weight:600">退出登录</a></div>' : '') +
+        '<p style="font-size:13.5px;color:var(--ink-2);margin-top:0">一键导出你的<b>全部学习进度、4 色高光批注、错题本、成绩簿与专注记录</b>，换设备随时无损恢复。</p>' +
         '<div style="display:flex;flex-direction:column;gap:9px">' +
-          '<a class="lh-btn lh-btn-primary" href="/__api/backup/export">⬇️ 下载全站学习备份 (.json)</a>' +
+          '<a class="lh-btn lh-btn-primary" href="/__api/backup/export">⬇️ 下载我的学习备份 (.json)</a>' +
           '<label class="lh-btn" style="cursor:pointer">⬆️ 从 JSON 备份恢复 <input type="file" id="lhRestore" accept="application/json" style="display:none"></label>' +
           '<hr style="border:none;border-top:1px solid var(--line);margin:4px 0">' +
           '<div style="display:flex;gap:8px;flex-wrap:wrap">' +
+            '<a class="lh-btn lh-btn-sm" href="#/annotations" data-close>🖍️ 我的高光集</a>' +
             '<a class="lh-btn lh-btn-sm" href="guide.html">📖 学习方法</a>' +
             '<a class="lh-btn lh-btn-sm" href="todo.html">✅ 桌面待办</a>' +
-            '<a class="lh-btn lh-btn-sm" href="ai-console.html">🔑 AI 设置</a>' +
-            '<a class="lh-btn lh-btn-sm" href="board-editor.html">🧩 内容编辑</a>' +
-            '<a class="lh-btn lh-btn-sm" href="admin.html">👤 账号后台</a>' +
+            (isAdmin ? '<a class="lh-btn lh-btn-sm lh-btn-gold" href="#/admin" data-close>🛡️ 管理员控制台</a>' : '') +
+            (isAdmin ? '<a class="lh-btn lh-btn-sm" href="ai-console.html">🔑 AI 设置</a>' : '') +
+            (isAdmin ? '<a class="lh-btn lh-btn-sm" href="board-editor.html">🧩 内容编辑</a>' : '') +
             '<a class="lh-btn lh-btn-sm" href="/__logout">退出登录</a>' +
           '</div>' +
         '</div>' +
@@ -309,6 +324,8 @@
     else if (hash.startsWith('#/reading') || hash.startsWith('#/book/')) target = '#/reading';
     else if (hash.startsWith('#/handbooks')) target = '#/handbooks';
     else if (hash.startsWith('#/mistakes') || hash.startsWith('#/exam-packs') || hash.startsWith('#/flashcards')) target = '#/mistakes';
+    else if (hash.startsWith('#/annotations')) target = '#/annotations';
+    else if (hash.startsWith('#/admin')) target = '#/admin';
     else if (hash.startsWith('#/prep') || hash.startsWith('#/profile')) target = '#/prep';
     document.querySelectorAll('#edMainNav a').forEach(function (a) {
       a.classList.toggle('active', a.getAttribute('href') === target);
@@ -326,29 +343,35 @@
     var parts = hash.replace(/^#\//, '').split('/').filter(Boolean);
     var p0 = parts[0] || '';
     try {
-      if (!p0) return await window.LioraViewsHome.renderHome(app);
-      if (p0 === 'courses') return await window.LioraViewsHome.renderCourses(app);
-      if (p0 === 'extra') return await window.LioraViewsHome.renderExtra(app);
-      if (p0 === 'c' && parts[1]) return await window.LioraViewsCourse.renderCourse(app, parts[1], parts[2], parts[3]);
-      if (p0 === 'reading') return await window.LioraViewsReading.renderReadingShelf(app);
-      if (p0 === 'book' && parts[1]) return await window.LioraViewsReading.renderBookReader(app, parts[1], parts[2] || 1);
-      if (p0 === 'read' && parts[1]) return await window.LioraViewsReading.renderBookReader(app, parts[1], parts[3] || 1);
-      if (p0 === 'prep' || p0 === 'plan') return window.LioraViewsPrep.renderPrep(app);
-      if (p0 === 'profile') return await window.LioraViewsPrep.renderProfile(app);
-      if (p0 === 'handbooks') return await window.LioraStudyViews.renderHandbooks(app, parts[1] || '');
-      if (p0 === 'mistakes') return await window.LioraStudyViews.renderMistakes(app);
-      if (p0 === 'flashcards') return await window.LioraStudyViews.renderFlashcards(app);
-      if (p0 === 'exam-packs') return await window.LioraStudyViews.renderExamPacks(app);
-      if (p0 === 'annotations') return await window.LioraStudyViews.renderAnnotations(app);
-      return await window.LioraViewsHome.renderHome(app);
+      if (!p0) await window.LioraViewsHome.renderHome(app);
+      else if (p0 === 'courses') await window.LioraViewsHome.renderCourses(app);
+      else if (p0 === 'extra') await window.LioraViewsHome.renderExtra(app);
+      else if (p0 === 'c' && parts[1]) await window.LioraViewsCourse.renderCourse(app, parts[1], parts[2], parts[3]);
+      else if (p0 === 'reading') await window.LioraViewsReading.renderReadingShelf(app);
+      else if (p0 === 'book' && parts[1]) await window.LioraViewsReading.renderBookReader(app, parts[1], parts[2] || 1);
+      else if (p0 === 'read' && parts[1]) await window.LioraViewsReading.renderBookReader(app, parts[1], parts[3] || 1);
+      else if (p0 === 'prep' || p0 === 'plan') window.LioraViewsPrep.renderPrep(app);
+      else if (p0 === 'profile') await window.LioraViewsPrep.renderProfile(app);
+      else if (p0 === 'handbooks') await window.LioraStudyViews.renderHandbooks(app, parts[1] || '');
+      else if (p0 === 'mistakes') await window.LioraStudyViews.renderMistakes(app);
+      else if (p0 === 'flashcards') await window.LioraStudyViews.renderFlashcards(app);
+      else if (p0 === 'exam-packs') await window.LioraStudyViews.renderExamPacks(app);
+      else if (p0 === 'annotations') await window.LioraStudyViews.renderAnnotations(app);
+      else if (p0 === 'admin' && window.LioraViewsAdmin) await window.LioraViewsAdmin.renderAdmin(app);
+      else await window.LioraViewsHome.renderHome(app);
+
+      /* 每次页面渲染完成后，自动回显本账号在该页画过的 4 色永久高光 */
+      if (window.LioraHighlighter && typeof window.LioraHighlighter.refresh === 'function') {
+        window.LioraHighlighter.refresh();
+      }
     } catch (e) {
       app.innerHTML = '<div class="ed-container"><div class="ed-card">页面渲染异常：' + esc(e && e.message) + ' · <a href="#/">返回首页</a></div></div>';
     }
   }
 
   function bootApp() {
+    initRoleAndNav();
     initSearch();
-    initSelectionAnnotator();
     initDock();
     window.addEventListener('hashchange', route);
     route();

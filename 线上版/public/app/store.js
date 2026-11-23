@@ -4,6 +4,8 @@
 
   var STATE_KEY = 'xinnan-portal-state-v1';
   var boot = window.__CLOUD_BOOT__ || {};
+  /* 按当前登录账号严格隔离本机缓存，防止同一浏览器切换账号串数据 */
+  var LOCAL_KEY = STATE_KEY + ':' + (boot.uid || boot.user || 'anon');
   var state = { weeks: {}, tasks: {}, lastVisit: null };
   var stateUpdatedAt = Number(boot.updatedAt) || 0;
   var syncTimer = null;
@@ -14,10 +16,10 @@
     books: {}
   };
 
-  /* 从云端 boot 与 localStorage 合并初始进度 */
+  /* 从云端 boot 与本账号专属 localStorage 合并初始进度 */
   (function initProgress() {
     var local = null;
-    try { local = JSON.parse(localStorage.getItem(STATE_KEY) || 'null'); } catch (e) {}
+    try { local = JSON.parse(localStorage.getItem(LOCAL_KEY) || 'null'); } catch (e) {}
     var cloudRaw = boot.data && boot.data[STATE_KEY];
     var cloud = null;
     try { if (cloudRaw) cloud = JSON.parse(cloudRaw); } catch (e) {}
@@ -38,7 +40,7 @@
   }
 
   function scheduleSync() {
-    try { localStorage.setItem(STATE_KEY, JSON.stringify(state)); } catch (e) {}
+    try { localStorage.setItem(LOCAL_KEY, JSON.stringify(state)); } catch (e) {}
     setSyncLabel('同步中…', true);
     clearTimeout(syncTimer);
     syncTimer = setTimeout(async function () {
@@ -110,7 +112,7 @@
   /* 轻索引按需加载（首屏仅 23 KB） */
   async function loadIndex() {
     if (chunks.index) return chunks.index;
-    var r = await fetch('/data-chunks/index.json?v=20261122-v8', { credentials: 'same-origin' });
+    var r = await fetch('/data-chunks/index.json?v=20261123-v10', { credentials: 'same-origin' });
     if (!r.ok) throw new Error('无法加载课程索引');
     chunks.index = await r.json();
     return chunks.index;
@@ -118,7 +120,7 @@
 
   async function loadCourse(courseId) {
     if (chunks.courses[courseId]) return chunks.courses[courseId];
-    var r = await fetch('/data-chunks/courses/' + encodeURIComponent(courseId) + '.json?v=20261122-v8', { credentials: 'same-origin' });
+    var r = await fetch('/data-chunks/courses/' + encodeURIComponent(courseId) + '.json?v=20261123-v10', { credentials: 'same-origin' });
     if (!r.ok) throw new Error('课程数据加载失败：' + courseId);
     chunks.courses[courseId] = await r.json();
     return chunks.courses[courseId];
@@ -126,7 +128,7 @@
 
   async function loadBook(bookId) {
     if (chunks.books[bookId]) return chunks.books[bookId];
-    var r = await fetch('/data-chunks/books/' + encodeURIComponent(bookId) + '.json?v=20261122-v8', { credentials: 'same-origin' });
+    var r = await fetch('/data-chunks/books/' + encodeURIComponent(bookId) + '.json?v=20261123-v10', { credentials: 'same-origin' });
     if (!r.ok) throw new Error('书籍数据加载失败：' + bookId);
     chunks.books[bookId] = await r.json();
     return chunks.books[bookId];

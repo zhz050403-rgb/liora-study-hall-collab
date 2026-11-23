@@ -134,6 +134,16 @@ function createStudyStore(opts) {
         d.annotations = d.annotations.filter(x => x.id !== id);
         return { deleted: id, total: d.annotations.length };
       }
+      if (payload.action === 'update') {
+        const id = String(payload.id || '');
+        const item = d.annotations.find(x => x.id === id);
+        if (!item) return { ok: false, error: '高光批注不存在' };
+        if (payload.color && ['yellow', 'green', 'blue', 'pink', 'gold', 'rose'].includes(payload.color)) item.color = payload.color;
+        if (payload.note !== undefined) item.note = String(payload.note || '').trim().slice(0, 2000);
+        if (payload.kind && ['highlight', 'note', 'bookmark'].includes(payload.kind)) item.kind = payload.kind;
+        item.updatedAt = Date.now();
+        return { item, total: d.annotations.length };
+      }
       const route = String(payload.route || '').trim().slice(0, 160);
       const quote = String(payload.quote || '').trim().slice(0, 800);
       const note = String(payload.note || '').trim().slice(0, 2000);
@@ -146,8 +156,10 @@ function createStudyStore(opts) {
       item.course = String(payload.course || '').trim().slice(0, 40);
       item.title = String(payload.title || '').trim().slice(0, 140);
       item.kind = ['highlight', 'note', 'bookmark'].includes(payload.kind) ? payload.kind : 'note';
-      item.color = ['gold', 'blue', 'rose', 'green'].includes(payload.color) ? payload.color : 'gold';
+      item.color = ['yellow', 'green', 'blue', 'pink', 'gold', 'rose'].includes(payload.color) ? payload.color : 'yellow';
       item.quote = quote;
+      item.prefix = String(payload.prefix || '').slice(-40);
+      item.suffix = String(payload.suffix || '').slice(0, 40);
       item.note = note;
       item.updatedAt = now;
       if (!existing) {

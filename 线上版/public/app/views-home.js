@@ -178,7 +178,7 @@
     var idx = await window.LioraStore.loadIndex();
     var extra = (idx.courses || []).find(function (c) { return c.extra; });
     if (!extra) {
-      app.innerHTML = '<div class="ed-container"><div class="ed-card">课外拓展模块仅管理员账号可见。</div></div>';
+      app.innerHTML = '<div class="ed-container"><div class="ed-card">🔒 课外拓展（企业法律与财富管理）需要管理员授权开通。如需阅读，请联系管理员开通对应权限。<br><br><a class="ed-btn ed-btn-sm ed-btn-primary" href="#/">返回首页</a></div></div>';
       return;
     }
     var term = extra.terms[0];

@@ -444,51 +444,94 @@
     draw();
   }
 
-  /* ==================== 5. 我的笔记高亮与批注汇总 ==================== */
+  /* ==================== 5. 我的全站 4 色高光与批注汇总 ==================== */
   async function renderAnnotations(app) {
-    app.innerHTML = '<div class="lh-wrap"><p>正在加载个人批注集…</p></div>';
+    app.innerHTML = '<div class="lh-wrap"><p>正在加载个人高光与批注集…</p></div>';
     var api = window.LioraStudyApi;
     var filterCourse = 'all';
+    var filterColor = 'all';
+
+    var colorMeta = {
+      yellow: { label: '🟡 重点黄', bd: '#eab308', bg: 'rgba(253, 224, 71, 0.25)' },
+      green:  { label: '🟢 掌握绿', bd: '#22c55e', bg: 'rgba(134, 239, 172, 0.25)' },
+      blue:   { label: '🔵 英文蓝', bd: '#3b82f6', bg: 'rgba(147, 197, 253, 0.25)' },
+      pink:   { label: '🩷 易错粉', bd: '#ec4899', bg: 'rgba(249, 168, 212, 0.28)' }
+    };
+    function normClr(c) {
+      if (c === 'gold' || !c) return 'yellow';
+      if (c === 'rose') return 'pink';
+      return colorMeta[c] ? c : 'yellow';
+    }
 
     async function draw() {
       var st = await api.loadStudy(true);
       var all = st.annotations || [];
-      var list = all.filter(function (a) { return filterCourse === 'all' || a.course === filterCourse; });
+      var list = all.filter(function (a) {
+        var okCourse = filterCourse === 'all' || a.course === filterCourse;
+        var okColor = filterColor === 'all' || normClr(a.color) === filterColor;
+        return okCourse && okColor;
+      });
 
       var html = list.length ? list.map(function (a) {
-        return '<div class="lh-card" style="margin-bottom:12px;border-left:4px solid var(--lh-gold)">' +
-          '<div style="display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-bottom:6px">' +
-            '<div><span class="lh-badge lh-badge-gold">' + esc(courseLabel(a.course)) + '</span> ' +
-            '<a href="' + esc(a.route) + '" style="font-weight:600;color:var(--lh-navy-800)">' + esc(a.title || a.route) + ' →</a></div>' +
+        var c = normClr(a.color);
+        var cm = colorMeta[c];
+        return '<div class="lh-card" style="margin-bottom:12px;border-left:5px solid ' + cm.bd + '">' +
+          '<div style="display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-bottom:6px;align-items:center">' +
+            '<div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap">' +
+              '<span class="lh-badge" style="background:' + cm.bg + ';color:#0f2744;border:1px solid ' + cm.bd + '">' + cm.label + '</span>' +
+              '<span class="lh-badge lh-badge-gold">' + esc(courseLabel(a.course)) + '</span> ' +
+              '<span style="font-weight:600;color:var(--lh-navy-800)">' + esc(a.title || a.route) + '</span>' +
+            '</div>' +
             '<span style="font-size:12px;color:var(--lh-muted)">' + fmtDate(a.updatedAt || a.createdAt) + '</span>' +
           '</div>' +
-          (a.quote ? '<blockquote style="margin:6px 0;padding:8px 12px;background:var(--lh-gold-soft);border-left:3px solid var(--lh-gold);border-radius:6px;font-size:13.5px">' + esc(a.quote) + '</blockquote>' : '') +
-          (a.note ? '<div style="font-size:14px;line-height:1.7;margin-top:6px">' + esc(a.note) + '</div>' : '') +
-          '<div style="margin-top:8px;text-align:right"><button class="lh-btn lh-btn-danger lh-btn-sm" data-an-del="' + esc(a.id) + '">删除</button></div>' +
+          (a.quote ? '<blockquote style="margin:6px 0;padding:8px 12px;background:' + cm.bg + ';border-left:3px solid ' + cm.bd + ';border-radius:6px;font-size:13.5px;line-height:1.65">' + esc(a.quote) + '</blockquote>' : '') +
+          (a.note ? '<div style="font-size:14px;line-height:1.7;margin-top:6px">📝 ' + esc(a.note) + '</div>' : '') +
+          '<div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap">' +
+            '<button class="lh-btn lh-btn-sm lh-btn-primary" data-an-jump="' + esc(a.id) + '" data-an-route="' + esc(a.route || '#/') + '">📍 回到原文定位 →</button>' +
+            '<button class="lh-btn lh-btn-danger lh-btn-sm" data-an-del="' + esc(a.id) + '">🗑 擦除高光</button>' +
+          '</div>' +
         '</div>';
-      }).join('') : '<div class="lh-card"><p style="color:var(--lh-muted);margin:0">还没有保存过笔记批注。打开任意课程周次笔记，用鼠标划选文字即可弹出「高亮 / 记批注」按钮，自动同步到这里。</p></div>';
+      }).join('') : '<div class="lh-card"><p style="color:var(--lh-muted);margin:0">当前筛选下还没有高光记录。在网站<b>任意页面</b>用鼠标或手指选中一段文字，就会弹出 <b>4 色荧光笔工具条</b>，点一下颜色就能永久保存并跨设备同步到这里！</p></div>';
 
       app.innerHTML = '<div class="lh-wrap">' +
         '<div class="lh-page-hero">' +
-          '<h1>🖍️ 我的笔记高亮与个人批注汇总</h1>' +
-          '<p>全站累计已保存 <b>' + all.length + '</b> 条高亮与批注，考前可一键打印集中回看。</p>' +
+          '<h1>🖍️ 我的全站高光与个人批注集</h1>' +
+          '<p>本账号已累计保存 <b>' + all.length + '</b> 条永久高光与批注（仅自己可见，支持一键跳回原文并闪烁定位）。</p>' +
+        '</div>' +
+        '<div class="lh-tabs" style="margin-bottom:8px">' +
+          ['all', 'yellow', 'green', 'blue', 'pink'].map(function (clr) {
+            return '<button class="lh-tab' + (filterColor === clr ? ' active' : '') + '" data-an-clr="' + clr + '">' + (clr === 'all' ? '全部颜色' : colorMeta[clr].label) + '</button>';
+          }).join('') +
         '</div>' +
         '<div class="lh-tabs">' +
-          ['all', 'accounting', 'economics', 'mathematics', 'computing', 'english'].map(function (c) {
-            return '<button class="lh-tab' + (filterCourse === c ? ' active' : '') + '" data-an-c="' + c + '">' + (c === 'all' ? '全部' : courseLabel(c)) + '</button>';
+          ['all', 'accounting', 'economics', 'mathematics', 'computing', 'english', 'reading', 'general'].map(function (c) {
+            var lbl = c === 'all' ? '全部学科' : (c === 'reading' ? '读书' : (c === 'general' ? '其他页面' : courseLabel(c)));
+            return '<button class="lh-tab' + (filterCourse === c ? ' active' : '') + '" data-an-c="' + c + '">' + lbl + '</button>';
           }).join('') +
-          '<button class="lh-btn" style="margin-left:auto" onclick="window.print()">🖨️ 打印批注汇总</button>' +
+          '<button class="lh-btn" style="margin-left:auto" onclick="window.print()">🖨️ 打印高光汇总</button>' +
         '</div>' +
         html +
       '</div>';
 
+      app.querySelectorAll('[data-an-clr]').forEach(function (b) {
+        b.addEventListener('click', function () { filterColor = b.getAttribute('data-an-clr'); draw(); });
+      });
       app.querySelectorAll('[data-an-c]').forEach(function (b) {
         b.addEventListener('click', function () { filterCourse = b.getAttribute('data-an-c'); draw(); });
+      });
+      app.querySelectorAll('[data-an-jump]').forEach(function (b) {
+        b.addEventListener('click', function () {
+          var id = b.getAttribute('data-an-jump');
+          var rt = b.getAttribute('data-an-route') || '#/';
+          try { sessionStorage.setItem('lh_jump_hl', id); } catch (e) {}
+          if (rt.indexOf('#') === 0) location.hash = rt;
+          else location.href = rt;
+        });
       });
       app.querySelectorAll('[data-an-del]').forEach(function (b) {
         b.addEventListener('click', async function () {
           await api.saveAnnotation({ action: 'delete', id: b.getAttribute('data-an-del') });
-          api.toast('已删除批注');
+          api.toast('已擦除高光');
           draw();
         });
       });

@@ -608,6 +608,11 @@
       var totalVis = wireVisuals(app, document.getElementById('sec-figs'));
       var badgeEl = document.getElementById('edFigCountBadge');
       if (badgeEl) badgeEl.textContent = String(totalVis);
+
+      /* 重新着色本页所有已保存的 4 色高光 */
+      if (window.LioraHighlighter && typeof window.LioraHighlighter.refresh === 'function') {
+        window.LioraHighlighter.refresh();
+      }
     }
 
     draw();
