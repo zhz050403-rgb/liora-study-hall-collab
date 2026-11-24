@@ -31,8 +31,16 @@
   if (window.__lioraBilingualVideo) return;
   window.__lioraBilingualVideo = 1;
 
-  var SHARE = 'L4NKT6REQ6';
-  var PAGE = 'bilingual-video.html?sharecode=' + SHARE;
+  var PAGE = 'bilingual-video.html';
+
+  /* 严格过滤掉国内打不开或空白的 Khan Academy / YouTube 外链，只保留可稳定播放/直达的资源 */
+  function isPlayableVideo(v) {
+    if (!v || v.pending) return false;
+    if (v.kind === 'yt') return false;
+    var u = String(v.url || '');
+    if (/khanacademy\.org|youtube\.com|youtu\.be/i.test(u)) return false;
+    return v.kind === 'bili' || !!u;
+  }
 
   function bili(bvid, page, title) {
     return {
@@ -202,8 +210,8 @@
     },
     economics: {
       label: "经济学", en: "Foundation Economics", key: 'economics', rowsMode: true,
-      inlineSubText: '每个知识点单独一行，中文 / English 各一条；中文 B 站分集可直接播。English 侧按按钮区分：「▶ 打开这一讲的视频」点开就是本讲视频，「打开专题目录」才需要再选一次课。每个 Unit 都标了对应主站 Week 与课件 Unit。',
-      rowsNoteText: '<b>这一门按知识点逐行配课：</b>9 个 Unit 下共 49 行，每行一条中文 + 一条 English 对照。中文是 B 站具体分集，点「播放中文」就在这一页播；英文以 Khan Academy <b>单讲视频页</b>为主（点开就是这一讲的视频，不是课程目录），少数是专题目录页，按钮上会明确区分。Khan Academy 不允许嵌进别的网站，所以英文在新标签页打开。分集号已逐个核验存在，但<b>音轨、逐条跳转与嵌入播放尚未全部实测</b>，页面底部有完整核查说明，不标记为「全部验证通过」。注意：视频表 U1–U9 是配课顺序，与课件 Unit 编号不完全一致，展开上方对应表可看逐条对应。',
+      inlineSubText: '每个知识点对应 B 站精选中文讲解，点击直接播放（已自动隐藏无法访问的海外 Khan Academy / YouTube 外链）。每个 Unit 均标注了对应主站 Week 与课件 Unit。',
+      rowsNoteText: '<b>经济学 U1–U9 视频说明：</b>全部保留国内可直接内嵌播放的 B 站精选微观/AP 经济学分集，原打不开的 Khan Academy 与 YouTube 外链已自动隐藏。点「▶ 播放中文」即可直接看课。',
       ytNoteText: '这一行英文来自 YouTube / MIT 公开课，部分国内网络打不开；若一直在转圈，请点「在 YouTube 打开 ↗」看原网址。',
       units: [
         { u: "U1", term: "Term 1 · U1–U5", en: '', cn: '', rows: [
@@ -277,8 +285,8 @@
     },
     mathematics: {
       label: '商业数学', en: 'Mathematics for Commerce', key: 'mathematics', rowsMode: true,
-      inlineSubText: '按 U0–U10 官方单元逐知识点配课：每个知识点一行，左「中文讲解」右「English」各一栏（始终并排一行）。中文优先阿不高中数学（B 站，可内嵌播放），英文按主题直达 Khan Academy 视频搜索（Khan 不允许内嵌，故点开即看该主题的英文视频）；视频以系列页呈现，具体分集与知识点的逐条对应待人工逐集核对（标 pending），点开即看、不冒充单节课。打开某一周会自动切到对应 Unit。',
-      rowsNoteText: '<b>按 U0–U10 官方单元逐知识点配课：</b>每个知识点一行，左中文（阿不高中数学 · B 站）右 English（Khan Academy 视频搜索）各一栏，始终并排一行。中文为<b>系列页</b>（已确认来源真实、可内嵌播放，但分集待逐集核对，标 pending）；英文按主题直达 Khan 视频搜索，点开即看该主题的英文讲解。U7 金融数学中文暂缺阿不对应课程，标「待补充」。Khan 不允许嵌进别的网站，英文在新标签页打开；B 站可内嵌播放系列（系列页入口，请在系列内按卡片里的章节建议定位对应分集）。',
+      inlineSubText: '按 U0–U10 单元精选 B 站阿不高中数学全集（可直接内嵌播放，附章节定位建议；已自动隐藏空白的 Khan Academy 搜索外链）。',
+      rowsNoteText: '<b>商业数学 U0–U10 视频说明：</b>保留国内可直接内嵌播放的 B 站「阿不高中数学」系列（附各知识点章节定位建议），原空白打不开的 Khan Academy 搜索外链已全部清理隐藏。',
       units: [
         { u: "U0", term: "Term 1", en: "Pre-Requisite Knowledge", cn: "基础代数与先修知识",
           map: "Term 1 · Week 1–3 · L01–L09", wk: "W1–W3", lec: "L01–L09",
@@ -817,6 +825,7 @@
       'color:#7d5a1c;border-radius:999px;padding:7px 13px;font:700 12.5px var(--sans);cursor:pointer}',
     '.bv-playboth:hover{background:#f4e7c9}',
     '.bv-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}',
+    '.bv-pair.bv-single{grid-template-columns:minmax(0,1fr);max-width:720px}',
     '.bv-side{min-width:0;border:1px solid var(--line-2,#e8eff7);border-radius:10px;',
       'padding:10px;background:var(--paper,#f7fafd)}',
     '.bv-side-h{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:8px}',
@@ -1032,69 +1041,60 @@
       body + '</section>';
   }
 
-  /* 经济学：一个 Unit 下按「每行一个知识点」渲染多张卡，
-     每张卡固定 = 一条中文 + 一条 English。 */
+  /* 按「每行一个知识点」渲染视频卡：自动过滤所有打不开的 Khan Academy / YouTube 外链 */
   function topicCardHtml(u, r, key) {
-    var all = toArr(r.cnV).concat(toArr(r.enV));
-    var hasYt = all.some(function (v) { return v.kind === 'yt'; });
-    var hasBili = all.some(function (v) { return v.kind === 'bili'; });
-    /* 搜索只取 Unit 编号 + 知识点 + 视频标题；不要把 u.term 分组标题放进来，
-       否则会计的「U8–U11 · 财务报表中英双语」会让搜 U8 命中整段 11 张卡。 */
+    var cnList = toArr(r.cnV).filter(isPlayableVideo);
+    var enList = toArr(r.enV).filter(isPlayableVideo);
+    if (!cnList.length && !enList.length) return '';
+    var all = cnList.concat(enList);
+    var bothSides = cnList.length > 0 && enList.length > 0;
     var meta = unitMeta(u, key);
     var search = [u.u, r.t, meta.wk, meta.lec].concat(all.map(function (v) { return v.title; }))
       .join(' ').toLowerCase();
-    var d = DATA[key] || {};
-    var note = '';
-    if (hasYt && hasBili) {
-      note = '<p class="bv-yt-note">' + (d.mixedNoteText ||
-        '这行英文优先用 B 站 Tera Courses 系列（可直接播）；YouTube 原链接保留作备用，国内打不开时点「在 YouTube 打开 ↗」。') + '</p>';
-    } else if (hasYt) {
-      note = '<p class="bv-yt-note">' + (d.ytNoteText || '这一行英文来自 YouTube，国内网络可能打不开；请点「在 YouTube 打开 ↗」看原网址。') + '</p>';
-    }
+    var subText = bothSides
+      ? (esc(u.term || '') + ' · 中英双语 B 站均可直接播放')
+      : (esc(u.term || '') + ' · B 站精选中文精讲（已隐藏不可访问的海外外链）');
     return '<article class="bv-card" data-unit="' + esc(u.u) + '" data-course="' + esc(key) + '"' +
         ' data-topic="' + esc(r.t) + '" data-search="' + esc(search) + '">' +
       '<div class="bv-card-h">' +
         '<span class="bv-u">' + esc(u.u) + '</span>' +
         '<div class="bv-names"><h3>' + esc(r.t) + '</h3>' +
-          '<p>' + esc(u.term || '') + ' · 一个知识点，中文 / English 各一条</p></div>' +
-        '<button class="bv-playboth" type="button">▶ 两个一起播</button>' +
+          '<p>' + subText + '</p></div>' +
+        '<button class="bv-playboth" type="button">' + (bothSides ? '▶ 中英一起播' : '▶ 播放本讲') + '</button>' +
       '</div>' +
       (meta.map ? '<div class="bv-map">📍 对应 ' + esc(meta.map) + '</div>' : '') +
-      '<div class="bv-pair">' + sideHtml(r.cnV, 'cn', '中文讲解') +
-        sideHtml(r.enV, 'en', 'English') + '</div>' +
-      (r.note ? '<p class="bv-unit-note">📌 ' + esc(r.note) + '</p>' : '') +
-      note + '</article>';
+      '<div class="bv-pair' + (bothSides ? '' : ' bv-single') + '">' +
+        (cnList.length ? sideHtml(cnList, 'cn', '中文讲解') : '') +
+        (enList.length ? sideHtml(enList, 'en', 'English（B 站原声）') : '') +
+      '</div>' +
+      '</article>';
   }
 
   function cardHtml(u, key) {
     key = key || u._k || '';
     if (u.rows) return u.rows.map(function (r) { return topicCardHtml(u, r, key); }).join('');
-    var all = toArr(u.cnV).concat(toArr(u.enV));
-    var hasYt = all.some(function (v) { return v.kind === 'yt'; });
-    var hasWeb = all.some(function (v) { return v.kind === 'web'; });
+    var cnList = toArr(u.cnV).filter(isPlayableVideo);
+    var enList = toArr(u.enV).filter(isPlayableVideo);
+    if (!cnList.length && !enList.length) return '';
+    var all = cnList.concat(enList);
+    var bothSides = cnList.length > 0 && enList.length > 0;
     var meta = unitMeta(u, key);
     var search = [u.u, u.cn, u.en, meta.wk, meta.lec].concat(all.map(function (v) { return v.title; }))
       .join(' ').toLowerCase();
-    var note = hasYt
-      ? '<p class="bv-yt-note">这一讲的英文来自 YouTube，部分国内网络打不开。若一直在转圈，' +
-          '请点上方「在 YouTube 打开 ↗」。' +
-          '把英文链接换成 B 站地址后，就能直接在页面里播放。</p>'
-      : (hasWeb
-          ? '<p class="bv-yt-note">这一条是<b>课程目录页链接</b>，不是单个视频，' +
-            '点「打开课程页 ↗」后按目录找对应专题；这类页面不允许嵌在别的网站里，所以不提供内嵌播放。</p>'
-          : '');
     return '<article class="bv-card" data-unit="' + esc(u.u) + '" data-course="' + esc(key) +
         '" data-search="' + esc(search) + '">' +
       '<div class="bv-card-h">' +
         '<span class="bv-u">' + esc(u.u) + '</span>' +
         '<div class="bv-names"><h3>' + esc(u.cn) + '</h3><p>' + esc(u.en) +
           (u.term ? ' · ' + esc(u.term) : '') + '</p></div>' +
-        '<button class="bv-playboth" type="button">▶ 播放本单元全部</button>' +
+        '<button class="bv-playboth" type="button">▶ 播放本单元</button>' +
       '</div>' +
       (meta.map ? '<div class="bv-map">📍 对应 ' + esc(meta.map) + '</div>' : '') +
-      '<div class="bv-pair">' + sideHtml(u.cnV, 'cn', '中文讲解') + sideHtml(u.enV, 'en', 'English') + '</div>' +
-      (u.note ? '<p class="bv-unit-note">📌 ' + esc(u.note) + '</p>' : '') +
-      note + '</article>';
+      '<div class="bv-pair' + (bothSides ? '' : ' bv-single') + '">' +
+        (cnList.length ? sideHtml(cnList, 'cn', '中文讲解') : '') +
+        (enList.length ? sideHtml(enList, 'en', 'English') : '') +
+      '</div>' +
+      '</article>';
   }
 
   /* 数学表按 Term 1 / Term 2 分组；经济学按上下两段表分组并显示知识点行数 */

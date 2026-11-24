@@ -3,7 +3,7 @@
     "id": "computing",
     "cn": "计算机应用",
     "en": "Computing (Excel & Word)",
-    "desc": "针对 UNSW 闭卷期末（占 60%）：Excel 核心函数、绝对引用、图表与 Word 学术排版中英对照检索与精选教程",
+    "desc": "针对 UNSW 闭卷期末（占 60%）：Excel 核心函数、绝对引用、图表与 Word 学术排版（全部使用国内可稳定直达的 B 站精选专题）",
     "units": [
       {
         "unit": "W4 / Word",
@@ -13,8 +13,8 @@
           "url": "https://search.bilibili.com/all?keyword=Word+%E6%A0%B7%E5%BC%8F+%E5%88%86%E8%8A%82%E7%AC%A6+%E9%A1%B5%E7%9C%89%E9%A1%B5%E8%84%9A"
         },
         "en": {
-          "label": "YouTube · Microsoft Word Styles & Section Breaks",
-          "url": "https://www.youtube.com/results?search_query=Microsoft+Word+Styles+Heading+Section+Breaks+tutorial"
+          "label": "B 站英文版 · Word Styles & Section Breaks",
+          "url": "https://search.bilibili.com/all?keyword=Microsoft+Word+Styles+Section+Breaks+%E8%8B%B1%E6%96%87"
         }
       },
       {
@@ -25,8 +25,8 @@
           "url": "https://search.bilibili.com/all?keyword=Excel+%E7%BB%9D%E5%AF%B9%E5%BC%95%E7%94%A8+%E6%B7%B7%E5%90%88%E5%BC%95%E7%94%A8"
         },
         "en": {
-          "label": "YouTube · Excel Relative vs Absolute Cell References ($)",
-          "url": "https://www.youtube.com/results?search_query=Excel+Relative+Absolute+Mixed+Cell+References+tutorial"
+          "label": "B 站英文版 · Excel Absolute Cell References",
+          "url": "https://search.bilibili.com/all?keyword=Excel+Absolute+Relative+Reference+%E8%8B%B1%E6%96%87"
         }
       },
       {
@@ -37,8 +37,8 @@
           "url": "https://search.bilibili.com/all?keyword=Excel+IF%E5%87%BD%E6%95%B0+%E5%B5%8C%E5%A5%97+AND+OR"
         },
         "en": {
-          "label": "YouTube · Excel Nested IF with AND OR Functions",
-          "url": "https://www.youtube.com/results?search_query=Excel+IF+AND+OR+Nested+IF+tutorial"
+          "label": "B 站英文版 · Excel Nested IF & AND OR",
+          "url": "https://search.bilibili.com/all?keyword=Excel+Nested+IF+AND+OR+%E6%95%99%E7%A8%8B"
         }
       },
       {
@@ -49,8 +49,8 @@
           "url": "https://search.bilibili.com/all?keyword=Excel+XLOOKUP+%E5%87%BD%E6%95%B0+%E6%95%99%E7%A8%8B"
         },
         "en": {
-          "label": "YouTube · Excel XLOOKUP Complete Tutorial",
-          "url": "https://www.youtube.com/results?search_query=Excel+XLOOKUP+tutorial+exact+approximate+match"
+          "label": "B 站英文版 · Excel XLOOKUP Tutorial",
+          "url": "https://search.bilibili.com/all?keyword=Excel+XLOOKUP+tutorial+%E8%8B%B1%E6%96%87"
         }
       },
       {
@@ -61,8 +61,8 @@
           "url": "https://search.bilibili.com/all?keyword=Excel+SUMIFS+PMT+%E7%BB%84%E5%90%88%E5%9B%BE+%E6%AC%A1%E5%9D%90%E6%A0%87%E8%BD%B4"
         },
         "en": {
-          "label": "YouTube · Excel SUMIFS, PMT & Combo Charts",
-          "url": "https://www.youtube.com/results?search_query=Excel+SUMIFS+PMT+Combo+Chart+Secondary+Axis"
+          "label": "B 站英文版 · Excel SUMIFS & PMT",
+          "url": "https://search.bilibili.com/all?keyword=Excel+SUMIFS+PMT+%E8%8B%B1%E6%96%87"
         }
       }
     ]
@@ -71,7 +71,7 @@
     "id": "english",
     "cn": "学术英语",
     "en": "Academic English (UNSW STD O2)",
-    "desc": "聚焦 A1–A4 考核：学术阅读同义替换定位、证据型推断、听力逻辑信号词与学术改写/名词化",
+    "desc": "聚焦 A1–A4 考核：学术阅读同义替换定位、证据型推断、听力逻辑信号词与学术改写/名词化（全部 B 站国内直达）",
     "units": [
       {
         "unit": "Reading",
@@ -81,8 +81,8 @@
           "url": "https://search.bilibili.com/all?keyword=%E9%9B%85%E6%80%9D%E9%98%85%E8%AF%BB+%E5%90%8C%E4%B9%89%E6%9B%BF%E6%8D%A2+%E6%8E%A8%E6%96%AD%E9%A2%98+%E4%B8%BB%E6%97%A8"
         },
         "en": {
-          "label": "YouTube · Academic Reading Paraphrasing & Inference Skills",
-          "url": "https://www.youtube.com/results?search_query=academic+reading+main+idea+inference+paraphrasing+university"
+          "label": "B 站英文精讲 · Academic Reading Inference",
+          "url": "https://search.bilibili.com/all?keyword=Academic+Reading+Main+Idea+Inference+%E8%8B%B1%E6%96%87"
         }
       },
       {
@@ -93,8 +93,8 @@
           "url": "https://search.bilibili.com/all?keyword=%E5%AD%A6%E6%9C%AF%E5%90%AC%E5%8A%9B+%E8%AE%B2%E5%BA%A7%E7%AC%94%E8%AE%B0+%E4%BF%A1%E5%8F%B7%E8%AF%8D"
         },
         "en": {
-          "label": "YouTube · Academic Lecture Listening & Signposting",
-          "url": "https://www.youtube.com/results?search_query=academic+listening+signposting+note+taking+university+lecture"
+          "label": "B 站英文精讲 · Academic Lecture Note-taking",
+          "url": "https://search.bilibili.com/all?keyword=Academic+Lecture+Note+Taking+Signposting"
         }
       },
       {
@@ -105,8 +105,8 @@
           "url": "https://search.bilibili.com/all?keyword=%E5%AD%A6%E6%9C%AF%E8%8B%B1%E8%AF%AD+%E5%90%8D%E8%AF%8D%E5%8C%96+hedging+reporting+verbs"
         },
         "en": {
-          "label": "YouTube · EAP Hedging, Reporting Verbs & Nominalisation",
-          "url": "https://www.youtube.com/results?search_query=academic+english+hedging+reporting+verbs+nominalisation"
+          "label": "B 站英文精讲 · EAP Hedging & Nominalisation",
+          "url": "https://search.bilibili.com/all?keyword=Academic+English+Hedging+Nominalisation"
         }
       },
       {
@@ -117,8 +117,8 @@
           "url": "https://search.bilibili.com/all?keyword=%E5%AD%A6%E6%9C%AF%E8%8B%B1%E8%AF%AD%E5%8F%A3%E8%AF%AD+%E5%B0%8F%E7%BB%84%E8%AE%A8%E8%AE%BA+%E8%BD%AC%E8%BF%B0"
         },
         "en": {
-          "label": "YouTube · Academic Seminar Discussion & Paraphrasing",
-          "url": "https://www.youtube.com/results?search_query=university+seminar+discussion+speaking+paraphrasing+academic+english"
+          "label": "B 站英文精讲 · Academic Seminar Discussion",
+          "url": "https://search.bilibili.com/all?keyword=Academic+Seminar+Discussion+Speaking+%E8%8B%B1%E6%96%87"
         }
       }
     ]

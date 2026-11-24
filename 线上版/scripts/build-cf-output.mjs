@@ -87,7 +87,7 @@ async function main() {
       traces: { enabled: true }
     },
     assets: {
-      htmlHandling: 'auto-trailing-slash',
+      htmlHandling: 'none',
       notFoundHandling: 'none',
       runWorkerFirst: true
     },

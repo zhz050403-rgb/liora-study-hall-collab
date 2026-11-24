@@ -82,18 +82,17 @@
       }
     }
 
-    /* 顶栏右侧显示当前登录身份与一键退出（桌面可见，手机进右下角「账号」抽屉） */
+    /* 将云端同步圆点与当前账号合并为一枚紧凑身份胶囊，释放顶栏空间 */
     if (boot.user) {
-      var syncEl = document.querySelector('.ed-sync-dot');
-      if (syncEl && !document.getElementById('edUserPill')) {
-        var pill = document.createElement('span');
-        pill.id = 'edUserPill';
-        pill.className = 'ed-sync-dot';
-        pill.style.cssText = 'gap:6px;background:var(--navy-050);border-color:var(--line);color:var(--navy-900);font-weight:600';
-        pill.innerHTML =
+      var syncEl = document.getElementById('edSyncChip') || document.querySelector('.ed-sync-dot');
+      if (syncEl) {
+        syncEl.style.cssText = 'gap:6px;padding:3px 9px;border-radius:999px;background:var(--navy-050);border:1px solid var(--line);color:var(--navy-900);font-weight:600;flex-shrink:0';
+        syncEl.title = '学习进度自动同步云端 · 当前登录：' + boot.user;
+        syncEl.innerHTML =
+          '<i id="edSyncDot"></i>' +
+          '<span id="edSyncText" style="display:none">已同步云端</span>' +
           '<span>' + (isAdmin ? '🛡️ ' : '👤 ') + esc(boot.user) + '</span>' +
           '<a href="/__logout" style="color:var(--muted);font-weight:500;text-decoration:none;border-left:1px solid var(--line);padding-left:6px">退出</a>';
-        syncEl.parentNode.insertBefore(pill, syncEl.nextSibling);
       }
     }
   }

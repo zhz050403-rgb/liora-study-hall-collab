@@ -7,26 +7,31 @@
 <link rel="stylesheet" href="css/style.css?v=20261108-assets1" />
 <link rel="stylesheet" href="../section-banners.css?v=20261108-banner-repair">
 <link rel="stylesheet" href="../blocks/site-tokens.css?v=20261107-polish1">
-<script src="https://cdn.jsdelivr.net/npm/@tencent-ai/workbuddy-cloud-sdk@0.1.4-dev.ca27990.202610161713/lib/index.global.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/@tencent-ai/workbuddy-cloud-sdk@0.1.4-dev.ca27990.202610161713/lib/index.global.js"></script>
 <script src="/cloud-config.js?v=1"></script>
 <script src="/cloud-sync.js?v=20261107c"></script>
 <link rel="stylesheet" href="../styles/theme.css?v=20261122-v2">
+<link rel="stylesheet" href="../styles/editorial.css?v=20261123-v12">
+<link rel="stylesheet" href="../styles/subpage-unified.css?v=20261123-v11">
 </head>
 <body class="english-page">
-<header class="cabin-header">
-  <a class="cabin-brand" href="../index.html#/">
-    <img src="../cabin-art/crest.webp" alt="" width="48" height="48">
-    <span>Liora 的学习小屋<small>Learning Cabin</small></span>
-  </a>
-  <nav aria-label="学习小屋导航">
-    <a href="../index.html#/">首页</a>
-    <a href="../index.html#/courses">课程中心</a>
-    <a href="../index.html#/extra">课外拓展</a>
-    <a href="../daily-brief.html">每日简报</a>
-    <a href="../index.html#/reading">读书</a>
-    <a href="../index.html#/prep">复习计划</a>
-    <a href="index.html" aria-current="page">英语学习</a>
-  </nav>
+<header class="ed-header">
+  <div class="ed-header-inner">
+    <a class="ed-brand" href="../index.html#/"><span class="ed-crest" aria-hidden="true"><img src="../cabin-art/crest-badge-clean.png?v=20261106-crest1" alt=""></span><span>Liora 的学习小屋</span></a>
+    <nav class="ed-nav" id="edMainNav" aria-label="主导航">
+      <a href="../index.html#/">首页</a>
+      <a href="../index.html#/courses">课程中心</a>
+      <a href="../index.html#/handbooks">五科手册</a>
+      <a href="../index.html#/mistakes">错题刷题</a>
+      <a href="../index.html#/annotations">高光集</a>
+      <a href="../index.html#/reading" data-nav="reading">读书</a>
+      <a href="../index.html#/prep">复习计划</a>
+      <a href="../index.html#/extra" data-nav="extra">课外拓展</a>
+      <a href="../daily-brief.html">每日简报</a>
+      <a class="active" href="index.html" data-nav="english" aria-current="page">英语学习</a>
+    </nav>
+    <span class="ed-sync-dot" id="edSyncChip" title="学习进度已自动同步到云端"><i id="edSyncDot"></i><span>云端</span></span>
+  </div>
 </header>
 <section id="english-banner" aria-label="英语学习"></section>
 <header class="topbar">
@@ -79,11 +84,13 @@
 <script src="js/ielts-words.js"></script>
 <script src="js/sdg11-cache.js"></script>
 <script src="js/ai-ethics-cache.js"></script>
+<script src="js/preset-articles-cache.js?v=20261123-v12"></script>
 <script src="js/core.js?v=20261115-user-guide1"></script>
 <script src="js/api.js"></script>
-<script src="js/modules.js?v=20261115-user-guide1"></script>
-<script src="js/app.js?v=20261118-brief-fulltext3"></script>
+<script src="js/modules.js?v=20261123-v12"></script>
+<script src="js/app.js?v=20261123-v12"></script>
 <script src="../blocks/member-access.js?v=20261115-user-guide4"></script>
+<script src="../app/subpage-header.js?v=20261123-v11"></script>
 <script src="../app/highlighter.js?v=20261123-v10"></script>
 </body>
 </html>

@@ -43,22 +43,19 @@ function renderView() {
     case 'settings': renderSettings(); break;
     default: renderHome();
   }
+  updateApiBanner();
 }
 
 function updateApiBanner() {
   const b = $('#apiBanner');
   if (!b) return;
-  /* 云端 AI 可用时横幅完全隐藏；只有真的被拦（身份 / 通道未加载）才显示，
-     并且显示的是真实原因，绝不再出现「尚未配置 API Key」这种过时说法。 */
-  const why = aiBlockReason();
+  /* 精读、查词、翻译、长难句解析与生词本已 100% 离线化，仅在写作/口语页才提示 AI 状态 */
+  const needsAiView = App.view === 'write' || App.view === 'speak';
+  const why = needsAiView ? aiBlockReason() : '';
   b.classList.toggle('hidden', !why);
   if (!why) return;
   const msg = b.querySelector('[data-api-msg]');
   if (msg) msg.textContent = why;
-  const goSettings = b.querySelector('[data-action="goto"]');
-  if (goSettings) goSettings.style.display = 'none';
-  const reload = b.querySelector('[data-action="reload-app"]');
-  if (reload) reload.style.display = /通道还没加载好/.test(why) ? '' : 'none';
 }
 
 function openArticle(id) {
@@ -205,7 +202,8 @@ async function openBriefStudy(url) {
     } else {
       Store.data.articles.unshift(article);
       Store.save();
-      openArticle(article.id);
+      if (article.localCache) { window.LIORA_LOCAL_CACHES = window.LIORA_LOCAL_CACHES || {}; window.LIORA_LOCAL_CACHES[article.id] = article.localCache; }
+    openArticle(article.id);
     }
   } catch (error) { toast(error.message || '原文读取失败，请稍后重试', true); }
 }

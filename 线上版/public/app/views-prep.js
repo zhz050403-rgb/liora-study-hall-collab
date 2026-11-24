@@ -20,7 +20,7 @@
       ? window.renderStudyPlanInline()
       : '<div class="ed-card">复习计划数据未加载。</div>';
     app.innerHTML = '<div class="ed-container">' +
-      '<div class="ed-hero" style="grid-template-columns:1fr;padding:22px 26px">' +
+      '<div class="ed-hero ed-hero-art ed-hero-art-prep" style="grid-template-columns:1fr;padding:24px 28px">' +
         '<div><div class="ed-hero-kicker">STUDY PLAN &amp; EXAM COUNTDOWN</div>' +
         '<h1>复习计划 · 动态考试倒计时</h1>' +
         '<p style="margin-bottom:0">基于已确认的 Term 1 开学锚点动态推算当前周次与每场考试剩余天数；搭配「<a style="color:#f3dfb3;text-decoration:underline" href="#/exam-packs">多科闭卷刷题</a>」与「<a style="color:#f3dfb3;text-decoration:underline" href="#/mistakes">全科错题本</a>」执行。</p></div>' +

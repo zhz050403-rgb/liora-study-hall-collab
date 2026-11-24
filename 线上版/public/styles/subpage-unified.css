@@ -1,0 +1,211 @@
+/* 独立子页（每日简报 / 英语学习 / 学习方法）统一 V3 学院风样式，同时完整保留原版美工手绘横幅 */
+
+/* 1. 每日简报（daily-brief.html）统一为 V3 Editorial 卡片与布局 */
+body.hub-body {
+  background: var(--bg, #f6f8fb) !important;
+  color: var(--ink, #172331) !important;
+  font-family: var(--sans, -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif) !important;
+}
+body.hub-body .brief-page {
+  max-width: 1240px !important;
+  margin: 0 auto !important;
+  padding: 20px 24px 80px !important;
+}
+body.hub-body .brief-hero-wrap {
+  max-width: 1240px;
+  margin: 20px auto 0;
+  padding: 0 24px;
+}
+body.hub-body .brief-edition.hub-slot {
+  background: #fff !important;
+  border: 1px solid var(--line, #dce5f0) !important;
+  border-radius: 16px !important;
+  padding: 22px 24px !important;
+  box-shadow: 0 4px 14px rgba(15, 39, 68, 0.05) !important;
+}
+body.hub-body .brief-edition .hub-slot-head {
+  border-bottom: 1.5px solid var(--line, #dce5f0) !important;
+  padding-bottom: 12px !important;
+  margin-bottom: 14px !important;
+}
+body.hub-body .brief-edition .hub-slot-head h2 {
+  font-family: var(--serif) !important;
+  font-size: 20px !important;
+  color: var(--navy-900, #0f2744) !important;
+  margin: 0 !important;
+}
+body.hub-body .hub-slot-body {
+  border: none !important;
+  padding: 0 !important;
+  background: transparent !important;
+}
+body.hub-body .brief-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 10px 14px;
+  border-radius: 11px;
+  background: var(--surface-2, #f8fafd);
+  border: 1px solid var(--line-2, #ebf0f6);
+  margin-bottom: 16px;
+}
+body.hub-body .brief-toolbar select,
+body.hub-body .brief-toolbar button {
+  height: 32px;
+  padding: 0 11px;
+  border-radius: 8px;
+  border: 1px solid var(--line, #dce5f0);
+  background: #fff;
+  color: var(--navy-900, #0f2744);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+body.hub-body .brief-toolbar button:hover { background: var(--navy-050, #f1f5fa); }
+body.hub-body .reading-card {
+  background: #fff !important;
+  border: 1px solid var(--line, #dce5f0) !important;
+  border-left: 4px solid var(--gold, #b89143) !important;
+  border-radius: 12px !important;
+  padding: 16px 20px !important;
+  margin: 0 0 12px !important;
+  box-shadow: 0 1px 3px rgba(15, 39, 68, 0.04) !important;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+body.hub-body .reading-card:hover {
+  border-color: var(--navy-700, #2b5a92) !important;
+  box-shadow: 0 6px 18px rgba(15, 39, 68, 0.08) !important;
+}
+body.hub-body .reading-card[open] {
+  border-left-color: var(--navy-900, #0f2744) !important;
+}
+body.hub-body .reading-card summary {
+  color: var(--navy-900, #0f2744) !important;
+  font-weight: 700;
+  cursor: pointer;
+}
+body.hub-body .reading-card .rc-no {
+  background: var(--navy-900, #0f2744) !important;
+  color: #f3dfb3 !important;
+  border-radius: 6px;
+}
+body.hub-body .reading-card .rc-cat {
+  color: var(--gold-deep, #946f27) !important;
+  font-weight: 700;
+}
+body.hub-body .reading-card dt {
+  color: var(--navy-900, #0f2744) !important;
+  font-weight: 700 !important;
+}
+body.hub-body .reading-card .rc-body a {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 8px;
+  padding: 6px 13px;
+  border-radius: 8px;
+  background: var(--navy-900, #0f2744);
+  color: #fff !important;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+}
+body.hub-body .reading-card .rc-body a:hover { background: var(--navy-800, #193b63); }
+
+@media (max-width: 560px) {
+  body.hub-body .brief-hero-wrap { padding: 0 12px; margin-top: 12px; }
+  body.hub-body .brief-page { padding: 14px 12px 72px !important; }
+  body.hub-body .brief-edition.hub-slot { padding: 14px !important; }
+}
+
+/* 2. 英语学习工作台（english/index.html）统一为 V3 Editorial 顶栏 + 左侧工作台 */
+body.english-page {
+  background: var(--bg, #f6f8fb) !important;
+  color: var(--ink, #172331) !important;
+  font-family: var(--sans, -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif) !important;
+}
+body.english-page .ed-header {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  width: 100%;
+}
+body.english-page #english-banner {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  max-width: 1340px;
+  width: 100%;
+  margin: 16px auto 0;
+  padding: 0 18px;
+  box-sizing: border-box;
+}
+body.english-page #english-banner .hero,
+body.english-page #english-banner .section-banner {
+  border-radius: 16px !important;
+  border-bottom: 3px solid var(--gold, #b89143) !important;
+  box-shadow: 0 10px 28px rgba(15, 39, 68, 0.12) !important;
+  overflow: hidden;
+  min-height: 170px !important;
+  background-image:
+    linear-gradient(105deg, rgba(10, 26, 48, 0.82) 0%, rgba(15, 39, 68, 0.48) 58%, rgba(12, 31, 56, 0.72) 100%),
+    url("../cabin-art/banner-english.webp") !important;
+  background-position: center 45%, center 45% !important;
+  background-size: cover, cover !important;
+}
+body.english-page .topbar {
+  background: #fff !important;
+  border: 1px solid var(--line, #dce5f0) !important;
+  border-radius: 14px !important;
+  box-shadow: 0 4px 14px rgba(15, 39, 68, 0.05) !important;
+  margin: 16px 0 16px 18px;
+}
+body.english-page .topbar .brand {
+  border-bottom: 1px solid var(--line-2, #ebf0f6) !important;
+}
+body.english-page .topbar .brand-logo { color: var(--navy-900, #0f2744) !important; }
+body.english-page .topbar .brand-name { color: var(--gold-deep, #946f27) !important; }
+body.english-page .topbar .nav-btn {
+  border-radius: 9px !important;
+  font-size: 13.5px !important;
+  font-weight: 600 !important;
+  color: var(--ink-2, #38495c) !important;
+  border: 1px solid transparent !important;
+  transition: background 0.14s, color 0.14s;
+}
+body.english-page .topbar .nav-btn:hover {
+  background: var(--navy-050, #f1f5fa) !important;
+  color: var(--navy-900, #0f2744) !important;
+}
+body.english-page .topbar .nav-btn.active {
+  background: var(--navy-900, #0f2744) !important;
+  color: #fff !important;
+}
+body.english-page #main {
+  padding: 16px 20px 60px !important;
+}
+body.english-page .card {
+  background: #fff !important;
+  border: 1px solid var(--line, #dce5f0) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 2px 8px rgba(15, 39, 68, 0.04) !important;
+}
+body.english-page .workbench-shortcuts .module-card {
+  border-left: 3.5px solid var(--gold, #b89143) !important;
+}
+body.english-page .workbench-shortcuts .module-card:hover {
+  border-color: var(--navy-700, #2b5a92) !important;
+  background: var(--navy-050, #f1f5fa) !important;
+}
+body.english-page .workbench-heading {
+  font-family: var(--serif) !important;
+  color: var(--navy-900, #0f2744) !important;
+  border-bottom: 1.5px solid var(--line, #dce5f0);
+  padding-bottom: 6px;
+}
+@media (max-width: 949px) {
+  body.english-page .topbar {
+    margin: 12px 12px 0;
+    position: static !important;
+  }
+  body.english-page #english-banner { padding: 0 12px; }
+  body.english-page #main { padding: 12px 12px 60px !important; }
+}

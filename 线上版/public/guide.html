@@ -5,40 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>UNSW 预科学习方法与使用手册 · Liora 的学习小屋</title>
   <link rel="icon" href="favicon.ico?v=20261106-crest1" sizes="any">
-  <link rel="stylesheet" href="styles/theme.css?v=20261122-v2">
-  <link rel="stylesheet" href="styles/study-hub.css?v=20261122-v2">
+  <link rel="stylesheet" href="styles/theme.css?v=20261122-v4">
+  <link rel="stylesheet" href="styles/editorial.css?v=20261123-v12">
+  <link rel="stylesheet" href="styles/study-hub.css?v=20261122-v4">
   <style>
-    body { margin: 0; background: var(--lh-paper); font-family: var(--lh-sans); color: var(--lh-ink); line-height: 1.75; }
+    body { margin: 0; background: var(--bg); font-family: var(--sans); color: var(--ink); line-height: 1.75; }
     .step-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; margin: 14px 0 22px; }
-    .step-card { background: #fff; border: 1px solid var(--lh-line); border-top: 3px solid var(--lh-gold); border-radius: 14px; padding: 18px; box-shadow: var(--lh-shadow-xs); }
-    .step-num { font-family: var(--lh-serif); font-size: 12.5px; letter-spacing: 1.5px; color: var(--lh-gold-deep); font-weight: 700; margin-bottom: 6px; }
-    .step-card h3 { margin: 0 0 8px; font-family: var(--lh-serif); font-size: 17px; color: var(--lh-navy-900); }
-    .step-card p { margin: 0; font-size: 13.5px; color: var(--lh-ink-2); }
-    .sec-title { font-family: var(--lh-serif); font-size: 22px; color: var(--lh-navy-900); border-bottom: 2px solid var(--lh-navy-900); padding-bottom: 8px; margin: 28px 0 14px; }
+    .step-card { background: #fff; border: 1px solid var(--line); border-top: 3px solid var(--gold); border-radius: 14px; padding: 18px; box-shadow: var(--shadow-xs); }
+    .step-num { font-family: var(--serif); font-size: 12.5px; letter-spacing: 1.5px; color: var(--gold-deep); font-weight: 700; margin-bottom: 6px; }
+    .step-card h3 { margin: 0 0 8px; font-family: var(--serif); font-size: 17px; color: var(--navy-900); }
+    .step-card p { margin: 0; font-size: 13.5px; color: var(--ink-2); }
+    .sec-title { font-family: var(--serif); font-size: 21px; color: var(--navy-900); border-bottom: 2px solid var(--navy-900); padding-bottom: 8px; margin: 28px 0 14px; }
   </style>
 </head>
 <body>
-  <header class="lh-sub-header">
-    <div class="lh-sub-header-inner">
-      <a class="lh-sub-brand" href="/"><span class="crest-dot">✦</span> Liora 的学习小屋</a>
-      <nav class="lh-sub-nav" aria-label="主导航">
-        <a href="/#/">首页驾驶舱</a>
-        <a href="/#/courses">课程中心</a>
-        <a href="/#/handbooks">五科通关手册</a>
-        <a href="/#/mistakes">错题本</a>
-        <a href="/#/flashcards">术语闪卡</a>
-        <a href="/#/extra">课外拓展</a>
+  <header class="ed-header">
+    <div class="ed-header-inner">
+      <a class="ed-brand" href="index.html#/"><span class="ed-crest" aria-hidden="true"><img src="cabin-art/crest-badge-clean.png?v=20261106-crest1" alt=""></span><span>Liora 的学习小屋</span></a>
+      <nav class="ed-nav" id="edMainNav" aria-label="主导航">
+        <a href="index.html#/">首页</a>
+        <a href="index.html#/courses">课程中心</a>
+        <a href="index.html#/handbooks">五科手册</a>
+        <a href="index.html#/mistakes">错题刷题</a>
+        <a href="index.html#/annotations">高光集</a>
+        <a href="index.html#/reading" data-nav="reading">读书</a>
+        <a href="index.html#/prep">复习计划</a>
+        <a href="index.html#/extra" data-nav="extra">课外拓展</a>
         <a href="daily-brief.html">每日简报</a>
-        <a href="english/index.html">英语学习</a>
-        <a href="guide.html" class="active">学习方法</a>
+        <a href="english/index.html" data-nav="english">英语学习</a>
       </nav>
+      <span class="ed-sync-dot" id="edSyncChip" title="学习进度已自动同步到云端"><i id="edSyncDot"></i><span>云端</span></span>
     </div>
   </header>
 
-  <main class="lh-wrap">
-    <section class="lh-page-hero">
-      <h1>📖 UNSW 预科高效学习方法 + 本站实战手册</h1>
-      <p>这不是一份「点按钮说明书」，而是为你量身定制的 <b>每周学习闭环、考前两周冲刺剧本与五科提分策略</b>。跟着流程走，不用每次打开网站纠结「今天该从哪下手」。</p>
+  <main class="ed-container">
+    <section class="ed-hero ed-hero-art ed-hero-art-guide" style="grid-template-columns:1fr;padding:24px 28px;margin-bottom:20px">
+      <div>
+        <div class="ed-hero-kicker">STUDY METHOD · 实战提分指南</div>
+        <h1>📖 UNSW 预科高效学习方法 + 本站实战手册</h1>
+        <p style="margin-bottom:0">这不是一份「点按钮说明书」，而是为你量身定制的 <b>每周学习闭环、考前两周冲刺剧本与五科提分策略</b>。跟着流程走，不用每次打开网站纠结「今天该从哪下手」。</p>
+      </div>
     </section>
 
     <h2 class="sec-title">一、平时一周怎么学（4 步闭环，每天 2 小时）</h2>
@@ -106,6 +112,7 @@
       </ul>
     </div>
   </main>
+<script src="app/subpage-header.js?v=20261123-v11"></script>
 <script src="app/highlighter.js?v=20261123-v10"></script>
 </body>
 </html>

@@ -199,25 +199,111 @@
     return visuals.length;
   }
 
+  /* 精准考点词填空：只遮盖真正的专业术语、定义关键词与公式，绝不随机乱遮 */
+  function escRe(s) { return String(s || '').replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+
+  function makeClozeEn(text, term, glossTerms) {
+    var escaped = esc(text);
+    var targets = [];
+    /* 1. 提取当前概念标题中的英文核心术语（括号前部分） */
+    var enHead = String(term || '').replace(/[（(][^）)]*[）)]/g, ' ').trim();
+    enHead.split(/\s*(?:vs\.?|&|\/|,|and|\+)\s*/i).forEach(function (part) {
+      var p = part.trim();
+      if (p.length >= 3 && /^[A-Za-z]/.test(p)) targets.push(p);
+    });
+    /* 2. 加入本周术语表中的英文专业术语 */
+    (glossTerms || []).forEach(function (g) {
+      var t = String(g && g.term || '').trim();
+      if (t.length >= 3 && /^[A-Za-z]/.test(t)) targets.push(t);
+    });
+    /* 去重并按长度降序优先匹配完整词组 */
+    var seen = {};
+    targets = targets.filter(function (x) {
+      var k = x.toLowerCase();
+      if (seen[k]) return false;
+      seen[k] = true;
+      return true;
+    }).sort(function (a, b) { return b.length - a.length; });
+
+    var count = 0;
+    targets.forEach(function (kw) {
+      if (count >= 4) return;
+      var re = new RegExp('(?<!<[^>]*)\\b(' + escRe(kw) + ')\\b', 'i');
+      if (re.test(escaped)) {
+        escaped = escaped.replace(re, '<span class="ed-cloze-blank" title="点击翻开英文考点词">$1</span>');
+        count++;
+      }
+    });
+    /* 3. 若句中未出现标题原词，兜底只遮盖专业缩写/公式（如 GDP / PED / MR = MC / XLOOKUP） */
+    if (count === 0) {
+      escaped = escaped.replace(/\b([A-Z]{2,}(?:\s*=\s*[A-Z]{2,})?)\b/g, function (m) {
+        if (count >= 3) return m;
+        count++;
+        return '<span class="ed-cloze-blank" title="点击翻开英文缩写/公式">' + m + '</span>';
+      });
+    }
+    return escaped;
+  }
+
+  function makeClozeZh(text, term) {
+    var escaped = esc(text);
+    var count = 0;
+    /* 1. 优先遮盖当前概念的中文专业术语（来自标题括号内中文，绝不遮中文句里的英文词） */
+    var zhMatch = String(term || '').match(/[（(]([^）)]+)[）)]/);
+    if (zhMatch && zhMatch[1]) {
+      zhMatch[1].split(/[、，,\/与及和\s]+/).forEach(function (part) {
+        var p = part.trim();
+        if (p.length >= 2 && /[\u4e00-\u9fa5]/.test(p) && !/[A-Za-z]/.test(p) && count < 3) {
+          var idx = escaped.indexOf(p);
+          if (idx >= 0) {
+            escaped = escaped.slice(0, idx) + '<span class="ed-cloze-blank" title="点击翻开中文核心概念">' + p + '</span>' + escaped.slice(idx + p.length);
+            count++;
+          }
+        }
+      });
+    }
+    /* 2. 遮盖中文「…」内标注的核心定义词（仅纯中文） */
+    escaped = escaped.replace(/「([\u4e00-\u9fa5]{2,14})」/g, function (full, inner) {
+      if (count >= 4) return full;
+      count++;
+      return '「<span class="ed-cloze-blank" title="点击翻开中文要点">' + inner + '</span>」';
+    });
+    /* 3. 若仍未命中，遮盖「是指/等于/核心是/分为/包括」紧跟的纯中文核心短语 */
+    if (count === 0) {
+      escaped = escaped.replace(/(是指|指的是|即|本质是|核心是|等于|包括|分为)([\u4e00-\u9fa5]{2,12})/, function (full, lead, body) {
+        count++;
+        return lead + '<span class="ed-cloze-blank" title="点击翻开中文核心定义">' + body + '</span>';
+      });
+    }
+    return escaped;
+  }
+
   /* 渲染「核心概念中英逐行精讲」卡片块 */
-  function renderBilingualConcepts(concepts) {
+  function renderBilingualConcepts(concepts, isCloze, isRecall, glossTerms) {
     if (!concepts || !concepts.length) return '';
-    return '<div class="bi-concept-wrap">' +
+    return '<div class="bi-concept-wrap" id="edBiConcepts">' +
       '<div class="bi-concept-banner">' +
         '<h3>📌 核心概念中英逐行精讲 · Core Concepts（共 ' + concepts.length + ' 条）</h3>' +
-        '<span style="font-size:12px;color:var(--muted)">上行英文规范句（直接背考场定义） · 紧跟下行中文精解</span>' +
+        '<span style="font-size:12px;color:var(--muted)">' +
+          (isCloze ? '🧠 填空自测已启用 · 精准遮盖核心术语与定义，点击色块翻开核对'
+            : (isRecall ? '🧠 看中文背英文 · 看下方中文复述英文，点浅蓝卡翻开核对'
+              : '上行英文规范句（直接背考场定义） · 紧跟下行中文精解')) +
+        '</span>' +
       '</div>' +
       '<div class="bi-concept-list">' +
         concepts.map(function (c, i) {
           var isOfficial = /课件原话|真题|官方核心文本/.test(c.src || '');
-          return '<div class="bi-concept-card">' +
+          /* 看中文背英文模式下不再叠加英文局部挖空，避免遮罩冲突 */
+          var enHtml = (isCloze && !isRecall) ? makeClozeEn(c.en, c.term, glossTerms) : esc(c.en);
+          var zhHtml = isCloze ? makeClozeZh(c.zh, c.term) : esc(c.zh);
+          return '<div class="bi-concept-card" id="bi-item-' + i + '">' +
             '<div class="bi-concept-head">' +
               '<span class="bi-concept-term">' + (i + 1) + '. ' + esc(c.term) + '</span>' +
               (c.src ? '<span class="bi-src-badge' + (isOfficial ? ' official' : '') + '">' + (isOfficial ? '✓ ' : '') + esc(c.src) + '</span>' : '') +
             '</div>' +
             '<div class="bi-pair">' +
-              '<div class="bi-en">🇬🇧 ' + esc(c.en) + '</div>' +
-              '<div class="bi-zh">🇨🇳 ' + esc(c.zh) + '</div>' +
+              '<div class="bi-en">🇬🇧 ' + enHtml + '</div>' +
+              '<div class="bi-zh">🇨🇳 ' + zhHtml + '</div>' +
             '</div>' +
           '</div>';
         }).join('') +
@@ -245,7 +331,7 @@
               return '<span class="ed-qa-kw">' + esc(k) + '</span>';
             }).join('') + '</div>'
           : '';
-        return '<div class="ed-qa-card">' +
+        return '<div class="ed-qa-card" id="qa-item-' + idx + '">' +
           '<div class="ed-qa-top">' +
             '<span class="ed-qa-num">必考大题 Q' + (idx + 1) + '</span>' +
             (q.tag ? '<span class="ed-qa-tag">' + esc(q.tag) + '</span>' : '') +
@@ -370,22 +456,36 @@
               '</div>' +
             '</div>' +
 
-            /* 吸顶「一条龙」顺滑导航条 */
+            /* 吸顶「一条龙」顺滑导航条（打卡置顶，课后解析保留在原位置，中英视频独立标签） */
             '<div class="ed-step-bar">' +
-              '<button type="button" class="ed-step-pill active" data-sec="sec-figs">📊 本周图解 <span id="edFigCountBadge">' + (Number(week.diagramCount) || 0) + '</span></button>' +
-              '<button type="button" class="ed-step-pill" data-sec="sec-notes">① 双语概念与笔记</button>' +
+              '<button type="button" class="ed-step-pill active" data-sec="sec-checklist">✅ 本周打卡</button>' +
+              '<button type="button" class="ed-step-pill" data-sec="sec-figs">📊 本周图解 <span id="edFigCountBadge">' + (Number(week.diagramCount) || 0) + '</span></button>' +
+              '<button type="button" class="ed-step-pill" data-sec="sec-notes">📖 概念与笔记</button>' +
               (qaList.length ? '<button type="button" class="ed-step-pill" data-sec="sec-exam-qa">🎯 必考大题 ' + qaList.length + '</button>' : '') +
-              '<button type="button" class="ed-step-pill" data-sec="sec-practice">② 打卡与解析</button>' +
-              '<button type="button" class="ed-step-pill" data-sec="sec-resources">③ 课件与术语</button>' +
+              '<button type="button" class="ed-step-pill" data-sec="sec-tutorial">📝 课后解析</button>' +
+              '<button type="button" class="ed-step-pill" data-sec="sec-resources">📄 课件与术语</button>' +
+              '<button type="button" class="ed-step-pill" data-sec="sec-videos">🎬 中英视频</button>' +
+            '</div>' +
+
+            /* 第 1 站（置顶）：仅放本周学习任务打卡清单，清爽直接打勾 */
+            '<div id="sec-checklist" class="ed-card" style="margin:6px 0 14px;border-left:4px solid var(--gold)">' +
+              '<div style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:8px">' +
+                '<h3 style="margin:0;font-family:var(--serif);font-size:15.5px;color:var(--navy-900)">✅ 本周学习任务打卡清单</h3>' +
+                '<div style="display:flex;gap:6px;flex-wrap:wrap">' +
+                  '<a class="ed-btn ed-btn-sm ed-btn-gold" href="#/mistakes">➕ 错题本</a>' +
+                  '<a class="ed-btn ed-btn-sm" href="#/exam-packs">🎯 闭卷刷题</a>' +
+                '</div>' +
+              '</div>' +
+              tasksHtml +
             '</div>' +
 
             /* 本周图解速览 */
             '<div id="sec-figs"></div>' +
 
-            /* 第 1 站：中英逐行核心概念 + 笔记与图解精讲 */
+            /* 第 2 站：中英逐行核心概念 + 笔记与图解精讲（含恢复的 🧠 思维导图） */
             '<div id="sec-notes" class="ed-stage-head" style="margin-top:6px">' +
-              '<h2>① 核心概念（中英逐行）与图解笔记</h2>' +
-              '<span class="sub">英文规范句 → 中文精解 → 图解 → 课件例题，一条龙自然通读</span>' +
+              '<h2>📖 核心概念（中英逐行）与图解笔记</h2>' +
+              '<span class="sub">英文规范句 → 中文精解 → 图解 → 思维导图，一条龙自然通读</span>' +
             '</div>' +
             '<div class="ed-guide-bar">' +
               '<div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center">' +
@@ -396,13 +496,16 @@
               '</div>' +
               '<div style="display:flex;gap:6px;flex-wrap:wrap">' +
                 '<button class="ed-btn ed-btn-sm' + (noteMode === 'full' ? ' ed-btn-primary' : '') + '" data-nm="full">精读全文</button>' +
+                '<button class="ed-btn ed-btn-sm' + (noteMode === 'mindmap' ? ' ed-btn-primary' : '') + '" data-nm="mindmap">🧠 思维导图</button>' +
                 '<button class="ed-btn ed-btn-sm' + (noteMode === 'cloze' ? ' ed-btn-primary' : '') + '" data-nm="cloze">填空自测</button>' +
                 '<button class="ed-btn ed-btn-sm' + (noteMode === 'outline' ? ' ed-btn-primary' : '') + '" data-nm="outline">知识点目录</button>' +
                 '<button class="ed-btn ed-btn-sm" onclick="window.print()">🖨️ 打印</button>' +
               '</div>' +
             '</div>' +
 
-            renderBilingualConcepts(biConcepts) +
+            '<div id="edModeSlot"></div>' +
+
+            renderBilingualConcepts(biConcepts, noteMode === 'cloze', biMode === 'recall', gloss) +
 
             (weekAnns.length ? (
               '<div style="margin-bottom:14px;padding:10px 14px;border-radius:10px;background:var(--navy-050);border:1px solid var(--line);font-size:13px">' +
@@ -417,21 +520,20 @@
             /* 必考大题与中英对照标准答案 */
             renderExamQA(qaList) +
 
-            /* 第 2 站：本周打卡任务与课后作业参考解析 */
-            '<div id="sec-practice" class="ed-stage-head">' +
-              '<h2>② 打卡练习与课后答案解析</h2>' +
+            /* 课后作业参考解析（保留在原位置：必考大题下方） */
+            '<div id="sec-tutorial" class="ed-stage-head">' +
+              '<h2>📝 课后作业参考解析与图解核对</h2>' +
               '<div style="display:flex;gap:6px;flex-wrap:wrap">' +
                 '<a class="ed-btn ed-btn-sm ed-btn-gold" href="#/mistakes">➕ 记入错题本</a>' +
                 '<a class="ed-btn ed-btn-sm" style="background:rgba(255,255,255,.16);color:#fff;border-color:rgba(255,255,255,.3)" href="#/exam-packs">🎯 去做本课闭卷刷题</a>' +
               '</div>' +
             '</div>' +
-            '<div class="ed-card" style="margin-bottom:14px"><h3 style="margin:0 0 8px;font-family:var(--serif);font-size:15.5px;color:var(--navy-900)">✅ 本周学习任务清单</h3>' + tasksHtml + '</div>' +
-            '<div class="ed-card"><h3 style="margin:0 0 10px;font-family:var(--serif);font-size:15.5px;color:var(--navy-900)">📝 课后作业参考解析与图解核对</h3><div class="ed-prose" id="edTutBody">' + tutHtml + '</div></div>' +
+            '<div class="ed-card" style="margin-bottom:14px"><div class="ed-prose" id="edTutBody">' + tutHtml + '</div></div>' +
 
-            /* 第 3 站：站内原件 PDF、核心中英术语与配套视频 */
+            /* 第 3 站：站内原件 PDF 与核心中英术语 */
             '<div id="sec-resources" class="ed-stage-head">' +
-              '<h2>③ 课件原件、中英术语与配套视频</h2>' +
-              '<span class="sub">随学随查原件、背术语、看双语讲解</span>' +
+              '<h2>📄 课件原件与核心中英术语</h2>' +
+              '<span class="sub">随学随查原件、背考场术语</span>' +
             '</div>' +
             '<div class="ed-card" style="margin-bottom:14px">' +
               '<h3 style="margin:0 0 10px;font-family:var(--serif);font-size:15.5px;color:var(--navy-900)">📄 本周可在线直达原件（站内已核验 PDF）</h3>' +
@@ -456,21 +558,26 @@
                   }).join('') + '</div>'
                 : '<p style="font-size:13.5px;color:var(--muted);margin:0">全科 112 条中英核心术语均可直接在「术语闪卡」按学科集中复习。</p>') +
             '</div>' +
-            '<div class="ed-card" style="margin-bottom:14px">' +
-              '<h3 style="margin:0 0 10px;font-family:var(--serif);font-size:15.5px;color:var(--navy-900)">🎬 配套视频与考前通关手册</h3>' +
-              '<div style="display:flex;gap:10px;flex-wrap:wrap">' +
-                '<a class="ed-btn ed-btn-gold" href="#/handbooks/' + esc(course.id) + '">📚 打开本课通关手册（公式/避坑）</a>' +
-                '<a class="ed-btn" href="bilingual-video.html?course=' + esc(course.id) + '">🎬 打开中英对照视频页</a>' +
-                (course.id === 'accounting' ? '<a class="ed-btn" href="exam-prep.html">🎯 会计 U1–U6 官方引文闭卷库</a>' : '') +
-                (course.id === 'english' ? '<a class="ed-btn" href="english/index.html">🇬🇧 打开英语精读与生词工作台</a>' : '') +
-              '</div>' +
-            '</div>' +
             (offlineFiles.length ? (
-              '<details class="ed-card"><summary style="cursor:pointer;font-size:13.5px;font-weight:600;color:var(--muted)">本机课程文件夹原始课件清单（' + offlineFiles.length + ' 份 · 仅原电脑离线保存）</summary>' +
+              '<details class="ed-card" style="margin-bottom:14px"><summary style="cursor:pointer;font-size:13.5px;font-weight:600;color:var(--muted)">本机课程文件夹原始课件清单（' + offlineFiles.length + ' 份 · 仅原电脑离线保存）</summary>' +
               '<ul style="margin:10px 0 0;padding-left:20px;font-size:13px;color:var(--muted)">' + offlineFiles.map(function (f) {
                 return '<li>' + esc(f.name || f.title || f.path || '') + '</li>';
               }).join('') + '</ul></details>'
             ) : '') +
+
+            /* 第 4 站：独立中英视频与考前通关手册专区（与上方标签一键直达） */
+            '<div id="sec-videos" class="ed-stage-head">' +
+              '<h2>🎬 本课中英对照视频与考前通关手册</h2>' +
+              '<span class="sub">中英双语讲解视频 · 考前公式手册 · 专项题库</span>' +
+            '</div>' +
+            '<div class="ed-card" style="margin-bottom:14px">' +
+              '<div style="display:flex;gap:10px;flex-wrap:wrap">' +
+                '<a class="ed-btn ed-btn-primary" href="bilingual-video.html?course=' + esc(course.id) + '">🎬 打开本课中英对照视频页 ↗</a>' +
+                '<a class="ed-btn ed-btn-gold" href="#/handbooks/' + esc(course.id) + '">📚 打开本课通关手册（公式/避坑）</a>' +
+                (course.id === 'accounting' ? '<a class="ed-btn" href="exam-prep.html">🎯 会计 U1–U6 官方引文闭卷库</a>' : '') +
+                (course.id === 'english' ? '<a class="ed-btn" href="english/index.html">🇬🇧 打开英语精读与生词工作台</a>' : '') +
+              '</div>' +
+            '</div>' +
 
             /* 底部「一条龙收尾栏」 */
             '<div class="ed-next-bar">' +
@@ -572,34 +679,196 @@
       });
 
       var noteBody = document.getElementById('edNoteBody');
-      if (noteBody) {
-        applyKatex(noteBody);
-        if (noteMode === 'cloze') {
-          noteBody.querySelectorAll('strong, .c-red').forEach(function (el) {
-            el.title = '点击翻开关键词';
-            el.addEventListener('click', function () { el.classList.toggle('revealed'); });
+      var modeSlot = document.getElementById('edModeSlot');
+      if (noteBody) applyKatex(noteBody);
+
+      /* 跳转辅助 */
+      function jumpToId(targetId) {
+        var t = document.getElementById(targetId);
+        if (!t) return;
+        var det = t.closest('details');
+        while (det) { det.open = true; det = det.parentElement ? det.parentElement.closest('details') : null; }
+        t.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        t.classList.remove('ed-fig-pulse');
+        void t.offsetWidth;
+        t.classList.add('ed-fig-pulse');
+      }
+
+      if (noteMode === 'mindmap' && modeSlot) {
+        var mmHeads = noteBody ? extractHeadings(noteBody) : [];
+        var branches = [];
+        if (biConcepts.length) {
+          branches.push({
+            title: '📌 核心概念（中英对照 · ' + biConcepts.length + ' 条）',
+            jump: 'edBiConcepts',
+            kids: biConcepts.map(function (c, i) {
+              return { label: '<b>' + esc(c.term) + '</b> — ' + esc((c.zh || '').slice(0, 64)), jump: 'bi-item-' + i };
+            })
           });
         }
-        if (noteMode === 'outline') {
-          var heads = extractHeadings(noteBody);
-          if (heads.length) {
-            var toc = document.createElement('div');
-            toc.className = 'ed-card';
-            toc.style.marginBottom = '16px';
-            toc.innerHTML = '<b style="font-size:14px;color:var(--navy-900)">本节核心知识点速览（共 ' + heads.length + ' 项 · 点击直达）</b>' +
-              '<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:6px;margin-top:10px">' +
-              heads.map(function (h, idx) {
-                return '<a href="javascript:void(0)" data-jump="' + h.id + '" style="font-size:13px;padding:6px 10px;border-radius:7px;background:var(--surface-2);border:1px solid var(--line-2);color:var(--navy-900)">' + (idx + 1) + '. ' + esc(h.text) + '</a>';
-              }).join('') + '</div>';
-            noteBody.insertBefore(toc, noteBody.firstChild);
-            toc.querySelectorAll('[data-jump]').forEach(function (a) {
-              a.addEventListener('click', function () {
-                var t = document.getElementById(a.getAttribute('data-jump'));
-                if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
-              });
-            });
+        mmHeads.forEach(function (h) {
+          var hEl = document.getElementById(h.id);
+          var pts = [];
+          if (hEl) {
+            var cur = hEl.nextElementSibling;
+            while (cur && !/^H[234]$/.test(cur.tagName) && pts.length < 6) {
+              if (cur.tagName === 'UL' || cur.tagName === 'OL') {
+                cur.querySelectorAll('li').forEach(function (li) {
+                  if (pts.length < 6) {
+                    var tx = li.textContent.replace(/\s+/g, ' ').trim();
+                    if (tx.length > 4) pts.push({ label: esc(tx.slice(0, 78) + (tx.length > 78 ? '…' : '')), jump: h.id });
+                  }
+                });
+              } else if (cur.tagName === 'P') {
+                var ptx = cur.textContent.replace(/\s+/g, ' ').trim();
+                if (ptx.length > 8) pts.push({ label: esc(ptx.slice(0, 78) + (ptx.length > 78 ? '…' : '')), jump: h.id });
+              }
+              cur = cur.nextElementSibling;
+            }
           }
+          branches.push({ title: '📖 ' + h.text, jump: h.id, kids: pts });
+        });
+        if (qaList.length) {
+          branches.push({
+            title: '🎯 本单元必考大题（' + qaList.length + ' 题）',
+            jump: 'sec-exam-qa',
+            kids: qaList.map(function (q, i) {
+              return { label: '<b>Q' + (i + 1) + '.</b> ' + esc((q.qZh || q.qEn || '').slice(0, 66)), jump: 'qa-item-' + i };
+            })
+          });
         }
+
+        modeSlot.innerHTML =
+          '<div class="mm-wrap">' +
+            '<div class="mm-bar">' +
+              '<b style="font-size:14px;color:var(--navy-900)">🧠 本周知识思维导图（点击任意节点直达原文，点 −/+ 折叠分支）</b>' +
+              '<div style="display:flex;gap:6px;flex-wrap:wrap">' +
+                '<button type="button" class="ed-btn ed-btn-sm" id="mmExpandAll">展开全部</button>' +
+                '<button type="button" class="ed-btn ed-btn-sm" id="mmCollapseAll">折叠全部</button>' +
+                '<button type="button" class="ed-btn ed-btn-sm ed-btn-primary" id="mmClose">返回精读</button>' +
+              '</div>' +
+            '</div>' +
+            '<div class="mm-root">' + esc(course.nameCn + ' · ' + (week.title || ('Week ' + week.num))) + '</div>' +
+            '<div class="mm-branches">' +
+              branches.map(function (b, bi) {
+                return '<div class="mm-branch">' +
+                  '<div class="mm-node">' +
+                    (b.kids.length ? '<button type="button" class="mm-tog" data-mm-tog="' + bi + '" title="展开/折叠">−</button>' : '') +
+                    '<button type="button" class="mm-jump" data-jump="' + esc(b.jump) + '">' + esc(b.title) + '</button>' +
+                  '</div>' +
+                  (b.kids.length ? (
+                    '<div class="mm-kids" id="mm-kids-' + bi + '">' +
+                      b.kids.map(function (k) {
+                        return '<div class="mm-leaf" data-jump="' + esc(k.jump) + '">' + k.label + '</div>';
+                      }).join('') +
+                    '</div>'
+                  ) : '') +
+                '</div>';
+              }).join('') +
+            '</div>' +
+          '</div>';
+
+        modeSlot.querySelectorAll('[data-mm-tog]').forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            var kids = document.getElementById('mm-kids-' + btn.getAttribute('data-mm-tog'));
+            if (!kids) return;
+            var collapsed = kids.classList.toggle('collapsed');
+            btn.textContent = collapsed ? '+' : '−';
+          });
+        });
+        var exAll = document.getElementById('mmExpandAll');
+        var coAll = document.getElementById('mmCollapseAll');
+        var mmClose = document.getElementById('mmClose');
+        if (exAll) exAll.addEventListener('click', function () {
+          modeSlot.querySelectorAll('.mm-kids').forEach(function (k) { k.classList.remove('collapsed'); });
+          modeSlot.querySelectorAll('[data-mm-tog]').forEach(function (b) { b.textContent = '−'; });
+        });
+        if (coAll) coAll.addEventListener('click', function () {
+          modeSlot.querySelectorAll('.mm-kids').forEach(function (k) { k.classList.add('collapsed'); });
+          modeSlot.querySelectorAll('[data-mm-tog]').forEach(function (b) { b.textContent = '+'; });
+        });
+        if (mmClose) mmClose.addEventListener('click', function () { noteMode = 'full'; draw(); });
+        modeSlot.querySelectorAll('[data-jump]').forEach(function (el) {
+          el.addEventListener('click', function () { jumpToId(el.getAttribute('data-jump')); });
+        });
+      } else if (noteMode === 'cloze') {
+        var allBlanks = Array.prototype.slice.call(
+          app.querySelectorAll('#edBiConcepts .ed-cloze-blank, #edNoteBody strong, #edNoteBody .c-red')
+        );
+        allBlanks.forEach(function (el) {
+          el.title = '点击翻开/隐藏考点词';
+          el.addEventListener('click', function () { el.classList.toggle('revealed'); });
+        });
+        if (modeSlot) {
+          modeSlot.innerHTML =
+            '<div class="ed-mode-banner">' +
+              '<span>🧠 <b>填空自测模式</b>：已精准遮盖本节 <b>' + allBlanks.length + '</b> 处专业术语与核心定义（英文遮英文术语、中文遮中文核心概念），点击任意浅蓝遮罩核对。</span>' +
+              '<div style="display:flex;gap:6px">' +
+                '<button type="button" class="ed-btn ed-btn-sm ed-btn-gold" id="edClozeRevealAll">👁️ 全部翻开</button>' +
+                '<button type="button" class="ed-btn ed-btn-sm" id="edClozeHideAll">🙈 重新遮盖</button>' +
+              '</div>' +
+            '</div>';
+          var rBtn = document.getElementById('edClozeRevealAll');
+          var hBtn = document.getElementById('edClozeHideAll');
+          if (rBtn) rBtn.addEventListener('click', function () { allBlanks.forEach(function (el) { el.classList.add('revealed'); }); });
+          if (hBtn) hBtn.addEventListener('click', function () { allBlanks.forEach(function (el) { el.classList.remove('revealed'); }); });
+        }
+      } else if (noteMode === 'outline' && modeSlot) {
+        var heads = noteBody ? extractHeadings(noteBody) : [];
+        var tocGroups = [];
+        if (biConcepts.length) {
+          tocGroups.push(
+            '<div style="margin-top:8px"><div style="font-size:12px;font-weight:700;color:var(--gold-deep);margin-bottom:5px">📌 核心概念（' + biConcepts.length + ' 条）</div>' +
+            '<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:6px">' +
+            biConcepts.map(function (c, idx) {
+              return '<button type="button" data-jump="bi-item-' + idx + '" style="text-align:left;cursor:pointer;font-size:13px;padding:6px 10px;border-radius:7px;background:var(--surface-2);border:1px solid var(--line-2);color:var(--navy-900)">' + (idx + 1) + '. ' + esc(c.term) + '</button>';
+            }).join('') + '</div></div>'
+          );
+        }
+        if (heads.length) {
+          tocGroups.push(
+            '<div style="margin-top:10px"><div style="font-size:12px;font-weight:700;color:var(--navy-700);margin-bottom:5px">📖 笔记正文小节（' + heads.length + ' 节）</div>' +
+            '<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:6px">' +
+            heads.map(function (h, idx) {
+              return '<button type="button" data-jump="' + h.id + '" style="text-align:left;cursor:pointer;font-size:13px;padding:6px 10px;border-radius:7px;background:var(--surface-2);border:1px solid var(--line-2);color:var(--navy-900)">' + (idx + 1) + '. ' + esc(h.text) + '</button>';
+            }).join('') + '</div></div>'
+          );
+        }
+        if (qaList.length) {
+          tocGroups.push(
+            '<div style="margin-top:10px"><div style="font-size:12px;font-weight:700;color:#8a4f16;margin-bottom:5px">🎯 本单元必考大题（' + qaList.length + ' 题）</div>' +
+            '<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:6px">' +
+            qaList.map(function (q, idx) {
+              return '<button type="button" data-jump="qa-item-' + idx + '" style="text-align:left;cursor:pointer;font-size:13px;padding:6px 10px;border-radius:7px;background:#fdf8ec;border:1px solid var(--gold-border);color:var(--navy-900)">Q' + (idx + 1) + '. ' + esc((q.qZh || q.qEn || '').slice(0, 34)) + '</button>';
+            }).join('') + '</div></div>'
+          );
+        }
+        var totalItems = biConcepts.length + heads.length + qaList.length;
+        modeSlot.innerHTML = '<div class="ed-card" style="margin-bottom:16px;border-left:4px solid var(--navy-800)">' +
+          '<div style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap">' +
+            '<b style="font-size:14.5px;color:var(--navy-900)">📑 本节知识点速览目录（共 ' + totalItems + ' 项 · 点击任意一条直达）</b>' +
+            '<button type="button" class="ed-btn ed-btn-sm" id="edCloseToc">返回精读</button>' +
+          '</div>' +
+          (tocGroups.join('') || '<p style="font-size:13px;color:var(--muted);margin:8px 0 0">本节暂无二级目录项。</p>') +
+        '</div>';
+        var closeToc = document.getElementById('edCloseToc');
+        if (closeToc) closeToc.addEventListener('click', function () { noteMode = 'full'; draw(); });
+        modeSlot.querySelectorAll('[data-jump]').forEach(function (a) {
+          a.addEventListener('click', function () { jumpToId(a.getAttribute('data-jump')); });
+        });
+      } else if (biMode === 'recall' && modeSlot) {
+        modeSlot.innerHTML =
+          '<div class="ed-mode-banner">' +
+            '<span>🧠 <b>看中文背英文模式</b>：下方英文原句已温柔隐藏，先看中文自己口头复述英文，再点浅蓝卡片翻开核对。</span>' +
+            '<div style="display:flex;gap:6px">' +
+              '<button type="button" class="ed-btn ed-btn-sm ed-btn-gold" id="edRecallRevealAll">👁️ 全部翻开</button>' +
+              '<button type="button" class="ed-btn ed-btn-sm" id="edRecallHideAll">🙈 全部遮盖</button>' +
+            '</div>' +
+          '</div>';
+        var rAll = document.getElementById('edRecallRevealAll');
+        var hAll = document.getElementById('edRecallHideAll');
+        if (rAll) rAll.addEventListener('click', function () { app.querySelectorAll('.bi-en, .bi-add').forEach(function (el) { el.classList.add('revealed'); }); });
+        if (hAll) hAll.addEventListener('click', function () { app.querySelectorAll('.bi-en, .bi-add').forEach(function (el) { el.classList.remove('revealed'); }); });
       }
       var tutBody = document.getElementById('edTutBody');
       if (tutBody) applyKatex(tutBody);

@@ -9,18 +9,19 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="katex/katex.min.css">
   <link rel="stylesheet" href="styles/theme.css?v=20261122-v4">
-  <link rel="stylesheet" href="styles/editorial.css?v=20261122-v9">
+  <link rel="stylesheet" href="styles/editorial.css?v=20261123-v12">
   <link rel="stylesheet" href="styles/study-hub.css?v=20261122-v4">
 </head>
 <body>
   <header class="ed-header">
     <div class="ed-header-inner">
-      <a class="ed-brand" href="#/"><span class="ed-crest" aria-hidden="true">✦</span><span>Liora 的学习小屋</span></a>
+      <a class="ed-brand" href="#/"><span class="ed-crest" aria-hidden="true"><img src="cabin-art/crest-badge-clean.png?v=20261106-crest1" alt=""></span><span>Liora 的学习小屋</span></a>
       <nav class="ed-nav" id="edMainNav" aria-label="主导航">
         <a href="#/">首页</a>
         <a href="#/courses">课程中心</a>
         <a href="#/handbooks">五科手册</a>
         <a href="#/mistakes">错题刷题</a>
+        <a href="#/annotations">高光集</a>
         <a href="#/reading">读书</a>
         <a href="#/prep">复习计划</a>
         <a href="#/extra">课外拓展</a>
@@ -28,10 +29,10 @@
         <a href="english/index.html">英语学习</a>
       </nav>
       <div class="ed-search-wrap">
-        <input id="edSearchInput" class="ed-search" type="search" placeholder="搜索课程 / 周次 / 术语…" autocomplete="off" aria-label="全站搜索">
+        <input id="edSearchInput" class="ed-search" type="search" placeholder="搜索课程 / 术语…" autocomplete="off" aria-label="全站搜索">
         <div id="edSearchPop" class="ed-search-pop" role="listbox"></div>
       </div>
-      <span class="ed-sync-dot" title="学习进度自动同步到云端"><i id="edSyncDot"></i><span id="edSyncText">已同步云端</span></span>
+      <span class="ed-sync-dot" id="edSyncChip" title="学习进度已自动同步到云端"><i id="edSyncDot"></i><span id="edSyncText">云端</span></span>
     </div>
   </header>
 
@@ -39,7 +40,7 @@
     <div class="ed-container"><div class="ed-card">正在打开学习小屋…</div></div>
   </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/@tencent-ai/workbuddy-cloud-sdk@0.1.4-dev.ca27990.202610161713/lib/index.global.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@tencent-ai/workbuddy-cloud-sdk@0.1.4-dev.ca27990.202610161713/lib/index.global.js"></script>
   <script src="/cloud-config.js?v=1"></script>
   <script src="katex/katex.min.js"></script>
   <script src="katex/auto-render.min.js"></script>
@@ -50,12 +51,12 @@
   <script src="app/study-api.js?v=20261122-v4"></script>
   <script src="app/store.js?v=20261123-v10"></script>
   <script src="app/highlighter.js?v=20261123-v10"></script>
-  <script src="app/views-home.js?v=20261123-v10"></script>
-  <script src="app/views-course.js?v=20261123-v10"></script>
-  <script src="app/views-reading.js?v=20261122-v5"></script>
-  <script src="app/views-prep.js?v=20261122-v4"></script>
+  <script src="app/views-home.js?v=20261123-v12"></script>
+  <script src="app/views-course.js?v=20261123-v12"></script>
+  <script src="app/views-reading.js?v=20261123-v12"></script>
+  <script src="app/views-prep.js?v=20261123-v11"></script>
   <script src="app/study-views.js?v=20261123-v10"></script>
   <script src="app/views-admin.js?v=20261123-v10"></script>
-  <script src="app/main.js?v=20261123-v10"></script>
+  <script src="app/main.js?v=20261123-v11"></script>
 </body>
 </html>

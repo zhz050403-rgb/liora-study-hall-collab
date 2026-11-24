@@ -52,57 +52,183 @@ function wrapWords(text) {
 
 function escapeReg(s) { return String(s).replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
 
-/* ---------- 本地预生成内容（免 API） ----------
- * 每篇文章可配一份本地预生成缓存（由 tools/build_*.js 生成）：
- *   window.LIORA_LOCAL_CACHES[articleId] —— 统一注册表（推荐）
- *   window.SDG11_CACHE / window.AI_ETHICS_CACHE —— 兼容旧版单篇全局变量
- *   words   —— 文章全部单词的点译（按单词查，跨句子通用）
- *   analyze —— 文章全部句子的长难句解析（按句子查）
- * 仅当正在读对应文章时生效；未命中时回落到 API 链路。 */
+/* ---------- 全量离线词典与长难句解析引擎（100% 免 AI） ----------
+ * 查词顺序：当前文章 localCache.words → 全部已注册文章缓存 → 本地 9,389 词雅思词库（自动词形还原）
+ * 长难句与翻译顺序：精确句匹配 → 整段包含命中 → 划选半句/从句反查完整句 → 词元高重合度命中 → 纯本地语法拆解 + 核心词精解 */
 function localCacheFor(articleId) {
   const reg = window.LIORA_LOCAL_CACHES || {};
   let c = articleId ? reg[articleId] : null;
+  if (!c && articleId) {
+    const art = typeof getArticle === 'function' ? getArticle(articleId) : null;
+    if (art && art.localCache && (art.localCache.words || art.localCache.analyze)) {
+      reg[articleId] = art.localCache;
+      c = art.localCache;
+    }
+  }
   if (!c) {
-    /* 兼容旧版：只有单篇全局变量的缓存文件 */
     const legacy = window.SDG11_CACHE;
     if (legacy && legacy.words && legacy.analyze &&
         (!legacy.articleId || !articleId || legacy.articleId === articleId)) c = legacy;
   }
-  if (!c || !c.words || !c.analyze) return null;
-  return c;
+  if (!c) return null;
+  return { words: c.words || {}, analyze: c.analyze || {} };
+}
+
+let _offlineWordDict = null;
+function getOfflineWordDict() {
+  if (_offlineWordDict) return _offlineWordDict;
+  const map = {};
+  (window.IELTS_WORDS || []).forEach((it) => {
+    if (it && it.word && it.meaning) {
+      const k = String(it.word).toLowerCase().trim();
+      if (k && !map[k]) map[k] = it.meaning;
+    }
+  });
+  const reg = window.LIORA_LOCAL_CACHES || {};
+  Object.keys(reg).forEach((id) => {
+    const w = reg[id] && reg[id].words;
+    if (w) Object.keys(w).forEach((k) => { map[k.toLowerCase()] = w[k]; });
+  });
+  if (window.SDG11_CACHE && window.SDG11_CACHE.words) {
+    Object.keys(window.SDG11_CACHE.words).forEach((k) => { map[k.toLowerCase()] = window.SDG11_CACHE.words[k]; });
+  }
+  _offlineWordDict = map;
+  return map;
+}
+
+function wordCandidates(word) {
+  const k = String(word || '').toLowerCase().replace(/^[^a-z]+|[^a-z]+$/g, '');
+  if (!k) return [];
+  const list = [k];
+  if (k.endsWith('ies') && k.length > 4) list.push(k.slice(0, -3) + 'y');
+  if (k.endsWith('es') && k.length > 3) list.push(k.slice(0, -2));
+  if (k.endsWith('s') && k.length > 2) list.push(k.slice(0, -1));
+  if (k.endsWith('ied') && k.length > 4) list.push(k.slice(0, -3) + 'y');
+  if (k.endsWith('ed') && k.length > 3) {
+    list.push(k.slice(0, -2), k.slice(0, -1));
+    if (k.length > 5 && k[k.length - 3] === k[k.length - 4]) list.push(k.slice(0, -3));
+  }
+  if (k.endsWith('ing') && k.length > 5) {
+    list.push(k.slice(0, -3), k.slice(0, -3) + 'e');
+    if (k.length > 6 && k[k.length - 4] === k[k.length - 5]) list.push(k.slice(0, -4));
+  }
+  if (k.endsWith('ly') && k.length > 4) list.push(k.slice(0, -2), k.slice(0, -2) + 'e');
+  if (k.endsWith('er') && k.length > 4) list.push(k.slice(0, -2), k.slice(0, -1));
+  if (k.endsWith('est') && k.length > 5) list.push(k.slice(0, -3), k.slice(0, -2));
+  return list;
 }
 
 function getLocalWordMeaning(word, articleId) {
+  const cands = wordCandidates(word);
+  if (!cands.length) return null;
   const c = localCacheFor(articleId);
-  if (!c) return null;
-  const k = String(word || '').toLowerCase();
-  return Object.prototype.hasOwnProperty.call(c.words, k) ? c.words[k] : null;
+  if (c && c.words) {
+    for (const k of cands) {
+      if (Object.prototype.hasOwnProperty.call(c.words, k)) return c.words[k];
+    }
+  }
+  const dict = getOfflineWordDict();
+  for (const k of cands) {
+    if (Object.prototype.hasOwnProperty.call(dict, k)) return dict[k];
+  }
+  return null;
 }
 
-/* 句子归一化：合并空白 + 去掉段首的 [1] [2] 编号（页面显示与缓存键都要忽略它） */
+/* 句子归一化：合并空白 + 去掉段首的 [1] [2] 编号 */
 const _normSentence = (s) => String(s || '').replace(/\s+/g, ' ').replace(/^\s*\[\d+\]\s*/, '').trim();
 
-/* 每篇文章一份索引表，避免多篇之间互相覆盖 */
 const _localAnalyzeIdxMap = {};
 function getLocalAnalyze(sentence, articleId) {
   const c = localCacheFor(articleId);
-  if (!c) return null;
+  if (!c || !c.analyze) return null;
   const key = articleId || '_';
-  if (!_localAnalyzeIdxMap[key]) {
+  if (!_localAnalyzeIdxMap[key] || _localAnalyzeIdxMap[key].size !== Object.keys(c.analyze).length) {
     const map = {};
     Object.keys(c.analyze).forEach((k) => { map[_normSentence(k)] = c.analyze[k]; });
-    _localAnalyzeIdxMap[key] = { map: map, keys: Object.keys(map) };
+    _localAnalyzeIdxMap[key] = { map: map, keys: Object.keys(map), size: Object.keys(c.analyze).length };
   }
   const bucket = _localAnalyzeIdxMap[key];
   const q = _normSentence(sentence);
+  if (!q) return null;
   if (bucket.map[q]) return bucket.map[q];
-  /* 兜底：选中的文本可能包含多句（如整段、跨句划词），
-     取其中「被完整包含且最长」的已缓存句子来解析，避免因此回落到 API。 */
+
+  const ql = q.toLowerCase();
+  /* 1. 选区包含完整缓存句（整段或跨句划词） */
   let best = null;
   bucket.keys.forEach((k) => {
-    if (k.length >= 20 && q.indexOf(k) !== -1 && (!best || k.length > best.length)) best = k;
+    if (k.length >= 16 && ql.indexOf(k.toLowerCase()) !== -1 && (!best || k.length > best.length)) best = k;
   });
-  return best ? bucket.map[best] : null;
+  if (best) return bucket.map[best];
+
+  /* 2. 缓存句包含选区（划选半句、从句、短语——修复 SDG11 半句划词回落 API 的问题） */
+  if (ql.length >= 10) {
+    let shortestContainer = null;
+    bucket.keys.forEach((k) => {
+      if (k.toLowerCase().indexOf(ql) !== -1 && (!shortestContainer || k.length < shortestContainer.length)) {
+        shortestContainer = k;
+      }
+    });
+    if (shortestContainer) return bucket.map[shortestContainer];
+  }
+
+  /* 3. 高词元重合度匹配（兼容标点/引号/连字符细微差异） */
+  const qToks = ql.match(/[a-z]{3,}/g) || [];
+  if (qToks.length >= 4) {
+    const qSet = new Set(qToks);
+    let topK = null, topScore = 0;
+    bucket.keys.forEach((k) => {
+      const kToks = k.toLowerCase().match(/[a-z]{3,}/g) || [];
+      if (!kToks.length) return;
+      let hit = 0;
+      kToks.forEach((w) => { if (qSet.has(w)) hit++; });
+      const score = hit / Math.min(qSet.size, kToks.length);
+      if (score >= 0.6 && score > topScore) { topScore = score; topK = k; }
+    });
+    if (topK) return bucket.map[topK];
+  }
+  return null;
+}
+
+/* 纯本地离线语法拆解 + 核心学术词逐词精解（对未预置逐句缓存的论文原文同样 100% 离线可用，绝不报 AI 错误） */
+function buildOfflineFallbackAnalysis(text, articleId) {
+  const clean = _normSentence(text);
+  const cues = [];
+  if (/\b(which|who|whom|whose|that)\b/i.test(clean)) cues.push('• 含定语/同位语从句（which / that / who 等引导修饰成分，先抓主谓宾主干）');
+  if (/\b(although|though|while|whereas|despite|in spite of|however|nevertheless)\b/i.test(clean)) cues.push('• 含让步/转折逻辑（although / while / whereas / however），重点通常在转折之后');
+  if (/\b(because|since|due to|as a result|therefore|consequently|thus|hence)\b/i.test(clean)) cues.push('• 含因果逻辑信号词（because / due to / therefore 等），注意区分原因与结论');
+  if (/\b(is|are|was|were|been|be)\s+[a-z]+(?:ed|en|wn|ht|pt)\b/i.test(clean)) cues.push('• 含学术被动语态结构（be + 过去分词），翻译时可按中文习惯转为主动或无主句');
+  if (/\b(if|unless|whether|provided that)\b/i.test(clean)) cues.push('• 含条件/假设从句（if / unless / whether）');
+  if (!cues.length) cues.push('• 建议先找出主语与核心谓语动词，再将介词短语与修饰成分按意群分层理解');
+
+  const chunks = clean.split(/(?:,\s*|;\s*|\s+—\s+|\s+(?=(?:which|whereas|although|because|while|however|therefore)\b))/i)
+    .map((s) => s.trim()).filter(Boolean);
+
+  const stop = new Set(['the','and','for','that','with','this','from','have','has','had','are','was','were','been','will','would','could','should','into','over','under','such','than','then','them','they','their','there','these','those','about','after','before','between','through','during','which','where','when','what','while','also','more','most','some','many','very','only','just','even','both','each','other','can','may','might','must','not','but','its','our','your']);
+  const words = clean.match(/[A-Za-z][A-Za-z\-]{2,}/g) || [];
+  const seen = new Set();
+  const gloss = [];
+  for (const w of words) {
+    const lw = w.toLowerCase();
+    if (seen.has(lw) || stop.has(lw)) continue;
+    seen.add(lw);
+    const m = getLocalWordMeaning(lw, articleId);
+    if (m) {
+      const ph = window.getPhonetic ? window.getPhonetic(lw) : '';
+      gloss.push('• ' + w + (ph ? ' ' + ph : '') + '：' + m.split('\n')[0].slice(0, 70));
+      if (gloss.length >= 10) break;
+    }
+  }
+
+  return [
+    '1. 意群切分（离线直读）：',
+    chunks.map((c, i) => '  (' + (i + 1) + ') ' + c).join('\n'),
+    '',
+    '2. 句子结构提示（离线分析）：',
+    cues.join('\n'),
+    '',
+    '3. 本句核心词离线词典精解（免 AI）：',
+    gloss.length ? gloss.join('\n') : '（可点击任意单词查看音标与离线词典释义）'
+  ].join('\n');
 }
 
 function sentenceContaining(paragraphText, word) {
@@ -361,15 +487,7 @@ async function showWordPopup(spanEl) {
     if (stillCurrent()) $('#wpMeaning').innerHTML = esc(localW);
     return;
   }
-  if (!aiAvailable()) { if (stillCurrent()) $('#wpMeaning').innerHTML = '<span class="muted">' + esc(aiBlockReason()) + '</span>'; return; }
-  try {
-    const r = await LLM.chat(PROMPTS.word(word, sentence), { maxTokens: 200, temperature: 0.3 });
-    Store.data.wordCache[key] = r;
-    Store.save();
-    if (stillCurrent()) $('#wpMeaning').innerHTML = esc(r);
-  } catch (e) {
-    if (stillCurrent()) $('#wpMeaning').innerHTML = '<span style="color:var(--danger)">' + esc(LLM.friendlyError(e)) + '</span>';
-  }
+  if (stillCurrent()) $('#wpMeaning').innerHTML = '<span class="muted">本地 9,389 词词库暂未收录该专有名词/缩写，可点击「加入生词本」自行记录。</span>';
 }
 
 function addVocabFromPopup(word, sentence) {
@@ -434,39 +552,31 @@ async function selTranslate() {
   const text = App._selText || '';
   if (!text) return;
   $('#selToolbar').classList.add('hidden');
-  /* 本地预生成：直接取该句解析里的「中文翻译」部分 */
+  /* 1. 优先命中文章离线逐句精译 */
   const local = getLocalAnalyze(text, App.articleId);
   if (local) {
     const m = local.match(/1\.\s*中文翻译[:：]\s*([\s\S]*?)(?=\n\s*2\.|$)/);
     if (m && m[1] && m[1].trim()) {
-      setReadPanel('🌐 翻译', m[1].trim() + '\n\n—— 📦 取自本地预生成解析，未调用 API ——');
+      setReadPanel('🌐 离线中文翻译', m[1].trim() + '\n\n—— 📦 本地离线预生成翻译（免 AI） ——');
       return;
     }
   }
-  if (!requireAI()) return;
-  setReadPanel('🌐 翻译', '翻译中…');
-  try {
-    const r = await LLM.chat(PROMPTS.translate(text), { maxTokens: 400, temperature: 0.3 });
-    setReadPanel('🌐 翻译', r);
-  } catch (e) { setReadPanel('🌐 翻译', LLM.friendlyError(e)); }
+  /* 2. 未预置逐句翻译时走纯本地词典与意群离线速解，绝不弹出红色 AI 报错 */
+  setReadPanel('🌐 离线意群与逐词释义', buildOfflineFallbackAnalysis(text, App.articleId) + '\n\n—— 📦 纯本地离线词典解析（无需配置 AI） ——');
 }
 
 async function selAnalyze() {
   const text = App._selText || '';
   if (!text) return;
   $('#selToolbar').classList.add('hidden');
-  /* 本地预生成的长难句解析：命中则完全不调用 API */
+  /* 1. 优先命中文章离线长难句精解（含半句/从句智能反查） */
   const local = getLocalAnalyze(text, App.articleId);
   if (local) {
-    setReadPanel('🧩 长难句解析', local + '\n\n—— 📦 本地预生成内容，未调用 API ——');
+    setReadPanel('🧩 离线长难句解析', local + '\n\n—— 📦 本地离线预生成解析（免 AI） ——');
     return;
   }
-  if (!requireAI()) return;
-  setReadPanel('🧩 长难句解析', '分析中…');
-  try {
-    const r = await LLM.chat(PROMPTS.analyze(text), { maxTokens: 700, temperature: 0.4 });
-    setReadPanel('🧩 长难句解析', r);
-  } catch (e) { setReadPanel('🧩 长难句解析', LLM.friendlyError(e)); }
+  /* 2. 未预置逐句解析时走纯本地语法结构 + 9389 词离线词典拆解，完全免 AI */
+  setReadPanel('🧩 离线长难句拆解', buildOfflineFallbackAnalysis(text, App.articleId) + '\n\n—— 📦 纯本地离线语法拆解（无需配置 AI） ——');
 }
 
 /* =========================================================

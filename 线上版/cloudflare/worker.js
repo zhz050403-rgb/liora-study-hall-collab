@@ -1111,13 +1111,25 @@ export default {
       return jsonRes(idxData, 200);
     }
 
-    /* Static Asset URL Remap (课外/.note-images/ -> /assets/note-images/) */
+    /* Static Asset URL Remap (课外/.note-images/ + direct HTML serving without 307 redirects) */
     let assetReq = request;
     let decodedPath = p;
     try { decodedPath = decodeURIComponent(p); } catch {}
     if (decodedPath.startsWith('/课外/.note-images/')) {
       const remapped = new URL(request.url);
       remapped.pathname = '/assets/note-images/' + decodedPath.slice('/课外/.note-images/'.length);
+      assetReq = new Request(remapped.toString(), request);
+    } else if (p === '/') {
+      const remapped = new URL(request.url);
+      remapped.pathname = '/index.html';
+      assetReq = new Request(remapped.toString(), request);
+    } else if (p === '/english' || p === '/english/') {
+      const remapped = new URL(request.url);
+      remapped.pathname = '/english/index.html';
+      assetReq = new Request(remapped.toString(), request);
+    } else if (/^\/(daily-brief|bilingual-video|guide|exam-prep|todo|econ-handbook)$/.test(p)) {
+      const remapped = new URL(request.url);
+      remapped.pathname = p + '.html';
       assetReq = new Request(remapped.toString(), request);
     }
 

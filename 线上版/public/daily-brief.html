@@ -11,43 +11,42 @@
 <link rel="stylesheet" href="blocks/site-tokens.css?v=20261107-polish1">
 <link rel="stylesheet" href="blocks/site-polish.css?v=20261113-gh-be9780e">
 <link rel="stylesheet" href="styles/theme.css?v=20261122-v2">
+<link rel="stylesheet" href="styles/editorial.css?v=20261123-v12">
+<link rel="stylesheet" href="styles/subpage-unified.css?v=20261123-v11">
 </head>
 <body class="hub-body">
 
-<header class="site-header">
-  <div class="header-inner">
-    <a class="brand" href="index.html#/">
-      <img class="brand-crest" src="cabin-art/crest-badge-clean.png?v=20261106-crest1" alt="Liora 的学习小屋徽章" width="92" height="97">
-      <div class="brand-text">
-        <div class="t1">Liora 的学习小屋</div>
-        <div class="t2">Learning Cabin</div>
-      </div>
-    </a>
-    <nav class="main-nav" id="mainNav" aria-label="主导航">
+<header class="ed-header">
+  <div class="ed-header-inner">
+    <a class="ed-brand" href="index.html#/"><span class="ed-crest" aria-hidden="true"><img src="cabin-art/crest-badge-clean.png?v=20261106-crest1" alt=""></span><span>Liora 的学习小屋</span></a>
+    <nav class="ed-nav" id="edMainNav" aria-label="主导航">
       <a href="index.html#/">首页</a>
       <a href="index.html#/courses">课程中心</a>
-      <a href="index.html#/extra">课外拓展</a>
-      <a class="active" href="daily-brief.html" aria-current="page">每日简报</a>
-      <a href="index.html#/reading">读书</a>
+      <a href="index.html#/handbooks">五科手册</a>
+      <a href="index.html#/mistakes">错题刷题</a>
+      <a href="index.html#/annotations">高光集</a>
+      <a href="index.html#/reading" data-nav="reading">读书</a>
       <a href="index.html#/prep">复习计划</a>
-      <a href="english/index.html">英语学习</a>
+      <a href="index.html#/extra" data-nav="extra">课外拓展</a>
+      <a class="active" href="daily-brief.html" aria-current="page">每日简报</a>
+      <a href="english/index.html" data-nav="english">英语学习</a>
     </nav>
-    <div class="search-wrap">
-      <div class="search-box">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#68788c" stroke-width="2.4"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
-        <input id="briefSearch" type="text" placeholder="搜索本期简报…" autocomplete="off" aria-label="搜索本期简报">
-      </div>
+    <div class="ed-search-wrap">
+      <input id="briefSearch" class="ed-search" type="search" placeholder="搜索本期简报…" autocomplete="off" aria-label="搜索本期简报">
     </div>
-    <button class="nav-toggle" id="navToggle" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="mainNav">
-      <span></span><span></span><span></span>
-    </button>
+    <span class="ed-sync-dot" id="edSyncChip" title="学习进度已自动同步到云端"><i id="edSyncDot"></i><span>云端</span></span>
   </div>
 </header>
 
-<section class="brief-banner" aria-labelledby="briefTitle">
-  <img class="brief-banner-art" src="cabin-art/banner-daily-brief-painted.webp" alt="" fetchpriority="high">
-  <div><h1 id="briefTitle">每日简报</h1><p>近 14 天的文章精选</p></div>
-</section>
+<div class="brief-hero-wrap">
+  <section class="ed-hero ed-hero-art ed-hero-art-brief" aria-labelledby="briefTitle" style="grid-template-columns:1fr;padding:24px 28px">
+    <div>
+      <div class="ed-hero-kicker">DAILY BRIEF · 每日精选期刊简报</div>
+      <h1 id="briefTitle">每日简报</h1>
+      <p style="margin-bottom:0">近 14 天的国际顶刊前沿文章精选 · 展开可划选任意文字使用 4 色荧光笔永久高光。</p>
+    </div>
+  </section>
+</div>
 
 <main class="hub-container brief-page" id="dailyBriefApp">
   <section class="hub-slot brief-edition" id="dailyBriefMain" data-slot="daily-brief">
@@ -257,13 +256,14 @@
   </section>
 </main>
 
-<script src="https://cdn.jsdelivr.net/npm/@tencent-ai/workbuddy-cloud-sdk@0.1.4-dev.ca27990.202610161713/lib/index.global.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/@tencent-ai/workbuddy-cloud-sdk@0.1.4-dev.ca27990.202610161713/lib/index.global.js"></script>
 <script src="/cloud-config.js?v=1"></script>
 <script src="/cloud-sync.js?v=20261107c"></script>
 <script src="blocks/daily-brief.js?v=20261116-time-order1"></script>
 <script src="blocks/site-polish.js?v=20261111-readability-cf5b05b"></script>
 <script src="blocks/content-update.js?v=20261112-hotupdate2"></script>
 <script src="blocks/bilingual-video.js?v=20261113-bv9-hafcb7eb1"></script>
+<script src="app/subpage-header.js?v=20261123-v11"></script>
 <script src="app/highlighter.js?v=20261123-v10"></script>
 </body>
 </html>
