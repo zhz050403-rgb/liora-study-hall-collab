@@ -456,7 +456,7 @@
               '</div>' +
             '</div>' +
 
-            /* 吸顶「一条龙」顺滑导航条（打卡置顶，课后解析保留在原位置，中英视频独立标签） */
+            /* 吸顶「一条龙」顺滑导航条（打卡置顶，课后解析保留在原位置，中英视频一点直接进入视频页） */
             '<div class="ed-step-bar">' +
               '<button type="button" class="ed-step-pill active" data-sec="sec-checklist">✅ 本周打卡</button>' +
               '<button type="button" class="ed-step-pill" data-sec="sec-figs">📊 本周图解 <span id="edFigCountBadge">' + (Number(week.diagramCount) || 0) + '</span></button>' +
@@ -464,7 +464,7 @@
               (qaList.length ? '<button type="button" class="ed-step-pill" data-sec="sec-exam-qa">🎯 必考大题 ' + qaList.length + '</button>' : '') +
               '<button type="button" class="ed-step-pill" data-sec="sec-tutorial">📝 课后解析</button>' +
               '<button type="button" class="ed-step-pill" data-sec="sec-resources">📄 课件与术语</button>' +
-              '<button type="button" class="ed-step-pill" data-sec="sec-videos">🎬 中英视频</button>' +
+              '<a class="ed-step-pill" href="bilingual-video.html?course=' + esc(course.id) + ((course.id === 'computing' || course.id === 'english') ? '#lh-extra-videos' : '') + '" style="text-decoration:none">🎬 中英视频 ↗</a>' +
             '</div>' +
 
             /* 第 1 站（置顶）：仅放本周学习任务打卡清单，清爽直接打勾 */
@@ -565,14 +565,8 @@
               }).join('') + '</ul></details>'
             ) : '') +
 
-            /* 第 4 站：独立中英视频与考前通关手册专区（与上方标签一键直达） */
-            '<div id="sec-videos" class="ed-stage-head">' +
-              '<h2>🎬 本课中英对照视频与考前通关手册</h2>' +
-              '<span class="sub">中英双语讲解视频 · 考前公式手册 · 专项题库</span>' +
-            '</div>' +
             '<div class="ed-card" style="margin-bottom:14px">' +
               '<div style="display:flex;gap:10px;flex-wrap:wrap">' +
-                '<a class="ed-btn ed-btn-primary" href="bilingual-video.html?course=' + esc(course.id) + '">🎬 打开本课中英对照视频页 ↗</a>' +
                 '<a class="ed-btn ed-btn-gold" href="#/handbooks/' + esc(course.id) + '">📚 打开本课通关手册（公式/避坑）</a>' +
                 (course.id === 'accounting' ? '<a class="ed-btn" href="exam-prep.html">🎯 会计 U1–U6 官方引文闭卷库</a>' : '') +
                 (course.id === 'english' ? '<a class="ed-btn" href="english/index.html">🇬🇧 打开英语精读与生词工作台</a>' : '') +

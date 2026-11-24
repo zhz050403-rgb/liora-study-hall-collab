@@ -154,7 +154,7 @@ async function main() {
       var svgs = document.querySelectorAll('#edNoteBody svg, #edTutBody svg').length;
       var noteImgs = document.querySelectorAll('#edNoteBody img, #edTutBody img').length;
       var hasStrip = !!document.querySelector('.ed-fig-strip');
-      var hasAllStages = !!document.getElementById('sec-checklist') && !!document.getElementById('sec-notes') && !!document.getElementById('sec-tutorial') && !!document.getElementById('sec-resources') && !!document.getElementById('sec-videos');
+      var hasAllStages = !!document.getElementById('sec-checklist') && !!document.getElementById('sec-notes') && !!document.getElementById('sec-tutorial') && !!document.getElementById('sec-resources');
       var biConcepts = document.querySelectorAll('.bi-concept-card').length;
       var examQAs = document.querySelectorAll('.ed-qa-card').length;
       var h1s = Array.from(document.querySelectorAll('#app h1'));
