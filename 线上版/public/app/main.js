@@ -339,7 +339,8 @@
     highlightNav(hash);
     window.scrollTo(0, 0);
 
-    var parts = hash.replace(/^#\//, '').split('/').filter(Boolean);
+    var cleanHash = hash.split('?')[0];
+    var parts = cleanHash.replace(/^#\//, '').split('/').filter(Boolean);
     var p0 = parts[0] || '';
     try {
       if (!p0) await window.LioraViewsHome.renderHome(app);

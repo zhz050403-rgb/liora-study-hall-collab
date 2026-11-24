@@ -253,90 +253,407 @@
     draw();
   }
 
-  /* ==================== 3. 全科中英术语闪卡 ==================== */
+  /* ==================== 3. 全科中英术语闪卡（严格按单元隔离 + 自选范围 + 随机打乱 + 章节完成确认） ==================== */
   async function renderFlashcards(app) {
     app.innerHTML = '<div class="lh-wrap"><p>正在加载中英术语闪卡…</p></div>';
     var api = window.LioraStudyApi;
     var terms = await api.loadGlossary();
     var st = await api.loadStudy(true);
     var mastery = st.flashcards || {};
-    var course = 'all';
+
+    /* 解析 URL 参数：例如从会计第 1 周点进来 #/flashcards?course=accounting&week=1 */
+    var qStr = (location.hash.split('?')[1] || '');
+    var qParams = new URLSearchParams(qStr);
+    var initCourse = qParams.get('course') || 'accounting';
+    if (['accounting', 'economics', 'mathematics', 'computing', 'english', 'all'].indexOf(initCourse) < 0) {
+      initCourse = 'accounting';
+    }
+    var initWeek = qParams.get('week') || '';
+
+    var course = initCourse;
+    var selectedWeeks = {}; // 仅在单学科模式下生效：{ '1': true, ... }
     var onlyUnmastered = false;
+    var shuffleOn = false;
+    var deckOrder = [];     // 当前这轮锁定的卡片 id 顺序（确保打乱后翻页稳定，不反复跳）
     var idx = 0;
     var flipped = false;
+    var roundFinished = false;
+    var roundStats = { known: 0, review: 0 };
 
-    function getDeck() {
+    function weeksOfCourse(c) {
+      var set = {};
+      terms.forEach(function (t) {
+        if (c !== 'all' && t.course !== c) return;
+        var w = String(t.week || '1');
+        set[w] = (set[w] || 0) + 1;
+      });
+      return Object.keys(set).sort(function (a, b) { return Number(a) - Number(b); });
+    }
+
+    /* 初始化选中单元：从某周进入则严格只选那一单元（若该周无词则选最近有词的第一单元） */
+    function initSelectedWeeks(c, preferredWeek) {
+      selectedWeeks = {};
+      if (c === 'all') return;
+      var ws = weeksOfCourse(c);
+      if (!ws.length) return;
+      if (preferredWeek && ws.indexOf(String(preferredWeek)) >= 0) {
+        selectedWeeks[String(preferredWeek)] = true;
+      } else {
+        /* 默认只选第一个单元，绝不默认混入后面所有单元 */
+        selectedWeeks[ws[0]] = true;
+      }
+    }
+    initSelectedWeeks(course, initWeek);
+
+    function selectedWeekList() {
+      if (course === 'all') return [];
+      return weeksOfCourse(course).filter(function (w) { return !!selectedWeeks[w]; });
+    }
+
+    function filterTerms() {
       return terms.filter(function (t) {
-        if (course !== 'all' && t.course !== course) return false;
+        if (course !== 'all') {
+          if (t.course !== course) return false;
+          if (!selectedWeeks[String(t.week || '1')]) return false;
+        }
         if (onlyUnmastered && mastery[t.id] && mastery[t.id].status === 'known') return false;
         return true;
       });
     }
 
+    function fisherYates(arr) {
+      var a = arr.slice();
+      for (var i = a.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var tmp = a[i]; a[i] = a[j]; a[j] = tmp;
+      }
+      return a;
+    }
+
+    function rebuildDeck(resetProgress) {
+      var matched = filterTerms();
+      var ordered = shuffleOn ? fisherYates(matched) : matched.slice().sort(function (a, b) {
+        if (a.course !== b.course) return a.course.localeCompare(b.course);
+        return Number(a.week || 0) - Number(b.week || 0);
+      });
+      deckOrder = ordered.map(function (t) { return t.id; });
+      if (resetProgress !== false) {
+        idx = 0;
+        flipped = false;
+        roundFinished = false;
+        roundStats = { known: 0, review: 0 };
+      }
+    }
+
+    function getDeck() {
+      var byId = {};
+      terms.forEach(function (t) { byId[t.id] = t; });
+      return deckOrder.map(function (id) { return byId[id]; }).filter(Boolean);
+    }
+
+    rebuildDeck(true);
+
+    function rangeSummaryText() {
+      if (course === 'all') return '全部学科 · 全部单元';
+      var ws = selectedWeekList();
+      if (!ws.length) return courseLabel(course) + ' · 未选择单元';
+      if (ws.length === 1) return courseLabel(course) + ' · 仅第 ' + ws[0] + ' 单元（Week ' + ws[0] + '）';
+      return courseLabel(course) + ' · 已选 ' + ws.length + ' 个单元（W' + ws.join('、W') + '）';
+    }
+
+    function findNextUnit() {
+      if (course === 'all') return null;
+      var allW = weeksOfCourse(course);
+      var selW = selectedWeekList();
+      if (!selW.length) return allW[0] || null;
+      var lastSel = selW[selW.length - 1];
+      var pos = allW.indexOf(lastSel);
+      return (pos >= 0 && pos + 1 < allW.length) ? allW[pos + 1] : null;
+    }
+
     function draw() {
       var deck = getDeck();
-      if (idx >= deck.length) idx = 0;
       var knownCount = terms.filter(function (t) { return mastery[t.id] && mastery[t.id].status === 'known'; }).length;
-      var cur = deck[idx];
+      var allCourseWeeks = course === 'all' ? [] : weeksOfCourse(course);
+      var selW = selectedWeekList();
+      var nextUnit = findNextUnit();
 
-      var cardHtml = cur ? (
-        '<div class="lh-flashcard" id="fcBox" title="点击翻面">' +
-          '<div style="margin-bottom:12px"><span class="lh-badge lh-badge-gold">' + esc(courseLabel(cur.course)) + ' · Week ' + esc(cur.week) + '</span> ' +
-          '<span class="lh-badge">' + (idx + 1) + ' / ' + deck.length + '</span></div>' +
-          '<div class="fc-en">' + esc(cur.en) + '</div>' +
-          (flipped
-            ? '<div class="fc-zh">' + esc(cur.zh) + '</div><div class="fc-def">' + esc(cur.def) + '</div>'
-            : '<div style="color:var(--lh-muted);font-size:13.5px;margin-top:12px">先在脑海里说出中文释义与核心定义，再点击卡片翻面核对 👆</div>') +
-        '</div>' +
-        '<div style="display:flex;justify-content:center;gap:10px;flex-wrap:wrap">' +
-          '<button class="lh-btn" id="fcPrev">← 上一个</button>' +
-          '<button class="lh-btn lh-btn-primary" id="fcKnown">✅ 已掌握</button>' +
-          '<button class="lh-btn lh-btn-gold" id="fcReview">🔁 标记待复习</button>' +
-          '<button class="lh-btn" id="fcNext">下一个 →</button>' +
-        '</div>'
-      ) : '<div class="lh-card" style="text-align:center"><p>这一组术语已全部掌握！切换学科或取消「仅看未掌握」可继续复习。</p></div>';
+      /* 单元范围选择面板（单选/多选 + 快速范围选择如 1-6 单元 + 随机打乱开关） */
+      var unitSelectorHtml = '';
+      if (course !== 'all' && allCourseWeeks.length) {
+        var pills = allCourseWeeks.map(function (w) {
+          var unitTerms = terms.filter(function (t) { return t.course === course && String(t.week || '1') === w; });
+          var unitKnown = unitTerms.filter(function (t) { return mastery[t.id] && mastery[t.id].status === 'known'; }).length;
+          var active = !!selectedWeeks[w];
+          return '<button type="button" class="lh-btn lh-btn-sm' + (active ? ' lh-btn-primary' : '') + '" data-fc-w="' + esc(w) + '" style="display:inline-flex;align-items:center;gap:4px">' +
+            '<span>Unit/W' + esc(w) + '</span>' +
+            '<span style="font-size:11px;opacity:' + (active ? '.88' : '.68') + '">(' + unitKnown + '/' + unitTerms.length + ')</span>' +
+          '</button>';
+        }).join('');
+
+        var optsFrom = allCourseWeeks.map(function (w) {
+          return '<option value="' + esc(w) + '"' + (selW[0] === w ? ' selected' : '') + '>第 ' + esc(w) + ' 单元 (W' + esc(w) + ')</option>';
+        }).join('');
+        var optsTo = allCourseWeeks.map(function (w) {
+          var lastW = selW[selW.length - 1] || allCourseWeeks[0];
+          return '<option value="' + esc(w) + '"' + (lastW === w ? ' selected' : '') + '>第 ' + esc(w) + ' 单元 (W' + esc(w) + ')</option>';
+        }).join('');
+
+        unitSelectorHtml =
+          '<div class="lh-card" style="margin-bottom:14px;padding:14px 16px;border-left:4px solid var(--lh-navy-800)">' +
+            '<div style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:10px">' +
+              '<b style="font-size:14px;color:var(--lh-navy-900)">📌 选择要复习的单元（点击多选 · 严守所选边界，绝不混入未选单元）</b>' +
+              '<div style="display:flex;gap:6px;flex-wrap:wrap">' +
+                '<button type="button" class="lh-btn lh-btn-sm" id="fcSelectAllW">全选本学科</button>' +
+                '<button type="button" class="lh-btn lh-btn-sm" id="fcSelectFirstW">仅第 ' + esc(allCourseWeeks[0]) + ' 单元</button>' +
+              '</div>' +
+            '</div>' +
+            '<div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px">' + pills + '</div>' +
+            '<div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding-top:10px;border-top:1px dashed var(--lh-line);font-size:13px">' +
+              '<span style="color:var(--lh-muted);font-weight:600">快速范围：从</span>' +
+              '<select id="fcRangeFrom" class="lh-select" style="height:30px;padding:0 8px;font-size:12.5px">' + optsFrom + '</select>' +
+              '<span style="color:var(--lh-muted);font-weight:600">到</span>' +
+              '<select id="fcRangeTo" class="lh-select" style="height:30px;padding:0 8px;font-size:12.5px">' + optsTo + '</select>' +
+              '<button type="button" class="lh-btn lh-btn-sm lh-btn-gold" id="fcApplyRange">应用范围</button>' +
+              '<span style="margin-left:auto;display:inline-flex;align-items:center;gap:10px;flex-wrap:wrap">' +
+                '<label style="display:inline-flex;align-items:center;gap:5px;cursor:pointer;font-weight:600;color:var(--lh-navy-900)"><input type="checkbox" id="fcShuffle"' + (shuffleOn ? ' checked' : '') + '> 🔀 打乱卡片顺序</label>' +
+                (shuffleOn ? '<button type="button" class="lh-btn lh-btn-sm" id="fcReshuffle">🎲 重新洗牌</button>' : '') +
+              '</span>' +
+            '</div>' +
+          '</div>';
+      } else if (course === 'all') {
+        unitSelectorHtml =
+          '<div class="lh-card" style="margin-bottom:14px;padding:12px 16px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;font-size:13.5px">' +
+            '<span>💡 想按单个单元或自定义范围（如 1–6 单元）复习？点上方具体学科标签即可精确选择单元范围。</span>' +
+            '<span style="display:inline-flex;align-items:center;gap:10px">' +
+              '<label style="display:inline-flex;align-items:center;gap:5px;cursor:pointer;font-weight:600;color:var(--lh-navy-900)"><input type="checkbox" id="fcShuffle"' + (shuffleOn ? ' checked' : '') + '> 🔀 打乱卡片顺序</label>' +
+              (shuffleOn ? '<button type="button" class="lh-btn lh-btn-sm" id="fcReshuffle">🎲 重新洗牌</button>' : '') +
+            '</span>' +
+          '</div>';
+      }
+
+      /* 主卡片区 / 本章复习完成确认卡 */
+      var cardHtml = '';
+      if (roundFinished && deck.length > 0) {
+        var reviewLeft = deck.filter(function (t) { return !mastery[t.id] || mastery[t.id].status !== 'known'; }).length;
+        cardHtml =
+          '<div class="lh-card" style="text-align:center;padding:30px 24px;border-top:4px solid var(--lh-gold)">' +
+            '<div style="font-size:36px;margin-bottom:8px">🎉</div>' +
+            '<h2 style="margin:0 0 8px;font-family:var(--lh-serif);color:var(--lh-navy-900)">本范围概念已全部复习完成！</h2>' +
+            '<p style="color:var(--lh-ink-2);font-size:14.5px;margin:0 0 18px">' +
+              '当前复习范围：<b>' + esc(rangeSummaryText()) + '</b>（共 <b>' + deck.length + '</b> 张卡片）。<br>' +
+              '本轮标为「已掌握」<b>' + roundStats.known + '</b> 词 · 标为「待复习」<b>' + roundStats.review + '</b> 词' +
+              (reviewLeft > 0 ? ' · 本范围内仍有 <b>' + reviewLeft + '</b> 词未完全掌握' : ' · 本范围已全部掌握！') +
+            '</p>' +
+            '<div style="display:flex;justify-content:center;gap:10px;flex-wrap:wrap">' +
+              (nextUnit ? '<button class="lh-btn lh-btn-primary" id="fcGoNextUnit">➡ 进入下一单元（Unit / Week ' + esc(nextUnit) + '）</button>' : '') +
+              '<button class="lh-btn lh-btn-gold" id="fcReplayShuffle">🔀 打乱顺序再刷一遍</button>' +
+              '<button class="lh-btn" id="fcReplayOrder">🔁 按顺序重刷本章</button>' +
+              (reviewLeft > 0 ? '<button class="lh-btn" id="fcReplayUnm">🎯 只刷未掌握（' + reviewLeft + ' 词）</button>' : '') +
+            '</div>' +
+          '</div>';
+      } else if (!deck.length) {
+        cardHtml =
+          '<div class="lh-card" style="text-align:center;padding:28px 20px">' +
+            '<p style="margin:0 0 14px;color:var(--lh-ink-2)">当前筛选范围内暂无待背卡片（可能已全部掌握，或尚未勾选单元）。</p>' +
+            '<div style="display:flex;justify-content:center;gap:10px;flex-wrap:wrap">' +
+              (onlyUnmastered ? '<button class="lh-btn lh-btn-primary" id="fcShowAllInRange">显示本范围全部卡片</button>' : '') +
+              (nextUnit ? '<button class="lh-btn lh-btn-gold" id="fcGoNextUnit">➡ 进入下一单元（Unit / Week ' + esc(nextUnit) + '）</button>' : '') +
+            '</div>' +
+          '</div>';
+      } else {
+        var cur = deck[idx];
+        var curStatus = mastery[cur.id] ? mastery[cur.id].status : '';
+        var statusTag = curStatus === 'known'
+          ? '<span class="lh-badge" style="background:#e8f5ee;color:#1d6b48">✓ 曾标已掌握</span>'
+          : (curStatus === 'review' ? '<span class="lh-badge" style="background:#fdf0ee;color:#b4322a">🔁 待重点复习</span>' : '');
+        var pct = Math.round(((idx + 1) / deck.length) * 100);
+
+        cardHtml =
+          '<div style="margin-bottom:12px;padding:10px 14px;border-radius:10px;background:var(--lh-navy-050);border:1px solid var(--lh-line);display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;font-size:13px">' +
+            '<span>📚 <b>' + esc(rangeSummaryText()) + '</b>' + (shuffleOn ? ' · <b style="color:#946f27">🔀 随机乱序模式</b>' : ' · 按单元顺序') + '</span>' +
+            '<span>本轮进度：<b>' + (idx + 1) + ' / ' + deck.length + '</b>（' + pct + '%）</span>' +
+          '</div>' +
+          '<div class="lh-flashcard" id="fcBox" title="点击翻面" style="border-top:4px solid var(--lh-navy-800)">' +
+            '<div style="margin-bottom:14px;display:flex;justify-content:center;gap:8px;flex-wrap:wrap;align-items:center">' +
+              '<span class="lh-badge lh-badge-gold" style="font-size:13px;padding:4px 12px">📍 ' + esc(courseLabel(cur.course)) + ' · Unit / Week ' + esc(cur.week) + '</span>' +
+              '<span class="lh-badge">' + (idx + 1) + ' / ' + deck.length + '</span>' +
+              statusTag +
+            '</div>' +
+            '<div class="fc-en">' + esc(cur.en) + '</div>' +
+            (flipped
+              ? '<div class="fc-zh">' + esc(cur.zh) + '</div><div class="fc-def">' + esc(cur.def) + '</div>'
+              : '<div style="color:var(--lh-muted);font-size:13.5px;margin-top:12px">先在脑海里说出中文释义与核心定义，再点击卡片翻面核对 👆</div>') +
+          '</div>' +
+          '<div style="display:flex;justify-content:center;gap:10px;flex-wrap:wrap">' +
+            '<button class="lh-btn" id="fcPrev"' + (idx === 0 ? ' disabled' : '') + '>← 上一个</button>' +
+            '<button class="lh-btn lh-btn-primary" id="fcKnown">✅ 已掌握</button>' +
+            '<button class="lh-btn lh-btn-gold" id="fcReview">🔁 标记待复习</button>' +
+            '<button class="lh-btn" id="fcNext">' + (idx + 1 >= deck.length ? '完成本章 ✓' : '下一个 →') + '</button>' +
+          '</div>';
+      }
 
       app.innerHTML = '<div class="lh-wrap">' +
         '<div class="lh-page-hero">' +
           '<h1>🃏 全科中英术语闪卡（共 ' + terms.length + ' 词）</h1>' +
-          '<p>全英文授课提分利器：集中掌握 5 门课专业英文术语与中文精准解释。当前已掌握 <b>' + knownCount + ' / ' + terms.length + '</b>。</p>' +
+          '<p>严格按单元隔离复习，支持自选单元范围（如 1–6 单元）与随机打乱顺序。全站累计已掌握 <b>' + knownCount + ' / ' + terms.length + '</b>。</p>' +
         '</div>' +
         '<div class="lh-tabs">' +
-          ['all', 'accounting', 'economics', 'mathematics', 'computing', 'english'].map(function (c) {
+          ['accounting', 'economics', 'mathematics', 'computing', 'english', 'all'].map(function (c) {
             return '<button class="lh-tab' + (course === c ? ' active' : '') + '" data-fc-c="' + c + '">' + (c === 'all' ? '全部学科' : courseLabel(c)) + '</button>';
           }).join('') +
           '<label style="margin-left:auto;display:inline-flex;align-items:center;gap:6px;font-size:13.5px;cursor:pointer"><input type="checkbox" id="fcUnm"' + (onlyUnmastered ? ' checked' : '') + '> 仅看未掌握</label>' +
         '</div>' +
+        unitSelectorHtml +
         cardHtml +
       '</div>';
 
+      /* 学科切换：默认严格选中第 1 单元 */
       app.querySelectorAll('[data-fc-c]').forEach(function (b) {
-        b.addEventListener('click', function () { course = b.getAttribute('data-fc-c'); idx = 0; flipped = false; draw(); });
+        b.addEventListener('click', function () {
+          course = b.getAttribute('data-fc-c');
+          initSelectedWeeks(course, '');
+          rebuildDeck(true);
+          draw();
+        });
       });
+
+      /* 单元多选切换 */
+      app.querySelectorAll('[data-fc-w]').forEach(function (b) {
+        b.addEventListener('click', function () {
+          var w = b.getAttribute('data-fc-w');
+          if (selectedWeeks[w]) {
+            if (selectedWeekList().length > 1) delete selectedWeeks[w];
+            else { api.toast('至少保留 1 个复习单元'); return; }
+          } else {
+            selectedWeeks[w] = true;
+          }
+          rebuildDeck(true);
+          draw();
+        });
+      });
+
+      var selAllBtn = document.getElementById('fcSelectAllW');
+      if (selAllBtn) selAllBtn.addEventListener('click', function () {
+        weeksOfCourse(course).forEach(function (w) { selectedWeeks[w] = true; });
+        rebuildDeck(true);
+        draw();
+      });
+      var selFirstBtn = document.getElementById('fcSelectFirstW');
+      if (selFirstBtn) selFirstBtn.addEventListener('click', function () {
+        var ws = weeksOfCourse(course);
+        selectedWeeks = {};
+        if (ws[0]) selectedWeeks[ws[0]] = true;
+        rebuildDeck(true);
+        draw();
+      });
+
+      /* 快速范围应用（如 1–6 单元） */
+      var applyRange = document.getElementById('fcApplyRange');
+      if (applyRange) applyRange.addEventListener('click', function () {
+        var f = Number(document.getElementById('fcRangeFrom').value);
+        var t = Number(document.getElementById('fcRangeTo').value);
+        var lo = Math.min(f, t), hi = Math.max(f, t);
+        selectedWeeks = {};
+        weeksOfCourse(course).forEach(function (w) {
+          var n = Number(w);
+          if (n >= lo && n <= hi) selectedWeeks[w] = true;
+        });
+        rebuildDeck(true);
+        api.toast('已锁定 Unit/W' + lo + ' – W' + hi + ' 复习范围');
+        draw();
+      });
+
+      var shuf = document.getElementById('fcShuffle');
+      if (shuf) shuf.addEventListener('change', function () {
+        shuffleOn = shuf.checked;
+        rebuildDeck(true);
+        api.toast(shuffleOn ? '已打乱当前范围卡片顺序' : '已恢复按单元顺序');
+        draw();
+      });
+      var reshuf = document.getElementById('fcReshuffle');
+      if (reshuf) reshuf.addEventListener('click', function () {
+        shuffleOn = true;
+        rebuildDeck(true);
+        api.toast('已重新洗牌！');
+        draw();
+      });
+
       var unm = document.getElementById('fcUnm');
-      if (unm) unm.addEventListener('change', function () { onlyUnmastered = unm.checked; idx = 0; flipped = false; draw(); });
+      if (unm) unm.addEventListener('change', function () {
+        onlyUnmastered = unm.checked;
+        rebuildDeck(true);
+        draw();
+      });
+
+      /* 翻卡与导航（到最后一题显示完成确认卡，绝不静默跳到下一单元） */
+      function advanceCard() {
+        flipped = false;
+        if (idx + 1 >= deck.length) {
+          roundFinished = true;
+        } else {
+          idx++;
+        }
+        draw();
+      }
+
       var box = document.getElementById('fcBox');
       if (box) box.addEventListener('click', function () { flipped = !flipped; draw(); });
       var prev = document.getElementById('fcPrev');
-      if (prev) prev.addEventListener('click', function () { idx = (idx - 1 + deck.length) % deck.length; flipped = false; draw(); });
+      if (prev) prev.addEventListener('click', function () { if (idx > 0) { idx--; flipped = false; draw(); } });
       var next = document.getElementById('fcNext');
-      if (next) next.addEventListener('click', function () { idx = (idx + 1) % deck.length; flipped = false; draw(); });
+      if (next) next.addEventListener('click', advanceCard);
+
+      var curCard = (!roundFinished && deck.length) ? deck[idx] : null;
       var known = document.getElementById('fcKnown');
-      if (known && cur) known.addEventListener('click', async function () {
-        await api.saveFlashcard(cur.id, 'known');
-        mastery[cur.id] = { status: 'known' };
-        idx = (idx + 1) % Math.max(1, getDeck().length);
-        flipped = false;
+      if (known && curCard) known.addEventListener('click', async function () {
+        await api.saveFlashcard(curCard.id, 'known');
+        mastery[curCard.id] = { status: 'known' };
+        roundStats.known++;
         api.toast('已标为掌握');
-        draw();
+        advanceCard();
       });
       var rev = document.getElementById('fcReview');
-      if (rev && cur) rev.addEventListener('click', async function () {
-        await api.saveFlashcard(cur.id, 'review');
-        mastery[cur.id] = { status: 'review' };
-        idx = (idx + 1) % Math.max(1, deck.length);
-        flipped = false;
+      if (rev && curCard) rev.addEventListener('click', async function () {
+        await api.saveFlashcard(curCard.id, 'review');
+        mastery[curCard.id] = { status: 'review' };
+        roundStats.review++;
         api.toast('已标为待复习');
+        advanceCard();
+      });
+
+      /* 本章复习完成后的下一步操作 */
+      var goNext = document.getElementById('fcGoNextUnit');
+      if (goNext && nextUnit) goNext.addEventListener('click', function () {
+        selectedWeeks = {};
+        selectedWeeks[nextUnit] = true;
+        onlyUnmastered = false;
+        rebuildDeck(true);
+        api.toast('已进入 Unit / Week ' + nextUnit);
+        draw();
+      });
+      var repShuf = document.getElementById('fcReplayShuffle');
+      if (repShuf) repShuf.addEventListener('click', function () {
+        shuffleOn = true;
+        rebuildDeck(true);
+        draw();
+      });
+      var repOrd = document.getElementById('fcReplayOrder');
+      if (repOrd) repOrd.addEventListener('click', function () {
+        shuffleOn = false;
+        rebuildDeck(true);
+        draw();
+      });
+      var repUnm = document.getElementById('fcReplayUnm');
+      if (repUnm) repUnm.addEventListener('click', function () {
+        onlyUnmastered = true;
+        rebuildDeck(true);
+        draw();
+      });
+      var showAllBtn = document.getElementById('fcShowAllInRange');
+      if (showAllBtn) showAllBtn.addEventListener('click', function () {
+        onlyUnmastered = false;
+        rebuildDeck(true);
         draw();
       });
     }

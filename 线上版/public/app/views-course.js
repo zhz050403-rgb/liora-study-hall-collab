@@ -546,7 +546,7 @@
             '<div class="ed-card" style="margin-bottom:14px">' +
               '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;gap:8px;flex-wrap:wrap">' +
                 '<h3 style="margin:0;font-family:var(--serif);font-size:15.5px;color:var(--navy-900)">🃏 本周核心中英术语（' + gloss.length + ' 条）</h3>' +
-                '<a class="ed-btn ed-btn-sm ed-btn-gold" href="#/flashcards">去闪卡模式速背 →</a>' +
+                '<a class="ed-btn ed-btn-sm ed-btn-gold" href="#/flashcards?course=' + esc(course.id) + '&week=' + esc(week.num) + '">去闪卡模式速背本单元 →</a>' +
               '</div>' +
               (gloss.length
                 ? '<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px">' + gloss.map(function (g) {
