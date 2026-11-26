@@ -1094,7 +1094,18 @@ export default {
       }
     }
 
-    /* Filter index.json dynamically so students without extra/reading perm never see restricted courses */
+    /* Filter index.json & search-index.json dynamically so students without extra/reading perm never see restricted content */
+    if (sess && sess.role !== 'admin' && p === '/data-chunks/search-index.json') {
+      const sRes = await env.ASSETS.fetch(request);
+      if (!sRes.ok) return sRes;
+      if (sess.perms.extra) return sRes;
+      const sData = await sRes.json();
+      if (Array.isArray(sData.entries)) {
+        sData.entries = sData.entries.filter(e => !e.x);
+        sData.count = sData.entries.length;
+      }
+      return jsonRes(sData, 200);
+    }
     if (sess && sess.role !== 'admin' && p === '/data-chunks/index.json') {
       const idxRes = await env.ASSETS.fetch(request);
       if (!idxRes.ok) return idxRes;

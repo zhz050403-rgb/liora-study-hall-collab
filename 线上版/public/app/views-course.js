@@ -31,10 +31,22 @@
     } catch (e) {}
   }
 
-  /* 提取本节小标题，供「知识点目录」使用 */
+  /* 提取本节小标题（兼容新折叠专题卡 .ed-topic-acc 与传统 h2/h3/h4），供「知识点目录」与「思维导图」使用 */
   function extractHeadings(container) {
     var list = [];
     if (!container) return list;
+    var accs = container.querySelectorAll('details.ed-topic-acc');
+    if (accs.length) {
+      accs.forEach(function (det, i) {
+        var span = det.querySelector('.ed-topic-acc-title > span:last-child');
+        var txt = (span ? span.textContent : det.querySelector('summary')?.textContent || '').trim();
+        if (!txt) return;
+        var id = det.id || ('kp-' + i);
+        det.id = id;
+        list.push({ id: id, text: txt.slice(0, 56) });
+      });
+      return list;
+    }
     container.querySelectorAll('h2, h3, h4.kp-h').forEach(function (h, i) {
       var txt = (h.textContent || '').trim();
       if (!txt) return;
@@ -278,12 +290,12 @@
     return escaped;
   }
 
-  /* 渲染「核心概念中英逐行精讲」卡片块 */
+  /* 渲染「核心概念中英逐行精讲」卡片块（支持 bullets 详细分点逐条展开，如 Supply/Demand 全部非价格因素） */
   function renderBilingualConcepts(concepts, isCloze, isRecall, glossTerms) {
     if (!concepts || !concepts.length) return '';
     return '<div class="bi-concept-wrap" id="edBiConcepts">' +
       '<div class="bi-concept-banner">' +
-        '<h3>📌 核心概念中英逐行精讲 · Core Concepts（共 ' + concepts.length + ' 条）</h3>' +
+        '<h3>📌 核心概念与分点精讲 · Core Concepts（共 ' + concepts.length + ' 项）</h3>' +
         '<span style="font-size:12px;color:var(--muted)">' +
           (isCloze ? '🧠 填空自测已启用 · 精准遮盖核心术语与定义，点击色块翻开核对'
             : (isRecall ? '🧠 看中文背英文 · 看下方中文复述英文，点浅蓝卡翻开核对'
@@ -292,10 +304,25 @@
       '</div>' +
       '<div class="bi-concept-list">' +
         concepts.map(function (c, i) {
-          var isOfficial = /课件原话|真题|官方核心文本/.test(c.src || '');
-          /* 看中文背英文模式下不再叠加英文局部挖空，避免遮罩冲突 */
+          var isOfficial = /课件原话|真题|官方核心文本|Lecture Slides/.test(c.src || '');
           var enHtml = (isCloze && !isRecall) ? makeClozeEn(c.en, c.term, glossTerms) : esc(c.en);
           var zhHtml = isCloze ? makeClozeZh(c.zh, c.term) : esc(c.zh);
+          var bulletsHtml = '';
+          if (Array.isArray(c.bullets) && c.bullets.length) {
+            bulletsHtml = '<div class="bi-bullets">' +
+              c.bullets.map(function (b) {
+                var bEn = (isCloze && !isRecall) ? makeClozeEn(b.en, b.label, glossTerms) : esc(b.en);
+                var bZh = isCloze ? makeClozeZh(b.zh, b.label) : esc(b.zh);
+                return '<div class="bi-bullet-row">' +
+                  '<div class="bi-bullet-label">' + esc(b.label) + '</div>' +
+                  '<div class="bi-pair">' +
+                    '<div class="bi-en">🇬🇧 ' + bEn + '</div>' +
+                    '<div class="bi-zh">🇨🇳 ' + bZh + '</div>' +
+                  '</div>' +
+                '</div>';
+              }).join('') +
+            '</div>';
+          }
           return '<div class="bi-concept-card" id="bi-item-' + i + '">' +
             '<div class="bi-concept-head">' +
               '<span class="bi-concept-term">' + (i + 1) + '. ' + esc(c.term) + '</span>' +
@@ -305,10 +332,132 @@
               '<div class="bi-en">🇬🇧 ' + enHtml + '</div>' +
               '<div class="bi-zh">🇨🇳 ' + zhHtml + '</div>' +
             '</div>' +
+            bulletsHtml +
           '</div>';
         }).join('') +
       '</div>' +
     '</div>';
+  }
+
+  /* 将 week.notesHtml 中的双语段落/要点拆分成严格「上行英文 .bi-en + 下行中文 .bi-zh」结构化卡片 */
+  function splitEnZhText(plainText) {
+    var s = String(plainText || '').replace(/\s+/g, ' ').trim();
+    if (!s) return { en: '', zh: '' };
+    var firstZh = s.search(/[\u4e00-\u9fa5]/);
+    if (firstZh < 0) return { en: s, zh: '' };
+    if (firstZh === 0) return { en: '', zh: s };
+    /* 往前寻找紧贴中文前的英文句末标点（. ! ?）作为最自然的双语分界点 */
+    var prefix = s.slice(0, firstZh);
+    var splitAt = -1;
+    var lastDot = Math.max(prefix.lastIndexOf('. '), prefix.lastIndexOf('? '), prefix.lastIndexOf('! '));
+    if (lastDot >= 12) {
+      splitAt = lastDot + 1;
+    } else if (prefix.trim().length >= 18) {
+      /* 若没有句号但前半段主要是英文，也在中文起点处切开 */
+      splitAt = firstZh;
+      /* 如果中文紧跟在 "（" 后面且前面有个短英文词（如 "<strong>law of demand</strong>（需求定律）"），退回到前一句末 */
+      var parenCut = prefix.lastIndexOf('(');
+      if (parenCut > 12 && prefix.length - parenCut < 24) splitAt = firstZh;
+    }
+    if (splitAt > 0) {
+      return { en: s.slice(0, splitAt).trim(), zh: s.slice(splitAt).trim() };
+    }
+    return { en: '', zh: s };
+  }
+
+  function renderStructuredBilingualNotes(notesHtml, isCloze, isRecall, glossTerms) {
+    if (!notesHtml || !String(notesHtml).trim()) return '';
+    var tmp = document.createElement('div');
+    tmp.innerHTML = notesHtml;
+    var sections = [];
+    var cur = null;
+
+    Array.prototype.slice.call(tmp.childNodes).forEach(function (node) {
+      if (node.nodeType !== 1) return;
+      var tag = node.tagName;
+      if (/^H[234]$/.test(tag)) {
+        cur = { title: node.textContent.replace(/\s+/g, ' ').trim(), items: [] };
+        sections.push(cur);
+      } else {
+        if (!cur) {
+          cur = { title: '双语笔记要点 · Bilingual Notes', items: [] };
+          sections.push(cur);
+        }
+        if (tag === 'UL' || tag === 'OL') {
+          node.querySelectorAll('li').forEach(function (li) {
+            var txt = li.textContent.replace(/\s+/g, ' ').trim();
+            if (txt.length > 4) cur.items.push(splitEnZhText(txt));
+          });
+        } else {
+          var ptxt = node.textContent.replace(/\s+/g, ' ').trim();
+          if (ptxt.length > 4) cur.items.push(splitEnZhText(ptxt));
+        }
+      }
+    });
+
+    sections = sections.filter(function (s) { return s.items.length > 0; });
+    if (!sections.length) return '';
+
+    return '<div class="ed-bi-notes-wrap" id="edBiNotes">' +
+      '<div style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap">' +
+        '<h3 style="margin:0;font-family:var(--serif);font-size:16px;color:var(--navy-900)">🌐 本周双语结构化精讲 · Bilingual Study Notes（全段响应中英切换）</h3>' +
+        '<span style="font-size:12px;color:var(--muted)">按「概览 → 核心概念 → 重点详解 → 易错避坑 → 承上启下」结构排布</span>' +
+      '</div>' +
+      sections.map(function (sec, si) {
+        var rowsHtml = sec.items.map(function (it) {
+          var enOut = it.en ? ((isCloze && !isRecall) ? makeClozeEn(it.en, sec.title, glossTerms) : esc(it.en)) : '';
+          var zhOut = it.zh ? (isCloze ? makeClozeZh(it.zh, sec.title) : esc(it.zh)) : '';
+          return '<div class="bi-pair">' +
+            (enOut ? '<div class="bi-en">🇬🇧 ' + enOut + '</div>' : '') +
+            (zhOut ? '<div class="bi-zh">🇨🇳 ' + zhOut + '</div>' : '') +
+          '</div>';
+        }).join('');
+        return '<details class="ed-bi-notes-sec" id="bi-note-sec-' + si + '" open>' +
+          '<summary><span>' + esc(sec.title) + '</span><span class="ed-badge">' + sec.items.length + ' 条</span></summary>' +
+          '<div class="ed-bi-notes-body">' + rowsHtml + '</div>' +
+        '</details>';
+      }).join('') +
+    '</div>';
+  }
+
+  /* 将长篇 graphicHtml 按 <h4 class="kp-h"> 自动拆分为清晰可折叠的专题卡片，默认折叠「上单元 Tutorial」让本周正课置前 */
+  function formatGraphicIntoAccordions(rawHtml, weekTitle) {
+    if (!rawHtml || !String(rawHtml).trim()) return '';
+    var parts = String(rawHtml).split(/(?=<h4\b[^>]*>)/i).filter(function (s) { return s.trim().length > 0; });
+    if (parts.length <= 1) return rawHtml;
+
+    var hasLaterLecture = parts.some(function (p) { return /Lecture|讲座|需求|供给|均衡|弹性|核心/i.test(p.slice(0, 180)); });
+    var secNum = 0;
+    return '<div style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;margin:14px 0 10px">' +
+        '<h3 style="margin:0;font-family:var(--serif);font-size:16px;color:var(--navy-900)">📊 图解推导与课堂例题精讲（按专题分节，点标题展开/收起）</h3>' +
+        '<div style="display:flex;gap:6px">' +
+          '<button type="button" class="ed-btn ed-btn-sm" id="edAccExpandAll">展开全部</button>' +
+          '<button type="button" class="ed-btn ed-btn-sm" id="edAccCollapseAll">折叠全部</button>' +
+        '</div>' +
+      '</div>' +
+      parts.map(function (chunk) {
+        var hm = chunk.match(/^<h4\b[^>]*>([\s\S]*?)<\/h4>/i);
+        if (!hm) return '<div class="ed-card" style="margin-bottom:12px">' + chunk + '</div>';
+        var title = hm[1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+        var body = chunk.slice(hm[0].length);
+        var figs = (body.match(/<svg\b|<img\b/gi) || []).length;
+        var exs = (body.match(/<details\b/gi) || []).length;
+        var isGuide = /本周导览|自测清单/.test(title);
+        var isPrevTut = hasLaterLecture && /Tutorial/i.test(title) && secNum <= 2;
+        secNum++;
+        var openAttr = (isGuide || isPrevTut) ? '' : ' open';
+        var badges = '';
+        if (isPrevTut) badges += '<span class="ed-badge ed-badge-gold">上单元 Tutorial 解析 · 点开查看</span>';
+        if (figs) badges += '<span class="ed-badge">📊 ' + figs + ' 图</span>';
+        if (exs) badges += '<span class="ed-badge">📝 ' + exs + ' 例题</span>';
+        return '<details class="ed-topic-acc" id="ed-acc-' + secNum + '"' + openAttr + '>' +
+          '<summary>' +
+            '<span class="ed-topic-acc-title"><span class="ed-topic-acc-num">§' + secNum + '</span><span>' + esc(title) + '</span></span>' +
+            '<span style="display:flex;gap:5px;flex-wrap:wrap">' + badges + '</span>' +
+          '</summary>' +
+          '<div class="ed-topic-acc-body">' + body + '</div>' +
+        '</details>';
+      }).join('');
   }
 
   /* 渲染「本单元必考大题与中英对照标准答案」专区 */
@@ -503,9 +652,20 @@
               '</div>' +
             '</div>' +
 
+            '<div class="ed-inpage-search">' +
+              '<span style="font-size:14px">🔍</span>' +
+              '<input id="edInPageSearch" type="search" placeholder="在本周笔记中快搜关键词（如 supply / non-price / determinant / 弹性…）" autocomplete="off">' +
+              '<span id="edFindCount" style="font-size:12px;color:var(--muted);white-space:nowrap"></span>' +
+              '<button type="button" class="ed-btn ed-btn-sm" id="edFindPrev" style="display:none">↑ 上一处</button>' +
+              '<button type="button" class="ed-btn ed-btn-sm" id="edFindNext" style="display:none">↓ 下一处</button>' +
+              '<button type="button" class="ed-btn ed-btn-sm" id="edFindClear" style="display:none">清除</button>' +
+            '</div>' +
+
             '<div id="edModeSlot"></div>' +
 
             renderBilingualConcepts(biConcepts, noteMode === 'cloze', biMode === 'recall', gloss) +
+
+            renderStructuredBilingualNotes(week.notesHtml, noteMode === 'cloze', biMode === 'recall', gloss) +
 
             (weekAnns.length ? (
               '<div style="margin-bottom:14px;padding:10px 14px;border-radius:10px;background:var(--navy-050);border:1px solid var(--line);font-size:13px">' +
@@ -515,7 +675,7 @@
                 }).join('') +
               '</div>'
             ) : '') +
-            '<div id="edNoteBody" class="ed-prose' + (noteMode === 'cloze' ? ' cloze-on' : '') + '">' + rawHtml + '</div>' +
+            '<div id="edNoteBody" class="ed-prose' + (noteMode === 'cloze' ? ' cloze-on' : '') + '">' + formatGraphicIntoAccordions(rawHtml, week.title) + '</div>' +
 
             /* 必考大题与中英对照标准答案 */
             renderExamQA(qaList) +
@@ -787,7 +947,7 @@
         });
       } else if (noteMode === 'cloze') {
         var allBlanks = Array.prototype.slice.call(
-          app.querySelectorAll('#edBiConcepts .ed-cloze-blank, #edNoteBody strong, #edNoteBody .c-red')
+          app.querySelectorAll('#edBiConcepts .ed-cloze-blank, #edBiNotes .ed-cloze-blank, #edNoteBody strong, #edNoteBody .c-red')
         );
         allBlanks.forEach(function (el) {
           el.title = '点击翻开/隐藏考点词';
@@ -866,6 +1026,135 @@
       }
       var tutBody = document.getElementById('edTutBody');
       if (tutBody) applyKatex(tutBody);
+
+      /* 图解与例题折叠卡全部展开/折叠按钮 */
+      var accExp = document.getElementById('edAccExpandAll');
+      var accCol = document.getElementById('edAccCollapseAll');
+      if (accExp) accExp.addEventListener('click', function () {
+        app.querySelectorAll('#edNoteBody details.ed-topic-acc').forEach(function (d) { d.open = true; });
+      });
+      if (accCol) accCol.addEventListener('click', function () {
+        app.querySelectorAll('#edNoteBody details.ed-topic-acc').forEach(function (d) { d.open = false; });
+      });
+
+      /* 本周页内实时检索（支持英文/中文多关键词、自动展开折叠块、上下跳转 + 来自全站搜索的 ?q= 直达） */
+      (function wireInPageSearch() {
+        var inp = document.getElementById('edInPageSearch');
+        var cntEl = document.getElementById('edFindCount');
+        var prevBtn = document.getElementById('edFindPrev');
+        var nextBtn = document.getElementById('edFindNext');
+        var clrBtn = document.getElementById('edFindClear');
+        if (!inp) return;
+        var hits = [];
+        var curHit = -1;
+
+        function clearHits() {
+          app.querySelectorAll('mark.ed-find-hit').forEach(function (mk) {
+            var p = mk.parentNode;
+            if (!p) return;
+            p.replaceChild(document.createTextNode(mk.textContent), mk);
+            p.normalize();
+          });
+          hits = [];
+          curHit = -1;
+          if (cntEl) cntEl.textContent = '';
+          if (prevBtn) prevBtn.style.display = 'none';
+          if (nextBtn) nextBtn.style.display = 'none';
+          if (clrBtn) clrBtn.style.display = 'none';
+        }
+
+        function focusHit(index) {
+          if (!hits.length) return;
+          hits.forEach(function (h) { h.classList.remove('active'); });
+          curHit = (index + hits.length) % hits.length;
+          var target = hits[curHit];
+          var det = target.closest('details');
+          while (det) { det.open = true; det = det.parentElement ? det.parentElement.closest('details') : null; }
+          target.classList.add('active');
+          target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          if (cntEl) cntEl.textContent = '第 ' + (curHit + 1) + ' / ' + hits.length + ' 处';
+        }
+
+        function runFind(qText) {
+          clearHits();
+          var q = String(qText || '').trim();
+          if (q.length < 2) return;
+          var toks = q.split(/[\s,，、/]+/).filter(function (x) { return x.length >= 2; });
+          if (!toks.length) toks = [q];
+          var pat = new RegExp('(' + toks.map(escRe).join('|') + ')', 'gi');
+          var scopes = [
+            document.getElementById('edBiConcepts'),
+            document.getElementById('edBiNotes'),
+            document.getElementById('edNoteBody'),
+            document.getElementById('sec-exam-qa') && document.getElementById('sec-exam-qa').nextElementSibling
+          ].filter(Boolean);
+
+          scopes.forEach(function (scope) {
+            var walker = document.createTreeWalker(scope, NodeFilter.SHOW_TEXT, {
+              acceptNode: function (n) {
+                if (!n.nodeValue || !n.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
+                var pe = n.parentElement;
+                if (!pe || pe.closest('svg, script, style, button, input, .katex, mark.ed-find-hit')) return NodeFilter.FILTER_REJECT;
+                return pat.test(n.nodeValue) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+              }
+            });
+            var textNodes = [];
+            var tn;
+            while ((tn = walker.nextNode())) { pat.lastIndex = 0; textNodes.push(tn); }
+            textNodes.forEach(function (node) {
+              pat.lastIndex = 0;
+              var val = node.nodeValue;
+              var frag = document.createDocumentFragment();
+              var last = 0, m;
+              while ((m = pat.exec(val)) !== null) {
+                if (m.index > last) frag.appendChild(document.createTextNode(val.slice(last, m.index)));
+                var mk = document.createElement('mark');
+                mk.className = 'ed-find-hit';
+                mk.textContent = m[0];
+                frag.appendChild(mk);
+                hits.push(mk);
+                last = m.index + m[0].length;
+                if (hits.length >= 120) break;
+              }
+              if (last < val.length) frag.appendChild(document.createTextNode(val.slice(last)));
+              if (node.parentNode) node.parentNode.replaceChild(frag, node);
+            });
+          });
+
+          if (clrBtn) clrBtn.style.display = 'inline-flex';
+          if (!hits.length) {
+            if (cntEl) cntEl.textContent = '本周未找到匹配，可试试顶部全站搜索';
+            return;
+          }
+          if (prevBtn) prevBtn.style.display = 'inline-flex';
+          if (nextBtn) nextBtn.style.display = 'inline-flex';
+          focusHit(0);
+        }
+
+        var tmr = null;
+        inp.addEventListener('input', function () {
+          clearTimeout(tmr);
+          tmr = setTimeout(function () { runFind(inp.value); }, 180);
+        });
+        inp.addEventListener('keydown', function (ev) {
+          if (ev.key === 'Enter') {
+            ev.preventDefault();
+            if (hits.length) focusHit(curHit + 1);
+            else runFind(inp.value);
+          }
+        });
+        if (prevBtn) prevBtn.addEventListener('click', function () { focusHit(curHit - 1); });
+        if (nextBtn) nextBtn.addEventListener('click', function () { focusHit(curHit + 1); });
+        if (clrBtn) clrBtn.addEventListener('click', function () { inp.value = ''; clearHits(); });
+
+        /* 若从顶部全站搜索带 ?q=... 跳转过来，自动填入并滚动高亮直达！ */
+        var urlQ = new URLSearchParams(location.hash.split('?')[1] || '').get('q');
+        if (urlQ && !inp.dataset.autoRan) {
+          inp.dataset.autoRan = '1';
+          inp.value = urlQ;
+          setTimeout(function () { runFind(urlQ); }, 120);
+        }
+      })();
 
       /* 扫描全页图解（核心笔记 + 课后答案），生成顶部速览条并绑定点击放大灯箱 */
       var totalVis = wireVisuals(app, document.getElementById('sec-figs'));
