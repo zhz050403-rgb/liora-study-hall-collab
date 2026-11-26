@@ -1598,6 +1598,190 @@ mark.ed-find-hit.active {
   box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.45);
 }
 
+/* ==================== 5c. ADHD 友好舒缓逐卡阅读模式（大行距 + 低压折叠 + 一次只看一卡 + 微进度） ==================== */
+.ed-main-col.ed-adhd {
+  background: #fdfcf8;
+  line-height: 2.02;
+  letter-spacing: 0.025em;
+}
+.ed-main-col.ed-adhd .ed-prose,
+.ed-main-col.ed-adhd .ed-prose p,
+.ed-main-col.ed-adhd .ed-prose li {
+  line-height: 2.02;
+  max-width: 68ch;
+}
+.ed-main-col.ed-adhd .ed-prose p {
+  margin-bottom: 16px;
+}
+.ed-main-col.ed-adhd .ed-prose li {
+  margin-bottom: 10px;
+}
+.ed-main-col.ed-adhd .bi-en,
+.ed-main-col.ed-adhd .bi-zh {
+  line-height: 1.98;
+  letter-spacing: 0.02em;
+  max-width: 68ch;
+  padding: 6px 8px;
+}
+.ed-main-col.ed-adhd .bi-pair {
+  gap: 8px;
+}
+.ed-main-col.ed-adhd .bi-concept-list {
+  gap: 12px;
+}
+.ed-main-col.ed-adhd .ed-bi-notes-wrap {
+  gap: 12px;
+}
+
+/* 可折叠核心概念卡（默认全部收起，点开一个才看一个，彻底告别密集文字墙） */
+details.bi-concept-acc {
+  padding: 0 !important;
+  overflow: hidden;
+  background: #fff;
+  border: 1.5px solid var(--line);
+  border-radius: 12px;
+  transition: border-color 0.16s, box-shadow 0.16s, background 0.16s;
+}
+details.bi-concept-acc.is-done {
+  border-color: #b7dfc8;
+  background: #f7fcf9;
+}
+details.bi-concept-acc[open] {
+  border-color: var(--navy-700);
+  box-shadow: 0 8px 24px rgba(15, 39, 68, 0.10);
+  background: #fffefb;
+}
+details.bi-concept-acc > summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 13px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  user-select: none;
+}
+details.bi-concept-acc > summary::-webkit-details-marker { display: none; }
+details.bi-concept-acc > summary:hover {
+  background: #f5f8fd;
+}
+details.bi-concept-acc[open] > summary {
+  background: linear-gradient(180deg, #f8fafd, #f1f5fb);
+  border-bottom: 1.5px solid var(--line);
+}
+.bi-acc-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  flex: 1 1 240px;
+}
+.bi-acc-arrow {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  background: var(--navy-050);
+  color: var(--navy-800);
+  display: inline-grid;
+  place-items: center;
+  font-size: 12px;
+  font-weight: 800;
+  flex-shrink: 0;
+  transition: transform 0.16s ease, background 0.16s;
+}
+details.bi-concept-acc[open] .bi-acc-arrow {
+  transform: rotate(90deg);
+  background: var(--navy-900);
+  color: #f3dfb3;
+}
+.bi-acc-body {
+  padding: 16px 18px 18px;
+}
+.bi-done-btn {
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--muted);
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.bi-done-btn:hover { border-color: var(--green); color: var(--green); }
+.bi-done-btn.done {
+  background: var(--green-bg);
+  color: var(--green);
+  border-color: #a9d9be;
+}
+
+/* 详细分点（如 7 大非价格因素）也可逐条展开，绝不一次糊脸 */
+details.bi-bullet-acc {
+  border-radius: 10px;
+  background: #f8fbff;
+  border: 1px solid #dbe6f4;
+  border-left: 3.5px solid var(--navy-700);
+  overflow: hidden;
+}
+details.bi-bullet-acc[open] {
+  background: #fff;
+  border-color: #9cb7d9;
+  box-shadow: 0 3px 10px rgba(15, 39, 68, 0.06);
+}
+details.bi-bullet-acc > summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 10px 14px;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--navy-900);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+details.bi-bullet-acc > summary::-webkit-details-marker { display: none; }
+details.bi-bullet-acc > summary::after {
+  content: "点开看解释 ▸";
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--muted);
+  flex-shrink: 0;
+}
+details.bi-bullet-acc[open] > summary::after {
+  content: "收起 ▾";
+  color: var(--gold-deep);
+}
+details.bi-bullet-acc .bi-bullet-body {
+  padding: 4px 14px 12px;
+  border-top: 1px dashed var(--line-2);
+}
+
+/* 概念微进度条 */
+.bi-mini-prog {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+  width: 100%;
+}
+.bi-mini-bar {
+  flex: 1;
+  height: 7px;
+  border-radius: 999px;
+  background: var(--line-2);
+  overflow: hidden;
+}
+.bi-mini-bar > i {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--gold), var(--green));
+  border-radius: 999px;
+  transition: width 0.25s ease;
+}
+
 /* ==================== 6. 真实书房书架（3D 拟物书本 + 2:3 书封） ==================== */
 .ed-bookshelf {
   display: grid;

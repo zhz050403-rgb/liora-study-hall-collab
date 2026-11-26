@@ -290,50 +290,86 @@
     return escaped;
   }
 
-  /* 渲染「核心概念中英逐行精讲」卡片块（支持 bullets 详细分点逐条展开，如 Supply/Demand 全部非价格因素） */
-  function renderBilingualConcepts(concepts, isCloze, isRecall, glossTerms) {
+  /* 渲染「核心概念中英逐行精讲」可折叠逐卡阅读区（ADHD 友好：默认全部收起，点一条看一条，支持微进度勾选与分点逐条展开） */
+  function renderBilingualConcepts(concepts, isCloze, isRecall, glossTerms, opts) {
     if (!concepts || !concepts.length) return '';
+    opts = opts || {};
+    var adhdOn = opts.adhdMode !== false;
+    var singleFocus = opts.singleFocus !== false;
+    var courseId = opts.courseId || '';
+    var termId = opts.termId || '';
+    var weekNum = opts.weekNum || 1;
+    var doneCnt = 0;
+    concepts.forEach(function (c, i) {
+      if (window.LioraStore && window.LioraStore.isTaskDone(courseId + ':' + termId + ':' + weekNum + ':bc' + i)) doneCnt++;
+    });
+    var pct = Math.round((doneCnt / concepts.length) * 100);
+
     return '<div class="bi-concept-wrap" id="edBiConcepts">' +
-      '<div class="bi-concept-banner">' +
-        '<h3>📌 核心概念与分点精讲 · Core Concepts（共 ' + concepts.length + ' 项）</h3>' +
-        '<span style="font-size:12px;color:var(--muted)">' +
-          (isCloze ? '🧠 填空自测已启用 · 精准遮盖核心术语与定义，点击色块翻开核对'
-            : (isRecall ? '🧠 看中文背英文 · 看下方中文复述英文，点浅蓝卡翻开核对'
-              : '上行英文规范句（直接背考场定义） · 紧跟下行中文精解')) +
-        '</span>' +
+      '<div class="bi-concept-banner" style="flex-direction:column;align-items:stretch;gap:8px">' +
+        '<div style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap">' +
+          '<h3 style="margin:0">📌 核心概念与分点精讲 · Core Concepts（共 ' + concepts.length + ' 项）</h3>' +
+          '<div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center">' +
+            '<label style="display:inline-flex;align-items:center;gap:4px;font-size:12px;color:var(--navy-800);cursor:pointer;font-weight:600"><input type="checkbox" id="edSingleFocusChk"' + (singleFocus ? ' checked' : '') + '> 🎯 一次只开一张</label>' +
+            '<button type="button" class="ed-btn ed-btn-sm" id="edBiExpandAll">📂 全部展开</button>' +
+            '<button type="button" class="ed-btn ed-btn-sm" id="edBiCollapseAll">📁 全部收起</button>' +
+          '</div>' +
+        '</div>' +
+        '<div class="bi-mini-prog">' +
+          '<span style="font-size:12px;color:var(--muted);white-space:nowrap">本节概念已搞懂 <b style="color:var(--green)">' + doneCnt + ' / ' + concepts.length + '</b></span>' +
+          '<div class="bi-mini-bar"><i style="width:' + pct + '%"></i></div>' +
+          '<span style="font-size:12px;color:var(--muted);white-space:nowrap">' + (adhdOn ? '点击任意标题逐条展开，不堆满屏幕' : '上行英文规范句 · 下行中文精解') + '</span>' +
+        '</div>' +
       '</div>' +
       '<div class="bi-concept-list">' +
         concepts.map(function (c, i) {
           var isOfficial = /课件原话|真题|官方核心文本|Lecture Slides/.test(c.src || '');
           var enHtml = (isCloze && !isRecall) ? makeClozeEn(c.en, c.term, glossTerms) : esc(c.en);
           var zhHtml = isCloze ? makeClozeZh(c.zh, c.term) : esc(c.zh);
+          var bcKey = courseId + ':' + termId + ':' + weekNum + ':bc' + i;
+          var isDone = window.LioraStore && window.LioraStore.isTaskDone(bcKey);
+          var hasBullets = Array.isArray(c.bullets) && c.bullets.length > 0;
           var bulletsHtml = '';
-          if (Array.isArray(c.bullets) && c.bullets.length) {
+          if (hasBullets) {
             bulletsHtml = '<div class="bi-bullets">' +
+              '<div style="font-size:12px;color:var(--muted);margin-bottom:2px">👇 共 ' + c.bullets.length + ' 条明细，点哪一条展开哪一条（可一次看一条，不眼花）：</div>' +
               c.bullets.map(function (b) {
                 var bEn = (isCloze && !isRecall) ? makeClozeEn(b.en, b.label, glossTerms) : esc(b.en);
                 var bZh = isCloze ? makeClozeZh(b.zh, b.label) : esc(b.zh);
-                return '<div class="bi-bullet-row">' +
-                  '<div class="bi-bullet-label">' + esc(b.label) + '</div>' +
-                  '<div class="bi-pair">' +
-                    '<div class="bi-en">🇬🇧 ' + bEn + '</div>' +
-                    '<div class="bi-zh">🇨🇳 ' + bZh + '</div>' +
+                return '<details class="bi-bullet-acc"' + (adhdOn ? '' : ' open') + '>' +
+                  '<summary>' + esc(b.label) + '</summary>' +
+                  '<div class="bi-bullet-body">' +
+                    '<div class="bi-pair">' +
+                      '<div class="bi-en">🇬🇧 ' + bEn + '</div>' +
+                      '<div class="bi-zh">🇨🇳 ' + bZh + '</div>' +
+                    '</div>' +
                   '</div>' +
-                '</div>';
+                '</details>';
               }).join('') +
             '</div>';
           }
-          return '<div class="bi-concept-card" id="bi-item-' + i + '">' +
-            '<div class="bi-concept-head">' +
-              '<span class="bi-concept-term">' + (i + 1) + '. ' + esc(c.term) + '</span>' +
-              (c.src ? '<span class="bi-src-badge' + (isOfficial ? ' official' : '') + '">' + (isOfficial ? '✓ ' : '') + esc(c.src) + '</span>' : '') +
+          /* ADHD 舒缓模式下默认全部收起，点一个看一个；切回标准模式才全部展开 */
+          var openAttr = adhdOn ? '' : ' open';
+          return '<details class="bi-concept-card bi-concept-acc' + (isDone ? ' is-done' : '') + '" id="bi-item-' + i + '"' + openAttr + '>' +
+            '<summary>' +
+              '<span class="bi-acc-left">' +
+                '<span class="bi-acc-arrow">▸</span>' +
+                '<span class="bi-concept-term">' + (i + 1) + '. ' + esc(c.term) + '</span>' +
+              '</span>' +
+              '<span style="display:flex;align-items:center;gap:6px;flex-wrap:wrap">' +
+                (hasBullets ? '<span class="ed-badge ed-badge-gold">' + c.bullets.length + ' 条明细</span>' : '') +
+                (c.src ? '<span class="bi-src-badge' + (isOfficial ? ' official' : '') + '">' + (isOfficial ? '✓ ' : '') + esc(c.src) + '</span>' : '') +
+                '<button type="button" class="bi-done-btn' + (isDone ? ' done' : '') + '" data-bc-done="' + esc(bcKey) + '">' + (isDone ? '✓ 已搞懂' : '○ 看懂了') + '</button>' +
+              '</span>' +
+            '</summary>' +
+            '<div class="bi-acc-body">' +
+              '<div class="bi-pair">' +
+                '<div class="bi-en">🇬🇧 ' + enHtml + '</div>' +
+                '<div class="bi-zh">🇨🇳 ' + zhHtml + '</div>' +
+              '</div>' +
+              bulletsHtml +
             '</div>' +
-            '<div class="bi-pair">' +
-              '<div class="bi-en">🇬🇧 ' + enHtml + '</div>' +
-              '<div class="bi-zh">🇨🇳 ' + zhHtml + '</div>' +
-            '</div>' +
-            bulletsHtml +
-          '</div>';
+          '</details>';
         }).join('') +
       '</div>' +
     '</div>';
@@ -365,7 +401,7 @@
     return { en: '', zh: s };
   }
 
-  function renderStructuredBilingualNotes(notesHtml, isCloze, isRecall, glossTerms) {
+  function renderStructuredBilingualNotes(notesHtml, isCloze, isRecall, glossTerms, adhdOn) {
     if (!notesHtml || !String(notesHtml).trim()) return '';
     var tmp = document.createElement('div');
     tmp.innerHTML = notesHtml;
@@ -400,8 +436,11 @@
 
     return '<div class="ed-bi-notes-wrap" id="edBiNotes">' +
       '<div style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap">' +
-        '<h3 style="margin:0;font-family:var(--serif);font-size:16px;color:var(--navy-900)">🌐 本周双语结构化精讲 · Bilingual Study Notes（全段响应中英切换）</h3>' +
-        '<span style="font-size:12px;color:var(--muted)">按「概览 → 核心概念 → 重点详解 → 易错避坑 → 承上启下」结构排布</span>' +
+        '<h3 style="margin:0;font-family:var(--serif);font-size:16px;color:var(--navy-900)">🌐 本周双语结构化精讲 · Bilingual Notes（点击小节逐块展开）</h3>' +
+        '<div style="display:flex;gap:6px">' +
+          '<button type="button" class="ed-btn ed-btn-sm" id="edBnExpandAll">展开全部</button>' +
+          '<button type="button" class="ed-btn ed-btn-sm" id="edBnCollapseAll">收起全部</button>' +
+        '</div>' +
       '</div>' +
       sections.map(function (sec, si) {
         var rowsHtml = sec.items.map(function (it) {
@@ -412,16 +451,18 @@
             (zhOut ? '<div class="bi-zh">🇨🇳 ' + zhOut + '</div>' : '') +
           '</div>';
         }).join('');
-        return '<details class="ed-bi-notes-sec" id="bi-note-sec-' + si + '" open>' +
-          '<summary><span>' + esc(sec.title) + '</span><span class="ed-badge">' + sec.items.length + ' 条</span></summary>' +
+        /* ADHD 舒缓模式下默认收起，避免一次扑面而来几十行字 */
+        var openAttr = adhdOn ? '' : ' open';
+        return '<details class="ed-bi-notes-sec" id="bi-note-sec-' + si + '"' + openAttr + '>' +
+          '<summary><span>' + esc(sec.title) + '</span><span class="ed-badge">' + sec.items.length + ' 条 · 点开阅读</span></summary>' +
           '<div class="ed-bi-notes-body">' + rowsHtml + '</div>' +
         '</details>';
       }).join('') +
     '</div>';
   }
 
-  /* 将长篇 graphicHtml 按 <h4 class="kp-h"> 自动拆分为清晰可折叠的专题卡片，默认折叠「上单元 Tutorial」让本周正课置前 */
-  function formatGraphicIntoAccordions(rawHtml, weekTitle) {
+  /* 将长篇 graphicHtml 按 <h4 class="kp-h"> 自动拆分为清晰可折叠的专题卡片（ADHD 舒缓模式下默认全部收起，按需逐个打开） */
+  function formatGraphicIntoAccordions(rawHtml, weekTitle, adhdOn) {
     if (!rawHtml || !String(rawHtml).trim()) return '';
     var parts = String(rawHtml).split(/(?=<h4\b[^>]*>)/i).filter(function (s) { return s.trim().length > 0; });
     if (parts.length <= 1) return rawHtml;
@@ -429,7 +470,7 @@
     var hasLaterLecture = parts.some(function (p) { return /Lecture|讲座|需求|供给|均衡|弹性|核心/i.test(p.slice(0, 180)); });
     var secNum = 0;
     return '<div style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;margin:14px 0 10px">' +
-        '<h3 style="margin:0;font-family:var(--serif);font-size:16px;color:var(--navy-900)">📊 图解推导与课堂例题精讲（按专题分节，点标题展开/收起）</h3>' +
+        '<h3 style="margin:0;font-family:var(--serif);font-size:16px;color:var(--navy-900)">📊 图解推导与课堂例题精讲（按专题折叠，点哪节看哪节）</h3>' +
         '<div style="display:flex;gap:6px">' +
           '<button type="button" class="ed-btn ed-btn-sm" id="edAccExpandAll">展开全部</button>' +
           '<button type="button" class="ed-btn ed-btn-sm" id="edAccCollapseAll">折叠全部</button>' +
@@ -445,9 +486,9 @@
         var isGuide = /本周导览|自测清单/.test(title);
         var isPrevTut = hasLaterLecture && /Tutorial/i.test(title) && secNum <= 2;
         secNum++;
-        var openAttr = (isGuide || isPrevTut) ? '' : ' open';
+        var openAttr = adhdOn ? '' : ((isGuide || isPrevTut) ? '' : ' open');
         var badges = '';
-        if (isPrevTut) badges += '<span class="ed-badge ed-badge-gold">上单元 Tutorial 解析 · 点开查看</span>';
+        if (isPrevTut) badges += '<span class="ed-badge ed-badge-gold">上单元 Tutorial 解析</span>';
         if (figs) badges += '<span class="ed-badge">📊 ' + figs + ' 图</span>';
         if (exs) badges += '<span class="ed-badge">📝 ' + exs + ' 例题</span>';
         return '<details class="ed-topic-acc" id="ed-acc-' + secNum + '"' + openAttr + '>' +
@@ -535,8 +576,14 @@
     var route = '#/c/' + course.id + '/' + term.id + '/' + week.num;
     window.LioraStore.setLastVisit(route, (course.nameCn || course.id) + ' · ' + (week.title || 'Week ' + week.num));
 
-    var noteMode = 'full';   // full | cloze | outline
+    var noteMode = 'full';   // full | mindmap | cloze | outline
     var biMode = 'both';     // both | en | recall
+    var adhdMode = true;
+    var singleFocus = true;
+    try {
+      if (localStorage.getItem('liora-adhd-mode') === '0') adhdMode = false;
+      if (localStorage.getItem('liora-single-focus') === '0') singleFocus = false;
+    } catch (e) {}
     var api = window.LioraStudyApi;
     var st = await api.loadStudy();
     var adj = findAdjacentWeeks(course, term.id, week.num);
@@ -586,7 +633,7 @@
       var gloss = week.glossary || [];
       var offlineFiles = week.files || [];
 
-      var biCls = biMode === 'en' ? ' ed-bi-en-only' : (biMode === 'recall' ? ' ed-bi-recall' : '');
+      var biCls = (biMode === 'en' ? ' ed-bi-en-only' : (biMode === 'recall' ? ' ed-bi-recall' : '')) + (adhdMode ? ' ed-adhd' : '');
 
       app.innerHTML = '<div class="ed-container">' +
         '<div class="ed-study-layout">' +
@@ -644,6 +691,7 @@
                 '<button class="ed-btn ed-btn-sm' + (biMode === 'recall' ? ' ed-btn-primary' : '') + '" data-bm="recall">🧠 看中文背英文</button>' +
               '</div>' +
               '<div style="display:flex;gap:6px;flex-wrap:wrap">' +
+                '<button class="ed-btn ed-btn-sm' + (adhdMode ? ' ed-btn-gold' : '') + '" id="edToggleAdhd" title="大行距 + 默认全部折叠，一次只看一张卡片，减轻密集文字压迫感">' + (adhdMode ? '🧘 舒缓逐卡：开' : '🧘 舒缓逐卡：关') + '</button>' +
                 '<button class="ed-btn ed-btn-sm' + (noteMode === 'full' ? ' ed-btn-primary' : '') + '" data-nm="full">精读全文</button>' +
                 '<button class="ed-btn ed-btn-sm' + (noteMode === 'mindmap' ? ' ed-btn-primary' : '') + '" data-nm="mindmap">🧠 思维导图</button>' +
                 '<button class="ed-btn ed-btn-sm' + (noteMode === 'cloze' ? ' ed-btn-primary' : '') + '" data-nm="cloze">填空自测</button>' +
@@ -663,9 +711,15 @@
 
             '<div id="edModeSlot"></div>' +
 
-            renderBilingualConcepts(biConcepts, noteMode === 'cloze', biMode === 'recall', gloss) +
+            renderBilingualConcepts(biConcepts, noteMode === 'cloze', biMode === 'recall', gloss, {
+              adhdMode: adhdMode,
+              singleFocus: singleFocus,
+              courseId: course.id,
+              termId: term.id,
+              weekNum: week.num
+            }) +
 
-            renderStructuredBilingualNotes(week.notesHtml, noteMode === 'cloze', biMode === 'recall', gloss) +
+            renderStructuredBilingualNotes(week.notesHtml, noteMode === 'cloze', biMode === 'recall', gloss, adhdMode) +
 
             (weekAnns.length ? (
               '<div style="margin-bottom:14px;padding:10px 14px;border-radius:10px;background:var(--navy-050);border:1px solid var(--line);font-size:13px">' +
@@ -675,7 +729,7 @@
                 }).join('') +
               '</div>'
             ) : '') +
-            '<div id="edNoteBody" class="ed-prose' + (noteMode === 'cloze' ? ' cloze-on' : '') + '">' + formatGraphicIntoAccordions(rawHtml, week.title) + '</div>' +
+            '<div id="edNoteBody" class="ed-prose' + (noteMode === 'cloze' ? ' cloze-on' : '') + '">' + formatGraphicIntoAccordions(rawHtml, week.title, adhdMode) + '</div>' +
 
             /* 必考大题与中英对照标准答案 */
             renderExamQA(qaList) +
@@ -1027,11 +1081,87 @@
       var tutBody = document.getElementById('edTutBody');
       if (tutBody) applyKatex(tutBody);
 
+      /* ADHD 舒缓逐卡模式开关 + 一次只开一张手风琴 + 概念微进度勾选 + 全部展开/收起 */
+      var adhdBtn = document.getElementById('edToggleAdhd');
+      if (adhdBtn) adhdBtn.addEventListener('click', function () {
+        adhdMode = !adhdMode;
+        try { localStorage.setItem('liora-adhd-mode', adhdMode ? '1' : '0'); } catch (e) {}
+        api.toast(adhdMode ? '🧘 已开启舒缓逐卡模式（大行距 + 默认折叠，一次看一条）' : '已切换为全部展开模式');
+        draw();
+      });
+
+      var sfChk = document.getElementById('edSingleFocusChk');
+      if (sfChk) sfChk.addEventListener('change', function () {
+        singleFocus = sfChk.checked;
+        try { localStorage.setItem('liora-single-focus', singleFocus ? '1' : '0'); } catch (e) {}
+        api.toast(singleFocus ? '🎯 已开启「一次只开一张」防分心模式' : '已允许同时展开多张卡片');
+      });
+
+      /* 手风琴防分心：开启 singleFocus 时，打开一张概念卡/分点卡/笔记小节自动轻轻收起同组其他卡片 */
+      function bindSingleFocus(selector) {
+        var list = Array.prototype.slice.call(app.querySelectorAll(selector));
+        list.forEach(function (det) {
+          det.addEventListener('toggle', function () {
+            if (!singleFocus || !det.open) return;
+            list.forEach(function (other) {
+              if (other !== det && other.open) other.open = false;
+            });
+          });
+        });
+      }
+      bindSingleFocus('#edBiConcepts details.bi-concept-acc');
+      bindSingleFocus('#edBiNotes details.ed-bi-notes-sec');
+      bindSingleFocus('#edNoteBody details.ed-topic-acc');
+      app.querySelectorAll('#edBiConcepts details.bi-concept-acc').forEach(function (card) {
+        var bList = Array.prototype.slice.call(card.querySelectorAll('details.bi-bullet-acc'));
+        bList.forEach(function (b) {
+          b.addEventListener('toggle', function () {
+            if (!singleFocus || !b.open) return;
+            bList.forEach(function (other) { if (other !== b && other.open) other.open = false; });
+          });
+        });
+      });
+
+      /* 概念「看懂了 / 已搞懂」微进度勾选（阻止冒泡避免触发折叠切换） */
+      app.querySelectorAll('[data-bc-done]').forEach(function (btn) {
+        btn.addEventListener('click', function (ev) {
+          ev.preventDefault();
+          ev.stopPropagation();
+          var now = window.LioraStore.toggleTaskDone(btn.getAttribute('data-bc-done'));
+          api.toast(now ? '🎉 又搞懂一个核心概念！' : '已取消完成标记');
+          draw();
+        });
+      });
+
+      var biExp = document.getElementById('edBiExpandAll');
+      var biCol = document.getElementById('edBiCollapseAll');
+      if (biExp) biExp.addEventListener('click', function () {
+        var prevSf = singleFocus; singleFocus = false;
+        app.querySelectorAll('#edBiConcepts details').forEach(function (d) { d.open = true; });
+        singleFocus = prevSf;
+      });
+      if (biCol) biCol.addEventListener('click', function () {
+        app.querySelectorAll('#edBiConcepts details').forEach(function (d) { d.open = false; });
+      });
+
+      var bnExp = document.getElementById('edBnExpandAll');
+      var bnCol = document.getElementById('edBnCollapseAll');
+      if (bnExp) bnExp.addEventListener('click', function () {
+        var prevSf = singleFocus; singleFocus = false;
+        app.querySelectorAll('#edBiNotes details.ed-bi-notes-sec').forEach(function (d) { d.open = true; });
+        singleFocus = prevSf;
+      });
+      if (bnCol) bnCol.addEventListener('click', function () {
+        app.querySelectorAll('#edBiNotes details.ed-bi-notes-sec').forEach(function (d) { d.open = false; });
+      });
+
       /* 图解与例题折叠卡全部展开/折叠按钮 */
       var accExp = document.getElementById('edAccExpandAll');
       var accCol = document.getElementById('edAccCollapseAll');
       if (accExp) accExp.addEventListener('click', function () {
+        var prevSf = singleFocus; singleFocus = false;
         app.querySelectorAll('#edNoteBody details.ed-topic-acc').forEach(function (d) { d.open = true; });
+        singleFocus = prevSf;
       });
       if (accCol) accCol.addEventListener('click', function () {
         app.querySelectorAll('#edNoteBody details.ed-topic-acc').forEach(function (d) { d.open = false; });
