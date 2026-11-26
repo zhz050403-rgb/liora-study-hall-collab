@@ -3,19 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>UNSW 预科学习方法与使用手册 · Liora 的学习小屋</title>
+  <title>全站功能图文操作指南 · Liora 的学习小屋</title>
   <link rel="icon" href="favicon.ico?v=20261106-crest1" sizes="any">
   <link rel="stylesheet" href="styles/theme.css?v=20261122-v4">
-  <link rel="stylesheet" href="styles/editorial.css?v=20261123-v12">
+  <link rel="stylesheet" href="styles/editorial.css?v=20261126-v17">
   <link rel="stylesheet" href="styles/study-hub.css?v=20261122-v4">
   <style>
-    body { margin: 0; background: var(--bg); font-family: var(--sans); color: var(--ink); line-height: 1.75; }
-    .step-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; margin: 14px 0 22px; }
-    .step-card { background: #fff; border: 1px solid var(--line); border-top: 3px solid var(--gold); border-radius: 14px; padding: 18px; box-shadow: var(--shadow-xs); }
-    .step-num { font-family: var(--serif); font-size: 12.5px; letter-spacing: 1.5px; color: var(--gold-deep); font-weight: 700; margin-bottom: 6px; }
-    .step-card h3 { margin: 0 0 8px; font-family: var(--serif); font-size: 17px; color: var(--navy-900); }
-    .step-card p { margin: 0; font-size: 13.5px; color: var(--ink-2); }
-    .sec-title { font-family: var(--serif); font-size: 21px; color: var(--navy-900); border-bottom: 2px solid var(--navy-900); padding-bottom: 8px; margin: 28px 0 14px; }
+    body { margin: 0; background: #f6f8fb; font-family: var(--sans); color: var(--ink); line-height: 1.95; letter-spacing: 0.02em; }
+    .g-toc {
+      display: flex; flex-wrap: wrap; gap: 7px; align-items: center;
+      background: #fff; border: 1px solid var(--line); border-radius: 13px;
+      padding: 12px 15px; margin: 16px 0 18px; box-shadow: var(--shadow-xs);
+    }
+    .g-chip {
+      display: inline-flex; align-items: center; gap: 4px;
+      padding: 5px 11px; border-radius: 999px; border: 1px solid var(--line);
+      background: var(--surface-2); color: var(--navy-900); font-size: 12.5px; font-weight: 600;
+      text-decoration: none; cursor: pointer;
+    }
+    .g-chip:hover { background: var(--navy-900); color: #fff; border-color: var(--navy-900); text-decoration: none; }
+    .g-sec {
+      background: #fdfcf8; border: 1.5px solid var(--line); border-radius: 14px;
+      margin-bottom: 14px; overflow: hidden; box-shadow: var(--shadow-xs);
+    }
+    .g-sec[open] { border-color: var(--navy-700); box-shadow: 0 8px 24px rgba(15, 39, 68, 0.08); }
+    .g-sec > summary {
+      cursor: pointer; list-style: none; padding: 14px 18px;
+      background: linear-gradient(180deg, #ffffff, #f5f8fc);
+      display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap;
+      user-select: none;
+    }
+    .g-sec > summary::-webkit-details-marker { display: none; }
+    .g-sec[open] > summary { border-bottom: 1.5px solid var(--line); }
+    .g-sec-title {
+      font-family: var(--serif); font-size: 17px; font-weight: 700; color: var(--navy-900);
+      display: flex; align-items: center; gap: 10px;
+    }
+    .g-num {
+      display: inline-grid; place-items: center; min-width: 28px; height: 24px; padding: 0 8px;
+      border-radius: 999px; background: var(--navy-900); color: #f3dfb3;
+      font-family: var(--sans); font-size: 12px; font-weight: 700;
+    }
+    .g-body { padding: 18px 22px 22px; }
+    .g-body p, .g-body li { max-width: 72ch; font-size: 14.5px; color: var(--ink-2); }
+    .g-body ul, .g-body ol { margin: 8px 0 14px; padding-left: 22px; }
+    .g-body li { margin-bottom: 7px; }
+    .g-body b { color: var(--navy-900); }
+    .g-shot {
+      margin: 14px 0 16px; border: 1.5px solid var(--line); border-radius: 12px;
+      overflow: hidden; background: #fff; box-shadow: var(--shadow-sm);
+    }
+    .g-shot img {
+      width: 100%; height: auto; display: block; cursor: zoom-in;
+      transition: transform 0.16s ease;
+    }
+    .g-shot figcaption {
+      padding: 9px 14px; font-size: 12.5px; color: var(--muted);
+      background: var(--surface-2); border-top: 1px solid var(--line-2);
+    }
+    .g-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 12px; margin: 12px 0 16px;
+    }
+    .g-mini {
+      background: #fff; border: 1px solid var(--line); border-left: 3.5px solid var(--gold);
+      border-radius: 11px; padding: 13px 15px;
+    }
+    .g-mini h4 { margin: 0 0 6px; font-family: var(--serif); font-size: 15px; color: var(--navy-900); }
+    .g-mini p { margin: 0; font-size: 13.5px; line-height: 1.8; }
+    .g-tip {
+      margin: 12px 0; padding: 11px 15px; border-radius: 10px;
+      background: #fdf8ec; border: 1px solid var(--gold-border); font-size: 13.5px; color: #5b4112;
+    }
+    .g-lb {
+      position: fixed; inset: 0; z-index: 9999; display: none; align-items: center; justify-content: center;
+      background: rgba(10, 22, 40, 0.86); padding: 20px; cursor: zoom-out;
+    }
+    .g-lb.open { display: flex; }
+    .g-lb img { max-width: 96vw; max-height: 92vh; border-radius: 10px; box-shadow: 0 20px 60px rgba(0,0,0,.5); }
+    @media (max-width: 560px) { .g-body { padding: 14px; } }
   </style>
 </head>
 <body>
@@ -33,86 +99,298 @@
         <a href="index.html#/extra" data-nav="extra">课外拓展</a>
         <a href="daily-brief.html">每日简报</a>
         <a href="english/index.html" data-nav="english">英语学习</a>
+        <a class="active" href="guide.html" aria-current="page">使用指南</a>
       </nav>
       <span class="ed-sync-dot" id="edSyncChip" title="学习进度已自动同步到云端"><i id="edSyncDot"></i><span>云端</span></span>
     </div>
   </header>
 
   <main class="ed-container">
-    <section class="ed-hero ed-hero-art ed-hero-art-guide" style="grid-template-columns:1fr;padding:24px 28px;margin-bottom:20px">
+    <section class="ed-hero ed-hero-art ed-hero-art-guide" style="grid-template-columns:1fr;padding:24px 28px">
       <div>
-        <div class="ed-hero-kicker">STUDY METHOD · 实战提分指南</div>
-        <h1>📖 UNSW 预科高效学习方法 + 本站实战手册</h1>
-        <p style="margin-bottom:0">这不是一份「点按钮说明书」，而是为你量身定制的 <b>每周学习闭环、考前两周冲刺剧本与五科提分策略</b>。跟着流程走，不用每次打开网站纠结「今天该从哪下手」。</p>
+        <div class="ed-hero-kicker">USER MANUAL · 全站功能图文操作指南</div>
+        <h1>📖 Liora 的学习小屋 · 全站使用指南</h1>
+        <p style="margin-bottom:0">全站 12 大功能模块一图看懂：账号隔离、首页任务、<b>ADHD 舒缓逐卡阅读</b>、中英双语切换、全站快搜、4 色荧光笔高光、分单元术语闪卡、原书原文阅读、100% 离线英语精读与 B 站视频。<b>每章均可折叠，按需点开看（图片点开可高清放大）</b>。</p>
       </div>
     </section>
 
-    <h2 class="sec-title">一、平时一周怎么学（4 步闭环，每天 2 小时）</h2>
-    <div class="step-grid">
-      <div class="step-card">
-        <div class="step-num">STEP 01 · 课前 15 分钟</div>
-        <h3>看预习笔记 + 刷本周术语</h3>
-        <p>进对应周次先扫一遍「知识点折叠卡」，重点看<b>红字易错标注</b>；用「<a href="/#/flashcards">术语闪卡</a>」提前混眼熟英文原词，全英文听课压力减半。</p>
-      </div>
-      <div class="step-card">
-        <div class="step-num">STEP 02 · 课后 25 分钟</div>
-        <h3>先做题，再点「看解答」</h3>
-        <p>做完 Tutorial 或笔记里的讲义原题（解答默认折叠，先独立算完再展开核对）。遇到卡壳段落直接用鼠标划词 → 点<b>「高亮+写批注」</b>自动存进个人批注集。</p>
-      </div>
-      <div class="step-card">
-        <div class="step-num">STEP 03 · 每天 15 分钟</div>
-        <h3>清零错题本 + 英语打卡</h3>
-        <p>所有做错的题立刻丢进「<a href="/#/mistakes">全科错题本</a>」并贴错因标签（如 E01 符号 / 折扣基数 / 推断过度），系统按 <b>1→3→7→14 天</b>自动推回重刷。</p>
-      </div>
-      <div class="step-card">
-        <div class="step-num">STEP 04 · 周末 30 分钟</div>
-        <h3>AI 复盘 + 成绩入档 + 备份</h3>
-        <p>用右下角 <b>🤖 AI 伴学（作业批改入档模式）</b>复盘本周练习，一键把成绩与薄弱点写入学习档案；每周末点 <b>💾 备份</b> 下载一份 JSON 保底。</p>
-      </div>
+    <div class="g-toc">
+      <b style="font-size:13px;color:var(--navy-900);margin-right:4px">快速直达：</b>
+      <a class="g-chip" href="#g-1">① 账号与隔离</a>
+      <a class="g-chip" href="#g-2">② 首页驾驶舱</a>
+      <a class="g-chip" href="#g-3">③ 课程与舒缓逐卡</a>
+      <a class="g-chip" href="#g-4">④ 全站与页内搜索</a>
+      <a class="g-chip" href="#g-5">⑤ 4色荧光笔高光</a>
+      <a class="g-chip" href="#g-6">⑥ 手册/错题/刷题/闪卡</a>
+      <a class="g-chip" href="#g-7">⑦ 读书与原书原文</a>
+      <a class="g-chip" href="#g-8">⑧ 离线英语台/简报/视频</a>
+      <a class="g-chip" href="#g-9">⑨ 底部工具与管理员</a>
+      <span style="margin-left:auto;display:flex;gap:6px">
+        <button type="button" class="ed-btn ed-btn-sm" id="gExpandAll">📂 展开全部</button>
+        <button type="button" class="ed-btn ed-btn-sm" id="gCollapseAll">📁 收起全部</button>
+      </span>
     </div>
 
-    <h2 class="sec-title">二、考前两周怎么冲刺（以先考科目为先）</h2>
-    <div class="lh-card" style="margin-bottom:18px">
-      <ol style="padding-left:20px;margin:0;line-height:1.9;font-size:14.5px">
-        <li><b>D-14 ～ D-10（建骨架）</b>：打开「<a href="/#/handbooks">五科通关手册</a>」，打印对应学科的公式/函数/语法速查卡，把「高频扣分陷阱清单」逐条自查。</li>
-        <li><b>D-9 ～ D-4（闭卷刷题 + 清错题）</b>：刷「<a href="/#/exam-packs">多科闭卷巩固题</a>」与「<a href="exam-prep.html">会计 U1–U6 官方引文题库</a>」，错题全部进错题本滚动重做直到连续 2 轮全对。</li>
-        <li><b>D-3 ～ D-1（全真计时模考）</b>：按真实考试时限做官方 Sample Paper（如数学 2h / 计算机 65m Excel+Word），考完按「真实/练习口径」记录复盘，不熬夜硬背新偏题。</li>
-      </ol>
-    </div>
+    <!-- 1. 账号与数据隔离 -->
+    <details class="g-sec" id="g-1" open>
+      <summary>
+        <span class="g-sec-title"><span class="g-num">01</span>账号注册、登录、权限与数据隔离</span>
+        <span class="ed-badge ed-badge-gold">多账号独立云端保存</span>
+      </summary>
+      <div class="g-body">
+        <div class="g-grid">
+          <div class="g-mini">
+            <h4>📝 新同学如何注册</h4>
+            <p>打开登录页底部「去注册」或访问 <code>/__register</code>，只需填写<b>用户名 + 密码</b>提交即可（无需手机号或邮箱）。提交后需等待管理员在后台点「同意通过」即可登录。</p>
+          </div>
+          <div class="g-mini">
+            <h4>🔒 100% 严格数据隔离</h4>
+            <p>每个账号的<b>课程打卡进度、4 色高光批注、错题本、闪卡掌握度、今日任务、番茄钟记录</b>均按账号独立存放在云端，换电脑或手机登录自动同步，账号间完全互不可见。</p>
+          </div>
+          <div class="g-mini">
+            <h4>🚪 退出与切换账号</h4>
+            <p>桌面端直接点顶栏最右侧的 <b>「退出」</b> 即可切换账号；手机端可点右下角 <b>「💾 备份」</b> 抽屉里的「退出登录」。</p>
+          </div>
+        </div>
+        <div class="g-tip">💡 <b>关于「课外拓展」权限</b>：普通注册账号默认看不到「课外拓展（企业法律与财富管理）」，如需阅读请联系管理员在后台为你开启对应权限。</div>
+      </div>
+    </details>
 
-    <h2 class="sec-title">三、五门核心课一句话抓分重点</h2>
-    <div class="lh-card">
-      <table class="lh-cheat-table">
-        <tbody>
-          <tr><th>会计学 Accounting</th><td>先定主体与时间线 → 借贷口诀 DEAD/CLIC → 退货折扣走三步 → T 型账 c/d 放小侧。Viva 答辩（20%）为必过门槛。<br><a href="/#/handbooks/accounting">打开会计通关手册 →</a></td></tr>
-          <tr><th>经济学 Economics</th><td>英文简答必走 <b>Definition → Explanation（原因→机制→结果）→ Evaluation</b>；画图四要素齐全，盯紧 PPC 因果链与弹性总收益。<br><a href="/#/handbooks/economics">打开经济通关手册 →</a></td></tr>
-          <tr><th>商业数学 Math</th><td>每道错题贴 <b>E01–E05</b> 标签，绝不归因「粗心」；对数方程必验真数 &gt; 0，定积分求面积必按零点分段。<br><a href="/#/handbooks/mathematics">打开数学公式与防错手册 →</a></td></tr>
-          <tr><th>计算机 Computing</th><td>期末闭卷占 <b>60%</b>：电脑实操练熟 <code>$</code> 绝对引用、嵌套 <code>IF/AND/OR</code>、<code>XLOOKUP</code>、<code>SUMIFS</code> 顺序与 Word 分节样式。<br><a href="/#/handbooks/computing">打开计算机实战手册 →</a></td></tr>
-          <tr><th>学术英语 English</th><td>每天 45 分钟固定剧本：阅读 20m（段落主旨+同义替换定位+防脑补推断）· 听力 10m · 口语 10m（录音纠错重说）· 写作 5m（Hedging/名词化）。<br><a href="/#/handbooks/english">打开英语提分手册 →</a> · <a href="english/index.html">进入英语工作台 →</a></td></tr>
-        </tbody>
-      </table>
-    </div>
+    <!-- 2. 首页驾驶舱 -->
+    <details class="g-sec" id="g-2" open>
+      <summary>
+        <span class="g-sec-title"><span class="g-num">02</span>首页驾驶舱：一键续学 + 自定义今日任务</span>
+        <span class="ed-badge">每天打开第一站</span>
+      </summary>
+      <div class="g-body">
+        <figure class="g-shot">
+          <img src="assets/guide-shots/guide-home.jpg" alt="首页驾驶舱实景截图" loading="lazy">
+          <figcaption>图 1：首页驾驶舱 —— 顶部全站导航（含搜索与账号退出）、左上「继续上次」一键续学、右上可编辑「今日首要焦点」、下方 5 门核心课进度卡。</figcaption>
+        </figure>
+        <ul>
+          <li><b>▶ 继续上次</b>：自动记住你上次离开前正在学的具体课程周次或书本章节，点一下直接接上进度。</li>
+          <li><b>✦ 今日首要焦点（支持完全自定义编辑）</b>：
+            <ul>
+              <li>点击任意任务文字或右侧 <b><code>✎</code></b> 图标，可直接修改任务内容和预计分钟数，按 <b>回车（Enter）</b> 保存并同步云端。</li>
+              <li>在底部输入框输入新任务和分钟数，按回车或点 <b>「添加」</b> 新增（最多保留 6 条）；点 <b><code>×</code></b> 删除，清空后不会再自动弹回默认任务。</li>
+            </ul>
+          </li>
+          <li><b>我的 5 门核心课</b>：卡片显示每门课总图解数与你的实时完成百分比，点任意卡片直接进入一条龙学习台。</li>
+          <li><b>提分工具与近期考试倒计时</b>：快捷进入五科手册、遗忘曲线错题本、术语闪卡、闭卷刷题、高光集、五科视频与个人成绩档案。</li>
+        </ul>
+      </div>
+    </details>
 
-    <h2 class="sec-title">四、考场纪律与 AI 使用边界（UNSW 3Cs 自律）</h2>
-    <div class="lh-card" style="background:var(--lh-gold-soft);border-color:var(--lh-gold-border)">
-      <p style="margin:0;font-size:14px;line-height:1.8">
-        <b>日常学习阶段</b>：你可以完全放心地用本站 AI 伴学助手讲概念、拆步骤、批改练习题和练口语改写，不受限制。<br>
-        <b>考场与正式提交阶段（自律红线）</b>：凡标注 <b>Category 1</b> 的在线测验与闭卷期末考完全独立作答、不用 AI；会计 Business Report 等需过 <b>Turnitin</b> 的正式作业不照搬 AI 大段正文，用自己的语言撰写并确保答辩能讲清每一笔数字。
-      </p>
-    </div>
+    <!-- 3. 课程学习台 & ADHD 舒缓逐卡模式 -->
+    <details class="g-sec" id="g-3">
+      <summary>
+        <span class="g-sec-title"><span class="g-num">03</span>课程学习台：ADHD 舒缓逐卡模式 + 双语切换 + 思维导图</span>
+        <span class="ed-badge ed-badge-green">核心提分引擎</span>
+      </summary>
+      <div class="g-body">
+        <figure class="g-shot">
+          <img src="assets/guide-shots/guide-course-adhd.jpg" alt="课程页 ADHD 舒缓逐卡阅读模式实景" loading="lazy">
+          <figcaption>图 2：经济学 Week 3 实景 —— 顶部吸顶一条龙标签、中英语言切换、「🧘 舒缓逐卡：开」大行距折叠卡片、Supply 7 大非价格因素逐条展开与「○ 看懂了」进度勾。</figcaption>
+        </figure>
+        <ul>
+          <li><b>顶部吸顶一条龙导航</b>：依次排列 <b><code>✅ 本周打卡</code></b>（置顶在周标题正下方）→ <b><code>📊 本周图解</code></b> → <b><code>📖 概念与笔记</code></b> → <b><code>🎯 必考大题</code></b> → <b><code>📝 课后解析</code></b> → <b><code>📄 课件与术语</code></b> → <b><code>🎬 中英视频 ↗</code></b>（点一下直接打开该科 B 站视频页，无需二次跳转）。</li>
+          <li><b>🧘 ADHD 舒缓逐卡阅读模式（默认开启）</b>：
+            <ul>
+              <li>所有核心概念卡、详细分点（如 Supply 7 大非价格因素）、双语精讲与图解专题<b>默认全部折叠收起</b>，告别密集文字墙压迫感。</li>
+              <li>默认勾选 <b><code>🎯 一次只开一张</code></b>：点开第 2 张卡时，第 1 张自动收起，屏幕永远只聚焦眼前一小块内容。</li>
+              <li>采用 <b>2.02 倍大行距 + 短行宽 + 柔和暖纸底色</b>，减少串行与眼疲劳；每看懂一条概念可点 <b><code>○ 看懂了</code></b>，顶部进度条实时推进。</li>
+              <li>需要整页通读或打印时，随时可点 <b><code>📂 全部展开</code></b> 或切换 <b><code>🧘 舒缓逐卡：关</code></b>。</li>
+            </ul>
+          </li>
+          <li><b>3 种语言模式（全段同步生效）</b>：
+            <ul>
+              <li><b>🌐 中英对照</b>：上行标准学术英文定义，紧跟下行中文精解（核心概念与双语笔记全段生效）。</li>
+              <li><b>🇬🇧 纯英文</b>：隐藏中文，沉浸模拟全英考场阅读。</li>
+              <li><b>🧠 看中文背英文</b>：英文原句转为柔和浅蓝待背卡，先看中文口头复述英文，再点卡片翻开核对。</li>
+            </ul>
+          </li>
+          <li><b>4 种复习视图</b>：<b>精读全文</b> / <b>🧠 思维导图</b> / <b>填空自测</b>（精准遮盖核心专业术语，英文遮英文词、中文遮中文概念，不乱遮） / <b>知识点目录</b>（首屏展开一键跳转）。</li>
+          <li><b>高清图解速览 &amp; 放大灯箱</b>：点顶部图解标签直达对应图表，点击任意图片或曲线图可高清全屏放大查看。</li>
+        </ul>
+        <figure class="g-shot">
+          <img src="assets/guide-shots/guide-mindmap.jpg" alt="思维导图视图实景截图" loading="lazy">
+          <figcaption>图 3：点击「🧠 思维导图」即时生成本周海军蓝鎏金可折叠知识树，点任意节点直达对应原文。</figcaption>
+        </figure>
+      </div>
+    </details>
 
-    <h2 class="sec-title">五、右下角唯一快捷工具条说明（ADHD 友好设计）</h2>
-    <div class="lh-card">
-      <ul style="margin:0;padding-left:20px;line-height:1.9;font-size:14px">
-        <li><b>🍅 番茄钟</b>：点开选 15 / 25 / 45 分钟，倒计时结束自动累计到「今日已专注时长」。</li>
-        <li><b>📖 专注</b>：长笔记页一键隐藏侧栏、页脚与多余模块，只留正文安心阅读。</li>
-        <li><b>Aa 字号</b>：三档缩放（小 / 中 / 大）全站同步生效并记住你的选择。</li>
-        <li><b>💾 备份</b>：一键把你的进度、错题本、批注、成绩簿、术语掌握度打包下载为 JSON，随时可无损恢复。</li>
-        <li><b>🤖 AI 伴学</b>：支持「苏格拉底引导 / 直接给步骤答案 / 作业批改入档」三种模式，自动带入当前周次与你的学习档案。</li>
-      </ul>
-    </div>
+    <!-- 4. 全站检索与页内快搜 -->
+    <details class="g-sec" id="g-4">
+      <summary>
+        <span class="g-sec-title"><span class="g-num">04</span>双层极速搜索：全站全文检索 + 本周页内快搜</span>
+        <span class="ed-badge ed-badge-gold">1 秒直达考点</span>
+      </summary>
+      <div class="g-body">
+        <div class="g-grid">
+          <div class="g-mini">
+            <h4>🔎 顶部全站搜索框</h4>
+            <p>覆盖全站 <b>1,450+ 条</b>核心概念、非价格因素分点、双语笔记、必考大题与术语。支持<b>中英文多词组合搜索</b>（例如直接搜 <code>supply non-price determinant</code>），点选结果自动跳转到对应周次并高亮定位！</p>
+          </div>
+          <div class="g-mini">
+            <h4>⚡ 本周页内快搜栏</h4>
+            <p>在课程笔记正上方输入任意关键词（如 <code>elasticity</code> / <code>折旧</code> / <code>XLOOKUP</code>），自动展开被折叠的卡片，用亮黄色标出全部命中位置，支持 <b><code>↑ 上一处 / ↓ 下一处</code></b> 逐个定位。</p>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <!-- 5. 全站 4 色荧光笔高光 -->
+    <details class="g-sec" id="g-5">
+      <summary>
+        <span class="g-sec-title"><span class="g-num">05</span>全站 4 色荧光笔永久高光 &amp; 高光集</span>
+        <span class="ed-badge">全站任意页面通用</span>
+      </summary>
+      <div class="g-body">
+        <ul>
+          <li><b>哪里都能画</b>：在课程笔记、必考大题、五科手册、读书原书原文、每日简报、英语精读文章等<b>全站任意页面</b>，用鼠标或手指选中一段文字，都会自动弹出 <b>4 色荧光笔浮条</b>：
+            <ul>
+              <li>🟡 <b>重点黄</b>（高频必背） · 🟢 <b>掌握绿</b>（已理解） · 🔵 <b>英文蓝</b>（地道英文句） · 🩷 <b>易错粉</b>（易扣分陷阱） · 📝 <b>写批注</b></li>
+            </ul>
+          </li>
+          <li><b>跨设备永久还原</b>：高光实时同步到你的专属云端账号，刷新网页或换设备登录后自动精准还原在原文上。</li>
+          <li><b>点击改色 / 写批注 / 擦除</b>：点击任意已画好的高光，即可切换颜色、补充或修改批注，或一键擦除；鼠标悬停在带 📝 的高光上可直接预览批注。</li>
+          <li><b>高光总目录（顶栏「高光集」）</b>：按<b>颜色</b>和<b>学科</b>筛选集中复习，支持一键打印，点 <b><code>📍 回到原文定位 →</code></b> 自动跳回对应原文并闪烁高亮提醒。</li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- 6. 五科手册、错题本、闭卷刷题与分单元闪卡 -->
+    <details class="g-sec" id="g-6">
+      <summary>
+        <span class="g-sec-title"><span class="g-num">06</span>提分四大件：五科手册 · 遗忘曲线错题本 · 闭卷刷题 · 分单元闪卡</span>
+        <span class="ed-badge">考前冲刺必备</span>
+      </summary>
+      <div class="g-body">
+        <figure class="g-shot">
+          <img src="assets/guide-shots/guide-flashcards.jpg" alt="分单元中英术语闪卡实景截图" loading="lazy">
+          <figcaption>图 4：新版中英术语闪卡 —— 严格按单元隔离、支持自由勾选多单元范围（如 1–6 单元）与随机打乱顺序，背完本章先弹确认卡再决定是否进下一章。</figcaption>
+        </figure>
+        <ul>
+          <li><b>📚 五科手册（顶栏「五科手册」）</b>：集中汇总 5 门课的考核权重、核心公式卡、Excel 必考函数清单与考场高频避坑表。</li>
+          <li><b>🔁 全科错题本（顶栏「错题刷题」）</b>：支持手动录错题、或在课程必考大题/刷题页一键收入；系统按 <b>1 / 3 / 7 / 14 天艾宾浩斯遗忘曲线</b>自动推回今日待复习队列。</li>
+          <li><b>🎯 多科闭卷刷题 &amp; 会计 U1–U6 官方引文库</b>：按学科闭卷模拟自测，交卷即看解析，错题一键入错题本。</li>
+          <li><b>🃏 新版分单元术语闪卡（共 112 词）</b>：
+            <ul>
+              <li><b>严格按单元隔离</b>：从某周课程点进闪卡或切换学科时，默认只选当前单个单元，绝不混入未选单元的内容。</li>
+              <li><b>自选范围 + 随机打乱</b>：点亮任意几个单元标签，或用「快速范围：从第 1 单元到第 6 单元 → 应用范围」锁定范围，勾选 <b><code>🔀 打乱卡片顺序</code></b> 即可在该范围内随机出题。</li>
+              <li><b>章节完成确认</b>：背完本范围最后一张卡后会弹出完成总结卡，由你自由选择「进入下一单元 / 打乱重刷 / 只刷未掌握」。</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- 7. 读书与原书原文阅读 -->
+    <details class="g-sec" id="g-7">
+      <summary>
+        <span class="g-sec-title"><span class="g-num">07</span>个人书房：3D 书架 + 每章原书原文阅读</span>
+        <span class="ed-badge">精读笔记 &amp; 原文一键切</span>
+      </summary>
+      <div class="g-body">
+        <figure class="g-shot">
+          <img src="assets/guide-shots/guide-book.jpg" alt="读书区小岛经济学第1章原文阅读实景" loading="lazy">
+          <figcaption>图 5：《小岛经济学》第 1 章实景 —— 每一章标题旁自带「📝 精读笔记」与「📖 原文阅读」切换按钮，精准定位本章原书正文，同样支持 4 色高光。</figcaption>
+        </figure>
+        <ul>
+          <li>点顶栏 <b>「读书」</b> 进入真实 3D 书封书架，底部可展开查看想读书单。</li>
+          <li>进入任意书籍的具体章节后，<b>章节标题正旁边</b>提供 <b><code>📝 精读笔记</code></b> 与 <b><code>📖 原文阅读</code></b> 一键切换（不放在导读里）。</li>
+          <li>打开「原文阅读」会自动定位到当前章节的原书正文，超长章节自动分页流畅阅读；含中英双语版本的书（如《股票大作手回忆录》）还支持在原文页内自由切换「中文原文 / 英文原版」。</li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- 8. 100% 离线英语学习台、每日简报与 B 站视频 -->
+    <details class="g-sec" id="g-8">
+      <summary>
+        <span class="g-sec-title"><span class="g-num">08</span>英语学习工作台（100% 离线免 AI）· 每日简报 · 五科视频</span>
+        <span class="ed-badge ed-badge-green">零门槛直达</span>
+      </summary>
+      <div class="g-body">
+        <figure class="g-shot">
+          <img src="assets/guide-shots/guide-english.jpg" alt="英语学习工作台离线长难句解析实景" loading="lazy">
+          <figcaption>图 6：英语学习工作台 —— 划选 SDG 11 半句或整句点「🧩 长难句解析 / 🌐 翻译」，右侧立即弹出离线中文翻译与语法拆解，完全无需配置 AI。</figcaption>
+        </figure>
+        <ul>
+          <li><b>🇬🇧 英语学习工作台（顶栏「英语学习」）</b>：
+            <ul>
+              <li>左侧包含 <b>素材库 / 精读 / 精听 / 写作 / 口语 / 生词本 / 数据</b> 完整闭环。</li>
+              <li><b>100% 离线查词 &amp; 翻译 &amp; 长难句解析</b>：点击文中任意单词直接调用本地 <b>9,389 词雅思词库</b>显示音标、释义与发音并可一键加入生词本；划选整句或半句/从句点「翻译 / 长难句解析」立刻读取离线缓存与本地语法拆解，<b>无需配置任何 AI 密钥</b>。</li>
+            </ul>
+          </li>
+          <li><b>📰 每日简报（顶栏「每日简报」）</b>：收录近 14 天国际顶刊前沿文章精选，支持顶栏搜索、按分类筛选、按时间正倒序切换、一键展开/折叠全部，并支持 4 色荧光笔高光。</li>
+          <li><b>🎬 五科精选视频</b>：点击任意课程页顶部的 <b><code>🎬 中英视频 ↗</code></b> 即可直达。已全部清理国内打不开的海外死链，保留无需代理、页面内直接播放的 <b>B 站精选课程</b>（会计学含 B 站中英双语原声）。</li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- 9. 右下角全站工具条与管理员后台 -->
+    <details class="g-sec" id="g-9">
+      <summary>
+        <span class="g-sec-title"><span class="g-num">09</span>右下角全站悬浮工具条 &amp; 管理员控制台</span>
+        <span class="ed-badge">专注 · 备份 · 权限管理</span>
+      </summary>
+      <div class="g-body">
+        <div class="g-grid">
+          <div class="g-mini">
+            <h4>🍅 专注番茄钟</h4>
+            <p>可选 15 / 25 / 45 分钟并填写本轮目标，倒计时结束后自动累计进首页的「今日已专注时长」。</p>
+          </div>
+          <div class="g-mini">
+            <h4>📖 专注模式 &amp; Aa 字号</h4>
+            <p>点「专注」一键隐藏左侧边栏专心读正文；点「Aa」可在紧凑 / 标准 / 舒适大字三档间循环切换并记住偏好。</p>
+          </div>
+          <div class="g-mini">
+            <h4>💾 个人数据备份</h4>
+            <p>一键导出你的全站进度、4 色高光、错题本、闪卡与成绩为 <code>.json</code> 文件，随时可无损恢复。</p>
+          </div>
+          <div class="g-mini">
+            <h4>🛡️ 管理员控制台（仅管理员可见）</h4>
+            <p>管理员登录后顶栏出现「🛡️ 管理员」：可审批新注册账号、实时查看每位学员的学习进度与高光数、逐人开关「课外拓展」等模块权限、重置密码、停用或删除账号。</p>
+          </div>
+        </div>
+      </div>
+    </details>
   </main>
-<script src="app/subpage-header.js?v=20261123-v11"></script>
-<script src="app/highlighter.js?v=20261123-v10"></script>
+
+  <div class="g-lb" id="gLightbox" role="dialog" aria-label="图片放大预览"><img id="gLbImg" src="" alt=""></div>
+
+  <script>
+  (function () {
+    document.getElementById('gExpandAll').addEventListener('click', function () {
+      document.querySelectorAll('details.g-sec').forEach(function (d) { d.open = true; });
+    });
+    document.getElementById('gCollapseAll').addEventListener('click', function () {
+      document.querySelectorAll('details.g-sec').forEach(function (d) { d.open = false; });
+    });
+    document.querySelectorAll('.g-chip').forEach(function (a) {
+      a.addEventListener('click', function (ev) {
+        var id = a.getAttribute('href').slice(1);
+        var el = document.getElementById(id);
+        if (el) {
+          ev.preventDefault();
+          el.open = true;
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+    var lb = document.getElementById('gLightbox');
+    var lbImg = document.getElementById('gLbImg');
+    document.querySelectorAll('.g-shot img').forEach(function (img) {
+      img.addEventListener('click', function () {
+        lbImg.src = img.src;
+        lb.classList.add('open');
+      });
+    });
+    lb.addEventListener('click', function () { lb.classList.remove('open'); });
+    document.addEventListener('keydown', function (ev) { if (ev.key === 'Escape') lb.classList.remove('open'); });
+  })();
+  </script>
+  <script src="app/subpage-header.js?v=20261123-v11"></script>
+  <script src="app/highlighter.js?v=20261123-v10"></script>
 </body>
 </html>
