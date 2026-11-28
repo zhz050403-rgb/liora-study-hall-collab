@@ -120,7 +120,7 @@
 
   async function loadCourse(courseId) {
     if (chunks.courses[courseId]) return chunks.courses[courseId];
-    var r = await fetch('/data-chunks/courses/' + encodeURIComponent(courseId) + '.json?v=20261126-v15', { credentials: 'same-origin' });
+    var r = await fetch('/data-chunks/courses/' + encodeURIComponent(courseId) + '.json?v=20261128-v18', { credentials: 'same-origin' });
     if (!r.ok) throw new Error('课程数据加载失败：' + courseId);
     chunks.courses[courseId] = await r.json();
     return chunks.courses[courseId];
@@ -139,7 +139,7 @@
   async function loadSearchIndex() {
     if (searchIdxCache) return searchIdxCache;
     try {
-      var r = await fetch('/data-chunks/search-index.json?v=20261126-v15', { credentials: 'same-origin' });
+      var r = await fetch('/data-chunks/search-index.json?v=20261128-v18', { credentials: 'same-origin' });
       if (r.ok) searchIdxCache = await r.json();
     } catch (e) {}
     return searchIdxCache;

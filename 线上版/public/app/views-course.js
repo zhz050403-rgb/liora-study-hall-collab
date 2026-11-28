@@ -129,6 +129,7 @@
     }
 
     var zones = [
+      { el: rootEl.querySelector('#edBiConcepts'), tag: '必会' },
       { el: rootEl.querySelector('#edNoteBody'), tag: '' },
       { el: rootEl.querySelector('#edTutBody'), tag: '解析' }
     ];
@@ -300,15 +301,19 @@
     var termId = opts.termId || '';
     var weekNum = opts.weekNum || 1;
     var doneCnt = 0;
+    var mustKnowCnt = 0;
     concepts.forEach(function (c, i) {
       if (window.LioraStore && window.LioraStore.isTaskDone(courseId + ':' + termId + ':' + weekNum + ':bc' + i)) doneCnt++;
+      if (c && c.mustKnow) mustKnowCnt++;
     });
     var pct = Math.round((doneCnt / concepts.length) * 100);
 
     return '<div class="bi-concept-wrap" id="edBiConcepts">' +
       '<div class="bi-concept-banner" style="flex-direction:column;align-items:stretch;gap:8px">' +
         '<div style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap">' +
-          '<h3 style="margin:0">📌 核心概念与分点精讲 · Core Concepts（共 ' + concepts.length + ' 项）</h3>' +
+          '<h3 style="margin:0;display:flex;align-items:center;gap:8px;flex-wrap:wrap"><span>📌 核心概念与分点精讲 · Core Concepts（共 ' + concepts.length + ' 项）</span>' +
+            (mustKnowCnt > 0 ? '<span class="bi-mustknow-pill">🔥 含 ' + mustKnowCnt + ' 项讲义未细讲必考破题法</span>' : '') +
+          '</h3>' +
           '<div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center">' +
             '<label style="display:inline-flex;align-items:center;gap:4px;font-size:12px;color:var(--navy-800);cursor:pointer;font-weight:600"><input type="checkbox" id="edSingleFocusChk"' + (singleFocus ? ' checked' : '') + '> 🎯 一次只开一张</label>' +
             '<button type="button" class="ed-btn ed-btn-sm" id="edBiExpandAll">📂 全部展开</button>' +
@@ -324,11 +329,13 @@
       '<div class="bi-concept-list">' +
         concepts.map(function (c, i) {
           var isOfficial = /课件原话|真题|官方核心文本|Lecture Slides/.test(c.src || '');
+          var isMustKnow = Boolean(c && c.mustKnow);
           var enHtml = (isCloze && !isRecall) ? makeClozeEn(c.en, c.term, glossTerms) : esc(c.en);
           var zhHtml = isCloze ? makeClozeZh(c.zh, c.term) : esc(c.zh);
           var bcKey = courseId + ':' + termId + ':' + weekNum + ':bc' + i;
           var isDone = window.LioraStore && window.LioraStore.isTaskDone(bcKey);
           var hasBullets = Array.isArray(c.bullets) && c.bullets.length > 0;
+          var svgBlock = c.svgHtml ? ('<div class="bi-svg-box">' + c.svgHtml + '</div>') : '';
           var bulletsHtml = '';
           if (hasBullets) {
             bulletsHtml = '<div class="bi-bullets">' +
@@ -350,15 +357,17 @@
           }
           /* ADHD 舒缓模式下默认全部收起，点一个看一个；切回标准模式才全部展开 */
           var openAttr = adhdOn ? '' : ' open';
-          return '<details class="bi-concept-card bi-concept-acc' + (isDone ? ' is-done' : '') + '" id="bi-item-' + i + '"' + openAttr + '>' +
+          return '<details class="bi-concept-card bi-concept-acc' + (isMustKnow ? ' bi-concept-mustknow' : '') + (isDone ? ' is-done' : '') + '" id="bi-item-' + i + '"' + openAttr + '>' +
             '<summary>' +
               '<span class="bi-acc-left">' +
                 '<span class="bi-acc-arrow">▸</span>' +
                 '<span class="bi-concept-term">' + (i + 1) + '. ' + esc(c.term) + '</span>' +
               '</span>' +
               '<span style="display:flex;align-items:center;gap:6px;flex-wrap:wrap">' +
-                (hasBullets ? '<span class="ed-badge ed-badge-gold">' + c.bullets.length + ' 条明细</span>' : '') +
-                (c.src ? '<span class="bi-src-badge' + (isOfficial ? ' official' : '') + '">' + (isOfficial ? '✓ ' : '') + esc(c.src) + '</span>' : '') +
+                (isMustKnow ? '<span class="bi-mustknow-pill">🔥 必考必会</span>' : '') +
+                (c.svgHtml ? '<span class="ed-badge">📊 含矢量图解</span>' : '') +
+                (hasBullets ? '<span class="ed-badge ed-badge-gold">' + c.bullets.length + ' 步破题</span>' : '') +
+                (c.src && !isMustKnow ? '<span class="bi-src-badge' + (isOfficial ? ' official' : '') + '">' + (isOfficial ? '✓ ' : '') + esc(c.src) + '</span>' : '') +
                 '<button type="button" class="bi-done-btn' + (isDone ? ' done' : '') + '" data-bc-done="' + esc(bcKey) + '">' + (isDone ? '✓ 已搞懂' : '○ 看懂了') + '</button>' +
               '</span>' +
             '</summary>' +
@@ -367,6 +376,7 @@
                 '<div class="bi-en">🇬🇧 ' + enHtml + '</div>' +
                 '<div class="bi-zh">🇨🇳 ' + zhHtml + '</div>' +
               '</div>' +
+              svgBlock +
               bulletsHtml +
             '</div>' +
           '</details>';

@@ -180,7 +180,7 @@
   window.LioraStudyApi = {
     toast: toast,
     loadStudy: loadStudy,
-    loadHandbooks: function () { return loadJsonChunk('handbooks', '/data-chunks/handbooks.json?v=20261122-v2'); },
+    loadHandbooks: function () { return loadJsonChunk('handbooks', '/data-chunks/handbooks.json?v=20261128-v18'); },
     loadGlossary: function () { return loadJsonChunk('glossary', '/data-chunks/glossary.json?v=20261122-v2'); },
     loadExamPacks: function () { return loadJsonChunk('examPacks', '/data-chunks/exam-packs.json?v=20261122-v2'); },
     loadVideosExtra: function () { return loadJsonChunk('videosExtra', '/data-chunks/videos-extra.json?v=20261122-v2'); },

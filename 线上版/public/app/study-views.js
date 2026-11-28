@@ -64,6 +64,30 @@
         return '<li style="margin-bottom:6px;color:#7a1f1f">' + esc(p) + '</li>';
       }).join('') + '</ul>';
 
+      var mustKnowHtml = '';
+      if (Array.isArray(cur.mustKnowToolkit) && cur.mustKnowToolkit.length) {
+        mustKnowHtml = '<div class="lh-card" style="margin-bottom:16px;background:#fffcf7;border:1.5px solid #e6c78a;border-left:4px solid #b4322a">' +
+          '<h3 style="margin-bottom:6px;color:#8a231c">🔥 讲义没细讲 · 考场必会破题宝典（共 ' + cur.mustKnowToolkit.length + ' 项）</h3>' +
+          '<p style="font-size:13px;color:var(--lh-muted);margin:0 0 12px">这些是 Learning Guide 往往只提要求、却没教具体步骤，但直接决定做题能否拿分的隐性必考技能。点击任意一项可展开速览，或直达对应周的图文分步精讲：</p>' +
+          cur.mustKnowToolkit.map(function (mk, idx) {
+            var jumpHref = '#/c/' + encodeURIComponent(cur.id) + '/' + encodeURIComponent(mk.term) + '/' + encodeURIComponent(mk.week) + '?q=' + encodeURIComponent(mk.q || '');
+            return '<details style="border:1px solid #e7dcc8;border-radius:10px;background:#fff;margin-bottom:8px;overflow:hidden">' +
+              '<summary style="padding:10px 14px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;font-weight:700;color:#0f2744;font-size:14px">' +
+                '<span>' + (idx + 1) + '. ' + esc(mk.title) + '</span>' +
+                '<span style="display:inline-flex;gap:6px;align-items:center">' +
+                  (mk.hasDiagram ? '<span class="lh-badge lh-badge-gold">📊 含图解</span>' : '') +
+                  '<span class="lh-badge">' + esc(String(mk.term).toUpperCase()) + ' · W' + esc(mk.week) + '</span>' +
+                '</span>' +
+              '</summary>' +
+              '<div style="padding:10px 14px 13px;border-top:1px solid #f0e6d2;font-size:13.5px;line-height:1.85;color:#2c3e50">' +
+                '<p style="margin:0 0 10px">' + esc(mk.summary) + '</p>' +
+                '<a class="lh-btn lh-btn-sm lh-btn-primary" href="' + jumpHref + '">打开本项图文分步破题卡 →</a>' +
+              '</div>' +
+            '</details>';
+          }).join('') +
+        '</div>';
+      }
+
       var videoHtml = '';
       if (extraVid && extraVid.units) {
         videoHtml = '<div class="lh-card" style="margin-top:16px"><h3>🎬 ' + esc(extraVid.cn) + ' · 中英对照视频直达</h3><p style="font-size:13px;color:var(--lh-muted);margin-bottom:10px">' + esc(extraVid.desc) + '</p>' +
@@ -92,6 +116,7 @@
           '<table class="lh-cheat-table"><tbody>' + assessHtml + '</tbody></table>' +
         '</div>' +
         '<div class="lh-card" style="margin-bottom:16px"><h3>🧭 本科每周怎么学（4 步闭环）</h3>' + methodHtml + '</div>' +
+        mustKnowHtml +
         sheetsHtml +
         '<div class="lh-card" style="background:#fffaf9;border-color:#f0cece"><h3>⚠️ 高频扣分陷阱清单（考前必扫）</h3>' + pitfallsHtml + '</div>' +
         videoHtml +

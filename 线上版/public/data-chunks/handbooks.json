@@ -111,6 +111,40 @@
       "服务收入误记 Sales：提供咨询/维修等服务记 Service Revenue，销售实物商品记 Sales。",
       "部分付款算错：客户欠 $5,000 只付 $1,000，分录只按实际收到的 $1,000 记（除非明确触发折扣条款）。",
       "T 型账 c/d 与 b/d 放反：Balance c/d 永远填在「较小一侧」用来凑平，Balance b/d 永远写在下期「正常余额一侧」。"
+    ],
+    "mustKnowToolkit": [
+      {
+        "title": "借贷方向 1 秒零失误口诀（DEAD CLIC 正常余额表）",
+        "term": "term1",
+        "week": 2,
+        "q": "DEAD CLIC",
+        "summary": "会计初学者最大误区是把「借 (Dr)」当成增加、把「贷 (Cr)」当成减少！其实 Dr 只代表左边、Cr 只代表右边。记住国际会计黄金口诀 DEAD CLIC，1 秒判断任意科目的增减方向！",
+        "hasDiagram": false
+      },
+      {
+        "title": "四大期末调整分录四宫格（永不碰 Cash + 月份折算铁律）",
+        "term": "term1",
+        "week": 4,
+        "q": "Adjusting Entries Matrix",
+        "summary": "期末调整分录（Adjusting Entries）是会计大考最容易全盘写反的重灾区！死守两条铁律：① 调整分录永远不出现 Cash（现金）；② 每一笔必然同时包含 1 个利润表科目（收入/费用）+ 1 个资产负债表科目（资产/负债）！",
+        "hasDiagram": false
+      },
+      {
+        "title": "T 型账户结平 (c/d vs b/d) & 试算平衡表「找差额 3 招」",
+        "term": "term1",
+        "week": 6,
+        "q": "Trial Balance Error Hunting",
+        "summary": "期末结平 T 型账户时，Balance c/d 和 Balance b/d 到底写左边还是右边？试算平衡表借贷不平时怎么在 30 秒内锁定错账？掌握下面 3 招轻松搞定。",
+        "hasDiagram": false
+      },
+      {
+        "title": "结账分录四步法（REID 口诀）& 三大报表净利润勾稽关系",
+        "term": "term1",
+        "week": 8,
+        "q": "Closing Entries",
+        "summary": "期末结账只能结清「临时账户」（收入、费用、提款），资产/负债/资本等「永久账户」绝对不能清零！记住 REID 四步结账口诀和报表勾稽公式。",
+        "hasDiagram": false
+      }
     ]
   },
   {
@@ -201,6 +235,56 @@
       "Movement vs Shift 混淆：沿 PPC 移动是现有资源重分配；整条曲线外移才是资源增多/技术进步带来的能力扩张（只影响一种商品时表现为绕一轴旋转 pivot）。",
       "地道英文高频纠错：用 unlimited human wants（勿写 human’s unlimited want）；用 opportunity cost arises（勿写 is happened）；用 increasing opportunity cost（勿写 inefficiently capacity）。",
       "失业率陷阱：气馁工人（discouraged workers）退出劳动力市场会使失业率数字下降，但并不代表就业增加！"
+    ],
+    "mustKnowToolkit": [
+      {
+        "title": "需求与供给同时移动（双移「一确一不定」箭头表法）",
+        "term": "term1",
+        "week": 3,
+        "q": "Simultaneous Shifts",
+        "summary": "讲义主要讲单条曲线移动，但考试大题和选择题极爱考「两个冲击同时发生（如收入上升 + 原材料降价）」！只要 D 和 S 同时移动，均衡价格 P* 和数量 Q* 里必然有一个方向确定、另一个永远是「不确定 (Ambiguous / Indeterminate)」！",
+        "hasDiagram": false
+      },
+      {
+        "title": "手算 CS、PS、税收与无谓损失 DWL（三角形面积法 + 图解）",
+        "term": "term1x",
+        "week": 6,
+        "q": "Deadweight Loss",
+        "summary": "考试常给带数字的供需图或方程，让你在征从量税 / 最高限价 / 最低限价后精确算出 CS、PS、政府税收和无谓损失 DWL 的美元金额并涂阴影。记住三角形面积公式 1/2 × 底 × 高即可秒杀！",
+        "hasDiagram": true
+      },
+      {
+        "title": "中点弹性公式防除错分母 & 总收益 TR 联动 2 秒速判",
+        "term": "term1x",
+        "week": 5,
+        "q": "Midpoint Elasticity",
+        "summary": "普通百分比法从 $10 涨到 $12 和从 $12 降到 $10 算出来的弹性竟然不同！两点之间算弹性必须用中点公式（分母取中点平均数），并熟练掌握「价格涨跌如何影响总收益 TR」的 2 秒判断。",
+        "hasDiagram": false
+      },
+      {
+        "title": "成本曲线几何铁律 & 利润/亏损/停产矩形 4 步阴影画法",
+        "term": "term1",
+        "week": 6,
+        "q": "Profit Rectangle Shading",
+        "summary": "不管考完全竞争、垄断还是垄断竞争，厂商利润最大化作图有严格几何顺序——很多人把价格直接读在 MR=MC 交点上，或者把 MC 画歪没穿过 ATC 最低点，直接扣光图分！",
+        "hasDiagram": true
+      },
+      {
+        "title": "名义/实际 GDP、平减指数与 CPI 算错重灾区（固定基期价格）",
+        "term": "term2",
+        "week": 1,
+        "q": "Real GDP and Deflator",
+        "summary": "宏观 Term 2 计算大题常给一张 2 种商品 × 3 年的价格产量表，连问名义 GDP、实际 GDP、GDP 平减指数、CPI 和通胀率。记住「实际 GDP 锁价格，CPI 锁篮子数量」绝不算混！",
+        "hasDiagram": false
+      },
+      {
+        "title": "宏观政策大题「四环因果链 + 局限性」满分答题模板",
+        "term": "term2",
+        "week": 4,
+        "q": "AD-AS Policy Chain",
+        "summary": "经济学宏观大题只背定义拿不到高分！考官按「因果传导链条」给步骤分：政策工具 → 传导机制（利率/可支配收入）→ AD=C+I+G+(X−M) 哪几项变 → 画 AD-AS 移线 → 对 GDP/通胀/失业的影响 → 局限性与时滞。",
+        "hasDiagram": false
+      }
     ]
   },
   {
@@ -286,6 +370,104 @@
       "【E03 定义域与端点】解对数方程必排除非法根；严格区分 >（空心圆）与 ≥（实心圆），盈亏区间是否含端点要看题意。",
       "【E04 审题与精度】要 Equation 别只写表达式；问解的个数别只列 x；要 3 s.f. 别留 ln 形式；应用题求完 x 必须写一句实际文字结论（带单位）。",
       "【E05 金融与统计舍入】中间步骤保留完整计算器精度，最后一步再按要求舍入；保证年限/次数题看清是向上取整还是保守向下取整。"
+    ],
+    "mustKnowToolkit": [
+      {
+        "title": "由 f(x) 图像画导函数 f'(x)（五步垂直对齐法）",
+        "term": "term1",
+        "week": 7,
+        "q": "Sketching f'(x)",
+        "summary": "Learning Guide 要求直接看着 f(x) 图像画出 f'(x) 图像，却没教完整画图步骤。只需死守一条核心铁律：在同一个 x 处，导函数 f'(x) 的「纵坐标高低」= 原函数 f(x) 的「切线斜率大小与正负」。按下方 5 步垂直对齐画，考场必拿满分！",
+        "hasDiagram": true
+      },
+      {
+        "title": "逆向必考：看导函数 f'(x) 图像反推原函数 f(x)",
+        "term": "term1",
+        "week": 8,
+        "q": "Reading f(x) from f'(x)",
+        "summary": "考试极高频逆向题：直接给一张标着 y = f'(x) 的图，问原函数 f(x) 在哪增减、哪里取极大/极小值、哪里是拐点。超过 60% 的同学会把 f'(x) 的波峰误当成 f(x) 的极大值！用下方速查法则一秒避坑。",
+        "hasDiagram": true
+      },
+      {
+        "title": "二次与分式不等式（数轴符号表法，严禁乱乘含 x 分母）",
+        "term": "term1",
+        "week": 1,
+        "q": "Quadratic & Rational Inequalities",
+        "summary": "第 5 周求自然定义域、第 8 周判导数正负全都要解二次和分式不等式，但讲义默认你会！铁律：严禁在不等式两边同乘含 x 的式子（不知正负会搞反不等号），必须用「移项 → 因式分解 → 数轴符号表」四步法。",
+        "hasDiagram": false
+      },
+      {
+        "title": "图像变换顺序与「先提 x 系数再平移」防错铁律",
+        "term": "term1",
+        "week": 2,
+        "q": "Graph Transformations Order",
+        "summary": "画 y = a·f(bx + c) + k 图像时，90% 的同学会把 f(2x − 6) 错看成「向右平移 6 格」而丢全部分！必须牢记：先在括号内把 x 的系数提出来，再按「缩放/翻折 → 平移（DRT）」顺序做！",
+        "hasDiagram": false
+      },
+      {
+        "title": "配方法（a≠1 防漏乘）与绝对值不等式几何速解",
+        "term": "term1",
+        "week": 3,
+        "q": "Completing the Square",
+        "summary": "配方求抛物线顶点时一旦首项系数 a ≠ 1（尤其是负号 −2x²），极易漏乘外面的 a；解绝对值不等式也常搞混「且/或」与右边为负数的秒杀情况。",
+        "hasDiagram": false
+      },
+      {
+        "title": "求反函数四步法 + 抛物线截断定义域怎么选 ± 根号",
+        "term": "term1",
+        "week": 4,
+        "q": "Inverse Functions",
+        "summary": "考场最常考：给一个限制定义域的抛物线如 f(x) = (x−3)² + 1 (x ≤ 3) 求反函数，开平方会出现 ± 两个分支，选错直接扣一半！记住下面 1 条黄金检验法，100% 不选错。",
+        "hasDiagram": false
+      },
+      {
+        "title": "复合函数自然定义域「三大禁区」数轴交集法",
+        "term": "term1",
+        "week": 5,
+        "q": "Natural Domain",
+        "summary": "考试爱把根号、分母、对数叠在同一个函数里考自然定义域（例如 ln(5−x) / √(x²−4)），漏掉任意一条或把 > 写成 ≥ 都会扣分。套用「三大禁区交集清单」绝不漏项！",
+        "hasDiagram": false
+      },
+      {
+        "title": "商业最优化建模 5 步套路 & 闭区间端点必检（防丢 3 分）",
+        "term": "term1",
+        "week": 9,
+        "q": "Optimisation Modelling",
+        "summary": "最优化大题（利润最大、围栏面积最大、成本最小）最痛的丢分点：算出了 f'(x)=0 却因为没写「验证极大/极小值」或没查「区间端点」白丢 2–3 分！按这 4 步写拿满步骤分。",
+        "hasDiagram": false
+      },
+      {
+        "title": "定积分正负抵消 vs 真实几何面积（拆 x 轴交点 + 上减下）",
+        "term": "term1",
+        "week": 10,
+        "q": "Signed Integral vs Area",
+        "summary": "第 10 周头号扣分杀手：题目问「求面积 (Find the area)」，你直接算 ∫_a^b f(x) dx！只要曲线在 [a, b] 里穿过 x 轴，x 轴下方积分是负的，会和上方正面积互相抵消，答案直接全错！",
+        "hasDiagram": false
+      },
+      {
+        "title": "年金与贷款时间轴画法（彻底告别差一期 n vs n-1 错误）",
+        "term": "term2",
+        "week": 3,
+        "q": "Annuity Timeline",
+        "summary": "商业数学 Term 2 金融大题（养老金、定投、房贷还款）90% 的失分都是「到底复利了几次？是 n 期还是 n−1 期？」先画一条 10 秒时间轴，再按等比数列求和，永不差一期！",
+        "hasDiagram": false
+      },
+      {
+        "title": "条件概率工具选择铁律 & 独立 vs 互斥终极辨析",
+        "term": "term2",
+        "week": 6,
+        "q": "Conditional Probability",
+        "summary": "概率大题两大痛点：读完题不知道该画树状图、维恩图还是四格表；以及考场必考概念陷阱——把「相互独立 (Independent)」和「互斥 (Mutually Exclusive)」搞混！",
+        "hasDiagram": false
+      },
+      {
+        "title": "正态分布正向查表与逆向求临界值 z（先画钟形图防左右反）",
+        "term": "term2",
+        "week": 13,
+        "q": "Inverse Normal",
+        "summary": "标准正态表通常只给左尾累计面积 P(Z ≤ z)（且常只给 z ≥ 0）。考试问「前 5% 分数线 (top 5%)」时极易查成 0.05 搞错正负号！永远先花 5 秒画钟形阴影图再查表。",
+        "hasDiagram": false
+      }
     ]
   },
   {
@@ -401,6 +583,32 @@
       "AND 写成简写：不能写 AND(B2,C2>=50)，必须写 AND(B2>=50,C2>=50)。",
       "SUMIF 与 SUMIFS 参数顺序颠倒：SUMIF 求和区在最后，SUMIFS 求和区在最前！",
       "多工作表操作忘取消分组（Ungroup Sheets）：选多张表统一改完格式后忘记取消，后续输入会覆盖所有表。"
+    ],
+    "mustKnowToolkit": [
+      {
+        "title": "Excel 拖拽不报错铁律：$A$1 / $A1 / A$1 锁行锁列判断法",
+        "term": "term1",
+        "week": 10,
+        "q": "Mixed Cell Referencing",
+        "summary": "计算机 Excel 实操考试的核心评分点：只写左上角 1 个公式，往右拖、往下拖整张表全部自动算对！只要分清「$ 锁在字母前还是数字前」，拖拽永远不出错。",
+        "hasDiagram": false
+      },
+      {
+        "title": "嵌套 IF 区间顺序陷阱 & XLOOKUP 阶梯匹配 (-1) 防 #N/A",
+        "term": "term1",
+        "week": 12,
+        "q": "Nested IF and XLOOKUP",
+        "summary": "Excel 考试两大高发翻车：① 嵌套 IF 条件顺序写反导致 95 分被判成 Pass；② 用 XLOOKUP 查成绩等级或税率阶梯表时忘了写第 5 参数 −1 直接报 #N/A！",
+        "hasDiagram": false
+      },
+      {
+        "title": "IF(AND/OR) 语法防错 & PMT/FV 财务函数月利率与负号必换算",
+        "term": "term2",
+        "week": 4,
+        "q": "PMT FV and IF AND OR",
+        "summary": "Term 2 高级 Excel 考试最容易白丢分的两个语法细节：把 AND/OR 写在条件中间报错，以及算月供 PMT 时忘记把年利率 ÷12、年数 ×12，或者算出来是红字负数！",
+        "hasDiagram": false
+      }
     ]
   },
   {
@@ -479,6 +687,24 @@
       "推断题过度脑补：没有原文直接证据支撑的「常识正确」选项往往是干扰项。",
       "转述只换近义词不换句式：既容易踩 Turnitin 相似率，也会在 A1 Transformation 项失分。",
       "口语即兴遗漏主谓一致与单复数：每次录完 60–90 秒回听一遍，专门抓时态和三单错误后重说一遍效果最好。"
+    ],
+    "mustKnowToolkit": [
+      {
+        "title": "学术改写 5 步安全法（不止换同义词，彻底避开 Patchwriting 查重）",
+        "term": "term1",
+        "week": 9,
+        "q": "Safe Academic Paraphrasing",
+        "summary": "讲义强调要改写并加转述动词，但没教怎么彻底摆脱原句骨架——只换两三个同义词在 UNSW 会被判「拼凑抄袭 (Patchwriting)」扣重分！按下面 5 步改写，安全又拿高分。",
+        "hasDiagram": false
+      },
+      {
+        "title": "信息图/数据图表口语写作「总-分-总」高分模板与精准趋势词库",
+        "term": "term1",
+        "week": 5,
+        "q": "Infographic Summary Template",
+        "summary": "信息图口语录音和学术写作中，机械报流水账（一个个念数字）最多只能拿及格分！套用「总览 → 核心趋势分组 → 精准对比数据 → 谨慎推论」四段公式直接冲高分。",
+        "hasDiagram": false
+      }
     ]
   }
 ]
