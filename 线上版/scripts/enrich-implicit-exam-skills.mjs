@@ -30,7 +30,7 @@ const SVG_FX_TO_FPRIME = `<div class="diagram"><svg viewBox="0 0 760 440" xmlns=
   <line x1="40" y1="145" x2="470" y2="145" stroke="#64748b" stroke-width="1.4"/>
   <line x1="255" y1="48" x2="255" y2="215" stroke="#94a3b8" stroke-width="1"/>
   <text x="455" y="138" font-size="12" fill="#475569" font-weight="700">x</text>
-  <text x="50" y="64" font-size="13" fill="#0f2744" font-weight="700">原函数 y = f(x)</text>
+  <text x="20" y="54" font-size="12.5" fill="#0f2744" font-weight="700">原函数 y = f(x)</text>
 
   <!-- Shaded increasing / decreasing labels -->
   <rect x="65" y="192" width="76" height="19" rx="5" fill="#e6f6ee"/>
@@ -47,7 +47,7 @@ const SVG_FX_TO_FPRIME = `<div class="diagram"><svg viewBox="0 0 760 440" xmlns=
   <!-- Horizontal tangents at max & min -->
   <line x1="120" y1="78" x2="180" y2="78" stroke="#c99b3b" stroke-width="2.2"/>
   <circle cx="150" cy="78" r="5" fill="#c99b3b"/>
-  <text x="108" y="68" font-size="11" fill="#8f6814" font-weight="700">极大值(斜率=0)</text>
+  <text x="155" y="66" font-size="11" fill="#8f6814" font-weight="700">极大值(斜率=0)</text>
 
   <circle cx="255" cy="130" r="5" fill="#2b5a92"/>
   <text x="263" y="122" font-size="11" fill="#2b5a92" font-weight="700">拐点(下坡最陡)</text>
@@ -59,7 +59,7 @@ const SVG_FX_TO_FPRIME = `<div class="diagram"><svg viewBox="0 0 760 440" xmlns=
   <!-- Bottom axes: f'(x) -->
   <line x1="40" y1="322" x2="470" y2="322" stroke="#64748b" stroke-width="1.6"/>
   <text x="455" y="315" font-size="12" fill="#475569" font-weight="700">x</text>
-  <text x="50" y="250" font-size="13" fill="#b4322a" font-weight="700">导函数 y = f'(x)</text>
+  <text x="20" y="246" font-size="12.5" fill="#b4322a" font-weight="700">导函数 y = f'(x)</text>
   <text x="46" y="316" font-size="10.5" fill="#16653e">正(+)</text>
   <text x="46" y="338" font-size="10.5" fill="#b4322a">负(-)</text>
 
